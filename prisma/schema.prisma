@@ -1,0 +1,187 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ReferencePlatform {
+  VIDEO
+  BLOG
+  FORUM
+  SOCIAL
+}
+
+enum ExampleSource {
+  CURATED
+  GENERATED
+}
+
+model User {
+  id               String             @id @default(cuid())
+  email            String             @unique
+  displayName      String?
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  listProgress     UserListProgress[]
+  wordProgress     UserWordProgress[]
+  studySessions    StudySession[]
+  aiGenerations    AiGeneration[]
+  curatedReference ReferenceItem[]    @relation("CuratedBy")
+}
+
+model WordList {
+  id           String          @id @default(cuid())
+  slug         String          @unique
+  title        String
+  shortLabel   String
+  subtitle     String
+  description  String
+  moodHook     String
+  accentColor  String
+  sourcePageUrl String
+  teachingUrl  String
+  statsUrl     String
+  license      String
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+  entries      WordListEntry[]
+  progress     UserListProgress[]
+  sessions     StudySession[]
+}
+
+model Lemma {
+  id               String            @id @default(cuid())
+  lemma            String            @unique
+  normalizedLemma  String            @unique
+  partOfSpeech     String?
+  definition       String?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  entries          WordListEntry[]
+  audioAssets      AudioAsset[]
+  exampleSentences ExampleSentence[]
+  references       ReferenceItem[]
+  wordProgress     UserWordProgress[]
+  aiGenerations    AiGeneration[]
+}
+
+model WordListEntry {
+  id         String   @id @default(cuid())
+  listId     String
+  lemmaId    String
+  rank       Int?
+  band       Int?
+  sfi        Float?
+  frequency  Float?
+  forms      String[]
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  list       WordList @relation(fields: [listId], references: [id], onDelete: Cascade)
+  lemma      Lemma    @relation(fields: [lemmaId], references: [id], onDelete: Cascade)
+
+  @@unique([listId, lemmaId])
+  @@index([listId, rank])
+}
+
+model AudioAsset {
+  id          String   @id @default(cuid())
+  lemmaId     String
+  provider    String
+  voice       String?
+  audioUrl    String
+  locale      String   @default("en-US")
+  isCached    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  lemma       Lemma    @relation(fields: [lemmaId], references: [id], onDelete: Cascade)
+}
+
+model ExampleSentence {
+  id           String        @id @default(cuid())
+  lemmaId      String
+  text         String
+  explanation  String
+  source       ExampleSource @default(CURATED)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  lemma        Lemma         @relation(fields: [lemmaId], references: [id], onDelete: Cascade)
+}
+
+model ReferenceItem {
+  id             String             @id @default(cuid())
+  lemmaId        String
+  curatedById    String?
+  title          String
+  platform       ReferencePlatform
+  url            String
+  excerpt        String
+  timestampLabel String?
+  contextNote    String
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+  lemma          Lemma              @relation(fields: [lemmaId], references: [id], onDelete: Cascade)
+  curatedBy      User?              @relation("CuratedBy", fields: [curatedById], references: [id], onDelete: SetNull)
+}
+
+model UserListProgress {
+  id            String   @id @default(cuid())
+  userId        String
+  listId        String
+  learnedCount  Int      @default(0)
+  masteredCount Int      @default(0)
+  streakDays    Int      @default(0)
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  list          WordList @relation(fields: [listId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, listId])
+}
+
+model UserWordProgress {
+  id            String   @id @default(cuid())
+  userId        String
+  lemmaId       String
+  listId        String
+  attempts      Int      @default(0)
+  correctCount  Int      @default(0)
+  mastered      Boolean  @default(false)
+  lastPracticed DateTime?
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lemma         Lemma    @relation(fields: [lemmaId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lemmaId, listId])
+  @@index([listId, mastered])
+}
+
+model StudySession {
+  id            String   @id @default(cuid())
+  userId        String?
+  listId        String
+  practiceMode  String
+  mood          String?
+  startedAt     DateTime @default(now())
+  completedAt   DateTime?
+  correctCount  Int      @default(0)
+  attemptCount  Int      @default(0)
+  user          User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  list          WordList @relation(fields: [listId], references: [id], onDelete: Cascade)
+}
+
+model AiGeneration {
+  id             String   @id @default(cuid())
+  userId         String?
+  lemmaId        String?
+  promptType     String
+  topic          String?
+  level          String?
+  resultTitle    String
+  resultJson     Json
+  provider       String
+  model          String
+  createdAt      DateTime @default(now())
+  user           User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  lemma          Lemma?   @relation(fields: [lemmaId], references: [id], onDelete: SetNull)
+}
