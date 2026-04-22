@@ -23,16 +23,16 @@ export function ListSelector({
             href={href}
             className={`rounded-3xl border px-4 py-4 transition ${
               isActive
-                ? "border-cyan-400/70 bg-cyan-400/10 text-white shadow-lg shadow-cyan-950/40"
-                : "border-white/10 bg-white/5 text-slate-200 hover:border-white/20 hover:bg-white/10"
+                ? "border-cyan-500/50 bg-cyan-50 text-slate-900 shadow-md shadow-cyan-200/50"
+                : "border-slate-200 bg-white text-slate-800 shadow-sm hover:border-slate-300 hover:bg-slate-50"
             }`}
           >
-            <div className="text-xs uppercase tracking-[0.2em] text-slate-400">
+            <div className="text-xs uppercase tracking-[0.2em] text-slate-500">
               {list.shortLabel}
             </div>
             <div className="mt-2 text-lg font-semibold">{list.title}</div>
-            <p className="mt-2 text-sm leading-6 text-slate-300">{list.subtitle}</p>
-            <div className="mt-3 text-xs text-slate-400">{list.wordCount} imported words</div>
+            <p className="mt-2 text-sm leading-6 text-slate-600">{list.subtitle}</p>
+            <div className="mt-3 text-xs text-slate-500">{list.wordCount} imported words</div>
           </Link>
         );
       })}

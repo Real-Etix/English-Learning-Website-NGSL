@@ -79,18 +79,18 @@ export function PronunciationPlayer({
   };
 
   return (
-    <div className="flex flex-wrap items-center gap-3 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm text-cyan-50">
+    <div className="flex flex-wrap items-center gap-3 rounded-2xl border border-cyan-200 bg-cyan-50 px-4 py-3 text-sm text-cyan-950">
       <button
         type="button"
         onClick={handlePlay}
         disabled={isPlaying}
-        className="rounded-full bg-cyan-300 px-4 py-2 font-semibold text-slate-950 transition hover:bg-cyan-200"
+        className="rounded-full bg-cyan-500 px-4 py-2 font-semibold text-white shadow-sm transition hover:bg-cyan-600"
       >
         {isPlaying ? "Playing..." : "Play pronunciation"}
       </button>
       <div className="space-y-1">
-        <div className="text-cyan-100/80">{sourceLabel}</div>
-        <div className="text-cyan-100/70">Last play: {lastPlayedAt ?? "Not yet"}</div>
+        <div className="text-cyan-900/90">{sourceLabel}</div>
+        <div className="text-cyan-800/80">Last play: {lastPlayedAt ?? "Not yet"}</div>
       </div>
       {audioUrl ? (
         <audio

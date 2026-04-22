@@ -31,9 +31,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-slate-950 text-white">
+      <body className="min-h-full bg-sky-50 text-slate-900">
         <div className="relative flex min-h-full flex-col overflow-hidden">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(168,85,247,0.15),_transparent_30%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.35),_transparent_42%),radial-gradient(circle_at_bottom_right,_rgba(167,139,250,0.22),_transparent_38%),radial-gradient(circle_at_20%_80%,_rgba(251,191,36,0.12),_transparent_45%)]" />
           <SiteHeader />
           <main className="relative flex-1">{children}</main>
         </div>

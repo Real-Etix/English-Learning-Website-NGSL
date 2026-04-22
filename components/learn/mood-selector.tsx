@@ -42,10 +42,10 @@ export function MoodSelector() {
         <Link
           key={mood.slug}
           href={`/learn/${moodToList[mood.slug]}?mood=${mood.slug}`}
-          className="rounded-3xl border border-white/10 bg-white/5 p-5 transition hover:border-cyan-400/40 hover:bg-cyan-400/10"
+          className="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-cyan-400 hover:bg-cyan-50"
         >
-          <div className="text-xs uppercase tracking-[0.2em] text-cyan-200">{mood.title}</div>
-          <p className="mt-3 text-sm leading-6 text-slate-300">{mood.description}</p>
+          <div className="text-xs uppercase tracking-[0.2em] text-cyan-700">{mood.title}</div>
+          <p className="mt-3 text-sm leading-6 text-slate-600">{mood.description}</p>
         </Link>
       ))}
     </div>

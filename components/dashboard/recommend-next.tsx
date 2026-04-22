@@ -41,17 +41,17 @@ export function RecommendNext({
   }
 
   return (
-    <section className="rounded-[2rem] border border-cyan-400/20 bg-cyan-400/10 p-6">
-      <div className="text-xs uppercase tracking-[0.2em] text-cyan-200">
+    <section className="rounded-[2rem] border border-cyan-200 bg-cyan-50 p-6 shadow-sm">
+      <div className="text-xs uppercase tracking-[0.2em] text-cyan-800">
         Recommended next session
       </div>
-      <h2 className="mt-2 text-2xl font-semibold text-white">{recommended.title}</h2>
-      <p className="mt-3 max-w-2xl text-sm leading-7 text-cyan-50/90">
+      <h2 className="mt-2 text-2xl font-semibold text-slate-900">{recommended.title}</h2>
+      <p className="mt-3 max-w-2xl text-sm leading-7 text-cyan-950/90">
         {recommended.moodHook}
       </p>
       <Link
         href={`/learn/${recommended.slug}`}
-        className="mt-5 inline-flex rounded-full bg-cyan-300 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
+        className="mt-5 inline-flex rounded-full bg-cyan-500 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-600"
       >
         Start this practice path
       </Link>

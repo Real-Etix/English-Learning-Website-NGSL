@@ -162,21 +162,21 @@ export function ListenTypeQuiz({
     <div className="space-y-6">
       <section
         id="practice-studio"
-        className="rounded-[2rem] border border-white/10 bg-white/5 p-6"
+        className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm"
       >
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <div className="text-xs uppercase tracking-[0.2em] text-slate-400">
+            <div className="text-xs uppercase tracking-[0.2em] text-slate-500">
               Practice studio
             </div>
-            <h2 className="mt-2 text-3xl font-semibold text-white">
+            <h2 className="mt-2 text-3xl font-semibold text-slate-900">
               {activeMode?.title}
             </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300">
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600">
               {activeMode?.description}
             </p>
           </div>
-          <div className="rounded-3xl border border-white/10 bg-slate-950/40 px-4 py-3 text-sm text-slate-300">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-600">
             Card {index + 1} / {words.length}
           </div>
         </div>
@@ -197,12 +197,12 @@ export function ListenTypeQuiz({
                 }}
                 className={`rounded-3xl border px-4 py-4 text-left transition ${
                   item.mode === mode
-                    ? "border-cyan-400/70 bg-cyan-400/10 text-white"
-                    : "border-white/10 bg-slate-950/35 text-slate-300 hover:border-white/20 hover:bg-white/10"
+                    ? "border-cyan-500/50 bg-cyan-50 text-slate-900 shadow-sm"
+                    : "border-slate-200 bg-slate-50 text-slate-600 hover:border-slate-300 hover:bg-white"
                 }`}
               >
                 <div className="text-sm font-semibold">{item.title}</div>
-                <p className="mt-2 text-sm leading-6 text-inherit/80">{item.description}</p>
+                <p className="mt-2 text-sm leading-6 opacity-90">{item.description}</p>
               </Link>
             ))}
           </div>
@@ -224,24 +224,24 @@ export function ListenTypeQuiz({
                   value={answer}
                   onChange={(event) => setAnswer(event.target.value)}
                   placeholder="Type the word you hear"
-                  className="flex-1 rounded-full border border-white/10 bg-slate-950/50 px-5 py-4 text-white outline-none transition focus:border-cyan-300/60"
+                  className="flex-1 rounded-full border border-slate-300 bg-white px-5 py-4 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-200"
                 />
                 <button
                   type="submit"
-                  className="rounded-full bg-cyan-300 px-6 py-4 font-semibold text-slate-950 transition hover:bg-cyan-200"
+                  className="rounded-full bg-cyan-500 px-6 py-4 font-semibold text-white shadow-sm transition hover:bg-cyan-600"
                 >
                   Check answer
                 </button>
                 <button
                   type="button"
                   onClick={moveNext}
-                  className="rounded-full border border-white/15 px-6 py-4 font-semibold text-white transition hover:bg-white/10"
+                  className="rounded-full border border-slate-300 bg-white px-6 py-4 font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50"
                 >
                   Next word
                 </button>
               </form>
 
-              <div className="rounded-2xl bg-slate-950/30 px-4 py-3 text-sm text-slate-300">
+              <div className="rounded-2xl border border-slate-100 bg-sky-50/80 px-4 py-3 text-sm text-slate-600">
                 Tip: replay the audio and focus on the full word shape before typing.
               </div>
 
@@ -249,8 +249,8 @@ export function ListenTypeQuiz({
                 <div
                   className={`rounded-2xl px-4 py-3 text-sm ${
                     revealed
-                      ? "bg-emerald-400/10 text-emerald-100"
-                      : "bg-amber-400/10 text-amber-100"
+                      ? "border border-emerald-200 bg-emerald-50 text-emerald-900"
+                      : "border border-amber-200 bg-amber-50 text-amber-900"
                   }`}
                 >
                   {status}
@@ -260,9 +260,10 @@ export function ListenTypeQuiz({
           ) : null}
 
           {mode === "meaning_match" ? (
-            <section className="space-y-4 rounded-3xl border border-white/10 bg-slate-950/30 p-5">
-              <div className="text-sm text-slate-300">
-                Choose the definition that best matches <span className="font-semibold text-white">{currentWord.lemma}</span>.
+            <section className="space-y-4 rounded-3xl border border-slate-200 bg-slate-50 p-5">
+              <div className="text-sm text-slate-600">
+                Choose the definition that best matches{" "}
+                <span className="font-semibold text-slate-900">{currentWord.lemma}</span>.
               </div>
               <div className="grid gap-3">
                 {meaningOptions.map((option) => {
@@ -277,10 +278,10 @@ export function ListenTypeQuiz({
                       disabled={Boolean(selectedDefinition)}
                       className={`rounded-3xl border px-4 py-4 text-left transition ${
                         isSelected && isCorrect
-                          ? "border-emerald-400/60 bg-emerald-400/10 text-emerald-50"
+                          ? "border-emerald-400 bg-emerald-50 text-emerald-900"
                           : isSelected
-                            ? "border-rose-400/50 bg-rose-400/10 text-rose-50"
-                            : "border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                            ? "border-rose-300 bg-rose-50 text-rose-900"
+                            : "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"
                       }`}
                     >
                       {option.definition}
@@ -289,7 +290,7 @@ export function ListenTypeQuiz({
                 })}
               </div>
               {meaningStatus ? (
-                <div className="rounded-2xl bg-cyan-400/10 px-4 py-3 text-sm text-cyan-100">
+                <div className="rounded-2xl border border-cyan-200 bg-cyan-50 px-4 py-3 text-sm text-cyan-900">
                   {meaningStatus}
                 </div>
               ) : null}
@@ -297,13 +298,13 @@ export function ListenTypeQuiz({
                 <button
                   type="button"
                   onClick={moveNext}
-                  className="rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                  className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50"
                 >
                   Next word
                 </button>
                 <Link
                   href={`/word/${currentWord.normalizedLemma}`}
-                  className="rounded-full border border-cyan-400/30 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/10"
+                  className="rounded-full border border-cyan-400/60 px-5 py-3 text-sm font-semibold text-cyan-800 transition hover:bg-cyan-50"
                 >
                   Open word page
                 </Link>
@@ -312,7 +313,7 @@ export function ListenTypeQuiz({
           ) : null}
 
           {mode === "study_card" ? (
-            <section className="space-y-4 rounded-3xl border border-white/10 bg-slate-950/30 p-5">
+            <section className="space-y-4 rounded-3xl border border-slate-200 bg-slate-50 p-5">
               <PronunciationPlayer
                 key={currentWord.lemma}
                 word={currentWord.lemma}
@@ -333,13 +334,13 @@ export function ListenTypeQuiz({
                 <button
                   type="button"
                   onClick={moveNext}
-                  className="rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+                  className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50"
                 >
                   Next word
                 </button>
                 <Link
                   href={`/word/${currentWord.normalizedLemma}`}
-                  className="rounded-full border border-cyan-400/30 px-5 py-3 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-400/10"
+                  className="rounded-full border border-cyan-400/60 px-5 py-3 text-sm font-semibold text-cyan-800 transition hover:bg-cyan-50"
                 >
                   Open word page
                 </Link>

@@ -51,19 +51,19 @@ export default async function LearnListPage({
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 py-12">
-      <section className="rounded-[2rem] border border-white/10 bg-white/5 p-8">
-        <div className="text-xs uppercase tracking-[0.2em] text-cyan-200">
+      <section className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="text-xs uppercase tracking-[0.2em] text-cyan-700">
           {list.shortLabel}
         </div>
-        <h1 className="mt-3 text-4xl font-semibold text-white">{list.title}</h1>
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
+        <h1 className="mt-3 text-4xl font-semibold text-slate-900">{list.title}</h1>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
           {list.description}
         </p>
-        <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-400">{list.moodHook}</p>
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-500">{list.moodHook}</p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
             href={`/lists/${list.slug}`}
-            className="rounded-full border border-cyan-400/30 px-4 py-2 text-sm text-cyan-100 transition hover:bg-cyan-400/10"
+            className="rounded-full border border-cyan-400/60 px-4 py-2 text-sm font-medium text-cyan-800 transition hover:bg-cyan-50"
           >
             Browse full vocabulary
           </Link>
@@ -74,19 +74,19 @@ export default async function LearnListPage({
 
       <div className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
         <ProgressSummary listSlug={list.slug} wordCount={list.wordCount} />
-        <section className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
-          <div className="text-xs uppercase tracking-[0.2em] text-slate-400">
+        <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="text-xs uppercase tracking-[0.2em] text-slate-500">
             Study guidance
           </div>
-          <p className="mt-4 text-sm leading-7 text-slate-300">
+          <p className="mt-4 text-sm leading-7 text-slate-600">
             The strongest study loop here is listening and meaning practice, with a
             dedicated study card for fixed examples, phrases, and references.
           </p>
-          <div className="mt-4 rounded-3xl bg-slate-950/40 px-4 py-4 text-sm text-slate-200">
+          <div className="mt-4 rounded-3xl border border-slate-100 bg-slate-50 px-4 py-4 text-sm text-slate-700">
             Word cards and practice items prefer source-backed content first, then fall
             back only when trustworthy fixed content is still missing.
           </div>
-          <div className="mt-4 rounded-3xl bg-slate-950/40 px-4 py-4 text-sm text-slate-200">
+          <div className="mt-4 rounded-3xl border border-slate-100 bg-slate-50 px-4 py-4 text-sm text-slate-700">
             Tip: if free dictionary audio is available, the pronunciation player will use
             that first. Otherwise it falls back to the browser voice.
           </div>

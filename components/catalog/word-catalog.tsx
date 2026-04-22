@@ -21,14 +21,14 @@ export function WordCatalog({
   words: LearningWord[];
 }) {
   return (
-    <section className="rounded-[2rem] border border-white/10 bg-white/5 p-6">
+    <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <div className="text-xs uppercase tracking-[0.2em] text-cyan-200">
+          <div className="text-xs uppercase tracking-[0.2em] text-cyan-700">
             Word catalog
           </div>
-          <h2 className="mt-2 text-2xl font-semibold text-white">{title}</h2>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-300">{description}</p>
+          <h2 className="mt-2 text-2xl font-semibold text-slate-900">{title}</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">{description}</p>
         </div>
       </div>
 
@@ -37,18 +37,18 @@ export function WordCatalog({
           <Link
             key={word.normalizedLemma}
             href={`/word/${word.normalizedLemma}`}
-            className="rounded-3xl border border-white/10 bg-slate-950/35 p-5 transition hover:border-cyan-400/30 hover:bg-white/10"
+            className="rounded-3xl border border-slate-200 bg-slate-50/80 p-5 transition hover:border-cyan-300 hover:bg-white hover:shadow-md"
           >
             <div className="flex items-center justify-between gap-3">
-              <div className="text-lg font-semibold text-white">{word.lemma}</div>
-              <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300">
+              <div className="text-lg font-semibold text-slate-900">{word.lemma}</div>
+              <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600">
                 {statusLabel(word)}
               </span>
             </div>
-            <div className="mt-2 text-sm text-cyan-100/85">{word.partOfSpeech}</div>
-            <p className="mt-3 text-sm leading-7 text-slate-300">{word.definition}</p>
+            <div className="mt-2 text-sm font-medium text-cyan-800">{word.partOfSpeech}</div>
+            <p className="mt-3 text-sm leading-7 text-slate-600">{word.definition}</p>
             {word.exampleSentences[0] ? (
-              <p className="mt-4 line-clamp-3 text-sm leading-6 text-slate-200">
+              <p className="mt-4 line-clamp-3 text-sm leading-6 text-slate-700">
                 {word.exampleSentences[0].text}
               </p>
             ) : (
