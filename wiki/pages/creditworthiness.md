@@ -1,0 +1,18 @@
+---
+lemma: creditworthiness
+display: creditworthiness
+tier: advanced
+pos: noun
+forms: [creditworthiness]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+The bank assessed the company's creditworthiness before approving the loan.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[debenture]] — Use 'creditworthiness' when emphasizing the financial reliability and ability to repay debts, rather than the general ability to obtain goods on trust.

@@ -1,0 +1,18 @@
+---
+lemma: coffeehouse
+display: coffeehouse
+tier: advanced
+pos: noun
+forms: [coffeehouse]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+She spends every afternoon writing in the local coffeehouse.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[cafe]] — Use 'coffeehouse' to emphasize a place focused on coffee, tea, and light snacks, with a relaxed, social environment—more specific than 'cafe'.

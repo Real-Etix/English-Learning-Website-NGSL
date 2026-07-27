@@ -1,0 +1,18 @@
+---
+lemma: delinquency
+display: delinquency
+tier: advanced
+pos: noun
+forms: [delinquency]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+His loan delinquency resulted in the loss of his car.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[default]] — Use 'delinquency' for failure to meet financial obligations, like loan payments, where 'default' is more general and can also apply to other failures.

@@ -1,0 +1,18 @@
+---
+lemma: cloak
+display: cloak
+tier: advanced
+pos: verb
+forms: [cloak]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+They cloaked their true intentions with vague promises.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[mask]] — Use 'cloak' when hiding something in a way that suggests it is covered or wrapped up, often with a sense of mystery or protection, more poetic than 'mask'.

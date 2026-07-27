@@ -1,0 +1,18 @@
+---
+lemma: pharmacologic
+display: pharmacologic
+tier: advanced
+pos: adjective
+forms: [pharmacologic]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+The pharmacologic properties of the drug were carefully studied.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[pharmaceutical]] — Use 'pharmacologic' when emphasizing the scientific or chemical aspects of drugs, rather than the commercial or industrial side implied by 'pharmaceutical'.

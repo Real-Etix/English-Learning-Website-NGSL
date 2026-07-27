@@ -1,0 +1,86 @@
+/**
+ * Shared OpenAI-compatible LLM client (defaults to Kimi / Moonshot AI).
+ * Config via .env: LLM_API_KEY (or MOONSHOT_API_KEY), LLM_MODEL, LLM_BASE_URL.
+ * One source of truth for every script that calls the model.
+ */
+import "dotenv/config";
+
+const BASE_URL = process.env.LLM_BASE_URL ?? "https://api.moonshot.ai/v1";
+
+export const LLM_ENDPOINT = `${BASE_URL.replace(/\/$/, "")}/chat/completions`;
+export const LLM_API_KEY = process.env.LLM_API_KEY ?? process.env.MOONSHOT_API_KEY ?? "";
+export const LLM_MODEL = process.env.LLM_MODEL ?? "kimi-k2.5";
+
+export const hasLLM = () => LLM_API_KEY.length > 0;
+
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+/** Pull the first {...} JSON object out of a reply, tolerating prose or code fences. */
+function extractJSON<T>(content: string): T | null {
+  const cleaned = content.replace(/```json\s*|\s*```/g, "").trim();
+  const start = cleaned.indexOf("{");
+  const end = cleaned.lastIndexOf("}");
+  const candidate = start !== -1 && end > start ? cleaned.slice(start, end + 1) : cleaned;
+  try {
+    return JSON.parse(candidate) as T;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Call the chat API and parse a JSON object from the reply.
+ * Retries transient failures (429 overload / 5xx) with exponential backoff.
+ * No response_format — some Moonshot models reject it (400); we parse JSON ourselves.
+ */
+export async function completeJSON<T>(
+  system: string,
+  user: string,
+  model: string = LLM_MODEL,
+  maxAttempts = 4,
+): Promise<T | null> {
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    let res: Response;
+    // Everything — including reading the response body — is inside the try, so a
+    // timeout that fires mid-body-read is caught and retried, not thrown uncaught.
+    try {
+      res = await fetch(LLM_ENDPOINT, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${LLM_API_KEY}`, "Content-Type": "application/json" },
+        // Abort a stuck connection so it becomes a retriable error instead of hanging.
+        signal: AbortSignal.timeout(90_000),
+        // No temperature: reasoning models like kimi-k3 only accept the default (1).
+        body: JSON.stringify({
+          model,
+          messages: [
+            { role: "system", content: system },
+            { role: "user", content: user },
+          ],
+        }),
+      });
+
+      if (res.ok) {
+        const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
+        return extractJSON<T>(data.choices?.[0]?.message?.content ?? "");
+      }
+
+      const retriable = res.status === 429 || res.status >= 500;
+      if (retriable && attempt < maxAttempts) {
+        const waitMs = 1000 * 2 ** (attempt - 1) + Math.floor(Math.random() * 500);
+        console.warn(`  ${res.status} (attempt ${attempt}/${maxAttempts}) — retry in ${waitMs}ms`);
+        await sleep(waitMs);
+        continue;
+      }
+      console.warn(`  LLM error ${res.status}: ${(await res.text()).slice(0, 160)}`);
+      return null;
+    } catch (err) {
+      if (attempt === maxAttempts) {
+        console.warn(`  request failed after ${maxAttempts} attempts: ${String(err)}`);
+        return null;
+      }
+      await sleep(1000 * 2 ** (attempt - 1));
+      continue;
+    }
+  }
+  return null;
+}

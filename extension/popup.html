@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { font: 13px/1.4 system-ui, sans-serif; width: 260px; margin: 0; padding: 12px; }
+      h1 { font-size: 13px; margin: 0 0 8px; }
+      button { width: 100%; padding: 8px; font-size: 13px; cursor: pointer; border: 1px solid #ccc; border-radius: 6px; background: #16a34a; color: #fff; }
+      label { display: block; font-size: 11px; color: #555; margin: 10px 0 3px; }
+      input { width: 100%; box-sizing: border-box; padding: 5px; font-size: 12px; border: 1px solid #ccc; border-radius: 4px; }
+      #status { margin-top: 8px; min-height: 16px; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h1>Vocab Wiki Clipper</h1>
+    <button id="clip">Clip selection on this page</button>
+    <label for="endpoint">Inbox endpoint</label>
+    <input id="endpoint" type="text" />
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

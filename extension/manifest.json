@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "NGSL Vocab Wiki Clipper",
+  "version": "0.1.0",
+  "description": "Clip text from any page into your NGSL vocabulary wiki inbox.",
+  "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+  "host_permissions": ["http://localhost/*", "http://127.0.0.1/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Vocab Wiki Clipper"
+  }
+}

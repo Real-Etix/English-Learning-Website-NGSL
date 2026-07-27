@@ -1,0 +1,18 @@
+---
+lemma: alimentary
+display: alimentary
+tier: advanced
+pos: adjective
+forms: [alimentary]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+The alimentary benefits of a balanced diet are well known.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[nutritional]] — Use 'alimentary' in formal or medical contexts when referring to the process or system of nutrition.

@@ -1,0 +1,18 @@
+---
+lemma: parsimoniously
+display: parsimoniously
+tier: advanced
+pos: adverb
+forms: [parsimoniously]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+She donated to the food bank parsimoniously.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[cheaply]] — Use instead of 'cheaply' when you want to emphasize an extreme, almost excessive unwillingness to spend or give, often in a formal or critical context.

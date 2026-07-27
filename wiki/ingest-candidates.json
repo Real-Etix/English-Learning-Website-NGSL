@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-07-26T16:38:49.323Z",
+  "candidates": [
+    {
+      "word": "coffeehouse",
+      "count": 1,
+      "links": [
+        {
+          "relation": "synonym",
+          "anchor": "cafe"
+        }
+      ]
+    }
+  ]
+}

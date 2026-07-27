@@ -1,0 +1,23 @@
+---
+lemma: degrade
+display: degrade
+tier: core
+pos: verb
+forms: [degrade, degrades, degraded, degrading]
+lists: [academic]
+rank: 744
+sfi: 51.515
+sources: [wordnet]
+status: seeded
+---
+
+## Definition
+reduce the level of land, as by erosion  
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- domain: academic
+- builds_on: [[deteriorate]] — Use 'degrade' when focusing on reduction in quality, value, or condition, often due to external factors or gradual process.
+- builds_on: [[erode]] — Use 'degrade' instead of 'erode' when the focus is on reducing quality or status rather than physical wearing away.

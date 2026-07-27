@@ -1,0 +1,18 @@
+---
+lemma: excretion
+display: excretion
+tier: advanced
+pos: noun
+forms: [excretion]
+sources: [llm]
+status: enriched
+---
+
+## Definition
+The lab analyzed the patient's excretion.
+
+## Examples
+_No sourced examples yet._
+
+## Connections
+- builds_on: [[urine]] — Use 'excretion' instead of 'urine' when emphasizing the product as part of bodily waste in a formal or clinical context.
