@@ -1,69 +1,66 @@
 import Link from "next/link";
 
+import { GalaxyClient } from "@/components/network/galaxy-client";
 import { ListSelector } from "@/components/learn/list-selector";
 import { MoodSelector } from "@/components/learn/mood-selector";
 import { getFeaturedLists } from "@/lib/content/content-service";
+import { buildListGraph, readAllPages, toLiteGraph } from "@/lib/wiki/parse-wiki";
 
-export default function Home() {
+export default async function Home() {
   const lists = getFeaturedLists();
+  const pages = await readAllPages();
+  const graph = toLiteGraph(buildListGraph(pages, "ngsl"));
 
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-6 py-12">
-      <section className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-center">
-        <div className="space-y-7">
-          <div className="inline-flex rounded-full border border-cyan-400/50 bg-cyan-100 px-4 py-2 text-sm text-cyan-900">
-            Switch lists by mood, need, and English goal
-          </div>
-          <div className="space-y-5">
-            <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-              Learn NGSL-based vocabulary through listening, typing, guided practice, and real usage.
-            </h1>
-            <p className="max-w-2xl text-lg leading-8 text-slate-600">
-              Choose the list that matches your mood: TOEIC, Business, Academic,
-              Fitness, or the core NGSL. Listen to a word, type it, unlock example
-              sentences, and see the phrase inside authentic media and conversation.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-3">
+    <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 py-12">
+      {/* Galaxy front and center */}
+      <section className="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#0a0f24] via-[#0b1027] to-[#120a2a] p-8 text-slate-100 shadow-sm">
+        <div className="text-xs uppercase tracking-[0.2em] text-sky-300">Vocabulary galaxy</div>
+        <h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
+          Explore English as a universe of words
+        </h1>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-300">
+          Every word is a star; every line is a real relationship. Orbit the NGSL core, click a
+          star for its full entry — pronunciation, meaning, and the ladder toward more advanced
+          vocabulary — or jump to another galaxy.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["ngsl", "toeic", "business", "academic", "fitness", "all"].map((slug) => (
             <Link
-              href="/lists"
-              className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-600"
+              key={slug}
+              href={`/network/${slug}`}
+              className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+                slug === "ngsl"
+                  ? "bg-sky-400 text-slate-900 shadow-sm"
+                  : "border border-white/15 bg-white/5 text-slate-200 hover:bg-white/10"
+              }`}
             >
-              Browse all lists
+              {slug === "all" ? "All" : slug.toUpperCase()}
             </Link>
-            <Link
-              href="/learn/ngsl"
-              className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50"
-            >
-              Start with NGSL
-            </Link>
-          </div>
+          ))}
         </div>
+      </section>
 
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
-          <div className="text-xs uppercase tracking-[0.2em] text-slate-500">
-            What the app supports
-          </div>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {[
-              "Listen-and-type pronunciation drills",
-              "Progress counts and streak-friendly study",
-              "Local sentence and conversation practice builder",
-              "Curated usage from videos, blogs, forums, and social posts",
-            ].map((item) => (
-              <div key={item} className="rounded-3xl border border-slate-100 bg-sky-50/80 p-4 text-sm text-slate-700">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
+      <GalaxyClient graph={graph} />
+
+      <section className="flex flex-wrap items-center gap-3">
+        <Link
+          href="/lists"
+          className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-600"
+        >
+          Browse all lists
+        </Link>
+        <Link
+          href="/learn/ngsl"
+          className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50"
+        >
+          Start practicing NGSL
+        </Link>
       </section>
 
       <section className="space-y-6">
         <div className="space-y-2">
-          <div className="text-xs uppercase tracking-[0.2em] text-cyan-700">
-            Learn by mood
-          </div>
+          <div className="text-xs uppercase tracking-[0.2em] text-cyan-700">Learn by mood</div>
           <h2 className="text-3xl font-semibold text-slate-900">Pick how you feel today</h2>
         </div>
         <MoodSelector />
@@ -72,9 +69,7 @@ export default function Home() {
       <section className="space-y-6">
         <div className="flex items-end justify-between gap-4">
           <div>
-            <div className="text-xs uppercase tracking-[0.2em] text-slate-500">
-              List switcher
-            </div>
+            <div className="text-xs uppercase tracking-[0.2em] text-slate-500">List switcher</div>
             <h2 className="mt-2 text-3xl font-semibold text-slate-900">
               Move between goal-specific word lists
             </h2>
