@@ -28,40 +28,32 @@ function extractJSON<T>(content: string): T | null {
   }
 }
 
+export type ChatMessage = { role: "system" | "user" | "assistant"; content: string };
+
 /**
- * Call the chat API and parse a JSON object from the reply.
+ * Core chat call: returns the raw reply text, or null on failure.
  * Retries transient failures (429 overload / 5xx) with exponential backoff.
- * No response_format — some Moonshot models reject it (400); we parse JSON ourselves.
+ * No response_format / temperature — some models reject them.
  */
-export async function completeJSON<T>(
-  system: string,
-  user: string,
+export async function completeChat(
+  messages: ChatMessage[],
   model: string = LLM_MODEL,
   maxAttempts = 4,
-): Promise<T | null> {
+): Promise<string | null> {
   for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
-    let res: Response;
     // Everything — including reading the response body — is inside the try, so a
     // timeout that fires mid-body-read is caught and retried, not thrown uncaught.
     try {
-      res = await fetch(LLM_ENDPOINT, {
+      const res = await fetch(LLM_ENDPOINT, {
         method: "POST",
         headers: { Authorization: `Bearer ${LLM_API_KEY}`, "Content-Type": "application/json" },
-        // Abort a stuck connection so it becomes a retriable error instead of hanging.
         signal: AbortSignal.timeout(90_000),
-        // No temperature: reasoning models like kimi-k3 only accept the default (1).
-        body: JSON.stringify({
-          model,
-          messages: [
-            { role: "system", content: system },
-            { role: "user", content: user },
-          ],
-        }),
+        body: JSON.stringify({ model, messages }),
       });
 
       if (res.ok) {
         const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
-        return extractJSON<T>(data.choices?.[0]?.message?.content ?? "");
+        return data.choices?.[0]?.message?.content ?? "";
       }
 
       const retriable = res.status === 429 || res.status >= 500;
@@ -83,4 +75,22 @@ export async function completeJSON<T>(
     }
   }
   return null;
+}
+
+/** Call the chat API and parse a JSON object from the reply (for the enrichment scripts). */
+export async function completeJSON<T>(
+  system: string,
+  user: string,
+  model: string = LLM_MODEL,
+  maxAttempts = 4,
+): Promise<T | null> {
+  const content = await completeChat(
+    [
+      { role: "system", content: system },
+      { role: "user", content: user },
+    ],
+    model,
+    maxAttempts,
+  );
+  return content == null ? null : extractJSON<T>(content);
 }
