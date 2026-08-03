@@ -150,12 +150,23 @@ export async function readPage(lemma: string): Promise<WikiPage | null> {
   }
 }
 
-export async function readAllPages(): Promise<WikiPage[]> {
+let _pagesCache: Promise<WikiPage[]> | null = null;
+
+/**
+ * Read every wiki page. Cached in-process: with 11k+ files this is expensive, and
+ * it's called once per static render (build) and per request (dev). The cache makes
+ * repeat calls instant. Restart the dev server after re-seeding to refresh it.
+ */
+export function readAllPages(): Promise<WikiPage[]> {
+  if (!_pagesCache) _pagesCache = readAllPagesUncached();
+  return _pagesCache;
+}
+
+async function readAllPagesUncached(): Promise<WikiPage[]> {
   const files = (await readdir(WIKI_DIR).catch(() => [] as string[])).filter((f) =>
     f.endsWith(".md"),
   );
-  // Read in batches — the wiki has 10k+ files, so opening them all at once
-  // exhausts the OS file-descriptor limit (EMFILE).
+  // Read in batches — opening all 10k+ files at once exhausts the OS FD limit (EMFILE).
   const BATCH = 128;
   const pages: WikiPage[] = [];
   for (let i = 0; i < files.length; i += BATCH) {

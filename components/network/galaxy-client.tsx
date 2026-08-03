@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 
 import { WordDetailPanel } from "@/components/network/word-detail-panel";
-import type { LiteGraph, WikiPage } from "@/lib/wiki/parse-wiki";
+import type { GraphNode, LiteGraph, WikiPage } from "@/lib/wiki/parse-wiki";
 import type { WordDetail } from "@/lib/content/word-detail";
 
 // Three.js touches the DOM/WebGL, so load the galaxy only in the browser.
@@ -49,6 +49,8 @@ export function GalaxyClient({ graph }: { graph: LiteGraph }) {
     <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#05060f] shadow-[0_0_80px_rgba(56,189,248,0.08)_inset]">
       <WordGalaxy graph={graph} selected={selected} onSelect={setSelected} />
 
+      <GalaxySearch nodes={graph.nodes} onPick={setSelected} />
+
       {/* Legend */}
       <div className="pointer-events-none absolute left-4 top-4 flex flex-wrap gap-2 text-[11px] text-slate-400">
         <Legend swatch="#7dd3fc" label="core word" />
@@ -81,6 +83,85 @@ export function GalaxyClient({ graph }: { graph: LiteGraph }) {
               {loading ? "Loading word…" : "Word not found."}
             </div>
           )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function GalaxySearch({
+  nodes,
+  onPick,
+}: {
+  nodes: GraphNode[];
+  onPick: (lemma: string) => void;
+}) {
+  const [q, setQ] = useState("");
+  const [focused, setFocused] = useState(false);
+
+  const results = useMemo(() => {
+    const query = q.trim().toLowerCase();
+    if (!query) return [];
+    const exact: GraphNode[] = [];
+    const starts: GraphNode[] = [];
+    const contains: GraphNode[] = [];
+    for (const n of nodes) {
+      const d = n.display.toLowerCase();
+      if (d === query) exact.push(n);
+      else if (d.startsWith(query)) starts.push(n);
+      else if (d.includes(query)) contains.push(n);
+    }
+    return [...exact, ...starts, ...contains].slice(0, 8);
+  }, [q, nodes]);
+
+  const pick = (lemma: string) => {
+    onPick(lemma);
+    setQ("");
+    setFocused(false);
+  };
+
+  return (
+    <div className="absolute left-1/2 top-4 z-20 w-[min(90vw,320px)] -translate-x-1/2">
+      <input
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        onFocus={() => setFocused(true)}
+        onBlur={() => setTimeout(() => setFocused(false), 150)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && results[0]) pick(results[0].lemma);
+          if (e.key === "Escape") setQ("");
+        }}
+        placeholder="🔍  Search for a word…"
+        className="w-full rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-slate-100 placeholder:text-slate-400 outline-none backdrop-blur-md focus:border-sky-400/60"
+      />
+      {focused && results.length > 0 && (
+        <ul className="mt-2 max-h-72 overflow-y-auto rounded-2xl border border-white/10 bg-[#0a0d1a]/95 p-1 backdrop-blur-md">
+          {results.map((n) => (
+            <li key={n.lemma}>
+              <button
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => pick(n.lemma)}
+                className="flex w-full items-center justify-between gap-2 rounded-xl px-3 py-2 text-left text-sm text-slate-200 transition hover:bg-white/10"
+              >
+                <span className="flex items-center gap-2">
+                  <span
+                    className="inline-block h-2 w-2 rounded-full"
+                    style={{
+                      background:
+                        n.tier === "advanced" ? "#c4b5fd" : n.degree === 0 ? "#cbd5e1" : "#7dd3fc",
+                    }}
+                  />
+                  {n.display}
+                </span>
+                <span className="text-[11px] text-slate-500">{n.pos}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {focused && q.trim() && results.length === 0 && (
+        <div className="mt-2 rounded-2xl border border-white/10 bg-[#0a0d1a]/95 px-4 py-3 text-sm text-slate-400 backdrop-blur-md">
+          No word matches “{q.trim()}” in this galaxy.
         </div>
       )}
     </div>
