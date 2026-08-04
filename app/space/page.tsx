@@ -2,6 +2,7 @@ import { cookies } from "next/headers";
 import Link from "next/link";
 
 import { ShareButton } from "@/components/collection/share-button";
+import { ResetSpaceButton, SpaceName } from "@/components/collection/space-controls";
 import { GalaxyClient } from "@/components/network/galaxy-client";
 import { getMySummary } from "@/lib/collection/service";
 import { buildCollectionGraph, readAllPages, toLiteGraph } from "@/lib/wiki/parse-wiki";
@@ -37,7 +38,9 @@ export default async function SpacePage() {
     <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-12">
       <section className="overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#0a0f24] via-[#0b1027] to-[#120a2a] p-8 text-slate-100 shadow-sm">
         <div className="text-xs uppercase tracking-[0.2em] text-sky-300">Your vocabulary space</div>
-        <h1 className="mt-3 text-4xl font-semibold">{me.displayName ?? "My Space"}</h1>
+        <div className="mt-3">
+          <SpaceName initialName={me.displayName} />
+        </div>
         <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
           <span className="rounded-full bg-sky-400/20 px-3 py-1 font-semibold text-sky-200">
             Level {me.level}
@@ -60,8 +63,9 @@ export default async function SpacePage() {
             </span>
           ))}
         </div>
-        <div className="mt-6">
+        <div className="mt-6 flex flex-wrap gap-3">
           <ShareButton slug={me.slug} />
+          <ResetSpaceButton />
         </div>
       </section>
 

@@ -97,5 +97,16 @@ export async function getSpaceBySlug(slug: string): Promise<CollectionSummary | 
 }
 
 export async function renameCollection(ownerToken: string, displayName: string) {
-  await prisma.collection.update({ where: { ownerToken }, data: { displayName: displayName.slice(0, 40) } });
+  const name = displayName.trim().slice(0, 40);
+  await prisma.collection.update({
+    where: { ownerToken },
+    data: { displayName: name || null },
+  });
+}
+
+/** Empty a collection (keeps the space + share slug, removes all collected words). */
+export async function resetCollection(ownerToken: string) {
+  const collection = await prisma.collection.findUnique({ where: { ownerToken } });
+  if (!collection) return;
+  await prisma.collectedWord.deleteMany({ where: { collectionId: collection.id } });
 }
