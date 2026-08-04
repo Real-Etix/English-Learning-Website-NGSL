@@ -113,6 +113,7 @@ export function GalaxyClient({
       {/* Legend */}
       <div className="pointer-events-none absolute left-4 top-4 flex flex-wrap gap-2 text-[11px] text-slate-400">
         {discoveryMode && <Legend swatch="#f0abfc" label="undiscovered" />}
+        {!discoveryMode && owned.size > 0 && <Legend swatch="#6ee7b7" label="collected" />}
         <Legend swatch="#7dd3fc" label="core word" />
         <Legend swatch="#c4b5fd" label="advanced" />
         <Legend swatch="#fde68a" label="hub" />

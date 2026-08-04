@@ -22,6 +22,22 @@ const ADVANCED_COLOR = new THREE.Color("#c4b5fd");
 const HUB_COLOR = new THREE.Color("#fde68a");
 const ISOLATED_COLOR = new THREE.Color("#cbd5e1");
 const UNDISCOVERED_COLOR = new THREE.Color("#f0abfc"); // words you don't have yet, when exploring a space
+const OWNED_COLOR = new THREE.Color("#6ee7b7"); // words already in your space
+
+function nodeColor(node: GNode, owned: Set<string> | undefined, discovery: boolean): THREE.Color {
+  if (discovery && owned && !owned.has(node.id)) return UNDISCOVERED_COLOR;
+  if (!discovery && owned && owned.has(node.id)) return OWNED_COLOR;
+  if (node.degree === 0) return ISOLATED_COLOR;
+  if (node.tier === "advanced") return ADVANCED_COLOR;
+  if (node.degree >= 8) return HUB_COLOR;
+  return CORE_COLOR;
+}
+
+function nodeScale(node: GNode, owned: Set<string> | undefined, discovery: boolean): number {
+  const base = node.degree === 0 ? 10 : 5 + Math.sqrt(node.degree) * 2.4;
+  const undiscovered = discovery && owned !== undefined && !owned.has(node.id);
+  return undiscovered ? base + 6 : base;
+}
 
 type GNode = {
   id: string;
@@ -136,6 +152,21 @@ export default function WordGalaxy({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Recolor/resize existing stars when the owned set changes — so a word turns
+  // "collected" the instant you collect it, without rebuilding every sprite.
+  useEffect(() => {
+    const data = fgRef.current?.graphData?.() as
+      | { nodes: (GNode & { __threeObj?: THREE.Sprite })[] }
+      | undefined;
+    if (!data) return;
+    for (const node of data.nodes) {
+      const sprite = node.__threeObj;
+      if (!sprite) continue;
+      (sprite.material as THREE.SpriteMaterial).color.copy(nodeColor(node, owned, discoveryMode === true));
+      sprite.scale.setScalar(nodeScale(node, owned, discoveryMode === true));
+    }
+  }, [owned, discoveryMode]);
+
   // Fly the camera to the selected star.
   useEffect(() => {
     const fg = fgRef.current;
@@ -165,30 +196,16 @@ export default function WordGalaxy({
         nodeLabel={(n: object) => (n as GNode).display}
         nodeThreeObject={(n: object) => {
           const node = n as GNode;
-          const isolated = node.degree === 0;
-          // Exploring a space: words you don't own yet glow magenta — the "discover me" cue.
-          const undiscovered = discoveryMode === true && owned !== undefined && !owned.has(node.id);
-          const color = undiscovered
-            ? UNDISCOVERED_COLOR
-            : isolated
-              ? ISOLATED_COLOR
-              : node.tier === "advanced"
-                ? ADVANCED_COLOR
-                : node.degree >= 8
-                  ? HUB_COLOR
-                  : CORE_COLOR;
           const material = new THREE.SpriteMaterial({
             map: glow,
-            color,
+            color: nodeColor(node, owned, discoveryMode === true),
             transparent: true,
-            opacity: undiscovered ? 1 : isolated ? 0.85 : 1,
+            opacity: node.degree === 0 ? 0.85 : 1,
             depthWrite: false,
             blending: THREE.AdditiveBlending,
           });
           const sprite = new THREE.Sprite(material);
-          const base = isolated ? 10 : 5 + Math.sqrt(node.degree) * 2.4;
-          // Undiscovered stars pop a bit bigger so they stand out to explore.
-          sprite.scale.setScalar(undiscovered ? base + 6 : base);
+          sprite.scale.setScalar(nodeScale(node, owned, discoveryMode === true));
           return sprite;
         }}
         linkColor={(l: object) => EDGE_COLOR[(l as { type: string }).type] ?? "#475569"}
