@@ -1,56 +1,59 @@
-# NGSL Mood Trainer
+# NGSL Vocabulary Galaxy
 
-A **Next.js** vocabulary study app built around the [New General Service List (NGSL)](https://www.newgeneralservicelist.com/new-general-service-list) family of lists. Learners pick a **goal track** (general, test prep, business, academic, or fitness English), practice with **listening and meaning** modes, and open **word cards** backed by definitions and examples from **documented public sources**—not paid generative APIs.
+A **Next.js** app that turns the [New General Service List (NGSL)](https://www.newgeneralservicelist.com/new-general-service-list) family of vocabulary lists into an explorable **3D universe of words**. Every word is a star; every line is a real relationship (synonym, antonym, "level-up" ladder). Learners orbit the galaxy, open a star for a Cambridge-style entry, **collect** words into their own space, and explore other people's spaces to discover vocabulary they don't have yet.
 
-The UI uses a **bright, high-contrast** theme (sky/slate) so content stays readable in daylight and on shared screens.
+It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM Wiki" pattern**: the vocabulary is a folder of interlinked markdown pages that an LLM maintains, and that same link structure powers the graph.
+
+**Live demo:** https://english-learning-website-ngsl.vercel.app
+
+---
+
+## What's in it
+
+- **3D vocabulary galaxy** (`react-force-graph-3d` / Three.js) — per list (NGSL, TOEIC, Business, Academic, Fitness) or "All". Orbit, zoom, search, and click a star to fly to it.
+- **Cambridge-style word cards** — IPA + UK/US audio (Free Dictionary API), definition, examples, the **advanced-word ladder** (`buy → purchase → procure`), synonyms/antonyms, word family.
+- **AI assistant** — a floating DeepSeek-powered tutor that writes with a list's real vocabulary, explains/quizzes words, and checks your writing.
+- **Collection spaces (Phase 1)** — collect words to earn XP, build **Your Space**, and share it (`/g/<slug>`). Visiting a space highlights the words you *don't* have in magenta.
+- **Rarity & leaderboard (Phase 2)** — each word shows how rare it is across explorers; spaces are ranked by XP at `/leaderboard`.
 
 ---
 
 ## Architecture
 
-- Learner **mood and goal** pick a list; **practice** uses a short, focused slice of words, while **full-catalog** pages cover the imported range for lookup without loading everything into the quiz.
-- **Next.js App Router**: server-rendered list and word routes, **Route Handlers** under `/api` for pronunciation and references, and client components for the quiz and **`localStorage`** progress.
-- Lists start as **CSV imports** and land in structured JSON (`data/generated/word-lists.json`). **Enrichments** layer manual seed data, build-time generation, and on-demand API results, with **`contentStatus`** and **source credits** on each word.
-- **Pronunciation** prefers **dictionary audio URLs**, then **Web Speech API**, with status text when a path is unavailable or playback fails.
-- **Progress** is read through **`useSyncExternalStore`** with a stable snapshot cache in `lib/progress/progress-service.ts`.
-- **`npm run import:lists`** and **`npm run generate:enrichments`** (Node + **tsx**) refresh list and enrichment data from the network; a **Prisma** schema is included for optional database storage later.
+### The wiki is the source of truth
+- `wiki/pages/*.md` — one markdown page per word (~11k), with YAML frontmatter and a `## Connections` section whose `[[wiki-links]]` are the graph edges. Schema in `wiki/CLAUDE.md`.
+- `wiki/raw/` — clippings ingested from articles (see the clipper below).
+
+### From wiki → graph (build-time)
+Reading 11k files per request is too slow, so `scripts/build-graph-data.ts` pre-computes a small **lite graph** (nodes + edges) per list into `data/generated/graphs/*.json`. Pages read those (`lib/wiki/graph-store.ts`), and word detail is fetched per-click via `/api/word/[lemma]`.
+> ⚠️ **Re-run `npm run build:graphs` and commit after any change to the wiki**, or the deployed galaxy shows stale data.
+
+### User data → Postgres
+Collections are per-user and mutable, so they live in **Postgres** (via **Prisma 7** with the `@prisma/adapter-pg` driver). Identity is an anonymous `ownerToken` cookie — no login. Models: `Collection`, `CollectedWord` (`prisma/schema.prisma`). The wiki content stays in files; only "who collected what" is in the DB.
+
+### Data pipeline (LLM + WordNet)
+```
+NGSL lists ──seed──> wiki/pages/*.md ──enrich(DeepSeek)──> advanced-word ladders
+   (WordNet defs + synonym/antonym edges; curated function words)
+```
 
 ---
 
-## The lists (basic ideas)
-
-All tracks are **NGSL-family** vocabulary from the same ecosystem; the app **re-labels** them by learner intent:
-
-| Track | Idea |
-|--------|------|
-| **NGSL (core)** | High-frequency “general service” words for everyday listening, reading, and conversation. |
-| **TOEIC-style** | Vocabulary framed for office, travel, and test-style contexts (still from the imported list set). |
-| **Business** | Lexis for workplace communication: clients, budgets, processes, collaboration. |
-| **Academic** | Words common in lectures, readings, and structured argument (analysis, theory, evidence). |
-| **Fitness** | Movement, training, recovery, and health-related vocabulary for active, lifestyle topics. |
-
-**Mood selector** on the home page is a thin UX layer: it routes to a default list (e.g. “Career” → business) so learners start quickly without reading documentation.
-
----
-
-## Tech stack
-
-- **Next.js 16** (App Router), **React 19**, **TypeScript**
-- **Tailwind CSS v4** (`@import "tailwindcss"` in `app/globals.css`)
-- **Zod** for runtime validation where used
-- **Prisma 7** + **PostgreSQL** (optional; schema present—app runs from generated JSON without a DB)
-- **tsx** for TypeScript CLI scripts
-
-### Main npm scripts
+## Scripts
 
 ```bash
-npm run dev              # local development
-npm run build && npm start   # production server
-npm run lint
+# Content pipeline (the wiki)
+npm run build:graphs         # regenerate per-list graph JSON (run after any wiki change)
+tsx scripts/seed-wiki-pages.ts        # WordNet + curated defs → wiki/pages/*.md
+tsx scripts/enrich-wiki-llm.ts        # DeepSeek adds advanced_form ladders (needs LLM_API_KEY)
+tsx scripts/lint-wiki.ts              # validate the wiki (0 errors expected)
+npm run seed:spaces          # seed curated public explore-spaces (needs a DB)
 
-npm run import:lists         # fetch/parse official CSVs → data/generated/word-lists.json
-npm run generate:enrichments # enrich lemmas (dictionary + corpus APIs) → enrichments.json + references.json
-npm run refresh:content      # both of the above
+# App
+npm run dev                  # local dev
+npm run build && npm start   # production
+npm test                     # vitest (xp + graph logic)
+npm run lint
 ```
 
 ---
@@ -59,27 +62,57 @@ npm run refresh:content      # both of the above
 
 ```bash
 npm install
-npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
-
-For database experiments (optional):
-
+**1. A local Postgres** (for collection/space features). Easiest via Docker:
 ```bash
-cp .env.example .env   # if present; set DATABASE_URL
-npm run db:generate
+docker run -d --name ngsl-pg -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres \
+  -e POSTGRES_DB=ngsl_mood_trainer -p 5432:5432 postgres:16
+```
+(If it stops after a sleep: `docker start ngsl-pg`.)
+
+**2. Environment** — copy `.env.example` → `.env` and fill in:
+```
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/ngsl_mood_trainer"
+LLM_API_KEY="sk-…"                       # DeepSeek key (for AI chat + enrichment)
+LLM_BASE_URL="https://api.deepseek.com/v1"
+LLM_MODEL="deepseek-v4-flash"
+```
+
+**3. Create tables + run:**
+```bash
 npm run db:push
+npm run seed:spaces      # optional: curated spaces to explore
+npm run dev              # http://localhost:3000
 ```
 
 ---
 
-## Live-demo
-https://english-learning-website-ngsl.vercel.app
+## Deploy (Vercel + Neon)
+
+1. **Hosted Postgres** — connect **Neon** to the Vercel project (auto-sets `DATABASE_URL`, pooled). Create tables once against the **direct** connection string:
+   ```bash
+   DATABASE_URL="<neon-DIRECT-url>" npm run db:push
+   DATABASE_URL="<neon-DIRECT-url>" npm run seed:spaces
+   ```
+2. **Env vars on Vercel** (Production): `DATABASE_URL` (pooled), `LLM_API_KEY`, `LLM_BASE_URL`, `LLM_MODEL`.
+3. **Push** — `postinstall` runs `prisma generate`; the graph JSONs are committed so builds don't read the wiki.
+
+> The Chrome **clipper** (`extension/`) is a local authoring tool — it writes to the filesystem, which Vercel's read-only FS doesn't allow.
 
 ---
 
+## Tech stack
+
+- **Next.js 16** (App Router), **React 19**, **TypeScript**, **Tailwind v4**
+- **Three.js** + `react-force-graph-3d` (galaxy), **WordNet** via `wordpos` (offline defs/edges)
+- **DeepSeek** (OpenAI-compatible) for enrichment + chat, via `scripts/llm-client.ts`
+- **Prisma 7** + **PostgreSQL** (`@prisma/adapter-pg`)
+- **Vitest** for the pure core logic
+- **tsx** for the CLI pipeline scripts
+
+---
 
 ## License and data
 
-List **content** comes from NGSL-family sources; check each list’s **license** on [newgeneralservicelist.com](https://www.newgeneralservicelist.com/) before redistributing. Enrichments cite **Dictionary API** and **Tatoeba** where applicable. You are responsible for complying with those terms in production.
+List **content** comes from NGSL-family sources; check each list's **license** on [newgeneralservicelist.com](https://www.newgeneralservicelist.com/) before redistributing. Definitions/relations use **WordNet** (Princeton) and the **Free Dictionary API**; examples cite **Tatoeba** where applicable. LLM-generated connections are labeled in each page's `sources`. You are responsible for complying with those terms in production.

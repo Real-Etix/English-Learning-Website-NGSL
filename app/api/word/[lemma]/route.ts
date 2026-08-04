@@ -1,10 +1,13 @@
+import { getWordRarity } from "@/lib/collection/service";
 import { fetchWordDetail } from "@/lib/content/word-detail";
 import { readPage } from "@/lib/wiki/parse-wiki";
 
+export const runtime = "nodejs";
+
 /**
  * Everything the detail drawer needs for one word: the wiki page (definition,
- * examples, connections) plus live dictionary data (IPA, audio, extra senses).
- * Fetched on star-click so the graph payload stays small.
+ * examples, connections), live dictionary data (IPA, audio, extra senses), and
+ * how rare it is across explorers. Fetched on star-click so the graph stays small.
  */
 export async function GET(
   _request: Request,
@@ -15,6 +18,9 @@ export async function GET(
   if (!page) {
     return Response.json({ error: "not found" }, { status: 404 });
   }
-  const detail = await fetchWordDetail(lemma);
-  return Response.json({ page, detail });
+  const [detail, rarity] = await Promise.all([
+    fetchWordDetail(lemma),
+    getWordRarity(lemma).catch(() => null), // DB may be unset in some envs
+  ]);
+  return Response.json({ page, detail, rarity });
 }

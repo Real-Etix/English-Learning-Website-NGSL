@@ -5,6 +5,7 @@ const navLinks = [
   { href: "/lists", label: "Lists" },
   { href: "/network/ngsl", label: "Galaxy" },
   { href: "/space", label: "My Space" },
+  { href: "/leaderboard", label: "Leaderboard" },
   { href: "/dashboard", label: "Dashboard" },
 ];
 

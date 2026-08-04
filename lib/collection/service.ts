@@ -110,3 +110,48 @@ export async function resetCollection(ownerToken: string) {
   if (!collection) return;
   await prisma.collectedWord.deleteMany({ where: { collectionId: collection.id } });
 }
+
+// --- Phase 2: rarity + leaderboard ---
+
+export type WordRarity = { owners: number; explorers: number; percent: number };
+
+/** How rare a word is: how many explorers (non-empty spaces) have collected it. */
+export async function getWordRarity(lemma: string): Promise<WordRarity> {
+  const [owners, explorers] = await Promise.all([
+    prisma.collectedWord.count({ where: { lemma } }),
+    prisma.collection.count({ where: { words: { some: {} } } }),
+  ]);
+  const percent = explorers > 0 ? Math.round((owners / explorers) * 100) : 0;
+  return { owners, explorers, percent };
+}
+
+export type LeaderboardEntry = {
+  rank: number;
+  slug: string;
+  displayName: string | null;
+  wordCount: number;
+  totalXp: number;
+  level: number;
+};
+
+/** Public spaces ranked by total XP (only spaces with at least one word). */
+export async function getLeaderboard(limit = 20): Promise<LeaderboardEntry[]> {
+  const collections = await prisma.collection.findMany({
+    where: { words: { some: {} } },
+    include: { words: { select: { xp: true } } },
+  });
+  return collections
+    .map((c) => {
+      const totalXp = c.words.reduce((sum, w) => sum + w.xp, 0);
+      return {
+        slug: c.slug,
+        displayName: c.displayName,
+        wordCount: c.words.length,
+        totalXp,
+        level: levelForXp(totalXp),
+      };
+    })
+    .sort((a, b) => b.totalXp - a.totalXp || b.wordCount - a.wordCount)
+    .slice(0, limit)
+    .map((entry, i) => ({ rank: i + 1, ...entry }));
+}

@@ -2,8 +2,16 @@
 
 import { useMemo, useRef } from "react";
 
+import type { WordRarity } from "@/lib/collection/service";
 import type { WikiPage } from "@/lib/wiki/parse-wiki";
 import type { WordDetail } from "@/lib/content/word-detail";
+
+function rarityLabel(r: WordRarity): { text: string; className: string } {
+  if (r.owners === 0) return { text: "🌑 Undiscovered — be the first to collect it", className: "bg-violet-500/20 text-violet-200" };
+  if (r.percent <= 10) return { text: `💎 Rare — only ${r.owners} of ${r.explorers} explorers have this`, className: "bg-amber-500/20 text-amber-200" };
+  if (r.percent <= 40) return { text: `Uncommon — ${r.percent}% of explorers have this`, className: "bg-sky-500/15 text-sky-200" };
+  return { text: `Common — ${r.percent}% of explorers have this`, className: "bg-white/5 text-slate-300" };
+}
 
 const CONN_LABEL: Record<string, string> = {
   advanced_form: "Level up to",
@@ -41,6 +49,7 @@ function PlayButton({ url, label }: { url: string; label: string }) {
 export function WordDetailPanel({
   page,
   detail,
+  rarity,
   nodeIds,
   owned,
   onCollect,
@@ -49,6 +58,7 @@ export function WordDetailPanel({
 }: {
   page: WikiPage;
   detail: WordDetail | null;
+  rarity: WordRarity | null;
   nodeIds: Set<string>;
   owned: Set<string>;
   onCollect: (lemma: string) => void;
@@ -56,6 +66,7 @@ export function WordDetailPanel({
   onClose: () => void;
 }) {
   const isOwned = owned.has(page.lemma);
+  const rarityInfo = rarity ? rarityLabel(rarity) : null;
   const grouped = useMemo(() => {
     const map = new Map<string, WikiPage["connections"]>();
     for (const c of page.connections) map.set(c.type, [...(map.get(c.type) ?? []), c]);
@@ -112,6 +123,12 @@ export function WordDetailPanel({
         >
           {isOwned ? "✓ In your space" : "⭐ Collect this word"}
         </button>
+
+        {rarityInfo && (
+          <div className={`rounded-lg px-3 py-1.5 text-xs font-medium ${rarityInfo.className}`}>
+            {rarityInfo.text}
+          </div>
+        )}
 
         <section>
           <p className="text-[15px] leading-7 text-slate-100">{page.definition}</p>

@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
 import { WordDetailPanel } from "@/components/network/word-detail-panel";
-import type { CollectionSummary } from "@/lib/collection/service";
+import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
 import type { GraphNode, LiteGraph, WikiPage } from "@/lib/wiki/parse-wiki";
 import type { WordDetail } from "@/lib/content/word-detail";
 
@@ -20,7 +20,7 @@ const WordGalaxy = dynamic(() => import("@/components/network/word-galaxy"), {
   ),
 });
 
-type WordResponse = { page: WikiPage; detail: WordDetail | null };
+type WordResponse = { page: WikiPage; detail: WordDetail | null; rarity: WordRarity | null };
 
 export function GalaxyClient({
   graph,
@@ -155,6 +155,7 @@ export function GalaxyClient({
             <WordDetailPanel
               page={data.page}
               detail={data.detail}
+              rarity={data.rarity}
               nodeIds={nodeIds}
               owned={owned}
               onCollect={collect}
