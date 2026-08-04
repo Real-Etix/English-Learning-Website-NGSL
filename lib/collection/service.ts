@@ -96,6 +96,13 @@ export async function getSpaceBySlug(slug: string): Promise<CollectionSummary | 
   return summarize(collection, collection.words);
 }
 
+/** Does a collection exist for this token? (used to validate a pasted recovery key) */
+export async function tokenHasCollection(token: string): Promise<boolean> {
+  if (!token) return false;
+  const c = await prisma.collection.findUnique({ where: { ownerToken: token }, select: { id: true } });
+  return c !== null;
+}
+
 export async function renameCollection(ownerToken: string, displayName: string) {
   const name = displayName.trim().slice(0, 40);
   await prisma.collection.update({

@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import Link from "next/link";
 
+import { RecoveryKey } from "@/components/collection/recovery-key";
 import { ShareButton } from "@/components/collection/share-button";
 import { ResetSpaceButton, SpaceName } from "@/components/collection/space-controls";
 import { GalaxyClient } from "@/components/network/galaxy-client";
@@ -27,6 +28,13 @@ export default async function SpacePage() {
         >
           Explore the galaxy →
         </Link>
+        <p className="mt-4 text-sm text-slate-500">
+          Have a space on another device?{" "}
+          <Link href="/restore" className="font-medium text-cyan-700 hover:text-cyan-900">
+            Restore it with your recovery key
+          </Link>
+          .
+        </p>
       </div>
     );
   }
@@ -65,6 +73,9 @@ export default async function SpacePage() {
         <div className="mt-6 flex flex-wrap gap-3">
           <ShareButton slug={me.slug} />
           <ResetSpaceButton />
+        </div>
+        <div className="mt-4 max-w-xl">
+          <RecoveryKey token={token ?? ""} />
         </div>
       </section>
 
