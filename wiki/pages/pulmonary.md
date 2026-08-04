@@ -16,3 +16,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[respiratory]] — Use 'pulmonary' when emphasizing the lungs specifically, rather than the entire respiratory process.
+- builds_on: [[lung]] — Use as an adjective instead of the noun 'lung' when describing medical, anatomical, or physiological contexts.

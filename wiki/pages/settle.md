@@ -24,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[perch]] — Use 'perch' when settling on a narrow or elevated surface, often temporarily or precariously.
 - advanced_form: [[descend]] — Use 'descend' when emphasizing the downward movement before settling.
 - builds_on: [[compromise]] — Use when the compromise ends a disagreement, often with a final decision.
+- builds_on: [[bench]] — Use when referring to a long wooden bench with a back, especially in traditional or rural settings.

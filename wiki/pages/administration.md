@@ -25,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[presidency]] — Use 'administration' to refer to the entire period and governing body of a president, not just the tenure.
 - builds_on: [[enforcement]] — Use 'administration' when referring to the official management and application of laws or punishments, implying a systematic process.
 - builds_on: [[bureaucracy]] — Use 'administration' when focusing on the management and executive functions, rather than the impersonal rule-bound system implied by 'bureaucracy'.
+- builds_on: [[regime]] — Use for the executive branch of government, especially in American English, more formal than 'government'.

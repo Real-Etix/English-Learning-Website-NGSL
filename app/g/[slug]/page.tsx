@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import { GalaxyClient } from "@/components/network/galaxy-client";
 import { getMySummary, getSpaceBySlug } from "@/lib/collection/service";
-import { buildCollectionGraph, readAllPages, toLiteGraph } from "@/lib/wiki/parse-wiki";
+import { loadCollectionGraph } from "@/lib/wiki/graph-store";
 
 export const dynamic = "force-dynamic"; // reads a public space + the visitor's cookie
 
@@ -22,8 +22,7 @@ export default async function VisitSpacePage({
   const mine = new Set(me?.lemmas ?? []);
   const undiscovered = space.lemmas.filter((l) => !mine.has(l)).length;
 
-  const pages = await readAllPages();
-  const graph = toLiteGraph(buildCollectionGraph(pages, new Set(space.lemmas)));
+  const graph = await loadCollectionGraph(new Set(space.lemmas));
   const name = space.displayName ?? slug;
 
   return (

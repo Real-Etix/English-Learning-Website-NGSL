@@ -4,12 +4,11 @@ import { GalaxyClient } from "@/components/network/galaxy-client";
 import { ListSelector } from "@/components/learn/list-selector";
 import { MoodSelector } from "@/components/learn/mood-selector";
 import { getFeaturedLists } from "@/lib/content/content-service";
-import { buildListGraph, readAllPages, toLiteGraph } from "@/lib/wiki/parse-wiki";
+import { loadListGraph } from "@/lib/wiki/graph-store";
 
 export default async function Home() {
   const lists = getFeaturedLists();
-  const pages = await readAllPages();
-  const graph = toLiteGraph(buildListGraph(pages, "ngsl"));
+  const graph = await loadListGraph("ngsl");
 
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 py-12">

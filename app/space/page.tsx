@@ -5,7 +5,7 @@ import { ShareButton } from "@/components/collection/share-button";
 import { ResetSpaceButton, SpaceName } from "@/components/collection/space-controls";
 import { GalaxyClient } from "@/components/network/galaxy-client";
 import { getMySummary } from "@/lib/collection/service";
-import { buildCollectionGraph, readAllPages, toLiteGraph } from "@/lib/wiki/parse-wiki";
+import { loadCollectionGraph } from "@/lib/wiki/graph-store";
 
 export const dynamic = "force-dynamic"; // reads the owner cookie + DB
 
@@ -31,8 +31,7 @@ export default async function SpacePage() {
     );
   }
 
-  const pages = await readAllPages();
-  const graph = toLiteGraph(buildCollectionGraph(pages, new Set(me.lemmas)));
+  const graph = await loadCollectionGraph(new Set(me.lemmas));
 
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-12">

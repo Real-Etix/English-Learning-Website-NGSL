@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { GalaxyClient } from "@/components/network/galaxy-client";
 import { getListBySlug } from "@/lib/content/content-service";
-import { buildListGraph, readAllPages, toLiteGraph } from "@/lib/wiki/parse-wiki";
+import { loadListGraph } from "@/lib/wiki/graph-store";
 import type { LearningListSlug } from "@/lib/types";
 
 // Pre-render each list galaxy at build time (reads the 11k wiki files on the
@@ -25,8 +25,7 @@ export default async function NetworkPage({
     notFound();
   }
 
-  const pages = await readAllPages();
-  const graph = toLiteGraph(buildListGraph(pages, listSlug));
+  const graph = await loadListGraph(listSlug);
   const title = list ? list.title : "All words";
 
   return (

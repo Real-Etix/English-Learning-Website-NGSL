@@ -24,3 +24,4 @@ the act of forming or establishing something
 - builds_on: [[facility]] — Use 'establishment' when emphasizing the organization or business aspect of the facility.
 - builds_on: [[mainstream]] — Use 'establishment' to highlight the influential, often conservative group that controls a field, rather than the general current of thought.
 - builds_on: [[institution]] — Use 'establishment' to emphasize a well-known, long-lasting institution, often with a sense of authority or tradition.
+- builds_on: [[regime]] — Use for the entrenched group holding power, often with a critical tone.

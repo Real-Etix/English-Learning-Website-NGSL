@@ -22,3 +22,4 @@ _No sourced examples yet._
 - advanced_form: [[variant]] — Use when specifying a different version of the word's sound or spelling, rather than the general form.
 - advanced_form: [[realization]] — Use when emphasizing the actual pronunciation or spelling as it appears in context, rather than the abstract form.
 - builds_on: [[body]] — Use 'form' for the visible shape or outline of the body, often in art, dance, or movement.
+- builds_on: [[bench]] — Use in British English for a long bench without a back.
