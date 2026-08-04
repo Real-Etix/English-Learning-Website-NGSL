@@ -3,7 +3,10 @@
 import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 
+import Link from "next/link";
+
 import { WordDetailPanel } from "@/components/network/word-detail-panel";
+import type { CollectionSummary } from "@/lib/collection/service";
 import type { GraphNode, LiteGraph, WikiPage } from "@/lib/wiki/parse-wiki";
 import type { WordDetail } from "@/lib/content/word-detail";
 
@@ -19,13 +22,57 @@ const WordGalaxy = dynamic(() => import("@/components/network/word-galaxy"), {
 
 type WordResponse = { page: WikiPage; detail: WordDetail | null };
 
-export function GalaxyClient({ graph }: { graph: LiteGraph }) {
+export function GalaxyClient({
+  graph,
+  discoveryMode = false,
+}: {
+  graph: LiteGraph;
+  discoveryMode?: boolean;
+}) {
   const [selected, setSelected] = useState<string | null>(null);
   const [data, setData] = useState<WordResponse | null>(null);
   const [loading, setLoading] = useState(false);
+  const [owned, setOwned] = useState<Set<string>>(new Set());
+  const [me, setMe] = useState<CollectionSummary | null>(null);
+  const [meLoaded, setMeLoaded] = useState(false);
+  const [toast, setToast] = useState<string | null>(null);
 
   // Which lemmas are stars in this galaxy — so the drawer knows what's clickable.
   const nodeIds = useMemo(() => new Set(graph.nodes.map((n) => n.lemma)), [graph.nodes]);
+
+  // Load the visitor's collection (anonymous, cookie-owned).
+  useEffect(() => {
+    fetch("/api/me")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { me: CollectionSummary | null } | null) => {
+        if (d?.me) {
+          setMe(d.me);
+          setOwned(new Set(d.me.lemmas));
+        }
+      })
+      .catch(() => {})
+      .finally(() => setMeLoaded(true));
+  }, []);
+
+  const collect = (lemma: string) => {
+    setOwned((prev) => new Set(prev).add(lemma)); // optimistic
+    fetch("/api/collect", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ lemma }),
+    })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { added?: boolean; xp?: number; summary?: CollectionSummary } | null) => {
+        if (!d?.summary) return;
+        setMe(d.summary);
+        setOwned(new Set(d.summary.lemmas));
+        if (d.added && d.xp) {
+          setToast(`+${d.xp} XP · ${lemma}`);
+          setTimeout(() => setToast(null), 2200);
+        }
+      })
+      .catch(() => {});
+  };
 
   useEffect(() => {
     if (!selected) {
@@ -47,12 +94,25 @@ export function GalaxyClient({ graph }: { graph: LiteGraph }) {
 
   return (
     <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#05060f] shadow-[0_0_80px_rgba(56,189,248,0.08)_inset]">
-      <WordGalaxy graph={graph} selected={selected} onSelect={setSelected} />
+      {discoveryMode && !meLoaded ? (
+        <div className="flex h-[640px] items-center justify-center bg-[#05060f] text-sm text-slate-500">
+          Scanning this space for words you haven&apos;t discovered…
+        </div>
+      ) : (
+        <WordGalaxy
+          graph={graph}
+          selected={selected}
+          onSelect={setSelected}
+          owned={owned}
+          discoveryMode={discoveryMode}
+        />
+      )}
 
       <GalaxySearch nodes={graph.nodes} onPick={setSelected} />
 
       {/* Legend */}
       <div className="pointer-events-none absolute left-4 top-4 flex flex-wrap gap-2 text-[11px] text-slate-400">
+        {discoveryMode && <Legend swatch="#f0abfc" label="undiscovered" />}
         <Legend swatch="#7dd3fc" label="core word" />
         <Legend swatch="#c4b5fd" label="advanced" />
         <Legend swatch="#fde68a" label="hub" />
@@ -67,6 +127,26 @@ export function GalaxyClient({ graph }: { graph: LiteGraph }) {
         drag to orbit · scroll to zoom · click a star
       </div>
 
+      {/* Your Space HUD */}
+      {me && (
+        <Link
+          href="/space"
+          className="absolute bottom-4 right-4 z-20 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-200 backdrop-blur-md transition hover:bg-white/10"
+        >
+          <span aria-hidden>🌌</span>
+          <span className="font-semibold text-sky-200">Lv {me.level}</span>
+          <span className="text-slate-400">{me.totalXp} XP · {me.wordCount} words</span>
+          <span className="text-slate-500">→ Your Space</span>
+        </Link>
+      )}
+
+      {/* XP toast */}
+      {toast && (
+        <div className="pointer-events-none absolute left-1/2 top-20 z-30 -translate-x-1/2 rounded-full bg-emerald-500/90 px-4 py-1.5 text-sm font-semibold text-white shadow-lg">
+          {toast}
+        </div>
+      )}
+
       {/* Detail drawer */}
       {selected && (
         <div className="absolute right-0 top-0 h-full w-full border-l border-white/10 bg-[#0a0d1aee] backdrop-blur-md sm:w-[400px]">
@@ -75,6 +155,8 @@ export function GalaxyClient({ graph }: { graph: LiteGraph }) {
               page={data.page}
               detail={data.detail}
               nodeIds={nodeIds}
+              owned={owned}
+              onCollect={collect}
               onSelect={(lemma) => setSelected(lemma)}
               onClose={() => setSelected(null)}
             />

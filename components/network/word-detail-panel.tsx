@@ -42,15 +42,20 @@ export function WordDetailPanel({
   page,
   detail,
   nodeIds,
+  owned,
+  onCollect,
   onSelect,
   onClose,
 }: {
   page: WikiPage;
   detail: WordDetail | null;
   nodeIds: Set<string>;
+  owned: Set<string>;
+  onCollect: (lemma: string) => void;
   onSelect: (lemma: string) => void;
   onClose: () => void;
 }) {
+  const isOwned = owned.has(page.lemma);
   const grouped = useMemo(() => {
     const map = new Map<string, WikiPage["connections"]>();
     for (const c of page.connections) map.set(c.type, [...(map.get(c.type) ?? []), c]);
@@ -96,6 +101,18 @@ export function WordDetailPanel({
       </div>
 
       <div className="flex-1 space-y-5 overflow-y-auto p-5">
+        <button
+          onClick={() => !isOwned && onCollect(page.lemma)}
+          disabled={isOwned}
+          className={`w-full rounded-xl px-4 py-2.5 text-sm font-semibold transition ${
+            isOwned
+              ? "cursor-default bg-emerald-500/15 text-emerald-300"
+              : "bg-gradient-to-r from-sky-500 to-violet-500 text-white hover:opacity-90"
+          }`}
+        >
+          {isOwned ? "✓ In your space" : "⭐ Collect this word"}
+        </button>
+
         <section>
           <p className="text-[15px] leading-7 text-slate-100">{page.definition}</p>
           {page.domains.length > 0 && (

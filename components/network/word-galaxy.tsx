@@ -21,6 +21,7 @@ const CORE_COLOR = new THREE.Color("#7dd3fc");
 const ADVANCED_COLOR = new THREE.Color("#c4b5fd");
 const HUB_COLOR = new THREE.Color("#fde68a");
 const ISOLATED_COLOR = new THREE.Color("#cbd5e1");
+const UNDISCOVERED_COLOR = new THREE.Color("#f0abfc"); // words you don't have yet, when exploring a space
 
 type GNode = {
   id: string;
@@ -77,10 +78,14 @@ export default function WordGalaxy({
   graph,
   selected,
   onSelect,
+  owned,
+  discoveryMode,
 }: {
   graph: LiteGraph;
   selected: string | null;
   onSelect: (lemma: string | null) => void;
+  owned?: Set<string>;
+  discoveryMode?: boolean;
 }) {
   const wrapRef = useRef<HTMLDivElement | null>(null);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -161,25 +166,29 @@ export default function WordGalaxy({
         nodeThreeObject={(n: object) => {
           const node = n as GNode;
           const isolated = node.degree === 0;
-          const color = isolated
-            ? ISOLATED_COLOR
-            : node.tier === "advanced"
-              ? ADVANCED_COLOR
-              : node.degree >= 8
-                ? HUB_COLOR
-                : CORE_COLOR;
+          // Exploring a space: words you don't own yet glow magenta — the "discover me" cue.
+          const undiscovered = discoveryMode === true && owned !== undefined && !owned.has(node.id);
+          const color = undiscovered
+            ? UNDISCOVERED_COLOR
+            : isolated
+              ? ISOLATED_COLOR
+              : node.tier === "advanced"
+                ? ADVANCED_COLOR
+                : node.degree >= 8
+                  ? HUB_COLOR
+                  : CORE_COLOR;
           const material = new THREE.SpriteMaterial({
             map: glow,
             color,
             transparent: true,
-            opacity: isolated ? 0.85 : 1,
+            opacity: undiscovered ? 1 : isolated ? 0.85 : 1,
             depthWrite: false,
             blending: THREE.AdditiveBlending,
           });
           const sprite = new THREE.Sprite(material);
-          // Unconnected words: soft light-grey, clearly visible and an easy click target.
-          const s = isolated ? 10 : 5 + Math.sqrt(node.degree) * 2.4;
-          sprite.scale.set(s, s, 1);
+          const base = isolated ? 10 : 5 + Math.sqrt(node.degree) * 2.4;
+          // Undiscovered stars pop a bit bigger so they stand out to explore.
+          sprite.scale.setScalar(undiscovered ? base + 6 : base);
           return sprite;
         }}
         linkColor={(l: object) => EDGE_COLOR[(l as { type: string }).type] ?? "#475569"}
