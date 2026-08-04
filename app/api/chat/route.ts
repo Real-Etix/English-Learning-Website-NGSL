@@ -13,8 +13,13 @@ const SYSTEM_BASE =
   "Help learners practice and understand vocabulary. When asked to write a story, " +
   "paragraph, or dialogue using a particular list's vocabulary, use real words from " +
   "that list (shown below) and **bold** each one you use. When explaining or quizzing, " +
-  "keep answers clear and encouraging. Use simple markdown. Keep replies concise unless " +
-  "asked for something longer.";
+  "keep answers clear and encouraging. " +
+  "When the learner shares their own writing and asks you to check it, briefly: " +
+  "(1) point out any grammar or clarity issues with short corrections, then " +
+  "(2) suggest a few places where a more advanced or precise word (prefer words from the " +
+  "lists below) would improve it, showing the swap like plain → **advanced**. Be kind and " +
+  "concise; don't rewrite the whole thing unless asked. " +
+  "Use simple markdown. Keep replies concise unless asked for something longer.";
 
 export async function POST(request: Request) {
   if (!hasLLM()) {

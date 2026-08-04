@@ -5,10 +5,12 @@ import { useEffect, useRef, useState } from "react";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
-const SUGGESTIONS = [
-  "Write a short story using academic vocabulary",
-  "Quiz me on 5 business words",
-  "What's an advanced word for “happy”?",
+// `prefill` suggestions drop text into the box (so you paste after it); the rest send immediately.
+const SUGGESTIONS: { label: string; prefill?: string }[] = [
+  { label: "Write a short story using academic vocabulary" },
+  { label: "Quiz me on 5 business words" },
+  { label: "What's an advanced word for “happy”?" },
+  { label: "✍️ Check my writing", prefill: "Check my writing for grammar and suggest more advanced words:\n\n" },
 ];
 
 /** Minimal **bold** rendering so the tutor's highlighted words stand out. */
@@ -33,6 +35,7 @@ export function AiChat() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
@@ -87,11 +90,18 @@ export function AiChat() {
                 <p className="text-sm text-slate-500">Try one of these:</p>
                 {SUGGESTIONS.map((s) => (
                   <button
-                    key={s}
-                    onClick={() => send(s)}
+                    key={s.label}
+                    onClick={() => {
+                      if (s.prefill) {
+                        setInput(s.prefill);
+                        textareaRef.current?.focus();
+                      } else {
+                        send(s.label);
+                      }
+                    }}
                     className="block w-full rounded-lg border border-slate-200 px-3 py-2 text-left text-sm text-slate-700 transition hover:bg-sky-50"
                   >
-                    {s}
+                    {s.label}
                   </button>
                 ))}
               </div>
@@ -123,6 +133,7 @@ export function AiChat() {
             className="flex items-end gap-2 border-t border-slate-100 p-3"
           >
             <textarea
+              ref={textareaRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => {
