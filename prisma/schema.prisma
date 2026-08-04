@@ -185,3 +185,28 @@ model AiGeneration {
   user           User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
   lemma          Lemma?   @relation(fields: [lemmaId], references: [id], onDelete: SetNull)
 }
+
+// --- Phase 1: shareable discovery spaces (anonymous, cookie-owned) ---
+
+model Collection {
+  id          String          @id @default(cuid())
+  slug        String          @unique // public share slug, e.g. "brave-otter-42"
+  ownerToken  String          @unique // secret, stored in the owner's httpOnly cookie
+  displayName String?
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  words       CollectedWord[]
+}
+
+model CollectedWord {
+  id           String     @id @default(cuid())
+  collectionId String
+  lemma        String // references a wiki page lemma
+  xp           Int        @default(0)
+  source       String     @default("collected") // collected | learned | clipped
+  createdAt    DateTime   @default(now())
+  collection   Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
+
+  @@unique([collectionId, lemma])
+  @@index([collectionId])
+}

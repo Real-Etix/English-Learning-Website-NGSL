@@ -198,6 +198,11 @@ export function buildListGraph(pages: WikiPage[], slug: string): ListGraph {
       if (target?.tier === "advanced") includedSet.add(target.lemma);
     }
   }
+  return assembleGraph(pages, includedSet, slug);
+}
+
+/** Assemble a graph from an explicit set of included lemmas (shared by list + collection views). */
+function assembleGraph(pages: WikiPage[], includedSet: Set<string>, slug: string): ListGraph {
   const included = pages.filter((p) => includedSet.has(p.lemma));
   const nodeSet = new Set(included.map((p) => p.lemma));
   const pageMap: Record<string, WikiPage> = {};
@@ -238,4 +243,9 @@ export function buildListGraph(pages: WikiPage[], slug: string): ListGraph {
     pages: pageMap,
     isolatedCount: included.filter((p) => (degree.get(p.lemma) ?? 0) === 0).length,
   };
+}
+
+/** A learner's collected words rendered as their own galaxy. */
+export function buildCollectionGraph(pages: WikiPage[], lemmas: Set<string>): ListGraph {
+  return assembleGraph(pages, lemmas, "collection");
 }

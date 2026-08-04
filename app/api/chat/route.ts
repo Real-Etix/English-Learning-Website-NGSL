@@ -1,7 +1,12 @@
 import { getListVocab, sampleWords } from "@/lib/content/list-vocab";
+import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM, type ChatMessage } from "@/scripts/llm-client";
 
 export const runtime = "nodejs";
+
+// Per-IP cap so a single client can't run up the DeepSeek bill.
+const CHAT_LIMIT = 15;
+const CHAT_WINDOW_MS = 60_000;
 
 const SYSTEM_BASE =
   "You are a friendly English vocabulary tutor inside the NGSL Mood Trainer app. " +
@@ -16,6 +21,14 @@ export async function POST(request: Request) {
     return Response.json(
       { error: "The AI assistant isn't configured on this deployment (missing LLM_API_KEY)." },
       { status: 503 },
+    );
+  }
+
+  const limit = rateLimit(`chat:${clientIp(request)}`, CHAT_LIMIT, CHAT_WINDOW_MS);
+  if (!limit.ok) {
+    return Response.json(
+      { error: `You're sending messages too fast — wait ${limit.retryAfterSec}s and try again.` },
+      { status: 429, headers: { "Retry-After": String(limit.retryAfterSec) } },
     );
   }
 
