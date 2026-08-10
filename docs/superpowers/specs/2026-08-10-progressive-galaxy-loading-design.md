@@ -82,6 +82,9 @@ type GalaxyManifest = {
     label: string;
     wordCount: number;
     chartCount: number;
+    coreCount: number;
+    advancedCount: number;
+    driftCount: number;
   };
   charts: Array<{
     id: string;
@@ -93,11 +96,11 @@ type GalaxyManifest = {
     radius: number;
     previewSeed: number;
     neighbors: Array<{ chartId: string; weight: number }>;
+    asset: { url: string; bytes: number };
   }>;
   assets: {
-    searchIndex: string;
-    full: string;
-    chartBase: string;
+    searchIndex: { url: string; bytes: number };
+    full: { url: string; bytes: number };
   };
 };
 ```
