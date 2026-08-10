@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 
+import type { LiteGraph } from "@/lib/wiki/parse-wiki";
+
 import { buildGalaxyArtifacts } from "./build-artifacts";
 import { decodeFullGalaxy } from "./full-codec";
 import { fixtureGraph as graph } from "./test-fixture";
@@ -21,5 +23,23 @@ describe("buildGalaxyArtifacts", () => {
     expect(bundle.chartShards.find((item) => item.data.chartId === "motion")?.data.portals).toContainEqual({
       source: "move", target: "talk", targetChart: "speech", type: "collocation",
     });
+  });
+
+  it("sorts Unicode search entries with locale-independent ordinal ordering", () => {
+    const unicodeGraph = {
+      ...graph,
+      nodes: [
+        { lemma: "aland", display: "Åland", tier: "core", pos: "noun", rank: 1, chart: "speech", degree: 0 },
+        { lemma: "zulu", display: "Zulu", tier: "core", pos: "noun", rank: 2, chart: "speech", degree: 0 },
+        { lemma: "aether", display: "Æther", tier: "core", pos: "noun", rank: 3, chart: "speech", degree: 0 },
+      ],
+      edges: [],
+      isolatedCount: 3,
+    } satisfies LiteGraph;
+
+    const displays = buildGalaxyArtifacts(unicodeGraph, "Unicode Fixture")
+      .search.data.entries.map((entry) => entry.display);
+
+    expect(displays).toEqual(["Åland", "Zulu", "Æther"]);
   });
 });

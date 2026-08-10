@@ -19,6 +19,10 @@ export function normalizeGalaxySearch(value: string): string {
   return value.normalize("NFKD").replace(/\p{M}/gu, "").trim().toLowerCase().replace(/\s+/g, " ");
 }
 
+function compareOrdinal(a: string, b: string): number {
+  return a < b ? -1 : a > b ? 1 : 0;
+}
+
 function hashBytes(bytes: Uint8Array): string {
   return createHash("sha256").update(bytes).digest("hex");
 }
@@ -72,7 +76,7 @@ export function buildGalaxyArtifacts(graph: LiteGraph, label: string): GalaxyArt
     version,
     listSlug: positioned.listSlug,
     entries: positioned.words.map(({ xyz: _xyz, ...word }) => ({ ...word, normalized: normalizeGalaxySearch(word.display) }))
-      .sort((a, b) => a.normalized.localeCompare(b.normalized) || a.lemma.localeCompare(b.lemma)),
+      .sort((a, b) => compareOrdinal(a.normalized, b.normalized) || compareOrdinal(a.lemma, b.lemma)),
   };
   const searchBytes = encoder.encode(JSON.stringify(searchData));
   const searchAsset = makeAsset(positioned.listSlug, "search", "json", searchBytes);
