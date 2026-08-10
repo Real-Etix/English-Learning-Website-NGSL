@@ -27,6 +27,7 @@ function random(seed: number) {
 }
 
 const titleCase = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
+const compareOrdinal = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0;
 const normalize = ([x, y, z]: Vec3): Vec3 => {
   const length = Math.hypot(x, y, z) || 1;
   return [x / length, y / length, z / length];
@@ -46,7 +47,7 @@ export function layoutGalaxy(graph: LiteGraph, label: string): PositionedGalaxy 
   const chartIds = [...groups.keys()].sort((a, b) => {
     if (a === "drift") return 1;
     if (b === "drift") return -1;
-    return (groups.get(b)?.length || 0) - (groups.get(a)?.length || 0) || a.localeCompare(b);
+    return (groups.get(b)?.length || 0) - (groups.get(a)?.length || 0) || compareOrdinal(a, b);
   });
   const centers = new Map<string, Vec3>();
   const charts = chartIds.map((id, index) => {
@@ -70,7 +71,7 @@ export function layoutGalaxy(graph: LiteGraph, label: string): PositionedGalaxy 
   });
   const words: PositionedWord[] = [];
   for (const chartId of chartIds) {
-    const members = [...(groups.get(chartId) || [])].sort((a, b) => b.degree - a.degree || a.lemma.localeCompare(b.lemma));
+    const members = [...(groups.get(chartId) || [])].sort((a, b) => b.degree - a.degree || compareOrdinal(a.lemma, b.lemma));
     const rnd = random(hashSeed(`${graph.slug}:${chartId}:words`));
     const center = centers.get(chartId) as Vec3;
     const axis = normalize(center);
@@ -121,12 +122,12 @@ export function layoutGalaxy(graph: LiteGraph, label: string): PositionedGalaxy 
   const chartLinks: ChartLink[] = [...weights].map(([key, weight]) => {
     const [sourceChart, targetChart] = key.split("\u0000");
     return { sourceChart, targetChart, weight };
-  }).sort((a, b) => b.weight - a.weight || a.sourceChart.localeCompare(b.sourceChart));
+  }).sort((a, b) => b.weight - a.weight || compareOrdinal(a.sourceChart, b.sourceChart));
   for (const chart of charts) {
     chart.neighbors = chartLinks
       .filter((link) => link.sourceChart === chart.id || link.targetChart === chart.id)
       .map((link) => ({ chartId: link.sourceChart === chart.id ? link.targetChart : link.sourceChart, weight: link.weight }))
-      .sort((a, b) => b.weight - a.weight || a.chartId.localeCompare(b.chartId))
+      .sort((a, b) => b.weight - a.weight || compareOrdinal(a.chartId, b.chartId))
       .slice(0, 8);
   }
   return { listSlug: graph.slug, label, charts, words, edges: graph.edges, chartLinks };
