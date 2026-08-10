@@ -63,6 +63,28 @@ describe("downloadBytes", () => {
 });
 
 describe("ChartShardStore", () => {
+  it.each([
+    ["word", (shard: ChartShard) => Object.assign(shard.words[0] as unknown as Record<string, unknown>, {
+      tier: "expert",
+      rank: "10",
+      degree: null,
+      xyz: [0, "not-a-number", 2],
+    })],
+    ["edge", (shard: ChartShard) => Object.assign(shard.edges[0] as unknown as Record<string, unknown>, { target: 42 })],
+    ["portal", (shard: ChartShard) => Object.assign(shard.portals[0] as unknown as Record<string, unknown>, { targetChart: 42 })],
+  ])("rejects a malformed nested %s at the fetch guard boundary", async (_kind, mutate) => {
+    const malformed = structuredClone(shards.get("speech")!);
+    mutate(malformed);
+    const fetcher = vi.fn(async () => new Response(JSON.stringify(malformed), { status: 200 })) as typeof fetch;
+    const store = new ChartShardStore(manifest, { capacity: 2, concurrency: 1, fetcher });
+
+    await expect(store.load("speech")).rejects.toMatchObject({
+      code: "decode",
+      cause: { message: "Asset shape did not match its guard" },
+    });
+    expect(store.get("speech")).toBeNull();
+  });
+
   it("deduplicates concurrent chart loads", async () => {
     const fetcher = shardFetcher();
     const store = new ChartShardStore(manifest, { capacity: 2, concurrency: 2, fetcher });

@@ -9,6 +9,21 @@ const manifest = bundle.manifest;
 const searchData = bundle.search.data;
 
 describe("GalaxySearchCatalog", () => {
+  it("rejects malformed entries before normalized reaches startsWith", async () => {
+    const malformed = structuredClone(searchData) as unknown as {
+      entries: Record<string, unknown>[];
+    };
+    malformed.entries[0].normalized = 7;
+    const fetcher = vi.fn(async () => new Response(JSON.stringify(malformed), { status: 200 })) as typeof fetch;
+    const catalog = new GalaxySearchCatalog(manifest, { fetcher });
+
+    await expect(catalog.load()).rejects.toMatchObject({
+      code: "decode",
+      cause: { message: "Asset shape did not match its guard" },
+    });
+    expect(catalog.find("speak")).toEqual([]);
+  });
+
   it("ranks exact, prefix, then one-edit fuzzy matches", () => {
     const catalog = GalaxySearchCatalog.fromData(searchData);
 

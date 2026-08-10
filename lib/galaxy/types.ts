@@ -64,6 +64,39 @@ export type PositionedGalaxy = {
 };
 
 const isRecord = (value: unknown): value is Record<string, unknown> => typeof value === "object" && value !== null;
+const isFiniteNumber = (value: unknown): value is number => typeof value === "number" && Number.isFinite(value);
+
+function hasWordScalars(value: Record<string, unknown>): boolean {
+  return typeof value.lemma === "string"
+    && typeof value.display === "string"
+    && (value.tier === "core" || value.tier === "advanced")
+    && typeof value.partOfSpeech === "string"
+    && (value.rank === null || isFiniteNumber(value.rank))
+    && isFiniteNumber(value.degree)
+    && typeof value.chartId === "string";
+}
+
+function isVec3(value: unknown): value is Vec3 {
+  return Array.isArray(value) && value.length === 3 && value.every(isFiniteNumber);
+}
+
+function isPositionedWord(value: unknown): value is PositionedWord {
+  return isRecord(value) && hasWordScalars(value) && isVec3(value.xyz);
+}
+
+function isShardEdge(value: unknown): value is ShardEdge {
+  return isRecord(value) && typeof value.source === "string"
+    && typeof value.target === "string" && typeof value.type === "string";
+}
+
+function isShardPortal(value: unknown): value is ShardPortal {
+  return isRecord(value) && typeof value.source === "string" && typeof value.target === "string"
+    && typeof value.type === "string" && typeof value.targetChart === "string";
+}
+
+function isSearchEntry(value: unknown): value is SearchEntry {
+  return isRecord(value) && hasWordScalars(value) && typeof value.normalized === "string";
+}
 
 export function isGalaxyManifest(value: unknown): value is GalaxyManifest {
   if (!isRecord(value) || typeof value.version !== "string" || !isRecord(value.list) || !isRecord(value.assets)) return false;
@@ -78,11 +111,12 @@ export function isGalaxyManifest(value: unknown): value is GalaxyManifest {
 
 export function isChartShard(value: unknown): value is ChartShard {
   return isRecord(value) && typeof value.version === "string" && typeof value.listSlug === "string"
-    && typeof value.chartId === "string" && Array.isArray(value.words)
-    && Array.isArray(value.edges) && Array.isArray(value.portals);
+    && typeof value.chartId === "string" && Array.isArray(value.words) && value.words.every(isPositionedWord)
+    && Array.isArray(value.edges) && value.edges.every(isShardEdge)
+    && Array.isArray(value.portals) && value.portals.every(isShardPortal);
 }
 
 export function isSearchCatalogData(value: unknown): value is SearchCatalogData {
   return isRecord(value) && typeof value.version === "string" && typeof value.listSlug === "string"
-    && Array.isArray(value.entries);
+    && Array.isArray(value.entries) && value.entries.every(isSearchEntry);
 }
