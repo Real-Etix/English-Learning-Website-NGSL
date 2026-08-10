@@ -4,7 +4,10 @@ import type { LiteGraph } from "@/lib/wiki/parse-wiki";
 
 import { encodeFullGalaxy } from "./full-codec";
 import { layoutGalaxy } from "./layout";
+import { normalizeGalaxySearch } from "./normalize-search";
 import type { AssetRef, ChartShard, GalaxyManifest, SearchCatalogData, ShardEdge } from "./types";
+
+export { normalizeGalaxySearch } from "./normalize-search";
 
 export type GalaxyArtifactBundle = {
   manifest: GalaxyManifest;
@@ -14,10 +17,6 @@ export type GalaxyArtifactBundle = {
 };
 
 const encoder = new TextEncoder();
-
-export function normalizeGalaxySearch(value: string): string {
-  return value.normalize("NFKD").replace(/\p{M}/gu, "").trim().toLowerCase().replace(/\s+/g, " ");
-}
 
 function compareOrdinal(a: string, b: string): number {
   return a < b ? -1 : a > b ? 1 : 0;
