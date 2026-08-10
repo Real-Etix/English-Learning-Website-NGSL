@@ -9,6 +9,8 @@ rank: 1524
 sfi: 57.27
 sources: [wordnet, llm]
 status: enriched
+chart: amaze
+region: amaze
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[astonish]] — Use 'astonish' when the wonder is sudden and surprising, often with a sense of disbelief.
 - advanced_form: [[astound]] — Use 'astound' when the amazement is so great that it seems almost unbelievable or shocking.
 - advanced_form: [[stun]] — Use 'stun' when the effect is so powerful that it temporarily shocks or paralyzes the person's reaction.
+- synonym: [[dazzle]]

@@ -9,6 +9,8 @@ rank: 494
 sfi: 53.49
 sources: [wordnet, llm]
 status: enriched
+chart: lizard
+region: lizard
 ---
 
 ## Definition

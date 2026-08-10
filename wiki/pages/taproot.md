@@ -6,6 +6,8 @@ pos: noun
 forms: [taproot]
 sources: [llm]
 status: enriched
+chart: root
+region: you
 ---
 
 ## Definition

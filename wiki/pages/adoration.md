@@ -6,6 +6,8 @@ pos: noun
 forms: [adoration]
 sources: [llm]
 status: enriched
+chart: dedication
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 228
 sfi: 57.307
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -33,3 +35,4 @@ the property of relative size or extent (whether large or small)
 - builds_on: [[extent]] — Use 'magnitude' for measurable size or scale, especially in scientific or dramatic contexts.
 - builds_on: [[dimension]] — Use 'magnitude' to stress the large size or scale, especially in scientific or mathematical descriptions.
 - builds_on: [[quantity]] — Use 'magnitude' for a large or significant amount, often in scientific or abstract contexts, instead of 'quantity' when emphasizing scale or intensity.
+- collocation: [[earthquake]]

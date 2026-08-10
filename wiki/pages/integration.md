@@ -9,6 +9,8 @@ rank: 79
 sfi: 59.263
 sources: [wordnet, llm]
 status: enriched
+chart: integration
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[desegregation]] — Use 'desegregation' specifically for the legal or policy-driven process of ending segregation, whereas 'integration' is broader and can include voluntary mixing.
 - advanced_form: [[inclusion]] — Use 'inclusion' to emphasize the active effort to involve diverse groups as full participants, whereas 'integration' can sometimes imply simply placing groups together.
 - builds_on: [[consolidation]] — Use 'integration' when focusing on the combination of components into a coherent and functional whole, common in technology and social systems.
+- collocation: [[european]]
+- builds_on: [[incorporation]] — Use when bringing distinct parts into a larger system so they work together harmoniously, often in social, technological, or educational settings.

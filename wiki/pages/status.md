@@ -9,6 +9,8 @@ rank: 1127
 sfi: 58.99
 sources: [wordnet, llm]
 status: enriched
+chart: gamble
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,11 @@ the relative position or standing of things or especially persons in a society
 - advanced_form: [[prestige]] — Use 'prestige' instead of 'status' when emphasizing esteem or honor earned through accomplishment, not just position.
 - advanced_form: [[standing]] — Use 'standing' instead of 'status' to highlight relative position or reputation in a specific community or context.
 - advanced_form: [[stature]] — Use 'stature' instead of 'status' to emphasize moral or intellectual influence, often due to personal qualities.
+- collocation: [[asylee]]
+- synonym: [[cachet]]
+- collocation: [[emblematic]]
+- collocation: [[objector]]
+- collocation: [[protected]]
+- synonym: [[ranking]]
+- synonym: [[citizenhood]]
+- collocation: [[lowly]]

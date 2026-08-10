@@ -9,6 +9,8 @@ rank: 773
 sfi: 51.07
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ _No sourced examples yet._
 - builds_on: [[sewer]] — Use 'drain' when referring to the general pipe system for carrying away water or waste, often less technical than 'sewer'.
 - builds_on: [[empty]] — Use 'drain' specifically for removing liquid from something, often by letting it flow out.
 - builds_on: [[exhaust]] — Use 'drain' when something gradually saps energy or resources, leaving one depleted.
+- synonym: [[culvert]]
+- synonym: [[decant]]
+- synonym: [[deplete]]
+- synonym: [[leach]]
+- synonym: [[percolate]]
+- synonym: [[weary]]
+- synonym: [[aspirate]]

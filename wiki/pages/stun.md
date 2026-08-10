@@ -6,6 +6,8 @@ pos: verb
 forms: [stun]
 sources: [llm]
 status: enriched
+chart: amaze
+region: amaze
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[amaze]] — Use 'stun' when the effect is so powerful that it temporarily shocks or paralyzes the person's reaction.
+- synonym: [[astonish]]
+- synonym: [[astound]]

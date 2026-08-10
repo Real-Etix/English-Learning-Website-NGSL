@@ -9,6 +9,8 @@ rank: 403
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: tabletop
+region: tabletop
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[worktop]] — Use 'worktop' when emphasizing the surface as a functional workspace, especially in a modern or professional setting.
 - advanced_form: [[tabletop]] — Use 'tabletop' when the desktop is viewed as a similarly flat, horizontal surface, often in comparison to a table.
+- synonym: [[surface]]
+- collocation: [[computer]]
+- collocation: [[icon]]
+- collocation: [[screen]]

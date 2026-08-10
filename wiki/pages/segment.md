@@ -9,6 +9,8 @@ rank: 2370
 sfi: 54.4
 sources: [wordnet, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,9 @@ one of several parts or pieces that fit with others to constitute a whole object
 - advanced_form: [[fragment]] — Use 'fragment' to emphasize a small, broken-off piece, often from something that was once whole, more specific than 'segment'.
 - advanced_form: [[sector]] — Use 'sector' when referring to a distinct part of an economy, industry, or area, more formal than 'segment'.
 - advanced_form: [[component]] — Use 'component' to highlight a part that functions as part of a system or machine, more technical than 'segment'.
+- synonym: [[cross-section]]
+- synonym: [[quartile]]
+- builds_on: [[subsection]] — Use for a clear-cut part, often when the division is practical, chronological, or spatial.
+- builds_on: [[paragraph]] — Use when dividing something into logical parts, often in a technical or systematic way.
+- synonym: [[subdivide]]
+- synonym: [[subpopulation]]

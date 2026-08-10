@@ -9,6 +9,8 @@ rank: 259
 sfi: 56.4
 sources: [wordnet, llm]
 status: enriched
+chart: wiggle
+region: wiggle
 ---
 
 ## Definition

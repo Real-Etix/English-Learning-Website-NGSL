@@ -6,6 +6,8 @@ pos: noun
 forms: [decimalnumber]
 sources: [llm]
 status: enriched
+chart: decimal
+region: decimal
 ---
 
 ## Definition

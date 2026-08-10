@@ -6,6 +6,8 @@ pos: adjective
 forms: [spoken]
 sources: [llm]
 status: enriched
+chart: oral
+region: oral
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[oral]] — Use 'spoken' instead of 'oral' to emphasize the act of speaking, especially when describing language or agreements that are not recorded in writing.
+- synonym: [[verbal]]
+- collocation: [[vernacular]]

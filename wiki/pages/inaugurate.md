@@ -6,6 +6,8 @@ pos: verb
 forms: [inaugurate]
 sources: [llm]
 status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[pioneer]] — Use 'inaugurate' for formally beginning or introducing something new, emphasizing a ceremonial or official start.
 - builds_on: [[institute]] — Use 'inaugurate' when emphasizing a formal or ceremonial beginning, often with official or public recognition.
 - builds_on: [[commence]] — Use 'inaugurate' for formal or ceremonial beginnings, often involving an official opening or first use.
+- synonym: [[instate]]
+- builds_on: [[found]] — use when the founding marks a notable public or official start

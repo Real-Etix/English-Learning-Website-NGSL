@@ -6,6 +6,8 @@ pos: adjective
 forms: [unruly]
 sources: [llm]
 status: enriched
+chart: hazardous
+region: you
 ---
 
 ## Definition

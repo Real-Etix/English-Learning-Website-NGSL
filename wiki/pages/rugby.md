@@ -6,6 +6,8 @@ pos: noun
 forms: [rugby]
 sources: [llm]
 status: enriched
+chart: soccer
+region: soccer
 ---
 
 ## Definition

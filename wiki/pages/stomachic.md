@@ -6,6 +6,8 @@ pos: noun
 forms: [stomachic]
 sources: [llm]
 status: enriched
+chart: digestive
+region: digestive
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[digestive]] — Use 'stomachic' when emphasizing a substance that specifically aids stomach digestion, more formal than 'digestive'.
+- synonym: [[carminative]]

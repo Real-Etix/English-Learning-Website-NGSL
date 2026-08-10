@@ -6,6 +6,8 @@ pos: noun
 forms: [typhoon]
 sources: [llm]
 status: enriched
+chart: hurricane
+region: hurricane
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [damper]
 sources: [llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cushion]] — Use 'damper' for mechanical devices that suppress oscillations, more specific than 'cushion'.
+- synonym: [[buffer]]
+- synonym: [[suppressor]]
+- collocation: [[shock]]
+- collocation: [[engine]]

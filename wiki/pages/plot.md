@@ -9,6 +9,8 @@ rank: 1951
 sfi: 55.7
 sources: [wordnet, llm]
 status: enriched
+chart: plot
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,12 @@ a secret scheme to do something (especially something underhand or illegal)
 - builds_on: [[map]] — Use when marking specific points or routes on a map, often with precision.
 - advanced_form: [[intrigue]] — Use 'intrigue' when the scheme involves complex, secret, and often cunning maneuvers, especially in politics or personal relationships.
 - advanced_form: [[machination]] — Use 'machination' for a devious, crafty, and often sinister plot that requires careful planning and manipulation.
+- collocation: [[assassinate]]
+- synonym: [[collude]]
+- synonym: [[connive]]
+- synonym: [[contrive]]
+- collocation: [[convolute]]
+- collocation: [[convolution]]
+- collocation: [[denouement]]
+- collocation: [[foil]]
+- collocation: [[overthrow]]

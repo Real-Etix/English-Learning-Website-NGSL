@@ -9,6 +9,8 @@ rank: 84
 sfi: 58.3
 sources: [wordnet, llm]
 status: enriched
+chart: to
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[voucher]] — Use 'voucher' instead of 'passport' when referring to a written or printed authorization that can be exchanged for access or services.
 - advanced_form: [[clearance]] — Use 'clearance' instead of 'passport' when referring to official permission granted after a check or approval process.
+- collocation: [[confiscate]]
+- collocation: [[invalid]]
+- collocation: [[renew]]
+- collocation: [[visa]]

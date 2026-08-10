@@ -9,6 +9,8 @@ rank: 2508
 sfi: 53.93
 sources: [wordnet, llm]
 status: enriched
+chart: rule
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[surpass]] — Use 'surpass' when something goes beyond a limit or expectation, often with a sense of achievement.
 - advanced_form: [[outstrip]] — Use 'outstrip' when something exceeds another in quantity or speed, often in competitive contexts.
 - advanced_form: [[transcend]] — Use 'transcend' when something goes beyond ordinary limits, often in abstract or qualitative ways.
+- synonym: [[outdo]]
+- synonym: [[outpace]]
+- synonym: [[overbalance]]
+- synonym: [[oversubscribe]]

@@ -9,6 +9,8 @@ rank: 238
 sfi: 54.67
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: present
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ religious ministers collectively (especially Presbyterian)
 - collocation: [[present]]
 - advanced_form: [[clergy]] — Use 'clergy' instead of 'ministry' when referring to the group of ordained religious leaders as a body, rather than their collective work or office.
 - advanced_form: [[pastorate]] — Use 'pastorate' instead of 'ministry' when emphasizing the group of pastors specifically, often in a Protestant context, rather than all ministers collectively.
+- synonym: [[apostolate]]

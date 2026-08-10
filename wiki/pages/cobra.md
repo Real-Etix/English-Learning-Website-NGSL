@@ -9,6 +9,8 @@ rank: 95
 sfi: 61.4
 sources: [wordnet, llm]
 status: enriched
+chart: cobra
+region: cobra
 ---
 
 ## Definition

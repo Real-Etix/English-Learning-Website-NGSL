@@ -9,6 +9,8 @@ rank: 672
 sfi: 52.749
 sources: [wordnet, llm]
 status: enriched
+chart: predator
+region: predator
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[marauder]] — Use marauder when emphasizing a raiding, roving attacker, often in a group, with a sense of lawless violence.
 - advanced_form: [[plunderer]] — Use plunderer when focusing on the act of stealing goods by force, especially during conflict or invasion.
+- synonym: [[raptor]]
+- synonym: [[victimizer]]

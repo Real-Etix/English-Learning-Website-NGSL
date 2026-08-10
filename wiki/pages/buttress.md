@@ -6,6 +6,8 @@ pos: noun
 forms: [buttress]
 sources: [llm]
 status: enriched
+chart: bolster
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[brace]] — Use 'buttress' for a specific architectural or figurative support that reinforces from the side, often against lateral forces.
 - builds_on: [[underpin]] — Use when you want to emphasize providing additional strength or support, often to an argument or structure, more forceful than 'underpin'.
 - builds_on: [[underlie]] — Use 'buttress' to suggest active reinforcement or additional support, often in arguments or systems.
+- builds_on: [[shore]] — Use when giving structural or abstract support, often in formal or analytical contexts.

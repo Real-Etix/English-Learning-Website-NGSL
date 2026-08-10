@@ -6,6 +6,8 @@ pos: noun
 forms: [timepiece]
 sources: [llm]
 status: enriched
+chart: timer
+region: timer
 ---
 
 ## Definition

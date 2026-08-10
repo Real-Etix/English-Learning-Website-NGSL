@@ -9,6 +9,8 @@ rank: 1076
 sfi: 59.23
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - synonym: [[grand]]
 - advanced_form: [[excellent]] — Use 'excellent' for a high standard of quality, often in formal or written contexts.
 - advanced_form: [[superb]] — Use 'superb' to emphasize something of the highest excellence, often for achievements or craftsmanship.
+- synonym: [[delightful]]

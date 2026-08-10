@@ -9,6 +9,8 @@ rank: 229
 sfi: 55.67
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: indirect
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ descended from a common ancestor but through different lines
 - collocation: [[call]]
 - advanced_form: [[cognate]] — Use 'cognate' when emphasizing a direct blood relationship through a common ancestor, often in formal or academic contexts.
 - advanced_form: [[consanguineous]] — Use 'consanguineous' when you want a very formal, technical term for blood relation, especially in legal or biological discussions.
+- collocation: [[medial]]

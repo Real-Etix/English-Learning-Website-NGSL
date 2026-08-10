@@ -6,6 +6,8 @@ pos: verb
 forms: [predestine]
 sources: [llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[doom]] — Use 'predestine' to highlight a predetermined outcome, often with a sense of inevitability or destiny.
+- synonym: [[foreordain]]
+- synonym: [[predetermine]]
+- synonym: [[fate]]
+- synonym: [[preordain]]

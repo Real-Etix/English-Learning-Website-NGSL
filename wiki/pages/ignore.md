@@ -7,8 +7,10 @@ forms: [ignore, ignores, ignored, ignoring]
 lists: [ngsl]
 rank: 1446
 sfi: 57.64
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 - synonym: [[cut]]
+- synonym: [[disregard]]
+- advanced_form: [[disregard]] — Use when intentionally paying no attention to something, in formal or serious contexts.
+- advanced_form: [[snub]] — Use when ignoring someone in a rude or deliberate way, especially in social situations.

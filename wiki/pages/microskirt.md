@@ -6,6 +6,8 @@ pos: noun
 forms: [microskirt]
 sources: [llm]
 status: enriched
+chart: mini
+region: mini
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mini]] — Use 'microskirt' to emphasize an extremely short skirt, more extreme than a typical miniskirt.
+- synonym: [[miniskirt]]
+- collocation: [[wear]]
+- collocation: [[model]]
+- collocation: [[leather]]

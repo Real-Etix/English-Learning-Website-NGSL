@@ -9,6 +9,8 @@ rank: 559
 sfi: 52.64
 sources: [wordnet, llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[endorse]] — Use 'endorse' when the visa is officially placed or stamped in the passport, emphasizing the act of authorization rather than merely attaching a sticker.
 - advanced_form: [[validate]] — Use 'validate' when the visa makes the passport legally acceptable for entry, highlighting the official confirmation of its authority.
+- synonym: [[authorize]]
+- synonym: [[stamp]]
+- synonym: [[approve]]
+- collocation: [[passport]]
+- collocation: [[stamp]]
+- collocation: [[entry]]
+- collocation: [[foreignnational]]

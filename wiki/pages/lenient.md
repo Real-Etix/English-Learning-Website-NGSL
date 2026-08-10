@@ -6,6 +6,8 @@ pos: adjective
 forms: [lenient]
 sources: [llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mild]] — Use 'lenient' instead of 'mild' when referring to rules, punishments, or criticism that are not strict or harsh.
+- collocation: [[sentence]]
+- collocation: [[judge]]
+- collocation: [[punishment]]
+- collocation: [[attitude]]
+- collocation: [[with]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [definitively]
 sources: [llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ultimately]] — Use 'definitively' for a final, authoritative outcome that settles the matter; stronger than 'ultimately'.
+- synonym: [[conclusively]]
+- synonym: [[finally]]
+- synonym: [[categorically]]

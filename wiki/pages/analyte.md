@@ -6,6 +6,8 @@ pos: noun
 forms: [analyte]
 sources: [llm]
 status: enriched
+chart: substrate
+region: substrate
 ---
 
 ## Definition

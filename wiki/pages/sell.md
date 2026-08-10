@@ -9,6 +9,8 @@ rank: 418
 sfi: 63.86
 sources: [wordnet, llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[vend]] — Use 'vend' instead of 'sell' in formal or commercial contexts, especially for goods sold through a vending machine or at a market stall.
 - advanced_form: [[market]] — Use 'market' when focusing on promoting or advertising something for sale rather than the simple exchange.
 - advanced_form: [[peddle]] — Use 'peddle' for selling goods in a small, often mobile or informal way, sometimes implying persistence or low value.
+- synonym: [[commercialize]]
+- collocation: [[crops]]
+- synonym: [[denationalize]]
+- synonym: [[purvey]]

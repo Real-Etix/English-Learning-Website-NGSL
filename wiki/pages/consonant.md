@@ -9,6 +9,8 @@ rank: 248
 sfi: 57.118
 sources: [wordnet, llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[sonorant]] — Use 'sonorant' instead of 'consonant' when referring to sounds like /m, n, l, r/ that are produced with a relatively open vocal tract.
 - builds_on: [[congruent]] — Use 'consonant' to indicate logical or aesthetic compatibility, often in formal or literary writing.
 - builds_on: [[pursuant]] — Use 'consonant' when emphasizing harmony or consistency, instead of 'pursuant' which often implies formal adherence.
+- synonym: [[approximant]]
+- synonym: [[concordant]]

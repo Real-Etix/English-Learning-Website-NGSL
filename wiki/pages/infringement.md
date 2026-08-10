@@ -6,6 +6,8 @@ pos: noun
 forms: [infringement]
 sources: [llm]
 status: enriched
+chart: breach
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[breach]] — Use 'infringement' when referring to the encroachment upon a right or obligation, common in legal and formal contexts.
 - builds_on: [[tort]] — Use 'infringement' to specify an encroachment upon a right, particularly in legal contexts like intellectual property.
+- synonym: [[contravention]]
+- synonym: [[encroachment]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [foremost]
 sources: [llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ahead]] — Use 'foremost' to emphasize being in the leading or most advanced position.
+- synonym: [[chief]]
+- synonym: [[principal]]
+- synonym: [[primary]]
+- synonym: [[top]]

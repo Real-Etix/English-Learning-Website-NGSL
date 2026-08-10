@@ -9,6 +9,8 @@ rank: 1733
 sfi: 56.44
 sources: [wordnet, llm]
 status: enriched
+chart: yield
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,8 @@ _No sourced examples yet._
 - advanced_form: [[furnish]] — Use 'furnish' in formal or written contexts to mean 'provide' or 'supply' something needed; 'yield' often implies natural production or result.
 - advanced_form: [[beget]] — Use 'beget' in formal or literary contexts for causing abstract effects; 'yield' is more neutral and common.
 - builds_on: [[output]] — Use 'yield' for measurable physical or agricultural output, especially from a process or land.
+- synonym: [[acquiesce]]
+- synonym: [[crops]]
+- collocation: [[warhead]]
+- synonym: [[productivity]]
+- builds_on: [[crop]] — Use 'yield' to emphasize the amount or quantity produced, especially in technical or statistical contexts.

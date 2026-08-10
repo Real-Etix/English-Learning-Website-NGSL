@@ -9,6 +9,8 @@ rank: 433
 sfi: 55.504
 sources: [wordnet, llm]
 status: enriched
+chart: valve
+region: valve
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[cusp]] — Use 'cusp' when referring to the individual flaps of a heart valve.
 - advanced_form: [[leaflet]] — Use 'leaflet' specifically for the thin, movable parts of a valve.
+- synonym: [[modulator]]
+- collocation: [[radiator]]

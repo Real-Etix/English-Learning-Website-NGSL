@@ -6,6 +6,8 @@ pos: noun
 forms: [subdivider]
 sources: [llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition

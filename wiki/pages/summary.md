@@ -9,6 +9,8 @@ rank: 2318
 sfi: 54.56
 sources: [wordnet, llm]
 status: enriched
+chart: summary
+region: summary
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ performed speedily and without formality
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[cursory]] — Use 'cursory' instead of 'summary' when you mean a quick, not thorough, inspection.
 - advanced_form: [[perfunctory]] — Use 'perfunctory' instead of 'summary' when you mean an action done without enthusiasm or care, just as a routine.
+- synonym: [[briefing]]
+- synonym: [[compendium]]
+- synonym: [[precis]]

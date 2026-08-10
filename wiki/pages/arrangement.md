@@ -9,6 +9,8 @@ rank: 1460
 sfi: 57.56
 sources: [wordnet, llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[accord]] — Use 'accord' for formal, official agreements between groups or nations.
 - advanced_form: [[pact]] — Use 'pact' for a binding agreement, often between people or parties, implying commitment.
 - advanced_form: [[settlement]] — Use 'settlement' for resolving a dispute or finalizing terms, especially in legal or financial contexts.
+- collocation: [[formalize]]
+- collocation: [[haphazard]]
+- synonym: [[marshaling]]
+- synonym: [[positioning]]
+- collocation: [[revoice]]

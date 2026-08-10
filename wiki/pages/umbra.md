@@ -6,6 +6,8 @@ pos: noun
 forms: [umbra]
 sources: [llm]
 status: enriched
+chart: form
+region: you
 ---
 
 ## Definition

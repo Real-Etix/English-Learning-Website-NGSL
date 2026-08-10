@@ -6,6 +6,8 @@ pos: noun
 forms: [stele]
 sources: [llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition

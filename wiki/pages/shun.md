@@ -6,6 +6,8 @@ pos: verb
 forms: [shun]
 sources: [llm]
 status: enriched
+chart: trouble
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[avoid]] — Use 'shun' when the avoidance is social or based on principle, often implying active rejection.
+- synonym: [[eschew]]

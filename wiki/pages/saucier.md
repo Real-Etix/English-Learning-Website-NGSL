@@ -6,6 +6,8 @@ pos: noun
 forms: [saucier]
 sources: [llm]
 status: enriched
+chart: chef
+region: chef
 ---
 
 ## Definition

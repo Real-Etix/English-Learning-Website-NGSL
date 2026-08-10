@@ -6,6 +6,8 @@ pos: noun
 forms: [joiner]
 sources: [llm]
 status: enriched
+chart: carpenter
+region: carpenter
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[carpenter]] — Use 'joiner' when emphasizing precision fitting of wood pieces, especially for furniture or interior woodwork.
+- synonym: [[cabinetmaker]]
+- collocation: [[master]]

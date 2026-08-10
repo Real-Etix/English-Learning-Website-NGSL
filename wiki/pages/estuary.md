@@ -6,6 +6,8 @@ pos: noun
 forms: [estuary]
 sources: [llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[delta]] — Use 'estuary' to emphasize the tidal mixing of fresh and salt water, whereas 'delta' focuses on sediment deposition at the river mouth.
+- synonym: [[mouth]]
+- synonym: [[creek]]
+- collocation: [[river]]
+- collocation: [[salt]]

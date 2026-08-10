@@ -6,6 +6,8 @@ pos: noun
 forms: [visage]
 sources: [llm]
 status: enriched
+chart: care
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[face]] — Use 'visage' for a more poetic or dramatic description of the face.
 - builds_on: [[expression]] — Use 'visage' when you want a more dignified or poetic word for a person's face, often with a focus on its overall appearance or character.
 - builds_on: [[appearance]] — Use 'visage' for a person's face or facial appearance, especially in a formal or descriptive context.
+- collocation: [[noble]]

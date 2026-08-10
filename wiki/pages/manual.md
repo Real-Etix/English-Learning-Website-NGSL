@@ -9,6 +9,8 @@ rank: 55
 sfi: 59.46
 sources: [wordnet, llm]
 status: enriched
+chart: manual
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ of or relating to the hands
 - advanced_form: [[palmar]] — Use 'palmar' in medical or anatomical contexts to refer specifically to the palm side of the hand, more precise than 'manual'.
 - builds_on: [[textbook]] — Use 'manual' for a book that provides instructions or reference, especially practical.
 - builds_on: [[cookbook]] — Use 'manual' when the cookbook includes step-by-step instructions and techniques, often for instructional purposes.
+- synonym: [[clavier]]
+- collocation: [[dexterity]]
+- synonym: [[primer]]
+- synonym: [[worktext]]
+- builds_on: [[primer]] — Use when the book is instruction-focused, like a how-to guide, rather than a purely introductory text.
+- builds_on: [[handbook]] — Use manual when the reference is procedural or technical, focusing on how to perform a task.

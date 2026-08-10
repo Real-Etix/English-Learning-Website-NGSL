@@ -9,6 +9,8 @@ rank: 852
 sfi: 48.265
 sources: [wordnet, llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - builds_on: [[description]] — Use 'portrayal' when emphasizing the manner or interpretation in describing someone or something.
 - builds_on: [[representation]] — Use 'portrayal' instead of 'representation' when focusing on a performance or interpretation of a person, role, or concept.
 - builds_on: [[portrait]] — Use 'portrayal' instead of 'portrait' to highlight the way someone or something is represented, often implying a particular perspective or interpretation.
+- collocation: [[nuanced]]
+- synonym: [[portraiture]]
+- synonym: [[dramatization]]

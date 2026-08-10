@@ -9,6 +9,8 @@ rank: 1577
 sfi: 50.72
 sources: [wordnet, llm]
 status: enriched
+chart: guess
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[conjecture]] — Use 'conjecture' when the belief involves forming an opinion from incomplete or uncertain evidence, often in academic or formal contexts.
 - advanced_form: [[hypothesize]] — Use 'hypothesize' when the belief is based on a proposed explanation that can be tested, typical in scientific or logical reasoning.
+- synonym: [[theorize]]

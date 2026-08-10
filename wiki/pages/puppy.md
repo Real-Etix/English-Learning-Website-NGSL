@@ -9,6 +9,8 @@ rank: 383
 sfi: 54.51
 sources: [wordnet, llm]
 status: enriched
+chart: puppy
+region: puppy
 ---
 
 ## Definition

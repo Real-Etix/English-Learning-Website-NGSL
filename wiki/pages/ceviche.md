@@ -6,6 +6,8 @@ pos: noun
 forms: [ceviche]
 sources: [llm]
 status: enriched
+chart: salad
+region: salad
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[salad]] — Use 'ceviche' for a specific type of seafood salad marinated in citrus, rather than the more general 'salad'.
+- collocation: [[fresh]]
+- collocation: [[lime]]

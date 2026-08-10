@@ -9,6 +9,8 @@ rank: 75
 sfi: 62.64
 sources: [wordnet, llm]
 status: enriched
+chart: dumbbell
+region: dumbbell
 ---
 
 ## Definition

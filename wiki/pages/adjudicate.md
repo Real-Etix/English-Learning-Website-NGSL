@@ -6,6 +6,8 @@ pos: verb
 forms: [adjudicate]
 sources: [llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[judge]] — Use 'adjudicate' in formal or legal-like competition contexts, like contests or competitions judged by an official panel.
+- synonym: [[decide]]
+- synonym: [[settle]]
+- synonym: [[arbitrate]]
+- synonym: [[rule]]
+- collocation: [[dispute]]
+- collocation: [[claim]]
+- collocation: [[case]]

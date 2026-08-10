@@ -9,6 +9,8 @@ rank: 579
 sfi: 53.928
 sources: [wordnet, llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - advanced_form: [[secondary]] — Use 'secondary' to indicate lower importance or priority, often in reference to roles or tasks.
 - advanced_form: [[lesser]] — Use 'lesser' to compare two things, implying one is smaller in rank, importance, or quality.
 - builds_on: [[lesser]] — Use 'inferior' when comparing quality, status, or value, implying it is worse or lower-ranked than another.
+- collocation: [[nowise]]
+- collocation: [[vena]]
+- synonym: [[ventral]]
+- synonym: [[lowly]]

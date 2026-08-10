@@ -9,6 +9,8 @@ rank: 925
 sfi: 60.1
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[approval]] — Use 'approval' when referring to a positive official decision, more formal than 'okay'.
 - advanced_form: [[authorization]] — Use 'authorization' when permission is granted by a person or authority in charge.
 - advanced_form: [[sanction]] — Use 'sanction' for formal endorsement, especially from an official body or institution.
+- collocation: [[yep]]

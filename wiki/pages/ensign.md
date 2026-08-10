@@ -6,6 +6,8 @@ pos: noun
 forms: [ensign]
 sources: [llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[flag]] — Use 'ensign' when referring to a flag representing a nation or organization, particularly on ships or in formal contexts.
+- synonym: [[banner]]
+- synonym: [[standard]]
+- collocation: [[national]]
+- collocation: [[red]]
+- collocation: [[blue]]
+- collocation: [[fly]]

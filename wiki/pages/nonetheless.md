@@ -9,6 +9,8 @@ rank: 533
 sfi: 53.85
 sources: [wordnet, llm]
 status: enriched
+chart: still
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - domain: academic
 - builds_on: [[though]] — Use 'nonetheless' similarly to 'nevertheless', often when the contrast is less dramatic or the concession is minimal.
 - advanced_form: [[notwithstanding]] — Use 'notwithstanding' as a more formal and less common synonym for 'nonetheless'. It often appears at the beginning of a clause or after the noun it modifies, lending a legal or academic tone.
+- synonym: [[anyhow]]
+- synonym: [[anyway]]
+- builds_on: [[anyhow]] — Use instead of 'anyhow' to formally emphasize that the second point stands despite the first.

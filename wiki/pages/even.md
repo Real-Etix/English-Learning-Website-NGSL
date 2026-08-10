@@ -9,6 +9,8 @@ rank: 96
 sfi: 69.95
 sources: [wordnet]
 status: seeded
+chart: rough
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 - antonym: [[odd]]
+- collocation: [[nor]]
+- collocation: [[outlast]]
+- synonym: [[planar]]

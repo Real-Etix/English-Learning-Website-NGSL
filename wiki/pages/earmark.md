@@ -6,6 +6,8 @@ pos: verb
 forms: [earmark]
 sources: [llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1247
 sfi: 58.45
 sources: [wordnet, llm]
 status: enriched
+chart: appear
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ prevent from being seen or discovered
 - advanced_form: [[conceal]] — Use 'conceal' for deliberate, often secretive hiding of physical objects or information.
 - advanced_form: [[obscure]] — Use 'obscure' when something is hidden by being made unclear, dim, or blocked, not necessarily intentionally.
 - advanced_form: [[veil]] — Use 'veil' for something that is lightly or partially hidden, often in a poetic or figurative way.
+- synonym: [[cloak]]
+- synonym: [[leather]]
+- builds_on: [[leather]] — Use 'hide' in formal or commercial contexts when discussing the raw material or the leather industry, rather than the finished product.
+- synonym: [[pelt]]

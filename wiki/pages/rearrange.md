@@ -9,6 +9,8 @@ rank: 488
 sfi: 53.14
 sources: [wordnet, llm]
 status: enriched
+chart: rearrange
+region: rearrange
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ put into a new order or arrangement
 - advanced_form: [[reorganize]] — Use instead of rearrange when implying a systematic restructuring or improvement, not just a simple change of order.
 - advanced_form: [[reshuffle]] — Use instead of rearrange when referring to a redistribution of roles, items, or people, often in a somewhat abrupt or strategic manner.
 - advanced_form: [[reorder]] — Use instead of rearrange when the focus is on changing the sequence or priority of items in a list or set.
+- synonym: [[reconfigure]]
+- synonym: [[revoice]]

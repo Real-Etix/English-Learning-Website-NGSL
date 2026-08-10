@@ -6,6 +6,8 @@ pos: adjective
 forms: [impenetrable]
 sources: [llm]
 status: enriched
+chart: there
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dense]] — Use 'impenetrable' instead of 'dense' to stress that nothing (not just light) can get through, often for physical barriers or dark places.
+- synonym: [[thick]]
+- collocation: [[forest]]
+- collocation: [[barrier]]
+- collocation: [[darkness]]
+- collocation: [[mystery]]

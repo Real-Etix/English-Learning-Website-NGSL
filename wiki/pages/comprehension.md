@@ -9,6 +9,8 @@ rank: 106
 sfi: 57.75
 sources: [wordnet, llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ an ability to understand the meaning or importance of something (or the knowledg
 - advanced_form: [[apprehension]] — Use 'apprehension' instead of 'comprehension' to emphasize an active, mental grasp, often in formal or intellectual contexts.
 - advanced_form: [[cognizance]] — Use 'cognizance' to convey formal or legal awareness, often implying official recognition or knowledge.
 - builds_on: [[grasp]] — Use 'comprehension' when emphasizing a detailed and deep understanding, often of complex material.
+- builds_on: [[appreciation]] — Use when emphasizing the full mental grasp of something, especially complex or abstract.

@@ -6,6 +6,8 @@ pos: noun
 forms: [captivity]
 sources: [llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[constraint]] — Use 'captivity' when the constraint is imposed by being captured or held against will, more specific than 'constraint'.
+- synonym: [[bondage]]
+- synonym: [[confinement]]
+- collocation: [[in]]
+- collocation: [[escape]]
+- collocation: [[wild]]

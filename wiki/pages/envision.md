@@ -6,6 +6,8 @@ pos: verb
 forms: [envision]
 sources: [llm]
 status: enriched
+chart: visualize
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[imagine]] — Use 'envision' to suggest a detailed, forward-looking mental image, often for goals or outcomes.
 - builds_on: [[visualize]] — Use 'envision' when focusing on a future scenario or a detailed mental image, more formal than 'visualize'.
+- synonym: [[envisage]]
+- synonym: [[conceive]]

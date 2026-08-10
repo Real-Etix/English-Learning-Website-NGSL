@@ -6,6 +6,8 @@ pos: verb
 forms: [traverse]
 sources: [llm]
 status: enriched
+chart: force
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[journey]] — Use 'traverse' instead of 'journey' to emphasize crossing a specific area or obstacle, often with a sense of effort.
 - builds_on: [[sail]] — Formal and emphasizes crossing a body of water, often with a sense of distance or challenge.
 - builds_on: [[sweep]] — Use 'traverse' instead of 'sweep' when emphasizing the act of moving across an area, often in a steady or systematic way.
+- synonym: [[roam]]

@@ -9,6 +9,8 @@ rank: 1311
 sfi: 58.22
 sources: [wordnet, llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ the state of being certain that adverse effects will not be caused by some agent
 - advanced_form: [[invulnerability]] — Use when emphasizing absolute freedom from harm, often in metaphorical or heroic contexts.
 - advanced_form: [[impregnability]] — Use when stressing strength or security against attack, especially in military or defensive contexts.
 - advanced_form: [[inviolability]] — Use when referring to rights, principles, or sacred spaces that must remain untouched or respected.
+- collocation: [[disengage]]
+- collocation: [[firemarshal]]
+- collocation: [[footgear]]
+- collocation: [[glazing]]
+- collocation: [[imperil]]
+- collocation: [[occupational]]
+- synonym: [[precautionary]]
+- collocation: [[worksite]]
+- collocation: [[headgear]]

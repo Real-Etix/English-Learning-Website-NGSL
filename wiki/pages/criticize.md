@@ -9,6 +9,8 @@ rank: 2296
 sfi: 54.66
 sources: [wordnet, llm]
 status: enriched
+chart: criticize
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[censure]] — Use 'censure' for formal, often official, strong criticism, especially in a public or institutional context.
 - advanced_form: [[lambaste]] — Use 'lambaste' for harsh, vigorous, and often public criticism, more intense than 'criticize'.
 - advanced_form: [[reprehend]] — Use 'reprehend' for expressing disapproval or blame, often in a formal or moral context.
+- synonym: [[deplore]]
+- collocation: [[vitriolically]]

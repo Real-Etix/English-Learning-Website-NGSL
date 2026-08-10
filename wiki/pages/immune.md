@@ -9,6 +9,8 @@ rank: 282
 sfi: 56.868
 sources: [wordnet, llm]
 status: enriched
+chart: immune
+region: immune
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ relating to the condition of immunity
 - advanced_form: [[invulnerable]] — Use 'invulnerable' to stress an unbreakable defense, often in medical or metaphorical language, when 'immune' feels too ordinary.
 - advanced_form: [[impervious]] — Use 'impervious' to describe resistance to external harm or influence, where 'immune' might imply only biological immunity.
 - builds_on: [[resistant]] — Use 'immune' when referring specifically to the body's natural or acquired protection against a disease, as it directly implies complete resistance.
+- collocation: [[murine]]
+- synonym: [[privileged]]
+- collocation: [[hypersensitivity]]

@@ -9,6 +9,8 @@ rank: 536
 sfi: 62.59
 sources: [wordnet, llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ definitely or positively (`sure' is sometimes used informally for `surely')
 - advanced_form: [[undoubtedly]] — Use 'undoubtedly' to emphasize certainty without doubt, similar to 'certainly' but stronger.
 - advanced_form: [[assuredly]] — Use 'assuredly' to express firm confidence, often in a formal context.
 - builds_on: [[yeah]] — Use 'certainly' for definite agreement or assurance, more formal than 'yeah'.
+- synonym: [[indeed]]

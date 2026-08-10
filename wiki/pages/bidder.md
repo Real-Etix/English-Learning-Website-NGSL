@@ -9,6 +9,8 @@ rank: 645
 sfi: 53.38
 sources: [wordnet, llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[offeror]] — Use 'offeror' in formal or legal contexts where a bid is a binding proposal, not just an auction bid.
 - advanced_form: [[contender]] — Use 'contender' to emphasize competition among multiple bidders, often in auctions or contests.
+- synonym: [[acquirer]]

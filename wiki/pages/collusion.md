@@ -6,6 +6,8 @@ pos: noun
 forms: [collusion]
 sources: [llm]
 status: enriched
+chart: plot
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[conspiracy]] — Use 'collusion' instead of 'conspiracy' when emphasizing secret cooperation, often in business or politics, rather than an active plot.
+- synonym: [[intrigue]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [modicum]
 sources: [llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition

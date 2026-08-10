@@ -9,6 +9,8 @@ rank: 159
 sfi: 56.79
 sources: [wordnet, llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[credential]] — Use 'credential' in professional or formal contexts to emphasize proof of competence or eligibility.
 - builds_on: [[coupon]] — Use 'certificate' instead of 'coupon' when the item is a formal document representing value or entitlement, especially for gifts or awards rather than discounts.
 - builds_on: [[diploma]] — Use 'certificate' for shorter or non-degree programs, while 'diploma' often implies a longer academic course.
+- collocation: [[airman]]
+- collocation: [[decease]]
+- collocation: [[paralegal]]

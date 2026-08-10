@@ -9,6 +9,8 @@ rank: 192
 sfi: 57.743
 sources: [wordnet, llm]
 status: enriched
+chart: union
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[division]] — Use 'division' when emphasizing a split within a group, often due to disagreement or difference in opinion.
 - advanced_form: [[schism]] — Use 'schism' for a formal, often ideological or religious split that creates opposing groups.
 - advanced_form: [[rift]] — Use 'rift' for a significant, often emotional break in a relationship or between groups.
+- synonym: [[demarcation]]
+- synonym: [[disengagement]]

@@ -9,6 +9,8 @@ rank: 691
 sfi: 61.4
 sources: [wordnet, llm]
 status: enriched
+chart: stock
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,12 @@ the capital raised by a corporation through the issue of shares entitling holder
 - builds_on: [[commodity]] — Use 'stock' for goods kept on hand for future sale or use, emphasizing inventory rather than individual items.
 - builds_on: [[butt]] — Use 'stock' specifically for the butt end of a gun or rifle handle.
 - builds_on: [[trunk]] — Use 'stock' when emphasizing the trunk as the base for grafting, or in forestry and timber contexts.
+- synonym: [[bole]]
+- synonym: [[cardstock]]
+- synonym: [[consomm]]
+- collocation: [[fingerling]]
+- synonym: [[haft]]
+- synonym: [[livestock]]
+- collocation: [[repurchase]]
+- synonym: [[rootstock]]
+- collocation: [[buyback]]

@@ -9,6 +9,8 @@ rank: 154
 sfi: 56.86
 sources: [wordnet, llm]
 status: enriched
+chart: basin
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,14 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[vessel]] — Use 'vessel' for formal or specialized contexts, especially for liquid containers or ships, rather than everyday boxes.
 - advanced_form: [[receptacle]] — Use 'receptacle' in formal or technical contexts, such as in biology or waste management, to mean any container that receives and holds something.
+- synonym: [[amphora]]
+- synonym: [[bath]]
+- synonym: [[crock]]
+- synonym: [[flask]]
+- synonym: [[hamper]]
+- collocation: [[liter]]
+- synonym: [[pannier]]
+- synonym: [[vial]]
+- synonym: [[vivarium]]
+- collocation: [[desiccant]]
+- synonym: [[vat]]

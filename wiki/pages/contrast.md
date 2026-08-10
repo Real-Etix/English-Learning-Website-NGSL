@@ -9,6 +9,8 @@ rank: 1179
 sfi: 58.72
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ the opposition or dissimilarity of things that are compared
 - advanced_form: [[divergence]] — Use 'divergence' when emphasizing a growing apart or separation in views, paths, or trends.
 - builds_on: [[comparison]] — Use when focusing on differences between two items, often to emphasize opposing qualities.
 - builds_on: [[differ]] — Use 'contrast' when comparing two things to emphasize their differences, often in a clear or striking way.
+- synonym: [[juxtapose]]
+- synonym: [[juxtaposition]]
+- collocation: [[marked]]
+- collocation: [[phonemic]]

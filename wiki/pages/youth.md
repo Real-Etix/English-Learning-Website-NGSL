@@ -9,6 +9,8 @@ rank: 1603
 sfi: 56.99
 sources: [wordnet, llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ _No sourced examples yet._
 - advanced_form: [[juvenile]] — Use 'juvenile' instead of 'youth' in formal or legal contexts, especially for young people involved in legal or institutional settings.
 - builds_on: [[childhood]] — Use 'youth' for a more formal or reflective tone about the childhood period, often implying a broader age range including adolescence.
 - builds_on: [[teenager]] — Use 'youth' as a collective or formal term for young people, especially in social or policy discussions.
+- collocation: [[debauch]]
+- collocation: [[fountain]]
+- collocation: [[worklessness]]
+- synonym: [[youngster]]
+- collocation: [[reformatory]]

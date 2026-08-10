@@ -9,6 +9,8 @@ rank: 1375
 sfi: 57.95
 sources: [wordnet, llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ a quantity of money
 - advanced_form: [[disbursement]] — Use for a formal payment of a sum of money, especially from a fund.
 - advanced_form: [[remittance]] — Use for a sum of money sent as payment, often for bills or invoices.
 - advanced_form: [[allocation]] — Use for a sum of money assigned for a specific purpose.
+- builds_on: [[amount]] — Use when emphasizing the total amount, especially a specific or significant sum.

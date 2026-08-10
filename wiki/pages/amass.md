@@ -6,6 +6,8 @@ pos: verb
 forms: [amass]
 sources: [llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[accrue]] — Use 'amass' when the accumulation is intentional and results in a large quantity, often for wealth or possessions, whereas 'accrue' can happen without conscious effort.
 - builds_on: [[compile]] — Use 'amass' when accumulating a large quantity of something over time, with a sense of abundance, rather than just gathering.
 - builds_on: [[gather]] — Use 'amass' instead of 'gather' when focusing on accumulating a large quantity of things over time, especially wealth or objects.
+- synonym: [[garner]]

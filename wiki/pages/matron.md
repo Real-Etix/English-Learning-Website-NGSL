@@ -6,6 +6,8 @@ pos: noun
 forms: [matron]
 sources: [llm]
 status: enriched
+chart: father
+region: you
 ---
 
 ## Definition

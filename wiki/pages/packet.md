@@ -9,6 +9,8 @@ rank: 358
 sfi: 54.23
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[consignment]] — Use 'consignment' for a large shipment of goods, particularly in business or logistics contexts.
 - advanced_form: [[batch]] — Use 'batch' for a group of identical items produced or processed together, often in manufacturing or cooking.
 - builds_on: [[package]] — Use 'packet' for a small, often flat package, especially of food or documents.
+- collocation: [[desiccant]]

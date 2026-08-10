@@ -9,6 +9,8 @@ rank: 2328
 sfi: 54.52
 sources: [wordnet, llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[rotate]] — Use 'rotate' for a more formal or scientific description of spinning around an internal axis, especially when speed is not emphasized.
 - advanced_form: [[revolve]] — Use 'revolve' for a formal or descriptive term that emphasizes circular motion around a center, often implying a path or orbit.
+- synonym: [[gyration]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [walk-on]
 sources: [llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2792
 sfi: 51.75
 sources: [wordnet, llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - synonym: [[fall]]
 - advanced_form: [[fall]] — Use 'fall' in everyday American English instead of the more formal 'autumn'.
 - advanced_form: [[harvest]] — Use 'harvest' to evoke a richer, agricultural image of autumn, especially in literary or descriptive contexts.
+- collocation: [[foliage]]

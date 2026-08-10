@@ -9,6 +9,8 @@ rank: 420
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: attire
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[linens]] — Use 'linens' when referring specifically to bed sheets, pillowcases, towels, and tablecloths that need laundry, rather than general clothes.
 - advanced_form: [[garments]] — Use 'garments' when being more formal or referring to clothing items as opposed to the general concept of laundry.
+- collocation: [[hamper]]
+- collocation: [[enhancer]]
+- collocation: [[reinforcer]]

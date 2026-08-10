@@ -6,6 +6,8 @@ pos: verb
 forms: [quiver]
 sources: [llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition

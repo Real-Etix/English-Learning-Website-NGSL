@@ -7,8 +7,10 @@ forms: [finance, finances, financed, financing, financings]
 lists: [ngsl]
 rank: 1379
 sfi: 57.94
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,14 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[bankroll]]
+- synonym: [[investment]]
+- synonym: [[capital]]
+- collocation: [[corporate]]
+- collocation: [[public]]
+- collocation: [[personal]]
+- collocation: [[minister]]
+- collocation: [[committee]]
+- advanced_form: [[backing]] — Use backing when emphasizing support or approval behind the money, not just the funds themselves.
+- advanced_form: [[underwriting]] — Use underwriting in financial and investment contexts, especially about taking on risk for issuing securities.
+- advanced_form: [[capitalization]] — Use capitalization when focusing on the total amount of capital provided or the act of funding a business.

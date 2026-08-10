@@ -7,8 +7,10 @@ forms: [hammer, hammers, hammered, hammering, hammerings]
 lists: [fitness]
 rank: 293
 sfi: 55.88
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 - domain: fitness
+- synonym: [[batter]]
+- advanced_form: [[striker]] — Use 'striker' when describing modern firearms or to sound precise and technical.
+- advanced_form: [[cock]] — Use 'cock' when reading or discussing historical guns, but be careful because it has other meanings.

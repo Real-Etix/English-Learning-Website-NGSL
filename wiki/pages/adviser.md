@@ -9,6 +9,8 @@ rank: 2201
 sfi: 54.93
 sources: [wordnet, llm]
 status: enriched
+chart: mentor
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 25
 sfi: 61.513
 sources: [wordnet, llm]
 status: enriched
+chart: discourse
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[dissertation]] — Use 'dissertation' for a long, formal written work, especially for an academic degree; 'discourse' is less specific.
 - builds_on: [[lecture]] — Use 'discourse' for a lengthy, serious discussion or written treatment of a subject, more formal than a lecture.
 - builds_on: [[dialog]] — Use 'discourse' when referring to a formal, extended, or serious conversation, often on a particular topic.
+- synonym: [[disquisition]]

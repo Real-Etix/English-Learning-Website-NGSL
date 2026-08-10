@@ -6,6 +6,8 @@ pos: noun
 forms: [tramp]
 sources: [llm]
 status: enriched
+chart: plant
+region: you
 ---
 
 ## Definition

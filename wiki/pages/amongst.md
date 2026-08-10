@@ -9,6 +9,8 @@ rank: 431
 sfi: 55.515
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,7 @@ _No sourced examples yet._
 ## Connections
 - domain: business
 - domain: academic
+- synonym: [[among]]
+- synonym: [[amid]]
+- collocation: [[themselves]]
+- collocation: [[which]]

@@ -9,6 +9,8 @@ rank: 456
 sfi: 54.61
 sources: [wordnet, llm]
 status: enriched
+chart: transformation
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[development]] — Use 'development' for structured growth or refinement, especially in professional, scientific, or creative fields.
 - builds_on: [[sequence]] — Use 'progression' when emphasizing movement forward or development through stages, rather than just a fixed order.
 - builds_on: [[evolution]] — Use 'progression' instead of 'evolution' when emphasizing a step-by-step advancement or a sequence of stages, often in skills, careers, or systematic changes.
+- collocation: [[geometric]]
+- synonym: [[succession]]

@@ -9,6 +9,8 @@ rank: 1216
 sfi: 49.46
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ a kind of literary or artistic work
 - builds_on: [[category]] — Use 'genre' specifically for artistic, literary, or media categories to sound more precise and refined.
 - advanced_form: [[mode]] — Use 'mode' to emphasize a particular style or method within a category, often suggesting a more specific or technical type than 'genre'.
 - advanced_form: [[strain]] — Use 'strain' to describe a subtype or branch within a genre, often implying a distinctive quality or lineage.
+- collocation: [[fiction]]
+- synonym: [[kind]]
+- synonym: [[style]]
+- synonym: [[classification]]
+- collocation: [[literary]]
+- collocation: [[music]]

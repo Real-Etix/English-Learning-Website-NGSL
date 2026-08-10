@@ -9,6 +9,8 @@ rank: 67
 sfi: 59.12
 sources: [wordnet, llm]
 status: enriched
+chart: umbrella
+region: umbrella
 ---
 
 ## Definition

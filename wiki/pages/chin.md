@@ -9,6 +9,8 @@ rank: 27
 sfi: 66.15
 sources: [wordnet, llm]
 status: enriched
+chart: chin
+region: chin
 ---
 
 ## Definition

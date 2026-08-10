@@ -6,6 +6,8 @@ pos: noun
 forms: [esprit]
 sources: [llm]
 status: enriched
+chart: morale
+region: morale
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [intoxicant]
 sources: [llm]
 status: enriched
+chart: extract
+region: you
 ---
 
 ## Definition

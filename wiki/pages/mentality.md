@@ -6,6 +6,8 @@ pos: noun
 forms: [mentality]
 sources: [llm]
 status: enriched
+chart: opinion
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mindset]] — Use 'mentality' to refer to a specific set of attitudes or habits of thinking, often in a fixed vs. growth context; 'mindset' is more general.
+- synonym: [[attitude]]
+- synonym: [[outlook]]
+- synonym: [[disposition]]
+- synonym: [[perspective]]
+- collocation: [[mob]]
+- collocation: [[victim]]
+- collocation: [[criminal]]
+- collocation: [[growth]]

@@ -9,6 +9,8 @@ rank: 2379
 sfi: 54.37
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ _No sourced examples yet._
 - advanced_form: [[endeavor]] — Use 'endeavor' to stress the effort and seriousness of an undertaking, especially one with uncertain outcome, more formal than 'venture'.
 - advanced_form: [[undertaking]] — Use 'undertaking' to highlight the scale or difficulty of a task or project, often implying risk or challenge, replacing 'venture' in formal contexts.
 - builds_on: [[adventure]] — Use 'venture' when emphasizing a bold or risky undertaking, often with a sense of deliberate choice, whereas 'adventure' as a verb is more informal and broad.
+- synonym: [[dare]]
+- synonym: [[entrepreneurship]]
+- synonym: [[foray]]
+- collocation: [[founder]]

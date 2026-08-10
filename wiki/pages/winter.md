@@ -9,6 +9,8 @@ rank: 1328
 sfi: 58.15
 sources: [wordnet, llm]
 status: enriched
+chart: winter
+region: winter
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ the coldest season of the year
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[wintertide]] — Use for a poetic or formal reference to the winter season.
 - advanced_form: [[midwinter]] — Use when specifying the middle of winter, especially around the solstice.
+- collocation: [[cantonment]]
+- collocation: [[coat]]
+- collocation: [[hardiness]]
+- collocation: [[austral]]

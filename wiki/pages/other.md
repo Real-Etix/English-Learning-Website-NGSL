@@ -9,6 +9,8 @@ rank: 54
 sfi: 73.22
 sources: [wordnet]
 status: seeded
+chart: patron
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ not the same one or ones already mentioned or implied
 
 ## Connections
 - antonym: [[same]]
+- synonym: [[another]]
+- collocation: [[each]]

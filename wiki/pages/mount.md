@@ -9,6 +9,8 @@ rank: 2333
 sfi: 54.5
 sources: [wordnet, llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[fasten]] — Use 'fasten' when emphasizing the act of making something firm or secure, often with mechanical means.
 - advanced_form: [[secure]] — Use 'secure' to stress the result of attaching something firmly so it doesn't move or fall.
 - builds_on: [[holder]] — Use 'mount' for a device that attaches or fixes something in place, often on a wall or surface, implying a more permanent installation than a simple holder.
+- collocation: [[kerb]]

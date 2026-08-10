@@ -6,6 +6,8 @@ pos: adjective
 forms: [sheltered]
 sources: [llm]
 status: enriched
+chart: relieve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[safe]] — use for physical protection from elements or harm
+- synonym: [[covered]]
+- synonym: [[protected]]

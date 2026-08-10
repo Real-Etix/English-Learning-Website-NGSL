@@ -9,6 +9,8 @@ rank: 466
 sfi: 53.71
 sources: [wordnet, llm]
 status: enriched
+chart: placebo
+region: placebo
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 227
 sfi: 66.34
 sources: [wordnet, llm]
 status: enriched
+chart: still
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,8 @@ status: enriched
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[nonetheless]] — Use 'nonetheless' similarly to 'nevertheless', often when the contrast is less dramatic or the concession is minimal.
+- synonym: [[albeit]]
+- synonym: [[although]]
+- collocation: [[anyway]]
+- synonym: [[whereas]]
+- synonym: [[whilst]]

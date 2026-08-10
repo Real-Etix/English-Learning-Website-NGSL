@@ -6,6 +6,8 @@ pos: noun
 forms: [mugginess]
 sources: [llm]
 status: enriched
+chart: humidity
+region: humidity
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[humidity]] — Use 'mugginess' to emphasize the uncomfortable, sticky quality of humid air, especially when it makes you feel sweaty and drained.
+- synonym: [[sultriness]]
+- collocation: [[summer]]
+- collocation: [[afternoon]]
+- collocation: [[relieve]]

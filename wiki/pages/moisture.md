@@ -6,6 +6,8 @@ pos: noun
 forms: [moisture]
 sources: [llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[water]] — Use 'moisture' for water in small quantities or as vapor, especially in contexts of dampness, humidity, or soil hydration, not for bodies of water.
+- synonym: [[diaphoresis]]
+- synonym: [[humidity]]
+- collocation: [[soil]]
+- collocation: [[content]]
+- collocation: [[absorb]]
+- collocation: [[retain]]
+- synonym: [[perspiration]]
+- synonym: [[condensation]]
+- collocation: [[desiccant]]

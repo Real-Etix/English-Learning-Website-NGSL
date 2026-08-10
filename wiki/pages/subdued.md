@@ -6,6 +6,8 @@ pos: adjective
 forms: [subdued]
 sources: [llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition

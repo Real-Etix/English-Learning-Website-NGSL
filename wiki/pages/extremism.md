@@ -6,6 +6,8 @@ pos: noun
 forms: [extremism]
 sources: [llm]
 status: enriched
+chart: subway
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[terrorism]] — Use 'extremism' when emphasizing the ideological or philosophical root, not the specific tactic of targeting civilians.
+- synonym: [[militancy]]
+- collocation: [[political]]
+- collocation: [[violent]]
+- collocation: [[religious]]

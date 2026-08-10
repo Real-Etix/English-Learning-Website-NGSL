@@ -9,6 +9,8 @@ rank: 2227
 sfi: 54.86
 sources: [wordnet, llm]
 status: enriched
+chart: whale
+region: whale
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[behemoth]] — Use 'behemoth' for a creature that is not only huge but also powerful and often awe-inspiring, like a legendary beast.
 - advanced_form: [[leviathan]] — Use 'leviathan' for a creature that is monstrous and often associated with the sea or mythical origins, emphasizing its terrifying size.
 - advanced_form: [[colossus]] — Use 'colossus' for a creature of enormous stature, often implying a humanoid or statue-like form, great in size and might.
+- collocation: [[hypermarket]]
+- collocation: [[megabat]]

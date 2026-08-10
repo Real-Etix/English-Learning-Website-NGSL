@@ -9,6 +9,8 @@ rank: 551
 sfi: 62.47
 sources: [wordnet, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,13 @@ any distinct time period in a sequence of events
 - synonym: [[phase]]
 - advanced_form: [[phase]] — Use 'phase' when emphasizing a distinct part of a process, often with a clear beginning and end, like in scientific or technical contexts.
 - advanced_form: [[juncture]] — Use 'juncture' to highlight a critical or decisive point in time, often when a choice or change is needed.
+- collocation: [[booster]]
+- synonym: [[dais]]
+- collocation: [[earlier]]
+- collocation: [[emcee]]
+- collocation: [[histrionics]]
+- synonym: [[podium]]
+- collocation: [[pubescent]]
+- synonym: [[rostrum]]
+- collocation: [[dramatization]]
+- collocation: [[inchoate]]

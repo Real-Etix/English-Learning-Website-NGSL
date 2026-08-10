@@ -6,6 +6,8 @@ pos: adjective
 forms: [impoverished]
 sources: [llm]
 status: enriched
+chart: needy
+region: needy
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[needy]] — Use 'impoverished' to emphasize severe poverty and lack of resources, more formal than 'needy'.
+- synonym: [[destitute]]
+- synonym: [[poor]]
+- synonym: [[indigent]]
+- collocation: [[family]]
+- collocation: [[community]]
+- collocation: [[rural]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [remotely]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[apart]] — Use 'remotely' to emphasize physical distance from other places.
+- collocation: [[detonate]]
+- synonym: [[far]]
+- synonym: [[away]]

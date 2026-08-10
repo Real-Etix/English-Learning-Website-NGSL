@@ -6,6 +6,8 @@ pos: adjective
 forms: [munificent]
 sources: [llm]
 status: enriched
+chart: thin
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[generous]] — Use 'munificent' for a more formal or grand scale of generosity, often involving large sums or gifts.
+- synonym: [[bountiful]]
+- synonym: [[liberal]]
+- collocation: [[gift]]
+- collocation: [[donation]]
+- collocation: [[benefactor]]
+- collocation: [[donor]]
+- collocation: [[contribution]]

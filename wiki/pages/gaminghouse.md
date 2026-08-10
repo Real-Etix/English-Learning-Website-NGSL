@@ -6,6 +6,8 @@ pos: noun
 forms: [gaminghouse]
 sources: [llm]
 status: enriched
+chart: casino
+region: casino
 ---
 
 ## Definition

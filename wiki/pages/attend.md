@@ -9,6 +9,8 @@ rank: 820
 sfi: 60.63
 sources: [wordnet, llm]
 status: enriched
+chart: shop
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ be present at (meetings, church services, university), etc.
 - builds_on: [[listen]] — Use 'attend' when focusing on listening with deliberate concentration, often in formal or academic contexts.
 - advanced_form: [[frequent]] — Use 'frequent' when attending a place regularly, often as a habitual visitor.
 - advanced_form: [[patronize]] — Use 'patronize' when attending a business or establishment as a customer, often with support.
+- synonym: [[accompany]]
+- collocation: [[congress]]
+- builds_on: [[nurse]] — Use when the care is part of one's duty or role, such as a doctor attending a patient.
+- builds_on: [[accompany]] — Use when being present at an event or gathering, often in a formal or official capacity.

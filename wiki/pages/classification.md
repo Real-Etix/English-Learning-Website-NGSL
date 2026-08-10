@@ -9,6 +9,8 @@ rank: 120
 sfi: 58.542
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ the act of distributing things into classes or categories of the same type
 - advanced_form: [[categorization]] — Use when emphasizing the process or system of placing items into categories; it is more formal and technical than 'classification'.
 - advanced_form: [[taxonomy]] — Use specifically for a hierarchical system of classification, especially in biology or information science; it implies a structured, often scientific ordering, while 'classification' is more general.
 - builds_on: [[category]] — Use 'classification' when emphasizing the systematic arrangement or taxonomy, not just any group.
+- synonym: [[nomenclature]]
+- synonym: [[rating]]
+- synonym: [[genre]]

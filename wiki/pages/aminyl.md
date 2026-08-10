@@ -6,6 +6,8 @@ pos: noun
 forms: [aminyl]
 sources: [llm]
 status: enriched
+chart: amino
+region: amino
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[amino]] — Use when referring to the specific radical species in organic chemistry.
+- collocation: [[radical]]
+- collocation: [[stable]]
+- collocation: [[persistent]]
+- collocation: [[intermediate]]
+- collocation: [[formation]]

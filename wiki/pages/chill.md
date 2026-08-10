@@ -9,6 +9,8 @@ rank: 535
 sfi: 53.12
 sources: [wordnet, llm]
 status: enriched
+chart: chill
+region: chill
 ---
 
 ## Definition

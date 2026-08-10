@@ -9,6 +9,8 @@ rank: 360
 sfi: 54.9
 sources: [wordnet, llm]
 status: enriched
+chart: desirable
+region: desirable
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ worth having or seeking or achieving
 - domain: business
 - advanced_form: [[coveted]] — Use 'coveted' to emphasize strong desire and envy, often for something rare or prestigious, whereas 'desirable' is more general.
 - advanced_form: [[preferable]] — Use 'preferable' when comparing options and indicating that one is more suitable or desirable than another, while 'desirable' simply means worth having.
+- builds_on: [[marketable]] — Use when emphasizing that a candidate's attributes are valued or sought after by employers, often in a job posting.

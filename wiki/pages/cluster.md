@@ -9,6 +9,8 @@ rank: 2681
 sfi: 53.31
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - advanced_form: [[congregate]] — Use 'congregate' when referring to people gathering together in a group, often for a shared purpose, while 'cluster' is more general and can apply to objects or animals.
 - advanced_form: [[converge]] — Use 'converge' when multiple separate things come together at a single point, emphasizing movement toward a common meeting place; 'cluster' suggests a stationary group without the sense of directed movement.
 - advanced_form: [[aggregate]] — Use 'aggregate' when combining many individual items into a collective whole, especially for data, particles, or abstract concepts; 'cluster' implies a loose grouping without strong cohesion.
+- synonym: [[agglomerate]]
+- synonym: [[bunch]]
+- synonym: [[constellation]]
+- synonym: [[crowd]]
+- collocation: [[obstruent]]
+- builds_on: [[bunch]] — Use when the items are physically close, especially naturally occurring groups.

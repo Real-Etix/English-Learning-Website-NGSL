@@ -9,6 +9,8 @@ rank: 93
 sfi: 70.39
 sources: []
 status: seeded
+chart: cable
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,12 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[manner]]
+- synonym: [[method]]
+- synonym: [[way]]
+- synonym: [[style]]
+- collocation: [[to]]
+- collocation: [[about]]
+- collocation: [[much]]
+- collocation: [[do]]
+- collocation: [[reimagine]]

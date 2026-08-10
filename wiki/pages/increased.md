@@ -6,6 +6,8 @@ pos: adjective
 forms: [increased]
 sources: [llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[more]] — Use when describing a quantity that has grown larger, especially in news, scientific, or business contexts.
+- collocation: [[commensurately]]
+- synonym: [[heightened]]
+- collocation: [[libido]]
+- collocation: [[irritability]]

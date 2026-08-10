@@ -9,6 +9,8 @@ rank: 106
 sfi: 58.742
 sources: [wordnet, llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ measured or expressed in numbers
 - advanced_form: [[quantitative]] — Use when emphasizing measurement of quantity or amount, often in formal or academic contexts.
 - advanced_form: [[computational]] — Use when referring to number-based processing or calculations, especially in technical or scientific contexts.
 - builds_on: [[quantitative]] — Use 'numerical' when emphasizing the expression in numbers, often more direct than 'quantitative', which can also relate to measurement methodology.
+- builds_on: [[digital]] — Use when describing anything represented by numbers, slightly more formal than 'digital' and often preferred in technical writing.
+- synonym: [[numeric]]

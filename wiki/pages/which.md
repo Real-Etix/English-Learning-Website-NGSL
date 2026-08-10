@@ -9,6 +9,8 @@ rank: 39
 sfi: 74.6
 sources: [dictionaryapi, llm]
 status: enriched
+chart: you
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ status: enriched
 - collocation: [[please]]
 - advanced_form: [[whichever]] — More formal than 'which', often used when the speaker implies any one from the set is acceptable.
 - advanced_form: [[who]] — Specifically for persons; replaces 'which' when referring to people, slightly more formal in interrogative contexts about individuals.
+- collocation: [[amongst]]
+- synonym: [[what]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [epicurean]
 sources: [llm]
 status: enriched
+chart: culinary
+region: culinary
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[culinary]] — Use 'epicurean' to highlight a refined, luxurious enjoyment of food and drink, often with a sense of pleasure-seeking, rather than the practical cooking process.
+- synonym: [[luxurious]]
+- collocation: [[feast]]
+- synonym: [[gastronomic]]

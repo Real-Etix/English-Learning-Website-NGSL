@@ -9,6 +9,8 @@ rank: 46
 sfi: 59.8
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: breach
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ loss due to not showing up
 - advanced_form: [[nonappearance]] — Use 'nonappearance' specifically for the act of not showing up, often in legal proceedings, where 'default' might also imply failure in payment or performance.
 - advanced_form: [[delinquency]] — Use 'delinquency' for failure to meet financial obligations, like loan payments, where 'default' is more general and can also apply to other failures.
 - builds_on: [[breach]] — Use 'default' specifically for failure to meet a financial obligation like a loan or contract payment.
+- synonym: [[absence]]
+- collocation: [[constructor]]
+- collocation: [[counterparty]]
+- collocation: [[gateway]]
+- synonym: [[walkover]]

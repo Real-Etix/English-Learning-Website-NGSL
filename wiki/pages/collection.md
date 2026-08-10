@@ -9,6 +9,8 @@ rank: 1084
 sfi: 59.2
 sources: [wordnet, llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,15 @@ _No sourced examples yet._
 - advanced_form: [[assemblage]] — Use 'assemblage' for a carefully or artistically gathered collection, often of objects or people.
 - advanced_form: [[aggregate]] — Use 'aggregate' when emphasizing the total sum or combination of items, especially in technical or statistical contexts.
 - advanced_form: [[corpus]] — Use 'corpus' for a systematic collection of texts or data used for research or analysis.
+- synonym: [[agglomerate]]
+- synonym: [[bookstack]]
+- synonym: [[bunch]]
+- synonym: [[chapbook]]
+- synonym: [[compendium]]
+- synonym: [[compilation]]
+- synonym: [[constellation]]
+- collocation: [[essay]]
+- synonym: [[menagerie]]
+- synonym: [[panoply]]
+- synonym: [[archive]]
+- synonym: [[bibliotheca]]

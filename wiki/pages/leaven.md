@@ -6,6 +6,8 @@ pos: noun
 forms: [leaven]
 sources: [llm]
 status: enriched
+chart: yeast
+region: yeast
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[yeast]] — Use 'leaven' for a formal or literary tone, especially when referring to the principle of rising or transformation.
+- synonym: [[catalyst]]
+- synonym: [[influence]]
+- collocation: [[add]]
+- collocation: [[bread]]
+- collocation: [[mixture]]

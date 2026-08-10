@@ -6,6 +6,8 @@ pos: verb
 forms: [adulterate]
 sources: [llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition

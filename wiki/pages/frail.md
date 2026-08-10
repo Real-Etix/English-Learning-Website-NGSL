@@ -6,6 +6,8 @@ pos: adjective
 forms: [frail]
 sources: [llm]
 status: enriched
+chart: strong
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[weak]] — Use when emphasizing delicate, easily broken physical condition, often due to age or illness.
+- synonym: [[brittle]]
+- synonym: [[feeble]]

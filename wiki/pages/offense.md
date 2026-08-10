@@ -9,6 +9,8 @@ rank: 2344
 sfi: 54.48
 sources: [wordnet, llm]
 status: enriched
+chart: offense
+region: offense
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[incivility]] — Use 'incivility' to emphasize a formal, often public breach of polite behavior.
 - advanced_form: [[discourtesy]] — Use 'discourtesy' to describe a specific act of rudeness, often in a social context.
+- collocation: [[expiate]]
+- synonym: [[misdemeanor]]
+- synonym: [[wrongdoing]]

@@ -9,6 +9,8 @@ rank: 1709
 sfi: 49.94
 sources: [wordnet, llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ your usual mood
 - advanced_form: [[temper]] — Use 'temper' when referring specifically to a person's tendency to become angry, especially in a short-tempered or irritable sense.
 - builds_on: [[mood]] — Use 'disposition' instead of 'mood' to refer to a person's typical or habitual state of feeling, not a temporary one.
 - builds_on: [[composition]] — Use 'disposition' when describing a deliberate arrangement of objects or people, often in a formal or strategic sense.
+- synonym: [[humour]]
+- synonym: [[mentality]]

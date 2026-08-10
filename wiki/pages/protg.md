@@ -6,6 +6,8 @@ pos: noun
 forms: [protg]
 sources: [llm]
 status: enriched
+chart: contingent
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ward]] — Use 'protégé' when the ward is being guided or mentored by a more experienced person.
+- synonym: [[apprentice]]
+- synonym: [[trainee]]
+- synonym: [[pupil]]
+- collocation: [[young]]
+- collocation: [[former]]
+- collocation: [[mentor]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [analogue]
 sources: [llm]
 status: enriched
+chart: comparable
+region: you
 ---
 
 ## Definition

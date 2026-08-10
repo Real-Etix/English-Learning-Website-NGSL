@@ -9,6 +9,8 @@ rank: 1039
 sfi: 52.06
 sources: [wordnet, llm]
 status: enriched
+chart: down
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[engulf]] — Use 'engulf' when something completely surrounds or swallows you, like being submerged in an emotion.
 - advanced_form: [[consume]] — Use 'consume' when an emotion or sensation fully occupies or devours your attention or being.
 - advanced_form: [[inundate]] — Use 'inundate' when you are overwhelmed by a flood of something, often sensory or emotional input.
+- synonym: [[overrun]]
+- synonym: [[oversubscribe]]
+- synonym: [[dazzle]]

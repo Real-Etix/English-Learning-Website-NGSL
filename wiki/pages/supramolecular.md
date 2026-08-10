@@ -6,6 +6,8 @@ pos: adjective
 forms: [supramolecular]
 sources: [llm]
 status: enriched
+chart: molecular
+region: molecular
 ---
 
 ## Definition

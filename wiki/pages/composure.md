@@ -6,6 +6,8 @@ pos: noun
 forms: [composure]
 sources: [llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reserve]] — Use 'composure' for calm and collected behavior, especially under pressure, rather than general reserve.
+- synonym: [[equanimity]]
+- synonym: [[poise]]
+- synonym: [[serenity]]
+- collocation: [[maintain]]
+- collocation: [[lose]]
+- collocation: [[regain]]

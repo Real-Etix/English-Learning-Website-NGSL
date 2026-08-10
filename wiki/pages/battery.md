@@ -9,6 +9,8 @@ rank: 165
 sfi: 56.66
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[emplacement]] — Use 'emplacement' to emphasize the physical location and construction of the battery, rather than the group of weapons.
 - advanced_form: [[position]] — Use 'position' as a more general term for a place where troops are stationed, less technical than 'battery'.
+- collocation: [[electrolytic]]
+- collocation: [[powerchair]]
+- collocation: [[voltaic]]

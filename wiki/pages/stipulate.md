@@ -6,6 +6,8 @@ pos: verb
 forms: [stipulate]
 sources: [llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition

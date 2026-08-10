@@ -9,6 +9,8 @@ rank: 2593
 sfi: 53.66
 sources: [wordnet, llm]
 status: enriched
+chart: trouble
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ something that baffles understanding and cannot be explained
 - synonym: [[secret]]
 - advanced_form: [[enigma]] — Use 'enigma' for something that is puzzling and mysterious, often implying a deeper, more cryptic quality than 'mystery'.
 - advanced_form: [[conundrum]] — Use 'conundrum' for a confusing and difficult problem or question, often one that involves a paradox or a riddle, rather than a general unknown.
+- collocation: [[cloak]]
+- collocation: [[impenetrable]]
+- synonym: [[riddle]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [occidental]
 sources: [llm]
 status: enriched
+chart: continental
+region: continental
 ---
 
 ## Definition

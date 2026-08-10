@@ -6,6 +6,8 @@ pos: noun
 forms: [companion]
 sources: [llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,5 @@ _No sourced examples yet._
 - builds_on: [[friend]] — Use 'companion' when emphasizing shared activities or journey, rather than emotional closeness.
 - builds_on: [[pet]] — Use instead of 'pet' when emphasizing the close bond or friendship.
 - builds_on: [[buddy]] — Use 'companion' instead of 'buddy' in more formal or literary contexts, especially when emphasizing shared experiences or travel.
+- synonym: [[comrade]]
+- synonym: [[helpmate]]

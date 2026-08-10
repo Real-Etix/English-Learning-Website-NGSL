@@ -6,6 +6,8 @@ pos: verb
 forms: [dice]
 sources: [llm]
 status: enriched
+chart: sole
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chop]] — Use 'dice' for cutting food into small, uniform cubes; more precise than 'chop'.
+- synonym: [[cut]]
+- synonym: [[mince]]
+- collocation: [[into]]
+- collocation: [[up]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [incisive]
 sources: [llm]
 status: enriched
+chart: profound
+region: you
 ---
 
 ## Definition

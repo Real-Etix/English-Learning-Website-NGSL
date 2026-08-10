@@ -6,6 +6,8 @@ pos: adverb
 forms: [succumb]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [cognizant]
 sources: [llm]
 status: enriched
+chart: mindful
+region: mindful
 ---
 
 ## Definition

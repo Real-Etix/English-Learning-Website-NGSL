@@ -9,6 +9,8 @@ rank: 204
 sfi: 57.48
 sources: [wordnet, llm]
 status: enriched
+chart: cheat
+region: cheat
 ---
 
 ## Definition

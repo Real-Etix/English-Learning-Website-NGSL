@@ -9,6 +9,8 @@ rank: 290
 sfi: 54.93
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: disadvantage
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ on the negative side or lower end of a scale
 - collocation: [[for]]
 - advanced_form: [[adverse]] — Use 'adverse' instead of 'minus' to describe conditions or factors that are harmful or unfavorable, especially in formal or technical contexts.
 - advanced_form: [[unfavorable]] — Use 'unfavorable' instead of 'minus' to emphasize a lack of advantage or a negative outcome, often in comparative or evaluative settings.
+- synonym: [[without]]

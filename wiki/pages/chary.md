@@ -6,6 +6,8 @@ pos: adjective
 forms: [chary]
 sources: [llm]
 status: enriched
+chart: entity
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wary]] — Use 'chary' when describing cautious reluctance due to distrust or fear of risk, often with 'of' + noun/gerund.
+- synonym: [[cautious]]
+- synonym: [[leery]]
+- synonym: [[circumspect]]

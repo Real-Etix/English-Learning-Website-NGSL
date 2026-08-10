@@ -9,6 +9,8 @@ rank: 2452
 sfi: 54.12
 sources: [wordnet, llm]
 status: enriched
+chart: line
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - builds_on: [[affair]] — Use 'province' instead of 'affair' to emphasize a person's specific area of knowledge or authority, often in formal or literary contexts.
 - advanced_form: [[territory]] — Use 'territory' when emphasizing a defined geographical area under jurisdiction, often larger or more formal than 'province'.
 - advanced_form: [[region]] — Use 'region' when focusing on a broad area with distinct characteristics, less administrative and more natural in general contexts.
+- synonym: [[county]]
+- builds_on: [[territory]] — Use it to refer specifically to an official territorial division within a country, especially in formal or historical contexts.
+- builds_on: [[county]] — Use 'province' when discussing broad territorial divisions in countries other than the UK, or in formal contexts.
+- synonym: [[shire]]

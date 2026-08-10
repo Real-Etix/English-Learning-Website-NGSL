@@ -9,6 +9,8 @@ rank: 564
 sfi: 62.35
 sources: [wordnet, llm]
 status: enriched
+chart: cite
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ a remark that calls attention to something or someone
 - synonym: [[reference]]
 - advanced_form: [[reference]] — Use 'reference' when you want to sound more formal or precise, especially in academic or professional contexts, instead of the general 'mention'.
 - advanced_form: [[allusion]] — Use 'allusion' when the mention is indirect or implied, often requiring background knowledge, rather than a direct or explicit 'mention'.
+- synonym: [[adduce]]

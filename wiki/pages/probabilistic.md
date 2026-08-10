@@ -6,6 +6,8 @@ pos: adjective
 forms: [probabilistic]
 sources: [llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [exacting]
 sources: [llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[strict]] — Use 'exacting' to stress the demand for precision and perfection, often for tasks or people.
+- synonym: [[rigorous]]
+- synonym: [[stringent]]
+- synonym: [[meticulous]]
+- collocation: [[scrutiny]]
+- collocation: [[discipline]]

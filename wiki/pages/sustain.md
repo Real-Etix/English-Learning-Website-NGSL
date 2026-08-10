@@ -9,6 +9,8 @@ rank: 2273
 sfi: 54.74
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - advanced_form: [[prolong]] — Use 'prolong' instead of 'sustain' when emphasizing extending the duration of something, often beyond its usual limit.
 - advanced_form: [[perpetuate]] — Use 'perpetuate' instead of 'sustain' when focusing on making something continue indefinitely, especially an idea or condition.
 - builds_on: [[undergo]] — Use 'sustain' for receiving damage, injury, or loss, more formal and specific than 'undergo'.
+- synonym: [[nourish]]
+- builds_on: [[afford]] — Use 'sustain' when 'cannot afford' means you cannot bear or undergo something without serious damage.

@@ -6,6 +6,8 @@ pos: noun
 forms: [sinistral]
 sources: [llm]
 status: enriched
+chart: right
+region: you
 ---
 
 ## Definition

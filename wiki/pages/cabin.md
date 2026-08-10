@@ -9,6 +9,8 @@ rank: 304
 sfi: 54.9
 sources: [wordnet, llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[cab]] — Use 'cabin' for a more formal or enclosed feel, especially for trucks or heavy machinery.
 - advanced_form: [[berth]] — Use 'berth' to specify the sleeping space or bunk, rather than the entire cabin room.
 - advanced_form: [[stateroom]] — Use 'stateroom' for a more comfortable, often larger private room on a ship, especially on passenger vessels.
+- synonym: [[cockpit]]
+- collocation: [[cozy]]
+- collocation: [[upperberth]]

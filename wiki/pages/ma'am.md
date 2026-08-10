@@ -8,6 +8,8 @@ lists: [toeic]
 rank: 725
 sources: [wordnet, llm]
 status: enriched
+chart: father
+region: you
 ---
 
 ## Definition

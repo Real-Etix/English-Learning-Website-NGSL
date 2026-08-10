@@ -9,6 +9,8 @@ rank: 667
 sfi: 61.55
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,24 @@ a thing constructed
 - synonym: [[construction]]
 - advanced_form: [[edifice]] — Use 'edifice' instead of 'structure' when referring to a large, impressive building, often with historical or architectural significance.
 - advanced_form: [[complex]] — Use 'complex' instead of 'structure' when referring to a group of related buildings or facilities that form a single entity.
+- synonym: [[anatomy]]
+- collocation: [[bone]]
+- collocation: [[crystallite]]
+- collocation: [[determinate]]
+- collocation: [[divisional]]
+- collocation: [[egalitarian]]
+- collocation: [[forepart]]
+- synonym: [[format]]
+- collocation: [[geological]]
+- collocation: [[grammatic]]
+- collocation: [[ligneous]]
+- collocation: [[macromolecule]]
+- collocation: [[morphemic]]
+- collocation: [[morphosyntactic]]
+- collocation: [[nucleoid]]
+- collocation: [[prosodic]]
+- collocation: [[federative]]
+- collocation: [[nucleon]]
+- synonym: [[ossature]]
+- collocation: [[osseous]]
+- collocation: [[polypeptide]]

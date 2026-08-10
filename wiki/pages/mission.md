@@ -9,6 +9,8 @@ rank: 1691
 sfi: 56.6
 sources: [wordnet, llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - builds_on: [[embassy]] — Use 'mission' instead of 'embassy' to emphasize the diplomatic function or when referring to the entire diplomatic staff and offices, not just the building.
 - advanced_form: [[congregation]] — Use 'congregation' instead of 'mission' when referring to a formal religious community dedicated to missionary work, especially in Catholic contexts.
 - advanced_form: [[apostolate]] — Use 'apostolate' instead of 'mission' when emphasizing the organized religious work and mission of a group, often in formal or theological contexts.
+- collocation: [[abort]]
+- collocation: [[covert]]
+- synonym: [[deputation]]
+- collocation: [[exploratory]]
+- collocation: [[orbiter]]
+- collocation: [[pacification]]
+- collocation: [[reconnaissance]]

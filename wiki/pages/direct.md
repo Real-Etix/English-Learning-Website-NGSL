@@ -9,6 +9,8 @@ rank: 724
 sfi: 61.16
 sources: [wordnet, llm]
 status: enriched
+chart: direct
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,13 @@ _No sourced examples yet._
 - builds_on: [[aim]] — Use 'direct' when you want to emphasize guiding or pointing something toward a target.
 - builds_on: [[orient]] — Use when the action involves pointing or aiming, often with a sense of purposeful guidance.
 - builds_on: [[route]] — Use 'direct' when specifying a precise destination or person, more formal than 'route'.
+- synonym: [[denotative]]
+- synonym: [[forthright]]
+- synonym: [[helm]]
+- collocation: [[inheritor]]
+- collocation: [[observation]]
+- collocation: [[pertinence]]
+- collocation: [[precursor]]
+- synonym: [[preside]]
+- synonym: [[rectilinear]]
+- builds_on: [[dictate]] — Use for formal, authoritative instructions in workplace or official settings.

@@ -9,6 +9,8 @@ rank: 841
 sfi: 52.56
 sources: [wordnet, llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[conflict]] — Use 'conflict' instead of 'combat' when you want a more general term for a prolonged or serious fight, often implying broader hostilities.
 - advanced_form: [[skirmish]] — Use 'skirmish' instead of 'combat' when describing a small, unplanned, or minor engagement, often part of a larger battle.
 - advanced_form: [[hostilities]] — Use 'hostilities' instead of 'combat' to refer to the state or acts of war between opposing forces, especially in a formal or diplomatic context.
+- collocation: [[aviation]]
+- synonym: [[joust]]
+- collocation: [[readiness]]
+- synonym: [[warfare]]
+- builds_on: [[battle]] — Use 'combat' to refer to the general act of fighting, rather than a specific named battle.

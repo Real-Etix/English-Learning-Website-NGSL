@@ -6,6 +6,8 @@ pos: noun
 forms: [biocatalyst]
 sources: [llm]
 status: enriched
+chart: enzyme
+region: enzyme
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[enzyme]] — Use 'biocatalyst' when emphasizing the biological origin of the enzyme, e.g., in scientific writing.
+- synonym: [[catalyst]]
+- collocation: [[activity]]
+- collocation: [[production]]
+- collocation: [[industrial]]
+- collocation: [[reaction]]

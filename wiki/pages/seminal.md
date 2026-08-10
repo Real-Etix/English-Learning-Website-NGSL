@@ -6,6 +6,8 @@ pos: adjective
 forms: [seminal]
 sources: [llm]
 status: enriched
+chart: thin
+region: you
 ---
 
 ## Definition

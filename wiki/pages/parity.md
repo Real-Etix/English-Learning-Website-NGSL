@@ -9,6 +9,8 @@ rank: 842
 sfi: 52.47
 sources: [wordnet, llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ status: enriched
 - builds_on: [[equivalence]] — Use 'parity' when emphasizing equal status, value, or treatment, especially in economic, political, or comparative contexts.
 - advanced_form: [[nulliparity]] — Use when describing a woman who has never given birth to a live child, as opposed to parity which is the count.
 - advanced_form: [[multiparity]] — Use when describing a woman who has given birth two or more times, as opposed to parity which is a general count.
+- collocation: [[non-even]]

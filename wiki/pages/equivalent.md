@@ -9,6 +9,8 @@ rank: 2049
 sfi: 55.41
 sources: [wordnet, llm]
 status: enriched
+chart: comparable
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ a person or thing equal to another in value or measure or force or effect or sig
 - builds_on: [[peer]] — Use instead of 'peer' when focusing on equal value, rank, or function, especially in comparisons.
 - advanced_form: [[counterpart]] — Use counterpart to emphasize a matching or complementary role, especially in a different system or context.
 - advanced_form: [[analogue]] — Use analogue for something comparable in function or structure, often in scientific or technical contexts.
+- synonym: [[coequal]]
+- synonym: [[corresponding]]
+- collocation: [[gram-molecule]]
+- collocation: [[metricton]]
+- synonym: [[proportionate]]

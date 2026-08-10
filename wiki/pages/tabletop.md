@@ -9,6 +9,8 @@ rank: 146
 sfi: 59.29
 sources: [wordnet, llm]
 status: enriched
+chart: tabletop
+region: tabletop
 ---
 
 ## Definition

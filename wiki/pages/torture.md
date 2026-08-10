@@ -9,6 +9,8 @@ rank: 896
 sfi: 50.24
 sources: [wordnet, llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [benefaction]
 sources: [llm]
 status: enriched
+chart: specialty
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[donation]] — Use for a large, charitable donation, often with a sense of philanthropy and formality.
+- synonym: [[contribution]]
+- synonym: [[gift]]
+- synonym: [[grant]]
+- synonym: [[endowment]]
+- collocation: [[generous]]
+- collocation: [[charitable]]
+- collocation: [[public]]
+- collocation: [[receive]]
+- collocation: [[bestow]]

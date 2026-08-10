@@ -9,6 +9,8 @@ rank: 65
 sfi: 63.34
 sources: [wordnet, llm]
 status: enriched
+chart: overhead
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ the overhead upper surface of a covered space
 - advanced_form: [[vault]] — Use 'vault' for an arched or curved ceiling, common in architecture and large buildings.
 - advanced_form: [[canopy]] — Use 'canopy' for a covering that resembles a ceiling, especially something suspended or formed by nature.
 - advanced_form: [[overhead]] — Use 'overhead' as a noun for the space or surface above, common in construction and design contexts.
+- collocation: [[beams]]
+- collocation: [[fitting]]
+- collocation: [[luminaire]]

@@ -9,6 +9,8 @@ rank: 484
 sfi: 53.59
 sources: [wordnet, llm]
 status: enriched
+chart: aesthetic
+region: you
 ---
 
 ## Definition

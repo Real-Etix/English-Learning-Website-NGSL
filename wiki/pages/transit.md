@@ -9,6 +9,8 @@ rank: 327
 sfi: 54.58
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - builds_on: [[transport]] — Use 'transit' to refer to the system or means of transport, especially in urban contexts.
 - builds_on: [[passage]] — Use 'transit' specifically for physical movement or transport from one place to another, rather than abstract states.
 - builds_on: [[transportation]] — Use 'transit' when referring specifically to public transportation systems or the movement of people through a network, often implying scheduled routes.
+- synonym: [[locomotion]]

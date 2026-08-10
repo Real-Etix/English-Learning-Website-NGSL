@@ -9,6 +9,8 @@ rank: 96
 sfi: 58.42
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: ex
+region: ex
 ---
 
 ## Definition

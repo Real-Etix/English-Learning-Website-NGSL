@@ -6,6 +6,8 @@ pos: noun
 forms: [titer]
 sources: [llm]
 status: enriched
+chart: interest
+region: you
 ---
 
 ## Definition

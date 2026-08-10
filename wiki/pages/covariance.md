@@ -9,6 +9,8 @@ rank: 1047
 sfi: 51.11
 sources: [wordnet, llm]
 status: enriched
+chart: covariance
+region: covariance
 ---
 
 ## Definition

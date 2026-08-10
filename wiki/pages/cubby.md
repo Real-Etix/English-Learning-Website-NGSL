@@ -6,6 +6,8 @@ pos: noun
 forms: [cubby]
 sources: [llm]
 status: enriched
+chart: kilometer
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[drawer]] — Use 'cubby' for a small, informal storage space that may not slide out, often found in furniture like desks or shelves.
+- synonym: [[compartment]]
+- synonym: [[niche]]
+- synonym: [[recess]]
+- synonym: [[locker]]
+- collocation: [[cubbyhole]]
+- collocation: [[storage]]
+- collocation: [[shelf]]
+- collocation: [[wall]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [vena]
 sources: [llm]
 status: enriched
+chart: basin
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vein]] — Use 'vena' in anatomical or medical contexts where precision is needed, especially when referring to major veins.
+- collocation: [[superior]]
+- collocation: [[inferior]]

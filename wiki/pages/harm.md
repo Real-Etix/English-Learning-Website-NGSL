@@ -7,8 +7,10 @@ forms: [harm, harms, harmed, harming]
 lists: [ngsl]
 rank: 2236
 sfi: 54.82
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: trauma
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 - synonym: [[injury]]
 - synonym: [[hurt]]
 - synonym: [[trauma]]
+- synonym: [[detriment]]
+- synonym: [[maltreat]]
+- advanced_form: [[trauma]] — Use for serious physical injury, especially in medical or emergency contexts.
+- advanced_form: [[impairment]] — Use when harm affects a body part's normal function or ability.
+- advanced_form: [[lesion]] — Use for specific, localized damage to tissue, often diagnosed medically.

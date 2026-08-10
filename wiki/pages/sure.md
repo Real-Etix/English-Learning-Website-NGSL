@@ -9,6 +9,8 @@ rank: 279
 sfi: 65.45
 sources: [wordnet, llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ having or feeling no doubt or uncertainty
 - advanced_form: [[certain]] — Use 'certain' when you want to sound more formal or emphatic than 'sure'.
 - advanced_form: [[convinced]] — Use 'convinced' to emphasize that you have been persuaded by evidence or reasoning.
 - advanced_form: [[assured]] — Use 'assured' to convey a sense of confidence after reassurance or certainty.
+- synonym: [[ineluctable]]
+- collocation: [[quite]]
+- synonym: [[yep]]
+- collocation: [[yep]]

@@ -9,6 +9,8 @@ rank: 1448
 sfi: 57.63
 sources: [wordnet, llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ a vaguely specified concern
 - advanced_form: [[domain]] — Use 'domain' instead of 'affair' when referring to a specific field or area of responsibility, especially in formal or professional contexts.
 - advanced_form: [[province]] — Use 'province' instead of 'affair' to emphasize a person's specific area of knowledge or authority, often in formal or literary contexts.
 - advanced_form: [[realm]] — Use 'realm' instead of 'affair' to refer to a particular field of activity or interest, especially in abstract or formal contexts.
+- collocation: [[clandestine]]

@@ -9,6 +9,8 @@ rank: 1757
 sfi: 56.35
 sources: [wordnet, llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - synonym: [[salary]]
 - advanced_form: [[salary]] — Use 'salary' instead of 'wage' when referring to a fixed regular payment, typically paid monthly or annually to professional or office workers.
 - advanced_form: [[stipend]] — Use 'stipend' instead of 'wage' when referring to a fixed regular payment for a trainee, intern, or volunteer, often not based on hours worked.
+- collocation: [[decontrol]]
+- collocation: [[gap]]
+- collocation: [[hourly]]

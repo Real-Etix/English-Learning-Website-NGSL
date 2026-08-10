@@ -6,6 +6,8 @@ pos: adjective
 forms: [disciplinary]
 sources: [llm]
 status: enriched
+chart: corrective
+region: corrective
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[corrective]] — Use 'disciplinary' instead of 'corrective' when referring to formal actions taken by an authority (school, workplace) to enforce rules and punish infractions.
+- synonym: [[penal]]

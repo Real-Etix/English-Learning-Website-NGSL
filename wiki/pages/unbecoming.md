@@ -6,6 +6,8 @@ pos: adjective
 forms: [unbecoming]
 sources: [llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition

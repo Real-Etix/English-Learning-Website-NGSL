@@ -6,6 +6,8 @@ pos: noun
 forms: [candidacy]
 sources: [llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[campaign]] — Use candidacy to emphasize the official status of being a candidate rather than the activities of the campaign.
+- synonym: [[nomination]]
+- synonym: [[bid]]
+- synonym: [[run]]
+- collocation: [[announce]]
+- collocation: [[launch]]
+- collocation: [[withdraw]]
+- collocation: [[presidential]]
+- collocation: [[formal]]

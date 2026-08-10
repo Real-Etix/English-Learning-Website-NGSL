@@ -9,6 +9,8 @@ rank: 1371
 sfi: 57.96
 sources: [wordnet, llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ a long thin piece of cloth or paper as used for binding or fastening
 - advanced_form: [[ribbon]] — Use for a decorative or neat strip of cloth, often for binding gifts or hair.
 - advanced_form: [[strip]] — Use for a long, narrow piece of material cut from a larger sheet, especially for practical binding.
 - advanced_form: [[band]] — Use for a flexible loop or strip (often elastic) that fastens items; can be cloth, metal, or rubber.
+- synonym: [[footage]]
+- collocation: [[recorder]]

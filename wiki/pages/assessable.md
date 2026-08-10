@@ -6,6 +6,8 @@ pos: adjective
 forms: [assessable]
 sources: [llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[taxable]] — Use 'assessable' when emphasizing the valuation or evaluation process that determines the tax amount.
+- synonym: [[leviable]]
+- synonym: [[quantifiable]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [incredulous]
 sources: [llm]
 status: enriched
+chart: uncertain
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[skeptical]] — Use when expressing strong disbelief or unwillingness to believe, often in response to an extraordinary claim, whereas 'skeptical' is more about general doubt and questioning.
+- synonym: [[doubtful]]
+- synonym: [[suspicious]]
+- synonym: [[mistrustful]]
+- collocation: [[look]]
+- collocation: [[stare]]
+- collocation: [[voice]]
+- collocation: [[question]]
+- collocation: [[gasp]]

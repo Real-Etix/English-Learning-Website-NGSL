@@ -6,6 +6,8 @@ pos: noun
 forms: [firstminister]
 sources: [llm]
 status: enriched
+chart: first
+region: you
 ---
 
 ## Definition

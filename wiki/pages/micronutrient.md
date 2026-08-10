@@ -6,6 +6,8 @@ pos: noun
 forms: [micronutrient]
 sources: [llm]
 status: enriched
+chart: vitamin
+region: vitamin
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vitamin]] — Use 'micronutrient' when emphasizing the small quantity needed and scientific context, instead of the everyday term 'vitamin'.
+- synonym: [[mineral]]
+- synonym: [[nutrient]]
+- collocation: [[deficiency]]
+- collocation: [[intake]]
+- collocation: [[essential]]

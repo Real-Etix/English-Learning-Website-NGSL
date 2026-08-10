@@ -9,6 +9,8 @@ rank: 932
 sfi: 60.05
 sources: [wordnet, llm]
 status: enriched
+chart: timer
+region: timer
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[timepiece]] — Use 'timepiece' for a more elegant or formal reference to a clock or watch, especially in descriptions of antiques or luxury items.
 - advanced_form: [[chronometer]] — Use 'chronometer' when emphasizing precision and reliability, such as in maritime or technical contexts.
+- collocation: [[chime]]
+- collocation: [[tock]]

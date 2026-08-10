@@ -6,6 +6,8 @@ pos: verb
 forms: [haunt]
 sources: [llm]
 status: enriched
+chart: shop
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[frequent]] — Use 'haunt' to suggest very frequent, almost habitual visits, often with a sense of familiarity or obsession.
+- synonym: [[visit]]
+- synonym: [[patronize]]
+- collocation: [[library]]
+- collocation: [[bar]]

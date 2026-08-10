@@ -9,6 +9,8 @@ rank: 2446
 sfi: 54.13
 sources: [wordnet, llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ _No sourced examples yet._
 - advanced_form: [[victor]] — Use 'victor' to emphasize the act of winning or defeating opponents, often in a contest or battle.
 - advanced_form: [[titleholder]] — Use 'titleholder' when referring to someone who currently holds a specific championship title, especially in sports or tournaments.
 - advanced_form: [[medalist]] — Use 'medalist' specifically for winners who have received a medal, often in multi-level competitions like the Olympics.
+- synonym: [[hero]]
+- builds_on: [[hero]] — Use for someone who heroically fights for a cause rather than just showing physical courage.
+- collocation: [[sire]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [chronicle]
 sources: [llm]
 status: enriched
+chart: account
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - builds_on: [[register]] — Use for detailed, narrative recording over time, unlike 'register' which is more administrative.
 - builds_on: [[journal]] — Use 'chronicle' for a more formal or historical account that emphasizes storytelling and continuity over time.
 - builds_on: [[blog]] — Use 'chronicle' for a blog that records events over time in a formal or narrative style.
+- synonym: [[memoir]]
+- synonym: [[yearbook]]
+- builds_on: [[narrative]] — Use for a factual record of events over time, often historical.

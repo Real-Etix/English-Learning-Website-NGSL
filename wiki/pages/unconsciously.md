@@ -6,6 +6,8 @@ pos: adverb
 forms: [unconsciously]
 sources: [llm]
 status: enriched
+chart: automatically
+region: automatically
 ---
 
 ## Definition

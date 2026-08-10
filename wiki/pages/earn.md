@@ -9,6 +9,8 @@ rank: 926
 sfi: 60.09
 sources: [wordnet, llm]
 status: enriched
+chart: secure
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ earn on some commercial or business transaction
 - advanced_form: [[net]] — Use 'net' to emphasize the amount remaining after deductions or costs, especially in business contexts.
 - advanced_form: [[yield]] — Use 'yield' when the profit or result comes from an asset or resource over time, often passive income.
 - builds_on: [[deserve]] — Use 'earn' when the deserved thing is a result of effort or action, highlighting the process.
+- synonym: [[graduate]]
+- collocation: [[laurel]]
+- collocation: [[legitimately]]
+- collocation: [[plaudit]]

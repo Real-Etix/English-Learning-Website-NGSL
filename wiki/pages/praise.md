@@ -9,6 +9,8 @@ rank: 2473
 sfi: 54.05
 sources: [wordnet, llm]
 status: enriched
+chart: quotation
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ an expression of approval and commendation
 - advanced_form: [[accolade]] — Use 'accolade' when referring to formal recognition or an award, often in a professional or artistic context, rather than general praise.
 - advanced_form: [[commendation]] — Use 'commendation' for official or public praise, especially from an authority figure or organization, implying formal recognition.
 - advanced_form: [[plaudit]] — Use 'plaudit' (often plural) for enthusiastic praise or applause from a group, especially in public or critical reception.
+- synonym: [[congratulate]]
+- synonym: [[exalt]]
+- synonym: [[extol]]
+- collocation: [[extravagant]]
+- collocation: [[indiscriminate]]
+- synonym: [[laud]]
+- synonym: [[laurel]]
+- collocation: [[profuse]]
+- synonym: [[compliments]]

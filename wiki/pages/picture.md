@@ -9,6 +9,8 @@ rank: 509
 sfi: 62.83
 sources: [wordnet, llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[likeness]] — Use 'likeness' when referring to a visual representation that aims to be a faithful copy or resemblance of a specific person or thing, especially in portraiture.
 - advanced_form: [[rendering]] — Use 'rendering' when the image is produced by a technical or artistic process, such as computer graphics or drawing, often suggesting a preliminary or detailed version.
 - builds_on: [[visualize]] — Use 'picture' when vividly imagining a scene or event, similar to 'visualize' but slightly more informal yet still advanced.
+- synonym: [[envisage]]
+- synonym: [[motion-picture]]
+- synonym: [[cinema]]

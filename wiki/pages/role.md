@@ -9,6 +9,8 @@ rank: 468
 sfi: 63.33
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,13 @@ the actions and activities assigned to or required or expected of a person or gr
 - advanced_form: [[function]] — Use 'function' to emphasize the specific purpose or duty of a role, often in a formal or professional context.
 - advanced_form: [[capacity]] — Use 'capacity' when referring to the official position or authority a person holds, especially in formal or legal contexts.
 - advanced_form: [[position]] — Use 'position' to refer to a specific job or rank within an organization, often implying a formal title or status.
+- collocation: [[ceremonial]]
+- collocation: [[diminished]]
+- collocation: [[instrumental]]
+- collocation: [[middleman]]
+- collocation: [[pivotal]]
+- collocation: [[predominant]]
+- collocation: [[recast]]
+- collocation: [[victimizer]]
+- collocation: [[integral]]
+- collocation: [[avunculate]]

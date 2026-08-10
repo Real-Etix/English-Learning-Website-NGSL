@@ -6,6 +6,8 @@ pos: adjective
 forms: [unprompted]
 sources: [llm]
 status: enriched
+chart: spontaneous
+region: spontaneous
 ---
 
 ## Definition

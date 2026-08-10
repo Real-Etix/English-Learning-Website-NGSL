@@ -9,6 +9,8 @@ rank: 1809
 sfi: 56.16
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - advanced_form: [[warrant]] — Use 'warrant' instead of 'draft' when referring to a financial document that orders payment of dividends or interest, often in corporate finance.
 - advanced_form: [[bill]] — Use 'bill' (short for bill of exchange) instead of 'draft' in trade finance contexts, especially for time drafts.
 - advanced_form: [[instrument]] — Use 'instrument' instead of 'draft' when referring to any formal written document that represents a financial transaction, such as a check or money order.
+- synonym: [[breeze]]
+- synonym: [[conscript]]
+- collocation: [[dodge]]
+- synonym: [[zephyr]]

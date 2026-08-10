@@ -9,6 +9,8 @@ rank: 2246
 sfi: 54.8
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,16 @@ _No sourced examples yet._
 - advanced_form: [[moiety]] — Use 'moiety' instead of 'radical' when referring to a distinct portion of a molecule that retains its identity in reactions.
 - advanced_form: [[species]] — Use 'species' instead of 'radical' when discussing a specific chemical entity involved in a process.
 - advanced_form: [[fragment]] — Use 'fragment' instead of 'radical' when emphasizing that the group has been cleaved from a larger molecule.
+- collocation: [[aminyl]]
+- collocation: [[anion]]
+- collocation: [[cleric]]
+- synonym: [[drastic]]
+- synonym: [[leftist]]
+- synonym: [[marxist]]
+- collocation: [[reappraisal]]
+- collocation: [[recasting]]
+- collocation: [[revisionist]]
+- synonym: [[zealot]]
+- synonym: [[terrorist]]
+- collocation: [[exteriority]]
+- collocation: [[indeterminacy]]

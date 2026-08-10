@@ -9,6 +9,8 @@ rank: 129
 sfi: 59.83
 sources: [wordnet, llm]
 status: enriched
+chart: pinky
+region: pinky
 ---
 
 ## Definition

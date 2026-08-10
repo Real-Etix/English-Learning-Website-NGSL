@@ -9,6 +9,8 @@ rank: 214
 sfi: 57.547
 sources: [wordnet, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ _No sourced examples yet._
 - builds_on: [[precedent]] — Use 'paradigm' instead of 'precedent' when referring to a broader pattern or model that defines a standard approach, often in scientific or conceptual contexts.
 - builds_on: [[prototype]] — Use 'paradigm' for a typical pattern or conceptual framework; often used in scientific or systematic contexts.
 - builds_on: [[framework]] — Use 'paradigm' when emphasizing a widely accepted conceptual model or example that defines a field, rather than a simple structural outline.
+- collocation: [[inflectional]]

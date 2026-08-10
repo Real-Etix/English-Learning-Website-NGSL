@@ -9,6 +9,8 @@ rank: 1581
 sfi: 57.07
 sources: [wordnet, llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ the act of examining resemblances
 - advanced_form: [[analogy]] — Use when comparing two things to explain or clarify, often highlighting a similarity in function or structure.
 - advanced_form: [[juxtaposition]] — Use when placing things side by side to highlight differences or contrasts, especially in analysis or critique.
 - advanced_form: [[contrast]] — Use when focusing on differences between two items, often to emphasize opposing qualities.
+- collocation: [[co-twin]]

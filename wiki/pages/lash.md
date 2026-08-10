@@ -6,6 +6,8 @@ pos: noun
 forms: [lash]
 sources: [llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[strap]] — Use 'lash' for a flexible cord or rope used for binding, often in nautical contexts or for whipping, more specific than general 'strap'.
+- synonym: [[rope]]
+- synonym: [[cord]]
+- collocation: [[cargo]]
+- builds_on: [[swing]] — Use 'lash' for a quick, violent, whip-like motion.

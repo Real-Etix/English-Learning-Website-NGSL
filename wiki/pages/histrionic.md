@@ -6,6 +6,8 @@ pos: adjective
 forms: [histrionic]
 sources: [llm]
 status: enriched
+chart: notable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dramatic]] — Use 'histrionic' to describe overly dramatic, exaggerated behavior that seems fake or attention-seeking, with a negative connotation.
+- synonym: [[theatrical]]
+- collocation: [[personality]]
+- collocation: [[behavior]]
+- collocation: [[display]]

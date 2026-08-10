@@ -6,6 +6,8 @@ pos: noun
 forms: [stateroom]
 sources: [llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition

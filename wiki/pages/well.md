@@ -9,6 +9,8 @@ rank: 61
 sfi: 72.64
 sources: [wordnet, llm]
 status: enriched
+chart: well
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ status: enriched
 - advanced_form: [[adeptly]] — Use 'adeptly' to emphasize cleverness and skill beyond just doing something well.
 - advanced_form: [[proficiently]] — Use 'proficiently' to highlight competence and technical ability, not just general goodness.
 - advanced_form: [[competently]] — Use 'competently' to stress that the action meets required standards or adequacy.
+- collocation: [[anyhow]]
+- collocation: [[anyway]]
+- synonym: [[fountain]]
+- collocation: [[prepared]]
+- collocation: [[primed]]
+- collocation: [[protected]]
+- collocation: [[quite]]

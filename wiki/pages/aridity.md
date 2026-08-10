@@ -6,6 +6,8 @@ pos: noun
 forms: [aridity]
 sources: [llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[drought]] — Use 'aridity' instead of 'drought' when describing a long-term climate condition of dryness, not a temporary rainfall shortage.
+- synonym: [[desiccation]]
+- collocation: [[extreme]]
+- collocation: [[soil]]
+- collocation: [[climate]]
+- collocation: [[region]]
+- collocation: [[persistent]]

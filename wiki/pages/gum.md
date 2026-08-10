@@ -9,6 +9,8 @@ rank: 824
 sfi: 51.22
 sources: [wordnet, llm]
 status: enriched
+chart: sweet
+region: sweet
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[chicle]] — Use 'chicle' when referring to the natural gum base or in a formal context about chewing gum's origin.
 - advanced_form: [[bubblegum]] — Use 'bubblegum' specifically for gum designed to be blown into bubbles.
 - advanced_form: [[confection]] — Use 'confection' in formal or descriptive contexts when categorizing gum as a sweet treat.
+- collocation: [[anesthetize]]

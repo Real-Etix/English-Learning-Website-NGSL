@@ -9,6 +9,8 @@ rank: 292
 sfi: 55
 sources: [wordnet, llm]
 status: enriched
+chart: breach
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ an accidental hole that allows something (fluid or light etc.) to enter or escap
 - domain: business
 - advanced_form: [[breach]] — Use 'breach' for a more formal or structural hole, often implying a violation of integrity.
 - advanced_form: [[fissure]] — Use 'fissure' for a narrow, crack-like opening, especially in solid materials like rock or metal.
+- synonym: [[divulgence]]
+- synonym: [[leakage]]

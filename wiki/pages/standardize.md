@@ -9,6 +9,8 @@ rank: 495
 sfi: 54.795
 sources: [wordnet, llm]
 status: enriched
+chart: administer
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[normalize]] — Use when making something conform to a standard, often implying bringing it into a consistent state.
 - advanced_form: [[regulate]] — Use when controlling or directing according to a rule or system, often with an authoritative or official connotation.
 - builds_on: [[govern]] — Use 'standardize' when the focus is on making things uniform and consistent according to a set standard, rather than general governance.
+- synonym: [[systematize]]
+- collocation: [[process]]
+- collocation: [[procedure]]
+- collocation: [[format]]
+- collocation: [[data]]
+- synonym: [[collectivize]]

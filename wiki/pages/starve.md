@@ -6,6 +6,8 @@ pos: verb
 forms: [starve]
 sources: [llm]
 status: enriched
+chart: hunger
+region: hunger
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hunger]] — Use 'starve' when emphasizing prolonged lack of food or intense hunger; it is stronger and more urgent than 'hunger'.
+- synonym: [[famish]]

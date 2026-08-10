@@ -9,6 +9,8 @@ rank: 1635
 sfi: 56.86
 sources: [wordnet, llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[withdraw]] — Use 'withdraw' when focusing on leaving a position or active involvement formally.
 - advanced_form: [[abdicate]] — Use 'abdicate' when giving up a high office or responsibility, implying formal relinquishment.
+- synonym: [[extinguish]]

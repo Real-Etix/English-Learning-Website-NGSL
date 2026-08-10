@@ -6,6 +6,8 @@ pos: noun
 forms: [efficacy]
 sources: [llm]
 status: enriched
+chart: rally
+region: you
 ---
 
 ## Definition

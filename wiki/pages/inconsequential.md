@@ -6,6 +6,8 @@ pos: adjective
 forms: [inconsequential]
 sources: [llm]
 status: enriched
+chart: little
+region: you
 ---
 
 ## Definition

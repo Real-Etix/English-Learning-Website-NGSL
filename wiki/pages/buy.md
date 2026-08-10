@@ -9,6 +9,8 @@ rank: 242
 sfi: 66.07
 sources: [wordnet, llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - antonym: [[sell]]
 - advanced_form: [[purchase]] — Use 'purchase' instead of 'buy' in formal or business contexts, such as contracts, receipts, or official documents.
 - advanced_form: [[procure]] — Use 'procure' when the item requires effort, special arrangement, or is difficult to obtain, often in professional or formal settings.
+- synonym: [[subscribe]]

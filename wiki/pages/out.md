@@ -9,6 +9,8 @@ rank: 55
 sfi: 73.15
 sources: [wordnet, llm]
 status: enriched
+chart: secure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,14 @@ not allowed to continue to bat or run
 - antonym: [[safe]]
 - advanced_form: [[retired]] — Use 'retired' for more formal sports commentary, particularly in baseball or cricket, to indicate a player is out.
 - advanced_form: [[dismissed]] — Use 'dismissed' in cricket or formal baseball contexts to describe a player being out, often in official match reports.
+- collocation: [[bleed]]
+- collocation: [[chisel]]
+- collocation: [[crowd]]
+- collocation: [[gasp]]
+- collocation: [[klick]]
+- collocation: [[of]]
+- collocation: [[protrude]]
+- collocation: [[wedlock]]
+- collocation: [[wrench]]
+- collocation: [[wring]]
+- collocation: [[blare]]

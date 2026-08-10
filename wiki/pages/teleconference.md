@@ -6,6 +6,8 @@ pos: verb
 forms: [teleconference]
 sources: [llm]
 status: enriched
+chart: confer
+region: you
 ---
 
 ## Definition

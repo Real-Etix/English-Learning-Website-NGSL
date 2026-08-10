@@ -9,6 +9,8 @@ rank: 2224
 sfi: 54.87
 sources: [wordnet, llm]
 status: enriched
+chart: depth
+region: depth
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ the extent downward or backward or inward
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[profundity]] — Use 'profundity' instead of 'depth' in formal or philosophical contexts to emphasize great extent or intensity.
 - advanced_form: [[deepness]] — Use 'deepness' as a straightforward, slightly formal synonym for 'depth' when referring to physical measures.
+- synonym: [[abyss]]
+- synonym: [[richness]]
+- collocation: [[turnup]]

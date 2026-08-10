@@ -6,6 +6,8 @@ pos: adjective
 forms: [reactionary]
 sources: [llm]
 status: enriched
+chart: thin
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[conservative]] — Use 'reactionary' when describing opposition to change that seeks to return to a previous state, often with a negative or extreme connotation.
+- collocation: [[politics]]
+- collocation: [[stance]]
+- collocation: [[regime]]

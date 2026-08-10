@@ -6,6 +6,8 @@ pos: verb
 forms: [k]
 sources: [llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fan]] — Use 'K' as a concise, sportswriting-friendly verb derived from the scorekeeping symbol for a strikeout.
+- synonym: [[whiff]]
+- collocation: [[side]]
+- collocation: [[batter]]
+- synonym: [[klick]]

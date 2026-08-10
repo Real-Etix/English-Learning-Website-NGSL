@@ -6,6 +6,8 @@ pos: noun
 forms: [ionophore]
 sources: [llm]
 status: enriched
+chart: electrolyte
+region: electrolyte
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[electrolyte]] — Use 'ionophore' when discussing biological or chemical transport, not general conductivity.
+- collocation: [[calcium]]
+- collocation: [[selective]]
+- collocation: [[antibiotic]]
+- collocation: [[ion]]
+- collocation: [[membrane]]

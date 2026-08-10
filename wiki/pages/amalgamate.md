@@ -6,6 +6,8 @@ pos: verb
 forms: [amalgamate]
 sources: [llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition

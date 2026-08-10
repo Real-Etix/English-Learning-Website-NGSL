@@ -6,6 +6,8 @@ pos: noun
 forms: [decimation]
 sources: [llm]
 status: enriched
+chart: destruction
+region: destruction
 ---
 
 ## Definition

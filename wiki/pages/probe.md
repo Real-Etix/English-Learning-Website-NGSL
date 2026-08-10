@@ -9,6 +9,8 @@ rank: 223
 sfi: 57.391
 sources: [wordnet, llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,8 @@ an inquiry into unfamiliar or questionable activities
 - builds_on: [[sensor]] — Use 'probe' when the sensor is physically inserted or extended into the environment to take measurements, often in a targeted or invasive manner.
 - builds_on: [[explore]] — Use when the inquiry is deep, penetrating, or trying to uncover hidden information.
 - builds_on: [[investigate]] — Use 'probe' when you want to suggest a thorough, often exploratory investigation into something deep or hidden.
+- synonym: [[orbiter]]
+- builds_on: [[inspect]] — Use when the inspection is exploratory or aims to uncover hidden information or causes.
+- builds_on: [[investigation]] — Use 'probe' for a thorough, often investigative inquiry, especially by officials or media, implying digging for facts.
+- builds_on: [[experiment]] — Use 'probe' for an investigative or exploratory experiment, often to gather data in unfamiliar territory.
+- synonym: [[delve]]

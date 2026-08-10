@@ -6,6 +6,8 @@ pos: adjective
 forms: [unsupervised]
 sources: [llm]
 status: enriched
+chart: unattended
+region: unattended
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [naught]
 sources: [llm]
 status: enriched
+chart: null
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[jack]] — Use 'naught' to emphasize total failure or worthlessness, often in more literary or formal writing.
 - builds_on: [[null]] — Use 'naught' for a complete absence or failure, more literary than 'null'.
+- synonym: [[zero]]
+- synonym: [[nought]]

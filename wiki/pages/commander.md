@@ -7,8 +7,10 @@ forms: [commander, commanders]
 lists: [business]
 rank: 681
 sfi: 51.55
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[officer]] — Use when emphasizing the leadership role rather than just the rank.
 - builds_on: [[captain]] — Use 'commander' when referring to the person in charge of a military unit, which may include a captain but also higher ranks; it is a more formal and general term.
 - builds_on: [[chief]] — Use 'commander' for military, police, or similar hierarchical organizations where authority over a group is emphasized.
+- advanced_form: [[commandant]] — Use for the official head of a military institution or garrison, often a more formal title than a generic 'commander'.
+- advanced_form: [[marshal]] — Use for a high-ranking officer who commands a large force, especially in ceremonial or historical contexts, emphasizing seniority over a common 'commander'.
+- collocation: [[airarm]]

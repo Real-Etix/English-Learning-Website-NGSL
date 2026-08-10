@@ -6,6 +6,8 @@ pos: noun
 forms: [pitfall]
 sources: [llm]
 status: enriched
+chart: clasp
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[trap]] — Use 'pitfall' for a hidden hole or pit used as a trap; it emphasizes the element of surprise and is often metaphorical.
+- synonym: [[snare]]
+- synonym: [[danger]]
+- synonym: [[hazard]]
+- synonym: [[drawback]]
+- collocation: [[avoid]]
+- collocation: [[potential]]
+- collocation: [[common]]

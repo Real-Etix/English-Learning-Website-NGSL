@@ -6,6 +6,8 @@ pos: noun
 forms: [billfold]
 sources: [llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wallet]] — Use 'billfold' when emphasizing that a wallet is specifically designed for holding paper money, often implying a slim, classic design.
+- synonym: [[pocketbook]]
+- synonym: [[case]]
+- collocation: [[leather]]
+- collocation: [[fat]]

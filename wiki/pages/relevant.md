@@ -9,6 +9,8 @@ rank: 1504
 sfi: 57.38
 sources: [wordnet, llm]
 status: enriched
+chart: applicable
+region: applicable
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ having a bearing on or connection with the subject at issue
 - advanced_form: [[pertinent]] — Use 'pertinent' when you want to emphasize a direct and important connection, often in formal or technical contexts.
 - advanced_form: [[germane]] — Use 'germane' to stress a precise and logical relevance, often in academic or argumentative writing.
 - advanced_form: [[applicable]] — Use 'applicable' when the relevance involves practical use or suitability to a specific case or rule.
+- synonym: [[apposite]]
+- collocation: [[perennially]]
+- collocation: [[pressingly]]
+- synonym: [[apt]]

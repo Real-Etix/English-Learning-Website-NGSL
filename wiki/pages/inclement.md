@@ -6,6 +6,8 @@ pos: adjective
 forms: [inclement]
 sources: [llm]
 status: enriched
+chart: rainy
+region: rainy
 ---
 
 ## Definition

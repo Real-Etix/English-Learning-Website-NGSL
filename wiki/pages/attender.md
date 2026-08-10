@@ -6,6 +6,8 @@ pos: noun
 forms: [attender]
 sources: [llm]
 status: enriched
+chart: auditor
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[auditor]] — Use 'attender' instead of 'auditor' when emphasizing active, focused listening or attendance, often in formal or academic settings.
+- synonym: [[attendee]]
+- synonym: [[participant]]
+- synonym: [[spectator]]
+- synonym: [[viewer]]
+- synonym: [[listener]]

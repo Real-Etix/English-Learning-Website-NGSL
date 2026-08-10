@@ -9,6 +9,8 @@ rank: 91
 sfi: 70.51
 sources: [wordnet]
 status: seeded
+chart: little
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,14 @@ to a great degree or extent
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[cogitation]]
+- collocation: [[how]]
+- collocation: [[later]]
+- synonym: [[greatly]]
+- synonym: [[considerably]]
+- synonym: [[substantially]]
+- synonym: [[vastly]]
+- synonym: [[significantly]]
+- collocation: [[obliged]]
+- collocation: [[revere]]
+- collocation: [[vex]]

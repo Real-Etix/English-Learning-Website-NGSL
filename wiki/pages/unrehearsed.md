@@ -6,6 +6,8 @@ pos: adjective
 forms: [unrehearsed]
 sources: [llm]
 status: enriched
+chart: explicitly
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[live]] — Use 'unrehearsed' when emphasizing that the event was not practiced or scripted, unlike 'live' which simply means happening now.
+- synonym: [[extemporaneous]]

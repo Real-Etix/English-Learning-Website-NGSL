@@ -9,6 +9,8 @@ rank: 160
 sfi: 58.051
 sources: [wordnet, llm]
 status: enriched
+chart: enzyme
+region: enzyme
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[biocatalyst]] — Use 'biocatalyst' when emphasizing the biological origin of the enzyme, e.g., in scientific writing.
 - advanced_form: [[catalyzer]] — Use 'catalyzer' as a more technical term for a substance that accelerates a reaction, especially in industrial or lab contexts.
+- collocation: [[assay]]
+- synonym: [[digestant]]

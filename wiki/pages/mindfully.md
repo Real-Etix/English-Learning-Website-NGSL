@@ -9,6 +9,8 @@ rank: 411
 sfi: 54.19
 sources: [wordnet, llm]
 status: enriched
+chart: energetically
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1526
 sfi: 57.26
 sources: [wordnet, llm]
 status: enriched
+chart: death
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ the time when something begins (especially life)
 - antonym: [[demise]]
 - advanced_form: [[genesis]] — Use 'genesis' to emphasize the creative or foundational start of something, like a project or idea.
 - advanced_form: [[inception]] — Use 'inception' when referring to the formal or marked beginning of an organization, plan, or era.
+- synonym: [[childbearing]]
+- synonym: [[dawn]]
+- collocation: [[malformation]]
+- collocation: [[premature]]
+- collocation: [[quadruplet]]
+- synonym: [[nativity]]

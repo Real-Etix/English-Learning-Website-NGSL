@@ -6,6 +6,8 @@ pos: noun
 forms: [scruples]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition

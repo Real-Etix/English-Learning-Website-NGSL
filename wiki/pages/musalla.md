@@ -6,6 +6,8 @@ pos: noun
 forms: [musalla]
 sources: [llm]
 status: enriched
+chart: mosque
+region: mosque
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mosque]] — Use 'musalla' when referring to a designated prayer space that may not be a full mosque, especially in airports or schools.
+- synonym: [[oratory]]
+- collocation: [[carpet]]
+- collocation: [[prayer]]
+- collocation: [[area]]

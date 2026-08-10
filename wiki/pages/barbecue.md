@@ -9,6 +9,8 @@ rank: 848
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: barbecue
+region: barbecue
 ---
 
 ## Definition

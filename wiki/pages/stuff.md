@@ -9,6 +9,8 @@ rank: 752
 sfi: 61.01
 sources: [wordnet, llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ the tangible substance that goes into the makeup of a physical object
 - synonym: [[material]]
 - advanced_form: [[material]] — Use 'material' when referring to the physical components of an object, especially in a more formal or descriptive context than 'stuff'.
 - advanced_form: [[substance]] — Use 'substance' for a particular kind of matter with consistent properties, often in scientific or technical descriptions where precision is needed.
+- synonym: [[belongings]]
+- synonym: [[jam]]
+- synonym: [[cram]]

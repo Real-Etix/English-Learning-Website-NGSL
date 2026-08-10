@@ -6,6 +6,8 @@ pos: noun
 forms: [steamfitter]
 sources: [llm]
 status: enriched
+chart: plumber
+region: plumber
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[plumber]] — Use 'steamfitter' for a tradesperson focused on steam heating systems or industrial steam lines, distinct from general household plumbing.
+- synonym: [[pipefitter]]

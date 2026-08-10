@@ -9,6 +9,8 @@ rank: 477
 sfi: 53.61
 sources: [wordnet, llm]
 status: enriched
+chart: offset
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[initiation]] — Use 'initiation' when referring to the formal or technical start of a system, event, or chemical reaction, rather than the general 'activation'.
 - advanced_form: [[triggering]] — Use 'triggering' when emphasizing a specific event or stimulus that brings about activation, often in a mechanical or psychological context.
 - advanced_form: [[arousal]] — Use 'arousal' instead of 'activation' in biological, physiological, or psychological contexts, especially for alertness or sexual response.
+- collocation: [[dioxygen]]
+- synonym: [[mobilization]]
+- synonym: [[excitation]]

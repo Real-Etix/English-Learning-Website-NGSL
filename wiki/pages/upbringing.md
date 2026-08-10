@@ -6,6 +6,8 @@ pos: noun
 forms: [upbringing]
 sources: [llm]
 status: enriched
+chart: background
+region: background
 ---
 
 ## Definition

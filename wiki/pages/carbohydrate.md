@@ -9,6 +9,8 @@ rank: 28
 sfi: 66.02
 sources: [wordnet, llm]
 status: enriched
+chart: carbohydrate
+region: carbohydrate
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[saccharide]] — Use 'saccharide' in scientific or nutritional contexts when referring to carbohydrate molecules.
 - advanced_form: [[polysaccharide]] — Use 'polysaccharide' when specifically talking about long-chain carbohydrates, e.g., in biology or chemistry.
 - builds_on: [[glycogen]] — Use 'carbohydrate' instead of 'glycogen' when referring broadly to energy-storing molecules, not the specific animal form.
+- collocation: [[monosaccharide]]
+- synonym: [[sucrose]]

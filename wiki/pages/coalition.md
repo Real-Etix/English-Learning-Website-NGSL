@@ -9,6 +9,8 @@ rank: 73
 sfi: 57.15
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,4 @@ an organization of people (or countries) involved in a pact or treaty
 - builds_on: [[alliance]] — Use 'coalition' when emphasizing a temporary or strategic alliance, often in politics or military contexts.
 - builds_on: [[alignment]] — Use 'coalition' when the group is formed for a specific, often temporary purpose, especially in politics.
 - builds_on: [[association]] — Use 'coalition' for a temporary or strategic union of distinct groups, especially in politics or advocacy.
+- synonym: [[bloc]]

@@ -9,6 +9,8 @@ rank: 815
 sfi: 60.65
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,11 @@ _No sourced examples yet._
 - synonym: [[settlement]]
 - advanced_form: [[hamlet]] — Use when describing a very small village, often with fewer amenities than a typical village.
 - advanced_form: [[settlement]] — Use for a more general term, often implying a new or undeveloped community, or one in a remote area.
+- collocation: [[elder]]
+- collocation: [[elders]]
+- collocation: [[fete]]
+- collocation: [[inhabitant]]
+- collocation: [[neighbouring]]
+- collocation: [[palisade]]
+- collocation: [[picturesque]]
+- collocation: [[ravage]]

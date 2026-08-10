@@ -9,6 +9,8 @@ rank: 166
 sfi: 56.66
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ give to a charity or good cause
 - domain: toeic
 - advanced_form: [[contribute]] — Use 'contribute' when focusing on adding to a collective fund or effort, often in a more general or ongoing context than 'donate'.
 - advanced_form: [[bestow]] — Use 'bestow' for a formal, generous, or honorific giving, often implying a gift of high value or prestige.
+- synonym: [[give]]
+- synonym: [[pledge]]
+- synonym: [[gift]]
+- collocation: [[money]]
+- collocation: [[blood]]

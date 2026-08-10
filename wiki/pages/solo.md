@@ -6,6 +6,8 @@ pos: adverb
 forms: [solo]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[independently]] — Use when emphasizing being alone without companions, often in travel, performance, or tasks.
+- synonym: [[autonomously]]
+- collocation: [[guitar]]

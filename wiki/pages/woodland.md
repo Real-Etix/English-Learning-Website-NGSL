@@ -6,6 +6,8 @@ pos: noun
 forms: [woodland]
 sources: [llm]
 status: enriched
+chart: timber
+region: timber
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[forest]] — Use 'woodland' for a more formal or scientific context, especially when emphasizing the ecological habitat.
+- synonym: [[thicket]]
+- collocation: [[ancient]]
+- collocation: [[dense]]
+- collocation: [[native]]
+- collocation: [[area]]

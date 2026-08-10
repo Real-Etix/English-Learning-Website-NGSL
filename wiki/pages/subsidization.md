@@ -6,6 +6,8 @@ pos: noun
 forms: [subsidization]
 sources: [llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition

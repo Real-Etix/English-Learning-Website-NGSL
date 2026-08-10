@@ -6,6 +6,8 @@ pos: noun
 forms: [predilection]
 sources: [llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[preference]] — Use 'predilection' for a strong, often innate or habitual preference.
+- synonym: [[inclination]]
+- synonym: [[taste]]
+- collocation: [[have]]
+- collocation: [[strong]]
+- collocation: [[show]]
+- collocation: [[personal]]
+- collocation: [[natural]]

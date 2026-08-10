@@ -9,6 +9,8 @@ rank: 368
 sfi: 64.28
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ terminate
 - advanced_form: [[cease]] — Use 'cease' to emphasize a permanent or complete stop, often in formal or official contexts.
 - advanced_form: [[discontinue]] — Use 'discontinue' when ending a service, product, or practice, especially in business or formal settings.
 - advanced_form: [[halt]] — Use 'halt' to imply a sudden or forceful stoppage, often with an authoritative or urgent tone.
+- collocation: [[asepsis]]
+- collocation: [[cig]]
+- collocation: [[cordon]]
+- collocation: [[dawn]]
+- collocation: [[leg]]
+- collocation: [[mid-afternoon]]
+- collocation: [[midwinter]]
+- collocation: [[washroom]]
+- collocation: [[fever]]
+- synonym: [[discontinuity]]

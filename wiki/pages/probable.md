@@ -9,6 +9,8 @@ rank: 939
 sfi: 52.35
 sources: [wordnet, llm]
 status: enriched
+chart: dependable
+region: you
 ---
 
 ## Definition

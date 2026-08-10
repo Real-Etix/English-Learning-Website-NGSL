@@ -9,6 +9,8 @@ rank: 735
 sfi: 61.09
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,9 @@ _No sourced examples yet._
 - advanced_form: [[intent]] — Use 'intent' when focusing on the deliberate aim or purpose behind an action, often in formal or legal contexts.
 - advanced_form: [[objective]] — Use 'objective' when referring to a specific, measurable goal, more concrete than 'purpose'.
 - advanced_form: [[end]] — Use 'end' in formal or philosophical contexts, often in phrases like 'to that end' or 'means to an end'.
+- collocation: [[constancy]]
+- collocation: [[deterrent]]
+- collocation: [[foreordain]]
+- collocation: [[loftiness]]
+- synonym: [[why]]
+- collocation: [[ostensible]]

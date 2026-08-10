@@ -9,6 +9,8 @@ rank: 2071
 sfi: 55.32
 sources: [wordnet, llm]
 status: enriched
+chart: suitcase
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[indication]] — Use 'indication' when emphasizing a sign or clue pointing to a condition, often less directly medical than 'symptom'.
 - advanced_form: [[manifestation]] — Use 'manifestation' when referring to a visible or observable expression of a disease or condition, often in medical or formal contexts.
+- builds_on: [[indication]] — Use when the indication is a physical or observable sign of a condition, especially a negative one.

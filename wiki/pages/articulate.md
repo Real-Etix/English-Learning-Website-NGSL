@@ -9,6 +9,8 @@ rank: 440
 sfi: 55.439
 sources: [wordnet, llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ _No sourced examples yet._
 - builds_on: [[convey]] — Use 'articulate' when emphasizing clear and effective expression, often in formal or professional contexts.
 - builds_on: [[communicate]] — Use 'articulate' when someone expresses ideas clearly and coherently, often with careful words.
 - builds_on: [[spell]] — Use 'articulate' to stress distinct and careful utterance of each letter, more formal than 'spell'.
+- synonym: [[eloquent]]

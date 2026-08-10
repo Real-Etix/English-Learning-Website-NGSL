@@ -9,6 +9,8 @@ rank: 2299
 sfi: 54.64
 sources: [wordnet, llm]
 status: enriched
+chart: lip
+region: lip
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[labium]] — Use 'labium' in formal or anatomical writing instead of 'lip'.
 - advanced_form: [[vermillion]] — Use 'vermillion' to refer poetically or medically to the red part of the lips.
+- synonym: [[kerb]]
+- synonym: [[rim]]

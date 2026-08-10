@@ -6,6 +6,8 @@ pos: verb
 forms: [straggle]
 sources: [llm]
 status: enriched
+chart: interim
+region: you
 ---
 
 ## Definition

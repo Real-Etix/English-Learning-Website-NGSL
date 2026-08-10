@@ -9,6 +9,8 @@ rank: 1784
 sfi: 56.25
 sources: [wordnet, llm]
 status: enriched
+chart: engage
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[prosecute]] — Use 'prosecute' for carrying out an activity systematically, especially in formal or legal contexts.
 - advanced_form: [[conduct]] — Use 'conduct' when organizing and directing an activity or process, often implying structure and control.
 - builds_on: [[chase]] — Use when the chase is deliberate, determined, or formal, like in professional or legal contexts.
+- collocation: [[avocation]]

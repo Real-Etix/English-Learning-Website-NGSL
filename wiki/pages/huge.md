@@ -9,6 +9,8 @@ rank: 862
 sfi: 60.39
 sources: [wordnet, llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ unusually great in size or amount or degree or especially extent or scope
 - advanced_form: [[enormous]] — Use 'enormous' for something strikingly larger than 'huge', often with a sense of awe or surprise.
 - advanced_form: [[immense]] — Use 'immense' when emphasizing an almost immeasurable extent, more formal than 'huge'.
 - advanced_form: [[colossal]] — Use 'colossal' for something impressively large, often with a sense of magnitude or monumentality.
+- synonym: [[cavernous]]
+- collocation: [[letdown]]
+- collocation: [[maw]]

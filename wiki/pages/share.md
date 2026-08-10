@@ -9,6 +9,8 @@ rank: 353
 sfi: 64.48
 sources: [wordnet, llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,14 @@ assets belonging to or due to or contributed by an individual person or group
 - advanced_form: [[allotment]] — Use 'allotment' in formal contexts about the distribution of shares or portions by an authority or plan.
 - builds_on: [[percent]] — Use 'share' to refer to a part or portion belonging to someone or something, especially in economic or competitive contexts.
 - builds_on: [[portion]] — Use 'share' when focusing on the part allocated to or belonging to a person or group.
+- collocation: [[equitable]]
+- collocation: [[inordinate]]
+- synonym: [[partake]]
+- collocation: [[plunder]]
+- collocation: [[proportionate]]
+- synonym: [[quota]]
+- synonym: [[ration]]
+- collocation: [[repurchase]]
+- synonym: [[dividend]]
+- synonym: [[royalty]]
+- collocation: [[buyback]]

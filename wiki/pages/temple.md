@@ -6,6 +6,8 @@ pos: noun
 forms: [temple]
 sources: [llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[forehead]] — Use 'temple' to refer specifically to the side of the forehead near the eyes and hairline, especially in medical or descriptive contexts.
+- collocation: [[plunderer]]

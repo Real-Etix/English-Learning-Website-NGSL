@@ -6,6 +6,8 @@ pos: verb
 forms: [wane]
 sources: [llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[diminish]] — Use 'wane' when describing a decline in strength, influence, or popularity, often over a period of time.
 - builds_on: [[fade]] — Use 'wane' to describe a steady decrease in strength, power, or brightness, like a fading moon.
+- synonym: [[dwindle]]

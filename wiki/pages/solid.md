@@ -9,6 +9,8 @@ rank: 2050
 sfi: 55.39
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ characterized by good substantial quality
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[robust]] — Use 'robust' when emphasizing strength, resilience, or the ability to perform well under stress, rather than just being solid in quality.
 - advanced_form: [[sturdy]] — Use 'sturdy' to describe something that is strongly built and unlikely to break or fail, often for physical objects.
+- collocation: [[bedrock]]
+- collocation: [[booster]]
+- collocation: [[viscus]]
+- synonym: [[volumetric]]

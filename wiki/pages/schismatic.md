@@ -6,6 +6,8 @@ pos: noun
 forms: [schismatic]
 sources: [llm]
 status: enriched
+chart: separatist
+region: separatist
 ---
 
 ## Definition

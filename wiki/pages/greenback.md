@@ -6,6 +6,8 @@ pos: noun
 forms: [greenback]
 sources: [llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dollar]] — Use 'greenback' to refer specifically to U.S. paper dollars, often in financial or historical contexts.
+- synonym: [[buck]]
+- synonym: [[bill]]
+- synonym: [[note]]
+- collocation: [[index]]

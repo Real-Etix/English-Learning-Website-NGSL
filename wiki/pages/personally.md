@@ -9,6 +9,8 @@ rank: 1899
 sfi: 55.85
 sources: [wordnet, llm]
 status: enriched
+chart: directly
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ as yourself
 - advanced_form: [[directly]] — Use instead of 'personally' to emphasize no intermediary or proxy.
 - advanced_form: [[individually]] — Use instead of 'personally' when focusing on one-to-one interaction rather than a group.
 - advanced_form: [[privately]] — Use instead of 'personally' to stress confidentiality or a non-public context.
+- collocation: [[insulting]]
+- synonym: [[yourself]]
+- collocation: [[gratified]]
+- synonym: [[intimately]]

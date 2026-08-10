@@ -9,6 +9,8 @@ rank: 746
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[plaque]] — Use 'plaque' for a commemorative or decorative inscribed plate, rather than a general tablet.
 - advanced_form: [[stele]] — Use 'stele' for a tall, standing inscribed stone, especially in archaeological or historical contexts.
 - builds_on: [[cake]] — Use 'tablet' for a small, flat, often pre-portioned block of a substance, especially cleaning products or medicines.
+- collocation: [[digestant]]
+- collocation: [[milligram]]
+- synonym: [[pellet]]
+- builds_on: [[slab]] — Use for a flat slab of stone or clay, often inscribed.
+- collocation: [[hydrochloride]]
+- synonym: [[wafer]]

@@ -9,6 +9,8 @@ rank: 387
 sfi: 53.98
 sources: [wordnet, llm]
 status: enriched
+chart: windy
+region: windy
 ---
 
 ## Definition

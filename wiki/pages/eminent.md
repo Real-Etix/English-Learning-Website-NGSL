@@ -6,6 +6,8 @@ pos: adjective
 forms: [eminent]
 sources: [llm]
 status: enriched
+chart: notable
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 - builds_on: [[prominent]] — Use 'eminent' instead of 'prominent' when emphasizing high rank, respect, or fame within a profession or field; it is more formal and implies established superiority.
 - builds_on: [[prestigious]] — Use 'eminent' for individuals or institutions that are highly regarded and distinguished, often in academic or professional contexts.
 - builds_on: [[notable]] — Use 'eminent' to emphasize high standing within a specific field, especially academia or professions.
+- synonym: [[distinguished]]
+- synonym: [[illustrious]]
+- collocation: [[personage]]
+- synonym: [[celebrated]]
+- collocation: [[ecclesiastic]]

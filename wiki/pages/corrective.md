@@ -9,6 +9,8 @@ rank: 1681
 sfi: 49.98
 sources: [wordnet, llm]
 status: enriched
+chart: corrective
+region: corrective
 ---
 
 ## Definition

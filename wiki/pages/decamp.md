@@ -6,6 +6,8 @@ pos: verb
 forms: [decamp]
 sources: [llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[flee]] — Use when a group or individual leaves a place suddenly, often taking belongings, implying a planned or hasty departure.
 - builds_on: [[evacuate]] — Use 'decamp' to emphasize leaving quickly and often secretly to avoid danger.
+- synonym: [[abscond]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [gasifier]
 sources: [llm]
 status: enriched
+chart: generator
+region: generator
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[generator]] — Use 'gasifier' when the apparatus produces a fuel gas from solid or liquid feedstocks, such as in renewable energy systems.
+- synonym: [[reactor]]
+- synonym: [[retort]]
+- collocation: [[wood]]
+- collocation: [[coal]]

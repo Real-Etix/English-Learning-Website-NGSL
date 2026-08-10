@@ -9,6 +9,8 @@ rank: 1578
 sfi: 57.09
 sources: [wordnet, llm]
 status: enriched
+chart: designate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - builds_on: [[opt]] — Use 'elect' for formal or deliberate choices, often with an infinitive.
 - advanced_form: [[designate]] — Use 'designate' when formally assigning a role or position, often by official decision, not necessarily by popular vote.
 - advanced_form: [[appoint]] — Use 'appoint' when someone is chosen for a position by an authority figure, without a public vote; it is more formal than 'elect'.
+- collocation: [[congressperson]]
+- builds_on: [[incoming]] — Use 'elect' after a noun (e.g., president-elect) for an incoming officeholder.

@@ -6,6 +6,8 @@ pos: noun
 forms: [self-regard]
 sources: [llm]
 status: enriched
+chart: pride
+region: pride
 ---
 
 ## Definition

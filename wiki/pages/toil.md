@@ -6,6 +6,8 @@ pos: noun
 forms: [toil]
 sources: [llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition

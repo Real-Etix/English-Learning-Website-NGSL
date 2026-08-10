@@ -6,6 +6,8 @@ pos: adjective
 forms: [delighted]
 sources: [llm]
 status: enriched
+chart: would
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[glad]] — Use 'delighted' for a more formal or enthusiastic expression of pleasure, common in polite contexts.
+- synonym: [[elated]]
+- collocation: [[absolutely]]
+- collocation: [[quite]]
+- synonym: [[gratified]]

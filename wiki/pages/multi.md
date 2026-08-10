@@ -9,6 +9,8 @@ rank: 194
 sfi: 56.27
 sources: [llm]
 status: enriched
+chart: multi
+region: multi
 ---
 
 ## Definition

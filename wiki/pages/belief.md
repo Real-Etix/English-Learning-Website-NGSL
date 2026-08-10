@@ -9,6 +9,8 @@ rank: 1456
 sfi: 57.57
 sources: [wordnet, llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[conviction]] — Use 'conviction' for a very strong, unwavering personal belief, often emotional.
 - advanced_form: [[doctrine]] — Use 'doctrine' for an official, systematic set of beliefs held by a group or institution.
 - advanced_form: [[tenet]] — Use 'tenet' for a core principle or belief that is fundamental to a system or ideology.
+- collocation: [[dogmatic]]
+- synonym: [[faith]]
+- collocation: [[fervent]]
+- collocation: [[ingrain]]
+- collocation: [[meliorist]]
+- synonym: [[orthodoxy]]
+- synonym: [[presumption]]
+- collocation: [[witchcraft]]

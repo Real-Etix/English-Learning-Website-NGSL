@@ -6,6 +6,8 @@ pos: noun
 forms: [sunbelt]
 sources: [llm]
 status: enriched
+chart: south
+region: south
 ---
 
 ## Definition

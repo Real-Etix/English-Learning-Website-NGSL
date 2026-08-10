@@ -6,6 +6,8 @@ pos: noun
 forms: [iliacus]
 sources: [llm]
 status: enriched
+chart: flexor
+region: flexor
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[flexor]] — Use 'iliacus' for the specific hip flexor muscle, which is more precise than the general term 'flexor'.
+- collocation: [[muscle]]
+- collocation: [[hip]]
+- collocation: [[flex]]
+- collocation: [[pelvis]]

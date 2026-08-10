@@ -9,6 +9,8 @@ rank: 717
 sfi: 52.083
 sources: [wordnet, llm]
 status: enriched
+chart: rearrange
+region: rearrange
 ---
 
 ## Definition

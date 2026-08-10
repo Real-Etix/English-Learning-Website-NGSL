@@ -9,6 +9,8 @@ rank: 721
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ including much or everything
 - domain: toeic
 - advanced_form: [[comprehensive]] — Use 'comprehensive' when emphasizing thorough and complete coverage, especially of a system or range.
 - advanced_form: [[exhaustive]] — Use 'exhaustive' when something leaves no possibility unexamined, implying a very high degree of inclusiveness.
+- synonym: [[participatory]]

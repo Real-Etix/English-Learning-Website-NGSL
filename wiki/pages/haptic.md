@@ -6,6 +6,8 @@ pos: adjective
 forms: [haptic]
 sources: [llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[manual]] — Use 'haptic' when referring to technology or devices that involve the sense of touch, often related to hand operations.
+- synonym: [[tactile]]
+- collocation: [[feedback]]
+- collocation: [[technology]]
+- collocation: [[interface]]
+- collocation: [[device]]
+- collocation: [[perception]]

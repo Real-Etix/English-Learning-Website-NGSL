@@ -6,6 +6,8 @@ pos: noun
 forms: [putsch]
 sources: [llm]
 status: enriched
+chart: supermarket
+region: you
 ---
 
 ## Definition

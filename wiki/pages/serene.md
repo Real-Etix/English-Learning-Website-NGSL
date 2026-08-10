@@ -6,6 +6,8 @@ pos: adjective
 forms: [serene]
 sources: [llm]
 status: enriched
+chart: peaceful
+region: peaceful
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[peaceful]] — Use 'serene' to emphasize a calm, unruffled state, often in a natural or spiritual context.
+- synonym: [[placid]]
+- builds_on: [[quiet]] — Use serene for a calm, unruffled state, especially of a person or a beautiful scene.

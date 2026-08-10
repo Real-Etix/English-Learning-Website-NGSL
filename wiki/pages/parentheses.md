@@ -6,6 +6,8 @@ pos: noun
 forms: [parentheses]
 sources: [llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[parenthesis]] — Use this when referring to the pair of marks, as in 'The author used parentheses to add a note'. More formal than 'parenthesis' which often specifies one mark.
+- collocation: [[open]]
+- collocation: [[close]]
+- collocation: [[left]]
+- collocation: [[right]]
+- collocation: [[in]]

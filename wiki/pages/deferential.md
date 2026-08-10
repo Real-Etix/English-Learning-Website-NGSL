@@ -6,6 +6,8 @@ pos: adjective
 forms: [deferential]
 sources: [llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition

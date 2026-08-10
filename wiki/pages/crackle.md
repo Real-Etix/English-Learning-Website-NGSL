@@ -6,6 +6,8 @@ pos: verb
 forms: [crackle]
 sources: [llm]
 status: enriched
+chart: crunch
+region: crunch
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crunch]] — Use 'crackle' for a series of small, sharp, popping sounds, such as from dry leaves, fire, or brittle material, which is a more specific type of crunching noise.
+- synonym: [[crack]]
+- synonym: [[snap]]
+- collocation: [[fire]]
+- collocation: [[static]]
+- collocation: [[sound]]
+- collocation: [[radio]]

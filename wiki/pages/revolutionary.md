@@ -9,6 +9,8 @@ rank: 550
 sfi: 54.203
 sources: [wordnet, llm]
 status: enriched
+chart: revolutionary
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ markedly new or introducing radical change
 - advanced_form: [[unprecedented]] — Use 'unprecedented' to stress that something has never happened before, while 'revolutionary' focuses on the radical nature of change.
 - advanced_form: [[disruptive]] — Use 'disruptive' in contexts of innovation that displaces existing systems, often in business or technology, whereas 'revolutionary' is broader.
 - builds_on: [[reformer]] — Use revolutionary when the person advocates for radical, fundamental change instead of gradual reform.
+- collocation: [[ardor]]
+- synonym: [[bolshevik]]
+- collocation: [[fervor]]
+- synonym: [[groundbreaking]]
+- synonym: [[insurrectionist]]
+- synonym: [[marxist]]
+- synonym: [[pioneering]]

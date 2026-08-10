@@ -9,6 +9,8 @@ rank: 1726
 sfi: 56.46
 sources: [wordnet, llm]
 status: enriched
+chart: properly
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ in the right manner
 - advanced_form: [[appropriately]] — Use when emphasizing suitability for a specific situation or context.
 - advanced_form: [[adequately]] — Use when focusing on meeting a required standard or sufficiency.
 - advanced_form: [[suitably]] — Use when indicating that something is right or fitting for a particular purpose or person.
+- synonym: [[aptly]]
+- synonym: [[befittingly]]
+- collocation: [[disposeof]]
+- synonym: [[legitimately]]
+- collocation: [[prepared]]
+- synonym: [[validly]]

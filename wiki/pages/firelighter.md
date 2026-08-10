@@ -6,6 +6,8 @@ pos: noun
 forms: [firelighter]
 sources: [llm]
 status: enriched
+chart: lighter
+region: lighter
 ---
 
 ## Definition

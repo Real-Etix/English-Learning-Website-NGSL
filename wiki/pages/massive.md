@@ -9,6 +9,8 @@ rank: 1923
 sfi: 55.79
 sources: [wordnet, llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ imposing in size or bulk or solidity
 - advanced_form: [[colossal]] — Use 'colossal' to emphasize something impressively huge, often in a figurative sense like a task or achievement.
 - advanced_form: [[enormous]] — Use 'enormous' for physical size that is exceptionally large, often more neutral than 'massive'.
 - advanced_form: [[immense]] — Use 'immense' to stress great scale or extent, often abstract or measurable.
+- collocation: [[boulder]]
+- synonym: [[bulky]]
+- collocation: [[deluge]]
+- collocation: [[leviathan]]
+- synonym: [[weighty]]

@@ -9,6 +9,8 @@ rank: 18
 sfi: 61.814
 sources: [wordnet, llm]
 status: enriched
+chart: plot
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[plot]] — Use 'plot' when referring to a graphical representation of data points, especially in technical or scientific writing.
 - advanced_form: [[diagram]] — Use 'diagram' as a more formal and general term for any visual representation, including graphs, charts, or schematics.
 - builds_on: [[chart]] — Use 'graph' specifically for plots showing relationships between variables; more precise than 'chart'.
+- collocation: [[vertex]]
+- collocation: [[planar]]

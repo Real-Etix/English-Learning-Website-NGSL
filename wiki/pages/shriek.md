@@ -6,6 +6,8 @@ pos: verb
 forms: [shriek]
 sources: [llm]
 status: enriched
+chart: indirect
+region: you
 ---
 
 ## Definition

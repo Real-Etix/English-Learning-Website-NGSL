@@ -9,6 +9,8 @@ rank: 462
 sfi: 63.38
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - antonym: [[fall]]
 - advanced_form: [[ascend]] — Use 'ascend' for a gradual or formal upward movement, often in a controlled or steady manner.
 - advanced_form: [[soar]] — Use 'soar' for a swift, effortless, or dramatic upward movement, often implying grace or speed.
+- synonym: [[ascent]]
+- collocation: [[eminence]]
+- collocation: [[nationalism]]
+- collocation: [[precipitous]]
+- synonym: [[upsurge]]

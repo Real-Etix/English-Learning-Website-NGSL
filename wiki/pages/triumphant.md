@@ -6,6 +6,8 @@ pos: adjective
 forms: [triumphant]
 sources: [llm]
 status: enriched
+chart: lucrative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[successful]] — Use 'triumphant' to highlight a decisive victory or overcoming a significant challenge.
+- synonym: [[jubilant]]
+- synonym: [[exultant]]

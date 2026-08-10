@@ -9,6 +9,8 @@ rank: 528
 sfi: 62.71
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[halt]] — Use when meaning a complete stop, often firm or abrupt, especially in movement or progress.
 - advanced_form: [[cease]] — Use when meaning to stop completely, often permanently or for a long time, with a sense of finality.
 - builds_on: [[depend]] — Use when something is based on or supported by another factor, often formal.
+- synonym: [[headrest]]
+- synonym: [[lie]]
+- synonym: [[remainder]]
+- synonym: [[leisure]]
+- builds_on: [[lie]] — Use 'rest' for a stable, grounded location, especially for natural features or quiet scenes.

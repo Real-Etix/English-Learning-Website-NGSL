@@ -9,6 +9,8 @@ rank: 843
 sfi: 60.54
 sources: [wordnet, llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[incline]] — Use 'incline' when emphasizing a natural leaning or predisposition, often with 'to' or 'toward'.
 - advanced_form: [[gravitate]] — Use 'gravitate' when there's an attracting force or strong natural pull toward something.
 - advanced_form: [[lean]] — Use 'lean' when indicating a slight or moderate preference, often with 'toward' or 'towards'.
+- synonym: [[nurse]]
+- builds_on: [[nurse]] — Use when the care involves ongoing attention and watchfulness, often for a patient or the sick.
+- synonym: [[stoke]]

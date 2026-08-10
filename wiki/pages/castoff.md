@@ -6,6 +6,8 @@ pos: noun
 forms: [castoff]
 sources: [llm]
 status: enriched
+chart: arm
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[discard]] — Use 'castoff' to emphasize something discarded by someone and often passed along, not just thrown away.
+- synonym: [[reject]]
+- synonym: [[throwaway]]
+- collocation: [[old]]
+- collocation: [[clothing]]
+- collocation: [[clothes]]
+- synonym: [[shed]]

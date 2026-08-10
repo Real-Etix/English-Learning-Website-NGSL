@@ -9,6 +9,8 @@ rank: 200
 sfi: 66.93
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ change location
 - advanced_form: [[relocate]] — Use when moving to a different place, often permanently or for a specific purpose (e.g., business, home).
 - advanced_form: [[shift]] — Use for a small or slight change in position, often within the same general area.
 - advanced_form: [[transfer]] — Use when moving something or someone from one place or role to another, often with a sense of formal process.
+- collocation: [[audacious]]
+- collocation: [[briskly]]
+- collocation: [[concertedly]]
+- synonym: [[immigrate]]
+- collocation: [[politic]]
+- synonym: [[propel]]
+- synonym: [[reassign]]
+- synonym: [[resettle]]
+- collocation: [[yankeeland]]

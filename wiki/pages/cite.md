@@ -9,6 +9,8 @@ rank: 2277
 sfi: 54.73
 sources: [wordnet, llm]
 status: enriched
+chart: cite
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[adduce]] — Use when formally presenting evidence or reasons in a structured argument.
 - advanced_form: [[invoke]] — Use when citing an authority, principle, or law to support a point.
 - advanced_form: [[instance]] — Use when giving specific examples as evidence or illustration.
+- synonym: [[quote]]
+- builds_on: [[quote]] — Use when formally referencing a source to support an argument or point.
+- synonym: [[excerpt]]

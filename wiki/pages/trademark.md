@@ -9,6 +9,8 @@ rank: 446
 sfi: 53.56
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: leaf
+region: you
 ---
 
 ## Definition

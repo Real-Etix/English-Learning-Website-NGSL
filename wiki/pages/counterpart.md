@@ -9,6 +9,8 @@ rank: 362
 sfi: 54.75
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ a person or thing having the same function or characteristics as another
 - builds_on: [[peer]] — Use instead of 'peer' when emphasizing a matching role or position in a different group.
 - builds_on: [[equivalent]] — Use counterpart to emphasize a matching or complementary role, especially in a different system or context.
 - builds_on: [[parallel]] — Use 'counterpart' to emphasize a corresponding person or thing in a different context, often implying a parallel role or function.
+- synonym: [[coequal]]
+- synonym: [[doppelgnger]]

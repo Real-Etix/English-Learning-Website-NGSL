@@ -9,6 +9,8 @@ rank: 125
 sfi: 59.96
 sources: [wordnet, llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[acclamation]] — Use for enthusiastic, often vocal approval, not just clapping.
 - advanced_form: [[ovation]] — Use for prolonged, intense applause, often with standing.
+- collocation: [[clamorous]]
+- synonym: [[plaudit]]
+- collocation: [[roar]]
+- collocation: [[tumultuous]]

@@ -9,6 +9,8 @@ rank: 153
 sfi: 58.121
 sources: [wordnet, llm]
 status: enriched
+chart: cheer
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,7 @@ clearly revealed to the mind or the senses or judgment
 - advanced_form: [[patent]] — Use 'patent' for something obviously true or false, often in legal or accusatory contexts.
 - builds_on: [[plain]] — Use 'evident' to indicate that something is clearly visible or understood based on signs or evidence, often in a more formal or analytical context than 'plain'.
 - builds_on: [[visible]] — Use 'evident' when something is plain or clear based on evidence or signs, often in a more logical or inferential sense.
+- synonym: [[conspicuous]]
+- synonym: [[obvious]]
+- synonym: [[perceptible]]
+- builds_on: [[obvious]] — Use when something is clearly shown by signs or evidence, not just guessed.

@@ -9,6 +9,8 @@ rank: 522
 sfi: 62.74
 sources: [wordnet, llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,4 @@ _No sourced examples yet._
 - builds_on: [[arrangement]] — Use 'accord' for formal, official agreements between groups or nations.
 - builds_on: [[sympathy]] — Use 'accord' for formal agreements or harmony between parties, especially after discussion.
 - builds_on: [[correspond]] — Use 'accord' to emphasize formal agreement or consistency between abstract concepts, facts, or reports.
+- synonym: [[entente]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [flicker]
 sources: [llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 496
 sfi: 54.785
 sources: [wordnet, llm]
 status: enriched
+chart: statutory
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ a society in an advanced state of social development (e.g., with complex legal a
 - builds_on: [[society]] — Use 'civilization' to denote a complex society with advanced culture, technology, and institutions, which is more specific and developed than the general concept of 'society'.
 - advanced_form: [[culture]] — Use 'culture' when focusing on the shared customs, arts, and beliefs of a society, rather than its political or technological organization.
 - advanced_form: [[polity]] — Use 'polity' when emphasizing the political and governmental structure of a society, often in formal or academic contexts.
+- collocation: [[predate]]
+- builds_on: [[culture]] — Use 'civilization' for a large, organized society with advanced culture, especially a historical one.

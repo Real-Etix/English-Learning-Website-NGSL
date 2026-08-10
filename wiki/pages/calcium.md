@@ -9,6 +9,8 @@ rank: 206
 sfi: 57.43
 sources: [wordnet, llm]
 status: enriched
+chart: calcium
+region: calcium
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[lime]] — Use 'lime' instead of 'calcium' when referring to the product of burning calcium, often in construction or industry.
 - advanced_form: [[quicklime]] — Use 'quicklime' for a more formal or industrial synonym of lime, especially in chemistry or manufacturing.
+- collocation: [[-hydroxypropanoate]]
+- collocation: [[caseinate]]
+- collocation: [[chloride]]
+- collocation: [[concretion]]
+- collocation: [[ionophore]]
+- collocation: [[pyrophosphate]]

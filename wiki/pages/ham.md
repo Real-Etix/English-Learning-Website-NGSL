@@ -6,6 +6,8 @@ pos: noun
 forms: [ham]
 sources: [llm]
 status: enriched
+chart: game
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[spam]] — Use for a specific, cured cut of pork that is more specific and formal than the brand name.
+- synonym: [[pork]]
+- synonym: [[meat]]
+- collocation: [[slice]]
+- collocation: [[sandwich]]
+- collocation: [[honey]]

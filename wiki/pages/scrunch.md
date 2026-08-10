@@ -6,6 +6,8 @@ pos: verb
 forms: [scrunch]
 sources: [llm]
 status: enriched
+chart: crunch
+region: crunch
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [duplicitous]
 sources: [llm]
 status: enriched
+chart: tricky
+region: tricky
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [disengagement]
 sources: [llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[retreat]] — Use 'disengagement' to emphasize the act of breaking contact with the enemy, often as a deliberate and controlled maneuver rather than a hasty retreat.
+- synonym: [[withdrawal]]
+- synonym: [[detachment]]
+- synonym: [[separation]]
+- collocation: [[tactical]]
+- collocation: [[military]]
+- collocation: [[gradual]]
+- collocation: [[strategic]]
+- collocation: [[mutual]]

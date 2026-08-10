@@ -6,6 +6,8 @@ pos: verb
 forms: [showcase]
 sources: [llm]
 status: enriched
+chart: present
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[salon]] — Use 'showcase' when emphasizing the presentation or highlighting of specific works in a display.
 - builds_on: [[exhibition]] — Use 'showcase' when the display is meant to highlight the best or most impressive features.
 - builds_on: [[demonstration]] — Use 'showcase' when emphasizing the display of something's best features or talents, often in a competitive or spotlight context, while 'demonstration' is more neutral and instructional.
+- builds_on: [[demonstrate]] — Use when highlighting the best features or talents to an audience.

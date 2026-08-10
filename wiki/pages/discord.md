@@ -6,6 +6,8 @@ pos: noun
 forms: [discord]
 sources: [llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2511
 sfi: 53.91
 sources: [wordnet, llm]
 status: enriched
+chart: pregnant
+region: pregnant
 ---
 
 ## Definition

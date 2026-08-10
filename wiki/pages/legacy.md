@@ -9,6 +9,8 @@ rank: 678
 sfi: 52.83
 sources: [wordnet, llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[bequest]] — Use 'bequest' instead of 'legacy' when emphasizing a gift of personal property, especially in formal or legal contexts.
 - advanced_form: [[devise]] — Use 'devise' when referring to a gift of real property (land or buildings) by will, as distinct from personal property.
+- collocation: [[enduring]]
+- synonym: [[heirloom]]
+- synonym: [[inheritance]]

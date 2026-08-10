@@ -6,6 +6,8 @@ pos: noun
 forms: [meniscus]
 sources: [llm]
 status: enriched
+chart: crescent
+region: crescent
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crescent]] — Use 'meniscus' when referring to a crescent-shaped curvature of a liquid surface, especially in scientific contexts.
+- synonym: [[curve]]
+- synonym: [[arc]]
+- synonym: [[surface]]
+- synonym: [[curvature]]
+- collocation: [[liquid]]
+- collocation: [[capillary]]

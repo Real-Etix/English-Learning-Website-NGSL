@@ -6,6 +6,8 @@ pos: verb
 forms: [ascertain]
 sources: [llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[diagnose]] — Use when you want to emphasize a careful, systematic determination through investigation, more formal than 'diagnose'.
 - builds_on: [[determine]] — Use 'ascertain' when you want to emphasize finding out a fact with certainty and thoroughness, often through deliberate effort.
 - builds_on: [[locate]] — more formal and intellectual than locate, implying careful investigation or determination of facts.
+- builds_on: [[detect]] — Use when trying to determine a fact with certainty, often through investigation.

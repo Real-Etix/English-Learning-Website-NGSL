@@ -9,6 +9,8 @@ rank: 2794
 sfi: 51.69
 sources: [wordnet, llm]
 status: enriched
+chart: dedication
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[devotion]] — Use 'devotion' for a deeper, more loyal affection than simple 'attachment'.
 - advanced_form: [[adoration]] — Use 'adoration' for a very strong, almost worshipful affection, stronger than 'attachment'.
+- synonym: [[adherence]]
+- synonym: [[fitting]]

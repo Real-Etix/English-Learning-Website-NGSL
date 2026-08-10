@@ -9,6 +9,8 @@ rank: 406
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: i
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ a period of time spent sleeping
 - domain: toeic
 - advanced_form: [[siesta]] — Use 'siesta' specifically for a short nap taken in the early afternoon, often associated with warm climates or cultures.
 - advanced_form: [[catnap]] — Use 'catnap' for a very brief, light nap, often taken when you have little time.
+- collocation: [[mid-afternoon]]

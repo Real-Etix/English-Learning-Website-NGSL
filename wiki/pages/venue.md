@@ -9,6 +9,8 @@ rank: 175
 sfi: 56.59
 sources: [wordnet, llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[locale]] — Use 'locale' when emphasizing the setting or geographical area, often for aesthetic or cultural context.
 - advanced_form: [[site]] — Use 'site' for a specific location of an event, often historical or construction, and more formal than 'venue'.
 - builds_on: [[location]] — Use 'venue' for the specific place where an event, concert, or gathering is held.
+- collocation: [[entertainment]]

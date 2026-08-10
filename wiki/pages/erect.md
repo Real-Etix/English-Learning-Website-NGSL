@@ -6,6 +6,8 @@ pos: verb
 forms: [erect]
 sources: [llm]
 status: enriched
+chart: make
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[assemble]] — Use 'erect' instead of 'assemble' when referring to putting up a structure that stands vertically, like a tent, wall, or monument.
 - builds_on: [[upright]] — Use 'erect' for a formal or descriptive emphasis on being straight and vertical, especially for objects that can be raised or positioned.
 - builds_on: [[construct]] — Use 'erect' for building something that stands upright, especially structures like buildings, walls, or poles.
+- collocation: [[carriage]]

@@ -9,6 +9,8 @@ rank: 2240
 sfi: 54.81
 sources: [wordnet, llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[deprive]] — Use 'deprive' when focusing on denying someone something they had or should have, often by legal or authoritative action.
 - advanced_form: [[divest]] — Use 'divest' when the removal of possessions is formal, often financial or legal, and implies a stripping away of rights or property.
 - advanced_form: [[dispossess]] — Use 'dispossess' when someone is forcibly removed from property or possessions, often involving physical displacement.
+- synonym: [[bare]]
+- synonym: [[disrobe]]
+- synonym: [[ribbon]]
+- synonym: [[denude]]
+- synonym: [[slat]]

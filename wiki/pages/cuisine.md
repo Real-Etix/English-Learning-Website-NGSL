@@ -6,6 +6,8 @@ pos: noun
 forms: [cuisine]
 sources: [llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[food]] — Use when referring to the style, culture, or preparation of food, rather than food itself.
+- synonym: [[fare]]
+- collocation: [[local]]
+- collocation: [[authentic]]
+- collocation: [[oriental]]

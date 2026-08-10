@@ -9,6 +9,8 @@ rank: 34
 sfi: 74.78
 sources: [dictionaryapi, llm]
 status: enriched
+chart: you
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ An uncertainty, possibility, condition, doubt etc.
 - advanced_form: [[contingency]] — Use instead of 'if' when referring to an uncertain future event that requires a backup plan.
 - advanced_form: [[proviso]] — Use instead of 'if' when stating a specific condition attached to an agreement or deal.
 - advanced_form: [[stipulation]] — Use instead of 'if' when describing a formal requirement or condition in a contract or rule.
+- collocation: [[conversely]]
+- collocation: [[what]]
+- synonym: [[whenever]]
+- synonym: [[whether]]

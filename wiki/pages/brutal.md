@@ -9,6 +9,8 @@ rank: 1705
 sfi: 48.7
 sources: [wordnet, llm]
 status: enriched
+chart: profound
+region: you
 ---
 
 ## Definition

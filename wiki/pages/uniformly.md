@@ -6,6 +6,8 @@ pos: adverb
 forms: [uniformly]
 sources: [llm]
 status: enriched
+chart: likewise
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,5 @@ _No sourced examples yet._
 - builds_on: [[alike]] — Use when emphasizing consistent application, more formal than 'alike'.
 - builds_on: [[evenly]] — Use 'uniformly' when something is distributed or done in the same way everywhere, emphasizing lack of variation.
 - builds_on: [[consistently]] — Use when highlighting exact sameness or lack of variation—good for processes or measurements.
+- synonym: [[identically]]
+- synonym: [[invariably]]

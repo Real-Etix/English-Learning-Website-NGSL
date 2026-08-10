@@ -6,6 +6,8 @@ pos: adjective
 forms: [reckless]
 sources: [llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[careless]] — Use 'reckless' when the carelessness involves ignoring risks or potential harm.
+- synonym: [[heedless]]
+- collocation: [[abandon]]
+- collocation: [[disregard]]
+- collocation: [[behavior]]

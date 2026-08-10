@@ -9,6 +9,8 @@ rank: 16
 sfi: 62.07
 sources: [wordnet, llm]
 status: enriched
+chart: house
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ _No sourced examples yet._
 - builds_on: [[garage]] — Used instead of 'garage' when focusing on the space as a place for repairs and maintenance, not just storage.
 - builds_on: [[classroom]] — Use for a classroom designed for hands-on or practical activities, like labs or studios.
 - builds_on: [[studio]] — Use 'workshop' instead of 'studio' to highlight a hands-on, instructional setting where creation or repair happens.
+- synonym: [[workroom]]
+- synonym: [[works]]
+- synonym: [[lab]]

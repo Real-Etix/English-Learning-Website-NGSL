@@ -9,6 +9,8 @@ rank: 1968
 sfi: 55.63
 sources: [wordnet, llm]
 status: enriched
+chart: easy
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,9 @@ _No sourced examples yet._
 - builds_on: [[swiftly]] — Use 'rapidly' for fast-paced change or continuous speed, often in technical or scientific contexts, whereas 'swiftly' can be used for both physical and metaphorical speed.
 - advanced_form: [[swiftly]] — Use 'swiftly' for smooth, graceful speed, often in literary or descriptive contexts, instead of the more neutral 'rapidly'.
 - advanced_form: [[expeditiously]] — Use 'expeditiously' in formal or professional settings to emphasize efficiency and promptness, rather than the general 'rapidly'.
+- synonym: [[briskly]]
+- collocation: [[disintegrate]]
+- collocation: [[evolving]]
+- collocation: [[expanding]]
+- collocation: [[proliferate]]
+- collocation: [[exsanguinate]]

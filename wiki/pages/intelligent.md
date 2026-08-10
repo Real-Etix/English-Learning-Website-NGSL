@@ -9,6 +9,8 @@ rank: 1561
 sfi: 50.7
 sources: [wordnet, llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ having the capacity for thought and reason especially to a high degree
 - advanced_form: [[astute]] — Use 'astute' when focusing on sharp, practical intelligence and keen judgment, especially in social or business contexts.
 - advanced_form: [[sagacious]] — Use 'sagacious' for wisdom and good judgment, often implying deep understanding and foresight.
 - advanced_form: [[perceptive]] — Use 'perceptive' when emphasizing quick insight and understanding of subtle details.
+- collocation: [[lifeform]]

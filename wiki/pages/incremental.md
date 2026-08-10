@@ -9,6 +9,8 @@ rank: 575
 sfi: 53.21
 sources: [wordnet, llm]
 status: enriched
+chart: progressive
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ increasing gradually by regular degrees or additions
 - advanced_form: [[cumulative]] — Use 'cumulative' when focusing on the total accumulation from many additions, rather than the step-by-step process.
 - advanced_form: [[progressive]] — Use 'progressive' to emphasize steady forward movement or increase, especially in a series of stages.
 - advanced_form: [[stepwise]] — Use 'stepwise' to highlight that increments occur in distinct steps or stages, often in a planned sequence.
+- synonym: [[accumulative]]
+- synonym: [[gradual]]
+- synonym: [[piecemeal]]

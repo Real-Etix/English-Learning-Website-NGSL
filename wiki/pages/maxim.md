@@ -6,6 +6,8 @@ pos: noun
 forms: [maxim]
 sources: [llm]
 status: enriched
+chart: reason
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[axiom]] — Use 'maxim' instead of 'axiom' when emphasizing a practical, often proverbial saying that guides behavior.
+- synonym: [[motto]]
+- collocation: [[golden]]
+- collocation: [[old]]
+- collocation: [[famous]]
+- collocation: [[follow]]

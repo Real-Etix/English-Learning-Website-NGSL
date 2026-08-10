@@ -9,6 +9,8 @@ rank: 2425
 sfi: 54.21
 sources: [wordnet, llm]
 status: enriched
+chart: slave
+region: slave
 ---
 
 ## Definition

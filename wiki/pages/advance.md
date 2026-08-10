@@ -9,6 +9,8 @@ rank: 844
 sfi: 60.54
 sources: [wordnet, llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,10 @@ _No sourced examples yet._
 - builds_on: [[propose]] — Use 'advance' when you put forward an idea for consideration, often with the sense of moving it forward or promoting it, especially in business or strategic discussions.
 - builds_on: [[promote]] — Use 'advance' when highlighting progress or moving something forward, especially in knowledge, causes, or careers.
 - builds_on: [[prepayment]] — Use 'advance' when the payment is made upfront to secure goods or services, often in business or contractual contexts.
+- synonym: [[adduce]]
+- synonym: [[headway]]
+- collocation: [[ineluctable]]
+- synonym: [[loan]]
+- synonym: [[propound]]
+- collocation: [[qualifier]]
+- builds_on: [[loan]] — Use when money is given before it is officially earned or due, often as a loan against future income.

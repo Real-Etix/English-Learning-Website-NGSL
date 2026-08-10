@@ -9,6 +9,8 @@ rank: 622
 sfi: 61.9
 sources: [wordnet, llm]
 status: enriched
+chart: middle
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,13 @@ the locus of feelings and intuitions
 - advanced_form: [[bosom]] — Use 'bosom' for a poetic or literary tone, especially when referring to a safe, intimate emotional center.
 - advanced_form: [[psyche]] — Use 'psyche' in formal, psychological, or philosophical contexts to mean the mind or soul as the seat of emotions.
 - advanced_form: [[essence]] — Use 'essence' to emphasize the fundamental, intrinsic nature that defines a person or thing.
+- collocation: [[aching]]
+- synonym: [[cardiac]]
+- synonym: [[crux]]
+- synonym: [[epicenter]]
+- synonym: [[lifeblood]]
+- collocation: [[murmur]]
+- collocation: [[very]]
+- collocation: [[fetal]]
+- collocation: [[auricle]]
+- collocation: [[hardened]]

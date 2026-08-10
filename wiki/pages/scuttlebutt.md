@@ -6,6 +6,8 @@ pos: noun
 forms: [scuttlebutt]
 sources: [llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition

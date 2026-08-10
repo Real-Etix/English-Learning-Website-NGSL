@@ -9,6 +9,8 @@ rank: 1589
 sfi: 57.04
 sources: [wordnet, llm]
 status: enriched
+chart: pass
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[authorization]] — Use 'authorization' for official permission from an authority, more formal than 'permit'.
 - advanced_form: [[warrant]] — Use 'warrant' specifically for a legal document issued by a judge, more formal and legally binding than 'permit'.
 - advanced_form: [[clearance]] — Use 'clearance' for permission after a vetting process, especially in security or aviation contexts.
+- collocation: [[revocation]]
+- builds_on: [[license]] — Use 'permit' when referring to a specific written permission, often for a temporary or particular activity, like a parking or work permit.

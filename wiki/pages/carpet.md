@@ -9,6 +9,8 @@ rank: 2680
 sfi: 53.31
 sources: [wordnet, llm]
 status: enriched
+chart: cover
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[rug]] — Use 'carpet' for wall-to-wall floor covering; 'rug' is smaller and often placed on top of a hard floor.
 - advanced_form: [[blanket]] — Use 'blanket' when the cover is uniform and extensive, like a layer, emphasizing completeness.
 - advanced_form: [[envelop]] — Use 'envelop' when the cover surrounds or wraps around something, often with a sense of thoroughness or enclosure.
+- synonym: [[matting]]
+- collocation: [[musalla]]
+- collocation: [[oriental]]

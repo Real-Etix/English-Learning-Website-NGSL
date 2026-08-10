@@ -9,6 +9,8 @@ rank: 1617
 sfi: 56.94
 sources: [wordnet, llm]
 status: enriched
+chart: force
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[powerplant]] — Use 'powerplant' instead of 'engine' when referring to the entire propulsion system, especially in aviation, industrial, or technical contexts.
 - advanced_form: [[turbine]] — Use 'turbine' instead of 'engine' when the mechanism uses rotating blades driven by fluid or gas, common in jet engines, power plants, and industrial machinery.
 - builds_on: [[motor]] — Use 'engine' for internal combustion or large power sources, especially vehicles; 'motor' is more general for electric or small devices.
+- synonym: [[booster]]
+- collocation: [[chug]]
+- collocation: [[damper]]
+- collocation: [[roar]]
+- collocation: [[ping]]
+- collocation: [[spider]]

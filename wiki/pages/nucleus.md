@@ -9,6 +9,8 @@ rank: 77
 sfi: 59.324
 sources: [wordnet, llm]
 status: enriched
+chart: middle
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[nucleoid]] — Used specifically for prokaryotic cells instead of 'nucleus'.
 - builds_on: [[syllable]] — Use when focusing on the core sound of a syllable, rather than the whole unit.
 - builds_on: [[core]] — Use 'nucleus' instead of 'core' when emphasizing the central, active part of a group that drives growth or change.
+- builds_on: [[hub]] — Use 'nucleus' for the core or founding part of an organization, idea, or system.
+- collocation: [[protium]]

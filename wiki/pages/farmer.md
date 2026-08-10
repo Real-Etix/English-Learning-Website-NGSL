@@ -9,6 +9,8 @@ rank: 1580
 sfi: 57.08
 sources: [wordnet, llm]
 status: enriched
+chart: farmer
+region: farmer
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[agriculturist]] — Use for a farmer with scientific or systematic knowledge of farming.
 - advanced_form: [[cultivator]] — Use for someone who prepares and tends land for crops.
+- collocation: [[crops]]

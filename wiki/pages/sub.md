@@ -9,6 +9,8 @@ rank: 61
 sfi: 58.37
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: interim
+region: you
 ---
 
 ## Definition

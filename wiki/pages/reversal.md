@@ -9,6 +9,8 @@ rank: 1731
 sfi: 50.36
 sources: [wordnet, llm]
 status: enriched
+chart: inversion
+region: inversion
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ a change from one state to the opposite state
 - domain: business
 - advanced_form: [[inversion]] — Use inversion when emphasizing a reversal of order, position, or normal sequence, often in scientific or formal contexts.
 - advanced_form: [[turnabout]] — Use turnabout for a sudden or dramatic reversal of direction, opinion, or situation, often with a sense of turnaround.
+- synonym: [[recantation]]
+- synonym: [[retraction]]
+- synonym: [[revocation]]
+- builds_on: [[twist]] — Use when the unforeseen development changes the situation to the opposite direction, a stronger 'twist'.

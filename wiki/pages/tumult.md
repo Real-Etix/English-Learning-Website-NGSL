@@ -6,6 +6,8 @@ pos: noun
 forms: [tumult]
 sources: [llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition

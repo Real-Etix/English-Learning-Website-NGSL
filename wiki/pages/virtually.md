@@ -9,6 +9,8 @@ rank: 2072
 sfi: 55.31
 sources: [wordnet, llm]
 status: enriched
+chart: fundamentally
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ in essence or effect but not in fact
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[effectively]] — Use 'effectively' when emphasizing the practical outcome rather than the literal truth.
 - advanced_form: [[essentially]] — Use 'essentially' to highlight the core nature or most important aspect, similar to 'virtually' when focusing on the essential quality.
+- collocation: [[invulnerable]]
+- collocation: [[nonexistent]]
+- collocation: [[powerless]]
+- collocation: [[inaccessible]]
+- collocation: [[unobtainable]]

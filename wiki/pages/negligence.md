@@ -9,6 +9,8 @@ rank: 934
 sfi: 51.72
 sources: [wordnet, llm]
 status: enriched
+chart: relaxation
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[dereliction]] — Use for willful or serious failure in responsibility, often in legal or formal contexts.
 - advanced_form: [[laxity]] — Use for lack of strictness or diligence, often implying a systemic or habitual carelessness.
+- synonym: [[inadvertence]]
+- builds_on: [[neglect]] — Use when emphasizing careless failure to take proper care, especially in formal or legal writing.

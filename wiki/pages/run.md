@@ -9,6 +9,8 @@ rank: 192
 sfi: 67.08
 sources: [wordnet, llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,15 @@ move fast by using one's feet, with one foot off the ground at any given time
 - advanced_form: [[dash]] — Use 'dash' for a quick, sudden run, usually over a short distance and with urgency.
 - advanced_form: [[bolt]] — Use 'bolt' for running away suddenly and quickly, often due to fear or surprise.
 - builds_on: [[span]] — Use 'run' for a continuous period of an ongoing activity, especially performances, events, or operations.
+- collocation: [[automaticdishwasher]]
+- collocation: [[autonomously]]
+- synonym: [[candidacy]]
+- collocation: [[concurrently]]
+- collocation: [[dishwashingmachine]]
+- collocation: [[experiment]]
+- collocation: [[macro]]
+- synonym: [[operate]]
+- synonym: [[printing]]
+- collocation: [[xerox]]
+- synonym: [[mileage]]
+- collocation: [[fever]]

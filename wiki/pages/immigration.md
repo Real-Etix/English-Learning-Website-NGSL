@@ -9,6 +9,8 @@ rank: 2786
 sfi: 52.28
 sources: [wordnet, llm]
 status: enriched
+chart: enter
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[influx]] — Use 'influx' to emphasize a sudden large number of people arriving, rather than the general process of immigration.
 - advanced_form: [[resettlement]] — Use 'resettlement' when focusing on the process of establishing permanent homes, not just the act of moving.
+- collocation: [[illegal]]

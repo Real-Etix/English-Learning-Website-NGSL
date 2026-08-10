@@ -9,6 +9,8 @@ rank: 447
 sfi: 53.44
 sources: [wordnet, llm]
 status: enriched
+chart: patience
+region: patience
 ---
 
 ## Definition

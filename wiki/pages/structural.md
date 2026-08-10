@@ -9,6 +9,8 @@ rank: 2763
 sfi: 52.82
 sources: [wordnet, llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,14 @@ relating to or caused by structure, especially political or economic structure
 - advanced_form: [[systemic]] — Use 'systemic' when the issue is deeply embedded in the entire system, not just a single structure.
 - advanced_form: [[constitutional]] — Use 'constitutional' when referring to the fundamental principles or laws of a political body, often in legal or political contexts.
 - advanced_form: [[foundational]] — Use 'foundational' when emphasizing that something is the basis or underlying framework of a structure, often in abstract or theoretical contexts.
+- synonym: [[architectonic]]
+- collocation: [[asymmetry]]
+- synonym: [[constructional]]
+- collocation: [[deformation]]
+- synonym: [[dimensional]]
+- synonym: [[morphemic]]
+- synonym: [[phenotypic]]
+- builds_on: [[skeletal]] — Use 'structural' when the focus is on its role as a framework or support, not the bone itself.
+- builds_on: [[institutional]] — Use when describing the underlying framework or arrangement of an institution, especially regarding how it is organized.
+- collocation: [[erection]]
+- collocation: [[ossature]]

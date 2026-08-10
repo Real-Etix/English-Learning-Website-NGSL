@@ -6,6 +6,8 @@ pos: adjective
 forms: [antipodal]
 sources: [llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[opposite]] — Use 'antipodal' for a more formal or extreme sense of being directly opposite, as if on opposite sides of the globe.
+- synonym: [[contrary]]
+- synonym: [[polar]]

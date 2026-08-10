@@ -6,6 +6,8 @@ pos: adjective
 forms: [propitious]
 sources: [llm]
 status: enriched
+chart: adverse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[favorable]] — Use 'propitious' instead of 'favorable' when emphasizing a strong indication of future success or a positive outcome.
+- synonym: [[auspicious]]
+- synonym: [[advantageous]]
+- synonym: [[opportune]]
+- collocation: [[moment]]
+- collocation: [[time]]
+- collocation: [[sign]]

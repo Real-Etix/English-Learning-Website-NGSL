@@ -9,6 +9,8 @@ rank: 761
 sfi: 51.228
 sources: [wordnet, llm]
 status: enriched
+chart: yeast
+region: yeast
 ---
 
 ## Definition

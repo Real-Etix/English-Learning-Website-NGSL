@@ -9,6 +9,8 @@ rank: 766
 sfi: 60.98
 sources: [wordnet, llm]
 status: enriched
+chart: challenge
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ a demanding or stimulating situation
 - builds_on: [[appeal]] — Use 'challenge' to focus on disputing the outcome, often implying a direct contest of the judgment, while 'appeal' is the standard legal process.
 - builds_on: [[confront]] — Used when confronting someone in a competitive or assertive manner, often implying a direct contest.
 - builds_on: [[defy]] — Challenge implies actively questioning or calling into question an authority, belief, or statement, often with an argument, whereas defy can be more passive resistance.
+- collocation: [[constitutionality]]
+- synonym: [[controvert]]
+- synonym: [[gainsay]]
+- collocation: [[orthodoxy]]
+- collocation: [[pressup]]
+- collocation: [[rightfulness]]
+- collocation: [[veracity]]

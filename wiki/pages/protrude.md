@@ -6,6 +6,8 @@ pos: verb
 forms: [protrude]
 sources: [llm]
 status: enriched
+chart: father
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pop]] — Use 'protrude' for a neutral, formal description of something sticking out, without the sudden or surprising connotation of 'pop'.
+- synonym: [[project]]
+- synonym: [[extend]]
+- collocation: [[from]]
+- collocation: [[out]]
+- collocation: [[slightly]]

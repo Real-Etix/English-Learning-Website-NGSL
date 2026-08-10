@@ -6,6 +6,8 @@ pos: adjective
 forms: [judicious]
 sources: [llm]
 status: enriched
+chart: rational
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ _No sourced examples yet._
 - builds_on: [[advisable]] — Use 'judicious' when highlighting wise and balanced decision-making, often in complex situations.
 - builds_on: [[reasonable]] — Use 'judicious' when you want to emphasize careful, wise judgment often involving important or formal decisions.
 - builds_on: [[wise]] — Use 'judicious' to stress careful, balanced, and sensible judgment in specific actions or choices, more formal than 'wise'.
+- synonym: [[discriminating]]
+- synonym: [[politic]]
+- builds_on: [[prudent]] — Use when someone makes wise, well-considered choices, especially involving balancing factors.

@@ -6,6 +6,8 @@ pos: noun
 forms: [deliverer]
 sources: [llm]
 status: enriched
+chart: saver
+region: saver
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[saver]] — Use 'deliverer' instead of 'saver' when focusing on the act of freeing someone from captivity or a dire situation.
+- synonym: [[rescuer]]
+- synonym: [[savior]]
+- collocation: [[great]]
+- collocation: [[divine]]
+- collocation: [[true]]
+- synonym: [[consignor]]

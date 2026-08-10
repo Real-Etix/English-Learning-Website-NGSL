@@ -6,6 +6,8 @@ pos: noun
 forms: [emolument]
 sources: [llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition

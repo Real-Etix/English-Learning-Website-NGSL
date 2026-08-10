@@ -9,6 +9,8 @@ rank: 49
 sfi: 59.6
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[cycle]] — Use 'cycle' for a more formal or technical tone, especially in writing or official documents.
 - advanced_form: [[pushbike]] — Use 'pushbike' in British English to emphasize it is non-motorized, or for a slightly informal but specific term.
+- collocation: [[pannier]]
+- collocation: [[reflector]]
+- collocation: [[mechanic]]

@@ -9,6 +9,8 @@ rank: 1134
 sfi: 49.8
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: fork
+region: fork
 ---
 
 ## Definition

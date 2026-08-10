@@ -6,6 +6,8 @@ pos: adjective
 forms: [entitled]
 sources: [llm]
 status: enriched
+chart: eligible
+region: eligible
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[eligible]] — Use 'entitled' when emphasizing a legal or moral right, not just meeting criteria.
+- synonym: [[authorized]]
+- synonym: [[rightful]]
+- collocation: [[feel]]
+- collocation: [[legally]]
+- collocation: [[fully]]
+- collocation: [[not]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [testimonial]
 sources: [llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition

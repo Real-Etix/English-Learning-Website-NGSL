@@ -6,6 +6,8 @@ pos: verb
 forms: [surmise]
 sources: [llm]
 status: enriched
+chart: guess
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[presume]] — Use 'surmise' when making a guess based on limited evidence, more speculative than 'presume'.
 - builds_on: [[suspect]] — Use when you are inferring something based on little evidence, more formal than suspect.
 - builds_on: [[reckon]] — Use 'surmise' when the belief is based on limited evidence or intuition, implying a guess.
+- synonym: [[presumption]]
+- builds_on: [[suspicion]] — Use for a suspicion that is a reasoned guess based on evidence.

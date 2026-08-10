@@ -9,6 +9,8 @@ rank: 1423
 sfi: 57.74
 sources: [wordnet, llm]
 status: enriched
+chart: editor
+region: editor
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [nervecenter]
 sources: [llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[headquarters]] — Use 'nerve center' to stress the control and command function, especially for operations or communications.
+- synonym: [[hub]]
+- collocation: [[emergency]]
+- collocation: [[coordination]]
+- collocation: [[command]]
+- collocation: [[crisis]]

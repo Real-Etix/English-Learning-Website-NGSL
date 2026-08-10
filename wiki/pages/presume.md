@@ -9,6 +9,8 @@ rank: 632
 sfi: 53.406
 sources: [wordnet, llm]
 status: enriched
+chart: guess
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[conjecture]] — Use 'conjecture' for a conclusion formed from incomplete information, often more tentative than 'presume'.
 - builds_on: [[suspect]] — Use when accepting something as true until proven otherwise, often with a basis of probability or assumption.
 - builds_on: [[reckon]] — Use 'presume' when the belief is based on probability or reasonable assumption, often confident but not certain.
+- synonym: [[dare]]

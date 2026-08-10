@@ -9,6 +9,8 @@ rank: 1644
 sfi: 56.83
 sources: [wordnet, llm]
 status: enriched
+chart: awful
+region: you
 ---
 
 ## Definition

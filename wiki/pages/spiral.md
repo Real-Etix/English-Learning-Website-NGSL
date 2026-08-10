@@ -9,6 +9,8 @@ rank: 176
 sfi: 58.37
 sources: [wordnet, llm]
 status: enriched
+chart: spiral
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - builds_on: [[helix]] — Use 'spiral' instead of 'helix' in everyday contexts when describing a winding shape, as it is more general and widely understood.
 - builds_on: [[scroll]] — Use 'spiral' when the shape winds around a central point in a continuous curve, often in a single plane.
 - builds_on: [[inflation]] — Use 'spiral' to describe a rapid, accelerating increase that feeds on itself.
+- collocation: [[notebook]]
+- collocation: [[notepad]]
+- synonym: [[volute]]
+- collocation: [[volute]]

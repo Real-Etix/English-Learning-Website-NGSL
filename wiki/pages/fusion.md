@@ -9,6 +9,8 @@ rank: 294
 sfi: 56.797
 sources: [wordnet, llm]
 status: enriched
+chart: integration
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[amalgamation]] — Use 'amalgamation' when emphasizing the blending of distinct elements into a coherent whole, often in formal or technical contexts.
 - advanced_form: [[unification]] — Use 'unification' when focusing on the creation of unity or oneness, especially in political, organizational, or conceptual contexts.
 - builds_on: [[blend]] — Use when highlighting a smooth, combined result, especially in cooking, music, or culture.
+- synonym: [[coalescence]]

@@ -9,6 +9,8 @@ rank: 2123
 sfi: 55.16
 sources: [wordnet, llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ urgently needed
 - builds_on: [[crucial]] — Use 'vital' when something is necessary for life or continued existence, stronger than 'crucial'.
 - advanced_form: [[paramount]] — Use 'paramount' to emphasize that something is the most important, above all else.
 - advanced_form: [[indispensable]] — Use 'indispensable' when something is absolutely necessary and cannot be done without.
+- synonym: [[biotic]]
+- synonym: [[essential]]
+- synonym: [[instrumental]]
+- synonym: [[pivotal]]
+- builds_on: [[essential]] — use when something is critically important for a particular outcome

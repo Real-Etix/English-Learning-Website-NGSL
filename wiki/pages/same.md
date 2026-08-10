@@ -9,6 +9,8 @@ rank: 122
 sfi: 68.58
 sources: [wordnet]
 status: seeded
+chart: patron
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ same in identity
 
 ## Connections
 - antonym: [[other]]
+- collocation: [[very]]

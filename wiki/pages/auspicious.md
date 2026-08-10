@@ -6,6 +6,8 @@ pos: adjective
 forms: [auspicious]
 sources: [llm]
 status: enriched
+chart: adverse
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[favorable]] — Use 'auspicious' instead of 'favorable' when highlighting a promising beginning or a sign of future success.
 - builds_on: [[fortunate]] — Use 'auspicious' for a sign or start that suggests future success, not for general luck.
+- synonym: [[propitious]]
+- synonym: [[providential]]

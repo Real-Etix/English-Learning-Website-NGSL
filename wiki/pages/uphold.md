@@ -6,6 +6,8 @@ pos: verb
 forms: [uphold]
 sources: [llm]
 status: enriched
+chart: free
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[enforce]] — Use 'uphold' when emphasizing maintaining or supporting a rule or law against challenges or violations.
+- collocation: [[constitutionality]]

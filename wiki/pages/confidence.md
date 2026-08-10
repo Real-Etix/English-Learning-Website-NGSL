@@ -9,6 +9,8 @@ rank: 1493
 sfi: 57.44
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ freedom from doubt
 - advanced_form: [[assurance]] — Use when emphasizing a calm, certain belief in one's own abilities or the truth of something, often in a formal or professional context.
 - advanced_form: [[self-assurance]] — Use when highlighting confidence in oneself, especially in social or performance situations.
 - advanced_form: [[poise]] — Use when describing graceful and controlled confidence under pressure or in elegant situations.
+- collocation: [[brimming]]
+- collocation: [[depositor]]
+- synonym: [[faith]]
+- collocation: [[instill]]
+- collocation: [[panache]]

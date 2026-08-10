@@ -9,6 +9,8 @@ rank: 555
 sfi: 62.44
 sources: [wordnet]
 status: seeded
+chart: notably
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ under normal conditions
 - antonym: [[unusually]]
 - antonym: [[remarkably]]
 - antonym: [[notably]]
+- synonym: [[habitually]]

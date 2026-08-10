@@ -9,6 +9,8 @@ rank: 1653
 sfi: 56.76
 sources: [wordnet, llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ in distinction from others
 - builds_on: [[specially]] — Use when emphasizing precise purpose or exactness, rather than simply 'in a special way'.
 - advanced_form: [[explicitly]] — Use 'explicitly' when something is expressed with full clarity and detail, leaving no doubt, rather than 'specifically' which often singles out a particular instance.
 - advanced_form: [[precisely]] — Use 'precisely' when referring to exactness or accuracy in measurement or description, while 'specifically' emphasizes distinguishing from others.
+- synonym: [[concretely]]
+- synonym: [[expressly]]

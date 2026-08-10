@@ -6,6 +6,8 @@ pos: verb
 forms: [reinstitute]
 sources: [llm]
 status: enriched
+chart: resume
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[resume]] — Use 'reinstitute' when restoring a policy, rule, or system that had been stopped.
+- synonym: [[reinstate]]
+- synonym: [[reestablish]]
+- synonym: [[restore]]
+- collocation: [[policy]]
+- collocation: [[program]]
+- collocation: [[rule]]
+- collocation: [[practice]]
+- collocation: [[measure]]

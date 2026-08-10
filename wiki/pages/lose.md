@@ -9,6 +9,8 @@ rank: 305
 sfi: 65
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[forfeit]] — Use instead of 'lose' when the loss results from a penalty or failure to meet an obligation.
 - advanced_form: [[misplace]] — Use instead of 'lose' when referring to putting something in the wrong location temporarily.
 - advanced_form: [[squander]] — Use instead of 'lose' when the loss is due to wasteful or foolish use of resources.
+- collocation: [[composure]]
+- synonym: [[mislay]]
+- collocation: [[poise]]
+- collocation: [[poundage]]
+- collocation: [[wager]]

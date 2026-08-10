@@ -9,6 +9,8 @@ rank: 561
 sfi: 62.36
 sources: [wordnet, llm]
 status: enriched
+chart: grant
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ consider or hold as true
 - advanced_form: [[acknowledge]] — Use 'acknowledge' when you accept something as true, often with some hesitation or formality.
 - advanced_form: [[concede]] — Use 'concede' when accepting truth after resistance or in a debate.
 - advanced_form: [[grant]] — Use 'grant' when you accept a point as true without fully agreeing with the overall position.
+- synonym: [[accede]]
+- collocation: [[alacrity]]
+- collocation: [[perforce]]
+- collocation: [[wager]]
+- collocation: [[compliments]]

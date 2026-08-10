@@ -9,6 +9,8 @@ rank: 175
 sfi: 67.44
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,11 @@ anew
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[anew]]
+- synonym: [[over]]
+- collocation: [[iterate]]
+- collocation: [[once]]
+- synonym: [[afresh]]
+- synonym: [[denovo]]
+- collocation: [[reappear]]
+- collocation: [[resurface]]

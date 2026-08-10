@@ -6,6 +6,8 @@ pos: noun
 forms: [challenger]
 sources: [llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[entrant]] — Use 'challenger' when the product is specifically trying to overthrow or challenge the current leaders, implying aggressive competition.
+- synonym: [[competitor]]
+- synonym: [[contender]]
+- synonym: [[rival]]
+- synonym: [[opponent]]
+- synonym: [[contestant]]
+- synonym: [[revisionist]]

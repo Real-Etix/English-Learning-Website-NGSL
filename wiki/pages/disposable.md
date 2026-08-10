@@ -9,6 +9,8 @@ rank: 1406
 sfi: 51.18
 sources: [wordnet, llm]
 status: enriched
+chart: disposable
+region: disposable
 ---
 
 ## Definition

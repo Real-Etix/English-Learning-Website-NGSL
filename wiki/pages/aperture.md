@@ -6,6 +6,8 @@ pos: noun
 forms: [aperture]
 sources: [llm]
 status: enriched
+chart: breach
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,7 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[window]] — Use 'aperture' for a formal or technical context, especially when emphasizing the opening itself rather than the glass.
 - builds_on: [[hole]] — Use 'aperture' for scientific or technical openings, especially in optics or machinery.
+- synonym: [[muzzle]]
+- synonym: [[orifice]]
+- synonym: [[hatch]]
+- synonym: [[vent]]

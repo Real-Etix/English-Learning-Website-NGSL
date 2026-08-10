@@ -6,6 +6,8 @@ pos: verb
 forms: [append]
 sources: [llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[add]] — Use 'append' when adding something to the end of a written or digital item, like a file or list.
+- synonym: [[attach]]
+- synonym: [[affix]]
+- synonym: [[tag]]
+- collocation: [[end]]
+- collocation: [[document]]
+- collocation: [[signature]]

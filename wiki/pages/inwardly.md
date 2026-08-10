@@ -6,6 +6,8 @@ pos: adverb
 forms: [inwardly]
 sources: [llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition

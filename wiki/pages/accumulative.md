@@ -6,6 +6,8 @@ pos: adjective
 forms: [accumulative]
 sources: [llm]
 status: enriched
+chart: progressive
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cumulative]] — Use 'accumulative' to focus on the process of gradual increase over time, often in descriptive or scientific contexts.
+- synonym: [[incremental]]
+- synonym: [[progressive]]
+- collocation: [[effect]]
+- collocation: [[impact]]
+- collocation: [[process]]

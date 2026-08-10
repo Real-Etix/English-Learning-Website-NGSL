@@ -7,8 +7,10 @@ forms: [shoe, shoes, shoed, shod]
 lists: [ngsl]
 rank: 1476
 sfi: 57.51
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[eyelet]]
+- advanced_form: [[footwear]] — Use when speaking generally about shoes, especially in formal or written contexts.
+- advanced_form: [[footgear]] — A less common but more formal word for shoes, often used in technical or commercial language.

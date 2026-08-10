@@ -9,6 +9,8 @@ rank: 190
 sfi: 56.37
 sources: [wordnet, llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ a secret word or phrase known only to a restricted group
 - domain: toeic
 - advanced_form: [[passcode]] — Use 'passcode' for a numeric or alphanumeric code, often shorter than a password.
 - advanced_form: [[credential]] — Use 'credential' to refer to any piece of identification used for authentication, often in formal or technical contexts.
+- collocation: [[encrypt]]

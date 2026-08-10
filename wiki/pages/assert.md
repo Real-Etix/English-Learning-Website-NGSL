@@ -9,6 +9,8 @@ rank: 290
 sfi: 56.805
 sources: [wordnet, llm]
 status: enriched
+chart: assert
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ _No sourced examples yet._
 - builds_on: [[insist]] — Use 'assert' when you want to state a fact or belief confidently and forcefully, often in a formal or legal context.
 - builds_on: [[declare]] — Use 'assert' when stating a fact or opinion confidently and forcefully, especially when challenged.
 - builds_on: [[allege]] — Use 'assert' when you want to state something strongly and confidently, often with the implication of defending a position, whereas 'allege' is more about making an accusation without proof.
+- synonym: [[profess]]

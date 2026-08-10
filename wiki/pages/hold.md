@@ -9,6 +9,8 @@ rank: 222
 sfi: 66.45
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,15 @@ cause to continue in a certain state, position, or activity
 - advanced_form: [[maintain]] — Use 'maintain' when emphasizing the effort or action needed to keep something steady or unchanged.
 - advanced_form: [[sustain]] — Use 'sustain' when focusing on the ability to continue something over time, often requiring resources or endurance.
 - advanced_form: [[retain]] — Use 'retain' when emphasizing keeping something from being lost or given up, often referring to possession or position.
+- collocation: [[aloft]]
+- collocation: [[answerable]]
+- collocation: [[congress]]
+- collocation: [[handbalance]]
+- collocation: [[hearing]]
+- collocation: [[inquest]]
+- synonym: [[orlop]]
+- collocation: [[parley]]
+- collocation: [[plebiscite]]
+- collocation: [[monopoly]]
+- collocation: [[blameless]]
+- collocation: [[culpable]]

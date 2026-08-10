@@ -6,6 +6,8 @@ pos: verb
 forms: [abate]
 sources: [llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[diminish]] — Use 'abate' when referring to a decrease in intensity, force, or severity of something unpleasant, like a storm, noise, or pain.
 - builds_on: [[dissolve]] — Use 'abate' instead of 'dissolve' in formal or legal contexts to indicate a decrease in something undesirable, like noise, pain, or a problem.
+- builds_on: [[rebate]] — Use 'abate' in formal or written contexts, often for taxes, rents, or prices.

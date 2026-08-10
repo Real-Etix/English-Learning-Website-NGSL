@@ -6,6 +6,8 @@ pos: adjective
 forms: [elemental]
 sources: [llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition

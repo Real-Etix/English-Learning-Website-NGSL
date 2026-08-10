@@ -6,6 +6,8 @@ pos: noun
 forms: [nexus]
 sources: [llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[connection]] — Use 'nexus' when referring to a central or focal point where multiple connections converge, implying a more complex or pivotal linkage.
 - builds_on: [[node]] — Use 'nexus' for a central or focal point where many connections or interactions occur, often in abstract or formal contexts.
 - builds_on: [[intersection]] — Use 'nexus' for a central or focal point where multiple things connect, more abstract than 'intersection'.
+- synonym: [[interconnection]]
+- builds_on: [[hub]] — Use 'nexus' for a central point of connection, especially in a formal or figurative sense.

@@ -6,6 +6,8 @@ pos: noun
 forms: [ethnos]
 sources: [llm]
 status: enriched
+chart: public
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tribe]] — Use 'ethnos' in academic or anthropological contexts for a group sharing cultural traits.
+- synonym: [[people]]
+- synonym: [[nation]]
+- synonym: [[race]]

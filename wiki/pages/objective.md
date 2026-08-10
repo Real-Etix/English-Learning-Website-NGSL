@@ -9,6 +9,8 @@ rank: 1402
 sfi: 57.84
 sources: [wordnet, llm]
 status: enriched
+chart: objective
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ undistorted by emotion or personal bias
 - advanced_form: [[impartial]] — Use 'impartial' when emphasizing fairness and lack of favoritism, similar to 'objective' but often in legal or evaluative contexts.
 - advanced_form: [[dispassionate]] — Use 'dispassionate' when emphasizing calm, unemotional reasoning, often in analytical or professional settings.
 - builds_on: [[sake]] — Use 'objective' to highlight a clear goal or target, which is more precise than the vague purpose implied by 'sake'.
+- synonym: [[denotative]]
+- synonym: [[unprejudiced]]

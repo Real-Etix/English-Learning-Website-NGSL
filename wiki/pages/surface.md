@@ -9,6 +9,8 @@ rank: 1161
 sfi: 58.83
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,27 @@ the outer boundary of an artifact or a material layer constituting or resembling
 - advanced_form: [[facade]] — Use 'facade' for the front-facing surface of a building, often implying a decorative or deceptive appearance.
 - builds_on: [[emerge]] — Use when something becomes visible or known after being hidden or unnoticed.
 - builds_on: [[arise]] — Use 'surface' when something becomes visible or known, often after being hidden.
+- collocation: [[char]]
+- collocation: [[corrode]]
+- synonym: [[countertop]]
+- collocation: [[depressed]]
+- collocation: [[disinfect]]
+- synonym: [[flooring]]
+- collocation: [[glaze]]
+- collocation: [[medial]]
+- synonym: [[meniscus]]
+- collocation: [[ocular]]
+- collocation: [[oxidize]]
+- collocation: [[polished]]
+- collocation: [[ventral]]
+- collocation: [[underneath]]
+- synonym: [[desktop]]
+- builds_on: [[concrete]] — Use in formal or technical contexts to describe applying a top layer to a surface, especially for roads or floors.
+- synonym: [[epithelium]]
+- collocation: [[epithelium]]
+- synonym: [[exteriority]]
+- collocation: [[floatage]]
+- synonym: [[pave]]
+- collocation: [[planar]]
+- collocation: [[protuberance]]
+- collocation: [[regolith]]

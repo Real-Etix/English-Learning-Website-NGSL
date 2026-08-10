@@ -6,6 +6,8 @@ pos: adjective
 forms: [slumbering]
 sources: [llm]
 status: enriched
+chart: asleep
+region: asleep
 ---
 
 ## Definition

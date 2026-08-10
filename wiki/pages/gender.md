@@ -9,6 +9,8 @@ rank: 2280
 sfi: 54.72
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[grammaticalgender]] — Use this phrase to specify the linguistic category, distinguishing it from social gender.
 - advanced_form: [[nounclass]] — This term is often used in descriptions of non-Indo-European languages as a synonym for grammatical gender.
+- collocation: [[fluidity]]
+- collocation: [[gap]]

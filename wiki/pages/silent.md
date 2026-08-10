@@ -9,6 +9,8 @@ rank: 2474
 sfi: 54.05
 sources: [wordnet, llm]
 status: enriched
+chart: still
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ marked by absence of sound
 - synonym: [[still]]
 - advanced_form: [[noiseless]] — Use 'noiseless' when emphasizing the complete absence of noise, especially in deliberate or natural movements.
 - advanced_form: [[soundless]] — Use 'soundless' to create a more poetic or dramatic sense of total silence, often in descriptive or literary contexts.
+- collocation: [[audient]]

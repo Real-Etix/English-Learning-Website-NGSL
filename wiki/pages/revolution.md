@@ -9,6 +9,8 @@ rank: 1970
 sfi: 55.62
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ a drastic and far-reaching change in ways of thinking and behaving
 - builds_on: [[rotation]] — Use 'revolution' for a complete turn around an axis, especially in mechanics, astronomy, or formal contexts.
 - advanced_form: [[upheaval]] — Use when emphasizing the disruptive, turbulent, or chaotic nature of the change, rather than the positive or sweeping scope.
 - advanced_form: [[transformation]] — Use when focusing on the complete and often positive metamorphosis of something, rather than the political or social upheaval implied by 'revolution'.
+- collocation: [[bolshevik]]
+- synonym: [[gyration]]

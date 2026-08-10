@@ -9,6 +9,8 @@ rank: 1403
 sfi: 57.84
 sources: [wordnet]
 status: seeded
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,12 @@ in addition
 
 ## Connections
 - synonym: [[furthermore]]
+- synonym: [[besides]]
+- synonym: [[additionally]]
+- synonym: [[likewise]]
+- synonym: [[also]]
+- collocation: [[and]]
+- collocation: [[the]]
+- collocation: [[it]]
+- collocation: [[this]]
+- collocation: [[we]]

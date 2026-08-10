@@ -6,6 +6,8 @@ pos: noun
 forms: [culmination]
 sources: [llm]
 status: enriched
+chart: offset
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[graduation]] — Use 'culmination' to emphasize the peak achievement of completing a program, more formal and dramatic than 'graduation'.
+- synonym: [[capstone]]
+- synonym: [[climax]]
+- synonym: [[peak]]
+- synonym: [[apex]]
+- synonym: [[zenith]]
+- synonym: [[pinnacle]]

@@ -9,6 +9,8 @@ rank: 98
 sfi: 58.08
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: breach
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,6 @@ a failure to perform some promised act or obligation
 - builds_on: [[violate]] — Use 'breach' when referring to failing to keep an agreement, law, or duty, often in formal or legal contexts.
 - builds_on: [[disrupt]] — Use 'breach' when a disruption involves breaking through a barrier, rule, or continuity, often in formal or technical contexts, rather than just causing a general interruption.
 - builds_on: [[hole]] — Use 'breach' for an opening caused by breaking or forceful separation, often in structural or security contexts.
+- synonym: [[contravention]]
+- synonym: [[rift]]
+- synonym: [[gulf]]

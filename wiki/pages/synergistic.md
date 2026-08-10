@@ -6,6 +6,8 @@ pos: adjective
 forms: [synergistic]
 sources: [llm]
 status: enriched
+chart: interactive
+region: interactive
 ---
 
 ## Definition

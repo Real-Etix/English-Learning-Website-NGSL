@@ -6,6 +6,8 @@ pos: verb
 forms: [synergize]
 sources: [llm]
 status: enriched
+chart: administer
+region: you
 ---
 
 ## Definition

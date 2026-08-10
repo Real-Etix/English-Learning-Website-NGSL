@@ -9,6 +9,8 @@ rank: 129
 sfi: 68.4
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[possess]] — Use 'possess' in formal or legal contexts to emphasize ownership.
 - advanced_form: [[hold]] — Use 'hold' when referring to legal or documented ownership.
 - advanced_form: [[retain]] — Use 'retain' when focusing on keeping ownership over time.
+- collocation: [[volition]]

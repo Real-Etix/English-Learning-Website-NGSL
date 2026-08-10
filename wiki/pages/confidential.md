@@ -9,6 +9,8 @@ rank: 381
 sfi: 53.98
 sources: [wordnet, llm]
 status: enriched
+chart: confidential
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ entrusted with private information and the confidence of another
 - advanced_form: [[classified]] — Use 'classified' for official secrets, especially in government or military contexts, where disclosure is legally prohibited.
 - builds_on: [[personal]] — Use 'confidential' when emphasizing secrecy or restricted access, stronger than 'personal' in formal contexts.
 - builds_on: [[secret]] — Use 'confidential' when information is entrusted with the expectation of privacy, especially in professional or official contexts.
+- collocation: [[dossier]]

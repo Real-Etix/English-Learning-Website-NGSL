@@ -9,6 +9,8 @@ rank: 1106
 sfi: 59.09
 sources: [wordnet, llm]
 status: enriched
+chart: accelerate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[velocity]] — Use 'velocity' in scientific or technical contexts to emphasize direction and magnitude.
 - advanced_form: [[rapidity]] — Use 'rapidity' to stress suddenness or impressiveness of fast movement.
 - advanced_form: [[swiftness]] — Use 'swiftness' in literary or formal descriptions to convey graceful, fluid speed.
+- collocation: [[broadband]]
+- synonym: [[haste]]

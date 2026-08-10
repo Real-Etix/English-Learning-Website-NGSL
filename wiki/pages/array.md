@@ -9,6 +9,8 @@ rank: 229
 sfi: 57.299
 sources: [wordnet, llm]
 status: enriched
+chart: position
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ an orderly arrangement
 - builds_on: [[align]] — Use 'array' when you want to emphasize a deliberate, often impressive arrangement in rows or lines, more formal and literary than 'align'.
 - builds_on: [[arrange]] — Use 'array' when arranging items in a visible, often attractive order, like for display.
 - builds_on: [[formation]] — Use 'array' for a large, orderly group of people or things, often implying impressiveness or display.
+- synonym: [[armada]]
+- synonym: [[arsenal]]
+- synonym: [[constellation]]
+- collocation: [[randomize]]

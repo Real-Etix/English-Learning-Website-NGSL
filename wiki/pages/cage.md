@@ -9,6 +9,8 @@ rank: 228
 sfi: 56.89
 sources: [wordnet, llm]
 status: enriched
+chart: kilometer
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[enclosure]] — Use 'enclosure' when the focus is on the structure as a confined space, often more formal or when referring to larger areas like zoo habitats.
 - advanced_form: [[aviary]] — Use 'aviary' specifically for a large cage or enclosure designed to house birds, often allowing them to fly.
+- synonym: [[vivarium]]

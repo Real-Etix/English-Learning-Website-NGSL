@@ -9,6 +9,8 @@ rank: 1680
 sfi: 56.64
 sources: [wordnet, llm]
 status: enriched
+chart: kiss
+region: kiss
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[peck]] — Use 'peck' for a light, quick, often affectionate kiss, especially on the cheek or forehead.
 - advanced_form: [[smooch]] — Use 'smooch' for a passionate, prolonged kiss, often in romantic contexts.
+- collocation: [[affectionate]]
+- collocation: [[blarney]]
+- collocation: [[passionate]]

@@ -9,6 +9,8 @@ rank: 819
 sfi: 60.64
 sources: [wordnet, llm]
 status: enriched
+chart: appear
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ be a signal for or a symptom of
 - advanced_form: [[manifest]] — Use 'manifest' instead of 'indicate' when the sign or symptom is obvious and easily perceived, often implying a tangible or visible expression.
 - builds_on: [[signify]] — Use 'indicate' when something shows or points to a fact or situation, often with evidence, more direct than 'signify'.
 - builds_on: [[weigh]] — Use 'indicate' when the weight is shown by an instrument; it is more formal than 'weigh'.
+- synonym: [[connote]]
+- synonym: [[insinuate]]

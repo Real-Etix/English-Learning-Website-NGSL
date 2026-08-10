@@ -6,6 +6,8 @@ pos: noun
 forms: [convocation]
 sources: [llm]
 status: enriched
+chart: convention
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [potency]
 sources: [llm]
 status: enriched
+chart: interest
+region: you
 ---
 
 ## Definition

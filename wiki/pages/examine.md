@@ -9,6 +9,8 @@ rank: 1104
 sfi: 59.1
 sources: [wordnet, llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - builds_on: [[contemplate]] — Use 'examine' when the looking is careful and systematic, often to find details or evaluate, rather than the broader, more reflective 'contemplate'.
 - advanced_form: [[scrutinize]] — Use when examining something very closely and critically, often for flaws or details.
 - advanced_form: [[analyze]] — Use when examining systematically to understand components or structure, especially in intellectual or technical contexts.
+- synonym: [[inspect]]

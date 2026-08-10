@@ -9,6 +9,8 @@ rank: 2498
 sfi: 53.97
 sources: [wordnet, llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ status: enriched
 - advanced_form: [[therapeutics]] — Use instead of 'therapy' when referring to the scientific study or methodology behind treatments, especially in formal or academic contexts.
 - advanced_form: [[remediation]] — Use when focusing on corrective measures for specific deficits, such as speech therapy or learning disabilities, implying a targeted fix.
 - advanced_form: [[regimen]] — Use instead of 'therapy' when emphasizing a structured, often long-term plan of care rather than the general concept of treatment.
+- collocation: [[androgen]]
+- collocation: [[avocational]]
+- collocation: [[complementary]]
+- collocation: [[conductual]]
+- collocation: [[experiential]]
+- collocation: [[immunoglobulin]]
+- collocation: [[occupational]]
+- collocation: [[periodontal]]
+- collocation: [[pharmacologic]]
+- synonym: [[psychoanalysis]]

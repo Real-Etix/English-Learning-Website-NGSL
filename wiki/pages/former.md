@@ -9,6 +9,8 @@ rank: 599
 sfi: 62.1
 sources: [wordnet, llm]
 status: enriched
+chart: empirical
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ referring to the first of two things or persons mentioned (or the earlier one or
 - advanced_form: [[preceding]] — Use 'preceding' when the first item comes immediately before the second in sequence, often in written references.
 - advanced_form: [[aforementioned]] — Use 'aforementioned' to refer back to something previously mentioned as the first item, very formal.
 - builds_on: [[previous]] — Use 'former' to refer to something that held a previous position or state, implying it is no longer current.
+- synonym: [[bygone]]
+- collocation: [[collegian]]
+- collocation: [[coworker]]
+- synonym: [[earlier]]
+- collocation: [[employer]]
+- collocation: [[medalist]]
+- collocation: [[officeholder]]
+- collocation: [[protg]]
+- collocation: [[schoolmate]]
+- collocation: [[serviceman]]

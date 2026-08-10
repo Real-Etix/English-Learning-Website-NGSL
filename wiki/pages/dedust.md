@@ -6,6 +6,8 @@ pos: verb
 forms: [dedust]
 sources: [llm]
 status: enriched
+chart: i
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dust]] — Use when referring to thorough removal of dust, often in technical or formal contexts, rather than the casual 'dust'.
+- synonym: [[clean]]
+- synonym: [[wipe]]
+- synonym: [[brush]]
+- synonym: [[vacuum]]
+- collocation: [[equipment]]
+- collocation: [[before]]
+- collocation: [[thoroughly]]
+- collocation: [[regularly]]

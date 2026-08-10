@@ -9,6 +9,8 @@ rank: 249
 sfi: 56.54
 sources: [wordnet, llm]
 status: enriched
+chart: extract
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[extract]] — Use 'extract' when referring to a concentrated liquid obtained by pressing or distilling, often in cooking or chemistry.
 - advanced_form: [[liquor]] — Use 'liquor' for the liquid produced by cooking or pressing food, especially in culinary or industrial contexts.
+- collocation: [[citrus]]

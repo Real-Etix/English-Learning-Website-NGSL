@@ -6,6 +6,8 @@ pos: adverb
 forms: [farther]
 sources: [llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[beyond]] — Use 'farther' for measurable physical distance, while 'beyond' often implies a more abstract or indefinite extent.
+- synonym: [[further]]
+- collocation: [[away]]
+- collocation: [[down]]
+- collocation: [[along]]
+- collocation: [[ahead]]
+- collocation: [[back]]

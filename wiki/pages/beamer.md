@@ -6,6 +6,8 @@ pos: noun
 forms: [beamer]
 sources: [llm]
 status: enriched
+chart: overhead
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[projector]] — Use 'beamer' in informal or technical contexts, especially for digital projectors, as a shorter and more modern term.
+- collocation: [[connect]]
+- collocation: [[laptop]]
+- collocation: [[presentation]]
+- collocation: [[screen]]

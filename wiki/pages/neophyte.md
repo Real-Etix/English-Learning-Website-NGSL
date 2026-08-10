@@ -6,6 +6,8 @@ pos: noun
 forms: [neophyte]
 sources: [llm]
 status: enriched
+chart: novice
+region: you
 ---
 
 ## Definition

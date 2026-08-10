@@ -6,6 +6,8 @@ pos: verb
 forms: [recompense]
 sources: [llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[payback]] — Use 'recompense' for compensation in a fair or equitable sense, often for effort or loss, while 'payback' can imply a straightforward financial return.
 - builds_on: [[reward]] — Use 'recompense' instead of 'reward' when emphasizing formal compensation for effort, loss, or suffering, often in a professional or legal context.
 - builds_on: [[compensation]] — Use 'recompense' instead of 'compensation' when emphasizing a reward or repayment for a loss, injury, or trouble, often with a slightly more formal or moral tone.
+- synonym: [[recoupment]]
+- synonym: [[requital]]

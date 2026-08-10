@@ -6,6 +6,8 @@ pos: adjective
 forms: [ground-floor]
 sources: [llm]
 status: enriched
+chart: above
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[downstairs]] — Use 'ground-floor' instead of 'downstairs' to specify the floor at street level, often in residential or commercial descriptions.
+- synonym: [[lower-level]]
+- collocation: [[apartment]]
+- collocation: [[flat]]
+- collocation: [[unit]]
+- collocation: [[entrance]]
+- collocation: [[window]]

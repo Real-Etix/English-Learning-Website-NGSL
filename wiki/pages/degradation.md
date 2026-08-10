@@ -6,6 +6,8 @@ pos: noun
 forms: [degradation]
 sources: [llm]
 status: enriched
+chart: trauma
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,7 @@ _No sourced examples yet._
 - builds_on: [[damage]] — Use 'degradation' when the change for the worse involves a decline in quality, status, or condition, often systematically.
 - builds_on: [[decay]] — Use 'degradation' for a decline in quality or status, often in moral, environmental, or structural contexts, emphasizing a loss of integrity.
 - builds_on: [[digestion]] — Use 'degradation' when the focus is on the overall breakdown process, especially in technical or formal writing about waste or materials.
+- synonym: [[biodegradation]]
+- synonym: [[debasement]]
+- builds_on: [[impairment]] — Use for a process of being reduced in quality, honor, or status, often due to external forces.
+- synonym: [[degeneration]]

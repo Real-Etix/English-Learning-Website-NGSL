@@ -9,6 +9,8 @@ rank: 166
 sfi: 67.56
 sources: [wordnet, llm]
 status: enriched
+chart: account
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - advanced_form: [[account]] — Use 'account' when emphasizing a narrative or descriptive report, often with personal observations.
 - advanced_form: [[paper]] — Use 'paper' for an academic or scholarly report, especially one meant for publication.
 - advanced_form: [[analysis]] — Use 'analysis' when the report focuses on breaking down data and interpreting findings.
+- collocation: [[aforementioned]]
+- collocation: [[pathology]]
+- collocation: [[probationer]]
+- collocation: [[purport]]
+- collocation: [[veracious]]
+- collocation: [[truncated]]

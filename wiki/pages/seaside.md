@@ -9,6 +9,8 @@ rank: 740
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[seashore]] — Use 'seashore' for a more formal or poetic description of the land next to the sea, especially when emphasizing the natural environment rather than the resort aspect of 'seaside'.
 - advanced_form: [[coastline]] — Use 'coastline' to describe the shape or boundary of the land along the sea, often in geographical or descriptive contexts, while 'seaside' is more about the resort or recreational area.
+- synonym: [[beach]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [unhinged]
 sources: [llm]
 status: enriched
+chart: sore
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crazy]] — Use 'unhinged' when the person seems to have lost mental stability, as if unbalanced.
+- synonym: [[deranged]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [indistinguishable]
 sources: [llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition

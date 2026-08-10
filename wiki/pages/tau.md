@@ -6,6 +6,8 @@ pos: noun
 forms: [tau]
 sources: [llm]
 status: enriched
+chart: pi
+region: pi
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pi]] — Use tau when discussing the circle constant in more advanced contexts, such as in tau proponents' arguments for simplifying formulas.
+- collocation: [[lepton]]

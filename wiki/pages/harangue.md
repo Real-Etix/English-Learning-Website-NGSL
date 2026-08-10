@@ -6,6 +6,8 @@ pos: verb
 forms: [harangue]
 sources: [llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[address]] — Use harangue when the speaker is forceful, lengthy, or critical, rather than simply addressing a group.
+- synonym: [[lecture]]
+- synonym: [[admonish]]
+- collocation: [[publicly]]
+- collocation: [[about]]
+- collocation: [[against]]
+- collocation: [[crowd]]
+- synonym: [[rant]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [rawness]
 sources: [llm]
 status: enriched
+chart: inexperience
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inexperience]] — use when emphasizing lack of polish or training
+- synonym: [[greenness]]
+- synonym: [[vulnerability]]
+- collocation: [[emotional]]
+- collocation: [[sheer]]
+- collocation: [[visceral]]
+- collocation: [[honest]]

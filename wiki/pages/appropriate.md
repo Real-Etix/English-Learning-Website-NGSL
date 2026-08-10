@@ -9,6 +9,8 @@ rank: 1019
 sfi: 59.51
 sources: [wordnet, llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - advanced_form: [[earmark]] — Use 'earmark' instead of 'appropriate' to emphasize setting aside funds or resources for a specific purpose, often with prior designation.
 - advanced_form: [[apportion]] — Use 'apportion' instead of 'appropriate' when dividing or sharing resources proportionally among multiple recipients.
 - builds_on: [[seize]] — Use when taking possession of something, often without permission or for a specific purpose.
+- synonym: [[becoming]]
+- synonym: [[commandeer]]
+- synonym: [[confiscate]]
+- synonym: [[proper]]
+- synonym: [[apt]]
+- synonym: [[expropriate]]

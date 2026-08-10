@@ -9,6 +9,8 @@ rank: 202
 sfi: 56.22
 sources: [wordnet, llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[promoter]] — Use when emphasizing the financial and marketing aspects of land development, rather than the physical construction.
 - advanced_form: [[subdivider]] — Use when focusing on the process of dividing land into smaller parcels for sale or development.
+- synonym: [[constructor]]
+- synonym: [[programmer]]
+- builds_on: [[programmer]] — Use 'developer' when emphasizing the broader role of creating and maintaining software, not just writing code.
+- synonym: [[coder]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [supper]
 sources: [llm]
 status: enriched
+chart: dine
+region: you
 ---
 
 ## Definition

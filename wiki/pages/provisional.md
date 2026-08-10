@@ -6,6 +6,8 @@ pos: adjective
 forms: [provisional]
 sources: [llm]
 status: enriched
+chart: contingent
+region: you
 ---
 
 ## Definition

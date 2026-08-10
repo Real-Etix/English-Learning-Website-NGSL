@@ -9,6 +9,8 @@ rank: 1575
 sfi: 50.27
 sources: [wordnet, llm]
 status: enriched
+chart: stakeholder
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ a person who holds assets in trust for a beneficiary
 - advanced_form: [[trustee]] — Use 'trustee' specifically for a person appointed to manage property for someone else, more common than 'fiduciary' in everyday legal contexts.
 - advanced_form: [[custodian]] — Use 'custodian' when emphasizing safekeeping of assets rather than legal obligations, often in financial contexts.
 - advanced_form: [[steward]] — Use 'steward' for a more general sense of care and management, broader than the strict legal role of a fiduciary.
+- synonym: [[depositary]]

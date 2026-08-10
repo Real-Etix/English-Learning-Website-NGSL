@@ -9,6 +9,8 @@ rank: 311
 sfi: 64.95
 sources: [wordnet]
 status: seeded
+chart: still
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ up to the present time
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[already]]
+- collocation: [[nor]]

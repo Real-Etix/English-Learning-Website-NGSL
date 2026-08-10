@@ -6,6 +6,8 @@ pos: noun
 forms: [stipulation]
 sources: [llm]
 status: enriched
+chart: you
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[specification]] — Use 'stipulation' when emphasizing a formal, often legally binding condition or requirement within a specification.
 - builds_on: [[requirement]] — Use in formal or legal contexts to emphasize a condition or clause.
 - builds_on: [[provision]] — Use 'stipulation' instead of 'provision' when emphasizing a specific requirement or condition that is explicitly stated, often in legal or formal agreements.
+- synonym: [[caveat]]

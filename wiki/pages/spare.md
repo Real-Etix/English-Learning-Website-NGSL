@@ -9,6 +9,8 @@ rank: 2126
 sfi: 55.15
 sources: [wordnet, llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ thin and fit
 - advanced_form: [[lean]] — Use 'lean' to describe a body that is thin but muscular and healthy, more positive than 'spare'.
 - advanced_form: [[wiry]] — Use 'wiry' for a thin but strong and flexible build, often implying toughness.
 - advanced_form: [[sinewy]] — Use 'sinewy' to emphasize visible muscles and tendons, suggesting strength and leanness.
+- synonym: [[afford]]

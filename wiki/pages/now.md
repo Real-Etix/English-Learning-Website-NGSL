@@ -9,6 +9,8 @@ rank: 70
 sfi: 71.94
 sources: [wordnet, llm]
 status: enriched
+chart: now
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ in the historical present
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[currently]] — Use 'currently' for ongoing actions at the present moment, more formal than 'now'.
 - advanced_form: [[presently]] — Use 'presently' to mean 'now' or 'soon' in formal contexts; be aware it can imply 'soon'.
+- collocation: [[anytime]]
+- collocation: [[hereafter]]
+- collocation: [[embarked]]

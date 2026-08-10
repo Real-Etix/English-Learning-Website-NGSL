@@ -6,6 +6,8 @@ pos: noun
 forms: [mound]
 sources: [llm]
 status: enriched
+chart: elevation
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[hill]] — Use 'mound' when emphasizing a smaller, often man-made or natural rounded hill.
 - builds_on: [[pile]] — Use 'mound' for a raised, rounded pile, typically of natural materials like soil or snow.
+- synonym: [[heap]]

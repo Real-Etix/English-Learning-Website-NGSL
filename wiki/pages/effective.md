@@ -9,6 +9,8 @@ rank: 1031
 sfi: 59.45
 sources: [wordnet, llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ producing or capable of producing an intended result or having a striking effect
 - advanced_form: [[effectual]] — Use 'effectual' to stress that an action or measure fully achieves its intended purpose, especially in legal or procedural writing.
 - advanced_form: [[potent]] — Use 'potent' when highlighting strong or powerful effectiveness, often for substances, arguments, or influences.
 - builds_on: [[virtual]] — Use 'effective' to describe someone who functions as if they hold a position or role, instead of 'virtual' which might sound more technical.
+- collocation: [[bactericide]]
+- collocation: [[forthwith]]
+- collocation: [[marshaling]]
+- synonym: [[operant]]
+- collocation: [[potently]]
+- synonym: [[productive]]
+- collocation: [[rodenticide]]

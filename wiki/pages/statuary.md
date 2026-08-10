@@ -6,6 +6,8 @@ pos: noun
 forms: [statuary]
 sources: [llm]
 status: enriched
+chart: sculpture
+region: sculpture
 ---
 
 ## Definition

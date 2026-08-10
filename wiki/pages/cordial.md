@@ -6,6 +6,8 @@ pos: noun
 forms: [cordial]
 sources: [llm]
 status: enriched
+chart: constitutional
+region: you
 ---
 
 ## Definition

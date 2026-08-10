@@ -9,6 +9,8 @@ rank: 59
 sfi: 59.38
 sources: [wordnet, llm]
 status: enriched
+chart: oval
+region: oval
 ---
 
 ## Definition

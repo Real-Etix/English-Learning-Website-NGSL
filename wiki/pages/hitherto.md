@@ -9,6 +9,8 @@ rank: 1622
 sfi: 49.07
 sources: [wordnet, llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition

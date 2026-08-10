@@ -9,6 +9,8 @@ rank: 358
 sfi: 54.91
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: relaxation
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ status: enriched
 - advanced_form: [[laxity]] — Use laxity to denote looseness or slackness, often in muscles or ligaments.
 - builds_on: [[leisure]] — Use 'relaxation' when focusing on rest and unwinding, rather than the mere availability of free time.
 - builds_on: [[liberalization]] — Use when focusing on making rules or standards less strict or severe, often in a gradual manner.
+- synonym: [[decontrol]]
+- synonym: [[easing]]
+- synonym: [[slackening]]

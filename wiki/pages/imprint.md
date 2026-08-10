@@ -6,6 +6,8 @@ pos: noun
 forms: [imprint]
 sources: [llm]
 status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[stamp]] — Use 'imprint' instead of 'stamp' when emphasizing a lasting or physical mark left by something.
+- synonym: [[mark]]
+- synonym: [[impression]]
+- synonym: [[trace]]
+- synonym: [[print]]
+- collocation: [[leave]]
+- collocation: [[indelible]]
+- synonym: [[printing]]
+- synonym: [[masthead]]

@@ -9,6 +9,8 @@ rank: 8
 sfi: 63.467
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition
@@ -33,3 +35,7 @@ a particular environment or walk of life
 - builds_on: [[sphere]] — Use 'domain' for a specific area of activity or knowledge, often implying expertise or control.
 - builds_on: [[affair]] — Use 'domain' instead of 'affair' when referring to a specific field or area of responsibility, especially in formal or professional contexts.
 - builds_on: [[discipline]] — Use 'domain' to emphasize a specific area of expertise or control, more formal than 'discipline'.
+- synonym: [[manor]]
+- synonym: [[website]]
+- builds_on: [[territory]] — Use it for a more formal or figurative sense of territory, particularly when emphasizing control or scope.
+- builds_on: [[website]] — Use this in technical or formal writing to refer to a website and its official internet address.

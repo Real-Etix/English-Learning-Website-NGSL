@@ -7,8 +7,10 @@ forms: [gallery, galleries]
 lists: [ngsl]
 rank: 2465
 sfi: 54.09
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - builds_on: [[tunnel]] — Use 'gallery' for a horizontal underground passage in a mine, while 'tunnel' is broader and used for transportation or utility passages.
 - builds_on: [[balcony]] — Use 'gallery' for the highest balcony section, often with cheaper seats, when you want a more formal or theatrical term.
 - builds_on: [[museum]] — Use 'gallery' specifically for art museums or spaces displaying visual arts, while 'museum' is broader.
+- advanced_form: [[spectators]] — Use when referring to the people watching the match, especially in formal or sporting contexts.
+- advanced_form: [[onlookers]] — Use when emphasizing bystanders who are watching, often casually or unexpectedly.
+- advanced_form: [[throng]] — Use when describing a large, dense crowd of spectators, often in an energetic or overwhelming scene.

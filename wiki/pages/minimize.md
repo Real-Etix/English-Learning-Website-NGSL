@@ -9,6 +9,8 @@ rank: 134
 sfi: 56.93
 sources: [wordnet, llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ make small or insignificant
 - advanced_form: [[mitigate]] — Use 'mitigate' when focusing on reducing the severity or harm of something, rather than just making it small.
 - advanced_form: [[curtail]] — Use 'curtail' when you cut back or limit the extent of something, especially activities or resources.
 - advanced_form: [[understate]] — Use 'understate' when describing something as less important or smaller than it really is, often deliberately.
+- synonym: [[belittle]]

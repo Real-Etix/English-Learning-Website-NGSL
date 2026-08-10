@@ -9,6 +9,8 @@ rank: 445
 sfi: 53.95
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[lessor]] — Use 'lessor' in formal or legal contexts when emphasizing the lease agreement, rather than 'landlord' which is more general.
 - advanced_form: [[proprietor]] — Use 'proprietor' when focusing on the owner's role in managing or operating the property, whereas 'landlord' specifically emphasizes the rental relationship.
+- collocation: [[pub]]
+- synonym: [[owner]]
+- collocation: [[rent]]
+- collocation: [[lease]]
+- collocation: [[tenant]]
+- collocation: [[property]]
+- collocation: [[evict]]

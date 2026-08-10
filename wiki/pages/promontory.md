@@ -6,6 +6,8 @@ pos: noun
 forms: [promontory]
 sources: [llm]
 status: enriched
+chart: rely
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[slope]] — Use 'promontory' instead of 'slope' when the elevated formation juts out into a body of water or over a lowland, highlighting its projecting nature.
+- synonym: [[point]]
+- synonym: [[bluff]]
+- collocation: [[high]]
+- collocation: [[steep]]

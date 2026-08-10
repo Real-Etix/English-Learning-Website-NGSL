@@ -6,6 +6,8 @@ pos: noun
 forms: [epizootiology]
 sources: [llm]
 status: enriched
+chart: epidemiology
+region: epidemiology
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [unified]
 sources: [llm]
 status: enriched
+chart: collective
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1078
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: rubber
+region: rubber
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[elastomer]] — Use 'elastomer' in technical or scientific contexts to emphasize the elastic properties of the material, not just the product.
 - advanced_form: [[latex]] — Use 'latex' when referring to the raw, natural sap form of rubber, especially in manufacturing or medical contexts.
+- collocation: [[bung]]
+- collocation: [[currycomb]]
+- collocation: [[grommet]]
+- collocation: [[ligature]]
+- collocation: [[plantation]]
+- collocation: [[wristband]]

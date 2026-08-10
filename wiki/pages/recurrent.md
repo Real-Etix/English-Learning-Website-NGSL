@@ -6,6 +6,8 @@ pos: adjective
 forms: [recurrent]
 sources: [llm]
 status: enriched
+chart: periodical
+region: you
 ---
 
 ## Definition

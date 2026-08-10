@@ -9,6 +9,8 @@ rank: 729
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[shipment]] — Use 'shipment' for goods transported collectively, especially in logistics and business, where 'parcel' might imply a single item.
 - builds_on: [[acre]] — Use 'parcel' when describing a specific, often surveyed, piece of land, particularly in real estate or official documents.
 - builds_on: [[package]] — Use 'parcel' for items sent by mail or courier, often wrapped and labeled.
+- synonym: [[postal]]

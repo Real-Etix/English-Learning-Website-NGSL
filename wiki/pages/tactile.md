@@ -6,6 +6,8 @@ pos: adjective
 forms: [tactile]
 sources: [llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[manual]] — Use 'tactile' to describe something pertaining to the sense of touch, more formal and sensory than 'manual'.
+- synonym: [[haptic]]

@@ -9,6 +9,8 @@ rank: 2519
 sfi: 53.89
 sources: [wordnet, llm]
 status: enriched
+chart: pig
+region: pig
 ---
 
 ## Definition

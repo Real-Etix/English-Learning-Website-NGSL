@@ -9,6 +9,8 @@ rank: 804
 sfi: 52.77
 sources: [wordnet, llm]
 status: enriched
+chart: triple
+region: triple
 ---
 
 ## Definition

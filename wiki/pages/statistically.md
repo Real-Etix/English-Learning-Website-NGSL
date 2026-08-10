@@ -9,6 +9,8 @@ rank: 341
 sfi: 56.493
 sources: [wordnet, llm]
 status: enriched
+chart: statistically
+region: statistically
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ with respect to statistics
 - advanced_form: [[empirically]] — Use when emphasizing observation or data collection rather than just numerical analysis.
 - advanced_form: [[numerically]] — Use when focusing on exact numbers or counts rather than the broader statistical method.
 - advanced_form: [[quantitatively]] — Use when referring to measurement in numerical terms, especially in formal or academic contexts.
+- collocation: [[improbable]]
+- collocation: [[insignificant]]

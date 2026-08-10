@@ -6,6 +6,8 @@ pos: noun
 forms: [milieu]
 sources: [llm]
 status: enriched
+chart: broadcast
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[context]] — Use milieu to refer to the social or cultural environment in which something exists or develops.
 - builds_on: [[habitat]] — Use 'milieu' to refer to the physical or social setting in a scientific or intellectual context, often highlighting specific characteristics.
 - builds_on: [[atmosphere]] — Use 'milieu' to refer to the social, cultural, or intellectual environment in which a person lives or operates.
+- builds_on: [[culture]] — Use 'milieu' to describe the social and cultural environment of a particular group, rather than the entire society.

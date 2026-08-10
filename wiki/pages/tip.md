@@ -9,6 +9,8 @@ rank: 1659
 sfi: 56.74
 sources: [wordnet, llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ cause to tilt
 - advanced_form: [[incline]] — Use 'incline' for a gradual, controlled tilt, often in formal or descriptive contexts.
 - advanced_form: [[cant]] — Use 'cant' for a sharp or deliberate tilt, common in technical or mechanical settings.
 - advanced_form: [[list]] — Use 'list' for a tilt to one side, especially of a vessel or structure, implying instability.
+- collocation: [[chapeau]]
+- synonym: [[cusp]]
+- synonym: [[muzzle]]

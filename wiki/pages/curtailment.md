@@ -6,6 +6,8 @@ pos: noun
 forms: [curtailment]
 sources: [llm]
 status: enriched
+chart: upgrade
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 916
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: hamburger
+region: hamburger
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[patty]] — Use 'patty' when you want to emphasize the meat component separately from the bun or the whole sandwich, often in cooking or ordering contexts.
 - advanced_form: [[beefburger]] — Use 'beefburger' as a more formal or British variant of 'hamburger', especially when specifying the meat is beef.
 - builds_on: [[cheeseburger]] — Use 'hamburger' to refer to the basic patty sandwich; it implies no cheese unless specified, so it is not a direct synonym but often used interchangeably in casual speech.
+- synonym: [[burger]]

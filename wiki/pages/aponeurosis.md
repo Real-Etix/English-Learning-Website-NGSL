@@ -6,6 +6,8 @@ pos: noun
 forms: [aponeurosis]
 sources: [llm]
 status: enriched
+chart: fascia
+region: fascia
 ---
 
 ## Definition

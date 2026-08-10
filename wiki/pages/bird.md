@@ -9,6 +9,8 @@ rank: 1271
 sfi: 58.33
 sources: [wordnet, llm]
 status: enriched
+chart: homemade
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[avian]] — Use 'avian' in formal, scientific, or technical contexts instead of 'bird', especially in ornithology or biology.
 - advanced_form: [[fowl]] — Use 'fowl' to refer specifically to domesticated or game birds (e.g., chickens, turkeys, ducks) rather than all birds.
+- collocation: [[aviary]]
+- synonym: [[birdie]]
+- synonym: [[poultry]]
+- collocation: [[warble]]
+- synonym: [[jackdaw]]

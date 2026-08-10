@@ -9,6 +9,8 @@ rank: 384
 sfi: 56.022
 sources: [wordnet, llm]
 status: enriched
+chart: refine
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[amendment]] — Use 'amendment' for corrections to documents, laws, or formal rules, often implying a constructive change.
 - advanced_form: [[revision]] — Use 'revision' for correcting written or creative work, with emphasis on re-examination and improvement.
 - builds_on: [[amendment]] — Use 'correction' for simple fixes of mistakes, less formal than 'amendment'.
+- synonym: [[remediation]]

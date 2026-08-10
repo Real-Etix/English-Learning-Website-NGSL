@@ -9,6 +9,8 @@ rank: 261
 sfi: 55.48
 sources: [wordnet, llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[divertimento]] — Use 'divertimento' for a casual, multi-movement composition intended for entertainment, more specific than the general term 'suite'.
 - advanced_form: [[serenade]] — Use 'serenade' for a multi-movement work meant to be performed outdoors at night, often with a romantic or calm character, whereas 'suite' is more generic.
 - builds_on: [[condominium]] — Use 'suite' instead of 'condominium' for upscale or large units, often to emphasize elegance or exclusivity.
+- synonym: [[chambers]]

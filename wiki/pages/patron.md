@@ -9,6 +9,8 @@ rank: 269
 sfi: 55.39
 sources: [wordnet, llm]
 status: enriched
+chart: patron
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - builds_on: [[customer]] — Use 'patron' for customers of arts, culture, or charitable institutions.
 - builds_on: [[diner]] — Use 'patron' for a more formal or respectful tone, especially when referring to customers of a high-end restaurant or establishment.
 - builds_on: [[contributor]] — Use 'patron' for supporters of the arts or cultural institutions, implying ongoing or generous support.
+- synonym: [[benefactor]]
+- builds_on: [[consumer]] — Use when referring to someone who regularly uses a specific business's services or products.
+- builds_on: [[buyer]] — Use for a buyer of a specific establishment or service.

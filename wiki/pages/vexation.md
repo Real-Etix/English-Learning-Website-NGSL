@@ -6,6 +6,8 @@ pos: noun
 forms: [vexation]
 sources: [llm]
 status: enriched
+chart: occupation
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[headache]] — Use 'vexation' to emphasize irritation and worry, stronger than a mild headache.
 - builds_on: [[distraction]] — Use 'vexation' instead of 'distraction' when the mental turmoil is caused by annoyance or frustration.
 - builds_on: [[frustration]] — Use 'vexation' to emphasize the irritation or annoyance aspect of frustration, often from minor repeated troubles.
+- synonym: [[exasperation]]

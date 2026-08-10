@@ -6,6 +6,8 @@ pos: noun
 forms: [durum]
 sources: [llm]
 status: enriched
+chart: wheat
+region: wheat
 ---
 
 ## Definition

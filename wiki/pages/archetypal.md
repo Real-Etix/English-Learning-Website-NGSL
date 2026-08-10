@@ -6,6 +6,8 @@ pos: adjective
 forms: [archetypal]
 sources: [llm]
 status: enriched
+chart: average
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [apprehension]
 sources: [llm]
 status: enriched
+chart: constitutional
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[perception]] — Use for a deep intellectual understanding, going beyond surface-level perception.
 - builds_on: [[alarm]] — Use 'apprehension' for anxiety or fear that something bad may happen, often with a focus on anticipation.
 - builds_on: [[anxiety]] — Use 'apprehension' for a more formal or specific sense of anxious fear about something expected.
+- builds_on: [[tension]] — Use 'apprehension' for tension caused by fear of something specific in the future, especially when the cause is known.

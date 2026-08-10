@@ -6,6 +6,8 @@ pos: verb
 forms: [rehabilitate]
 sources: [llm]
 status: enriched
+chart: refine
+region: you
 ---
 
 ## Definition

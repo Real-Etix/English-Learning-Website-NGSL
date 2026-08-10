@@ -9,6 +9,8 @@ rank: 267
 sfi: 54.33
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ someone authorized to exercise the powers of sheriff in emergencies
 - advanced_form: [[undersheriff]] — Use 'undersheriff' for the specific rank of a deputy who acts as second-in-command to the sheriff, especially in emergencies.
 - advanced_form: [[surrogate]] — Use 'surrogate' when emphasizing the role of a substitute authorized to act in the sheriff's place, often in formal or legal contexts.
 - builds_on: [[assistant]] — Use 'deputy' when the person acts as a second-in-command or substitute for a superior, implying authority and replacement power.
+- synonym: [[mandatee]]
+- collocation: [[provost]]
+- collocation: [[registrar]]
+- builds_on: [[proxy]] — Use for someone officially appointed to act in another's place, often in an official or organizational role.
+- collocation: [[prolocutor]]

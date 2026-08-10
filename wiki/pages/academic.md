@@ -9,6 +9,8 @@ rank: 1751
 sfi: 56.37
 sources: [wordnet, llm]
 status: enriched
+chart: academic
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ associated with academia or an academy
 - advanced_form: [[pedagogical]] — Use 'pedagogical' when specifically referring to teaching methods or education practices, whereas 'academic' is broader and includes research and administration.
 - builds_on: [[professor]] — Use 'academic' when referring to a professor in a more general, formal context that emphasizes their scholarly role rather than their teaching duties.
 - builds_on: [[scholar]] — Use 'academic' when emphasizing institutional affiliation or scholarly activity.
+- synonym: [[academician]]
+- synonym: [[collegian]]
+- collocation: [[credentials]]
+- collocation: [[monograph]]
+- collocation: [[pedigree]]

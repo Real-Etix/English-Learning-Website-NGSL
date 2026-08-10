@@ -6,6 +6,8 @@ pos: verb
 forms: [avow]
 sources: [llm]
 status: enriched
+chart: grant
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,7 @@ _No sourced examples yet._
 - builds_on: [[proclaim]] — Use when declaring something openly and publicly, often with a sense of personal commitment or honesty.
 - builds_on: [[declare]] — Use 'avow' for a personal, sincere, and often emotional declaration of belief or intention.
 - builds_on: [[allege]] — Use 'avow' for a public or open declaration, especially of personal beliefs or intentions, while 'allege' is typically used for unproven claims or accusations.
+- synonym: [[aver]]
+- builds_on: [[contend]] — Use 'avow' when openly declaring or admitting something, with a sense of personal commitment.
+- builds_on: [[acknowledge]] — Use for declaring openly, confidently, and formally, often with a sense of personal commitment.
+- synonym: [[profess]]

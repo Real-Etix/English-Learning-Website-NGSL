@@ -9,6 +9,8 @@ rank: 205
 sfi: 66.78
 sources: [wordnet, llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ _No sourced examples yet._
 - synonym: [[furnish]]
 - advanced_form: [[furnish]] — Use 'furnish' when emphasizing providing something needed or required, often in a formal context like supplies, equipment, or information.
 - advanced_form: [[supply]] — Use 'supply' when focusing on providing something in a continuous, systematic, or commercial manner, often implying a regular or ongoing need.
+- collocation: [[accommodation]]
+- collocation: [[backing]]
+- collocation: [[clarification]]
+- collocation: [[coverage]]
+- collocation: [[mechanicaladvantage]]
+- collocation: [[mentorship]]
+- collocation: [[nutriment]]
+- synonym: [[purvey]]
+- collocation: [[rephrasing]]

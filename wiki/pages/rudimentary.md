@@ -6,6 +6,8 @@ pos: adjective
 forms: [rudimentary]
 sources: [llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[primitive]] — Use 'rudimentary' when emphasizing simplicity or basicness, often in a technical or developmental context.
 - builds_on: [[elementary]] — Use 'rudimentary' to emphasize the most basic, simple level, often implying lack of sophistication.
 - builds_on: [[crude]] — Use 'rudimentary' to emphasize that something is at a very basic or early stage of development, often lacking complexity or polish.
+- synonym: [[inchoate]]

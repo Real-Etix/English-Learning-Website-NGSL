@@ -9,6 +9,8 @@ rank: 185
 sfi: 58.05
 sources: [wordnet, llm]
 status: enriched
+chart: hormone
+region: hormone
 ---
 
 ## Definition

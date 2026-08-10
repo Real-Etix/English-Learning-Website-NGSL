@@ -7,8 +7,10 @@ forms: [found, founds, founded, founding]
 lists: [ngsl]
 rank: 2807
 sfi: 48.26
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - antonym: [[abolish]]
 - builds_on: [[organize]] — Use 'found' when referring to the initial creation or setting up of an organization, institution, or city, often implying a starting point or origin.
 - builds_on: [[launch]] — Use 'found' instead of 'launch' specifically for starting an organization, institution, or place that will have a lasting presence.
+- advanced_form: [[establish]] — use when emphasizing that something is created on a firm, permanent basis
+- advanced_form: [[institute]] — use when the founding involves official rules, policies, or procedures
+- advanced_form: [[inaugurate]] — use when the founding marks a notable public or official start
+- collocation: [[preliminarily]]

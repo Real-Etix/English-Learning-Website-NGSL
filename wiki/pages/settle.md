@@ -9,6 +9,8 @@ rank: 1303
 sfi: 58.23
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[descend]] — Use 'descend' when emphasizing the downward movement before settling.
 - builds_on: [[compromise]] — Use when the compromise ends a disagreement, often with a final decision.
 - builds_on: [[bench]] — Use when referring to a long wooden bench with a back, especially in traditional or rural settings.
+- synonym: [[adjudicate]]
+- synonym: [[amortize]]
+- synonym: [[immigrate]]

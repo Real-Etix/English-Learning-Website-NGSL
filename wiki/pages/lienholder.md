@@ -6,6 +6,8 @@ pos: noun
 forms: [lienholder]
 sources: [llm]
 status: enriched
+chart: creditor
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[creditor]] — Use when the debt is secured by a specific asset, like a mortgage or car loan.
+- collocation: [[lien]]
+- synonym: [[lender]]
+- synonym: [[mortgagee]]
+- synonym: [[claimant]]
+- collocation: [[title]]
+- collocation: [[payoff]]
+- collocation: [[notify]]
+- collocation: [[interest]]

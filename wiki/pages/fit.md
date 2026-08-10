@@ -9,6 +9,8 @@ rank: 700
 sfi: 61.35
 sources: [wordnet, llm]
 status: enriched
+chart: accommodate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[befit]] — Use 'befit' when you want to stress appropriateness in a slightly formal or literary context, instead of the more neutral 'fit'.
 - advanced_form: [[comport]] — Use 'comport' (often with 'with') to express agreement or consistency, common in formal or academic writing, whereas 'fit' is more everyday.
 - builds_on: [[healthy]] — Use 'fit' to specify physical condition, especially through exercise.
+- synonym: [[paroxysm]]
+- synonym: [[primed]]

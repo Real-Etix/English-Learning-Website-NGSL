@@ -6,6 +6,8 @@ pos: noun
 forms: [ergometer]
 sources: [llm]
 status: enriched
+chart: treadmill
+region: treadmill
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[treadmill]] — Use this when emphasizing measurement of effort rather than just the exercise machine.
+- collocation: [[cycle]]
+- collocation: [[test]]
+- collocation: [[output]]

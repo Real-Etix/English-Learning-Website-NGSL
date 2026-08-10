@@ -6,6 +6,8 @@ pos: noun
 forms: [inauguration]
 sources: [llm]
 status: enriched
+chart: offset
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[opener]] — Use 'inauguration' for the very first event in a recurring series, often implying a grand or significant beginning.
 - builds_on: [[initiation]] — Use 'inauguration' for the formal beginning of an office or position, especially a high-ranking public or political role.
 - builds_on: [[introduction]] — Use 'inauguration' to emphasize a formal, ceremonial start, often with public significance.
+- builds_on: [[establishment]] — Use for the formal beginning or ceremonial launching of something.
+- synonym: [[accession]]

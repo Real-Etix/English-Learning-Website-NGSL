@@ -9,6 +9,8 @@ rank: 326
 sfi: 54.58
 sources: [wordnet, llm]
 status: enriched
+chart: soup
+region: soup
 ---
 
 ## Definition

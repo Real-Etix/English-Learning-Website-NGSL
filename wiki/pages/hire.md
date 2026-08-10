@@ -9,6 +9,8 @@ rank: 1514
 sfi: 57.34
 sources: [wordnet, llm]
 status: enriched
+chart: hire
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ _No sourced examples yet._
 - advanced_form: [[engage]] — Use 'engage' when emphasizing a formal agreement to hire someone for a specific role or service, more refined than 'hire'.
 - advanced_form: [[appoint]] — Use 'appoint' for official, often high-level or permanent positions, implying a formal selection process.
 - advanced_form: [[contract]] — Use 'contract' when hiring someone under a specific agreement, often temporal or project-based, highlighting the legal arrangement.
+- collocation: [[landscaper]]
+- synonym: [[rent]]
+- builds_on: [[rent]] — Use 'hire' in formal or British English contexts, especially for the payment for using equipment or vehicles.

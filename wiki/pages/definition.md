@@ -9,6 +9,8 @@ rank: 1577
 sfi: 57.1
 sources: [wordnet, llm]
 status: enriched
+chart: reason
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[elucidation]] — Use 'elucidation' when focusing on making something clear, often more formal than 'definition'.
 - advanced_form: [[explication]] — Use 'explication' for a detailed, often academic, explanation of complex ideas, especially in texts.
+- collocation: [[denotative]]

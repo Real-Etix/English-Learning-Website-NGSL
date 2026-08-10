@@ -6,6 +6,8 @@ pos: adjective
 forms: [topographical]
 sources: [llm]
 status: enriched
+chart: spatial
+region: spatial
 ---
 
 ## Definition

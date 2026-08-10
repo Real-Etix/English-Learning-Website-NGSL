@@ -6,6 +6,8 @@ pos: noun
 forms: [masquerade]
 sources: [llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[disguise]] — Use masquerade when suggesting a deliberate false show or charade, often with a sense of temporary or theatrical deception.
+- synonym: [[pretense]]
+- synonym: [[facade]]
+- synonym: [[sham]]
+- collocation: [[ball]]
+- collocation: [[party]]
+- collocation: [[mask]]
+- collocation: [[costume]]
+- collocation: [[dance]]

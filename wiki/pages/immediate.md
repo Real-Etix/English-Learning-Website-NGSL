@@ -9,6 +9,8 @@ rank: 1806
 sfi: 56.16
 sources: [wordnet, llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ of the present time and place
 - advanced_form: [[instantaneous]] — Use 'instantaneous' to emphasize something happening in a single, indivisible moment, more technical than 'immediate'.
 - advanced_form: [[proximate]] — Use 'proximate' to refer to the nearest in time, order, or causal relationship, more formal than 'immediate'.
 - builds_on: [[rapid]] — Use 'immediate' for speed with no delay, often in urgent contexts.
+- collocation: [[pertinence]]
+- collocation: [[precursor]]
+- synonym: [[real-time]]
+- collocation: [[reinstatement]]
+- collocation: [[vicinity]]

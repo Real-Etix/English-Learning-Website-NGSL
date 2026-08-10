@@ -9,6 +9,8 @@ rank: 2778
 sfi: 52.67
 sources: [wordnet, llm]
 status: enriched
+chart: curtain
+region: curtain
 ---
 
 ## Definition

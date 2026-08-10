@@ -9,6 +9,8 @@ rank: 1097
 sfi: 51.62
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[detonation]] — Use 'detonation' for a precise, technical explosion, often from a device or chemical reaction.
 - advanced_form: [[eruption]] — Use 'eruption' for a sudden, violent outburst, especially from a volcano or figurative release.
 - advanced_form: [[blast]] — Use 'blast' for a powerful, often destructive explosion with a strong shockwave.
+- collocation: [[maim]]

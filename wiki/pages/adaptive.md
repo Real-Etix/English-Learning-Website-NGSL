@@ -9,6 +9,8 @@ rank: 349
 sfi: 56.439
 sources: [wordnet, llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition

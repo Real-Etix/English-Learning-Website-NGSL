@@ -9,6 +9,8 @@ rank: 14
 sfi: 62.179
 sources: [wordnet, llm]
 status: enriched
+chart: ion
+region: ion
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[cation]] — Use 'cation' when you want to specify that the ion has a positive charge, instead of the general term 'ion'.
 - advanced_form: [[anion]] — Use 'anion' when you want to specify that the ion has a negative charge, instead of the general term 'ion'.
+- collocation: [[cupric]]
+- collocation: [[halide]]
+- collocation: [[ionophore]]
+- collocation: [[metathesis]]

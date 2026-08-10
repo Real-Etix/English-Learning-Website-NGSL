@@ -6,6 +6,8 @@ pos: verb
 forms: [waver]
 sources: [llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,5 @@ _No sourced examples yet._
 - builds_on: [[hover]] — Use 'waver' instead of 'hover' when emphasizing uncertainty or indecision, often with a back-and-forth movement between options.
 - builds_on: [[sway]] — Use 'waver' when the movement is unsteady or fluctuating, often implying uncertainty or instability.
 - builds_on: [[hesitate]] — Use when hesitation involves indecision or lack of firmness, often with a sense of fluctuation.
+- synonym: [[fluctuate]]
+- builds_on: [[fluctuate]] — Use when referring to a slight, unsteady fluctuation in intensity, opinion, or commitment.

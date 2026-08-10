@@ -9,6 +9,8 @@ rank: 1833
 sfi: 56.07
 sources: [wordnet, llm]
 status: enriched
+chart: mind
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[ego]] — Use 'ego' when focusing on self-esteem or the conscious self, especially in psychological contexts.
 - advanced_form: [[psyche]] — Use 'psyche' when referring to the whole mind or soul, often in psychological or spiritual contexts.
 - advanced_form: [[identity]] — Use 'identity' when emphasizing the unique characteristics or sense of who someone is, often socially or culturally.
+- collocation: [[bondage]]
+- collocation: [[castigator]]

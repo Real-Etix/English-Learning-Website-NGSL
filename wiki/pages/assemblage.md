@@ -6,6 +6,8 @@ pos: noun
 forms: [assemblage]
 sources: [llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition

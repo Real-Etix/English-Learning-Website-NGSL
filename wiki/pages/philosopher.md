@@ -9,6 +9,8 @@ rank: 477
 sfi: 54.954
 sources: [wordnet, llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition

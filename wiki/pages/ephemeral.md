@@ -6,6 +6,8 @@ pos: adjective
 forms: [ephemeral]
 sources: [llm]
 status: enriched
+chart: short
+region: you
 ---
 
 ## Definition

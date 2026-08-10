@@ -6,6 +6,8 @@ pos: adjective
 forms: [negligible]
 sources: [llm]
 status: enriched
+chart: little
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[low]] — Use 'negligible' for amounts or effects so small they can be ignored; common in formal, scientific, or analytical contexts, more precise than 'low'.
 - builds_on: [[minimal]] — Use 'negligible' for something so small it can be ignored, stronger than minimal.
 - builds_on: [[trivial]] — Use 'negligible' when something is so small or unimportant it can be ignored, often in technical or formal contexts.
+- synonym: [[fractional]]
+- synonym: [[insignificant]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [copra]
 sources: [llm]
 status: enriched
+chart: nut
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[coconut]] — Use 'copra' specifically for the dried white meat of the coconut, often in industrial or commercial contexts.
+- collocation: [[production]]

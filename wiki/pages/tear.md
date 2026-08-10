@@ -9,6 +9,8 @@ rank: 1470
 sfi: 57.52
 sources: [wordnet, llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ separate or cause to separate abruptly
 - advanced_form: [[rip]] — Use 'rip' when the separation is forceful and often along a line, like tearing fabric or paper.
 - advanced_form: [[rend]] — Use 'rend' for violent or dramatic separation, often in literary or formal contexts.
 - advanced_form: [[sever]] — Use 'sever' when cutting something off completely, implying a clean and deliberate separation.
+- collocation: [[mend]]

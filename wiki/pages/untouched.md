@@ -6,6 +6,8 @@ pos: adjective
 forms: [untouched]
 sources: [llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[unused]] — Use 'untouched' to stress that something has not been used, handled, or altered at all, keeping its original state.
+- synonym: [[virgin]]

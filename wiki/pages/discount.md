@@ -9,6 +9,8 @@ rank: 1660
 sfi: 56.74
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[deduction]] — Use 'deduction' when the reduction is subtracted from a total, often in financial or tax contexts.
 - advanced_form: [[markdown]] — Use 'markdown' for a permanent or temporary reduction in the listed price, common in retail.
 - builds_on: [[dismiss]] — Use 'discount' when you want to imply deliberately ignoring or treating as unimportant, often with a specific reason.
+- collocation: [[hypermarket]]

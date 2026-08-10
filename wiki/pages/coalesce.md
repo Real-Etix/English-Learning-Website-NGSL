@@ -6,6 +6,8 @@ pos: verb
 forms: [coalesce]
 sources: [llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition

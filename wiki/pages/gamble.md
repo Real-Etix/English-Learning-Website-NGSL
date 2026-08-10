@@ -9,6 +9,8 @@ rank: 395
 sfi: 54.46
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: gamble
+region: you
 ---
 
 ## Definition

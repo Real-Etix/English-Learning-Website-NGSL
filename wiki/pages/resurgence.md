@@ -6,6 +6,8 @@ pos: noun
 forms: [resurgence]
 sources: [llm]
 status: enriched
+chart: overhaul
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[revival]] — Use 'resurgence' when the revival is sudden, strong, and often after a period of decline, especially for trends, diseases, or movements.
+- synonym: [[renaissance]]
+- synonym: [[rebound]]
+- synonym: [[renewal]]
+- collocation: [[economic]]
+- collocation: [[political]]
+- collocation: [[cultural]]
+- collocation: [[recent]]

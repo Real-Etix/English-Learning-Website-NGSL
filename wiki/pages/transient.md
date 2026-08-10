@@ -6,6 +6,8 @@ pos: adjective
 forms: [transient]
 sources: [llm]
 status: enriched
+chart: short
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - builds_on: [[homeless]] — Use 'transient' when emphasizing temporary or wandering status, often in formal or bureaucratic contexts.
 - builds_on: [[brief]] — Use 'transient' when emphasizing the temporary, passing nature of something, often with a slightly formal or scientific tone, rather than simply stating it was short.
 - builds_on: [[temporary]] — Use 'transient' to emphasize brief, fleeting duration, often with a poetic or scientific tone.
+- synonym: [[momentary]]
+- builds_on: [[seasonal]] — Use when focusing on the temporary nature of their stay.

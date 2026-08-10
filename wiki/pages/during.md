@@ -9,6 +9,8 @@ rank: 182
 sfi: 67.32
 sources: []
 status: seeded
+chart: during
+region: during
 ---
 
 ## Definition
@@ -19,3 +21,14 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[amid]]
+- collocation: [[asphyxiate]]
+- synonym: [[at]]
+- collocation: [[drowsy]]
+- collocation: [[forenoon]]
+- collocation: [[gestation]]
+- collocation: [[morphogenesis]]
+- collocation: [[pastorate]]
+- collocation: [[wintertide]]
+- collocation: [[meantime]]
+- collocation: [[deadofnight]]

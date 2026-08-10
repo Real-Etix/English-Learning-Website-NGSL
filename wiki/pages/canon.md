@@ -6,6 +6,8 @@ pos: noun
 forms: [canon]
 sources: [llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[scripture]] — Use 'canon' when referring specifically to the official list of accepted books, rather than the general body of sacred writings.
 - builds_on: [[code]] — Use 'canon' for a formal set of principles or rules, especially in a professional or moral context.
 - builds_on: [[literature]] — Use 'canon' when referring to the established, essential works of a tradition.
+- builds_on: [[doctrine]] — Use when referring to the official or authoritative set of texts or rules that define a field or tradition.

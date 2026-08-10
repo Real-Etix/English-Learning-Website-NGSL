@@ -9,6 +9,8 @@ rank: 1618
 sfi: 50.66
 sources: [wordnet, llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ rigidly accurate
 - advanced_form: [[meticulous]] — Use when emphasizing thoroughness and attention to every small aspect, rather than just rigid accuracy.
 - advanced_form: [[stringent]] — Use when referring to rules, standards, or criteria that are strict and precise, often in formal or technical contexts.
 - builds_on: [[strict]] — Use 'rigorous' when describing thorough, strict, and demanding processes or procedures.
+- synonym: [[exacting]]
+- collocation: [[intellectually]]
+- synonym: [[strenuous]]

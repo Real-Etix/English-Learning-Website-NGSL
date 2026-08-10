@@ -6,6 +6,8 @@ pos: adjective
 forms: [venerable]
 sources: [llm]
 status: enriched
+chart: old
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[antique]] — Use 'venerable' instead of 'antique' when you want to emphasize that the object is respected and revered for its age, not merely old.
 - builds_on: [[prestigious]] — Use 'venerable' to imply both prestige and age or tradition, often for institutions with a long respected history.
 - builds_on: [[senior]] — Use 'venerable' to express deep respect for someone's age and wisdom, more formal than 'senior'.
+- collocation: [[ecclesiastic]]

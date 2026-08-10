@@ -6,6 +6,8 @@ pos: noun
 forms: [bookstall]
 sources: [llm]
 status: enriched
+chart: newsstand
+region: newsstand
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[newsstand]] — Use 'bookstall' especially in British English for a stall that sells books, newspapers, and periodicals.
+- synonym: [[stall]]
+- synonym: [[stand]]
+- synonym: [[kiosk]]
+- collocation: [[browse]]
+- collocation: [[vendor]]

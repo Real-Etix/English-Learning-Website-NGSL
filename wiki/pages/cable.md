@@ -9,6 +9,8 @@ rank: 2076
 sfi: 55.29
 sources: [wordnet, llm]
 status: enriched
+chart: cable
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[telegram]] — Use 'telegram' as a more general term for any message sent by telegraph, while 'cable' specifically refers to one sent overseas via undersea lines.
 - advanced_form: [[cablegram]] — Use 'cablegram' to emphasize the method of transmission (submarine cable), sounding more formal and precise than the common term 'cable'.
 - advanced_form: [[telex]] — Use 'telex' for a typed message sent via a teleprinter network, which is a more advanced and specific alternative to 'cable' in business contexts.
+- synonym: [[broadband]]
+- collocation: [[connector]]
+- collocation: [[grommet]]
+- collocation: [[decoder]]

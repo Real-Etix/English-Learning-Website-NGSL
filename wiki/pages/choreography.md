@@ -6,6 +6,8 @@ pos: noun
 forms: [choreography]
 sources: [llm]
 status: enriched
+chart: suitcase
+region: you
 ---
 
 ## Definition

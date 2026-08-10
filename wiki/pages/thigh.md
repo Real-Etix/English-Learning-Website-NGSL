@@ -9,6 +9,8 @@ rank: 12
 sfi: 69.42
 sources: [wordnet, llm]
 status: enriched
+chart: pelvis
+region: pelvis
 ---
 
 ## Definition

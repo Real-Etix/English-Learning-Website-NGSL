@@ -9,6 +9,8 @@ rank: 1219
 sfi: 49.46
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: regulatory
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ indecision in speech or action
 - advanced_form: [[vacillation]] — Use when emphasizing repeated changes of mind or back-and-forth indecision, more formal than hesitation.
 - advanced_form: [[dithering]] — Use when describing nervous or useless delay in making a decision, often slightly informal but standard.
 - builds_on: [[reluctance]] — Use 'hesitation' when referring to a pause or delay due to doubt, more focused on the act of pausing than an inner feeling of unwillingness.
+- collocation: [[momentary]]

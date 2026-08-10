@@ -9,6 +9,8 @@ rank: 1626
 sfi: 56.89
 sources: [wordnet, llm]
 status: enriched
+chart: effect
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - builds_on: [[response]] — Use 'outcome' when emphasizing the final result of a process or event, often more formal than 'response'.
 - advanced_form: [[upshot]] — Use 'upshot' for the final result of a process or discussion, especially when summarizing.
 - advanced_form: [[ramification]] — Use 'ramification' for complex or indirect consequences, often negative or far-reaching.
+- synonym: [[denouement]]
+- collocation: [[dichotomous]]
+- collocation: [[predetermine]]
+- collocation: [[predetermined]]
+- collocation: [[prognosticate]]
+- collocation: [[preordain]]

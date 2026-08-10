@@ -9,6 +9,8 @@ rank: 153
 sfi: 56.93
 sources: [wordnet, llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[register]] — Use 'register' for a small secondary dial within a watch, not the main time display.
 - advanced_form: [[indicator]] — Use 'indicator' for a dial that presents a reading, especially in technical or formal contexts.
+- collocation: [[tuner]]

@@ -9,6 +9,8 @@ rank: 1453
 sfi: 57.61
 sources: [wordnet, llm]
 status: enriched
+chart: currency
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,13 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[bullion]] — Use for gold in bulk bars or ingots, not coins specifically, but more formal than gold.
 - advanced_form: [[specie]] — Use for coins made of precious metal, especially in financial or historical contexts.
+- collocation: [[brooch]]
+- collocation: [[ductile]]
+- collocation: [[hoard]]
+- collocation: [[ingot]]
+- collocation: [[locket]]
+- collocation: [[medalist]]
+- collocation: [[necklet]]
+- collocation: [[nugget]]
+- collocation: [[ore]]
+- collocation: [[pommel]]

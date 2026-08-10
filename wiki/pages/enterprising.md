@@ -6,6 +6,8 @@ pos: adjective
 forms: [enterprising]
 sources: [llm]
 status: enriched
+chart: active
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[ambitious]] — Use 'enterprising' to highlight initiative and resourcefulness in pursuing ambitious goals, often with a creative or risk-taking angle.
 - builds_on: [[entrepreneurial]] — Use 'enterprising' to emphasize proactive, resourceful behavior in business or personal projects, more general than 'entrepreneurial'.
 - builds_on: [[aggressive]] — Use 'enterprising' instead of 'aggressive' to emphasize initiative and a willingness to take risks in pursuit of goals.
+- synonym: [[venturesome]]

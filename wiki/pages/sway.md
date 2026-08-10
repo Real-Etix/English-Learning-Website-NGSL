@@ -9,6 +9,8 @@ rank: 276
 sfi: 56.14
 sources: [wordnet, llm]
 status: enriched
+chart: sway
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - advanced_form: [[undulate]] — Use 'undulate' for a smooth, wave-like motion, often describing surfaces or fluids.
 - advanced_form: [[waver]] — Use 'waver' when the movement is unsteady or fluctuating, often implying uncertainty or instability.
 - builds_on: [[convince]] — Use 'sway' when the convincing targets someone's opinion or decision, especially through emotional appeal or pressure.
+- synonym: [[persuade]]
+- builds_on: [[persuade]] — Use when emphasizing a shift in opinion or belief, especially with a large audience.

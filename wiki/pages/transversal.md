@@ -6,6 +6,8 @@ pos: noun
 forms: [transversal]
 sources: [llm]
 status: enriched
+chart: indirect
+region: you
 ---
 
 ## Definition

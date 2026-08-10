@@ -6,6 +6,8 @@ pos: noun
 forms: [lateralization]
 sources: [llm]
 status: enriched
+chart: certainty
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dominance]] — Use when referring to the specialized development of one hemisphere or side, often in a neurological context.
+- synonym: [[laterality]]
+- synonym: [[specialization]]
+- synonym: [[asymmetry]]
+- collocation: [[cerebral]]
+- collocation: [[brain]]
+- collocation: [[language]]
+- collocation: [[function]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [outpost]
 sources: [llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition

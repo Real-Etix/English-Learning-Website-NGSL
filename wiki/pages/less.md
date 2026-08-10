@@ -9,6 +9,8 @@ rank: 253
 sfi: 65.86
 sources: [wordnet]
 status: seeded
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,9 @@ status: seeded
 
 ## Connections
 - antonym: [[more]]
+- collocation: [[conspicuous]]
+- collocation: [[fractionally]]
+- synonym: [[reduced]]
+- synonym: [[diminished]]
+- synonym: [[lower]]
+- synonym: [[lesser]]

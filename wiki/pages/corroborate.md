@@ -6,6 +6,8 @@ pos: verb
 forms: [corroborate]
 sources: [llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[certify]] — Use 'corroborate' when additional evidence supports or confirms a claim or theory.
 - builds_on: [[affirm]] — Use 'corroborate' when additional evidence supports a claim, often in formal or legal contexts.
 - builds_on: [[justify]] — Use 'corroborate' instead of 'justify' when you mean to confirm or support a statement, theory, or finding with additional evidence.
+- synonym: [[authenticate]]
+- builds_on: [[confirm]] — Use when independent information supports a claim.

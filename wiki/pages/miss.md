@@ -9,6 +9,8 @@ rank: 645
 sfi: 61.72
 sources: [wordnet, llm]
 status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[overlook]] — Use 'overlook' when accidentally failing to notice something, such as a detail or mistake.
 - advanced_form: [[neglect]] — Use 'neglect' when failing to give necessary attention to something, often due to carelessness.
 - advanced_form: [[misapprehend]] — Use 'misapprehend' when failing to understand or perceive something correctly, especially in a more formal context.
+- collocation: [[congeniality]]

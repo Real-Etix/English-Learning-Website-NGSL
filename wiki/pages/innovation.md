@@ -9,6 +9,8 @@ rank: 2180
 sfi: 54.97
 sources: [wordnet, llm]
 status: enriched
+chart: realization
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ _No sourced examples yet._
 - advanced_form: [[novelty]] — Use 'novelty' to emphasize the newness or originality, often with a hint of being temporary or superficial.
 - advanced_form: [[breakthrough]] — Use 'breakthrough' when the innovation is a major, sudden advance or discovery, especially in science or technology.
 - advanced_form: [[invention]] — Use 'invention' when referring to a device or process that was created for the first time, often through deliberate effort.
+- collocation: [[catalyze]]
+- collocation: [[commercialize]]
+- collocation: [[disruptive]]
+- collocation: [[entrepreneurship]]
+- collocation: [[fostering]]

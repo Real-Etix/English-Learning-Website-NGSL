@@ -9,6 +9,8 @@ rank: 1621
 sfi: 56.92
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - advanced_form: [[trek]] — Use 'trek' instead of 'journey' when the travel is long, difficult, and on foot.
 - advanced_form: [[voyage]] — Use 'voyage' instead of 'journey' for travel by sea, air, or space, often with a sense of adventure or discovery.
 - advanced_form: [[traverse]] — Use 'traverse' instead of 'journey' to emphasize crossing a specific area or obstacle, often with a sense of effort.
+- collocation: [[arduous]]
+- collocation: [[circuitous]]
+- collocation: [[endpoint]]
+- synonym: [[exploration]]
+- collocation: [[venturesome]]
+- synonym: [[mileage]]
+- collocation: [[eastward]]

@@ -9,6 +9,8 @@ rank: 1842
 sfi: 56.02
 sources: [wordnet, llm]
 status: enriched
+chart: fundamentally
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ in an effective manner
 - advanced_form: [[potently]] — Use when stressing strong or powerful effectiveness, often with force or intensity.
 - builds_on: [[virtually]] — Use 'effectively' when emphasizing the practical outcome rather than the literal truth.
 - builds_on: [[successfully]] — Use when the success is achieved with competence and good results, not just any success.
+- collocation: [[collaborate]]
+- synonym: [[productively]]
+- collocation: [[utilize]]

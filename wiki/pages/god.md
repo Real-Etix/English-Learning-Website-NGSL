@@ -9,6 +9,8 @@ rank: 2228
 sfi: 54.85
 sources: [wordnet, llm]
 status: enriched
+chart: train
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[deity]] — Use 'deity' when referring to a god in a mythological, polytheistic, or formal religious context, especially to emphasize the god's specific domain or cultural identity.
 - advanced_form: [[supremebeing]] — Use 'supreme being' as a more abstract, universal term for the one God, particularly in philosophical or interfaith discussions, to avoid cultural or denominational specificity.
+- collocation: [[beseech]]
+- synonym: [[divinity]]
+- collocation: [[foreordain]]
+- synonym: [[immortal]]
+- collocation: [[blaspheme]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [agriculturist]
 sources: [llm]
 status: enriched
+chart: farmer
+region: farmer
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[farmer]] — Use for a farmer with scientific or systematic knowledge of farming.
+- synonym: [[cultivator]]
+- collocation: [[crop]]
+- collocation: [[soil]]
+- collocation: [[sustainable]]
+- collocation: [[agricultural]]

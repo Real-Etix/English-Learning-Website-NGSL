@@ -9,6 +9,8 @@ rank: 2352
 sfi: 54.45
 sources: [wordnet, llm]
 status: enriched
+chart: shower
+region: shower
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ a plumbing fixture that sprays water over you
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[showerhead]] — Use when referring specifically to the spray device, not the whole fixture.
 - advanced_form: [[nozzle]] — Use in a technical or mechanical context, focusing on the water outlet.
+- synonym: [[rainfall]]
+- synonym: [[drizzle]]

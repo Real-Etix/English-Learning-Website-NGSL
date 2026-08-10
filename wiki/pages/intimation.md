@@ -6,6 +6,8 @@ pos: noun
 forms: [intimation]
 sources: [llm]
 status: enriched
+chart: deduction
+region: you
 ---
 
 ## Definition

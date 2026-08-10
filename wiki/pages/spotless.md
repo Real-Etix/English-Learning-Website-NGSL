@@ -6,6 +6,8 @@ pos: adjective
 forms: [spotless]
 sources: [llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition

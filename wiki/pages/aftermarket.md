@@ -6,6 +6,8 @@ pos: noun
 forms: [aftermarket]
 sources: [llm]
 status: enriched
+chart: resale
+region: resale
 ---
 
 ## Definition

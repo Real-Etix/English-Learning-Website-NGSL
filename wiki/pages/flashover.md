@@ -6,6 +6,8 @@ pos: noun
 forms: [flashover]
 sources: [llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[arc]] — Use 'flashover' for a sudden, intense arc that jumps across insulators, common in high-voltage scenarios.
+- synonym: [[discharge]]
+- synonym: [[spark]]
+- collocation: [[electrical]]
+- collocation: [[fire]]
+- collocation: [[power]]

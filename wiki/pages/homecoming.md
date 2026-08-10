@@ -6,6 +6,8 @@ pos: noun
 forms: [homecoming]
 sources: [llm]
 status: enriched
+chart: convention
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reunion]] — Use 'homecoming' for a reunion specifically for former students of a school or residents of a town, often with festive events.
+- synonym: [[return]]
+- synonym: [[arrival]]

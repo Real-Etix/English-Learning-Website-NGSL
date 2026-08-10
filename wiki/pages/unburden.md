@@ -6,6 +6,8 @@ pos: verb
 forms: [unburden]
 sources: [llm]
 status: enriched
+chart: to
+region: you
 ---
 
 ## Definition

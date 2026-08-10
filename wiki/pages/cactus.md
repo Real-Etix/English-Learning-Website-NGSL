@@ -9,6 +9,8 @@ rank: 438
 sfi: 53.95
 sources: [wordnet, llm]
 status: enriched
+chart: cactus
+region: cactus
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[succulent]] — Use 'succulent' instead of 'cactus' when emphasizing water-storing properties or including other similar plants.
 - advanced_form: [[xerophyte]] — Use 'xerophyte' instead of 'cactus' for a scientific term focusing on adaptation to arid environments.
+- collocation: [[prickle]]
+- synonym: [[nopal]]
+- collocation: [[nopal]]
+- synonym: [[opuntia]]
+- collocation: [[opuntia]]
+- collocation: [[sabra]]

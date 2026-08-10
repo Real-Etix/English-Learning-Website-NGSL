@@ -6,6 +6,8 @@ pos: noun
 forms: [affliction]
 sources: [llm]
 status: enriched
+chart: well
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[complaint]] — Use 'affliction' for a persistent or severe condition that causes suffering, more formal and serious than 'complaint'.
 - builds_on: [[illness]] — Use 'affliction' for a cause of great suffering or distress, emphasizing the emotional or physical burden.
 - builds_on: [[disorder]] — Use 'affliction' to emphasize the suffering or burden caused by the disorder, often in a serious or empathetic context.
+- synonym: [[syndrome]]

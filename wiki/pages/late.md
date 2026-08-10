@@ -9,6 +9,8 @@ rank: 147
 sfi: 68.05
 sources: [wordnet, llm]
 status: enriched
+chart: just
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ being or occurring at an advanced period of time or after a usual or expected ti
 - advanced_form: [[tardy]] — Use 'tardy' for someone arriving late, especially in formal or school contexts.
 - advanced_form: [[belated]] — Use 'belated' for something that happens after the expected or usual time, often with an apology.
 - advanced_form: [[overdue]] — Use 'overdue' for something that is past the due date or should have happened earlier.
+- synonym: [[deceased]]
+- collocation: [[dues]]
+- collocation: [[forenoon]]
+- collocation: [[habitually]]
+- collocation: [[masterwork]]
+- collocation: [[modernity]]
+- collocation: [[springtide]]

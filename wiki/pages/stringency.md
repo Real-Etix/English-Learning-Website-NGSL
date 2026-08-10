@@ -6,6 +6,8 @@ pos: noun
 forms: [stringency]
 sources: [llm]
 status: enriched
+chart: tightness
+region: tightness
 ---
 
 ## Definition

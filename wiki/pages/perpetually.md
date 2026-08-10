@@ -6,6 +6,8 @@ pos: adverb
 forms: [perpetually]
 sources: [llm]
 status: enriched
+chart: permanently
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ _No sourced examples yet._
 - builds_on: [[continually]] — Use to suggest a state that seems endless or permanent.
 - builds_on: [[permanently]] — Use 'perpetually' for continuous, never-ending action or state, often with a sense of ongoing duration.
 - builds_on: [[constantly]] — Use 'perpetually' to suggest a continuous, unending state, often with a hint of exaggeration or persistence, more literary than 'constantly'.
+- synonym: [[perennially]]
+- builds_on: [[forever]] — Use for continuous, unending action or state, often with a sense of persistence.
+- synonym: [[eternally]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [affective]
 sources: [llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[psychological]] — Use 'affective' to specifically refer to emotions, moods, or feelings, as opposed to thoughts or behavior.
+- synonym: [[emotional]]

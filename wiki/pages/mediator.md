@@ -6,6 +6,8 @@ pos: noun
 forms: [mediator]
 sources: [llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[interpreter]] — Use 'mediator' when focusing on the role of facilitating communication and resolving differences, not just translating words.
 - builds_on: [[negotiator]] — Use 'mediator' when the person facilitates agreement without bias, unlike a negotiator who represents one party.
+- synonym: [[arbitrator]]
+- synonym: [[middleman]]
+- synonym: [[conciliator]]

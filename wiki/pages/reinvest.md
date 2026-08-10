@@ -9,6 +9,8 @@ rank: 821
 sfi: 51.97
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 
 ## Connections
 - domain: business
+- synonym: [[recycle]]

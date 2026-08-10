@@ -6,6 +6,8 @@ pos: verb
 forms: [rectify]
 sources: [llm]
 status: enriched
+chart: work
+region: you
 ---
 
 ## Definition

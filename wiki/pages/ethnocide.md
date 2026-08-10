@@ -6,6 +6,8 @@ pos: noun
 forms: [ethnocide]
 sources: [llm]
 status: enriched
+chart: genocide
+region: genocide
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[genocide]] — Use 'ethnocide' when the destruction is cultural rather than physical, distinguishing it from 'genocide' which involves killing.
+- synonym: [[destruction]]
+- collocation: [[cultural]]
+- collocation: [[linguistic]]
+- collocation: [[commit]]

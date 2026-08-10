@@ -9,6 +9,8 @@ rank: 995
 sfi: 59.64
 sources: [wordnet, llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - advanced_form: [[adjudicate]] — Use 'adjudicate' in formal or legal-like competition contexts, like contests or competitions judged by an official panel.
 - advanced_form: [[referee]] — Use 'referee' specifically for sports or games where an official enforces rules and decides outcomes.
 - advanced_form: [[umpire]] — Use 'umpire' for certain sports (e.g., tennis, baseball, cricket) that traditionally use this term for the official.
+- synonym: [[adjudge]]
+- synonym: [[arbitrator]]
+- collocation: [[concurring]]
+- synonym: [[connoisseur]]
+- collocation: [[lenient]]
+- synonym: [[magistrate]]

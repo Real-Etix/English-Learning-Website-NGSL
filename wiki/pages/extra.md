@@ -9,6 +9,8 @@ rank: 1058
 sfi: 59.31
 sources: [wordnet, llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[supernumerary]] — Use 'supernumerary' in formal contexts like theater or film production reports.
 - advanced_form: [[walk-on]] — Use 'walk-on' to emphasize a minor role with no dialogue.
+- collocation: [[buck]]
+- collocation: [[manpower]]
+- synonym: [[perquisite]]
+- collocation: [[poundage]]
+- collocation: [[xerox]]
+- synonym: [[doubly]]
+- synonym: [[redundant]]

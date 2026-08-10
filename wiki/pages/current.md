@@ -9,6 +9,8 @@ rank: 590
 sfi: 62.15
 sources: [wordnet, llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,14 @@ a flow of electricity through a conductor
 - builds_on: [[flow]] — Use 'current' to emphasize the directional movement of a fluid, especially in natural bodies of water or air.
 - builds_on: [[electricity]] — Use 'current' when focusing on the flow of electrons in a conductor, especially in technical or scientific discussions.
 - builds_on: [[contemporary]] — Use 'current' when emphasizing things happening or existing now, rather than just generally characteristic of the present period.
+- synonym: [[breeze]]
+- collocation: [[electric]]
+- collocation: [[employer]]
+- collocation: [[galvanic]]
+- collocation: [[liabilities]]
+- collocation: [[occupier]]
+- collocation: [[officeholder]]
+- collocation: [[outflowing]]
+- collocation: [[vogue]]
+- collocation: [[voltaic]]
+- collocation: [[excitation]]

@@ -9,6 +9,8 @@ rank: 158
 sfi: 56.79
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - builds_on: [[newsletter]] — Use 'bulletin' for a brief, official announcement or report, especially one that is regularly distributed to a specific group.
 - builds_on: [[periodical]] — Use 'bulletin' for a periodical that provides brief, timely updates or announcements.
 - builds_on: [[handout]] — Use 'bulletin' for official short announcements, especially from organizations or media, instead of 'handout' which can be informal.
+- synonym: [[advisory]]
+- builds_on: [[advisory]] — Use for a brief, official statement, often more formal than an advisory.

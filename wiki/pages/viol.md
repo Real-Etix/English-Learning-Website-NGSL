@@ -6,6 +6,8 @@ pos: noun
 forms: [viol]
 sources: [llm]
 status: enriched
+chart: violin
+region: violin
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[violin]] — Use 'viol' when referring to the historical instrument that is a predecessor to the violin; not a direct synonym but a related term.
+- collocation: [[play]]
+- collocation: [[player]]
+- collocation: [[music]]
+- collocation: [[consort]]
+- collocation: [[renaissance]]

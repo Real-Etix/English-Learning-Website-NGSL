@@ -9,6 +9,8 @@ rank: 1336
 sfi: 58.08
 sources: [wordnet, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[lido]] — Use 'lido' for an outdoor public swimming pool, often with beach or recreational facilities.
 - advanced_form: [[natatorium]] — Use 'natatorium' for a formal indoor swimming pool, typically in a sports or educational facility.
+- collocation: [[coping]]
+- collocation: [[limpid]]
+- collocation: [[lifeguard]]
+- synonym: [[tarn]]

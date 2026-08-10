@@ -9,6 +9,8 @@ rank: 202
 sfi: 66.86
 sources: [wordnet, llm]
 status: enriched
+chart: dedication
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[actuality]] — Use 'actuality' to emphasize the concrete reality of something, rather than just stating a fact.
 - advanced_form: [[certainty]] — Use 'certainty' when the fact is indisputable and known for sure, adding a sense of confidence.
+- collocation: [[bemoan]]
+- synonym: [[datum]]
+- collocation: [[gainsay]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [byway]
 sources: [llm]
 status: enriched
+chart: shift
+region: you
 ---
 
 ## Definition

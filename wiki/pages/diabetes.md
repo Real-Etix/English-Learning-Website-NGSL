@@ -9,6 +9,8 @@ rank: 473
 sfi: 53.65
 sources: [wordnet, llm]
 status: enriched
+chart: diabetes
+region: diabetes
 ---
 
 ## Definition

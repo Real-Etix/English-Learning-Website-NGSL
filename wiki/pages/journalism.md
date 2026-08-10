@@ -9,6 +9,8 @@ rank: 1146
 sfi: 49.8
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: squeeze
+region: you
 ---
 
 ## Definition

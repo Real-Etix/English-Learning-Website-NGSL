@@ -9,6 +9,8 @@ rank: 2599
 sfi: 53.64
 sources: [wordnet, llm]
 status: enriched
+chart: telecom
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ the natural satellite of the Earth
 - advanced_form: [[satellite]] — Use 'satellite' in scientific or astronomical writing to emphasize the moon's role as an orbiting body.
 - advanced_form: [[orb]] — Use 'orb' in poetic or literary contexts to describe the moon's round, luminous shape.
 - advanced_form: [[luna]] — Use 'luna' in poetic or fantasy writing for a more mythic or romantic tone.
+- collocation: [[luminous]]

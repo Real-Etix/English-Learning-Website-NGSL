@@ -6,6 +6,8 @@ pos: noun
 forms: [credence]
 sources: [llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition

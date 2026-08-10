@@ -9,6 +9,8 @@ rank: 789
 sfi: 52.49
 sources: [wordnet, llm]
 status: enriched
+chart: assert
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[indict]] — Use 'indict' when formally charging someone with a serious crime, usually after a grand jury proceeding; it is more technical than 'prosecute'.
 - advanced_form: [[litigate]] — Use 'litigate' when describing the process of taking legal action or contesting a case in court, often implying civil rather than criminal proceedings.
 - builds_on: [[pursue]] — Use 'prosecute' for carrying out an activity systematically, especially in formal or legal contexts.
+- synonym: [[impeach]]

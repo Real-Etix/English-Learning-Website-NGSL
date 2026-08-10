@@ -9,6 +9,8 @@ rank: 326
 sfi: 56.59
 sources: [wordnet, llm]
 status: enriched
+chart: aesthetic
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[progenitive]] — Use when emphasizing the capacity to produce offspring or the reproductive origin, more technical than 'parental'.
 - advanced_form: [[ancestral]] — Use when referring to earlier generations or hereditary lines, broader and more formal than 'parental'.
+- collocation: [[guardianship]]

@@ -9,6 +9,8 @@ rank: 1494
 sfi: 49.78
 sources: [wordnet, llm]
 status: enriched
+chart: pensioner
+region: pensioner
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2266
 sfi: 54.76
 sources: [wordnet, llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[associate]] — Use 'ally' when the association is based on mutual support or common interests, often in a competitive or adversarial context.
 - advanced_form: [[confederate]] — Use 'confederate' when emphasizing a formal alliance, often in a military context, rather than a general 'ally'.
 - advanced_form: [[collaborator]] — Use 'collaborator' when focusing on active cooperation in a joint project, not merely a friendly nation.
+- synonym: [[comrade]]

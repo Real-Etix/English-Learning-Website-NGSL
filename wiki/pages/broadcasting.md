@@ -6,6 +6,8 @@ pos: noun
 forms: [broadcasting]
 sources: [llm]
 status: enriched
+chart: wireless
+region: wireless
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[radio]] — Use 'broadcasting' to emphasize the activity or system of transmitting audio programs, rather than the physical device or medium.
+- synonym: [[transmission]]
+- synonym: [[telecast]]
+- synonym: [[feed]]
+- collocation: [[television]]
+- collocation: [[public]]
+- collocation: [[live]]
+- collocation: [[digital]]
+- synonym: [[airwaves]]

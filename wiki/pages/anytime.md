@@ -9,6 +9,8 @@ rank: 424
 sfi: 54.09
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,8 @@ _No sourced examples yet._
 ## Connections
 - domain: toeic
 - domain: fitness
+- synonym: [[whenever]]
+- collocation: [[soon]]
+- collocation: [[now]]
+- collocation: [[call]]
+- collocation: [[access]]

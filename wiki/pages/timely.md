@@ -9,6 +9,8 @@ rank: 596
 sfi: 53.15
 sources: [wordnet, llm]
 status: enriched
+chart: prompt
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ before a time limit expires
 - domain: business
 - advanced_form: [[prompt]] — Use 'prompt' when emphasizing quick action exactly at or before the expected time, especially for people or responses.
 - advanced_form: [[opportune]] — Use 'opportune' to highlight that something happens at a particularly advantageous or suitable moment, not just before a deadline.
+- synonym: [[opportunely]]
+- synonym: [[providential]]

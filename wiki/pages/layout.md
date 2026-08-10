@@ -9,6 +9,8 @@ rank: 579
 sfi: 53.05
 sources: [wordnet, llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - advanced_form: [[configuration]] — Use 'configuration' for technical or systematic setups, emphasizing the specific arrangement of components.
 - advanced_form: [[composition]] — Use 'composition' for the artistic or aesthetic arrangement of elements, such as in design or photography.
 - builds_on: [[composition]] — Use 'layout' when referring to the planned or designed arrangement of elements, especially in a physical space or on a page.
+- synonym: [[format]]
+- collocation: [[reconfigure]]
+- collocation: [[artwork]]
+- synonym: [[typography]]

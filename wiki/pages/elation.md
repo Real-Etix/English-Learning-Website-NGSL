@@ -6,6 +6,8 @@ pos: noun
 forms: [elation]
 sources: [llm]
 status: enriched
+chart: pleasure
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[joy]] — Use 'elation' for a strong, often triumphant joy, especially after an achievement.
 - builds_on: [[happiness]] — Use 'elation' for a sudden, intense feeling of happiness, often from a specific success or achievement.
 - builds_on: [[excitement]] — Use when the excitement is a result of personal success or good news, with a sense of uplift.
+- synonym: [[euphoria]]
+- synonym: [[exhilaration]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [insured]
 sources: [llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition

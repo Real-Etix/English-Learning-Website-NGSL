@@ -9,6 +9,8 @@ rank: 1778
 sfi: 56.27
 sources: [wordnet, llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[connoisseur]] — Use 'connoisseur' when emphasizing expert appreciation and refined taste rather than professional criticism.
 - advanced_form: [[commentator]] — Use 'commentator' when focusing on public interpretation and discussion of art, often in media.
+- synonym: [[censor]]
+- synonym: [[detractor]]
+- collocation: [[lambaste]]
+- synonym: [[pundit]]
+- synonym: [[admonisher]]
+- synonym: [[castigator]]

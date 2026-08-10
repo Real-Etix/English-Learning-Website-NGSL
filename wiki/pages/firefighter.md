@@ -9,6 +9,8 @@ rank: 574
 sfi: 52.47
 sources: [wordnet, llm]
 status: enriched
+chart: firefighter
+region: firefighter
 ---
 
 ## Definition

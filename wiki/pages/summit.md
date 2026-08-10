@@ -9,6 +9,8 @@ rank: 235
 sfi: 53.86
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,8 @@ the highest level or degree attainable
 - advanced_form: [[pinnacle]] — Use 'pinnacle' instead of 'summit' to convey a lofty, crowning achievement, often with a sense of utmost excellence.
 - builds_on: [[top]] — Use 'summit' for the highest point of a mountain or figuratively for a meeting of leaders; more formal and precise than 'top'.
 - builds_on: [[mountain]] — Use 'summit' for the very top of a mountain, especially in formal, achievement, or goal-oriented contexts.
+- synonym: [[acme]]
+- synonym: [[capstone]]
+- synonym: [[congress]]
+- synonym: [[vertex]]
+- builds_on: [[conference]] — Use 'summit' for high-level diplomatic meetings between heads of state or top officials.

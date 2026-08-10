@@ -6,6 +6,8 @@ pos: noun
 forms: [steadfastness]
 sources: [llm]
 status: enriched
+chart: balance
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[stability]] — Use 'steadfastness' to emphasize unwavering commitment, while 'stability' is broader.
+- synonym: [[constancy]]

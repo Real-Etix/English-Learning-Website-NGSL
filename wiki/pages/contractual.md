@@ -9,6 +9,8 @@ rank: 481
 sfi: 53.79
 sources: [wordnet, llm]
 status: enriched
+chart: contractual
+region: contractual
 ---
 
 ## Definition

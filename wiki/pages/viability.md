@@ -6,6 +6,8 @@ pos: noun
 forms: [viability]
 sources: [llm]
 status: enriched
+chart: strength
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sustainability]] — Use 'viability' when focusing on the practical possibility of lasting, not just the abstract property.
+- synonym: [[profitability]]
+- collocation: [[economic]]
+- collocation: [[commercial]]
+- collocation: [[financial]]
+- collocation: [[political]]
+- synonym: [[lucrativeness]]

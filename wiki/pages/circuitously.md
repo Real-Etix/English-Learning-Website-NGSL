@@ -6,6 +6,8 @@ pos: adverb
 forms: [circuitously]
 sources: [llm]
 status: enriched
+chart: indirectly
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[indirectly]] — Use instead of 'indirectly' when you want to stress a long, roundabout path or process.
+- synonym: [[obliquely]]
+- collocation: [[reach]]
+- collocation: [[arrive]]
+- collocation: [[travel]]
+- collocation: [[express]]
+- collocation: [[put]]

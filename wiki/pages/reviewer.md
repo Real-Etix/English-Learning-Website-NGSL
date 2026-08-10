@@ -9,6 +9,8 @@ rank: 474
 sfi: 53.29
 sources: [wordnet, llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[referee]] — Use referee for the expert who evaluates manuscripts in academic or professional peer review, more specific than reviewer.
 - advanced_form: [[arbiter]] — Use arbiter for an authoritative judge or decision-maker, emphasizing expertise and final say.
 - builds_on: [[analyst]] — Use 'reviewer' when highlighting a careful, critical examination of data, especially in academic or editorial contexts.
+- synonym: [[assessor]]
+- synonym: [[reviser]]
+- collocation: [[censorious]]

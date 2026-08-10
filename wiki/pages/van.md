@@ -9,6 +9,8 @@ rank: 2217
 sfi: 54.9
 sources: [wordnet, llm]
 status: enriched
+chart: make
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[vanguard]] — Use 'vanguard' instead of 'van' when referring to the leading position or group in a field, especially in formal writing.
 - advanced_form: [[avant-garde]] — Use 'avant-garde' to emphasize the innovative and experimental nature of the group, often in the arts.
+- collocation: [[nondescript]]

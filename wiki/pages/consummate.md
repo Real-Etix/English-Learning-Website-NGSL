@@ -6,6 +6,8 @@ pos: adjective
 forms: [consummate]
 sources: [llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition

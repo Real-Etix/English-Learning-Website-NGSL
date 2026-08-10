@@ -9,6 +9,8 @@ rank: 1023
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: architect
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[arranger]] — Use 'arranger' instead of 'adapter' when emphasizing the creative reinterpretation and restructuring of a composition.
 - advanced_form: [[transcriber]] — Use 'transcriber' instead of 'adapter' when the adaptation involves changing instrumentation or notation while preserving the original musical ideas.
 - advanced_form: [[orchestrator]] — Use 'orchestrator' instead of 'adapter' when the adaptation specifically assigns parts to different instruments in an orchestra or large ensemble.
+- synonym: [[connector]]
+- builds_on: [[connector]] — Use adapter when the connector allows mismatched components to work together.
+- synonym: [[coupler]]

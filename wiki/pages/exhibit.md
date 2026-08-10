@@ -9,6 +9,8 @@ rank: 1996
 sfi: 55.55
 sources: [wordnet, llm]
 status: enriched
+chart: present
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[manifest]] — Use 'manifest' when something becomes clearly visible or evident, often implying a process of revelation, whereas 'exhibit' is more direct and can be used for deliberate display.
 - advanced_form: [[evince]] — Use 'evince' to suggest that a quality or feeling is revealed indirectly through behavior or signs, whereas 'exhibit' tends to imply a more overt or intentional showing.
 - builds_on: [[possess]] — Use 'exhibit' when you want to emphasize the outward display or demonstration of an attribute, rather than simply having it.
+- collocation: [[periodicity]]
+- builds_on: [[demonstrate]] — Use when formally showing something in a public space, like a gallery or exhibition.

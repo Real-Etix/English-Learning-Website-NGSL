@@ -9,6 +9,8 @@ rank: 884
 sfi: 60.28
 sources: [wordnet, llm]
 status: enriched
+chart: use
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ the act of bringing something to bear
 - builds_on: [[usage]] — Use when focusing on the practical implementation or purpose of using something, often in academic or professional settings.
 - builds_on: [[software]] — Use 'application' when referring to a specific software program designed for end-users, often for a particular task.
 - builds_on: [[utilization]] — Use 'application' instead of 'utilization' when focusing on putting something into practical use in a specific context or field.
+- synonym: [[app]]
+- collocation: [[herbicide]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [mechanicaladvantage]
 sources: [llm]
 status: enriched
+chart: leverage
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[leverage]] — Use 'mechanical advantage' in technical or physics contexts to specify the numerical advantage, e.g., 'Using a longer lever increases the mechanical advantage.'
+- synonym: [[purchase]]
+- collocation: [[gain]]
+- collocation: [[provide]]
+- collocation: [[calculate]]
+- collocation: [[ratio]]
+- collocation: [[system]]

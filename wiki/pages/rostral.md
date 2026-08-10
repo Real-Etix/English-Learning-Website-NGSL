@@ -6,6 +6,8 @@ pos: adjective
 forms: [rostral]
 sources: [llm]
 status: enriched
+chart: stock
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[anterior]] — Use when referring to the frontmost part of the head or brain, more precise than anterior.
+- synonym: [[cephalic]]
+- synonym: [[forward]]
+- synonym: [[front]]

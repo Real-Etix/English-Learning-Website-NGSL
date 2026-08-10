@@ -6,6 +6,8 @@ pos: verb
 forms: [don]
 sources: [llm]
 status: enriched
+chart: attire
+region: you
 ---
 
 ## Definition

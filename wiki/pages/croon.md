@@ -6,6 +6,8 @@ pos: verb
 forms: [croon]
 sources: [llm]
 status: enriched
+chart: sing
+region: sing
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sing]] — Use 'croon' for soft, gentle, or sentimental singing, especially when expressing tenderness.
+- synonym: [[murmur]]
+- synonym: [[intone]]
+- synonym: [[warble]]
+- collocation: [[tune]]
+- collocation: [[melody]]

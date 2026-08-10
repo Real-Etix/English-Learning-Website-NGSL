@@ -6,6 +6,8 @@ pos: noun
 forms: [muzzle]
 sources: [llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[barrel]] — Use 'muzzle' instead of 'barrel' when referring specifically to the open front end, often in contexts of aiming or discharging.
+- synonym: [[nozzle]]
+- synonym: [[mouth]]
+- synonym: [[aperture]]
+- synonym: [[tip]]
+- collocation: [[gun]]
+- collocation: [[brake]]
+- collocation: [[velocity]]
+- collocation: [[flash]]
+- synonym: [[maw]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [literateur]
 sources: [llm]
 status: enriched
+chart: author
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[author]] — Use 'literateur' instead of 'author' when referring to a person deeply involved in literature, often as a writer or critic with academic or cultural prestige.
+- synonym: [[writer]]
+- synonym: [[intellectual]]
+- collocation: [[renowned]]
+- collocation: [[distinguished]]

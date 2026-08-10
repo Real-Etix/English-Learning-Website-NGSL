@@ -6,6 +6,8 @@ pos: verb
 forms: [predominate]
 sources: [llm]
 status: enriched
+chart: rule
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[prevail]] — Use 'predominate' when focusing on being the main or most common element, often in a quantitative sense.
 - builds_on: [[dominate]] — Use when emphasizing being the most common or numerous, often in a statistical or quantitative sense.
+- synonym: [[preponderate]]
+- synonym: [[reign]]

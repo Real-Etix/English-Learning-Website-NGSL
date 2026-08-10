@@ -6,6 +6,8 @@ pos: adjective
 forms: [planetary]
 sources: [llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[global]] — Use 'planetary' when emphasizing the Earth as a celestial body, often in scientific or formal contexts.
+- synonym: [[biospheric]]
+- synonym: [[worldwide]]
+- synonym: [[universal]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [amplify]
 sources: [llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[enlarge]] — Use 'amplify' when emphasizing an increase in strength, intensity, or effect, especially for sound or signals, rather than just physical size.
 - builds_on: [[intensify]] — Use 'amplify' when referring to increasing the magnitude or effect of something, especially sound, signal, or impact, often implying a technical or sensory boost.
 - builds_on: [[boost]] — Use 'amplify' when increasing the strength, volume, or effect, especially of sound or signals.
+- synonym: [[heighten]]
+- synonym: [[inflate]]
+- builds_on: [[exaggerate]] — Use when the exaggeration increases the intensity or scale of a statement, often making it sound more dramatic or severe.

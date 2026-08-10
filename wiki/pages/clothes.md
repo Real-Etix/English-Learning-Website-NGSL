@@ -9,6 +9,8 @@ rank: 956
 sfi: 59.91
 sources: [wordnet, llm]
 status: enriched
+chart: attire
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ clothing in general
 - advanced_form: [[attire]] — Use 'attire' instead of 'clothes' when emphasizing the style, formality, or occasion of the outfit.
 - advanced_form: [[garments]] — Use 'garments' instead of 'clothes' for a more technical or formal tone, often in manufacturing, fashion, or religious contexts.
 - advanced_form: [[apparel]] — Use 'apparel' instead of 'clothes' in commercial or professional settings, especially for specific categories like sportswear or protective gear.
+- collocation: [[castoff]]
+- collocation: [[civvy]]
+- collocation: [[mend]]
+- collocation: [[cram]]

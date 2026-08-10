@@ -6,6 +6,8 @@ pos: noun
 forms: [citron]
 sources: [llm]
 status: enriched
+chart: currency
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lemon]] — Refers to a large, thick-rinded citrus fruit, often candied, more formal than 'lemon'.
+- synonym: [[chartreuse]]
+- synonym: [[fruit]]
+- collocation: [[peel]]
+- collocation: [[oil]]

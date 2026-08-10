@@ -6,6 +6,8 @@ pos: noun
 forms: [dissension]
 sources: [llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[controversy]] — Use 'dissension' when disagreement leads to conflict or lack of unity within a group, emphasizing internal discord.
 - builds_on: [[disagreement]] — Use for a deep, often public conflict within a group, more formal than 'disagreement'.
+- builds_on: [[dispute]] — Use for internal disagreement among a group, emphasizing division of opinion.

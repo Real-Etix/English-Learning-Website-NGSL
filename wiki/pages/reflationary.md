@@ -6,6 +6,8 @@ pos: adjective
 forms: [reflationary]
 sources: [llm]
 status: enriched
+chart: inflationary
+region: inflationary
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inflationary]] — Use 'reflationary' when describing policies that deliberately increase inflation from a low or negative level, unlike 'inflationary' which refers to any rise in prices.
+- collocation: [[fiscal]]
+- collocation: [[monetary]]
+- collocation: [[policy]]
+- collocation: [[effects]]

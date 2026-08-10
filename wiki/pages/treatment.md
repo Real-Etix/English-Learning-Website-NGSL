@@ -9,6 +9,8 @@ rank: 811
 sfi: 60.69
 sources: [wordnet, llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[therapy]] — Use 'therapy' when the treatment involves a structured, ongoing process, often for rehabilitation or psychological care.
 - advanced_form: [[regimen]] — Use 'regimen' when the treatment follows a systematic plan or schedule.
 - advanced_form: [[intervention]] — Use 'intervention' when the treatment involves a direct, often urgent action to prevent worsening.
+- collocation: [[chemoradiotherapy]]
+- collocation: [[effluent]]
+- collocation: [[equitable]]
+- collocation: [[inefficacious]]
+- collocation: [[inequitable]]
+- collocation: [[pharmacologic]]
+- collocation: [[biocide]]
+- collocation: [[psychotherapeutic]]

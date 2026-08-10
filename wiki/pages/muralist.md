@@ -6,6 +6,8 @@ pos: noun
 forms: [muralist]
 sources: [llm]
 status: enriched
+chart: painter
+region: painter
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[painter]] — Use 'muralist' instead of 'painter' when the artist creates large-scale paintings directly on walls or ceilings.
+- synonym: [[artist]]
+- collocation: [[renowned]]
+- collocation: [[street]]
+- collocation: [[political]]

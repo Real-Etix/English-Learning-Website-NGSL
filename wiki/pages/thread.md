@@ -9,6 +9,8 @@ rank: 224
 sfi: 57
 sources: [wordnet, llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ _No sourced examples yet._
 - advanced_form: [[snake]] — Use 'snake' to emphasize a long, sinuous path with many curves, like a serpent.
 - advanced_form: [[meander]] — Use 'meander' when the movement is leisurely, aimless, and winding, often with no particular destination.
 - builds_on: [[tap]] — Use 'thread' when you cut internal screw threads by any method; 'tap' specifically uses a tap tool.
+- synonym: [[fibre]]
+- synonym: [[filament]]
+- collocation: [[skein]]

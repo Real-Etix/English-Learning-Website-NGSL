@@ -6,6 +6,8 @@ pos: noun
 forms: [pubis]
 sources: [llm]
 status: enriched
+chart: pelvis
+region: pelvis
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pelvis]] — Use 'pubis' to describe the anterior part of the pelvis, especially in anatomical contexts.
+- collocation: [[fracture]]
+- collocation: [[bone]]
+- collocation: [[body]]
+- collocation: [[os]]

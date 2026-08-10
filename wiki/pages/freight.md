@@ -9,6 +9,8 @@ rank: 716
 sfi: 52.31
 sources: [wordnet, llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,7 @@ _No sourced examples yet._
 - advanced_form: [[shipment]] — Use 'shipment' instead of 'freight' when focusing on a specific batch of goods being sent together, especially in logistics or e-commerce contexts.
 - advanced_form: [[consignment]] — Use 'consignment' instead of 'freight' when referring to a batch of goods officially sent to a recipient, often with formal or legal connotations in trade.
 - builds_on: [[consignment]] — Use 'freight' when referring to goods transported commercially, often by rail, truck, or ship; it highlights the transportation service rather than the sender's arrangement.
+- collocation: [[containerize]]
+- collocation: [[haulier]]
+- builds_on: [[postage]] — Use 'freight' for large-scale or commercial transportation, not for ordinary postal mail.
+- synonym: [[shipping]]

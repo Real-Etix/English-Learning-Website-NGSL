@@ -9,6 +9,8 @@ rank: 1152
 sfi: 58.87
 sources: [wordnet, llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ a wrong action attributable to bad judgment or ignorance or inattention
 - advanced_form: [[blunder]] — Use 'blunder' for a major, embarrassing mistake due to carelessness, stronger than 'mistake'.
 - advanced_form: [[lapse]] — Use 'lapse' for a temporary failure of concentration or memory, often minor.
 - advanced_form: [[oversight]] — Use 'oversight' when the mistake results from neglecting to do something; implies unintentional omission.
+- synonym: [[gaffe]]
+- synonym: [[inadvertence]]
+- synonym: [[misstep]]
+- synonym: [[confuse]]
+- collocation: [[stupid]]

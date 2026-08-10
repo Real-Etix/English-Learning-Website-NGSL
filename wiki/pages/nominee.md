@@ -6,6 +6,8 @@ pos: noun
 forms: [nominee]
 sources: [llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[candidate]] — Use when the person has already been officially selected by a party, more specific than 'candidate'.
 - builds_on: [[referral]] — Use 'nominee' when the referral implies a nomination or selection process, especially in formal or organizational settings.
+- synonym: [[appointee]]

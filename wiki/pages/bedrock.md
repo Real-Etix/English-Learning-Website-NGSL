@@ -6,6 +6,8 @@ pos: noun
 forms: [bedrock]
 sources: [llm]
 status: enriched
+chart: motif
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[foundation]] — Use to stress something as the absolute, unchanging base that supports a system or idea.
+- synonym: [[base]]
+- synonym: [[basis]]
+- synonym: [[cornerstone]]
+- synonym: [[underpinning]]
+- collocation: [[solid]]

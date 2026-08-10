@@ -9,6 +9,8 @@ rank: 708
 sfi: 52.248
 sources: [wordnet, llm]
 status: enriched
+chart: chemotherapy
+region: chemotherapy
 ---
 
 ## Definition

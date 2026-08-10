@@ -9,6 +9,8 @@ rank: 988
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: heater
+region: heater
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[radiator]] — Use radiator for a specific heating element that emits heat, often in rooms.
 - advanced_form: [[furnace]] — Use furnace for a central heating system that heats air for a whole building.
 - advanced_form: [[boiler]] — Use boiler for a device that heats water, typically for central heating or hot water supply.
+- collocation: [[portable]]

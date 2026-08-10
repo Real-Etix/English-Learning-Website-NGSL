@@ -9,6 +9,8 @@ rank: 319
 sfi: 55.47
 sources: [wordnet, llm]
 status: enriched
+chart: supine
+region: supine
 ---
 
 ## Definition

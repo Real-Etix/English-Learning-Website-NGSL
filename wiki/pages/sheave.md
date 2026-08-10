@@ -6,6 +6,8 @@ pos: noun
 forms: [sheave]
 sources: [llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition

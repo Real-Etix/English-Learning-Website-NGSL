@@ -6,6 +6,8 @@ pos: noun
 forms: [retainer]
 sources: [llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [stint]
 sources: [llm]
 status: enriched
+chart: span
+region: you
 ---
 
 ## Definition

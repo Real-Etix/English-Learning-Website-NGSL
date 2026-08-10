@@ -9,6 +9,8 @@ rank: 639
 sfi: 61.76
 sources: [wordnet, llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ have an effect upon
 - advanced_form: [[shape]] — Use when the effect molds or defines the nature or development of something over time.
 - builds_on: [[emotion]] — Use 'affect' in psychological or clinical contexts to describe observable emotional expression, not inner feeling.
 - builds_on: [[pretend]] — Use 'affect' when the deception involves putting on a mannerism, style, or behavior that is not natural to the person.
+- collocation: [[cumulatively]]
+- synonym: [[feign]]

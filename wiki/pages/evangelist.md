@@ -6,6 +6,8 @@ pos: noun
 forms: [evangelist]
 sources: [llm]
 status: enriched
+chart: preacher
+region: preacher
 ---
 
 ## Definition

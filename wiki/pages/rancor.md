@@ -6,6 +6,8 @@ pos: noun
 forms: [rancor]
 sources: [llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[spite]] — Use 'rancor' to emphasize long-lasting, bitter resentment, more specific than spite.
+- synonym: [[enmity]]
+- synonym: [[hostility]]
+- synonym: [[animosity]]
+- collocation: [[deep]]
+- collocation: [[bitter]]
+- collocation: [[old]]

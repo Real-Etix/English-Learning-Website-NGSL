@@ -9,6 +9,8 @@ rank: 565
 sfi: 53.06
 sources: [wordnet, llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ _No sourced examples yet._
 - builds_on: [[restraint]] — Use 'curb' to emphasize a limit or restriction imposed from the outside, like a rule or external force.
 - builds_on: [[restrain]] — Use 'curb' when you mean to restrain or control something, often a behavior or activity, by imposing limits or restrictions.
 - builds_on: [[rein]] — Use 'curb' when you need to emphasize restraining something, like an impulse or behavior.
+- synonym: [[brake]]
+- builds_on: [[brake]] — Use 'curb' metaphorically for any restraint or limit, not the mechanical part.
+- builds_on: [[withhold]] — Use when limiting or restraining something from growing or spreading.

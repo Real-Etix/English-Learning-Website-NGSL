@@ -9,6 +9,8 @@ rank: 1568
 sfi: 57.12
 sources: [wordnet, llm]
 status: enriched
+chart: care
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[visage]] — Use 'visage' for a person's face or facial appearance, especially in a formal or descriptive context.
 - advanced_form: [[mien]] — Use 'mien' for a person's bearing or demeanor that gives a visual impression.
 - builds_on: [[attendance]] — Use 'appearance' to highlight the act of showing up, often implying a short or notable visit.
+- collocation: [[matronly]]
+- collocation: [[nondescript]]
+- builds_on: [[presence]] — Use for the action of arriving or becoming present at a notable event.
+- synonym: [[exteriority]]

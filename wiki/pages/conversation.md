@@ -9,6 +9,8 @@ rank: 982
 sfi: 59.71
 sources: [wordnet, llm]
 status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[dialogue]] — Use 'dialogue' instead of 'conversation' when emphasizing purposeful exchange, such as in negotiations or debates.
 - advanced_form: [[discourse]] — Use 'discourse' instead of 'conversation' for extended, serious discussions on ideas or societal issues.
 - builds_on: [[chat]] — Use 'conversation' for a more neutral or formal exchange than 'chat', often implying a sustained or serious talk.
+- synonym: [[colloquy]]
+- collocation: [[enlightening]]

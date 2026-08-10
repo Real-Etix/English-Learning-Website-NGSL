@@ -6,6 +6,8 @@ pos: adjective
 forms: [palpable]
 sources: [llm]
 status: enriched
+chart: cheer
+region: you
 ---
 
 ## Definition

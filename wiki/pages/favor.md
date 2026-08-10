@@ -9,6 +9,8 @@ rank: 1134
 sfi: 58.96
 sources: [wordnet, llm]
 status: enriched
+chart: overhaul
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[boon]] — Use 'boon' when the favor is especially beneficial or fortunate, often larger in scope.
 - advanced_form: [[courtesy]] — Use 'courtesy' when the favor is a polite gesture, often minor and social.
 - advanced_form: [[service]] — Use 'service' when the favor is a helpful act that may be part of a duty or routine.
+- collocation: [[overwhelmingly]]

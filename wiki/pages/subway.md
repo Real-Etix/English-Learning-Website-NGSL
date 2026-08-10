@@ -9,6 +9,8 @@ rank: 36
 sfi: 60.6
 sources: [wordnet, llm]
 status: enriched
+chart: subway
+region: you
 ---
 
 ## Definition

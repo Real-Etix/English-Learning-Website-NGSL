@@ -6,6 +6,8 @@ pos: noun
 forms: [workstation]
 sources: [llm]
 status: enriched
+chart: unplug
+region: you
 ---
 
 ## Definition

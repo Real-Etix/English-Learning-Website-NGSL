@@ -6,6 +6,8 @@ pos: noun
 forms: [saunterer]
 sources: [llm]
 status: enriched
+chart: browser
+region: browser
 ---
 
 ## Definition

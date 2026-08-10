@@ -6,6 +6,8 @@ pos: noun
 forms: [personage]
 sources: [llm]
 status: enriched
+chart: one
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[person]] — Use 'personage' for a person of importance or distinction, especially in historical or formal narratives.
+- synonym: [[notable]]
+- synonym: [[celebrity]]
+- synonym: [[figure]]
+- collocation: [[royal]]
+- collocation: [[distinguished]]
+- collocation: [[notable]]
+- collocation: [[historical]]
+- collocation: [[eminent]]

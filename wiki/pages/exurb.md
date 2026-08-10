@@ -6,6 +6,8 @@ pos: noun
 forms: [exurb]
 sources: [llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[suburb]] — Use for outer-ring suburbs that are farther from the city and more affluent, whereas 'suburb' is more general.
+- collocation: [[affluent]]
+- collocation: [[commuter]]

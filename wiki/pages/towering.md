@@ -6,6 +6,8 @@ pos: adjective
 forms: [towering]
 sources: [llm]
 status: enriched
+chart: lengthy
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tall]] — Use 'towering' instead of 'tall' to stress extreme height that overwhelms or stands out.
+- collocation: [[crag]]

@@ -9,6 +9,8 @@ rank: 977
 sfi: 59.74
 sources: [wordnet, llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - advanced_form: [[contender]] — Use when highlighting competition and active struggle for the office, slightly more dynamic than 'candidate'.
 - advanced_form: [[nominee]] — Use when the person has already been officially selected by a party, more specific than 'candidate'.
 - builds_on: [[applicant]] — Use when referring to someone being evaluated or considered for a position, role, or honor, often implying a selection process.
+- collocation: [[aforementioned]]
+- synonym: [[appointee]]
+- synonym: [[postulant]]
+- collocation: [[presidential]]
+- collocation: [[worthy]]
+- collocation: [[favored]]

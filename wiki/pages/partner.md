@@ -9,6 +9,8 @@ rank: 1136
 sfi: 58.95
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - builds_on: [[husband]] — Use 'partner' to be inclusive of non-married couples or to avoid gender terms; common in modern, casual, or progressive contexts.
 - advanced_form: [[spouse]] — Use 'spouse' in formal or legal contexts instead of 'partner' to emphasize the marriage bond.
 - advanced_form: [[consort]] — Use 'consort' for a very formal or royal context, often implying a spouse of a reigning monarch.
+- synonym: [[collaborate]]
+- synonym: [[comrade]]
+- synonym: [[helpmate]]
+- synonym: [[lover]]

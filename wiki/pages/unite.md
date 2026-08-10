@@ -9,6 +9,8 @@ rank: 2767
 sfi: 52.8
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[coalesce]] — Use 'coalesce' when elements merge gradually into one whole, often used for ideas or groups coming together naturally.
 - advanced_form: [[consolidate]] — Use 'consolidate' when separate units are combined into a stronger, more unified system, often in business or organizations.
 - advanced_form: [[amalgamate]] — Use 'amalgamate' when multiple entities formally merge into one, often implying a structural or administrative union.
+- synonym: [[fuse]]

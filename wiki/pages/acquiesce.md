@@ -6,6 +6,8 @@ pos: verb
 forms: [acquiesce]
 sources: [llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[agree]] — Use 'acquiesce' when agreeing reluctantly or without protest, often implying a power dynamic.
+- synonym: [[comply]]
+- synonym: [[consent]]
+- synonym: [[accede]]
+- synonym: [[submit]]
+- synonym: [[yield]]
+- collocation: [[to]]
+- collocation: [[in]]
+- collocation: [[silently]]

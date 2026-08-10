@@ -9,6 +9,8 @@ rank: 595
 sfi: 62.12
 sources: [wordnet, llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - synonym: [[engagement]]
 - advanced_form: [[battle]] — Use 'battle' when referring to a large-scale, sustained military confrontation, more specific than 'fight'.
 - advanced_form: [[engagement]] — Use 'engagement' in formal military contexts to describe a planned or tactical encounter between forces.
+- collocation: [[against]]
+- collocation: [[bull]]
+- collocation: [[instigate]]
+- synonym: [[militancy]]
+- collocation: [[oppressor]]
+- collocation: [[reinstatement]]

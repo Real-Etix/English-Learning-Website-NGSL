@@ -9,6 +9,8 @@ rank: 417
 sfi: 54.37
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: pipeline
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ gossip spread by spoken communication
 - advanced_form: [[hearsay]] — Use 'hearsay' in formal or legal contexts to emphasize that the information is unverified and secondhand.
 - advanced_form: [[scuttlebutt]] — Use 'scuttlebutt' in informal settings to refer to gossip that circulates among a group, often about workplace matters.
 - advanced_form: [[grapevine]] — Use 'grapevine' to emphasize the informal, oral network through which gossip spreads, often implying the source is anonymous or indirect.
+- collocation: [[outage]]

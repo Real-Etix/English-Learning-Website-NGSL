@@ -9,6 +9,8 @@ rank: 27
 sfi: 61.442
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ any stimulating information or event
 - builds_on: [[inspiration]] — Use 'stimulus' to emphasize an external factor that provokes or rouses creativity, rather than the internal spark implied by 'inspiration'.
 - builds_on: [[incentive]] — Use when describing an external factor that provokes or accelerates a response, especially in economic or psychological contexts; more formal and broader than 'incentive'.
 - builds_on: [[motivation]] — Use 'stimulus' when the motivation is an external factor that provokes a response, often in economic or physiological contexts.
+- builds_on: [[input]] — Use when the input acts as a trigger that causes a measurable response in the system.

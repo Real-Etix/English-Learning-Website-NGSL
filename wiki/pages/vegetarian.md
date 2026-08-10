@@ -9,6 +9,8 @@ rank: 377
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: vegan
+region: vegan
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[herbivore]] — Use 'herbivore' for a more scientific or formal tone, often in discussions of diet or biology.
 - advanced_form: [[vegan]] — Use 'vegan' when referring to a stricter plant-based diet that excludes all animal-derived ingredients.
+- synonym: [[veganist]]

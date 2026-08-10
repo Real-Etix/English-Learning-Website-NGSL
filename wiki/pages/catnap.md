@@ -6,6 +6,8 @@ pos: noun
 forms: [catnap]
 sources: [llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nap]] — Use 'catnap' for a very brief, light nap, often taken when you have little time.
+- synonym: [[siesta]]
+- collocation: [[take]]
+- collocation: [[quick]]
+- collocation: [[brief]]
+- collocation: [[afternoon]]
+- collocation: [[before]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [staffer]
 sources: [llm]
 status: enriched
+chart: hire
+region: you
 ---
 
 ## Definition

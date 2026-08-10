@@ -9,6 +9,8 @@ rank: 482
 sfi: 63.14
 sources: [wordnet, llm]
 status: enriched
+chart: black
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,13 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[caucasian]] — Use 'Caucasian' in formal, demographic, or official contexts instead of the more casual 'white'.
 - advanced_form: [[anglo]] — Use 'Anglo' regionally (e.g., U.S. Southwest) to specify a non-Hispanic white person, often implying cultural background.
+- collocation: [[alabaster]]
+- collocation: [[blouse]]
+- collocation: [[cardstock]]
+- collocation: [[immaculateness]]
+- collocation: [[jodhpur]]
+- collocation: [[limousine]]
+- collocation: [[preponderantly]]
+- collocation: [[varietal]]
+- collocation: [[kaolin]]
+- collocation: [[settler]]

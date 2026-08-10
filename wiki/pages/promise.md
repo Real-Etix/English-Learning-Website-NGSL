@@ -9,6 +9,8 @@ rank: 829
 sfi: 60.6
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[swear]] — Use 'swear' for an oath or very strong promise, often invoking a sense of duty or legality.
 - builds_on: [[potential]] — Use 'promise' when referring to potential that is not yet fully realized but indicated by current signs.
 - builds_on: [[prospect]] — Use 'promise' when there are clear indicators or signs of future success, often in talent or early achievements.
+- collocation: [[covenantal]]
+- collocation: [[deceitful]]
+- collocation: [[enticement]]
+- synonym: [[potentiality]]
+- collocation: [[illusory]]

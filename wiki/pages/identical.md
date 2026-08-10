@@ -9,6 +9,8 @@ rank: 90
 sfi: 59.107
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ exactly alike
 - collocation: [[they]]
 - advanced_form: [[indistinguishable]] — Use when emphasizing that two things cannot be told apart even by close inspection; stronger than 'identical'.
 - advanced_form: [[congruent]] — Use when emphasizing exact agreement or matching in abstract concepts like ideas or systems, rather than physical appearance.
+- synonym: [[homogeneous]]
+- collocation: [[otherwise]]
+- collocation: [[quadruplet]]
+- collocation: [[quadruplets]]

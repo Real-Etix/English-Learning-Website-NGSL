@@ -6,6 +6,8 @@ pos: adjective
 forms: [womanly]
 sources: [llm]
 status: enriched
+chart: vulnerable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[female]] — Use 'womanly' for mature female qualities or attributes, often positive, rather than the neutral biological term 'female'.
+- synonym: [[feminine]]
+- synonym: [[matronly]]
+- synonym: [[tender]]

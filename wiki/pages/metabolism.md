@@ -9,6 +9,8 @@ rank: 119
 sfi: 60.13
 sources: [wordnet, llm]
 status: enriched
+chart: transformation
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[metamorphosis]] — Use metamorphosis instead of metabolism when referring specifically to the biological transformation from larva to adult; it is more precise and formal.
 - advanced_form: [[transformation]] — Use transformation as a more general but still formal term for a marked change in form, often preferable when the process is not exclusively insect or amphibian metamorphosis.
 - advanced_form: [[transmutation]] — Use transmutation to emphasize a profound or complete change in form, particularly in scientific or literary contexts, as a more sophisticated synonym for metabolism.
+- collocation: [[acylglycerol]]
+- collocation: [[anaerobiotic]]
+- collocation: [[d-fructose]]
+- collocation: [[levulose]]
+- collocation: [[lipid]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [blistering]
 sources: [llm]
 status: enriched
+chart: seize
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hot]] — Use for extreme heat that causes skin to blister or feels painfully intense, more vivid than 'hot'.
+- synonym: [[scorching]]
+- synonym: [[searing]]
+- synonym: [[intense]]
+- synonym: [[fierce]]
+- collocation: [[heat]]

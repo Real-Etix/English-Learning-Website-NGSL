@@ -6,6 +6,8 @@ pos: noun
 forms: [debauchery]
 sources: [llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vice]] — Use 'debauchery' when focusing on excessive indulgence in sensual pleasures.
+- synonym: [[depravity]]
+- synonym: [[excess]]
+- collocation: [[sexual]]
+- collocation: [[night]]
+- collocation: [[excess]]

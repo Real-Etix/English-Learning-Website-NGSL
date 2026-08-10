@@ -9,6 +9,8 @@ rank: 2464
 sfi: 54.09
 sources: [wordnet, llm]
 status: enriched
+chart: embarrass
+region: embarrass
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [sacral]
 sources: [llm]
 status: enriched
+chart: pelvic
+region: pelvic
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pelvic]] — Use 'sacral' when referring to the sacrum part of the pelvis, more formal and specific than 'pelvic'.
+- collocation: [[vertebralcolumn]]

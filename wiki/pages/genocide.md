@@ -9,6 +9,8 @@ rank: 1683
 sfi: 47.37
 sources: [wordnet, llm]
 status: enriched
+chart: genocide
+region: genocide
 ---
 
 ## Definition

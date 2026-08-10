@@ -9,6 +9,8 @@ rank: 491
 sfi: 51.91
 sources: [wordnet, llm]
 status: enriched
+chart: nationalist
+region: nationalist
 ---
 
 ## Definition

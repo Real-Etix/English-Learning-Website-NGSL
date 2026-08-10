@@ -9,6 +9,8 @@ rank: 1257
 sfi: 51.37
 sources: [wordnet, llm]
 status: enriched
+chart: suitcase
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [achievable]
 sources: [llm]
 status: enriched
+chart: accessible
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[realizable]] — Use achievable for goals or targets that can be reached with effort.
+- synonym: [[attainable]]
+- synonym: [[feasible]]
+- synonym: [[possible]]
+- collocation: [[goal]]
+- collocation: [[target]]
+- synonym: [[practicable]]

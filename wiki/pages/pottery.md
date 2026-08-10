@@ -9,6 +9,8 @@ rank: 933
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: pottery
+region: pottery
 ---
 
 ## Definition

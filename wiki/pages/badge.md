@@ -9,6 +9,8 @@ rank: 457
 sfi: 53.29
 sources: [wordnet, llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ an emblem (a small piece of plastic or cloth or metal) that signifies your statu
 - domain: toeic
 - advanced_form: [[insignia]] — Use 'insignia' for official symbols of rank, membership, or authority, especially in military or formal uniforms, where 'badge' might sound too generic.
 - advanced_form: [[emblem]] — Use 'emblem' for a symbolic design representing an organization or concept, emphasizing its representative meaning rather than a physical token.
+- synonym: [[brooch]]
+- synonym: [[marque]]
+- synonym: [[rosette]]
+- builds_on: [[tag]] — Use when the tag is worn to identify a person or show membership, rather than stuck to an object.

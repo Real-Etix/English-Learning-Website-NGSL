@@ -6,6 +6,8 @@ pos: adverb
 forms: [afterwards]
 sources: [llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[after]] — Use 'afterwards' instead of 'after' when you mean 'at a later time' and you want a more formal or literary tone.
+- synonym: [[later]]
+- synonym: [[subsequently]]
+- synonym: [[then]]
+- synonym: [[thereafter]]
+- synonym: [[next]]
+- collocation: [[soon]]

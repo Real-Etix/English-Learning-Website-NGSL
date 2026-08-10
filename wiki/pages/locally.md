@@ -9,6 +9,8 @@ rank: 338
 sfi: 56.502
 sources: [wordnet, llm]
 status: enriched
+chart: locally
+region: locally
 ---
 
 ## Definition

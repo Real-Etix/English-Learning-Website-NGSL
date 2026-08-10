@@ -9,6 +9,8 @@ rank: 1875
 sfi: 55.93
 sources: [wordnet, llm]
 status: enriched
+chart: thin
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ of or relating to the first significant period of a civilization, culture, area 
 - advanced_form: [[canonical]] — Use 'canonical' when referring to something that is accepted as authoritative or standard within a field, rather than just being a typical or classic example.
 - advanced_form: [[archetypal]] — Use 'archetypal' to emphasize that something is the original or most typical example of a category, especially in a historical or cultural context.
 - advanced_form: [[seminal]] — Use 'seminal' when something is highly influential or groundbreaking in its field, often marking the beginning of a new era or significant development.
+- collocation: [[bookworm]]
+- collocation: [[brasserie]]
+- collocation: [[mackintosh]]
+- synonym: [[masterwork]]
+- collocation: [[roundball]]

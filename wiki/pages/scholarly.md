@@ -6,6 +6,8 @@ pos: adjective
 forms: [scholarly]
 sources: [llm]
 status: enriched
+chart: academic
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,7 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[knowledgeable]] — Use 'scholarly' to emphasize academic or research-based knowledge; it implies rigor and depth.
 - builds_on: [[academic]] — Use 'scholarly' to emphasize rigorous research and depth of knowledge, often with a neutral or positive connotation, while 'academic' may feel more institutional.
+- collocation: [[colloquy]]
+- collocation: [[erudition]]
+- synonym: [[learned]]
+- collocation: [[monograph]]

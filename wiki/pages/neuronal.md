@@ -6,6 +6,8 @@ pos: adjective
 forms: [neuronal]
 sources: [llm]
 status: enriched
+chart: neural
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[neural]] — Use 'neuronal' when focusing on individual nerve cells or cellular-level processes, as a more technical term than 'neural'.
+- synonym: [[cerebral]]
+- collocation: [[activity]]
+- collocation: [[excitability]]

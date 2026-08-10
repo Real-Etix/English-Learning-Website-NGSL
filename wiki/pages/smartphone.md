@@ -9,6 +9,8 @@ rank: 1178
 sfi: 49.8
 sources: [dictionaryapi, tatoeba, llm]
 status: enriched
+chart: motif
+region: you
 ---
 
 ## Definition

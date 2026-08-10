@@ -9,6 +9,8 @@ rank: 2182
 sfi: 54.97
 sources: [wordnet, llm]
 status: enriched
+chart: singer
+region: singer
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[vocalist]] — Use 'vocalist' in formal or professional contexts, such as describing a trained singer in a band or choir.
 - advanced_form: [[crooner]] — Use 'crooner' to describe a male singer who performs sentimental songs in a soft, smooth style.
+- collocation: [[accompany]]

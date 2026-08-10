@@ -9,6 +9,8 @@ rank: 778
 sfi: 60.92
 sources: [wordnet, llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ try to get or reach
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[pursue]] — Use 'pursue' when actively following a goal or objective with sustained effort.
 - advanced_form: [[endeavor]] — Use 'endeavor' for formal or determined attempts to achieve something.
+- collocation: [[absolution]]
+- collocation: [[atonement]]
+- collocation: [[clarification]]
+- collocation: [[denigrate]]
+- collocation: [[expungement]]
+- collocation: [[postponement]]
+- collocation: [[rapprochement]]

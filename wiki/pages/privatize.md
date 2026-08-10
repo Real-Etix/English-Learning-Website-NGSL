@@ -9,6 +9,8 @@ rank: 800
 sfi: 52.29
 sources: [wordnet, llm]
 status: enriched
+chart: privatize
+region: privatize
 ---
 
 ## Definition

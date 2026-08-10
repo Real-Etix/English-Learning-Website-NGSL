@@ -6,6 +6,8 @@ pos: noun
 forms: [requital]
 sources: [llm]
 status: enriched
+chart: outlay
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reward]] — Use 'requital' instead of 'reward' when focusing on a reciprocal return, which can be positive (repayment of a favor) or negative (retribution); it is more poetic or formal.
+- synonym: [[repayment]]
+- synonym: [[recompense]]
+- synonym: [[return]]
+- synonym: [[retribution]]

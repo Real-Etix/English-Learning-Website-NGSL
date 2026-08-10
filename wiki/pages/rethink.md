@@ -6,6 +6,8 @@ pos: verb
 forms: [rethink]
 sources: [llm]
 status: enriched
+chart: reconsider
+region: reconsider
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reconsider]] — Use 'rethink' when you want to change your opinion or approach after thinking deeply again, often leading to a new plan or perspective.
+- synonym: [[reappraisal]]
+- synonym: [[reenvision]]
+- synonym: [[reimagine]]
+- synonym: [[reevaluate]]
+- synonym: [[reassess]]
+- synonym: [[review]]
+- collocation: [[strategy]]
+- collocation: [[approach]]
+- collocation: [[policy]]
+- synonym: [[revisit]]

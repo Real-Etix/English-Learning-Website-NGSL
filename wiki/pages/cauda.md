@@ -6,6 +6,8 @@ pos: noun
 forms: [cauda]
 sources: [llm]
 status: enriched
+chart: arm
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tail]] — Use 'cauda' in scientific or anatomical contexts to refer specifically to the tail of a vertebrate, especially in zoology or medicine.
+- synonym: [[appendage]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [spurious]
 sources: [llm]
 status: enriched
+chart: true
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [observatory]
 sources: [llm]
 status: enriched
+chart: facility
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[laboratory]] — Use 'observatory' instead of 'laboratory' specifically for locations dedicated to astronomical research, where observation rather than experimental manipulation is primary.
+- collocation: [[royal]]
+- collocation: [[national]]
+- collocation: [[space]]
+- collocation: [[radio]]

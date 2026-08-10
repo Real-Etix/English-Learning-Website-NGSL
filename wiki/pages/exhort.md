@@ -6,6 +6,8 @@ pos: verb
 forms: [exhort]
 sources: [llm]
 status: enriched
+chart: squeeze
+region: you
 ---
 
 ## Definition

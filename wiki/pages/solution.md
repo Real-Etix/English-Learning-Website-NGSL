@@ -9,6 +9,8 @@ rank: 788
 sfi: 60.85
 sources: [wordnet, llm]
 status: enriched
+chart: integration
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ a homogeneous mixture of two or more substances
 - advanced_form: [[amalgam]] — Use 'amalgam' instead of 'solution' when referring to a mixture of metals, especially in dentistry or metallurgy.
 - advanced_form: [[emulsion]] — Use 'emulsion' instead of 'solution' when the mixture consists of two immiscible liquids held together by an emulsifier.
 - builds_on: [[formulation]] — Use 'solution' instead of 'formulation' specifically for liquid preparations where ingredients are dissolved, as it is more precise and commonly used in medical contexts.
+- collocation: [[ampholyte]]
+- collocation: [[aqueous]]
+- synonym: [[colloid]]
+- collocation: [[concentrate]]
+- collocation: [[dextrose]]
+- collocation: [[facile]]
+- collocation: [[inventive]]
+- collocation: [[levulose]]
+- collocation: [[ophthalmic]]

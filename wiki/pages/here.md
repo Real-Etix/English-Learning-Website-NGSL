@@ -9,6 +9,8 @@ rank: 98
 sfi: 69.77
 sources: [wordnet]
 status: seeded
+chart: creditor
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,9 @@ in or at this place
 
 ## Connections
 - antonym: [[there]]
+- collocation: [[anybody]]
+- synonym: [[present]]
+- collocation: [[come]]
+- collocation: [[over]]
+- collocation: [[right]]
+- collocation: [[up]]

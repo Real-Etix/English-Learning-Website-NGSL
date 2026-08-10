@@ -9,6 +9,8 @@ rank: 188
 sfi: 67.17
 sources: [wordnet, llm]
 status: enriched
+chart: form
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ to travel behind, go after, come after
 - advanced_form: [[pursue]] — Use 'pursue' for determined, often goal-oriented following, especially when chasing or striving to catch something.
 - advanced_form: [[shadow]] — Use 'shadow' for discreet, close following, often with the intention of observing secretly.
 - advanced_form: [[track]] — Use 'track' when following based on clues, signs, or technology, suggesting systematic pursuit.
+- synonym: [[heed]]
+- collocation: [[maxim]]
+- collocation: [[guidepost]]

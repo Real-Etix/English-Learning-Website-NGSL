@@ -6,6 +6,8 @@ pos: verb
 forms: [retroflex]
 sources: [llm]
 status: enriched
+chart: simulate
+region: you
 ---
 
 ## Definition

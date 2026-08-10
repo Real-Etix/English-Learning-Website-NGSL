@@ -6,6 +6,8 @@ pos: noun
 forms: [armhole]
 sources: [llm]
 status: enriched
+chart: arm
+region: you
 ---
 
 ## Definition

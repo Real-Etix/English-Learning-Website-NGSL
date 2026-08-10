@@ -9,6 +9,8 @@ rank: 233
 sfi: 66.27
 sources: [wordnet, llm]
 status: enriched
+chart: effect
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[outcome]] — Use 'outcome' to emphasize the final, often planned result of a process or event, especially in formal or analytical contexts.
 - advanced_form: [[consequence]] — Use 'consequence' to highlight a result that follows logically from an action or condition, often with a neutral or negative tone.
 - advanced_form: [[effect]] — Use 'effect' to focus on the direct impact or change caused by something, common in scientific, academic, and formal writing.
+- collocation: [[predetermine]]

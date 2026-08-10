@@ -9,6 +9,8 @@ rank: 78
 sfi: 62.37
 sources: [wordnet, llm]
 status: enriched
+chart: shin
+region: shin
 ---
 
 ## Definition

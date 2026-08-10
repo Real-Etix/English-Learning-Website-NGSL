@@ -9,6 +9,8 @@ rank: 1427
 sfi: 48.9
 sources: [wordnet, llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[agonize]] — Use 'agonize' when the worry is intense, prolonged, and emotionally painful, more than just fretting.
 - advanced_form: [[brood]] — Use 'brood' when you worry by silently thinking deeply and sadly about something, often for a long time.
 - advanced_form: [[fuss]] — Use 'fuss' when the worry is focused on small, unimportant details and often involves visible agitation.
+- synonym: [[chafe]]

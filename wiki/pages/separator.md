@@ -6,6 +6,8 @@ pos: noun
 forms: [separator]
 sources: [llm]
 status: enriched
+chart: comma
+region: comma
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[comma]] — Use 'separator' when focusing on the function of the comma to divide elements.
+- synonym: [[delimiter]]
+- synonym: [[divider]]

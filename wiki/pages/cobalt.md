@@ -6,6 +6,8 @@ pos: adjective
 forms: [cobalt]
 sources: [llm]
 status: enriched
+chart: dismal
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[blue]] — Use for a rich, vivid blue, often intense and dark, more specific than 'blue'.
+- synonym: [[azure]]
+- collocation: [[dress]]
+- collocation: [[sky]]
+- collocation: [[sea]]
+- collocation: [[paint]]

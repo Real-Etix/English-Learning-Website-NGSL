@@ -9,6 +9,8 @@ rank: 116
 sfi: 57.895
 sources: [wordnet, llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,5 @@ _No sourced examples yet._
 - builds_on: [[dial]] — Use 'indicator' for a dial that presents a reading, especially in technical or formal contexts.
 - builds_on: [[arrow]] — Use 'indicator' to emphasize the function of signaling or showing a direction or relation, especially in mechanical or formal settings, rather than the shape of the mark.
 - builds_on: [[signal]] — Use 'indicator' instead of 'signal' when focusing on the sign's role as evidence or a clue pointing to a condition or fact.
+- synonym: [[pointer]]
+- synonym: [[guidepost]]

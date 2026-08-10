@@ -9,6 +9,8 @@ rank: 602
 sfi: 62.06
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - antonym: [[husband]]
 - advanced_form: [[spouse]] — Use 'spouse' in legal or formal contexts where gender neutrality is important.
 - advanced_form: [[partner]] — Use 'partner' when emphasizing a domestic partnership, often in modern or informal settings, and it can also refer to a business partner, but context clarifies.
+- collocation: [[lawful]]

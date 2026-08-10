@@ -9,6 +9,8 @@ rank: 1685
 sfi: 56.63
 sources: [wordnet, llm]
 status: enriched
+chart: strong
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ wanting in physical strength
 - advanced_form: [[frail]] — Use when emphasizing delicate, easily broken physical condition, often due to age or illness.
 - advanced_form: [[feeble]] — Use when stressing extreme weakness, often with a sense of pitiable lack of strength.
 - advanced_form: [[infirm]] — Use for chronic, long-term physical weakness associated with age or illness, often in medical or formal contexts.
+- synonym: [[assailable]]
+- synonym: [[ineffectual]]
+- collocation: [[knees]]
+- synonym: [[powerless]]
+- synonym: [[insubstantial]]

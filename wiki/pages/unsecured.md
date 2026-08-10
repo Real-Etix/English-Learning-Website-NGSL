@@ -9,6 +9,8 @@ rank: 1657
 sfi: 50.21
 sources: [wordnet, llm]
 status: enriched
+chart: hazardous
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[precarious]] — Use 'precarious' when something is dangerously unstable or likely to fail, emphasizing the risk.
 - advanced_form: [[tenuous]] — Use 'tenuous' when something is very weak or slight, often in a figurative sense.
+- collocation: [[debtholder]]

@@ -9,6 +9,8 @@ rank: 888
 sfi: 46.893
 sources: [wordnet, llm]
 status: enriched
+chart: mole
+region: mole
 ---
 
 ## Definition

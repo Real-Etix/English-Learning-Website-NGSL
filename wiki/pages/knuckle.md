@@ -9,6 +9,8 @@ rank: 157
 sfi: 58.98
 sources: [wordnet, llm]
 status: enriched
+chart: rub
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[palpate]] — Use in formal medical contexts to mean examining by touch, often with knuckles or fingertips.
 - advanced_form: [[massage]] — Use instead of 'knuckle' when the action is therapeutic and involves rubbing or pressing soft tissues.
 - builds_on: [[fist]] — Use 'knuckle' to emphasize the hard part of the fist used in impact.
+- collocation: [[littlefinger]]

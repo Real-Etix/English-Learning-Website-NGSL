@@ -6,6 +6,8 @@ pos: noun
 forms: [geomorphology]
 sources: [llm]
 status: enriched
+chart: likelihood
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[geography]] — Use when you need to emphasize the study of landform origins and processes rather than just the location of features.
+- synonym: [[topography]]
+- collocation: [[glacial]]
+- collocation: [[process]]
+- collocation: [[course]]

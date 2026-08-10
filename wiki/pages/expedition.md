@@ -6,6 +6,8 @@ pos: noun
 forms: [expedition]
 sources: [llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 - builds_on: [[excursion]] — Use 'expedition' for a more organized, purposeful, or adventurous journey, often involving research or exploration, rather than a simple pleasure trip.
 - builds_on: [[tour]] — Use 'expedition' instead of 'tour' when the journey has a specific, often adventurous or research-oriented purpose.
 - builds_on: [[hunt]] — Use 'expedition' instead of 'hunt' when referring to an organized journey with a purpose, often in a natural setting.
+- collocation: [[arctic]]
+- synonym: [[exploration]]
+- collocation: [[navigator]]
+- builds_on: [[exploration]] — Use when the exploration is planned and purposeful, especially in a team or with gear.

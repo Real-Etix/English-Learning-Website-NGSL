@@ -9,6 +9,8 @@ rank: 591
 sfi: 62.14
 sources: [wordnet, llm]
 status: enriched
+chart: century
+region: century
 ---
 
 ## Definition

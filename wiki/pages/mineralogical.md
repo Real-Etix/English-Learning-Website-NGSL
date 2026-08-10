@@ -6,6 +6,8 @@ pos: adjective
 forms: [mineralogical]
 sources: [llm]
 status: enriched
+chart: diamond
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mineral]] — Use 'mineralogical' when referring specifically to the study or characteristics of minerals, more technical than 'mineral'.
+- synonym: [[geological]]
+- collocation: [[survey]]
+- collocation: [[composition]]
+- collocation: [[analysis]]
+- collocation: [[study]]
+- collocation: [[data]]

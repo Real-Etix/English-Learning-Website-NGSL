@@ -9,6 +9,8 @@ rank: 1713
 sfi: 56.53
 sources: [wordnet, llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[beneficial]] — Use 'beneficial' when you want to emphasize a positive outcome or advantage, often in formal or professional contexts.
 - advanced_form: [[advantageous]] — Use 'advantageous' when highlighting a strategic gain or favorable position compared to alternatives.
 - advanced_form: [[instrumental]] — Use 'instrumental' when someone or something played a crucial or essential role in achieving a result.
+- synonym: [[conducive]]

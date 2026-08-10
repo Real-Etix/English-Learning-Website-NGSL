@@ -6,6 +6,8 @@ pos: noun
 forms: [fulcrum]
 sources: [llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition

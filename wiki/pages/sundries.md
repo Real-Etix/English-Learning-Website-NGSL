@@ -6,6 +6,8 @@ pos: noun
 forms: [sundries]
 sources: [llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition

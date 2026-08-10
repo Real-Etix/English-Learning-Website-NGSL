@@ -6,6 +6,8 @@ pos: noun
 forms: [caseinogen]
 sources: [llm]
 status: enriched
+chart: casein
+region: casein
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[casein]] — Use 'caseinogen' when discussing the precursor to casein in milk chemistry, rather than the generic term 'casein' itself.
+- synonym: [[phosphoprotein]]
+- collocation: [[milk]]
+- collocation: [[soluble]]
+- collocation: [[test]]

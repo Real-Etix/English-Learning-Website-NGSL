@@ -9,6 +9,8 @@ rank: 640
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: profound
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ moderate in type or degree or effect or force
 - advanced_form: [[temperate]] — Use 'temperate' instead of 'mild' when describing weather, climate, or behavior that is moderate and self-restrained.
 - advanced_form: [[benign]] — Use 'benign' instead of 'mild' when describing something that is not harmful or dangerous, especially in medical or figurative contexts.
 - advanced_form: [[lenient]] — Use 'lenient' instead of 'mild' when referring to rules, punishments, or criticism that are not strict or harsh.
+- collocation: [[cheddar]]

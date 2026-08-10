@@ -9,6 +9,8 @@ rank: 2134
 sfi: 55.14
 sources: [wordnet, llm]
 status: enriched
+chart: encompass
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[integrate]] — Use 'integrate' to emphasize blending separate elements into a unified, functioning whole, often in technical or systematic contexts.
 - advanced_form: [[assimilate]] — Use 'assimilate' when something is absorbed and becomes part of a larger whole, especially in social, cultural, or biological contexts.
 - advanced_form: [[embody]] — Use 'embody' to stress that something concretely represents or includes an abstract idea or quality.
+- synonym: [[internalize]]

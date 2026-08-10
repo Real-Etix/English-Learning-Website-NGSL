@@ -6,6 +6,8 @@ pos: noun
 forms: [wager]
 sources: [llm]
 status: enriched
+chart: gamble
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gamble]] — Use 'wager' instead of 'gamble' when referring to the specific amount of money or item risked in a bet, often in a more formal or traditional betting context.
+- synonym: [[bet]]
+- synonym: [[stake]]
+- synonym: [[speculation]]
+- synonym: [[risk]]
+- collocation: [[place]]
+- collocation: [[large]]
+- collocation: [[win]]
+- collocation: [[lose]]
+- collocation: [[accept]]
+- builds_on: [[bet]] — Use when you want a more formal or legal-sounding term for betting money.

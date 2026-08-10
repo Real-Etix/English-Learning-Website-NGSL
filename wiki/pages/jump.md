@@ -9,6 +9,8 @@ rank: 1324
 sfi: 58.16
 sources: [wordnet, llm]
 status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ move forward by leaps and bounds
 - advanced_form: [[leap]] — Use 'leap' for a long or high jump, often more dramatic or deliberate than 'jump'.
 - advanced_form: [[spring]] — Use 'spring' for a sudden, quick jump, often from a stationary or resting position.
 - advanced_form: [[bound]] — Use 'bound' for energetic, light jumps, often in a series or with a sense of enthusiasm.
+- collocation: [[queue]]

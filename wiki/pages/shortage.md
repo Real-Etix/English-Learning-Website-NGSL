@@ -9,6 +9,8 @@ rank: 202
 sfi: 56.36
 sources: [wordnet, llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[scarcity]] — Use 'scarcity' for a general lack of supply, especially in economic or resource contexts.
 - advanced_form: [[deficit]] — Use 'deficit' when the shortage is measurable, often in financial or quantitative contexts.
 - builds_on: [[shortfall]] — Use 'shortage' instead of 'shortfall' when emphasizing a lack of a tangible resource, like food, water, or supplies.
+- synonym: [[deprivation]]
+- collocation: [[dire]]
+- collocation: [[manpower]]

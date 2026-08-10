@@ -9,6 +9,8 @@ rank: 1518
 sfi: 57.32
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ a series of things depending on each other as if linked together
 - advanced_form: [[string]] — Use 'string' instead of 'chain' when emphasizing a connected sequence, especially of events or objects.
 - advanced_form: [[sequence]] — Use 'sequence' instead of 'chain' when referring to a logical or chronological order of items.
 - advanced_form: [[concatenation]] — Use 'concatenation' for a more formal or technical series of linked events or things.
+- collocation: [[bettingshop]]
+- collocation: [[copolymer]]
+- collocation: [[healthclub]]
+- collocation: [[hypermarket]]
+- synonym: [[padlock]]
+- collocation: [[reaction]]
+- collocation: [[polypeptide]]

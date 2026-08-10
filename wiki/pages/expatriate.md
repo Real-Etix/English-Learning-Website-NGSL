@@ -6,6 +6,8 @@ pos: noun
 forms: [expatriate]
 sources: [llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 - builds_on: [[migrant]] — Use 'expatriate' instead of 'migrant' when emphasizing voluntary, often professional relocation to another country, usually with a temporary or long-term stay.
 - builds_on: [[exile]] — Use 'expatriate' for someone living abroad by choice, often for work or lifestyle, whereas 'exile' suggests a sense of banishment or longing for home.
 - builds_on: [[overseas]] — Use 'expatriate' when describing people or communities living in a foreign country, emphasizing their (often temporary) residence abroad rather than the location itself.
+- synonym: [[immigrant]]
+- synonym: [[migr]]
+- builds_on: [[alien]] — use for someone living outside their home country, often by choice; sounds more refined than alien

@@ -6,6 +6,8 @@ pos: verb
 forms: [saunter]
 sources: [llm]
 status: enriched
+chart: walk
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 480
 sfi: 54.944
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[remonstrance]] — Use 'remonstrance' for a forceful, spoken protest, often implying earnest reasoning or complaint.
 - advanced_form: [[dissent]] — Use 'dissent' for a formal disagreement, especially in academic, legal, or political settings.
 - builds_on: [[con]] — Use 'objection' when expressing a direct opposition or flaw, often in meetings or legal contexts.
+- synonym: [[counterargument]]
+- collocation: [[interpose]]
+- synonym: [[nonconcurrence]]

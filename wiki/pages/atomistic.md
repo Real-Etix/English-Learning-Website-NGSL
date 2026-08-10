@@ -6,6 +6,8 @@ pos: adjective
 forms: [atomistic]
 sources: [llm]
 status: enriched
+chart: powder
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[atomic]] — Use this to emphasize the philosophical or scientific perspective of atoms as fundamental units.
+- synonym: [[particulate]]
+- synonym: [[discrete]]
+- collocation: [[view]]
+- collocation: [[society]]
+- collocation: [[competition]]
+- collocation: [[individual]]

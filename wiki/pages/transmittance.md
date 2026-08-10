@@ -6,6 +6,8 @@ pos: noun
 forms: [transmittance]
 sources: [llm]
 status: enriched
+chart: transparency
+region: transparency
 ---
 
 ## Definition

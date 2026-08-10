@@ -6,6 +6,8 @@ pos: noun
 forms: [winnowing]
 sources: [llm]
 status: enriched
+chart: spiral
+region: you
 ---
 
 ## Definition

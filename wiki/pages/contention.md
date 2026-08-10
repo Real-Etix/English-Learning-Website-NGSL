@@ -6,6 +6,8 @@ pos: noun
 forms: [contention]
 sources: [llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - builds_on: [[controversy]] — Use 'contention' when focusing on active, often public disagreement or debate, especially when positions are clearly opposed.
 - builds_on: [[competitiveness]] — Use when emphasizing the struggle or dispute inherent in a competitive situation.
 - builds_on: [[assertion]] — Use 'contention' when emphasizing that the assertion is debatable or part of an argument.
+- builds_on: [[allegation]] — Use when highlighting the arguable or disputed nature of the accusation, often in formal debate or writing.
+- builds_on: [[competition]] — Use when referring to being actively considered or competing for a prize, position, or opportunity.

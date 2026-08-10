@@ -9,6 +9,8 @@ rank: 885
 sfi: 52.7
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition

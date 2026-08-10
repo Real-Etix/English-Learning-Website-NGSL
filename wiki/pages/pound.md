@@ -9,6 +9,8 @@ rank: 984
 sfi: 59.69
 sources: [wordnet, llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[poundage]] — Use when referring to the aggregate weight in a commercial or shipping context, e.g., 'the poundage of the shipment exceeded the limit.'
 - advanced_form: [[avoirdupois]] — Use to specify the standard system of everyday weights, especially in contrast to troy or apothecary, e.g., 'the recipe uses avoirdupois ounces.'
 - builds_on: [[sterling]] — Use 'pound' in everyday conversation to refer to the basic unit of British currency; it is more common than 'sterling'.
+- synonym: [[batter]]
+- collocation: [[kilo]]
+- synonym: [[pummel]]
+- synonym: [[quid]]
+- synonym: [[throb]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [chalice]
 sources: [llm]
 status: enriched
+chart: cup
+region: cup
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cup]] — Use 'chalice' for a large cup with religious or ceremonial significance, especially in a formal or sacred context.
+- synonym: [[goblet]]
+- collocation: [[golden]]
+- collocation: [[silver]]
+- collocation: [[communion]]

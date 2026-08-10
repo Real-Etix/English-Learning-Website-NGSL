@@ -9,6 +9,8 @@ rank: 921
 sfi: 60.12
 sources: [wordnet, llm]
 status: enriched
+chart: land
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,15 @@ something owned
 - advanced_form: [[asset]] — Use 'asset' in financial or business contexts to emphasize value and utility.
 - advanced_form: [[estate]] — Use 'estate' specifically for land, buildings, or a large property, often implying inheritance or wealth.
 - advanced_form: [[holding]] — Use 'holding' (often plural) for investments or assets owned, especially in a portfolio or corporate context.
+- synonym: [[assets]]
+- synonym: [[belongings]]
+- synonym: [[chattel]]
+- collocation: [[commandeer]]
+- collocation: [[confiscate]]
+- collocation: [[grantee]]
+- collocation: [[leaseholder]]
+- collocation: [[vendee]]
+- collocation: [[landlord]]
+- builds_on: [[attribute]] — Use in formal or scientific contexts to describe an essential characteristic.
+- collocation: [[conveyable]]
+- collocation: [[deface]]

@@ -9,6 +9,8 @@ rank: 517
 sfi: 53.25
 sources: [wordnet, llm]
 status: enriched
+chart: inflammation
+region: inflammation
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[edema]] — Use 'edema' when you mean the swelling (fluid accumulation) that accompanies inflammation, rather than the general inflammatory response.
 - advanced_form: [[erythema]] — Use 'erythema' when referring to the redness of the skin caused by inflammation, often in medical contexts.
+- collocation: [[bowel]]

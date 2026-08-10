@@ -6,6 +6,8 @@ pos: noun
 forms: [superiority]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[excellence]] — Use 'superiority' to emphasize being better than others in a comparison, rather than just being good overall.
+- collocation: [[vaunt]]
+- collocation: [[airpower]]

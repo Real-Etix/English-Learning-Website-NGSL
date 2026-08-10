@@ -9,6 +9,8 @@ rank: 279
 sfi: 56.885
 sources: [wordnet, llm]
 status: enriched
+chart: leverage
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[preparation]] — Use 'preparation' instead of 'formulation' when referring to a finished product, especially in medical or cosmetic contexts, as it is more formal and general.
 - advanced_form: [[compound]] — Use 'compound' instead of 'formulation' to emphasize the chemical composition or mixture of ingredients, often in scientific or pharmaceutical settings.
 - advanced_form: [[solution]] — Use 'solution' instead of 'formulation' specifically for liquid preparations where ingredients are dissolved, as it is more precise and commonly used in medical contexts.
+- synonym: [[wording]]

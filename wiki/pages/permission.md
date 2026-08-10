@@ -9,6 +9,8 @@ rank: 2414
 sfi: 54.24
 sources: [wordnet, llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ approval to do something
 - advanced_form: [[authorization]] — Use authorization for official or formal approval, especially from an authority.
 - advanced_form: [[consent]] — Use consent when referring to voluntary agreement, often in legal or personal contexts.
 - advanced_form: [[clearance]] — Use clearance for permission to proceed after checks, often in security or logistics.
+- synonym: [[dispensation]]

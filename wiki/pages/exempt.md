@@ -9,6 +9,8 @@ rank: 330
 sfi: 54.87
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: free
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,4 @@ grant relief or an exemption from a rule or requirement to
 - advanced_form: [[absolve]] — Use 'absolve' when freeing someone from a moral, legal, or official obligation, often after forgiveness or clearance.
 - advanced_form: [[waive]] — Use 'waive' when deliberately choosing not to enforce a rule or requirement, especially in formal or bureaucratic settings.
 - advanced_form: [[dispense]] — Use 'dispense' (often with 'with') when granting an exemption from a specific rule or procedure in an official or administrative context.
+- synonym: [[privileged]]

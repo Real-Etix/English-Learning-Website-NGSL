@@ -9,6 +9,8 @@ rank: 806
 sfi: 51.22
 sources: [wordnet, llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - builds_on: [[graze]] — Use 'browse' when describing animals feeding on leaves, twigs, or other high-growing vegetation, especially at a leisurely pace.
 - advanced_form: [[peruse]] — Use when you are casually looking at items without intent to buy, but want a more formal or refined tone than browse.
 - advanced_form: [[survey]] — Use when scanning a wide selection with a deliberate, often more comprehensive look, emphasizing the range rather than casual browsing.
+- collocation: [[bookshop]]
+- collocation: [[bookstall]]

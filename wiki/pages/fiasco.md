@@ -6,6 +6,8 @@ pos: noun
 forms: [fiasco]
 sources: [llm]
 status: enriched
+chart: prevail
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[failure]] — Use 'fiasco' for a failure that is especially disastrous or ridiculous.
+- synonym: [[debacle]]
+- synonym: [[disaster]]
+- synonym: [[catastrophe]]
+- collocation: [[complete]]
+- collocation: [[utter]]
+- collocation: [[total]]
+- collocation: [[absolute]]
+- collocation: [[end]]

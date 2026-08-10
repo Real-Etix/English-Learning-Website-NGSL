@@ -9,6 +9,8 @@ rank: 780
 sfi: 52.97
 sources: [wordnet, llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[echelon]] — Use 'echelon' instead of 'tier' to emphasize hierarchical rank or social status, especially in formal or organizational contexts.
 - advanced_form: [[stratum]] — Use 'stratum' instead of 'tier' to refer to a social or cultural level, often in academic or analytical writing.
 - advanced_form: [[gradation]] — Use 'gradation' instead of 'tier' to highlight a series of gradual steps or degrees, rather than distinct fixed levels.
+- synonym: [[layer]]
+- synonym: [[row]]
+- builds_on: [[row]] — Use when the rows are stacked vertically, like seating or shelves.

@@ -6,6 +6,8 @@ pos: adjective
 forms: [remunerative]
 sources: [llm]
 status: enriched
+chart: lucrative
+region: you
 ---
 
 ## Definition

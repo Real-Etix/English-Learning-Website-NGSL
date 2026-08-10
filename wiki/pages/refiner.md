@@ -6,6 +6,8 @@ pos: noun
 forms: [refiner]
 sources: [llm]
 status: enriched
+chart: plant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[processor]] — Use 'refiner' instead of 'processor' when emphasizing purification or concentration, as in sugar or oil refining.
+- collocation: [[sugar]]
+- collocation: [[oil]]
+- collocation: [[grain]]
+- collocation: [[food]]
+- collocation: [[independent]]

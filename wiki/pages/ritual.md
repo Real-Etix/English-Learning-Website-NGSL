@@ -9,6 +9,8 @@ rank: 327
 sfi: 56.577
 sources: [wordnet, llm]
 status: enriched
+chart: convention
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - builds_on: [[habit]] — Use 'ritual' when the habit is performed in a set order or has personal significance, often with a ceremonial feel.
 - builds_on: [[routine]] — Use 'ritual' when the routine has a ceremonial, symbolic, or deeply personal significance, not just a mechanical sequence of actions.
 - builds_on: [[ceremony]] — Use 'ritual' when the ceremony involves a fixed, often symbolic set of actions, especially in religious or traditional contexts.
+- synonym: [[ceremonial]]
+- collocation: [[invocation]]
+- collocation: [[obeisance]]

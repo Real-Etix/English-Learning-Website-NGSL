@@ -6,6 +6,8 @@ pos: noun
 forms: [agitation]
 sources: [llm]
 status: enriched
+chart: occupation
+region: you
 ---
 
 ## Definition

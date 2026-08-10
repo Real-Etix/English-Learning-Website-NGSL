@@ -6,6 +6,8 @@ pos: verb
 forms: [conciliate]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mediate]] — Use 'conciliate' when the goal is to win over or pacify someone through friendly gestures, not just negotiation.
+- synonym: [[appease]]
+- synonym: [[pacify]]
+- synonym: [[placate]]
+- synonym: [[reconcile]]
+- synonym: [[soothe]]
+- collocation: [[between]]
+- collocation: [[with]]
+- collocation: [[attempt]]

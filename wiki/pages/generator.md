@@ -9,6 +9,8 @@ rank: 914
 sfi: 51.4
 sources: [wordnet, llm]
 status: enriched
+chart: generator
+region: generator
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adverb
 forms: [regionally]
 sources: [llm]
 status: enriched
+chart: locally
+region: locally
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[locally]] — Use when specifying a geographic area larger than a single locality but smaller than the whole country, as a more formal alternative to 'locally' in business or planning contexts.
+- synonym: [[provincially]]
+- collocation: [[specific]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [insurrectionist]
 sources: [llm]
 status: enriched
+chart: irregular
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[insurgent]] — Use 'insurrectionist' instead of 'insurgent' when emphasizing active participation in a planned uprising against authority, often with a broader connotation of rebellion.
+- synonym: [[rebel]]
+- synonym: [[revolutionary]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [antithetical]
 sources: [llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition

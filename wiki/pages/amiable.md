@@ -6,6 +6,8 @@ pos: adjective
 forms: [amiable]
 sources: [llm]
 status: enriched
+chart: constitutional
+region: you
 ---
 
 ## Definition

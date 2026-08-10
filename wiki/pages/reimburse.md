@@ -9,6 +9,8 @@ rank: 375
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ pay back for some expense incurred
 - advanced_form: [[recompense]] — Use 'recompense' when emphasizing compensation for effort or loss, often more formal than 'reimburse'.
 - advanced_form: [[indemnify]] — Use 'indemnify' specifically for financial protection against loss or damage, typically in legal or insurance contexts.
 - advanced_form: [[remunerate]] — Use 'remunerate' when referring to payment for work or services, more formal than 'reimburse' which is for expenses.
+- synonym: [[rebate]]

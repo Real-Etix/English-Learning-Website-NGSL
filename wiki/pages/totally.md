@@ -9,6 +9,8 @@ rank: 1396
 sfi: 57.87
 sources: [wordnet, llm]
 status: enriched
+chart: part
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,8 @@ to a complete degree or to the full or entire extent (`whole' is often used info
 - advanced_form: [[utterly]] — Use 'utterly' instead of 'totally' for stronger emphasis, often in negative or extreme contexts.
 - advanced_form: [[wholly]] — Use 'wholly' instead of 'totally' in formal or written contexts to stress absolute completeness.
 - advanced_form: [[thoroughly]] — Use 'thoroughly' instead of 'totally' to emphasize depth or detail, especially for experiences or actions.
+- collocation: [[adore]]
+- collocation: [[immersed]]
+- collocation: [[irrelevant]]
+- collocation: [[unreal]]
+- collocation: [[unmindful]]

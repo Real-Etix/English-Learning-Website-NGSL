@@ -9,6 +9,8 @@ rank: 312
 sfi: 55.61
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 
 ## Connections
 - domain: fitness
+- synonym: [[application]]
+- synonym: [[program]]
+- synonym: [[software]]
+- synonym: [[tool]]
+- synonym: [[utility]]

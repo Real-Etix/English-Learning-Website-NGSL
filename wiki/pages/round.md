@@ -9,6 +9,8 @@ rank: 519
 sfi: 62.77
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[shell]] — Use 'shell' for ammunition in shotguns or large-caliber weapons; often implies a casing containing multiple pellets or a high-explosive charge, distinct from a standard bullet round.
 - builds_on: [[bullet]] — Use when referring to a single unit of ammunition, including the bullet, casing, and powder.
 - builds_on: [[shell]] — Use 'round' for a single unit of ammunition, especially for firearms, in military or shooting contexts.
+- collocation: [[divisional]]
+- synonym: [[iteration]]
+- synonym: [[rotund]]

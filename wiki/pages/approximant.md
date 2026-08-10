@@ -6,6 +6,8 @@ pos: noun
 forms: [approximant]
 sources: [llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[glide]] — Use 'approximant' as a broader technical term for sounds where articulators approach each other without creating turbulence.
+- synonym: [[consonant]]
+- synonym: [[liquid]]
+- synonym: [[semivowel]]
+- synonym: [[sound]]
+- collocation: [[lateral]]

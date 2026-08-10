@@ -6,6 +6,8 @@ pos: noun
 forms: [thorax]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition

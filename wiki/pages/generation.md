@@ -9,6 +9,8 @@ rank: 998
 sfi: 59.63
 sources: [wordnet, llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[production]] — Use 'generation' for the production of energy, power, or abstract things like ideas.
 - advanced_form: [[cohort]] — Use 'cohort' instead of 'generation' when referring to a specific group defined by a shared characteristic or time period, especially in academic or statistical contexts.
 - advanced_form: [[contemporaries]] — Use 'contemporaries' instead of 'generation' when emphasizing people living at the exact same time as a particular person, often in historical or biographical contexts.
+- synonym: [[era]]
+- collocation: [[gap]]

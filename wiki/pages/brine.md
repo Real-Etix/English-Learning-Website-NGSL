@@ -6,6 +6,8 @@ pos: noun
 forms: [brine]
 sources: [llm]
 status: enriched
+chart: profound
+region: you
 ---
 
 ## Definition

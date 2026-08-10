@@ -9,6 +9,8 @@ rank: 493
 sfi: 54.804
 sources: [wordnet, llm]
 status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[supplantation]] — Use 'supplantation' when focusing on replacement through force or cunning, especially in competitive or evolving contexts.
 - advanced_form: [[ousting]] — Use 'ousting' to stress the forceful removal of someone from a position, often leading to replacement.
 - builds_on: [[relocation]] — Use 'displacement' when the relocation is forced or involuntary, often due to conflict or disaster.
+- synonym: [[diaspora]]
+- synonym: [[supersession]]

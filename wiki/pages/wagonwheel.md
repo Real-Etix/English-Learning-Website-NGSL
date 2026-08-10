@@ -6,6 +6,8 @@ pos: noun
 forms: [wagonwheel]
 sources: [llm]
 status: enriched
+chart: cartwheel
+region: cartwheel
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cartwheel]] — Use when referring to a wheel from a wagon, often larger than a typical cartwheel.
+- synonym: [[carriagewheel]]
+- synonym: [[wheel]]
+- collocation: [[wooden]]
+- collocation: [[rustic]]
+- collocation: [[farm]]
+- collocation: [[iron]]

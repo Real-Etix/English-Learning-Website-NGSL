@@ -6,6 +6,8 @@ pos: noun
 forms: [treadwheel]
 sources: [llm]
 status: enriched
+chart: treadmill
+region: treadmill
 ---
 
 ## Definition

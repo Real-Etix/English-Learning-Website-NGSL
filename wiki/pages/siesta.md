@@ -6,6 +6,8 @@ pos: noun
 forms: [siesta]
 sources: [llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nap]] — Use 'siesta' specifically for a short nap taken in the early afternoon, often associated with warm climates or cultures.
+- synonym: [[catnap]]

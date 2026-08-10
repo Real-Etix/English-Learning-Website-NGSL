@@ -6,6 +6,8 @@ pos: adjective
 forms: [swift]
 sources: [llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[fast]] — Use 'swift' for immediate, decisive actions or movements that are smooth and efficient, implying grace or urgency, not just general speed.
 - builds_on: [[quick]] — Use 'swift' for rapid action that is smooth and decisive, more literary than 'quick'.
 - builds_on: [[rapid]] — Use 'swift' for smooth, agile speed, often in movement or action.
+- collocation: [[riposte]]

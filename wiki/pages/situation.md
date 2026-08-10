@@ -9,6 +9,8 @@ rank: 430
 sfi: 63.7
 sources: [wordnet, llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,16 @@ the general state of things
 - advanced_form: [[circumstance]] — Use 'circumstance' when focusing on the specific factors or conditions surrounding an event, rather than the general state.
 - advanced_form: [[predicament]] — Use 'predicament' when the situation involves a difficult, unpleasant, or embarrassing problem with no easy solution.
 - advanced_form: [[condition]] — Use 'condition' when referring to the current state or status of something, often in a more formal or technical context.
+- collocation: [[aggravate]]
+- collocation: [[awkward]]
+- collocation: [[challenging]]
+- collocation: [[comical]]
+- collocation: [[desperate]]
+- collocation: [[evolving]]
+- collocation: [[given]]
+- collocation: [[humorous]]
+- collocation: [[paradoxical]]
+- collocation: [[reassess]]
+- collocation: [[ridiculous]]
+- collocation: [[extricate]]
+- collocation: [[troublesome]]

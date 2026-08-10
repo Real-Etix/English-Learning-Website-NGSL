@@ -9,6 +9,8 @@ rank: 215
 sfi: 56.33
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ become one
 - advanced_form: [[integrate]] — Use 'integrate' when combining parts into a whole that works smoothly together, especially in technology or systems.
 - builds_on: [[consolidate]] — Use when combining two or more things into a single unit, common in business and technology.
 - builds_on: [[converge]] — Use 'merge' when two or more things combine into one, often in business or traffic.
+- synonym: [[conflate]]
+- synonym: [[fuse]]

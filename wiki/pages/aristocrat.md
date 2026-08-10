@@ -6,6 +6,8 @@ pos: noun
 forms: [aristocrat]
 sources: [llm]
 status: enriched
+chart: gentleman
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gentleman]] — Use 'aristocrat' to highlight membership in the upper class by birth or title, with an expectation of elegant behavior.
+- synonym: [[noble]]
+- synonym: [[peer]]
+- synonym: [[patrician]]
+- collocation: [[wealthy]]
+- collocation: [[young]]

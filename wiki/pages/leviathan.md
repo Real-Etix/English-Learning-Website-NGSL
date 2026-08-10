@@ -6,6 +6,8 @@ pos: noun
 forms: [leviathan]
 sources: [llm]
 status: enriched
+chart: whale
+region: whale
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[giant]] — Use 'leviathan' for a creature that is monstrous and often associated with the sea or mythical origins, emphasizing its terrifying size.
+- synonym: [[behemoth]]
+- synonym: [[colossus]]
+- collocation: [[massive]]
+- collocation: [[industrial]]

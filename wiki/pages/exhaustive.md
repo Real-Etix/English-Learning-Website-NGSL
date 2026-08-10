@@ -6,6 +6,8 @@ pos: adjective
 forms: [exhaustive]
 sources: [llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[intensive]] — Use 'exhaustive' when something is comprehensive and covers all details, leaving nothing out, while 'intensive' is about intensity of effort rather than completeness.
 - builds_on: [[inclusive]] — Use 'exhaustive' when something leaves no possibility unexamined, implying a very high degree of inclusiveness.
 - builds_on: [[comprehensive]] — Use 'exhaustive' when you want to emphasize that nothing has been left out; it is more formal and definitive than 'comprehensive'.
+- collocation: [[enumeration]]

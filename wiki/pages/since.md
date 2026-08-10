@@ -9,6 +9,8 @@ rank: 191
 sfi: 67.12
 sources: []
 status: seeded
+chart: comparable
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[because]]
+- synonym: [[whereas]]

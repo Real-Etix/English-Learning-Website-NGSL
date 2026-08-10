@@ -9,6 +9,8 @@ rank: 919
 sfi: 52.44
 sources: [wordnet, llm]
 status: enriched
+chart: tobacco
+region: tobacco
 ---
 
 ## Definition

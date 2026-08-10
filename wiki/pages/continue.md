@@ -9,6 +9,8 @@ rank: 308
 sfi: 64.96
 sources: [wordnet, llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - antonym: [[discontinue]]
 - advanced_form: [[persist]] — Use 'persist' when continuing despite difficulty, opposition, or delay; 'continue' is more neutral.
 - advanced_form: [[endure]] — Use 'endure' when something continues over time, especially through hardship or challenges; 'continue' is less emphatic.
+- synonym: [[recommence]]

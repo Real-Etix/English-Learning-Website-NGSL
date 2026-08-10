@@ -9,6 +9,8 @@ rank: 366
 sfi: 54.75
 sources: [wordnet, llm]
 status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition

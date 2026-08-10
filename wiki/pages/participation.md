@@ -9,6 +9,8 @@ rank: 2528
 sfi: 53.86
 sources: [wordnet, llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - builds_on: [[involvement]] — Use 'participation' as a more formal synonym for 'involvement', especially in structured activities or events.
 - advanced_form: [[engagement]] — Use 'engagement' to emphasize active involvement and commitment, rather than mere presence.
 - advanced_form: [[contribution]] — Use 'contribution' to focus on the specific input or share in an activity, rather than just taking part.
+- collocation: [[workforce]]
+- builds_on: [[contribution]] — Use when you want to highlight the person's active involvement, rather than the particular effect of what they gave.

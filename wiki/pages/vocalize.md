@@ -6,6 +6,8 @@ pos: verb
 forms: [vocalize]
 sources: [llm]
 status: enriched
+chart: sing
+region: sing
 ---
 
 ## Definition

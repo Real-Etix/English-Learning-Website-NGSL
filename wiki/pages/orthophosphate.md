@@ -6,6 +6,8 @@ pos: noun
 forms: [orthophosphate]
 sources: [llm]
 status: enriched
+chart: phosphate
+region: phosphate
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[phosphate]] — Use 'orthophosphate' when you need to specify the simple, uncondensed phosphate ion versus other forms like pyrophosphate or polyphosphate.
+- collocation: [[concentration]]
+- collocation: [[soluble]]
+- collocation: [[test]]
+- collocation: [[removal]]

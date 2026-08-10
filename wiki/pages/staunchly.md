@@ -6,6 +6,8 @@ pos: adverb
 forms: [staunchly]
 sources: [llm]
 status: enriched
+chart: firm
+region: you
 ---
 
 ## Definition

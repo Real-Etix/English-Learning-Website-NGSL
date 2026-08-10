@@ -6,6 +6,8 @@ pos: noun
 forms: [blouse]
 sources: [llm]
 status: enriched
+chart: shirt
+region: shirt
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shirt]] — Use 'blouse' for a more formal or feminine top, often with details like buttons or a collar.
+- synonym: [[top]]
+- synonym: [[tunic]]
+- collocation: [[white]]
+- collocation: [[cotton]]
+- collocation: [[wear]]

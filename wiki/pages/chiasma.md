@@ -6,6 +6,8 @@ pos: noun
 forms: [chiasma]
 sources: [llm]
 status: enriched
+chart: crossover
+region: crossover
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crossover]] — Use 'chiasma' to specifically refer to the point of crossover visible under a microscope; it is a technical term for the structure.
+- synonym: [[crossing]]
+- synonym: [[intersection]]
+- synonym: [[junction]]
+- collocation: [[formation]]
+- collocation: [[frequency]]
+- collocation: [[terminal]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [encapsulate]
 sources: [llm]
 status: enriched
+chart: resume
+region: you
 ---
 
 ## Definition

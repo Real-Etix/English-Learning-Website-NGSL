@@ -9,6 +9,8 @@ rank: 32
 sfi: 60.65
 sources: [wordnet, llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[itinerary]] — Use when referring to a detailed plan, especially for travel or events.
 - advanced_form: [[docket]] — Use in formal contexts for a list of tasks or proceedings, like a schedule or agenda.
 - builds_on: [[passenger]] — Use 'fare' instead of 'passenger' when focusing on the payment aspect or in the context of hired transportation.
+- synonym: [[cuisine]]
+- collocation: [[omnibus]]

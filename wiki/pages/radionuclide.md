@@ -6,6 +6,8 @@ pos: noun
 forms: [radionuclide]
 sources: [llm]
 status: enriched
+chart: uranium
+region: uranium
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[uranium]] — Use when discussing radioactivity or nuclear physics to sound more technical.
+- collocation: [[decay]]
+- collocation: [[medical]]
+- collocation: [[environmental]]

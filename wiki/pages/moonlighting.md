@@ -6,6 +6,8 @@ pos: noun
 forms: [moonlighting]
 sources: [llm]
 status: enriched
+chart: overtime
+region: overtime
 ---
 
 ## Definition

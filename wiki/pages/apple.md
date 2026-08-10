@@ -9,6 +9,8 @@ rank: 436
 sfi: 53.97
 sources: [wordnet, llm]
 status: enriched
+chart: apple
+region: apple
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[pome]] — Use 'pome' in technical or scientific contexts instead of the common word 'apple' when referring to the fruit type.
 - advanced_form: [[pippin]] — Use 'pippin' to specify a particular variety of apple, especially in literary or descriptive contexts.
 - advanced_form: [[crabapple]] — Use 'crabapple' to refer to a small, wild apple variety, often used for cooking or ornamental purposes.
+- collocation: [[crisp]]
+- collocation: [[rootstock]]

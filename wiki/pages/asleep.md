@@ -9,6 +9,8 @@ rank: 752
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: asleep
+region: asleep
 ---
 
 ## Definition

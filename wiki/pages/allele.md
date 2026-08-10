@@ -6,6 +6,8 @@ pos: noun
 forms: [allele]
 sources: [llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gene]] — Use 'allele' when referring to a specific variant of a gene, such as a dominant or recessive version, rather than the gene in general.
+- synonym: [[variant]]
+- synonym: [[form]]
+- synonym: [[version]]
+- synonym: [[type]]
+- collocation: [[dominant]]

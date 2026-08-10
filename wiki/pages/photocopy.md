@@ -9,6 +9,8 @@ rank: 123
 sfi: 57.47
 sources: [wordnet, llm]
 status: enriched
+chart: fax
+region: fax
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[reprint]] — Use when referring to a copy made by reprinting the original, especially for documents or books.
 - advanced_form: [[facsimile]] — Use for an exact copy, often of a rare or historical document, emphasizing high fidelity.
+- synonym: [[xerox]]

@@ -9,6 +9,8 @@ rank: 1413
 sfi: 57.8
 sources: [wordnet, llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ the sensation that results when taste buds in the tongue and throat convey infor
 - advanced_form: [[savor]] — Use 'savor' for a more literary or appreciative tone, especially for pleasant or lingering flavors.
 - advanced_form: [[palate]] — Use 'palate' when discussing the overall range or sophistication of flavors, often in wine or food tasting.
 - advanced_form: [[tang]] — Use 'tang' for a strong, sharp, or pungent taste, often with a zesty or acidic quality.
+- collocation: [[acidulous]]
+- collocation: [[acrid]]
+- collocation: [[chemoreceptor]]
+- collocation: [[cultivated]]
+- collocation: [[cultured]]
+- collocation: [[debauch]]
+- collocation: [[discriminating]]
+- collocation: [[idiosyncratic]]
+- collocation: [[impeccable]]
+- synonym: [[predilection]]

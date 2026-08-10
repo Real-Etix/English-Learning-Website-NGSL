@@ -6,6 +6,8 @@ pos: noun
 forms: [flank]
 sources: [llm]
 status: enriched
+chart: rely
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[side]] — Use 'flank' when emphasizing the lateral part of something, often in a military or anatomical context, where 'side' feels too broad or informal.
+- synonym: [[wing]]
+- synonym: [[hip]]
+- collocation: [[left]]
+- collocation: [[right]]
+- collocation: [[enemy]]
+- collocation: [[attack]]
+- collocation: [[cover]]

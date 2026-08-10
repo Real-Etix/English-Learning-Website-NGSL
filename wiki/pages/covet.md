@@ -6,6 +6,8 @@ pos: verb
 forms: [covet]
 sources: [llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[want]] — Use 'covet' when the desire includes envy or longing for something belonging to someone else, often with a negative connotation.
+- synonym: [[desire]]
+- synonym: [[crave]]

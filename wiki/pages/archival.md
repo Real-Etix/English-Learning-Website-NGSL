@@ -6,6 +6,8 @@ pos: adjective
 forms: [archival]
 sources: [llm]
 status: enriched
+chart: historical
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[historical]] — Use 'archival' instead of 'historical' when referring to materials stored in an archive, especially primary sources.
+- synonym: [[documentary]]
+- synonym: [[institutional]]
+- synonym: [[documental]]
+- collocation: [[footage]]

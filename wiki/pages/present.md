@@ -9,6 +9,8 @@ rank: 275
 sfi: 65.54
 sources: [wordnet, llm]
 status: enriched
+chart: present
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,10 @@ _No sourced examples yet._
 - builds_on: [[today]] — Use 'present' instead of 'today' in formal or philosophical contexts to emphasize the current moment as a distinct time period.
 - builds_on: [[introduce]] — Use 'present' when you introduce someone in a formal or ceremonial context, especially to a higher status person.
 - builds_on: [[pose]] — Use 'present' when formally introducing an issue, problem, or opportunity, often in written or professional contexts.
+- synonym: [[adduce]]
+- collocation: [[birthday]]
+- collocation: [[corporeally]]
+- collocation: [[counterargument]]
+- synonym: [[modernity]]
+- collocation: [[pervasively]]
+- synonym: [[here]]

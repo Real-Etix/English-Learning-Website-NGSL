@@ -9,6 +9,8 @@ rank: 2341
 sfi: 54.48
 sources: [wordnet, llm]
 status: enriched
+chart: virus
+region: virus
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[pathogen]] — Use 'pathogen' when you want to discuss any disease-causing agent in a general or formal context, rather than specifically a virus.
 - advanced_form: [[virion]] — Use 'virion' in technical or scientific contexts to refer to the physical virus particle, especially when describing its structure or behavior outside a host.
+- collocation: [[influenza]]
+- collocation: [[latency]]
+- collocation: [[macro]]

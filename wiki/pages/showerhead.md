@@ -6,6 +6,8 @@ pos: noun
 forms: [showerhead]
 sources: [llm]
 status: enriched
+chart: shower
+region: shower
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [individuality]
 sources: [llm]
 status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 348
 sfi: 64.54
 sources: [wordnet]
 status: seeded
+chart: various
+region: you
 ---
 
 ## Definition

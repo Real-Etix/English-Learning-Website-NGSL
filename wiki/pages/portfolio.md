@@ -9,6 +9,8 @@ rank: 5
 sfi: 64.97
 sources: [wordnet, llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ a large, flat, thin case for carrying loose papers or drawings or maps
 - builds_on: [[briefcase]] — Use 'portfolio' when the case is flat and designed for holding documents, artwork, or sheets of paper.
 - advanced_form: [[folio]] — Use this for a large folder or case that holds loose papers, especially in art or formal document settings.
 - advanced_form: [[wallet]] — Use this for a flat, folding case for documents or papers, often with multiple compartments; it's a more formal term than 'portfolio' and less associated with art.
+- collocation: [[hedging]]
+- collocation: [[reshuffle]]

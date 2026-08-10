@@ -6,6 +6,8 @@ pos: adjective
 forms: [tenuous]
 sources: [llm]
 status: enriched
+chart: hazardous
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[unsecured]] — Use 'tenuous' when something is very weak or slight, often in a figurative sense.
+- synonym: [[insubstantial]]

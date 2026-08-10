@@ -6,6 +6,8 @@ pos: noun
 forms: [trimester]
 sources: [llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition

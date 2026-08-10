@@ -9,6 +9,8 @@ rank: 2016
 sfi: 55.5
 sources: [wordnet, llm]
 status: enriched
+chart: overhead
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[dome]] — Use 'dome' when the roof has a rounded, hemispherical shape, often for grand or religious buildings.
 - advanced_form: [[canopy]] — Use 'canopy' for a roof-like covering that is often decorative, overhanging, or supported by columns, rather than the main roof of a building.
+- collocation: [[carport]]
+- collocation: [[cabriolet]]
+- collocation: [[truss]]

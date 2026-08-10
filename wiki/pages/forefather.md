@@ -6,6 +6,8 @@ pos: noun
 forms: [forefather]
 sources: [llm]
 status: enriched
+chart: root
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ancestor]] — Use 'forefather' when emphasizing cultural or national heritage, often in plural form 'forefathers'.
+- synonym: [[forebear]]
+- synonym: [[progenitor]]
+- synonym: [[predecessor]]
+- collocation: [[nation]]

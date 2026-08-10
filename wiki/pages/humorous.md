@@ -6,6 +6,8 @@ pos: adjective
 forms: [humorous]
 sources: [llm]
 status: enriched
+chart: rough
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[funny]] — Use 'humorous' to describe something intentionally or naturally funny, often in a clever or subtle way.
+- synonym: [[amusing]]
+- synonym: [[comical]]
+- collocation: [[story]]
+- collocation: [[anecdote]]
+- collocation: [[situation]]
+- collocation: [[side]]

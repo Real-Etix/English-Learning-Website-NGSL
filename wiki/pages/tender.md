@@ -9,6 +9,8 @@ rank: 2787
 sfi: 52.12
 sources: [wordnet, llm]
 status: enriched
+chart: tender
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,8 @@ given to sympathy or gentleness or sentimentality
 - advanced_form: [[compassionate]] — Use 'compassionate' when focusing on deep empathy and a desire to alleviate suffering, stronger than 'tender' which is more about gentle, soft feelings.
 - advanced_form: [[affectionate]] — Use 'affectionate' to emphasize warm, loving feelings in personal relationships, whereas 'tender' can also imply vulnerability or sentiment.
 - advanced_form: [[solicitous]] — Use 'solicitous' for a formal or careful kind of concern, often with attentive actions; 'tender' is more emotionally soft and less about active care.
+- synonym: [[aching]]
+- synonym: [[inflamed]]
+- collocation: [[lovemaking]]
+- synonym: [[womanly]]
+- builds_on: [[peso]] — Use in formal or legal contexts to emphasize that the money is officially accepted as payment.

@@ -2,17 +2,23 @@
  * Phase 1 reward math — pure functions, no DB. Rarity comes from the wiki itself
  * (tier + frequency rank), so collecting feels rewarding before there's a user base.
  */
-export type WordLike = { tier: "core" | "advanced"; rank: number | null };
+export type WordLike = { tier: "core" | "advanced"; sfi: number | null };
 
-/** XP for collecting one word: base by tier + a bonus for rarer/harder words. */
+/**
+ * XP for collecting one word: base by tier + a bonus for rarer words.
+ * Banded on SFI (Standard Frequency Index), which is comparable across lists —
+ * unlike per-list `rank`. Higher SFI = more common, so the bonus is inverse to it.
+ * Advanced words carry no SFI (WordNet expansions), so they get the top bonus.
+ * (Corpus SFI runs ~39–88, clustered 53–63; thresholds are ~quartiles.)
+ */
 export function wordXp(word: WordLike): number {
   const base = word.tier === "advanced" ? 25 : 10;
-  let rankBonus: number;
-  if (word.rank == null) rankBonus = 15; // advanced words have no frequency rank → treat as rare
-  else if (word.rank <= 500) rankBonus = 0; // very common
-  else if (word.rank <= 2000) rankBonus = 5;
-  else rankBonus = 12; // uncommon
-  return base + rankBonus;
+  let bonus: number;
+  if (word.sfi == null) bonus = 15;
+  else if (word.sfi >= 59) bonus = 0; // very common
+  else if (word.sfi >= 53) bonus = 5; // mid-frequency
+  else bonus = 12; // uncommon
+  return base + bonus;
 }
 
 /** Level from total XP: gentle square-root curve. Level 1 starts at 0 XP. */

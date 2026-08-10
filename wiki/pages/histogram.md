@@ -7,8 +7,10 @@ forms: [histogram, histograms]
 lists: [business]
 rank: 1710
 sfi: 48.58
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 
 ## Connections
 - domain: business
+- collocation: [[frequency]]
+- collocation: [[image]]
+- collocation: [[of]]
+- advanced_form: [[distribution]] — Use when focusing on the statistical concept of how data points are spread, rather than the specific bar-chart visual.
+- advanced_form: [[visualization]] — Use for a broad, technical term for any data imagery, especially when discussing data presentation in general.

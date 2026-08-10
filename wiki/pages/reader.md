@@ -9,6 +9,8 @@ rank: 1143
 sfi: 58.92
 sources: [wordnet, llm]
 status: enriched
+chart: spokesperson
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - builds_on: [[lecturer]] — Use 'reader' for a senior lecturer at a British university, often just below professor, to denote a higher academic rank than a standard lecturer.
 - advanced_form: [[bibliophile]] — Use 'bibliophile' instead of 'reader' when emphasizing a deep love and collection of books, not just the act of reading.
 - advanced_form: [[bookworm]] — Use 'bookworm' for a person who reads obsessively, often for pleasure, with a slightly informal and affectionate tone.
+- collocation: [[avid]]
+- collocation: [[e-book]]
+- collocation: [[observant]]
+- collocation: [[perceptive]]
+- synonym: [[primer]]

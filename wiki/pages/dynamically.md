@@ -6,6 +6,8 @@ pos: adverb
 forms: [dynamically]
 sources: [llm]
 status: enriched
+chart: energetically
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[energetically]] — Use 'dynamically' to highlight active, changing energy, often in a collaborative or innovative context.
+- synonym: [[vigorously]]
+- synonym: [[actively]]

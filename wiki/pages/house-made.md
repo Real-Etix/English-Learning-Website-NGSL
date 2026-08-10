@@ -6,6 +6,8 @@ pos: adjective
 forms: [house-made]
 sources: [llm]
 status: enriched
+chart: homemade
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[homemade]] — Use 'house-made' specifically for food or beverages made on the premises of a restaurant or café.
+- synonym: [[fresh]]
+- synonym: [[artisan]]
+- collocation: [[pasta]]
+- collocation: [[bread]]

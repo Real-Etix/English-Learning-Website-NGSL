@@ -9,6 +9,8 @@ rank: 363
 sfi: 54.92
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,7 @@ decrease in size, extent, or range
 - advanced_form: [[dwindle]] — Use 'dwindle' when emphasizing a gradual, often concerning reduction in quantity or size, especially of resources or numbers.
 - advanced_form: [[wane]] — Use 'wane' when describing a decline in strength, influence, or popularity, often over a period of time.
 - builds_on: [[fade]] — Use 'diminish' to emphasize a gradual reduction in intensity or visibility, often over time.
+- synonym: [[dampen]]
+- synonym: [[deplete]]
+- synonym: [[impair]]
+- synonym: [[whittle]]

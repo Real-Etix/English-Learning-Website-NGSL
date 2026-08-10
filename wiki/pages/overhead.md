@@ -9,6 +9,8 @@ rank: 38
 sfi: 63.66
 sources: [wordnet, llm]
 status: enriched
+chart: overhead
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - builds_on: [[projector]] — Use 'overhead' specifically for older style transparency projectors, emphasizing the device rather than the projection concept.
 - builds_on: [[ceiling]] — Use 'overhead' as a noun for the space or surface above, common in construction and design contexts.
 - builds_on: [[overhand]] — Use when focusing on the trajectory of the throw or strike coming from above the head, typical in sports like baseball and volleyball.
+- synonym: [[aloft]]
+- synonym: [[overarm]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [triggering]
 sources: [llm]
 status: enriched
+chart: offset
+region: you
 ---
 
 ## Definition

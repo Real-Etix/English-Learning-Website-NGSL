@@ -9,6 +9,8 @@ rank: 1259
 sfi: 51.4
 sources: [wordnet, llm]
 status: enriched
+chart: fax
+region: fax
 ---
 
 ## Definition

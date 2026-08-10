@@ -9,6 +9,8 @@ rank: 1201
 sfi: 58.65
 sources: [wordnet, llm]
 status: enriched
+chart: diamond
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ round object that is hit or thrown or kicked in games
 - advanced_form: [[sphere]] — Use 'sphere' in formal or technical descriptions of the ball's shape.
 - advanced_form: [[orb]] — Use 'orb' for a poetic or mystical tone, not for typical sports.
 - advanced_form: [[spheroid]] — Use 'spheroid' for a precise scientific description, especially for balls that are not perfectly round.
+- collocation: [[courttennis]]
+- collocation: [[masquerade]]
+- synonym: [[pommel]]
+- collocation: [[punt]]
+- collocation: [[soccer]]
+- synonym: [[hoops]]

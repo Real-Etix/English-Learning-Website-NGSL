@@ -9,6 +9,8 @@ rank: 181
 sfi: 57.805
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[distillate]] — Use 'distillate' instead of 'fraction' when the separation is specifically by distillation and you want a more precise term.
 - builds_on: [[proportion]] — Use 'fraction' for a numerical part of a whole, often implying a smaller portion, more specific than 'proportion' which is the general ratio.
 - builds_on: [[portion]] — Use 'fraction' to highlight a numerical or proportional part, especially when the whole is considered as a unit.
+- collocation: [[denominator]]
+- collocation: [[improper]]

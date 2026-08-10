@@ -6,6 +6,8 @@ pos: noun
 forms: [pocketbook]
 sources: [llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[wallet]] — Use 'pocketbook' for a wallet that also functions as a small clutch or handheld accessory, common in American English for women's wallets.
 - builds_on: [[purse]] — Use 'pocketbook' for a wallet-like purse, especially in American English, to sound more formal or old-fashioned.
+- synonym: [[billfold]]
+- synonym: [[handbag]]

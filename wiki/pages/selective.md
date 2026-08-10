@@ -9,6 +9,8 @@ rank: 322
 sfi: 56.637
 sources: [wordnet, llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ tending to select
 - domain: academic
 - advanced_form: [[discriminating]] — Use when emphasizing refined taste or careful selection based on quality or value.
 - advanced_form: [[discerning]] — Use when highlighting keen insight or the ability to make fine distinctions.
+- collocation: [[herbicide]]
+- collocation: [[ionophore]]
+- collocation: [[fetocide]]

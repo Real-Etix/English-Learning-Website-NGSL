@@ -6,6 +6,8 @@ pos: verb
 forms: [regale]
 sources: [llm]
 status: enriched
+chart: divert
+region: you
 ---
 
 ## Definition

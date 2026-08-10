@@ -6,6 +6,8 @@ pos: noun
 forms: [applicability]
 sources: [llm]
 status: enriched
+chart: relevance
+region: relevance
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[relevance]] — Use 'applicability' when focusing on how well something relates to a specific practical context or problem.
+- synonym: [[suitability]]
+- synonym: [[pertinence]]
+- synonym: [[aptness]]
+- collocation: [[general]]
+- collocation: [[practical]]

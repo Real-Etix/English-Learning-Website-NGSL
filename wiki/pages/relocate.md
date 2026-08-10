@@ -9,6 +9,8 @@ rank: 236
 sfi: 55.74
 sources: [wordnet, llm]
 status: enriched
+chart: shift
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - builds_on: [[transplant]] — Use 'relocate' instead of 'transplant' when moving an organization, group, or person to a new location, especially for permanent or long-term resettlement.
 - builds_on: [[migrate]] — Use 'relocate' for moving within a country or for professional reasons, often implying assistance or planning, while 'migrate' usually implies cross-border or seasonal movement.
 - builds_on: [[transfer]] — Use 'relocate' when emphasizing moving someone to a different physical location, often with the implication of permanent or long-term change.
+- synonym: [[emigrate]]
+- synonym: [[immigrate]]
+- synonym: [[reassign]]
+- synonym: [[rehome]]

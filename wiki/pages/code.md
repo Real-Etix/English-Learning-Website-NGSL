@@ -9,6 +9,8 @@ rank: 1346
 sfi: 58.06
 sources: [wordnet, llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - builds_on: [[notation]] — Use 'code' when the notation involves a systematic transformation or encoding, such as in mathematics or genetics.
 - advanced_form: [[canon]] — Use 'canon' for a formal set of principles or rules, especially in a professional or moral context.
 - advanced_form: [[protocol]] — Use 'protocol' for an official system of rules governing procedures, often in technical or diplomatic settings.
+- synonym: [[encipher]]
+- synonym: [[encrypt]]
+- collocation: [[keypad]]
+- synonym: [[passcode]]
+- collocation: [[penal]]
+- collocation: [[postal]]

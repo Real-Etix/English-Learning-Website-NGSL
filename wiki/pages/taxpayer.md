@@ -9,6 +9,8 @@ rank: 132
 sfi: 56.92
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: patron
+region: you
 ---
 
 ## Definition

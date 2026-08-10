@@ -6,6 +6,8 @@ pos: noun
 forms: [underarm]
 sources: [llm]
 status: enriched
+chart: armpit
+region: armpit
 ---
 
 ## Definition

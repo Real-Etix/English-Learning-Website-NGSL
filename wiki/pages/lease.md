@@ -9,6 +9,8 @@ rank: 10
 sfi: 63.06
 sources: [wordnet, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[charter]] — Use 'charter' specifically for renting a vehicle, boat, or airplane, often for a specific trip.
 - builds_on: [[charter]] — Use 'lease' instead of 'charter' when referring to a long-term rental agreement, typically for vehicles or equipment, emphasizing the contractual aspect.
 - builds_on: [[concession]] — Use 'lease' when the contract primarily involves renting physical space, while 'concession' focuses on the right to run a business within a venue.
+- synonym: [[leasehold]]
+- collocation: [[renew]]
+- collocation: [[landlord]]

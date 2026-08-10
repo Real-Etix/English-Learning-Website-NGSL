@@ -9,6 +9,8 @@ rank: 34
 sfi: 59.9
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: entity
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ that which is perceived or known or inferred to have its own distinct existence 
 - builds_on: [[organism]] — Use 'entity' to refer to a living organism as an independent unit, often in more formal or philosophical discussions.
 - advanced_form: [[being]] — Use 'being' when referring to a living entity with consciousness or life, especially in philosophical or biological contexts.
 - advanced_form: [[presence]] — Use 'presence' when referring to an unseen or ghostly entity, often implying a sense of haunting or mystery.
+- synonym: [[lifeform]]

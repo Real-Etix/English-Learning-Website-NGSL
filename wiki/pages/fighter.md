@@ -9,6 +9,8 @@ rank: 352
 sfi: 54.99
 sources: [wordnet, llm]
 status: enriched
+chart: militant
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - advanced_form: [[combatant]] — Use 'combatant' in formal or military contexts to describe someone actively engaged in combat, rather than just a casual fighter.
 - advanced_form: [[belligerent]] — Use 'belligerent' in legal or international conflict contexts to refer to a party or individual engaged in warfare, often implying a formal state of hostility.
 - advanced_form: [[militant]] — Use 'militant' when emphasizing aggressive or combative activism, often in political or ideological struggles, rather than a physical fight.
+- collocation: [[airbase]]
+- collocation: [[pugnacious]]
+- synonym: [[warplane]]
+- collocation: [[warplane]]

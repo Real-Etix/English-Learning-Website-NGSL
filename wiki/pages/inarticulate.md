@@ -6,6 +6,8 @@ pos: adjective
 forms: [inarticulate]
 sources: [llm]
 status: enriched
+chart: unintelligible
+region: unintelligible
 ---
 
 ## Definition

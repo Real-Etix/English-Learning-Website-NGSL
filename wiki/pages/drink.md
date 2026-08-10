@@ -9,6 +9,8 @@ rank: 655
 sfi: 61.66
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ a single serving of a beverage
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[libation]] — Use 'libation' for a formal or ceremonial serving of alcoholic drink.
 - advanced_form: [[draft]] — Use 'draft' for a serving of beer from a tap, often implying freshness.
+- synonym: [[cocoa]]
+- synonym: [[imbibe]]
+- collocation: [[moderation]]
+- synonym: [[aperitif]]
+- synonym: [[quaff]]

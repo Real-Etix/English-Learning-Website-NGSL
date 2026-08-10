@@ -9,6 +9,8 @@ rank: 18
 sfi: 61.91
 sources: [wordnet, llm]
 status: enriched
+chart: detail
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - builds_on: [[date]] — Use 'deadline' when the specified day marks the final time to complete something, which adds urgency.
 - advanced_form: [[cutoff]] — Use 'cutoff' for a strict final time, especially for submissions or applications.
 - advanced_form: [[expiry]] — Use 'expiry' for deadlines related to validity or expiration of something.
+- collocation: [[inflexible]]
+- collocation: [[looming]]
+- collocation: [[negotiable]]
+- collocation: [[pressing]]

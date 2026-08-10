@@ -6,6 +6,8 @@ pos: noun
 forms: [bactericide]
 sources: [llm]
 status: enriched
+chart: antibiotic
+region: antibiotic
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[antibiotic]] — Use when emphasizing that the substance specifically kills bacteria, often in a technical or medical context.
+- synonym: [[antimicrobial]]
+- collocation: [[effective]]
+- collocation: [[powerful]]
+- collocation: [[new]]
+- collocation: [[potent]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [rucksack]
 sources: [llm]
 status: enriched
+chart: backpack
+region: backpack
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[backpack]] — Use 'rucksack' instead of 'backpack' for outdoor or military contexts, especially in British English.
+- synonym: [[knapsack]]

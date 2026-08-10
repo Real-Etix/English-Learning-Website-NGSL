@@ -9,6 +9,8 @@ rank: 189
 sfi: 56.37
 sources: [wordnet, llm]
 status: enriched
+chart: retrieve
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[retrieve]] — Use 'retrieve' when you want to emphasize getting data back from a remote storage after a request.
 - advanced_form: [[fetch]] — Use 'fetch' to highlight the active request and retrieval of data, often in programming contexts.
+- collocation: [[e-book]]

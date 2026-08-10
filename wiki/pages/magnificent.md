@@ -6,6 +6,8 @@ pos: adjective
 forms: [magnificent]
 sources: [llm]
 status: enriched
+chart: notable
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,8 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[spectacular]] — Use 'magnificent' for something impressively grand, majestic, or splendid, often with a sense of awe at its scale or opulence.
 - builds_on: [[grand]] — Use 'magnificent' to describe something exceptionally beautiful and impressive, often in a visual or artistic sense, whereas 'grand' focuses more on scale and ambition.
+- synonym: [[breathtaking]]
+- synonym: [[majestic]]
+- synonym: [[noble]]
+- builds_on: [[fabulous]] — Use when something is impressively grand or splendid, especially in scale or appearance.
+- synonym: [[splendid]]

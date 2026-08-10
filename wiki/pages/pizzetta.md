@@ -6,6 +6,8 @@ pos: noun
 forms: [pizzetta]
 sources: [llm]
 status: enriched
+chart: pizza
+region: pizza
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pizza]] — Use 'pizzetta' to refer to a small pizza, often served as an appetizer.
+- collocation: [[starter]]

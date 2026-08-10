@@ -6,6 +6,8 @@ pos: verb
 forms: [systematize]
 sources: [llm]
 status: enriched
+chart: administer
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,7 @@ _No sourced examples yet._
 - builds_on: [[coordinate]] — Use when focusing on creating a clear, orderly system or method.
 - builds_on: [[streamline]] — Use when arranging into a coherent, organized system to improve efficiency and reliability.
 - builds_on: [[arrange]] — Use 'systematize' when arranging according to a clear system or method, especially for processes or data.
+- synonym: [[computerize]]
+- synonym: [[formalize]]
+- synonym: [[standardize]]
+- synonym: [[computerise]]

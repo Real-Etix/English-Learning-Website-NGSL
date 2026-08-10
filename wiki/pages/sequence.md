@@ -9,6 +9,8 @@ rank: 1960
 sfi: 55.66
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ serial arrangement in which things follow in logical order or a recurrent patter
 - advanced_form: [[progression]] — Use 'progression' when emphasizing movement forward or development through stages, rather than just a fixed order.
 - advanced_form: [[succession]] — Use 'succession' when focusing on a series of items or events that follow one after another, especially with no gaps or interruptions.
 - advanced_form: [[continuum]] — Use 'continuum' when the sequence is a continuous, unbroken range, often with gradual transitions rather than discrete steps.
+- synonym: [[concatenation]]
+- synonym: [[vinyasa]]
+- synonym: [[timeline]]
+- collocation: [[polypeptide]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [skirmish]
 sources: [llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition

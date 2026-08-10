@@ -9,6 +9,8 @@ rank: 586
 sfi: 53.881
 sources: [wordnet, llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ easy and not involved or complicated
 - builds_on: [[simple]] — Use 'elementary' when referring to the simplest or most basic level of a subject, especially in academic or formal contexts.
 - advanced_form: [[rudimentary]] — Use 'rudimentary' to emphasize the most basic, simple level, often implying lack of sophistication.
 - advanced_form: [[straightforward]] — Use 'straightforward' to highlight that something is easy to understand or do without complexity.
+- collocation: [[algebra]]

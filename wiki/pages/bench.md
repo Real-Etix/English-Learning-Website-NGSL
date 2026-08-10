@@ -9,6 +9,8 @@ rank: 35
 sfi: 65.05
 sources: [wordnet, llm]
 status: enriched
+chart: bench
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[settle]] — Use when referring to a long wooden bench with a back, especially in traditional or rural settings.
 - advanced_form: [[pew]] — Use specifically for a bench in a church, often with kneelers.
 - advanced_form: [[form]] — Use in British English for a long bench without a back.
+- synonym: [[banquette]]

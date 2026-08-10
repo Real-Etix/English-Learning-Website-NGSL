@@ -9,6 +9,8 @@ rank: 362
 sfi: 64.35
 sources: [wordnet, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ _No sourced examples yet._
 - synonym: [[family]]
 - advanced_form: [[category]] — Use 'category' to emphasize a distinct group with clearly defined boundaries, often in formal or systematic contexts.
 - advanced_form: [[classification]] — Use 'classification' when referring to the process or system of grouping things, especially in scientific or technical contexts.
+- collocation: [[anatomy]]
+- collocation: [[ceramics]]
+- collocation: [[constructor]]
+- collocation: [[mandarin]]
+- collocation: [[patrician]]
+- collocation: [[pupil]]
+- collocation: [[vinyasa]]
+- collocation: [[yearbook]]
+- collocation: [[yogini]]

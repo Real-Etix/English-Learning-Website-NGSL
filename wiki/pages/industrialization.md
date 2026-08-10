@@ -9,6 +9,8 @@ rank: 798
 sfi: 50.403
 sources: [wordnet, llm]
 status: enriched
+chart: industrialization
+region: industrialization
 ---
 
 ## Definition

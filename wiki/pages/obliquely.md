@@ -6,6 +6,8 @@ pos: adverb
 forms: [obliquely]
 sources: [llm]
 status: enriched
+chart: indirectly
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[sideways]] — Use 'obliquely' for movement or direction at an angle, often implying indirection or avoidance of a straight line.
 - builds_on: [[indirectly]] — Use instead of 'indirectly' when you want to emphasize a sideways or slanting approach, often in speech or actions.
 - builds_on: [[aside]] — Use 'obliquely' when movement is at an angle rather than directly to the side.
+- synonym: [[circuitously]]

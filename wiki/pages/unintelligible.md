@@ -9,6 +9,8 @@ rank: 937
 sfi: 43.512
 sources: [wordnet, llm]
 status: enriched
+chart: unintelligible
+region: unintelligible
 ---
 
 ## Definition

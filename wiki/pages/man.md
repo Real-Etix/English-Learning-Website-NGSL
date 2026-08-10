@@ -9,6 +9,8 @@ rank: 112
 sfi: 69.07
 sources: [wordnet, llm]
 status: enriched
+chart: man
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ _No sourced examples yet._
 - antonym: [[woman]]
 - advanced_form: [[gentleman]] — Use 'gentleman' instead of 'man' when emphasizing politeness, respect, or social status.
 - advanced_form: [[male]] — Use 'male' instead of 'man' in technical, statistical, or biological descriptions, or when contrasting with female.
+- collocation: [[brawny]]
+- collocation: [[deranged]]
+- collocation: [[portly]]
+- collocation: [[rotund]]
+- collocation: [[virtuous]]
+- collocation: [[unidentified]]

@@ -9,6 +9,8 @@ rank: 1567
 sfi: 50.59
 sources: [wordnet, llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ an outward semblance that misrepresents the true nature of something
 - advanced_form: [[facade]] — Use facade when focusing on a deceptive appearance that is deliberately shown to the world, often implying a front or surface that conceals reality.
 - advanced_form: [[pretense]] — Use pretense when emphasizing a false claim or show intended to deceive, often involving an act or simulation of something not real.
 - advanced_form: [[masquerade]] — Use masquerade when suggesting a deliberate false show or charade, often with a sense of temporary or theatrical deception.
+- synonym: [[cloak]]

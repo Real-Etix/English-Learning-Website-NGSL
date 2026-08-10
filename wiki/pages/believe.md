@@ -9,6 +9,8 @@ rank: 225
 sfi: 66.38
 sources: [wordnet, llm]
 status: enriched
+chart: think
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ accept as true
 - advanced_form: [[deem]] — Use 'deem' when making a formal judgment or assessment, often with an official tone.
 - advanced_form: [[maintain]] — Use 'maintain' when you continue to hold a belief firmly, especially in the face of opposition.
 - advanced_form: [[contend]] — Use 'contend' when you assert a belief strongly, often in a debate or argument.
+- collocation: [[fervently]]
+- collocation: [[optimistically]]
+- collocation: [[wholeheartedly]]

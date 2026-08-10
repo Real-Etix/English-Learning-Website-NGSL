@@ -6,6 +6,8 @@ pos: noun
 forms: [placekicker]
 sources: [llm]
 status: enriched
+chart: kicker
+region: kicker
 ---
 
 ## Definition

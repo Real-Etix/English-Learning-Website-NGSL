@@ -9,6 +9,8 @@ rank: 2400
 sfi: 54.3
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[strike]] — Use 'strike' when emphasizing the forceful hitting action rather than the sweeping motion of the swing
 - advanced_form: [[shot]] — Use 'shot' when referring to a specific attempt to hit the ball, common in tennis, golf, and similar sports
 - advanced_form: [[drive]] — Use 'drive' for a long, powerful stroke in golf, tennis, or baseball, often implying distance or force
+- collocation: [[ego]]
+- collocation: [[overarm]]

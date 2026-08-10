@@ -6,6 +6,8 @@ pos: noun
 forms: [therophyte]
 sources: [llm]
 status: enriched
+chart: short
+region: you
 ---
 
 ## Definition

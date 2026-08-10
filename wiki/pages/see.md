@@ -9,6 +9,8 @@ rank: 50
 sfi: 73.48
 sources: [wordnet, llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ perceive by sight or have the power to perceive by sight
 - advanced_form: [[observe]] — Use 'observe' when you watch carefully and deliberately, often for study or analysis.
 - advanced_form: [[perceive]] — Use 'perceive' when you become aware of something through the senses, including but not limited to sight.
 - advanced_form: [[witness]] — Use 'witness' when you see an event happen, especially something significant or memorable.
+- collocation: [[footnote]]
+- synonym: [[glimpse]]
+- collocation: [[psychotherapist]]
+- synonym: [[takein]]

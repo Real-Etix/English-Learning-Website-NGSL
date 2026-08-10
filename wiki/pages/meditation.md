@@ -9,6 +9,8 @@ rank: 77
 sfi: 62.49
 sources: [wordnet, llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ continuous and profound contemplation or musing on a subject or series of subjec
 - domain: fitness
 - advanced_form: [[rumination]] — Use 'rumination' for prolonged, often repetitive or melancholic thinking, especially about past events; 'meditation' is more neutral and deliberate.
 - advanced_form: [[cogitation]] — Use 'cogitation' for deep, systematic, and intellectual thinking; 'meditation' can imply a spiritual or reflective practice.
+- collocation: [[yogini]]

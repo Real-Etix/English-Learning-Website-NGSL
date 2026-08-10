@@ -6,6 +6,8 @@ pos: verb
 forms: [brood]
 sources: [llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fret]] — Use 'brood' when you worry by silently thinking deeply and sadly about something, often for a long time.
+- synonym: [[worry]]
+- synonym: [[agonize]]
+- synonym: [[dwell]]

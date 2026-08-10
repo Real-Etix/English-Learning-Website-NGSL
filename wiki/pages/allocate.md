@@ -9,6 +9,8 @@ rank: 82
 sfi: 58.37
 sources: [wordnet, llm]
 status: enriched
+chart: lot
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ _No sourced examples yet._
 - builds_on: [[invest]] — Use 'allocate' instead of 'invest' when emphasizing the deliberate distribution of resources, often with a plan or purpose.
 - builds_on: [[distribute]] — Use when the distribution involves assigning specific portions or tasks to particular individuals or groups.
 - builds_on: [[assign]] — Use 'allocate' when you assign resources, tasks, or roles based on a plan or distribution, often with a sense of official division.
+- collocation: [[resources]]
+- builds_on: [[afford]] — Use 'allocate' when you are deliberately setting aside a limited resource for a specific purpose.
+- builds_on: [[devote]] — Use when formally assigning resources, time, or effort to a specific purpose.

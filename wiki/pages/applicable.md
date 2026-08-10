@@ -9,6 +9,8 @@ rank: 253
 sfi: 55.05
 sources: [wordnet, llm]
 status: enriched
+chart: applicable
+region: applicable
 ---
 
 ## Definition

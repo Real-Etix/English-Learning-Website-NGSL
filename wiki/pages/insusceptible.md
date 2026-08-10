@@ -6,6 +6,8 @@ pos: adjective
 forms: [insusceptible]
 sources: [llm]
 status: enriched
+chart: immune
+region: immune
 ---
 
 ## Definition

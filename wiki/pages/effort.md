@@ -9,6 +9,8 @@ rank: 577
 sfi: 62.22
 sources: [wordnet, llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,17 @@ earnest and conscientious activity intended to do or accomplish something
 - advanced_form: [[endeavor]] — Used for a sustained, serious effort toward a goal, often with a sense of purpose or ambition.
 - advanced_form: [[exertion]] — Focuses on the physical or mental strain and energy spent, emphasizing the difficulty or intensity.
 - advanced_form: [[toil]] — Suggests prolonged, laborious, and often physically demanding work, with a connotation of hardship.
+- collocation: [[ceaseless]]
+- collocation: [[conscientious]]
+- collocation: [[courageous]]
+- collocation: [[denigrate]]
+- collocation: [[diligent]]
+- collocation: [[earnest]]
+- collocation: [[flounder]]
+- collocation: [[futile]]
+- collocation: [[ineffectual]]
+- collocation: [[internationalization]]
+- collocation: [[pioneering]]
+- collocation: [[restoration]]
+- collocation: [[founder]]
+- collocation: [[commendable]]

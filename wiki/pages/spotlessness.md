@@ -6,6 +6,8 @@ pos: noun
 forms: [spotlessness]
 sources: [llm]
 status: enriched
+chart: cleanliness
+region: cleanliness
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cleanliness]] — Use 'spotlessness' to stress that something is completely free of stains or marks.
+- synonym: [[immaculateness]]

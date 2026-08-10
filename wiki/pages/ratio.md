@@ -9,6 +9,8 @@ rank: 2160
 sfi: 55.05
 sources: [wordnet, llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[proportion]] — Use when emphasizing the relationship between a part and the whole, especially in formal or academic contexts.
 - advanced_form: [[quotient]] — Use specifically for the numerical result of division, often in mathematical or technical contexts.
+- collocation: [[mechanicaladvantage]]
+- synonym: [[modulus]]

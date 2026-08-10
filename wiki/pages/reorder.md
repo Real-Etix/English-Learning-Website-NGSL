@@ -6,6 +6,8 @@ pos: verb
 forms: [reorder]
 sources: [llm]
 status: enriched
+chart: rearrange
+region: rearrange
 ---
 
 ## Definition

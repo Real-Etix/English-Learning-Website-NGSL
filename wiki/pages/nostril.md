@@ -9,6 +9,8 @@ rank: 275
 sfi: 56.14
 sources: [wordnet, llm]
 status: enriched
+chart: nostril
+region: nostril
 ---
 
 ## Definition

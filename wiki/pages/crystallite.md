@@ -6,6 +6,8 @@ pos: noun
 forms: [crystallite]
 sources: [llm]
 status: enriched
+chart: diamond
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crystal]] — Use 'crystallite' when referring to very small individual crystals within a larger solid, especially in scientific contexts. The common word 'crystal' is more general.
+- synonym: [[grain]]
+- synonym: [[particle]]
+- collocation: [[size]]
+- collocation: [[growth]]
+- collocation: [[structure]]
+- collocation: [[orientation]]

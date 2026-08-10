@@ -9,6 +9,8 @@ rank: 1249
 sfi: 48.21
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: unplug
+region: you
 ---
 
 ## Definition

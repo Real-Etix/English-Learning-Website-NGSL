@@ -9,6 +9,8 @@ rank: 1172
 sfi: 58.77
 sources: [wordnet, llm]
 status: enriched
+chart: broadcast
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ call attention to
 - synonym: [[publicize]]
 - advanced_form: [[tout]] — Use 'tout' when you want to emphasize enthusiastic or boastful promotion, often in a public or persuasive way.
 - advanced_form: [[hawk]] — Use 'hawk' to describe aggressive or noisy selling, typically in a street or public space, often with a sense of persistence.
+- collocation: [[handbill]]

@@ -9,6 +9,8 @@ rank: 152
 sfi: 59.05
 sources: [wordnet, llm]
 status: enriched
+chart: gram
+region: gram
 ---
 
 ## Definition

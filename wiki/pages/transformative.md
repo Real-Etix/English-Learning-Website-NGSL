@@ -6,6 +6,8 @@ pos: adjective
 forms: [transformative]
 sources: [llm]
 status: enriched
+chart: revolutionary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[revolutionary]] — Use 'transformative' to emphasize deep, fundamental change, often in a positive or structural sense, while 'revolutionary' can imply sudden overthrow.
+- synonym: [[disruptive]]

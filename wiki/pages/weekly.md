@@ -9,6 +9,8 @@ rank: 2661
 sfi: 53.39
 sources: [wordnet, llm]
 status: enriched
+chart: periodical
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[periodical]] — Use 'periodical' when emphasizing the publication schedule (any frequency) in a formal context.
 - advanced_form: [[journal]] — Use 'journal' for specialized or academic publications, often more formal than a general weekly.
 - advanced_form: [[gazette]] — Use 'gazette' for official or news-focused weeklies, especially in British English.
+- collocation: [[vlog]]

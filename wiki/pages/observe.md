@@ -9,6 +9,8 @@ rank: 1098
 sfi: 59.13
 sources: [wordnet, llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ _No sourced examples yet._
 - advanced_form: [[discern]] — Use 'discern' when you perceive or recognize something with difficulty or through careful observation.
 - advanced_form: [[perceive]] — Use 'perceive' when you become aware of something through the senses or intuition, often more general than 'observe'.
 - builds_on: [[celebrate]] — Use 'observe' for formally following the customs or rites of a holiday or event, especially in a religious or cultural context.
+- synonym: [[commemorate]]
+- synonym: [[heed]]
+- synonym: [[takein]]

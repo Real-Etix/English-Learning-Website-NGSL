@@ -6,6 +6,8 @@ pos: adverb
 forms: [principally]
 sources: [llm]
 status: enriched
+chart: first
+region: you
 ---
 
 ## Definition

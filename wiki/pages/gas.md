@@ -9,6 +9,8 @@ rank: 1189
 sfi: 58.69
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,19 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[vapor]] — Use 'vapor' instead of 'gas' when referring to a substance that is in a gaseous state but is close to becoming liquid, or in scientific contexts about evaporation.
 - advanced_form: [[fume]] — Use 'fume' instead of 'gas' when emphasizing that the gas is harmful, irritating, or has a strong smell.
+- collocation: [[boiler]]
+- collocation: [[compressed]]
+- collocation: [[cylinder]]
+- collocation: [[dinitrogen]]
+- collocation: [[furnace]]
+- collocation: [[gram-molecule]]
+- collocation: [[igniter]]
+- collocation: [[lawnmower]]
+- collocation: [[liquefied]]
+- collocation: [[liquefy]]
+- collocation: [[works]]
+- synonym: [[gasoline]]
+- collocation: [[dihydrogen]]
+- collocation: [[leakage]]
+- synonym: [[screamer]]
+- collocation: [[therm]]

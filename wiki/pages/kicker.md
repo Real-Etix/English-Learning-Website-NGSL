@@ -9,6 +9,8 @@ rank: 469
 sfi: 53.69
 sources: [wordnet, llm]
 status: enriched
+chart: kicker
+region: kicker
 ---
 
 ## Definition

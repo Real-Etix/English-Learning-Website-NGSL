@@ -9,6 +9,8 @@ rank: 2380
 sfi: 54.37
 sources: [wordnet, llm]
 status: enriched
+chart: leverage
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,13 @@ _No sourced examples yet._
 - advanced_form: [[exacerbate]] — Use 'exacerbate' when a situation is already bad and something makes it even worse, often in a negative or harmful way.
 - advanced_form: [[intensify]] — Use 'intensify' when something becomes stronger or more extreme, often in terms of emotions, effects, or conditions.
 - advanced_form: [[aggravate]] — Use 'aggravate' when an existing problem or annoyance is made worse, often by a repeated action or factor.
+- collocation: [[apothecaryounce]]
+- synonym: [[copolymer]]
+- synonym: [[halide]]
+- synonym: [[hybridism]]
+- collocation: [[loanblend]]
+- collocation: [[photomicroscope]]
+- collocation: [[predicate]]
+- synonym: [[reactant]]
+- builds_on: [[mixture]] — Use when the mixture is formed by combining separate elements, often in a technical or chemical sense.
+- synonym: [[hydrochloride]]

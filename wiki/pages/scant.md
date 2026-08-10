@@ -6,6 +6,8 @@ pos: adjective
 forms: [scant]
 sources: [llm]
 status: enriched
+chart: little
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[minimal]] — Use 'scant' when the amount is less than expected or needed.
 - builds_on: [[insufficient]] — Use 'scant' to imply not only insufficient but also barely enough or meager, often for quantities.
 - builds_on: [[slight]] — Use 'scant' when something is barely enough or notably deficient in amount, more formal than 'slight'.
+- collocation: [[tablespoonful]]

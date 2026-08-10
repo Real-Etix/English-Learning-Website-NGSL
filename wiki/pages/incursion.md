@@ -6,6 +6,8 @@ pos: noun
 forms: [incursion]
 sources: [llm]
 status: enriched
+chart: invasion
+region: invasion
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[invasion]] — Use 'incursion' for a brief, hostile entry into a territory, often sudden or temporary.
+- synonym: [[foray]]
+- synonym: [[raid]]
+- synonym: [[infiltration]]
+- collocation: [[military]]
+- collocation: [[border]]
+- collocation: [[enemy]]
+- collocation: [[sudden]]

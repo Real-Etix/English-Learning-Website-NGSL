@@ -9,6 +9,8 @@ rank: 1864
 sfi: 55.96
 sources: [wordnet, llm]
 status: enriched
+chart: statutory
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[republic]] — Use 'republic' when emphasizing the representative and constitutional nature, often contrasted with direct democracy or monarchy.
 - advanced_form: [[commonwealth]] — Use 'commonwealth' when referring to a democratic republic that values public welfare, often seen in official state names.
+- collocation: [[autocracy]]
+- collocation: [[participatory]]

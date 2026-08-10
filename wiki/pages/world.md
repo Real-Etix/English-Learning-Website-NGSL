@@ -9,6 +9,8 @@ rank: 156
 sfi: 67.76
 sources: [wordnet, llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ _No sourced examples yet._
 - advanced_form: [[macrocosm]] — Use 'macrocosm' to highlight the entire universe as a single, large system, often contrasting with a microcosm.
 - builds_on: [[earth]] — Use 'world' to highlight the social, cultural, or inhabited aspect of Earth; more abstract and human-focused than 'earth'.
 - builds_on: [[planet]] — Use 'world' to emphasize the planet as a potential habitat or realm, often for Earth-like planets.
+- synonym: [[biosphere]]
+- collocation: [[cutthroat]]
+- collocation: [[forsake]]
+- collocation: [[mundane]]
+- collocation: [[omphalos]]
+- collocation: [[overpopulate]]
+- collocation: [[ranking]]

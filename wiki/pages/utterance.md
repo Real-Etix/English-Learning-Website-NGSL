@@ -9,6 +9,8 @@ rank: 127
 sfi: 58.441
 sources: [wordnet, llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[oration]] — Use 'oration' for a formal, often eloquent speech delivered on a ceremonial occasion, in place of 'utterance' when referring to a crafted public address.
 - builds_on: [[sentence]] — Use 'utterance' instead of 'sentence' when emphasizing the act of speaking or the spoken nature of the expression, especially in linguistic or formal contexts.
 - builds_on: [[remark]] — Use for any spoken word or phrase, especially in formal or linguistic contexts.
+- synonym: [[locution]]

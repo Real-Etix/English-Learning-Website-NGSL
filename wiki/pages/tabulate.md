@@ -6,6 +6,8 @@ pos: verb
 forms: [tabulate]
 sources: [llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2525
 sfi: 53.87
 sources: [wordnet, llm]
 status: enriched
+chart: upbeat
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ status: enriched
 - builds_on: [[equity]] — Use 'stake' when emphasizing the ownership share or financial involvement, especially in a venture or property, more informal than 'equity' but still advanced.
 - advanced_form: [[equity]] — Use 'equity' instead of 'stake' when emphasizing ownership value or financial interest, especially in a company or property.
 - advanced_form: [[entitlement]] — Use 'entitlement' instead of 'stake' when focusing on a legal right or claim granted by law or agreement.
+- synonym: [[wager]]
+- builds_on: [[bet]] — Use when the bet involves something important to you, like a reputation or career, rather than just money.

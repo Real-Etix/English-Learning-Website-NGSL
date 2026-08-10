@@ -6,6 +6,8 @@ pos: noun
 forms: [pyrophosphate]
 sources: [llm]
 status: enriched
+chart: phosphate
+region: phosphate
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[phosphate]] — Use 'pyrophosphate' to refer to the specific dimeric form, often encountered in biochemistry and industrial applications.
+- collocation: [[sodium]]
+- collocation: [[calcium]]
+- collocation: [[group]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [condense]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,7 @@ _No sourced examples yet._
 - builds_on: [[compact]] — Use 'condense' instead of 'compact' when referring to making something denser, shorter, or more concentrated, especially in writing or liquids.
 - builds_on: [[simplify]] — Use 'condense' when reducing the length or complexity of something, especially written or spoken content.
 - builds_on: [[summarize]] — Use 'condense' to emphasize making something shorter by removing details while keeping the essence.
+- synonym: [[abbreviate]]
+- synonym: [[concentrate]]
+- synonym: [[distill]]
+- builds_on: [[concentrate]] — Use when something becomes more concentrated by reducing its volume, often by removing water or liquid.

@@ -6,6 +6,8 @@ pos: verb
 forms: [inoculate]
 sources: [llm]
 status: enriched
+chart: saturate
+region: you
 ---
 
 ## Definition

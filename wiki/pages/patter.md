@@ -6,6 +6,8 @@ pos: noun
 forms: [patter]
 sources: [llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gossip]] — Use for smooth, rapid, often practiced talk, especially in performance or sales.
+- synonym: [[chatter]]
+- synonym: [[banter]]
+- synonym: [[prattle]]
+- collocation: [[rapid]]
+- collocation: [[smooth]]
+- collocation: [[light]]

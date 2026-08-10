@@ -6,6 +6,8 @@ pos: adjective
 forms: [heterogeneous]
 sources: [llm]
 status: enriched
+chart: various
+region: you
 ---
 
 ## Definition

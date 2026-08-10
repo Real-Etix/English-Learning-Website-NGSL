@@ -6,6 +6,8 @@ pos: adjective
 forms: [famished]
 sources: [llm]
 status: enriched
+chart: maturity
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hungry]] — Use 'famished' to emphasize extreme hunger, much stronger than 'hungry'.
+- synonym: [[ravenous]]
+- collocation: [[absolutely]]
+- collocation: [[completely]]
+- collocation: [[utterly]]
+- collocation: [[feel]]
+- collocation: [[look]]

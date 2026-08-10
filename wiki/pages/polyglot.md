@@ -6,6 +6,8 @@ pos: noun
 forms: [polyglot]
 sources: [llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bilingual]] — Use 'polyglot' instead of 'bilingual' when the person speaks more than two languages, to emphasize their multilingual ability.
+- synonym: [[multilingual]]
+- synonym: [[linguist]]
+- collocation: [[true]]
+- collocation: [[fellow]]
+- collocation: [[accomplished]]
+- collocation: [[passionate]]

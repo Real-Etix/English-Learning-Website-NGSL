@@ -6,6 +6,8 @@ pos: noun
 forms: [compilation]
 sources: [llm]
 status: enriched
+chart: issue
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[album]] — Use 'compilation' when the album is a collection of previously released tracks, often by various artists or from a series.
+- synonym: [[compendium]]
+- synonym: [[collection]]
+- synonym: [[selection]]
+- collocation: [[music]]

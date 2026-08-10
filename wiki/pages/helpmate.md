@@ -6,6 +6,8 @@ pos: noun
 forms: [helpmate]
 sources: [llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[spouse]] — Use 'helpmate' to emphasize a supportive, cooperative partnership, often with a traditional or religious nuance; it is less common than 'spouse' and carries a warmer connotation.
+- synonym: [[partner]]
+- synonym: [[companion]]
+- synonym: [[assistant]]
+- synonym: [[aide]]
+- collocation: [[devoted]]
+- collocation: [[true]]
+- collocation: [[constant]]

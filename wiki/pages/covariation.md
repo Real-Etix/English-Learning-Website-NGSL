@@ -6,6 +6,8 @@ pos: noun
 forms: [covariation]
 sources: [llm]
 status: enriched
+chart: covariance
+region: covariance
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[covariance]] — Use covariation to emphasize the process of varying together, similar to covariance but less technical in some contexts.
+- synonym: [[correlation]]
+- synonym: [[association]]
+- synonym: [[interdependence]]
+- synonym: [[relationship]]
+- collocation: [[statistical]]
+- collocation: [[between]]
+- collocation: [[positive]]
+- collocation: [[negative]]
+- collocation: [[matrix]]

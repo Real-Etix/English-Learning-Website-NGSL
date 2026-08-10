@@ -6,6 +6,8 @@ pos: noun
 forms: [malice]
 sources: [llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[spite]] — Use 'malice' for a more formal or legal context, implying deliberate ill will.
+- synonym: [[malevolence]]
+- collocation: [[bear]]
+- collocation: [[with]]
+- collocation: [[toward]]

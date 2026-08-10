@@ -6,6 +6,8 @@ pos: noun
 forms: [indemnity]
 sources: [llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,7 @@ _No sourced examples yet._
 - builds_on: [[exemption]] — Use 'indemnity' for legal or financial immunity from loss or damage, rather than general obligation.
 - builds_on: [[reimbursement]] — Use when referring to protection or compensation against future losses or damages.
 - builds_on: [[compensation]] — Use 'indemnity' instead of 'compensation' when referring to legal or contractual protection or reimbursement against harm or loss, especially in insurance or liability contexts.
+- synonym: [[coverage]]
+- synonym: [[insurance]]
+- builds_on: [[insurance]] — Use indemnity in formal or legal contexts to emphasize compensation for loss.
+- builds_on: [[coverage]] — Use in legal or formal contexts to refer to compensation or security against loss.

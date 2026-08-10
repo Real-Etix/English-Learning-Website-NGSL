@@ -6,6 +6,8 @@ pos: verb
 forms: [displease]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dissatisfy]] — Use 'displease' instead of 'dissatisfy' when you want to emphasize causing mild anger or annoyance, not just unmet expectations.
+- synonym: [[disappoint]]
+- synonym: [[disgruntle]]
+- synonym: [[annoy]]
+- synonym: [[irritate]]
+- synonym: [[upset]]
+- collocation: [[greatly]]
+- collocation: [[seriously]]

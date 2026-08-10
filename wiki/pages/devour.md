@@ -6,6 +6,8 @@ pos: verb
 forms: [devour]
 sources: [llm]
 status: enriched
+chart: down
+region: you
 ---
 
 ## Definition

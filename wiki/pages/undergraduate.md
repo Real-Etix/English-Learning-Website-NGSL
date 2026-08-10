@@ -9,6 +9,8 @@ rank: 736
 sfi: 51.633
 sources: [wordnet, llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[student]] — Use 'undergraduate' specifically for a university student working toward a bachelor's degree, not for younger students.
 - advanced_form: [[collegian]] — Use 'collegian' for a formal, sometimes literary tone that emphasizes membership in a collegiate institution rather than the stage of study.
 - advanced_form: [[matriculant]] — Use 'matriculant' when focusing on the official enrollment status, often in administrative or statistical contexts.
+- collocation: [[coursework]]

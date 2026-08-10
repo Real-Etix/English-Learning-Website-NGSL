@@ -9,6 +9,8 @@ rank: 1781
 sfi: 56.26
 sources: [wordnet, llm]
 status: enriched
+chart: sweet
+region: sweet
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - advanced_form: [[sugary]] — Use 'sugary' when you want a neutral description of high sugar content.
 - advanced_form: [[syrupy]] — Use 'syrupy' to emphasize thickness and sweetness, often like syrup.
 - advanced_form: [[saccharine]] — Use 'saccharine' for an artificially or excessively sweet taste, sometimes with a negative connotation.
+- synonym: [[adorable]]
+- synonym: [[cookie]]
+- synonym: [[endearing]]
+- synonym: [[pastry]]
+- collocation: [[pippin]]
+- collocation: [[potato]]
+- collocation: [[aroma]]

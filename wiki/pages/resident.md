@@ -9,6 +9,8 @@ rank: 1539
 sfi: 57.23
 sources: [wordnet, llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[inhabitant]] — Use 'inhabitant' when referring to people living in a region, city, or house, often in a more formal or demographic context.
 - advanced_form: [[occupant]] — Use 'occupant' when emphasizing the act of living in a specific dwelling, often in legal or contractual contexts.
 - advanced_form: [[denizen]] — Use 'denizen' for a literary or slightly formal tone, describing a person (or creature) that lives in a specific environment.
+- synonym: [[householder]]
+- synonym: [[occupier]]
+- collocation: [[psychiatry]]
+- synonym: [[ratepayer]]
+- collocation: [[alien]]

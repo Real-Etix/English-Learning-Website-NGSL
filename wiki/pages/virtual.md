@@ -9,6 +9,8 @@ rank: 350
 sfi: 54.91
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: rule
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ being actually such in almost every respect
 - collocation: [[world]]
 - advanced_form: [[practical]] — Use 'practical' to emphasize that something is almost true in effect, especially in formal or business contexts, instead of 'virtual'.
 - advanced_form: [[effective]] — Use 'effective' to describe someone who functions as if they hold a position or role, instead of 'virtual' which might sound more technical.
+- collocation: [[obliteration]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [devastating]
 sources: [llm]
 status: enriched
+chart: black
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[disastrous]] — Use 'devastating' instead of 'disastrous' when focusing on the severe emotional or physical destruction, leaving something in ruins.
+- synonym: [[catastrophic]]
+- synonym: [[ruinous]]
+- collocation: [[impact]]
+- collocation: [[effect]]
+- collocation: [[blow]]
+- collocation: [[news]]

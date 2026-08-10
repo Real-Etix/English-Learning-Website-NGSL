@@ -6,6 +6,8 @@ pos: noun
 forms: [biostatistics]
 sources: [llm]
 status: enriched
+chart: statistics
+region: statistics
 ---
 
 ## Definition

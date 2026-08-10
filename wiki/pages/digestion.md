@@ -9,6 +9,8 @@ rank: 418
 sfi: 54.16
 sources: [wordnet, llm]
 status: enriched
+chart: trauma
+region: you
 ---
 
 ## Definition

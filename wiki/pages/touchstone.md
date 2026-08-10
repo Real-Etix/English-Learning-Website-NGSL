@@ -6,6 +6,8 @@ pos: noun
 forms: [touchstone]
 sources: [llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition

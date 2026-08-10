@@ -9,6 +9,8 @@ rank: 753
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ conforming to fact and therefore worthy of belief
 - advanced_form: [[factual]] — Use 'factual' when exact correspondence to known facts is paramount, whereas 'authentic' can also imply being original or not counterfeit.
 - builds_on: [[factual]] — Use 'authentic' to emphasize factual genuineness or reliability, often for objects or accounts.
 - builds_on: [[genuine]] — Use 'authentic' for objects or documents proven to be real or original.
+- collocation: [[boulangerie]]
+- collocation: [[cuisine]]

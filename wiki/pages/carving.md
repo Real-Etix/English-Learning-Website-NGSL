@@ -6,6 +6,8 @@ pos: noun
 forms: [carving]
 sources: [llm]
 status: enriched
+chart: sculpture
+region: sculpture
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sculpture]] — Use 'carving' for a sculpture made by cutting away material (wood, stone, etc.), emphasizing the process.
+- synonym: [[cut]]
+- synonym: [[figure]]
+- collocation: [[wood]]
+- collocation: [[stone]]

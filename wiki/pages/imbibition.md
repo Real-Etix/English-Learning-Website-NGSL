@@ -6,6 +6,8 @@ pos: noun
 forms: [imbibition]
 sources: [llm]
 status: enriched
+chart: interest
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[absorption]] — Use when describing the absorption of a liquid into a solid, especially where the solid swells or the liquid is drawn in by capillary action.
+- synonym: [[permeation]]
+- synonym: [[infiltration]]
+- collocation: [[water]]
+- collocation: [[dye]]
+- collocation: [[seed]]
+- collocation: [[rate]]
+- collocation: [[process]]

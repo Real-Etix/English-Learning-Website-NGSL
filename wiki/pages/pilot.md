@@ -9,6 +9,8 @@ rank: 1796
 sfi: 56.19
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[airman]] — Use 'airman' when referring to a pilot in the air force or someone with professional military status.
 - advanced_form: [[flyer]] — Use 'flyer' for a more casual or general term, often implying enthusiasm or skill in flying.
 - builds_on: [[experimental]] — Use 'pilot' for a small-scale preliminary test before a full rollout, implying it's a controlled trial.
+- collocation: [[airship]]
+- collocation: [[fighter-bomber]]
+- synonym: [[navigator]]
+- builds_on: [[experiment]] — Use 'pilot' for a small-scale, preliminary experiment that tests feasibility before a larger one.

@@ -9,6 +9,8 @@ rank: 1600
 sfi: 56.99
 sources: [wordnet, llm]
 status: enriched
+chart: beautiful
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[exquisite]] — Use 'exquisite' for something intensely beautiful or delicate, often implying a high degree of refinement or perfection.
 - advanced_form: [[charming]] — Use 'charming' for something that is delightfully pleasing or endearing, often with a sense of attraction or allure.
 - advanced_form: [[enchanting]] — Use 'enchanting' for something that is spellbinding or magical in its appeal, often creating a strong emotional response.
+- synonym: [[delightful]]
+- synonym: [[picturesque]]
+- synonym: [[ravishing]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [retribution]
 sources: [llm]
 status: enriched
+chart: certainty
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[punishment]] — Use 'retribution' for punishment driven by a desire for revenge or moral justice.
 - builds_on: [[penalty]] — Use 'retribution' when the penalty is motivated by a sense of justice or revenge, often in moral or dramatic contexts.
+- synonym: [[requital]]

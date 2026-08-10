@@ -9,6 +9,8 @@ rank: 302
 sfi: 56.777
 sources: [wordnet, llm]
 status: enriched
+chart: philosophical
+region: philosophical
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ of or relating to philosophy or philosophers
 - domain: academic
 - advanced_form: [[metaphysical]] — Use 'metaphysical' when referring to abstract principles beyond the physical world, often about the nature of being.
 - advanced_form: [[existential]] — Use 'existential' when the philosophy focuses on individual existence, freedom, and choice, often with a personal or urgent tone.
+- collocation: [[profundity]]

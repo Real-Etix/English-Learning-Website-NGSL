@@ -6,6 +6,8 @@ pos: adjective
 forms: [inescapable]
 sources: [llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inevitable]] — Use 'inescapable' to emphasize that there is no way to escape a situation, often with a physical or emotional sense of being trapped.
+- synonym: [[ineluctable]]

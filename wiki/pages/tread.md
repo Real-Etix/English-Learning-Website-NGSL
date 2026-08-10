@@ -6,6 +6,8 @@ pos: noun
 forms: [tread]
 sources: [llm]
 status: enriched
+chart: sole
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[sole]] — Use 'tread' instead of 'sole' when emphasizing the gripping design or pattern, as in 'The tread on my running shoes is worn out.'
 - builds_on: [[toe]] — Use 'tread' when you want to emphasize deliberate or measured foot placement, often specifying the direction of the toes.
 - builds_on: [[stair]] — Use 'tread' when referring specifically to the horizontal surface of a step, which is more precise than the general word 'stair'.
+- synonym: [[treadle]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [dredge]
 sources: [llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[flour]] — Used in cooking to coat food lightly with flour before frying or baking.
+- synonym: [[coat]]
+- synonym: [[dust]]
+- synonym: [[cover]]
+- collocation: [[chicken]]
+- collocation: [[fish]]
+- collocation: [[sugar]]

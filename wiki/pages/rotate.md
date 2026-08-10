@@ -9,6 +9,8 @@ rank: 54
 sfi: 64.02
 sources: [wordnet, llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[gyrate]] — Use 'gyrate' for a spiraling or twisting circular motion, often with a sense of speed or energetic movement; more vivid and specific than 'rotate'.
 - advanced_form: [[pivot]] — Use 'pivot' for turning around a fixed central point, like a hinge or axis; often implies a change in direction or focus, and is more technical than 'rotate'.
 - builds_on: [[spin]] — Use 'rotate' for a more formal or scientific description of spinning around an internal axis, especially when speed is not emphasized.
+- synonym: [[reshuffle]]

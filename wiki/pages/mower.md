@@ -9,6 +9,8 @@ rank: 1226
 sfi: 49.46
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: mower
+region: mower
 ---
 
 ## Definition

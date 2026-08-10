@@ -6,6 +6,8 @@ pos: adjective
 forms: [self-assured]
 sources: [llm]
 status: enriched
+chart: objective
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[confident]] — Use 'self-assured' to highlight inner confidence that comes from knowing one's own abilities.
+- synonym: [[assertive]]
+- synonym: [[poised]]

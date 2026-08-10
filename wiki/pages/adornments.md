@@ -6,6 +6,8 @@ pos: noun
 forms: [adornments]
 sources: [llm]
 status: enriched
+chart: jewelry
+region: jewelry
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[jewelry]] — Use 'adornments' to highlight the decorative or beautifying function of the pieces, suitable for describing elaborate or ceremonial jewelry.
+- synonym: [[ornaments]]
+- collocation: [[personal]]
+- collocation: [[elaborate]]
+- collocation: [[royal]]
+- collocation: [[bodily]]

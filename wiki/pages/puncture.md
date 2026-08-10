@@ -6,6 +6,8 @@ pos: noun
 forms: [puncture]
 sources: [llm]
 status: enriched
+chart: erase
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bite]] — Use 'puncture' when the bite breaks the skin in a small, deep hole, like from sharp teeth or fangs.
+- synonym: [[perforate]]
+- synonym: [[hole]]
+- synonym: [[wound]]
+- synonym: [[rupture]]

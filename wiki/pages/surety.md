@@ -6,6 +6,8 @@ pos: noun
 forms: [surety]
 sources: [llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition

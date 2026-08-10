@@ -9,6 +9,8 @@ rank: 427
 sfi: 54.06
 sources: [wordnet, llm]
 status: enriched
+chart: kilogram
+region: kilogram
 ---
 
 ## Definition

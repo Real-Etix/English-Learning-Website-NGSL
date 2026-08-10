@@ -6,6 +6,8 @@ pos: noun
 forms: [disallowance]
 sources: [llm]
 status: enriched
+chart: to
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[veto]] — Use 'disallowance' for an official refusal to allow something, often used in parliamentary or legal contexts, similar to veto but more general.
+- synonym: [[rejection]]
+- synonym: [[refusal]]
+- synonym: [[denial]]
+- synonym: [[prohibition]]
+- collocation: [[claim]]
+- collocation: [[tax]]
+- collocation: [[notice]]
+- collocation: [[appeal]]
+- collocation: [[provision]]

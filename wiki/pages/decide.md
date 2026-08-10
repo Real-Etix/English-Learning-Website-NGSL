@@ -9,6 +9,8 @@ rank: 359
 sfi: 64.41
 sources: [wordnet, llm]
 status: enriched
+chart: work
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[resolve]] — Use 'resolve' when the decision is firm and final, often after deliberation.
 - advanced_form: [[determine]] — Use 'determine' when the decision is reached through analysis or investigation.
 - advanced_form: [[elect]] — Use 'elect' when the decision is a deliberate personal choice among alternatives.
+- synonym: [[adjudicate]]
+- collocation: [[arbitrarily]]
+- synonym: [[predetermine]]
+- collocation: [[prudently]]

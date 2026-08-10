@@ -6,6 +6,8 @@ pos: noun
 forms: [ghee]
 sources: [llm]
 status: enriched
+chart: butter
+region: butter
 ---
 
 ## Definition

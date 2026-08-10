@@ -9,6 +9,8 @@ rank: 672
 sfi: 61.51
 sources: [wordnet, llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,13 @@ _No sourced examples yet._
 - advanced_form: [[depict]] — Use 'depict' when focusing on the act of representing a subject in art, especially in a formal or descriptive context.
 - advanced_form: [[render]] — Use 'render' when emphasizing the technical execution or interpretation in a painting.
 - advanced_form: [[portray]] — Use 'portray' when the focus is on depicting a person's character or appearance in a painting.
+- collocation: [[cobalt]]
+- collocation: [[coveralls]]
+- collocation: [[emulsion]]
+- collocation: [[latex]]
+- collocation: [[opaque]]
+- collocation: [[viridian]]
+- collocation: [[wet]]
+- collocation: [[luminous]]
+- collocation: [[umber]]
+- collocation: [[vat]]

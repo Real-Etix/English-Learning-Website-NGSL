@@ -6,6 +6,8 @@ pos: noun
 forms: [odontologist]
 sources: [llm]
 status: enriched
+chart: dentist
+region: dentist
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dentist]] — Use in formal or scientific contexts to refer to a dentist, particularly when discussing the study of teeth and surrounding tissues.
+- synonym: [[dentalsurgeon]]
+- collocation: [[dental]]
+- collocation: [[tooth]]
+- collocation: [[oral]]

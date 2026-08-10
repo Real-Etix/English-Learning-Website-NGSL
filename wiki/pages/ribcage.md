@@ -9,6 +9,8 @@ rank: 260
 sfi: 56.37
 sources: []
 status: seeded
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 ## Connections
 - domain: fitness
 - builds_on: [[chest]] — Use 'ribcage' to emphasize the bony structure of the chest, especially in injury or anatomy contexts.
+- synonym: [[breastplate]]

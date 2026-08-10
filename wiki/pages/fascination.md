@@ -6,6 +6,8 @@ pos: noun
 forms: [fascination]
 sources: [llm]
 status: enriched
+chart: interest
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[interest]] — Use for a strong, captivating interest that holds your attention.
+- synonym: [[enchantment]]
+- synonym: [[engrossment]]
+- synonym: [[allure]]

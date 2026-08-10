@@ -6,6 +6,8 @@ pos: noun
 forms: [plasma]
 sources: [llm]
 status: enriched
+chart: blood
+region: blood
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[blood]] — Use 'plasma' when specifically talking about the liquid component of blood, often in medical or scientific discussions.
+- synonym: [[serum]]

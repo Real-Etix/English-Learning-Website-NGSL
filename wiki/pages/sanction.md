@@ -9,6 +9,8 @@ rank: 2616
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -33,3 +35,5 @@ _No sourced examples yet._
 - advanced_form: [[endorsement]] — Use 'endorsement' when emphasizing public backing or support, often for a plan or candidate; 'sanction' is more about official permission.
 - advanced_form: [[authorization]] — Use 'authorization' when focusing on the granting of official power or permission; 'sanction' is broader and can imply moral approval as well.
 - advanced_form: [[ratification]] — Use 'ratification' specifically for formal approval of a document or agreement, often after a vote; 'sanction' is more general.
+- synonym: [[approval]]
+- builds_on: [[approval]] — Use for official permission or approval, often from an authority.

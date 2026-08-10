@@ -9,6 +9,8 @@ rank: 1973
 sfi: 55.61
 sources: [wordnet, llm]
 status: enriched
+chart: engage
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[postulate]] — Use 'postulate' instead of 'premise' when you are putting forward a fundamental assumption as the basis of an argument or theory.
 - advanced_form: [[presuppose]] — Use 'presuppose' instead of 'premise' when you are assuming something in advance, often without stating it explicitly.
 - advanced_form: [[hypothesize]] — Use 'hypothesize' instead of 'premise' when the statement is a tentative explanation to be tested.
+- synonym: [[hypothesis]]

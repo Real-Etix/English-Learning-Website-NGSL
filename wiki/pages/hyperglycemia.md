@@ -6,6 +6,8 @@ pos: noun
 forms: [hyperglycemia]
 sources: [llm]
 status: enriched
+chart: diabetes
+region: diabetes
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[diabetes]] — Use when emphasizing the elevated blood sugar level rather than the disease itself.
+- collocation: [[chronic]]
+- collocation: [[severe]]

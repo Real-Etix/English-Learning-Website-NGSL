@@ -9,6 +9,8 @@ rank: 830
 sfi: 49.328
 sources: [wordnet, llm]
 status: enriched
+chart: mentor
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[doctor]] — Use 'surgeon' specifically for a doctor who performs operations, not a general practitioner.
 - advanced_form: [[neurosurgeon]] — Use instead of 'surgeon' when the specialist focuses on the brain and nervous system.
 - advanced_form: [[orthopedist]] — Use instead of 'surgeon' when the specialist focuses on bones, joints, and musculoskeletal issues.
+- collocation: [[ophthalmic]]

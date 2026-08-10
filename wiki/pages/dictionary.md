@@ -9,6 +9,8 @@ rank: 468
 sfi: 55.096
 sources: [wordnet, llm]
 status: enriched
+chart: terminology
+region: terminology
 ---
 
 ## Definition

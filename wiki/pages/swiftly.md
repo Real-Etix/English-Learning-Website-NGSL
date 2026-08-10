@@ -9,6 +9,8 @@ rank: 1646
 sfi: 49.58
 sources: [wordnet, llm]
 status: enriched
+chart: slow
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ in a swift manner
 - advanced_form: [[briskly]] — Use 'briskly' to describe quick, energetic movement, often with a sense of liveliness or purpose, while 'swiftly' is more neutral and general.
 - advanced_form: [[rapidly]] — Use 'rapidly' for fast-paced change or continuous speed, often in technical or scientific contexts, whereas 'swiftly' can be used for both physical and metaphorical speed.
 - builds_on: [[rapidly]] — Use 'swiftly' for smooth, graceful speed, often in literary or descriptive contexts, instead of the more neutral 'rapidly'.
+- collocation: [[retaliate]]

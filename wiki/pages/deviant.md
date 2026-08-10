@@ -6,6 +6,8 @@ pos: adjective
 forms: [deviant]
 sources: [llm]
 status: enriched
+chart: irregular
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[irregular]] — Use 'deviant' when something diverges from a standard or social norm, often implying judgment.
+- synonym: [[aberrant]]
+- collocation: [[behavior]]
+- collocation: [[sexual]]
+- collocation: [[pattern]]

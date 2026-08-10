@@ -6,6 +6,8 @@ pos: noun
 forms: [excise]
 sources: [llm]
 status: enriched
+chart: levy
+region: you
 ---
 
 ## Definition

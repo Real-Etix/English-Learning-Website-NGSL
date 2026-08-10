@@ -6,6 +6,8 @@ pos: adjective
 forms: [unhurried]
 sources: [llm]
 status: enriched
+chart: slow
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[slow]] — Use 'unhurried' to describe a relaxed, calm pace when there is no rush or pressure, unlike 'slow' which may sound negative.
+- synonym: [[lazy]]

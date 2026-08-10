@@ -9,6 +9,8 @@ rank: 127
 sfi: 57.42
 sources: [wordnet, llm]
 status: enriched
+chart: specialty
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[endowment]] — Use when the donation is specifically for long-term investment or ongoing support, often to an institution.
 - advanced_form: [[benefaction]] — Use for a large, charitable donation, often with a sense of philanthropy and formality.
 - builds_on: [[gift]] — Use 'donation' instead of 'gift' when emphasizing charitable giving or formal transfers to organizations.
+- synonym: [[bequest]]
+- collocation: [[munificent]]
+- synonym: [[bestowal]]

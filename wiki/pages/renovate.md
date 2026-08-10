@@ -9,6 +9,8 @@ rank: 124
 sfi: 57.47
 sources: [wordnet, llm]
 status: enriched
+chart: review
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - builds_on: [[remodel]] — Use 'renovate' for more formal or comprehensive improvements, often implying restoration to a good condition.
 - builds_on: [[rebuild]] — Use 'renovate' when updating or repairing something to bring it back to good condition, especially for buildings or rooms.
 - builds_on: [[redecorate]] — Use 'renovate' when the changes are structural or involve extensive repair, not just cosmetic updates.
+- synonym: [[renew]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [unbroken]
 sources: [llm]
 status: enriched
+chart: indirectly
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[straight]] — Use 'unbroken' to highlight the continuous nature without any break, often for streaks or records.
+- synonym: [[intact]]

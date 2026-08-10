@@ -9,6 +9,8 @@ rank: 1338
 sfi: 58.08
 sources: [wordnet, llm]
 status: enriched
+chart: convention
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - advanced_form: [[ritual]] — Use 'ritual' when describing a set of fixed actions performed regularly, often with symbolic or ceremonial meaning.
 - advanced_form: [[observance]] — Use 'observance' when highlighting the act of following a tradition or custom, especially one with formal or moral significance.
 - builds_on: [[custom]] — Use 'tradition' when emphasizing heritage and continuity, not just a repeated habit.
+- collocation: [[belles-lettres]]
+- synonym: [[folklore]]
+- collocation: [[historiographic]]
+- collocation: [[meliorist]]
+- synonym: [[mythos]]
+- synonym: [[orthodoxy]]
+- collocation: [[kowtow]]

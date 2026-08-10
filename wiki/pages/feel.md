@@ -9,6 +9,8 @@ rank: 117
 sfi: 68.92
 sources: [wordnet, llm]
 status: enriched
+chart: feel
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,22 @@ _No sourced examples yet._
 - synonym: [[experience]]
 - advanced_form: [[harbor]] — Use 'harbor' when the feeling is held secretly or persistently, often negative.
 - advanced_form: [[savor]] — Use 'savor' when you enjoy or appreciate a positive feeling deliberately.
+- synonym: [[ambience]]
+- collocation: [[compulsion]]
+- collocation: [[cramped]]
+- collocation: [[drowsy]]
+- collocation: [[embittered]]
+- collocation: [[entitled]]
+- collocation: [[famished]]
+- collocation: [[humiliated]]
+- collocation: [[jittery]]
+- collocation: [[letdown]]
+- collocation: [[listless]]
+- collocation: [[obliged]]
+- collocation: [[penitence]]
+- collocation: [[regretful]]
+- collocation: [[remorse]]
+- collocation: [[repugnance]]
+- collocation: [[despondent]]
+- collocation: [[exasperated]]
+- collocation: [[gratified]]

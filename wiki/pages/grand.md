@@ -9,6 +9,8 @@ rank: 2093
 sfi: 55.24
 sources: [wordnet, llm]
 status: enriched
+chart: poor
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ of behavior that is impressive and ambitious in scale or scope
 - advanced_form: [[magnificent]] — Use 'magnificent' to describe something exceptionally beautiful and impressive, often in a visual or artistic sense, whereas 'grand' focuses more on scale and ambition.
 - advanced_form: [[majestic]] — Use 'majestic' to evoke a sense of dignified grandeur, often associated with nature or authority, while 'grand' is broader and can apply to plans or gestures.
 - advanced_form: [[imposing]] — Use 'imposing' to emphasize a strong, often intimidating presence due to size or appearance, whereas 'grand' suggests awe or admiration without intimidation.
+- collocation: [[boulevard]]
+- collocation: [[foyer]]
+- synonym: [[lofty]]
+- collocation: [[multiparity]]
+- synonym: [[noble]]
+- collocation: [[opera]]
+- collocation: [[oratory]]
+- synonym: [[piano]]
+- collocation: [[piano]]
+- synonym: [[regal]]

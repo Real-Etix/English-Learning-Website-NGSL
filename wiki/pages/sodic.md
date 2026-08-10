@@ -6,6 +6,8 @@ pos: noun
 forms: [sodic]
 sources: [llm]
 status: enriched
+chart: sodium
+region: sodium
 ---
 
 ## Definition

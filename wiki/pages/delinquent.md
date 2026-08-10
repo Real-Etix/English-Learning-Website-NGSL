@@ -6,6 +6,8 @@ pos: adjective
 forms: [delinquent]
 sources: [llm]
 status: enriched
+chart: just
+region: you
 ---
 
 ## Definition

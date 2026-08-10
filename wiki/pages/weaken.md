@@ -9,6 +9,8 @@ rank: 334
 sfi: 54.84
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: bolster
+region: you
 ---
 
 ## Definition

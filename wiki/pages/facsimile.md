@@ -6,6 +6,8 @@ pos: noun
 forms: [facsimile]
 sources: [llm]
 status: enriched
+chart: fax
+region: fax
 ---
 
 ## Definition
@@ -18,3 +20,6 @@ _No sourced examples yet._
 - builds_on: [[fax]] — Use 'facsimile' in formal writing or technical contexts instead of the casual 'fax'.
 - builds_on: [[photocopy]] — Use for an exact copy, often of a rare or historical document, emphasizing high fidelity.
 - builds_on: [[reprint]] — Use 'facsimile' when the reprint is an exact replica, often of rare or historical documents, while 'reprint' is more general for any reprinted publication.
+- synonym: [[xerox]]
+- builds_on: [[transcription]] — Use when you want to emphasize an exact, often official copy of a document, more formal than 'transcription'.
+- builds_on: [[copy]] — Use for an exact reproduction of a document, often implying high fidelity or historical value.

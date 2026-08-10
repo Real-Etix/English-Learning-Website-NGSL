@@ -6,6 +6,8 @@ pos: noun
 forms: [impediment]
 sources: [llm]
 status: enriched
+chart: partition
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 - builds_on: [[obstacle]] — Use 'impediment' in formal or legal contexts to emphasize something that obstructs progress.
 - builds_on: [[hurdle]] — Use 'impediment' for a more formal term for something that slows or hinders progress, often used in abstract contexts.
 - builds_on: [[barrier]] — Use 'impediment' for a physical or abstract obstacle that seriously interferes.
+- synonym: [[handicap]]
+- synonym: [[obstruction]]
+- builds_on: [[drawback]] — Use when the drawback physically or figuratively blocks progress.
+- synonym: [[blocker]]

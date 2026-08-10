@@ -9,6 +9,8 @@ rank: 175
 sfi: 56.68
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: free
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ ensure observance of laws and rules
 - advanced_form: [[administer]] — Use 'administer' when focusing on the systematic management or application of rules, often in an official capacity.
 - advanced_form: [[execute]] — Use 'execute' when emphasizing the carrying out or implementation of a law or rule, often with precision or authority.
 - advanced_form: [[uphold]] — Use 'uphold' when emphasizing maintaining or supporting a rule or law against challenges or violations.
+- collocation: [[ordinance]]

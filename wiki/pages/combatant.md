@@ -6,6 +6,8 @@ pos: noun
 forms: [combatant]
 sources: [llm]
 status: enriched
+chart: militant
+region: you
 ---
 
 ## Definition

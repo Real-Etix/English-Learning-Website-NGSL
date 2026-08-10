@@ -9,6 +9,8 @@ rank: 2415
 sfi: 54.24
 sources: [wordnet, llm]
 status: enriched
+chart: valley
+region: valley
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[dale]] — Use 'dale' instead of 'valley' when describing a gentle, open valley, especially in rural or poetic contexts.
 - advanced_form: [[ravine]] — Use 'ravine' for a narrow, steep-sided valley, often with a stream, to emphasize depth and ruggedness.
 - advanced_form: [[glen]] — Use 'glen' for a small, narrow valley, especially one with woodland or in Scottish landscapes, implying seclusion.
+- collocation: [[yonder]]

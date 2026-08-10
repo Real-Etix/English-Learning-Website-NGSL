@@ -6,6 +6,8 @@ pos: noun
 forms: [perspicacity]
 sources: [llm]
 status: enriched
+chart: information
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[intelligence]] — Use 'perspicacity' for keen mental perception and understanding, especially of complex or hidden matters.
+- synonym: [[discernment]]
+- synonym: [[insight]]
+- collocation: [[remarkable]]
+- collocation: [[intellectual]]
+- collocation: [[show]]
+- collocation: [[with]]
+- collocation: [[of]]

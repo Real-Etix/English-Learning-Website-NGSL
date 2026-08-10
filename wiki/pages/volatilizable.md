@@ -6,6 +6,8 @@ pos: adjective
 forms: [volatilizable]
 sources: [llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[volatile]] — Use 'volatilizable' to emphasize the capability of being turned into vapor, often in scientific writing, whereas 'volatile' directly describes the property of evaporating.
+- collocation: [[organic]]

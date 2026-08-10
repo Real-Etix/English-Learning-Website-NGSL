@@ -9,6 +9,8 @@ rank: 572
 sfi: 62.25
 sources: [wordnet, llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ the greatest possible degree of something
 - advanced_form: [[maximum]] — Use 'maximum' when specifying the highest possible amount or degree, more precise than 'limit'.
 - advanced_form: [[utmost]] — Use 'utmost' to emphasize the greatest or most extreme degree, often in abstract or effort contexts.
 - advanced_form: [[ceiling]] — Use 'ceiling' when referring to an upper limit, especially in pricing or capacity contexts, more specific than 'limit'.
+- collocation: [[concurrency]]
+- synonym: [[cutoff]]
+- synonym: [[demarcation]]
+- collocation: [[prescribed]]
+- synonym: [[quota]]

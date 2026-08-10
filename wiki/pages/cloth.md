@@ -9,6 +9,8 @@ rank: 31
 sfi: 60.79
 sources: [wordnet, llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ artifact made by weaving or felting or knitting or crocheting natural or synthet
 - advanced_form: [[textile]] — Use 'textile' when emphasizing the manufacturing, commercial, or industrial aspect of woven or knitted materials, or when referring to the broader industry.
 - builds_on: [[towel]] — Use 'cloth' for any generic piece of fabric; 'towel' is specifically for drying.
 - builds_on: [[textile]] — Use 'cloth' for woven material, especially when referring to a specific piece or type; 'textile' is broader and can refer to the raw fibers or the manufacturing process.
+- collocation: [[cincture]]
+- collocation: [[crimson]]
+- collocation: [[napkin]]
+- synonym: [[rag]]
+- synonym: [[linen]]
+- collocation: [[moistening]]
+- synonym: [[sarong]]

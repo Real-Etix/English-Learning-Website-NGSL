@@ -9,6 +9,8 @@ rank: 1947
 sfi: 55.7
 sources: [wordnet, llm]
 status: enriched
+chart: acute
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,14 @@ intensely or extremely bad or unpleasant in degree or quality
 - advanced_form: [[acute]] — Use 'acute' for severe but short-lived, intense conditions, often in medical or sudden contexts.
 - advanced_form: [[grave]] — Use 'grave' when emphasizing seriousness or importance, often for outcomes or situations.
 - advanced_form: [[dire]] — Use 'dire' for extremely urgent or desperate situations, often implying a need for immediate action.
+- synonym: [[austere]]
+- collocation: [[chastisement]]
+- synonym: [[drastic]]
+- synonym: [[excruciating]]
+- collocation: [[handicap]]
+- collocation: [[hyperglycemia]]
+- synonym: [[peracute]]
+- collocation: [[hyperthermia]]
+- collocation: [[pyrexia]]
+- collocation: [[sepsis]]
+- collocation: [[septicemia]]

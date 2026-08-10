@@ -9,6 +9,8 @@ rank: 164
 sfi: 56.73
 sources: [wordnet, llm]
 status: enriched
+chart: overtime
+region: overtime
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[overwork]] — Use 'overwork' when emphasizing the excessive or burdensome nature of extra hours, rather than just the fact of working extra time.
 - advanced_form: [[moonlighting]] — Use 'moonlighting' when referring to a second job taken on in addition to one's primary employment, often during evening or off-hours.
+- collocation: [[cumulatively]]

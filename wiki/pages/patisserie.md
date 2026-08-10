@@ -6,6 +6,8 @@ pos: noun
 forms: [patisserie]
 sources: [llm]
 status: enriched
+chart: bakery
+region: bakery
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bakery]] — Use 'patisserie' for a bakery that specializes in fine pastries and desserts, often with a French or upscale connotation.
+- synonym: [[confectionery]]
+- collocation: [[local]]
+- collocation: [[artisan]]
+- collocation: [[corner]]
+- builds_on: [[pastry]] — Use to refer to high-quality decorative pastries or a pastry shop.

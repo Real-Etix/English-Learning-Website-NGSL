@@ -9,6 +9,8 @@ rank: 1038
 sfi: 59.4
 sources: [wordnet, llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ a special group delegated to consider some matter
 - synonym: [[commission]]
 - advanced_form: [[commission]] — Use 'commission' for a group with official authority to investigate or regulate, often permanent.
 - advanced_form: [[council]] — Use 'council' for a group that advises or makes policy, especially in government.
+- collocation: [[congressional]]
+- synonym: [[deputation]]
+- collocation: [[finance]]
+- collocation: [[hearing]]
+- collocation: [[reconstitute]]
+- collocation: [[vetting]]

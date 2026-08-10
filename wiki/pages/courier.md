@@ -9,6 +9,8 @@ rank: 242
 sfi: 55.66
 sources: [wordnet, llm]
 status: enriched
+chart: courier
+region: you
 ---
 
 ## Definition

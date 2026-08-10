@@ -9,6 +9,8 @@ rank: 1151
 sfi: 58.87
 sources: [wordnet, llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ _No sourced examples yet._
 - advanced_form: [[octant]] — Use 'octant' instead of 'sector' when the region is exactly one eighth of a circle (45 degrees).
 - builds_on: [[zone]] — Use 'sector' when referring to a clearly defined part of a larger whole, especially in economic, military, or urban contexts, whereas 'zone' is more general and can refer to any circumscribed area.
 - builds_on: [[segment]] — Use 'sector' when referring to a distinct part of an economy, industry, or area, more formal than 'segment'.
+- collocation: [[agribusiness]]
+- collocation: [[agroindustry]]
+- builds_on: [[district]] — Use sector for a clearly defined sub-area of a city or region, often in planning or military contexts.

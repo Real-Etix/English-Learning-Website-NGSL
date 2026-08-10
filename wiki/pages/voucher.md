@@ -9,6 +9,8 @@ rank: 315
 sfi: 54.69
 sources: [wordnet, llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[guarantor]] — Use 'guarantor' when emphasizing financial or legal responsibility for someone else's obligations.
 - advanced_form: [[surety]] — Use 'surety' when referring to a person who takes responsibility for another's performance or debt, especially in legal contexts.
 - advanced_form: [[attester]] — Use 'attester' when focusing on someone who formally verifies or witnesses the truth of a statement or fact.
+- builds_on: [[ticket]] — Use 'voucher' when the document is redeemable for a particular value or service, like a travel voucher.

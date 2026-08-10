@@ -9,6 +9,8 @@ rank: 160
 sfi: 67.68
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,15 @@ a necessary or essential thing
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[befit]]
+- synonym: [[mildew]]
+- synonym: [[necessity]]
+- synonym: [[essential]]
+- synonym: [[requirement]]
+- synonym: [[prerequisite]]
+- synonym: [[imperative]]
+- collocation: [[absolute]]
+- collocation: [[definite]]
+- collocation: [[real]]
+- synonym: [[ought]]
+- collocation: [[perforce]]

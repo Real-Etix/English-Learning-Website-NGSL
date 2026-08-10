@@ -6,6 +6,8 @@ pos: noun
 forms: [klick]
 sources: [llm]
 status: enriched
+chart: kilometer
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[kilometer]] — Use 'klick' in informal or specialized settings to sound more natural, but avoid in formal writing.
+- synonym: [[click]]
+- synonym: [[k]]
+- collocation: [[away]]
+- collocation: [[out]]
+- collocation: [[from]]

@@ -9,6 +9,8 @@ rank: 1634
 sfi: 56.86
 sources: [wordnet, llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ _No sourced examples yet._
 - advanced_form: [[proclaim]] — Use 'proclaim' for public or official announcements, often with ceremony or authority.
 - advanced_form: [[assert]] — Use 'assert' when stating a fact or opinion confidently and forcefully, especially when challenged.
 - advanced_form: [[avow]] — Use 'avow' for a personal, sincere, and often emotional declaration of belief or intention.
+- synonym: [[adjudge]]
+- synonym: [[aver]]
+- collocation: [[ceasefire]]
+- synonym: [[exclaim]]
+- collocation: [[invalid]]
+- collocation: [[walkover]]
+- synonym: [[profess]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [transfigure]
 sources: [llm]
 status: enriched
+chart: overhaul
+region: you
 ---
 
 ## Definition

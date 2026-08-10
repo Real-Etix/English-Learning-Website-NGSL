@@ -6,6 +6,8 @@ pos: verb
 forms: [annihilate]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[demolish]] — Use 'annihilate' for total destruction, often in a violent or thorough context, including figurative uses like defeating an opponent.
 - builds_on: [[devastate]] — Use 'annihilate' for total, absolute destruction, implying complete obliteration of something, stronger than 'devastate' which may allow partial survival.
 - builds_on: [[destroy]] — Use 'annihilate' when you mean complete and utter destruction, leaving nothing behind.
+- synonym: [[exterminate]]
+- builds_on: [[abolish]] — Use for total destruction, often stronger and more dramatic than abolish.

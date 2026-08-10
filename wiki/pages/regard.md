@@ -9,6 +9,8 @@ rank: 511
 sfi: 62.82
 sources: [wordnet, llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[respect]] — Use 'respect' instead of 'regard' when referring to a specific feature or detail, especially in formal or academic contexts.
 - advanced_form: [[aspect]] — Use 'aspect' to highlight a particular part or facet of a situation, often broader than a single point.
 - builds_on: [[treat]] — Use 'regard' instead of 'treat' when focusing on a person's attitude or perception toward someone or something.
+- builds_on: [[gaze]] — Use 'regard' for a formal or respectful gaze, especially in literary contexts.
+- synonym: [[deference]]

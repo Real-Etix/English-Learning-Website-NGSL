@@ -6,6 +6,8 @@ pos: verb
 forms: [jostle]
 sources: [llm]
 status: enriched
+chart: elbow
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shove]] — Use when describing being pushed or bumping into people in a crowded space; more formal and specific than shove.
+- synonym: [[push]]
+- synonym: [[elbow]]
+- synonym: [[bump]]
+- synonym: [[crowd]]
+- collocation: [[through]]
+- collocation: [[crowd]]
+- collocation: [[way]]
+- collocation: [[past]]
+- collocation: [[aside]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [recalcitrant]
 sources: [llm]
 status: enriched
+chart: revolutionary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dissident]] — Use when stressing stubborn resistance to authority or rules, with a stronger tone of defiance.
+- collocation: [[student]]
+- collocation: [[child]]
+- collocation: [[attitude]]
+- collocation: [[employee]]
+- collocation: [[patient]]

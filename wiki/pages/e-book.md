@@ -9,6 +9,8 @@ rank: 4
 sfi: 65.03
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,8 @@ _No sourced examples yet._
 ## Connections
 - domain: toeic
 - domain: business
+- collocation: [[reader]]
+- collocation: [[store]]
+- collocation: [[download]]
+- collocation: [[publish]]
+- collocation: [[format]]

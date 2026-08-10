@@ -9,6 +9,8 @@ rank: 895
 sfi: 60.24
 sources: [wordnet, llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ a member of the genus Canis (probably descended from the common wolf) that has b
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[canine]] — Use 'canine' in formal, scientific, or clinical contexts instead of 'dog'.
 - advanced_form: [[hound]] — Use 'hound' when referring to a dog bred for hunting or tracking, or informally as a synonym for any dog.
+- collocation: [[pugnacious]]
+- collocation: [[pup]]
+- collocation: [[vicious]]

@@ -9,6 +9,8 @@ rank: 1726
 sfi: 49.45
 sources: [wordnet, llm]
 status: enriched
+chart: dismal
+region: you
 ---
 
 ## Definition

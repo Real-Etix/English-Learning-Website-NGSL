@@ -6,6 +6,8 @@ pos: adjective
 forms: [sunlit]
 sources: [llm]
 status: enriched
+chart: sunny
+region: you
 ---
 
 ## Definition

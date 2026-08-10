@@ -6,6 +6,8 @@ pos: noun
 forms: [maternalaunt]
 sources: [llm]
 status: enriched
+chart: aunt
+region: aunt
 ---
 
 ## Definition

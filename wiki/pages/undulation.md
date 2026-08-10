@@ -6,6 +6,8 @@ pos: noun
 forms: [undulation]
 sources: [llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition

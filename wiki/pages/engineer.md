@@ -9,6 +9,8 @@ rank: 1312
 sfi: 58.22
 sources: [wordnet, llm]
 status: enriched
+chart: architect
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[manipulate]] — Use 'engineer' when implying skillful, often cunning, planning and execution to bring about a specific outcome, similar to 'orchestrate' but with a more technical or strategic nuance.
 - advanced_form: [[architect]] — Use 'architect' when emphasizing the creative and high-level planning role, especially in complex systems, rather than hands-on construction.
 - advanced_form: [[technologist]] — Use 'technologist' to emphasize a broader, more scientific application of technology, often in specialized fields.
+- synonym: [[contrive]]
+- synonym: [[programmer]]
+- synonym: [[mechanic]]

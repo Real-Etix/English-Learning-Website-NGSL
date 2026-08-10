@@ -6,6 +6,8 @@ pos: noun
 forms: [fledgling]
 sources: [llm]
 status: enriched
+chart: novice
+region: you
 ---
 
 ## Definition

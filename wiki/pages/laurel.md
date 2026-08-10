@@ -6,6 +6,8 @@ pos: noun
 forms: [laurel]
 sources: [llm]
 status: enriched
+chart: feel
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[honor]] — Use 'laurel' (often plural) to emphasize a symbolic, hard-won honor associated with achievement, like a crown of laurel in ancient times.
+- synonym: [[acclaim]]
+- synonym: [[praise]]
+- synonym: [[recognition]]
+- synonym: [[distinction]]
+- collocation: [[earn]]
+- collocation: [[win]]
+- collocation: [[gain]]
+- collocation: [[bestow]]

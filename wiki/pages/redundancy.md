@@ -9,6 +9,8 @@ rank: 1224
 sfi: 49.87
 sources: [wordnet, llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[replication]] — Use 'replication' when emphasizing the exact copying or duplication of information for reliability.
 - advanced_form: [[duplication]] — Use 'duplication' when focusing on the act of making an extra copy to guard against errors.
 - advanced_form: [[iteration]] — Use 'iteration' when referring to repeated cycles or transmissions in a systematic process.
+- synonym: [[joblessness]]

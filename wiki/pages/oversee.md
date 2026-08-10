@@ -9,6 +9,8 @@ rank: 442
 sfi: 54.37
 sources: [wordnet, llm]
 status: enriched
+chart: administer
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[administer]] — Use 'administer' when the focus is on managing and executing tasks or policies, often in organizational or bureaucratic settings.
 - advanced_form: [[orchestrate]] — Use 'orchestrate' when you want to emphasize careful coordination and arrangement of multiple elements, often in a creative or strategic context.
 - builds_on: [[administer]] — Use 'oversee' when you focus on supervising and monitoring work, rather than handling routine tasks as with 'administer'.
+- synonym: [[preside]]

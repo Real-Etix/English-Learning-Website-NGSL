@@ -6,6 +6,8 @@ pos: verb
 forms: [uproot]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[relocate]] — Use 'uproot' when the move involves a drastic or disruptive change, as if pulling up roots from a previous location.
+- builds_on: [[displace]] — Use for displacing people from their accustomed environment or roots.

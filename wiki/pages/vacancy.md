@@ -9,6 +9,8 @@ rank: 339
 sfi: 54.46
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[void]] — Use 'void' to emphasize a complete absence or emptiness, often in a metaphorical sense, more abstract than 'vacancy'.
 - advanced_form: [[vacuum]] — Use 'vacuum' to imply a space that is not only empty but also lacking activity or atmosphere, more forceful than 'vacancy'.
+- collocation: [[cation]]

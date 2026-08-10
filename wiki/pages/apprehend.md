@@ -6,6 +6,8 @@ pos: verb
 forms: [apprehend]
 sources: [llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[catch]] — Use 'apprehend' specifically for capturing a criminal or wrongdoer, which is a formal term for 'catch' in a law enforcement context.
 - builds_on: [[fear]] — Use 'apprehend' in formal or literary contexts to mean to anticipate something with fear or anxiety, especially when it is about a future event that is uncertain but likely.
 - builds_on: [[arrest]] — More formal than 'arrest,' often used in official reports, legal contexts, or news.
+- synonym: [[comprehend]]

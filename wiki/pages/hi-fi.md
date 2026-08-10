@@ -6,6 +6,8 @@ pos: noun
 forms: [hi-fi]
 sources: [llm]
 status: enriched
+chart: stereo
+region: stereo
 ---
 
 ## Definition

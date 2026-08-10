@@ -6,6 +6,8 @@ pos: verb
 forms: [trek]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[travel]] — Use 'trek' when the travel is slow, demanding, and often on foot, emphasizing effort and endurance rather than speed.
 - builds_on: [[excursion]] — Use 'trek' for a long, strenuous journey on foot, especially through rough terrain, implying more effort and endurance than a leisurely 'excursion'.
 - builds_on: [[journey]] — Use 'trek' instead of 'journey' when the travel is long, difficult, and on foot.
+- builds_on: [[hike]] — Use for a long, challenging hike, often over rough terrain or with a purpose.

@@ -9,6 +9,8 @@ rank: 1366
 sfi: 57.97
 sources: [wordnet, llm]
 status: enriched
+chart: lot
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[allocate]] — Use 'allocate' instead of 'invest' when emphasizing the deliberate distribution of resources, often with a plan or purpose.
 - advanced_form: [[commit]] — Use 'commit' instead of 'invest' to highlight a firm decision to dedicate resources, often implying risk or long-term involvement.
 - advanced_form: [[venture]] — Use 'venture' instead of 'invest' when the investment involves significant uncertainty or speculation.
+- collocation: [[judiciously]]
+- collocation: [[prudently]]
+- synonym: [[subscribe]]

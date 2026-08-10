@@ -9,6 +9,8 @@ rank: 987
 sfi: 59.68
 sources: [wordnet, llm]
 status: enriched
+chart: profound
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[deep]] — Use 'deep' for poetic or literary references to the sea, emphasizing its vastness and depth.
 - advanced_form: [[main]] — Use 'main' in formal or archaic contexts to refer to the open ocean, especially in historical or nautical writing.
 - advanced_form: [[brine]] — Use 'brine' for a more poetic or descriptive term, emphasizing the saltiness of the sea.
+- collocation: [[azure]]
+- collocation: [[breeze]]
+- collocation: [[cobalt]]

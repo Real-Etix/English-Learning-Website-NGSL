@@ -9,6 +9,8 @@ rank: 473
 sfi: 63.27
 sources: [wordnet, llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[disparity]] — Use when emphasizing inequality or gap, especially in amounts or status.
 - advanced_form: [[divergence]] — Use when focusing on moving apart or deviating from a common point.
 - advanced_form: [[distinction]] — Use when highlighting a subtle or qualitative difference, often implying a fine or important line.
+- collocation: [[appreciable]]
+- synonym: [[gap]]
+- collocation: [[marked]]
+- collocation: [[meridional]]
+- collocation: [[perceptible]]

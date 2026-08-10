@@ -9,6 +9,8 @@ rank: 409
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[vacancy]] — Use 'vacuum' to imply a space that is not only empty but also lacking activity or atmosphere, more forceful than 'vacancy'.
 - advanced_form: [[void]] — Use 'void' when emphasizing a total absence, especially in physical or abstract contexts (e.g., the void of space), more poetic or formal than 'vacuum'.
 - advanced_form: [[emptiness]] — Use 'emptiness' when focusing on the quality or feeling of absence, rather than the technical concept of a vacuum.
+- synonym: [[dedust]]
+- collocation: [[robot]]
+- collocation: [[robotic]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [mackintosh]
 sources: [llm]
 status: enriched
+chart: raincoat
+region: raincoat
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[raincoat]] — Use 'mackintosh' for a more formal or vintage style of raincoat, often made of rubberized fabric.
+- synonym: [[slicker]]
+- collocation: [[classic]]
+- collocation: [[wear]]
+- collocation: [[rain]]

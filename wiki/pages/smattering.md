@@ -6,6 +6,8 @@ pos: noun
 forms: [smattering]
 sources: [llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition

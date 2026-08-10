@@ -9,6 +9,8 @@ rank: 403
 sfi: 54.25
 sources: [wordnet, llm]
 status: enriched
+chart: crossover
+region: crossover
 ---
 
 ## Definition

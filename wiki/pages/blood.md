@@ -9,6 +9,8 @@ rank: 1018
 sfi: 59.51
 sources: [wordnet, llm]
 status: enriched
+chart: blood
+region: blood
 ---
 
 ## Definition
@@ -23,3 +25,16 @@ the fluid (red in vertebrates) that is pumped through the body by the heart and 
 - advanced_form: [[gore]] — Use 'gore' instead of 'blood' when referring to blood in violent or graphic contexts, especially when it is considered repulsive or shown in large amounts.
 - advanced_form: [[plasma]] — Use 'plasma' when specifically talking about the liquid component of blood, often in medical or scientific discussions.
 - advanced_form: [[lifeblood]] — Use 'lifeblood' metaphorically to refer to something that is the most vital or essential element for the existence or success of something.
+- synonym: [[consanguineous]]
+- collocation: [[consanguineous]]
+- collocation: [[dextrose]]
+- collocation: [[effusion]]
+- collocation: [[globule]]
+- collocation: [[kindred]]
+- collocation: [[lipid]]
+- collocation: [[purify]]
+- collocation: [[rivulet]]
+- collocation: [[royal]]
+- collocation: [[vial]]
+- collocation: [[donate]]
+- collocation: [[drenched]]

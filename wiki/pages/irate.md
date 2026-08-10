@@ -6,6 +6,8 @@ pos: adjective
 forms: [irate]
 sources: [llm]
 status: enriched
+chart: sore
+region: you
 ---
 
 ## Definition

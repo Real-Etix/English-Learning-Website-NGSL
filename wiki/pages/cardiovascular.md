@@ -9,6 +9,8 @@ rank: 44
 sfi: 64.61
 sources: [wordnet, llm]
 status: enriched
+chart: cardiovascular
+region: cardiovascular
 ---
 
 ## Definition

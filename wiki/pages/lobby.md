@@ -9,6 +9,8 @@ rank: 24
 sfi: 61.5
 sources: [wordnet, llm]
 status: enriched
+chart: lobby
+region: lobby
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[foyer]] — Use 'foyer' for an elegant or formal entrance area, especially in a theater, hotel, or grand building.
 - advanced_form: [[vestibule]] — Use 'vestibule' for a small entrance hall or anteroom, often between the outer door and the main interior, sometimes implying a transitional space.
+- collocation: [[lower-level]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [herbivore]
 sources: [llm]
 status: enriched
+chart: vegan
+region: vegan
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[vegan]] — Use for a humorous or scientific tone, but note it's primarily for animals.
 - builds_on: [[vegetarian]] — Use 'herbivore' for a more scientific or formal tone, often in discussions of diet or biology.
+- synonym: [[veganist]]

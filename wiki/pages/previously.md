@@ -9,6 +9,8 @@ rank: 1562
 sfi: 57.14
 sources: [wordnet, llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ at an earlier time or formerly
 - advanced_form: [[heretofore]] — Use 'heretofore' in formal or legal contexts to emphasize a time up to now.
 - advanced_form: [[hitherto]] — Use 'hitherto' for a literary or formal tone, meaning 'until now'.
 - builds_on: [[hitherto]] — Use 'previously' instead of 'hitherto' for a more common, everyday synonym.
+- synonym: [[already]]
+- synonym: [[historically]]
+- collocation: [[unobtainable]]

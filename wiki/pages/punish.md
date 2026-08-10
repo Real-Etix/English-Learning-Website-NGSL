@@ -9,6 +9,8 @@ rank: 740
 sfi: 52.69
 sources: [wordnet, llm]
 status: enriched
+chart: certainty
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ impose a penalty on
 - domain: academic
 - advanced_form: [[sanction]] — Use 'sanction' for official, often legal or formal penalties.
 - advanced_form: [[chastise]] — Use 'chastise' for a reprimand that includes a scolding or mild punishment.
+- collocation: [[impiety]]

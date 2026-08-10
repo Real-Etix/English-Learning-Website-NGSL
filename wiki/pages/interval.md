@@ -9,6 +9,8 @@ rank: 24
 sfi: 61.62
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: span
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,4 @@ a definite length of time marked off by two instants
 - builds_on: [[wavelength]] — Use 'interval' instead of 'wavelength' when you want a more formal term for the spatial distance, but note it loses the specific phase reference.
 - builds_on: [[meantime]] — Use 'interval' when referring to a clearly defined gap between two events, often with a focus on duration or regularity.
 - builds_on: [[distance]] — Use 'interval' when focusing on a specific gap or break between two points in time or space, often implying a defined separation.
+- collocation: [[isohypse]]

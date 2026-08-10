@@ -6,6 +6,8 @@ pos: noun
 forms: [harmony]
 sources: [llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,7 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[music]] — Use 'harmony' when focusing on the combination of simultaneous notes or the pleasing arrangement of parts.
 - builds_on: [[peace]] — Use 'harmony' when emphasizing mutual agreement, balance, and cooperation among people or groups, not just the lack of fighting.
+- synonym: [[comity]]
+- synonym: [[rapport]]
+- synonym: [[reconciliation]]
+- collocation: [[revoice]]

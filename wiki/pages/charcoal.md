@@ -6,6 +6,8 @@ pos: noun
 forms: [charcoal]
 sources: [llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gray]] — Use 'charcoal' for a very dark, nearly black gray, similar to burnt wood.
+- synonym: [[slate]]
+- synonym: [[ash]]

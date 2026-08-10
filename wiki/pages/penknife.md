@@ -6,6 +6,8 @@ pos: noun
 forms: [penknife]
 sources: [llm]
 status: enriched
+chart: jackknife
+region: jackknife
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[jackknife]] — Use 'penknife' instead of 'jackknife' when referring to a small, lightweight folding knife, often used for fine tasks.
+- synonym: [[knife]]
+- collocation: [[small]]
+- collocation: [[sharp]]
+- collocation: [[carry]]
+- collocation: [[pocket]]

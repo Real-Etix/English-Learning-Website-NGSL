@@ -6,6 +6,8 @@ pos: noun
 forms: [theoccident]
 sources: [llm]
 status: enriched
+chart: west
+region: west
 ---
 
 ## Definition

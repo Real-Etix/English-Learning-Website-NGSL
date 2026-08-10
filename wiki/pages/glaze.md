@@ -6,6 +6,8 @@ pos: noun
 forms: [glaze]
 sources: [llm]
 status: enriched
+chart: ice
+region: ice
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ice]] — Use when referring to a smooth, transparent layer of ice, often on roads or trees.
+- collocation: [[ceramics]]
+- synonym: [[film]]
+- synonym: [[layer]]
+- collocation: [[thin]]
+- collocation: [[surface]]
+- collocation: [[black]]
+- synonym: [[gloss]]

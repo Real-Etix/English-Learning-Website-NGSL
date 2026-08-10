@@ -9,6 +9,8 @@ rank: 674
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: unplug
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ cause to become detached or separated
 - advanced_form: [[disengage]] — Use 'disengage' when parts are locked or connected mechanically and you release them.
 - advanced_form: [[uncouple]] — Use 'uncouple' specifically for separating linked units, like train cars or paired items.
 - builds_on: [[unplug]] — Use 'detach' to focus on physical separation of a plug from its receptacle, often in instructions or manuals.
+- synonym: [[decouple]]
+- synonym: [[isolate]]

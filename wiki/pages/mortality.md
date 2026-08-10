@@ -9,6 +9,8 @@ rank: 61
 sfi: 59.671
 sources: [wordnet, llm]
 status: enriched
+chart: mortality
+region: mortality
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[finitude]] — Use finitude to emphasize the limited nature of existence, often in philosophical or poetic contexts.
 - advanced_form: [[transience]] — Use transience to highlight the temporary, fleeting quality of life or experiences.
+- synonym: [[fatality]]
+- collocation: [[sepsis]]

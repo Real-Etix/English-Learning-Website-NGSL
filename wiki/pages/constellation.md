@@ -6,6 +6,8 @@ pos: noun
 forms: [constellation]
 sources: [llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[complex]] — Use 'constellation' to emphasize a group of connected elements that together form a pattern or whole, often suggesting a broader or more abstract set than 'complex'.
+- synonym: [[array]]
+- synonym: [[collection]]
+- synonym: [[cluster]]
+- synonym: [[configuration]]
+- synonym: [[network]]

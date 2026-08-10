@@ -6,6 +6,8 @@ pos: noun
 forms: [sportsperson]
 sources: [llm]
 status: enriched
+chart: competitor
+region: you
 ---
 
 ## Definition

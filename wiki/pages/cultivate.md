@@ -9,6 +9,8 @@ rank: 284
 sfi: 56.02
 sources: [wordnet, llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition

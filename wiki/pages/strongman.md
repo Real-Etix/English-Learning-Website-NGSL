@@ -6,6 +6,8 @@ pos: noun
 forms: [strongman]
 sources: [llm]
 status: enriched
+chart: lifter
+region: lifter
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lifter]] — Use 'strongman' for athletes competing in strongman events like truck pulls, more encompassing than just lifting barbells.
+- synonym: [[muscleman]]
+- synonym: [[powerlifter]]

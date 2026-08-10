@@ -6,6 +6,8 @@ pos: adjective
 forms: [cutthroat]
 sources: [llm]
 status: enriched
+chart: competitive
+region: competitive
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[competitive]] — Use 'cutthroat' to imply ruthless, intense, and often unethical competition.
+- synonym: [[ruthless]]
+- synonym: [[fierce]]
+- synonym: [[aggressive]]
+- collocation: [[competition]]
+- collocation: [[industry]]
+- collocation: [[market]]
+- collocation: [[world]]
+- collocation: [[business]]
+- synonym: [[murderer]]

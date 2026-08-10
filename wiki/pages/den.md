@@ -6,6 +6,8 @@ pos: noun
 forms: [den]
 sources: [llm]
 status: enriched
+chart: nest
+region: nest
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nest]] — Use 'den' for mammals' shelters, especially for hibernation or raising young; 'nest' is less common for large mammals.
+- synonym: [[burrow]]
+- synonym: [[lair]]
+- synonym: [[retreat]]
+- collocation: [[bear]]

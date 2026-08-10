@@ -9,6 +9,8 @@ rank: 2791
 sfi: 51.79
 sources: [wordnet, llm]
 status: enriched
+chart: firm
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ in a faithful manner
 - advanced_form: [[devotedly]] — Use 'devotedly' when the loyalty stems from deep personal affection or dedication, stronger than mere faithful duty.
 - advanced_form: [[staunchly]] — Use 'staunchly' to emphasize unwavering, resolute support, especially in difficult or contentious situations.
 - advanced_form: [[unwaveringly]] — Use 'unwaveringly' when focusing on constant, steady commitment without any deviation or hesitation.
+- synonym: [[conscientiously]]

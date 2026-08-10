@@ -6,6 +6,8 @@ pos: verb
 forms: [renounce]
 sources: [llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[waive]] — Use 'renounce' when you formally and publicly give up a title, belief, or duty, carrying a stronger sense of rejection than 'waive'.
+- synonym: [[eschew]]
+- synonym: [[forsake]]
+- synonym: [[abandon]]
+- synonym: [[relinquish]]
+- synonym: [[repudiate]]
+- collocation: [[throne]]
+- collocation: [[citizenship]]
+- collocation: [[violence]]
+- collocation: [[faith]]
+- collocation: [[claim]]

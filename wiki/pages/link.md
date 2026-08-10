@@ -9,6 +9,8 @@ rank: 770
 sfi: 60.95
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[nexus]] — Use 'nexus' when emphasizing a critical or central connection point, more formal than 'link'.
 - advanced_form: [[bond]] — Use 'bond' when the connection is emotional, personal, or unbreakable, not just a simple link.
 - advanced_form: [[tie]] — Use 'tie' when referring to a formal or structural connection, often with a sense of interdependence.
+- synonym: [[connector]]
+- collocation: [[missing]]
+- synonym: [[coupler]]

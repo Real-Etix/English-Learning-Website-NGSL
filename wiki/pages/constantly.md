@@ -9,6 +9,8 @@ rank: 2154
 sfi: 55.06
 sources: [wordnet, llm]
 status: enriched
+chart: annuity
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ without variation or change, in every case
 - synonym: [[always]]
 - advanced_form: [[invariably]] — Use 'invariably' to emphasize that something happens every time without exception, more formal than 'constantly'.
 - advanced_form: [[perpetually]] — Use 'perpetually' to suggest a continuous, unending state, often with a hint of exaggeration or persistence, more literary than 'constantly'.
+- collocation: [[brag]]
+- collocation: [[disparage]]
+- collocation: [[evolving]]
+- synonym: [[perennially]]
+- collocation: [[reevaluate]]

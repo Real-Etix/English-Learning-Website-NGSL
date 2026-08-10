@@ -6,6 +6,8 @@ pos: verb
 forms: [allay]
 sources: [llm]
 status: enriched
+chart: relieve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reassure]] — Use 'allay' instead of 'reassure' to emphasize reducing specific fears or doubts, often in formal contexts.
+- synonym: [[ease]]
+- synonym: [[relieve]]
+- synonym: [[calm]]
+- synonym: [[soothe]]
+- synonym: [[assuage]]
+- synonym: [[dispel]]

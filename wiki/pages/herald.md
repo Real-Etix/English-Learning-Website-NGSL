@@ -6,6 +6,8 @@ pos: verb
 forms: [herald]
 sources: [llm]
 status: enriched
+chart: courier
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[headline]] — Use when announcing something important or significant, often with a sense of ceremony or importance.
 - builds_on: [[messenger]] — Use 'herald' for a person who publicly announces important news, often in a formal or ceremonial context.
+- synonym: [[precursor]]

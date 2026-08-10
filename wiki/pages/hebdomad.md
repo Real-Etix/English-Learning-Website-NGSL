@@ -6,6 +6,8 @@ pos: noun
 forms: [hebdomad]
 sources: [llm]
 status: enriched
+chart: week
+region: week
 ---
 
 ## Definition

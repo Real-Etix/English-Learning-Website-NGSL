@@ -9,6 +9,8 @@ rank: 1154
 sfi: 58.85
 sources: [wordnet, llm]
 status: enriched
+chart: accommodate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[fulfill]] — Use 'fulfill' for meeting duties, requirements, or promises, often more formal than 'satisfy'.
 - advanced_form: [[gratify]] — Use 'gratify' when the satisfaction is emotional or pleasurable, often more intense than 'satisfy'.
 - builds_on: [[qualify]] — Use 'satisfy' when meeting specific conditions or criteria, especially in formal or technical contexts.
+- synonym: [[quench]]

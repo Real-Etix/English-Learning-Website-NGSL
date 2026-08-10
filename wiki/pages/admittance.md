@@ -6,6 +6,8 @@ pos: noun
 forms: [admittance]
 sources: [llm]
 status: enriched
+chart: enter
+region: you
 ---
 
 ## Definition

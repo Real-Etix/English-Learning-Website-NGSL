@@ -9,6 +9,8 @@ rank: 2082
 sfi: 55.27
 sources: [wordnet, llm]
 status: enriched
+chart: take
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ terminate, end, or take out
 - advanced_form: [[eradicate]] — Use 'eradicate' when emphasizing complete and permanent removal, often of a problem, disease, or pest, rather than just a simple elimination.
 - advanced_form: [[expunge]] — Use 'expunge' when referring to erasing or deleting something from records, memory, or existence, often in legal or formal contexts.
 - advanced_form: [[obliterate]] — Use 'obliterate' to stress total destruction or annihilation, leaving no trace behind, unlike a standard elimination which may be partial.
+- synonym: [[assassinate]]
+- synonym: [[disposeof]]
+- synonym: [[exterminate]]
+- synonym: [[purge]]
+- synonym: [[dispel]]
+- synonym: [[extinguish]]

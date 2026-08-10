@@ -9,6 +9,8 @@ rank: 220
 sfi: 56.07
 sources: [wordnet, llm]
 status: enriched
+chart: commute
+region: commute
 ---
 
 ## Definition

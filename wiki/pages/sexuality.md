@@ -9,6 +9,8 @@ rank: 641
 sfi: 53.225
 sources: [wordnet, llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[libido]] — Use 'libido' instead of 'sexuality' when referring specifically to sexual drive or desire, rather than broader identity or biological roles.
 - advanced_form: [[eroticism]] — Use 'eroticism' when emphasizing the quality of being sexually stimulating or the expression of sexual desire, as opposed to the general concept of sexuality.
+- collocation: [[flaunt]]

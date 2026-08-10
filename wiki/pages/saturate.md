@@ -9,6 +9,8 @@ rank: 488
 sfi: 53.57
 sources: [wordnet, llm]
 status: enriched
+chart: saturate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[suffuse]] — Use when a quality or color spreads softly and evenly through something, often with a poetic or formal tone.
 - advanced_form: [[imbue]] — Use when filling something with a quality, feeling, or value, especially in a figurative or lasting way.
 - builds_on: [[overcrowd]] — Use 'saturate' when the crowding is extreme, leaving no space or capacity left.
+- synonym: [[overpopulate]]
+- synonym: [[pervade]]

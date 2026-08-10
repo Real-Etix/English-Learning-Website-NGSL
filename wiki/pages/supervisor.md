@@ -9,6 +9,8 @@ rank: 13
 sfi: 62.41
 sources: [wordnet, llm]
 status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[overseer]] — Use 'overseer' for a person who closely monitors and directs workers, especially in manual or labor-intensive environments.
 - advanced_form: [[director]] — Use 'director' for a higher-level leader who sets vision, makes strategic decisions, and oversees multiple supervisors or departments.
 - builds_on: [[foreman]] — Use instead of foreman to emphasize formal oversight in professional or industrial settings.
+- synonym: [[invigilator]]
+- synonym: [[proctor]]
+- builds_on: [[boss]] — Use in workplace contexts for a person who manages a team, more formal than 'boss'.

@@ -6,6 +6,8 @@ pos: verb
 forms: [promenade]
 sources: [llm]
 status: enriched
+chart: walk
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,5 @@ _No sourced examples yet._
 - builds_on: [[cruise]] — Use for a leisurely, often public drive with a sense of elegance or social display.
 - builds_on: [[mall]] — Use 'promenade' instead of 'mall' when referring to a scenic walking area, often along a waterfront or in a park, and when you want a more elegant or leisurely connotation.
 - builds_on: [[walkway]] — Use for a wide, often paved public walkway, usually along a waterfront or in a park, with a leisurely or scenic feel.
+- synonym: [[boardwalk]]
+- synonym: [[boulevard]]

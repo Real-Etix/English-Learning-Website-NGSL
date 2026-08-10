@@ -9,6 +9,8 @@ rank: 845
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: amenity
+region: amenity
 ---
 
 ## Definition

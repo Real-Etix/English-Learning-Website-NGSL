@@ -6,6 +6,8 @@ pos: noun
 forms: [curbstone]
 sources: [llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[curb]] — Use 'curbstone' when referring to an individual stone that makes up the curb, often in technical or descriptive contexts.
+- collocation: [[loose]]
+- collocation: [[sidewalk]]
+- collocation: [[street]]

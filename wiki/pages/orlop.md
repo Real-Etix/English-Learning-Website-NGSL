@@ -6,6 +6,8 @@ pos: noun
 forms: [orlop]
 sources: [llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[deck]] — Use 'orlop' for the lowest deck of a ship, typically below the waterline and used for storage.
+- synonym: [[hold]]

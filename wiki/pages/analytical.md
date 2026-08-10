@@ -9,6 +9,8 @@ rank: 971
 sfi: 51.75
 sources: [wordnet, llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ using or skilled in using analysis (i.e., separating a whole--intellectual or su
 - advanced_form: [[perspicacious]] — Use 'perspicacious' for a more intellectual and penetrating form of analysis, implying deep insight.
 - advanced_form: [[incisive]] — Use 'incisive' when the analysis is sharply pointed and gets to the core quickly.
 - builds_on: [[scientific]] — Use 'analytical' when focusing on logical analysis and reasoning, rather than just general scientific practice.
+- collocation: [[chemistry]]
+- synonym: [[commentarial]]
+- synonym: [[interpretive]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [forenoon]
 sources: [llm]
 status: enriched
+chart: morning
+region: morning
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[morning]] — Use 'forenoon' in formal, technical, or nautical contexts instead of 'morning'.
+- synonym: [[daytime]]
+- collocation: [[late]]
+- collocation: [[early]]
+- collocation: [[during]]

@@ -9,6 +9,8 @@ rank: 1103
 sfi: 49.8
 sources: [wordnet, llm]
 status: enriched
+chart: backpack
+region: backpack
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[rucksack]] — Use 'rucksack' instead of 'backpack' for outdoor or military contexts, especially in British English.
 - advanced_form: [[knapsack]] — Use 'knapsack' for a small, often canvas or leather backpack, typically for casual or travel use.
+- synonym: [[bag]]
+- collocation: [[bulky]]

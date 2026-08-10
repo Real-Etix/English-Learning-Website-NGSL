@@ -6,6 +6,8 @@ pos: noun
 forms: [carpus]
 sources: [llm]
 status: enriched
+chart: wrist
+region: wrist
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wrist]] — Use 'carpus' in formal or anatomical contexts instead of 'wrist'.
+- collocation: [[left]]
+- collocation: [[right]]
+- collocation: [[joint]]
+- collocation: [[bone]]

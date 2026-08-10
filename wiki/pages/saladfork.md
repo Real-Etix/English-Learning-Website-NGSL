@@ -6,6 +6,8 @@ pos: noun
 forms: [saladfork]
 sources: [llm]
 status: enriched
+chart: fork
+region: fork
 ---
 
 ## Definition

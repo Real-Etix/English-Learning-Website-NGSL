@@ -9,6 +9,8 @@ rank: 746
 sfi: 61.02
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[attain]] — Use 'attain' when emphasizing reaching a specific target or level after sustained effort.
 - advanced_form: [[accomplish]] — Use 'accomplish' when focusing on completing a task or mission successfully.
 - advanced_form: [[realize]] — Use 'realize' when the achievement involves making an abstract goal or aspiration a reality.
+- synonym: [[effectuate]]
+- collocation: [[eminence]]
+- collocation: [[ripeness]]
+- collocation: [[rapprochement]]

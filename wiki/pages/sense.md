@@ -9,6 +9,8 @@ rank: 412
 sfi: 63.92
 sources: [wordnet, llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,21 @@ a general conscious awareness
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[cognizance]] — Use 'cognizance' for formal or technical contexts to emphasize deliberate awareness or knowledge, rather than the more general 'sense'.
 - advanced_form: [[apprehension]] — Use 'apprehension' to highlight intellectual understanding or grasp of a situation, especially in formal or academic writing, rather than the passive 'sense'.
+- collocation: [[camaraderie]]
+- collocation: [[connotative]]
+- collocation: [[defenselessness]]
+- collocation: [[denotative]]
+- collocation: [[dignity]]
+- collocation: [[exhilaration]]
+- collocation: [[heighten]]
+- collocation: [[heightened]]
+- collocation: [[malaise]]
+- collocation: [[pervade]]
+- collocation: [[whimsical]]
+- collocation: [[wholeness]]
+- synonym: [[wisdom]]
+- collocation: [[brotherhood]]
+- collocation: [[conviviality]]
+- collocation: [[illusory]]
+- collocation: [[patriotism]]
+- collocation: [[powerlessness]]

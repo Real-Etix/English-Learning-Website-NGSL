@@ -9,6 +9,8 @@ rank: 2390
 sfi: 54.32
 sources: [wordnet, llm]
 status: enriched
+chart: erase
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ postpone indefinitely or annul something that was scheduled
 - advanced_form: [[abort]] — Use 'abort' when a process or plan is stopped suddenly, often before completion.
 - advanced_form: [[rescind]] — Use 'rescind' in formal contexts to mean cancel a decision, agreement, or policy officially.
 - advanced_form: [[nullify]] — Use 'nullify' to indicate making something legally void or ineffective, often by authoritative action.
+- synonym: [[annul]]

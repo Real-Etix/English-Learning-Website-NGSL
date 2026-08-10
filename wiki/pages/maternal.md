@@ -9,6 +9,8 @@ rank: 112
 sfi: 58.691
 sources: [wordnet, llm]
 status: enriched
+chart: maternal
+region: maternal
 ---
 
 ## Definition

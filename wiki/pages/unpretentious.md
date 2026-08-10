@@ -6,6 +6,8 @@ pos: adjective
 forms: [unpretentious]
 sources: [llm]
 status: enriched
+chart: pretty
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [substandard]
 sources: [llm]
 status: enriched
+chart: good
+region: you
 ---
 
 ## Definition

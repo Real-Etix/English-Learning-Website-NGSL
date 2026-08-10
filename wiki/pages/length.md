@@ -9,6 +9,8 @@ rank: 1317
 sfi: 58.2
 sources: [wordnet, llm]
 status: enriched
+chart: span
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ the linear extent in space from one end to the other
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[extent]] — Use 'extent' to emphasize the full range or magnitude, especially in formal or technical contexts.
 - advanced_form: [[span]] — Use 'span' to highlight the distance between two points or endpoints, often in measurement of structures or time.
+- collocation: [[gestation]]
+- synonym: [[duration]]
+- synonym: [[mileage]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [anticipatory]
 sources: [llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[beforehand]] — Use 'anticipatory' instead of 'beforehand' to emphasize acting in expectation of a future need or event.
+- synonym: [[preliminary]]
+- synonym: [[preparatory]]
+- collocation: [[anxiety]]
+- collocation: [[joy]]
+- collocation: [[action]]
+- synonym: [[precautionary]]

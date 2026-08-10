@@ -9,6 +9,8 @@ rank: 426
 sfi: 63.72
 sources: [wordnet, llm]
 status: enriched
+chart: position
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,20 @@ _No sourced examples yet._
 - builds_on: [[orient]] — Use when focusing on the act of placing something deliberately in a specific location or arrangement.
 - builds_on: [[role]] — Use 'position' to refer to a specific job or rank within an organization, often implying a formal title or status.
 - builds_on: [[slot]] — Use 'position' when you want a more general or formal word for a slot in a grammatical structure; it is less technical than 'slot'.
+- collocation: [[accumbent]]
+- collocation: [[assailable]]
+- collocation: [[awkward]]
+- collocation: [[coveted]]
+- synonym: [[emplacement]]
+- collocation: [[entrenched]]
+- collocation: [[flanking]]
+- collocation: [[midmost]]
+- collocation: [[overrun]]
+- collocation: [[privileged]]
+- synonym: [[ranking]]
+- collocation: [[reassess]]
+- collocation: [[resign]]
+- collocation: [[restate]]
+- collocation: [[fetal]]
+- builds_on: [[lay]] — Use when you want to emphasize precise placement or alignment.
+- collocation: [[lowly]]

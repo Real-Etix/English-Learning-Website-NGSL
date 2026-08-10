@@ -9,6 +9,8 @@ rank: 669
 sfi: 61.53
 sources: []
 status: seeded
+chart: position
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,9 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[by]]
+- collocation: [[enjoy]]
+- collocation: [[introduce]]
+- collocation: [[make]]
+- collocation: [[keep]]
+- collocation: [[reacquaint]]

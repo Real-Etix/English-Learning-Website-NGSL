@@ -9,6 +9,8 @@ rank: 139
 sfi: 59.52
 sources: [wordnet, llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[spasm]] — Use for a sudden, involuntary muscle contraction, often sharp or brief.
 - advanced_form: [[cramp]] — Use for a painful, prolonged contraction that tightens the muscle.
 - builds_on: [[downturn]] — Use 'contraction' in formal economics contexts to describe a reduction in economic output, often measured over quarters.
+- synonym: [[shrinkage]]

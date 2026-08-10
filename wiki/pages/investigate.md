@@ -9,6 +9,8 @@ rank: 1533
 sfi: 57.25
 sources: [wordnet, llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ investigate scientifically
 - advanced_form: [[scrutinize]] — Use 'scrutinize' when you want to emphasize very careful, critical examination of details, more intense than 'investigate'.
 - advanced_form: [[probe]] — Use 'probe' when you want to suggest a thorough, often exploratory investigation into something deep or hidden.
 - advanced_form: [[dissect]] — Use 'dissect' when you want to emphasize breaking down a subject into parts for analysis, often in a methodical way.
+- collocation: [[firemarshal]]
+- collocation: [[wrongdoing]]
+- synonym: [[delve]]

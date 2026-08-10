@@ -9,6 +9,8 @@ rank: 1597
 sfi: 50.01
 sources: [wordnet, llm]
 status: enriched
+chart: rightly
+region: rightly
 ---
 
 ## Definition

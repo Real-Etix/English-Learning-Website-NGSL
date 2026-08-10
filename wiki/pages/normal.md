@@ -9,6 +9,8 @@ rank: 855
 sfi: 60.43
 sources: [wordnet, llm]
 status: enriched
+chart: average
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ conforming with or constituting a norm or standard or level or type or social no
 - advanced_form: [[customary]] — Use 'customary' for behaviors or practices that are usual in a particular context or group, suggesting habitual or expected norms.
 - advanced_form: [[prevailing]] — Use 'prevailing' to describe the most common or dominant condition, trend, or opinion in a given situation.
 - builds_on: [[perpendicular]] — Use 'normal' when emphasizing perpendicularity to a surface or curve, common in physics and engineering.
+- synonym: [[orthogonal]]
+- collocation: [[revert]]
+- collocation: [[workday]]
+- collocation: [[outwardly]]

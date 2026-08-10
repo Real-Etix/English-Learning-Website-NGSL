@@ -6,6 +6,8 @@ pos: noun
 forms: [swindle]
 sources: [llm]
 status: enriched
+chart: pattern
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 34
 sfi: 65.22
 sources: [wordnet, llm]
 status: enriched
+chart: collective
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[trunk]] — Use 'trunk' in formal or anatomical contexts, especially for statues or animals, instead of the more everyday 'torso'.
 - advanced_form: [[core]] — Use 'core' when emphasizing the central, stabilizing part of the torso, especially in fitness or physical training, rather than the general body area.
+- synonym: [[midsection]]

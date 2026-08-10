@@ -6,6 +6,8 @@ pos: noun
 forms: [spume]
 sources: [llm]
 status: enriched
+chart: bubble
+region: bubble
 ---
 
 ## Definition

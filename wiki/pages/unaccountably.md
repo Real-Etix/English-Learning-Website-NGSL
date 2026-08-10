@@ -6,6 +6,8 @@ pos: adverb
 forms: [unaccountably]
 sources: [llm]
 status: enriched
+chart: somehow
+region: somehow
 ---
 
 ## Definition

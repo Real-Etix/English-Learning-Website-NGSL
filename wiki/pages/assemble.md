@@ -9,6 +9,8 @@ rank: 435
 sfi: 54.42
 sources: [wordnet, llm]
 status: enriched
+chart: make
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - advanced_form: [[convene]] — Use 'convene' instead of 'assemble' when bringing together a group of people, especially for a formal purpose or meeting.
 - builds_on: [[manufacture]] — Use when focusing on putting together pre-made parts or components.
 - builds_on: [[construct]] — Use 'assemble' when focusing on putting together pre-made parts, often with instructions, rather than creating from raw materials.
+- synonym: [[collate]]
+- synonym: [[crowd]]

@@ -9,6 +9,8 @@ rank: 2804
 sfi: 49.7
 sources: [wordnet, llm]
 status: enriched
+chart: hunger
+region: hunger
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[famish]] — Use 'famish' when emphasizing extreme hunger or suffering; it is more formal and literary than 'hunger'.
 - advanced_form: [[starve]] — Use 'starve' when emphasizing prolonged lack of food or intense hunger; it is stronger and more urgent than 'hunger'.
+- synonym: [[crave]]
+- collocation: [[ravenous]]
+- synonym: [[yearning]]

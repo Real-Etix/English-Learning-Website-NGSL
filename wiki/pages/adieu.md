@@ -6,6 +6,8 @@ pos: noun
 forms: [adieu]
 sources: [llm]
 status: enriched
+chart: farewell
+region: farewell
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[farewell]] — Use 'adieu' for a more poetic or dramatic goodbye, not in everyday conversation.
+- synonym: [[valediction]]
+- collocation: [[bid]]
+- collocation: [[say]]
+- collocation: [[wave]]
+- collocation: [[last]]

@@ -9,6 +9,8 @@ rank: 1475
 sfi: 50.96
 sources: [wordnet, llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,8 @@ _No sourced examples yet._
 - builds_on: [[recommendation]] — Use 'endorsement' when the recommendation comes from a position of authority or public support.
 - builds_on: [[promotion]] — Use 'endorsement' when a person or organization publicly supports a product or idea, like an official recommendation.
 - builds_on: [[sanction]] — Use 'endorsement' when emphasizing public backing or support, often for a plan or candidate; 'sanction' is more about official permission.
+- synonym: [[approval]]
+- synonym: [[backing]]
+- synonym: [[embracement]]
+- synonym: [[espousal]]
+- builds_on: [[approval]] — Use for public support or approval, especially from a person or group.

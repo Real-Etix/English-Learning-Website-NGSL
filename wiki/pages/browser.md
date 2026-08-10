@@ -9,6 +9,8 @@ rank: 1073
 sfi: 51.09
 sources: [wordnet, llm]
 status: enriched
+chart: browser
+region: browser
 ---
 
 ## Definition

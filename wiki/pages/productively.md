@@ -6,6 +6,8 @@ pos: adverb
 forms: [productively]
 sources: [llm]
 status: enriched
+chart: health
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[efficiently]] — Use when focusing on achieving useful results with the resources available.
+- synonym: [[efficaciously]]
+- synonym: [[effectively]]
+- collocation: [[work]]
+- collocation: [[time]]
+- collocation: [[use]]
+- collocation: [[spend]]
+- collocation: [[engage]]

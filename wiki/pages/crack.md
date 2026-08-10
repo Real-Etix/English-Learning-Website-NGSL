@@ -9,6 +9,8 @@ rank: 2068
 sfi: 55.33
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ become fractured
 - synonym: [[break]]
 - advanced_form: [[fracture]] — Use 'fracture' instead of 'crack' in formal or scientific contexts (e.g., bones, rocks, materials) to emphasize a break without complete separation.
 - advanced_form: [[split]] — Use 'split' instead of 'crack' when something divides or separates along a line, often intentionally or due to force, implying a more complete separation than a simple crack.
+- synonym: [[crackle]]
+- collocation: [[dawn]]
+- synonym: [[fissure]]
+- collocation: [[wisecrack]]
+- collocation: [[brainpan]]

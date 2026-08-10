@@ -6,6 +6,8 @@ pos: adjective
 forms: [unfailing]
 sources: [llm]
 status: enriched
+chart: unreliable
+region: you
 ---
 
 ## Definition

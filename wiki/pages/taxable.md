@@ -9,6 +9,8 @@ rank: 218
 sfi: 55.11
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ status: enriched
 - collocation: [[wage]]
 - advanced_form: [[assessable]] — Use 'assessable' when emphasizing the valuation or evaluation process that determines the tax amount.
 - advanced_form: [[leviable]] — Use 'leviable' to stress the legal authority or imposition of a tax or duty.
+- collocation: [[perquisite]]

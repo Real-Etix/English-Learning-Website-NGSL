@@ -9,6 +9,8 @@ rank: 1041
 sfi: 59.39
 sources: [wordnet, llm]
 status: enriched
+chart: care
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ be in charge of, act on, or dispose of
 - advanced_form: [[manage]] — Use 'manage' when you are in charge of a task or group and need to coordinate or control it.
 - advanced_form: [[tackle]] — Use 'tackle' when you are dealing with a challenging problem or task with determination.
 - advanced_form: [[address]] — Use 'address' when you are taking action to resolve a specific problem or concern.
+- collocation: [[broom]]
+- collocation: [[fishfork]]
+- synonym: [[haft]]
+- synonym: [[lever]]
+- collocation: [[pan]]
+- synonym: [[wield]]

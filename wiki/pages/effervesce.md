@@ -6,6 +6,8 @@ pos: verb
 forms: [effervesce]
 sources: [llm]
 status: enriched
+chart: bubble
+region: bubble
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bubble]] — Use 'effervesce' to describe a more scientific or elegant fizzing action, often for carbonated drinks or chemical reactions.
+- synonym: [[foam]]
+- synonym: [[froth]]
+- collocation: [[liquid]]
+- collocation: [[mixture]]
+- collocation: [[gently]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [redirect]
 sources: [llm]
 status: enriched
+chart: divert
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[divert]] — Use 'redirect' when intentionally steering someone or something toward a different course or purpose.
+- synonym: [[steer]]
+- collocation: [[traffic]]
+- collocation: [[attention]]
+- collocation: [[funds]]
+- collocation: [[resources]]
+- collocation: [[energy]]

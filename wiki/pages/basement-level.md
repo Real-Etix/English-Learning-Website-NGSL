@@ -6,6 +6,8 @@ pos: adjective
 forms: [basement-level]
 sources: [llm]
 status: enriched
+chart: above
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[downstairs]] — Use 'basement-level' instead of 'downstairs' when referring to a floor that is entirely or mostly underground, typical for basements or sub-levels.
+- synonym: [[underground]]
+- synonym: [[bottom]]
+- synonym: [[low]]
+- collocation: [[storage]]
+- collocation: [[floor]]
+- collocation: [[office]]
+- synonym: [[lower-level]]

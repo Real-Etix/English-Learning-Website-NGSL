@@ -6,6 +6,8 @@ pos: verb
 forms: [reassign]
 sources: [llm]
 status: enriched
+chart: shift
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[transfer]] — Use 'reassign' when focusing on giving someone a new duty or role, rather than just changing location.
+- synonym: [[relocate]]
+- synonym: [[move]]
+- collocation: [[staff]]

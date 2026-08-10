@@ -6,6 +6,8 @@ pos: noun
 forms: [dunce]
 sources: [llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: verb
 forms: [impede]
 sources: [llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[frustrate]] — Use 'impede' when something slows or obstructs movement or progress, without necessarily stopping it entirely; more about delay or obstruction than prevention.
 - builds_on: [[interfere]] — Use 'impede' instead of 'interfere' when the hindrance slows or delays progress, often in a more formal or systematic context.
 - builds_on: [[delay]] — Use 'impede' instead of 'delay' when the obstruction is physical or metaphorical and suggests a more active or significant hindrance, often implying progress is blocked rather than just postponed.
+- synonym: [[hinder]]
+- synonym: [[preclude]]

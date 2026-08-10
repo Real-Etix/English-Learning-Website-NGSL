@@ -6,6 +6,8 @@ pos: noun
 forms: [landline]
 sources: [llm]
 status: enriched
+chart: recipient
+region: you
 ---
 
 ## Definition

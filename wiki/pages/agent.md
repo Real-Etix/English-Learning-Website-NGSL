@@ -9,6 +9,8 @@ rank: 992
 sfi: 59.65
 sources: [wordnet, llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ _No sourced examples yet._
 - advanced_form: [[instrument]] — Use 'instrument' when the cause is a tool or means by which a result is achieved.
 - advanced_form: [[engine]] — Use 'engine' when the cause actively drives or powers a process, often in a metaphorical sense.
 - builds_on: [[salesperson]] — Use 'agent' when the person represents a company or individual in negotiations, emphasizing authority and representation over direct sales.
+- collocation: [[covert]]
+- synonym: [[ligand]]
+- synonym: [[mandatee]]
+- synonym: [[middleman]]
+- collocation: [[pathogenic]]
+- synonym: [[reactant]]
+- collocation: [[defoliant]]
+- collocation: [[moistening]]

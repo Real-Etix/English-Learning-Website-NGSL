@@ -6,6 +6,8 @@ pos: noun
 forms: [mastery]
 sources: [llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - builds_on: [[expertise]] — Use 'mastery' to stress complete, thorough control and deep understanding, a step beyond basic expertise.
 - builds_on: [[proficiency]] — Use 'mastery' to suggest a high level of control and thorough understanding, often implying supremacy over the subject.
 - builds_on: [[specialty]] — Use 'mastery' to imply complete command or proficiency.
+- synonym: [[domination]]
+- synonym: [[wizardry]]

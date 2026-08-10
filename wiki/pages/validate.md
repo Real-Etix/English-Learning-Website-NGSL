@@ -9,6 +9,8 @@ rank: 1191
 sfi: 49.8
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ declare or make legally valid
 - advanced_form: [[certify]] — Use 'certify' when an authority formally attests to the validity or accuracy of something.
 - advanced_form: [[authenticate]] — Use 'authenticate' when proving that something is genuine or original, often through verification.
 - builds_on: [[ratify]] — Use 'validate' to stress confirming the legality, accuracy, or binding nature of something, like verifying that an action is legitimate.
+- builds_on: [[confirm]] — Use when checking or proving that something is true, valid, or acceptable.

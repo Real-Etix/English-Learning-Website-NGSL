@@ -6,6 +6,8 @@ pos: noun
 forms: [designation]
 sources: [llm]
 status: enriched
+chart: detail
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[identification]] — Use 'designation' when focusing on the official assignment or naming of a person or thing for a specific role or purpose, more formal than 'identification'.
 - builds_on: [[nomination]] — Use 'designation' when emphasizing the formal naming or identifying of someone for a specific role or purpose, often in an official context.
 - builds_on: [[appointment]] — Use 'designation' when emphasizing the official assignment of a role, often in formal or bureaucratic contexts.
+- builds_on: [[selection]] — Use for formal or official selection, often for a role or title.

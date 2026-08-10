@@ -9,6 +9,8 @@ rank: 17
 sfi: 62.068
 sources: [wordnet, llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ of or being or relating to or involving cognition
 - builds_on: [[mental]] — Use for mental processes like thinking, learning, and memory; more formal than 'mental'.
 - builds_on: [[intellectual]] — Use 'cognitive' in scientific or technical contexts, particularly when referring to mental processes like memory or reasoning.
 - builds_on: [[psychological]] — Use 'cognitive' to emphasize thought processes, reasoning, or mental functions, rather than emotions or general psychological state.
+- collocation: [[distortion]]
+- collocation: [[impair]]
+- collocation: [[neurophysiology]]
+- synonym: [[perceptual]]

@@ -9,6 +9,8 @@ rank: 219
 sfi: 55.74
 sources: [wordnet, llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[reception]] — Use 'reception' to emphasize the receiver's successful catch rather than the quarterback's throw.
 - advanced_form: [[connection]] — Use 'connection' to highlight the teamwork or chemistry involved in the pass, often in commentary.
+- synonym: [[ripeness]]

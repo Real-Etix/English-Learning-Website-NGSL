@@ -9,6 +9,8 @@ rank: 870
 sfi: 47.681
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[assessment]] — Use when referring to a formal or systematic evaluation of knowledge, often more comprehensive than a quiz.
 - advanced_form: [[evaluation]] — Use when emphasizing judgment of performance or skill level, often in academic or professional contexts.
 - advanced_form: [[examination]] — Use for a more formal, often written test; while longer than a quiz, it can be short in some contexts.
+- collocation: [[pub]]
+- synonym: [[questionnaire]]

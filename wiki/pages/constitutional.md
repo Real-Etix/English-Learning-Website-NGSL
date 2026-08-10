@@ -9,6 +9,8 @@ rank: 291
 sfi: 54.45
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: constitutional
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ of benefit to or intended to benefit your physical makeup
 - advanced_form: [[invigorating]] — Use 'invigorating' when the benefit comes from energizing and revitalizing the body, especially after fatigue.
 - advanced_form: [[restorative]] — Use 'restorative' to highlight that something helps return the body to a healthy or strong condition.
 - builds_on: [[structural]] — Use 'constitutional' when referring to the fundamental principles or laws of a political body, often in legal or political contexts.
+- synonym: [[congenital]]

@@ -9,6 +9,8 @@ rank: 2102
 sfi: 55.21
 sources: [wordnet, llm]
 status: enriched
+chart: persist
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[shift]] — Use 'alter' when you want to emphasize a change in something, often a small or specific adjustment, rather than a general exchange.
 - advanced_form: [[amend]] — Use 'amend' for formal or legal changes to documents, laws, or agreements, whereas 'alter' is more general.
 - advanced_form: [[modify]] — Use 'modify' for technical or systematic adjustments, often implying a deliberate improvement, while 'alter' can be any change.
+- synonym: [[convert]]
+- synonym: [[falsify]]
+- synonym: [[reshape]]

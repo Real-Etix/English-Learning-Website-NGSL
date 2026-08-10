@@ -6,6 +6,8 @@ pos: adjective
 forms: [bellicose]
 sources: [llm]
 status: enriched
+chart: militant
+region: you
 ---
 
 ## Definition

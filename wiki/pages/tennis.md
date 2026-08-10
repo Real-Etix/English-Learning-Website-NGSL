@@ -9,6 +9,8 @@ rank: 1917
 sfi: 55.79
 sources: [wordnet, llm]
 status: enriched
+chart: hack
+region: hack
 ---
 
 ## Definition

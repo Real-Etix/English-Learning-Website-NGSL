@@ -6,6 +6,8 @@ pos: noun
 forms: [audile]
 sources: [llm]
 status: enriched
+chart: audition
+region: audition
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[audition]] — Use 'audile' as a noun for a person whose learning or thinking is strongly auditory, distinct from 'audition' which refers to the sense itself.
+- synonym: [[listener]]
+- synonym: [[hearer]]

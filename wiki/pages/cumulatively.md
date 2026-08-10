@@ -6,6 +6,8 @@ pos: adverb
 forms: [cumulatively]
 sources: [llm]
 status: enriched
+chart: easy
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[increasingly]] — Use 'cumulatively' to stress that the increase results from the accumulation of repeated or continuous additions, highlighting the total effect, whereas 'increasingly' focuses on the ongoing growth itself.
+- synonym: [[progressively]]
+- synonym: [[collectively]]
+- collocation: [[affect]]
+- collocation: [[impact]]
+- collocation: [[build]]
+- collocation: [[overtime]]

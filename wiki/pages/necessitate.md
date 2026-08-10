@@ -6,6 +6,8 @@ pos: verb
 forms: [necessitate]
 sources: [llm]
 status: enriched
+chart: take
+region: you
 ---
 
 ## Definition

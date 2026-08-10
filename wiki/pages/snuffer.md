@@ -6,6 +6,8 @@ pos: noun
 forms: [snuffer]
 sources: [llm]
 status: enriched
+chart: extinguisher
+region: extinguisher
 ---
 
 ## Definition

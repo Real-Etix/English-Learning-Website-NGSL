@@ -6,6 +6,8 @@ pos: adjective
 forms: [outlandish]
 sources: [llm]
 status: enriched
+chart: foreigner
+region: you
 ---
 
 ## Definition

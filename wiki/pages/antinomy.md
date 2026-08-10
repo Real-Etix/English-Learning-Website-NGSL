@@ -6,6 +6,8 @@ pos: noun
 forms: [antinomy]
 sources: [llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition

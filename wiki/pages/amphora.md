@@ -6,6 +6,8 @@ pos: noun
 forms: [amphora]
 sources: [llm]
 status: enriched
+chart: vase
+region: vase
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vase]] — Use 'amphora' for an ancient two-handled vase with a narrow neck, common in archaeological contexts.
+- synonym: [[urn]]
+- synonym: [[vessel]]
+- synonym: [[container]]
+- collocation: [[clay]]
+- collocation: [[wine]]

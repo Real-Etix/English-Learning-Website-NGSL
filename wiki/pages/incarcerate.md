@@ -6,6 +6,8 @@ pos: verb
 forms: [incarcerate]
 sources: [llm]
 status: enriched
+chart: free
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 518
 sfi: 53.23
 sources: [wordnet, llm]
 status: enriched
+chart: casein
+region: casein
 ---
 
 ## Definition

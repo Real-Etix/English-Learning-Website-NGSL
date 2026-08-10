@@ -6,6 +6,8 @@ pos: noun
 forms: [sanctification]
 sources: [llm]
 status: enriched
+chart: decorate
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 451
 sfi: 63.49
 sources: [wordnet, llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ definite but not specified or identified
 - builds_on: [[sure]] — Use 'certain' when you want to sound more formal or emphatic than 'sure'.
 - advanced_form: [[particular]] — Use 'particular' when you want to emphasize that the thing is distinct among others, often with a slightly more formal tone.
 - advanced_form: [[given]] — Use 'given' to refer to a specific but unnamed condition, often in formal or academic writing.
+- synonym: [[conclusive]]
+- synonym: [[convinced]]
+- synonym: [[ineluctable]]
+- synonym: [[definite]]

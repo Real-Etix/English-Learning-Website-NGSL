@@ -6,6 +6,8 @@ pos: adjective
 forms: [resilient]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[adaptive]] — Use 'resilient' when focusing on the ability to recover after setbacks, rather than general adaptability.
 - builds_on: [[robust]] — Use 'resilient' when focusing on the ability to recover or adapt, rather than just physical strength.
+- synonym: [[adaptable]]

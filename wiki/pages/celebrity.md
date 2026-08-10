@@ -9,6 +9,8 @@ rank: 517
 sfi: 52.82
 sources: [wordnet, llm]
 status: enriched
+chart: notable
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ a widely known person
 - domain: business
 - advanced_form: [[luminary]] — Use 'luminary' when emphasizing influence, wisdom, or brilliance, not just fame.
 - advanced_form: [[notable]] — Use 'notable' for someone known for achievements or prominence in a specific field.
+- collocation: [[impersonator]]
+- collocation: [[impressionist]]
+- collocation: [[nuptials]]
+- synonym: [[personage]]

@@ -7,8 +7,10 @@ forms: [spring, springs, sprang, sprung, springing]
 lists: [ngsl]
 rank: 1332
 sfi: 58.11
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ the season of growth
 - builds_on: [[hop]] — Use 'spring' for a sudden, swift jump often from a crouched or tense position, instead of 'hop' which is casual and light.
 - builds_on: [[jump]] — Use 'spring' for a sudden, quick jump, often from a stationary or resting position.
 - builds_on: [[leap]] — Use 'spring' for a sudden, quick, and elastic leap, as if released from a coil.
+- collocation: [[elongation]]
+- synonym: [[fountain]]
+- advanced_form: [[springtide]] — Use in literary or poetic contexts to evoke the freshness of spring.
+- advanced_form: [[seedtime]] — Use when talking about farming or the cycle of planting and harvest.
+- collocation: [[verdure]]

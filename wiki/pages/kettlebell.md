@@ -9,6 +9,8 @@ rank: 131
 sfi: 59.76
 sources: []
 status: seeded
+chart: dumbbell
+region: dumbbell
 ---
 
 ## Definition

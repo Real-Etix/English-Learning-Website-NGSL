@@ -6,6 +6,8 @@ pos: verb
 forms: [ruminate]
 sources: [llm]
 status: enriched
+chart: embody
+region: you
 ---
 
 ## Definition

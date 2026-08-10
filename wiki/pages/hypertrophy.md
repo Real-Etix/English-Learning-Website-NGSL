@@ -9,6 +9,8 @@ rank: 371
 sfi: 54.66
 sources: [wordnet, llm]
 status: enriched
+chart: hypertrophy
+region: hypertrophy
 ---
 
 ## Definition

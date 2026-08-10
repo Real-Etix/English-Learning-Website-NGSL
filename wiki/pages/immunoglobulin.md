@@ -6,6 +6,8 @@ pos: noun
 forms: [immunoglobulin]
 sources: [llm]
 status: enriched
+chart: antibody
+region: antibody
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[antibody]] — Use 'immunoglobulin' in scientific or medical writing where a more formal term for antibody is needed.
+- collocation: [[elevated]]
+- collocation: [[specific]]
+- collocation: [[therapy]]

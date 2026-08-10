@@ -9,6 +9,8 @@ rank: 32
 sfi: 75.09
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: good
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ to a very great extent or degree
 - advanced_form: [[exceedingly]] — Use this in formal or academic contexts when 'so' feels too casual for the extreme degree you want to convey.
 - advanced_form: [[immensely]] — Choose this to emphasize strong feelings, size, or importance in a more elevated and natural way than 'so'.
 - advanced_form: [[exceptionally]] — Use this to highlight that something is unusually high in degree or quality, making your statement sound more precise than 'so'.
+- collocation: [[anyway]]
+- collocation: [[evidently]]
+- collocation: [[pressingly]]
+- synonym: [[therefore]]
+- synonym: [[thus]]

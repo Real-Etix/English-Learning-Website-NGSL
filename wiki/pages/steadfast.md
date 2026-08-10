@@ -6,6 +6,8 @@ pos: adjective
 forms: [steadfast]
 sources: [llm]
 status: enriched
+chart: unreliable
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 - builds_on: [[dependable]] — Use 'steadfast' to highlight firmness and constancy, especially in difficult situations.
 - builds_on: [[steady]] — Use 'steadfast' when emphasizing unwavering loyalty or commitment, more formal than 'steady'.
 - builds_on: [[reliable]] — Use 'steadfast' to convey unwavering loyalty or commitment, often in emotional or challenging situations.
+- synonym: [[devoted]]
+- synonym: [[resolute]]
+- builds_on: [[stable]] — Use when emphasizing firmness of purpose or loyalty, not just physical or numerical stability.

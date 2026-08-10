@@ -9,6 +9,8 @@ rank: 1213
 sfi: 58.58
 sources: [wordnet, llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - builds_on: [[conception]] — Use 'concept' for a well-defined abstract idea; 'conception' often implies the process of forming an idea or a personal interpretation.
 - advanced_form: [[notion]] — Use 'notion' for a less precise, more informal, or intuitive idea than 'concept'.
 - advanced_form: [[construct]] — Use 'construct' for a complex idea that is deliberately built or formulated, often in academic or theoretical contexts.
+- collocation: [[cistron]]
+- collocation: [[elusive]]

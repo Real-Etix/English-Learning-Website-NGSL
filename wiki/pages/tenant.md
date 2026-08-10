@@ -9,6 +9,8 @@ rank: 111
 sfi: 57.75
 sources: [wordnet, llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ someone who pays rent to use land or a building or a car that is owned by someon
 - advanced_form: [[lessee]] — Use 'lessee' in legal or formal contexts, especially when referring to someone who has signed a lease agreement.
 - advanced_form: [[occupant]] — Use 'occupant' when focusing on the person who lives or works in a space, regardless of whether they pay rent.
 - builds_on: [[renter]] — Use 'tenant' instead of 'renter' in formal or legal contexts, especially for residential leases.
+- synonym: [[leaseholder]]
+- synonym: [[occupier]]
+- collocation: [[landlord]]
+- collocation: [[evict]]

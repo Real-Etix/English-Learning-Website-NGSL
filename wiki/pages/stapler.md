@@ -9,6 +9,8 @@ rank: 792
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: stapler
+region: stapler
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2468
 sfi: 54.09
 sources: [wordnet, llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[thorax]] — Use 'thorax' in medical or formal anatomical contexts instead of 'chest'.
 - advanced_form: [[bust]] — Use 'bust' for the upper front body, especially in clothing fit or sculpture, rather than 'chest'.
 - advanced_form: [[ribcage]] — Use 'ribcage' to emphasize the bony structure of the chest, especially in injury or anatomy contexts.
+- synonym: [[breastplate]]
+- synonym: [[brisket]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [trotter]
 sources: [llm]
 status: enriched
+chart: foot
+region: foot
 ---
 
 ## Definition

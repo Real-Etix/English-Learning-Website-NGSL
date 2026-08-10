@@ -9,6 +9,8 @@ rank: 1036
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[pick]] — Use 'pick' instead of 'comb' when referring to a wide-toothed tool often used for curly or afro-textured hair.
 - advanced_form: [[currycomb]] — Use 'currycomb' instead of 'comb' when referring to a tool for grooming animal coats, especially horses, or in figurative contexts like a thorough search.
+- synonym: [[brush]]
+- collocation: [[hair]]
+- collocation: [[pocket]]
+- collocation: [[plastic]]

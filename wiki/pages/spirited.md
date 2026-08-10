@@ -6,6 +6,8 @@ pos: adjective
 forms: [spirited]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[energetic]] — Use 'spirited' for energetic and determined, often in a lively or courageous way.
+- synonym: [[vibrant]]

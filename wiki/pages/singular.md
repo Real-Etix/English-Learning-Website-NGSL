@@ -9,6 +9,8 @@ rank: 272
 sfi: 56.917
 sources: [wordnet, llm]
 status: enriched
+chart: outstanding
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ unusual or striking
 - advanced_form: [[outstanding]] — Use 'outstanding' when something is exceptionally excellent or prominent, often with a positive connotation of being among the best.
 - builds_on: [[distinctive]] — Use 'singular' when emphasizing uniqueness that is strikingly different from others, often in a positive sense.
 - builds_on: [[unusual]] — Use 'singular' to convey that something is unique or unparalleled, often with a sense of distinction or peculiarity that sets it apart.
+- collocation: [[peculiarity]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [tacker]
 sources: [llm]
 status: enriched
+chart: stapler
+region: stapler
 ---
 
 ## Definition

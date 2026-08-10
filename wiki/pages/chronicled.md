@@ -6,6 +6,8 @@ pos: adjective
 forms: [chronicled]
 sources: [llm]
 status: enriched
+chart: historical
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [gamut]
 sources: [llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[spectrum]] — Use 'gamut' instead of 'spectrum' to emphasize completeness or extensive range, especially in figurative contexts.
+- synonym: [[range]]
+- synonym: [[scope]]
+- synonym: [[compass]]
+- synonym: [[sweep]]

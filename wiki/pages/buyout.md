@@ -9,6 +9,8 @@ rank: 1099
 sfi: 51.72
 sources: [wordnet, llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 756
 sfi: 61
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,27 @@ _No sourced examples yet._
 - advanced_form: [[scrutiny]] — Use 'scrutiny' when emphasizing a very close, critical, and often suspicious examination, more intense than a neutral 'analysis'.
 - advanced_form: [[dissection]] — Use 'dissection' when the analysis is methodical and broken into separate parts, often implying a meticulous or even surgical separation.
 - builds_on: [[examination]] — Use 'analysis' when examining details to understand or explain something, often involving breaking down.
+- synonym: [[anatomization]]
+- synonym: [[assay]]
+- collocation: [[cistron]]
+- collocation: [[conductual]]
+- collocation: [[confirmatory]]
+- collocation: [[contrastive]]
+- collocation: [[cross-section]]
+- collocation: [[dimensional]]
+- collocation: [[formalistic]]
+- collocation: [[grammatic]]
+- collocation: [[historiographic]]
+- collocation: [[interpretive]]
+- collocation: [[mineralogical]]
+- synonym: [[modeling]]
+- collocation: [[morphemic]]
+- collocation: [[morphosyntactic]]
+- collocation: [[perceptive]]
+- collocation: [[periodicity]]
+- collocation: [[phonemic]]
+- collocation: [[prosodic]]
+- synonym: [[psychoanalysis]]
+- collocation: [[psychometrics]]
+- collocation: [[real-time]]
+- synonym: [[reasoning]]

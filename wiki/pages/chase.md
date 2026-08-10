@@ -9,6 +9,8 @@ rank: 2706
 sfi: 53.17
 sources: [wordnet, llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[pursue]] — Use when the chase is deliberate, determined, or formal, like in professional or legal contexts.
 - advanced_form: [[shadow]] — Use when following someone secretly or covertly, often for surveillance.
 - advanced_form: [[hound]] — Use when pursuing someone persistently and annoyingly, often with pressure or harassment.
+- synonym: [[hunting]]

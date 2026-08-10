@@ -9,6 +9,8 @@ rank: 677
 sfi: 51.74
 sources: [wordnet, llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition

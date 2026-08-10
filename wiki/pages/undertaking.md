@@ -6,6 +6,8 @@ pos: noun
 forms: [undertaking]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[warranty]] — Use 'undertaking' for a formal commitment or promise, typically in business or legal contexts, broader than a product-specific warranty.
 - builds_on: [[attempt]] — Use 'undertaking' when the attempt involves a complex task or significant responsibility.
 - builds_on: [[venture]] — Use 'undertaking' to highlight the scale or difficulty of a task or project, often implying risk or challenge, replacing 'venture' in formal contexts.
+- collocation: [[venturesome]]

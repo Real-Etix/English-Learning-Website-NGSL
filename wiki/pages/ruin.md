@@ -9,6 +9,8 @@ rank: 2405
 sfi: 54.26
 sources: [wordnet, llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ an irrecoverable state of devastation and destruction
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[desolation]] — Use 'desolation' to emphasize the emptiness and bleakness of the ruined state, more poetic than 'ruin'.
 - advanced_form: [[wreckage]] — Use 'wreckage' for the physical remains left after destruction, instead of the abstract state of 'ruin'.
+- synonym: [[devastation]]
+- synonym: [[ravage]]
+- synonym: [[wreck]]

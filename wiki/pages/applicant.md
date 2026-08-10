@@ -9,6 +9,8 @@ rank: 28
 sfi: 61.27
 sources: [wordnet, llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[candidate]] — Use when referring to someone being evaluated or considered for a position, role, or honor, often implying a selection process.
 - advanced_form: [[aspirant]] — Use for someone with strong ambition or striving for a specific goal, often in competitive or prestigious contexts.
 - advanced_form: [[contender]] — Use when emphasizing competition among applicants, especially in sports, elections, or competitive jobs.
+- synonym: [[claimant]]
+- synonym: [[petitioner]]
+- synonym: [[postulant]]

@@ -9,6 +9,8 @@ rank: 762
 sfi: 52.48
 sources: [wordnet, llm]
 status: enriched
+chart: illusion
+region: you
 ---
 
 ## Definition

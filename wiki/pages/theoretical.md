@@ -9,6 +9,8 @@ rank: 2777
 sfi: 52.67
 sources: [wordnet, llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ concerned primarily with theories or hypotheses rather than practical considerat
 - advanced_form: [[abstract]] — Use 'abstract' when emphasizing that an idea is not concrete or tangible, more so than 'theoretical' which often implies a scientific or formal hypothesis.
 - advanced_form: [[hypothetical]] — Use 'hypothetical' when referring to a specific, imagined situation that is not real, whereas 'theoretical' is broader and can describe general principles.
 - advanced_form: [[speculative]] — Use 'speculative' when the idea is based on conjecture or guesswork, often with a connotation of uncertainty that 'theoretical' does not necessarily carry.
+- collocation: [[econometrician]]
+- collocation: [[glottology]]
+- collocation: [[physics]]

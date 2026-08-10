@@ -9,6 +9,8 @@ rank: 702
 sfi: 61.32
 sources: [wordnet, llm]
 status: enriched
+chart: plot
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,19 @@ _No sourced examples yet._
 - advanced_form: [[map]] — Use 'map' when referring to a function in abstract mathematical contexts like topology or algebra, emphasizing the idea of associating elements from one set to another.
 - advanced_form: [[mapping]] — Use 'mapping' to stress the process or relationship of transformation, often in linear algebra or geometry.
 - builds_on: [[role]] — Use 'function' to emphasize the specific purpose or duty of a role, often in a formal or professional context.
+- collocation: [[appellative]]
+- collocation: [[autonomously]]
+- collocation: [[constructor]]
+- collocation: [[crosscovariance]]
+- collocation: [[efficaciously]]
+- collocation: [[endocrine]]
+- collocation: [[exponential]]
+- collocation: [[impair]]
+- collocation: [[lateralization]]
+- synonym: [[operate]]
+- synonym: [[operator]]
+- collocation: [[optimally]]
+- collocation: [[polynomial]]
+- collocation: [[ventilatory]]
+- collocation: [[analogously]]
+- collocation: [[cerebrum]]

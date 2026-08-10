@@ -9,6 +9,8 @@ rank: 54
 sfi: 62.69
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ the amount of energy transmitted (as by acoustic or electromagnetic radiation)
 - builds_on: [[degree]] — Use 'intensity' for the strength or concentration of a quality, especially when referring to force, brightness, or emotional strength.
 - advanced_form: [[amplitude]] — Use 'amplitude' for wave or oscillation magnitude; it is more technical than 'intensity'.
 - advanced_form: [[magnitude]] — Use 'magnitude' for a measurable quantity, often on a scale; it is more formal than 'intensity'.
+- synonym: [[deepness]]
+- synonym: [[fervor]]
+- synonym: [[passion]]

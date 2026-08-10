@@ -9,6 +9,8 @@ rank: 604
 sfi: 53.59
 sources: [wordnet, llm]
 status: enriched
+chart: well
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ somewhat ill or prone to illness
 - domain: business
 - advanced_form: [[indisposed]] — a polite, formal way to say someone is slightly ill, often used to excuse absence
 - advanced_form: [[ailing]] — suggests a persistent or ongoing state of poor health, more formal than 'poorly'
+- collocation: [[prepared]]

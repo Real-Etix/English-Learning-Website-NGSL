@@ -6,6 +6,8 @@ pos: verb
 forms: [actuate]
 sources: [llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[activate]] — Use 'actuate' in technical or mechanical contexts to mean cause a device or mechanism to start operating.
+- synonym: [[trigger]]
+- synonym: [[initiate]]
+- synonym: [[prompt]]
+- synonym: [[drive]]
+- collocation: [[mechanism]]

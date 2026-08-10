@@ -9,6 +9,8 @@ rank: 581
 sfi: 52.8
 sources: [wordnet, llm]
 status: enriched
+chart: preacher
+region: preacher
 ---
 
 ## Definition

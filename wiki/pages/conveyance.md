@@ -6,6 +6,8 @@ pos: noun
 forms: [conveyance]
 sources: [llm]
 status: enriched
+chart: transmission
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [antagonist]
 sources: [llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[enemy]] — Use 'antagonist' to highlight active opposition in a conflict, suitable for military or ideological struggles.
+- synonym: [[adversary]]
+- synonym: [[opponent]]
+- synonym: [[rival]]
+- synonym: [[foe]]
+- collocation: [[primary]]
+- collocation: [[main]]

@@ -9,6 +9,8 @@ rank: 127
 sfi: 59.91
 sources: [wordnet, llm]
 status: enriched
+chart: wrinkle
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ make wrinkles or creases on a smooth surface
 - advanced_form: [[rumple]] — Use 'rumple' instead of 'crease' when the result is messy or disordered, like fabric or paper after being crushed.
 - advanced_form: [[pucker]] — Use 'pucker' instead of 'crease' when the surface gathers into small folds or wrinkles, often due to sewing or drying.
 - builds_on: [[fold]] — Use 'crease' for a sharp, intentional fold in fabric or paper, often made by pressing.
+- synonym: [[crimp]]
+- synonym: [[furrow]]
+- synonym: [[pleat]]
+- collocation: [[turnup]]

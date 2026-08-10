@@ -9,6 +9,8 @@ rank: 2225
 sfi: 54.86
 sources: [wordnet, llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ something that provides access (to get in or get out)
 - builds_on: [[door]] — Use 'entrance' when emphasizing the point of entry rather than the physical barrier itself.
 - advanced_form: [[ingress]] — Use 'ingress' in formal or technical contexts, such as emergency exits or computer networking, where 'entrance' feels too casual.
 - advanced_form: [[portal]] — Use 'portal' for a grand, dramatic, or mysterious entrance, often in architecture, fantasy, or technology (e.g., web portal).
+- collocation: [[barricade]]
+- synonym: [[gateway]]
+- collocation: [[ground-floor]]
+- collocation: [[lower-level]]
+- collocation: [[matting]]
+- synonym: [[mouth]]
+- collocation: [[vestibule]]

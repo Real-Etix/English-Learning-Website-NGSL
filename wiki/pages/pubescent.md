@@ -6,6 +6,8 @@ pos: adjective
 forms: [pubescent]
 sources: [llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[adolescent]] — Use 'pubescent' instead of 'adolescent' when specifically referring to the stage of puberty or physical development.
+- synonym: [[young]]
+- synonym: [[juvenile]]
+- collocation: [[stage]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [alleviate]
 sources: [llm]
 status: enriched
+chart: relieve
+region: you
 ---
 
 ## Definition

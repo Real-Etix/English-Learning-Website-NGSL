@@ -9,6 +9,8 @@ rank: 953
 sfi: 59.94
 sources: [wordnet, llm]
 status: enriched
+chart: facility
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ a building or place that provides a particular service or is used for a particul
 - builds_on: [[lab]] — Use 'facility' to refer to a whole building or complex that supports scientific work, not just one room.
 - builds_on: [[ease]] — Use 'facility' to emphasize an inherent ability or skill that makes something seem easy, often implying natural talent.
 - builds_on: [[laboratory]] — Use 'facility' instead of 'laboratory' when emphasizing the physical infrastructure, often in formal or technical contexts, especially for large or multi-purpose sites.
+- synonym: [[effortlessness]]
+- synonym: [[knack]]

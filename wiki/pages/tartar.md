@@ -6,6 +6,8 @@ pos: noun
 forms: [tartar]
 sources: [llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2549
 sfi: 53.8
 sources: [wordnet, llm]
 status: enriched
+chart: accordingly
+region: accordingly
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ status: enriched
 - synonym: [[accordingly]]
 - builds_on: [[accordingly]] — Use 'consequently' to emphasize a direct causal result, more formal than 'accordingly'.
 - advanced_form: [[accordingly]] — Use 'accordingly' to indicate that an action is taken in response to a given situation, emphasizing logical or planned adaptation.
+- synonym: [[therefore]]
+- synonym: [[thus]]
+- synonym: [[thereby]]
+- builds_on: [[thereby]] — Use to emphasize a direct result, more formal than 'thereby'.
+- synonym: [[ergo]]

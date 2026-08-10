@@ -9,6 +9,8 @@ rank: 315
 sfi: 64.93
 sources: [wordnet, llm]
 status: enriched
+chart: effect
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,19 @@ a phenomenon that follows and is caused by some previous phenomenon
 - advanced_form: [[repercussion]] — Use 'repercussion' instead of 'effect' to highlight an indirect, negative outcome that rebounds on the originator.
 - builds_on: [[render]] — Use 'effect' (verb) to highlight causing a change or result, especially in formal contexts, whereas 'render' is more direct in meaning 'make' or 'cause to become'.
 - builds_on: [[accomplish]] — Use 'effect' as a verb to emphasize causing a specific result, often in formal or business contexts. Unlike 'accomplish', which focuses on completion, 'effect' highlights the act of bringing something about.
+- collocation: [[accumulative]]
+- collocation: [[appreciable]]
+- collocation: [[comical]]
+- collocation: [[contagion]]
+- collocation: [[counterbalance]]
+- collocation: [[dampen]]
+- collocation: [[deterrent]]
+- collocation: [[devastating]]
+- collocation: [[doppelgnger]]
+- collocation: [[heighten]]
+- collocation: [[modifier]]
+- collocation: [[nullify]]
+- collocation: [[paradoxical]]
+- collocation: [[perceptible]]
+- collocation: [[pervasive]]
+- collocation: [[potentiated]]

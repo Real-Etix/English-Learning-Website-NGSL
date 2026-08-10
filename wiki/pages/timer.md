@@ -9,6 +9,8 @@ rank: 239
 sfi: 56.75
 sources: [wordnet, llm]
 status: enriched
+chart: timer
+region: timer
 ---
 
 ## Definition

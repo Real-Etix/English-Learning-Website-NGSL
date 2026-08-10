@@ -9,6 +9,8 @@ rank: 2605
 sfi: 53.62
 sources: [wordnet, llm]
 status: enriched
+chart: bench
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[tribunal]] — Use when referring to a formal body that judges, often a group of experts or judges, not always laypeople.
 - advanced_form: [[venire]] — Use when referring to the group of potential jurors summoned for a trial.
 - advanced_form: [[adjudicators]] — Use when emphasizing the judging function, more formal and often for expert panels.
+- collocation: [[handpick]]
+- collocation: [[inquest]]
+- collocation: [[nullification]]
+- collocation: [[sequester]]

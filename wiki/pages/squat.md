@@ -9,6 +9,8 @@ rank: 11
 sfi: 69.67
 sources: [wordnet, llm]
 status: enriched
+chart: squat
+region: squat
 ---
 
 ## Definition

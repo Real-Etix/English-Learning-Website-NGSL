@@ -6,6 +6,8 @@ pos: noun
 forms: [twelve]
 sources: [llm]
 status: enriched
+chart: dozen
+region: dozen
 ---
 
 ## Definition

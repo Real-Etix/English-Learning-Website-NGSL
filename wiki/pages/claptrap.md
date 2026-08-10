@@ -6,6 +6,8 @@ pos: noun
 forms: [claptrap]
 sources: [llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[jazz]] — Use 'claptrap' for pretentious, insincere talk meant to impress, more formal than 'jazz'.
+- synonym: [[bunkum]]
+- collocation: [[utter]]
+- collocation: [[complete]]
+- collocation: [[absolute]]
+- collocation: [[pure]]
+- collocation: [[political]]

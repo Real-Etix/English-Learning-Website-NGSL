@@ -9,6 +9,8 @@ rank: 429
 sfi: 54.24
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: not
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ the recipient of funds or other benefits
 - advanced_form: [[donee]] — Use 'donee' specifically for recipients of gifts or donations, often in legal or formal gift contexts.
 - advanced_form: [[grantee]] — Use 'grantee' in contexts of property transfers or official grants, while 'beneficiary' is broader.
 - builds_on: [[recipient]] — Use for someone who receives a benefit, especially financial or legal, rather than a general receiver.
+- synonym: [[annuitant]]
+- synonym: [[heir]]
+- synonym: [[inheritor]]
+- synonym: [[obligee]]

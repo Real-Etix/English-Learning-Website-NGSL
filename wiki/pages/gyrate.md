@@ -6,6 +6,8 @@ pos: verb
 forms: [gyrate]
 sources: [llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition

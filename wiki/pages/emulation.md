@@ -6,6 +6,8 @@ pos: noun
 forms: [emulation]
 sources: [llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition

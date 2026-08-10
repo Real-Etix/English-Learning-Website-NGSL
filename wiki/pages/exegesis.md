@@ -6,6 +6,8 @@ pos: noun
 forms: [exegesis]
 sources: [llm]
 status: enriched
+chart: assertion
+region: you
 ---
 
 ## Definition

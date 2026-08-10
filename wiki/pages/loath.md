@@ -6,6 +6,8 @@ pos: adjective
 forms: [loath]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition

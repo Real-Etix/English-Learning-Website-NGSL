@@ -9,6 +9,8 @@ rank: 639
 sfi: 53.276
 sources: [wordnet, llm]
 status: enriched
+chart: antibiotic
+region: antibiotic
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[antimicrobial]] — Use when referring to a substance that destroys or inhibits a broad range of microorganisms, not just bacteria.
 - advanced_form: [[bactericide]] — Use when emphasizing that the substance specifically kills bacteria, often in a technical or medical context.
+- collocation: [[ionophore]]
+- collocation: [[prophylaxis]]

@@ -9,6 +9,8 @@ rank: 1695
 sfi: 56.59
 sources: [wordnet, llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - synonym: [[rider]]
 - advanced_form: [[occupant]] — Use 'occupant' instead of 'passenger' when emphasizing the person's presence in the vehicle, especially in reports or safety guidelines.
 - advanced_form: [[fare]] — Use 'fare' instead of 'passenger' when focusing on the payment aspect or in the context of hired transportation.
+- collocation: [[jetliner]]

@@ -9,6 +9,8 @@ rank: 2695
 sfi: 53.22
 sources: [wordnet, llm]
 status: enriched
+chart: wheat
+region: wheat
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[paddy]] — Use when referring to unprocessed rice grains, especially in agricultural or trade contexts.
 - advanced_form: [[cereal]] — Use in formal or scientific contexts when categorizing rice as a type of grain crop.
+- collocation: [[brown]]
+- collocation: [[cultivation]]
+- collocation: [[cooker]]
+- collocation: [[curd]]

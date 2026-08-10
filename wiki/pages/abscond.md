@@ -6,6 +6,8 @@ pos: verb
 forms: [abscond]
 sources: [llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[flee]] — Use when someone leaves secretly and quickly, especially to avoid capture or legal consequences.
+- synonym: [[escape]]
+- synonym: [[bolt]]
+- synonym: [[decamp]]
+- collocation: [[with]]
+- collocation: [[from]]

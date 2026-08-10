@@ -9,6 +9,8 @@ rank: 2033
 sfi: 55.46
 sources: [wordnet, llm]
 status: enriched
+chart: currency
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - advanced_form: [[bullion]] — Use 'bullion' when referring to silver in bulk, uncoined form, especially in financial or trade contexts.
 - advanced_form: [[specie]] — Use 'specie' when referring to silver in the form of coins, particularly in historical or economic discussions.
 - advanced_form: [[ingot]] — Use 'ingot' when emphasizing a cast, bar-shaped piece of silver, common in manufacturing or metallurgy.
+- collocation: [[chalice]]
+- collocation: [[dinnerfork]]
+- collocation: [[fishfork]]
+- collocation: [[halide]]
+- collocation: [[littlefinger]]
+- collocation: [[locket]]
+- collocation: [[medalist]]

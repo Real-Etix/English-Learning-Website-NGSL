@@ -9,6 +9,8 @@ rank: 441
 sfi: 53.93
 sources: [wordnet, llm]
 status: enriched
+chart: average
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[normal]] — Use 'normal' when emphasizing perpendicularity to a surface or curve, common in physics and engineering.
 - advanced_form: [[orthogonal]] — Use 'orthogonal' in advanced mathematics or computing contexts involving axes and vectors.
 - builds_on: [[upright]] — Use 'perpendicular' in technical or geometric contexts to describe a line or surface at a 90-degree angle to a reference.
+- synonym: [[plumb]]

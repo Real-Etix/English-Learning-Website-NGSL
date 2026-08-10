@@ -6,6 +6,8 @@ pos: adjective
 forms: [segmental]
 sources: [llm]
 status: enriched
+chart: partial
+region: partial
 ---
 
 ## Definition

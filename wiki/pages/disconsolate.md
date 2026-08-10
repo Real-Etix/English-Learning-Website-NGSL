@@ -6,6 +6,8 @@ pos: adjective
 forms: [disconsolate]
 sources: [llm]
 status: enriched
+chart: would
+region: you
 ---
 
 ## Definition

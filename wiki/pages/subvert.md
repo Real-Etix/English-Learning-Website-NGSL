@@ -6,6 +6,8 @@ pos: verb
 forms: [subvert]
 sources: [llm]
 status: enriched
+chart: undermine
+region: you
 ---
 
 ## Definition

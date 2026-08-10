@@ -9,6 +9,8 @@ rank: 645
 sfi: 53.209
 sources: [wordnet, llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,15 @@ _No sourced examples yet._
 - advanced_form: [[transgress]] — Use 'transgress' for violating a moral or social boundary, suggesting a deliberate step over a line; 'fracture' implies a damaging split or break in relationships or systems.
 - advanced_form: [[contravene]] — Use 'contravene' for acting against a specific law, rule, or agreement, often in a direct and clear way; 'fracture' is stronger for causing a rupture or breach in something once whole.
 - builds_on: [[crack]] — Use 'fracture' instead of 'crack' in formal or scientific contexts (e.g., bones, rocks, materials) to emphasize a break without complete separation.
+- collocation: [[antebrachium]]
+- collocation: [[bone]]
+- collocation: [[brittle]]
+- collocation: [[carpal]]
+- collocation: [[cranium]]
+- collocation: [[femur]]
+- collocation: [[metacarpus]]
+- collocation: [[olecranon]]
+- collocation: [[pubis]]
+- collocation: [[vertebralcolumn]]
+- collocation: [[zygoma]]
+- collocation: [[os]]

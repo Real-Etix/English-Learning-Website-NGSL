@@ -9,6 +9,8 @@ rank: 909
 sfi: 52.53
 sources: [wordnet, llm]
 status: enriched
+chart: position
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[integrate]] — Use 'integrate' when focusing on combining separate elements into a unified whole, especially systems or processes.
 - advanced_form: [[align]] — Use 'align' when adjusting things to be in agreement or coordination, common in business or organizational contexts.
 - builds_on: [[compromise]] — Use when the compromise restores harmony or resolves deep conflicts.
+- synonym: [[conciliate]]
+- builds_on: [[adapt]] — Use when making two things compatible or finding a balance between them.

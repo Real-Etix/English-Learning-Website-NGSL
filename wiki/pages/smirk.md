@@ -6,6 +6,8 @@ pos: noun
 forms: [smirk]
 sources: [llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition

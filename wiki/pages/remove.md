@@ -9,6 +9,8 @@ rank: 1053
 sfi: 59.33
 sources: [wordnet, llm]
 status: enriched
+chart: take
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,12 @@ remove something concrete, as by lifting, pushing, or taking off, or remove some
 - advanced_form: [[eliminate]] — Use 'eliminate' when something is completely removed or gotten rid of, often with effort or finality.
 - advanced_form: [[extract]] — Use 'extract' when physically pulling something out, especially from a surrounding material.
 - advanced_form: [[withdraw]] — Use 'withdraw' when removing something that was previously offered, placed, or involved.
+- collocation: [[caulk]]
+- synonym: [[dislodge]]
+- collocation: [[impurity]]
+- synonym: [[purge]]
+- synonym: [[redact]]
+- synonym: [[subtract]]
+- synonym: [[evict]]
+- synonym: [[extricate]]
+- collocation: [[smudge]]

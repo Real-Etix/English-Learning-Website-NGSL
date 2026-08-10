@@ -9,6 +9,8 @@ rank: 453
 sfi: 53.8
 sources: [wordnet, llm]
 status: enriched
+chart: homemade
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[waterfowl]] — Use 'waterfowl' when referring to ducks in a formal or scientific context, especially when including related birds.
 - advanced_form: [[fowl]] — Use 'fowl' as a more general term for ducks in formal writing, but note it can also refer to other birds.
 - advanced_form: [[drake]] — Use 'drake' to specify a male duck, especially in ornithology or hunting contexts.
+- synonym: [[dodge]]
+- synonym: [[poultry]]

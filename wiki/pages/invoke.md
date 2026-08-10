@@ -6,6 +6,8 @@ pos: verb
 forms: [invoke]
 sources: [llm]
 status: enriched
+chart: cite
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[cite]] — Use when citing an authority, principle, or law to support a point.
 - builds_on: [[pray]] — Use when calling upon a deity or spirit by name, often in a ritual context.
+- synonym: [[conjure]]

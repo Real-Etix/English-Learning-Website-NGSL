@@ -9,6 +9,8 @@ rank: 246
 sfi: 57.139
 sources: [wordnet, llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - builds_on: [[volition]] — Use autonomy to emphasize self-governance or independence in decision-making, rather than just the ability to choose.
 - builds_on: [[freedom]] — Use 'autonomy' for freedom in decision-making or self-rule, e.g., personal or regional autonomy.
 - builds_on: [[independence]] — Use 'autonomy' when emphasizing self-governance or self-direction, often in organizational or political contexts.
+- collocation: [[juridical]]
+- builds_on: [[liberty]] — Use when emphasizing self-government rather than individual liberty.
+- builds_on: [[sovereignty]] — Use when emphasizing a group or region's freedom to govern itself without outside interference.
+- synonym: [[self-governance]]

@@ -9,6 +9,8 @@ rank: 162
 sfi: 67.63
 sources: [wordnet]
 status: seeded
+chart: annuity
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ not ever
 ## Connections
 - antonym: [[always]]
 - antonym: [[ever]]
+- collocation: [[astonish]]
+- collocation: [[disappoint]]
+- collocation: [[forsake]]
+- collocation: [[pall]]
+- collocation: [[weary]]

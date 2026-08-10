@@ -9,6 +9,8 @@ rank: 1143
 sfi: 49.8
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ a point where lines intersect
 - advanced_form: [[junction]] — Use 'junction' for roads, railways, or pipes meeting, often more technical than 'intersection'.
 - advanced_form: [[crossing]] — Use 'crossing' for a place where two paths or lines cross, especially for pedestrian or rail contexts.
 - advanced_form: [[nexus]] — Use 'nexus' for a central or focal point where multiple things connect, more abstract than 'intersection'.
+- synonym: [[chiasma]]

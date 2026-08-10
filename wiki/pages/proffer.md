@@ -6,6 +6,8 @@ pos: verb
 forms: [proffer]
 sources: [llm]
 status: enriched
+chart: tender
+region: you
 ---
 
 ## Definition

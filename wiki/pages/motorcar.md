@@ -6,6 +6,8 @@ pos: noun
 forms: [motorcar]
 sources: [llm]
 status: enriched
+chart: transmission
+region: you
 ---
 
 ## Definition

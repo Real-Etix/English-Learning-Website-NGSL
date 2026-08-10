@@ -9,6 +9,8 @@ rank: 237
 sfi: 66.21
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,19 @@ _No sourced examples yet._
 - advanced_form: [[proffer]] — Use when offering something formally or with a sense of presenting it for acceptance.
 - advanced_form: [[tender]] — Use when offering something formally, especially in legal or official contexts (e.g., tender a bid, tender an apology).
 - advanced_form: [[extend]] — Use when offering something like an invitation, a courtesy, or a service in a polite or formal manner.
+- collocation: [[absolution]]
+- collocation: [[alluring]]
+- collocation: [[atonement]]
+- collocation: [[clemency]]
+- collocation: [[counterargument]]
+- collocation: [[entice]]
+- collocation: [[enticement]]
+- collocation: [[oversubscribe]]
+- synonym: [[purvey]]
+- collocation: [[rebate]]
+- collocation: [[rescind]]
+- collocation: [[versatility]]
+- collocation: [[commiseration]]
+- synonym: [[overture]]
+- collocation: [[rejoinder]]
+- collocation: [[rephrasing]]

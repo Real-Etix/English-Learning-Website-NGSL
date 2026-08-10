@@ -6,6 +6,8 @@ pos: noun
 forms: [jubilation]
 sources: [llm]
 status: enriched
+chart: pleasure
+region: you
 ---
 
 ## Definition

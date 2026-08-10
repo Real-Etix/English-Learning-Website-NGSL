@@ -6,6 +6,8 @@ pos: noun
 forms: [brachialdelt]
 sources: [llm]
 status: enriched
+chart: elbow
+region: you
 ---
 
 ## Definition

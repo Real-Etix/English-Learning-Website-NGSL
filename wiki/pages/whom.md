@@ -6,6 +6,8 @@ pos: noun
 forms: [whom]
 sources: [llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[who]] — Use 'whom' in formal or written English when it functions as the object of a verb or preposition, instead of the informal 'who'.
+- synonym: [[that]]
+- collocation: [[to]]
+- collocation: [[with]]
+- collocation: [[for]]
+- collocation: [[of]]
+- collocation: [[by]]

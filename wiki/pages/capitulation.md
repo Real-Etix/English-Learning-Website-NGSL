@@ -6,6 +6,8 @@ pos: noun
 forms: [capitulation]
 sources: [llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [scribe]
 sources: [llm]
 status: enriched
+chart: author
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[author]] — Use 'scribe' instead of 'author' when the focus is on the act of writing by hand or recording, especially in historical or formal contexts, or for journalists.
+- synonym: [[recorder]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [garb]
 sources: [llm]
 status: enriched
+chart: attire
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[dress]] — Use 'garb' when putting on distinctive or ceremonial clothing.
 - builds_on: [[costume]] — Use 'garb' when emphasizing the distinctive or characteristic clothing of a particular group, profession, or historical period, often with a formal or literary tone.
 - builds_on: [[attire]] — Use 'garb' to emphasize a distinctive, often cultural or occupational style of clothing, more literary than 'attire'.
+- builds_on: [[suit]] — Use for clothing that is distinctive, often formal or symbolic, with a slight literary or formal tone.

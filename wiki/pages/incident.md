@@ -9,6 +9,8 @@ rank: 1807
 sfi: 56.16
 sources: [wordnet, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - builds_on: [[event]] — Use 'incident' when the event stands out, often with a specific or negative connotation.
 - advanced_form: [[episode]] — Use 'episode' instead of 'incident' when referring to a distinct event that is part of a larger series or narrative.
 - advanced_form: [[occurrence]] — Use 'occurrence' instead of 'incident' when you want a more formal, neutral word for something that happens, often in a statistical or routine context.
+- collocation: [[curious]]
+- collocation: [[isolated]]

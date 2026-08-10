@@ -9,6 +9,8 @@ rank: 292
 sfi: 65.27
 sources: [wordnet]
 status: seeded
+chart: entity
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,17 @@ on the contrary
 
 ## Connections
 - synonym: [[instead]]
+- synonym: [[comparatively]]
+- synonym: [[conversely]]
+- collocation: [[insignificant]]
+- synonym: [[nay]]
+- collocation: [[paradoxical]]
+- synonym: [[quite]]
+- synonym: [[alternatively]]
+- synonym: [[otherwise]]
+- collocation: [[but]]
+- collocation: [[or]]
+- collocation: [[than]]
+- collocation: [[not]]
+- collocation: [[actually]]
+- synonym: [[relatively]]

@@ -9,6 +9,8 @@ rank: 94
 sfi: 61.46
 sources: [wordnet, llm]
 status: enriched
+chart: pelvis
+region: pelvis
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[ischium]] — Use 'ischium' to specify the sitting bone area, distinct from the general pelvis.
 - advanced_form: [[pubis]] — Use 'pubis' to describe the anterior part of the pelvis, especially in anatomical contexts.
 - builds_on: [[hip]] — Use 'pelvis' instead of 'hip' when focusing on the bony structure or anatomical region, usually in medical or formal descriptions.
+- collocation: [[iliacus]]

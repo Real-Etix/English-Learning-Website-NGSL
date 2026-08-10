@@ -6,6 +6,8 @@ pos: noun
 forms: [timberland]
 sources: [llm]
 status: enriched
+chart: timber
+region: timber
 ---
 
 ## Definition

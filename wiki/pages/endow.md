@@ -6,6 +6,8 @@ pos: verb
 forms: [endow]
 sources: [llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition

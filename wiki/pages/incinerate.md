@@ -6,6 +6,8 @@ pos: verb
 forms: [incinerate]
 sources: [llm]
 status: enriched
+chart: down
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[burn]] — Use 'incinerate' instead of 'burn' when emphasizing complete destruction by fire, often in a controlled or industrial setting.
+- synonym: [[carbonize]]

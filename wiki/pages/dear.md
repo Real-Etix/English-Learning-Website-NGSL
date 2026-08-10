@@ -9,6 +9,8 @@ rank: 1401
 sfi: 57.86
 sources: [wordnet, llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[beloved]] — Use 'beloved' to express deep, enduring love, often in a slightly formal or reverent tone, like for family or a spouse.
 - advanced_form: [[cherished]] — Use 'cherished' to emphasize the emotional value and careful protection of something or someone loved.
 - advanced_form: [[precious]] — Use 'precious' to convey something is deeply loved and considered extremely valuable or irreplaceable.
+- collocation: [[auntie]]
+- collocation: [[grandmama]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [immobile]
 sources: [llm]
 status: enriched
+chart: static
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[stationary]] — Use immobile when emphasizing inability or resistance to move, often due to external force or physical constraint.
 - builds_on: [[stiff]] — Use 'immobile' when something cannot move at all, more absolute than 'stiff'.
 - builds_on: [[sedentary]] — Use 'immobile' when emphasizing inability or refusal to move, rather than just a lifestyle of little activity.
+- synonym: [[motionless]]

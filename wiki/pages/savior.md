@@ -6,6 +6,8 @@ pos: noun
 forms: [savior]
 sources: [llm]
 status: enriched
+chart: saver
+region: saver
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[saver]] — Use 'savior' instead of 'saver' to highlight a decisive, often life-saving intervention with a slightly more dramatic or thankful tone.
+- synonym: [[deliverer]]
+- synonym: [[rescuer]]
+- synonym: [[hero]]

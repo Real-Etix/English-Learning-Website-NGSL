@@ -6,6 +6,8 @@ pos: verb
 forms: [transpose]
 sources: [llm]
 status: enriched
+chart: commute
+region: commute
 ---
 
 ## Definition

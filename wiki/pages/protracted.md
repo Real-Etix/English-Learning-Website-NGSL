@@ -6,6 +6,8 @@ pos: adjective
 forms: [protracted]
 sources: [llm]
 status: enriched
+chart: lengthy
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,5 @@ _No sourced examples yet._
 - builds_on: [[long]] — Use 'protracted' for things that continue for a long time, often with a sense of delay or tediousness.
 - builds_on: [[lengthy]] — Use 'protracted' when something is drawn out over a long period, often suggesting difficulty, struggle, or tedium.
 - builds_on: [[endless]] — Use 'protracted' instead of 'endless' to highlight that something is drawn out over a long period, often with a sense of unnecessary delay.
+- synonym: [[extended]]
+- synonym: [[prolonged]]

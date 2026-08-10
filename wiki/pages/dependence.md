@@ -9,6 +9,8 @@ rank: 147
 sfi: 58.237
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[subordination]] — Use when emphasizing a lower rank or being under authority, not just reliance.
 - advanced_form: [[subservience]] — Use for excessive willingness to obey, often implying loss of independence.
+- synonym: [[crosscovariance]]

@@ -9,6 +9,8 @@ rank: 518
 sfi: 62.78
 sources: [wordnet, llm]
 status: enriched
+chart: visualize
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,13 @@ _No sourced examples yet._
 - builds_on: [[pop]] — Use 'project' when something extends outward from a surface, often in a structural or geometric sense, more formal than 'pop'.
 - builds_on: [[cast]] — Use 'project' when something is directed outward with force or intention, often for sound, light, or image.
 - builds_on: [[forecast]] — Use 'project' when the prediction is based on current data and trends, often in statistics or economics.
+- synonym: [[annualize]]
+- collocation: [[capstone]]
+- collocation: [[helm]]
+- synonym: [[protrude]]
+- collocation: [[reclamation]]
+- collocation: [[refurbishment]]
+- collocation: [[reinitiate]]
+- collocation: [[restoration]]
+- collocation: [[collaboration]]
+- collocation: [[timeline]]

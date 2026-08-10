@@ -6,6 +6,8 @@ pos: noun
 forms: [resilience]
 sources: [llm]
 status: enriched
+chart: strength
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 - builds_on: [[tolerance]] — Use 'resilience' to emphasize the ability to recover quickly from adverse conditions, rather than just enduring them.
 - builds_on: [[elasticity]] — Use 'resilience' in formal or scientific contexts to emphasize the ability to recover from deformation or stress.
 - builds_on: [[sustainability]] — Use 'resilience' when emphasizing the ability to withstand shocks or stress, rather than general long-term endurance.
+- synonym: [[adaptability]]
+- synonym: [[buoyancy]]
+- synonym: [[hardiness]]

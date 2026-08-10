@@ -6,6 +6,8 @@ pos: adjective
 forms: [potentiated]
 sources: [llm]
 status: enriched
+chart: interactive
+region: interactive
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[interactive]] — Use 'potentiated' when one substance enhances the effect of another, often implying a stronger or more effective interaction than simply 'interactive'.
+- collocation: [[effect]]
+- collocation: [[activity]]
+- collocation: [[response]]
+- collocation: [[signal]]
+- collocation: [[drug]]

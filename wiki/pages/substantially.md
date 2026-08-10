@@ -9,6 +9,8 @@ rank: 261
 sfi: 55.5
 sources: [wordnet, llm]
 status: enriched
+chart: substantially
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ to a great extent or degree
 - builds_on: [[drastically]] — Use 'substantially' to indicate a large degree or significant amount, often in a formal or quantitative context, instead of 'drastically' which may carry a sense of extreme or harsh change.
 - builds_on: [[heavily]] — Use 'substantially' to stress a large, impactful degree, especially in formal reports or discussions.
 - builds_on: [[greatly]] — Use 'substantially' to emphasize a large, measurable change or impact, often in formal or quantitative contexts.
+- synonym: [[much]]
+- synonym: [[appreciably]]

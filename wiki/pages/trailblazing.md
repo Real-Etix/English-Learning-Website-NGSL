@@ -6,6 +6,8 @@ pos: adjective
 forms: [trailblazing]
 sources: [llm]
 status: enriched
+chart: innovative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[innovative]] — Use to describe something that leads the way and sets a new standard, often with a sense of boldness.
+- synonym: [[groundbreaking]]
+- synonym: [[pioneering]]

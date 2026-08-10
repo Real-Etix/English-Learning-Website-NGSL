@@ -9,6 +9,8 @@ rank: 317
 sfi: 64.92
 sources: [wordnet]
 status: seeded
+chart: annuity
+region: you
 ---
 
 ## Definition

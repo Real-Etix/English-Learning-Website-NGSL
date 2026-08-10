@@ -6,6 +6,8 @@ pos: noun
 forms: [quadrant]
 sources: [llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition

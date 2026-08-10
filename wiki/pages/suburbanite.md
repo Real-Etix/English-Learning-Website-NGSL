@@ -6,6 +6,8 @@ pos: noun
 forms: [suburbanite]
 sources: [llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition

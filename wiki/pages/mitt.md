@@ -6,6 +6,8 @@ pos: noun
 forms: [mitt]
 sources: [llm]
 status: enriched
+chart: glove
+region: glove
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[glove]] — Use 'mitt' instead of 'glove' when referring specifically to a baseball glove with a wide, padded pocket, typically used by catchers and first basemen.
+- collocation: [[baseball]]
+- collocation: [[oven]]
+- collocation: [[leather]]
+- synonym: [[paw]]

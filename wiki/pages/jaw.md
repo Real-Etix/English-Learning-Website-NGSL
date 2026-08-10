@@ -9,6 +9,8 @@ rank: 170
 sfi: 58.55
 sources: [wordnet, llm]
 status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[prattle]] — Use 'prattle' to imply trivial or childish chatter, often with a slightly dismissive tone.
 - advanced_form: [[natter]] — Use 'natter' for informal, leisurely talk about unimportant topics, common in British English.
+- collocation: [[allotherian]]
+- synonym: [[jawbone]]
+- synonym: [[jowl]]
+- synonym: [[mandible]]

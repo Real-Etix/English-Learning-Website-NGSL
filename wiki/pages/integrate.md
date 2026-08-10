@@ -9,6 +9,8 @@ rank: 1955
 sfi: 55.67
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[consolidate]] — Use consolidate to emphasize strengthening and making something more efficient by combining.
 - advanced_form: [[unify]] — Use unify to emphasize bringing together separate parts to form a single cohesive whole, often with a focus on harmony.
 - builds_on: [[incorporate]] — Use 'integrate' to emphasize blending separate elements into a unified, functioning whole, often in technical or systematic contexts.
+- synonym: [[harmonize]]

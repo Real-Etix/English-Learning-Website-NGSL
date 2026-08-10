@@ -6,6 +6,8 @@ pos: verb
 forms: [mobilize]
 sources: [llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[activate]] — Use 'mobilize' when organizing and deploying people or resources for action, especially in a collective effort.
+- synonym: [[conscript]]
+- synonym: [[rally]]
+- synonym: [[deploy]]
+- synonym: [[organize]]
+- synonym: [[marshal]]
+- collocation: [[resources]]
+- collocation: [[troops]]
+- collocation: [[support]]
+- collocation: [[community]]

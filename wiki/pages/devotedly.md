@@ -6,6 +6,8 @@ pos: adverb
 forms: [devotedly]
 sources: [llm]
 status: enriched
+chart: firm
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[faithfully]] — Use 'devotedly' when the loyalty stems from deep personal affection or dedication, stronger than mere faithful duty.
+- synonym: [[wholeheartedly]]
+- synonym: [[earnestly]]
+- synonym: [[diligently]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [dairy]
 sources: [llm]
 status: enriched
+chart: milk
+region: milk
 ---
 
 ## Definition

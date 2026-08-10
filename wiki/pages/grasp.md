@@ -9,6 +9,8 @@ rank: 430
 sfi: 54.345
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ understanding of the nature or meaning or quality or magnitude of something
 - advanced_form: [[perception]] — Use 'perception' when focusing on the ability to see or interpret something insightfully, especially nuances.
 - advanced_form: [[discernment]] — Use 'discernment' when highlighting the capacity to judge well, especially fine distinctions or subtleties.
 - builds_on: [[snap]] — Use for emphasizing the hold after catching, more formal than 'snap'.
+- synonym: [[comprehend]]
+- collocation: [[elude]]

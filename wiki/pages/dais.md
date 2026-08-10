@@ -6,6 +6,8 @@ pos: noun
 forms: [dais]
 sources: [llm]
 status: enriched
+chart: platform
+region: platform
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[platform]] — Use 'dais' instead of 'platform' for a formal, often large raised surface for honored guests or ceremony leaders.
+- synonym: [[stage]]
+- synonym: [[podium]]
+- synonym: [[rostrum]]
+- synonym: [[stand]]
+- collocation: [[high]]
+- collocation: [[wooden]]
+- collocation: [[on]]

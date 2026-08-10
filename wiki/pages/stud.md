@@ -6,6 +6,8 @@ pos: noun
 forms: [stud]
 sources: [llm]
 status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[button]] — Use 'stud' to refer to a small, often decorative button, especially on formal shirts or cuffs.
+- synonym: [[sire]]

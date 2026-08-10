@@ -9,6 +9,8 @@ rank: 36
 sfi: 60.63
 sources: [wordnet, llm]
 status: enriched
+chart: rally
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ _No sourced examples yet._
 - advanced_form: [[output]] — Use 'output' when talking specifically about the quantity of results or goods produced, rather than the general quality of being productive.
 - advanced_form: [[efficacy]] — Use 'efficacy' when emphasizing effectiveness in achieving a specific goal, especially in medical, technical, or formal contexts.
 - builds_on: [[efficiency]] — Use 'productivity' when focusing on output per unit input, often in economics or business, rather than the broader concept of efficiency.
+- synonym: [[yield]]
+- synonym: [[effectiveness]]
+- synonym: [[production]]
+- collocation: [[workplace]]
+- collocation: [[boost]]
+- collocation: [[increase]]

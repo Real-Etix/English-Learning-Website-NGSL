@@ -6,6 +6,8 @@ pos: noun
 forms: [ribbon]
 sources: [llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tape]] — Use for a decorative or neat strip of cloth, often for binding gifts or hair.
+- collocation: [[bowknot]]
+- synonym: [[strip]]
+- synonym: [[band]]
+- synonym: [[braid]]
+- collocation: [[bow]]
+- collocation: [[blue]]
+- synonym: [[rosette]]

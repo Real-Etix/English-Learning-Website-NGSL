@@ -6,6 +6,8 @@ pos: verb
 forms: [irk]
 sources: [llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[annoy]] — Use 'irk' for a mild but persistent annoyance, often from trivial habits or repeated offenses.
+- synonym: [[disgruntle]]

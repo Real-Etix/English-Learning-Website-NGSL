@@ -6,6 +6,8 @@ pos: verb
 forms: [deviate]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vary]] — Use 'deviate' when something or someone departs from a standard, norm, or expected course, preserving the core but moving away.
+- synonym: [[digress]]

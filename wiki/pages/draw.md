@@ -9,6 +9,8 @@ rank: 481
 sfi: 63.15
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,11 @@ cause to move by pulling
 - advanced_form: [[tug]] — Use 'tug' for a quick, forceful pull, often with a sudden motion.
 - advanced_form: [[haul]] — Use 'haul' for pulling something heavy or with sustained effort, often over a distance.
 - advanced_form: [[drag]] — Use 'drag' for pulling something that resists movement, often along a surface.
+- collocation: [[amperage]]
+- collocation: [[caricature]]
+- collocation: [[gridline]]
+- collocation: [[plaudit]]
+- collocation: [[guideline]]
+- synonym: [[aspirate]]
+- collocation: [[dagger]]
+- synonym: [[draught]]

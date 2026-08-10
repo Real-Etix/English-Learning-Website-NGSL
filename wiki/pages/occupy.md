@@ -9,6 +9,8 @@ rank: 1930
 sfi: 55.76
 sources: [wordnet, llm]
 status: enriched
+chart: encompass
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[engage]] — Use 'engage' when focusing on active participation or involvement, more formal than 'occupy'.
 - advanced_form: [[absorb]] — Use 'absorb' when something fully captures interest or time, implying deep immersion.
 - advanced_form: [[preoccupy]] — Use 'preoccupy' when something dominates one's thoughts, often to the exclusion of other activities.
+- synonym: [[inhabit]]
+- builds_on: [[lie]] — Use 'occupy' to emphasize the area or space that a place takes up, often in a formal or strategic context.

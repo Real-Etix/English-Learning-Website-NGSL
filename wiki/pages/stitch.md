@@ -6,6 +6,8 @@ pos: verb
 forms: [stitch]
 sources: [llm]
 status: enriched
+chart: sew
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sew]] — Use 'stitch' when focusing on the action of making individual stitches, often for repair or decoration, rather than general sewing.
+- synonym: [[darn]]
+- synonym: [[hem]]

@@ -9,6 +9,8 @@ rank: 40
 sfi: 74.5
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: there
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ in or at that place or location
 - collocation: [[then]]
 - advanced_form: [[therein]] — Use in formal or legal writing to mean 'in that place' instead of 'there'.
 - advanced_form: [[yonder]] — Use for poetic or rustic effect to indicate a distant place, instead of 'over there'.
+- collocation: [[although]]
+- collocation: [[whoa]]

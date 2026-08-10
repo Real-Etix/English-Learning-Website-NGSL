@@ -9,6 +9,8 @@ rank: 122
 sfi: 57.53
 sources: [wordnet, llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[pamphlet]] — Use 'pamphlet' for a small unbound booklet often used for informational or promotional content, more specific than a general folder.
 - advanced_form: [[booklet]] — Use 'booklet' for a small bound book with pages, often containing instructions or summaries, more formal than 'folder'.
+- synonym: [[dossier]]

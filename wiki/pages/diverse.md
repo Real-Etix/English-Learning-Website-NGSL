@@ -9,6 +9,8 @@ rank: 217
 sfi: 57.487
 sources: [wordnet, llm]
 status: enriched
+chart: various
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ many and different
 - advanced_form: [[heterogeneous]] — Use 'heterogeneous' in formal or academic contexts to stress that the components are distinctly different from each other.
 - advanced_form: [[multifarious]] — Use 'multifarious' to describe a wide variety of aspects or elements, often for abstract or complex diversity.
 - builds_on: [[plural]] — Use 'diverse' to highlight variety in kind, while 'plural' simply indicates more than one.
+- collocation: [[ecologically]]
+- collocation: [[workforce]]
+- collocation: [[fauna]]
+- collocation: [[flora]]

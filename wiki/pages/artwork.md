@@ -7,8 +7,10 @@ forms: [artwork, artworks]
 lists: [academic]
 rank: 917
 sfi: 45.22
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ photographs or other visual representations in a printed publication
 - synonym: [[art]]
 - synonym: [[graphics]]
 - domain: academic
+- collocation: [[layout]]
+- collocation: [[caption]]
+- collocation: [[magazine]]
+- collocation: [[book]]
+- collocation: [[original]]
+- advanced_form: [[imagery]] — Use when emphasizing the overall visual style or collection of images in a publication.
+- advanced_form: [[plates]] — Use for full-page or standalone images, often in formal or art publications.

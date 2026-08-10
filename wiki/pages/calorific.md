@@ -6,6 +6,8 @@ pos: adjective
 forms: [calorific]
 sources: [llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[caloric]] — Use 'calorific' when focusing on heat production or energy content, especially in engineering or nutrition.
+- synonym: [[thermal]]
+- synonym: [[energetic]]

@@ -9,6 +9,8 @@ rank: 419
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: periodical
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ occurring every hour or payable by the hour
 - domain: toeic
 - advanced_form: [[recurrent]] — Use 'recurrent' to emphasize that something happens repeatedly at regular intervals, but not necessarily exactly every hour; 'hourly' is more precise and specific to a one-hour cycle.
 - advanced_form: [[periodic]] — Use 'periodic' for events that occur at set intervals in a regular pattern; 'hourly' explicitly states the interval as one hour, whereas 'periodic' is more general.
+- synonym: [[regular]]
+- collocation: [[rate]]
+- collocation: [[wage]]
+- collocation: [[employee]]
+- collocation: [[basis]]

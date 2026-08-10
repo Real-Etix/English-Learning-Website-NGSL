@@ -9,6 +9,8 @@ rank: 984
 sfi: 52.37
 sources: [wordnet, llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ look at thoughtfully
 - advanced_form: [[scrutinize]] — Use 'scrutinize' when the looking is extremely close, critical, and thorough, implying a search for flaws or hidden details, more intense than 'contemplate'.
 - advanced_form: [[survey]] — Use 'survey' when looking over a broad area or scene to get a general impression, less focused on a single object than 'contemplate'.
 - builds_on: [[intend]] — Use 'contemplate' instead of 'intend' when the purpose is still under serious consideration and not yet decided.
+- collocation: [[matrimony]]
+- synonym: [[ponder]]

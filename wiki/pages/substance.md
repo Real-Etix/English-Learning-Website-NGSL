@@ -9,6 +9,8 @@ rank: 2230
 sfi: 54.85
 sources: [wordnet, llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ the real physical matter of which a person or thing consists
 - builds_on: [[stuff]] — Use 'substance' for a particular kind of matter with consistent properties, often in scientific or technical descriptions where precision is needed.
 - advanced_form: [[matter]] — Use 'matter' instead of 'substance' when referring to physical material in a scientific or philosophical context, or when emphasizing the physical composition of an object.
 - advanced_form: [[material]] — Use 'material' instead of 'substance' when specifying the type of stuff something is made from, especially in manufacturing, construction, or craft contexts.
+- collocation: [[opaque]]
+- synonym: [[parenchyma]]

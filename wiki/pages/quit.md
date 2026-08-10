@@ -9,6 +9,8 @@ rank: 223
 sfi: 55.99
 sources: [wordnet, llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ put an end to a state or an activity
 - advanced_form: [[cease]] — Use 'cease' for a formal or permanent end to an activity or state, often in official or serious contexts.
 - advanced_form: [[desist]] — Use 'desist' when referring to stopping an action that is unwanted or forbidden, usually after a command or request.
 - advanced_form: [[terminate]] — Use 'terminate' for ending something officially or legally, such as a contract, agreement, or employment.
+- synonym: [[resign]]

@@ -9,6 +9,8 @@ rank: 328
 sfi: 54.39
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ status: enriched
 - domain: business
 - advanced_form: [[incorporeal]] — Use 'incorporeal' to emphasize a legal or metaphysical lack of physical body, often in formal or philosophical contexts, instead of 'intangible' which is more general in business.
 - advanced_form: [[impalpable]] — Use 'impalpable' to stress the inability to be felt or grasped physically, especially when describing abstract qualities that are not just non-physical but also elusive.
+- synonym: [[elusive]]

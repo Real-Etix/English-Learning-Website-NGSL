@@ -9,6 +9,8 @@ rank: 1610
 sfi: 56.96
 sources: [wordnet, llm]
 status: enriched
+chart: elbow
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[deltoid]] — Use when referring specifically to the large muscle covering the shoulder joint, not the entire shoulder area.
 - advanced_form: [[scapula]] — Use in medical or formal anatomical contexts instead of the common term 'shoulder blade'.
 - builds_on: [[undertake]] — Use 'shoulder' when emphasizing the burden or weight of a responsibility, implying acceptance of a heavy duty.
+- collocation: [[clavicle]]
+- collocation: [[dislocate]]
+- collocation: [[handbag]]
+- collocation: [[heave]]

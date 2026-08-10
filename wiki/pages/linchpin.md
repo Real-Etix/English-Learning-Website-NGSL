@@ -6,6 +6,8 @@ pos: noun
 forms: [linchpin]
 sources: [llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pivot]] — Use 'linchpin' instead of 'pivot' to stress that the person is essential for holding a group together and preventing collapse, with a sense of indispensable unity.
+- synonym: [[cornerstone]]
+- synonym: [[anchor]]
+- synonym: [[foundation]]
+- collocation: [[of]]
+- collocation: [[the]]
+- collocation: [[in]]

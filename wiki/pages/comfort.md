@@ -9,6 +9,8 @@ rank: 1945
 sfi: 55.71
 sources: [wordnet, llm]
 status: enriched
+chart: still
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ a state of being relaxed and feeling no pain
 - advanced_form: [[ease]] — Use 'ease' when focusing on the absence of effort or discomfort, more active than passive comfort.
 - advanced_form: [[tranquility]] — Use 'tranquility' for a deep, lasting calmness often associated with peaceful surroundings.
 - advanced_form: [[serenity]] — Use 'serenity' for a clear, untroubled state of mind, often implying inner peace rather than physical comfort.
+- synonym: [[luxury]]

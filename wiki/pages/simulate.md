@@ -9,6 +9,8 @@ rank: 342
 sfi: 56.493
 sources: [wordnet, llm]
 status: enriched
+chart: simulate
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[impersonate]] — Use 'impersonate' when pretending to be another person, especially for deception or entertainment.
 - advanced_form: [[emulate]] — Use 'emulate' when trying to match or surpass someone's success or qualities through imitation.
 - builds_on: [[pretend]] — Use 'simulate' when the pretense involves imitating a process, state, or action, often in a technical or controlled context.
+- synonym: [[feign]]

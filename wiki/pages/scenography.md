@@ -6,6 +6,8 @@ pos: noun
 forms: [scenography]
 sources: [llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition

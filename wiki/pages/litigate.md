@@ -6,6 +6,8 @@ pos: noun
 forms: [litigate]
 sources: [llm]
 status: enriched
+chart: assert
+region: you
 ---
 
 ## Definition

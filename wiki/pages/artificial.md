@@ -9,6 +9,8 @@ rank: 369
 sfi: 56.221
 sources: [wordnet, llm]
 status: enriched
+chart: synthetic
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ contrived by art rather than nature
 - advanced_form: [[synthetic]] — Use when referring to something chemically or artificially produced, especially as a substitute for a natural material.
 - advanced_form: [[ersatz]] — Use to describe a cheap or inferior imitation, often with a negative connotation.
 - advanced_form: [[simulated]] — Use when something is made to resemble the real thing through imitation or modeling, often for training or testing.
+- synonym: [[factitious]]
+- synonym: [[inorganic]]
+- collocation: [[lake]]
+- collocation: [[flavorant]]
+- collocation: [[sweetener]]

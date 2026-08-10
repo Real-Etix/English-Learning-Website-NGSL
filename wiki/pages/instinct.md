@@ -9,6 +9,8 @@ rank: 831
 sfi: 49.83
 sources: [wordnet, llm]
 status: enriched
+chart: information
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ inborn pattern of behavior often responsive to specific stimuli
 - advanced_form: [[intuition]] — Use 'intuition' when describing a quick, insight-based understanding rather than a hardwired behavioral pattern.
 - advanced_form: [[propensity]] — Use 'propensity' to emphasize a strong, often learned or habitual inclination, not just an inborn instinct.
 - advanced_form: [[predisposition]] — Use 'predisposition' when referring to an inherent tendency shaped by genetics or upbringing, broader than a fixed instinct.
+- collocation: [[progenitive]]
+- collocation: [[unerring]]

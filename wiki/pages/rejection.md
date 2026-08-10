@@ -9,6 +9,8 @@ rank: 428
 sfi: 55.563
 sources: [wordnet, llm]
 status: enriched
+chart: grant
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ the act of rejecting something
 - advanced_form: [[veto]] — Use when referring to the power to formally reject a decision or proposal, especially in a political or organizational context.
 - advanced_form: [[dismissal]] — Use when rejecting an idea or argument as unworthy of consideration, or when referring to firing someone from a job.
 - builds_on: [[refusal]] — Use 'rejection' when refusing an offer, proposal, or application, implying a more definitive and often impersonal decision.
+- synonym: [[denial]]
+- synonym: [[disallowance]]
+- synonym: [[ostracism]]
+- synonym: [[renunciation]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [industrialist]
 sources: [llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition

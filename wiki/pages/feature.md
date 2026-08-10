@@ -9,6 +9,8 @@ rank: 635
 sfi: 61.77
 sources: [wordnet, llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[hallmark]] — Use 'hallmark' when the feature is emblematic or definitively identifying, especially positive or defining traits.
 - builds_on: [[movie]] — Use 'feature' to refer to a full-length movie, especially in a professional or formal context.
 - builds_on: [[film]] — Use 'feature' to specify a full-length film, often in professional or industry contexts, to differentiate from short films or documentaries.
+- synonym: [[motion-picture]]

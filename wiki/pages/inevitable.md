@@ -9,6 +9,8 @@ rank: 543
 sfi: 53.68
 sources: [wordnet, llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ incapable of being avoided or prevented
 - advanced_form: [[ineluctable]] — Use 'ineluctable' for a formal, almost philosophical tone, stressing inevitability that cannot be reasoned or struggled against.
 - builds_on: [[predictable]] — Use 'inevitable' when something is not only predictable but also certain to happen, often with a sense of unavoidable destiny.
 - builds_on: [[eventual]] — Use 'inevitable' when something is certain to happen because of existing circumstances; 'eventual' does not necessarily imply certainty.
+- synonym: [[predetermined]]

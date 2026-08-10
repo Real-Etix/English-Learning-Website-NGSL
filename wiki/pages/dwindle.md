@@ -6,6 +6,8 @@ pos: verb
 forms: [dwindle]
 sources: [llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[diminish]] — Use 'dwindle' when emphasizing a gradual, often concerning reduction in quantity or size, especially of resources or numbers.
+- synonym: [[decrease]]
+- synonym: [[shrink]]
+- synonym: [[decline]]
+- synonym: [[wane]]
+- collocation: [[resources]]
+- collocation: [[population]]
+- collocation: [[away]]

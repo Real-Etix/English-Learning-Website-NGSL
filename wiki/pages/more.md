@@ -9,6 +9,8 @@ rank: 42
 sfi: 74.2
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ status: enriched
 - advanced_form: [[additional]] — Use for extra quantity of something concrete or abstract in professional or academic contexts instead of 'more'.
 - advanced_form: [[further]] — Use with abstract mass nouns like help, detail, or evidence when writing or speaking formally.
 - advanced_form: [[increased]] — Use when describing a quantity that has grown larger, especially in news, scientific, or business contexts.
+- collocation: [[considerate]]
+- collocation: [[importantly]]
+- collocation: [[once]]

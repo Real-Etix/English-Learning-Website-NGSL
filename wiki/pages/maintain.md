@@ -9,6 +9,8 @@ rank: 943
 sfi: 60
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,14 @@ _No sourced examples yet._
 - advanced_form: [[perpetuate]] — Use 'perpetuate' instead of 'maintain' when referring to keeping something (often negative or systemic) continuing indefinitely, especially in social or institutional contexts.
 - builds_on: [[assert]] — Use 'maintain' when you want to convey steadfastness in the face of contrary evidence or opposition.
 - builds_on: [[insist]] — Use 'maintain' when you insist on a position or claim, especially in the face of doubt or challenge.
+- collocation: [[asepsis]]
+- collocation: [[composure]]
+- collocation: [[equipoise]]
+- collocation: [[homeostasis]]
+- collocation: [[impartiality]]
+- collocation: [[operability]]
+- collocation: [[poise]]
+- collocation: [[pretense]]
+- collocation: [[vivarium]]
+- collocation: [[weblog]]
+- collocation: [[objectivity]]

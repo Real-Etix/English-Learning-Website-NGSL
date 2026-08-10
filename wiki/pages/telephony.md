@@ -6,6 +6,8 @@ pos: noun
 forms: [telephony]
 sources: [llm]
 status: enriched
+chart: telecom
+region: you
 ---
 
 ## Definition

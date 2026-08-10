@@ -6,6 +6,8 @@ pos: adjective
 forms: [unrefined]
 sources: [llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition

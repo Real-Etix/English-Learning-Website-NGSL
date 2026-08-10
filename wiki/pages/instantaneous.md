@@ -6,6 +6,8 @@ pos: adjective
 forms: [instantaneous]
 sources: [llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[instant]] — Use 'instantaneous' when stressing that an effect occurs in a single, indivisible moment; it is more precise than 'instant' in scientific or dramatic descriptions.
 - builds_on: [[immediate]] — Use 'instantaneous' to emphasize something happening in a single, indivisible moment, more technical than 'immediate'.
 - builds_on: [[sudden]] — Use 'instantaneous' when the sudden event happens in an extremely brief moment, often without any perceivable delay.
+- synonym: [[real-time]]

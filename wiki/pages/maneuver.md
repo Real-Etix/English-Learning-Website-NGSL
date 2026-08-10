@@ -9,6 +9,8 @@ rank: 1624
 sfi: 50.03
 sources: [wordnet, llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[drill]] — Use 'drill' for a specific, repetitive training exercise focused on a particular skill, while 'maneuver' is broader and can refer to tactical movement in training.
 - advanced_form: [[operation]] — Use 'operation' for a planned, large-scale training exercise with a specific objective, more formal than 'maneuver'.
 - advanced_form: [[simulation]] — Use 'simulation' for a technology-driven training exercise that replicates real conditions, more modern and specific than 'maneuver'.
+- collocation: [[flanking]]
+- builds_on: [[measure]] — Use when emphasizing skill, craftiness, or a calculated move in a tricky or competitive situation.

@@ -6,6 +6,8 @@ pos: noun
 forms: [monogram]
 sources: [llm]
 status: enriched
+chart: null
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[initial]] — Use 'monogram' to refer to an ornamental design of initials (often on personal items), while 'initial' is simply the first letter of a name used for signing or abbreviating.
+- synonym: [[emblem]]
+- synonym: [[logo]]
+- synonym: [[insignia]]
+- synonym: [[mark]]
+- collocation: [[stationery]]

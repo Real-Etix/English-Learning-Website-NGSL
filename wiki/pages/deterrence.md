@@ -6,6 +6,8 @@ pos: noun
 forms: [deterrence]
 sources: [llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition

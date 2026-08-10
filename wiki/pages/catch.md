@@ -9,6 +9,8 @@ rank: 683
 sfi: 61.45
 sources: [wordnet, llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ discover or come upon accidentally, suddenly, or unexpectedly
 - advanced_form: [[spot]] — Use 'spot' for suddenly seeing someone or something with your eyes, similar to 'catch sight of' but a single-word alternative.
 - advanced_form: [[apprehend]] — Use 'apprehend' specifically for capturing a criminal or wrongdoer, which is a formal term for 'catch' in a law enforcement context.
 - builds_on: [[trigger]] — Use 'catch' to refer to a locking or stopping mechanism, especially in safety contexts, while 'trigger' is the activating lever.
+- synonym: [[ensnare]]
+- collocation: [[fancy]]
+- collocation: [[glint]]
+- synonym: [[intercept]]
+- collocation: [[phrase]]

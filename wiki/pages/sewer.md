@@ -9,6 +9,8 @@ rank: 944
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[drain]] — Use 'drain' when referring to the general pipe system for carrying away water or waste, often less technical than 'sewer'.
 - advanced_form: [[culvert]] — Use 'culvert' for a structure that channels water under a road, railway, or similar barrier; more specific than a sewer.
+- synonym: [[conduit]]
+- synonym: [[pipe]]
+- synonym: [[channel]]

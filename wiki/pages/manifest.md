@@ -6,6 +6,8 @@ pos: verb
 forms: [manifest]
 sources: [llm]
 status: enriched
+chart: present
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - builds_on: [[exhibit]] — Use 'manifest' when something becomes clearly visible or evident, often implying a process of revelation, whereas 'exhibit' is more direct and can be used for deliberate display.
 - builds_on: [[apparent]] — Use 'manifest' when something is not just apparent but strikingly obvious and undeniable, often after analysis or evidence.
 - builds_on: [[possess]] — Use 'manifest' when the attribute is clearly visible or evident, often through behavior or results, implying a more unmistakable expression.
+- collocation: [[corporeally]]
+- builds_on: [[obvious]] — Use when something is strikingly obvious and cannot be ignored, often in formal or literary writing.

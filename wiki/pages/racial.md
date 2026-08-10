@@ -9,6 +9,8 @@ rank: 2613
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: aesthetic
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ of or related to genetically distinguished groups of people
 - advanced_form: [[ethnic]] — Use 'ethnic' when focusing on cultural heritage rather than biological race.
 - advanced_form: [[ancestral]] — Use 'ancestral' to emphasize lineage and descent rather than modern social categories.
 - advanced_form: [[phenotypic]] — Use 'phenotypic' in scientific contexts referring to observable physical traits.
+- collocation: [[bigotry]]

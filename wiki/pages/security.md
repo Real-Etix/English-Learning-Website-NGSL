@@ -9,6 +9,8 @@ rank: 541
 sfi: 62.54
 sources: [wordnet, llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,14 @@ the state of being free from danger or injury
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[protection]] — Use 'protection' when emphasizing the active measures or shielding that ensure security.
 - advanced_form: [[invulnerability]] — Use 'invulnerability' for a more formal, absolute sense of security where no threat can penetrate.
+- collocation: [[bodyguard]]
+- collocation: [[camera]]
+- collocation: [[cordon]]
+- synonym: [[coverage]]
+- collocation: [[credentials]]
+- collocation: [[disabled]]
+- collocation: [[heightened]]
+- synonym: [[impregnability]]
+- collocation: [[passcode]]
+- collocation: [[perimeter]]
+- collocation: [[vetting]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [proximate]
 sources: [llm]
 status: enriched
+chart: about
+region: you
 ---
 
 ## Definition

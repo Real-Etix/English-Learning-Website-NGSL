@@ -6,6 +6,8 @@ pos: noun
 forms: [neurocyte]
 sources: [llm]
 status: enriched
+chart: neuron
+region: neuron
 ---
 
 ## Definition

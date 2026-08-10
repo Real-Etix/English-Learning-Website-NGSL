@@ -9,6 +9,8 @@ rank: 653
 sfi: 53.092
 sources: [wordnet, llm]
 status: enriched
+chart: epidemiology
+region: epidemiology
 ---
 
 ## Definition

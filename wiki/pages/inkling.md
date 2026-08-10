@@ -6,6 +6,8 @@ pos: noun
 forms: [inkling]
 sources: [llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[clue]] — Use 'inkling' when the indication is subtle and based on intuition or vague awareness, not a concrete piece of evidence.
 - builds_on: [[notion]] — Use 'inkling' for a slight, vague suspicion or hint, stronger than 'notion' in implying uncertainty but more specific.
 - builds_on: [[impression]] — Use 'inkling' when the idea is faint or barely conscious, like a slight suspicion or hint.
+- builds_on: [[suspicion]] — Use for a vague, unformed suspicion that something is the case.

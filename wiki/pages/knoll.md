@@ -6,6 +6,8 @@ pos: noun
 forms: [knoll]
 sources: [llm]
 status: enriched
+chart: elevation
+region: you
 ---
 
 ## Definition

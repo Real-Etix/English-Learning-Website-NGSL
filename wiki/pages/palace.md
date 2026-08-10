@@ -6,6 +6,8 @@ pos: noun
 forms: [palace]
 sources: [llm]
 status: enriched
+chart: castle
+region: castle
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[castle]] — Use 'palace' instead of 'castle' when emphasizing luxury and royal residence rather than fortification.
+- collocation: [[imperial]]
+- synonym: [[residence]]
+- synonym: [[manor]]
+- synonym: [[hall]]
+- collocation: [[royal]]
+- collocation: [[intrigue]]

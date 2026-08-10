@@ -6,6 +6,8 @@ pos: noun
 forms: [chicanery]
 sources: [llm]
 status: enriched
+chart: plot
+region: you
 ---
 
 ## Definition

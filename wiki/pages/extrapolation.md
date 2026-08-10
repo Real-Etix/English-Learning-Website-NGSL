@@ -6,6 +6,8 @@ pos: noun
 forms: [extrapolation]
 sources: [llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition

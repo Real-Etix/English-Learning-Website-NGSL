@@ -9,6 +9,8 @@ rank: 578
 sfi: 62.21
 sources: [wordnet, llm]
 status: enriched
+chart: interest
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - advanced_form: [[focus]] — Use when emphasizing the active direction of attention toward a specific point or task.
 - advanced_form: [[concentration]] — Use when stressing sustained mental effort and the exclusion of distractions.
 - advanced_form: [[awareness]] — Use when attention is diffuse and about being conscious of something in a broader sense.
+- collocation: [[crave]]
+- collocation: [[deflect]]
+- collocation: [[diligent]]
+- collocation: [[garner]]
+- collocation: [[redirect]]
+- collocation: [[vie]]

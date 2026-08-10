@@ -6,6 +6,8 @@ pos: noun
 forms: [peril]
 sources: [llm]
 status: enriched
+chart: gamble
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,6 @@ _No sourced examples yet._
 - builds_on: [[risk]] — Use 'peril' for a more dramatic, immediate, or life-threatening risk, often in literature or serious contexts.
 - builds_on: [[hazard]] — Use 'peril' for a serious, life-threatening danger, often in formal or literary contexts.
 - builds_on: [[threat]] — Use 'peril' for imminent, serious danger often involving physical harm or death; more formal and literary than 'threat'.
+- synonym: [[danger]]
+- synonym: [[jeopardy]]
+- builds_on: [[danger]] — Use for a serious, immediate, or life-threatening danger, often in formal or literary contexts.

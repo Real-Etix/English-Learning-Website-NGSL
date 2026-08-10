@@ -9,6 +9,8 @@ rank: 181
 sfi: 58.11
 sources: [wordnet, llm]
 status: enriched
+chart: mindful
+region: mindful
 ---
 
 ## Definition

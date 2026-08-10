@@ -9,6 +9,8 @@ rank: 1295
 sfi: 58.26
 sources: [wordnet, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,16 @@ a course of conduct
 - synonym: [[way]]
 - advanced_form: [[trajectory]] — Use 'trajectory' for the figurative path of development or progress over time, especially in careers or trends.
 - advanced_form: [[course]] — Use 'course' for a direction of action or the path one takes in life, often implying a deliberate choice.
+- collocation: [[ascending]]
+- synonym: [[boardwalk]]
+- collocation: [[circuitous]]
+- collocation: [[curvilinear]]
+- collocation: [[descending]]
+- collocation: [[flagstone]]
+- synonym: [[footway]]
+- collocation: [[illuminate]]
+- collocation: [[predetermined]]
+- collocation: [[pushbike]]
+- collocation: [[rectilinear]]
+- collocation: [[recurve]]
+- collocation: [[pave]]

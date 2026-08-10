@@ -9,6 +9,8 @@ rank: 1059
 sfi: 59.31
 sources: [wordnet, llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,14 @@ _No sourced examples yet._
 - builds_on: [[administrator]] — Use 'executive' when emphasizing high-level decision-making and authority, rather than routine administration.
 - builds_on: [[businessman]] — Use when focusing on high-level management and decision-making roles in a corporation.
 - builds_on: [[supervisory]] — Use 'executive' when referring to high-level oversight and decision-making, more formal than supervisory.
+- synonym: [[ceo]]
+- collocation: [[clemency]]
+- synonym: [[directorate]]
+- collocation: [[directorate]]
+- collocation: [[perquisite]]
+- synonym: [[presidential]]
+- builds_on: [[presidential]] — Use when focusing on the president's role as head of the executive branch.
+- collocation: [[headhunter]]
+- collocation: [[patissier]]
+- synonym: [[secretariat]]
+- collocation: [[sourcer]]

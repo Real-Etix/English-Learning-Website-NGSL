@@ -6,6 +6,8 @@ pos: adverb
 forms: [agreeably]
 sources: [llm]
 status: enriched
+chart: nicely
+region: nicely
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nicely]] — Use 'agreeably' to highlight a harmonious, cooperative manner, more sophisticated than 'nicely'.
+- synonym: [[pleasantly]]
+- collocation: [[play]]

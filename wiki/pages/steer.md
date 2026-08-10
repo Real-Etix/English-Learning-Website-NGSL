@@ -9,6 +9,8 @@ rank: 738
 sfi: 53.15
 sources: [wordnet, llm]
 status: enriched
+chart: steer
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ _No sourced examples yet._
 - advanced_form: [[pilot]] — Use 'pilot' when steering a vessel or vehicle with skill and authority, especially through difficult passages.
 - advanced_form: [[helm]] — Use 'helm' metaphorically for steering an organization or project, implying leadership and direction.
 - builds_on: [[beef]] — Use 'steer' when referring specifically to castrated male cattle raised for beef, more precise than 'beef' as a noun for the animals.
+- synonym: [[redirect]]
+- synonym: [[bullock]]

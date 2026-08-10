@@ -9,6 +9,8 @@ rank: 947
 sfi: 42.85
 sources: [wordnet, llm]
 status: enriched
+chart: issue
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[bulletin]] — Use 'bulletin' for official short announcements, especially from organizations or media, instead of 'handout' which can be informal.
 - advanced_form: [[release]] — Use 'release' for formal statements distributed to journalists, whereas 'handout' is more generic and can refer to any distributed paper.
+- synonym: [[handbill]]
+- collocation: [[handbill]]

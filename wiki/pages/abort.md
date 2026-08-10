@@ -6,6 +6,8 @@ pos: verb
 forms: [abort]
 sources: [llm]
 status: enriched
+chart: erase
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cancel]] — Use 'abort' when a process or plan is stopped suddenly, often before completion.
+- synonym: [[terminate]]
+- synonym: [[halt]]
+- synonym: [[abandon]]
+- collocation: [[mission]]
+- collocation: [[launch]]

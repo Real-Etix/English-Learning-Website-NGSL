@@ -6,6 +6,8 @@ pos: noun
 forms: [jot]
 sources: [llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shred]] — Use 'jot' for a small amount, often with 'not a jot' to emphasize negation.
+- synonym: [[iota]]
+- synonym: [[bit]]
+- synonym: [[whit]]
+- synonym: [[scrap]]

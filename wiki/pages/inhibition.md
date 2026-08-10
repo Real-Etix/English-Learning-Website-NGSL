@@ -9,6 +9,8 @@ rank: 332
 sfi: 56.553
 sources: [wordnet, llm]
 status: enriched
+chart: inhibition
+region: inhibition
 ---
 
 ## Definition

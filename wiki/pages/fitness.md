@@ -9,6 +9,8 @@ rank: 39
 sfi: 64.74
 sources: [wordnet, llm]
 status: enriched
+chart: health
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ the quality of being suitable
 - advanced_form: [[appropriateness]] — Use when emphasizing conformity to social or contextual norms, more formal than 'fitness'.
 - advanced_form: [[aptness]] — Use to highlight a natural or precise suitability, often for a specific purpose or skill, more refined than 'fitness'.
 - advanced_form: [[suitability]] — Use as a direct formal alternative to 'fitness' in contexts of general compatibility, though slightly more formal.
+- collocation: [[aerobic]]
+- collocation: [[enthusiast]]
+- synonym: [[readiness]]
+- collocation: [[fanatic]]

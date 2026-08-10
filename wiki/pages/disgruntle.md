@@ -6,6 +6,8 @@ pos: verb
 forms: [disgruntle]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dissatisfy]] — Use 'disgruntle' instead of 'dissatisfy' when the dissatisfaction leads to resentment or a grumpy mood.
+- synonym: [[irk]]
+- synonym: [[displease]]
+- synonym: [[annoy]]

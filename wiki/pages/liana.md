@@ -6,6 +6,8 @@ pos: noun
 forms: [liana]
 sources: [llm]
 status: enriched
+chart: climber
+region: climber
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[climber]] — Use 'liana' instead of 'climber' when referring to thick, woody tropical climbing plants.
+- collocation: [[tropical]]
+- collocation: [[forest]]
+- collocation: [[canopy]]

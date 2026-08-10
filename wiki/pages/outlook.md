@@ -9,6 +9,8 @@ rank: 510
 sfi: 53.77
 sources: [wordnet, llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - builds_on: [[attitude]] — Use 'outlook' to describe a general way of viewing life or a situation, especially one that is optimistic or pessimistic.
 - builds_on: [[perspective]] — Use when emphasizing a habitual or long-term way of thinking, often about life or the future.
 - builds_on: [[prospect]] — Use 'outlook' when focusing on the predicted or expected future situation, often in economic or career contexts.
+- collocation: [[meliorist]]
+- synonym: [[mentality]]

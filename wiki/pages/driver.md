@@ -9,6 +9,8 @@ rank: 1200
 sfi: 58.66
 sources: [wordnet, llm]
 status: enriched
+chart: driver
+region: driver
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[motorist]] — Use when referring to someone driving a car, especially in discussions about traffic or road safety.
 - advanced_form: [[operator]] — Use in formal or technical contexts, such as legal or regulatory reports.
 - advanced_form: [[chauffeur]] — Use for a professional driver employed to transport others, especially in luxury or service contexts.
+- collocation: [[motorbus]]
+- collocation: [[omnibus]]

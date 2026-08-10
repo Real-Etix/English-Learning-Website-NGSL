@@ -9,6 +9,8 @@ rank: 706
 sfi: 52.282
 sources: [wordnet, llm]
 status: enriched
+chart: realism
+region: realism
 ---
 
 ## Definition

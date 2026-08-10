@@ -6,6 +6,8 @@ pos: noun
 forms: [grown-up]
 sources: [llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition

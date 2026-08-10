@@ -6,6 +6,8 @@ pos: noun
 forms: [interlude]
 sources: [llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[interval]] — Use 'interlude' when referring to a brief, often enjoyable pause during a longer event, rather than a technical time interval.
 - builds_on: [[interim]] — Use 'interlude' when the pause is temporary and often part of a larger sequence, like in performances or events.
 - builds_on: [[episode]] — Use when the episode is a temporary, often contrasting event within a series, like a pause or diversion.
+- synonym: [[meantime]]

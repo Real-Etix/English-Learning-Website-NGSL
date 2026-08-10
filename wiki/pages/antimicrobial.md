@@ -6,6 +6,8 @@ pos: noun
 forms: [antimicrobial]
 sources: [llm]
 status: enriched
+chart: antibiotic
+region: antibiotic
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[antibiotic]] — Use when referring to a substance that destroys or inhibits a broad range of microorganisms, not just bacteria.
+- collocation: [[powerful]]
+- collocation: [[prescribe]]
+- collocation: [[resistance]]
+- synonym: [[bactericide]]

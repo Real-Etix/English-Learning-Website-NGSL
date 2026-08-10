@@ -6,6 +6,8 @@ pos: adjective
 forms: [pressing]
 sources: [llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[urgent]] — Use 'pressing' when emphasizing a strong, persistent need for immediate action, often with a sense of time running out.
+- synonym: [[critical]]
+- synonym: [[crucial]]
+- synonym: [[imperative]]
+- collocation: [[issue]]
+- collocation: [[matter]]
+- collocation: [[need]]
+- collocation: [[deadline]]
+- collocation: [[concern]]

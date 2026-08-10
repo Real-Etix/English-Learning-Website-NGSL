@@ -9,6 +9,8 @@ rank: 428
 sfi: 53.9
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: seize
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,9 @@ take hold of
 - advanced_form: [[commandeer]] — Use when taking control of property or resources, typically for military or official use.
 - advanced_form: [[confiscate]] — Use when seizing something by authority, usually as a penalty or enforcement.
 - builds_on: [[grab]] — more formal, often with force or authority
+- synonym: [[abduct]]
+- collocation: [[junta]]
+- synonym: [[nationalize]]
+- collocation: [[plunder]]
+- synonym: [[wrest]]
+- synonym: [[expropriate]]

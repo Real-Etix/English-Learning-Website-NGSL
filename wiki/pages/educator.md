@@ -6,6 +6,8 @@ pos: noun
 forms: [educator]
 sources: [llm]
 status: enriched
+chart: mentor
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[teacher]] — Use 'educator' when emphasizing the professional role in a broader educational context.
 - builds_on: [[instructor]] — Use educator instead of instructor to emphasize a broader role in shaping minds, often in a school setting.
+- synonym: [[docent]]

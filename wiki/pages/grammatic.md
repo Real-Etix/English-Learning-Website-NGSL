@@ -6,6 +6,8 @@ pos: adjective
 forms: [grammatic]
 sources: [llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[grammatical]] — Use 'grammatic' as a less common, more technical synonym for 'grammatical', often in academic or linguistic contexts.
+- synonym: [[syntactic]]
+- collocation: [[precision]]
+- collocation: [[rule]]
+- collocation: [[structure]]
+- collocation: [[error]]
+- collocation: [[analysis]]

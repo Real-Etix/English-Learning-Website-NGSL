@@ -9,6 +9,8 @@ rank: 800
 sfi: 60.77
 sources: [wordnet, llm]
 status: enriched
+chart: red
+region: red
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[crimson]] — Use 'crimson' instead of 'red' to describe a vivid, deep red shade often associated with luxury or intensity.
 - advanced_form: [[scarlet]] — Use 'scarlet' instead of 'red' to describe a bright, slightly orange-tinted red that often implies boldness or passion.
 - advanced_form: [[ruby]] — Use 'ruby' instead of 'red' to describe a rich, gem-like red, especially in contexts of elegance or value.
+- collocation: [[blotch]]
+- synonym: [[bolshevik]]
+- collocation: [[ensign]]
+- collocation: [[porphyry]]
+- collocation: [[rose]]
+- collocation: [[rosette]]
+- collocation: [[varietal]]
+- synonym: [[vermillion]]

@@ -9,6 +9,8 @@ rank: 724
 sfi: 51.978
 sources: [wordnet, llm]
 status: enriched
+chart: dull
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[muffle]] — Use 'muffle' when you physically wrap or cover something to soften or deaden sound, similar to 'damp' but more specific to sound.
 - advanced_form: [[mute]] — Use 'mute' to emphasize reducing or eliminating sound completely, often with technology or construction, whereas 'damp' implies partial deadening.
+- collocation: [[basement]]
+- synonym: [[wet]]

@@ -9,6 +9,8 @@ rank: 481
 sfi: 53.59
 sources: [wordnet, llm]
 status: enriched
+chart: train
+region: you
 ---
 
 ## Definition

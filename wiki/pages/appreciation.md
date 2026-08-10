@@ -7,8 +7,10 @@ forms: [appreciation, appreciations]
 lists: [toeic, business]
 rank: 412
 sfi: 53.58
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - synonym: [[hold]]
 - domain: toeic
 - domain: business
+- synonym: [[acknowledgment]]
+- synonym: [[palate]]
+- advanced_form: [[comprehension]] — Use when emphasizing the full mental grasp of something, especially complex or abstract.
+- advanced_form: [[discernment]] — Use when emphasizing insightful understanding beyond the surface, often with judgment.
+- advanced_form: [[cognizance]] — Use in formal or legal contexts to mean formal awareness or recognition.

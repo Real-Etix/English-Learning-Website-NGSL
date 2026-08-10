@@ -9,6 +9,8 @@ rank: 287
 sfi: 55.1
 sources: [wordnet, llm]
 status: enriched
+chart: sculpture
+region: sculpture
 ---
 
 ## Definition

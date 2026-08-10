@@ -9,6 +9,8 @@ rank: 169
 sfi: 67.55
 sources: [wordnet, llm]
 status: enriched
+chart: man
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ an adult female person (as opposed to a man)
 - antonym: [[man]]
 - advanced_form: [[lady]] — Use 'lady' when you want to be formal, polite, or emphasize refinement, instead of the neutral 'woman'.
 - advanced_form: [[female]] — Use 'female' in formal, scientific, or statistical contexts where biological sex is relevant, but be careful as it can sound impersonal.
+- collocation: [[alluring]]
+- collocation: [[gravid]]
+- collocation: [[matronly]]
+- collocation: [[virtuous]]

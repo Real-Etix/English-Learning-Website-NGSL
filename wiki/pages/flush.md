@@ -9,6 +9,8 @@ rank: 356
 sfi: 54.93
 sources: [wordnet, llm]
 status: enriched
+chart: substantial
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[heyday]] — Use 'heyday' instead of 'flush' for a period of great success or popularity.
 - advanced_form: [[prime]] — Use 'prime' instead of 'flush' for the best, most productive stage of life or activity.
 - advanced_form: [[bloom]] — Use 'bloom' instead of 'flush' for a period of vigorous growth or flourishing.
+- synonym: [[blush]]
+- builds_on: [[flat]] — Use 'flush' when one flat surface is even and level with another, not just a single surface.

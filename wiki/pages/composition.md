@@ -9,6 +9,8 @@ rank: 2608
 sfi: 53.61
 sources: [wordnet, llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ the spatial property resulting from the arrangement of parts in relation to each
 - advanced_form: [[configuration]] — Use 'configuration' when emphasizing the specific spatial arrangement or pattern of parts, often in a technical or precise context.
 - advanced_form: [[layout]] — Use 'layout' when referring to the planned or designed arrangement of elements, especially in a physical space or on a page.
 - advanced_form: [[disposition]] — Use 'disposition' when describing a deliberate arrangement of objects or people, often in a formal or strategic sense.
+- synonym: [[anatomy]]
+- synonym: [[divertimento]]
+- synonym: [[essay]]
+- collocation: [[mineralogical]]
+- synonym: [[partita]]
+- builds_on: [[chemistry]] — Use when specifying the exact ingredients or proportions in a substance, a more concrete alternative to 'chemistry' in practical contexts.

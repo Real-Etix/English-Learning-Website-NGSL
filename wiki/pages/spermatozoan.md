@@ -6,6 +6,8 @@ pos: noun
 forms: [spermatozoan]
 sources: [llm]
 status: enriched
+chart: sperm
+region: sperm
 ---
 
 ## Definition

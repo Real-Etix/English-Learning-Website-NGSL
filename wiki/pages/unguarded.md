@@ -6,6 +6,8 @@ pos: adjective
 forms: [unguarded]
 sources: [llm]
 status: enriched
+chart: unattended
+region: unattended
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[unattended]] — Use 'unguarded' to emphasize a lack of security or protection, especially for items or places.
+- synonym: [[defenseless]]

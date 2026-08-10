@@ -6,6 +6,8 @@ pos: noun
 forms: [nares]
 sources: [llm]
 status: enriched
+chart: nostril
+region: nostril
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nostril]] — Use 'nares' as the plural form in scientific or technical writing about nostrils.
+- collocation: [[external]]
+- collocation: [[internal]]
+- collocation: [[avian]]
+- collocation: [[anterior]]

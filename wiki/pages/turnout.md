@@ -6,6 +6,8 @@ pos: noun
 forms: [turnout]
 sources: [llm]
 status: enriched
+chart: care
+region: you
 ---
 
 ## Definition

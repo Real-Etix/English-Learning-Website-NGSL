@@ -6,6 +6,8 @@ pos: adjective
 forms: [buoyant]
 sources: [llm]
 status: enriched
+chart: dark
+region: you
 ---
 
 ## Definition

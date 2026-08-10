@@ -9,6 +9,8 @@ rank: 1859
 sfi: 55.98
 sources: [wordnet, llm]
 status: enriched
+chart: gamble
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[standing]] — Use 'standing' to emphasize one's position or rank in a community or profession, often based on reputation.
 - advanced_form: [[stature]] — Use 'stature' to highlight the level of respect, influence, or importance a person has achieved, often through accomplishments.
 - advanced_form: [[prestige]] — Use 'prestige' to refer to the high reputation and respect associated with an institution, position, or achievement, implying exclusivity or admiration.
+- synonym: [[repute]]
+- collocation: [[wreck]]

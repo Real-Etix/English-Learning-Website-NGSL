@@ -6,6 +6,8 @@ pos: noun
 forms: [mythos]
 sources: [llm]
 status: enriched
+chart: legend
+region: legend
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[legend]] — Use 'mythos' to emphasize the entire system or body of myths, not just a single story.
+- synonym: [[tradition]]
+- synonym: [[narrative]]
+- collocation: [[cultural]]
+- collocation: [[personal]]
+- collocation: [[of]]

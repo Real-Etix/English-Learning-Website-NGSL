@@ -6,6 +6,8 @@ pos: adjective
 forms: [unforced]
 sources: [llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition

@@ -2,7 +2,15 @@ import { randomUUID } from "node:crypto";
 
 import { prisma } from "@/lib/db";
 import { badgesFor, levelForXp, wordXp } from "@/lib/collection/xp";
+import { loadListGraph } from "@/lib/wiki/graph-store";
 import { readPage } from "@/lib/wiki/parse-wiki";
+
+/** Which of these lemmas are advanced-tier (read from the pre-generated all-graph). */
+async function countAdvanced(lemmas: string[]): Promise<number> {
+  const all = await loadListGraph("all");
+  const advanced = new Set(all.nodes.filter((n) => n.tier === "advanced").map((n) => n.lemma));
+  return lemmas.filter((l) => advanced.has(l)).length;
+}
 
 const ADJ = ["brave", "calm", "bright", "swift", "lucky", "cosmic", "astral", "stellar", "quiet", "bold", "keen", "wild"];
 const ANIMAL = ["otter", "falcon", "lynx", "koala", "heron", "fox", "orca", "raven", "ibis", "wolf", "moth", "crane"];
@@ -35,7 +43,7 @@ export async function collectWord(ownerToken: string, lemma: string) {
   if (!page) return { added: false, error: "unknown word" as const };
 
   const collection = await getOrCreateCollection(ownerToken);
-  const xp = wordXp({ tier: page.tier, rank: page.rank });
+  const xp = wordXp({ tier: page.tier, sfi: page.sfi });
   try {
     await prisma.collectedWord.create({
       data: { collectionId: collection.id, lemma, xp, source: "collected" },
@@ -50,24 +58,38 @@ export type CollectionSummary = {
   slug: string;
   displayName: string | null;
   lemmas: string[];
+  usedLemmas: string[]; // solid stars — produced in a sentence within the decay window
+  decayedCount: number; // solid stars that have since gone hollow
   wordCount: number;
   totalXp: number;
   level: number;
   badges: ReturnType<typeof badgesFor>;
 };
 
+/** A word stays "solid" for this many days after it was last used in a sentence. */
+export const DECAY_DAYS = 60;
+
 function summarize(
   collection: { slug: string; displayName: string | null },
-  words: { lemma: string; xp: number }[],
+  words: { lemma: string; xp: number; usedAt?: Date | null }[],
+  advancedCount: number,
   spacesVisited = 0,
 ): CollectionSummary {
   const totalXp = words.reduce((sum, w) => sum + w.xp, 0);
-  // Advanced words score >=25 (base 25 +); core words top out at 22 — a reliable split.
-  const advancedCount = words.filter((w) => w.xp >= 25).length;
+  const cutoff = Date.now() - DECAY_DAYS * 864e5;
+  const usedLemmas: string[] = [];
+  let decayedCount = 0;
+  for (const w of words) {
+    if (!w.usedAt) continue;
+    if (new Date(w.usedAt).getTime() >= cutoff) usedLemmas.push(w.lemma);
+    else decayedCount += 1;
+  }
   return {
     slug: collection.slug,
     displayName: collection.displayName,
     lemmas: words.map((w) => w.lemma),
+    usedLemmas,
+    decayedCount,
     wordCount: words.length,
     totalXp,
     level: levelForXp(totalXp),
@@ -80,20 +102,40 @@ export async function getMySummary(ownerToken: string | undefined): Promise<Coll
   if (!ownerToken) return null;
   const collection = await prisma.collection.findUnique({
     where: { ownerToken },
-    include: { words: { select: { lemma: true, xp: true } } },
+    include: { words: { select: { lemma: true, xp: true, usedAt: true } } },
   });
   if (!collection) return null;
-  return summarize(collection, collection.words);
+  const advancedCount = await countAdvanced(collection.words.map((w) => w.lemma));
+  return summarize(collection, collection.words, advancedCount);
+}
+
+/** Mark a held word as produced-in-a-sentence (solid star). One-time XP bonus, refreshes the decay clock. */
+export async function markWordUsed(ownerToken: string, lemma: string): Promise<{ error: string } | { used: true; bonus: number; summary: CollectionSummary | null }> {
+  const collection = await prisma.collection.findUnique({ where: { ownerToken }, select: { id: true } });
+  if (!collection) return { error: "no collection" };
+  const cw = await prisma.collectedWord.findUnique({
+    where: { collectionId_lemma: { collectionId: collection.id, lemma } },
+    select: { id: true, xp: true, usedAt: true },
+  });
+  if (!cw) return { error: "not collected" };
+  const bonus = cw.usedAt == null ? Math.max(8, Math.round(cw.xp * 0.6)) : 0; // only the first time
+  await prisma.collectedWord.update({
+    where: { id: cw.id },
+    data: { usedAt: new Date(), xp: cw.xp + bonus },
+  });
+  const summary = await getMySummary(ownerToken);
+  return { used: true, bonus, summary };
 }
 
 /** A public space by its share slug. */
 export async function getSpaceBySlug(slug: string): Promise<CollectionSummary | null> {
   const collection = await prisma.collection.findUnique({
     where: { slug },
-    include: { words: { select: { lemma: true, xp: true } } },
+    include: { words: { select: { lemma: true, xp: true, usedAt: true } } },
   });
   if (!collection) return null;
-  return summarize(collection, collection.words);
+  const advancedCount = await countAdvanced(collection.words.map((w) => w.lemma));
+  return summarize(collection, collection.words, advancedCount);
 }
 
 /** Does a collection exist for this token? (used to validate a pasted recovery key) */

@@ -6,6 +6,8 @@ pos: verb
 forms: [appraise]
 sources: [llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition

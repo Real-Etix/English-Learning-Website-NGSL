@@ -9,6 +9,8 @@ rank: 132
 sfi: 59.73
 sources: [wordnet, llm]
 status: enriched
+chart: sweat
+region: sweat
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ salty fluid secreted by sweat glands
 - domain: fitness
 - advanced_form: [[perspiration]] — More formal and common in written English, suggests the same as sweat but less colloquial.
 - advanced_form: [[diaphoresis]] — Medical term for excessive sweating, used in clinical or formal contexts.
+- collocation: [[rivulet]]
+- collocation: [[drenched]]

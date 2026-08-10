@@ -6,6 +6,8 @@ pos: noun
 forms: [flatbread]
 sources: [llm]
 status: enriched
+chart: pizza
+region: pizza
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pizza]] — Use 'flatbread' as a more general and formal term for pizza, especially when describing the bread base.
+- synonym: [[bread]]
+- collocation: [[bake]]

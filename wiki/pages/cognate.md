@@ -6,6 +6,8 @@ pos: adjective
 forms: [cognate]
 sources: [llm]
 status: enriched
+chart: indirect
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[collateral]] — Use 'cognate' when emphasizing a direct blood relationship through a common ancestor, often in formal or academic contexts.
+- synonym: [[akin]]
+- synonym: [[similar]]
+- synonym: [[consanguineous]]

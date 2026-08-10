@@ -6,6 +6,8 @@ pos: noun
 forms: [caption]
 sources: [llm]
 status: enriched
+chart: equity
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[title]] — Use 'caption' instead of 'title' when referring specifically to the formal heading in legal or legislative texts.
+- synonym: [[heading]]
+- collocation: [[case]]
+- collocation: [[court]]
+- collocation: [[legal]]
+- collocation: [[document]]
+- collocation: [[artwork]]

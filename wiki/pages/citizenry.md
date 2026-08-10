@@ -6,6 +6,8 @@ pos: noun
 forms: [citizenry]
 sources: [llm]
 status: enriched
+chart: public
+region: you
 ---
 
 ## Definition

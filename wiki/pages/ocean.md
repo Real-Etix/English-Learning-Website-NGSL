@@ -9,6 +9,8 @@ rank: 2671
 sfi: 53.36
 sources: [wordnet, llm]
 status: enriched
+chart: profound
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[deep]] — Use 'the deep' in poetic or formal contexts to mean the ocean, especially its depths.
 - advanced_form: [[brine]] — Use 'the brine' in literary contexts to refer to the salty ocean.
 - advanced_form: [[abyss]] — Use 'the abyss' to refer to the deep ocean in dramatic or scientific contexts.
+- collocation: [[boardwalk]]

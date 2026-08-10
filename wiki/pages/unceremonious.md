@@ -6,6 +6,8 @@ pos: adjective
 forms: [unceremonious]
 sources: [llm]
 status: enriched
+chart: explicit
+region: you
 ---
 
 ## Definition

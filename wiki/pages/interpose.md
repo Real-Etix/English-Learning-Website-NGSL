@@ -6,6 +6,8 @@ pos: verb
 forms: [interpose]
 sources: [llm]
 status: enriched
+chart: sandwich
+region: sandwich
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sandwich]] — Use 'interpose' to sound more formal or technical, especially when describing the act of placing something between two other things.
+- synonym: [[insert]]
+- synonym: [[interject]]
+- synonym: [[introduce]]
+- collocation: [[between]]
+- collocation: [[objection]]
+- collocation: [[remark]]
+- collocation: [[itself]]
+- collocation: [[barrier]]

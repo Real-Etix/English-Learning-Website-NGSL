@@ -9,6 +9,8 @@ rank: 750
 sfi: 61.01
 sources: [wordnet, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ a period of the year marked by special events or activities in some field
 - advanced_form: [[spell]] — Use 'spell' for a continuous period of time with a particular quality, such as weather or activity, often shorter than a season.
 - advanced_form: [[phase]] — Use 'phase' for a distinct stage in a process or development, not necessarily tied to the calendar year.
 - advanced_form: [[cycle]] — Use 'cycle' for a recurring sequence of events that repeats, emphasizing periodicity rather than a fixed season.
+- collocation: [[eliminator]]
+- collocation: [[festivity]]
+- collocation: [[influenza]]
+- synonym: [[ripen]]
+- collocation: [[hunting]]
+- collocation: [[seedtime]]

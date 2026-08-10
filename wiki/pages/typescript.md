@@ -6,6 +6,8 @@ pos: noun
 forms: [typescript]
 sources: [llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2447
 sfi: 54.13
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[effectuate]] — Use 'effectuate' for formal or legal contexts where you want to emphasize causing something to happen successfully.
 - advanced_form: [[execute]] — Use 'execute' when referring to carrying out a plan, order, or task, often with skill or efficiency.
 - advanced_form: [[implement]] — Use 'implement' when putting a decision, plan, or system into effect, especially in organizational or technical settings.
+- collocation: [[destiny]]

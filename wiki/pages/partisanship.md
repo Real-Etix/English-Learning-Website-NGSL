@@ -6,6 +6,8 @@ pos: noun
 forms: [partisanship]
 sources: [llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bias]] — Use 'partisanship' when the bias stems from allegiance to a group, political party, or cause, implying a conflict of interest that goes beyond personal inclination.
+- synonym: [[chauvinism]]
+- synonym: [[partiality]]
+- synonym: [[prejudice]]
+- collocation: [[political]]
+- collocation: [[extreme]]
+- collocation: [[naked]]
+- collocation: [[toxic]]

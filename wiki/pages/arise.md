@@ -9,6 +9,8 @@ rank: 1629
 sfi: 56.89
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[emerge]] — Use 'emerge' when something becomes known or appears from a hidden state, often gradually.
 - advanced_form: [[occur]] — Use 'occur' for events that happen or take place, often unexpectedly.
 - advanced_form: [[surface]] — Use 'surface' when something becomes visible or known, often after being hidden.
+- collocation: [[concomitantly]]

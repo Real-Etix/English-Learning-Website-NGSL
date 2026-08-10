@@ -9,6 +9,8 @@ rank: 76
 sfi: 59.327
 sources: [wordnet, llm]
 status: enriched
+chart: phonological
+region: phonological
 ---
 
 ## Definition

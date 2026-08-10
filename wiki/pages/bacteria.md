@@ -9,6 +9,8 @@ rank: 703
 sfi: 52.311
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: bacteria
+region: bacteria
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ status: enriched
 - domain: academic
 - advanced_form: [[microbes]] — Use 'microbes' for a slightly more technical or formal term, especially in biology or health contexts.
 - advanced_form: [[microorganisms]] — Use 'microorganisms' to emphasize the microscopic scale in scientific or formal writing.
+- collocation: [[aerobic]]
+- collocation: [[anaerobiotic]]
+- collocation: [[pathogenic]]
+- collocation: [[proliferate]]
+- collocation: [[aerophilic]]
+- collocation: [[oxygenic]]

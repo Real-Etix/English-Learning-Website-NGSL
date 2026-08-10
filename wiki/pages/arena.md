@@ -6,6 +6,8 @@ pos: noun
 forms: [arena]
 sources: [llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[sphere]] — Use 'arena' for a field of activity where people compete or engage actively.
 - builds_on: [[stadium]] — Use 'arena' for a venue designed for sports or spectacles, often suggesting a more enclosed or competitive setting than 'stadium'.
 - builds_on: [[realm]] — Use 'arena' to highlight a competitive or active field of activity, like a stage for action, more vivid than 'realm'.
+- synonym: [[coliseum]]

@@ -9,6 +9,8 @@ rank: 1860
 sfi: 55.98
 sources: [wordnet, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ from a particular thing or place or position (`forth' is obsolete)
 - advanced_form: [[forward]] — Use 'forward' to indicate direction ahead instead of the archaic 'forth'.
 - advanced_form: [[onward]] — Use 'onward' to emphasize continuous progress from a starting point.
 - advanced_form: [[outward]] — Use 'outward' to mean away from a central point or position.
+- synonym: [[onwards]]

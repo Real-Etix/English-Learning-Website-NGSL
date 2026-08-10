@@ -9,6 +9,8 @@ rank: 3
 sfi: 66.15
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: equity
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ the difference between the market value of a property and the claims held agains
 - advanced_form: [[ownership]] — Use 'ownership' when focusing on the state of being the legal owner, a broader term than 'equity'.
 - builds_on: [[justice]] — Use 'equity' in legal or formal contexts emphasizing fairness based on principles of justice and natural law.
 - builds_on: [[stake]] — Use 'equity' instead of 'stake' when emphasizing ownership value or financial interest, especially in a company or property.
+- synonym: [[fairness]]
+- builds_on: [[fairness]] — Use when emphasizing justice based on context rather than strict uniformity.
+- collocation: [[financing]]

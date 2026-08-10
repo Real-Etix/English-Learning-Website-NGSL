@@ -9,6 +9,8 @@ rank: 965
 sfi: 59.84
 sources: [wordnet, llm]
 status: enriched
+chart: sway
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ a lump or mass of hard consolidated mineral matter
 - synonym: [[stone]]
 - advanced_form: [[boulder]] — Use when referring to a very large, often rounded rock, especially one that is too big to move or is a prominent natural feature.
 - advanced_form: [[crag]] — Use when describing a rough, rugged, or steep mass of rock, typically on a mountainside or cliff, often associated with climbing or dramatic landscapes.
+- collocation: [[autochthonous]]
+- collocation: [[corrasion]]
+- collocation: [[hurl]]
+- collocation: [[opera]]
+- synonym: [[ore]]
+- synonym: [[porphyry]]
+- collocation: [[friable]]

@@ -9,6 +9,8 @@ rank: 713
 sfi: 61.25
 sources: [wordnet, llm]
 status: enriched
+chart: rally
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,18 @@ the act or process of producing something
 - advanced_form: [[manufacture]] — Use 'manufacture' when referring to the industrial or systematic making of goods, often in a factory setting.
 - advanced_form: [[output]] — Use 'output' when focusing on the quantity or result of production, especially in measurable terms.
 - advanced_form: [[generation]] — Use 'generation' for the production of energy, power, or abstract things like ideas.
+- collocation: [[biocatalyst]]
+- collocation: [[copra]]
+- synonym: [[drama]]
+- collocation: [[externality]]
+- collocation: [[livestock]]
+- synonym: [[opera]]
+- collocation: [[outsource]]
+- collocation: [[outstrip]]
+- collocation: [[robotize]]
+- synonym: [[productivity]]
+- builds_on: [[drama]] — Use 'production' when focusing on the staged performance with sets, costumes, and direction, rather than the script itself.
+- collocation: [[bulbil]]
+- collocation: [[collectivize]]
+- collocation: [[externalize]]
+- synonym: [[manufacturing]]

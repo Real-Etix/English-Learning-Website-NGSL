@@ -9,6 +9,8 @@ rank: 652
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ ride the waves of the sea with a surfboard
 - domain: toeic
 - advanced_form: [[carve]] — Use 'carve' to emphasize sharp, controlled turns instead of just riding the wave.
 - advanced_form: [[shred]] — Use 'shred' for aggressive, skilled surfing, more dynamic than 'surf'.
+- synonym: [[ride]]
+- collocation: [[internet]]
+- collocation: [[web]]
+- collocation: [[beach]]
+- collocation: [[board]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [masterkey]
 sources: [llm]
 status: enriched
+chart: constitutional
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[key]] — Use 'masterkey' when the key is designed to open a set of locks, each of which also has its own individual key.
+- synonym: [[passkey]]
+- collocation: [[carry]]
+- collocation: [[locks]]
+- collocation: [[duplicate]]
+- collocation: [[janitor]]

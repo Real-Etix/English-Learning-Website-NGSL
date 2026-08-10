@@ -6,6 +6,8 @@ pos: adjective
 forms: [dehydrated]
 sources: [llm]
 status: enriched
+chart: maturity
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[thirsty]] — Use 'dehydrated' in medical or serious contexts, indicating a lack of water in the body rather than just a desire to drink.
+- synonym: [[parched]]
+- collocation: [[severely]]
+- collocation: [[become]]
+- collocation: [[skin]]
+- collocation: [[food]]

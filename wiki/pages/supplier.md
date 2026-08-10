@@ -9,6 +9,8 @@ rank: 2004
 sfi: 55.51
 sources: [wordnet, llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ _No sourced examples yet._
 - advanced_form: [[vendor]] — Emphasizes a commercial seller, often in a transactional context; broader than 'supplier' as it can include services and goods.
 - advanced_form: [[provider]] — Focuses on the act of providing a service or utility; common for ongoing or essential services.
 - advanced_form: [[distributor]] — Highlights the middle role in a supply chain, moving goods from producer to retailer or end user.
+- synonym: [[exporter]]
+- synonym: [[provisioner]]
+- synonym: [[seller]]
+- synonym: [[merchant]]
+- collocation: [[sole]]
+- collocation: [[major]]

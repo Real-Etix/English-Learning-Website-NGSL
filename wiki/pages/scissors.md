@@ -9,6 +9,8 @@ rank: 391
 sfi: 54.41
 sources: [wordnet, llm]
 status: enriched
+chart: scissors
+region: scissors
 ---
 
 ## Definition

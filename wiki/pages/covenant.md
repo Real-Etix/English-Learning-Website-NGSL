@@ -9,6 +9,8 @@ rank: 787
 sfi: 52.62
 sources: [wordnet, llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[compact]] — Use 'compact' when emphasizing the binding and solemn nature of the agreement, often between states or organizations.
 - advanced_form: [[pact]] — Use 'pact' for a formal agreement between parties, especially in international relations, implying mutual commitments.
 - advanced_form: [[accord]] — Use 'accord' when referring to a formal agreement reached after negotiation, often diplomatic or political.
+- collocation: [[restrictive]]

@@ -9,6 +9,8 @@ rank: 631
 sfi: 61.8
 sources: [wordnet, llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ acting or moving or capable of acting or moving quickly
 - advanced_form: [[rapid]] — Use 'rapid' for processes, changes, or movements that happen very quickly, often continuously or at a high rate, rather than just 'fast'.
 - advanced_form: [[swift]] — Use 'swift' for immediate, decisive actions or movements that are smooth and efficient, implying grace or urgency, not just general speed.
 - advanced_form: [[speedy]] — Use 'speedy' for things completed in a short time, emphasizing promptness and efficiency, often for processes or services.
+- synonym: [[broadband]]
+- collocation: [[exponentiation]]
+- collocation: [[implausibly]]

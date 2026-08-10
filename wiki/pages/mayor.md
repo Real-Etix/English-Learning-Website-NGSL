@@ -9,6 +9,8 @@ rank: 2779
 sfi: 52.55
 sources: [wordnet, llm]
 status: enriched
+chart: mayor
+region: mayor
 ---
 
 ## Definition

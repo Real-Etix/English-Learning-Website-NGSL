@@ -6,6 +6,8 @@ pos: noun
 forms: [starter]
 sources: [llm]
 status: enriched
+chart: yeast
+region: yeast
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[yeast]] — Use 'starter' specifically for a homemade, fermented yeast culture used in artisan baking.
+- synonym: [[appetizer]]
+- collocation: [[pizzetta]]
+- synonym: [[canap]]

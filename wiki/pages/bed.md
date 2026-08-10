@@ -9,6 +9,8 @@ rank: 694
 sfi: 61.38
 sources: [wordnet, llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ a piece of furniture that provides a place to sleep
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[berth]] — Use 'berth' for a built-in bed on a vehicle like a ship, train, or camper.
 - advanced_form: [[divan]] — Use 'divan' for a low, backless bed that often doubles as a sofa in a sitting room.
+- collocation: [[lake]]
+- collocation: [[linens]]
+- collocation: [[coverlet]]
+- collocation: [[slat]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [thrifty]
 sources: [llm]
 status: enriched
+chart: economical
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 270
 sfi: 55.39
 sources: [wordnet, llm]
 status: enriched
+chart: procedure
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ directions prescribed beforehand
 - advanced_form: [[regimen]] — Use 'regimen' when emphasizing a systematic plan of actions, often for health or fitness, instead of a general prescription.
 - advanced_form: [[protocol]] — Use 'protocol' for a formal set of procedures in a professional or institutional setting, replacing 'prescription' when referring to standard operating guidelines.
 - advanced_form: [[directive]] — Use 'directive' for an authoritative order or instruction from a person in charge, rather than a medical or preparatory prescription.
+- collocation: [[druggist]]
+- collocation: [[psychostimulant]]

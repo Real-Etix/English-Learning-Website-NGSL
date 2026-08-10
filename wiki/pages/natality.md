@@ -6,6 +6,8 @@ pos: noun
 forms: [natality]
 sources: [llm]
 status: enriched
+chart: fertility
+region: fertility
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fertility]] — Use 'natality' in formal demographic or scientific contexts to emphasize the statistical rate of births, rather than the general concept of fertility.
+- synonym: [[birthrate]]
+- collocation: [[declining]]
+- collocation: [[high]]
+- collocation: [[low]]
+- collocation: [[rate]]

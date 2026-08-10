@@ -9,6 +9,8 @@ rank: 135
 sfi: 59.66
 sources: [wordnet, llm]
 status: enriched
+chart: creatine
+region: creatine
 ---
 
 ## Definition

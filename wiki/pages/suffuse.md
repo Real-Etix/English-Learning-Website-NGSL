@@ -6,6 +6,8 @@ pos: verb
 forms: [suffuse]
 sources: [llm]
 status: enriched
+chart: saturate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[saturate]] — Use when a quality or color spreads softly and evenly through something, often with a poetic or formal tone.
+- synonym: [[pervade]]

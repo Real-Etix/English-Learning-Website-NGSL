@@ -9,6 +9,8 @@ rank: 2114
 sfi: 55.17
 sources: [wordnet, llm]
 status: enriched
+chart: nose
+region: nose
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ the organ of smell and entrance to the respiratory tract
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[proboscis]] — Use proboscis for formal or scientific contexts, especially for animals; for humans, it can sound humorous or overly formal.
 - advanced_form: [[snout]] — Use snout for animals or in a derogatory way for a human nose.
+- collocation: [[bleed]]
+- synonym: [[forepart]]

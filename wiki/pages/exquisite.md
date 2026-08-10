@@ -6,6 +6,8 @@ pos: adjective
 forms: [exquisite]
 sources: [llm]
 status: enriched
+chart: aesthetic
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[aesthetic]] — Use for something extremely delicate and beautiful, emphasizing fine details.
 - builds_on: [[delicate]] — Use 'exquisite' for something exceptionally fine and beautiful, often with a sense of rarity or perfection.
 - builds_on: [[lovely]] — Use 'exquisite' for something intensely beautiful or delicate, often implying a high degree of refinement or perfection.
+- builds_on: [[fabulous]] — Use when something is extremely beautiful or delicate, often with fine detail, rather than just pleasing.

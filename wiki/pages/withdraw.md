@@ -9,6 +9,8 @@ rank: 2163
 sfi: 55.03
 sources: [wordnet, llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ _No sourced examples yet._
 - builds_on: [[retire]] — Use 'withdraw' when focusing on leaving a position or active involvement formally.
 - advanced_form: [[retreat]] — Use 'retreat' instead of 'withdraw' when referring to a deliberate, often strategic backward movement from a position, especially in military or confrontational contexts.
 - advanced_form: [[recede]] — Use 'recede' instead of 'withdraw' when describing a gradual, natural, or passive moving backward, like water, tide, or hairline.
+- collocation: [[candidacy]]
+- synonym: [[disengage]]
+- synonym: [[rescind]]
+- synonym: [[subtract]]
+- synonym: [[aspirate]]

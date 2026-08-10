@@ -6,6 +6,8 @@ pos: adverb
 forms: [empirically]
 sources: [llm]
 status: enriched
+chart: statistically
+region: statistically
 ---
 
 ## Definition

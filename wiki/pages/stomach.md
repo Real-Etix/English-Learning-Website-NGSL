@@ -9,6 +9,8 @@ rank: 2637
 sfi: 53.51
 sources: [wordnet, llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[abdomen]] — Use 'abdomen' in medical or formal contexts instead of 'stomach' when referring to the external area that houses the organ.
 - advanced_form: [[belly]] — Use 'belly' in informal conversation to refer to the stomach area, but it is less formal than 'stomach'.
+- synonym: [[gut]]

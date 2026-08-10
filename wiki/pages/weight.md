@@ -9,6 +9,8 @@ rank: 978
 sfi: 59.74
 sources: [wordnet, llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[heft]] — Use 'heft' to emphasize the perceived weight when lifting or carrying something.
 - advanced_form: [[load]] — Use 'load' to refer to weight that is supported or carried by something.
 - builds_on: [[significance]] — Use 'weight' when stressing the seriousness or authority of something, like a decision or evidence.
+- synonym: [[avoirdupois]]
+- collocation: [[kilogramme]]
+- collocation: [[megagram]]
+- synonym: [[poundage]]
+- collocation: [[shed]]

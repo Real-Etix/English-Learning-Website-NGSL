@@ -9,6 +9,8 @@ rank: 1773
 sfi: 56.29
 sources: [wordnet, llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ expose or make accessible to some action or influence
 - builds_on: [[uncover]] — Use 'expose' when emphasizing the act of making a body part visible, often with a neutral or clinical overtone.
 - advanced_form: [[subject]] — Use 'subject' when something is exposed to a condition or influence, often in a controlled or passive manner.
 - advanced_form: [[endanger]] — Use 'endanger' when exposure carries risk of harm, unlike the neutral 'expose'.
+- synonym: [[bare]]
+- synonym: [[betray]]
+- collocation: [[venality]]
+- synonym: [[denude]]

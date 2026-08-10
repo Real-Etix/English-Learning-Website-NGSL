@@ -6,6 +6,8 @@ pos: noun
 forms: [obligee]
 sources: [llm]
 status: enriched
+chart: creditor
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[creditor]] — Use in legal or formal contexts when emphasizing the right to receive performance of an obligation.
+- synonym: [[beneficiary]]
+- synonym: [[recipient]]
+- synonym: [[claimant]]

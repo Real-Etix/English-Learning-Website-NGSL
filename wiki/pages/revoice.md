@@ -6,6 +6,8 @@ pos: verb
 forms: [revoice]
 sources: [llm]
 status: enriched
+chart: rearrange
+region: rearrange
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[invert]] — Use 'revoice' to emphasize changing the specific voicing of a chord, whereas 'invert' usually refers to the standard process of moving the root to the top.
+- synonym: [[rearrange]]
+- synonym: [[adjust]]
+- synonym: [[modify]]
+- collocation: [[harmony]]
+- collocation: [[arrangement]]

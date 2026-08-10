@@ -9,6 +9,8 @@ rank: 41
 sfi: 74.21
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: you
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ be cognizant or aware of a fact or a specific piece of information
 - advanced_form: [[discern]] — when you detect or recognize something subtle or unclear through careful observation, rather than already possessing an obvious fact
 - advanced_form: [[perceive]] — when you become aware of something through your senses or intuition, emphasizing the active process of noticing rather than the state of knowing
 - advanced_form: [[recognize]] — when you formally or openly acknowledge a fact as true, especially after doubt or debate, rather than simply being privately aware of it
+- collocation: [[where]]
+- collocation: [[why]]

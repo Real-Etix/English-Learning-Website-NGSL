@@ -9,6 +9,8 @@ rank: 189
 sfi: 57.93
 sources: [wordnet, llm]
 status: enriched
+chart: static
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - builds_on: [[stationary]] — Use static to describe lack of change or movement in a system, display, or abstract context.
 - builds_on: [[sedentary]] — Use 'static' to highlight a lack of change or motion, often in a more technical or formal context.
 - builds_on: [[unchanged]] — Use 'static' to describe a lack of change or movement, especially in technical or quantitative contexts, whereas 'unchanged' is simpler.
+- collocation: [[crackle]]
+- synonym: [[motionless]]

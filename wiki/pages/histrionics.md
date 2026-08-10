@@ -6,6 +6,8 @@ pos: noun
 forms: [histrionics]
 sources: [llm]
 status: enriched
+chart: sign
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[flourish]] — Use when the gesture is exaggerated, theatrical, and possibly insincere, whereas 'flourish' can be a simple elegant gesture.
+- collocation: [[empty]]
+- collocation: [[mere]]
+- collocation: [[stage]]

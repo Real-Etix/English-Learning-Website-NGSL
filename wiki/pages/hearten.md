@@ -6,6 +6,8 @@ pos: verb
 forms: [hearten]
 sources: [llm]
 status: enriched
+chart: cheer
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cheer]] — Use 'hearten' instead of 'cheer' when focusing on giving courage or confidence, especially in a formal or literary context.
+- synonym: [[embolden]]

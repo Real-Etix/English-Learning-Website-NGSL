@@ -9,6 +9,8 @@ rank: 166
 sfi: 58.74
 sources: [wordnet, llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[mooring]] — Use 'mooring' when referring to the entire anchoring system or location, not just the anchor device itself.
 - advanced_form: [[kedge]] — Use 'kedge' for a small anchor used for specific maneuvers like warping or refloating, not for general anchoring.
 - builds_on: [[pivot]] — Use 'anchor' instead of 'pivot' when focusing on stability and the person being a fixed point that provides security during movement, often in military or team contexts.
+- synonym: [[linchpin]]
+- builds_on: [[fasten]] — Use when you want to suggest holding something in place against movement or force.

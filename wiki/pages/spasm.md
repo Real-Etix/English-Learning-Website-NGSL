@@ -6,6 +6,8 @@ pos: noun
 forms: [spasm]
 sources: [llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[contraction]] — Use for a sudden, involuntary muscle contraction, often sharp or brief.
 - builds_on: [[twitch]] — Use 'spasm' for a sudden, involuntary contraction of a muscle, often more intense than a simple twitch.
+- synonym: [[paroxysm]]

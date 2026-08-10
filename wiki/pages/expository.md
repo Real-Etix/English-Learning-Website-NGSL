@@ -6,6 +6,8 @@ pos: adjective
 forms: [expository]
 sources: [llm]
 status: enriched
+chart: qualitative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[explanatory]] — Use when the explanation is systematic and detailed, often in academic or formal contexts.
+- synonym: [[commentarial]]
+- synonym: [[descriptive]]
+- synonym: [[informative]]
+- synonym: [[elucidative]]
+- collocation: [[essay]]
+- collocation: [[text]]
+- collocation: [[paragraph]]
+- collocation: [[lecture]]
+- synonym: [[interpretive]]

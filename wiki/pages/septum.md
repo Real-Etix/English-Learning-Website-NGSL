@@ -6,6 +6,8 @@ pos: noun
 forms: [septum]
 sources: [llm]
 status: enriched
+chart: partition
+region: you
 ---
 
 ## Definition

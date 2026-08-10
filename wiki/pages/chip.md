@@ -9,6 +9,8 @@ rank: 1910
 sfi: 55.81
 sources: [wordnet, llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - synonym: [[scrap]]
 - advanced_form: [[shard]] — Use 'shard' instead of 'chip' for fragments of hard, brittle materials like glass, pottery, or stone.
 - advanced_form: [[splinter]] — Use 'splinter' instead of 'chip' for thin, sharp fragments of wood, metal, or bone.
+- collocation: [[nanometer]]
+- collocation: [[potato]]

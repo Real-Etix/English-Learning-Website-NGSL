@@ -6,6 +6,8 @@ pos: adjective
 forms: [sacred]
 sources: [llm]
 status: enriched
+chart: spiritual
+region: spiritual
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[spiritual]] — Use 'sacred' instead of 'spiritual' when emphasizing holiness, reverence, or inviolability, often linked to objects, places, or rituals.
+- synonym: [[covenantal]]
+- synonym: [[divine]]
+- collocation: [[omphalos]]
+- collocation: [[relic]]

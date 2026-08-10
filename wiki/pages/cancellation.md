@@ -9,6 +9,8 @@ rank: 380
 sfi: 53.98
 sources: [wordnet, llm]
 status: enriched
+chart: cancellation
+region: cancellation
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[annulment]] — Use 'annulment' for formal, legal contexts where a decision or agreement is declared invalid from the start.
 - advanced_form: [[revocation]] — Use 'revocation' when an official permission or privilege is withdrawn by an authority.
 - advanced_form: [[nullification]] — Use 'nullification' to emphasize the act of making something legally void or ineffective, often in political or legal disputes.
+- synonym: [[expungement]]
+- synonym: [[deletion]]

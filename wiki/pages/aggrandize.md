@@ -6,6 +6,8 @@ pos: verb
 forms: [aggrandize]
 sources: [llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition

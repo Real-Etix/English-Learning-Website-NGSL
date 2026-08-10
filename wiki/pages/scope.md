@@ -9,6 +9,8 @@ rank: 2559
 sfi: 53.78
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ an area in which something acts or operates or has power or control: "the range 
 - advanced_form: [[ambit]] — Use 'ambit' when emphasizing the boundaries or range of an activity, influence, or interest.
 - advanced_form: [[purview]] — Use 'purview' when referring to the extent of authority, responsibility, or coverage.
 - advanced_form: [[compass]] — Use 'compass' when describing the full breadth or area covered, often figuratively.
+- synonym: [[dimensions]]
+- synonym: [[gamut]]
+- synonym: [[latitude]]

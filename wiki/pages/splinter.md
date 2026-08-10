@@ -6,6 +6,8 @@ pos: noun
 forms: [splinter]
 sources: [llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition

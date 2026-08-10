@@ -9,6 +9,8 @@ rank: 96
 sfi: 59.005
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ a standard or model or pattern regarded as typical
 - builds_on: [[par]] — Use 'norm' to emphasize the expected or typical standard, especially in a statistical or general sense.
 - advanced_form: [[paradigm]] — Use 'paradigm' when describing an overarching model or a widely accepted example, often in academic or theoretical contexts, rather than just a customary standard.
 - advanced_form: [[benchmark]] — Use 'benchmark' when emphasizing a measurable standard used for evaluation or comparison, especially in performance or quality contexts.
+- collocation: [[reciprocity]]

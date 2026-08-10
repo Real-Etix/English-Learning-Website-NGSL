@@ -6,6 +6,8 @@ pos: noun
 forms: [derrire]
 sources: [llm]
 status: enriched
+chart: stock
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gluteus]] — Use 'derrière' for a refined or humorous tone, often in polite or sophisticated conversation.
+- synonym: [[butt]]
+- synonym: [[bottom]]
+- synonym: [[rear]]
+- synonym: [[behind]]
+- collocation: [[fall]]
+- collocation: [[on]]
+- collocation: [[big]]

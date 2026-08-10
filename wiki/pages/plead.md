@@ -9,6 +9,8 @@ rank: 1356
 sfi: 50.93
 sources: [wordnet, llm]
 status: enriched
+chart: plead
+region: plead
 ---
 
 ## Definition

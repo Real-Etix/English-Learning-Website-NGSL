@@ -6,6 +6,8 @@ pos: adjective
 forms: [snowbound]
 sources: [llm]
 status: enriched
+chart: black
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [bulwark]
 sources: [llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,6 @@ _No sourced examples yet._
 - builds_on: [[safeguard]] — Use 'bulwark' for a strong, figurative barrier that defends against threats, more vivid and forceful than 'safeguard'.
 - builds_on: [[defense]] — Use 'bulwark' instead of 'defense' when describing a strong, protective barrier, either physical or metaphorical.
 - builds_on: [[protection]] — Use 'bulwark' for a robust, defensive barrier, often metaphorical, emphasizing strength and resistance.
+- synonym: [[fortification]]
+- builds_on: [[shield]] — Use when emphasizing a sturdy, reliable protection, often against abstract threats like injustice.
+- synonym: [[bastion]]

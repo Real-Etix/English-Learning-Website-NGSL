@@ -6,6 +6,8 @@ pos: noun
 forms: [tarot]
 sources: [llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition

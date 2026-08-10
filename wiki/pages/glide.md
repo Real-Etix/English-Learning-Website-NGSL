@@ -9,6 +9,8 @@ rank: 198
 sfi: 57.62
 sources: [wordnet, llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[semivowel]] — Use 'semivowel' when discussing phonetic classification of sounds that are phonetically like vowels but function as consonants.
 - advanced_form: [[approximant]] — Use 'approximant' as a broader technical term for sounds where articulators approach each other without creating turbulence.
 - builds_on: [[swim]] — Use instead of 'swim' to emphasize smooth, graceful motion without splashing.
+- synonym: [[waft]]

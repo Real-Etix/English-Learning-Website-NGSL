@@ -6,6 +6,8 @@ pos: noun
 forms: [hectare]
 sources: [llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition

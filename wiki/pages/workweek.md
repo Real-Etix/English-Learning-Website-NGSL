@@ -6,6 +6,8 @@ pos: noun
 forms: [workweek]
 sources: [llm]
 status: enriched
+chart: week
+region: week
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[week]] — Use when emphasizing the working portion of a week as opposed to the weekend.
+- synonym: [[schedule]]
+- collocation: [[hour]]
+- collocation: [[standard]]
+- collocation: [[typical]]
+- collocation: [[end]]

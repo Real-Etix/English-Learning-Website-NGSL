@@ -9,6 +9,8 @@ rank: 708
 sfi: 61.29
 sources: [wordnet, llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[ascertain]] — Use 'ascertain' when you want to emphasize finding out a fact with certainty and thoroughness, often through deliberate effort.
 - advanced_form: [[discern]] — Use 'discern' when you need to detect or perceive something that is not obvious, especially by distinguishing it from other possibilities.
 - advanced_form: [[deduce]] — Use 'deduce' when reaching a conclusion by logical reasoning from given facts or premises.
+- collocation: [[creditworthiness]]
+- collocation: [[firemarshal]]
+- synonym: [[pinpoint]]

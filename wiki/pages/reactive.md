@@ -9,6 +9,8 @@ rank: 701
 sfi: 52.33
 sources: [wordnet, llm]
 status: enriched
+chart: vulnerable
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ participating readily in reactions
 - advanced_form: [[responsive]] — Use when emphasizing a quick and willing reaction, often to external cues (more formal than 'reactive').
 - advanced_form: [[susceptible]] — Use when focusing on being easily affected or influenced, especially in a negative or passive sense.
 - advanced_form: [[impressionable]] — Use for people who are easily influenced by others, often suggesting lack of critical judgment.
+- collocation: [[hyperemia]]

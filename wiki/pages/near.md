@@ -9,6 +9,8 @@ rank: 427
 sfi: 63.72
 sources: [wordnet, llm]
 status: enriched
+chart: about
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ not far distant in time or space or degree or circumstances
 - advanced_form: [[proximate]] — Use 'proximate' for closeness in causal relationship, space, or time in formal or technical contexts.
 - advanced_form: [[adjacent]] — Use 'adjacent' for physical closeness, especially with a shared boundary or direct contact.
 - advanced_form: [[imminent]] — Use 'imminent' for something about to happen soon, focusing on time rather than space.
+- collocation: [[anywhere]]
+- synonym: [[at]]
+- synonym: [[beside]]
+- synonym: [[circa]]
+- synonym: [[closely]]
+- synonym: [[quasi]]
+- collocation: [[vicinity]]

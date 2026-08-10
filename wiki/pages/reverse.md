@@ -9,6 +9,8 @@ rank: 2203
 sfi: 54.92
 sources: [wordnet, llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ a relation of direct opposition
 - builds_on: [[backward]] — Use 'reverse' when emphasizing the opposite direction or order, often in technical or mechanical settings.
 - advanced_form: [[antithesis]] — Use 'antithesis' for a direct opposite that is often contrasting on a philosophical or conceptual level, more formal than 'reverse'.
 - advanced_form: [[converse]] — Use 'converse' for logical or mathematical opposites, especially in conditional statements.
+- builds_on: [[defeat]] — Use in formal writing or military contexts to mean a defeat or a setback.

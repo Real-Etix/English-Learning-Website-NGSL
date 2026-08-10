@@ -9,6 +9,8 @@ rank: 785
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[tenant]] — Use 'tenant' instead of 'renter' in formal or legal contexts, especially for residential leases.
 - advanced_form: [[lessee]] — Use 'lessee' in formal contracts or legal documents to refer to the person leasing property.
+- synonym: [[leaseholder]]

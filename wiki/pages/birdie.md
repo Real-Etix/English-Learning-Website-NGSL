@@ -6,6 +6,8 @@ pos: noun
 forms: [birdie]
 sources: [llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shuttle]] — Use 'birdie' in casual conversation; note that 'shuttlecock' is more formal.
+- synonym: [[shuttlecock]]
+- synonym: [[bird]]
+- collocation: [[serve]]
+- collocation: [[net]]
+- collocation: [[rally]]
+- collocation: [[court]]

@@ -9,6 +9,8 @@ rank: 28
 sfi: 61.431
 sources: [wordnet, llm]
 status: enriched
+chart: force
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[displacement]] — Use 'displacement' when you want to emphasize a change in position as a vector quantity, rather than the general concept of a vector.
 - advanced_form: [[momentum]] — Use 'momentum' when discussing the vector quantity of motion in physics, more specific than the general term 'vector'.
 - advanced_form: [[force]] — Use 'force' when you need the vector quantity that causes acceleration, a common advanced term in physics.
+- collocation: [[orthogonal]]
+- synonym: [[anopheline]]
+- collocation: [[culicid]]

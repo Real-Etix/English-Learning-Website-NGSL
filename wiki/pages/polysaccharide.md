@@ -6,6 +6,8 @@ pos: noun
 forms: [polysaccharide]
 sources: [llm]
 status: enriched
+chart: carbohydrate
+region: carbohydrate
 ---
 
 ## Definition

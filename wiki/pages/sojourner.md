@@ -6,6 +6,8 @@ pos: noun
 forms: [sojourner]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[exile]] — Use 'sojourner' for a temporary resident who plans to return, while 'exile' implies a longer or indefinite absence.
+- builds_on: [[visitor]] — Use 'sojourner' for a temporary resident, adding a formal or literary tone.

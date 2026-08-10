@@ -9,6 +9,8 @@ rank: 1888
 sfi: 55.87
 sources: [wordnet, llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ completely and without qualification
 - advanced_form: [[absolutely]] — Use when emphasizing total agreement or completeness, stronger than 'perfectly'.
 - advanced_form: [[utterly]] — Use for a dramatic, thorough degree; often with negative or extreme situations.
 - advanced_form: [[entirely]] — Use for total inclusion or exclusivity, neutral in tone.
+- collocation: [[conformable]]
+- synonym: [[consummately]]
+- collocation: [[motionless]]
+- synonym: [[optimally]]

@@ -9,6 +9,8 @@ rank: 767
 sfi: 52.91
 sources: [wordnet, llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[mandate]] — Use for an official, often legal or authoritative, command that must be followed, stronger than prescribing.
 - advanced_form: [[dictate]] — Use when an authority or rule unilaterally determines what must happen, implying less negotiation than prescribe.
 - builds_on: [[specify]] — Use 'prescribe' to indicate that a requirement is officially laid down by authority, such as a rule or regulation, rather than just stating it clearly.
+- collocation: [[antimicrobial]]
+- builds_on: [[dictate]] — Use when rules or authorities lay down what must be done, especially in formal contexts.

@@ -9,6 +9,8 @@ rank: 387
 sfi: 64.11
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,17 @@ operate or control a vehicle
 - advanced_form: [[motor]] — Use 'motor' for a slightly formal or literary tone, often suggesting leisurely or pleasant driving.
 - builds_on: [[momentum]] — Use 'drive' when focusing on the inner motivation or sustained effort that propels someone or something toward a goal.
 - builds_on: [[stroke]] — Use 'drive' for a long, powerful stroke in golf, tennis, or baseball, often implying distance or force
+- synonym: [[actuate]]
+- synonym: [[belt]]
+- collocation: [[belt]]
+- synonym: [[compulsion]]
+- synonym: [[dynamism]]
+- collocation: [[format]]
+- synonym: [[gumption]]
+- collocation: [[instinctive]]
+- collocation: [[progenitive]]
+- synonym: [[propel]]
+- synonym: [[punt]]
+- collocation: [[thumb]]
+- collocation: [[cabriolet]]
+- collocation: [[freeway]]

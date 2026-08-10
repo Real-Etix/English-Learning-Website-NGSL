@@ -9,6 +9,8 @@ rank: 1963
 sfi: 55.64
 sources: [wordnet, llm]
 status: enriched
+chart: domestic
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ living in or characteristic of farming or country life
 - antonym: [[urban]]
 - advanced_form: [[pastoral]] — Use 'pastoral' to emphasize an idealized, peaceful, or artistic view of rural life, often in literature or art.
 - advanced_form: [[bucolic]] — Use 'bucolic' to describe a charming, rustic countryside setting, often implying simplicity and tranquility.
+- synonym: [[agrarian]]
+- collocation: [[impoverished]]
+- collocation: [[inhabitant]]
+- collocation: [[preponderantly]]

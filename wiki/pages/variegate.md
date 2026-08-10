@@ -6,6 +6,8 @@ pos: verb
 forms: [variegate]
 sources: [llm]
 status: enriched
+chart: separate
+region: you
 ---
 
 ## Definition

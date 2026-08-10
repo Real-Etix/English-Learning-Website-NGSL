@@ -9,6 +9,8 @@ rank: 867
 sfi: 60.36
 sources: [wordnet, llm]
 status: enriched
+chart: seize
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ having a low or inadequate temperature or feeling a sensation of coldness or hav
 - advanced_form: [[glacial]] — Use 'glacial' to describe something as extremely cold, as if coming from a glacier, often in a formal or dramatic context.
 - advanced_form: [[arctic]] — Use 'arctic' (often capitalized) to convey intense cold reminiscent of the polar regions, especially in descriptions of severe winter weather.
 - builds_on: [[temperature]] — Use 'cold' as a noun for low temperature, often in weather or physical sensation.
+- collocation: [[diaphoresis]]
+- collocation: [[hardiness]]
+- collocation: [[wintertide]]
+- synonym: [[wintry]]

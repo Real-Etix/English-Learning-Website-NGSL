@@ -9,6 +9,8 @@ rank: 234
 sfi: 66.27
 sources: [wordnet, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,17 @@ from a particular thing or place or position (`forth' is obsolete)
 - synonym: [[forth]]
 - advanced_form: [[elsewhere]] — Use when referring to a different location, more formal than 'away'.
 - advanced_form: [[apart]] — Use to emphasize separation or distance, often more precise than 'away'.
+- collocation: [[chisel]]
+- collocation: [[creep]]
+- collocation: [[crumble]]
+- collocation: [[dwindle]]
+- collocation: [[farther]]
+- collocation: [[gallop]]
+- collocation: [[klick]]
+- collocation: [[natter]]
+- collocation: [[prattle]]
+- collocation: [[rationalize]]
+- synonym: [[remotely]]
+- collocation: [[wrench]]
+- collocation: [[wrest]]
+- collocation: [[seduce]]

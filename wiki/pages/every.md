@@ -9,6 +9,8 @@ rank: 180
 sfi: 67.36
 sources: [wordnet]
 status: seeded
+chart: vulnerable
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,15 @@ status: seeded
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[conceivable]]
+- synonym: [[each]]
+- synonym: [[all]]
+- synonym: [[any]]
+- collocation: [[day]]
+- collocation: [[time]]
+- collocation: [[single]]
+- collocation: [[week]]
+- collocation: [[one]]
+- collocation: [[householder]]
+- collocation: [[minutia]]
+- collocation: [[once]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [interplay]
 sources: [llm]
 status: enriched
+chart: game
+region: you
 ---
 
 ## Definition

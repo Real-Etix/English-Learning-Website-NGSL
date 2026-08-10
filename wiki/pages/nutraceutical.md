@@ -6,6 +6,8 @@ pos: noun
 forms: [nutraceutical]
 sources: [llm]
 status: enriched
+chart: vitamin
+region: vitamin
 ---
 
 ## Definition

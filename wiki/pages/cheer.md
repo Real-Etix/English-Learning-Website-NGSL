@@ -9,6 +9,8 @@ rank: 931
 sfi: 50.45
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: cheer
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ give encouragement to
 - advanced_form: [[hearten]] — Use 'hearten' instead of 'cheer' when focusing on giving courage or confidence, especially in a formal or literary context.
 - advanced_form: [[embolden]] — Use 'embolden' instead of 'cheer' when the encouragement specifically gives someone the boldness or confidence to take action.
 - advanced_form: [[buoy]] — Use 'buoy' instead of 'cheer' when the encouragement lifts someone's mood or spirits, often in emotional or figurative contexts.
+- synonym: [[elate]]

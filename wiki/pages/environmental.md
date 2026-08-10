@@ -9,6 +9,8 @@ rank: 1360
 sfi: 58
 sources: [wordnet, llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ of or relating to the external conditions or surroundings
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[ecological]] — Use 'ecological' when focusing on the relationship between living things and their environment, especially in scientific or conservation contexts.
 - advanced_form: [[ambient]] — Use 'ambient' to describe the surrounding conditions, especially air, sound, or light, in a more technical or scientific manner.
+- synonym: [[biospheric]]
+- collocation: [[radionuclide]]
+- collocation: [[remediation]]
+- collocation: [[conditions]]

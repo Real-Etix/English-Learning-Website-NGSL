@@ -9,6 +9,8 @@ rank: 289
 sfi: 55.1
 sources: [wordnet, llm]
 status: enriched
+chart: cabinet
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - builds_on: [[cabinet]] — Use 'buffet' for a piece of furniture with shelves and drawers used for storing china and linens in a dining area, more specific than a plain cabinet.
 - advanced_form: [[sideboard]] — Use 'sideboard' for a more precise term when referring to the dining room storage furniture, especially in British English or formal contexts.
 - advanced_form: [[credenza]] — Use 'credenza' to describe a modern or sleek buffet-style cabinet, often without legs and used in both dining and living areas.
+- collocation: [[djeuner]]
+- builds_on: [[counter]] — Use it for a long counter or table where food is displayed and served, often in a restaurant or hotel.

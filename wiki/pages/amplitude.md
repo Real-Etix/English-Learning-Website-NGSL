@@ -9,6 +9,8 @@ rank: 137
 sfi: 58.308
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - builds_on: [[magnitude]] — Use 'amplitude' in technical or scientific settings to describe the size of a wave or oscillation; 'magnitude' is more general for size or importance.
 - builds_on: [[intensity]] — Use 'amplitude' for wave or oscillation magnitude; it is more technical than 'intensity'.
 - builds_on: [[dimension]] — Use 'amplitude' specifically for oscillatory or periodic dimensions, such as in physics or engineering.
+- collocation: [[modulate]]

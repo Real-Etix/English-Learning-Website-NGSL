@@ -9,6 +9,8 @@ rank: 1008
 sfi: 59.58
 sources: [wordnet, llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,17 @@ _No sourced examples yet._
 - builds_on: [[browse]] — Use when scanning a wide selection with a deliberate, often more comprehensive look, emphasizing the range rather than casual browsing.
 - builds_on: [[contemplate]] — Use 'survey' when looking over a broad area or scene to get a general impression, less focused on a single object than 'contemplate'.
 - builds_on: [[map]] — Use when measuring and mapping an area in detail, especially for planning or research.
+- synonym: [[canvass]]
+- synonym: [[census]]
+- synonym: [[encyclopedia]]
+- synonym: [[exploration]]
+- collocation: [[geological]]
+- synonym: [[inspect]]
+- collocation: [[mineralogical]]
+- collocation: [[nationwide]]
+- builds_on: [[inspect]] — Use when you are looking at a broad area or situation to get an overall view, not just details.
+- builds_on: [[exploration]] — Use when the exploration is systematic and aims to measure or map the area.
+- builds_on: [[poll]] — Use in formal or academic contexts; it is broader than a poll and may cover a wider range of data collection methods.
+- builds_on: [[gaze]] — Use 'survey' for a quick but comprehensive visual inspection.
+- synonym: [[reconnaissance]]
+- synonym: [[sampling]]

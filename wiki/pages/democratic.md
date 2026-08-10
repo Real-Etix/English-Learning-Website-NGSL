@@ -9,6 +9,8 @@ rank: 2547
 sfi: 53.81
 sources: [wordnet, llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ characterized by or advocating or based upon the principles of democracy or soci
 - advanced_form: [[egalitarian]] — Use 'egalitarian' to emphasize equality and fairness, especially in social or economic contexts, rather than just the political system.
 - advanced_form: [[participatory]] — Use 'participatory' to highlight active involvement and decision-making by all members, focusing on the process rather than the principle.
 - advanced_form: [[representative]] — Use 'representative' to describe systems or bodies that act on behalf of a group, stressing delegation rather than direct rule.
+- collocation: [[answerability]]
+- collocation: [[congressperson]]
+- collocation: [[pluralism]]
+- collocation: [[progressivist]]

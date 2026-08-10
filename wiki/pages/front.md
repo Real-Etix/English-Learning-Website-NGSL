@@ -9,6 +9,8 @@ rank: 488
 sfi: 63.07
 sources: [wordnet, llm]
 status: enriched
+chart: make
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ _No sourced examples yet._
 - antonym: [[rear]]
 - advanced_form: [[forepart]] — Use 'forepart' in formal or technical descriptions of the front section of an object, such as a ship, car, or stage, rather than the more general 'front'.
 - advanced_form: [[vanguard]] — Use 'vanguard' for metaphorical or leadership contexts—the forefront of innovation, ideas, or social change—not for physical objects.
+- collocation: [[bumper]]
+- collocation: [[glazing]]
+- collocation: [[pew]]
+- synonym: [[rostral]]
+- collocation: [[row]]
+- synonym: [[ventral]]
+- collocation: [[wheel]]

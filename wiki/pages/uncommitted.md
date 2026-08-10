@@ -6,6 +6,8 @@ pos: adjective
 forms: [uncommitted]
 sources: [llm]
 status: enriched
+chart: disposable
+region: disposable
 ---
 
 ## Definition

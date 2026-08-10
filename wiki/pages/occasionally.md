@@ -9,6 +9,8 @@ rank: 2289
 sfi: 54.68
 sources: [wordnet, llm]
 status: enriched
+chart: periodically
+region: periodically
 ---
 
 ## Definition

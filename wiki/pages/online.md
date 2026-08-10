@@ -9,6 +9,8 @@ rank: 1794
 sfi: 56.22
 sources: [wordnet, llm]
 status: enriched
+chart: online
+region: online
 ---
 
 ## Definition
@@ -21,3 +23,12 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[operating]] — Use 'operating' to sound more formal when referring to a vehicle currently on its scheduled route.
 - advanced_form: [[scheduled]] — Use 'scheduled' to emphasize that the vehicle is part of a regular timetable, often in official contexts.
+- collocation: [[bookseller]]
+- collocation: [[chatter]]
+- collocation: [[coursework]]
+- collocation: [[creator]]
+- collocation: [[encyclopedia]]
+- collocation: [[forum]]
+- collocation: [[mart]]
+- collocation: [[recommerce]]
+- collocation: [[questionnaire]]

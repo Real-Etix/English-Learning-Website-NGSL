@@ -9,6 +9,8 @@ rank: 363
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: deduction
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[abatement]] — Use 'abatement' for a reduction or rebate in tax liability, often temporary or for specific incentives.
 - builds_on: [[inference]] — Use when emphasizing a logical conclusion drawn from specific evidence, often in formal or scientific contexts.
 - builds_on: [[discount]] — Use 'deduction' when the reduction is subtracted from a total, often in financial or tax contexts.
+- synonym: [[deductible]]
+- synonym: [[markdown]]
+- synonym: [[reasoning]]

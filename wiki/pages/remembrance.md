@@ -6,6 +6,8 @@ pos: noun
 forms: [remembrance]
 sources: [llm]
 status: enriched
+chart: memory
+region: memory
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[memory]] — Use 'remembrance' instead of 'memory' when focusing on the act of honoring or commemorating someone or something, often in a formal or ceremonial context.
+- synonym: [[memorial]]
+- synonym: [[recollection]]
+- synonym: [[commemoration]]
+- synonym: [[reminiscence]]

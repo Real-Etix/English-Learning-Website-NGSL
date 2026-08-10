@@ -9,6 +9,8 @@ rank: 615
 sfi: 61.94
 sources: [wordnet, llm]
 status: enriched
+chart: bench
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,20 @@ _No sourced examples yet._
 - advanced_form: [[bench]] — Use 'bench' to refer to the judges collectively as a body or to the court itself in a formal judicial context.
 - builds_on: [[invite]] — Use 'court' when the action actively seeks or risks a negative outcome, often deliberately.
 - builds_on: [[tribunal]] — Use 'court' as a more general and slightly less formal synonym than 'tribunal', suitable for most judicial settings.
+- collocation: [[adjudge]]
+- collocation: [[admissible]]
+- collocation: [[basketball]]
+- collocation: [[birdie]]
+- collocation: [[caption]]
+- collocation: [[ecclesiastical]]
+- collocation: [[federal]]
+- collocation: [[historiographer]]
+- collocation: [[imperial]]
+- collocation: [[lawntennis]]
+- collocation: [[lawyer]]
+- collocation: [[magistrate]]
+- collocation: [[nonappearance]]
+- collocation: [[portraitist]]
+- collocation: [[preside]]
+- collocation: [[recorder]]
+- collocation: [[volleyball]]

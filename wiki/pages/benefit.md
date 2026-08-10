@@ -9,6 +9,8 @@ rank: 543
 sfi: 62.53
 sources: [wordnet, llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[entitlement]] — Use 'entitlement' when the benefit is a legal right based on eligibility criteria, often from government programs.
 - advanced_form: [[stipend]] — Use 'stipend' when the benefit is a fixed regular payment, often for a specific role or program like training or research.
 - builds_on: [[sake]] — Use 'benefit' to emphasize advantage or gain, sounding more neutral and formal than 'sake'.
+- synonym: [[boon]]
+- collocation: [[claimant]]
+- synonym: [[expediency]]
+- synonym: [[behalf]]

@@ -9,6 +9,8 @@ rank: 1302
 sfi: 51.2
 sources: [wordnet, llm]
 status: enriched
+chart: convergence
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[simultaneity]] — Use 'simultaneity' to emphasize the precise temporal coincidence, especially in formal or technical contexts.
 - advanced_form: [[concurrency]] — Use 'concurrency' when referring to events or operations happening at the same time in systems, computing, or planning.
 - builds_on: [[synergy]] — Use 'conjunction' to highlight the mere fact of combination or coexistence, without necessarily implying a greater-than-sum effect, unlike 'synergy' which stresses the enhanced result.
+- collocation: [[correlative]]

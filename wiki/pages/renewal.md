@@ -9,6 +9,8 @@ rank: 295
 sfi: 55
 sources: [wordnet, llm]
 status: enriched
+chart: overhaul
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[reclamation]] — Use 'reclamation' when emphasizing the process of converting unusable land (e.g., desert, marsh, industrial site) into productive or habitable land, often involving engineering or environmental cleanup.
 - advanced_form: [[rehabilitation]] — Use 'rehabilitation' when focusing on restoring land to a healthy, functional state after damage or degradation, like post-mining or post-industrial sites.
 - builds_on: [[revival]] — Use 'renewal' when the revival involves restoring energy, spirit, or something that has become worn out, often personal or spiritual.
+- synonym: [[renaissance]]
+- synonym: [[restoration]]
+- synonym: [[resurgence]]

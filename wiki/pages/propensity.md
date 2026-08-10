@@ -6,6 +6,8 @@ pos: noun
 forms: [propensity]
 sources: [llm]
 status: enriched
+chart: no
+region: you
 ---
 
 ## Definition

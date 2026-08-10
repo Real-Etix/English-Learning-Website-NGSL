@@ -6,6 +6,8 @@ pos: adverb
 forms: [seamlessly]
 sources: [llm]
 status: enriched
+chart: slow
+region: you
 ---
 
 ## Definition

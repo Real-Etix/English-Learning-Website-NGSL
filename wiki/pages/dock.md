@@ -9,6 +9,8 @@ rank: 246
 sfi: 55.57
 sources: [wordnet, llm]
 status: enriched
+chart: bar
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[bar]] — Use 'bar' instead of 'dock' in formal or historical legal contexts, where it refers to the railing or enclosure for the accused.
 - advanced_form: [[box]] — Use 'box' as a more informal synonym for 'dock', common in British English to refer to the defendant's enclosure.
+- synonym: [[mooring]]

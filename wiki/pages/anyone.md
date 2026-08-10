@@ -9,6 +9,8 @@ rank: 754
 sfi: 61.01
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[anybody]]
+- synonym: [[one]]
+- synonym: [[someone]]
+- synonym: [[whoever]]
+- collocation: [[else]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [notepaper]
 sources: [llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[stationery]] — Use 'notepaper' for the paper itself, especially for personal or informal letters, while 'stationery' often includes envelopes and other writing supplies.
+- collocation: [[sheet]]

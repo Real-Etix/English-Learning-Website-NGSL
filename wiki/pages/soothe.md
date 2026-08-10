@@ -6,6 +6,8 @@ pos: verb
 forms: [soothe]
 sources: [llm]
 status: enriched
+chart: charge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[calm]] — Use 'soothe' to emphasize relieving pain, anxiety, or distress, often with a calming influence that brings comfort.
+- synonym: [[allay]]
+- synonym: [[conciliate]]
+- synonym: [[pacify]]
+- synonym: [[placate]]

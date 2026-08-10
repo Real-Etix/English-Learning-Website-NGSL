@@ -6,6 +6,8 @@ pos: noun
 forms: [sliver]
 sources: [llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[scrap]] — Use 'sliver' for a thin, narrow piece that has been split or broken off, especially from wood or glass.
+- synonym: [[slat]]

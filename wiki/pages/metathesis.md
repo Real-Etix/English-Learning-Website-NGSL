@@ -6,6 +6,8 @@ pos: noun
 forms: [metathesis]
 sources: [llm]
 status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[exchange]] — Use 'metathesis' specifically for double displacement reactions between ionic compounds.
+- synonym: [[swap]]
+- synonym: [[transposition]]
+- collocation: [[double]]
+- collocation: [[ion]]
+- collocation: [[salt]]
+- collocation: [[reaction]]

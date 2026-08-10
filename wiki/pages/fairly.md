@@ -9,6 +9,8 @@ rank: 1466
 sfi: 57.53
 sources: [wordnet, llm]
 status: enriched
+chart: pretty
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ to certain extent or degree
 - synonym: [[pretty]]
 - synonym: [[somewhat]]
 - advanced_form: [[moderately]] — Use 'moderately' to emphasize a balanced or restrained degree, often in formal or technical descriptions.
+- synonym: [[comparatively]]
+- synonym: [[honorably]]
+- synonym: [[quite]]
+- synonym: [[relatively]]

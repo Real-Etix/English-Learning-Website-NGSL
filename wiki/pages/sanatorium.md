@@ -6,6 +6,8 @@ pos: noun
 forms: [sanatorium]
 sources: [llm]
 status: enriched
+chart: clinic
+region: you
 ---
 
 ## Definition

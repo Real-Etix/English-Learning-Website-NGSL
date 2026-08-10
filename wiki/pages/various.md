@@ -9,6 +9,8 @@ rank: 682
 sfi: 61.46
 sources: [wordnet, llm]
 status: enriched
+chart: various
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ of many different kinds purposefully arranged but lacking any uniformity
 - advanced_form: [[diverse]] — Use 'diverse' to stress a broad range of distinct types, often with positive connotations of variety.
 - advanced_form: [[disparate]] — Use 'disparate' when the items are fundamentally different and not easily compared.
 - advanced_form: [[multifarious]] — Use 'multifarious' for many varied and often unrelated kinds, more formal and emphatic than 'various'.
+- collocation: [[accoutrement]]
+- synonym: [[assorted]]

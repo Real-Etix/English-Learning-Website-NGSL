@@ -9,6 +9,8 @@ rank: 45
 sfi: 60.528
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: administration
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,7 @@ the organization that is the governing authority of a political unit
 - advanced_form: [[administration]] — Use for the executive branch of government, especially in American English, more formal than 'government'.
 - advanced_form: [[authorities]] — Use in plural to refer to officials or agencies with legal power, more formal and specific than 'regime'.
 - advanced_form: [[establishment]] — Use for the entrenched group holding power, often with a critical tone.
+- collocation: [[autarchic]]
+- synonym: [[junta]]
+- collocation: [[overthrow]]
+- collocation: [[reactionary]]

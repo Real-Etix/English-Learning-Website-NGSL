@@ -9,6 +9,8 @@ rank: 866
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ commonly used or practiced
 - domain: toeic
 - advanced_form: [[inveterate]] — Use inveterate for a deeply ingrained habit that is long-standing and unlikely to change.
 - advanced_form: [[ingrained]] — Use ingrained for a habit so firmly established that it is automatic or part of one's nature.
+- collocation: [[complaisance]]

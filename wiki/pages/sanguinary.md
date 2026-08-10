@@ -6,6 +6,8 @@ pos: adjective
 forms: [sanguinary]
 sources: [llm]
 status: enriched
+chart: bloody
+region: bloody
 ---
 
 ## Definition

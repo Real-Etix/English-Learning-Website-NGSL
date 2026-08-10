@@ -9,6 +9,8 @@ rank: 93
 sfi: 58.34
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: land
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ status: enriched
 - collocation: [[land]]
 - advanced_form: [[corner]] — Use 'corner' when emphasizing exclusive control or dominance in a specific market, similar to monopoly but often used in informal or business contexts.
 - advanced_form: [[stranglehold]] — Use 'stranglehold' to emphasize oppressive and complete control, often with a negative connotation, more dramatic than monopoly.
+- synonym: [[control]]
+- synonym: [[domination]]
+- synonym: [[trust]]
+- collocation: [[hold]]

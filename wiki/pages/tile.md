@@ -9,6 +9,8 @@ rank: 1185
 sfi: 49.8
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ a flat thin rectangular slab (as of fired clay or rubber or linoleum) used to co
 - collocation: [[within]]
 - advanced_form: [[paver]] — Use 'paver' for a manufactured tile, often interlocking, used for outdoor paving.
 - advanced_form: [[flagstone]] — Use 'flagstone' for a flat, often irregular natural stone tile, typically used for walkways or patios.
+- synonym: [[brick]]
+- collocation: [[flooring]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [innumerable]
 sources: [llm]
 status: enriched
+chart: uncomfortable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[numerous]] — Use 'innumerable' when you want to stress that something is so many it cannot be counted, often in a measured or scientific context.
+- synonym: [[myriad]]

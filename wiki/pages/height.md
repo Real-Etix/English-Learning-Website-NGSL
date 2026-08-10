@@ -9,6 +9,8 @@ rank: 2150
 sfi: 55.07
 sources: [wordnet, llm]
 status: enriched
+chart: elevation
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[altitude]] — Use when referring to height above sea level or ground, especially in aviation, geography, or astronomy.
 - advanced_form: [[elevation]] — Use when referring to height above a fixed reference point, usually sea level, for landforms or structures.
+- synonym: [[loftiness]]
+- synonym: [[watershed]]

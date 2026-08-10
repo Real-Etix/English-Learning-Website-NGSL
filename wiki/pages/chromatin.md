@@ -6,6 +6,8 @@ pos: noun
 forms: [chromatin]
 sources: [llm]
 status: enriched
+chart: chromosome
+region: chromosome
 ---
 
 ## Definition

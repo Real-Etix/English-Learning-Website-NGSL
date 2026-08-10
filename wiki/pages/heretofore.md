@@ -6,6 +6,8 @@ pos: adverb
 forms: [heretofore]
 sources: [llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition

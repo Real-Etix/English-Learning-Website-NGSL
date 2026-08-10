@@ -6,6 +6,8 @@ pos: verb
 forms: [stow]
 sources: [llm]
 status: enriched
+chart: embody
+region: you
 ---
 
 ## Definition

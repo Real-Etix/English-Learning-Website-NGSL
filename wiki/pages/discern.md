@@ -6,6 +6,8 @@ pos: verb
 forms: [discern]
 sources: [llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - builds_on: [[diagnose]] — Use when focusing on the ability to perceive or recognize subtle or hidden signs, implying keen observation.
 - builds_on: [[determine]] — Use 'discern' when you need to detect or perceive something that is not obvious, especially by distinguishing it from other possibilities.
 - builds_on: [[observe]] — Use 'discern' when you perceive or recognize something with difficulty or through careful observation.
+- synonym: [[glimpse]]
+- builds_on: [[spy]] — Use when you can just barely make something out, especially after effort or with difficulty.
+- builds_on: [[perceive]] — Use when emphasizing careful or difficult recognition, not just casual noticing.
+- builds_on: [[detect]] — Use when noticing something subtle or hidden that requires close attention.

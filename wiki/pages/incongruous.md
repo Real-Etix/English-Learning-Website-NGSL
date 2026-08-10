@@ -6,6 +6,8 @@ pos: adjective
 forms: [incongruous]
 sources: [llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[contradictory]] — Use when something is out of place or doesn't fit harmoniously, implying a lack of consistency or compatibility.
+- synonym: [[paradoxical]]

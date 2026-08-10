@@ -6,6 +6,8 @@ pos: adjective
 forms: [convinced]
 sources: [llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sure]] — Use 'convinced' to emphasize that you have been persuaded by evidence or reasoning.
+- synonym: [[certain]]
+- synonym: [[confident]]
+- synonym: [[assured]]
+- collocation: [[firmly]]
+- collocation: [[strongly]]
+- collocation: [[fully]]
+- collocation: [[absolutely]]
+- collocation: [[become]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [varietal]
 sources: [llm]
 status: enriched
+chart: wine
+region: wine
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wine]] — Use 'varietal' when you want to highlight the specific grape variety used to make the wine.
+- collocation: [[white]]
+- collocation: [[red]]
+- collocation: [[popular]]

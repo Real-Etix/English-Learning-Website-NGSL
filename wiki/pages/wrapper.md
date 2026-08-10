@@ -6,6 +6,8 @@ pos: noun
 forms: [wrapper]
 sources: [llm]
 status: enriched
+chart: cover
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[envelope]] — Use 'wrapper' for a thin, often paper or plastic outer layer that encloses an item, commonly used for commercial packaging or when the envelope is part of a mailing system.
+- synonym: [[sleeve]]
+- collocation: [[candy]]
+- collocation: [[plastic]]
+- collocation: [[original]]
+- collocation: [[gift]]
+- collocation: [[bubble]]

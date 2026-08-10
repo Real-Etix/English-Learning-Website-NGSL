@@ -6,6 +6,8 @@ pos: noun
 forms: [coveralls]
 sources: [llm]
 status: enriched
+chart: overall
+region: overall
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[overall]] — Use 'coveralls' when referring to a one-piece garment that covers the whole body, often for work or protection.
+- synonym: [[dungarees]]
+- collocation: [[pair]]
+- collocation: [[work]]
+- collocation: [[paint]]

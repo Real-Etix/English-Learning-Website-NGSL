@@ -9,6 +9,8 @@ rank: 1674
 sfi: 56.66
 sources: [wordnet, llm]
 status: enriched
+chart: superior
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ conforming to an ultimate standard of perfection or excellence
 - advanced_form: [[quintessential]] — Use when emphasizing the most typical or perfect representation of something, more specific than 'ideal'.
 - advanced_form: [[exemplary]] — Use when the ideal is also a model for others to follow, implying praise.
 - advanced_form: [[consummate]] — Use for an ideal that is complete and without flaw, often in a professional or refined context.
+- synonym: [[paragon]]

@@ -9,6 +9,8 @@ rank: 1952
 sfi: 55.69
 sources: [wordnet, llm]
 status: enriched
+chart: neck
+region: neck
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ the part of an organism (human or animal) that connects the head to the rest of 
 - advanced_form: [[cervix]] — Use 'cervix' in formal medical or anatomical writing when referring to the neck as a whole, though it often implies the uterine cervix in everyday language.
 - advanced_form: [[nape]] — Use 'nape' to specify the back part of the neck, especially in formal or descriptive contexts.
 - advanced_form: [[throat]] — Use 'throat' for the front part of the neck, particularly when referring to swallowing, speaking, or the airway, as distinct from the entire neck.
+- collocation: [[femur]]
+- collocation: [[headrest]]
+- collocation: [[noose]]
+- collocation: [[wring]]

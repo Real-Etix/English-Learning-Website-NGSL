@@ -6,6 +6,8 @@ pos: noun
 forms: [nulliparity]
 sources: [llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition

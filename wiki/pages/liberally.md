@@ -6,6 +6,8 @@ pos: adverb
 forms: [liberally]
 sources: [llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[freely]] — Use 'liberally' instead of 'freely' when emphasizing abundance or generosity, not just lack of restriction.
+- synonym: [[amply]]
+- synonym: [[generously]]
+- synonym: [[lavishly]]
+- synonym: [[munificently]]

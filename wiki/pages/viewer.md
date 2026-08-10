@@ -9,6 +9,8 @@ rank: 1056
 sfi: 51.82
 sources: [wordnet, llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[beholder]] — Use 'beholder' instead of 'viewer' to emphasize a subjective, perceptive observer, often in artistic or philosophical contexts.
 - advanced_form: [[scrutinizer]] — Use 'scrutinizer' instead of 'viewer' to stress intense, analytical examination, especially in scientific or investigative settings.
+- synonym: [[attender]]

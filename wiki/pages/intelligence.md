@@ -9,6 +9,8 @@ rank: 1673
 sfi: 56.67
 sources: [wordnet, llm]
 status: enriched
+chart: information
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[acumen]] — Use 'acumen' for sharp, practical intelligence in a specific field like business or finance.
 - advanced_form: [[sagacity]] — Use 'sagacity' for deep wisdom and sound judgment, often from experience.
 - advanced_form: [[perspicacity]] — Use 'perspicacity' for keen mental perception and understanding, especially of complex or hidden matters.
+- synonym: [[brain]]
+- synonym: [[wit]]
+- collocation: [[corvid]]

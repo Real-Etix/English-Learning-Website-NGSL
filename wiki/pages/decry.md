@@ -6,6 +6,8 @@ pos: verb
 forms: [decry]
 sources: [llm]
 status: enriched
+chart: criticize
+region: you
 ---
 
 ## Definition

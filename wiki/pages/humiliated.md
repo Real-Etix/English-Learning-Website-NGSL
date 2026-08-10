@@ -6,6 +6,8 @@ pos: adjective
 forms: [humiliated]
 sources: [llm]
 status: enriched
+chart: good
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ashamed]] — Use when the shame is caused by being publicly degraded or losing dignity in front of others.
+- synonym: [[mortified]]
+- collocation: [[deeply]]
+- collocation: [[publicly]]
+- collocation: [[utterly]]
+- collocation: [[feel]]
+- collocation: [[by]]

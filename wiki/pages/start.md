@@ -9,6 +9,8 @@ rank: 136
 sfi: 68.26
 sources: [wordnet, llm]
 status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,9 @@ take the first step or steps in carrying out an action
 - advanced_form: [[commence]] — Use 'commence' for formal or official beginnings, like events or procedures.
 - advanced_form: [[initiate]] — Use 'initiate' when you are the one who causes something to begin, especially a process or action.
 - advanced_form: [[launch]] — Use 'launch' for starting a major endeavor, like a product, campaign, or initiative, often with a sense of promotion.
+- collocation: [[anew]]
+- synonym: [[dawn]]
+- synonym: [[initialize]]
+- synonym: [[jolt]]
+- synonym: [[outset]]
+- collocation: [[afresh]]

@@ -9,6 +9,8 @@ rank: 1191
 sfi: 51.6
 sources: [wordnet, llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[notation]] — Use 'script' when referring to a specific writing system or set of symbols, often more formal than 'notation'.
 - advanced_form: [[screenplay]] — Use 'screenplay' instead of 'script' when referring to a movie or TV show.
 - advanced_form: [[libretto]] — Use 'libretto' instead of 'script' for operas or musicals to sound more precise.
+- synonym: [[macro]]
+- collocation: [[majuscule]]
+- builds_on: [[macro]] — Use 'script' when referring to a reusable set of instructions in a programming language, especially for automation.

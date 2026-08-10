@@ -9,6 +9,8 @@ rank: 2724
 sfi: 53.1
 sources: [wordnet, llm]
 status: enriched
+chart: close
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ separated in space or coming from or going to a distance
 - builds_on: [[remote]] — Use 'distant' for a neutral, formal sense of being far away, especially measurable distance.
 - advanced_form: [[remote]] — Use 'remote' instead of 'distant' when emphasizing isolation or inaccessibility, not just spatial separation.
 - advanced_form: [[faraway]] — Use 'faraway' instead of 'distant' to evoke a romantic or exotic sense of great distance, often in emotional or imaginative contexts.
+- collocation: [[kindred]]
+- collocation: [[mirage]]
+- collocation: [[boom]]
+- collocation: [[rumble]]

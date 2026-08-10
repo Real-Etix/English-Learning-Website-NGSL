@@ -9,6 +9,8 @@ rank: 222
 sfi: 55.72
 sources: [wordnet, llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[administrative]] — Use 'administrative' when referring to the routine, procedural, or clerical aspects of management, rather than strategic leadership.
 - advanced_form: [[directorial]] — Use 'directorial' to stress overall guidance and control, especially in creative or strategic contexts, as a more formal alternative to 'managerial'.
 - builds_on: [[supervisory]] — Use 'managerial' when emphasizing the management aspect, often in business contexts, rather than the act of supervising.
+- collocation: [[incompetence]]

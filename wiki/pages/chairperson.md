@@ -9,6 +9,8 @@ rank: 852
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: chair
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ the officer who presides at the meetings of an organization
 - advanced_form: [[moderator]] — Use 'moderator' for a formal setting like a debate or panel, where the person also controls questions and time.
 - advanced_form: [[convener]] — Use 'convener' when emphasizing that the person is responsible for bringing the group together and starting the proceedings.
 - advanced_form: [[president]] — Use 'president' for a higher-ranking, more permanent official role within an organization, not just a meeting facilitator.
+- synonym: [[prolocutor]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [modulation]
 sources: [llm]
 status: enriched
+chart: accent
+region: you
 ---
 
 ## Definition

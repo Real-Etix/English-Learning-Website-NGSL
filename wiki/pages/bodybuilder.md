@@ -9,6 +9,8 @@ rank: 269
 sfi: 56.2
 sources: [wordnet, llm]
 status: enriched
+chart: lifter
+region: lifter
 ---
 
 ## Definition

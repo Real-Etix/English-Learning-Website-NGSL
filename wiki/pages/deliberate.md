@@ -7,8 +7,10 @@ forms: [deliberate, deliberates, deliberated, deliberating]
 lists: [business]
 rank: 1655
 sfi: 50.54
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: confer
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,11 @@ carefully thought out in advance
 - builds_on: [[tactical]] — Use 'deliberate' to stress intentionality and careful thought, like 'tactical' but with a stronger focus on premeditation rather than specific tactical methods.
 - builds_on: [[confer]] — Use when emphasizing careful, thoughtful discussion, often in formal settings.
 - builds_on: [[consult]] — Use 'deliberate' instead of 'consult' when the focus is on careful consideration or discussion among a group, rather than seeking external advice.
+- collocation: [[juxtaposition]]
+- synonym: [[premeditated]]
+- synonym: [[purposeful]]
+- synonym: [[volitional]]
+- synonym: [[willful]]
+- advanced_form: [[calculated]] — Use when emphasizing that the action was planned to achieve a specific advantage or result.
+- advanced_form: [[premeditated]] — Use when stressing that something was planned in advance, especially something harmful or criminal.
+- advanced_form: [[studied]] — Use for actions or words that show deliberate care and thought, often understated or composed.

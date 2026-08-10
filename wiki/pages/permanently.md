@@ -9,6 +9,8 @@ rank: 1161
 sfi: 50.8
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: permanently
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ for a long time without essential change
 - advanced_form: [[indefinitely]] — Use 'indefinitely' when the end time is unknown or unspecified, unlike 'permanently' which implies finality.
 - advanced_form: [[irrevocably]] — Use 'irrevocably' when something cannot be undone or reversed, emphasizing finality.
 - advanced_form: [[perpetually]] — Use 'perpetually' for continuous, never-ending action or state, often with a sense of ongoing duration.
+- collocation: [[disabled]]
+- synonym: [[forever]]
+- collocation: [[maim]]
+- collocation: [[resettle]]

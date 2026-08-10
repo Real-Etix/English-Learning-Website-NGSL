@@ -9,6 +9,8 @@ rank: 2070
 sfi: 55.32
 sources: [wordnet, llm]
 status: enriched
+chart: tender
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - advanced_form: [[proffer]] — Use 'proffer' when offering something formally and politely, often with a sense of giving or presenting.
 - advanced_form: [[tender]] — Use 'tender' in official or legal contexts, especially when offering a document, payment, or resignation.
 - advanced_form: [[lodge]] — Use 'lodge' specifically for submitting a complaint, appeal, or objection to an official body.
+- synonym: [[acquiesce]]
+- collocation: [[coursework]]
+- synonym: [[propound]]
+- collocation: [[paperwork]]
+- builds_on: [[upload]] — Use when uploading a document or data for processing, review, or official acceptance.
+- synonym: [[genuflect]]
+- synonym: [[kowtow]]

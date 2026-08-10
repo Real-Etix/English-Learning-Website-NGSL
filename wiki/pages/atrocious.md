@@ -6,6 +6,8 @@ pos: adjective
 forms: [atrocious]
 sources: [llm]
 status: enriched
+chart: awful
+region: you
 ---
 
 ## Definition

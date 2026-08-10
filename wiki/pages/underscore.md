@@ -6,6 +6,8 @@ pos: verb
 forms: [underscore]
 sources: [llm]
 status: enriched
+chart: accent
+region: you
 ---
 
 ## Definition

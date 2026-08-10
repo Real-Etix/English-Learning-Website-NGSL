@@ -6,6 +6,8 @@ pos: noun
 forms: [zwitterion]
 sources: [llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[buffer]] — Use 'zwitterion' when describing amino acids or other molecules that have a net neutral charge but can buffer, particularly in biochemistry.
+- synonym: [[ampholyte]]
+- collocation: [[charge]]
+- collocation: [[protein]]

@@ -9,6 +9,8 @@ rank: 2244
 sfi: 54.81
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - synonym: [[test]]
 - advanced_form: [[examination]] — Use 'examination' in formal contexts, especially in writing or official announcements, instead of the shortened 'exam'.
 - advanced_form: [[assessment]] — Use 'assessment' when referring to a broader evaluation that may include various components, not just a single test.
+- synonym: [[checkup]]
+- collocation: [[invigilator]]
+- collocation: [[neurological]]
+- collocation: [[proctor]]

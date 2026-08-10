@@ -6,6 +6,8 @@ pos: noun
 forms: [beefsteak]
 sources: [llm]
 status: enriched
+chart: tomato
+region: tomato
 ---
 
 ## Definition

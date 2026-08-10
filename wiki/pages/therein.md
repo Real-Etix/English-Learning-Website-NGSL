@@ -6,6 +6,8 @@ pos: adverb
 forms: [therein]
 sources: [llm]
 status: enriched
+chart: there
+region: you
 ---
 
 ## Definition

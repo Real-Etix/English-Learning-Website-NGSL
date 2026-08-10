@@ -6,6 +6,8 @@ pos: noun
 forms: [kedge]
 sources: [llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition

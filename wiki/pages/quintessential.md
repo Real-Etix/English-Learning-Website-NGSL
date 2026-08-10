@@ -6,6 +6,8 @@ pos: adjective
 forms: [quintessential]
 sources: [llm]
 status: enriched
+chart: superior
+region: you
 ---
 
 ## Definition

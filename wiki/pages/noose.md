@@ -6,6 +6,8 @@ pos: noun
 forms: [noose]
 sources: [llm]
 status: enriched
+chart: clasp
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[clench]] — Use 'noose' for a general loop that tightens, while 'clench' specifically refers to a small noose made by seizing (binding) the rope.
+- synonym: [[loop]]
+- synonym: [[snare]]
+- synonym: [[trap]]
+- collocation: [[tighten]]
+- collocation: [[hang]]
+- collocation: [[rope]]
+- collocation: [[slipknot]]
+- collocation: [[neck]]

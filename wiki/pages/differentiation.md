@@ -9,6 +9,8 @@ rank: 319
 sfi: 56.646
 sources: [wordnet, llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[discrimination]] — Use 'discrimination' when emphasizing the precise detection of subtle distinctions, often in technical or analytical contexts.
 - advanced_form: [[distinction]] — Use 'distinction' when focusing on the result or state of being different, rather than the process of differentiating.
+- collocation: [[gangliocyte]]
+- synonym: [[morphogenesis]]

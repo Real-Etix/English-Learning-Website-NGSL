@@ -9,6 +9,8 @@ rank: 798
 sfi: 60.78
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,14 @@ a position on a scale of intensity or amount or quality
 - advanced_form: [[magnitude]] — Use 'magnitude' for the scale or size of something, especially in scientific or formal contexts, when emphasizing the large extent or importance.
 - advanced_form: [[intensity]] — Use 'intensity' for the strength or concentration of a quality, especially when referring to force, brightness, or emotional strength.
 - builds_on: [[diploma]] — Use 'degree' specifically for university-level awards (e.g., Bachelor's), whereas 'diploma' can refer to high school or vocational documents.
+- collocation: [[bioscience]]
+- collocation: [[divinity]]
+- collocation: [[inordinate]]
+- collocation: [[panorama]]
+- collocation: [[polynomial]]
+- collocation: [[polytechnic]]
+- collocation: [[postgraduate]]
+- collocation: [[retroflexion]]
+- collocation: [[conferment]]
+- collocation: [[conferral]]
+- collocation: [[employable]]

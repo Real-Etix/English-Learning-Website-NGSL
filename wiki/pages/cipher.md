@@ -6,6 +6,8 @@ pos: noun
 forms: [cipher]
 sources: [llm]
 status: enriched
+chart: null
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,7 @@ _No sourced examples yet._
 - builds_on: [[null]] — Use 'cipher' for a person or thing of no significance, emphasizing worthlessness.
 - builds_on: [[encode]] — Use 'cipher' as a more formal or historical alternative to 'encode', though it is less common in modern everyday use.
 - builds_on: [[initial]] — Use 'cipher' in formal or historical contexts to mean a monogram or a cryptic symbol representing a person's initials, whereas 'initial' is the straightforward first letter.
+- synonym: [[encipher]]
+- synonym: [[encrypt]]
+- synonym: [[nobody]]
+- builds_on: [[zero]] — Use metaphorically for a person or thing of no value, adding a formal and almost poetic tone.

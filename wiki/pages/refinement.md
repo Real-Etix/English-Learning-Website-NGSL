@@ -6,6 +6,8 @@ pos: noun
 forms: [refinement]
 sources: [llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[optimization]] — Use tone down the focus on achieving the absolute best; refinement implies gradual improvement rather than perfect optimization.
 - builds_on: [[improvement]] — Use 'refinement' for a subtle, incremental improvement that makes something more polished or precise.
 - builds_on: [[enhancement]] — Use for subtle, detailed improvements, often in processes or designs.
+- synonym: [[cultivation]]
+- synonym: [[exquisiteness]]

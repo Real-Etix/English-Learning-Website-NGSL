@@ -6,6 +6,8 @@ pos: noun
 forms: [undersheriff]
 sources: [llm]
 status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition

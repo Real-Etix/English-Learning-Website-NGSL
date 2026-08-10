@@ -6,6 +6,8 @@ pos: noun
 forms: [writ]
 sources: [llm]
 status: enriched
+chart: to
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[warrant]] — Use 'writ' when referring to any formal written order from a court, whereas 'warrant' is specifically for arrest or search.
+- synonym: [[decree]]
+- synonym: [[order]]
+- synonym: [[mandate]]
+- collocation: [[issue]]
+- collocation: [[petition]]
+- collocation: [[quash]]
+- collocation: [[service]]

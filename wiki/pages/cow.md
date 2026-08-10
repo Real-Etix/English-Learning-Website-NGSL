@@ -9,6 +9,8 @@ rank: 2551
 sfi: 53.79
 sources: [wordnet, llm]
 status: enriched
+chart: steer
+region: you
 ---
 
 ## Definition

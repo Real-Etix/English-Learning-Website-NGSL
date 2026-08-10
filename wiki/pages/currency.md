@@ -9,6 +9,8 @@ rank: 2144
 sfi: 55.09
 sources: [wordnet, llm]
 status: enriched
+chart: currency
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,13 @@ _No sourced examples yet._
 - builds_on: [[franc]] — Use 'currency' when switching from naming a specific monetary unit to discussing the general medium of exchange.
 - advanced_form: [[tender]] — Use 'tender' when emphasizing the official, legally recognized status of currency in transactions.
 - advanced_form: [[specie]] — Use 'specie' when referring to coins, especially gold or silver, as opposed to paper money or digital currency.
+- collocation: [[debase]]
+- collocation: [[debasement]]
+- synonym: [[euro]]
+- collocation: [[hedging]]
+- synonym: [[modernity]]
+- synonym: [[peso]]
+- collocation: [[revaluation]]
+- collocation: [[rmb]]
+- builds_on: [[peso]] — Use when referring to the official money system of a country, not a specific coin or note.
+- builds_on: [[euro]] — Use 'currency' when focusing on the monetary system or type of money, rather than the specific name of the unit.

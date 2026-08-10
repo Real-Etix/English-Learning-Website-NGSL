@@ -9,6 +9,8 @@ rank: 684
 sfi: 52.64
 sources: [wordnet, llm]
 status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[disregard]] — Use when deliberately ignoring something or treating it as unimportant, often with intention.
 - advanced_form: [[neglect]] — Use when failing to give proper attention or care to something, often resulting in oversight or omission.
 - advanced_form: [[discount]] — Use when dismissing or considering something as not worth considering, often in decision-making or evaluation.
+- synonym: [[condone]]

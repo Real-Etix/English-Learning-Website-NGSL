@@ -9,6 +9,8 @@ rank: 2647
 sfi: 53.46
 sources: [wordnet, llm]
 status: enriched
+chart: extract
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,13 @@ remove, usually with some force or effort
 - advanced_form: [[wrest]] — Use 'wrest' instead of 'extract' when the removal involves a struggle or forceful taking from someone or something.
 - advanced_form: [[wrench]] — Use 'wrench' instead of 'extract' when the removal involves a sudden, violent twisting or pulling motion.
 - advanced_form: [[dislodge]] — Use 'dislodge' instead of 'extract' when removing something that is stuck or firmly fixed in a position.
+- synonym: [[cull]]
+- synonym: [[distill]]
+- synonym: [[distillate]]
+- synonym: [[glean]]
+- synonym: [[infusion]]
+- synonym: [[leach]]
+- synonym: [[wring]]
+- synonym: [[aspirate]]
+- synonym: [[excerpt]]
+- synonym: [[flavorant]]

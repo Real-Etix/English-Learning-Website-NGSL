@@ -6,6 +6,8 @@ pos: noun
 forms: [confederation]
 sources: [llm]
 status: enriched
+chart: no
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[coalition]] — Use 'confederation' to emphasize a looser, more decentralized structure than a typical coalition, especially for political entities.
 - builds_on: [[alliance]] — Use 'confederation' when referring to a formal union of groups or states with shared goals but retaining autonomy.
 - builds_on: [[alignment]] — Use 'confederation' when the group consists of independent entities that retain sovereignty but cooperate on common issues.
+- synonym: [[federation]]

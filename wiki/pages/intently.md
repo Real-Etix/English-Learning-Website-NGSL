@@ -9,6 +9,8 @@ rank: 1225
 sfi: 49.46
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: intently
+region: intently
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 154
 sfi: 59.02
 sources: [wordnet, llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - advanced_form: [[carriage]] — Use 'carriage' to describe the way one holds and moves their body while standing, especially in a formal or elegant context.
 - builds_on: [[asana]] — Use 'stance' when emphasizing the specific positioning of the body, particularly the feet or legs, often in athletic or stable contexts.
 - builds_on: [[attitude]] — Use 'stance' when referring to a deliberate, often public position on an issue, rather than a general mindset.
+- collocation: [[assertive]]
+- collocation: [[reactionary]]
+- collocation: [[resolute]]
+- synonym: [[straddle]]

@@ -9,6 +9,8 @@ rank: 342
 sfi: 53.96
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,5 @@ bring under control by force or authority
 - advanced_form: [[repress]] — Use 'repress' when the control is harsh, sustained, and often involves restricting expression or opposition.
 - builds_on: [[crush]] — Use 'suppress' when focusing on preventing something from being expressed or known, often by force; stronger than 'crush' in the context of stifling opposition.
 - builds_on: [[retain]] — Use this instead of 'retain' when you mean to hold back or prevent something from being expressed or released, like an emotion or reaction.
+- synonym: [[oppress]]
+- builds_on: [[withhold]] — Use when holding back emotions, information, or reactions.

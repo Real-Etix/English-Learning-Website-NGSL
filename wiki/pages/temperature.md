@@ -9,6 +9,8 @@ rank: 1452
 sfi: 57.61
 sources: [wordnet, llm]
 status: enriched
+chart: seize
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[fever]] — Use 'fever' specifically for elevated body temperature, not for general environmental temperature.
 - advanced_form: [[cold]] — Use 'cold' as a noun for low temperature, often in weather or physical sensation.
 - advanced_form: [[heat]] — Use 'heat' as a noun for high temperature, often in weather or physical sensation.
+- collocation: [[ambient]]
+- collocation: [[modulate]]
+- collocation: [[reduced]]
+- synonym: [[pyrexia]]

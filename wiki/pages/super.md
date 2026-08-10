@@ -9,6 +9,8 @@ rank: 37
 sfi: 64.99
 sources: [wordnet, llm]
 status: enriched
+chart: outstanding
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ of the highest quality
 - advanced_form: [[superb]] — Use 'superb' to emphasize extremely high quality, more formal than 'super'.
 - advanced_form: [[exceptional]] — Use 'exceptional' when something is unusually good, beyond normal standards.
 - advanced_form: [[outstanding]] — Use 'outstanding' to highlight excellence that stands out from others.
+- synonym: [[excellent]]
+- synonym: [[top]]
+- synonym: [[great]]
+- collocation: [[job]]
+- collocation: [[idea]]

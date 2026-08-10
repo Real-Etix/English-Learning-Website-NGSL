@@ -6,6 +6,8 @@ pos: noun
 forms: [pharmacology]
 sources: [llm]
 status: enriched
+chart: synthetic
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[medicine]] — Use when emphasizing the scientific study of drugs and their effects, a key part of nonsurgical medicine.
+- collocation: [[clinical]]
+- collocation: [[molecular]]
+- collocation: [[experimental]]
+- collocation: [[department]]
+- collocation: [[course]]

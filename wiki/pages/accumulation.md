@@ -9,6 +9,8 @@ rank: 389
 sfi: 55.973
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[accretion]] — Use 'accretion' for gradual, natural buildup of layers or material, often in geology or growth.
 - advanced_form: [[aggregation]] — Use 'aggregation' when referring to grouping or collecting items, especially data or objects.
 - advanced_form: [[buildup]] — Use 'buildup' for a gradual increase of something undesirable, like substances or pressure.
+- collocation: [[colluvium]]

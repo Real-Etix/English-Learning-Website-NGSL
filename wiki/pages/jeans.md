@@ -7,8 +7,10 @@ forms: [jeans, jean]
 lists: [toeic]
 rank: 1145
 sfi: 49.8
-sources: [wordnet, dictionaryapi]
-status: seeded
+sources: [wordnet, dictionaryapi, llm]
+status: enriched
+chart: some
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ status: seeded
 - domain: toeic
 - collocation: [[jacket]]
 - collocation: [[most]]
+- advanced_form: [[denims]] — Use for a more formal or literary tone instead of 'jeans'.
+- advanced_form: [[trousers]] — Use as a general, formal term for pants when the specific type doesn't matter.

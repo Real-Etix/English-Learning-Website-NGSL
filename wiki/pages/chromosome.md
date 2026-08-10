@@ -9,6 +9,8 @@ rank: 102
 sfi: 58.774
 sources: [wordnet, llm]
 status: enriched
+chart: chromosome
+region: chromosome
 ---
 
 ## Definition

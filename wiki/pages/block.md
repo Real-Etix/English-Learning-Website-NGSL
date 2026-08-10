@@ -9,6 +9,8 @@ rank: 1020
 sfi: 59.51
 sources: [wordnet, llm]
 status: enriched
+chart: bar
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,16 @@ render unsuitable for passage
 - advanced_form: [[impede]] — Use when something slows down or interferes with movement or progress, not necessarily a complete blockage.
 - advanced_form: [[bar]] — Use when someone or something prevents access, often by official or authoritative action.
 - builds_on: [[pulley]] — Use 'block' when referring to the entire pulley mechanism including the frame and sheaves, common in nautical or industrial contexts.
+- synonym: [[barricade]]
+- synonym: [[bloc]]
+- synonym: [[boulder]]
+- synonym: [[brick]]
+- synonym: [[congest]]
+- collocation: [[copolymer]]
+- synonym: [[ingot]]
+- synonym: [[intercept]]
+- synonym: [[occlude]]
+- synonym: [[paver]]
+- synonym: [[billet]]
+- collocation: [[ganglion]]
+- collocation: [[subarachnoid]]

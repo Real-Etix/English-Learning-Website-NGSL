@@ -9,6 +9,8 @@ rank: 1209
 sfi: 49.46
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: arm
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ anything that is cast aside or discarded
 - advanced_form: [[castoff]] — Use 'castoff' to emphasize something discarded by someone and often passed along, not just thrown away.
 - advanced_form: [[reject]] — Use 'reject' for something discarded because it fails standards, especially in manufacturing or selection.
 - advanced_form: [[throwaway]] — Use 'throwaway' for something cheap or disposable, intended to be discarded after use.
+- synonym: [[disposeof]]
+- synonym: [[shed]]
+- synonym: [[slough]]

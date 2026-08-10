@@ -9,6 +9,8 @@ rank: 676
 sfi: 61.5
 sources: [wordnet, llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[requisite]] — Use 'requisite' when what is needed is a formal requirement or condition.
 - advanced_form: [[indispensable]] — Use 'indispensable' when something is so essential that you cannot succeed without it.
 - advanced_form: [[imperative]] — Use 'imperative' when stressing the urgent necessity of an action.
+- collocation: [[accoutrements]]
+- synonym: [[essential]]
+- collocation: [[whenever]]
+- synonym: [[integral]]

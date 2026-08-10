@@ -9,6 +9,8 @@ rank: 768
 sfi: 60.96
 sources: [wordnet]
 status: seeded
+chart: some
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ status: seeded
 - synonym: [[most]]
 - synonym: [[near]]
 - synonym: [[virtually]]
+- synonym: [[closely]]

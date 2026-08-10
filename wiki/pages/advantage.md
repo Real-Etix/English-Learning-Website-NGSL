@@ -9,6 +9,8 @@ rank: 773
 sfi: 60.94
 sources: [wordnet, llm]
 status: enriched
+chart: disadvantage
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ the quality of having a superior or more favorable position
 - advanced_form: [[leverage]] — Use 'leverage' when the advantage is strategic and can be used to influence outcomes, especially in business or bargaining.
 - advanced_form: [[precedence]] — Use 'precedence' when the advantage involves priority or superior rank in a formal order.
 - builds_on: [[plus]] — Use 'advantage' when emphasizing a gain or edge over others, rather than a general positive quality.
+- synonym: [[boon]]
+- synonym: [[expediency]]

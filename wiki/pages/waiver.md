@@ -6,6 +6,8 @@ pos: noun
 forms: [waiver]
 sources: [llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[exception]] — Use 'waiver' instead of 'exception' in legal or formal contexts where a requirement is deliberately omitted, often by choice.
+- synonym: [[dispensation]]
+- synonym: [[renunciation]]
+- synonym: [[relinquishment]]
+- synonym: [[release]]
+- synonym: [[exemption]]
+- collocation: [[sign]]
+- collocation: [[liability]]
+- collocation: [[legal]]
+- collocation: [[insurance]]

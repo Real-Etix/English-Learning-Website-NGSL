@@ -6,6 +6,8 @@ pos: noun
 forms: [seaboard]
 sources: [llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[coast]] — Use to refer to a large region or stretch of land along the coast, often in a formal or geographical context.
+- synonym: [[littoral]]

@@ -9,6 +9,8 @@ rank: 663
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: sweet
+region: sweet
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[confection]] — Use 'confection' instead of 'candy' when referring to elaborate or high-quality sweet treats, often in a formal or descriptive context.
 - advanced_form: [[sweets]] — Use 'sweets' instead of 'candy' in British or more formal English, especially when referring to sugary treats in general.
+- synonym: [[bubblegum]]
+- synonym: [[confectionery]]
+- collocation: [[wrapper]]

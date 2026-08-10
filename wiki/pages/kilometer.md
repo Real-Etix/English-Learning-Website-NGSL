@@ -9,6 +9,8 @@ rank: 500
 sfi: 52.98
 sources: [wordnet, llm]
 status: enriched
+chart: kilometer
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[klick]] — Use 'klick' in informal or specialized settings to sound more natural, but avoid in formal writing.
 - advanced_form: [[click]] — Same as klick, less common but recognized in informal contexts.
 - builds_on: [[meter]] — Use 'kilometer' when referring to a larger unit of length, often in geography or engineering contexts.
+- collocation: [[per]]
+- collocation: [[hour]]
+- collocation: [[distance]]
+- collocation: [[marker]]
+- collocation: [[sign]]

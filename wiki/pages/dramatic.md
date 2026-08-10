@@ -9,6 +9,8 @@ rank: 1975
 sfi: 55.6
 sources: [wordnet, llm]
 status: enriched
+chart: notable
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ suitable to or characteristic of drama
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[theatrical]] — Use 'theatrical' instead of 'dramatic' when emphasizing a deliberate, stage-like quality, often in a positive or neutral way.
 - advanced_form: [[histrionic]] — Use 'histrionic' to describe overly dramatic, exaggerated behavior that seems fake or attention-seeking, with a negative connotation.
+- collocation: [[climax]]
+- collocation: [[denouement]]
+- synonym: [[drastic]]
+- collocation: [[recasting]]
+- collocation: [[transfiguration]]

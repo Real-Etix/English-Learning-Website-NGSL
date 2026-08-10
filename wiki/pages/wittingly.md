@@ -6,6 +6,8 @@ pos: adverb
 forms: [wittingly]
 sources: [llm]
 status: enriched
+chart: deliberately
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[deliberately]] — Use 'wittingly' to emphasize that the person acted with full knowledge of what they were doing, often implying they knew the consequences.
+- synonym: [[intentionally]]

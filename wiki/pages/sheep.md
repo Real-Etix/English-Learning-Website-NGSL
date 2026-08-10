@@ -7,8 +7,10 @@ forms: [sheep]
 lists: [ngsl]
 rank: 2710
 sfi: 53.16
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- advanced_form: [[ovine]] — Use in scientific or formal writing to refer to sheep collectively or as a species.
+- advanced_form: [[ewe]] — Use when specifying a female sheep.
+- advanced_form: [[ram]] — Use when specifying a male sheep.

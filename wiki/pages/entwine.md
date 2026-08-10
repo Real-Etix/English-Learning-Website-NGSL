@@ -6,6 +6,8 @@ pos: verb
 forms: [entwine]
 sources: [llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition

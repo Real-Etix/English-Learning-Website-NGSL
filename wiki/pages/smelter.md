@@ -6,6 +6,8 @@ pos: noun
 forms: [smelter]
 sources: [llm]
 status: enriched
+chart: refinery
+region: refinery
 ---
 
 ## Definition

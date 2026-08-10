@@ -9,6 +9,8 @@ rank: 154
 sfi: 67.83
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,11 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[reason]]
+- synonym: [[cause]]
+- synonym: [[motive]]
+- synonym: [[explanation]]
+- synonym: [[purpose]]
+- collocation: [[ask]]
+- collocation: [[know]]
+- collocation: [[understand]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [bulker]
 sources: [llm]
 status: enriched
+chart: plant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[freighter]] — Use 'bulker' for a freighter designed for bulk cargo like grain or ore.
+- synonym: [[vessel]]
+- synonym: [[carrier]]

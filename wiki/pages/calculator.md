@@ -9,6 +9,8 @@ rank: 276
 sfi: 55.2
 sources: [wordnet, llm]
 status: enriched
+chart: unplug
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[computer]] — Use 'computer' instead of 'calculator' when referring to a person skilled at arithmetic, especially in historical or formal contexts; note that modern usage usually refers to a machine.
 - advanced_form: [[arithmetician]] — Use 'arithmetician' instead of 'calculator' when emphasizing formal expertise in arithmetic, often in academic or professional settings.
+- collocation: [[human]]
+- collocation: [[mental]]
+- collocation: [[expert]]
+- collocation: [[operator]]

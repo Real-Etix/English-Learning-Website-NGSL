@@ -6,6 +6,8 @@ pos: adjective
 forms: [treacherous]
 sources: [llm]
 status: enriched
+chart: hazardous
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hazardous]] — Use 'treacherous' when the hazard is deceptive or hidden, like unstable ground or bad weather.
+- synonym: [[dangerous]]

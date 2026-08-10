@@ -9,6 +9,8 @@ rank: 105
 sfi: 58.755
 sources: [wordnet, llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ an arrangement of parts or elements
 - builds_on: [[mold]] — Emphasizes the arrangement or design of parts; suitable for technical or formal descriptions.
 - builds_on: [[formation]] — Use 'configuration' to emphasize the specific arrangement or pattern of parts, often in technical or abstract contexts.
 - builds_on: [[composition]] — Use 'configuration' when emphasizing the specific spatial arrangement or pattern of parts, often in a technical or precise context.
+- synonym: [[constellation]]
+- collocation: [[reinitialize]]
+- synonym: [[geometry]]

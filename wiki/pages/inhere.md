@@ -6,6 +6,8 @@ pos: verb
 forms: [inhere]
 sources: [llm]
 status: enriched
+chart: persist
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[consist]] — Use 'inhere' when you want to emphasize that something is an essential, permanent part of the cause, more formal than 'consist in'.
+- synonym: [[reside]]
+- synonym: [[lie]]
+- synonym: [[belong]]
+- synonym: [[exist]]
+- collocation: [[in]]
+- collocation: [[within]]

@@ -9,6 +9,8 @@ rank: 2179
 sfi: 54.98
 sources: [wordnet, llm]
 status: enriched
+chart: strain
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[elongation]] — Use 'elongation' specifically for stretching or tensile deformation along one axis, rather than general strain.
 - builds_on: [[tune]] — Use 'strain' to evoke a more poetic or emotional quality, often for a brief or fragmentary melody.
 - builds_on: [[species]] — Use 'strain' for microorganisms or viruses, emphasizing a genetic variant within a species.
+- synonym: [[melody]]
+- collocation: [[muscle]]
+- synonym: [[overwork]]
+- collocation: [[virulent]]

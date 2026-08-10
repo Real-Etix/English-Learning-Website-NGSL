@@ -9,6 +9,8 @@ rank: 881
 sfi: 52.61
 sources: [wordnet, llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ _No sourced examples yet._
 - builds_on: [[grant]] — Use 'endowment' instead of 'grant' when the monetary aid comes from a permanent fund or donation, typically for an institution's ongoing support.
 - builds_on: [[gift]] — Use 'endowment' for a permanent fund or gift, often for institutions, implying ongoing support.
 - builds_on: [[charity]] — Use 'endowment' to emphasize the financial fund or assets that generate income for charitable work, not the organization itself.
+- synonym: [[benefaction]]
+- synonym: [[bequest]]
+- synonym: [[conferment]]

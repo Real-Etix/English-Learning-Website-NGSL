@@ -9,6 +9,8 @@ rank: 1007
 sfi: 51.83
 sources: [wordnet, llm]
 status: enriched
+chart: attributable
+region: attributable
 ---
 
 ## Definition

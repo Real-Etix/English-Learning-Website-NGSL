@@ -9,6 +9,8 @@ rank: 912
 sfi: 60.16
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[cultivate]] — Use 'cultivate' when the focus is on actively working to develop or refine something, like a habit or talent, over time.
 - advanced_form: [[promote]] — Use 'promote' when advocating for or actively advancing a cause, idea, or product, often with a more public or proactive connotation than 'encourage'.
 - builds_on: [[foster]] — Focuses on giving support or confidence; less about direct growth and more about enabling or motivating.
+- synonym: [[embolden]]
+- synonym: [[invite]]
+- synonym: [[incite]]

@@ -9,6 +9,8 @@ rank: 552
 sfi: 62.46
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,15 @@ the unlimited expanse in which everything is located
 - advanced_form: [[expanse]] — Use 'expanse' to emphasize the sweeping, continuous area of space, often with a sense of grandeur or scale.
 - advanced_form: [[void]] — Use 'void' to highlight the emptiness and darkness of space, often in a poetic or dramatic context.
 - builds_on: [[blank]] — Use 'space' instead of 'blank' when referring to the character that separates words in writing or typing.
+- collocation: [[cavernous]]
+- collocation: [[cramped]]
+- collocation: [[cupboard]]
+- collocation: [[curvature]]
+- collocation: [[enclosed]]
+- collocation: [[exploration]]
+- collocation: [[observatory]]
+- collocation: [[opera]]
+- collocation: [[voyager]]
+- synonym: [[whitespace]]
+- synonym: [[ether]]
+- collocation: [[subarachnoid]]

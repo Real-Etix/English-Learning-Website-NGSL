@@ -6,6 +6,8 @@ pos: noun
 forms: [enclave]
 sources: [llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition

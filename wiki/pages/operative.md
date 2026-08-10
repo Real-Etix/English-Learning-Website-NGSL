@@ -9,6 +9,8 @@ rank: 799
 sfi: 51.98
 sources: [wordnet, llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ being in force or having or exerting force
 - advanced_form: [[efficacious]] — Use 'efficacious' when describing something that has the power to produce a specific effect, especially in medical or scientific contexts, as a more formal alternative to 'operative'.
 - builds_on: [[underway]] — Use 'operative' when emphasizing that a plan, system, or rule is active and in effect; it's more precise than 'underway' for official or mechanical contexts.
 - builds_on: [[functional]] — Use 'operative' for formal contexts, especially technical or mechanical, to emphasize that something is currently functioning.
+- synonym: [[operant]]
+- builds_on: [[surgical]] — Use 'operative' in formal medical writing when referring to surgery as a course of treatment.
+- synonym: [[apparatchik]]
+- synonym: [[excisional]]
+- synonym: [[incisional]]

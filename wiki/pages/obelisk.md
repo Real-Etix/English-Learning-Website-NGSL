@@ -6,6 +6,8 @@ pos: noun
 forms: [obelisk]
 sources: [llm]
 status: enriched
+chart: tower
+region: tower
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tower]] — Use 'obelisk' for a tall, four-sided stone pillar that tapers to a pyramid top, often a monument.
+- synonym: [[column]]
+- synonym: [[monument]]
+- synonym: [[shaft]]
+- collocation: [[ancient]]
+- collocation: [[tall]]
+- collocation: [[standing]]

@@ -9,6 +9,8 @@ rank: 732
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: pill
+region: pill
 ---
 
 ## Definition

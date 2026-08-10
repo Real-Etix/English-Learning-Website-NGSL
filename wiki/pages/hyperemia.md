@@ -6,6 +6,8 @@ pos: noun
 forms: [hyperemia]
 sources: [llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[congestion]] — Use 'hyperemia' in medical or technical contexts to describe increased blood flow to an area, often causing redness and warmth.
+- synonym: [[engorgement]]
+- synonym: [[fullness]]
+- synonym: [[plethora]]
+- collocation: [[active]]
+- collocation: [[passive]]
+- collocation: [[reactive]]

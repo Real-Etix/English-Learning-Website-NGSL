@@ -9,6 +9,8 @@ rank: 810
 sfi: 52.92
 sources: [wordnet, llm]
 status: enriched
+chart: refine
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ improve or perfect by pruning or polishing
 - advanced_form: [[streamline]] — Use 'streamline' when the improvement is about making something more efficient or simpler, often by removing unnecessary parts, rather than just perfecting detail.
 - builds_on: [[optimize]] — Use 'refine' to stress making small improvements or adjustments to perfect something, often a process or skill.
 - builds_on: [[specialize]] — Use 'refine' to suggest making something more precise or polished, whereas 'specialize' is about narrowing your field.
+- synonym: [[distill]]
+- synonym: [[fine-tune]]
+- synonym: [[purify]]

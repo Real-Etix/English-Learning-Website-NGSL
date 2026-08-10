@@ -6,6 +6,8 @@ pos: noun
 forms: [therapeutics]
 sources: [llm]
 status: enriched
+chart: synthetic
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[medicine]] — Use when referring to the specific branch of medicine focusing on treating diseases without surgery.
 - builds_on: [[therapy]] — Use instead of 'therapy' when referring to the scientific study or methodology behind treatments, especially in formal or academic contexts.
+- builds_on: [[healthcare]] — Use for the branch of healthcare focused specifically on treating disease.

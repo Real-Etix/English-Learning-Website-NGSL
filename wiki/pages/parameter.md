@@ -9,6 +9,8 @@ rank: 4
 sfi: 64.369
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,4 @@ a constant in the equation of a curve that can be varied to yield a family of si
 - builds_on: [[coefficient]] — Use 'parameter' instead of 'coefficient' when the constant is part of a model's adjustable settings, often in equations.
 - builds_on: [[variable]] — Use 'parameter' when referring to a variable that defines a system or process, often in technical or scientific contexts.
 - builds_on: [[statistic]] — Use 'parameter' when the statistic defines a characteristic or boundary of a system, especially in mathematics or computing.
+- synonym: [[modulus]]

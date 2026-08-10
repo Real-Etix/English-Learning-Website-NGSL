@@ -9,6 +9,8 @@ rank: 1000
 sfi: 59.62
 sources: [wordnet, llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[preference]] — Use 'preference' when you want a more formal tone, especially in decision-making or evaluation contexts.
 - advanced_form: [[beloved]] — Use 'beloved' for a person (or thing) that is deeply loved; it adds emotional weight and is more literary than 'favorite'.
 - advanced_form: [[selection]] — Use 'selection' when referring to something chosen from a group, often in formal or structured settings.
+- collocation: [[auntie]]
+- collocation: [[plaything]]
+- collocation: [[indulgence]]

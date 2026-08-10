@@ -6,6 +6,8 @@ pos: adjective
 forms: [immersed]
 sources: [llm]
 status: enriched
+chart: static
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[busy]] — Use when someone is fully involved and surrounded by the task, often implying a total focus.
+- synonym: [[engrossed]]
+- synonym: [[deep]]
+- collocation: [[completely]]
+- collocation: [[deeply]]
+- collocation: [[fully]]
+- collocation: [[totally]]
+- collocation: [[in]]

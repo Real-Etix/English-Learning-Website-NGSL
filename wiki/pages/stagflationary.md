@@ -6,6 +6,8 @@ pos: adjective
 forms: [stagflationary]
 sources: [llm]
 status: enriched
+chart: inflationary
+region: inflationary
 ---
 
 ## Definition

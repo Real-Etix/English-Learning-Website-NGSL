@@ -6,6 +6,8 @@ pos: noun
 forms: [sternutation]
 sources: [llm]
 status: enriched
+chart: sneeze
+region: sneeze
 ---
 
 ## Definition

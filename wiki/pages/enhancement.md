@@ -9,6 +9,8 @@ rank: 1491
 sfi: 50.39
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[augmentation]] — Use when emphasizing an increase in size, value, or capability.
 - advanced_form: [[refinement]] — Use for subtle, detailed improvements, often in processes or designs.
 - advanced_form: [[upgrade]] — Use for replacing or improving technology, facilities, or status.
+- synonym: [[amplification]]
+- synonym: [[betterment]]
+- synonym: [[embellishment]]

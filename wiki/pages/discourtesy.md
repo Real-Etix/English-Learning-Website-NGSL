@@ -6,6 +6,8 @@ pos: noun
 forms: [discourtesy]
 sources: [llm]
 status: enriched
+chart: offense
+region: offense
 ---
 
 ## Definition

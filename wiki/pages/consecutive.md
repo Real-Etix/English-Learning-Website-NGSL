@@ -9,6 +9,8 @@ rank: 966
 sfi: 50.89
 sources: [wordnet, llm]
 status: enriched
+chart: annuity
+region: you
 ---
 
 ## Definition

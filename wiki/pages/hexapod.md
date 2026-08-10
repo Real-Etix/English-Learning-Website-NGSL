@@ -6,6 +6,8 @@ pos: noun
 forms: [hexapod]
 sources: [llm]
 status: enriched
+chart: insect
+region: insect
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 300
 sfi: 55.8
 sources: [wordnet, llm]
 status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 
 ## Connections
 - domain: fitness
+- synonym: [[drawer]]

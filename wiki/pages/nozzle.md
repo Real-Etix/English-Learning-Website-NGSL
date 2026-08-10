@@ -6,6 +6,8 @@ pos: noun
 forms: [nozzle]
 sources: [llm]
 status: enriched
+chart: shower
+region: shower
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shower]] — Use in a technical or mechanical context, focusing on the water outlet.
+- synonym: [[muzzle]]
+- synonym: [[outlet]]
+- synonym: [[jet]]

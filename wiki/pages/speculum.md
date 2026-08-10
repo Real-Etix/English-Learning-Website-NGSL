@@ -6,6 +6,8 @@ pos: noun
 forms: [speculum]
 sources: [llm]
 status: enriched
+chart: embody
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mirror]] — Use 'speculum' in technical contexts like medicine or physics; avoid for household mirrors.
+- synonym: [[reflector]]

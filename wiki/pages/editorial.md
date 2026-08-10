@@ -9,6 +9,8 @@ rank: 571
 sfi: 52.47
 sources: [wordnet, llm]
 status: enriched
+chart: editorial
+region: editorial
 ---
 
 ## Definition

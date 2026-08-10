@@ -6,6 +6,8 @@ pos: verb
 forms: [shudder]
 sources: [llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition

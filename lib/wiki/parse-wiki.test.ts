@@ -7,7 +7,7 @@ const page = (frontmatter: string, body: string) =>
 
 describe("parsePage", () => {
   const p = page(
-    "lemma: big\ndisplay: big\ntier: core\npos: adjective\nforms: [big, bigger]\nlists: [ngsl]\nrank: 184\nstatus: enriched",
+    "lemma: big\ndisplay: big\ntier: core\npos: adjective\nforms: [big, bigger]\nlists: [ngsl]\nrank: 184\nsfi: 67.22\nstatus: enriched",
     "## Definition\nabove average in size\n\n## Examples\n- a big house _(wordnet)_\n\n## Connections\n- synonym: [[large]]\n- advanced_form: [[enormous]] — reach higher\n- domain: size\n",
   );
 
@@ -18,6 +18,7 @@ describe("parsePage", () => {
     expect(p.forms).toEqual(["big", "bigger"]);
     expect(p.lists).toEqual(["ngsl"]);
     expect(p.rank).toBe(184);
+    expect(p.sfi).toBe(67.22);
   });
 
   it("parses the definition and strips the example's source tag", () => {

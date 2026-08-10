@@ -6,6 +6,8 @@ pos: noun
 forms: [primacy]
 sources: [llm]
 status: enriched
+chart: adverse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[priority]] — Use to emphasize the highest rank or most important status among several items.
+- synonym: [[supremacy]]
+- synonym: [[predominance]]
+- synonym: [[precedence]]
+- synonym: [[dominance]]

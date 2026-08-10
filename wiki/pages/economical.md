@@ -9,6 +9,8 @@ rank: 365
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: economical
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ using the minimum of time or resources necessary for effectiveness
 - advanced_form: [[thrifty]] — Use 'thrifty' when focusing on saving money or resources through careful planning, while 'economical' can also refer to efficiency in time or effort.
 - builds_on: [[inexpensive]] — Use 'economical' when focusing on saving money or resources over time, not just a low initial price.
 - builds_on: [[cheap]] — Use 'economical' to highlight efficiency and value for money, often for ongoing costs like fuel or maintenance, rather than just initial price.
+- synonym: [[affordable]]
+- builds_on: [[affordable]] — Use when emphasizing good value for money, especially regarding ongoing costs or resources.

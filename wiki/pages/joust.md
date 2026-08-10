@@ -6,6 +6,8 @@ pos: noun
 forms: [joust]
 sources: [llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tilt]] — Use 'joust' for the formal name of the combat event; 'tilt' is an older term for the same.
+- synonym: [[tournament]]
+- synonym: [[combat]]
+- synonym: [[match]]
+- collocation: [[between]]
+- collocation: [[with]]
+- collocation: [[at]]

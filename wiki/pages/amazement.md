@@ -6,6 +6,8 @@ pos: noun
 forms: [amazement]
 sources: [llm]
 status: enriched
+chart: wonder
+region: wonder
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[surprise]] — Use when surprise is mixed with wonder or admiration, often for something impressive or beautiful.
 - builds_on: [[wonder]] — Use 'amazement' for intense wonder that causes shock or disbelief, often from an unexpected event.
+- synonym: [[awe]]

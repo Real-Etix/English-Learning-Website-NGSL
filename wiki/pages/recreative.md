@@ -6,6 +6,8 @@ pos: adjective
 forms: [recreative]
 sources: [llm]
 status: enriched
+chart: recreational
+region: recreational
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[recreational]] — Use 'recreative' for a more formal tone, especially in writing about the beneficial or restorative nature of the activity compared to 'recreational'.
+- synonym: [[restorative]]
+- synonym: [[amusing]]
+- collocation: [[value]]

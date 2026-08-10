@@ -9,6 +9,8 @@ rank: 795
 sfi: 60.81
 sources: [wordnet, llm]
 status: enriched
+chart: broadcast
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ broadcasting visual images of stationary or moving objects
 - synonym: [[video]]
 - advanced_form: [[broadcast]] — Use 'broadcast' when referring to the act or process of transmission, especially in technical or formal contexts, instead of 'television' as a medium.
 - advanced_form: [[telecast]] — Use 'telecast' specifically for a single television program or broadcast event, replacing 'television' when emphasizing the transmission.
+- collocation: [[broadcasting]]
+- collocation: [[newsgathering]]

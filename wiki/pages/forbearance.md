@@ -6,6 +6,8 @@ pos: noun
 forms: [forbearance]
 sources: [llm]
 status: enriched
+chart: patience
+region: patience
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[patience]] — Use 'forbearance' when emphasizing restraint and refraining from reacting, often in the face of provocation or difficulty, more formal than 'patience'.
+- synonym: [[tolerance]]
+- synonym: [[restraint]]
+- collocation: [[show]]
+- collocation: [[exercise]]
+- collocation: [[mutual]]
+- collocation: [[with]]
+- collocation: [[act]]

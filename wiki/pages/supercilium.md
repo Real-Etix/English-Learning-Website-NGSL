@@ -6,6 +6,8 @@ pos: noun
 forms: [supercilium]
 sources: [llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition

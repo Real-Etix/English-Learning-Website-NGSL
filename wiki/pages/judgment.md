@@ -9,6 +9,8 @@ rank: 1573
 sfi: 57.11
 sources: [wordnet, llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ an opinion formed by judging something
 - advanced_form: [[assessment]] — Use 'assessment' for a careful, formal evaluation based on evidence, rather than a quick or personal opinion.
 - advanced_form: [[evaluation]] — Use 'evaluation' when referring to a systematic judgment that includes criteria or standards.
 - advanced_form: [[appraisal]] — Use 'appraisal' for an expert or professional opinion, often about value or quality.
+- collocation: [[breastplate]]
+- collocation: [[judiciousness]]
+- synonym: [[nonsuit]]
+- collocation: [[normative]]
+- synonym: [[wisdom]]
+- collocation: [[unerring]]

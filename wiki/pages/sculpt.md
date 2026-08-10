@@ -6,6 +6,8 @@ pos: verb
 forms: [sculpt]
 sources: [llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[carve]] — Use 'sculpt' instead of 'carve' when the creation involves artistic shaping of a material, often implying a refined or three-dimensional result.
+- synonym: [[chisel]]

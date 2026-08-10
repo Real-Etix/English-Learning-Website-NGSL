@@ -6,6 +6,8 @@ pos: adjective
 forms: [colossal]
 sources: [llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition

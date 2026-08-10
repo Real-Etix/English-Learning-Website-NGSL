@@ -6,6 +6,8 @@ pos: noun
 forms: [ethnography]
 sources: [llm]
 status: enriched
+chart: anthropology
+region: anthropology
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[anthropology]] — Use 'ethnography' when referring to the detailed, firsthand study of a specific culture or community, as opposed to the general academic discipline of anthropology.
+- synonym: [[ethnology]]

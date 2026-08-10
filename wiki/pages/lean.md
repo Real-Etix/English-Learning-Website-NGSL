@@ -9,6 +9,8 @@ rank: 1974
 sfi: 55.6
 sources: [wordnet, llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[list]] — Use 'list' specifically for a ship or vehicle leaning to one side, often due to imbalance or external force.
 - advanced_form: [[cant]] — Use 'cant' when describing a deliberate, often slight tilt or slant, especially in construction or geometry.
 - builds_on: [[spare]] — Use 'lean' to describe a body that is thin but muscular and healthy, more positive than 'spare'.
+- synonym: [[wiry]]

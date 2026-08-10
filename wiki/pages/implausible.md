@@ -6,6 +6,8 @@ pos: adjective
 forms: [implausible]
 sources: [llm]
 status: enriched
+chart: dependable
+region: you
 ---
 
 ## Definition

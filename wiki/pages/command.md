@@ -9,6 +9,8 @@ rank: 1714
 sfi: 56.53
 sources: [wordnet, llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[mandate]] — Use 'mandate' for a formal, often legal or political command that carries the weight of official approval or obligation.
 - advanced_form: [[decree]] — Use 'decree' for an official order issued by a ruler or legal authority, often with a sense of finality and lack of debate.
 - builds_on: [[possess]] — Use 'command' when the attribute is a skill or knowledge that the person can readily use or control, suggesting mastery and authority.
+- collocation: [[garrison]]
+- synonym: [[macro]]
+- collocation: [[nervecenter]]

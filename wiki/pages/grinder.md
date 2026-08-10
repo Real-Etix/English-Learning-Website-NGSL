@@ -6,6 +6,8 @@ pos: noun
 forms: [grinder]
 sources: [llm]
 status: enriched
+chart: interim
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sub]] — Use 'grinder' for a hot sub, often toasted, common in New England.
+- synonym: [[foodprocessor]]
+- synonym: [[hero]]
+- synonym: [[hoagie]]
+- synonym: [[sandwich]]
+- collocation: [[steak]]

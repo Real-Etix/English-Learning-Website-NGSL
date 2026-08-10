@@ -9,6 +9,8 @@ rank: 329
 sfi: 64.74
 sources: [wordnet, llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[propose]] — Use 'propose' when formally suggesting an idea or plan, especially in business or academic contexts.
 - advanced_form: [[recommend]] — Use 'recommend' when suggesting something as good or appropriate, often based on expertise or experience.
 - advanced_form: [[advocate]] — Use 'advocate' when suggesting and actively supporting a cause or policy, often publicly.
+- synonym: [[connote]]
+- synonym: [[insinuate]]
+- synonym: [[propound]]
+- collocation: [[rephrasing]]

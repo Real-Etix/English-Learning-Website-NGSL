@@ -6,6 +6,8 @@ pos: adjective
 forms: [connotative]
 sources: [llm]
 status: enriched
+chart: semantic
+region: semantic
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[semantic]] — Use 'connotative' instead of 'semantic' when focusing on the implied or associated meanings a word carries beyond its literal definition.
+- synonym: [[implicit]]
+- collocation: [[sense]]
+- collocation: [[value]]
+- collocation: [[language]]
+- collocation: [[power]]

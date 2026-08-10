@@ -9,6 +9,8 @@ rank: 2138
 sfi: 55.12
 sources: [wordnet, llm]
 status: enriched
+chart: gentleman
+region: you
 ---
 
 ## Definition

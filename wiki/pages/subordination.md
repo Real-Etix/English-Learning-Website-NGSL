@@ -6,6 +6,8 @@ pos: noun
 forms: [subordination]
 sources: [llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dependence]] — Use when emphasizing a lower rank or being under authority, not just reliance.
+- synonym: [[dependency]]
+- synonym: [[subjection]]

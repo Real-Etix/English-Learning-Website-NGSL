@@ -6,6 +6,8 @@ pos: noun
 forms: [duplication]
 sources: [llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition

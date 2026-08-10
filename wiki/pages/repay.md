@@ -9,6 +9,8 @@ rank: 236
 sfi: 56.05
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ pay back
 - advanced_form: [[reimburse]] — Use 'reimburse' when repaying someone for expenses they already paid; more formal than 'repay'.
 - advanced_form: [[recompense]] — Use 'recompense' to indicate payment as compensation for effort or loss; it carries a sense of fairness and is more formal.
 - advanced_form: [[remunerate]] — Use 'remunerate' for paying someone for services or work; it is formal and often used in professional contexts.
+- synonym: [[indemnify]]

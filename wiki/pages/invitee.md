@@ -6,6 +6,8 @@ pos: noun
 forms: [invitee]
 sources: [llm]
 status: enriched
+chart: firm
+region: you
 ---
 
 ## Definition

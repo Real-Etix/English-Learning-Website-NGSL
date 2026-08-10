@@ -9,6 +9,8 @@ rank: 474
 sfi: 55.015
 sources: [wordnet, llm]
 status: enriched
+chart: constituent
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - builds_on: [[fiber]] — Use 'strand' for a single thin piece of something (like hair, wire, or thread) that can be separated from a group, while 'fiber' often refers to material composition or fabric.
 - builds_on: [[string]] — Use 'strand' when referring to a single thin piece of a cord, or a component of a larger rope.
 - builds_on: [[desert]] — Use when someone is left in a difficult or helpless situation, often physically isolated; implies being left without means of escape.
+- synonym: [[filament]]
+- synonym: [[ply]]
+- synonym: [[foreshore]]

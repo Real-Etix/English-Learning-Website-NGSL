@@ -9,6 +9,8 @@ rank: 73
 sfi: 62.81
 sources: [wordnet, llm]
 status: enriched
+chart: elbow
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2785
 sfi: 52.32
 sources: [wordnet, llm]
 status: enriched
+chart: auditor
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - synonym: [[auditor]]
 - advanced_form: [[auditor]] — Use 'auditor' for someone who listens formally in an academic, legal, or professional setting, often to evaluate or verify.
 - advanced_form: [[hearer]] — Use 'hearer' for a general attentive listener, slightly more formal than 'listener', but less specific than 'auditor'.
+- synonym: [[attender]]
+- synonym: [[audient]]
+- synonym: [[audile]]

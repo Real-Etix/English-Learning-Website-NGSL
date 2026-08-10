@@ -9,6 +9,8 @@ rank: 21
 sfi: 61.59
 sources: [wordnet, llm]
 status: enriched
+chart: economist
+region: economist
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[econometrician]] — Use this when referring to an economist who focuses on statistical and mathematical methods to analyze economic data.
 - advanced_form: [[macro-economist]] — Use this to specify an economist who deals with large-scale economic factors like inflation, GDP, and unemployment.
 - advanced_form: [[micro-economist]] — Use this to specify an economist who analyzes decisions of households and firms in specific markets.
+- collocation: [[heterodox]]

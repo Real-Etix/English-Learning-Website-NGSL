@@ -6,6 +6,8 @@ pos: noun
 forms: [bequest]
 sources: [llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[legacy]] — Use 'bequest' instead of 'legacy' when emphasizing a gift of personal property, especially in formal or legal contexts.
+- synonym: [[inheritance]]
+- synonym: [[endowment]]
+- synonym: [[gift]]
+- synonym: [[donation]]
+- collocation: [[generous]]
+- collocation: [[charitable]]
+- collocation: [[receive]]
+- collocation: [[leave]]
+- collocation: [[make]]
+- synonym: [[heirloom]]

@@ -9,6 +9,8 @@ rank: 694
 sfi: 52.43
 sources: [wordnet, llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ belonging to a thing by its very nature
 - builds_on: [[innate]] — Use 'intrinsic' to emphasize that a quality belongs to the very nature of something, often in philosophical or evaluative contexts.
 - builds_on: [[inherent]] — Use when emphasizing an essential quality that is part of the very nature of something, especially in formal or technical contexts.
 - builds_on: [[internal]] — Use 'intrinsic' to describe a quality that is essential and inherent, rather than something that is just located inside.
+- synonym: [[congenital]]

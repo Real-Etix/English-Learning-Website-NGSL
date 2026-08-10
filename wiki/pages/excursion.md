@@ -9,6 +9,8 @@ rank: 463
 sfi: 53.29
 sources: [wordnet, llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[expedition]] — Use 'expedition' for a more organized, purposeful, or adventurous journey, often involving research or exploration, rather than a simple pleasure trip.
 - advanced_form: [[odyssey]] — Use 'odyssey' to emphasize a long, eventful, and transformative journey, often with challenges or personal growth, unlike a casual 'excursion'.
 - advanced_form: [[trek]] — Use 'trek' for a long, strenuous journey on foot, especially through rough terrain, implying more effort and endurance than a leisurely 'excursion'.
+- synonym: [[foray]]

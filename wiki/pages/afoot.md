@@ -6,6 +6,8 @@ pos: adjective
 forms: [afoot]
 sources: [llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[underway]] — Use 'afoot' for situations or plans that are secretly or informally in progress; it adds a sense of intrigue or hidden activity compared to neutral 'underway'.
+- synonym: [[ongoing]]
+- collocation: [[something]]

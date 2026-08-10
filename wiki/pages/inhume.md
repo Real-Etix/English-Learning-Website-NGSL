@@ -6,6 +6,8 @@ pos: verb
 forms: [inhume]
 sources: [llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition

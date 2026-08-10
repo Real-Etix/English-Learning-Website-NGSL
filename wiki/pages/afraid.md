@@ -9,6 +9,8 @@ rank: 1353
 sfi: 58.03
 sources: [wordnet, llm]
 status: enriched
+chart: neural
+region: you
 ---
 
 ## Definition

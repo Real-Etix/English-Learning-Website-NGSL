@@ -9,6 +9,8 @@ rank: 1195
 sfi: 50.42
 sources: [wordnet, llm]
 status: enriched
+chart: pipeline
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[apparatus]] — Use for technical or scientific equipment, often implying specialized components.
 - advanced_form: [[rig]] — Use for a customized or makeshift setup, especially in audio, video, or computing.
 - advanced_form: [[installation]] — Use for a fixed or permanently arranged setup, often involving wiring or mounting.
+- collocation: [[bivouac]]
+- synonym: [[initialize]]

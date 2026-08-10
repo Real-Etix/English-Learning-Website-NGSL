@@ -9,6 +9,8 @@ rank: 764
 sfi: 60.98
 sources: [wordnet, llm]
 status: enriched
+chart: discourse
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ an extended communication (often interactive) dealing with some particular topic
 - advanced_form: [[discourse]] — Use for formal, extended, or academic discussions, often with a structured argument.
 - advanced_form: [[deliberation]] — Use for careful, thoughtful discussion aimed at making a decision, implying serious consideration.
 - advanced_form: [[dialogue]] — Use for constructive, focused exchange between parties, often in diplomatic or collaborative contexts.
+- synonym: [[colloquy]]
+- collocation: [[enlightening]]
+- synonym: [[forum]]
+- collocation: [[forum]]
+- synonym: [[negotiation]]
+- collocation: [[panelist]]
+- synonym: [[parley]]

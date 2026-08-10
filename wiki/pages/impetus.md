@@ -6,6 +6,8 @@ pos: noun
 forms: [impetus]
 sources: [llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1839
 sfi: 56.04
 sources: [wordnet, llm]
 status: enriched
+chart: detail
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ the act of putting a person into a non-elective position
 - builds_on: [[nomination]] — Use 'appointment' when focusing on the official selection and assignment to a position, rather than the act of putting forward a candidate.
 - advanced_form: [[designation]] — Use 'designation' when emphasizing the official assignment of a role, often in formal or bureaucratic contexts.
 - advanced_form: [[nomination]] — Use 'nomination' when referring to the act of proposing or selecting someone for a position, often before final confirmation.
+- collocation: [[orthopedist]]
+- synonym: [[posting]]
+- synonym: [[residency]]
+- builds_on: [[selection]] — Use specifically for selecting someone to a position or office.

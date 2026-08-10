@@ -9,6 +9,8 @@ rank: 978
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: farewell
+region: farewell
 ---
 
 ## Definition

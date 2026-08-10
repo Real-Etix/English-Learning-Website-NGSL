@@ -6,6 +6,8 @@ pos: noun
 forms: [spheroid]
 sources: [llm]
 status: enriched
+chart: diamond
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ball]] — Use 'spheroid' for a precise scientific description, especially for balls that are not perfectly round.
+- synonym: [[ovoid]]

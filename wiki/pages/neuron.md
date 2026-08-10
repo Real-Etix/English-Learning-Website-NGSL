@@ -9,6 +9,8 @@ rank: 42
 sfi: 60.646
 sources: [wordnet, llm]
 status: enriched
+chart: neuron
+region: neuron
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[neurocyte]] — Neurocyte is a rare technical synonym for neuron, used mostly in histology.
 - advanced_form: [[gangliocyte]] — Gangliocyte is a more specific term for a neuron within a ganglion, often used in neuroscience.
+- builds_on: [[nerve]] — Use 'neuron' when referring to the individual nerve cell, not the bundle of fibers.
+- collocation: [[afferent]]

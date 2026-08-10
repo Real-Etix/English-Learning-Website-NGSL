@@ -9,6 +9,8 @@ rank: 2009
 sfi: 55.51
 sources: [wordnet, llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[ala]] — Use 'ala' in scientific or formal descriptions of anatomical wings.
 - advanced_form: [[pinion]] — Use 'pinion' for poetic or literary descriptions of a bird's wing.
+- synonym: [[flank]]
+- collocation: [[grass]]

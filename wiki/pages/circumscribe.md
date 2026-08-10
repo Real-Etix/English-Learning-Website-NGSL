@@ -6,6 +6,8 @@ pos: verb
 forms: [circumscribe]
 sources: [llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition

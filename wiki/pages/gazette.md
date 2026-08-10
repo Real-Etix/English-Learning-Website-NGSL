@@ -6,6 +6,8 @@ pos: noun
 forms: [gazette]
 sources: [llm]
 status: enriched
+chart: periodical
+region: you
 ---
 
 ## Definition

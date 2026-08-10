@@ -6,6 +6,8 @@ pos: noun
 forms: [yogini]
 sources: [llm]
 status: enriched
+chart: yogi
+region: yogi
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[yogi]] — Use 'yogini' to specify a female yoga practitioner, as 'yogi' is often gender-neutral but can imply male; 'yogini' is more precise and formal.
+- synonym: [[practitioner]]
+- synonym: [[adept]]
+- collocation: [[yoga]]
+- collocation: [[class]]
+- collocation: [[meditation]]
+- collocation: [[session]]

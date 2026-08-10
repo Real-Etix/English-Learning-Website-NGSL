@@ -9,6 +9,8 @@ rank: 379
 sfi: 54.55
 sources: [wordnet, llm]
 status: enriched
+chart: integrity
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ an undivided or unbroken completeness or totality with nothing wanting
 - advanced_form: [[coherence]] — Use 'coherence' to stress logical connection and unity of parts, while 'integrity' often implies flawlessness or moral uprightness.
 - advanced_form: [[wholeness]] — Use 'wholeness' to focus on the state of being complete or unbroken, whereas 'integrity' can also mean adherence to ethical principles.
 - advanced_form: [[soundness]] — Use 'soundness' to emphasize reliability and freedom from defects, while 'integrity' more broadly covers completeness or honesty.
+- collocation: [[biospheric]]
+- synonym: [[probity]]
+- synonym: [[rectitude]]
+- synonym: [[righteousness]]
+- builds_on: [[virtue]] — Use when highlighting consistent honesty and strong moral principles in a person's character.

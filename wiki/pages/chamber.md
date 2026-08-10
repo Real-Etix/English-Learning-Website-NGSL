@@ -9,6 +9,8 @@ rank: 2531
 sfi: 53.86
 sources: [wordnet, llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - advanced_form: [[vault]] — Use 'vault' instead of 'chamber' when emphasizing security, a strong enclosure, or an arched roof.
 - advanced_form: [[alcove]] — Use 'alcove' instead of 'chamber' when referring to a small recess or nook set into a larger room.
 - advanced_form: [[cavern]] — Use 'cavern' instead of 'chamber' when describing a large, natural underground space, especially a cave.
+- collocation: [[operant]]
+- collocation: [[commerce]]
+- builds_on: [[bedroom]] — More formal or literary than 'bedroom'; use in elegant or historical contexts.
+- synonym: [[boudoir]]

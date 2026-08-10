@@ -9,6 +9,8 @@ rank: 2168
 sfi: 55.01
 sources: [wordnet, llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 - synonym: [[flat]]
 - advanced_form: [[flat]] — Use 'flat' instead of 'apartment' in British English or to sound more formal/classic.
 - advanced_form: [[condominium]] — Use 'condominium' (often shortened to 'condo') when referring to an individually owned unit in a multi-unit building, emphasizing ownership rather than rental.
+- collocation: [[basement]]
+- collocation: [[commodious]]
+- collocation: [[ground-floor]]
+- collocation: [[luxurious]]
+- collocation: [[kitchenette]]

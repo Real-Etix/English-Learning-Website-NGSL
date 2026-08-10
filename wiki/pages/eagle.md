@@ -9,6 +9,8 @@ rank: 367
 sfi: 54.74
 sources: [wordnet, llm]
 status: enriched
+chart: eagle
+region: eagle
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 343
 sfi: 56.491
 sources: [wordnet, llm]
 status: enriched
+chart: there
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ permitting little if any light to pass through because of denseness of matter
 - domain: fitness
 - advanced_form: [[opaque]] — Use 'opaque' instead of 'dense' when emphasizing that light cannot pass through at all, often for materials like glass, plastic, or liquids.
 - advanced_form: [[impenetrable]] — Use 'impenetrable' instead of 'dense' to stress that nothing (not just light) can get through, often for physical barriers or dark places.
+- synonym: [[compressed]]
+- collocation: [[foliage]]
+- collocation: [[haze]]
+- collocation: [[vegetation]]
+- collocation: [[woodland]]
+- synonym: [[stupid]]
+- synonym: [[obtuse]]
+- collocation: [[throng]]
+- collocation: [[verdure]]

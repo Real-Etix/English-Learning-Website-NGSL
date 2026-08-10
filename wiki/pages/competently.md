@@ -6,6 +6,8 @@ pos: adverb
 forms: [competently]
 sources: [llm]
 status: enriched
+chart: well
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[well]] — Use 'competently' to stress that the action meets required standards or adequacy.
 - builds_on: [[professionally]] — Use when focusing on adequate ability and effectiveness, slightly more formal than 'professionally'.
+- synonym: [[efficaciously]]

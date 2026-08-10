@@ -9,6 +9,8 @@ rank: 43
 sfi: 60.16
 sources: [wordnet, llm]
 status: enriched
+chart: cafeteria
+region: cafeteria
 ---
 
 ## Definition

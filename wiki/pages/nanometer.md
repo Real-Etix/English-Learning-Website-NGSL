@@ -6,6 +6,8 @@ pos: noun
 forms: [nanometer]
 sources: [llm]
 status: enriched
+chart: crawl
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inch]] — Use 'nanometer' in contexts of nanotechnology or extremely small dimensions, where 'inch' would be impractically large.
+- synonym: [[unit]]
+- synonym: [[measure]]
+- collocation: [[scale]]
+- collocation: [[chip]]
+- collocation: [[process]]
+- collocation: [[technology]]
+- collocation: [[precision]]

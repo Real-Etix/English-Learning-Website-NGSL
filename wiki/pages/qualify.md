@@ -9,6 +9,8 @@ rank: 1823
 sfi: 56.11
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[satisfy]] — Use 'satisfy' when meeting specific conditions or criteria, especially in formal or technical contexts.
 - advanced_form: [[fulfill]] — Use 'fulfill' to emphasize completing or meeting obligations or conditions fully.
 - advanced_form: [[merit]] — Use 'merit' to highlight deserving something based on positive qualities or actions, rather than just meeting minimum criteria.
+- synonym: [[graduate]]

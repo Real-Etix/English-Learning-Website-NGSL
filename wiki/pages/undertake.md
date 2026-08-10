@@ -9,6 +9,8 @@ rank: 2036
 sfi: 55.44
 sources: [wordnet, llm]
 status: enriched
+chart: engage
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[embark]] — Use 'embark' when starting a significant journey or project, especially one with a sense of adventure or progression.
 - advanced_form: [[assume]] — Use 'assume' when taking on a role, duty, or responsibility, often with formal or official connotations.
 - advanced_form: [[shoulder]] — Use 'shoulder' when emphasizing the burden or weight of a responsibility, implying acceptance of a heavy duty.
+- collocation: [[alacrity]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [token]
 sources: [llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[symbol]] — Use 'token' when the symbol is a physical or concrete sign of something abstract, often with a sense of exchange or commemoration.
+- synonym: [[memento]]

@@ -9,6 +9,8 @@ rank: 1538
 sfi: 57.23
 sources: [wordnet, llm]
 status: enriched
+chart: constitutional
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ characteristic of or befitting a friend
 - advanced_form: [[cordial]] — Use 'cordial' for polite, warm, and sincere friendliness, often in formal settings or first encounters.
 - advanced_form: [[amiable]] — Use 'amiable' to describe a person's naturally pleasant and friendly disposition, implying likability.
 - advanced_form: [[affable]] — Use 'affable' for someone who is easy to approach and talk to, suggesting a warm, genial nature.
+- collocation: [[banter]]
+- collocation: [[demeanor]]
+- collocation: [[ecologically]]
+- collocation: [[neighborhood]]

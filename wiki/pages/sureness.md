@@ -6,6 +6,8 @@ pos: noun
 forms: [sureness]
 sources: [llm]
 status: enriched
+chart: certainty
+region: you
 ---
 
 ## Definition

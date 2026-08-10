@@ -6,6 +6,8 @@ pos: verb
 forms: [spearhead]
 sources: [llm]
 status: enriched
+chart: get
+region: you
 ---
 
 ## Definition

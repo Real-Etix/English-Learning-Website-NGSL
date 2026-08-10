@@ -9,6 +9,8 @@ rank: 1253
 sfi: 58.44
 sources: [wordnet, llm]
 status: enriched
+chart: duplicate
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - synonym: [[restate]]
 - advanced_form: [[reiterate]] — Use 'reiterate' when you want to emphasize that something is being repeated, often for clarity or insistence.
 - advanced_form: [[iterate]] — Use 'iterate' in technical or formal contexts to mean repeating a process or sequence, often with slight adjustments.
+- synonym: [[quote]]
+- synonym: [[recur]]
+- synonym: [[recite]]

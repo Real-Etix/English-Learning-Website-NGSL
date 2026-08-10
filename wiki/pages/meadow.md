@@ -6,6 +6,8 @@ pos: noun
 forms: [meadow]
 sources: [llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition

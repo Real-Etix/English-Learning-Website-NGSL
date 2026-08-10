@@ -6,6 +6,8 @@ pos: adjective
 forms: [delectable]
 sources: [llm]
 status: enriched
+chart: aesthetic
+region: you
 ---
 
 ## Definition

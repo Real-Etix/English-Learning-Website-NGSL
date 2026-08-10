@@ -9,6 +9,8 @@ rank: 76
 sfi: 71.31
 sources: [wordnet, llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ feel or have a desire for
 - advanced_form: [[desire]] — Use 'desire' for a strong, formal wish, especially in professional or personal aspirations, instead of 'want'.
 - advanced_form: [[crave]] — Use 'crave' when the desire is intense, urgent, or related to appetites, rather than a simple 'want'.
 - advanced_form: [[covet]] — Use 'covet' when the desire includes envy or longing for something belonging to someone else, often with a negative connotation.
+- synonym: [[deprivation]]

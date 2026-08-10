@@ -9,6 +9,8 @@ rank: 2527
 sfi: 53.87
 sources: [wordnet, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[alliance]] — Use 'alliance' when highlighting strategic cooperation, often between independent entities.
 - advanced_form: [[consortium]] — Use 'consortium' for a formal, often temporary grouping of firms pooling resources.
+- synonym: [[collaboration]]

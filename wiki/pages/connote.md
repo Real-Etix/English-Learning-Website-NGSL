@@ -6,6 +6,8 @@ pos: verb
 forms: [connote]
 sources: [llm]
 status: enriched
+chart: appear
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[signify]] — Use 'connote' when referring to an associated or suggested meaning beyond the primary definition, more specific than 'signify'.
+- synonym: [[imply]]
+- synonym: [[suggest]]
+- synonym: [[indicate]]
+- synonym: [[evoke]]
+- collocation: [[often]]
+- collocation: [[may]]
+- collocation: [[can]]
+- collocation: [[term]]

@@ -9,6 +9,8 @@ rank: 498
 sfi: 62.94
 sources: [wordnet, llm]
 status: enriched
+chart: charge
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,23 @@ _No sourced examples yet._
 - advanced_form: [[storm]] — Use 'storm' for a sudden, forceful attack, often against a defended position.
 - builds_on: [[assault]] — Use 'charge' to highlight a sudden, direct rush forward in close combat.
 - builds_on: [[electricity]] — Use 'charge' when referring to an amount of electricity stored or accumulated, often in physics or about electrostatic phenomena.
+- synonym: [[allegation]]
+- synonym: [[arraignment]]
+- synonym: [[blame]]
+- synonym: [[bomb]]
+- synonym: [[custody]]
+- synonym: [[gallop]]
+- synonym: [[guardianship]]
+- synonym: [[impeach]]
+- collocation: [[impiety]]
+- synonym: [[lien]]
+- collocation: [[misdemeanor]]
+- synonym: [[pastorate]]
+- synonym: [[rent]]
+- synonym: [[warhead]]
+- collocation: [[witchcraft]]
+- collocation: [[zwitterion]]
+- synonym: [[cartridge]]
+- synonym: [[invoice]]
+- builds_on: [[bomb]] — Use for a deliberately placed quantity of explosive, especially in demolition or military operations.
+- synonym: [[imputation]]

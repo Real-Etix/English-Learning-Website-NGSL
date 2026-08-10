@@ -6,6 +6,8 @@ pos: noun
 forms: [predicative]
 sources: [llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[complement]] — Use 'predicative' for a complement that describes the subject after a linking verb.
+- synonym: [[predicate]]
+- synonym: [[attribute]]

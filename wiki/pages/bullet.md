@@ -9,6 +9,8 @@ rank: 914
 sfi: 50.42
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[projectile]] — Use when speaking more formally or scientifically, especially in forensic or physics contexts.
 - advanced_form: [[round]] — Use when referring to a single unit of ammunition, including the bullet, casing, and powder.
+- collocation: [[deflect]]
+- collocation: [[dodge]]
+- synonym: [[cartridge]]

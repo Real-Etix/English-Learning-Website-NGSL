@@ -9,6 +9,8 @@ rank: 1457
 sfi: 48.94
 sources: [wordnet, llm]
 status: enriched
+chart: separatist
+region: separatist
 ---
 
 ## Definition

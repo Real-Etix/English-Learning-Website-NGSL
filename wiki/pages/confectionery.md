@@ -6,6 +6,8 @@ pos: noun
 forms: [confectionery]
 sources: [llm]
 status: enriched
+chart: tuck
+region: tuck
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tuck]] — Use for sweets and candies in a formal or commercial context.
+- synonym: [[sweets]]
+- synonym: [[candy]]
+- collocation: [[box]]
+- collocation: [[shop]]
+- collocation: [[chocolate]]
+- collocation: [[sugar]]
+- collocation: [[industry]]
+- synonym: [[patisserie]]

@@ -9,6 +9,8 @@ rank: 72
 sfi: 59.389
 sources: [wordnet, llm]
 status: enriched
+chart: explicit
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ precisely and clearly expressed or readily observable
 - builds_on: [[definite]] — Use 'explicit' when something is stated clearly and in detail, leaving no room for confusion or doubt.
 - builds_on: [[straightforward]] — Use 'explicit' instead of 'straightforward' to stress that every detail is clearly and fully stated.
 - builds_on: [[specific]] — Use when something is stated clearly and in detail, leaving no room for confusion.
+- synonym: [[denotative]]
+- collocation: [[eroticism]]
+- collocation: [[espousal]]
+- collocation: [[repudiation]]

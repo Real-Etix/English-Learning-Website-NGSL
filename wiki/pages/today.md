@@ -9,6 +9,8 @@ rank: 246
 sfi: 65.94
 sources: [wordnet, llm]
 status: enriched
+chart: now
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ the present time or age
 - advanced_form: [[modernity]] — Use 'modernity' instead of 'today' to refer broadly to the characteristics and issues of the current historical era, often in academic or sociological discussions.
 - builds_on: [[currently]] — Use 'today' to emphasize the contrast with the past or to sound slightly more dramatic or declarative; it is less common than 'currently' in formal writing but acceptable.
 - builds_on: [[nowadays]] — Use 'today' as a single-word adverb to refer broadly to the current era, similar to 'nowadays' but more direct.
+- collocation: [[earlier]]
+- collocation: [[youngster]]

@@ -9,6 +9,8 @@ rank: 393
 sfi: 53.85
 sources: [wordnet, llm]
 status: enriched
+chart: unreliable
+region: you
 ---
 
 ## Definition

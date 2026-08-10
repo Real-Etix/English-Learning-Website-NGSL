@@ -9,6 +9,8 @@ rank: 148
 sfi: 68.04
 sources: [wordnet, llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,28 @@ a lofty level or position or degree
 - advanced_form: [[pinnacle]] — Use 'pinnacle' for the highest point of achievement or success, often implying a peak that is difficult to surpass.
 - advanced_form: [[zenith]] — Use 'zenith' for the highest point in the development or success of something, often in a temporal or abstract sense.
 - advanced_form: [[summit]] — Use 'summit' for the highest level of a profession, organization, or meeting, often implying a gathering of top figures.
+- synonym: [[aloft]]
+- collocation: [[amperage]]
+- collocation: [[attrition]]
+- collocation: [[bookstack]]
+- collocation: [[churn]]
+- collocation: [[compactness]]
+- collocation: [[concurrency]]
+- collocation: [[conscientiousness]]
+- collocation: [[dais]]
+- collocation: [[dosage]]
+- collocation: [[flowability]]
+- collocation: [[historically]]
+- collocation: [[joblessness]]
+- collocation: [[libido]]
+- synonym: [[lofty]]
+- collocation: [[maneuverability]]
+- collocation: [[multiparity]]
+- collocation: [[natality]]
+- synonym: [[overarm]]
+- collocation: [[profitability]]
+- collocation: [[promontory]]
+- collocation: [[ranking]]
+- collocation: [[repute]]
+- collocation: [[mileage]]
+- collocation: [[fever]]

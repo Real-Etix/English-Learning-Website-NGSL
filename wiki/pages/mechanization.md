@@ -6,6 +6,8 @@ pos: noun
 forms: [mechanization]
 sources: [llm]
 status: enriched
+chart: industrialization
+region: industrialization
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[industrialization]] — Use when focusing on the technological aspect of replacing manual labor, rather than the overall industrial development.
+- collocation: [[agricultural]]
+- collocation: [[farm]]
+- collocation: [[industrial]]
+- collocation: [[process]]

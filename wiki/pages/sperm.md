@@ -9,6 +9,8 @@ rank: 164
 sfi: 58.012
 sources: [wordnet, llm]
 status: enriched
+chart: sperm
+region: sperm
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ the male reproductive cell
 - domain: academic
 - advanced_form: [[spermatozoon]] — Use 'spermatozoon' in scientific or biological contexts to refer specifically to the mature male reproductive cell, while 'sperm' is the everyday term.
 - advanced_form: [[spermatozoan]] — Use 'spermatozoan' as an alternative formal term for sperm, especially in technical descriptions.
+- collocation: [[motility]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [addressee]
 sources: [llm]
 status: enriched
+chart: recipient
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[recipient]] — Use for someone to whom a message or package is directed, not just any receiver.
+- synonym: [[receiver]]
+- collocation: [[original]]
+- collocation: [[unknown]]
+- collocation: [[correct]]
+- synonym: [[consignee]]

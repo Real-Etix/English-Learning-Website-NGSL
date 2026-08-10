@@ -9,6 +9,8 @@ rank: 2330
 sfi: 54.51
 sources: [wordnet, llm]
 status: enriched
+chart: baby
+region: baby
 ---
 
 ## Definition

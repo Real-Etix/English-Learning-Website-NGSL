@@ -6,6 +6,8 @@ pos: noun
 forms: [orb]
 sources: [llm]
 status: enriched
+chart: middle
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[circle]] — Use 'orb' for a poetic or formal description of a circle or sphere, often conveying a sense of majesty or completeness.
 - builds_on: [[planet]] — Use 'orb' for a more poetic or formal tone when referring to a planet as a celestial body.
 - builds_on: [[moon]] — Use 'orb' in poetic or literary contexts to describe the moon's round, luminous shape.
+- synonym: [[ovoid]]
+- builds_on: [[sun]] — Use in descriptive or poetic writing to emphasize the sun's round, glowing shape.
+- synonym: [[sol]]

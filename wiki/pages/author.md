@@ -9,6 +9,8 @@ rank: 910
 sfi: 60.17
 sources: [wordnet, llm]
 status: enriched
+chart: author
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - advanced_form: [[literateur]] — Use 'literateur' instead of 'author' when referring to a person deeply involved in literature, often as a writer or critic with academic or cultural prestige.
 - advanced_form: [[scribe]] — Use 'scribe' instead of 'author' when the focus is on the act of writing by hand or recording, especially in historical or formal contexts, or for journalists.
 - builds_on: [[writer]] — Use 'author' to emphasize formal publication or book-writing, rather than a general writer.
+- collocation: [[crane]]
+- synonym: [[creator]]
+- collocation: [[monograph]]
+- collocation: [[celebrated]]

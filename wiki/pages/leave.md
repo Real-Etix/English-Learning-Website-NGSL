@@ -9,6 +9,8 @@ rank: 126
 sfi: 68.44
 sources: [wordnet, llm]
 status: enriched
+chart: go
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ go away from a place
 - advanced_form: [[exit]] — Use 'exit' when emphasizing the act of going out of an enclosed space, often via a door or designated route.
 - advanced_form: [[vacate]] — Use 'vacate' when leaving a place that you occupy (like a room, house, or seat) and often implies making it empty for others.
 - builds_on: [[holiday]] — Use 'leave' instead of 'holiday' when referring to official, often paid, time off from work.
+- collocation: [[absence]]
+- collocation: [[belongings]]
+- collocation: [[bequest]]
+- collocation: [[devastation]]
+- synonym: [[forsake]]
+- collocation: [[imprint]]
+- synonym: [[resign]]

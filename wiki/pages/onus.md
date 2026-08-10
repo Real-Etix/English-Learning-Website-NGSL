@@ -6,6 +6,8 @@ pos: noun
 forms: [onus]
 sources: [llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition

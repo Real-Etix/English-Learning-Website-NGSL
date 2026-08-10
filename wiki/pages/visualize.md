@@ -9,6 +9,8 @@ rank: 190
 sfi: 57.89
 sources: [wordnet, llm]
 status: enriched
+chart: visualize
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - advanced_form: [[envision]] — Use 'envision' when focusing on a future scenario or a detailed mental image, more formal than 'visualize'.
 - advanced_form: [[conceive]] — Use 'conceive' when emphasizing the creation or origination of an idea, often implying inventiveness.
 - advanced_form: [[picture]] — Use 'picture' when vividly imagining a scene or event, similar to 'visualize' but slightly more informal yet still advanced.
+- synonym: [[envisage]]
+- synonym: [[conceptualize]]

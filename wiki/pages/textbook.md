@@ -9,6 +9,8 @@ rank: 302
 sfi: 53.886
 sources: [wordnet, llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ a book prepared for use in schools or colleges
 - advanced_form: [[manual]] — Use 'manual' for a book that provides instructions or reference, especially practical.
 - advanced_form: [[handbook]] — Use 'handbook' for a concise reference book, often for specific rules or procedures.
 - advanced_form: [[primer]] — Use 'primer' for an introductory textbook that assumes no prior knowledge.
+- synonym: [[worktext]]

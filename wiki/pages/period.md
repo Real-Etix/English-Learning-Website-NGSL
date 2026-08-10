@@ -9,6 +9,8 @@ rank: 382
 sfi: 64.13
 sources: [wordnet, llm]
 status: enriched
+chart: span
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,14 @@ an amount of time
 - advanced_form: [[duration]] — Use 'duration' to formally emphasize the length of time something continues, especially in technical or official contexts.
 - advanced_form: [[interval]] — Use 'interval' to refer to a distinct period separating two events, often implying a pause or gap.
 - advanced_form: [[span]] — Use 'span' to highlight the full extent of time from start to finish, often with a sense of covering a range.
+- collocation: [[corresponding]]
+- collocation: [[deferment]]
+- collocation: [[dormant]]
+- collocation: [[enlistment]]
+- synonym: [[era]]
+- collocation: [[expiry]]
+- collocation: [[extended]]
+- collocation: [[gestation]]
+- collocation: [[latency]]
+- collocation: [[postulant]]
+- collocation: [[prolonged]]

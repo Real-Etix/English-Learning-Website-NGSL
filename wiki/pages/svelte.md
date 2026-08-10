@@ -6,6 +6,8 @@ pos: adjective
 forms: [svelte]
 sources: [llm]
 status: enriched
+chart: thin
+region: you
 ---
 
 ## Definition

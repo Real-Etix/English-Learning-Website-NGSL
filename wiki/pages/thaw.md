@@ -6,6 +6,8 @@ pos: verb
 forms: [thaw]
 sources: [llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[melt]] — Use specifically for ice, snow, or frozen food returning to a normal temperature; implies gradual melting from a frozen state.
+- synonym: [[liquefy]]

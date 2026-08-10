@@ -9,6 +9,8 @@ rank: 119
 sfi: 68.76
 sources: [wordnet]
 status: seeded
+chart: still
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,9 @@ _No sourced examples yet._
 
 ## Connections
 - synonym: [[static]]
+- synonym: [[anyway]]
+- synonym: [[motionless]]
+- synonym: [[noiseless]]
+- collocation: [[whilst]]
+- collocation: [[passable]]
+- collocation: [[serviceable]]

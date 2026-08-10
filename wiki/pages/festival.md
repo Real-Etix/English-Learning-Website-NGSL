@@ -9,6 +9,8 @@ rank: 2215
 sfi: 54.9
 sources: [wordnet, llm]
 status: enriched
+chart: dine
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[gala]] — Use 'gala' for a formal, lavish celebration, often with a specific purpose like fundraising.
 - advanced_form: [[carnival]] — Use 'carnival' for a festive event with rides, games, and entertainment, often outdoors.
 - advanced_form: [[fete]] — Use 'fete' for a large outdoor party or fair, typically organized by a community or institution.
+- synonym: [[festivity]]
+- collocation: [[gastronomic]]
+- collocation: [[midwinter]]
+- collocation: [[lantern]]

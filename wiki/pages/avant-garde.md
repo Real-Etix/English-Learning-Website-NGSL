@@ -6,6 +6,8 @@ pos: noun
 forms: [avant-garde]
 sources: [llm]
 status: enriched
+chart: make
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[van]] — Use 'avant-garde' to emphasize the innovative and experimental nature of the group, often in the arts.
+- synonym: [[vanguard]]
+- collocation: [[art]]
+- collocation: [[fashion]]
+- collocation: [[movement]]
+- collocation: [[experimental]]
+- synonym: [[modernistic]]

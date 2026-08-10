@@ -6,6 +6,8 @@ pos: adjective
 forms: [contiguous]
 sources: [llm]
 status: enriched
+chart: about
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[adjacent]] — Use 'contiguous' when things are actually touching or sharing a boundary, not just near.
+- collocation: [[area]]
+- collocation: [[memory]]

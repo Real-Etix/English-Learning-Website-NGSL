@@ -6,6 +6,8 @@ pos: verb
 forms: [dissect]
 sources: [llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition

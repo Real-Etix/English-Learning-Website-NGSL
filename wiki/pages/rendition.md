@@ -6,6 +6,8 @@ pos: noun
 forms: [rendition]
 sources: [llm]
 status: enriched
+chart: assertion
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[adaptation]] — Use 'rendition' to highlight a particular performance or interpretation, especially in performing arts.
 - builds_on: [[paraphrase]] — Use 'rendition' when the paraphrase is a creative or interpretive version of the original text.
 - builds_on: [[interpretation]] — Use when focusing on a personal or artistic performance or version of a work, not just a mental interpretation.
+- builds_on: [[version]] — Use when emphasizing a particular performance or representation of events from someone's viewpoint.
+- synonym: [[dramatization]]

@@ -9,6 +9,8 @@ rank: 2119
 sfi: 55.17
 sources: [wordnet, llm]
 status: enriched
+chart: substantially
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ to a considerable degree
 - advanced_form: [[considerably]] — Use 'considerably' in formal or written contexts to emphasize a noticeable degree, often with measurable changes.
 - advanced_form: [[significantly]] — Use 'significantly' when the degree is important or noteworthy, often in academic or business settings.
 - advanced_form: [[substantially]] — Use 'substantially' to stress a large, impactful degree, especially in formal reports or discussions.
+- collocation: [[biased]]
+- collocation: [[bleed]]
+- collocation: [[oversubscribe]]
+- collocation: [[restricted]]
+- collocation: [[westernized]]
+- synonym: [[densely]]
+- collocation: [[favored]]
+- collocation: [[hemorrhage]]

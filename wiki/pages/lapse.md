@@ -6,6 +6,8 @@ pos: noun
 forms: [lapse]
 sources: [llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ _No sourced examples yet._
 - builds_on: [[mistake]] — Use 'lapse' for a temporary failure of concentration or memory, often minor.
 - builds_on: [[oversight]] — Use 'lapse' when the failure is temporary and often related to memory or attention, slightly broader than 'oversight'.
 - builds_on: [[fault]] — Use 'lapse' when the fault is a temporary failure of attention or memory, not a permanent flaw.
+- collocation: [[momentary]]
+- builds_on: [[termination]] — Use when the contract ends because of failure to renew or extend it.
+- builds_on: [[error]] — Use for a temporary or brief error, especially in memory, judgment, or attention.

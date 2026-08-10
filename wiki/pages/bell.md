@@ -9,6 +9,8 @@ rank: 2691
 sfi: 53.25
 sources: [wordnet, llm]
 status: enriched
+chart: bell
+region: bell
 ---
 
 ## Definition

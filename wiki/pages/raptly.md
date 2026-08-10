@@ -6,6 +6,8 @@ pos: adverb
 forms: [raptly]
 sources: [llm]
 status: enriched
+chart: intently
+region: intently
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[intently]] — Use 'raptly' when the attention is so complete that the person seems captivated or transported, more poetic than 'intently'.
+- synonym: [[absorbedly]]
+- synonym: [[closely]]
+- collocation: [[read]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [provisionally]
 sources: [llm]
 status: enriched
+chart: permanently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[temporarily]] — Use 'provisionally' when something is done for the time being, subject to confirmation or finalization, more formal than 'temporarily'.
+- synonym: [[pending]]
+- collocation: [[scheduled]]
+- synonym: [[preliminarily]]

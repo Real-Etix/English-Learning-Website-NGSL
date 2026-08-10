@@ -6,6 +6,8 @@ pos: noun
 forms: [appointee]
 sources: [llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[choice]] — Use 'appointee' specifically for a person chosen for a position or job.
+- synonym: [[nominee]]
+- synonym: [[candidate]]
+- synonym: [[officeholder]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [accretion]
 sources: [llm]
 status: enriched
+chart: upgrade
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[increase]] — Use 'accretion' for a gradual, natural buildup or accumulation, rather than a sudden 'increase'.
 - builds_on: [[accumulation]] — Use 'accretion' for gradual, natural buildup of layers or material, often in geology or growth.
 - builds_on: [[accrual]] — Use 'accretion' for slow, natural, or geological accumulation, whereas 'accrual' is more common in finance or abstract contexts.
+- synonym: [[buildup]]

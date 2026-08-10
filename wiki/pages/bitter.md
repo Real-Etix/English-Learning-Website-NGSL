@@ -9,6 +9,8 @@ rank: 1122
 sfi: 50.76
 sources: [wordnet, llm]
 status: enriched
+chart: acid
+region: acid
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ marked by strong resentment or cynicism
 - advanced_form: [[acrimonious]] — Use when the bitterness is expressed in sharp, angry words or debates, often in a public or drawn-out conflict.
 - advanced_form: [[rancorous]] — Use for deep, long-lasting bitterness that fuels ongoing hostility, often with a sense of grievance.
 - advanced_form: [[embittered]] — Use when the bitterness is a result of past experiences that have poisoned one's outlook, making someone feel resentful and cynical.
+- synonym: [[acrid]]
+- collocation: [[enmity]]
+- collocation: [[ex-spouse]]
+- collocation: [[foe]]
+- collocation: [[iciness]]
+- collocation: [[rancor]]

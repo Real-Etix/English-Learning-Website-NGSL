@@ -9,6 +9,8 @@ rank: 463
 sfi: 63.37
 sources: [wordnet, llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition

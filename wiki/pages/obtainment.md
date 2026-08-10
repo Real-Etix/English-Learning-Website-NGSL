@@ -6,6 +6,8 @@ pos: noun
 forms: [obtainment]
 sources: [llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition

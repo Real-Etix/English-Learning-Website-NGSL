@@ -9,6 +9,8 @@ rank: 1205
 sfi: 58.62
 sources: [wordnet, llm]
 status: enriched
+chart: union
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[union]] — Use 'Union' instead of 'the North' when emphasizing the political and military entity of the Northern states during the American Civil War.
 - advanced_form: [[yankeeland]] — Use 'Yankeeland' in informal or literary contexts as a colorful, sometimes affectionate name for the Northern United States.
+- collocation: [[heading]]

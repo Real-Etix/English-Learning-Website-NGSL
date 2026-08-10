@@ -6,6 +6,8 @@ pos: noun
 forms: [genesis]
 sources: [llm]
 status: enriched
+chart: death
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[birth]] — Use 'genesis' to emphasize the creative or foundational start of something, like a project or idea.
 - builds_on: [[creation]] — Use 'genesis' instead of 'creation' when highlighting the very first stage or cause of something, often in formal or literary contexts.
 - builds_on: [[origin]] — Use 'genesis' for dramatic or formal beginnings, especially of ideas, movements, or cosmic events, where 'origin' feels too plain.
+- synonym: [[nativity]]

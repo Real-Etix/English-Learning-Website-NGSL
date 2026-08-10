@@ -9,6 +9,8 @@ rank: 401
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: position
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[inure]] — Use 'inure' when the process of becoming accustomed involves enduring something unpleasant or difficult, often gradually.
 - advanced_form: [[habituate]] — Use 'habituate' for a more formal or psychological sense of becoming used to something through repeated exposure, especially in behavioral contexts.
+- synonym: [[acclimate]]

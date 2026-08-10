@@ -6,6 +6,8 @@ pos: noun
 forms: [auxiliary]
 sources: [llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[volunteer]] — Use 'auxiliary' to refer to a volunteer who supplements regular military personnel, often in a support or specialized role.
+- synonym: [[reinforcement]]
+- synonym: [[reserve]]
+- synonym: [[supplement]]
+- synonym: [[support]]
+- collocation: [[force]]
+- collocation: [[troops]]
+- collocation: [[power]]
+- collocation: [[unit]]

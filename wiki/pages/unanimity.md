@@ -6,6 +6,8 @@ pos: noun
 forms: [unanimity]
 sources: [llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition

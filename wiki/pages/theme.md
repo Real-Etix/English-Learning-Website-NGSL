@@ -9,6 +9,8 @@ rank: 1572
 sfi: 57.11
 sources: [wordnet, llm]
 status: enriched
+chart: base
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ the subject matter of a conversation or discussion
 - advanced_form: [[motif]] — Use 'motif' specifically when the theme is a recurring idea in art, literature, or music, not for casual conversation.
 - advanced_form: [[thesis]] — Use 'thesis' for a central argument or proposition in academic or formal discussion, rather than a general subject.
 - advanced_form: [[crux]] — Use 'crux' to emphasize the most critical or decisive point of a discussion, not the overall subject matter.
+- synonym: [[fibre]]
+- synonym: [[leitmotif]]
+- synonym: [[melody]]
+- collocation: [[recur]]

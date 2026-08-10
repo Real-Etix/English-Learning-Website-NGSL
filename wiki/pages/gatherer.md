@@ -6,6 +6,8 @@ pos: noun
 forms: [gatherer]
 sources: [llm]
 status: enriched
+chart: collector
+region: collector
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[collector]] — Use 'gatherer' to highlight the active process of assembling items from various sources, often with a sense of foraging or hunting.
+- synonym: [[accumulator]]
+- collocation: [[data]]
+- collocation: [[information]]
+- collocation: [[news]]

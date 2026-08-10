@@ -9,6 +9,8 @@ rank: 2429
 sfi: 54.21
 sources: [wordnet, llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[chronicle]] — Use 'chronicle' for a more formal or historical account that emphasizes storytelling and continuity over time.
 - builds_on: [[weekly]] — Use 'journal' for specialized or academic publications, often more formal than a general weekly.
 - builds_on: [[monthly]] — Use journal to refer to a specialized or academic publication, often more serious than a general monthly.
+- collocation: [[learned]]
+- synonym: [[notebook]]
+- builds_on: [[ledger]] — Use 'journal' when referring to a chronological or day-by-day financial log, especially in accounting contexts.

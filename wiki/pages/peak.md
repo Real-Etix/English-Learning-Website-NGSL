@@ -9,6 +9,8 @@ rank: 1661
 sfi: 56.74
 sources: [wordnet, llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ the most extreme possible amount or value
 - advanced_form: [[zenith]] — Use 'zenith' for the highest point of success or power, often with a sense of culmination.
 - advanced_form: [[acme]] — Use 'acme' for the very highest point of perfection or achievement.
 - builds_on: [[maximum]] — Use 'peak' for the highest point of a physical object or an abstract achievement, similar to 'maximum' but often more visual or temporal.
+- synonym: [[climax]]
+- synonym: [[culminate]]
+- synonym: [[culmination]]
+- collocation: [[lofty]]
+- synonym: [[vertex]]

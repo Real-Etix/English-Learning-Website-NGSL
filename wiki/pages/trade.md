@@ -9,6 +9,8 @@ rank: 544
 sfi: 62.52
 sources: [wordnet, llm]
 status: enriched
+chart: separate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,12 @@ the commercial exchange (buying and selling on domestic or international markets
 - advanced_form: [[dealings]] — Use 'dealings' when referring to ongoing transactions or relationships, often with a nuance of ethical oversight.
 - builds_on: [[economy]] — Use 'trade' to focus on the transactional aspect, often in discussions of imports/exports or business dealings.
 - builds_on: [[commerce]] — Use 'trade' for the actual exchange of goods, while 'commerce' is more about the system and business transactions overall.
+- collocation: [[bloc]]
+- collocation: [[guild]]
+- synonym: [[interchange]]
+- collocation: [[licit]]
+- collocation: [[negotiation]]
+- synonym: [[commutation]]
+- collocation: [[illicit]]
+- collocation: [[intranational]]
+- synonym: [[mercantile]]

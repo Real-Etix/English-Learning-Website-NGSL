@@ -6,6 +6,8 @@ pos: adverb
 forms: [proactively]
 sources: [llm]
 status: enriched
+chart: energetically
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[actively]] — Use when stressing taking initiative to prevent problems rather than reacting.
+- synonym: [[beforehand]]
+- synonym: [[early]]
+- collocation: [[address]]
+- collocation: [[identify]]
+- collocation: [[manage]]
+- collocation: [[engage]]
+- collocation: [[monitor]]

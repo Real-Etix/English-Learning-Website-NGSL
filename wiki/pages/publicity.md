@@ -9,6 +9,8 @@ rank: 734
 sfi: 52.87
 sources: [wordnet, llm]
 status: enriched
+chart: spread
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[dissemination]] — Use 'dissemination' when focusing on the broad distribution of information to many people, not just through media but any channel.
 - builds_on: [[advertisement]] — Use 'publicity' when referring to media attention or public interest, especially unpaid or earned coverage, rather than a paid ad.
 - builds_on: [[promotion]] — Use 'publicity' when focusing on media attention or public exposure, often for a product or person.
+- collocation: [[eschew]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [defiance]
 sources: [llm]
 status: enriched
+chart: subway
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1768
 sfi: 56.3
 sources: [wordnet, llm]
 status: enriched
+chart: sew
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ to a great degree
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[extensively]] — Use when emphasizing thoroughness or large-scale coverage, broader than 'widely'.
 - advanced_form: [[broadly]] — Use when focusing on general scope or inclusivity, often for acceptance or application.
+- collocation: [[extol]]
+- collocation: [[laud]]
+- synonym: [[pervasively]]
+- collocation: [[popular]]
+- collocation: [[propagate]]
+- collocation: [[publicize]]
+- collocation: [[fluctuate]]

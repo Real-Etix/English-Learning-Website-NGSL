@@ -6,6 +6,8 @@ pos: noun
 forms: [promulgation]
 sources: [llm]
 status: enriched
+chart: spread
+region: you
 ---
 
 ## Definition

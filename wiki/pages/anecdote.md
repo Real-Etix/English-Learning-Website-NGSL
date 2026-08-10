@@ -6,6 +6,8 @@ pos: noun
 forms: [anecdote]
 sources: [llm]
 status: enriched
+chart: account
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[story]] — Use 'anecdote' for a short, personal, or humorous story, often used in conversation to illustrate a point.
 - builds_on: [[tale]] — Use 'anecdote' for a short, personal, or amusing story, rather than a full tale.
+- collocation: [[humorous]]
+- synonym: [[reminiscence]]

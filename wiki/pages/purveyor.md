@@ -6,6 +6,8 @@ pos: noun
 forms: [purveyor]
 sources: [llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - builds_on: [[provider]] — Use 'purveyor' instead of 'provider' for a more formal or nuanced tone, often implying a provider of specialized or high-quality goods or services.
 - builds_on: [[distributor]] — Use 'purveyor' for a formal tone, often implying careful selection or specialty goods.
 - builds_on: [[caterer]] — Use 'purveyor' to emphasize the supply of high-quality or specialty items, especially in formal contexts, rather than just party catering.
+- synonym: [[provisioner]]
+- builds_on: [[salesman]] — Use for someone who sells luxury, specialty, or high-quality products, often in a refined tone.

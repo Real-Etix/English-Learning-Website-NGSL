@@ -9,6 +9,8 @@ rank: 270
 sfi: 65.58
 sources: [wordnet, llm]
 status: enriched
+chart: dark
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,13 @@ _No sourced examples yet._
 - advanced_form: [[nightfall]] — Use 'nightfall' to specify the exact moment when night begins, more literary than 'night'.
 - advanced_form: [[darkness]] — Use 'darkness' to emphasize the lack of light, often more atmospheric than 'night'.
 - advanced_form: [[nighttime]] — Use 'nighttime' as a more formal or technical term for the period of night.
+- collocation: [[debauchery]]
+- collocation: [[diaphoresis]]
+- collocation: [[janitor]]
+- synonym: [[midnight]]
+- collocation: [[midwinter]]
+- collocation: [[watchkeeper]]
+- collocation: [[watchman]]
+- synonym: [[deadofnight]]
+- collocation: [[patrolman]]
+- collocation: [[restful]]

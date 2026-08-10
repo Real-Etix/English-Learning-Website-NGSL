@@ -6,6 +6,8 @@ pos: adjective
 forms: [inconceivable]
 sources: [llm]
 status: enriched
+chart: incredible
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 88
 sfi: 70.59
 sources: [wordnet]
 status: seeded
+chart: some
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ used to form the superlative
 
 ## Connections
 - antonym: [[least]]
+- collocation: [[amusing]]
+- collocation: [[importantly]]
+- collocation: [[prevalent]]
+- collocation: [[favored]]

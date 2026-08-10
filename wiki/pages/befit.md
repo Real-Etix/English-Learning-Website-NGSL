@@ -6,6 +6,8 @@ pos: verb
 forms: [befit]
 sources: [llm]
 status: enriched
+chart: accommodate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fit]] — Use 'befit' when you want to stress appropriateness in a slightly formal or literary context, instead of the more neutral 'fit'.
+- synonym: [[suit]]
+- synonym: [[become]]
+- synonym: [[match]]
+- synonym: [[serve]]
+- collocation: [[should]]
+- collocation: [[must]]

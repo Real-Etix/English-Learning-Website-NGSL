@@ -6,6 +6,8 @@ pos: noun
 forms: [handheld]
 sources: [llm]
 status: enriched
+chart: pattern
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[smartphone]] — Use 'handheld' to emphasize portability and computing capability, often in technical or formal contexts.
+- collocation: [[camerawork]]
+- synonym: [[device]]
+- synonym: [[portable]]
+- synonym: [[unit]]
+- collocation: [[game]]
+- collocation: [[video]]
+- collocation: [[device]]
+- collocation: [[portable]]
+- collocation: [[transceiver]]

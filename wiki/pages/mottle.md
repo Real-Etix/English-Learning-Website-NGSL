@@ -6,6 +6,8 @@ pos: noun
 forms: [mottle]
 sources: [llm]
 status: enriched
+chart: particle
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[patch]] — Use 'mottle' for a patch of color or mark that is part of a pattern of spots or blotches, often on a surface.
+- synonym: [[blotch]]
+- synonym: [[spot]]
+- synonym: [[stain]]
+- collocation: [[dark]]
+- collocation: [[leaf]]
+- collocation: [[green]]
+- collocation: [[yellow]]

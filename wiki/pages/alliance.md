@@ -9,6 +9,8 @@ rank: 133
 sfi: 56.88
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ the state of being allied or confederated
 - builds_on: [[collaboration]] — Use 'alliance' when referring to a formal, strategic partnership between groups or organizations.
 - builds_on: [[association]] — Use 'alliance' when emphasizing a formal, cooperative bond for mutual benefit, often between organizations or nations.
 - builds_on: [[partnership]] — Use 'alliance' when highlighting strategic cooperation, often between independent entities.
+- synonym: [[bloc]]
+- synonym: [[entente]]
+- synonym: [[federation]]
+- synonym: [[merger]]

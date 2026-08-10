@@ -6,6 +6,8 @@ pos: noun
 forms: [moan]
 sources: [llm]
 status: enriched
+chart: emission
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sigh]] — Use 'moan' when the sigh is more prolonged and suggests pleasure, sadness, or a deeper emotional response.
+- synonym: [[groan]]
+- synonym: [[cry]]
+- collocation: [[soft]]
+- collocation: [[low]]
+- collocation: [[escape]]
+- collocation: [[utter]]
+- collocation: [[hear]]

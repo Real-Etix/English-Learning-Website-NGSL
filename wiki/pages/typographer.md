@@ -6,6 +6,8 @@ pos: noun
 forms: [typographer]
 sources: [llm]
 status: enriched
+chart: printer
+region: printer
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [screenplay]
 sources: [llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition

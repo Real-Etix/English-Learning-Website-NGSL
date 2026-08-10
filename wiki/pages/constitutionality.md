@@ -6,6 +6,8 @@ pos: noun
 forms: [constitutionality]
 sources: [llm]
 status: enriched
+chart: integrity
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[legitimacy]] — Use when referring to legitimacy specifically under a constitution, more precise than general legitimacy.
+- synonym: [[validity]]
+- synonym: [[rightfulness]]
+- collocation: [[challenge]]
+- collocation: [[question]]
+- collocation: [[uphold]]

@@ -9,6 +9,8 @@ rank: 405
 sfi: 55.732
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - advanced_form: [[delineate]] — Use when outlining or describing something precisely and clearly, often with boundaries or structure.
 - advanced_form: [[amplify]] — Use when adding more information to make something clearer or more emphatic, especially in speech or writing.
 - builds_on: [[proceed]] — Use 'elaborate' instead of 'proceed' when you want someone to give more details or explain further.
+- collocation: [[adornments]]
+- collocation: [[argumentation]]

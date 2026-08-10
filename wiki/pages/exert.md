@@ -9,6 +9,8 @@ rank: 1521
 sfi: 50.87
 sources: [wordnet, llm]
 status: enriched
+chart: leverage
+region: you
 ---
 
 ## Definition

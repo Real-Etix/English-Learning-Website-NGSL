@@ -6,6 +6,8 @@ pos: noun
 forms: [adventurer]
 sources: [llm]
 status: enriched
+chart: academic
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[explorer]] — Use 'adventurer' when the exploration involves risk and excitement, rather than purely scientific goals.
+- synonym: [[voyager]]
+- collocation: [[intrepid]]
+- collocation: [[bold]]
+- collocation: [[young]]

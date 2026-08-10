@@ -9,6 +9,8 @@ rank: 830
 sfi: 60.59
 sources: [wordnet, llm]
 status: enriched
+chart: interest
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ _No sourced examples yet._
 - advanced_form: [[latency]] — Use 'latency' to describe potential that is dormant or hidden, especially in technical or biological contexts.
 - advanced_form: [[promise]] — Use 'promise' when referring to potential that is not yet fully realized but indicated by current signs.
 - builds_on: [[prospect]] — Use 'potential' to emphasize inherent ability or capacity for future success, rather than just possibility.
+- collocation: [[acquirer]]
+- collocation: [[employer]]
+- collocation: [[intermolecular]]
+- collocation: [[overbalance]]
+- collocation: [[pitfall]]
+- synonym: [[potentiality]]
+- collocation: [[gainfulness]]
+- collocation: [[lucrativeness]]
+- collocation: [[suitor]]

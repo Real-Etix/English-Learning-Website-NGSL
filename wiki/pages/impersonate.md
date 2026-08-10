@@ -6,6 +6,8 @@ pos: verb
 forms: [impersonate]
 sources: [llm]
 status: enriched
+chart: simulate
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 883
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: go
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[abdicate]] — Use 'abdicate' when leaving a high or official position, especially one of power, often under pressure or voluntarily, whereas 'vacate' is more general and neutral.
 - advanced_form: [[relinquish]] — Use 'relinquish' when you give up a position or responsibility, often with a sense of letting go, whereas 'vacate' simply means to leave.
 - builds_on: [[evacuate]] — Use 'vacate' when formally or legally leaving a place, often voluntarily but urgently.
+- builds_on: [[resign]] — Use in formal or legal contexts to mean leaving a position or office, often with a sense of clearing it.

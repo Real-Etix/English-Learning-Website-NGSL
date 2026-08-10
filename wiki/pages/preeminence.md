@@ -6,6 +6,8 @@ pos: noun
 forms: [preeminence]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition

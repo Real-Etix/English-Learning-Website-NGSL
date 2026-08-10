@@ -6,6 +6,8 @@ pos: noun
 forms: [serenade]
 sources: [llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition

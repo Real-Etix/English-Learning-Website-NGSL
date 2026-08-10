@@ -9,6 +9,8 @@ rank: 576
 sfi: 53.959
 sources: [wordnet, llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - advanced_form: [[unavoidably]] — Use when referring to something that cannot be prevented by external circumstances, slightly less formal than inevitable but still more advanced.
 - builds_on: [[ultimately]] — Use 'inevitably' when the end result is unavoidable, adding a sense of necessity that 'ultimately' lacks.
 - builds_on: [[naturally]] — Use when the outcome is unavoidable or certain, stronger than 'naturally'.
+- synonym: [[ineluctably]]
+- synonym: [[invariably]]
+- synonym: [[perforce]]
+- synonym: [[predictably]]

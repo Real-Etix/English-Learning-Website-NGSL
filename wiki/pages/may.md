@@ -9,6 +9,8 @@ rank: 97
 sfi: 69.82
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[connote]]
+- synonym: [[could]]
+- collocation: [[wherever]]
+- collocation: [[deject]]

@@ -9,6 +9,8 @@ rank: 2279
 sfi: 54.72
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ _No sourced examples yet._
 - advanced_form: [[correlate]] — Use 'correlate' when the parallel involves a statistical or causal relationship, often in academic or data-driven discussions.
 - builds_on: [[rival]] — Use 'parallel' to highlight a close correspondence in quality or development, often in a more formal or comparative context.
 - builds_on: [[alongside]] — Use 'parallel' when describing lines, paths, or objects that are side by side and equidistant, never meeting, often in a geometric or structured sense.
+- synonym: [[abreast]]
+- synonym: [[corresponding]]
+- synonym: [[liken]]

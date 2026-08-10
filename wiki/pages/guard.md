@@ -9,6 +9,8 @@ rank: 1677
 sfi: 56.66
 sources: [wordnet, llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - builds_on: [[lifeguard]] — Use 'guard' for a more formal or professional context, emphasizing the protective role, though it is less specific than 'lifeguard'.
 - advanced_form: [[sentinel]] — Use 'sentinel' instead of 'guard' when referring to a formal, often military, watchpost or someone standing sentry.
 - advanced_form: [[watchman]] — Use 'watchman' instead of 'guard' when emphasizing night duty or security of a property.
+- synonym: [[bodyguard]]
+- synonym: [[bumper]]
+- synonym: [[watchkeeper]]
+- synonym: [[lineman]]

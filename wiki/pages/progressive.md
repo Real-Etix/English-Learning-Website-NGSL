@@ -9,6 +9,8 @@ rank: 352
 sfi: 56.413
 sources: [wordnet, llm]
 status: enriched
+chart: progressive
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,9 @@ favoring or promoting progress
 - builds_on: [[incremental]] — Use 'progressive' to emphasize steady forward movement or increase, especially in a series of stages.
 - builds_on: [[active]] — Use 'progressive' when describing a condition that steadily becomes more severe over time, whereas 'active' can also mean currently occurring but not necessarily worsening.
 - builds_on: [[reformer]] — Use progressive when the person supports gradual, forward-thinking reforms, often in social or political contexts.
+- synonym: [[accumulative]]
+- collocation: [[atrophy]]
+- synonym: [[gradual]]
+- synonym: [[leftist]]
+- synonym: [[meliorist]]
+- synonym: [[progressivist]]

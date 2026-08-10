@@ -9,6 +9,8 @@ rank: 782
 sfi: 60.88
 sources: [wordnet, llm]
 status: enriched
+chart: clinic
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[infirmary]] — Use when referring to a small or on-site medical facility, often in a school, prison, or military base, rather than a full hospital.
 - advanced_form: [[sanatorium]] — Use for a long-term care facility, especially for chronic diseases like tuberculosis, often in a remote or healthy climate.
 - advanced_form: [[polyclinic]] — Use for a large outpatient clinic that offers multiple medical specialties, common in some countries as an alternative to a hospital.
+- collocation: [[chaplain]]
+- collocation: [[clerkship]]
+- collocation: [[psychiatric]]
+- collocation: [[wristband]]

@@ -9,6 +9,8 @@ rank: 1971
 sfi: 55.62
 sources: [wordnet, llm]
 status: enriched
+chart: divert
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[enchant]] — Use 'enchant' when the pleasure feels almost magical or deeply captivating, stronger than simply 'delight'.
 - advanced_form: [[captivate]] — Use 'captivate' when something holds attention completely and gives pleasure through fascination, more intense than 'delight'.
 - advanced_form: [[enthrall]] — Use 'enthrall' when something is so pleasing or interesting that it demands total focus, more powerful than 'delight'.
+- synonym: [[elate]]
+- synonym: [[enrapture]]
+- collocation: [[exclaim]]
+- synonym: [[gratification]]
+- synonym: [[ambrosia]]

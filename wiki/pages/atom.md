@@ -9,6 +9,8 @@ rank: 242
 sfi: 57.173
 sources: [wordnet, llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[particle]] — Use 'particle' when you want a more general term for a tiny piece of matter, not limited to the specific smallest unit of an element.
 - advanced_form: [[iota]] — Use 'iota' instead of 'atom' in figurative or abstract contexts to stress a negligible quantity, especially in formal or literary English.
+- collocation: [[protium]]

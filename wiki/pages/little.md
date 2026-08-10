@@ -9,6 +9,8 @@ rank: 132
 sfi: 68.33
 sources: [wordnet, llm]
 status: enriched
+chart: little
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,12 @@ limited or below average in number or quantity or magnitude or extent
 - advanced_form: [[meager]] — Use 'meager' instead of 'little' when emphasizing insufficiency or inadequacy, often in contexts of resources or amounts.
 - advanced_form: [[scant]] — Use 'scant' instead of 'little' to stress that something is barely enough or insufficient, often with attention, evidence, or time.
 - advanced_form: [[negligible]] — Use 'negligible' instead of 'little' when something is so small it can be ignored or has no significant impact.
+- collocation: [[bookworm]]
+- collocation: [[headway]]
+- collocation: [[leeway]]
+- collocation: [[nook]]
+- collocation: [[peck]]
+- collocation: [[pugnacious]]
+- collocation: [[whippersnapper]]
+- collocation: [[wriggle]]
+- collocation: [[indulgence]]

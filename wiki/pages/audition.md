@@ -9,6 +9,8 @@ rank: 1102
 sfi: 49.8
 sources: [wordnet, llm]
 status: enriched
+chart: audition
+region: audition
 ---
 
 ## Definition

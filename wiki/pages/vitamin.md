@@ -9,6 +9,8 @@ rank: 71
 sfi: 63.13
 sources: [wordnet, llm]
 status: enriched
+chart: vitamin
+region: vitamin
 ---
 
 ## Definition

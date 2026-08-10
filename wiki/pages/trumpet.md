@@ -6,6 +6,8 @@ pos: verb
 forms: [trumpet]
 sources: [llm]
 status: enriched
+chart: courier
+region: you
 ---
 
 ## Definition

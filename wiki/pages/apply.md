@@ -9,6 +9,8 @@ rank: 611
 sfi: 61.97
 sources: [wordnet, llm]
 status: enriched
+chart: use
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,13 @@ put into service
 - advanced_form: [[utilize]] — Use 'utilize' when emphasizing practical or effective use, often in technical or formal contexts.
 - advanced_form: [[employ]] — Use 'employ' when referring to the use of tools, methods, or people in a systematic or professional way.
 - advanced_form: [[implement]] — Use 'implement' when applying a plan, policy, or system, especially in a methodical or official manner.
+- synonym: [[appertain]]
+- collocation: [[arbitrarily]]
+- collocation: [[asylee]]
+- collocation: [[bursary]]
+- collocation: [[caulk]]
+- collocation: [[judiciously]]
+- collocation: [[insecticide]]
+- collocation: [[lubricant]]
+- synonym: [[operationalize]]
+- collocation: [[photoprotectant]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [unanticipated]
 sources: [llm]
 status: enriched
+chart: unexpected
+region: unexpected
 ---
 
 ## Definition

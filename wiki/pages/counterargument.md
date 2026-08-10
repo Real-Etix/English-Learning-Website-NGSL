@@ -6,6 +6,8 @@ pos: noun
 forms: [counterargument]
 sources: [llm]
 status: enriched
+chart: con
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[con]] — Use 'counterargument' when you want a formal, reasoned point against a proposal, especially in debates or academic writing.
+- synonym: [[objection]]
+- synonym: [[retort]]
+- synonym: [[reply]]
+- collocation: [[present]]
+- collocation: [[strong]]
+- collocation: [[address]]
+- collocation: [[offer]]
+- synonym: [[rebuttal]]

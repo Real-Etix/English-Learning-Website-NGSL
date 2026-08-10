@@ -6,6 +6,8 @@ pos: verb
 forms: [entomb]
 sources: [llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition

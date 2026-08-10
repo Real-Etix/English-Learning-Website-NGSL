@@ -9,6 +9,8 @@ rank: 62
 sfi: 59.649
 sources: [wordnet, llm]
 status: enriched
+chart: antibody
+region: antibody
 ---
 
 ## Definition

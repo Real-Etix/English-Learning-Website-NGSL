@@ -9,6 +9,8 @@ rank: 3
 sfi: 65.665
 sources: [wordnet, llm]
 status: enriched
+chart: distribution
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ _No sourced examples yet._
 - advanced_form: [[density]] — Use 'density' for continuous distributions to describe how concentrated the probabilities are, while 'distribution' refers to the overall arrangement of values.
 - builds_on: [[dividend]] — Use 'distribution' when focusing on the act of allocating profits, especially in fund or corporate contexts, while 'dividend' specifically refers to a per-share payment.
 - builds_on: [[delivery]] — Use 'distribution' when focusing on the systematic spreading or allocation of items, especially over a wide area or to many recipients.
+- synonym: [[apportionment]]
+- synonym: [[dispersal]]
+- collocation: [[equitable]]
+- collocation: [[homogeneous]]
+- collocation: [[inequitable]]
+- collocation: [[warehousing]]
+- builds_on: [[histogram]] — Use when focusing on the statistical concept of how data points are spread, rather than the specific bar-chart visual.

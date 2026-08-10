@@ -6,6 +6,8 @@ pos: verb
 forms: [comport]
 sources: [llm]
 status: enriched
+chart: accommodate
+region: you
 ---
 
 ## Definition

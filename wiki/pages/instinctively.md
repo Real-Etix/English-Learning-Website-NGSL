@@ -6,6 +6,8 @@ pos: adverb
 forms: [instinctively]
 sources: [llm]
 status: enriched
+chart: automatically
+region: automatically
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[automatically]] — Use when the action is driven by innate instinct rather than learned habit or mechanism.
+- synonym: [[innately]]
+- synonym: [[reflexively]]

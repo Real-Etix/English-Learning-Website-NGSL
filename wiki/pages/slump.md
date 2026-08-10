@@ -9,6 +9,8 @@ rank: 463
 sfi: 53.85
 sources: [wordnet, llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[stoop]] — Use 'stoop' when the drooping posture involves bending the head and shoulders forward, often from fatigue or to fit under something.
 - advanced_form: [[loll]] — Use 'loll' when the posture is lazy, relaxed, and the head or body hangs limply, often indicating drowsiness or idleness.
 - advanced_form: [[hunch]] — Use 'hunch' when the drooping involves raising the shoulders and bending the back forward, as from cold, concentration, or fatigue.
+- collocation: [[mid-afternoon]]

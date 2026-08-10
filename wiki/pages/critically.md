@@ -9,6 +9,8 @@ rank: 726
 sfi: 51.896
 sources: [wordnet, llm]
 status: enriched
+chart: severely
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ in a critical manner
 - advanced_form: [[censoriously]] — Use 'censoriously' when the criticism is morally disapproving or fault-finding, often with an authoritative air.
 - builds_on: [[urgently]] — Use 'critically' when the urgency stems from a life-threatening or decisive situation, stronger than 'urgently'.
 - builds_on: [[badly]] — Use 'critically' to indicate a degree that is at a decisive or dangerous threshold, more specific than 'badly'.
+- collocation: [[laud]]
+- synonym: [[pressingly]]
+- synonym: [[crucially]]

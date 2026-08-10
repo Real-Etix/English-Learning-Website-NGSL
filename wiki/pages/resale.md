@@ -9,6 +9,8 @@ rank: 1679
 sfi: 50.07
 sources: [wordnet, llm]
 status: enriched
+chart: resale
+region: resale
 ---
 
 ## Definition

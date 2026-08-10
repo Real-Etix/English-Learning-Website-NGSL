@@ -9,6 +9,8 @@ rank: 1449
 sfi: 57.62
 sources: [wordnet, llm]
 status: enriched
+chart: man
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ applying to ordinary citizens as contrasted with the military
 - advanced_form: [[civilian]] — Use 'civilian' when emphasizing that something pertains to non-military individuals, often as a noun or adjective.
 - advanced_form: [[nonmilitary]] — Use 'nonmilitary' to explicitly contrast with military contexts, especially in formal or technical writing.
 - advanced_form: [[noncombatant]] — Use 'noncombatant' to specify those not engaged in fighting, often in legal or humanitarian contexts.
+- synonym: [[intranational]]

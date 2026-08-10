@@ -9,6 +9,8 @@ rank: 573
 sfi: 62.25
 sources: [wordnet, llm]
 status: enriched
+chart: shop
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ hear with intention
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[heed]] — Use 'heed' when emphasizing that someone should pay careful attention to advice or warnings, not just passive listening.
 - advanced_form: [[attend]] — Use 'attend' when focusing on listening with deliberate concentration, often in formal or academic contexts.
+- collocation: [[earphone]]

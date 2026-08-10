@@ -6,6 +6,8 @@ pos: adjective
 forms: [compassionate]
 sources: [llm]
 status: enriched
+chart: tender
+region: you
 ---
 
 ## Definition

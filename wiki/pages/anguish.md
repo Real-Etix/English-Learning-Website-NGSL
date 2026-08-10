@@ -6,6 +6,8 @@ pos: noun
 forms: [anguish]
 sources: [llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[torture]] — Use 'anguish' for a deeper, more prolonged emotional suffering than 'torture', which can also be physical.
 - builds_on: [[pain]] — Use 'anguish' for intense, often prolonged pain that affects both body and mind.
 - builds_on: [[woe]] — Use when emphasizing intense, often prolonged emotional or physical suffering, stronger than everyday 'woe'.
+- synonym: [[agony]]

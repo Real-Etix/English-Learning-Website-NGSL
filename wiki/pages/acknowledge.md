@@ -7,8 +7,10 @@ forms: [acknowledge, acknowledges, acknowledged, acknowledging]
 lists: [ngsl]
 rank: 1747
 sfi: 56.39
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: grant
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - builds_on: [[recognize]] — Use 'acknowledge' when formally accepting someone's status, authority, or claim, often in official or respectful contexts.
 - builds_on: [[concede]] — Use 'acknowledge' when you want a more formal or neutral tone, especially in professional or written contexts, rather than the slightly defensive 'concede'.
 - builds_on: [[admit]] — Use when stating a fact or truth, often reluctantly or formally, rather than simply 'admitting'.
+- builds_on: [[respond]] — Use when responding to show notice or recognition, not necessarily with words.
+- advanced_form: [[concede]] — Use when admitting something reluctantly after initially resisting or arguing.
+- advanced_form: [[recognize]] — Use for formally or officially acknowledging the existence, truth, or validity of something.
+- advanced_form: [[avow]] — Use for declaring openly, confidently, and formally, often with a sense of personal commitment.

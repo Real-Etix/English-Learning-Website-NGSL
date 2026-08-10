@@ -9,6 +9,8 @@ rank: 154
 sfi: 54.48
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: revolutionary
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ status: enriched
 - advanced_form: [[insurgent]] — Use 'insurgent' for armed rebels fighting against an established government or authority, often in a political or military context.
 - advanced_form: [[dissident]] — Use 'dissident' for someone who openly opposes official policy or authority, typically through non-violent means like speech or activism.
 - advanced_form: [[revolutionary]] — Use 'revolutionary' for a rebel who aims to completely change the political or social system, often through radical action.
+- synonym: [[dissenter]]
+- synonym: [[insurrectionist]]

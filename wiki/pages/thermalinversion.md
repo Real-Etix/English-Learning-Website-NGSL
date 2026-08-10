@@ -6,6 +6,8 @@ pos: noun
 forms: [thermalinversion]
 sources: [llm]
 status: enriched
+chart: inversion
+region: inversion
 ---
 
 ## Definition

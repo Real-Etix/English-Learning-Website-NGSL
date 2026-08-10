@@ -9,6 +9,8 @@ rank: 486
 sfi: 63.11
 sources: [wordnet, llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ raise the level or amount of something
 - advanced_form: [[escalate]] — Use 'escalate' when raising something in stages or with intensity, often implying a step-by-step increase.
 - advanced_form: [[elevate]] — Use 'elevate' when raising something to a higher level or status, often in a formal or abstract sense.
 - builds_on: [[pose]] — Use 'raise' when bringing up a topic or concern for discussion, common in conversational or meeting settings.
+- collocation: [[chapeau]]
+- synonym: [[heave]]
+- collocation: [[hog]]
+- collocation: [[livestock]]

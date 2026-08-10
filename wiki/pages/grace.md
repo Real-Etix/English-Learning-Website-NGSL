@@ -9,6 +9,8 @@ rank: 431
 sfi: 54
 sources: [wordnet, llm]
 status: enriched
+chart: decorate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ status: enriched
 - domain: fitness
 - advanced_form: [[sanctification]] — Use when emphasizing the ongoing state of being set apart for God, more precise than general 'grace'.
 - advanced_form: [[justification]] — Use when focusing on the legal or declarative aspect of salvation, distinct from the broader concept of grace.
+- collocation: [[effortless]]
+- synonym: [[effortlessness]]
+- synonym: [[finesse]]
+- synonym: [[fluidity]]
+- collocation: [[panache]]
+- collocation: [[personify]]
+- synonym: [[poise]]

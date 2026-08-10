@@ -9,6 +9,8 @@ rank: 364
 sfi: 54.83
 sources: [wordnet, llm]
 status: enriched
+chart: phosphate
+region: phosphate
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[orthophosphate]] — Use 'orthophosphate' when you need to specify the simple, uncondensed phosphate ion versus other forms like pyrophosphate or polyphosphate.
 - advanced_form: [[pyrophosphate]] — Use 'pyrophosphate' to refer to the specific dimeric form, often encountered in biochemistry and industrial applications.
+- collocation: [[builder]]
+- collocation: [[dihydrogen]]

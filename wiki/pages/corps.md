@@ -6,6 +6,8 @@ pos: noun
 forms: [corps]
 sources: [llm]
 status: enriched
+chart: pipeline
+region: you
 ---
 
 ## Definition

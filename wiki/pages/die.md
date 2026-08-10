@@ -9,6 +9,8 @@ rank: 454
 sfi: 63.47
 sources: [wordnet, llm]
 status: enriched
+chart: go
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[perish]] — Use 'perish' for a more dramatic or literary tone, often implying a violent or untimely end.
 - advanced_form: [[expire]] — Use 'expire' in formal or medical contexts to emphasize the end of life as a process.
 - advanced_form: [[succumb]] — Use 'succumb' when death results from a specific cause, like disease or injury, implying surrender.
+- collocation: [[overwork]]
+- collocation: [[tap]]

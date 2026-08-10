@@ -9,6 +9,8 @@ rank: 74
 sfi: 59.37
 sources: [wordnet, llm]
 status: enriched
+chart: colonial
+region: colonial
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[imperial]] — Use 'imperial' to refer to the authority of an empire, which often includes colonies, while 'colonial' strictly relates to a colony itself.
 - advanced_form: [[colonizing]] — Use 'colonizing' as an adjective when emphasizing the active process of establishing colonies, whereas 'colonial' describes the state or characteristics of being a colony.
+- collocation: [[metropole]]

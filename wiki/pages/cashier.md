@@ -9,6 +9,8 @@ rank: 329
 sfi: 54.46
 sources: [wordnet, llm]
 status: enriched
+chart: clerk
+region: clerk
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[teller]] — Use 'teller' instead of 'cashier' when referring specifically to a bank employee handling cash transactions.
 - advanced_form: [[clerk]] — Use 'clerk' as a more formal or general term for a bank employee dealing with paperwork and transactions.
+- synonym: [[bursar]]

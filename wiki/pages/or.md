@@ -9,6 +9,8 @@ rank: 29
 sfi: 76.09
 sources: [curated]
 status: verified
+chart: train
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ Used to show a choice between two or more things.
 - collocation: [[cancer]]
 - collocation: [[bus]]
 - collocation: [[god]]
+- collocation: [[else]]
+- collocation: [[rather]]
+- collocation: [[whether]]

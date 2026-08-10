@@ -9,6 +9,8 @@ rank: 1373
 sfi: 57.95
 sources: [wordnet, llm]
 status: enriched
+chart: competitor
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ being directly across from each other
 - advanced_form: [[contrary]] — Use 'contrary' when emphasizing active disagreement or opposition in views or actions.
 - advanced_form: [[antithetical]] — Use 'antithetical' to stress a direct and complete opposition, often in abstract or philosophical contexts.
 - advanced_form: [[antipodal]] — Use 'antipodal' for a more formal or extreme sense of being directly opposite, as if on opposite sides of the globe.
+- synonym: [[against]]
+- collocation: [[grocer's]]

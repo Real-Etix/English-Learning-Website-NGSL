@@ -6,6 +6,8 @@ pos: noun
 forms: [flaccidity]
 sources: [llm]
 status: enriched
+chart: relaxation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[relaxation]] — Use flaccidity to describe a state of limpness or lack of tone in muscles.
+- synonym: [[weakness]]
+- synonym: [[laxity]]
+- collocation: [[muscle]]
+- collocation: [[skin]]
+- collocation: [[tissue]]

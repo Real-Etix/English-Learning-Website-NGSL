@@ -6,6 +6,8 @@ pos: verb
 forms: [stiffen]
 sources: [llm]
 status: enriched
+chart: strain
+region: you
 ---
 
 ## Definition

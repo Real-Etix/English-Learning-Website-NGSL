@@ -6,6 +6,8 @@ pos: noun
 forms: [bloke]
 sources: [llm]
 status: enriched
+chart: gentleman
+region: you
 ---
 
 ## Definition

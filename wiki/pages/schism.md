@@ -6,6 +6,8 @@ pos: noun
 forms: [schism]
 sources: [llm]
 status: enriched
+chart: union
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[separation]] — Use 'schism' for a formal, often ideological or religious split that creates opposing groups.
+- synonym: [[rift]]

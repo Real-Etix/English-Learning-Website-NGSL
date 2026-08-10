@@ -6,6 +6,8 @@ pos: noun
 forms: [teleost]
 sources: [llm]
 status: enriched
+chart: fish
+region: fish
 ---
 
 ## Definition

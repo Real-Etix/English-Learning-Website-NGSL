@@ -6,6 +6,8 @@ pos: adjective
 forms: [polynomial]
 sources: [llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nonlinear]] — Use 'polynomial' when the nonlinearity is expressed as a polynomial function, often in algebraic contexts.
+- collocation: [[equation]]
+- collocation: [[function]]
+- collocation: [[time]]
+- collocation: [[degree]]
+- collocation: [[regression]]

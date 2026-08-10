@@ -9,6 +9,8 @@ rank: 191
 sfi: 57.744
 sources: [wordnet, llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[malformation]] — Use 'malformation' specifically for a physical structural imperfection present from birth, emphasizing anatomical misshaping.
 - builds_on: [[flaw]] — Use 'defect' for a specific, often inherent flaw in a manufactured object or system, implying a deviation from a standard.
 - builds_on: [[rat]] — Use 'defect' when someone leaves a group to join another, often for personal advantage, similar to 'rat' but implies switching sides.
+- synonym: [[emigrate]]
+- synonym: [[glitch]]
+- collocation: [[pulp]]

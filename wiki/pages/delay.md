@@ -9,6 +9,8 @@ rank: 1310
 sfi: 58.22
 sources: [wordnet, llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[impede]] — Use 'impede' instead of 'delay' when the obstruction is physical or metaphorical and suggests a more active or significant hindrance, often implying progress is blocked rather than just postponed.
 - advanced_form: [[hinder]] — Use 'hinder' instead of 'delay' when something creates a difficulty or obstacle that slows progress, often with a sense of creating a burden or complication.
 - advanced_form: [[obstruct]] — Use 'obstruct' instead of 'delay' when something physically or systematically blocks the way, often implying a more complete or deliberate barrier to movement or action.
+- synonym: [[adjourn]]
+- synonym: [[dawdle]]
+- synonym: [[deferment]]
+- synonym: [[postponement]]
+- collocation: [[without]]
+- synonym: [[procrastinate]]

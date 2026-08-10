@@ -9,6 +9,8 @@ rank: 558
 sfi: 62.37
 sources: [wordnet, llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,11 @@ _No sourced examples yet._
 - builds_on: [[speech]] — Use 'address' for a prepared speech given to an audience, often formal or official.
 - builds_on: [[handle]] — Use 'address' when you are taking action to resolve a specific problem or concern.
 - builds_on: [[lecture]] — Use 'address' for a formal, prepared speech, often to a large audience or on an important occasion.
+- collocation: [[consignee]]
+- collocation: [[counterargument]]
+- collocation: [[email]]
+- collocation: [[podium]]
+- collocation: [[postal]]
+- collocation: [[presidential]]
+- collocation: [[proactively]]
+- collocation: [[rostrum]]

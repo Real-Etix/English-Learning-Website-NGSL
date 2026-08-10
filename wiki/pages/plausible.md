@@ -9,6 +9,8 @@ rank: 449
 sfi: 55.37
 sources: [wordnet, llm]
 status: enriched
+chart: dependable
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ apparently reasonable and credible, and therefore convincing
 - advanced_form: [[tenable]] — Use 'tenable' when referring to a position or idea that can be defended against criticism, often in formal or academic contexts.
 - builds_on: [[probable]] — Use 'plausible' when an idea or story seems believable and reasonable, but may not be proven; it's stronger on appearance of truth than 'probable'.
 - builds_on: [[credible]] — Use 'plausible' when something seems reasonable or likely to be true, often with a hint of skepticism; more formal than 'credible'.
+- synonym: [[conceivable]]
+- synonym: [[convincing]]
+- collocation: [[distractor]]

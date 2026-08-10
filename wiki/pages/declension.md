@@ -6,6 +6,8 @@ pos: noun
 forms: [declension]
 sources: [llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[paradigm]] — Use 'declension' specifically for noun/adjective inflection, more precise than the general term 'paradigm'.
+- synonym: [[conjugation]]

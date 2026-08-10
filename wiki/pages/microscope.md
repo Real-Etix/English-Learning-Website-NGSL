@@ -9,6 +9,8 @@ rank: 502
 sfi: 52.98
 sources: [wordnet, llm]
 status: enriched
+chart: microscope
+region: microscope
 ---
 
 ## Definition

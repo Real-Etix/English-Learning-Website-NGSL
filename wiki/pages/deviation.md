@@ -9,6 +9,8 @@ rank: 55
 sfi: 58.64
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ a variation that deviates from the standard or norm
 - builds_on: [[variant]] — Use 'deviation' to highlight a measurable or systematic difference from an expected standard; more technical than 'variant' for data or processes.
 - builds_on: [[deflection]] — Use 'deviation' when emphasizing a clear departure from a standard path, rule, or expected norm, more formal than 'deflection'.
 - builds_on: [[variation]] — Use 'deviation' when emphasizing a departure from a norm, standard, or expected path.
+- synonym: [[abnormality]]
+- synonym: [[diversion]]
+- synonym: [[irregularity]]
+- synonym: [[perversion]]

@@ -9,6 +9,8 @@ rank: 180
 sfi: 58.12
 sources: [wordnet, llm]
 status: enriched
+chart: cable
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[cable]] — Use 'cable' for a very strong, thick rope, often made of steel wire, used for heavy loads.
 - advanced_form: [[tether]] — Use 'tether' for a rope that restricts movement, typically tying an animal to a fixed point.
 - builds_on: [[cord]] — Use 'rope' for a thick, strong cord made of twisted strands, common in climbing, boating, or tying heavy items.
+- synonym: [[lash]]
+- collocation: [[noose]]

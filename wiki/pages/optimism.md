@@ -9,6 +9,8 @@ rank: 954
 sfi: 52.16
 sources: [wordnet, llm]
 status: enriched
+chart: optimism
+region: optimism
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[buoyancy]] — Use instead of 'optimism' to emphasize a light, resilient hopefulness, often in the face of adversity.
 - advanced_form: [[sanguinity]] — Use instead of 'optimism' for a more formal or literary tone, suggesting a confident, cheerful outlook.
+- collocation: [[boundless]]
+- collocation: [[reign]]

@@ -9,6 +9,8 @@ rank: 40
 sfi: 60.695
 sources: [wordnet, llm]
 status: enriched
+chart: assertion
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[rendition]] — Use this when emphasizing the act or result of translating, often with a sense of interpretation or adaptation.
 - advanced_form: [[version]] — Use this when referring to a specific translated edition or form of a text.
+- synonym: [[rendering]]
+- synonym: [[interpretation]]
+- synonym: [[paraphrase]]
+- synonym: [[gloss]]
+- collocation: [[machine]]
+- collocation: [[faithful]]

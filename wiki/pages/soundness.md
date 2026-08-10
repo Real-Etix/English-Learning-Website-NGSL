@@ -6,6 +6,8 @@ pos: noun
 forms: [soundness]
 sources: [llm]
 status: enriched
+chart: integrity
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[validity]] — Use 'soundness' when focusing on the logical reliability and structural integrity of an argument or theory.
 - builds_on: [[integrity]] — Use 'soundness' to emphasize reliability and freedom from defects, while 'integrity' more broadly covers completeness or honesty.
+- synonym: [[cogency]]
+- synonym: [[wholeness]]
+- builds_on: [[wellness]] — Use to stress the overall robustness and integrity of health, often in formal or evaluative contexts.

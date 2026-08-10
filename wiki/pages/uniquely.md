@@ -6,6 +6,8 @@ pos: adverb
 forms: [uniquely]
 sources: [llm]
 status: enriched
+chart: particularly
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[specially]] — Use to stress a one-of-a-kind quality or exceptional nature.
+- synonym: [[distinctively]]

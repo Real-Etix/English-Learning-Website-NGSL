@@ -9,6 +9,8 @@ rank: 1435
 sfi: 50.93
 sources: [wordnet, llm]
 status: enriched
+chart: explicitly
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ without doubt
 - advanced_form: [[indubitably]] — Use for a very formal, sophisticated tone that emphasizes certainty with a scholarly nuance.
 - advanced_form: [[assuredly]] — Use to convey confidence and certainty, often in persuasive or motivational contexts.
 - builds_on: [[alright]] — Use 'undoubtedly' in formal or written contexts to express strong certainty, replacing 'alright' which is more casual and can be ambiguous.
+- builds_on: [[surely]] — Use when expressing strong confidence, often in formal or written contexts.

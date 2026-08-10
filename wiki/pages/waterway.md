@@ -6,6 +6,8 @@ pos: noun
 forms: [waterway]
 sources: [llm]
 status: enriched
+chart: to
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[river]] — Use this when focusing on the river as a route for transportation or navigation.
+- synonym: [[channel]]
+- synonym: [[passage]]
+- synonym: [[route]]
+- collocation: [[major]]
+- collocation: [[network]]
+- collocation: [[navigable]]

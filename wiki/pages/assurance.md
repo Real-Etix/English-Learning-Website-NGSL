@@ -9,6 +9,8 @@ rank: 450
 sfi: 54.29
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ freedom from doubt
 - advanced_form: [[sureness]] — Use sureness for a calm, natural freedom from doubt, often in skills or decisions.
 - builds_on: [[certainty]] — Use 'assurance' when emphasizing a confident, often assertive certainty, especially in decisions or promises.
 - builds_on: [[confidence]] — Use when emphasizing a calm, certain belief in one's own abilities or the truth of something, often in a formal or professional context.
+- synonym: [[coverage]]
+- synonym: [[insurance]]
+- builds_on: [[insurance]] — Use assurance in British English for life insurance, or to suggest certainty.

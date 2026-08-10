@@ -6,6 +6,8 @@ pos: noun
 forms: [venule]
 sources: [llm]
 status: enriched
+chart: basin
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vein]] — Use 'venule' when specifying the smallest veins that connect capillaries to larger veins.
+- synonym: [[microvessel]]
+- collocation: [[capillary]]

@@ -7,8 +7,10 @@ forms: [considerate]
 lists: [toeic]
 rank: 1206
 sfi: 49.46
-sources: [wordnet, dictionaryapi]
-status: seeded
+sources: [wordnet, dictionaryapi, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -21,3 +23,11 @@ showing concern for the rights and feelings of others
 
 ## Connections
 - domain: toeic
+- synonym: [[kind]]
+- collocation: [[very]]
+- collocation: [[be]]
+- collocation: [[of]]
+- collocation: [[more]]
+- synonym: [[courteous]]
+- advanced_form: [[solicitous]] — Use it when you want to emphasize anxious, watchful concern, often for someone's well-being rather than just general politeness.
+- advanced_form: [[attentive]] — Use it when describing someone who anticipates and responds to others' needs, especially in service, hospitality, or caregiving.

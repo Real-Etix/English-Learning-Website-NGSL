@@ -9,6 +9,8 @@ rank: 1690
 sfi: 56.6
 sources: [wordnet, llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - builds_on: [[eager]] — Use 'bore' instead of 'eager' (noun) as the standard term for a dangerous tidal wave in a river; 'eager' is a rare variant and often confused with the adjective meaning enthusiastic.
 - advanced_form: [[dullard]] — Use 'dullard' when you want to emphasize the person's lack of intelligence or tediousness, often with a sharper insult than 'bore'.
 - advanced_form: [[yawner]] — Use 'yawner' informally to stress that the person or thing is so boring it makes you yawn; slightly more vivid than 'bore'.
+- synonym: [[pall]]
+- synonym: [[perforate]]
+- synonym: [[weary]]

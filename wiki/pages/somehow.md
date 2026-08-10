@@ -9,6 +9,8 @@ rank: 1692
 sfi: 56.59
 sources: [wordnet, llm]
 status: enriched
+chart: somehow
+region: somehow
 ---
 
 ## Definition

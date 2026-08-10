@@ -9,6 +9,8 @@ rank: 2060
 sfi: 55.36
 sources: [wordnet, llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[portal]] — Use 'portal' for a large, impressive or formal gate, often with architectural or historical significance.
 - advanced_form: [[barrier]] — Use 'barrier' when focusing on the function of blocking entry, not necessarily a hinged gate.
+- collocation: [[latch]]
+- collocation: [[padlock]]
+- collocation: [[watchman]]

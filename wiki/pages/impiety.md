@@ -6,6 +6,8 @@ pos: noun
 forms: [impiety]
 sources: [llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sin]] — Use 'impiety' when focusing on disrespect or irreverence toward the divine, rather than the act of sinning itself.
+- collocation: [[gross]]
+- collocation: [[act]]
+- collocation: [[charge]]
+- collocation: [[accused]]
+- collocation: [[punish]]

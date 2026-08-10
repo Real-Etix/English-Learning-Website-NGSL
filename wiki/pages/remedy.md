@@ -9,6 +9,8 @@ rank: 296
 sfi: 55.43
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: refine
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ act of correcting an error or a fault or an evil
 - advanced_form: [[redress]] — Use 'redress' when referring to correction of a wrong, especially through compensation or remedy for a grievance.
 - advanced_form: [[amendment]] — Use 'amendment' when focusing on formal changes to a document or law to correct faults.
 - builds_on: [[cure]] — Use 'remedy' when focusing on the action of correcting a problem with a specific treatment, rather than the general act of curing.
+- synonym: [[antitoxin]]
+- collocation: [[druggist]]
+- collocation: [[inefficacious]]
+- synonym: [[remediation]]

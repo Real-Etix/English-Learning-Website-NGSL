@@ -9,6 +9,8 @@ rank: 443
 sfi: 54.32
 sources: [wordnet, llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ _No sourced examples yet._
 - builds_on: [[visa]] — Use 'endorse' when the visa is officially placed or stamped in the passport, emphasizing the act of authorization rather than merely attaching a sticker.
 - builds_on: [[ratify]] — Use 'endorse' to emphasize public support or approval, often with a sense of advocacy, rather than just formal ratification.
 - builds_on: [[approve]] — Use 'endorse' when you mean giving public support or approval, often after careful consideration.
+- synonym: [[countersign]]
+- collocation: [[wholeheartedly]]
+- synonym: [[vouch]]

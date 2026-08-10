@@ -9,6 +9,8 @@ rank: 377
 sfi: 54.57
 sources: [wordnet, llm]
 status: enriched
+chart: anaerobic
+region: anaerobic
 ---
 
 ## Definition

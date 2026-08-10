@@ -9,6 +9,8 @@ rank: 191
 sfi: 57.86
 sources: [wordnet, llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition

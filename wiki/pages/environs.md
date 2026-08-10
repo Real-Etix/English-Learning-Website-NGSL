@@ -6,6 +6,8 @@ pos: noun
 forms: [environs]
 sources: [llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[habitat]] — Use 'environs' for a more formal or literary tone, especially when emphasizing the surrounding area or conditions.
 - builds_on: [[suburb]] — Use for a formal, collective term for the suburbs and nearby areas, often in geographic or planning contexts.
+- builds_on: [[neighborhood]] — Use when referring to the outskirts or surrounding areas of a town or city.
+- synonym: [[vicinity]]

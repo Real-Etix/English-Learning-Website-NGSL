@@ -6,6 +6,8 @@ pos: verb
 forms: [subjugate]
 sources: [llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crush]] — Use 'subjugate' to convey complete control and domination, often after conquest; more formal and intense than 'crush'.
+- synonym: [[oppress]]

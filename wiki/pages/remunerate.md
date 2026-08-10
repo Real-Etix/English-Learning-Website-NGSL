@@ -6,6 +6,8 @@ pos: verb
 forms: [remunerate]
 sources: [llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition

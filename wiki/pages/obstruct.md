@@ -6,6 +6,8 @@ pos: verb
 forms: [obstruct]
 sources: [llm]
 status: enriched
+chart: bar
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 - builds_on: [[block]] — Use when something physically blocks a path or passage, often with a sense of deliberate or accidental impediment.
 - builds_on: [[interfere]] — Use 'obstruct' instead of 'interfere' when emphasizing a physical or direct blockage of progress or movement.
 - builds_on: [[delay]] — Use 'obstruct' instead of 'delay' when something physically or systematically blocks the way, often implying a more complete or deliberate barrier to movement or action.
+- synonym: [[barricade]]
+- synonym: [[congest]]
+- synonym: [[hinder]]
+- synonym: [[occlude]]

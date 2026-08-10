@@ -9,6 +9,8 @@ rank: 38
 sfi: 60.37
 sources: [wordnet, llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,7 @@ _No sourced examples yet._
 - builds_on: [[freight]] — Use 'shipment' instead of 'freight' when focusing on a specific batch of goods being sent together, especially in logistics or e-commerce contexts.
 - builds_on: [[parcel]] — Use 'shipment' for goods transported collectively, especially in logistics and business, where 'parcel' might imply a single item.
 - builds_on: [[mail]] — Use 'shipment' when emphasizing the transport of goods or packages, often in a business or logistics context.
+- collocation: [[containerize]]
+- synonym: [[importation]]
+- collocation: [[megagram]]
+- collocation: [[inbound]]

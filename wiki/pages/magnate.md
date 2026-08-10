@@ -6,6 +6,8 @@ pos: noun
 forms: [magnate]
 sources: [llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition

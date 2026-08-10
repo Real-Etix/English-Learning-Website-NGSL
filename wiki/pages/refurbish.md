@@ -6,6 +6,8 @@ pos: verb
 forms: [refurbish]
 sources: [llm]
 status: enriched
+chart: review
+region: you
 ---
 
 ## Definition

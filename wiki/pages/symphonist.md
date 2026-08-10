@@ -6,6 +6,8 @@ pos: noun
 forms: [symphonist]
 sources: [llm]
 status: enriched
+chart: composer
+region: composer
 ---
 
 ## Definition

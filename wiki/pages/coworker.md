@@ -9,6 +9,8 @@ rank: 85
 sfi: 58.21
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,11 @@ _No sourced examples yet._
 
 ## Connections
 - domain: toeic
+- synonym: [[colleague]]
+- synonym: [[associate]]
+- synonym: [[peer]]
+- collocation: [[former]]
+- collocation: [[close]]
+- collocation: [[new]]
+- collocation: [[female]]
+- collocation: [[male]]

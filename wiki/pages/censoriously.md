@@ -6,6 +6,8 @@ pos: adverb
 forms: [censoriously]
 sources: [llm]
 status: enriched
+chart: severely
+region: you
 ---
 
 ## Definition

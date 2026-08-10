@@ -9,6 +9,8 @@ rank: 1990
 sfi: 55.56
 sources: [wordnet, llm]
 status: enriched
+chart: gentleman
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[aristocrat]] — Use 'aristocrat' to highlight membership in the upper class by birth or title, with an expectation of elegant behavior.
 - advanced_form: [[gallant]] — Use 'gallant' for a man who is particularly chivalrous, courteous, and attentive, especially towards women.
 - builds_on: [[sir]] — Use when addressing a man with old-fashioned politeness, often in formal or respectful contexts.
+- collocation: [[portly]]

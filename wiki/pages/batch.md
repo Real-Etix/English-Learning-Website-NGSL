@@ -9,6 +9,8 @@ rank: 686
 sfi: 53.2
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[packet]] — Use 'batch' for a group of identical items produced or processed together, often in manufacturing or cooking.
 - advanced_form: [[lot]] — Use 'lot' for a set of items produced or shipped together, especially in commerce or manufacturing, to sound more formal than 'batch'.
 - advanced_form: [[consignment]] — Use 'consignment' for a batch of goods sent or delivered to someone, emphasizing shipment or transfer of ownership.
+- synonym: [[bunch]]
+- builds_on: [[bunch]] — Use when the group is processed or created together, often in cooking or manufacturing.

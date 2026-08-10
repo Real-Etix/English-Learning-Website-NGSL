@@ -6,6 +6,8 @@ pos: noun
 forms: [astonishment]
 sources: [llm]
 status: enriched
+chart: wonder
+region: wonder
 ---
 
 ## Definition

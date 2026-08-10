@@ -6,6 +6,8 @@ pos: noun
 forms: [creed]
 sources: [llm]
 status: enriched
+chart: procedure
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[mantra]] — Use 'creed' for a formal or solemn repeated statement of beliefs, often with personal or ideological weight.
 - builds_on: [[religion]] — Use 'creed' when referring to the formal set of beliefs accepted by a religious group.
 - builds_on: [[philosophy]] — Use 'creed' for a concise, often personal or shared statement of faith or principles.
+- synonym: [[faith]]
+- builds_on: [[faith]] — Use when referring to a formal system of religious beliefs, often written.

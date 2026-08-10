@@ -9,6 +9,8 @@ rank: 216
 sfi: 56.07
 sources: [wordnet, llm]
 status: enriched
+chart: bar
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[settee]] — Use for a smaller, more formal upholstered seat, often with a higher back and arms, compared to the common 'sofa'.
 - advanced_form: [[divan]] — Use for a backless or low-backed upholstered seat, often used as a daybed, more specific and less common than 'sofa'.
 - builds_on: [[lounge]] — Use 'sofa' for a general, comfortable seat for two or more people, more formal than 'lounge' in British English but standard in American.
+- synonym: [[chesterfield]]
+- collocation: [[leather]]
+- synonym: [[banquette]]

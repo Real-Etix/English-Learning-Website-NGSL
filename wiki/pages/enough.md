@@ -9,6 +9,8 @@ rank: 267
 sfi: 65.6
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,9 @@ an adequate quantity
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[plenty]]
+- synonym: [[abundance]]
+- synonym: [[ample]]
+- collocation: [[gumption]]
+- collocation: [[leeway]]
+- collocation: [[predictably]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [erratically]
 sources: [llm]
 status: enriched
+chart: randomly
+region: randomly
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[randomly]] — Use erratically for unpredictable, inconsistent behavior, especially in patterns.
+- synonym: [[haphazardly]]

@@ -9,6 +9,8 @@ rank: 1764
 sfi: 56.33
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - synonym: [[design]]
 - advanced_form: [[aspiration]] — Use 'aspiration' for a long-term, high-reaching goal that involves ambition, rather than a simple intention.
 - advanced_form: [[design]] — Use 'design' to emphasize a deliberate, often cunning plan or intention, especially when the outcome is carefully devised.
+- collocation: [[offeror]]
+- synonym: [[volition]]

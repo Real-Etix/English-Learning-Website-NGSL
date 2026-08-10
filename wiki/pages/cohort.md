@@ -6,6 +6,8 @@ pos: noun
 forms: [cohort]
 sources: [llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[generation]] — Use 'cohort' instead of 'generation' when referring to a specific group defined by a shared characteristic or time period, especially in academic or statistical contexts.
 - builds_on: [[demographic]] — Use 'cohort' instead of 'demographic' when referring to a specific group sharing a common time period or experience.
 - builds_on: [[colleague]] — Use 'cohort' for a group of colleagues who share a common experience or time period, often in academic or research settings.
+- builds_on: [[grade]] — use when emphasizing the group as a statistical or academic unit, often over multiple years

@@ -9,6 +9,8 @@ rank: 1056
 sfi: 59.33
 sources: [wordnet]
 status: seeded
+chart: entity
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,11 @@ in other respects or ways
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[dissimilarly]]
+- synonym: [[else]]
+- synonym: [[differently]]
+- collocation: [[unless]]
+- collocation: [[identical]]
+- collocation: [[healthy]]
+- synonym: [[rather]]
+- collocation: [[unobtainable]]

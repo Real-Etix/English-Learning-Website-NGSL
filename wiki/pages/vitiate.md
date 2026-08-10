@@ -6,6 +6,8 @@ pos: verb
 forms: [vitiate]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition

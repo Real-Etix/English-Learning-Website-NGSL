@@ -6,6 +6,8 @@ pos: verb
 forms: [buoy]
 sources: [llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition

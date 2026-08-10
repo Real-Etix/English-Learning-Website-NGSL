@@ -6,6 +6,8 @@ pos: noun
 forms: [flection]
 sources: [llm]
 status: enriched
+chart: flexion
+region: flexion
 ---
 
 ## Definition

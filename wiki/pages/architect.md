@@ -9,6 +9,8 @@ rank: 148
 sfi: 56.99
 sources: [wordnet, llm]
 status: enriched
+chart: architect
+region: you
 ---
 
 ## Definition

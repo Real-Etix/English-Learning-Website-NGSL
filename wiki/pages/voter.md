@@ -9,6 +9,8 @@ rank: 1752
 sfi: 56.37
 sources: [wordnet, llm]
 status: enriched
+chart: constituent
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[elector]] — Use 'elector' in formal or legal contexts to emphasize the official status of someone entitled to vote.
 - advanced_form: [[constituent]] — Use 'constituent' when referring to a voter represented by a specific elected official, highlighting the representative-voter relationship.
+- collocation: [[apathy]]
+- collocation: [[phantom]]

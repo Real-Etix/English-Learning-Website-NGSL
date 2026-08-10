@@ -9,6 +9,8 @@ rank: 847
 sfi: 60.5
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,17 @@ an interconnected system of things or people
 - advanced_form: [[nexus]] — Use 'nexus' for a central or focal point of connections, more formal than 'network'.
 - advanced_form: [[web]] — Use 'web' for an intricate, often tangled set of connections, implying complexity or entanglement.
 - advanced_form: [[grid]] — Use 'grid' for a structured, often uniform system of interconnections, especially for utilities or computing.
+- synonym: [[constellation]]
+- collocation: [[countrywide]]
+- collocation: [[endpoint]]
+- collocation: [[externality]]
+- collocation: [[gateway]]
+- collocation: [[interconnection]]
+- collocation: [[latency]]
+- collocation: [[reconfigure]]
+- collocation: [[waterway]]
+- collocation: [[nationwide]]
+- collocation: [[worldwide]]
+- synonym: [[labyrinth]]
+- collocation: [[multichannel]]
+- synonym: [[plexus]]

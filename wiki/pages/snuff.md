@@ -6,6 +6,8 @@ pos: noun
 forms: [snuff]
 sources: [llm]
 status: enriched
+chart: tobacco
+region: tobacco
 ---
 
 ## Definition

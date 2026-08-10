@@ -9,6 +9,8 @@ rank: 25
 sfi: 77.06
 sources: [curated]
 status: verified
+chart: just
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ Used to add something different or opposite to what came before.
 - collocation: [[once]]
 - collocation: [[early]]
 - collocation: [[nobody]]
+- collocation: [[anyhow]]
+- collocation: [[anyway]]
+- collocation: [[anywhere]]
+- collocation: [[conversely]]
+- collocation: [[indeed]]
+- collocation: [[rather]]
+- collocation: [[fortunately]]

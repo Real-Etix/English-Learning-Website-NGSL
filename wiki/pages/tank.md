@@ -9,6 +9,8 @@ rank: 2189
 sfi: 54.95
 sources: [wordnet, llm]
 status: enriched
+chart: tank
+region: tank
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[panzer]] — Use 'panzer' when referring specifically to German tanks or in historical contexts; 'tank' is more general.
 - advanced_form: [[tankette]] — Use 'tankette' for a small, lightly armored tank; 'tank' is for standard main battle tanks.
+- synonym: [[bath]]
+- synonym: [[boiler]]
+- synonym: [[vat]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [grandmama]
 sources: [llm]
 status: enriched
+chart: father
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[grandmother]] — A slightly formal and old-fashioned term for grandmother, used in more refined or affectionate contexts.
+- collocation: [[visit]]
+- collocation: [[tea]]
+- collocation: [[house]]
+- collocation: [[dear]]
+- collocation: [[love]]

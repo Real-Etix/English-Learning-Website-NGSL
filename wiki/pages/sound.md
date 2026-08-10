@@ -9,6 +9,8 @@ rank: 390
 sfi: 64.08
 sources: [wordnet, llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,17 @@ financially secure and safe
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[solvent]] — Use 'solvent' instead of 'sound' when emphasizing the ability to pay debts and avoid bankruptcy.
 - advanced_form: [[stable]] — Use 'stable' instead of 'sound' when highlighting consistent, low-risk financial health over time.
+- synonym: [[approximant]]
+- collocation: [[cacophonous]]
+- collocation: [[chime]]
+- collocation: [[crackle]]
+- collocation: [[dampen]]
+- collocation: [[deafening]]
+- collocation: [[distort]]
+- collocation: [[ecologically]]
+- collocation: [[fiscally]]
+- collocation: [[melodious]]
+- collocation: [[monotonous]]
+- collocation: [[mute]]
+- collocation: [[reverberation]]
+- collocation: [[tock]]

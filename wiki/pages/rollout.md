@@ -6,6 +6,8 @@ pos: noun
 forms: [rollout]
 sources: [llm]
 status: enriched
+chart: leverage
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[deployment]] — Use 'rollout' for the gradual introduction of a new product, system, or service, especially in business or technology contexts, rather than military distribution.
+- synonym: [[launch]]
+- synonym: [[introduction]]
+- synonym: [[release]]
+- collocation: [[software]]
+- collocation: [[product]]
+- collocation: [[national]]
+- collocation: [[gradual]]

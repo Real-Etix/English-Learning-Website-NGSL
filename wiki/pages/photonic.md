@@ -6,6 +6,8 @@ pos: adjective
 forms: [photonic]
 sources: [llm]
 status: enriched
+chart: optical
+region: optical
 ---
 
 ## Definition

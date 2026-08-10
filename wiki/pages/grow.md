@@ -9,6 +9,8 @@ rank: 335
 sfi: 64.69
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[evolve]] — Use 'evolve' for a gradual change that often implies a natural, sometimes complex, progression.
 - advanced_form: [[develop]] — Use 'develop' for a more deliberate or systematic acquisition of a quality or state.
 - advanced_form: [[mature]] — Use 'mature' when the change is toward a more complete, advanced, or seasoned state.
+- synonym: [[accrete]]
+- collocation: [[crops]]
+- collocation: [[listless]]
+- collocation: [[impatient]]
+- collocation: [[despondent]]

@@ -9,6 +9,8 @@ rank: 345
 sfi: 64.57
 sources: [wordnet, llm]
 status: enriched
+chart: persist
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ stay the same
 - antonym: [[change]]
 - advanced_form: [[remain]] — Use 'remain' for a neutral, formal tone instead of 'stay' in official statements or written English.
 - advanced_form: [[persist]] — Use 'persist' when something continues to exist or happen, often despite attempts to stop it; more dramatic than 'stay'.
+- collocation: [[levelheaded]]
+- synonym: [[strut]]

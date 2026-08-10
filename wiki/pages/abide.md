@@ -9,6 +9,8 @@ rank: 1195
 sfi: 49.46
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: persist
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ dwell
 - builds_on: [[remain]] — Use when something stays in a particular state or condition, often with a sense of patience or permanence.
 - advanced_form: [[reside]] — Use 'reside' for a more formal or official sense of living somewhere permanently.
 - advanced_form: [[inhabit]] — Use 'inhabit' for living in a place, especially for animals or groups of people in a larger area.
+- builds_on: [[tolerate]] — Use 'abide' especially in negative sentences or when talking about patient, somewhat grudging acceptance.

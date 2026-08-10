@@ -6,6 +6,8 @@ pos: noun
 forms: [emanation]
 sources: [llm]
 status: enriched
+chart: emission
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[emission]] — Use 'emanation' for subtle or abstract emissions like light or odor, sounding more formal than 'emission'.
+- synonym: [[radiation]]
+- synonym: [[discharge]]
+- synonym: [[outflow]]
+- collocation: [[light]]
+- collocation: [[energy]]
+- collocation: [[divine]]
+- collocation: [[continuous]]

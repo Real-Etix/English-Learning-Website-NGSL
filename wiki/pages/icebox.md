@@ -6,6 +6,8 @@ pos: noun
 forms: [icebox]
 sources: [llm]
 status: enriched
+chart: cooler
+region: cooler
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 203
 sfi: 57.651
 sources: [wordnet, llm]
 status: enriched
+chart: leaf
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[frond]] — Use 'frond' specifically for leaves of ferns or palms.
 - advanced_form: [[blade]] — Use 'blade' for long, narrow leaves like grass.
 - builds_on: [[page]] — Use 'leaf' instead of 'page' when emphasizing the physical sheet of paper, especially in literary or descriptive contexts.
+- collocation: [[mottle]]
+- collocation: [[musa]]

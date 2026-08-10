@@ -6,6 +6,8 @@ pos: noun
 forms: [lockbox]
 sources: [llm]
 status: enriched
+chart: cabinet
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[locker]] — Use 'lockbox' for a portable lockable container for valuables, not built-in like a locker.
+- synonym: [[safe]]
+- collocation: [[small]]
+- collocation: [[metal]]
+- collocation: [[key]]
+- collocation: [[open]]
+- collocation: [[under]]

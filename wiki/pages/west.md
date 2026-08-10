@@ -9,6 +9,8 @@ rank: 1537
 sfi: 57.23
 sources: [wordnet, llm]
 status: enriched
+chart: west
+region: west
 ---
 
 ## Definition

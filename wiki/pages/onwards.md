@@ -9,6 +9,8 @@ rank: 731
 sfi: 51.795
 sources: [wordnet, llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[further]] — Use 'further' to emphasize additional distance or progress beyond a point; it sounds more formal and can imply continuation.
 - advanced_form: [[ahead]] — Use 'ahead' when referring to a position in front or future direction; it feels more conversational than 'onwards' but is a natural upgrade.
 - advanced_form: [[beyond]] — Use 'beyond' to indicate a point farther away, often with a sense of crossing a limit or entering a new area; it is more literary and precise.
+- synonym: [[forth]]

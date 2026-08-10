@@ -9,6 +9,8 @@ rank: 44
 sfi: 60.13
 sources: [wordnet, llm]
 status: enriched
+chart: she
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ involving financial matters
 - advanced_form: [[monetary]] — Use 'monetary' when focusing on the system of money supply and currency, not just general financial matters like 'fiscal'.
 - advanced_form: [[budgetary]] — Use 'budgetary' when referring specifically to planned income and spending, whereas 'fiscal' is broader and often used for government revenue/taxation.
 - advanced_form: [[pecuniary]] — Use 'pecuniary' in formal or legal contexts to emphasize monetary rather than non‑monetary benefits; 'fiscal' is more about government financial affairs.
+- collocation: [[austerity]]
+- collocation: [[objector]]
+- collocation: [[reflationary]]

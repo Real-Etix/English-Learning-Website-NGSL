@@ -9,6 +9,8 @@ rank: 177
 sfi: 58.35
 sources: [wordnet, llm]
 status: enriched
+chart: disadvantage
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ in a vertical position
 - advanced_form: [[perpendicular]] — Use 'perpendicular' in technical or geometric contexts to describe a line or surface at a 90-degree angle to a reference.
 - builds_on: [[moral]] — Use to describe someone whose actions consistently reflect strong moral integrity, especially in public or social contexts.
 - builds_on: [[honest]] — Use 'upright' to emphasize strong moral principles and integrity, rather than just not cheating.
+- collocation: [[carriage]]
+- synonym: [[piano]]
+- collocation: [[piano]]
+- synonym: [[plumb]]
+- synonym: [[virtuous]]

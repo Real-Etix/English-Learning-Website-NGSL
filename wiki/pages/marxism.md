@@ -6,6 +6,8 @@ pos: noun
 forms: [marxism]
 sources: [llm]
 status: enriched
+chart: communism
+region: communism
 ---
 
 ## Definition

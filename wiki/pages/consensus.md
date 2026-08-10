@@ -9,6 +9,8 @@ rank: 246
 sfi: 56.259
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition

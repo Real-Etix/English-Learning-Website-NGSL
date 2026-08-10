@@ -9,6 +9,8 @@ rank: 225
 sfi: 55.91
 sources: [wordnet, llm]
 status: enriched
+chart: flu
+region: flu
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ _No sourced examples yet._
 ## Connections
 - domain: toeic
 - advanced_form: [[influenza]] — Use influenza in formal or medical contexts instead of the informal 'flu'.
+- collocation: [[epidemic]]
+- synonym: [[bug]]
+- collocation: [[pandemic]]

@@ -9,6 +9,8 @@ rank: 637
 sfi: 61.76
 sources: [wordnet, llm]
 status: enriched
+chart: pretty
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ pleasing by delicacy or grace
 - advanced_form: [[elegant]] — Use 'elegant' to emphasize sophisticated, stylish beauty, often in formal or refined contexts, rather than just simple prettiness.
 - advanced_form: [[graceful]] — Use 'graceful' to highlight smooth, effortless beauty in motion or form, especially for living things or art, rather than static appearance.
 - advanced_form: [[exquisite]] — Use 'exquisite' to convey extremely delicate, refined, or perfect beauty, often implying meticulous craftsmanship or rare elegance.
+- synonym: [[picturesque]]
+- synonym: [[quite]]

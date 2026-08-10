@@ -9,6 +9,8 @@ rank: 1587
 sfi: 50.1
 sources: [wordnet, llm]
 status: enriched
+chart: insect
+region: insect
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[pest]] — Use 'plague' instead of 'pest' when referring to the specific infectious disease, as 'pest' is a much broader term for any annoying organism.
 - advanced_form: [[pestilence]] — Use 'pestilence' in formal or historical contexts to describe a deadly epidemic, especially the bubonic plague, whereas 'plague' is more common and can also be used metaphorically.
 - advanced_form: [[contagion]] — Use 'contagion' to emphasize the transmission and spread of the disease, whereas 'plague' refers specifically to the disease caused by Yersinia pestis.
+- synonym: [[afflict]]
+- synonym: [[epidemic]]
+- synonym: [[pandemic]]

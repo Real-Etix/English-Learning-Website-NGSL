@@ -9,6 +9,8 @@ rank: 52
 sfi: 59.56
 sources: [wordnet, llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ _No sourced examples yet._
 - builds_on: [[lifeguard]] — Use 'attendant' to highlight the service and assistance aspect, suitable for formal descriptions of lifeguard duties.
 - builds_on: [[servant]] — Use 'attendant' for a person employed to help or serve, often in a public or formal setting, rather than a private household servant.
 - builds_on: [[server]] — Use 'attendant' when emphasizing a formal or professional service role, often in upscale or official settings.
+- synonym: [[aide]]
+- synonym: [[butler]]
+- synonym: [[waitperson]]
+- synonym: [[resultant]]

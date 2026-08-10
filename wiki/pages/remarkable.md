@@ -9,6 +9,8 @@ rank: 2191
 sfi: 54.94
 sources: [wordnet, llm]
 status: enriched
+chart: outstanding
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,11 @@ unusual or striking
 - advanced_form: [[outstanding]] — Use 'outstanding' when something stands out prominently, often used in praise or evaluation.
 - builds_on: [[extraordinary]] — Use 'remarkable' for something worthy of notice or comment, emphasizing a striking or notable quality.
 - builds_on: [[impressive]] — Use 'remarkable' when something is notably impressive because it is unusual or extraordinary.
+- collocation: [[aptness]]
+- synonym: [[astounding]]
+- collocation: [[dexterity]]
+- collocation: [[immaculateness]]
+- collocation: [[lucidity]]
+- collocation: [[multifariousness]]
+- collocation: [[octogenarian]]
+- collocation: [[perspicacity]]

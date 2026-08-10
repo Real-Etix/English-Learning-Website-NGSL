@@ -6,6 +6,8 @@ pos: verb
 forms: [christen]
 sources: [llm]
 status: enriched
+chart: designate
+region: you
 ---
 
 ## Definition

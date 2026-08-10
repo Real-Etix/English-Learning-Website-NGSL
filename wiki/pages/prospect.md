@@ -9,6 +9,8 @@ rank: 1949
 sfi: 55.7
 sources: [wordnet, llm]
 status: enriched
+chart: likelihood
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - advanced_form: [[outlook]] — Use 'outlook' when focusing on the predicted or expected future situation, often in economic or career contexts.
 - advanced_form: [[potential]] — Use 'potential' to emphasize inherent ability or capacity for future success, rather than just possibility.
 - advanced_form: [[promise]] — Use 'promise' when there are clear indicators or signs of future success, often in talent or early achievements.
+- collocation: [[alluring]]
+- synonym: [[panorama]]

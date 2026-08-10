@@ -9,6 +9,8 @@ rank: 453
 sfi: 63.48
 sources: [wordnet, llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,14 @@ most important element
 - advanced_form: [[key]] — Use 'key' to highlight something that is essential or crucial, often in a practical or operational sense.
 - builds_on: [[sea]] — Use 'main' in formal or archaic contexts to refer to the open ocean, especially in historical or nautical writing.
 - builds_on: [[entree]] — Use 'main' as a noun to directly refer to the primary dish, common in casual restaurant talk.
+- collocation: [[antagonist]]
+- collocation: [[boulevard]]
+- collocation: [[crux]]
+- collocation: [[emitter]]
+- collocation: [[melody]]
+- collocation: [[plat]]
+- collocation: [[predicator]]
+- synonym: [[predominant]]
+- collocation: [[watercourse]]
+- collocation: [[quadrangle]]
+- collocation: [[rotor]]

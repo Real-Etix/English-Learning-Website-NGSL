@@ -9,6 +9,8 @@ rank: 2216
 sfi: 54.9
 sources: [wordnet, llm]
 status: enriched
+chart: yield
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[produce]] — More formal than 'vegetables', often used when referring to vegetables and fruits sold together.
 - advanced_form: [[greens]] — Specifically refers to leafy vegetables, more precise than 'vegetables'.
 - advanced_form: [[crops]] — Used when referring to vegetables as agricultural products, especially in a farming context.
+- collocation: [[macedoine]]
+- collocation: [[potage]]

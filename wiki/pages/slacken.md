@@ -6,6 +6,8 @@ pos: verb
 forms: [slacken]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition

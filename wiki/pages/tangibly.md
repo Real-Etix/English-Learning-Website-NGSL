@@ -6,6 +6,8 @@ pos: adverb
 forms: [tangibly]
 sources: [llm]
 status: enriched
+chart: substantially
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[materially]] — Use 'tangibly' when something can be clearly perceived or measured in physical or material terms.
+- synonym: [[concretely]]

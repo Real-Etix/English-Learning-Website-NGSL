@@ -6,6 +6,8 @@ pos: noun
 forms: [plaque]
 sources: [llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[tablet]] — Use 'plaque' for a commemorative or decorative inscribed plate, rather than a general tablet.
 - builds_on: [[panel]] — Use 'plaque' when the panel is decorative or commemorative, often inscribed.
+- collocation: [[buildup]]
+- synonym: [[memorial]]

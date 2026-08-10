@@ -6,6 +6,8 @@ pos: noun
 forms: [hound]
 sources: [llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[dog]] — Use 'hound' when referring to a dog bred for hunting or tracking, or informally as a synonym for any dog.
 - builds_on: [[chase]] — Use when pursuing someone persistently and annoyingly, often with pressure or harassment.
+- synonym: [[canine]]

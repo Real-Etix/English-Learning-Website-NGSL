@@ -9,6 +9,8 @@ rank: 1319
 sfi: 58.19
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[parcel]] — Use 'parcel' for items sent by mail or courier, often wrapped and labeled.
 - advanced_form: [[bundle]] — Use 'bundle' for items tied or wrapped together, typically irregular or cylindrical.
 - advanced_form: [[packet]] — Use 'packet' for a small, often flat package, especially of food or documents.
+- collocation: [[bulky]]
+- synonym: [[containerize]]
+- collocation: [[relocation]]
+- collocation: [[cumbersome]]

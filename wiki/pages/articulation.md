@@ -6,6 +6,8 @@ pos: noun
 forms: [articulation]
 sources: [llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 176
 sfi: 57.265
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: emission
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ the act of emitting
 - advanced_form: [[emanation]] — Use 'emanation' for subtle or abstract emissions like light or odor, sounding more formal than 'emission'.
 - advanced_form: [[exhalation]] — Use 'exhalation' specifically for gases or air breathed out, more precise than 'emission' for gaseous releases.
 - builds_on: [[radiation]] — Use 'emission' when focusing on the release or discharge of radiation or particles from a source, often in a scientific or environmental context.
+- synonym: [[effluent]]
+- collocation: [[microwave]]
+- collocation: [[negatron]]
+- builds_on: [[microwave]] — Use when focusing on the process by which microwaves are produced.
+- synonym: [[exudation]]

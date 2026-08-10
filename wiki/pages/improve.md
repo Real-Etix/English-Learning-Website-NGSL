@@ -9,6 +9,8 @@ rank: 508
 sfi: 62.83
 sources: [wordnet, llm]
 status: enriched
+chart: amend
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ _No sourced examples yet._
 - advanced_form: [[enhance]] — Use 'enhance' when you want to emphasize making something better by adding value or improving its quality, often in a noticeable way.
 - advanced_form: [[ameliorate]] — Use 'ameliorate' in formal or academic contexts when a situation or condition is being improved, especially something that was previously problematic.
 - advanced_form: [[refine]] — Use 'refine' when improving something by making small adjustments or removing flaws, often to achieve greater precision or elegance.
+- collocation: [[compactness]]
+- synonym: [[convalesce]]
+- collocation: [[flowability]]
+- collocation: [[maneuverability]]
+- collocation: [[operability]]
+- collocation: [[profitability]]
+- synonym: [[recuperate]]
+- collocation: [[procurability]]

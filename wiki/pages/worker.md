@@ -9,6 +9,8 @@ rank: 673
 sfi: 61.5
 sources: [wordnet, llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ a person who works at a specific occupation
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[operative]] — Use 'operative' instead of 'worker' when referring to a skilled or specialized worker, often in industry or covert operations.
 - advanced_form: [[laborer]] — Use 'laborer' when emphasizing physical or manual work, especially in construction or farming.
+- collocation: [[conscientious]]
+- collocation: [[diligent]]
+- synonym: [[grind]]
+- collocation: [[immigrant]]
+- collocation: [[industrious]]
+- collocation: [[postal]]

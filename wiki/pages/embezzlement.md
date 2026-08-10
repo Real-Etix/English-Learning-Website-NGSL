@@ -6,6 +6,8 @@ pos: noun
 forms: [embezzlement]
 sources: [llm]
 status: enriched
+chart: plot
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [inequity]
 sources: [llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition

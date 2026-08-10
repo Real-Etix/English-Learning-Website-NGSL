@@ -9,6 +9,8 @@ rank: 1804
 sfi: 56.17
 sources: [wordnet, llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[fabricator]] — Use 'fabricator' instead of 'producer' when describing someone who constructs or assembles parts, often from raw materials, as in engineering or construction.
 - builds_on: [[manufacturer]] — Use 'producer' when emphasizing the creation or output of goods, especially in economic or supply chain contexts; it is more formal than 'manufacturer'.
 - builds_on: [[maker]] — Use 'producer' for someone who oversees the making of a product, especially in media, agriculture, or manufacturing.
+- synonym: [[emitter]]
+- synonym: [[packer]]

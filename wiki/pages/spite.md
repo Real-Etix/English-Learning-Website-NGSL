@@ -9,6 +9,8 @@ rank: 281
 sfi: 55.2
 sources: [wordnet, llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition

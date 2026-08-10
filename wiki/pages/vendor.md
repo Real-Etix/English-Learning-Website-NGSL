@@ -9,6 +9,8 @@ rank: 80
 sfi: 58.46
 sources: [wordnet, llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,7 @@ _No sourced examples yet._
 - builds_on: [[provider]] — Use 'vendor' instead of 'provider' when referring to a person or company that sells goods or services, especially in a business transaction.
 - builds_on: [[salesperson]] — Use 'vendor' for a more formal or business-oriented context, often implying an independent seller or at a market, rather than a typical store employee.
 - builds_on: [[supplier]] — Emphasizes a commercial seller, often in a transactional context; broader than 'supplier' as it can include services and goods.
+- collocation: [[bookstall]]
+- synonym: [[concessionaire]]
+- synonym: [[merchandiser]]
+- collocation: [[vendee]]

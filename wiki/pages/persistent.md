@@ -9,6 +9,8 @@ rank: 1672
 sfi: 50.56
 sources: [wordnet, llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[incessant]] — Use 'incessant' to emphasize something annoyingly or tediously constant, more formal than 'persistent'.
 - advanced_form: [[unremitting]] — Use 'unremitting' to stress continuous, often exhausting, effort or demand, stronger than 'persistent'.
 - advanced_form: [[relentless]] — Use 'relentless' to imply an unstoppable, harsh, or merciless continuation, more intense than 'persistent'.
+- collocation: [[aminyl]]
+- collocation: [[aridity]]
+- collocation: [[cough]]
+- synonym: [[enduring]]
+- synonym: [[resolute]]
+- collocation: [[pyrexia]]

@@ -9,6 +9,8 @@ rank: 455
 sfi: 63.45
 sources: [wordnet, llm]
 status: enriched
+chart: present
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ have
 - advanced_form: [[exhibit]] — Use 'exhibit' when referring to showing a quality or symptom, especially in medical or formal contexts.
 - advanced_form: [[display]] — Use 'display' to highlight visible or deliberate showing of something, like features or emotions.
 - builds_on: [[carry]] — Use 'bear' for carrying something heavy or with effort, often in literary or formal English.
+- synonym: [[afford]]
+- collocation: [[brown]]
+- collocation: [[den]]
+- collocation: [[malice]]
+- synonym: [[withstand]]

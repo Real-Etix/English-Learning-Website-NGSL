@@ -9,6 +9,8 @@ rank: 500
 sfi: 54.705
 sources: [wordnet, llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[rightful]] — Use 'rightful' instead of 'legitimate' to stress moral or legal entitlement, often for heirs, claims, or status based on proper lineage.
 - builds_on: [[authentic]] — Use 'legitimate' when focusing on official, legal, or rightful authenticity, while 'authentic' stresses factual truth or originality.
 - builds_on: [[genuine]] — Use 'legitimate' for things that are valid, lawful, or genuine in a broader sense.
+- synonym: [[admissible]]
+- synonym: [[licit]]

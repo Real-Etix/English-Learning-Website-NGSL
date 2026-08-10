@@ -6,6 +6,8 @@ pos: adjective
 forms: [incomparable]
 sources: [llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[invaluable]] — Use 'incomparable' when the item is so exceptional that it has no equal, often in praise.
+- synonym: [[inimitable]]
+- synonym: [[priceless]]

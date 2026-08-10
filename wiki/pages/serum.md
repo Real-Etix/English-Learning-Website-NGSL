@@ -6,6 +6,8 @@ pos: noun
 forms: [serum]
 sources: [llm]
 status: enriched
+chart: whey
+region: whey
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[whey]] — More technical term used in scientific contexts compared to everyday 'whey'.
+- collocation: [[antitoxin]]
+- synonym: [[plasma]]

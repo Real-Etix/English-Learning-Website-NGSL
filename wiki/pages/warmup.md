@@ -9,6 +9,8 @@ rank: 254
 sfi: 56.45
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,11 @@ _No sourced examples yet._
 
 ## Connections
 - domain: fitness
+- collocation: [[kneebend]]
+- synonym: [[preparation]]
+- synonym: [[practice]]
+- synonym: [[stretch]]
+- synonym: [[exercise]]
+- collocation: [[routine]]
+- collocation: [[quick]]
+- collocation: [[dynamic]]

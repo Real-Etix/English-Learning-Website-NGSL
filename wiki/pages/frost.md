@@ -6,6 +6,8 @@ pos: noun
 forms: [frost]
 sources: [llm]
 status: enriched
+chart: ice
+region: ice
 ---
 
 ## Definition

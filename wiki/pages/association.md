@@ -9,6 +9,8 @@ rank: 1595
 sfi: 57.01
 sources: [wordnet, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ a formal organization of people or groups of people
 - advanced_form: [[alliance]] — Use 'alliance' when emphasizing a formal, cooperative bond for mutual benefit, often between organizations or nations.
 - advanced_form: [[coalition]] — Use 'coalition' for a temporary or strategic union of distinct groups, especially in politics or advocacy.
 - advanced_form: [[consortium]] — Use 'consortium' for a formal group of businesses or institutions collaborating on a specific project or venture.
+- synonym: [[connotation]]
+- synonym: [[covariation]]
+- synonym: [[crosscovariance]]
+- synonym: [[fellowship]]
+- synonym: [[guild]]
+- synonym: [[interrelationship]]
+- collocation: [[lawntennis]]

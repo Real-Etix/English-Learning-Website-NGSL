@@ -9,6 +9,8 @@ rank: 578
 sfi: 52.8
 sources: [wordnet, llm]
 status: enriched
+chart: undermine
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[excavate]] — Use 'excavate' when the hollowing is deliberate and systematic, often by digging or removing earth, especially in archaeology or construction.
 - advanced_form: [[gouge]] — Use 'gouge' when the hollowing is done by cutting or scooping out material with a sharp tool, creating a concave shape.
+- synonym: [[cavern]]
+- collocation: [[chiropteran]]

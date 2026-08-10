@@ -6,6 +6,8 @@ pos: adverb
 forms: [inescapably]
 sources: [llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inevitably]] — Use when emphasizing that something cannot be avoided or evaded, similar to inevitably but with a stronger sense of confinement.
+- synonym: [[ineluctably]]
+- synonym: [[unavoidably]]
+- synonym: [[necessarily]]
+- synonym: [[inexorably]]
+- synonym: [[irrevocably]]
+- collocation: [[bound]]

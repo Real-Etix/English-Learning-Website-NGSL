@@ -9,6 +9,8 @@ rank: 786
 sfi: 53
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ certainty based on past experience
 - domain: business
 - advanced_form: [[credence]] — Use 'credence' when emphasizing belief in something as true, often in formal or academic contexts.
 - advanced_form: [[certitude]] — Use 'certitude' for a stronger, more philosophical sense of absolute certainty, distinct from everyday reliance.
+- synonym: [[interdependence]]
+- synonym: [[dependency]]
+- builds_on: [[dependency]] — Use when emphasizing a habitual or necessary trust in someone or something, often in a neutral or critical context.

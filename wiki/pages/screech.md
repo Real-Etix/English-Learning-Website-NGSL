@@ -6,6 +6,8 @@ pos: noun
 forms: [screech]
 sources: [llm]
 status: enriched
+chart: indirect
+region: you
 ---
 
 ## Definition

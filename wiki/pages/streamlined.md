@@ -6,6 +6,8 @@ pos: adjective
 forms: [streamlined]
 sources: [llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 781
 sfi: 52.77
 sources: [wordnet, llm]
 status: enriched
+chart: transparency
+region: transparency
 ---
 
 ## Definition

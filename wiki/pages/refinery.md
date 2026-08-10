@@ -9,6 +9,8 @@ rank: 938
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: refinery
+region: refinery
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[distillery]] — Use 'distillery' when referring specifically to alcohol purification, not generic crude substances.
 - advanced_form: [[smelter]] — Use 'smelter' for metal refining instead of general crude substance purification.
+- collocation: [[petroleum]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [drake]
 sources: [llm]
 status: enriched
+chart: homemade
+region: you
 ---
 
 ## Definition

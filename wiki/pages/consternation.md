@@ -6,6 +6,8 @@ pos: noun
 forms: [consternation]
 sources: [llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition

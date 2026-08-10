@@ -6,6 +6,8 @@ pos: noun
 forms: [originality]
 sources: [llm]
 status: enriched
+chart: illusion
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[creativity]] — Use when highlighting uniqueness and novelty, distinct from simply creating or inventing.
+- synonym: [[inventiveness]]
+- synonym: [[novelty]]
+- synonym: [[imagination]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [portraitist]
 sources: [llm]
 status: enriched
+chart: painter
+region: painter
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[painter]] — Use 'portraitist' instead of 'painter' when you want to emphasize that the artist specializes in painting portraits of people.
+- synonym: [[artist]]
+- collocation: [[court]]
+- collocation: [[society]]

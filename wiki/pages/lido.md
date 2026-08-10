@@ -6,6 +6,8 @@ pos: noun
 forms: [lido]
 sources: [llm]
 status: enriched
+chart: no
+region: you
 ---
 
 ## Definition

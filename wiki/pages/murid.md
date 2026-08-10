@@ -6,6 +6,8 @@ pos: noun
 forms: [murid]
 sources: [llm]
 status: enriched
+chart: she
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mouse]] — Use 'murid' as a formal term for any rodent in the family Muridae, including both mice and rats, often in biological or ecological discussions.
+- synonym: [[rat]]
+- collocation: [[species]]
+- collocation: [[family]]

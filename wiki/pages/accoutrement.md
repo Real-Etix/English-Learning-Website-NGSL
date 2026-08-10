@@ -6,6 +6,8 @@ pos: noun
 forms: [accoutrement]
 sources: [llm]
 status: enriched
+chart: decorate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[accessory]] — Use 'accoutrement' for formal or literary contexts, often implying functional or decorative accessories.
+- synonym: [[equipment]]
+- synonym: [[paraphernalia]]
+- synonym: [[adornment]]
+- collocation: [[various]]
+- collocation: [[military]]

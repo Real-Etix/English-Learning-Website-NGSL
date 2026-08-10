@@ -6,6 +6,8 @@ pos: noun
 forms: [tang]
 sources: [llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition

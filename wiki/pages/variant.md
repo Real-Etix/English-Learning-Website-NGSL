@@ -9,6 +9,8 @@ rank: 176
 sfi: 57.888
 sources: [wordnet, llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[anomaly]] — Use 'anomaly' to emphasize something that is not only different from expectations but also statistically or scientifically unusual; stronger than 'variant'.
 - advanced_form: [[aberration]] — Use 'aberration' to imply a temporary or abnormal departure from a norm, often with a negative connotation; more specific than 'variant' for a one-time event.
 - advanced_form: [[deviation]] — Use 'deviation' to highlight a measurable or systematic difference from an expected standard; more technical than 'variant' for data or processes.
+- synonym: [[allele]]
+- synonym: [[analog]]
+- synonym: [[modifier]]

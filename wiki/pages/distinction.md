@@ -9,6 +9,8 @@ rank: 2132
 sfi: 55.14
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ a discrimination between things as different and distinct on the basis of their 
 - builds_on: [[excellence]] — Use 'distinction' to imply recognition or honor for excellence, often in academic or formal contexts.
 - advanced_form: [[disparity]] — Use 'disparity' when the distinction involves a significant imbalance or inequality, not just a simple difference.
 - advanced_form: [[divergence]] — Use 'divergence' when the distinction implies a gradual separation or splitting from a common origin.
+- synonym: [[cachet]]
+- synonym: [[eminence]]
+- synonym: [[laurel]]

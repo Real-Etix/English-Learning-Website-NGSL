@@ -9,6 +9,8 @@ rank: 264
 sfi: 56.3
 sources: [wordnet, llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[torment]] — Use 'torment' instead of 'rack' when emphasizing deliberate or prolonged suffering, often with a sense of cruelty or intent.
 - advanced_form: [[agonize]] — Use 'agonize' instead of 'rack' when focusing on intense mental or emotional struggle, especially in decision-making.
 - builds_on: [[shelf]] — Use 'rack' instead of 'shelf' when the structure is designed to hold specific items, like dishes, bottles, or tools, often with openings or slats.
+- collocation: [[coat]]
+- collocation: [[dishwashingmachine]]
+- synonym: [[etagere]]
+- collocation: [[pannier]]
+- synonym: [[ribs]]

@@ -9,6 +9,8 @@ rank: 114
 sfi: 57.64
 sources: [wordnet, llm]
 status: enriched
+chart: mini
+region: mini
 ---
 
 ## Definition

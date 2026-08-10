@@ -6,6 +6,8 @@ pos: adjective
 forms: [balmy]
 sources: [llm]
 status: enriched
+chart: sunny
+region: you
 ---
 
 ## Definition

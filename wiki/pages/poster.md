@@ -9,6 +9,8 @@ rank: 336
 sfi: 54.46
 sources: [wordnet, llm]
 status: enriched
+chart: bill
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ a sign posted in a public place as an advertisement
 - domain: academic
 - advanced_form: [[placard]] — Use 'placard' for a formal or printed notice, often carried or posted, whereas 'poster' is more general for commercial or public advertising.
 - advanced_form: [[billboard]] — Use 'billboard' specifically for a large outdoor sign, usually along roads, while 'poster' can be any size and placed on walls or boards.
+- synonym: [[banner]]

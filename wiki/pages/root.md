@@ -9,6 +9,8 @@ rank: 1529
 sfi: 57.26
 sources: [wordnet, llm]
 status: enriched
+chart: root
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[rhizome]] — Use 'rhizome' for a horizontal, underground stem that sends out roots and shoots, not for all roots. It is more specific than 'root'.
 - advanced_form: [[rootstock]] — Use 'rootstock' when referring to a root system used for grafting in horticulture, rather than the general term 'root'.
 - builds_on: [[stem]] — Use 'root' when emphasizing the core meaning unit that cannot be further broken down, often more basic than a stem.
+- synonym: [[ingrain]]
+- synonym: [[potato]]

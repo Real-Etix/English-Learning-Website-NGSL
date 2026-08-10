@@ -6,6 +6,8 @@ pos: verb
 forms: [bankroll]
 sources: [llm]
 status: enriched
+chart: shop
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[subsidize]] — Use when providing full financial support for a project or venture, often informal and business-related.
+- synonym: [[fund]]
+- synonym: [[finance]]
+- synonym: [[back]]
+- synonym: [[sponsor]]
+- synonym: [[underwrite]]
+- collocation: [[startup]]

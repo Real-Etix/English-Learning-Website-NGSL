@@ -9,6 +9,8 @@ rank: 282
 sfi: 65.43
 sources: [wordnet, llm]
 status: enriched
+chart: span
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,13 @@ how long something has existed
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[longevity]] — Use 'longevity' to emphasize the length of life or existence, often with a positive or impressive connotation, instead of the neutral 'age'.
 - advanced_form: [[duration]] — Use 'duration' to focus on the period of time something exists or is active, especially in technical or formal contexts.
+- synonym: [[ancientness]]
+- collocation: [[bygone]]
+- collocation: [[childbearing]]
+- collocation: [[cutoff]]
+- synonym: [[era]]
+- collocation: [[impressionable]]
+- collocation: [[regardless]]
+- collocation: [[retiree]]
+- synonym: [[ripen]]
+- synonym: [[eon]]

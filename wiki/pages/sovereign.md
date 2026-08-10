@@ -9,6 +9,8 @@ rank: 845
 sfi: 52.64
 sources: [wordnet, llm]
 status: enriched
+chart: manual
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,10 @@ status: enriched
 - advanced_form: [[self-governing]] — Use 'self-governing' to describe a territory managing its own affairs but possibly within a larger state, whereas 'sovereign' indicates complete independence.
 - builds_on: [[autonomous]] — Use 'sovereign' to emphasize ultimate authority and independence, especially for nations, rather than just being autonomous.
 - builds_on: [[king]] — Use 'sovereign' to highlight supreme authority or independence, often in legal or political discussions, rather than the generic title.
+- synonym: [[autarchic]]
+- synonym: [[imperial]]
+- synonym: [[monarch]]
+- synonym: [[potentate]]
+- builds_on: [[ruler]] — Use when emphasizing supreme authority or the head of a state, often with a formal or legal tone.
+- builds_on: [[federal]] — Use to emphasize absolute or supreme authority, especially in discussions of national independence or political theory. It is more abstract than 'federal', which focuses on the level of government.
+- synonym: [[monarchical]]

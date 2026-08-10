@@ -6,6 +6,8 @@ pos: noun
 forms: [yardstick]
 sources: [llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition

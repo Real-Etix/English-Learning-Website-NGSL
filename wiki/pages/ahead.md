@@ -9,6 +9,8 @@ rank: 974
 sfi: 59.78
 sources: [wordnet, llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ at or in the front
 - advanced_form: [[fore]] — Use 'fore' in nautical or spatial contexts to mean at or toward the front.
 - advanced_form: [[foremost]] — Use 'foremost' to emphasize being in the leading or most advanced position.
 - builds_on: [[onwards]] — Use 'ahead' when referring to a position in front or future direction; it feels more conversational than 'onwards' but is a natural upgrade.
+- collocation: [[farther]]
+- collocation: [[lie]]

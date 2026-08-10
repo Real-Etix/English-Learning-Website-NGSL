@@ -6,6 +6,8 @@ pos: noun
 forms: [strategist]
 sources: [llm]
 status: enriched
+chart: architect
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[planner]] — Use 'strategist' when emphasizing long-term, cunning, or high-level planning, especially in competitive contexts like business or war.
+- synonym: [[tactician]]

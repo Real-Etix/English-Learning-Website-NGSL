@@ -9,6 +9,8 @@ rank: 2358
 sfi: 54.44
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ having the requisite qualities or resources to meet a task
 - antonym: [[inadequate]]
 - advanced_form: [[competent]] — Use 'competent' when emphasizing skill or ability to perform a task, not just meeting a minimum standard.
 - advanced_form: [[satisfactory]] — Use 'satisfactory' to indicate that something meets expectations or requirements adequately, often in formal evaluations.
+- collocation: [[nutriment]]
+- builds_on: [[satisfactory]] — Use 'adequate' when something meets the minimum requirements, just enough, especially in formal or job-related contexts.
+- builds_on: [[fine]] — Use when something is good enough for the purpose, often implying it's not outstanding.
+- builds_on: [[sufficient]] — Use when something meets the minimum requirement, often in formal or written contexts.
+- synonym: [[serviceable]]

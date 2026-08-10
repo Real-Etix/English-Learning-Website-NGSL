@@ -9,6 +9,8 @@ rank: 107
 sfi: 60.72
 sources: [wordnet, llm]
 status: enriched
+chart: sway
+region: you
 ---
 
 ## Definition

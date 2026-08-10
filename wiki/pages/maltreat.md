@@ -6,6 +6,8 @@ pos: verb
 forms: [maltreat]
 sources: [llm]
 status: enriched
+chart: measure
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[abuse]] — Use 'maltreat' to emphasize cruel or harsh treatment, especially in formal or legal contexts.
+- synonym: [[harm]]
+- collocation: [[staff]]

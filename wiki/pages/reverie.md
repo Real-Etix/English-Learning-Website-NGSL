@@ -6,6 +6,8 @@ pos: noun
 forms: [reverie]
 sources: [llm]
 status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition

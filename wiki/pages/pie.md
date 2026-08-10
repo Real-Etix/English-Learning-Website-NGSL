@@ -9,6 +9,8 @@ rank: 643
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: pizza
+region: pizza
 ---
 
 ## Definition

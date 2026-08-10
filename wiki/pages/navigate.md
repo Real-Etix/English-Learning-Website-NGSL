@@ -6,6 +6,8 @@ pos: verb
 forms: [navigate]
 sources: [llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition

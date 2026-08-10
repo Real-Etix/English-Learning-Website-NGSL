@@ -9,6 +9,8 @@ rank: 262
 sfi: 56.35
 sources: [wordnet, llm]
 status: enriched
+chart: crescent
+region: crescent
 ---
 
 ## Definition

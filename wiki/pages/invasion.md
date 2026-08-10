@@ -9,6 +9,8 @@ rank: 575
 sfi: 53.966
 sources: [wordnet, llm]
 status: enriched
+chart: invasion
+region: invasion
 ---
 
 ## Definition

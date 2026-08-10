@@ -9,6 +9,8 @@ rank: 2581
 sfi: 53.69
 sources: [wordnet, llm]
 status: enriched
+chart: asylum
+region: asylum
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[refuge]] — Use 'refuge' for a place of safety from danger or pursuit, emphasizing escape and temporary protection.
 - advanced_form: [[haven]] — Use 'haven' for a peaceful, safe place that offers rest or relief, often from stress or chaos.
 - advanced_form: [[sanctuary]] — Use 'sanctuary' for a place of refuge where someone is safe from legal or physical harm, often with a sacred or protective connotation.
+- synonym: [[bivouac]]
+- synonym: [[bosom]]
+- synonym: [[carport]]
+- synonym: [[pavilion]]
+- synonym: [[marquee]]

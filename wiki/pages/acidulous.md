@@ -6,6 +6,8 @@ pos: adjective
 forms: [acidulous]
 sources: [llm]
 status: enriched
+chart: acidic
+region: acidic
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[acidic]] — Use 'acidulous' for a mildly acidic or sharp taste, more formal than 'acidic'.
+- synonym: [[tart]]
+- synonym: [[sharp]]
+- collocation: [[taste]]
+- collocation: [[flavor]]
+- collocation: [[remark]]
+- collocation: [[wit]]
+- collocation: [[tone]]

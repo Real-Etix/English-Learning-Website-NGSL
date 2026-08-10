@@ -6,6 +6,8 @@ pos: noun
 forms: [rectification]
 sources: [llm]
 status: enriched
+chart: refine
+region: you
 ---
 
 ## Definition

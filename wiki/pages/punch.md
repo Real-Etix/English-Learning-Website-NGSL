@@ -9,6 +9,8 @@ rank: 150
 sfi: 59.14
 sources: [wordnet, llm]
 status: enriched
+chart: rub
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - builds_on: [[fist]] — Use 'punch' when referring to the blow itself, not the hand shape.
 - advanced_form: [[strike]] — Use 'strike' for a more formal or general term for a hit, especially in sports or combat contexts.
 - advanced_form: [[blow]] — Use 'blow' for a neutral, slightly more formal term for a punch, often in medical or narrative descriptions.
+- collocation: [[eyelet]]
+- synonym: [[perforate]]

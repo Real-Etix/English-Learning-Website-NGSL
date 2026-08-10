@@ -6,6 +6,8 @@ pos: noun
 forms: [esophagus]
 sources: [llm]
 status: enriched
+chart: neck
+region: neck
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[throat]] — Use 'esophagus' instead of 'throat' when focusing on the passage for food.
+- collocation: [[lower]]
+- collocation: [[upper]]
+- collocation: [[acid]]
+- collocation: [[cancer]]
+- collocation: [[pharynx]]

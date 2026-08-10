@@ -6,6 +6,8 @@ pos: verb
 forms: [apprise]
 sources: [llm]
 status: enriched
+chart: notify
+region: you
 ---
 
 ## Definition

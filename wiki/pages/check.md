@@ -9,6 +9,8 @@ rank: 580
 sfi: 62.2
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ examine so as to determine accuracy, quality, or condition
 - advanced_form: [[scrutinize]] — Use when examining very carefully, often with suspicion or great attention to detail.
 - builds_on: [[restraint]] — Use 'check' to focus on the act of stopping or slowing progress, often in a process or system.
 - builds_on: [[rein]] — Use 'check' when you mean to stop or slow the progress of something, often emotions or actions.
+- synonym: [[brake]]
+- collocation: [[countersign]]
+- collocation: [[perfunctory]]
+- synonym: [[screening]]

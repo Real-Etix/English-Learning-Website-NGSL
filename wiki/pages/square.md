@@ -7,8 +7,10 @@ forms: [square, squares, squared, squaring, squarer, squarest]
 lists: [ngsl]
 rank: 1443
 sfi: 57.67
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,9 @@ status: seeded
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[centimetre]]
+- collocation: [[centimeter]]
+- advanced_form: [[quadrangle]] — Use this in formal writing or when referring to a square as part of a larger geometric or architectural term.
+- advanced_form: [[quadrate]] — Use this in technical or scientific contexts, such as describing a square-shaped bone or region.
+- collocation: [[millimetre]]
+- synonym: [[pane]]

@@ -9,6 +9,8 @@ rank: 438
 sfi: 63.59
 sources: [wordnet, llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,15 @@ of greater importance or stature or rank
 - advanced_form: [[primary]] — Use 'primary' to indicate the first or most important in order of priority, often for goals, concerns, or functions.
 - advanced_form: [[paramount]] — Use 'paramount' to emphasize something as supreme or above all others, often for significance or priority in formal or dramatic contexts.
 - builds_on: [[adult]] — Use this formal legal term instead of 'adult' when discussing rights, responsibilities, or age of consent.
+- collocation: [[conurbation]]
+- collocation: [[exporter]]
+- collocation: [[handicap]]
+- synonym: [[momentous]]
+- collocation: [[realignment]]
+- collocation: [[reappraisal]]
+- collocation: [[recasting]]
+- collocation: [[refurbishment]]
+- collocation: [[restructuring]]
+- collocation: [[waterway]]
+- collocation: [[supplier]]
+- collocation: [[disruption]]

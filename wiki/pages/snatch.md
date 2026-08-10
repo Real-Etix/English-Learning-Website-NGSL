@@ -9,6 +9,8 @@ rank: 541
 sfi: 53.1
 sources: [wordnet, llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - builds_on: [[kidnap]] — Use 'snatch' for a sudden, often opportunistic kidnapping, typically in less formal or more vivid contexts.
 - builds_on: [[grab]] — quick and sudden, often with a sense of urgency or stealth
 - builds_on: [[snap]] — Use for a quick, often stealthy or sudden catch, similar to 'snap' but more dynamic.
+- synonym: [[abduct]]
+- synonym: [[wrest]]
+- synonym: [[yank]]

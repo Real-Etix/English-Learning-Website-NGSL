@@ -6,6 +6,8 @@ pos: verb
 forms: [forewarn]
 sources: [llm]
 status: enriched
+chart: notify
+region: you
 ---
 
 ## Definition

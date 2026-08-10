@@ -6,6 +6,8 @@ pos: noun
 forms: [subclass]
 sources: [llm]
 status: enriched
+chart: subset
+region: subset
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[subset]] — Use 'subclass' when referring to a distinct taxonomic or logical division under a broader class, especially in scientific or technical contexts.
+- synonym: [[subcategory]]

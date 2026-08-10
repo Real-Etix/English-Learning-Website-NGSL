@@ -6,6 +6,8 @@ pos: adverb
 forms: [infrequently]
 sources: [llm]
 status: enriched
+chart: seldom
+region: you
 ---
 
 ## Definition

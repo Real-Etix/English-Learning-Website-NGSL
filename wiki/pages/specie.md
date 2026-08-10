@@ -6,6 +6,8 @@ pos: noun
 forms: [specie]
 sources: [llm]
 status: enriched
+chart: currency
+region: you
 ---
 
 ## Definition

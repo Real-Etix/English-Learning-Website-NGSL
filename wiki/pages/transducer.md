@@ -6,6 +6,8 @@ pos: noun
 forms: [transducer]
 sources: [llm]
 status: enriched
+chart: accelerate
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[microphone]] — Use 'transducer' when referring to the technical function of converting energy forms, rather than the everyday device. It is a broader term.
 - builds_on: [[sensor]] — Use 'transducer' when the sensor also converts one form of energy to another, emphasizing the transformation process.
+- synonym: [[chemoreceptor]]
+- synonym: [[mechanoreceptor]]

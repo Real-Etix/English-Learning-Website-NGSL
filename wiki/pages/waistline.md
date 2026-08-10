@@ -9,6 +9,8 @@ rank: 351
 sfi: 55.01
 sources: [wordnet, llm]
 status: enriched
+chart: waist
+region: waist
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[midriff]] — Use when referring to the anatomical waist area, especially in fashion or casual anatomy contexts, instead of 'waistline' which is more about the line or measurement.
 - advanced_form: [[cincture]] — Use for a formal or tailored reference to the waistline, often in clothing design or architectural contexts, as a more sophisticated synonym.
+- collocation: [[expanding]]

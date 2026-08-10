@@ -7,8 +7,10 @@ forms: [midnight, midnights]
 lists: [toeic]
 rank: 233
 sfi: 55.74
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ status: seeded
 
 ## Connections
 - domain: toeic
+- synonym: [[night]]
+- advanced_form: [[witchinghour]] — Use this to sound literary or spooky, whereas 'midnight' is neutral and exact.
+- advanced_form: [[deadofnight]] — Use this to emphasize deep stillness and darkness rather than just the clock time.

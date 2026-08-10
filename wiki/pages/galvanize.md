@@ -6,6 +6,8 @@ pos: verb
 forms: [galvanize]
 sources: [llm]
 status: enriched
+chart: prompt
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 89
 sfi: 70.54
 sources: []
 status: seeded
+chart: say
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[befit]]
+- synonym: [[ought]]

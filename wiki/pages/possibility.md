@@ -9,6 +9,8 @@ rank: 951
 sfi: 59.95
 sources: [wordnet, llm]
 status: enriched
+chart: likelihood
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[likelihood]] — Use 'likelihood' when emphasizing the degree of chance or probability, often in formal or statistical contexts.
 - advanced_form: [[prospect]] — Use 'prospect' when referring to a future event that is expected or hoped for, often with a positive connotation.
 - advanced_form: [[probability]] — Use 'probability' in scientific, mathematical, or formal discussions when quantifying the chance of something happening.
+- synonym: [[conceivability]]
+- synonym: [[potentiality]]
+- synonym: [[attainability]]

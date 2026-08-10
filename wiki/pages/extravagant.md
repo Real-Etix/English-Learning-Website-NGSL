@@ -6,6 +6,8 @@ pos: adjective
 forms: [extravagant]
 sources: [llm]
 status: enriched
+chart: economical
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[excessive]] — Use 'extravagant' for spending or behavior that is excessive in a showy or wasteful way.
+- synonym: [[sumptuous]]
+- collocation: [[lifestyle]]
+- collocation: [[praise]]
+- synonym: [[inordinate]]

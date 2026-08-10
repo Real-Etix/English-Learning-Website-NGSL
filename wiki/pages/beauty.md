@@ -9,6 +9,8 @@ rank: 1922
 sfi: 55.79
 sources: [wordnet, llm]
 status: enriched
+chart: beauty
+region: beauty
 ---
 
 ## Definition
@@ -22,3 +24,15 @@ _No sourced examples yet._
 - advanced_form: [[exquisiteness]] — Use 'exquisiteness' for delicate, intricate, or finely crafted beauty.
 - advanced_form: [[splendor]] — Use 'splendor' for grand, impressive, or magnificent beauty, often of nature or architecture.
 - advanced_form: [[resplendence]] — Use 'resplendence' for dazzling, vivid, or brilliant beauty, often with a sense of light or color.
+- collocation: [[alluring]]
+- collocation: [[austere]]
+- collocation: [[beast]]
+- collocation: [[breathtaking]]
+- collocation: [[enduring]]
+- collocation: [[enrapture]]
+- collocation: [[majestic]]
+- collocation: [[mesmerize]]
+- collocation: [[mesmerizing]]
+- collocation: [[otherworldly]]
+- collocation: [[pageant]]
+- collocation: [[ravishing]]

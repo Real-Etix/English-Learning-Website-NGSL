@@ -6,6 +6,8 @@ pos: verb
 forms: [interdict]
 sources: [llm]
 status: enriched
+chart: to
+region: you
 ---
 
 ## Definition

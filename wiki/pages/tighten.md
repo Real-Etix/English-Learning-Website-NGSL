@@ -9,6 +9,8 @@ rank: 399
 sfi: 54.2
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: strain
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ make tight or tighter
 - advanced_form: [[constrict]] — Use instead of 'tighten' when the action involves narrowing or squeezing, especially in a way that restricts or reduces space.
 - advanced_form: [[compress]] — Use instead of 'tighten' when the action involves pressing something together to make it denser or more compact.
 - advanced_form: [[tense]] — Use instead of 'tighten' when referring to making a part of the body stiff or taut, not for objects or fastenings.
+- collocation: [[noose]]

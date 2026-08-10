@@ -9,6 +9,8 @@ rank: 1708
 sfi: 56.55
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ a formal and solemn declaration of objection
 - advanced_form: [[remonstrance]] — Use remonstrance for a formal, often written, protest or complaint, especially to an authority.
 - advanced_form: [[dissent]] — Use dissent for expressing a difference of opinion or disagreement, especially in a formal or group setting.
 - advanced_form: [[denunciation]] — Use denunciation for a public, strongly worded condemnation or protest against something.
+- collocation: [[countrywide]]
+- synonym: [[inveigh]]
+- collocation: [[militancy]]
+- synonym: [[remonstrate]]

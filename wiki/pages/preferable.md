@@ -6,6 +6,8 @@ pos: adjective
 forms: [preferable]
 sources: [llm]
 status: enriched
+chart: desirable
+region: desirable
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[desirable]] — Use 'preferable' when comparing options and indicating that one is more suitable or desirable than another, while 'desirable' simply means worth having.
+- synonym: [[superior]]

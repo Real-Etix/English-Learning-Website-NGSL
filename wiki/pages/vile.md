@@ -6,6 +6,8 @@ pos: adjective
 forms: [vile]
 sources: [llm]
 status: enriched
+chart: strong
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nasty]] — Use 'vile' to emphasize extreme offensiveness or moral depravity, stronger than 'nasty'.
+- collocation: [[smell]]
+- collocation: [[temper]]
+- collocation: [[creature]]
+- collocation: [[behavior]]

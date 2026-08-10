@@ -6,6 +6,8 @@ pos: noun
 forms: [haunch]
 sources: [llm]
 status: enriched
+chart: pelvis
+region: pelvis
 ---
 
 ## Definition

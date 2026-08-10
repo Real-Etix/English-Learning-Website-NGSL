@@ -6,6 +6,8 @@ pos: noun
 forms: [skepticism]
 sources: [llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[doubt]] — Use when doubt is based on critical thinking or disbelief rather than just uncertainty.
+- synonym: [[disillusionment]]

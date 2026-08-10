@@ -9,6 +9,8 @@ rank: 44
 sfi: 74.04
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[which]] — Specifically for persons; replaces 'which' when referring to people, slightly more formal in interrogative contexts about individuals.
 - advanced_form: [[whom]] — Use 'whom' in formal or written English when it functions as the object of a verb or preposition, instead of the informal 'who'.
 - advanced_form: [[whoever]] — Use 'whoever' as a more formal or emphatic alternative to 'anyone who', especially in official or literary contexts.
+- collocation: [[anybody]]

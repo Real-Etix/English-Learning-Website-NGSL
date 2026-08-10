@@ -9,6 +9,8 @@ rank: 1691
 sfi: 50.18
 sources: [wordnet, llm]
 status: enriched
+chart: deliberately
+region: you
 ---
 
 ## Definition

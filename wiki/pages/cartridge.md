@@ -9,6 +9,8 @@ rank: 180
 sfi: 56.45
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[shell]] — Use 'shell' specifically for shotgun or artillery ammunition, or when emphasizing the casing.
 - builds_on: [[round]] — Use 'cartridge' when referring to a complete unit of ammunition (casing, powder, primer, and projectile) for a firearm; more technical than 'round'.
 - builds_on: [[shell]] — Use 'cartridge' when emphasizing the complete assembled unit of ammunition, including the casing, powder, and projectile.
+- synonym: [[charge]]
+- synonym: [[bullet]]
+- collocation: [[live]]
+- collocation: [[empty]]

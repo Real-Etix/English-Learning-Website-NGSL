@@ -9,6 +9,8 @@ rank: 528
 sfi: 54.488
 sources: [wordnet, llm]
 status: enriched
+chart: rhetoric
+region: rhetoric
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: verb
 forms: [knead]
 sources: [llm]
 status: enriched
+chart: rub
+region: you
 ---
 
 ## Definition

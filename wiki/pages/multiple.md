@@ -9,6 +9,8 @@ rank: 1732
 sfi: 56.45
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ the product of a quantity by an integer
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[product]] — Use 'product' when emphasizing the result of multiplication, especially in formal math writing; 'multiple' is more common for describing a number divisible by another.
 - advanced_form: [[composite]] — Use 'composite' to describe a number that is the product of smaller integers (i.e., a non-prime multiple), shifting from the common word 'multiple' to a more precise mathematical term for such numbers.
+- collocation: [[iteration]]
+- collocation: [[ply]]
+- collocation: [[warhead]]

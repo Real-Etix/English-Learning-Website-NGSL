@@ -6,6 +6,8 @@ pos: noun
 forms: [credenza]
 sources: [llm]
 status: enriched
+chart: cabinet
+region: you
 ---
 
 ## Definition

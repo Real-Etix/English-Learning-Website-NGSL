@@ -9,6 +9,8 @@ rank: 38
 sfi: 74.61
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: she
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ airtight sealed metal container for food or drink or paint etc.
 - collocation: [[i]]
 - advanced_form: [[tin]] — Use 'tin' in British English when referring to sealed metal containers of food or drink; it is more specific than the general 'can'.
 - advanced_form: [[canister]] — Use 'canister' for larger, often recloseable metal containers (e.g., for storage or fuel) rather than single-use food/drink cans.
+- collocation: [[aluminum]]
+- collocation: [[connote]]
+- synonym: [[could]]
+- synonym: [[pail]]

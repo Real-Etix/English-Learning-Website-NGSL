@@ -9,6 +9,8 @@ rank: 725
 sfi: 61.15
 sources: [wordnet, llm]
 status: enriched
+chart: prevail
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ an event that accomplishes its intended purpose
 - advanced_form: [[accomplishment]] — Use 'accomplishment' to emphasize the effort and skill required to complete something successfully.
 - advanced_form: [[achievement]] — Use 'achievement' to highlight a notable result attained through effort, often with a sense of pride.
 - advanced_form: [[triumph]] — Use 'triumph' to convey a great success, often after overcoming difficulty or competition.
+- collocation: [[astounding]]
+- collocation: [[crave]]
+- collocation: [[elate]]
+- collocation: [[flaunt]]
+- collocation: [[vaunt]]

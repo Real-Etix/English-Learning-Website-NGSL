@@ -6,6 +6,8 @@ pos: adjective
 forms: [sentimental]
 sources: [llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition

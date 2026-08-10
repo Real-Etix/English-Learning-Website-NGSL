@@ -6,6 +6,8 @@ pos: noun
 forms: [disarray]
 sources: [llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition

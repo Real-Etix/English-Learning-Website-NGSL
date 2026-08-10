@@ -6,6 +6,8 @@ pos: noun
 forms: [attainment]
 sources: [llm]
 status: enriched
+chart: prevail
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[accomplishment]] — Use 'attainment' to emphasize reaching a high level or goal, especially after effort.
 - builds_on: [[achievement]] — Use 'attainment' when focusing on reaching a specific level or milestone, often after sustained effort or study.
 - builds_on: [[arrival]] — Use 'attainment' instead of 'arrival' to emphasize the successful achievement of a specific goal, especially after sustained effort.
+- builds_on: [[acquisition]] — Use for achieving or reaching a goal, especially after effort.

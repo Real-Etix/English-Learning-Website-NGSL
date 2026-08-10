@@ -6,6 +6,8 @@ pos: adjective
 forms: [supple]
 sources: [llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[soft]] — Use 'supple' for materials that bend or flex easily without breaking, often describing leather or fabric.
+- synonym: [[graceful]]
+- synonym: [[lithe]]

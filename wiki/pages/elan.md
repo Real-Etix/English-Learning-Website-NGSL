@@ -6,6 +6,8 @@ pos: noun
 forms: [elan]
 sources: [llm]
 status: enriched
+chart: morale
+region: morale
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[morale]] — Use 'elan' instead of 'morale' to emphasize lively confidence and energetic style.
+- synonym: [[flair]]
+- synonym: [[panache]]
+- synonym: [[verve]]
+- synonym: [[dash]]
+- collocation: [[with]]
+- collocation: [[great]]

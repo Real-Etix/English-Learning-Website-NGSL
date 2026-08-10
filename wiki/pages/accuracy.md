@@ -9,6 +9,8 @@ rank: 136
 sfi: 58.315
 sources: [wordnet, llm]
 status: enriched
+chart: dedication
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ the quality of being near to the true value
 - domain: academic
 - advanced_form: [[precision]] — Use 'precision' when emphasizing fine detail and exactness in measurement or performance, often in technical or scientific contexts.
 - advanced_form: [[exactitude]] — Use 'exactitude' for formal or literary emphasis on strict adherence to accuracy, especially in detailed work or calculations.
+- synonym: [[veracity]]
+- collocation: [[millimetre]]

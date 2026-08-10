@@ -7,8 +7,10 @@ forms: [staple, staples, stapled, stapling]
 lists: [toeic]
 rank: 875
 sfi: 50.97
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ _No sourced examples yet._
 ## Connections
 - synonym: [[basic]]
 - domain: toeic
+- advanced_form: [[necessity]] — Use when emphasizing something that is absolutely required for survival or normal life, more formal than 'staple'.
+- advanced_form: [[essential]] — Use when stressing that something is indispensable and cannot be omitted, often in contexts of supplies or items.
+- advanced_form: [[requisite]] — Use in formal or bureaucratic contexts to indicate something required by rule or circumstance, more precise than 'staple'.

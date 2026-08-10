@@ -9,6 +9,8 @@ rank: 706
 sfi: 51.9
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ the act of rendering optimal
 - advanced_form: [[maximization]] — Use when emphasizing achieving the highest level or largest quantity, unlike optimization which balances multiple factors.
 - advanced_form: [[streamlining]] — Use when the focus is on simplifying and removing waste, whereas optimization can also involve adding or adjusting elements.
 - builds_on: [[maximization]] — Use 'optimization' instead of 'maximization' when referring to the broader goal of achieving the best possible outcome, not just the maximum.
+- synonym: [[extremization]]

@@ -9,6 +9,8 @@ rank: 281
 sfi: 65.44
 sources: [wordnet]
 status: seeded
+chart: some
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,11 @@ something that is of no importance
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[denominator]]
+- synonym: [[nothing]]
+- collocation: [[the]]
+- collocation: [[in]]
+- collocation: [[not]]
+- collocation: [[of]]
+- collocation: [[all]]
+- collocation: [[submultiple]]

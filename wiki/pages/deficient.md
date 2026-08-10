@@ -6,6 +6,8 @@ pos: adjective
 forms: [deficient]
 sources: [llm]
 status: enriched
+chart: little
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1670
 sfi: 49.26
 sources: [wordnet, llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[deregulate]] — Use when specifically removing government rules or controls in an industry, more precise than 'liberalize' which is broader.
 - advanced_form: [[unshackle]] — Use to emphasize freeing from restrictions or burdens, more vivid and formal than 'liberalize'.
+- synonym: [[denationalize]]

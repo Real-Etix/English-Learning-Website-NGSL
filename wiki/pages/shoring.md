@@ -6,6 +6,8 @@ pos: noun
 forms: [shoring]
 sources: [llm]
 status: enriched
+chart: bolster
+region: you
 ---
 
 ## Definition

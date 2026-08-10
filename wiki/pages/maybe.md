@@ -9,6 +9,8 @@ rank: 464
 sfi: 63.37
 sources: [wordnet]
 status: seeded
+chart: possibly
+region: possibly
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 ## Connections
 - synonym: [[possibly]]
 - synonym: [[perhaps]]
+- synonym: [[conceivably]]
+- collocation: [[someday]]

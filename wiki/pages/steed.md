@@ -6,6 +6,8 @@ pos: noun
 forms: [steed]
 sources: [llm]
 status: enriched
+chart: disable
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 720
 sfi: 52.61
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,9 @@ cause to stop
 - advanced_form: [[suspend]] — Use 'suspend' to indicate a temporary stop, often formal or official.
 - advanced_form: [[curb]] — Use 'curb' to suggest restraining or limiting something, often undesirable.
 - builds_on: [[freeze]] — Use 'halt' instead of 'freeze' when describing a deliberate stopping of movement, especially in formal contexts.
+- synonym: [[abort]]
+- collocation: [[abrupt]]
+- synonym: [[brake]]
+- synonym: [[ceasefire]]
+- synonym: [[desist]]
+- synonym: [[immobilize]]

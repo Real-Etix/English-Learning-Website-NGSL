@@ -9,6 +9,8 @@ rank: 753
 sfi: 51.65
 sources: [wordnet, llm]
 status: enriched
+chart: macroeconomics
+region: macroeconomics
 ---
 
 ## Definition

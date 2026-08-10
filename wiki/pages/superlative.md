@@ -6,6 +6,8 @@ pos: adjective
 forms: [superlative]
 sources: [llm]
 status: enriched
+chart: outstanding
+region: you
 ---
 
 ## Definition

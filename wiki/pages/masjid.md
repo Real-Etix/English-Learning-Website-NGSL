@@ -6,6 +6,8 @@ pos: noun
 forms: [masjid]
 sources: [llm]
 status: enriched
+chart: mosque
+region: mosque
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mosque]] — Use 'masjid' when emphasizing the Islamic cultural or religious identity of the place, rather than the generic English term.
+- collocation: [[local]]

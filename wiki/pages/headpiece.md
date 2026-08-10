@@ -6,6 +6,8 @@ pos: noun
 forms: [headpiece]
 sources: [llm]
 status: enriched
+chart: helmet
+region: helmet
 ---
 
 ## Definition
@@ -17,3 +19,8 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[helmet]] — Use 'headpiece' for a more formal or literary description of a helmet.
 - builds_on: [[hat]] — Use 'headpiece' for a hat that is part of an outfit, often formal or decorative, rather than just for protection.
+- synonym: [[chapeau]]
+- synonym: [[headguard]]
+- synonym: [[headset]]
+- builds_on: [[cap]] — Use when emphasizing a decorative or ceremonial covering rather than a simple cap.
+- synonym: [[headgear]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [powerlifter]
 sources: [llm]
 status: enriched
+chart: lifter
+region: lifter
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lifter]] — Use 'powerlifter' for someone who competes in the three powerlifting lifts, distinguishing from a general weightlifter.
+- synonym: [[weightlifter]]
+- synonym: [[strongman]]
+- collocation: [[competitive]]
+- collocation: [[professional]]
+- collocation: [[raw]]
+- collocation: [[elite]]
+- collocation: [[female]]

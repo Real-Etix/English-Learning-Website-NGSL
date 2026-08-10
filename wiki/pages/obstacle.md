@@ -9,6 +9,8 @@ rank: 472
 sfi: 54.13
 sources: [wordnet, llm]
 status: enriched
+chart: partition
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ something immaterial that stands in the way and must be circumvented or surmount
 - advanced_form: [[obstruction]] — Use 'obstruction' for something that physically or metaphorically blocks a path or process.
 - builds_on: [[hurdle]] — Use 'obstacle' instead of 'hurdle' when referring to any general barrier or difficulty, not just a physical barrier.
 - builds_on: [[barrier]] — Use 'obstacle' for something that blocks progress, often figuratively.
+- synonym: [[handicap]]
+- synonym: [[blocker]]

@@ -9,6 +9,8 @@ rank: 1411
 sfi: 49.73
 sources: [wordnet, llm]
 status: enriched
+chart: dismal
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ depressingly dark
 - advanced_form: [[dreary]] — Use when describing something dull and depressing, often weather or scenery.
 - advanced_form: [[somber]] — Use to convey a serious, dark mood, often in emotional or formal contexts.
 - advanced_form: [[bleak]] — Use for a cold, empty, and hopeless kind of gloominess, often about conditions or prospects.
+- synonym: [[dejected]]
+- synonym: [[morose]]

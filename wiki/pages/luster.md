@@ -6,6 +6,8 @@ pos: noun
 forms: [luster]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[finish]] — Use 'luster' when emphasizing a gentle, reflective shine, often on a smooth surface.
 - builds_on: [[polish]] — Use 'luster' instead of 'polish' when emphasizing a soft, radiant glow or shine, often on a surface like metal, glass, or gems.
+- synonym: [[gloss]]

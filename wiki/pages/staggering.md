@@ -6,6 +6,8 @@ pos: adjective
 forms: [staggering]
 sources: [llm]
 status: enriched
+chart: outstanding
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[impressive]] — Use 'staggering' when something is so impressive it is shocking or overwhelming in scale or degree.
+- synonym: [[astounding]]

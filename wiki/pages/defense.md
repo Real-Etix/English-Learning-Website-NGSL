@@ -9,6 +9,8 @@ rank: 1194
 sfi: 58.68
 sources: [wordnet, llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ status: enriched
 - advanced_form: [[fortification]] — Use 'fortification' instead of 'defense' when referring to a physical structure or construction built to protect a place.
 - advanced_form: [[deterrence]] — Use 'deterrence' instead of 'defense' to emphasize the strategy of preventing attack through threat of retaliation rather than active protection.
 - advanced_form: [[bulwark]] — Use 'bulwark' instead of 'defense' when describing a strong, protective barrier, either physical or metaphorical.
+- collocation: [[attorney]]
+- collocation: [[barrister]]
+- collocation: [[impassioned]]
+- collocation: [[interposition]]
+- collocation: [[lawyer]]
+- collocation: [[palisade]]
+- collocation: [[perimeter]]
+- collocation: [[airpower]]
+- synonym: [[rebuttal]]

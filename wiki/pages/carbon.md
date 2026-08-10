@@ -9,6 +9,8 @@ rank: 2583
 sfi: 53.69
 sources: [wordnet, llm]
 status: enriched
+chart: diamond
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[graphite]] — Use 'graphite' instead of 'carbon' when referring specifically to the crystalline form found in pencils.
 - advanced_form: [[diamond]] — Use 'diamond' instead of 'carbon' when referring to the gemstone or the allotrope with a cubic crystal structure.
+- collocation: [[biogenic]]
+- collocation: [[buildup]]
+- collocation: [[dioxide]]
+- collocation: [[emitter]]
+- collocation: [[fibre]]
+- collocation: [[sequester]]
+- synonym: [[soot]]

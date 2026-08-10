@@ -9,6 +9,8 @@ rank: 180
 sfi: 56.39
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: pass
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ a writ from a court commanding police to perform specified acts
 - builds_on: [[authorization]] — Use 'warrant' for a legal or official document that specifically authorizes a concrete action like arrest or search, as opposed to general authorization.
 - builds_on: [[permit]] — Use 'warrant' specifically for a legal document issued by a judge, more formal and legally binding than 'permit'.
 - builds_on: [[draft]] — Use 'warrant' instead of 'draft' when referring to a financial document that orders payment of dividends or interest, often in corporate finance.
+- collocation: [[countersign]]
+- builds_on: [[guarantee]] — Use when formally declaring a guarantee, often in legal or official contexts.

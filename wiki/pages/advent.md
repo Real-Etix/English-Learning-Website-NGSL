@@ -6,6 +6,8 @@ pos: noun
 forms: [advent]
 sources: [llm]
 status: enriched
+chart: convergence
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [interminable]
 sources: [llm]
 status: enriched
+chart: lengthy
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[endless]] — Use 'interminable' instead of 'endless' when emphasizing that something is so long it becomes tedious or boring.
+- synonym: [[ceaseless]]
+- synonym: [[tedious]]
+- collocation: [[lecture]]
+- collocation: [[wait]]
+- collocation: [[list]]
+- collocation: [[debate]]

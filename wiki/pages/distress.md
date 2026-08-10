@@ -9,6 +9,8 @@ rank: 675
 sfi: 53.36
 sources: [wordnet, llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ psychological suffering
 - advanced_form: [[anguish]] — Use 'anguish' for deep, prolonged emotional pain that is more intense than general distress.
 - advanced_form: [[torment]] — Use 'torment' when the suffering involves persistent mental torture or agony, stronger than distress.
 - builds_on: [[upset]] — Use 'distress' for a stronger, more formal sense of emotional suffering than 'upset'.
+- synonym: [[agony]]

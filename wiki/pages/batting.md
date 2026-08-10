@@ -6,6 +6,8 @@ pos: noun
 forms: [batting]
 sources: [llm]
 status: enriched
+chart: cotton
+region: cotton
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cotton]] — Use 'batting' for cotton fiber sheets used in quilting or as insulation, emphasizing its matted form.
+- synonym: [[wadding]]
+- collocation: [[wool]]
+- collocation: [[fiber]]

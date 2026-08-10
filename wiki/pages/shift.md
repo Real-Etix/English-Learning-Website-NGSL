@@ -9,6 +9,8 @@ rank: 1190
 sfi: 58.68
 sources: [wordnet, llm]
 status: enriched
+chart: shift
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ _No sourced examples yet._
 - advanced_form: [[transfer]] — Use 'transfer' when moving something from one place, person, or context to another, implying a clear relocation rather than a general shift.
 - builds_on: [[passage]] — Use 'shift' to highlight a change in direction, focus, or position, often implying a more abrupt or perceptible alteration.
 - builds_on: [[transition]] — Use 'shift' for a noticeable change in direction or focus, often less formal than 'transition' but more dynamic.
+- synonym: [[dislodge]]
+- collocation: [[midplane]]
+- collocation: [[perceptible]]
+- collocation: [[rightward]]
+- collocation: [[watchkeeper]]
+- synonym: [[fluctuate]]

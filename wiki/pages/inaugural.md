@@ -6,6 +6,8 @@ pos: adjective
 forms: [inaugural]
 sources: [llm]
 status: enriched
+chart: innovative
+region: you
 ---
 
 ## Definition

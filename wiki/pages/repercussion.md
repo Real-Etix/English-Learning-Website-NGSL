@@ -6,6 +6,8 @@ pos: noun
 forms: [repercussion]
 sources: [llm]
 status: enriched
+chart: effect
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[effect]] — Use 'repercussion' instead of 'effect' to highlight an indirect, negative outcome that rebounds on the originator.
 - builds_on: [[response]] — Use 'repercussion' when referring to an indirect and usually negative consequence of an action.
 - builds_on: [[consequence]] — Use 'repercussion' for delayed and often negative consequences, whereas 'consequence' can be immediate and neutral.
+- synonym: [[echo]]

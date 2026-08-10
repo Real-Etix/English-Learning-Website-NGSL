@@ -6,6 +6,8 @@ pos: verb
 forms: [scrutinize]
 sources: [llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - builds_on: [[investigate]] — Use 'scrutinize' when you want to emphasize very careful, critical examination of details, more intense than 'investigate'.
 - builds_on: [[analyze]] — Use when examining very closely, often with suspicion or to find flaws, more intense than analyze.
 - builds_on: [[scan]] — use 'scrutinize' for very close, detailed examination, often with suspicion or critical attention
+- synonym: [[inspect]]
+- builds_on: [[inspect]] — Use when you want to emphasize extremely careful, detailed attention, often to find flaws or errors.

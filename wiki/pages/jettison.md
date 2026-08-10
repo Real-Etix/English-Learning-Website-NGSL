@@ -6,6 +6,8 @@ pos: verb
 forms: [jettison]
 sources: [llm]
 status: enriched
+chart: constituent
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[dump]] — Use 'jettison' to emphasize urgent or forceful removal, often to lighten a load or eliminate a burden.
 - builds_on: [[abandon]] — Use 'jettison' when discarding something to lighten a load or to get rid of a burden, often in a practical or physical sense.
+- collocation: [[booster]]
+- builds_on: [[shed]] — Use when getting rid of things to save or lighten a load, literally or figuratively.

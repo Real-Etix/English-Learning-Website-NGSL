@@ -6,6 +6,8 @@ pos: noun
 forms: [dossier]
 sources: [llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[record]] — Use 'dossier' for a file containing detailed information about a person or topic, especially in official or investigative contexts.
+- synonym: [[file]]
+- synonym: [[folder]]
+- synonym: [[brief]]
+- collocation: [[confidential]]
+- collocation: [[police]]
+- collocation: [[background]]
+- collocation: [[case]]
+- collocation: [[thick]]

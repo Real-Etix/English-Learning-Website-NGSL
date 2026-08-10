@@ -9,6 +9,8 @@ rank: 176
 sfi: 56.59
 sources: [wordnet, llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[regular]] — Use 'regular' when referring to a commuter who is a habitual customer or frequent user of a service, emphasizing routine.
 - advanced_form: [[suburbanite]] — Use 'suburbanite' when you want to specify that the commuter lives in the suburbs, often implying a longer commute.
+- collocation: [[exurb]]

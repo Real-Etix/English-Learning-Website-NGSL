@@ -6,6 +6,8 @@ pos: noun
 forms: [whit]
 sources: [llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shred]] — Use 'whit' for a tiny amount, especially in phrases like 'not a whit' or 'care a whit'.
+- synonym: [[jot]]
+- synonym: [[bit]]
+- synonym: [[iota]]
+- synonym: [[scrap]]
+- synonym: [[particle]]
+- collocation: [[not]]
+- collocation: [[care]]
+- collocation: [[one]]
+- collocation: [[matter]]

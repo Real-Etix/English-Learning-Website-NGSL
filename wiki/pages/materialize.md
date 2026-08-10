@@ -6,6 +6,8 @@ pos: verb
 forms: [materialize]
 sources: [llm]
 status: enriched
+chart: pass
+region: you
 ---
 
 ## Definition

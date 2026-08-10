@@ -9,6 +9,8 @@ rank: 738
 sfi: 51.607
 sources: [wordnet, llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[congenital]] — Use 'congenital' specifically for medical or biological traits present from birth, whereas 'innate' is broader.
 - builds_on: [[inherent]] — Use when referring to inborn qualities or instincts, typically for living beings.
 - builds_on: [[internal]] — Use 'innate' for qualities that are inborn or natural, while 'internal' refers more to location or internal processes.
+- synonym: [[hereditary]]
+- synonym: [[inherited]]
+- synonym: [[instinctive]]

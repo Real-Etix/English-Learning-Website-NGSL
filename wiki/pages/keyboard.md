@@ -9,6 +9,8 @@ rank: 91
 sfi: 58.11
 sources: [wordnet, llm]
 status: enriched
+chart: keyboard
+region: keyboard
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[clavier]] — Use for a musical keyboard instrument, especially in formal or historical contexts.
 - advanced_form: [[keypad]] — Use for a small, specialized keyboard (e.g., numeric or telephone) rather than a full computer keyboard.
+- collocation: [[partita]]
+- synonym: [[piano]]
+- synonym: [[pianoforte]]

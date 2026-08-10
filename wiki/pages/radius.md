@@ -9,6 +9,8 @@ rank: 368
 sfi: 56.236
 sources: [wordnet, llm]
 status: enriched
+chart: radius
+region: radius
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[semi-diameter]] — Use when referring to the radius of a celestial body, especially in astronomy.
 - advanced_form: [[half-diameter]] — Use in technical or geometric contexts where 'radius' may be too common.
+- collocation: [[curvature]]

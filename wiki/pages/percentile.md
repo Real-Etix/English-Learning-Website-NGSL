@@ -6,6 +6,8 @@ pos: noun
 forms: [percentile]
 sources: [llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[percentage]] — Use 'percentile' in statistical settings to refer to a position in a distribution, unlike 'percentage' which is a simple ratio.
+- synonym: [[rank]]
+- synonym: [[score]]

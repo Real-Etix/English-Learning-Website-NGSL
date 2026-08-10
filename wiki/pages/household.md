@@ -9,6 +9,8 @@ rank: 1746
 sfi: 56.39
 sources: [wordnet, llm]
 status: enriched
+chart: house
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ a social unit living together
 - advanced_form: [[kin]] — Use 'kin' when emphasizing blood relations or relatives rather than the group living together.
 - advanced_form: [[clan]] — Use 'clan' for an extended, close-knit family group, often with a shared identity or ancestry.
 - advanced_form: [[house]] — Use 'house' in formal or historical contexts to refer to a noble family or dynasty.
+- collocation: [[drudge]]
+- collocation: [[outgoings]]
+- collocation: [[utensil]]

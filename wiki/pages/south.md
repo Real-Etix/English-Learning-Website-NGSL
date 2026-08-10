@@ -9,6 +9,8 @@ rank: 1159
 sfi: 58.84
 sources: [wordnet, llm]
 status: enriched
+chart: south
+region: south
 ---
 
 ## Definition

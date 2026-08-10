@@ -9,6 +9,8 @@ rank: 477
 sfi: 63.18
 sources: [wordnet, llm]
 status: enriched
+chart: measure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - advanced_form: [[stride]] — Use 'stride' when emphasizing a significant or decisive step forward.
 - advanced_form: [[measure]] — Use 'measure' when referring to an official action taken to achieve a specific result.
 - advanced_form: [[maneuver]] — Use 'maneuver' when the step involves strategic or tactical planning.
+- collocation: [[actionable]]
+- collocation: [[momentous]]
+- collocation: [[noiseless]]
+- collocation: [[podium]]
+- collocation: [[preparatory]]
+- collocation: [[purposeful]]
+- collocation: [[rostrum]]

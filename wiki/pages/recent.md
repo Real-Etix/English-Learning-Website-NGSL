@@ -9,6 +9,8 @@ rank: 641
 sfi: 61.74
 sources: [wordnet, llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ new
 - builds_on: [[new]] — Use 'recent' instead of 'new' when specifying a short time ago or a non-distant past, focusing on temporal proximity rather than novelty.
 - advanced_form: [[novel]] — Use 'novel' to emphasize originality and newness, often for ideas or methods.
 - advanced_form: [[contemporary]] — Use 'contemporary' to refer to the current period or modern trends, especially in culture or design.
+- collocation: [[resurgence]]
+- synonym: [[neo]]
+- collocation: [[spate]]

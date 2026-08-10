@@ -6,6 +6,8 @@ pos: noun
 forms: [susceptibility]
 sources: [llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[exposure]] — Use instead of 'exposure' when emphasizing a tendency to be affected by weather conditions; more specific.
+- synonym: [[allergy]]
+- synonym: [[predisposition]]
+- synonym: [[sensitivity]]
+- synonym: [[hypersensitivity]]

@@ -9,6 +9,8 @@ rank: 146
 sfi: 55.72
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ the final payment of a debt
 - advanced_form: [[discharge]] — Use when emphasizing the legal or formal release from a debt obligation.
 - advanced_form: [[settlement]] — Use when referring to the final payment that resolves a debt, often after negotiation.
 - builds_on: [[bribe]] — Use when highlighting the final or illicit reward after a corrupt arrangement.
+- synonym: [[amortize]]
+- synonym: [[kickback]]
+- collocation: [[lienholder]]
+- synonym: [[extinguish]]

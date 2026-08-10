@@ -9,6 +9,8 @@ rank: 83
 sfi: 70.88
 sources: [wordnet]
 status: seeded
+chart: not
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,10 @@ one or some or every or all without specification
 
 ## Connections
 - synonym: [[whatever]]
+- synonym: [[a]]
+- collocation: [[antedate]]
+- synonym: [[every]]
+- collocation: [[nor]]
+- collocation: [[outlast]]
+- collocation: [[preclude]]
+- synonym: [[whichever]]

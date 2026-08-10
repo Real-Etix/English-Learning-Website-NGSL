@@ -6,6 +6,8 @@ pos: noun
 forms: [acylglycerol]
 sources: [llm]
 status: enriched
+chart: triglyceride
+region: triglyceride
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[triglyceride]] — Use 'acylglycerol' when discussing the chemical family, whereas 'triglyceride' specifically refers to the three-fatty-acid form.
+- collocation: [[synthesis]]
+- collocation: [[metabolism]]
+- collocation: [[content]]

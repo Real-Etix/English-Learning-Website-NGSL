@@ -9,6 +9,8 @@ rank: 863
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: enthusiastically
+region: enthusiastically
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ with enthusiasm
 - advanced_form: [[fervently]] — Use when describing intense, heartfelt enthusiasm, often with emotional depth.
 - advanced_form: [[ardently]] — Use when describing passionate, eager pursuit, often with strong desire.
 - advanced_form: [[zealously]] — Use when describing energetic, sometimes excessive dedication or fanatical enthusiasm.
+- synonym: [[avidly]]
+- synonym: [[wholeheartedly]]

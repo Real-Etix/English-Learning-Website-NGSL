@@ -6,6 +6,8 @@ pos: noun
 forms: [authorities]
 sources: [llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[police]] — Use when referring to the police as part of a broader group of officials with legal power, common in news and formal reports.
 - builds_on: [[regime]] — Use in plural to refer to officials or agencies with legal power, more formal and specific than 'regime'.
+- synonym: [[officialdom]]

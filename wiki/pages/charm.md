@@ -9,6 +9,8 @@ rank: 2376
 sfi: 54.38
 sources: [wordnet, llm]
 status: enriched
+chart: challenge
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[allure]] — Use when emphasizing a powerful, tempting attraction.
 - advanced_form: [[magnetism]] — Use when describing an almost magnetic pull of personality.
 - advanced_form: [[enchantment]] — Use when the charm has a magical, delighting quality.
+- collocation: [[bucolic]]
+- synonym: [[enrapture]]
+- collocation: [[inimitable]]
+- synonym: [[locket]]
+- collocation: [[whimsical]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [traipse]
 sources: [llm]
 status: enriched
+chart: shuffle
+region: shuffle
 ---
 
 ## Definition

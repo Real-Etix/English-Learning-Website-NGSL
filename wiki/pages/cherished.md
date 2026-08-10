@@ -6,6 +6,8 @@ pos: adjective
 forms: [cherished]
 sources: [llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition

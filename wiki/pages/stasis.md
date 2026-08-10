@@ -6,6 +6,8 @@ pos: noun
 forms: [stasis]
 sources: [llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition

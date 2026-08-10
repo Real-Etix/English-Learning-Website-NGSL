@@ -6,6 +6,8 @@ pos: adjective
 forms: [tendentious]
 sources: [llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition

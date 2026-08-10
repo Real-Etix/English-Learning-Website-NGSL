@@ -6,6 +6,8 @@ pos: noun
 forms: [douser]
 sources: [llm]
 status: enriched
+chart: extinguisher
+region: extinguisher
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[extinguisher]] — Use 'douser' for a more specific term in outdoor or informal contexts when referring to a device that douses small flames.
+- collocation: [[water]]
+- collocation: [[fire]]
+- collocation: [[portable]]
+- collocation: [[grab]]

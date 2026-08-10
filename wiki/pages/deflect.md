@@ -6,6 +6,8 @@ pos: verb
 forms: [deflect]
 sources: [llm]
 status: enriched
+chart: divert
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[divert]] — Use 'deflect' when something is physically turned aside by an object or force, often implying a change in direction.
+- synonym: [[avert]]
+- collocation: [[attention]]
+- collocation: [[blame]]
+- collocation: [[criticism]]
+- collocation: [[bullet]]
+- collocation: [[question]]

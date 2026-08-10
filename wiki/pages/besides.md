@@ -9,6 +9,8 @@ rank: 1725
 sfi: 56.47
 sources: [wordnet]
 status: seeded
+chart: likewise
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ making an additional point
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[moreover]]
+- synonym: [[furthermore]]
+- synonym: [[also]]
+- synonym: [[additionally]]
+- synonym: [[else]]

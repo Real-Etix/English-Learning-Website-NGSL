@@ -9,6 +9,8 @@ rank: 450
 sfi: 55.37
 sources: [wordnet, llm]
 status: enriched
+chart: nitrogen
+region: nitrogen
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 ## Connections
 - domain: academic
 - advanced_form: [[dinitrogen]] — Use 'dinitrogen' when referring specifically to the diatomic molecule, common in chemical contexts.
+- collocation: [[dioxide]]

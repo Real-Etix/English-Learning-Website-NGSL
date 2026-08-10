@@ -6,6 +6,8 @@ pos: adverb
 forms: [systematically]
 sources: [llm]
 status: enriched
+chart: seldom
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[technically]] — Use 'systematically' to emphasize a step-by-step, organized approach to technique, whereas 'technically' is more general about technical aspects.
 - builds_on: [[regularly]] — Use 'systematically' to stress a methodical, organized approach rather than just repeated action.
+- synonym: [[algorithmically]]
+- collocation: [[marginalize]]
+- synonym: [[methodically]]

@@ -9,6 +9,8 @@ rank: 434
 sfi: 63.65
 sources: [wordnet, llm]
 status: enriched
+chart: morning
+region: morning
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ the time period between dawn and noon
 - advanced_form: [[forenoon]] — Use 'forenoon' in formal, technical, or nautical contexts instead of 'morning'.
 - advanced_form: [[daybreak]] — Use 'daybreak' for the exact moment when daylight first appears, often in poetic or descriptive writing.
 - advanced_form: [[sunrise]] — Use 'sunrise' when emphasizing the actual rising of the sun, more specific than 'morning'.
+- collocation: [[breezy]]
+- collocation: [[crisp]]
+- collocation: [[haze]]
+- collocation: [[bracing]]

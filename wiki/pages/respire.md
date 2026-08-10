@@ -6,6 +6,8 @@ pos: verb
 forms: [respire]
 sources: [llm]
 status: enriched
+chart: waste
+region: you
 ---
 
 ## Definition

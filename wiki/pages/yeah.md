@@ -9,6 +9,8 @@ rank: 976
 sfi: 59.77
 sources: [wordnet, llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[certainly]] — Use 'certainly' for definite agreement or assurance, more formal than 'yeah'.
 - advanced_form: [[undoubtedly]] — Use 'undoubtedly' to express strong conviction without doubt, more formal than 'yeah'.
+- synonym: [[yep]]

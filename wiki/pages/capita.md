@@ -9,6 +9,8 @@ rank: 1278
 sfi: 51.06
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 - domain: business
+- collocation: [[per]]
+- collocation: [[income]]
+- collocation: [[growth]]

@@ -9,6 +9,8 @@ rank: 564
 sfi: 53.39
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -33,3 +35,4 @@ force somebody to do something
 - advanced_form: [[coerce]] — Use 'coerce' when the force involves threats or pressure, especially in illegal or unethical contexts.
 - advanced_form: [[constrain]] — Use 'constrain' for a limiting force that restricts choices or actions, often due to external circumstances.
 - builds_on: [[compel]] — Use 'oblige' when the compulsion comes from a rule, law, or moral duty rather than direct force.
+- builds_on: [[impose]] — Use for force from moral duty or social expectation, often more personal than impose.

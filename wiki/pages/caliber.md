@@ -6,6 +6,8 @@ pos: noun
 forms: [caliber]
 sources: [llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition

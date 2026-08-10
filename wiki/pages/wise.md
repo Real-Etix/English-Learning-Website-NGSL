@@ -9,6 +9,8 @@ rank: 2577
 sfi: 53.7
 sources: [wordnet, llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ having or prompted by wisdom or discernment
 - advanced_form: [[sagacious]] — Use 'sagacious' to emphasize deep, almost philosophical wisdom and foresight, more formal than 'wise'.
 - advanced_form: [[astute]] — Use 'astute' to highlight sharp, practical intelligence and the ability to assess situations quickly, often with a strategic or perceptive edge.
 - advanced_form: [[judicious]] — Use 'judicious' to stress careful, balanced, and sensible judgment in specific actions or choices, more formal than 'wise'.
+- synonym: [[enlightened]]

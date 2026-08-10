@@ -9,6 +9,8 @@ rank: 842
 sfi: 51.93
 sources: [wordnet, llm]
 status: enriched
+chart: telecom
+region: you
 ---
 
 ## Definition

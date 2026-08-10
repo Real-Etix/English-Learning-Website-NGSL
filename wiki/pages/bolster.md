@@ -9,6 +9,8 @@ rank: 225
 sfi: 56.96
 sources: [wordnet, llm]
 status: enriched
+chart: bolster
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ support and strengthen
 - builds_on: [[enhance]] — Use 'bolster' when you are supporting or strengthening something that is weak or in need of reinforcement.
 - builds_on: [[assist]] — Use 'bolster' when you mean to support, strengthen, or reinforce something, such as confidence or an argument, rather than general help.
 - builds_on: [[strengthen]] — Use 'bolster' to emphasize supporting or boosting something that is already present, like morale, confidence, or resources.
+- builds_on: [[shore]] — Use when boosting or strengthening something that needs encouragement or reinforcement.

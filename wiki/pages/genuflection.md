@@ -6,6 +6,8 @@ pos: noun
 forms: [genuflection]
 sources: [llm]
 status: enriched
+chart: kneel
+region: kneel
 ---
 
 ## Definition

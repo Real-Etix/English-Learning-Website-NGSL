@@ -9,6 +9,8 @@ rank: 100
 sfi: 69.71
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ of so extreme a degree or extent
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[lan]]
+- collocation: [[meticulousness]]
+- collocation: [[profusion]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [premises]
 sources: [llm]
 status: enriched
+chart: facility
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,5 @@ _No sourced examples yet._
 - builds_on: [[site]] — Use 'premises' instead of 'site' when talking about a building or area with its surrounding land, often for commercial or legal contexts.
 - builds_on: [[facility]] — Use 'premises' when referring to the buildings and land of a business or institution, often in legal or formal contexts.
 - builds_on: [[workplace]] — Use 'premises' when referring to the physical building and land of a business, especially in formal or legal contexts.
+- collocation: [[inspect]]
+- synonym: [[facilities]]

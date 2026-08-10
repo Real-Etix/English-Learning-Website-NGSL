@@ -6,6 +6,8 @@ pos: verb
 forms: [whittle]
 sources: [llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[carve]] — Use 'whittle' instead of 'carve' when the action involves cutting small pieces from wood (often with a knife) to create a simple object.
+- synonym: [[shape]]
+- synonym: [[pare]]
+- synonym: [[reduce]]
+- synonym: [[diminish]]
+- collocation: [[wood]]
+- collocation: [[stick]]
+- collocation: [[knife]]
+- collocation: [[piece]]
+- collocation: [[down]]

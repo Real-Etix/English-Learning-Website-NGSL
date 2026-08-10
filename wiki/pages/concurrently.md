@@ -6,6 +6,8 @@ pos: adverb
 forms: [concurrently]
 sources: [llm]
 status: enriched
+chart: simultaneously
+region: simultaneously
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[simultaneously]] — Use when emphasizing that actions or events happen at the same time, often in formal or technical contexts, as a direct synonym for 'simultaneously'.
+- synonym: [[concomitantly]]
+- synonym: [[together]]
+- collocation: [[run]]
+- collocation: [[occur]]
+- collocation: [[operate]]
+- collocation: [[serve]]
+- synonym: [[meanwhile]]

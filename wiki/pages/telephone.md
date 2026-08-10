@@ -9,6 +9,8 @@ rank: 1036
 sfi: 59.42
 sources: [wordnet, llm]
 status: enriched
+chart: recipient
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ electronic equipment that converts sound into electrical signals that can be tra
 - advanced_form: [[handset]] — Use 'handset' when referring specifically to the physical part of the telephone that you hold to your ear.
 - advanced_form: [[receiver]] — Use 'receiver' for the part of the telephone that you speak into and listen from.
 - advanced_form: [[landline]] — Use 'landline' to specify a traditional wired telephone, as opposed to a mobile phone.
+- collocation: [[linesman]]

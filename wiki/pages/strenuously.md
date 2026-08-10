@@ -6,6 +6,8 @@ pos: adverb
 forms: [strenuously]
 sources: [llm]
 status: enriched
+chart: energetically
+region: you
 ---
 
 ## Definition

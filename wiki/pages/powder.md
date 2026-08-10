@@ -9,6 +9,8 @@ rank: 346
 sfi: 55.06
 sources: [wordnet, llm]
 status: enriched
+chart: powder
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,13 @@ _No sourced examples yet._
 - advanced_form: [[grit]] — Use 'grit' when the powder consists of coarse, abrasive particles, often implying roughness or dirt.
 - advanced_form: [[granules]] — Use 'granules' when the particles are small but distinct and not as fine as powder, often in a specific size.
 - builds_on: [[snow]] — Use 'powder' instead of 'snow' when emphasizing the light, fluffy quality ideal for winter sports.
+- collocation: [[cacao]]
+- synonym: [[cocoa]]
+- collocation: [[cocoa]]
+- collocation: [[creatine-monohydrate]]
+- collocation: [[dissolvable]]
+- collocation: [[flowability]]
+- collocation: [[graphite]]
+- collocation: [[protein]]
+- collocation: [[reconstitute]]
+- collocation: [[vanillin]]

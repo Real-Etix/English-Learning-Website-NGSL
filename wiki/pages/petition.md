@@ -9,6 +9,8 @@ rank: 930
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: challenge
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ _No sourced examples yet._
 - builds_on: [[appeal]] — Use 'petition' when emphasizing a formal written request to a higher court, contrasting with the more general action of an appeal.
 - advanced_form: [[appeal]] — Use when emphasizing a request for help or a change, often with urgency or emotion.
 - advanced_form: [[entreaty]] — Use when the request is earnest and humble, often implying strong pleading.
+- collocation: [[annulment]]
+- synonym: [[entreat]]
+- collocation: [[expungement]]
+- synonym: [[intercession]]
+- collocation: [[writ]]

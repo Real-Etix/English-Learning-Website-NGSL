@@ -6,6 +6,8 @@ pos: noun
 forms: [substantiation]
 sources: [llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition

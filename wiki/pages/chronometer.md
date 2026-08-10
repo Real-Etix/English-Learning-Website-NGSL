@@ -6,6 +6,8 @@ pos: noun
 forms: [chronometer]
 sources: [llm]
 status: enriched
+chart: timer
+region: timer
 ---
 
 ## Definition

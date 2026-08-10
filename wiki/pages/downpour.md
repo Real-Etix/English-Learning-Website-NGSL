@@ -6,6 +6,8 @@ pos: noun
 forms: [downpour]
 sources: [llm]
 status: enriched
+chart: powder
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[rain]] — Use 'downpour' to emphasize heavy, intense rain, often short-lived.
+- synonym: [[deluge]]
+- collocation: [[sudden]]
+- collocation: [[heavy]]
+- collocation: [[tropical]]
+- collocation: [[brief]]
+- synonym: [[rainfall]]
+- builds_on: [[rainfall]] — Use instead of 'rainfall' when emphasizing the intensity and suddenness of the rain.
+- synonym: [[cloudburst]]

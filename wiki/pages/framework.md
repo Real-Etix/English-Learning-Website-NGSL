@@ -9,6 +9,8 @@ rank: 2044
 sfi: 55.42
 sources: [wordnet, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ _No sourced examples yet._
 - advanced_form: [[paradigm]] — Use 'paradigm' when emphasizing a widely accepted conceptual model or example that defines a field, rather than a simple structural outline.
 - advanced_form: [[schema]] — Use 'schema' when referring to a structured plan or representation of relationships, especially in technical or systematic contexts.
 - advanced_form: [[model]] — Use 'model' when focusing on a simplified representation used for analysis or prediction, often in scientific or mathematical settings.
+- collocation: [[historiographic]]
+- collocation: [[interpretive]]
+- collocation: [[normative]]
+- synonym: [[ossature]]
+- synonym: [[stroma]]
+- synonym: [[truss]]

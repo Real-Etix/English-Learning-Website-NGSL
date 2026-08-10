@@ -6,6 +6,8 @@ pos: noun
 forms: [doubter]
 sources: [llm]
 status: enriched
+chart: skeptic
+region: skeptic
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[skeptic]] — Use doubter for a more neutral term focusing on uncertainty rather than habitual skepticism.
+- synonym: [[cynic]]

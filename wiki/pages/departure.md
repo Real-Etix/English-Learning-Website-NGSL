@@ -9,6 +9,8 @@ rank: 113
 sfi: 57.64
 sources: [wordnet, llm]
 status: enriched
+chart: accelerate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[exodus]] — Use for a large-scale, often urgent or dramatic departure, like people fleeing a disaster.
 - advanced_form: [[withdrawal]] — Use for a planned or strategic departure, such as from a military zone or a business venture.
 - advanced_form: [[egress]] — Use for physical departure from a confined area, a formal term for exit.
+- collocation: [[abrupt]]
+- synonym: [[churn]]
+- synonym: [[passing]]

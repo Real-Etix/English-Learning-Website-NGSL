@@ -6,6 +6,8 @@ pos: noun
 forms: [clutch]
 sources: [llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[purse]] — Use 'clutch' for a small, handleless evening bag typically held in the hand, rather than a general purse.
 - builds_on: [[grab]] — hold firmly, often due to fear or protectiveness
 - builds_on: [[snap]] — Use for a desperate or tight catch, often with urgency.
+- collocation: [[disengage]]
+- synonym: [[handbag]]

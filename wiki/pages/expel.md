@@ -6,6 +6,8 @@ pos: verb
 forms: [expel]
 sources: [llm]
 status: enriched
+chart: waste
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[exhale]] — Use when emphasizing forcefully pushing air out, e.g., 'expel air from your lungs'; more general than exhale.
 - builds_on: [[blow]] — Use 'expel' for forcefully pushing air or smoke out, often in a dramatic or technical context.
 - builds_on: [[pump]] — Use 'expel' to stress forceful ejection or pushing out, especially of a substance, rather than the general process of moving fluid.
+- synonym: [[evict]]

@@ -9,6 +9,8 @@ rank: 375
 sfi: 64.23
 sources: [wordnet, llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ the upper part of anything
 - advanced_form: [[summit]] — Use 'summit' for the highest point of a mountain or figuratively for a meeting of leaders; more formal and precise than 'top'.
 - advanced_form: [[apex]] — Use 'apex' for the pointed highest part of something, like a triangle or organization; suggests a sharp or culminating point.
 - advanced_form: [[peak]] — Use 'peak' for the highest narrow part of a mountain or a maximum point; common in both literal and figurative senses, but more advanced than 'top'.
+- synonym: [[blouse]]
+- synonym: [[coping]]
+- synonym: [[foremost]]
+- synonym: [[jersey]]
+- synonym: [[outdo]]
+- collocation: [[ranking]]
+- collocation: [[row]]
+- synonym: [[vertex]]
+- synonym: [[super]]

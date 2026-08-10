@@ -9,6 +9,8 @@ rank: 2271
 sfi: 54.75
 sources: [wordnet, llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[trepidation]] — Use 'trepidation' for a feeling of fear or nervousness about something that is about to happen, especially when it's uncertain.
 - advanced_form: [[apprehension]] — Use 'apprehension' for anxiety or fear that something bad may happen, often with a focus on anticipation.
 - builds_on: [[panic]] — Use 'alarm' for a sudden, often anxious reaction to a threat.
+- collocation: [[blaring]]
+- collocation: [[deactivated]]
+- builds_on: [[scare]] — Use when fear is a warning response to a specific threat or danger.
+- synonym: [[terrify]]

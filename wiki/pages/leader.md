@@ -9,6 +9,8 @@ rank: 596
 sfi: 62.12
 sources: [wordnet, llm]
 status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[commander]] — Use 'commander' instead of 'leader' when the role involves formal authority over a group, especially in military, naval, or systematic operations.
 - advanced_form: [[director]] — Use 'director' instead of 'leader' when the person manages a specific department, organization, or project and makes high-level decisions.
 - advanced_form: [[chief]] — Use 'chief' instead of 'leader' to emphasize the highest rank or primary decision-maker in a formal, often corporate or tribal, context.
+- collocation: [[bolshevik]]
+- synonym: [[ceo]]
+- collocation: [[courageous]]
+- collocation: [[levelheaded]]
+- synonym: [[patriarch]]
+- synonym: [[commandant]]

@@ -9,6 +9,8 @@ rank: 720
 sfi: 52.027
 sources: [wordnet, llm]
 status: enriched
+chart: dye
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[pigment]] — Use 'pigment' for colorants that are mixed into a medium, like paint or makeup, rather than dissolved as a dye.
 - advanced_form: [[colorant]] — Use 'colorant' as a formal, umbrella term in technical or industrial contexts.
 - builds_on: [[toner]] — Use 'dye' when referring to any coloring substance in solution, more general than 'toner' which is specific to photographic toning.
+- collocation: [[imbibition]]

@@ -9,6 +9,8 @@ rank: 2457
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: strength
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[deficiency]] — Use 'deficiency' when emphasizing a lack or insufficiency that causes a flaw.
 - advanced_form: [[shortcoming]] — Use 'shortcoming' for a personal or inherent fault, often in character or ability.
 - advanced_form: [[vulnerability]] — Use 'vulnerability' when the weakness makes someone or something open to attack or harm.
+- synonym: [[defenselessness]]
+- synonym: [[flaccidity]]
+- synonym: [[powerlessness]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [autograph]
 sources: [llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition

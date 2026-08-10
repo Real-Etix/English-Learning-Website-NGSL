@@ -6,6 +6,8 @@ pos: noun
 forms: [flowability]
 sources: [llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[liquidity]] — Use 'flowability' in engineering or material science to describe the ability of a substance to flow, more specific than 'liquidity' which implies liquid state.
+- synonym: [[fluidity]]
+- synonym: [[flow]]
+- synonym: [[mobility]]
+- synonym: [[consistency]]
+- collocation: [[powder]]
+- collocation: [[test]]
+- collocation: [[improve]]
+- collocation: [[high]]
+- collocation: [[poor]]

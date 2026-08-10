@@ -9,6 +9,8 @@ rank: 575
 sfi: 52.47
 sources: [wordnet, llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - builds_on: [[petrol]] — Use 'gasoline' in formal or American English contexts instead of 'petrol'.
 - advanced_form: [[petrol]] — Use 'petrol' in British English contexts or when aiming for a more regional, formal-sounding term than 'gasoline'.
 - advanced_form: [[fuel]] — Use 'fuel' as a broader, more technical term for any substance that powers an engine, though it can substitute for 'gasoline' in general contexts.
+- collocation: [[jobber]]
+- collocation: [[premium]]
+- collocation: [[regular]]
+- collocation: [[station]]

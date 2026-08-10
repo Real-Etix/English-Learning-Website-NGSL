@@ -6,6 +6,8 @@ pos: adjective
 forms: [bucolic]
 sources: [llm]
 status: enriched
+chart: domestic
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[rural]] — Use 'bucolic' to describe a charming, rustic countryside setting, often implying simplicity and tranquility.
+- synonym: [[agrarian]]
+- synonym: [[pastoral]]
+- synonym: [[rustic]]
+- synonym: [[country]]
+- collocation: [[setting]]
+- collocation: [[landscape]]
+- collocation: [[charm]]
+- collocation: [[scene]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [undersurface]
 sources: [llm]
 status: enriched
+chart: base
+region: you
 ---
 
 ## Definition

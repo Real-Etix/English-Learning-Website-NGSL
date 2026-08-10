@@ -6,6 +6,8 @@ pos: adverb
 forms: [exceedingly]
 sources: [llm]
 status: enriched
+chart: far
+region: you
 ---
 
 ## Definition

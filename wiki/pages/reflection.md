@@ -9,6 +9,8 @@ rank: 2675
 sfi: 53.35
 sources: [wordnet, llm]
 status: enriched
+chart: line
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[contemplation]] — Use for a peaceful, focused, and often prolonged mental examination, more formal than reflection.
 - advanced_form: [[rumination]] — Use when the thought is repetitive or brooding, often with a slightly negative or obsessive tone.
 - advanced_form: [[deliberation]] — Use when the thought is analytical and aimed at making a choice or judgment, implying careful weighing.
+- synonym: [[cogitation]]
+- synonym: [[echo]]
+- synonym: [[reminiscence]]
+- synonym: [[reverberation]]

@@ -9,6 +9,8 @@ rank: 622
 sfi: 52.8
 sources: [wordnet, llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ make a subtraction
 - domain: academic
 - advanced_form: [[deduct]] — Use 'deduct' in formal or financial contexts when removing an amount from a total.
 - advanced_form: [[discount]] — Use 'discount' when subtracting a percentage or amount from a price, often in retail or sales contexts.
+- synonym: [[remove]]
+- synonym: [[withdraw]]
+- collocation: [[from]]
+- collocation: [[amount]]
+- collocation: [[cost]]

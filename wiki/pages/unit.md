@@ -9,6 +9,8 @@ rank: 780
 sfi: 60.9
 sources: [wordnet, llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,14 @@ any division of quantity accepted as a standard of measurement or exchange
 - advanced_form: [[gauge]] — Use 'gauge' instead of 'unit' when referring to a specific scale or standard for measuring something like thickness, distance, or capacity.
 - builds_on: [[team]] — Use 'unit' instead of 'team' to highlight a cohesive, organized group within a larger organization, especially in military, corporate, or academic settings.
 - builds_on: [[condominium]] — Use 'unit' instead of 'condominium' when referring to an individual apartment in a multi-dwelling building, especially in real estate or technical contexts.
+- collocation: [[auxiliary]]
+- synonym: [[bolus]]
+- collocation: [[cardiac]]
+- collocation: [[chiller]]
+- synonym: [[divisional]]
+- collocation: [[ground-floor]]
+- synonym: [[handheld]]
+- synonym: [[liter]]
+- synonym: [[moiety]]
+- synonym: [[nanometer]]
+- collocation: [[cubicdecimeter]]

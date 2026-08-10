@@ -9,6 +9,8 @@ rank: 184
 sfi: 67.22
 sources: [wordnet, llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ above average in size or number or quantity or magnitude or extent
 - advanced_form: [[substantial]] — Use 'substantial' when emphasizing that something is large in amount, degree, or importance, often with a sense of solidity or significance.
 - advanced_form: [[vast]] — Use 'vast' to describe something extremely large in area, scope, or number, often with a sense of boundlessness or impressive scale.
 - advanced_form: [[immense]] — Use 'immense' to emphasize something overwhelmingly large, often beyond ordinary measurement or expectation.
+- collocation: [[buck]]
+- collocation: [[cuddle]]
+- collocation: [[derrire]]
+- collocation: [[letdown]]
+- collocation: [[muscleman]]

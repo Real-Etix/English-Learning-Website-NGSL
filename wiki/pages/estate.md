@@ -9,6 +9,8 @@ rank: 1771
 sfi: 56.3
 sources: [wordnet, llm]
 status: enriched
+chart: land
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ _No sourced examples yet._
 - advanced_form: [[assets]] — Use 'assets' for financial and legal contexts when referring to the total value of everything owned, more precise than 'estate'.
 - advanced_form: [[holdings]] — Use 'holdings' specifically for investments and properties, especially in business contexts, more specialized than 'estate'.
 - advanced_form: [[wealth]] — Use 'wealth' for a large accumulation of valuable possessions, emphasizing abundance rather than the legal totality of 'estate'.
+- synonym: [[inheritance]]
+- synonym: [[manor]]
+- collocation: [[manor]]
+- collocation: [[bibliotheca]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [rehabilitationcenter]
 sources: [llm]
 status: enriched
+chart: detox
+region: detox
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[detox]] — Use for a facility that provides ongoing addiction treatment, broader than the acute detox ward.
+- collocation: [[drug]]
+- collocation: [[alcohol]]
+- collocation: [[residential]]
+- collocation: [[rehabilitation]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [salvation]
 sources: [llm]
 status: enriched
+chart: redemption
+region: redemption
 ---
 
 ## Definition

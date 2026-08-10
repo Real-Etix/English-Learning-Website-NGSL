@@ -9,6 +9,8 @@ rank: 165
 sfi: 67.57
 sources: [wordnet, llm]
 status: enriched
+chart: house
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,10 @@ a dwelling that serves as living quarters for one or more families
 - builds_on: [[brokerage]] — Use 'house' as a formal, institutional term for a brokerage, common in financial jargon when referring to the firm itself.
 - builds_on: [[household]] — Use 'house' in formal or historical contexts to refer to a noble family or dynasty.
 - builds_on: [[publisher]] — Use 'house' instead of 'publisher' in casual or professional contexts to refer to the publishing company as an entity, often with a modifier like 'publishing house' but 'house' alone is understood.
+- collocation: [[commodious]]
+- collocation: [[grandmama]]
+- collocation: [[java]]
+- collocation: [[neighbouring]]
+- collocation: [[opera]]
+- collocation: [[plat]]
+- collocation: [[adobe]]

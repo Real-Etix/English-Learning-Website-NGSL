@@ -9,6 +9,8 @@ rank: 2233
 sfi: 54.83
 sources: [wordnet, llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[autonomy]] — Use 'autonomy' when emphasizing self-governance or self-direction, often in organizational or political contexts.
 - advanced_form: [[sovereignty]] — Use 'sovereignty' when referring to a state's supreme authority over its territory, typically political.
 - advanced_form: [[self-determination]] — Use 'self-determination' when focusing on the freedom of a group to choose their own political status or destiny.
+- synonym: [[self-governance]]

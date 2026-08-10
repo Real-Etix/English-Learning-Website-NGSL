@@ -6,6 +6,8 @@ pos: noun
 forms: [suture]
 sources: [llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition

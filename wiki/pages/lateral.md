@@ -9,6 +9,8 @@ rank: 90
 sfi: 61.62
 sources: [wordnet, llm]
 status: enriched
+chart: surplus
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ situated at or extending to the side
 - domain: fitness
 - advanced_form: [[flanking]] — Use 'flanking' instead of 'lateral' when describing a tactical or purposeful positioning to the side, especially in military or sports contexts.
 - advanced_form: [[peripheral]] — Use 'peripheral' instead of 'lateral' when emphasizing the outer edge or boundary, often in anatomy or sensory contexts.
+- collocation: [[approximant]]
+- collocation: [[moraine]]
+- collocation: [[pallium]]

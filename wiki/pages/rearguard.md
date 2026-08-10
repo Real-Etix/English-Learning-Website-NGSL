@@ -6,6 +6,8 @@ pos: noun
 forms: [rearguard]
 sources: [llm]
 status: enriched
+chart: make
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[rear]] — Use 'rearguard' to emphasize the defensive unit at the back, not just the position.
+- collocation: [[action]]
+- collocation: [[battle]]
+- collocation: [[force]]
+- collocation: [[troops]]

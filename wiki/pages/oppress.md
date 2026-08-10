@@ -6,6 +6,8 @@ pos: verb
 forms: [oppress]
 sources: [llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crush]] — Use 'oppress' when emphasizing cruel or unfair exercise of power over a group, more specific to unjust authority than 'crush'.
+- synonym: [[subjugate]]
+- synonym: [[suppress]]
+- collocation: [[poor]]
+- collocation: [[people]]

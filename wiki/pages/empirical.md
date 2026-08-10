@@ -9,6 +9,8 @@ rank: 49
 sfi: 60.149
 sources: [wordnet, llm]
 status: enriched
+chart: empirical
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ derived from experiment and observation rather than theory
 - builds_on: [[factual]] — Use 'empirical' when stressing facts derived from observation or experiment rather than theory.
 - builds_on: [[scientific]] — Use 'empirical' when emphasizing knowledge gained from observation or experiment, rather than theory.
 - builds_on: [[clinical]] — Use 'empirical' instead of 'clinical' to emphasize knowledge gained through direct observation and experience.
+- collocation: [[econometrician]]

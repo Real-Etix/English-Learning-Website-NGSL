@@ -9,6 +9,8 @@ rank: 547
 sfi: 52.64
 sources: [wordnet, llm]
 status: enriched
+chart: occupation
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[vexation]] — Use 'vexation' to emphasize irritation and worry, stronger than a mild headache.
 - advanced_form: [[tribulation]] — Use 'tribulation' for a serious, prolonged cause of suffering, not just annoyance.
 - advanced_form: [[ordeal]] — Use 'ordeal' for a difficult, unpleasant experience, often with a clear beginning and end.
+- collocation: [[excruciating]]
+- collocation: [[throb]]

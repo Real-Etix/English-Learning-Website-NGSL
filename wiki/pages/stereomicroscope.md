@@ -6,6 +6,8 @@ pos: noun
 forms: [stereomicroscope]
 sources: [llm]
 status: enriched
+chart: microscope
+region: microscope
 ---
 
 ## Definition

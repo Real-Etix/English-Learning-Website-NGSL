@@ -6,6 +6,8 @@ pos: adjective
 forms: [heliacal]
 sources: [llm]
 status: enriched
+chart: solar
+region: solar
 ---
 
 ## Definition

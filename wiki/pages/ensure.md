@@ -9,6 +9,8 @@ rank: 1153
 sfi: 58.86
 sources: [wordnet, llm]
 status: enriched
+chart: secure
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ make certain of
 - advanced_form: [[guarantee]] — Use 'guarantee' when emphasizing a promise or assurance of an outcome, more formal than 'ensure'.
 - advanced_form: [[secure]] — Use 'secure' when making something safe or certain, often implying active measures.
 - builds_on: [[insure]] — Use 'ensure' to emphasize making certain of something, especially for safety or correctness; it is more formal and specific than 'insure' for certainty.
+- collocation: [[impartiality]]
+- collocation: [[operability]]
+- builds_on: [[assure]] — Use 'ensure' instead of 'assure' when you are making sure that something happens or is true, especially in a practical or procedural context.
+- collocation: [[procurability]]

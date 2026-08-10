@@ -6,6 +6,8 @@ pos: noun
 forms: [stationing]
 sources: [llm]
 status: enriched
+chart: leverage
+region: you
 ---
 
 ## Definition

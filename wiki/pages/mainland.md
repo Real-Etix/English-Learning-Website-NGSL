@@ -9,6 +9,8 @@ rank: 1032
 sfi: 50.94
 sources: [wordnet, llm]
 status: enriched
+chart: mainland
+region: mainland
 ---
 
 ## Definition

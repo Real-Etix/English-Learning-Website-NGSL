@@ -6,6 +6,8 @@ pos: noun
 forms: [fiddle]
 sources: [llm]
 status: enriched
+chart: violin
+region: violin
 ---
 
 ## Definition

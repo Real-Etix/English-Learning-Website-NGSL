@@ -9,6 +9,8 @@ rank: 423
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: lactate
+region: lactate
 ---
 
 ## Definition

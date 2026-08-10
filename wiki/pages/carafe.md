@@ -6,6 +6,8 @@ pos: noun
 forms: [carafe]
 sources: [llm]
 status: enriched
+chart: bottle
+region: bottle
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bottle]] — Use for an elegant glass container used to serve wine, water, or other beverages at the table.
+- synonym: [[flask]]
+- collocation: [[water]]
+- collocation: [[glass]]
+- collocation: [[wine]]
+- collocation: [[fill]]
+- collocation: [[serving]]

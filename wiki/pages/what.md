@@ -9,6 +9,8 @@ rank: 51
 sfi: 73.43
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,12 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[else]]
+- collocation: [[prognosticate]]
+- collocation: [[recapitulate]]
+- synonym: [[which]]
+- synonym: [[whatever]]
+- collocation: [[if]]
+- collocation: [[about]]
+- collocation: [[for]]
+- collocation: [[not]]

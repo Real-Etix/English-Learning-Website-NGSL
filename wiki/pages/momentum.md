@@ -9,6 +9,8 @@ rank: 186
 sfi: 58.04
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ an impelling force or strength
 - advanced_form: [[impetus]] — Use 'impetus' when emphasizing the force that initiates or accelerates an action, rather than the ongoing speed of movement.
 - advanced_form: [[thrust]] — Use 'thrust' when highlighting the central or powerful driving force behind something, often with a sense of directed energy or effort.
 - advanced_form: [[drive]] — Use 'drive' when focusing on the inner motivation or sustained effort that propels someone or something toward a goal.
+- synonym: [[headway]]

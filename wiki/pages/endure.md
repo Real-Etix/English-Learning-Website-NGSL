@@ -9,6 +9,8 @@ rank: 801
 sfi: 52.45
 sources: [wordnet, llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition
@@ -34,3 +36,6 @@ put up with something or somebody unpleasant
 - builds_on: [[persist]] — Use 'endure' when something persists despite hardship or time, emphasizing strength or resistance.
 - builds_on: [[survive]] — Use 'endure' to emphasize surviving with patience or suffering through difficult conditions.
 - builds_on: [[undergo]] — Use 'endure' when the experience involves hardship or difficulty, stronger than 'undergo'.
+- synonym: [[outlast]]
+- synonym: [[withstand]]
+- builds_on: [[tolerate]] — Use 'endure' when emphasizing the difficulty or length of the suffering you put up with.

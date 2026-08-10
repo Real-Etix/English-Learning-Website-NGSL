@@ -6,6 +6,8 @@ pos: verb
 forms: [engender]
 sources: [llm]
 status: enriched
+chart: yield
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[generate]] — Use 'engender' when talking about abstract things like feelings or conditions being brought into existence.
 - builds_on: [[yield]] — Use 'engender' in formal contexts to create an emotion or condition; 'yield' is broader for tangible or intangible results.
 - builds_on: [[breed]] — Use 'engender' when something causes a feeling or situation to develop, especially gradually or subtly.
+- synonym: [[beget]]
+- synonym: [[instill]]

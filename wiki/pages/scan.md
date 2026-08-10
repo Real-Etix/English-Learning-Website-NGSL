@@ -9,6 +9,8 @@ rank: 2611
 sfi: 53.59
 sources: [wordnet, llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[glance]] — Use 'scan' when you look over an area or text quickly and methodically, often to find something specific; it is more active and thorough than a casual 'glance'.
 - advanced_form: [[scrutinize]] — use 'scrutinize' for very close, detailed examination, often with suspicion or critical attention
 - advanced_form: [[peruse]] — use 'peruse' for careful, thorough reading or examination of a document or text
+- synonym: [[digitize]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [quencher]
 sources: [llm]
 status: enriched
+chart: antioxidant
+region: antioxidant
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[antioxidant]] — Use 'quencher' instead of 'antioxidant' when focusing on the role of deactivating excited oxygen species.
+- synonym: [[scavenger]]
+- synonym: [[suppressor]]
+- collocation: [[thirst]]
+- collocation: [[oxygen]]
+- collocation: [[fire]]
+- collocation: [[lime]]

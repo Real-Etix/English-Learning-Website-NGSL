@@ -9,6 +9,8 @@ rank: 630
 sfi: 61.81
 sources: [wordnet, llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - advanced_form: [[feature]] — Use 'feature' for a prominent or special article in a newspaper or magazine, often longer and more in-depth than a regular article.
 - builds_on: [[object]] — Use 'article' for a particular item or thing, often in commercial or formal inventory contexts, instead of the generic 'object'.
 - builds_on: [[item]] — Use 'article' for a distinct object, especially in a collection or category like clothing or merchandise.
+- collocation: [[aforementioned]]
+- collocation: [[copyedit]]
+- collocation: [[encyclopedia]]
+- collocation: [[enlightening]]
+- synonym: [[essay]]
+- collocation: [[definite]]

@@ -7,8 +7,10 @@ forms: [declaration, declarations]
 lists: [business]
 rank: 1042
 sfi: 52.13
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ _No sourced examples yet._
 - builds_on: [[affirmation]] — Use 'declaration' for a formal or explicit announcement; broader than 'affirmation'.
 - builds_on: [[resolution]] — Use 'declaration' when the resolution is a public or formal statement, emphasizing its announcement.
 - builds_on: [[announcement]] — Use 'declaration' for an official, often emphatic statement, especially in legal or formal contexts.
+- synonym: [[proclamation]]
+- advanced_form: [[pronouncement]] — Use when emphasizing an official or authoritative formal statement.
+- advanced_form: [[proclamation]] — Use for a public, often formal announcement meant for many people.
+- advanced_form: [[assertion]] — Use when emphasizing a confident, forceful statement of fact or belief.
+- synonym: [[affidavit]]
+- synonym: [[deposition]]
+- synonym: [[predication]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [unambiguous]
 sources: [llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[straightforward]] — Use 'unambiguous' instead of 'straightforward' to emphasize that there is no room for multiple interpretations.
+- synonym: [[conclusive]]

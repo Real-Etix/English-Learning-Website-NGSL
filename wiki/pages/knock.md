@@ -9,6 +9,8 @@ rank: 1814
 sfi: 56.15
 sources: [wordnet, llm]
 status: enriched
+chart: strike
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[rap]] — Rap suggests a quick, light, sharp blow, often with the knuckles. Use it instead of 'knock' when the sound is crisp and not heavy.
 - advanced_form: [[thump]] — Thump is a heavier, duller blow than 'knock', implying more force and a softer sound. Use it when the blow is solid and resounding.
+- synonym: [[ping]]

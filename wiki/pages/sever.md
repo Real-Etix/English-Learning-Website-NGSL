@@ -6,6 +6,8 @@ pos: verb
 forms: [sever]
 sources: [llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[detach]] — Use 'sever' when the separation is forceful or involves cutting, rather than a simple detachment.
 - builds_on: [[tear]] — Use 'sever' when cutting something off completely, implying a clean and deliberate separation.
 - builds_on: [[divorce]] — Use 'sever' to emphasize a decisive, often forceful or complete separation, more dramatic than 'divorce'.
+- synonym: [[rend]]

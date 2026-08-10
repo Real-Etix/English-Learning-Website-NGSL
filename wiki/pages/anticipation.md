@@ -6,6 +6,8 @@ pos: noun
 forms: [anticipation]
 sources: [llm]
 status: enriched
+chart: likelihood
+region: you
 ---
 
 ## Definition

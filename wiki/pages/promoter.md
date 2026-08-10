@@ -6,6 +6,8 @@ pos: noun
 forms: [promoter]
 sources: [llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[marketer]] — Use for someone actively generating interest or hype, often through events or campaigns.
 - builds_on: [[developer]] — Use when emphasizing the financial and marketing aspects of land development, rather than the physical construction.
 - builds_on: [[advertiser]] — Use 'promoter' when emphasizing active efforts to boost awareness or sales, often for events or products.
+- synonym: [[catalyzer]]

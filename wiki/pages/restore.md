@@ -9,6 +9,8 @@ rank: 2100
 sfi: 55.22
 sources: [wordnet, llm]
 status: enriched
+chart: refine
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,17 @@ return to its original or usable and functioning condition
 - advanced_form: [[revive]] — Use when something is brought back to life, activity, or prominence after a period of dormancy.
 - advanced_form: [[rehabilitate]] — Use when restoring something to a good condition, often after damage or neglect, and sometimes implying a process of improvement.
 - advanced_form: [[renew]] — Use when making something like new again, often by replacing or refreshing parts, or extending its validity.
+- collocation: [[equipoise]]
+- synonym: [[mend]]
+- synonym: [[reanimate]]
+- synonym: [[reconstitute]]
+- synonym: [[reestablish]]
+- synonym: [[reinitialize]]
+- synonym: [[reinstate]]
+- synonym: [[reinstitute]]
+- synonym: [[resuscitate]]
+- collocation: [[wholeness]]
+- builds_on: [[renew]] — use when renewing an old object, building, or relationship
+- synonym: [[rejuvenate]]
+- synonym: [[replenish]]
+- synonym: [[revitalize]]

@@ -9,6 +9,8 @@ rank: 110
 sfi: 58.711
 sources: [wordnet, llm]
 status: enriched
+chart: intake
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ _No sourced examples yet._
 - advanced_form: [[dosage]] — Use when referring to the prescribed amount or frequency of a dose.
 - advanced_form: [[ration]] — Use when emphasizing a fixed, limited portion, often in a controlled distribution.
 - advanced_form: [[intake]] — Use when focusing on the amount taken into the body, especially in a general or ongoing sense.
+- synonym: [[bolus]]
+- collocation: [[creatine-monohydrate]]
+- synonym: [[medicate]]
+- collocation: [[milligram]]
+- collocation: [[hydrochloride]]
+- collocation: [[intrathecal]]
+- synonym: [[spoonful]]

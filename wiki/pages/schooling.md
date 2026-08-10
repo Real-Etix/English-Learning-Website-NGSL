@@ -6,6 +6,8 @@ pos: noun
 forms: [schooling]
 sources: [llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition

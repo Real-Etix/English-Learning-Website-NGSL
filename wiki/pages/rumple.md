@@ -6,6 +6,8 @@ pos: verb
 forms: [rumple]
 sources: [llm]
 status: enriched
+chart: wrinkle
+region: you
 ---
 
 ## Definition

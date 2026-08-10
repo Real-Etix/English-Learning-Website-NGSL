@@ -6,6 +6,8 @@ pos: noun
 forms: [metropole]
 sources: [llm]
 status: enriched
+chart: mainland
+region: mainland
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mainland]] — Use 'metropole' specifically when contrasting a colonial power's mainland with its overseas territories.
+- collocation: [[colonial]]
+- collocation: [[imperial]]
+- collocation: [[periphery]]

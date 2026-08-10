@@ -9,6 +9,8 @@ rank: 113
 sfi: 69.02
 sources: [wordnet, llm]
 status: enriched
+chart: persist
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,18 @@ an event that occurs when something passes from one state or phase to another
 - advanced_form: [[transition]] — Use 'transition' when describing a gradual or smooth change from one state to another, often in a process or period.
 - advanced_form: [[transformation]] — Use 'transformation' for a dramatic or complete change in form, appearance, or character.
 - advanced_form: [[conversion]] — Use 'conversion' when something is changed into a different form or function, often involving a deliberate process.
+- collocation: [[abrupt]]
+- collocation: [[catalyze]]
+- collocation: [[concomitantly]]
+- synonym: [[convert]]
+- collocation: [[corresponding]]
+- collocation: [[drastic]]
+- collocation: [[fractional]]
+- collocation: [[gradual]]
+- collocation: [[instigate]]
+- collocation: [[marked]]
+- synonym: [[metamorphose]]
+- collocation: [[momentous]]
+- collocation: [[perceptible]]
+- collocation: [[signify]]
+- synonym: [[transfiguration]]

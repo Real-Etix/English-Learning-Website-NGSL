@@ -9,6 +9,8 @@ rank: 37
 sfi: 60.51
 sources: [wordnet, llm]
 status: enriched
+chart: pattern
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[effects]] — Use 'effects' in official or legal contexts referring to personal belongings; 'luggage' is more specific to travel cases.
 - advanced_form: [[belongings]] — Use 'belongings' for a broader sense of personal items; 'luggage' specifically means suitcases or bags.
 - builds_on: [[suitcase]] — Use 'luggage' when speaking generally about suitcases and bags, especially in formal or travel-related contexts.
+- collocation: [[pannier]]
+- collocation: [[bay]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [perpetuate]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition

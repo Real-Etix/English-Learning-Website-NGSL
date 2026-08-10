@@ -6,6 +6,8 @@ pos: verb
 forms: [sojourn]
 sources: [llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 973
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: dull
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ lacking in liveliness or animation
 - advanced_form: [[tedious]] — Use 'tedious' when something is long and tiresomely slow, more than just boring.
 - advanced_form: [[monotonous]] — Use 'monotonous' when lack of variety in sound or activity causes dullness.
 - advanced_form: [[lackluster]] — Use 'lackluster' when something fails to excite or shine, lacking energy or brilliance.
+- synonym: [[obtuse]]

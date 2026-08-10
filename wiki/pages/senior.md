@@ -9,6 +9,8 @@ rank: 1207
 sfi: 58.6
 sources: [wordnet, llm]
 status: enriched
+chart: old
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,19 @@ older
 - advanced_form: [[elderly]] — Use 'elderly' instead of 'senior' when referring specifically to old age in people, often with a connotation of frailty.
 - advanced_form: [[aged]] — Use 'aged' for objects or people to emphasize the length of time something has existed.
 - advanced_form: [[venerable]] — Use 'venerable' to express deep respect for someone's age and wisdom, more formal than 'senior'.
+- collocation: [[aide]]
+- collocation: [[airman]]
+- collocation: [[barrister]]
+- collocation: [[cleric]]
+- collocation: [[debtholder]]
+- collocation: [[econometrician]]
+- synonym: [[elder]]
+- synonym: [[geriatric]]
+- collocation: [[macro-economist]]
+- collocation: [[mandarin]]
+- synonym: [[octogenarian]]
+- collocation: [[programmer]]
+- synonym: [[retiree]]
+- collocation: [[yearbook]]
+- collocation: [[bioscientist]]
+- collocation: [[sourcer]]

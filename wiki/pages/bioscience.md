@@ -6,6 +6,8 @@ pos: noun
 forms: [bioscience]
 sources: [llm]
 status: enriched
+chart: biology
+region: biology
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[biology]] — Use 'bioscience' for a formal, general term for the study of living organisms, often in academic or research contexts.
+- collocation: [[research]]
+- collocation: [[industry]]
+- collocation: [[company]]
+- collocation: [[degree]]
+- collocation: [[technology]]

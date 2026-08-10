@@ -6,6 +6,8 @@ pos: adjective
 forms: [incapable]
 sources: [llm]
 status: enriched
+chart: expert
+region: you
 ---
 
 ## Definition

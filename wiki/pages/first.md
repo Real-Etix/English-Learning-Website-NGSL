@@ -9,6 +9,8 @@ rank: 78
 sfi: 71.21
 sources: [wordnet, llm]
 status: enriched
+chart: first
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ the first or highest in an ordering or series
 - advanced_form: [[premier]] — Use 'premier' when referring to the first in rank or importance, often in a formal or competitive context.
 - advanced_form: [[leader]] — Use 'leader' when emphasizing a person or thing that is ahead of others in a competition or ranking.
 - advanced_form: [[frontrunner]] — Use 'frontrunner' when describing the current leading candidate in a contest or competition.
+- synonym: [[aboriginal]]
+- collocation: [[foray]]
+- collocation: [[octant]]
+- collocation: [[printing]]
+- synonym: [[preliminarily]]
+- collocation: [[settler]]

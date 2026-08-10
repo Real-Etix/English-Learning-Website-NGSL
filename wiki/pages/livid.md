@@ -6,6 +6,8 @@ pos: adjective
 forms: [livid]
 sources: [llm]
 status: enriched
+chart: sore
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[angry]] — Use 'livid' for anger that is extreme and may be accompanied by shock or disbelief; it implies a deep, seething rage.
+- synonym: [[furious]]
+- synonym: [[incensed]]
+- collocation: [[absolutely]]
+- collocation: [[face]]
+- collocation: [[anger]]
+- collocation: [[at]]

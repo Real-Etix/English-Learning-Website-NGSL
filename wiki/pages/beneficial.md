@@ -9,6 +9,8 @@ rank: 370
 sfi: 54.69
 sources: [wordnet, llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,10 @@ promoting or enhancing well-being
 - advanced_form: [[salutary]] — Use 'salutary' when emphasizing a corrective or healing benefit, often in formal or medical contexts.
 - advanced_form: [[advantageous]] — Use 'advantageous' when highlighting a strategic benefit or gain, more formal than 'beneficial'.
 - builds_on: [[helpful]] — Use 'beneficial' when you want to emphasize a positive outcome or advantage, often in formal or professional contexts.
+- synonym: [[conducive]]
+- synonym: [[healthful]]
+- collocation: [[microbes]]
+- collocation: [[microorganisms]]
+- synonym: [[promotive]]
+- collocation: [[reciprocally]]
+- synonym: [[salubrious]]

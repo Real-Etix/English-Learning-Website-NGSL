@@ -9,6 +9,8 @@ rank: 486
 sfi: 53.14
 sources: [wordnet, llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[clutch]] — Use 'clutch' for a small, handleless evening bag typically held in the hand, rather than a general purse.
 - advanced_form: [[pocketbook]] — Use 'pocketbook' for a wallet-like purse, especially in American English, to sound more formal or old-fashioned.
 - builds_on: [[treasury]] — Use 'purse' figuratively for available funds, especially of an organization or state; more literary than 'treasury'.
+- synonym: [[coffers]]

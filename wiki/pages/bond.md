@@ -9,6 +9,8 @@ rank: 1513
 sfi: 57.34
 sources: [wordnet, llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ _No sourced examples yet._
 - advanced_form: [[linkage]] — Use 'linkage' instead of 'bond' when you want a more formal or technical term for the connection.
 - advanced_form: [[affinity]] — Use 'affinity' instead of 'bond' to emphasize the natural attraction or tendency of atoms to combine.
 - advanced_form: [[valence]] — Use 'valence' instead of 'bond' when referring specifically to the combining power or capacity of an atom.
+- synonym: [[adherence]]
+- collocation: [[emitter]]
+- collocation: [[forfeit]]
+- synonym: [[ligature]]
+- collocation: [[dihydrogen]]
+- collocation: [[underwriting]]

@@ -9,6 +9,8 @@ rank: 1491
 sfi: 57.45
 sources: [wordnet, llm]
 status: enriched
+chart: cup
+region: cup
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ a small open container usually used for drinking
 - advanced_form: [[goblet]] — Use 'goblet' for a decorative or elegant drinking vessel, often with a stem and base, rather than a simple everyday cup.
 - advanced_form: [[chalice]] — Use 'chalice' for a large cup with religious or ceremonial significance, especially in a formal or sacred context.
 - advanced_form: [[tumbler]] — Use 'tumbler' for a straight-sided drinking glass without a handle or stem, common for everyday drinks like water or juice.
+- collocation: [[cocoa]]
+- collocation: [[rim]]

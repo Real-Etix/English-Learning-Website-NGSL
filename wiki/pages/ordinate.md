@@ -9,6 +9,8 @@ rank: 1084
 sfi: 51.41
 sources: [wordnet, llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition

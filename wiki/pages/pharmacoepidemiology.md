@@ -6,6 +6,8 @@ pos: noun
 forms: [pharmacoepidemiology]
 sources: [llm]
 status: enriched
+chart: epidemiology
+region: epidemiology
 ---
 
 ## Definition

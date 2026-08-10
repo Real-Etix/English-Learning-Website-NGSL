@@ -6,6 +6,8 @@ pos: noun
 forms: [ledge]
 sources: [llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shelf]] — Use 'ledge' instead of 'shelf' when referring to a narrow, often protruding horizontal surface on a wall or rock face.
+- synonym: [[kerb]]
+- synonym: [[projection]]
+- collocation: [[window]]
+- collocation: [[narrow]]
+- collocation: [[stone]]

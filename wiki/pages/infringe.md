@@ -6,6 +6,8 @@ pos: verb
 forms: [infringe]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition

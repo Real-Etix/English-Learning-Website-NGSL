@@ -6,6 +6,8 @@ pos: noun
 forms: [infarction]
 sources: [llm]
 status: enriched
+chart: coronary
+region: coronary
 ---
 
 ## Definition

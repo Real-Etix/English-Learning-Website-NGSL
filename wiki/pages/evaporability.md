@@ -6,6 +6,8 @@ pos: noun
 forms: [evaporability]
 sources: [llm]
 status: enriched
+chart: balance
+region: you
 ---
 
 ## Definition

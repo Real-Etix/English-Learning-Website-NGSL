@@ -6,6 +6,8 @@ pos: noun
 forms: [anglo]
 sources: [llm]
 status: enriched
+chart: black
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[white]] — Use 'Anglo' regionally (e.g., U.S. Southwest) to specify a non-Hispanic white person, often implying cultural background.
+- synonym: [[caucasian]]

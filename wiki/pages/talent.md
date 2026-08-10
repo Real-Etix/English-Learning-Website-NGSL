@@ -9,6 +9,8 @@ rank: 1790
 sfi: 56.23
 sources: [wordnet, llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[aptitude]] — Use 'aptitude' when you want to emphasize a natural, often inborn capacity to learn or excel in a specific area, more formal than 'talent'.
 - advanced_form: [[gift]] — Use 'gift' when the quality seems innate, almost like a special present from nature; it is slightly more poetic or emphatic than 'talent'.
 - advanced_form: [[knack]] — Use 'knack' for a practical, intuitive skill often acquired through repeated practice, less lofty than 'talent' but still natural.
+- synonym: [[aptness]]
+- synonym: [[flair]]
+- synonym: [[forte]]
+- collocation: [[fostering]]
+- collocation: [[ripen]]

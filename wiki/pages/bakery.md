@@ -9,6 +9,8 @@ rank: 754
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: bakery
+region: bakery
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[patisserie]] — Use 'patisserie' for a bakery that specializes in fine pastries and desserts, often with a French or upscale connotation.
 - advanced_form: [[boulangerie]] — Use 'boulangerie' for a bakery that focuses on bread, especially French-style breads and traditional baking methods.
+- collocation: [[artisanal]]
+- collocation: [[cruller]]

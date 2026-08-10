@@ -9,6 +9,8 @@ rank: 1604
 sfi: 56.98
 sources: [wordnet, llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ fasten with a lock
 - advanced_form: [[secure]] — Use 'secure' instead of 'lock' when emphasizing that something is fastened firmly or safely.
 - advanced_form: [[bolt]] — Use 'bolt' instead of 'lock' when the fastening involves a sliding metal bar, often for heavy doors.
 - advanced_form: [[padlock]] — Use 'padlock' instead of 'lock' when the locking is done with a removable lock, especially on chains or hasps.
+- synonym: [[latch]]
+- collocation: [[caster]]

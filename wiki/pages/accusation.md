@@ -9,6 +9,8 @@ rank: 1373
 sfi: 50.15
 sources: [wordnet, llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[allegation]] — Use allegation when the claim has not yet been proven or is still under investigation, unlike accusation which often implies a direct charge.
 - advanced_form: [[indictment]] — Use indictment for a formal, legal charge brought by a grand jury, especially in criminal cases, while accusation is broader and less formal.
+- synonym: [[imputation]]

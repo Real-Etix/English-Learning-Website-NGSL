@@ -6,6 +6,8 @@ pos: adjective
 forms: [unparalleled]
 sources: [llm]
 status: enriched
+chart: revolutionary
+region: you
 ---
 
 ## Definition

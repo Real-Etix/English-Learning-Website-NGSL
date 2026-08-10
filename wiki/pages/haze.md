@@ -6,6 +6,8 @@ pos: noun
 forms: [haze]
 sources: [llm]
 status: enriched
+chart: distribution
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fog]] — Use 'haze' when the reduction in visibility is due to particles like dust or smoke, not just water droplets.
+- synonym: [[mist]]
+- synonym: [[smog]]
+- synonym: [[obscurity]]
+- collocation: [[heat]]
+- collocation: [[morning]]
+- collocation: [[thin]]
+- collocation: [[dense]]
+- collocation: [[summer]]

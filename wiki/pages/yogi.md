@@ -9,6 +9,8 @@ rank: 141
 sfi: 59.42
 sources: [wordnet, llm]
 status: enriched
+chart: yogi
+region: yogi
 ---
 
 ## Definition

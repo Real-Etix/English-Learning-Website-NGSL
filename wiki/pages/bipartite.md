@@ -6,6 +6,8 @@ pos: adjective
 forms: [bipartite]
 sources: [llm]
 status: enriched
+chart: duplicate
+region: you
 ---
 
 ## Definition

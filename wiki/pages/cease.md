@@ -9,6 +9,8 @@ rank: 674
 sfi: 53.37
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,6 @@ _No sourced examples yet._
 - advanced_form: [[discontinue]] — Use when stopping something that was ongoing, like a product or activity.
 - advanced_form: [[terminate]] — Use for formal or legal endings, often with a sense of finality.
 - builds_on: [[discontinue]] — Use 'cease' for a more formal or permanent ending, often in official or technical contexts.
+- synonym: [[desist]]
+- collocation: [[forthwith]]
+- builds_on: [[terminate]] — Use when something stops completely, often officially or permanently.

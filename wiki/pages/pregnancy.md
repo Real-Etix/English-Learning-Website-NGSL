@@ -9,6 +9,8 @@ rank: 2743
 sfi: 52.95
 sources: [wordnet, llm]
 status: enriched
+chart: pregnancy
+region: pregnancy
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[gestation]] — Use 'gestation' in scientific or formal contexts, such as biology or medicine, instead of 'pregnancy'.
 - advanced_form: [[childbearing]] — Use 'childbearing' when focusing on the broader process or the capacity to bear children, rather than the specific state.
+- collocation: [[quadruplet]]
+- collocation: [[teen]]

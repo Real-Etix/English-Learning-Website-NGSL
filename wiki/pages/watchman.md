@@ -6,6 +6,8 @@ pos: noun
 forms: [watchman]
 sources: [llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[guard]] — Use 'watchman' instead of 'guard' when emphasizing night duty or security of a property.
+- synonym: [[watchkeeper]]
+- synonym: [[sentinel]]
+- collocation: [[night]]
+- collocation: [[gate]]

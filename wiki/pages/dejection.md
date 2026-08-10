@@ -6,6 +6,8 @@ pos: noun
 forms: [dejection]
 sources: [llm]
 status: enriched
+chart: would
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[depression]] — Use 'dejection' to describe a state of momentary or visible sadness, often due to a specific setback, rather than a chronic condition.
+- synonym: [[melancholy]]
+- synonym: [[despondency]]
+- synonym: [[gloom]]
+- collocation: [[deep]]
+- collocation: [[utter]]
+- collocation: [[in]]

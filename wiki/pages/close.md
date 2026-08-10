@@ -9,6 +9,8 @@ rank: 239
 sfi: 66.19
 sources: [wordnet, llm]
 status: enriched
+chart: close
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,15 @@ move so that an opening or passage is obstructed
 - advanced_form: [[seal]] — Use 'seal' when closing something to make it airtight or secure.
 - advanced_form: [[obstruct]] — Use 'obstruct' when something blocks a passage or path, often physically.
 - advanced_form: [[barricade]] — Use 'barricade' when closing an opening by putting up a barrier, often for defense.
+- synonym: [[adjacently]]
+- collocation: [[bodyguard]]
+- collocation: [[confinement]]
+- collocation: [[coworker]]
+- collocation: [[drape]]
+- collocation: [[kindred]]
+- collocation: [[parentheses]]
+- collocation: [[collaboration]]
+- synonym: [[faithful]]
+- collocation: [[schoolmate]]
+- collocation: [[trailing]]
+- collocation: [[vicinity]]

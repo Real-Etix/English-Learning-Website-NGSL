@@ -6,6 +6,8 @@ pos: noun
 forms: [lifespan]
 sources: [llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lifetime]] — Use 'lifespan' to emphasize the typical or expected duration, especially in scientific or technical contexts.
+- synonym: [[duration]]
+- synonym: [[life]]
+- synonym: [[existence]]
+- synonym: [[longevity]]
+- collocation: [[average]]
+- collocation: [[human]]
+- collocation: [[long]]
+- collocation: [[short]]
+- collocation: [[maximum]]

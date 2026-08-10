@@ -6,6 +6,8 @@ pos: adjective
 forms: [requisite]
 sources: [llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[imperative]] — Use 'requisite' instead of 'imperative' when referring to a formal or essential requirement, especially in contexts like rules or qualifications.
 - builds_on: [[compulsory]] — Use 'requisite' for a formal, often prerequisite condition that must be met.
 - builds_on: [[qualification]] — Use 'requisite' to emphasize something necessary and essential for a specific purpose, often in formal contexts.
+- builds_on: [[staple]] — Use in formal or bureaucratic contexts to indicate something required by rule or circumstance, more precise than 'staple'.

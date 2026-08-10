@@ -6,6 +6,8 @@ pos: noun
 forms: [sickle]
 sources: [llm]
 status: enriched
+chart: crescent
+region: crescent
 ---
 
 ## Definition

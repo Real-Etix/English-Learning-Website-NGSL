@@ -6,6 +6,8 @@ pos: noun
 forms: [carnival]
 sources: [llm]
 status: enriched
+chart: dine
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[festival]] — Use 'carnival' for a festive event with rides, games, and entertainment, often outdoors.
+- synonym: [[fair]]
+- synonym: [[fete]]
+- synonym: [[gala]]
+- synonym: [[celebration]]
+- collocation: [[annual]]
+- collocation: [[ride]]
+- collocation: [[game]]

@@ -9,6 +9,8 @@ rank: 2512
 sfi: 53.91
 sources: [wordnet, llm]
 status: enriched
+chart: unreliable
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ worthy of reliance or trust
 - advanced_form: [[dependable]] — Use 'dependable' when emphasizing consistency and reliability over time, often for objects or people that rarely fail.
 - advanced_form: [[trustworthy]] — Use 'trustworthy' when focusing on honesty, integrity, and being deserving of confidence, especially in personal or ethical contexts.
 - advanced_form: [[steadfast]] — Use 'steadfast' to convey unwavering loyalty or commitment, often in emotional or challenging situations.
+- synonym: [[authoritative]]
+- synonym: [[veracious]]

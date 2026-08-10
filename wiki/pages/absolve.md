@@ -6,6 +6,8 @@ pos: verb
 forms: [absolve]
 sources: [llm]
 status: enriched
+chart: free
+region: you
 ---
 
 ## Definition

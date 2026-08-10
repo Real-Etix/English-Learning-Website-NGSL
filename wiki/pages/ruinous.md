@@ -6,6 +6,8 @@ pos: adjective
 forms: [ruinous]
 sources: [llm]
 status: enriched
+chart: economical
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[costly]] — Use 'ruinous' when the cost or consequence causes complete destruction or severe damage, stronger than 'costly'.
+- synonym: [[catastrophic]]
+- synonym: [[devastating]]

@@ -9,6 +9,8 @@ rank: 2454
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,9 @@ _No sourced examples yet._
 - builds_on: [[judgment]] — Use 'evaluation' when referring to a systematic judgment that includes criteria or standards.
 - advanced_form: [[appraisal]] — Use 'appraisal' for formal or professional settings, especially when judging performance or value with a systematic process.
 - advanced_form: [[valuation]] — Use 'valuation' specifically when determining monetary or market worth, often in finance or real estate.
+- synonym: [[assay]]
+- collocation: [[criteria]]
+- collocation: [[psychiatric]]
+- synonym: [[psychometrics]]
+- synonym: [[rating]]
+- synonym: [[screening]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [abode]
 sources: [llm]
 status: enriched
+chart: house
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[home]] — Use 'abode' for a slightly poetic or old-fashioned tone, often implying a permanent home.
 - builds_on: [[house]] — Use 'abode' instead of 'house' for a slightly poetic or old-fashioned tone, often in fixed expressions like 'place of abode'.
+- builds_on: [[residence]] — Use for a literary or slightly old-fashioned feel, or in fixed phrases like 'right of abode'.
+- synonym: [[domicile]]
+- synonym: [[habitation]]

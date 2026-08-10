@@ -6,6 +6,8 @@ pos: noun
 forms: [crabapple]
 sources: [llm]
 status: enriched
+chart: apple
+region: apple
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[apple]] — Use 'crabapple' to refer to a small, wild apple variety, often used for cooking or ornamental purposes.
+- collocation: [[tree]]
+- collocation: [[blossom]]
+- collocation: [[tart]]

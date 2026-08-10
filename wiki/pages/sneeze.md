@@ -9,6 +9,8 @@ rank: 954
 sfi: 40.815
 sources: [wordnet, llm]
 status: enriched
+chart: sneeze
+region: sneeze
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1022
 sfi: 51.09
 sources: [wordnet, llm]
 status: enriched
+chart: lucrative
+region: you
 ---
 
 ## Definition

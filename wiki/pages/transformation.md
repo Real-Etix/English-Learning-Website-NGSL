@@ -9,6 +9,8 @@ rank: 37
 sfi: 60.981
 sources: [wordnet, llm]
 status: enriched
+chart: transformation
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,9 @@ _No sourced examples yet._
 - builds_on: [[metabolism]] — Use transformation as a more general but still formal term for a marked change in form, often preferable when the process is not exclusively insect or amphibian metamorphosis.
 - builds_on: [[revolution]] — Use when focusing on the complete and often positive metamorphosis of something, rather than the political or social upheaval implied by 'revolution'.
 - builds_on: [[evolution]] — Use 'transformation' instead of 'evolution' when highlighting a dramatic or thorough change in form, nature, or function, often with a clear before-and-after contrast.
+- synonym: [[mapping]]
+- synonym: [[operator]]
+- synonym: [[reaction]]
+- builds_on: [[reaction]] — Use when emphasizing the change of substances into new products.
+- builds_on: [[operator]] — Use 'transformation' when the operation is viewed as modifying a space or structure.
+- synonym: [[transfiguration]]

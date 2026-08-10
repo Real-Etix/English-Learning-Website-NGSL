@@ -9,6 +9,8 @@ rank: 1646
 sfi: 56.8
 sources: [wordnet, llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[surrogate]] — Use 'surrogate' instead of 'ordinary' when referring to a probate judge in jurisdictions like New York.
 - advanced_form: [[chancellor]] — Use 'chancellor' instead of 'ordinary' in courts where a chancery judge handles probate matters, such as Delaware.
+- synonym: [[mundane]]
+- synonym: [[nondescript]]
+- synonym: [[quotidian]]

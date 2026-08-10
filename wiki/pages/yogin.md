@@ -6,6 +6,8 @@ pos: noun
 forms: [yogin]
 sources: [llm]
 status: enriched
+chart: yogi
+region: yogi
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[yogi]] — Use 'yogin' when referring to a male practitioner of yoga in more formal or traditional contexts, instead of the more general 'yogi'.
+- synonym: [[sage]]
+- collocation: [[lotus]]

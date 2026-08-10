@@ -9,6 +9,8 @@ rank: 1012
 sfi: 59.54
 sources: [wordnet, llm]
 status: enriched
+chart: poor
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ possessing material wealth
 - advanced_form: [[affluent]] — Use 'affluent' to sound more formal and to imply sustained wealth and the associated lifestyle, rather than just having money.
 - advanced_form: [[opulent]] — Use 'opulent' to emphasize great wealth and luxury, often with a connotation of lavishness or excess.
 - advanced_form: [[well-heeled]] — Use 'well-heeled' for an informal but sophisticated synonym, often suggesting a person is rich enough to afford the best.
+- collocation: [[crimson]]
+- collocation: [[folklore]]
+- collocation: [[melange]]
+- collocation: [[panoply]]
+- collocation: [[plunder]]
+- synonym: [[plush]]
+- collocation: [[profusion]]
+- synonym: [[well-to-do]]

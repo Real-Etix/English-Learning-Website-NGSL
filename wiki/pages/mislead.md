@@ -9,6 +9,8 @@ rank: 423
 sfi: 54.61
 sources: [wordnet, llm]
 status: enriched
+chart: mislead
+region: mislead
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[beguile]] — Use 'beguile' when the misdirection involves charm or trickery that captivates the victim, making them willingly deceived.
 - advanced_form: [[hoodwink]] — Use 'hoodwink' when the deception is through a clever trick or swindle, often implying a quick or crafty mislead.
 - builds_on: [[deceive]] — Use when the deception involves giving wrong information or a false impression.
+- collocation: [[intentionally]]

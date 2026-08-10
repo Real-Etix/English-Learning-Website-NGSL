@@ -9,6 +9,8 @@ rank: 162
 sfi: 56.46
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -32,3 +34,7 @@ kill as a means of socially sanctioned punishment
 - builds_on: [[kill]] — Use when killing is carried out as a legal punishment or as part of a premeditated plan.
 - builds_on: [[fulfill]] — Use 'execute' when referring to carrying out a plan, order, or task, often with skill or efficiency.
 - builds_on: [[accomplish]] — Use 'execute' when you want to stress the skillful or precise carrying out of a plan or task. It implies action and implementation, whereas 'accomplish' is more about reaching an end goal.
+- synonym: [[effectuate]]
+- synonym: [[perpetrate]]
+- builds_on: [[implement]] — Use when emphasizing the precise and complete carrying out of a task or plan, often in a professional or formal setting.
+- synonym: [[operationalize]]

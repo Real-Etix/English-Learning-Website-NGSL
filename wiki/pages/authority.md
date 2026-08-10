@@ -9,6 +9,8 @@ rank: 11
 sfi: 63.37
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,11 @@ the power or right to give orders or make decisions
 - advanced_form: [[dominion]] — Use 'dominion' for supreme authority or control over a territory or domain.
 - builds_on: [[disposal]] — Use 'authority' when emphasizing official or hierarchical power to use resources, rather than general availability.
 - builds_on: [[consultant]] — Use 'authority' when the person is regarded as a definitive source of knowledge in a field, often implying broader recognition and influence than a 'consultant'.
+- synonym: [[connoisseur]]
+- collocation: [[devolve]]
+- collocation: [[ecclesiastical]]
+- collocation: [[lawful]]
+- collocation: [[prescriptive]]
+- synonym: [[pundit]]
+- collocation: [[wield]]
+- builds_on: [[specialist]] — Use when emphasizing recognized expertise and influence in a field.

@@ -9,6 +9,8 @@ rank: 795
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: clerk
+region: clerk
 ---
 
 ## Definition

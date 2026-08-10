@@ -6,6 +6,8 @@ pos: adjective
 forms: [mortified]
 sources: [llm]
 status: enriched
+chart: good
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ashamed]] — Use when the shame is extreme and associated with embarrassed humiliation, often from a social blunder.
+- synonym: [[humiliated]]
+- collocation: [[absolutely]]
+- collocation: [[completely]]
+- collocation: [[utterly]]

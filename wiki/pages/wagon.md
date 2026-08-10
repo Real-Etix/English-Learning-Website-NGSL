@@ -6,6 +6,8 @@ pos: noun
 forms: [wagon]
 sources: [llm]
 status: enriched
+chart: cart
+region: cart
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cart]] — Use 'wagon' for a larger, four-wheeled vehicle that can be covered or have high sides, while 'cart' often implies a smaller, open, two-wheeled vehicle.
+- collocation: [[covered]]
+- synonym: [[dray]]
+- collocation: [[hitch]]
+- synonym: [[carriage]]
+- synonym: [[trailer]]
+- synonym: [[truck]]
+- collocation: [[station]]
+- collocation: [[wheel]]
+- collocation: [[train]]

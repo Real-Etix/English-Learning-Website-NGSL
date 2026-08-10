@@ -9,6 +9,8 @@ rank: 251
 sfi: 65.87
 sources: [wordnet, llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,13 @@ the content of cognition
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[concept]] — Use 'concept' instead of 'idea' when referring to an abstract or general notion that forms the foundation of a theory or plan.
 - advanced_form: [[notion]] — Use 'notion' instead of 'idea' when you want to emphasize a more tentative or less fully developed thought.
+- collocation: [[grapple]]
+- collocation: [[implant]]
+- collocation: [[propound]]
+- collocation: [[revisit]]
+- collocation: [[super]]
+- collocation: [[stupid]]
+- collocation: [[conceive]]
+- collocation: [[ridiculous]]
+- collocation: [[inchoate]]
+- collocation: [[ludicrous]]

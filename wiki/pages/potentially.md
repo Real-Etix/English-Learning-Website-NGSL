@@ -9,6 +9,8 @@ rank: 2558
 sfi: 53.78
 sources: [wordnet, llm]
 status: enriched
+chart: arguably
+region: arguably
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ with a possibility of becoming actual
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[conceivably]] — Use 'conceivably' to emphasize that something is possible within the realm of imagination or logical reasoning, often more formal than 'potentially'.
 - advanced_form: [[plausibly]] — Use 'plausibly' when something seems reasonable or credible based on evidence, slightly more assertive than 'potentially'.
+- collocation: [[implicate]]

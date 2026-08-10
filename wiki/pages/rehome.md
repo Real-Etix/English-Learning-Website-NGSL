@@ -6,6 +6,8 @@ pos: verb
 forms: [rehome]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[transplant]] — Use 'rehome' instead of 'transplant' for moving plants or animals to a new, care-based environment, emphasizing finding a new home or suitable place.
+- synonym: [[relocate]]
+- synonym: [[transfer]]

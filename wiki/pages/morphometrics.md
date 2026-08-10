@@ -6,6 +6,8 @@ pos: noun
 forms: [morphometrics]
 sources: [llm]
 status: enriched
+chart: morphology
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[morphology]] — Use 'morphometrics' instead of 'morphology' when you specifically want to emphasize the quantitative measurement of forms.
+- collocation: [[geometric]]
+- collocation: [[traditional]]
+- collocation: [[shape]]

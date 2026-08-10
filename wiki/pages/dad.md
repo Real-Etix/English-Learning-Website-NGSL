@@ -9,6 +9,8 @@ rank: 1632
 sfi: 56.87
 sources: [wordnet, llm]
 status: enriched
+chart: father
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: verb
 forms: [promulgate]
 sources: [llm]
 status: enriched
+chart: bill
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 388
 sfi: 64.1
 sources: [wordnet, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ with a forward motion
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[onward]] — Use 'onward' for a determined, continuous forward movement, often in a journey or process.
 - advanced_form: [[ahead]] — Use 'ahead' to emphasize direction in front or progress toward a destination, especially in commands or spatial contexts.
+- collocation: [[boardwalk]]
+- collocation: [[boulevard]]
+- collocation: [[canter]]
+- collocation: [[chug]]
+- collocation: [[creep]]
+- collocation: [[farther]]
+- synonym: [[via]]

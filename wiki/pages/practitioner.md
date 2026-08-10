@@ -9,6 +9,8 @@ rank: 356
 sfi: 56.391
 sources: [wordnet, llm]
 status: enriched
+chart: mentor
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[specialist]] — Use 'specialist' when emphasizing a narrow, specific area of expertise within a profession, whereas 'practitioner' is more general.
 - advanced_form: [[clinician]] — Use 'clinician' specifically for medical or health professionals who work directly with patients, not for other learned professions like law.
 - advanced_form: [[veteran]] — Use 'veteran' to emphasize long experience and seasoned skill, whereas 'practitioner' simply denotes active practice.
+- synonym: [[yogini]]

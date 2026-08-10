@@ -9,6 +9,8 @@ rank: 6
 sfi: 84.45
 sources: [curated]
 status: verified
+chart: lot
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ Used before a noun to mean one of something, when it is not a specific one.
 
 ## Connections
 - collocation: [[lot]]
+- synonym: [[one]]
+- synonym: [[any]]
+- synonym: [[some]]
+- collocation: [[few]]
+- collocation: [[namely]]

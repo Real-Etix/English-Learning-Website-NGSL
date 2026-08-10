@@ -9,6 +9,8 @@ rank: 802
 sfi: 60.77
 sources: [wordnet, llm]
 status: enriched
+chart: enter
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,14 @@ _No sourced examples yet._
 - advanced_form: [[admittance]] — Use 'admittance' instead of 'access' when emphasizing formal permission to enter a place or group.
 - advanced_form: [[ingress]] — Use 'ingress' instead of 'access' in technical or formal contexts, especially for physical entry.
 - builds_on: [[admission]] — Use 'access' instead of 'admission' when focusing on the right or ability to enter, especially for restricted areas or resources.
+- collocation: [[anytime]]
+- collocation: [[authorized]]
+- collocation: [[broadband]]
+- collocation: [[equitable]]
+- synonym: [[login]]
+- collocation: [[powerchair]]
+- collocation: [[privileged]]
+- collocation: [[restricted]]
+- collocation: [[vascular]]
+- collocation: [[vehicular]]
+- collocation: [[hatch]]

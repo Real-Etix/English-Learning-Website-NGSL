@@ -6,6 +6,8 @@ pos: noun
 forms: [glyph]
 sources: [llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[icon]] — Use 'glyph' for a stylized or iconic symbol, especially in digital interfaces where the design is minimal and standardized.
+- synonym: [[symbol]]
+- synonym: [[character]]
+- synonym: [[sign]]
+- synonym: [[pictogram]]
+- collocation: [[small]]
+- collocation: [[ancient]]
+- synonym: [[grapheme]]

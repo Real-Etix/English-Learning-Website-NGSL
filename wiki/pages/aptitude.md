@@ -6,6 +6,8 @@ pos: noun
 forms: [aptitude]
 sources: [llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[capacity]] — Use 'aptitude' for innate capacity or talent, not learned skill.
 - builds_on: [[talent]] — Use 'aptitude' when you want to emphasize a natural, often inborn capacity to learn or excel in a specific area, more formal than 'talent'.
 - builds_on: [[capability]] — Use 'aptitude' to highlight innate or learned talent in a specific area, while 'capability' is more general.
+- synonym: [[aptness]]
+- synonym: [[flair]]
+- synonym: [[knack]]

@@ -9,6 +9,8 @@ rank: 250
 sfi: 56.49
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -34,3 +36,5 @@ give a promotion to or assign to a higher position
 - advanced_form: [[ennoble]] — Use 'ennoble' when the promotion involves bestowing a title, honor, or moral dignity, often in a ceremonial or aristocratic context. It is more specific and formal than the broader 'elevate'.
 - builds_on: [[lift]] — Use 'elevate' for a more formal or figurative sense of lifting, often implying improvement or raising to a higher status.
 - builds_on: [[enrich]] — Use 'elevate' when aiming to raise something to a higher quality, status, or level, often with a sense of refinement or prestige.
+- synonym: [[exalt]]
+- synonym: [[heighten]]

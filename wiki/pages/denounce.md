@@ -9,6 +9,8 @@ rank: 1133
 sfi: 50.03
 sources: [wordnet, llm]
 status: enriched
+chart: criticize
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[condemn]] — Use when you want to express strong, often official disapproval, similar to denounce but more formal and forceful.
 - advanced_form: [[censure]] — Use when the disapproval is formal and public, often involving an official reprimand or expression of strong criticism.
 - advanced_form: [[decry]] — Use when you want to emphasize publicly condemning something as wrong or harmful, often with a sense of outrage.
+- collocation: [[vitriolically]]
+- synonym: [[imprecate]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [recoil]
 sources: [llm]
 status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 173
 sfi: 56.35
 sources: [wordnet, llm]
 status: enriched
+chart: separate
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ _No sourced examples yet._
 - builds_on: [[economy]] — Use 'commerce' for a formal tone, especially in contexts of international or institutional trade.
 - advanced_form: [[trade]] — Use 'trade' for the actual exchange of goods, while 'commerce' is more about the system and business transactions overall.
 - advanced_form: [[exchange]] — Use 'exchange' to emphasize the reciprocal transfer of items or money, whereas 'commerce' covers all aspects of trade.
+- synonym: [[business]]
+- synonym: [[traffic]]
+- collocation: [[electronic]]
+- collocation: [[chamber]]
+- collocation: [[department]]

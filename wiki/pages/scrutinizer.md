@@ -6,6 +6,8 @@ pos: noun
 forms: [scrutinizer]
 sources: [llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition

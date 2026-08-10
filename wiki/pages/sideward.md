@@ -6,6 +6,8 @@ pos: adverb
 forms: [sideward]
 sources: [llm]
 status: enriched
+chart: indirectly
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[aside]] — Use 'sideward' as a more formal alternative to 'aside' when describing direction.
+- synonym: [[flanking]]

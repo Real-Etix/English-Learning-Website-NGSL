@@ -6,6 +6,8 @@ pos: adjective
 forms: [diurnal]
 sources: [llm]
 status: enriched
+chart: levy
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[daily]] — Use 'diurnal' instead of 'daily' in scientific or formal contexts, especially when referring to animals or plants active during the day.
+- synonym: [[daytime]]
+- collocation: [[rhythm]]
+- collocation: [[cycle]]
+- collocation: [[active]]

@@ -9,6 +9,8 @@ rank: 15
 sfi: 68.48
 sources: [wordnet, llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[pad]] — Use 'pad' when specifically referring to the soft, fleshy underside of the fingertip.
 - advanced_form: [[pulp]] — Use 'pulp' in formal or medical contexts to describe the soft tissue part of the fingertip.
+- collocation: [[littlefinger]]

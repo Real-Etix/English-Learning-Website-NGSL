@@ -9,6 +9,8 @@ rank: 589
 sfi: 62.17
 sources: [wordnet, llm]
 status: enriched
+chart: neural
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,17 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[client]] — Use 'client' instead of 'patient' in therapeutic or private practice contexts, especially when emphasizing a professional service relationship.
 - advanced_form: [[case]] — Use 'case' instead of 'patient' when referring to a specific medical instance or record, often in clinical or administrative settings.
+- collocation: [[adherence]]
+- collocation: [[anesthetize]]
+- collocation: [[cardiac]]
+- collocation: [[deceased]]
+- collocation: [[detoxificationunit]]
+- collocation: [[gravid]]
+- collocation: [[neurosurgeon]]
+- collocation: [[nurturer]]
+- collocation: [[psychiatric]]
+- collocation: [[psychoanalysis]]
+- collocation: [[recalcitrant]]
+- collocation: [[resuscitate]]
+- collocation: [[assiduity]]
+- synonym: [[sufferer]]

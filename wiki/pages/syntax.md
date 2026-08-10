@@ -9,6 +9,8 @@ rank: 190
 sfi: 57.747
 sources: [wordnet, llm]
 status: enriched
+chart: morphology
+region: you
 ---
 
 ## Definition

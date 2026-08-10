@@ -6,6 +6,8 @@ pos: adverb
 forms: [diplomatically]
 sources: [llm]
 status: enriched
+chart: politically
+region: politically
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[politically]] — Use instead of 'politically' when emphasizing tact and skill in managing relationships or conflicts.
+- synonym: [[discreetly]]

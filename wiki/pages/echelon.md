@@ -6,6 +6,8 @@ pos: noun
 forms: [echelon]
 sources: [llm]
 status: enriched
+chart: shift
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 396
 sfi: 54.34
 sources: [wordnet, llm]
 status: enriched
+chart: cartwheel
+region: cartwheel
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [consomm]
 sources: [llm]
 status: enriched
+chart: soup
+region: soup
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[soup]] — Use 'consommé' for a refined, clarified broth often served in fine dining, instead of 'soup' which is more general.
+- synonym: [[stock]]
+- collocation: [[clear]]
+- collocation: [[beef]]
+- collocation: [[chicken]]
+- collocation: [[hot]]

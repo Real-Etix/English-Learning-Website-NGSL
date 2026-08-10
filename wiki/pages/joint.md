@@ -9,6 +9,8 @@ rank: 1682
 sfi: 56.64
 sources: [wordnet, llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ _No sourced examples yet._
 - advanced_form: [[articulation]] — Use 'articulation' when you want a more technical anatomical term for a joint, especially in formal or medical writing.
 - advanced_form: [[suture]] — Use 'suture' specifically for the fibrous joints of the skull that do not allow movement.
 - builds_on: [[mutual]] — Use 'joint' when something is held or done together, implying shared responsibility.
+- collocation: [[annuitant]]
+- collocation: [[carpus]]
+- collocation: [[codefendant]]
+- synonym: [[connector]]
+- collocation: [[dislocate]]
+- collocation: [[dowel]]
+- synonym: [[coupler]]
+- synonym: [[eatery]]
+- synonym: [[honky-tonk]]

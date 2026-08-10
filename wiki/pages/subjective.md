@@ -9,6 +9,8 @@ rank: 426
 sfi: 55.573
 sources: [wordnet, llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ taking place within the mind and modified by individual bias
 - advanced_form: [[tendentious]] — Use 'tendentious' instead of 'subjective' when emphasizing a deliberate and often unfair bias.
 - advanced_form: [[idiosyncratic]] — Use 'idiosyncratic' instead of 'subjective' when the personal view is uniquely peculiar to the individual.
 - advanced_form: [[partisan]] — Use 'partisan' instead of 'subjective' when the bias is related to a specific group or party.
+- synonym: [[perspectival]]

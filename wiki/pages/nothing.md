@@ -9,6 +9,8 @@ rank: 336
 sfi: 64.68
 sources: [wordnet]
 status: seeded
+chart: null
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,9 @@ a quantity of no importance
 
 ## Connections
 - synonym: [[null]]
+- synonym: [[least]]
+- synonym: [[nobody]]
+- synonym: [[nowise]]
+- synonym: [[zero]]
+- collocation: [[resemble]]
+- synonym: [[nought]]

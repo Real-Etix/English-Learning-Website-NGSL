@@ -9,6 +9,8 @@ rank: 213
 sfi: 54.98
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: foreigner
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ a person who comes from a foreign country
 - advanced_form: [[alien]] — Use 'alien' in legal or formal contexts, especially official immigration documents.
 - advanced_form: [[expatriate]] — Use 'expatriate' for someone living abroad temporarily, often for work, implying voluntary relocation.
 - advanced_form: [[immigrant]] — Use 'immigrant' when emphasizing permanent settlement in a new country.
+- builds_on: [[stranger]] — Use 'foreigner' when the person is from another country or place.
+- synonym: [[foreignnational]]

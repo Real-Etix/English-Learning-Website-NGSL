@@ -9,6 +9,8 @@ rank: 12
 sfi: 62.43
 sources: [wordnet]
 status: seeded
+chart: empirical
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: toeic
 - domain: business
 - domain: academic
+- synonym: [[someday]]

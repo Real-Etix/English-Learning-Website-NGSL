@@ -6,6 +6,8 @@ pos: adverb
 forms: [unrelentingly]
 sources: [llm]
 status: enriched
+chart: permanently
+region: you
 ---
 
 ## Definition

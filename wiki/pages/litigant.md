@@ -6,6 +6,8 @@ pos: noun
 forms: [litigant]
 sources: [llm]
 status: enriched
+chart: client
+region: you
 ---
 
 ## Definition

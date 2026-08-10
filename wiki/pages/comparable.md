@@ -9,6 +9,8 @@ rank: 227
 sfi: 57.333
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: comparable
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,4 @@ able to be compared or worthy of comparison
 - advanced_form: [[equivalent]] — Use 'equivalent' when things are exactly equal in value, measure, or effect, rather than just generally comparable.
 - advanced_form: [[analogous]] — Use 'analogous' when comparing different things that share similar features or roles, emphasizing structural or functional similarity.
 - advanced_form: [[commensurate]] — Use 'commensurate' when comparing things that are proportionate or corresponding in size, degree, or scale, often in formal contexts.
+- synonym: [[akin]]

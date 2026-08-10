@@ -9,6 +9,8 @@ rank: 2565
 sfi: 53.75
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[investigation]] — Use 'investigation' for a formal, systematic search, especially in legal or scientific contexts.
 - advanced_form: [[scrutiny]] — Use 'scrutiny' for a critical, detailed examination, often implying careful observation.
 - advanced_form: [[examination]] — Use 'examination' for a methodical inspection, often in academic or analytical settings.
+- synonym: [[hearing]]
+- synonym: [[inquest]]

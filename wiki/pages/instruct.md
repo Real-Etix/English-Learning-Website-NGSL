@@ -9,6 +9,8 @@ rank: 392
 sfi: 53.85
 sources: [wordnet, llm]
 status: enriched
+chart: train
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[educate]] — Use 'educate' for systematic, long-term learning or raising awareness, broader than 'instruct'.
 - advanced_form: [[train]] — Use 'train' for teaching specific skills or procedures, often with practice.
 - advanced_form: [[coach]] — Use 'coach' for personalized, hands-on guidance, especially in sports or performance.
+- synonym: [[enlighten]]

@@ -9,6 +9,8 @@ rank: 2219
 sfi: 54.88
 sources: [wordnet, llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[orb]] — Use 'orb' for a more poetic or formal tone when referring to a planet as a celestial body.
 - advanced_form: [[world]] — Use 'world' to emphasize the planet as a potential habitat or realm, often for Earth-like planets.
 - advanced_form: [[globe]] — Use 'globe' to refer to a planet as a spherical object, often in scientific or descriptive contexts.
+- collocation: [[inhabit]]
+- collocation: [[lifeless]]
+- collocation: [[orbiter]]

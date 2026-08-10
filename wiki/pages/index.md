@@ -9,6 +9,8 @@ rank: 1709
 sfi: 56.55
 sources: [wordnet, llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[benchmark]] — Use 'benchmark' when referring to a standard or point of reference against which things are compared, especially in finance or performance evaluations.
 - advanced_form: [[metric]] — Use 'metric' when discussing a specific quantifiable measure used to track or assess something, often in business or data analysis.
 - advanced_form: [[gauge]] — Use 'gauge' when referring to a broad indicator or instrument for measuring something, such as trends or conditions.
+- synonym: [[catalogue]]
+- collocation: [[cephalic]]
+- collocation: [[greenback]]

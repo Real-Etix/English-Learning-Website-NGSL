@@ -6,6 +6,8 @@ pos: noun
 forms: [headguard]
 sources: [llm]
 status: enriched
+chart: helmet
+region: helmet
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[helmet]] — Use 'headguard' specifically for sports helmets that protect the head, especially in boxing or martial arts.
+- synonym: [[headpiece]]
+- collocation: [[sturdy]]
+- collocation: [[training]]
+- collocation: [[protective]]

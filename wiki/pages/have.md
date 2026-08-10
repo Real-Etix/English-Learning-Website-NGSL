@@ -9,6 +9,8 @@ rank: 8
 sfi: 81.53
 sources: [curated]
 status: verified
+chart: say
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,10 @@ To own or hold something; also used to talk about the past.
 ## Connections
 - collocation: [[i]]
 - collocation: [[you]]
+- collocation: [[cig]]
+- collocation: [[could]]
+- collocation: [[guardianship]]
+- collocation: [[gumption]]
+- collocation: [[natter]]
+- collocation: [[ought]]
+- collocation: [[predilection]]

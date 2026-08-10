@@ -6,6 +6,8 @@ pos: adverb
 forms: [immensely]
 sources: [llm]
 status: enriched
+chart: far
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[hugely]] — Use 'immensely' to emphasize a degree that feels vast or overwhelming, often with emotions or qualities.
 - builds_on: [[extremely]] — Use 'immensely' when the degree is very large and often conveys strong positive or negative emotion.
 - builds_on: [[greatly]] — Use 'immensely' to express a very large degree, often in positive or enthusiastic contexts, more vivid than 'greatly'.
+- collocation: [[gratified]]

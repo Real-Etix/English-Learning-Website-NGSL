@@ -6,6 +6,8 @@ pos: noun
 forms: [gram-molecule]
 sources: [llm]
 status: enriched
+chart: mole
+region: mole
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mole]] — Use 'gram-molecule' in older or very formal chemical contexts to avoid ambiguity with the animal or spy meanings of 'mole'.
+- synonym: [[mol]]
+- collocation: [[hydrogen]]
+- collocation: [[gas]]
+- collocation: [[react]]
+- collocation: [[equivalent]]

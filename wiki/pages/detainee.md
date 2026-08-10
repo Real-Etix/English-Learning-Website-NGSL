@@ -6,6 +6,8 @@ pos: noun
 forms: [detainee]
 sources: [llm]
 status: enriched
+chart: con
+region: you
 ---
 
 ## Definition

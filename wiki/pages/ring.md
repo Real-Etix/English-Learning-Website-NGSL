@@ -9,6 +9,8 @@ rank: 945
 sfi: 59.99
 sources: [wordnet, llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,12 @@ a characteristic sound
 - builds_on: [[band]] — Use 'ring' for a secret or illicit group engaged in illegal activities, such as crime or espionage.
 - builds_on: [[elastic]] — Use 'ring' when the elastic is circular and used for bundling or encircling items, while 'elastic' can refer to any shape.
 - builds_on: [[syndicate]] — Use 'ring' instead of 'syndicate' for a more specific term that highlights a network of people involved in a particular illicit activity, often with a sense of organized but less formal structure.
+- synonym: [[chime]]
+- synonym: [[cordon]]
+- synonym: [[doughnut]]
+- synonym: [[eyelet]]
+- synonym: [[grommet]]
+- collocation: [[littlefinger]]
+- synonym: [[mob]]
+- synonym: [[wheel]]
+- synonym: [[ping]]

@@ -9,6 +9,8 @@ rank: 420
 sfi: 55.629
 sources: [wordnet, llm]
 status: enriched
+chart: spread
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[dissemination]] — Use 'dissemination' when emphasizing the widespread spreading of copies, more formal than 'circulation'.
 - advanced_form: [[issuance]] — Use 'issuance' to focus on the act of releasing or distributing each edition, often in official contexts.
+- collocation: [[meridional]]
+- synonym: [[ventilation]]

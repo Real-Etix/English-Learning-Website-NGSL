@@ -9,6 +9,8 @@ rank: 1155
 sfi: 58.85
 sources: [wordnet, llm]
 status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,19 @@ _No sourced examples yet._
 - advanced_form: [[commander]] — Use 'commander' for military, police, or similar hierarchical organizations where authority over a group is emphasized.
 - advanced_form: [[director]] — Use 'director' for the head of a department, organization, or project, especially in corporate or institutional settings.
 - advanced_form: [[superintendent]] — Use 'superintendent' for the head of a public service department, such as schools, parks, or maintenance, implying oversight of operations.
+- synonym: [[cardinal]]
+- synonym: [[ceo]]
+- collocation: [[clan]]
+- collocation: [[dissenter]]
+- collocation: [[examiner]]
+- synonym: [[foremost]]
+- collocation: [[horticulturist]]
+- collocation: [[invigilator]]
+- collocation: [[macro-economist]]
+- collocation: [[magistrate]]
+- collocation: [[navigator]]
+- synonym: [[patriarch]]
+- synonym: [[predominant]]
+- synonym: [[provost]]
+- collocation: [[reviser]]
+- synonym: [[commandant]]

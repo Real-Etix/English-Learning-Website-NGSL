@@ -9,6 +9,8 @@ rank: 505
 sfi: 52.98
 sources: [wordnet, llm]
 status: enriched
+chart: newsstand
+region: newsstand
 ---
 
 ## Definition

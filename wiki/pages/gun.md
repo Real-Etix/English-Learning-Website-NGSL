@@ -9,6 +9,8 @@ rank: 1442
 sfi: 57.67
 sources: [wordnet, llm]
 status: enriched
+chart: gun
+region: gun
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[firearm]] — Use 'firearm' in formal, legal, or technical contexts where you need a precise term for any weapon that fires a projectile.
 - advanced_form: [[sidearm]] — Use 'sidearm' when referring specifically to a handgun carried on a belt or holster, often in law enforcement or military settings.
+- collocation: [[emplacement]]
+- collocation: [[flare]]
+- collocation: [[muzzle]]
+- collocation: [[pellet]]
+- collocation: [[spud]]

@@ -9,6 +9,8 @@ rank: 220
 sfi: 56.06
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: disadvantage
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ the quality of having an inferior or less favorable position
 - advanced_form: [[drawback]] — Use 'drawback' to emphasize a specific negative aspect or limitation of something, often in a practical or functional context.
 - advanced_form: [[liability]] — Use 'liability' when referring to something or someone that puts you at a disadvantage or creates a burden, especially in a situation requiring reliability or competence.
 - advanced_form: [[handicap]] — Use 'handicap' to suggest an impediment or obstacle that makes success or progress more difficult, often due to circumstances beyond one's control.
+- synonym: [[detriment]]

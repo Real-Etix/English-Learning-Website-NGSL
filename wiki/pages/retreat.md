@@ -9,6 +9,8 @@ rank: 408
 sfi: 54.21
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,9 @@ status: enriched
 - builds_on: [[holiday]] — Use 'retreat' instead of 'holiday' for a focused period of rest, reflection, or recovery, often with a specific purpose.
 - builds_on: [[spa]] — Use 'retreat' when emphasizing a peaceful place for health and relaxation, not necessarily with spring water.
 - builds_on: [[withdraw]] — Use 'retreat' instead of 'withdraw' when referring to a deliberate, often strategic backward movement from a position, especially in military or confrontational contexts.
+- synonym: [[den]]
+- synonym: [[ebb]]
+- synonym: [[haven]]
+- synonym: [[resort]]
+- builds_on: [[resort]] — Use when emphasizing a peaceful, secluded place for relaxation, often in nature.
+- synonym: [[hideaway]]

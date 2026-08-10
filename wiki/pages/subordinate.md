@@ -9,6 +9,8 @@ rank: 223
 sfi: 55.65
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,5 @@ lower in rank or importance
 - builds_on: [[inferior]] — Use 'subordinate' when referring to rank within a hierarchy, especially in a formal or organizational context.
 - builds_on: [[lesser]] — Use 'subordinate' for someone or something lower in rank, authority, or hierarchy.
 - builds_on: [[secondary]] — Use 'subordinate' to stress lower rank or importance, especially in hierarchical or official contexts.
+- synonym: [[petty]]
+- builds_on: [[petty]] — Use when emphasizing a lower rank within a hierarchy, especially in formal or organizational contexts.

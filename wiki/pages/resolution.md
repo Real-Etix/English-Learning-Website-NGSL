@@ -9,6 +9,8 @@ rank: 1799
 sfi: 56.18
 sources: [wordnet, llm]
 status: enriched
+chart: deduction
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - builds_on: [[decision]] — Use 'resolution' for formal decisions made by groups or official bodies, implying a binding or official outcome.
 - advanced_form: [[resolve]] — Use 'resolve' when you want a more formal or legalistic term for a decision made by a group, often in legislative or corporate contexts.
 - advanced_form: [[declaration]] — Use 'declaration' when the resolution is a public or formal statement, emphasizing its announcement.
+- synonym: [[denouement]]
+- collocation: [[mediation]]
+- synonym: [[persistence]]

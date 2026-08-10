@@ -6,6 +6,8 @@ pos: noun
 forms: [patriarch]
 sources: [llm]
 status: enriched
+chart: father
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[father]] — Use 'patriarch' when emphasizing the father as the head and founder of a family or tribe, often with authority and respect.
+- synonym: [[elder]]
+- synonym: [[head]]
+- synonym: [[chief]]
+- synonym: [[leader]]
+- collocation: [[family]]
+- collocation: [[clan]]
+- collocation: [[church]]
+- collocation: [[tribal]]
+- collocation: [[community]]

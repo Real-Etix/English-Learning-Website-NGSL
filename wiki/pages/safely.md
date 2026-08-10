@@ -7,8 +7,10 @@ forms: [safely]
 lists: [toeic]
 rank: 585
 sfi: 52.47
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ with safety
 
 ## Connections
 - domain: toeic
+- collocation: [[disposeof]]
+- advanced_form: [[securely]] — use when emphasizing protection from harm, loss, or unauthorized access, especially for physical objects or people
+- advanced_form: [[prudently]] — use when highlighting careful, wise judgment to prevent danger rather than simply the absence of harm
+- advanced_form: [[assuredly]] — use for the figurative sense of 'safely' meaning without doubt or risk of being wrong

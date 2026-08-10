@@ -6,6 +6,8 @@ pos: adverb
 forms: [unceasingly]
 sources: [llm]
 status: enriched
+chart: permanently
+region: you
 ---
 
 ## Definition

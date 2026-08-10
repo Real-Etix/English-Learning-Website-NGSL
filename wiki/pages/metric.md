@@ -9,6 +9,8 @@ rank: 287
 sfi: 54.07
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ a function of a topological space that gives, for any two points in the space, a
 - advanced_form: [[criterion]] — Use 'criterion' when the standard is a specific principle or test used to judge something, rather than a generic measured value like 'metric'.
 - builds_on: [[index]] — Use 'metric' when discussing a specific quantifiable measure used to track or assess something, often in business or data analysis.
 - builds_on: [[statistic]] — Use 'metric' when the statistic is part of a system or standard for measurement, often in business or technical contexts.
+- collocation: [[megagram]]
+- collocation: [[centimeter]]

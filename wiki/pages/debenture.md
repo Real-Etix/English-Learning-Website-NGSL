@@ -9,6 +9,8 @@ rank: 992
 sfi: 51.39
 sources: [wordnet, llm]
 status: enriched
+chart: debenture
+region: debenture
 ---
 
 ## Definition

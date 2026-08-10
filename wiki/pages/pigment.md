@@ -6,6 +6,8 @@ pos: noun
 forms: [pigment]
 sources: [llm]
 status: enriched
+chart: dye
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dye]] — Use 'pigment' for colorants that are mixed into a medium, like paint or makeup, rather than dissolved as a dye.
+- synonym: [[colorant]]
+- synonym: [[tint]]
+- synonym: [[stain]]
+- collocation: [[vermillion]]
+- collocation: [[viridian]]
+- collocation: [[umber]]

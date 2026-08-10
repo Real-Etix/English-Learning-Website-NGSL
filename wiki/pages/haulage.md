@@ -6,6 +6,8 @@ pos: noun
 forms: [haulage]
 sources: [llm]
 status: enriched
+chart: force
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1420
 sfi: 51.19
 sources: [wordnet, llm]
 status: enriched
+chart: conservation
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ intended or appropriate for defending against or deterring aggression or attack
 - advanced_form: [[deterrent]] — Use when emphasizing the discouragement of an attack rather than active defense.
 - advanced_form: [[precautionary]] — Use when focusing on actions taken in advance to prevent harm.
 - advanced_form: [[fortifying]] — Use when adding strength or reinforcing defenses.
+- collocation: [[armament]]
+- collocation: [[impregnability]]
+- collocation: [[lineman]]
+- collocation: [[rusher]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [subversive]
 sources: [llm]
 status: enriched
+chart: irregular
+region: you
 ---
 
 ## Definition

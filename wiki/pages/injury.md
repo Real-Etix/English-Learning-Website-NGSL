@@ -9,6 +9,8 @@ rank: 1801
 sfi: 56.17
 sources: [wordnet, llm]
 status: enriched
+chart: trauma
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[trauma]] — Use 'trauma' for serious physical damage, often from an external force, and especially in medical contexts to emphasize severity.
 - advanced_form: [[wound]] — Use 'wound' when the injury involves a break in the skin, such as a cut or puncture, and often implies visible damage.
 - advanced_form: [[lesion]] — Use 'lesion' in medical settings for a specific area of abnormal tissue change, often internal or from disease.
+- synonym: [[contusion]]
+- collocation: [[cranium]]

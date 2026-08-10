@@ -6,6 +6,8 @@ pos: noun
 forms: [glossary]
 sources: [llm]
 status: enriched
+chart: terminology
+region: terminology
 ---
 
 ## Definition

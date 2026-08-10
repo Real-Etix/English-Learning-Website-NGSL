@@ -6,6 +6,8 @@ pos: verb
 forms: [erupt]
 sources: [llm]
 status: enriched
+chart: pulse
+region: you
 ---
 
 ## Definition

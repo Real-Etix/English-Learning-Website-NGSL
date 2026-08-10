@@ -9,6 +9,8 @@ rank: 233
 sfi: 56.84
 sources: [wordnet, llm]
 status: enriched
+chart: whey
+region: whey
 ---
 
 ## Definition

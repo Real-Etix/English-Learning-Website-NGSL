@@ -9,6 +9,8 @@ rank: 1147
 sfi: 58.9
 sources: [wordnet, llm]
 status: enriched
+chart: grant
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,16 @@ _No sourced examples yet._
 - advanced_form: [[stipend]] — Use 'stipend' instead of 'grant' when the monetary aid is a fixed regular payment for living expenses, often associated with internships, fellowships, or training.
 - advanced_form: [[endowment]] — Use 'endowment' instead of 'grant' when the monetary aid comes from a permanent fund or donation, typically for an institution's ongoing support.
 - builds_on: [[gift]] — Use 'grant' for financial gifts given for a specific purpose, typically by governments or foundations.
+- collocation: [[absolution]]
+- synonym: [[benefaction]]
+- synonym: [[bursary]]
+- collocation: [[clemency]]
+- collocation: [[deferment]]
+- collocation: [[dispensation]]
+- synonym: [[fellowship]]
+- collocation: [[guardianship]]
+- collocation: [[postponement]]
+- builds_on: [[allowance]] — Use for a sum of money given by an organization, especially for a specific cause or project.
+- builds_on: [[afford]] — Use 'grant' when you formally give or spare time, money, or permission, rather than just having the ability to do so.
+- synonym: [[bestowal]]
+- collocation: [[reconsideration]]

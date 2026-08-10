@@ -9,6 +9,8 @@ rank: 1299
 sfi: 58.25
 sources: [wordnet, llm]
 status: enriched
+chart: engage
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,6 @@ _No sourced examples yet._
 - builds_on: [[participate]] — Use 'engage' when focusing on active involvement or participation with purpose.
 - builds_on: [[hire]] — Use 'engage' when emphasizing a formal agreement to hire someone for a specific role or service, more refined than 'hire'.
 - builds_on: [[occupy]] — Use 'engage' when focusing on active participation or involvement, more formal than 'occupy'.
+- synonym: [[partake]]
+- collocation: [[proactively]]
+- collocation: [[productively]]

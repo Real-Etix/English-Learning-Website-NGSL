@@ -6,6 +6,8 @@ pos: noun
 forms: [turpitude]
 sources: [llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition

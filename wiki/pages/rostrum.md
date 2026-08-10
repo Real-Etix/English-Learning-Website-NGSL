@@ -6,6 +6,8 @@ pos: noun
 forms: [rostrum]
 sources: [llm]
 status: enriched
+chart: platform
+region: platform
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[platform]] — Use 'rostrum' instead of 'platform' for a public speaking platform, especially in a legislative or academic setting.
+- synonym: [[dais]]
+- synonym: [[podium]]
+- synonym: [[stage]]
+- collocation: [[step]]
+- collocation: [[speak]]
+- collocation: [[address]]
+- collocation: [[stand]]
+- collocation: [[approach]]

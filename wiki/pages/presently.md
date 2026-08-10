@@ -6,6 +6,8 @@ pos: adverb
 forms: [presently]
 sources: [llm]
 status: enriched
+chart: now
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[soon]] — Use 'presently' for a slightly more formal tone, often implying 'within a short time' rather than immediately.
 - builds_on: [[currently]] — Use 'presently' to sound more formal or literary; it is synonymous with 'currently' but may also mean 'soon' in some contexts, so use when context clearly indicates 'now'.
 - builds_on: [[nowadays]] — Use 'presently' in formal contexts to mean 'at this time', though be aware it can also mean 'soon' in some dialects.
+- synonym: [[imminently]]

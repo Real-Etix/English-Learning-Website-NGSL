@@ -9,6 +9,8 @@ rank: 371
 sfi: 56.197
 sources: [wordnet, llm]
 status: enriched
+chart: suicide
+region: suicide
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ the act of killing yourself
 - domain: academic
 - advanced_form: [[self-destruction]] — Use when emphasizing the deliberate and often gradual nature of the act, or in a psychological context.
 - advanced_form: [[self-annihilation]] — Use when describing suicide in a philosophical, dramatic, or highly formal context, focusing on the utter extinction of self.
+- collocation: [[hotline]]

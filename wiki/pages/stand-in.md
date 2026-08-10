@@ -6,6 +6,8 @@ pos: noun
 forms: [stand-in]
 sources: [llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition

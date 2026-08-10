@@ -9,6 +9,8 @@ rank: 523
 sfi: 54.07
 sources: [wordnet, llm]
 status: enriched
+chart: directly
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ kept private or confined to those intimately concerned
 - advanced_form: [[confidentially]] — Use when information is sensitive and shared in trust, emphasizing secrecy between parties.
 - advanced_form: [[discreetly]] — Use when acting in a way that avoids drawing attention or causing embarrassment, implying careful subtlety.
 - builds_on: [[personally]] — Use instead of 'personally' to stress confidentiality or a non-public context.
+- collocation: [[admonish]]
+- synonym: [[intimately]]

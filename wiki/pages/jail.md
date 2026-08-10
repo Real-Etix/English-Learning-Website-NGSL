@@ -7,8 +7,10 @@ forms: [jail, jails, jailed, jailing]
 lists: [ngsl]
 rank: 2580
 sfi: 53.7
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,14 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[prison]]
+- synonym: [[penitentiary]]
+- synonym: [[lockup]]
+- synonym: [[cell]]
+- collocation: [[county]]
+- collocation: [[cell]]
+- collocation: [[sentence]]
+- collocation: [[time]]
+- collocation: [[in]]
+- advanced_form: [[penitentiary]] — Use it for a large, high-security prison for convicted criminals, especially in formal or news writing.
+- advanced_form: [[reformatory]] — Use it for a prison for young offenders, with a focus on reform and education.

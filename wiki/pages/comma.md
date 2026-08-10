@@ -9,6 +9,8 @@ rank: 879
 sfi: 47.236
 sources: [wordnet, llm]
 status: enriched
+chart: comma
+region: comma
 ---
 
 ## Definition

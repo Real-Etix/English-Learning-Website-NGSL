@@ -9,6 +9,8 @@ rank: 729
 sfi: 51.848
 sources: [wordnet, llm]
 status: enriched
+chart: land
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[estate]] — Use 'estate' for a large area of land used for growing a single commercial crop, often in a formal or historical context.
 - advanced_form: [[holding]] — Use 'holding' when focusing on the land as a property or asset, especially in formal reports or legal contexts.
+- synonym: [[farm]]
+- collocation: [[cotton]]
+- collocation: [[sugar]]
+- collocation: [[rubber]]
+- collocation: [[tea]]

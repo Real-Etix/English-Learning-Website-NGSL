@@ -9,6 +9,8 @@ rank: 408
 sfi: 63.95
 sources: [wordnet, llm]
 status: enriched
+chart: easy
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ posing no difficulty
 - advanced_form: [[effortless]] — Use when emphasizing that something required no effort at all, similar to 'easy' but stronger.
 - advanced_form: [[facile]] — Use when something seems too easy or superficial, often with a negative connotation.
 - advanced_form: [[uncomplicated]] — Use when something is simple and not complex, similar to 'easy' but focusing on lack of complications.
+- collocation: [[complaisance]]
+- collocation: [[congeniality]]
+- collocation: [[geniality]]
+- collocation: [[relatively]]
+- collocation: [[walkover]]
+- synonym: [[whoa]]
+- collocation: [[procurability]]

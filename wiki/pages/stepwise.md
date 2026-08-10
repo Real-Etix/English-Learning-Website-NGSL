@@ -6,6 +6,8 @@ pos: adjective
 forms: [stepwise]
 sources: [llm]
 status: enriched
+chart: progressive
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[incremental]] — Use 'stepwise' to highlight that increments occur in distinct steps or stages, often in a planned sequence.
+- synonym: [[gradual]]

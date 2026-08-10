@@ -9,6 +9,8 @@ rank: 737
 sfi: 51.627
 sources: [wordnet, llm]
 status: enriched
+chart: soluble
+region: soluble
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[dissolvable]] — Use when emphasizing the ability to dissolve, often interchangeable with 'soluble' but slightly less technical.
 - advanced_form: [[miscible]] — Use specifically for liquids that can be mixed to form a uniform solution; more precise than 'soluble' for liquids.
+- collocation: [[caseinogen]]
+- collocation: [[orthophosphate]]

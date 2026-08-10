@@ -9,6 +9,8 @@ rank: 1264
 sfi: 48.94
 sources: [wordnet, llm]
 status: enriched
+chart: militant
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 362
 sfi: 54.86
 sources: [wordnet, llm]
 status: enriched
+chart: kneecap
+region: kneecap
 ---
 
 ## Definition

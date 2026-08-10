@@ -9,6 +9,8 @@ rank: 171
 sfi: 58.54
 sources: [wordnet, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[coalition]] — Use 'coalition' when the group is formed for a specific, often temporary purpose, especially in politics.
 - advanced_form: [[confederation]] — Use 'confederation' when the group consists of independent entities that retain sovereignty but cooperate on common issues.
 - advanced_form: [[entente]] — Use 'entente' when the group is bound by a friendly understanding or agreement rather than a formal treaty.
+- synonym: [[positioning]]
+- synonym: [[calibration]]

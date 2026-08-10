@@ -6,6 +6,8 @@ pos: verb
 forms: [metabolize]
 sources: [llm]
 status: enriched
+chart: encompass
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[digest]] — Use 'metabolize' when focusing on the chemical transformation of food into energy or cellular components.
+- synonym: [[process]]
+- synonym: [[breakdown]]
+- synonym: [[convert]]
+- synonym: [[assimilate]]
+- collocation: [[liver]]
+- collocation: [[energy]]
+- collocation: [[glucose]]

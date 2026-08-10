@@ -6,6 +6,8 @@ pos: noun
 forms: [commemoration]
 sources: [llm]
 status: enriched
+chart: pleasure
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[anniversary]] — Use 'commemoration' for a formal or solemn anniversary, especially when the focus is on remembering and honoring the event.
 - builds_on: [[celebration]] — Use when the celebration has a serious or solemn purpose, often honoring a person or event from the past.
+- collocation: [[centennial]]
+- synonym: [[remembrance]]

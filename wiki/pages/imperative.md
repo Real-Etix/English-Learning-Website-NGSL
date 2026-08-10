@@ -9,6 +9,8 @@ rank: 919
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[requisite]] — Use 'requisite' instead of 'imperative' when referring to a formal or essential requirement, especially in contexts like rules or qualifications.
 - advanced_form: [[exigency]] — Use 'exigency' instead of 'imperative' to highlight a critical, pressing necessity, often in emergencies or urgent situations.
 - builds_on: [[compulsory]] — Use 'imperative' when the requirement is urgent or essential, not just a rule.
+- synonym: [[must]]
+- synonym: [[pressing]]

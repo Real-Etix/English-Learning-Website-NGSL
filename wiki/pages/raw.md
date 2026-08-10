@@ -9,6 +9,8 @@ rank: 2686
 sfi: 53.28
 sources: [wordnet, llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ status: enriched
 - synonym: [[natural]]
 - advanced_form: [[crude]] — Use 'crude' for raw materials that are in a natural state, often implying a lack of refinement or processing.
 - advanced_form: [[unrefined]] — Use 'unrefined' for products that have not undergone processing to remove impurities or improve appearance.
+- collocation: [[eroticism]]
+- collocation: [[footage]]
+- collocation: [[nutmeat]]
+- collocation: [[powerlifter]]
+- collocation: [[umber]]

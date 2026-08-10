@@ -6,6 +6,8 @@ pos: noun
 forms: [drupe]
 sources: [llm]
 status: enriched
+chart: nut
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[almond]] — Use 'drupe' when describing the fruit type of plants like almond, peach, or cherry in scientific or precise language.
+- collocation: [[pit]]

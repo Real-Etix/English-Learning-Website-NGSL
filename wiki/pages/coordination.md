@@ -9,6 +9,8 @@ rank: 489
 sfi: 54.455
 sources: [wordnet, llm]
 status: enriched
+chart: coordination
+region: coordination
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[dexterity]] — Use 'dexterity' to emphasize skillful and precise use of hands or body, often with a connotation of agility and fine motor control.
 - advanced_form: [[finesse]] — Use 'finesse' to highlight subtle, refined skill in performing delicate or intricate movements, implying elegance and mastery.
+- synonym: [[marshaling]]
+- collocation: [[nervecenter]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [elapid]
 sources: [llm]
 status: enriched
+chart: cobra
+region: cobra
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cobra]] — Use when referring to the family Elapidae, which includes cobras and mambas, in scientific or formal contexts.
+- collocation: [[snake]]
+- collocation: [[species]]
+- collocation: [[bite]]

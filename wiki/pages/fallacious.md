@@ -6,6 +6,8 @@ pos: adjective
 forms: [fallacious]
 sources: [llm]
 status: enriched
+chart: true
+region: you
 ---
 
 ## Definition

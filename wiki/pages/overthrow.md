@@ -6,6 +6,8 @@ pos: noun
 forms: [overthrow]
 sources: [llm]
 status: enriched
+chart: supermarket
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[coup]] — Use 'overthrow' for any forceful removal of a government, not just a sudden secret plot like 'coup'.
+- collocation: [[autocracy]]
+- collocation: [[oppressor]]
+- synonym: [[ousting]]
+- synonym: [[removal]]
+- collocation: [[violent]]
+- collocation: [[plot]]
+- collocation: [[regime]]

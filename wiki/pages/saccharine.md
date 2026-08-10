@@ -6,6 +6,8 @@ pos: adjective
 forms: [saccharine]
 sources: [llm]
 status: enriched
+chart: sweet
+region: sweet
 ---
 
 ## Definition

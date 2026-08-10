@@ -9,6 +9,8 @@ rank: 1377
 sfi: 57.94
 sources: [wordnet, llm]
 status: enriched
+chart: stakeholder
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[lifeguard]] — Use 'monitor' when focusing on the surveillance role, common in institutional or training contexts.
 - advanced_form: [[invigilator]] — Use 'invigilator' specifically for someone who supervises an exam; it is more formal and common in British English.
 - advanced_form: [[proctor]] — Use 'proctor' for an exam supervisor in American academic contexts; it is more precise than 'monitor'.
+- collocation: [[cardiac]]
+- collocation: [[proactively]]

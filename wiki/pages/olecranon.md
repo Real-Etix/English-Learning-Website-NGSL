@@ -6,6 +6,8 @@ pos: noun
 forms: [olecranon]
 sources: [llm]
 status: enriched
+chart: elbow
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[elbow]] — Use 'olecranon' when referring to the bony point of the elbow, rather than the entire joint.
+- collocation: [[fracture]]
+- collocation: [[process]]

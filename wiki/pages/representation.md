@@ -9,6 +9,8 @@ rank: 2027
 sfi: 55.47
 sources: [wordnet, llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - builds_on: [[behalf]] — Use 'representation' instead of 'behalf' in formal or legal contexts where acting as a designated representative is emphasized.
 - advanced_form: [[depiction]] — Use 'depiction' instead of 'representation' when emphasizing a visual or descriptive rendering, especially in art or media.
 - advanced_form: [[portrayal]] — Use 'portrayal' instead of 'representation' when focusing on a performance or interpretation of a person, role, or concept.
+- synonym: [[likeness]]
+- synonym: [[modeling]]
+- collocation: [[perspectival]]
+- collocation: [[pictorial]]
+- synonym: [[portraiture]]
+- synonym: [[rendering]]
+- collocation: [[veridical]]

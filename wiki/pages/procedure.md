@@ -9,6 +9,8 @@ rank: 1168
 sfi: 58.79
 sources: [wordnet, llm]
 status: enriched
+chart: procedure
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ a particular course of action intended to achieve a result
 - advanced_form: [[methodology]] — Use 'methodology' for a systematic set of methods, often in academic or research contexts.
 - advanced_form: [[regimen]] — Use 'regimen' for a structured routine, often for health or training.
 - builds_on: [[surgery]] — Use 'procedure' for a broader set of medical actions, including surgery, in clinical contexts.
+- synonym: [[experiment]]
+- collocation: [[prescribed]]
+- collocation: [[standardize]]
+- builds_on: [[macro]] — Use 'procedure' in more formal or technical writing about a sequence of operations.
+- collocation: [[excisional]]

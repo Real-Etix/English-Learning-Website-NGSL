@@ -9,6 +9,8 @@ rank: 21
 sfi: 64.15
 sources: [wordnet, llm]
 status: enriched
+chart: acid
+region: acid
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ harsh or corrosive in tone
 - advanced_form: [[caustic]] — Use 'caustic' when the criticism is biting and can cause emotional pain, like acid burning.
 - advanced_form: [[acerbic]] — Use 'acerbic' for a sour, sharp tone that is clever but hurtful, often in humor or speech.
 - advanced_form: [[mordant]] — Use 'mordant' when the tone is bitterly sarcastic or scathing, with a cutting edge.
+- collocation: [[concentrate]]
+- collocation: [[corrode]]
+- collocation: [[corrosion]]
+- collocation: [[esophagus]]
+- collocation: [[neutralize]]
+- collocation: [[vat]]

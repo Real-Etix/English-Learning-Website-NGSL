@@ -6,6 +6,8 @@ pos: noun
 forms: [gouda]
 sources: [llm]
 status: enriched
+chart: cheese
+region: cheese
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cheese]] — Use 'gouda' to refer to a specific Dutch cheese, ideal for describing cheese boards or recipes where the name adds flavor and sophistication.
+- collocation: [[aged]]
+- collocation: [[wheel]]

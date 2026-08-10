@@ -9,6 +9,8 @@ rank: 264
 sfi: 65.63
 sources: [wordnet, llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,19 @@ _No sourced examples yet._
 - advanced_form: [[endure]] — Use 'endure' when the experience is prolonged and requires patience or resilience; stronger and more specific than 'experience'.
 - advanced_form: [[undergo]] — Use 'undergo' for formal or medical contexts where someone is subjected to a process or procedure; it emphasizes the passivity of the person.
 - advanced_form: [[suffer]] — Use 'suffer' when the experience involves pain, loss, or hardship; it carries a negative connotation, unlike the neutral 'experience'.
+- collocation: [[capstone]]
+- synonym: [[credentials]]
+- collocation: [[delightful]]
+- collocation: [[distill]]
+- collocation: [[enlightening]]
+- collocation: [[extensive]]
+- collocation: [[gastronomic]]
+- collocation: [[harrowing]]
+- collocation: [[instructive]]
+- collocation: [[invigorating]]
+- collocation: [[mesmerizing]]
+- collocation: [[otherworldly]]
+- collocation: [[perceptual]]
+- collocation: [[pleasurable]]
+- collocation: [[veridical]]
+- collocation: [[visceral]]

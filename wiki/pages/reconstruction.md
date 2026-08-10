@@ -9,6 +9,8 @@ rank: 1595
 sfi: 50.36
 sources: [wordnet, llm]
 status: enriched
+chart: overhaul
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[reintegration]] — Use 'reintegration' when emphasizing the political and social process of bringing the seceded states back into the Union, while 'reconstruction' is the broader term for the entire era including physical rebuilding.
 - advanced_form: [[rehabilitation]] — Use 'rehabilitation' when focusing on the recovery and restoration of the region's infrastructure and society, whereas 'reconstruction' often refers to the overall historical period and political reorganization.
+- synonym: [[restoration]]

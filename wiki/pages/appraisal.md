@@ -9,6 +9,8 @@ rank: 403
 sfi: 54.23
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition

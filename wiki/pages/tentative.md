@@ -6,6 +6,8 @@ pos: adjective
 forms: [tentative]
 sources: [llm]
 status: enriched
+chart: contingent
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[contingent]] — Use 'tentative' to describe plans or decisions that are not yet final, similar to 'contingent' but with a focus on uncertainty rather than dependency.
+- synonym: [[hesitant]]

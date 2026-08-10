@@ -6,6 +6,8 @@ pos: noun
 forms: [self-destruction]
 sources: [llm]
 status: enriched
+chart: suicide
+region: suicide
 ---
 
 ## Definition

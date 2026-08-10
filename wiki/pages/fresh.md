@@ -9,6 +9,8 @@ rank: 1309
 sfi: 58.22
 sources: [wordnet, llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,16 @@ recently made, produced, or harvested
 - advanced_form: [[pristine]] — Use 'pristine' when you want to emphasize that something is perfectly fresh and untouched, just as it was harvested or made.
 - advanced_form: [[crisp]] — Use 'crisp' for fresh produce or items that are firm, cool, and have a satisfying snap, especially fruits and vegetables.
 - advanced_form: [[unprocessed]] — Use 'unprocessed' to describe fresh food items that have not been altered, refined, or preserved, remaining in their natural, just-harvested state.
+- collocation: [[baguette]]
+- synonym: [[breezy]]
+- collocation: [[ceviche]]
+- collocation: [[greens]]
+- synonym: [[house-made]]
+- collocation: [[macedoine]]
+- collocation: [[poultry]]
+- collocation: [[roma]]
+- synonym: [[afresh]]
+- collocation: [[aroma]]
+- collocation: [[citrus]]
+- collocation: [[springtide]]
+- collocation: [[verdure]]

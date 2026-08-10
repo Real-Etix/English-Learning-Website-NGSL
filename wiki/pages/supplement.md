@@ -9,6 +9,8 @@ rank: 2716
 sfi: 53.14
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - builds_on: [[insert]] — Use 'supplement' when the insert adds content or updates, often as a separate booklet.
 - advanced_form: [[addendum]] — Use 'addendum' for formal or official material added at the end of a document, like a book or report, often after publication.
 - advanced_form: [[appendix]] — Use 'appendix' for supplementary material placed at the end of a book that provides additional details, data, or references.
+- synonym: [[auxiliary]]
+- collocation: [[creatine-monohydrate]]
+- collocation: [[digestant]]
+- synonym: [[footnote]]
+- synonym: [[insertion]]
+- collocation: [[kalium]]

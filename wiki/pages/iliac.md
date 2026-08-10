@@ -6,6 +6,8 @@ pos: adjective
 forms: [iliac]
 sources: [llm]
 status: enriched
+chart: pelvic
+region: pelvic
 ---
 
 ## Definition

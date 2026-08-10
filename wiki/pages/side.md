@@ -9,6 +9,8 @@ rank: 276
 sfi: 65.51
 sources: [wordnet, llm]
 status: enriched
+chart: rely
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ a place within a region identified relative to a center or reference location
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[flank]] — Use 'flank' when emphasizing the lateral part of something, often in a military or anatomical context, where 'side' feels too broad or informal.
 - advanced_form: [[sector]] — Use 'sector' for a specific, often planned subdivision of a region relative to a center, such as in city planning or geometry, where 'side' implies a more vague location.
+- collocation: [[dextral]]
+- synonym: [[flanking]]
+- collocation: [[humorous]]
+- collocation: [[k]]
+- collocation: [[rightward]]
+- collocation: [[ventral]]

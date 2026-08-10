@@ -6,6 +6,8 @@ pos: noun
 forms: [manus]
 sources: [llm]
 status: enriched
+chart: palm
+region: palm
 ---
 
 ## Definition

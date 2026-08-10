@@ -9,6 +9,8 @@ rank: 1601
 sfi: 56.99
 sources: [wordnet, llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - advanced_form: [[supple]] — Use 'supple' for materials that bend or flex easily without breaking, often describing leather or fabric.
 - advanced_form: [[pliable]] — Use 'pliable' for materials that can be bent or shaped without cracking, often for substances like clay or metal.
 - advanced_form: [[malleable]] — Use 'malleable' specifically for metals or other materials that can be flattened or shaped by hammering or pressure.
+- synonym: [[feathery]]
+- collocation: [[huff]]
+- collocation: [[margarine]]
+- collocation: [[moan]]
+- collocation: [[murmur]]
+- collocation: [[wadding]]
+- collocation: [[zephyr]]

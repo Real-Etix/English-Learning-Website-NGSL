@@ -6,6 +6,8 @@ pos: adjective
 forms: [expedient]
 sources: [llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition

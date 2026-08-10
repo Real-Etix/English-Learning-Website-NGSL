@@ -9,6 +9,8 @@ rank: 229
 sfi: 66.3
 sources: [wordnet, llm]
 status: enriched
+chart: dedication
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ a strong positive emotion of regard and affection
 - antonym: [[hate]]
 - advanced_form: [[adoration]] — Use 'adoration' instead of 'love' when emphasizing intense, often worshipful affection.
 - advanced_form: [[devotion]] — Use 'devotion' instead of 'love' when highlighting loyalty, dedication, and selfless commitment.
+- synonym: [[adore]]
+- synonym: [[affection]]
+- collocation: [[grandmama]]
+- collocation: [[immeasurable]]
+- collocation: [[passionate]]
+- synonym: [[patriotism]]

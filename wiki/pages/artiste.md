@@ -6,6 +6,8 @@ pos: noun
 forms: [artiste]
 sources: [llm]
 status: enriched
+chart: performer
+region: you
 ---
 
 ## Definition

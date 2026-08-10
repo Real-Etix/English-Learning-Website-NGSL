@@ -6,6 +6,8 @@ pos: adjective
 forms: [interconnected]
 sources: [llm]
 status: enriched
+chart: duplicate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[relational]] — Use 'interconnected' when highlighting that multiple parts are linked together in a network, more vivid than 'relational' for systems.
+- collocation: [[highly]]
+- collocation: [[globally]]
+- collocation: [[deeply]]

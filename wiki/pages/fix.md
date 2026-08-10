@@ -9,6 +9,8 @@ rank: 973
 sfi: 59.79
 sources: [wordnet, llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - antonym: [[bust]]
 - advanced_form: [[repair]] — Use 'repair' for formal or technical contexts, especially for mechanical or structural fixes.
 - advanced_form: [[mend]] — Use 'mend' for fabrics, relationships, or minor fixes.
+- collocation: [[cosmetic]]
+- synonym: [[preestablish]]

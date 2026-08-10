@@ -6,6 +6,8 @@ pos: noun
 forms: [sage]
 sources: [llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[philosopher]] — Use 'sage' to emphasize deep wisdom and moral insight, often for a person whose advice is respected, rather than just an academic philosopher.
+- synonym: [[yogin]]

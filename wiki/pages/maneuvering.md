@@ -6,6 +6,8 @@ pos: noun
 forms: [maneuvering]
 sources: [llm]
 status: enriched
+chart: politics
+region: politics
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[politics]] — Use 'maneuvering' for strategic moves, like in office politics.
+- synonym: [[manipulation]]
+- synonym: [[strategy]]
+- collocation: [[political]]
+- collocation: [[careful]]
+- collocation: [[tactical]]
+- collocation: [[legal]]
+- synonym: [[politicking]]
+- synonym: [[jockeying]]

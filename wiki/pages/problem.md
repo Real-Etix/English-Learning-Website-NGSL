@@ -9,6 +9,8 @@ rank: 120
 sfi: 68.65
 sources: [wordnet, llm]
 status: enriched
+chart: challenge
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[issue]] — Use 'issue' instead of 'problem' in formal or neutral contexts, especially when referring to a topic or matter of discussion.
 - advanced_form: [[challenge]] — Use 'challenge' instead of 'problem' when emphasizing the difficulty and the need for effort or skill to overcome it.
 - advanced_form: [[dilemma]] — Use 'dilemma' instead of 'problem' when referring to a difficult choice between two or more undesirable options.
+- collocation: [[challenging]]
+- collocation: [[confounded]]
+- collocation: [[grapple]]
+- collocation: [[intermittent]]
+- collocation: [[pervasive]]
+- collocation: [[pinpoint]]
+- collocation: [[worklessness]]
+- collocation: [[troublesome]]

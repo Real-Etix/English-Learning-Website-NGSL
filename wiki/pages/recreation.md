@@ -9,6 +9,8 @@ rank: 735
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: relaxation
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ an activity that diverts or amuses or stimulates
 - builds_on: [[leisure]] — Use 'recreation' when referring to enjoyable activities done in free time, emphasizing active or structured pursuits.
 - advanced_form: [[diversion]] — Use 'diversion' when you want to emphasize an activity that distracts or entertains, often temporarily, from more serious matters.
 - advanced_form: [[pastime]] — Use 'pastime' for a regular, enjoyable leisure activity that someone does in their free time, often long-term.
+- synonym: [[entertainment]]
+- builds_on: [[entertainment]] — Use when talking about leisure activities, often in formal or organizational contexts (e.g., recreation center).

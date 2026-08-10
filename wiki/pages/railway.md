@@ -9,6 +9,8 @@ rank: 289
 sfi: 54.21
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: line
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ line that is the commercial organization responsible for operating a system of t
 - advanced_form: [[railroad]] — Use when referring to the American term for a railway company or the physical railway network.
 - advanced_form: [[rail]] — Use in formal or collective contexts, like travel by rail or the rail industry, instead of saying 'railway' for the mode.
 - advanced_form: [[line]] — Use when emphasizing a particular route or service within the railway network, e.g., 'the London to Edinburgh line'.
+- collocation: [[electrified]]

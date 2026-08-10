@@ -9,6 +9,8 @@ rank: 320
 sfi: 55.44
 sources: [wordnet, llm]
 status: enriched
+chart: bar
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[settee]] — Use 'settee' for a formal or stylish couch, often with a more elegant connotation.
 - advanced_form: [[divan]] — Use 'divan' for a backless or low couch, often associated with Middle Eastern or vintage decor.
+- collocation: [[accumbent]]
+- synonym: [[chesterfield]]

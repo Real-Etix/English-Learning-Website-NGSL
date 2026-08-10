@@ -9,6 +9,8 @@ rank: 918
 sfi: 52.02
 sources: [wordnet, llm]
 status: enriched
+chart: trend
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ a feeling of craving something
 - advanced_form: [[penchant]] — Use this to describe a strong liking or inclination, more formal than 'appetite' for specific preferences.
 - advanced_form: [[relish]] — Use this to emphasize the enjoyment or zest in the craving, not just the desire.
 - advanced_form: [[yearning]] — Use this for a deep, emotional craving, more intense and poetic than 'appetite'.
+- collocation: [[carnal]]
+- collocation: [[ravenous]]

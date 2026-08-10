@@ -9,6 +9,8 @@ rank: 855
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: cooler
+region: cooler
 ---
 
 ## Definition

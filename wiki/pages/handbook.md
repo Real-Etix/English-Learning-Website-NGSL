@@ -7,8 +7,10 @@ forms: [handbook, handbooks]
 lists: [toeic]
 rank: 986
 sfi: 50.43
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - builds_on: [[textbook]] — Use 'handbook' for a concise reference book, often for specific rules or procedures.
 - builds_on: [[cookbook]] — Use 'handbook' when referring to a practical guide or reference book, often more formal than 'cookbook'.
 - builds_on: [[workbook]] — Use 'handbook' for a compact reference book with exercises, implying broader scope than a simple workbook.
+- synonym: [[almanac]]
+- synonym: [[compendium]]
+- synonym: [[primer]]
+- builds_on: [[primer]] — Use when referring to a practical reference guide that covers fundamental information, often for everyday use.
+- advanced_form: [[manual]] — Use manual when the reference is procedural or technical, focusing on how to perform a task.
+- advanced_form: [[compendium]] — Use compendium when emphasizing a concise, comprehensive collection or summary of knowledge on a topic.

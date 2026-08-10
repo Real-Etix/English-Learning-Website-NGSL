@@ -9,6 +9,8 @@ rank: 1687
 sfi: 56.62
 sources: [wordnet, llm]
 status: enriched
+chart: upgrade
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,13 @@ _No sourced examples yet._
 - advanced_form: [[diminution]] — Use for a gradual or formal reduction in size, extent, or importance.
 - advanced_form: [[curtailment]] — Use when something is cut short or limited, often by official action.
 - advanced_form: [[abatement]] — Use for reduction of something unpleasant or harmful, often in legal or environmental contexts.
+- synonym: [[alleviation]]
+- collocation: [[armaments]]
+- synonym: [[attrition]]
+- collocation: [[drastic]]
+- synonym: [[easing]]
+- synonym: [[markdown]]
+- synonym: [[commutation]]
+- synonym: [[deceleration]]
+- synonym: [[shrinkage]]
+- synonym: [[slackening]]

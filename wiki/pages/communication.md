@@ -9,6 +9,8 @@ rank: 991
 sfi: 59.67
 sources: [wordnet, llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ the activity of communicating
 - advanced_form: [[interaction]] — Use 'interaction' when emphasizing a two-way exchange or reciprocal communication.
 - advanced_form: [[correspondence]] — Use 'correspondence' for written or formal exchanges, especially over time.
 - advanced_form: [[discourse]] — Use 'discourse' for formal, extended, or intellectual discussion.
+- collocation: [[assertive]]
+- collocation: [[privileged]]
+- collocation: [[verbal]]
+- collocation: [[multichannel]]

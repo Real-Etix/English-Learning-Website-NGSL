@@ -9,6 +9,8 @@ rank: 64
 sfi: 57.44
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: annuity
+region: you
 ---
 
 ## Definition

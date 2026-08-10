@@ -9,6 +9,8 @@ rank: 217
 sfi: 66.58
 sources: [wordnet, llm]
 status: enriched
+chart: information
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[term]] — Use 'term' when referring to a specific word or phrase within a specialized field or context, rather than a general word.
 - advanced_form: [[expression]] — Use 'expression' to emphasize a fixed phrase or idiomatic usage, whereas 'word' is a single unit of language.
+- synonym: [[grapevine]]
+- collocation: [[grapevine]]
+- collocation: [[hearer]]
+- collocation: [[mouth]]

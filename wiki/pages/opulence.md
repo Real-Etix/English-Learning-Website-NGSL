@@ -6,6 +6,8 @@ pos: noun
 forms: [opulence]
 sources: [llm]
 status: enriched
+chart: sign
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[prosperity]] — Use 'opulence' to highlight extreme luxury and lavishness, focusing on visual or tactile richness.
 - builds_on: [[wealth]] — Use 'opulence' instead of 'wealth' to stress extravagant richness and abundance, often in material possessions.
+- synonym: [[luxury]]
+- synonym: [[richness]]

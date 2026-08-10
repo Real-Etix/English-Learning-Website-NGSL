@@ -6,6 +6,8 @@ pos: adjective
 forms: [pellucid]
 sources: [llm]
 status: enriched
+chart: transparent
+region: transparent
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[transparent]] — Use 'pellucid' to describe something extremely clear and transparent, often with a poetic or literary tone, while 'transparent' is more direct and common.
+- synonym: [[limpid]]
+- synonym: [[clear]]
+- collocation: [[water]]
+- collocation: [[sky]]
+- collocation: [[stream]]
+- collocation: [[light]]

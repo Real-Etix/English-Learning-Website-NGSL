@@ -6,6 +6,8 @@ pos: noun
 forms: [tarsus]
 sources: [llm]
 status: enriched
+chart: ankle
+region: ankle
 ---
 
 ## Definition

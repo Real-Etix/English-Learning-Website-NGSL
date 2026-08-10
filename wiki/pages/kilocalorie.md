@@ -9,6 +9,8 @@ rank: 555
 sfi: 52.96
 sources: [wordnet, llm]
 status: enriched
+chart: kilocalorie
+region: kilocalorie
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[calorie]] — Use 'Calorie' (capitalized) in nutrition contexts instead of 'kilocalorie' to refer to dietary energy.
 - advanced_form: [[kilojoule]] — Use 'kilojoule' in scientific or metric contexts instead of 'kilocalorie'.
+- builds_on: [[calorie]] — Use 'kilocalorie' in scientific or nutrition contexts for precision; everyday 'calorie' on food labels actually means kilocalorie.

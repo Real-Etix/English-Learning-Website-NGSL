@@ -6,6 +6,8 @@ pos: noun
 forms: [utmost]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition

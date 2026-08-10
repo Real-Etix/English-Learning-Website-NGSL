@@ -6,6 +6,8 @@ pos: noun
 forms: [caseinate]
 sources: [llm]
 status: enriched
+chart: casein
+region: casein
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[casein]] — Use 'caseinate' when referring to the processed, commercial form of casein added to products, as opposed to the natural milk protein.
+- collocation: [[sodium]]
+- collocation: [[calcium]]
+- collocation: [[milk]]
+- collocation: [[food]]

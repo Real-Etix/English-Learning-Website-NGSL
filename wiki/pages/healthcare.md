@@ -7,8 +7,10 @@ forms: [healthcare]
 lists: [toeic, business]
 rank: 776
 sfi: 51.45
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,9 @@ _No sourced examples yet._
 ## Connections
 - domain: toeic
 - domain: business
+- collocation: [[affordable]]
+- collocation: [[commercialize]]
+- synonym: [[medicine]]
+- collocation: [[retiree]]
+- advanced_form: [[medicine]] — Use when emphasizing the profession or science of healthcare, rather than the services themselves.
+- advanced_form: [[therapeutics]] — Use for the branch of healthcare focused specifically on treating disease.

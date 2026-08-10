@@ -6,6 +6,8 @@ pos: noun
 forms: [gallant]
 sources: [llm]
 status: enriched
+chart: gentleman
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gentleman]] — Use 'gallant' for a man who is particularly chivalrous, courteous, and attentive, especially towards women.
+- synonym: [[courageous]]

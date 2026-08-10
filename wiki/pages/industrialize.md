@@ -9,6 +9,8 @@ rank: 832
 sfi: 49.284
 sources: [wordnet, llm]
 status: enriched
+chart: automate
+region: automate
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[mechanize]] — Use 'mechanize' when focusing on introducing machinery, not the broader industrial development.
 - advanced_form: [[automate]] — Use 'automate' when referring to replacing human labor with technology in specific processes.
+- synonym: [[robotize]]

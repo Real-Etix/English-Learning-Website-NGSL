@@ -6,6 +6,8 @@ pos: noun
 forms: [semi-diameter]
 sources: [llm]
 status: enriched
+chart: radius
+region: radius
 ---
 
 ## Definition

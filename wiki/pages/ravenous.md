@@ -6,6 +6,8 @@ pos: adjective
 forms: [ravenous]
 sources: [llm]
 status: enriched
+chart: maturity
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hungry]] — Use 'ravenous' to describe a very strong, almost animal-like hunger, more intense than 'hungry'.
+- synonym: [[famished]]
+- collocation: [[appetite]]
+- collocation: [[hunger]]
+- collocation: [[beast]]

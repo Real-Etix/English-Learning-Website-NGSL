@@ -9,6 +9,8 @@ rank: 2598
 sfi: 53.64
 sources: [wordnet, llm]
 status: enriched
+chart: strain
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,26 @@ _No sourced examples yet._
 - advanced_form: [[taxon]] — Use 'taxon' when you need a formal, collective term for any rank in biological classification, not just species.
 - advanced_form: [[subspecies]] — Use 'subspecies' when referring to a distinct population below the species level, often with geographic variation.
 - advanced_form: [[strain]] — Use 'strain' for microorganisms or viruses, emphasizing a genetic variant within a species.
+- collocation: [[autochthonous]]
+- collocation: [[dioxygen]]
+- collocation: [[elapid]]
+- collocation: [[endemic]]
+- collocation: [[finfish]]
+- collocation: [[imperiled]]
+- collocation: [[multituberculate]]
+- collocation: [[murid]]
+- collocation: [[naja]]
+- collocation: [[native]]
+- collocation: [[primate]]
+- collocation: [[protected]]
+- collocation: [[raptor]]
+- collocation: [[richness]]
+- collocation: [[waterfowl]]
+- collocation: [[xerophyte]]
+- collocation: [[corvid]]
+- collocation: [[culicid]]
+- collocation: [[fauna]]
+- collocation: [[felid]]
+- collocation: [[musa]]
+- collocation: [[ophidian]]
+- collocation: [[rosa]]

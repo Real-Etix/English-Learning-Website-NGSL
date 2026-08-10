@@ -9,6 +9,8 @@ rank: 3
 sfi: 65.26
 sources: [wordnet, llm]
 status: enriched
+chart: client
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ _No sourced examples yet._
 - advanced_form: [[litigant]] — Use 'litigant' instead of 'client' when the person is specifically involved in a lawsuit or legal dispute.
 - builds_on: [[customer]] — Use 'client' for professional services (law, consulting) rather than general retail.
 - builds_on: [[patient]] — Use 'client' instead of 'patient' in therapeutic or private practice contexts, especially when emphasizing a professional service relationship.
+- synonym: [[depositor]]
+- collocation: [[lawyer]]
+- synonym: [[vendee]]
+- builds_on: [[user]] — Use for someone using professional or specialized services, like legal, design, or consulting.
+- synonym: [[accountholder]]

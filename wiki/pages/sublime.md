@@ -6,6 +6,8 @@ pos: adjective
 forms: [sublime]
 sources: [llm]
 status: enriched
+chart: aesthetic
+region: you
 ---
 
 ## Definition

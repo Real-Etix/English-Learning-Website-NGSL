@@ -9,6 +9,8 @@ rank: 290
 sfi: 55.97
 sources: []
 status: seeded
+chart: say
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: academic
 - domain: fitness
 - builds_on: [[which]] — More formal than 'which', often used when the speaker implies any one from the set is acceptable.
+- synonym: [[whatever]]
+- synonym: [[any]]
+- synonym: [[either]]

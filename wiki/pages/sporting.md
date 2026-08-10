@@ -6,6 +6,8 @@ pos: adjective
 forms: [sporting]
 sources: [llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition

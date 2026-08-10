@@ -6,6 +6,8 @@ pos: verb
 forms: [overbalance]
 sources: [llm]
 status: enriched
+chart: rule
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[outweigh]] — Use 'overbalance' to emphasize that one side is heavier or more significant, often in literal or figurative contexts; it is less common than 'outweigh'.
+- synonym: [[exceed]]
+- synonym: [[surpass]]
+- synonym: [[dominate]]
+- collocation: [[potential]]

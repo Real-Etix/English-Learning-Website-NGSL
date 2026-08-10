@@ -6,6 +6,8 @@ pos: verb
 forms: [billow]
 sources: [llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition

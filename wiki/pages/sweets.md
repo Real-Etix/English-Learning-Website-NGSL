@@ -6,6 +6,8 @@ pos: noun
 forms: [sweets]
 sources: [llm]
 status: enriched
+chart: sweet
+region: sweet
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[candy]] — Use 'sweets' instead of 'candy' in British or more formal English, especially when referring to sugary treats in general.
+- synonym: [[confectionery]]

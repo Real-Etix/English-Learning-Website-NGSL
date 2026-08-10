@@ -6,6 +6,8 @@ pos: noun
 forms: [creditors]
 sources: [llm]
 status: enriched
+chart: payable
+region: payable
 ---
 
 ## Definition

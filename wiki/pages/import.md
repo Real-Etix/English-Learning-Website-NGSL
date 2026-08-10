@@ -9,6 +9,8 @@ rank: 1613
 sfi: 56.95
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[importation]] — Use 'importation' to emphasize the process or act of importing goods, often in formal or economic contexts.
 - advanced_form: [[consignment]] — Use 'consignment' to refer to a specific shipment or batch of imported goods, especially in trade or logistics.
 - builds_on: [[significance]] — Use 'import' for a more formal tone, often in philosophical or analytical contexts.
+- collocation: [[leviable]]
+- collocation: [[quota]]

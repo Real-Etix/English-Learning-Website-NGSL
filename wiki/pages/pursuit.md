@@ -7,8 +7,10 @@ forms: [pursuit, pursuits]
 lists: [business]
 rank: 875
 sfi: 52.61
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ the act of pursuing in an effort to overtake or capture
 - builds_on: [[ambition]] — Use 'pursuit' to focus on the active chase or goal-oriented action.
 - builds_on: [[hobby]] — Use 'pursuit' to suggest an active, ongoing engagement, often with a goal or passion.
 - builds_on: [[hunt]] — Use 'pursuit' instead of 'hunt' when focusing on the active chase or effort to capture.
+- synonym: [[avocation]]
+- collocation: [[avocational]]
+- collocation: [[relentless]]
+- advanced_form: [[hunting]] — Use when the pursuit is energetic and directed at a specific target, especially a person or animal.
+- advanced_form: [[tracking]] — Use when the pursuit depends on following clues, trails, or signals.
+- advanced_form: [[trailing]] — Use when following someone closely and discreetly, often with the intent to capture or expose them.

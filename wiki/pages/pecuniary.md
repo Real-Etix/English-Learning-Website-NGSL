@@ -6,6 +6,8 @@ pos: adjective
 forms: [pecuniary]
 sources: [llm]
 status: enriched
+chart: she
+region: you
 ---
 
 ## Definition

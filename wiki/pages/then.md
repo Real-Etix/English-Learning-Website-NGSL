@@ -9,6 +9,8 @@ rank: 71
 sfi: 71.91
 sources: [wordnet]
 status: seeded
+chart: there
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ subsequently or soon afterward (often used as sentence connectors)
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[afterwards]]
+- synonym: [[later]]

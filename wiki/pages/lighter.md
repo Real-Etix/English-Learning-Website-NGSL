@@ -9,6 +9,8 @@ rank: 207
 sfi: 57.41
 sources: [wordnet, llm]
 status: enriched
+chart: lighter
+region: lighter
 ---
 
 ## Definition

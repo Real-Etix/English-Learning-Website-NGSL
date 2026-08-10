@@ -6,6 +6,8 @@ pos: adjective
 forms: [agonizing]
 sources: [llm]
 status: enriched
+chart: awful
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[painful]] — Use 'agonizing' for prolonged and severe mental or physical suffering.
+- synonym: [[excruciating]]
+- synonym: [[harrowing]]
+- collocation: [[wait]]
+- collocation: [[pain]]
+- collocation: [[choice]]

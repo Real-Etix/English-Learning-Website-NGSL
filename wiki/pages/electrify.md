@@ -6,6 +6,8 @@ pos: verb
 forms: [electrify]
 sources: [llm]
 status: enriched
+chart: cable
+region: you
 ---
 
 ## Definition

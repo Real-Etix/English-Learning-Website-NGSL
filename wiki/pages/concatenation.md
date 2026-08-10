@@ -6,6 +6,8 @@ pos: noun
 forms: [concatenation]
 sources: [llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chain]] — Use 'concatenation' for a more formal or technical series of linked events or things.
+- synonym: [[series]]
+- synonym: [[sequence]]
+- synonym: [[connection]]
+- collocation: [[of]]
+- collocation: [[string]]
+- collocation: [[endless]]
+- collocation: [[simple]]

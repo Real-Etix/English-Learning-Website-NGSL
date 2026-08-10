@@ -6,6 +6,8 @@ pos: noun
 forms: [nonsuit]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dismissal]] — used when the case is ended without a verdict due to the plaintiff's failure to prosecute.
+- synonym: [[judgment]]
+- synonym: [[abatement]]
+- collocation: [[motion]]
+- collocation: [[voluntary]]
+- collocation: [[involuntary]]
+- collocation: [[order]]

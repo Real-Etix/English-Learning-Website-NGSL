@@ -9,6 +9,8 @@ rank: 2021
 sfi: 55.48
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ any factual evidence that helps to establish the truth of something
 - advanced_form: [[substantiation]] — Use 'substantiation' when emphasizing the process of providing solid supporting evidence, often in formal or legal contexts.
 - advanced_form: [[verification]] — Use 'verification' when focusing on confirmation through factual checking or testing, common in scientific or technical settings.
 - advanced_form: [[corroboration]] — Use 'corroboration' when referring to evidence that confirms or supports an existing claim, especially from an independent source.
+- collocation: [[conclusive]]
+- collocation: [[documental]]
+- collocation: [[lemma]]

@@ -9,6 +9,8 @@ rank: 2047
 sfi: 55.41
 sources: [wordnet, llm]
 status: enriched
+chart: form
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ follow, discover, or ascertain the course of development of something
 - synonym: [[follow]]
 - advanced_form: [[delineate]] — Use 'delineate' when you need to describe or outline the precise steps or stages of development, rather than just following a path.
 - advanced_form: [[retrace]] — Use 'retrace' when you go back over a previously taken path or sequence to rediscover or verify something.
+- synonym: [[imprint]]

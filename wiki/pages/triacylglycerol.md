@@ -6,6 +6,8 @@ pos: noun
 forms: [triacylglycerol]
 sources: [llm]
 status: enriched
+chart: triglyceride
+region: triglyceride
 ---
 
 ## Definition

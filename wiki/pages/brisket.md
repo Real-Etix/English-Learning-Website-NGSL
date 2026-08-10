@@ -6,6 +6,8 @@ pos: noun
 forms: [brisket]
 sources: [llm]
 status: enriched
+chart: barbecue
+region: barbecue
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[barbecue]] — Use 'brisket' when referring to a specific, high-quality cut of beef commonly associated with traditional barbecue, rather than the general term 'barbecue' which can refer to the cooking method or event.
+- synonym: [[breast]]
+- synonym: [[cut]]
+- synonym: [[chest]]
+- collocation: [[beef]]

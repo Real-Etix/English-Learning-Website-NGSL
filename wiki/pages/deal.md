@@ -9,6 +9,8 @@ rank: 321
 sfi: 64.89
 sources: [wordnet, llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - synonym: [[address]]
 - advanced_form: [[address]] — Use 'address' when the focus is on formally or seriously dealing with a topic, especially in speech, writing, or art.
 - advanced_form: [[grapple]] — Use 'grapple' when the treatment involves struggle, complexity, or deep engagement, not just surface handling.
+- synonym: [[inflict]]
+- collocation: [[negotiate]]
+- collocation: [[renegotiate]]

@@ -9,6 +9,8 @@ rank: 7
 sfi: 63.98
 sources: [wordnet, llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[enclave]] — Use 'enclave' when emphasizing a distinct, often culturally or ethnically defined area within a larger territory.
 - advanced_form: [[preserve]] — Use 'preserve' when focusing on protection and conservation of natural or cultural resources.
+- collocation: [[restaurant]]

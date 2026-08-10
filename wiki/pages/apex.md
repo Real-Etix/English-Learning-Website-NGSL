@@ -6,6 +6,8 @@ pos: noun
 forms: [apex]
 sources: [llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,8 @@ _No sourced examples yet._
 - builds_on: [[tiptoe]] — Use 'apex' in formal or technical contexts to refer to the very highest point of the toe, rather than the everyday noun 'tiptoe'.
 - builds_on: [[optimum]] — Use 'apex' instead of 'optimum' for the highest level of ability or intensity, often in sports or physical endeavors.
 - builds_on: [[peak]] — Use 'apex' for the highest point of a process or development, often implying a narrow peak.
+- synonym: [[acme]]
+- synonym: [[capstone]]
+- synonym: [[climax]]
+- synonym: [[culmination]]
+- synonym: [[vertex]]

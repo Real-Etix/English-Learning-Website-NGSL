@@ -6,6 +6,8 @@ pos: verb
 forms: [feast]
 sources: [llm]
 status: enriched
+chart: dine
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[dine]] — Use 'feast' when emphasizing a large, celebratory meal, not just an ordinary supper.
 - builds_on: [[meal]] — Use 'feast' for a large, elaborate, or celebratory meal.
+- collocation: [[bountiful]]
+- collocation: [[epicurean]]
+- collocation: [[partake]]

@@ -9,6 +9,8 @@ rank: 1477
 sfi: 50.58
 sources: [wordnet, llm]
 status: enriched
+chart: cheaply
+region: cheaply
 ---
 
 ## Definition

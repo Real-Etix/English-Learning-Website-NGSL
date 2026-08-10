@@ -9,6 +9,8 @@ rank: 130
 sfi: 57.42
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[refreshment]] — Use 'refreshment' instead of 'snack' when referring to food and drink served at a formal event or gathering, especially in a professional or social setting.
 - advanced_form: [[collation]] — Use 'collation' instead of 'snack' for a light meal, especially in British English, often at a formal event or after a religious service.
+- synonym: [[cookie]]
+- collocation: [[mid-afternoon]]
+- synonym: [[popcorn]]

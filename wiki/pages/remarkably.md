@@ -9,6 +9,8 @@ rank: 1104
 sfi: 51.36
 sources: [wordnet, llm]
 status: enriched
+chart: notably
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ _No sourced examples yet._
 - advanced_form: [[extraordinarily]] — Use 'extraordinarily' when something goes far beyond the ordinary, more formal than 'remarkably'.
 - advanced_form: [[notably]] — Use 'notably' when something is worthy of attention, often in a positive sense, similar but slightly more formal than 'remarkably'.
 - builds_on: [[surprisingly]] — Use 'remarkably' to emphasize that something is notable or impressive in degree, often with a positive or neutral connotation, while 'surprisingly' focuses on unexpectedness.
+- synonym: [[eminently]]
+- collocation: [[versatile]]
+- builds_on: [[unusually]] — Use to highlight something noteworthy or surprising, often in a context where the result is impressive.

@@ -9,6 +9,8 @@ rank: 1555
 sfi: 57.16
 sources: [wordnet, llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ _No sourced examples yet._
 - advanced_form: [[capital]] — Use 'capital' for the principal amount in investment or financial contexts.
 - advanced_form: [[corpus]] — Use 'corpus' for the principal of a trust, fund, or estate in legal/financial contexts.
 - builds_on: [[prime]] — Use 'principal' instead of 'prime' to sound more formal and legalistic, especially in contexts like causes or participants.
+- synonym: [[cardinal]]
+- synonym: [[foremost]]
+- collocation: [[historiographer]]
+- synonym: [[predominant]]
+- builds_on: [[employer]] — Use in legal or formal contexts to mean the employer who hires an agent.

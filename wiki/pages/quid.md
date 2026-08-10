@@ -6,6 +6,8 @@ pos: noun
 forms: [quid]
 sources: [llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sterling]] — Use 'quid' as an informal, slang term for pound in casual British speech.
+- synonym: [[chew]]
+- synonym: [[pound]]
+- collocation: [[each]]
+- collocation: [[pay]]

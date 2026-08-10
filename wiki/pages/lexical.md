@@ -9,6 +9,8 @@ rank: 44
 sfi: 60.617
 sources: [wordnet, llm]
 status: enriched
+chart: semantic
+region: semantic
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ of or relating to words
 - builds_on: [[linguistic]] — Use 'lexical' when specifically referring to vocabulary or words, rather than the broader aspects of language covered by 'linguistic'.
 - advanced_form: [[semantic]] — Use 'semantic' instead of 'lexical' when focusing on meaning and interpretation rather than just words as units.
 - advanced_form: [[phraseological]] — Use 'phraseological' instead of 'lexical' when referring specifically to multi-word units or idioms, a more specialized term.
+- synonym: [[derivational]]
+- collocation: [[hybridism]]
+- synonym: [[morphemic]]
+- collocation: [[predicator]]
+- builds_on: [[verbal]] — Use lexical to highlight the exact words and vocabulary used, rather than general communication.

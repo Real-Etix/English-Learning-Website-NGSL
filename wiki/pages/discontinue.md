@@ -9,6 +9,8 @@ rank: 710
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ _No sourced examples yet._
 - advanced_form: [[cease]] — Use 'cease' for a more formal or permanent ending, often in official or technical contexts.
 - advanced_form: [[terminate]] — Use 'terminate' when referring to official endings like agreements, services, or processes.
 - advanced_form: [[halt]] — Use 'halt' for a sudden or forced stop, often implying an interruption.
+- builds_on: [[terminate]] — Use for stopping a product, service, or practice that was ongoing.

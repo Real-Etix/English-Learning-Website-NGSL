@@ -6,6 +6,8 @@ pos: noun
 forms: [collaborator]
 sources: [llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition

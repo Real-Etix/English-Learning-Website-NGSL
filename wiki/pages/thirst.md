@@ -9,6 +9,8 @@ rank: 2809
 sfi: 44.79
 sources: [wordnet, llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[dehydration]] — Use 'dehydration' to refer to the medical condition of lacking water, rather than the sensation of wanting water.
 - advanced_form: [[thirstiness]] — Use 'thirstiness' to emphasize the state of being thirsty, often in a more formal or scientific context.
+- synonym: [[crave]]
+- collocation: [[quencher]]
+- synonym: [[yearning]]
+- collocation: [[quench]]

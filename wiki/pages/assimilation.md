@@ -6,6 +6,8 @@ pos: noun
 forms: [assimilation]
 sources: [llm]
 status: enriched
+chart: integration
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[integration]] — Use 'assimilation' when emphasizing the absorption of a group into the dominant culture, often losing distinct identity, whereas 'integration' focuses on equal participation without necessarily losing identity.
+- synonym: [[absorption]]
+- synonym: [[incorporation]]
+- collocation: [[cultural]]
+- collocation: [[immigrant]]
+- collocation: [[policy]]
+- collocation: [[process]]
+- synonym: [[desegregation]]

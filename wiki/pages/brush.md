@@ -9,6 +9,8 @@ rank: 2463
 sfi: 54.1
 sources: [wordnet, llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[thicket]] — Use 'thicket' for a dense, tangled group of bushes or small trees, emphasizing impenetrability.
 - advanced_form: [[scrub]] — Use 'scrub' for low, stunted vegetation in dry or poor soil, often implying a sparse or harsh landscape.
 - advanced_form: [[undergrowth]] — Use 'undergrowth' for the layer of bushes and small plants growing under large trees in a forest.
+- collocation: [[bristle]]
+- synonym: [[broom]]
+- synonym: [[currycomb]]
+- synonym: [[dedust]]
+- synonym: [[comb]]
+- synonym: [[sweeper]]

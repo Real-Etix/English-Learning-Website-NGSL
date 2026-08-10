@@ -9,6 +9,8 @@ rank: 1184
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ _No sourced examples yet._
 - advanced_form: [[series]] — Use 'series' for a number of similar things coming one after another, often as part of a set or program, while 'succession' focuses on the act of following in time.
 - advanced_form: [[chain]] — Use 'chain' when the items are linked causally or sequentially, implying each leads to the next, stronger than the neutral 'succession'.
 - builds_on: [[sequence]] — Use 'succession' when focusing on a series of items or events that follow one after another, especially with no gaps or interruptions.
+- synonym: [[order]]
+- synonym: [[progression]]
+- collocation: [[line]]
+- collocation: [[ecological]]
+- collocation: [[in]]
+- synonym: [[accession]]
+- synonym: [[subrogation]]

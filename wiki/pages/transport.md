@@ -9,6 +9,8 @@ rank: 1210
 sfi: 58.58
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[conveyance]] — Use 'conveyance' for a formal or legal tone, instead of everyday 'transport'.
 - advanced_form: [[transit]] — Use 'transit' to refer to the system or means of transport, especially in urban contexts.
 - builds_on: [[vehicle]] — Use 'transport' as a noun for a vehicle designed to carry goods or people, often in military or logistics contexts.
+- collocation: [[cation]]
+- collocation: [[motorized]]

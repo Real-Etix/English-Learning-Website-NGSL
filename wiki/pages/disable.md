@@ -9,6 +9,8 @@ rank: 1124
 sfi: 50.85
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: disable
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ make unable to perform a certain action
 - advanced_form: [[incapacitate]] — Use when referring to a complete loss of ability, often due to injury or illness, more formal than disable.
 - advanced_form: [[debilitate]] — Use when emphasizing a gradual weakening or sapping of strength, rather than a sudden or total loss.
 - advanced_form: [[immobilize]] — Use when describing the prevention of movement or operation, often for machines or systems.
+- synonym: [[maim]]
+- synonym: [[neutralize]]

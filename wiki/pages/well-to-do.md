@@ -6,6 +6,8 @@ pos: adjective
 forms: [well-to-do]
 sources: [llm]
 status: enriched
+chart: substantial
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wealthy]] — Use 'well-to-do' as a more refined term for comfortably wealthy, less direct than 'wealthy' and often used in social contexts.
+- synonym: [[affluent]]
+- synonym: [[prosperous]]
+- synonym: [[rich]]
+- collocation: [[family]]
+- collocation: [[neighborhood]]
+- collocation: [[area]]
+- collocation: [[community]]

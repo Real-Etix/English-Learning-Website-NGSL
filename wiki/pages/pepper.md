@@ -7,8 +7,10 @@ forms: [pepper, peppers, peppered, peppering]
 lists: [toeic, fitness]
 rank: 546
 sfi: 53.03
-sources: [wordnet, dictionaryapi]
-status: seeded
+sources: [wordnet, dictionaryapi, llm]
+status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ climber having dark red berries (peppercorns) when fully ripe
 - collocation: [[conversation]]
 - collocation: [[no]]
 - collocation: [[with]]
+- advanced_form: [[peppercorn]] — Use when referring to the whole berry, especially in cooking or a recipe, for more precision than the common word 'pepper'.
+- advanced_form: [[piper]] — Use in botanical or formal contexts to refer to the plant itself, rather than the spice.

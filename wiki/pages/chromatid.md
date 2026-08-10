@@ -6,6 +6,8 @@ pos: noun
 forms: [chromatid]
 sources: [llm]
 status: enriched
+chart: chromosome
+region: chromosome
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chromosome]] — Use 'chromatid' instead of 'chromosome' when you need to specify one of the two identical halves of a replicated chromosome, especially during cell division.
+- collocation: [[sister]]
+- collocation: [[cohesion]]
+- collocation: [[exchange]]

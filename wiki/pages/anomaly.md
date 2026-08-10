@@ -6,6 +6,8 @@ pos: noun
 forms: [anomaly]
 sources: [llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[deviation]] — Use 'anomaly' for something that deviates from what is standard, normal, or expected, often in a scientific or statistical context.
 - builds_on: [[variant]] — Use 'anomaly' to emphasize something that is not only different from expectations but also statistically or scientifically unusual; stronger than 'variant'.
 - builds_on: [[defect]] — Use 'anomaly' for a deviation from the norm that is not necessarily structural, often used in medical or scientific contexts to describe unexpected findings.
+- synonym: [[abnormality]]
+- synonym: [[irregularity]]

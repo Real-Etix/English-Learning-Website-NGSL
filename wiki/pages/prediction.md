@@ -9,6 +9,8 @@ rank: 98
 sfi: 58.96
 sources: [wordnet, llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[forecast]] — Use 'forecast' for predictions based on data or analysis, especially for weather, economic, or business trends.
 - advanced_form: [[prognosis]] — Use 'prognosis' for predictions about the likely outcome of a medical condition or a situation.
 - advanced_form: [[projection]] — Use 'projection' for predictions based on calculations or extrapolation of current trends.
+- synonym: [[modeling]]

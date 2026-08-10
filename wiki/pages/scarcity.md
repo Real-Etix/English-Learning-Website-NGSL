@@ -6,6 +6,8 @@ pos: noun
 forms: [scarcity]
 sources: [llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition

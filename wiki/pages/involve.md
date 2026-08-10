@@ -9,6 +9,8 @@ rank: 379
 sfi: 64.16
 sources: [wordnet, llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[implicate]] — Use 'implicate' to emphasize that someone is shown to be involved in something illegal or wrong, often through evidence.
 - advanced_form: [[entangle]] — Use 'entangle' to suggest a messy, complicated involvement from which escape is difficult.
 - advanced_form: [[embroil]] — Use 'embroil' when the involvement is in a conflict, controversy, or difficult situation.
+- synonym: [[enmesh]]

@@ -9,6 +9,8 @@ rank: 198
 sfi: 56.3
 sources: [wordnet, llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[autograph]] — Use 'autograph' when the signature is given as a memento or by a celebrity, or in a formal signing of a document.
 - advanced_form: [[countersign]] — Use 'countersign' when a second signature is needed to validate or authorize a document already signed by someone else.
+- collocation: [[ballpoint]]
+- collocation: [[blotch]]
+- collocation: [[indelible]]
+- collocation: [[smudge]]

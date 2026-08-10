@@ -6,6 +6,8 @@ pos: noun
 forms: [unification]
 sources: [llm]
 status: enriched
+chart: integration
+region: you
 ---
 
 ## Definition

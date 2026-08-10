@@ -6,6 +6,8 @@ pos: verb
 forms: [outstrip]
 sources: [llm]
 status: enriched
+chart: rule
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[exceed]] — Use 'outstrip' when something exceeds another in quantity or speed, often in competitive contexts.
+- synonym: [[outpace]]
+- synonym: [[surpass]]
+- synonym: [[outdo]]
+- collocation: [[demand]]
+- collocation: [[supply]]
+- collocation: [[production]]
+- collocation: [[growth]]
+- synonym: [[oversubscribe]]

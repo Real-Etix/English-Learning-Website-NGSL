@@ -9,6 +9,8 @@ rank: 52
 sfi: 64.09
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ contract
 - domain: fitness
 - advanced_form: [[tighten]] — Use 'tighten' when focusing on making a muscle or part of the body more taut or firm, especially in a controlled manner.
 - advanced_form: [[stiffen]] — Use 'stiffen' when emphasizing becoming rigid or less flexible, often as a reflexive or involuntary action.
+- collocation: [[iliacus]]

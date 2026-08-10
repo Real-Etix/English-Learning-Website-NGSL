@@ -9,6 +9,8 @@ rank: 380
 sfi: 54.55
 sources: [wordnet, llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - builds_on: [[wholesaler]] — Use when emphasizing the role in moving goods from producer to retail, often in supply chains.
 - builds_on: [[importer]] — Use 'distributor' when focusing on the supply chain role of moving imported goods to various sellers.
 - builds_on: [[supplier]] — Highlights the middle role in a supply chain, moving goods from producer to retailer or end user.
+- synonym: [[jobber]]

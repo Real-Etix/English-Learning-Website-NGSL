@@ -6,6 +6,8 @@ pos: verb
 forms: [instate]
 sources: [llm]
 status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[institute]] — Use 'instate' when referring to putting something (like a rule, policy, or official) into effect, often in a legal or authoritative context.
+- synonym: [[establish]]
+- synonym: [[install]]
+- synonym: [[inaugurate]]
+- synonym: [[appoint]]

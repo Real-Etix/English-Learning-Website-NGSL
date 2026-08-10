@@ -9,6 +9,8 @@ rank: 413
 sfi: 63.91
 sources: [wordnet]
 status: seeded
+chart: possibly
+region: possibly
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ by chance
 ## Connections
 - synonym: [[possibly]]
 - synonym: [[maybe]]
+- collocation: [[politic]]

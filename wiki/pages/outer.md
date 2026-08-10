@@ -9,6 +9,8 @@ rank: 92
 sfi: 61.5
 sources: [wordnet, llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ being on the outside or further from a center
 - advanced_form: [[exterior]] — Use 'exterior' for the physical outer surface of a building, object, or body; it is more formal and specific than 'outer'.
 - advanced_form: [[external]] — Use 'external' to describe things outside a defined system, organization, or boundary; it is more formal and abstract than 'outer'.
 - advanced_form: [[outward]] — Use 'outward' for visible appearance or direction away from a center; it often implies a contrast with inner reality, more nuanced than 'outer'.
+- collocation: [[integument]]
+- collocation: [[layer]]
+- collocation: [[periphery]]

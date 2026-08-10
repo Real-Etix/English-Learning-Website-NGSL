@@ -9,6 +9,8 @@ rank: 821
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: courier
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[courier]] — Use 'courier' for a professional or official message/package carrier, often implying speed or service.
 - advanced_form: [[herald]] — Use 'herald' for a person who publicly announces important news, often in a formal or ceremonial context.
 - advanced_form: [[envoy]] — Use 'envoy' for a diplomatic representative or messenger sent on a specific mission, usually political.
+- synonym: [[endocrine]]

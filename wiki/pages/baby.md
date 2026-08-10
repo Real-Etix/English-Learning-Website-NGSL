@@ -9,6 +9,8 @@ rank: 871
 sfi: 60.33
 sources: [wordnet, llm]
 status: enriched
+chart: baby
+region: baby
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ a very young child (birth to 1 year) who has not yet begun to walk or talk
 - synonym: [[infant]]
 - advanced_form: [[infant]] — Use 'infant' in formal or medical contexts instead of 'baby'.
 - advanced_form: [[neonate]] — Use 'neonate' specifically for newborns in medical or technical writing.
+- synonym: [[cub]]
+- synonym: [[newborn]]
+- collocation: [[pacify]]
+- collocation: [[premature]]
+- collocation: [[whoa]]
+- collocation: [[fretful]]

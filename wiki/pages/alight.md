@@ -6,6 +6,8 @@ pos: verb
 forms: [alight]
 sources: [llm]
 status: enriched
+chart: go
+region: you
 ---
 
 ## Definition

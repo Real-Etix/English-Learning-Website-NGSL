@@ -6,6 +6,8 @@ pos: noun
 forms: [quadruplets]
 sources: [llm]
 status: enriched
+chart: quad
+region: quad
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[quad]] — Use 'quadruplets' in formal writing instead of the informal 'quads' when referring to the group.
+- collocation: [[identical]]

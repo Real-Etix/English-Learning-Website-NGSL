@@ -6,6 +6,8 @@ pos: adjective
 forms: [astute]
 sources: [llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 - builds_on: [[smart]] — Use 'astute' when emphasizing sharp practical judgment and the ability to assess situations or people quickly, often in business or social contexts.
 - builds_on: [[keen]] — Use 'astute' for practical intelligence and clever understanding of situations.
 - builds_on: [[wise]] — Use 'astute' to highlight sharp, practical intelligence and the ability to assess situations quickly, often with a strategic or perceptive edge.
+- synonym: [[discriminating]]
+- synonym: [[perceptive]]
+- synonym: [[apprehensive]]
+- builds_on: [[apprehensive]] — Use when emphasizing sharp practical intelligence and quick insight, often in social or strategic contexts.
+- builds_on: [[prudent]] — Use when someone is not only careful but also clever and perceptive, especially in spotting opportunities.

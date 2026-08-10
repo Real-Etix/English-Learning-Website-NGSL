@@ -9,6 +9,8 @@ rank: 539
 sfi: 52.64
 sources: [wordnet, llm]
 status: enriched
+chart: decorate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[accoutrement]] — Use 'accoutrement' for formal or literary contexts, often implying functional or decorative accessories.
 - advanced_form: [[adornment]] — Use 'adornment' when emphasizing the decorative or beautifying aspect of an accessory.
 - advanced_form: [[ornament]] — Use 'ornament' to highlight that the accessory is purely decorative, not functional.
+- synonym: [[fitting]]

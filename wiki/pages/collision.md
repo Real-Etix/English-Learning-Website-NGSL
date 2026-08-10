@@ -6,6 +6,8 @@ pos: noun
 forms: [collision]
 sources: [llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[impact]] — Use 'collision' for a more formal or precise description of two objects hitting each other, especially in traffic or physics.
+- synonym: [[crash]]
+- synonym: [[hit]]
+- synonym: [[bump]]
+- synonym: [[clash]]
+- collocation: [[vehicle]]

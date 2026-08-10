@@ -6,6 +6,8 @@ pos: noun
 forms: [vendee]
 sources: [llm]
 status: enriched
+chart: client
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[purchaser]] — Use 'vendee' in legal or contractual contexts for the buyer in a sales agreement, particularly for real estate or formal transactions.
+- synonym: [[buyer]]
+- synonym: [[customer]]
+- synonym: [[client]]
+- synonym: [[acquirer]]
+- collocation: [[vendor]]
+- collocation: [[contract]]
+- collocation: [[property]]
+- collocation: [[sale]]
+- collocation: [[transfer]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [clemency]
 sources: [llm]
 status: enriched
+chart: pardon
+region: pardon
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pardon]] — Use 'clemency' when referring to official leniency or mercy, especially in legal or disciplinary contexts, rather than a personal apology.
+- synonym: [[compassion]]
+- collocation: [[show]]
+- collocation: [[grant]]
+- collocation: [[offer]]
+- collocation: [[executive]]
+- collocation: [[judicial]]

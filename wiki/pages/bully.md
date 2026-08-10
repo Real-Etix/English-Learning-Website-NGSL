@@ -9,6 +9,8 @@ rank: 1671
 sfi: 49.13
 sources: [wordnet, llm]
 status: enriched
+chart: tender
+region: you
 ---
 
 ## Definition

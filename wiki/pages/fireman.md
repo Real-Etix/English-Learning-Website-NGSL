@@ -6,6 +6,8 @@ pos: noun
 forms: [fireman]
 sources: [llm]
 status: enriched
+chart: firefighter
+region: firefighter
 ---
 
 ## Definition

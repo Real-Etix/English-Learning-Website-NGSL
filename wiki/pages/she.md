@@ -9,6 +9,8 @@ rank: 24
 sfi: 77.16
 sources: [curated]
 status: verified
+chart: she
+region: you
 ---
 
 ## Definition

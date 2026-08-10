@@ -6,6 +6,8 @@ pos: adverb
 forms: [authentically]
 sources: [llm]
 status: enriched
+chart: maturity
+region: you
 ---
 
 ## Definition

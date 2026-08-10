@@ -6,6 +6,8 @@ pos: noun
 forms: [superfactorial]
 sources: [llm]
 status: enriched
+chart: factorial
+region: factorial
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[factorial]] — Used for higher-order factorial products.
+- synonym: [[hyperfactorial]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [tout]
 sources: [llm]
 status: enriched
+chart: broadcast
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[headline]] — Use when promoting something with great enthusiasm, often in a public or commercial context.
 - builds_on: [[advertise]] — Use 'tout' when you want to emphasize enthusiastic or boastful promotion, often in a public or persuasive way.
+- synonym: [[publicize]]

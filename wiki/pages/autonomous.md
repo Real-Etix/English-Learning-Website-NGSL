@@ -9,6 +9,8 @@ rank: 1347
 sfi: 51.16
 sources: [wordnet, llm]
 status: enriched
+chart: manual
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,4 @@ status: enriched
 - builds_on: [[discretionary]] — Use 'autonomous' when the decision-maker has full independence, beyond just discretionary judgment.
 - advanced_form: [[sovereign]] — Use 'sovereign' to emphasize ultimate authority and independence, especially for nations, rather than just being autonomous.
 - advanced_form: [[autarchic]] — Use 'autarchic' to describe a state that is not only autonomous but also self-sufficient in governance, often implying a degree of economic independence.
+- collocation: [[robot]]

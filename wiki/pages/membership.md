@@ -9,6 +9,8 @@ rank: 2261
 sfi: 54.77
 sources: [wordnet, llm]
 status: enriched
+chart: text
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ the body of members of an organization or group
 - synonym: [[rank]]
 - advanced_form: [[affiliation]] — Use 'affiliation' when emphasizing the formal connection or association among members, often in a professional or institutional context.
 - advanced_form: [[constituency]] — Use 'constituency' when referring to the body of members who support or are represented by a person or group, especially in political or organizational settings.
+- collocation: [[dues]]
+- collocation: [[fitnesscenter]]
+- collocation: [[healthclub]]
+- collocation: [[reinstate]]
+- synonym: [[citizenhood]]

@@ -9,6 +9,8 @@ rank: 1109
 sfi: 49.8
 sources: [wordnet, llm]
 status: enriched
+chart: hamburger
+region: hamburger
 ---
 
 ## Definition

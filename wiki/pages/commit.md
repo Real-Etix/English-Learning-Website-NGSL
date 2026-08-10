@@ -9,6 +9,8 @@ rank: 1322
 sfi: 58.18
 sources: [wordnet, llm]
 status: enriched
+chart: confer
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[inflict]] — Use 'inflict' instead of 'commit' when the act causes harm or pain, often deliberately.
 - builds_on: [[invest]] — Use 'commit' instead of 'invest' to highlight a firm decision to dedicate resources, often implying risk or long-term involvement.
 - builds_on: [[dedicate]] — Use 'commit' instead of 'dedicate' when emphasizing a personal pledge or binding decision to a cause or task.
+- collocation: [[ethnocide]]
+- collocation: [[gaffe]]
+- synonym: [[memorize]]
+- collocation: [[misdemeanor]]
+- builds_on: [[devote]] — Use when promising or pledging oneself fully to an activity or person.

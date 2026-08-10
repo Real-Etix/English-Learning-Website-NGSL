@@ -6,6 +6,8 @@ pos: noun
 forms: [twilight]
 sources: [llm]
 status: enriched
+chart: rough
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[evening]] — Use 'twilight' to evoke a poetic or atmospheric quality, often referring to the period right after sunset when colors linger in the sky.
+- synonym: [[nighttime]]
+- synonym: [[penumbra]]

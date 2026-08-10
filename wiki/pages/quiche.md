@@ -6,6 +6,8 @@ pos: noun
 forms: [quiche]
 sources: [llm]
 status: enriched
+chart: pizza
+region: pizza
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pie]] — Use 'quiche' for a savory pie with a custard filling, typically eaten as a main dish or appetizer.
+- synonym: [[tart]]
+- synonym: [[pastry]]
+- collocation: [[cheese]]
+- collocation: [[slice]]

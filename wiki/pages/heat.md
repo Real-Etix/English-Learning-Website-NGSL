@@ -9,6 +9,8 @@ rank: 1141
 sfi: 58.93
 sources: [wordnet, llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,17 @@ _No sourced examples yet._
 - advanced_form: [[scorch]] — Use scorch to emphasize intense, damaging heat that burns or parches.
 - advanced_form: [[blaze]] — Use blaze to describe a very bright, powerful heat from a fire or strong light source.
 - builds_on: [[temperature]] — Use 'heat' as a noun for high temperature, often in weather or physical sensation.
+- collocation: [[blistering]]
+- collocation: [[carbonize]]
+- collocation: [[desiccate]]
+- collocation: [[dissipate]]
+- collocation: [[emanate]]
+- collocation: [[fuse]]
+- collocation: [[haze]]
+- collocation: [[liquefy]]
+- collocation: [[mirage]]
+- collocation: [[noonday]]
+- synonym: [[qualifier]]
+- collocation: [[wilt]]
+- collocation: [[withstand]]
+- synonym: [[fever]]

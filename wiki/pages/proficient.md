@@ -6,6 +6,8 @@ pos: adjective
 forms: [proficient]
 sources: [llm]
 status: enriched
+chart: expert
+region: you
 ---
 
 ## Definition

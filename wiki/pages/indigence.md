@@ -6,6 +6,8 @@ pos: noun
 forms: [indigence]
 sources: [llm]
 status: enriched
+chart: sign
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[poverty]] — Use in formal writing or speech, especially when describing chronic poverty.
+- synonym: [[destitution]]
+- synonym: [[penury]]
+- collocation: [[extreme]]
+- collocation: [[reduce]]
+- collocation: [[live]]
+- collocation: [[fall]]

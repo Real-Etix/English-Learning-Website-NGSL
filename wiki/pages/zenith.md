@@ -6,6 +6,8 @@ pos: noun
 forms: [zenith]
 sources: [llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - builds_on: [[peak]] — Use 'zenith' for the highest point of success or power, often with a sense of culmination.
 - builds_on: [[maximum]] — Use 'zenith' for the highest point of success or achievement, especially in a abstract or figurative sense.
 - builds_on: [[highlight]] — Use 'zenith' for the peak or culmination of power, success, or popularity, often in a temporal sense.
+- synonym: [[acme]]
+- synonym: [[climax]]
+- synonym: [[culmination]]

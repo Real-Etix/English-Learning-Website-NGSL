@@ -9,6 +9,8 @@ rank: 252
 sfi: 55.35
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: undermine
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ destroy property or hinder normal operations
 - advanced_form: [[erode]] — Use 'erode' when the undermining happens slowly and progressively over time, often for abstract concepts like confidence or morale, whereas 'undermine' can be more immediate.
 - builds_on: [[weaken]] — Use when the weakening happens gradually or secretly, often by attacking the foundation or support.
 - builds_on: [[erode]] — Use 'undermine' instead of 'erode' when the deterioration is figurative or hidden, often affecting stability or strength.
+- synonym: [[impair]]
+- builds_on: [[impair]] — Use when something gradually weakens or erodes something like confidence, authority, or an institution.
+- synonym: [[invalidate]]

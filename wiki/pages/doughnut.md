@@ -6,6 +6,8 @@ pos: noun
 forms: [doughnut]
 sources: [llm]
 status: enriched
+chart: donut
+region: donut
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[donut]] — Use 'doughnut' in formal writing instead of the informal 'donut'.
+- synonym: [[cruller]]
+- synonym: [[pastry]]
+- synonym: [[cake]]
+- synonym: [[treat]]
+- synonym: [[ring]]
+- collocation: [[coffee]]
+- collocation: [[hole]]

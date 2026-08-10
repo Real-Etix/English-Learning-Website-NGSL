@@ -9,6 +9,8 @@ rank: 877
 sfi: 60.31
 sources: [wordnet, llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[propound]] — Use 'propound' when you formally present an idea or theory for serious discussion, often in academic or intellectual contexts, instead of the more casual 'propose'.
 - advanced_form: [[tender]] — Use 'tender' when you formally offer something such as a resignation, a bid, or a suggestion in a professional or legal setting, emphasizing the official nature of the proposal.
 - advanced_form: [[advance]] — Use 'advance' when you put forward an idea for consideration, often with the sense of moving it forward or promoting it, especially in business or strategic discussions.
+- collocation: [[hypothesis]]

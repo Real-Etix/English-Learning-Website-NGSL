@@ -9,6 +9,8 @@ rank: 890
 sfi: 60.26
 sources: [wordnet, llm]
 status: enriched
+chart: separate
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ _No sourced examples yet._
 - synonym: [[divide]]
 - advanced_form: [[partition]] — Use 'partition' to emphasize a physical division into distinct sections, often with a structure like a wall or screen.
 - advanced_form: [[segregate]] — Use 'segregate' to stress keeping things apart, often implying a deliberate separation into groups or areas.
+- synonym: [[decouple]]
+- synonym: [[disengage]]
+- synonym: [[disentangle]]
+- synonym: [[isolate]]
+- synonym: [[disconnected]]
+- synonym: [[quarantine]]
+- synonym: [[sequester]]

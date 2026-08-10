@@ -6,6 +6,8 @@ pos: noun
 forms: [venire]
 sources: [llm]
 status: enriched
+chart: bench
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[jury]] — Use when referring to the group of potential jurors summoned for a trial.
+- synonym: [[panel]]

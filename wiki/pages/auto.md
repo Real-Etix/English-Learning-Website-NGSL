@@ -9,6 +9,8 @@ rank: 361
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: transmission
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - builds_on: [[automobile]] — Use 'auto' as an informal shortened form, common in American English.
 - advanced_form: [[automobile]] — Use 'automobile' in formal or technical writing instead of the informal 'auto'.
 - advanced_form: [[motorcar]] — Use 'motorcar' for a slightly formal or historical tone, but less common than 'automobile'.
+- collocation: [[dealership]]
+- collocation: [[mechanic]]

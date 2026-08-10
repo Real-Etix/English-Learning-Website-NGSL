@@ -6,6 +6,8 @@ pos: verb
 forms: [implore]
 sources: [llm]
 status: enriched
+chart: plead
+region: plead
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[plead]] — Use 'implore' to show intense emotional appeal.
+- synonym: [[beseech]]
+- synonym: [[entreat]]
+- synonym: [[supplicate]]

@@ -9,6 +9,8 @@ rank: 755
 sfi: 61.01
 sources: [wordnet, llm]
 status: enriched
+chart: protocol
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[technique]] — Use 'technique' when emphasizing a specific, skillful method, especially in arts, sports, or sciences.
 - advanced_form: [[approach]] — Use 'approach' when referring to a general way of dealing with a task or situation, often implying a strategic perspective.
 - builds_on: [[mode]] — Use 'method' when referring to a systematic, established way of doing something, often more concrete than 'mode'.
+- collocation: [[formalistic]]
+- synonym: [[how]]
+- collocation: [[whereby]]

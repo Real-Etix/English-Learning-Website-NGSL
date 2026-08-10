@@ -9,6 +9,8 @@ rank: 244
 sfi: 55.92
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ act in accordance with someone's rules, commands, or wishes
 - advanced_form: [[conform]] — Use 'conform' instead of 'comply' when focusing on matching a set of standards or norms.
 - advanced_form: [[observe]] — Use 'observe' instead of 'comply' when following laws or customs with attention or respect.
 - builds_on: [[conform]] — Use 'comply' when focusing on following a rule or requirement, especially in formal or legal contexts; 'conform' is broader and can refer to matching a pattern or standard.
+- synonym: [[acquiesce]]
+- collocation: [[forthwith]]
+- collocation: [[mandatee]]

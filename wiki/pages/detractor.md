@@ -6,6 +6,8 @@ pos: noun
 forms: [detractor]
 sources: [llm]
 status: enriched
+chart: competitor
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[anti]] — Use 'detractor' for someone who criticizes or belittles something, often expressing disapproval rather than active resistance.
+- synonym: [[critic]]
+- synonym: [[opponent]]
+- synonym: [[cynic]]

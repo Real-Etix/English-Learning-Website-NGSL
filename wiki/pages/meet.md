@@ -9,6 +9,8 @@ rank: 135
 sfi: 68.26
 sources: [wordnet, llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[encounter]] — Use 'encounter' instead of 'meet' when the meeting is unexpected or unplanned, or when emphasizing the experience of coming across someone or something.
 - advanced_form: [[converge]] — Use 'converge' instead of 'meet' when talking about paths, lines, or flows coming together from different directions, often in a physical or metaphorical sense.
 - builds_on: [[contest]] — Use 'meet' for an athletic competition where participants gather to compete in multiple events.
+- collocation: [[criteria]]
+- collocation: [[deputation]]
+- collocation: [[quota]]

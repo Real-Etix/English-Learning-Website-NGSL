@@ -6,6 +6,8 @@ pos: adverb
 forms: [lavishly]
 sources: [llm]
 status: enriched
+chart: generously
+region: generously
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[generously]] — Use 'lavishly' to emphasize spending or giving in a very abundant, often showy way.
+- synonym: [[bountifully]]
+- collocation: [[spend]]
+- synonym: [[liberally]]
+- synonym: [[munificently]]

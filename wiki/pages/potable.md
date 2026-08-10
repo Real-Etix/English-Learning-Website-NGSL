@@ -6,6 +6,8 @@ pos: noun
 forms: [potable]
 sources: [llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[beverage]] — Use 'potable' as a formal noun for any drinkable liquid, often in technical or official contexts, instead of 'beverage'.
+- collocation: [[food]]
+- collocation: [[water]]

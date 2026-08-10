@@ -6,6 +6,8 @@ pos: noun
 forms: [recollection]
 sources: [llm]
 status: enriched
+chart: memory
+region: memory
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[memory]] — Use 'recollection' instead of 'memory' to emphasize the act of consciously bringing a past event to mind, often with effort or clarity.
+- synonym: [[memoir]]
+- synonym: [[remembrance]]
+- synonym: [[recall]]
+- synonym: [[reminiscence]]
+- synonym: [[mind]]
+- collocation: [[clear]]
+- collocation: [[childhood]]

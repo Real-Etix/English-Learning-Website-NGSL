@@ -9,6 +9,8 @@ rank: 1234
 sfi: 51.4
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - builds_on: [[mistake]] — Use 'oversight' when the mistake results from neglecting to do something; implies unintentional omission.
 - advanced_form: [[inadvertence]] — Use 'inadvertence' to emphasize the lack of attention or unintentional nature, more formal than 'oversight'.
 - advanced_form: [[lapse]] — Use 'lapse' when the failure is temporary and often related to memory or attention, slightly broader than 'oversight'.
+- builds_on: [[error]] — Use for an error caused by forgetting or failing to notice something important.

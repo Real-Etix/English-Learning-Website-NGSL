@@ -6,6 +6,8 @@ pos: verb
 forms: [sabotage]
 sources: [llm]
 status: enriched
+chart: undermine
+region: you
 ---
 
 ## Definition

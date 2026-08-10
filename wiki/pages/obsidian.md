@@ -6,6 +6,8 @@ pos: adjective
 forms: [obsidian]
 sources: [llm]
 status: enriched
+chart: black
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[black]] — Use 'obsidian' for a glassy, opaque black, often describing volcanic rock or similar appearances.
+- collocation: [[mirror]]
+- collocation: [[blade]]
+- collocation: [[knife]]
+- collocation: [[glass]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [emplace]
 sources: [llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition

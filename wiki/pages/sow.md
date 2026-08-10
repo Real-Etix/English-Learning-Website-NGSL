@@ -6,6 +6,8 @@ pos: verb
 forms: [sow]
 sources: [llm]
 status: enriched
+chart: plant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[plant]] — Use 'sow' specifically for planting seeds, often in gardening or farming, rather than for whole plants.
+- synonym: [[hog]]

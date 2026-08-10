@@ -9,6 +9,8 @@ rank: 349
 sfi: 55.15
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: prevail
+region: you
 ---
 
 ## Definition
@@ -37,3 +39,4 @@ be larger in number, quantity, power, status or importance
 - builds_on: [[triumph]] — Use when emphasizing overcoming difficulties through persistence or force, often in competitions or arguments.
 - builds_on: [[succeed]] — Use 'prevail' to suggest succeeding against opposition or difficulty, often with a sense of persistence or finality.
 - builds_on: [[dominate]] — Use when emphasizing being the most widespread or influential in a given situation or area.
+- synonym: [[preponderate]]

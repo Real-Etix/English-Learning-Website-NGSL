@@ -6,6 +6,8 @@ pos: verb
 forms: [meander]
 sources: [llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition

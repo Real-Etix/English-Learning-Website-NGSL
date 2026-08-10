@@ -9,6 +9,8 @@ rank: 2286
 sfi: 54.69
 sources: [wordnet, llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ an onerous or difficult concern
 - advanced_form: [[onus]] — Use 'onus' when emphasizing a duty or responsibility that is a burden, especially in formal or legal contexts.
 - advanced_form: [[liability]] — Use 'liability' when the burden is an unwanted responsibility that causes trouble or disadvantage.
 - advanced_form: [[encumbrance]] — Use 'encumbrance' for a burden that is a legal or financial claim or obstacle.
+- collocation: [[beast]]
+- collocation: [[evidentiary]]
+- synonym: [[overwork]]

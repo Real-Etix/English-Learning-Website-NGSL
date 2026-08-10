@@ -6,6 +6,8 @@ pos: adverb
 forms: [scrupulously]
 sources: [llm]
 status: enriched
+chart: energetically
+region: you
 ---
 
 ## Definition

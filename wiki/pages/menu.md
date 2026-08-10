@@ -9,6 +9,8 @@ rank: 2597
 sfi: 53.65
 sources: [wordnet, llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ a list of dishes available at a restaurant
 - synonym: [[card]]
 - advanced_form: [[carte]] — Use 'carte' instead of 'menu' in formal or fine dining contexts, especially when referring to a printed list of dishes (from French 'carte du jour').
 - advanced_form: [[selection]] — Use 'selection' to emphasize the range or variety of dishes available, rather than the list itself, often in descriptive or promotional language.
+- collocation: [[chophouse]]
+- collocation: [[restaurant]]

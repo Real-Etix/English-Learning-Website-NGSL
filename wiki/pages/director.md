@@ -9,6 +9,8 @@ rank: 727
 sfi: 61.13
 sources: [wordnet, llm]
 status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[comptroller]] — Use 'comptroller' instead of 'director' when emphasizing financial control and oversight, especially in government or large corporations.
 - advanced_form: [[treasurer]] — Use 'treasurer' instead of 'director' when focusing on management of funds and financial assets.
 - builds_on: [[chief]] — Use 'director' for the head of a department, organization, or project, especially in corporate or institutional settings.
+- synonym: [[ceo]]

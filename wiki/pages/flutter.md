@@ -9,6 +9,8 @@ rank: 511
 sfi: 53.31
 sources: [wordnet, llm]
 status: enriched
+chart: flutter
+region: you
 ---
 
 ## Definition

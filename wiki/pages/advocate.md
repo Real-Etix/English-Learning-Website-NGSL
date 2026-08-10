@@ -9,6 +9,8 @@ rank: 2316
 sfi: 54.58
 sources: [wordnet, llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,10 @@ _No sourced examples yet._
 - advanced_form: [[proponent]] — Use 'proponent' for a more formal or neutral supporter of an idea or policy, rather than 'advocate' which often implies active pleading.
 - advanced_form: [[champion]] — Use 'champion' when the person actively fights or defends a cause, often with vigor or in a leading role, while 'advocate' is broader and can be more passive.
 - builds_on: [[counsel]] — Use 'advocate' when referring to a lawyer who pleads cases in court, especially in formal or legal contexts; it's more specific than 'counsel'.
+- synonym: [[attorney]]
+- synonym: [[barrister]]
+- synonym: [[lawyer]]
+- collocation: [[passionate]]
+- builds_on: [[attorney]] — Use for a lawyer who actively argues on behalf of a client, common in legal systems influenced by Roman law.
+- builds_on: [[lawyer]] — Use when highlighting active pleading or defense in court, common in some legal systems.
+- synonym: [[spokeswoman]]

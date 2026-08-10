@@ -6,6 +6,8 @@ pos: adjective
 forms: [practicing]
 sources: [llm]
 status: enriched
+chart: con
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[professional]] — Use to emphasize active engagement in a profession, rather than general skill or conduct.
+- synonym: [[active]]
+- collocation: [[lawyer]]
+- collocation: [[attorney]]
+- collocation: [[physician]]
+- collocation: [[dentist]]
+- collocation: [[witchcraft]]

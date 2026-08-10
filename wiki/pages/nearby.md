@@ -9,6 +9,8 @@ rank: 1895
 sfi: 55.85
 sources: [wordnet, llm]
 status: enriched
+chart: about
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ close at hand
 - advanced_form: [[adjacent]] — Use 'adjacent' when things are side by side or touching, emphasizing a direct bordering relationship.
 - advanced_form: [[proximate]] — Use 'proximate' in formal or technical contexts to mean nearest in space, time, or causal relationship.
 - advanced_form: [[neighbouring]] — Use 'neighbouring' when referring to something in the near vicinity, often for areas or places next to each other.
+- synonym: [[adjacently]]

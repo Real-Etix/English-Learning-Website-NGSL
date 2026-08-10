@@ -6,6 +6,8 @@ pos: noun
 forms: [renminbi]
 sources: [llm]
 status: enriched
+chart: yuan
+region: yuan
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[yuan]] — Use renminbi when referring to the official name of the Chinese currency, especially in formal contexts.
+- synonym: [[rmb]]
+- collocation: [[exchange]]
+- collocation: [[bank]]

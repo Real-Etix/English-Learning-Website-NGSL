@@ -9,6 +9,8 @@ rank: 393
 sfi: 54.36
 sources: [wordnet, llm]
 status: enriched
+chart: performer
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[artiste]] — Use for a dancer who emphasizes artistic expression and skill, often in a formal or theatrical context.
 - advanced_form: [[terpsichorean]] — Use as a formal or literary alternative, especially when referring to a classically trained dancer or in high-brow contexts.
+- collocation: [[cambrure]]
+- collocation: [[graceful]]
+- collocation: [[lithe]]

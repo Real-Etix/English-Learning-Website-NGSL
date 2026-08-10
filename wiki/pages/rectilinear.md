@@ -6,6 +6,8 @@ pos: adjective
 forms: [rectilinear]
 sources: [llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[linear]] — Use in geometry or physics to describe motion or shape that is in a straight line; more formal than 'straight' or 'linear'.
+- synonym: [[straight]]
+- synonym: [[direct]]
+- collocation: [[motion]]
+- collocation: [[path]]
+- collocation: [[propagation]]
+- collocation: [[grid]]

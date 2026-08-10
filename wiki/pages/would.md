@@ -9,6 +9,8 @@ rank: 36
 sfi: 74.77
 sources: [dictionaryapi, tatoeba, llm]
 status: enriched
+chart: would
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ Something that would happen, or would be the case, under different circumstances
 - advanced_form: [[contingency]] — Use for a specific possible future event that depends on uncertain circumstances.
 - advanced_form: [[eventuality]] — Use when describing any possible outcome, especially one you prepare for.
 - advanced_form: [[potentiality]] — Use to stress the inherent capacity for something to become real under different conditions.
+- synonym: [[could]]

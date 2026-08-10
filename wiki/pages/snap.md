@@ -9,6 +9,8 @@ rank: 2731
 sfi: 53.06
 sources: [wordnet, llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ the act of catching an object with the hands
 - advanced_form: [[grasp]] — Use for emphasizing the hold after catching, more formal than 'snap'.
 - advanced_form: [[clutch]] — Use for a desperate or tight catch, often with urgency.
 - advanced_form: [[snatch]] — Use for a quick, often stealthy or sudden catch, similar to 'snap' but more dynamic.
+- synonym: [[clack]]
+- synonym: [[crackle]]
+- builds_on: [[photograph]] — Use for quick, informal photos taken without much setup.

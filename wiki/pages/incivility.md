@@ -6,6 +6,8 @@ pos: noun
 forms: [incivility]
 sources: [llm]
 status: enriched
+chart: offense
+region: offense
 ---
 
 ## Definition

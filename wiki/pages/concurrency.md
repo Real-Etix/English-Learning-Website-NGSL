@@ -6,6 +6,8 @@ pos: noun
 forms: [concurrency]
 sources: [llm]
 status: enriched
+chart: convergence
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[conjunction]] — Use 'concurrency' when referring to events or operations happening at the same time in systems, computing, or planning.
+- synonym: [[simultaneity]]
+- collocation: [[high]]
+- collocation: [[control]]
+- collocation: [[model]]
+- collocation: [[limit]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [nape]
 sources: [llm]
 status: enriched
+chart: neck
+region: neck
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[neck]] — Use 'nape' to specify the back part of the neck, especially in formal or descriptive contexts.
+- synonym: [[cervix]]

@@ -9,6 +9,8 @@ rank: 491
 sfi: 54.826
 sources: [wordnet, llm]
 status: enriched
+chart: table
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[mesh]] — Use 'mesh' when the grid is a network of woven or interlocked strands, emphasizing the open spaces between the lines, as opposed to the abstract plan of a grid.
 - builds_on: [[spreadsheet]] — Use 'grid' when emphasizing the tabular layout rather than the software program.
 - builds_on: [[table]] — Use 'grid' when the table has a visible structure of rows and columns, common in computing or design contexts.
+- collocation: [[easting]]
+- collocation: [[electrified]]
+- collocation: [[rectilinear]]

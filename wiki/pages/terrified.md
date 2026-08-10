@@ -6,6 +6,8 @@ pos: adjective
 forms: [terrified]
 sources: [llm]
 status: enriched
+chart: neural
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 308
 sfi: 56.699
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: use
+region: you
 ---
 
 ## Definition
@@ -32,3 +34,6 @@ put into service
 - advanced_form: [[harness]] — Use 'harness' when you want to emphasize controlling or making productive use of a resource or power.
 - advanced_form: [[deploy]] — Use 'deploy' when referring to strategic or organized use of resources, especially personnel, technology, or tactics.
 - builds_on: [[exert]] — More formal than 'exert'; implies practical or efficient use of something, often resources or abilities.
+- synonym: [[exploit]]
+- collocation: [[effectively]]
+- collocation: [[resources]]

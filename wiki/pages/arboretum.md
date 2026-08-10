@@ -6,6 +6,8 @@ pos: noun
 forms: [arboretum]
 sources: [llm]
 status: enriched
+chart: land
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[garden]] — Use 'arboretum' instead of 'garden' when the area is specifically designed to showcase a collection of woody plants.
+- collocation: [[national]]
+- collocation: [[visit]]
+- collocation: [[grounds]]
+- collocation: [[trail]]

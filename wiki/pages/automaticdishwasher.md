@@ -6,6 +6,8 @@ pos: noun
 forms: [automaticdishwasher]
 sources: [llm]
 status: enriched
+chart: dishwasher
+region: dishwasher
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dishwasher]] — 'Automatic dishwasher' emphasizes the automated nature and is often used in manuals or product descriptions.
+- synonym: [[dishwashingmachine]]
+- collocation: [[load]]
+- collocation: [[run]]
+- collocation: [[repair]]
+- collocation: [[install]]

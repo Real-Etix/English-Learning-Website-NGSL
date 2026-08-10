@@ -6,6 +6,8 @@ pos: adjective
 forms: [grimy]
 sources: [llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dirty]] — Use 'grimy' when dirt is ingrained or sticky, especially from grease or soot.
+- synonym: [[filthy]]
+- synonym: [[soiled]]
+- collocation: [[face]]

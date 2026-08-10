@@ -6,6 +6,8 @@ pos: verb
 forms: [stratify]
 sources: [llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition

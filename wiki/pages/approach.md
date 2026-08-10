@@ -9,6 +9,8 @@ rank: 495
 sfi: 62.98
 sources: [wordnet, llm]
 status: enriched
+chart: protocol
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,32 @@ ideas or actions intended to deal with a problem or situation
 - builds_on: [[method]] — Use 'approach' when referring to a general way of dealing with a task or situation, often implying a strategic perspective.
 - builds_on: [[treat]] — Use 'approach' instead of 'treat' when emphasizing the method or manner of handling a situation or person.
 - builds_on: [[technique]] — Use when referring to a general way or strategy of handling a task, often implying a broader perspective.
+- collocation: [[behavioristic]]
+- collocation: [[collectivist]]
+- collocation: [[dogmatic]]
+- collocation: [[egalitarian]]
+- collocation: [[fine-tune]]
+- collocation: [[formalistic]]
+- collocation: [[haphazard]]
+- collocation: [[heterodox]]
+- collocation: [[historiographic]]
+- collocation: [[idiosyncratic]]
+- collocation: [[imaginative]]
+- synonym: [[impend]]
+- collocation: [[inflexible]]
+- collocation: [[interpretive]]
+- collocation: [[inventive]]
+- collocation: [[laissez-faire]]
+- collocation: [[levelheaded]]
+- collocation: [[maternalistic]]
+- collocation: [[meliorist]]
+- collocation: [[methodical]]
+- collocation: [[nuanced]]
+- collocation: [[perspectival]]
+- collocation: [[piecemeal]]
+- collocation: [[precautionary]]
+- collocation: [[prescriptive]]
+- collocation: [[rethink]]
+- collocation: [[rostrum]]
+- collocation: [[enlightened]]
+- synonym: [[overture]]

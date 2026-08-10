@@ -9,6 +9,8 @@ rank: 2177
 sfi: 54.98
 sources: [wordnet, llm]
 status: enriched
+chart: motif
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ the basis on which something is grounded
 - advanced_form: [[bedrock]] — Use to stress something as the absolute, unchanging base that supports a system or idea.
 - advanced_form: [[underpinning]] — Use for the supporting structure or principle that justifies or enables something, often in academic or technical contexts.
 - builds_on: [[charity]] — Use 'foundation' for a specific institutional entity established for charitable purposes, whereas 'charity' can be broader.
+- synonym: [[linchpin]]
+- synonym: [[pedestal]]
+- synonym: [[plinth]]
+- builds_on: [[establishment]] — Use when focusing on the initial creation of an organization or institution.

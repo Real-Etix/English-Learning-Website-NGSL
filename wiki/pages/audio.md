@@ -9,6 +9,8 @@ rank: 803
 sfi: 50.99
 sources: [wordnet, llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ the audible part of a transmitted signal
 - domain: academic
 - advanced_form: [[soundtrack]] — Use 'soundtrack' for recorded audio that accompanies a visual work, like a film or game.
 - advanced_form: [[transmission]] — Use 'transmission' for the electronic signal carrying audio, especially in broadcasting or telecommunications.
+- collocation: [[amplification]]

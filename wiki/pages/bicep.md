@@ -9,6 +9,8 @@ rank: 41
 sfi: 64.65
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [divergence]
 sources: [llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition

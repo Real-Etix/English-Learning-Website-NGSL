@@ -6,6 +6,8 @@ pos: noun
 forms: [headset]
 sources: [llm]
 status: enriched
+chart: recipient
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[headphone]] — Use 'headset' when referring to headphones with a microphone, often in professional settings.
+- synonym: [[earphone]]
+- synonym: [[earpiece]]
+- synonym: [[headpiece]]
+- collocation: [[wireless]]
+- collocation: [[microphone]]
+- collocation: [[wear]]

@@ -9,6 +9,8 @@ rank: 409
 sfi: 55.714
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[lead]] — Use 'dominance' when the lead is substantial and shows control.
 - advanced_form: [[laterality]] — Use when focusing on the tendency or preference for one side rather than the fact of being dominant.
 - advanced_form: [[lateralization]] — Use when referring to the specialized development of one hemisphere or side, often in a neurological context.
+- synonym: [[domination]]
+- synonym: [[hegemony]]
+- synonym: [[primacy]]

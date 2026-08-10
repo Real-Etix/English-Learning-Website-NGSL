@@ -9,6 +9,8 @@ rank: 1739
 sfi: 49.41
 sources: [wordnet, llm]
 status: enriched
+chart: challenge
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[confront]] — Used when confronting authority or rules with open resistance.
 - advanced_form: [[flout]] — Flout emphasizes open and contemptuous disregard, especially for rules or laws, while defy is broader and can be about any resistance.
 - advanced_form: [[challenge]] — Challenge implies actively questioning or calling into question an authority, belief, or statement, often with an argument, whereas defy can be more passive resistance.
+- collocation: [[orthodoxy]]

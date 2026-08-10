@@ -6,6 +6,8 @@ pos: noun
 forms: [heredity]
 sources: [llm]
 status: enriched
+chart: genetics
+region: genetics
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[genetics]] — Use 'heredity' when focusing on the process of trait transmission, while 'genetics' is the broader scientific field.
+- synonym: [[biogenetics]]
+- synonym: [[inheritance]]
+- collocation: [[environment]]
+- collocation: [[genetic]]
+- collocation: [[disease]]

@@ -9,6 +9,8 @@ rank: 659
 sfi: 52.951
 sources: [wordnet, llm]
 status: enriched
+chart: directly
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ apart from others
 - advanced_form: [[singly]] — Use 'singly' to emphasize one by one, often in contexts of distribution or arrangement.
 - builds_on: [[personally]] — Use instead of 'personally' when focusing on one-to-one interaction rather than a group.
 - builds_on: [[respectively]] — Use when each item in a list is considered separately, usually in the given order, though less precise than 'respectively'.
+- synonym: [[discretely]]

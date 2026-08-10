@@ -6,6 +6,8 @@ pos: adjective
 forms: [perceptible]
 sources: [llm]
 status: enriched
+chart: cheer
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[visible]] — Use 'perceptible' when something can be detected by the senses, especially sight, but often with a nuance of being barely noticeable or requiring attention.
+- synonym: [[apparent]]
+- synonym: [[evident]]
+- collocation: [[barely]]
+- collocation: [[change]]
+- collocation: [[difference]]
+- collocation: [[effect]]
+- collocation: [[shift]]

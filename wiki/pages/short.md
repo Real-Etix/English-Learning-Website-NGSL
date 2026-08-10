@@ -9,6 +9,8 @@ rank: 419
 sfi: 63.81
 sources: [wordnet, llm]
 status: enriched
+chart: short
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ primarily temporal sense
 - advanced_form: [[fleeting]] — Use 'fleeting' to emphasize that something lasts for a very short time, often with a sense of it being elusive or quickly passing.
 - advanced_form: [[transient]] — Use 'transient' for something that does not last long, especially in a more formal or scientific context, implying temporary nature.
 - advanced_form: [[ephemeral]] — Use 'ephemeral' to describe something that lasts for a very short time, often with a poetic or literary tone, suggesting fragility.
+- collocation: [[essay]]
+- collocation: [[lifespan]]
+- collocation: [[pollex]]
+- collocation: [[duration]]
+- collocation: [[bark]]

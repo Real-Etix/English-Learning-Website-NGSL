@@ -9,6 +9,8 @@ rank: 940
 sfi: 50.71
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 
 ## Connections
 - domain: toeic
+- collocation: [[deposit]]
+- collocation: [[fee]]
+- collocation: [[tax]]
+- collocation: [[ticket]]
+- collocation: [[credit]]

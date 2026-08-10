@@ -9,6 +9,8 @@ rank: 407
 sfi: 54.21
 sources: [wordnet, llm]
 status: enriched
+chart: mindfulness
+region: mindfulness
 ---
 
 ## Definition

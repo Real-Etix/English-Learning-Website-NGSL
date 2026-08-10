@@ -6,6 +6,8 @@ pos: verb
 forms: [endeavor]
 sources: [llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition

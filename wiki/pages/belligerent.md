@@ -6,6 +6,8 @@ pos: noun
 forms: [belligerent]
 sources: [llm]
 status: enriched
+chart: militant
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[hostile]] — Use for a hostile, aggressive, and combative attitude, especially in speech or behavior; implies readiness to fight.
 - builds_on: [[warrior]] — Use 'belligerent' instead of 'warrior' in a legal or formal context referring to a warring party.
 - builds_on: [[militant]] — Use 'belligerent' when referring to active hostility or a combative stance, especially in conflict situations.
+- synonym: [[pugnacious]]

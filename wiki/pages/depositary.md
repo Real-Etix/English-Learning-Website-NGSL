@@ -6,6 +6,8 @@ pos: noun
 forms: [depositary]
 sources: [llm]
 status: enriched
+chart: stakeholder
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[stakeholder]] — Use 'depositary' in formal or legal contexts where the focus is on the safekeeping of property or funds, rather than the neutral role of a stakeholder in a bet.
+- synonym: [[custodian]]
+- synonym: [[trustee]]
+- synonym: [[guardian]]
+- synonym: [[fiduciary]]
+- collocation: [[official]]
+- collocation: [[bank]]

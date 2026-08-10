@@ -6,6 +6,8 @@ pos: noun
 forms: [fatalism]
 sources: [llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[resignation]] — Use when the acceptance stems from a belief that events are predetermined or inevitable.
+- synonym: [[acceptance]]
+- synonym: [[stoicism]]
+- collocation: [[cultural]]

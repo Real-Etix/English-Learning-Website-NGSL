@@ -6,6 +6,8 @@ pos: noun
 forms: [impost]
 sources: [llm]
 status: enriched
+chart: levy
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 127
 sfi: 57.24
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ an agreement between parties (usually arrived at after discussion) fixing obliga
 - domain: academic
 - advanced_form: [[compact]] — Use 'compact' instead of 'bargain' when emphasizing a formal, binding agreement, often between groups or nations.
 - advanced_form: [[covenant]] — Use 'covenant' instead of 'bargain' when the agreement has a legal or solemn, often written, obligation.
+- synonym: [[negotiate]]

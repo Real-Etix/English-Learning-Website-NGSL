@@ -6,6 +6,8 @@ pos: noun
 forms: [pastime]
 sources: [llm]
 status: enriched
+chart: illusion
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,6 @@ _No sourced examples yet._
 - builds_on: [[baseball]] — Use 'pastime' to refer to baseball as a leisure activity with cultural significance, rather than just the sport.
 - builds_on: [[hobby]] — Use 'pastime' to emphasize enjoyment and relaxation, often for a common leisure activity.
 - builds_on: [[recreation]] — Use 'pastime' for a regular, enjoyable leisure activity that someone does in their free time, often long-term.
+- synonym: [[avocation]]
+- collocation: [[pleasurable]]
+- builds_on: [[entertainment]] — Use when referring to a habitual or favorite activity that one does for fun, often in casual but slightly elevated speech.

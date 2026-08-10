@@ -6,6 +6,8 @@ pos: noun
 forms: [terpsichorean]
 sources: [llm]
 status: enriched
+chart: performer
+region: you
 ---
 
 ## Definition

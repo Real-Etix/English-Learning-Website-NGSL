@@ -9,6 +9,8 @@ rank: 231
 sfi: 55.74
 sources: [wordnet, llm]
 status: enriched
+chart: complimentary
+region: complimentary
 ---
 
 ## Definition

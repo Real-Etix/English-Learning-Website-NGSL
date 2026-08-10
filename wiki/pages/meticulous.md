@@ -6,6 +6,8 @@ pos: adjective
 forms: [meticulous]
 sources: [llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,8 @@ _No sourced examples yet._
 - builds_on: [[rigorous]] — Use when emphasizing thoroughness and attention to every small aspect, rather than just rigid accuracy.
 - builds_on: [[careful]] — Use 'meticulous' when emphasizing extreme attention to detail, beyond just being careful.
 - builds_on: [[precise]] — Use 'meticulous' when emphasizing careful attention to every small detail, often implying thoroughness beyond just being exact.
+- synonym: [[assiduous]]
+- synonym: [[conscientious]]
+- synonym: [[diligent]]
+- synonym: [[exacting]]
+- synonym: [[methodical]]

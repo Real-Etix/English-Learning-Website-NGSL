@@ -9,6 +9,8 @@ rank: 138
 sfi: 57.18
 sources: [wordnet, llm]
 status: enriched
+chart: direct
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[gallery]] — Use 'gallery' for a long, narrow passage inside a cave, often more formal than 'aisle'.
 - advanced_form: [[defile]] — Use 'defile' for a narrow, confined passage through mountainous or wooded terrain, emphasizing difficulty or danger.
+- collocation: [[pew]]

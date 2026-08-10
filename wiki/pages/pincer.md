@@ -6,6 +6,8 @@ pos: noun
 forms: [pincer]
 sources: [llm]
 status: enriched
+chart: claw
+region: claw
 ---
 
 ## Definition

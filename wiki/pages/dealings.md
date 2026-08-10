@@ -6,6 +6,8 @@ pos: noun
 forms: [dealings]
 sources: [llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition

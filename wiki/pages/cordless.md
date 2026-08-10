@@ -9,6 +9,8 @@ rank: 967
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: wireless
+region: wireless
 ---
 
 ## Definition

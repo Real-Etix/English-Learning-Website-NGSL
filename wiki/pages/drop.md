@@ -9,6 +9,8 @@ rank: 640
 sfi: 61.75
 sources: [wordnet, llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,16 @@ let fall to the ground
 - builds_on: [[fall]] — Use 'drop' for a simple, direct fall, often with less dramatic force than 'plummet' but more neutral than 'fall'.
 - advanced_form: [[release]] — Use 'release' to emphasize letting go from a hold, often unintentional but more formal than 'drop'.
 - advanced_form: [[lower]] — Use 'lower' when letting something fall in a controlled, gentle manner, not a sudden or accidental drop.
+- synonym: [[dollop]]
+- synonym: [[downgrade]]
+- synonym: [[elide]]
+- synonym: [[globule]]
+- collocation: [[knees]]
+- synonym: [[mislay]]
+- collocation: [[precipitous]]
+- collocation: [[pretense]]
+- synonym: [[misplace]]
+- synonym: [[shed]]
+- synonym: [[declivity]]
+- synonym: [[descent]]
+- synonym: [[slough]]

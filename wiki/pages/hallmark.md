@@ -6,6 +6,8 @@ pos: noun
 forms: [hallmark]
 sources: [llm]
 status: enriched
+chart: leaf
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[trademark]] — Use 'hallmark' to emphasize a quality that is a definitive, positive feature of someone or something.
 - builds_on: [[characteristic]] — Use 'hallmark' instead of 'characteristic' to emphasize a positive or defining trait, often in formal or evaluative contexts.
 - builds_on: [[stamp]] — Use 'hallmark' instead of 'stamp' to describe a distinctive feature that is typical of a particular person or thing.
+- synonym: [[byword]]
+- builds_on: [[attribute]] — Use to emphasize a defining characteristic that signals authenticity or quality.

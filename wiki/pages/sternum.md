@@ -9,6 +9,8 @@ rank: 216
 sfi: 57.19
 sources: [wordnet, llm]
 status: enriched
+chart: sternum
+region: sternum
 ---
 
 ## Definition

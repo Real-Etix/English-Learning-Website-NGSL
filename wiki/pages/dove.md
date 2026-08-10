@@ -6,6 +6,8 @@ pos: noun
 forms: [dove]
 sources: [llm]
 status: enriched
+chart: pigeon
+region: pigeon
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pigeon]] — Use 'dove' instead of 'pigeon' in poetic, formal, or gentle contexts; it carries a softer, more elegant tone.
+- synonym: [[innocent]]

@@ -9,6 +9,8 @@ rank: 2687
 sfi: 53.26
 sources: [wordnet, llm]
 status: enriched
+chart: morphology
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[syntax]] — Use when focusing on sentence structure.
 - advanced_form: [[morphology]] — Use when focusing on word forms.
 - advanced_form: [[linguistics]] — Use for the formal academic field.
+- collocation: [[conjugation]]
+- collocation: [[prescriptive]]
+- collocation: [[generative]]

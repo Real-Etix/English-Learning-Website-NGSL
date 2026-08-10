@@ -9,6 +9,8 @@ rank: 2389
 sfi: 54.32
 sources: [wordnet, llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ done or occurring in a brief period of time
 - advanced_form: [[swift]] — Use 'swift' for smooth, agile speed, often in movement or action.
 - advanced_form: [[expeditious]] — Use 'expeditious' for speed with efficiency, often in tasks or processes.
 - advanced_form: [[immediate]] — Use 'immediate' for speed with no delay, often in urgent contexts.
+- collocation: [[exsiccation]]
+- collocation: [[gyration]]
+- collocation: [[patter]]
+- collocation: [[deceleration]]
+- collocation: [[densification]]
+- collocation: [[descent]]

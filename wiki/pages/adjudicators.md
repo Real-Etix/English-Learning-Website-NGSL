@@ -6,6 +6,8 @@ pos: noun
 forms: [adjudicators]
 sources: [llm]
 status: enriched
+chart: bench
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[jury]] — Use when emphasizing the judging function, more formal and often for expert panels.
+- collocation: [[independent]]
+- collocation: [[panel]]
+- collocation: [[impartial]]
+- collocation: [[legal]]

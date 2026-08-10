@@ -9,6 +9,8 @@ rank: 2321
 sfi: 54.55
 sources: [wordnet, llm]
 status: enriched
+chart: relieve
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ return to an original state
 - builds_on: [[salvage]] — Use 'recovery' for the items saved, but it can also mean the act; 'salvage' specifically implies saved from destruction.
 - advanced_form: [[restoration]] — Use 'restoration' when emphasizing the physical or structural return of something to its former condition.
 - advanced_form: [[reinstatement]] — Use 'reinstatement' when referring to the formal restoration of a position, right, or privilege.
+- synonym: [[reclamation]]
+- synonym: [[recoupment]]
+- synonym: [[retrieval]]
+- synonym: [[rehabilitation]]

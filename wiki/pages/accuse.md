@@ -9,6 +9,8 @@ rank: 1755
 sfi: 56.36
 sources: [wordnet, llm]
 status: enriched
+chart: assert
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[indict]] — Use 'indict' for a formal legal accusation, usually by a grand jury.
 - advanced_form: [[impeach]] — Use 'impeach' specifically for charging a public official with misconduct.
 - advanced_form: [[allege]] — Use 'allege' when the accusation is not yet proven or is a claim.
+- synonym: [[blame]]

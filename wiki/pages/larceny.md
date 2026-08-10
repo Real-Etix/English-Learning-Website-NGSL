@@ -6,6 +6,8 @@ pos: noun
 forms: [larceny]
 sources: [llm]
 status: enriched
+chart: pattern
+region: you
 ---
 
 ## Definition

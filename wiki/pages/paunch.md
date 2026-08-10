@@ -6,6 +6,8 @@ pos: noun
 forms: [paunch]
 sources: [llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition

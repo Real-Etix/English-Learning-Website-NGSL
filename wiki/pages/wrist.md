@@ -9,6 +9,8 @@ rank: 31
 sfi: 65.48
 sources: [wordnet, llm]
 status: enriched
+chart: wrist
+region: wrist
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[carpus]] — Use 'carpus' in formal or anatomical contexts instead of 'wrist'.
 - advanced_form: [[carpal]] — Use 'carpal' (noun) to refer to one of the bones of the wrist, not the joint itself.
+- collocation: [[retinaculum]]

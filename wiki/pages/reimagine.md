@@ -6,6 +6,8 @@ pos: verb
 forms: [reimagine]
 sources: [llm]
 status: enriched
+chart: review
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reconstruct]] — Use when you mean to mentally recreate something with creative changes or new interpretation, not just exact reconstruction.
+- synonym: [[reenvision]]
+- synonym: [[rethink]]
+- collocation: [[future]]
+- collocation: [[education]]
+- collocation: [[how]]

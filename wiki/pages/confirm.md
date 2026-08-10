@@ -7,8 +7,10 @@ forms: [confirm, confirms, confirmed, confirming]
 lists: [ngsl]
 rank: 1206
 sfi: 58.62
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: support
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - synonym: [[support]]
 - synonym: [[affirm]]
 - antonym: [[contradict]]
+- synonym: [[authenticate]]
+- synonym: [[countersign]]
+- advanced_form: [[corroborate]] — Use when independent information supports a claim.
+- advanced_form: [[substantiate]] — Use when proving something with evidence, often in formal contexts.
+- advanced_form: [[validate]] — Use when checking or proving that something is true, valid, or acceptable.
+- synonym: [[vouch]]

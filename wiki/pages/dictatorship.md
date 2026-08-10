@@ -9,6 +9,8 @@ rank: 1571
 sfi: 48.98
 sources: [wordnet, llm]
 status: enriched
+chart: dictatorship
+region: dictatorship
 ---
 
 ## Definition

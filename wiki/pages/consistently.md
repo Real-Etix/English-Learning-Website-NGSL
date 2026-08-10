@@ -9,6 +9,8 @@ rank: 388
 sfi: 54.72
 sources: [wordnet, llm]
 status: enriched
+chart: firm
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[uniformly]] — Use when highlighting exact sameness or lack of variation—good for processes or measurements.
 - builds_on: [[steadily]] — Use 'consistently' when emphasizing regularity and reliability over time, similar to 'steadily' but with a stronger sense of uniformity.
 - builds_on: [[regularly]] — Use 'consistently' to emphasize reliability and lack of variation, often for behavior or performance.
+- synonym: [[invariably]]

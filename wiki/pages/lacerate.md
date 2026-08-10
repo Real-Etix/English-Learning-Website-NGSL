@@ -6,6 +6,8 @@ pos: verb
 forms: [lacerate]
 sources: [llm]
 status: enriched
+chart: disable
+region: you
 ---
 
 ## Definition

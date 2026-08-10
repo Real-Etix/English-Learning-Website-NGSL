@@ -6,6 +6,8 @@ pos: noun
 forms: [arbiter]
 sources: [llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[reviewer]] — Use arbiter for an authoritative judge or decision-maker, emphasizing expertise and final say.
 - builds_on: [[referee]] — Use 'arbiter' in formal or figurative contexts, or in sports like figure skating where the arbiter has authority over disputes.
+- builds_on: [[intermediary]] — Use when the person has authority to make a final judgment, not just facilitate.

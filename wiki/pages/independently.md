@@ -9,6 +9,8 @@ rank: 308
 sfi: 56.717
 sources: [wordnet, llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ on your own
 - advanced_form: [[self-reliantly]] — Use when highlighting self-sufficiency and minimal outside help, especially in personal or survival contexts.
 - advanced_form: [[solo]] — Use when emphasizing being alone without companions, often in travel, performance, or tasks.
 - builds_on: [[apart]] — Use 'independently' to emphasize functioning separately without reliance.
+- synonym: [[discretely]]
+- collocation: [[verifiable]]

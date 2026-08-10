@@ -9,6 +9,8 @@ rank: 1803
 sfi: 56.17
 sources: [wordnet, llm]
 status: enriched
+chart: appear
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ the act of exhibiting
 - advanced_form: [[showcase]] — Use 'showcase' when the display is meant to highlight the best or most impressive features.
 - advanced_form: [[demonstration]] — Use 'demonstration' when the act of exhibiting involves showing how something works or is done.
 - builds_on: [[demonstration]] — Use 'exhibition' for a formal or large-scale public display, often in a museum or gallery, whereas 'demonstration' is more general and can include practical shows of how something works.
+- collocation: [[curator]]
+- collocation: [[pavilion]]

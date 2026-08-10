@@ -6,6 +6,8 @@ pos: noun
 forms: [lime]
 sources: [llm]
 status: enriched
+chart: calcium
+region: calcium
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[calcium]] — Use 'lime' instead of 'calcium' when referring to the product of burning calcium, often in construction or industry.
+- collocation: [[ceviche]]
+- synonym: [[chartreuse]]
+- synonym: [[quicklime]]
+- collocation: [[quick]]
+- collocation: [[quencher]]
+- synonym: [[citrus]]

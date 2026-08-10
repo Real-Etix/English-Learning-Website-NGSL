@@ -6,6 +6,8 @@ pos: noun
 forms: [teaser]
 sources: [llm]
 status: enriched
+chart: preview
+region: preview
 ---
 
 ## Definition

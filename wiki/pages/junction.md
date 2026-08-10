@@ -6,6 +6,8 @@ pos: noun
 forms: [junction]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[node]] — Use 'junction' when referring to a physical point where roads, wires, or pipes join, especially in engineering or infrastructure contexts.
 - builds_on: [[intersection]] — Use 'junction' for roads, railways, or pipes meeting, often more technical than 'intersection'.
+- collocation: [[bipolar]]
+- synonym: [[chiasma]]
+- synonym: [[crossing]]

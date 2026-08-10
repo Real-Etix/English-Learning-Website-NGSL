@@ -6,6 +6,8 @@ pos: noun
 forms: [misstep]
 sources: [llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fault]] — Use 'misstep' when the fault is a minor error in judgment or action that leads to negative consequences.
+- synonym: [[blunder]]
+- synonym: [[error]]
+- synonym: [[mistake]]
+- synonym: [[slip]]
+- collocation: [[costly]]
+- collocation: [[political]]
+- collocation: [[minor]]

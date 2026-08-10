@@ -6,6 +6,8 @@ pos: adverb
 forms: [supra]
 sources: [llm]
 status: enriched
+chart: above
+region: you
 ---
 
 ## Definition

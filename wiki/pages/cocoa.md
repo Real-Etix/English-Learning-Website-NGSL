@@ -6,6 +6,8 @@ pos: noun
 forms: [cocoa]
 sources: [llm]
 status: enriched
+chart: chocolate
+region: chocolate
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chocolate]] — Use 'cocoa' when referring specifically to the hot beverage made from cocoa powder, rather than the general term 'chocolate' which can also refer to candy or flavor.
+- synonym: [[cacao]]
+- synonym: [[drink]]
+- synonym: [[beverage]]
+- synonym: [[powder]]
+- collocation: [[hot]]
+- collocation: [[powder]]
+- collocation: [[butter]]
+- collocation: [[cup]]

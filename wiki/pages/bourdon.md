@@ -6,6 +6,8 @@ pos: noun
 forms: [bourdon]
 sources: [llm]
 status: enriched
+chart: pedal
+region: pedal
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pedal]] — Use 'bourdon' in formal or technical musical contexts, particularly for organ pipes or sustained bass notes in classical music; it is more specialized than the general term 'pedal'.
+- synonym: [[drone]]
+- collocation: [[organ]]
+- collocation: [[pipe]]
+- collocation: [[stop]]
+- collocation: [[deep]]

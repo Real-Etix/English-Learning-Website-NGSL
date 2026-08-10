@@ -6,6 +6,8 @@ pos: adjective
 forms: [therapeutic]
 sources: [llm]
 status: enriched
+chart: empirical
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,6 @@ _No sourced examples yet._
 - builds_on: [[medical]] — Use 'therapeutic' when emphasizing healing, treatment, or beneficial effects, often relating to specific therapies or interventions.
 - builds_on: [[medication]] — Use in clinical or research settings to emphasize the healing or treatment aspect of the substance.
 - builds_on: [[pharmaceutical]] — Use 'therapeutic' when referring to the beneficial healing or treatment outcomes, whereas 'pharmaceutical' refers more to the industry or substances themselves.
+- synonym: [[medicinal]]
+- synonym: [[pharmacologic]]
+- synonym: [[psychotherapeutic]]

@@ -9,6 +9,8 @@ rank: 531
 sfi: 53.53
 sources: [wordnet, llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[immerse]] — Use 'immerse' when focusing on complete covering and especially for deliberate, sustained action, while 'plunge' suggests a quick or forceful entry.
 - advanced_form: [[submerge]] — Use 'submerge' for putting something completely underwater, often implying it disappears from view, while 'plunge' can be more abrupt.
 - builds_on: [[crash]] — Use 'plunge' instead of 'crash' when the fall is sudden and directly into something (e.g., water, a gap) or when describing a dramatic drop.
+- synonym: [[descent]]

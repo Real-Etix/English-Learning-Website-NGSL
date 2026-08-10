@@ -9,6 +9,8 @@ rank: 385
 sfi: 55.651
 sources: [wordnet, llm]
 status: enriched
+chart: direct
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,7 @@ _No sourced examples yet._
 - advanced_form: [[dispatch]] — Use 'dispatch' when emphasizing prompt sending, often in business or logistics.
 - advanced_form: [[relay]] — Use 'relay' for passing along information sequentially, especially in communication.
 - builds_on: [[dispatch]] — Use 'transmit' for sending signals, data, or information electronically, whereas 'dispatch' is more general for sending people or items to a location.
+- synonym: [[propagate]]
+- builds_on: [[upload]] — Use for technical or formal contexts, especially when data is sent electronically over a network.
+- builds_on: [[broadcast]] — Use when focusing on the technical sending of a signal, especially in formal or technical contexts.
+- collocation: [[anopheline]]

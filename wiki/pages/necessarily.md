@@ -9,6 +9,8 @@ rank: 1509
 sfi: 57.35
 sources: [wordnet, llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ in an essential manner
 - advanced_form: [[perforce]] — Use perforce for a more formal or literary tone, emphasizing necessity that cannot be avoided.
 - advanced_form: [[unavoidably]] — Use unavoidably to stress that something is impossible to prevent, often for external reasons.
 - advanced_form: [[ineluctably]] — Use ineluctably for a very formal or philosophical tone, describing something inevitable by nature.
+- synonym: [[inescapably]]

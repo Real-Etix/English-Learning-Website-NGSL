@@ -6,6 +6,8 @@ pos: verb
 forms: [wheeze]
 sources: [llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[choke]] — Use 'wheeze' when the breathing difficulty is accompanied by a hoarse or whistling sound, often from emotion or exertion.
 - builds_on: [[breathe]] — Use 'wheeze' instead of 'breathe' when the person makes a whistling or rattling sound, often due to asthma or illness.
+- synonym: [[chuff]]
+- synonym: [[gasp]]

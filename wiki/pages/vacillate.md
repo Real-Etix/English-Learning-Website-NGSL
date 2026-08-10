@@ -6,6 +6,8 @@ pos: verb
 forms: [vacillate]
 sources: [llm]
 status: enriched
+chart: sway
+region: you
 ---
 
 ## Definition

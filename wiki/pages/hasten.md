@@ -6,6 +6,8 @@ pos: verb
 forms: [hasten]
 sources: [llm]
 status: enriched
+chart: accelerate
+region: you
 ---
 
 ## Definition

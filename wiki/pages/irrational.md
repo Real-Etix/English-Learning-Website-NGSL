@@ -6,6 +6,8 @@ pos: adjective
 forms: [irrational]
 sources: [llm]
 status: enriched
+chart: incredible
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[illogical]] — Use 'irrational' when emphasizing a lack of reason or emotional basis, rather than just a failure in logical connection.
+- synonym: [[unreasonable]]
+- synonym: [[absurd]]
+- collocation: [[fear]]
+- collocation: [[behavior]]
+- collocation: [[decision]]
+- collocation: [[number]]

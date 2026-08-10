@@ -9,6 +9,8 @@ rank: 245
 sfi: 57.151
 sources: [wordnet, llm]
 status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ _No sourced examples yet._
 - advanced_form: [[launch]] — Use 'launch' for starting a project, campaign, or product, especially with publicity or a deliberate kickoff.
 - builds_on: [[insider]] — Use 'initiate' instead of 'insider' to highlight the act of being admitted to an inner circle, especially in esoteric or exclusive contexts.
 - builds_on: [[commence]] — Use 'initiate' when emphasizing the formal or official beginning of a process or project, often implying a purposeful start.
+- synonym: [[actuate]]

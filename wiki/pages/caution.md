@@ -9,6 +9,8 @@ rank: 593
 sfi: 52.74
 sources: [wordnet, llm]
 status: enriched
+chart: notify
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ the trait of being cautious
 - advanced_form: [[circumspection]] — Use 'circumspection' when emphasizing careful thought and looking around before acting, especially in complex or uncertain situations.
 - advanced_form: [[wariness]] — Use 'wariness' for cautiousness that comes from suspicion or distrust, especially regarding potential dangers.
 - builds_on: [[warn]] — Use when formally advising someone to be careful or avoid a specific risk.
+- synonym: [[caveat]]

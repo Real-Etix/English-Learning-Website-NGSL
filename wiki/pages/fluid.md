@@ -9,6 +9,8 @@ rank: 33
 sfi: 61.75
 sources: [wordnet, llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ subject to change
 - advanced_form: [[volatile]] — Use 'volatile' to suggest rapid, unpredictable, and often dangerous change.
 - advanced_form: [[unstable]] — Use 'unstable' to imply a lack of steadiness or reliability, often with negative connotations.
 - builds_on: [[liquid]] — Use when emphasizing smooth, free-flowing movement, often for substances that pour easily.
+- collocation: [[effusion]]
+- synonym: [[graceful]]
+- synonym: [[liquefied]]
+- collocation: [[aspirate]]
+- collocation: [[dynamics]]

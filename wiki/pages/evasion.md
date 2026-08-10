@@ -6,6 +6,8 @@ pos: noun
 forms: [evasion]
 sources: [llm]
 status: enriched
+chart: flutter
+region: you
 ---
 
 ## Definition

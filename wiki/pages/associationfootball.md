@@ -6,6 +6,8 @@ pos: noun
 forms: [associationfootball]
 sources: [llm]
 status: enriched
+chart: soccer
+region: soccer
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[soccer]] — Use 'association football' in formal or official contexts to distinguish from other codes like rugby or American football.
+- synonym: [[football]]
+- collocation: [[match]]
+- collocation: [[club]]
+- collocation: [[league]]
+- collocation: [[player]]

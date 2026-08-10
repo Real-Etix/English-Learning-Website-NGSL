@@ -6,6 +6,8 @@ pos: noun
 forms: [discoverer]
 sources: [llm]
 status: enriched
+chart: academic
+region: you
 ---
 
 ## Definition

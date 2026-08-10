@@ -6,6 +6,8 @@ pos: noun
 forms: [contender]
 sources: [llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[bidder]] — Use 'contender' to emphasize competition among multiple bidders, often in auctions or contests.
 - builds_on: [[entrant]] — Use 'contender' to emphasize that the product has a realistic chance of winning or becoming dominant, not merely entering.
 - builds_on: [[contestant]] — Use 'contender' when the focus is on having a realistic chance of winning, often in serious competitions.
+- synonym: [[challenger]]
+- builds_on: [[opponent]] — Use for someone actively competing in a contest or race, often with a chance to win.

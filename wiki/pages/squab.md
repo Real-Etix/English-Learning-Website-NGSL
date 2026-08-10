@@ -6,6 +6,8 @@ pos: noun
 forms: [squab]
 sources: [llm]
 status: enriched
+chart: pigeon
+region: pigeon
 ---
 
 ## Definition

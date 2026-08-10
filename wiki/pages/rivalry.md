@@ -6,6 +6,8 @@ pos: noun
 forms: [rivalry]
 sources: [llm]
 status: enriched
+chart: game
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[race]] — Use 'rivalry' for a long-term competitive relationship rather than a single event.
 - builds_on: [[competitiveness]] — Use when emphasizing a long-term competitive relationship between specific groups or individuals.
+- builds_on: [[competition]] — Use when emphasizing a long-term competitive relationship between specific parties.
+- synonym: [[jockeying]]

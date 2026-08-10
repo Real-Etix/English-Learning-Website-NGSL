@@ -6,6 +6,8 @@ pos: verb
 forms: [depose]
 sources: [llm]
 status: enriched
+chart: hire
+region: you
 ---
 
 ## Definition

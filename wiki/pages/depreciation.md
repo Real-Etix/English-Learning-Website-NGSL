@@ -9,6 +9,8 @@ rank: 30
 sfi: 59.88
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ a decrease in price or value
 - advanced_form: [[devaluation]] — Use 'devaluation' when referring specifically to a reduction in the official value of a currency, not just any price decrease.
 - advanced_form: [[diminution]] — Use 'diminution' in formal or technical contexts to describe a gradual or steady decrease in value, amount, or size.
 - builds_on: [[devaluation]] — Use 'depreciation' for a gradual, market-driven decline in currency value, while 'devaluation' implies a deliberate government action.
+- synonym: [[debasement]]

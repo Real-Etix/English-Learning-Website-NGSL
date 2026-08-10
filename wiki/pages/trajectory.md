@@ -9,6 +9,8 @@ rank: 132
 sfi: 58.416
 sources: [wordnet, llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - builds_on: [[itinerary]] — Use 'trajectory' for the curved path of a moving object or a figurative direction, not for a planned travel schedule like 'itinerary'.
 - builds_on: [[trend]] — Use when focusing on the path or future course of a trend.
 - builds_on: [[path]] — Use 'trajectory' for the figurative path of development or progress over time, especially in careers or trends.
+- synonym: [[heading]]

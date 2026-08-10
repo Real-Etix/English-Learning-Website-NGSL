@@ -9,6 +9,8 @@ rank: 1418
 sfi: 57.79
 sources: [wordnet, llm]
 status: enriched
+chart: rule
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[military]] — Use 'military' when referring to the entire armed forces rather than just the land-based army.
 - advanced_form: [[troops]] — Use 'troops' when emphasizing the soldiers themselves, often in a deployment or battle context.
+- collocation: [[cantonment]]
+- collocation: [[conscript]]
+- collocation: [[enlistment]]
+- collocation: [[imperial]]
+- collocation: [[liberate]]

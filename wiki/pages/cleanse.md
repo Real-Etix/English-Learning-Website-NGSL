@@ -9,6 +9,8 @@ rank: 384
 sfi: 54.49
 sources: [wordnet, llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[sanitize]] — Use 'sanitize' when the focus is on killing germs and making something hygienic, more clinical than 'cleanse'.
 - builds_on: [[wash]] — Use for thorough, often medical or spiritual cleaning, more formal than wash.
 - builds_on: [[launder]] — Use 'cleanse' for a thorough, often medical or cosmetic cleaning of skin or surfaces; 'launder' is specific to textiles and laundering.
+- synonym: [[purge]]

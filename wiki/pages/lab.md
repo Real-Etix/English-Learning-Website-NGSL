@@ -9,6 +9,8 @@ rank: 156
 sfi: 56.86
 sources: [wordnet, llm]
 status: enriched
+chart: facility
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[laboratory]] — Use 'laboratory' in formal or technical writing instead of the clipped form 'lab'.
 - advanced_form: [[facility]] — Use 'facility' to refer to a whole building or complex that supports scientific work, not just one room.
+- collocation: [[chemistry]]
+- synonym: [[workshop]]

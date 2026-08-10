@@ -6,6 +6,8 @@ pos: adverb
 forms: [hereditarily]
 sources: [llm]
 status: enriched
+chart: genetically
+region: genetically
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[genetically]] — Use 'hereditarily' to emphasize inheritance from ancestors, especially in biology or family traits.
+- synonym: [[innately]]
+- synonym: [[inherently]]
+- synonym: [[congenitally]]

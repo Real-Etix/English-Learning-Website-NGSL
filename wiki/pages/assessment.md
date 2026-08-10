@@ -9,6 +9,8 @@ rank: 1475
 sfi: 57.51
 sources: [wordnet, llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,11 @@ _No sourced examples yet._
 - advanced_form: [[appraisal]] — Use 'appraisal' instead of 'assessment' when referring to formal judgment of value or performance, often in a work context.
 - builds_on: [[judgment]] — Use 'assessment' for a careful, formal evaluation based on evidence, rather than a quick or personal opinion.
 - builds_on: [[exam]] — Use 'assessment' when referring to a broader evaluation that may include various components, not just a single test.
+- synonym: [[assay]]
+- synonym: [[checkup]]
+- synonym: [[psychometrics]]
+- collocation: [[readiness]]
+- builds_on: [[checkup]] — Emphasizes evaluating overall condition; used in clinical or formal settings.
+- collocation: [[psychopathological]]
+- synonym: [[screening]]
+- collocation: [[unsentimental]]

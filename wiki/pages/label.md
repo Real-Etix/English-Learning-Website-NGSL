@@ -9,6 +9,8 @@ rank: 1528
 sfi: 57.26
 sources: [wordnet, llm]
 status: enriched
+chart: designate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ assign a label to
 - advanced_form: [[designate]] — Use when officially assigning a label or identifier to something.
 - advanced_form: [[categorize]] — Use when grouping items into labeled classes or types.
 - builds_on: [[dub]] — Use 'label' when the nickname or term is applied as a judgment or category, often with a negative or critical connotation.
+- synonym: [[marque]]

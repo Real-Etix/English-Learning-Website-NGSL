@@ -6,6 +6,8 @@ pos: noun
 forms: [dinitrogen]
 sources: [llm]
 status: enriched
+chart: nitrogen
+region: nitrogen
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nitrogen]] — Use 'dinitrogen' when referring specifically to the diatomic molecule, common in chemical contexts.
+- collocation: [[gas]]
+- collocation: [[molecule]]

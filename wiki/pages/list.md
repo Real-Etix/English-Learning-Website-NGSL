@@ -9,6 +9,8 @@ rank: 523
 sfi: 62.73
 sources: [wordnet, llm]
 status: enriched
+chart: rely
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,12 @@ give or make a list of
 - advanced_form: [[catalog]] — Use 'catalog' (or 'catalogue') when creating an organized, systematic list, often for records or archives.
 - builds_on: [[tip]] — Use 'list' for a tilt to one side, especially of a vessel or structure, implying instability.
 - builds_on: [[lean]] — Use 'list' specifically for a ship or vehicle leaning to one side, often due to imbalance or external force.
+- synonym: [[carte]]
+- collocation: [[casualty]]
+- synonym: [[catalogue]]
+- synonym: [[enumeration]]
+- collocation: [[interminable]]
+- collocation: [[memorize]]
+- collocation: [[proscription]]
+- synonym: [[roster]]
+- collocation: [[randomize]]

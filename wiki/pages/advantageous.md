@@ -6,6 +6,8 @@ pos: adjective
 forms: [advantageous]
 sources: [llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[convenient]] — Use 'advantageous' to highlight a benefit or favorable condition, often in a more formal or strategic context.
 - builds_on: [[beneficial]] — Use 'advantageous' when highlighting a strategic benefit or gain, more formal than 'beneficial'.
 - builds_on: [[helpful]] — Use 'advantageous' when highlighting a strategic gain or favorable position compared to alternatives.
+- synonym: [[conducive]]
+- synonym: [[propitious]]

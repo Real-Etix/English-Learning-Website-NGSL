@@ -9,6 +9,8 @@ rank: 20
 sfi: 78.34
 sources: [curated]
 status: verified
+chart: i
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ Used by a speaker to talk about themselves.
 
 ## Connections
 - collocation: [[sleep]]
+- collocation: [[whenever]]

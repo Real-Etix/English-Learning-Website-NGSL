@@ -6,6 +6,8 @@ pos: noun
 forms: [comity]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[friendship]] — Use 'comity' for formal or institutional relationships where politeness and respect are maintained, rather than informal personal friendship.
+- synonym: [[harmony]]
+- synonym: [[concord]]
+- synonym: [[goodwill]]
+- collocation: [[international]]
+- collocation: [[judicial]]
+- collocation: [[political]]
+- collocation: [[between]]

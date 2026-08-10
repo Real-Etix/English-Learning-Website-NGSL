@@ -6,6 +6,8 @@ pos: adverb
 forms: [transversely]
 sources: [llm]
 status: enriched
+chart: rule
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[over]] — Use 'transversely' in technical or formal contexts to emphasize crossing at a right angle or perpendicular direction.
 - builds_on: [[across]] — Use transversely in formal or technical contexts to mean across at right angles; more precise and scientific than 'across'.
+- synonym: [[athwart]]
+- synonym: [[crosswise]]

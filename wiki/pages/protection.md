@@ -9,6 +9,8 @@ rank: 1563
 sfi: 57.14
 sources: [wordnet, llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ the activity of protecting someone or something
 - advanced_form: [[safeguard]] — Use 'safeguard' when focusing on a protective measure or precaution, not just the act of protecting.
 - advanced_form: [[bulwark]] — Use 'bulwark' for a robust, defensive barrier, often metaphorical, emphasizing strength and resistance.
 - advanced_form: [[aegis]] — Use 'aegis' when protection comes from sponsorship, authority, or patronage, implying oversight and support.
+- synonym: [[auspices]]
+- synonym: [[coverage]]
+- collocation: [[depositor]]
+- synonym: [[guardianship]]
+- synonym: [[hedging]]
+- synonym: [[insurance]]
+- synonym: [[inviolability]]
+- synonym: [[prophylaxis]]
+- collocation: [[providential]]
+- builds_on: [[coverage]] — Use when emphasizing the security provided by insurance.

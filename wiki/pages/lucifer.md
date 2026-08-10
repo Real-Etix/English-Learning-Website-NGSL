@@ -6,6 +6,8 @@ pos: noun
 forms: [lucifer]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[match]] — Use 'lucifer' for a more formal or historical term for a match, especially in literature.
+- collocation: [[strike]]
+- collocation: [[light]]

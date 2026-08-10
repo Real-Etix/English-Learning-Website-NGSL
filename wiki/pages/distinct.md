@@ -9,6 +9,8 @@ rank: 2572
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: various
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ status: enriched
 - builds_on: [[respective]] — Use 'distinct' when you want to highlight that each thing is clearly separate and not identical, often in analytical contexts.
 - advanced_form: [[disparate]] — Use 'disparate' for a stronger sense of fundamental difference or contrast, especially between groups or categories, rather than the simpler 'distinct'.
 - advanced_form: [[divergent]] — Use 'divergent' when highlighting that things move apart or differ increasingly, often in a dynamic or developing sense, rather than the static 'distinct'.
+- synonym: [[dissimilar]]
+- synonym: [[marked]]
+- builds_on: [[sharp]] — Use for something clearly seen or heard, emphasizing separation from background.
+- collocation: [[subpopulation]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [leery]
 sources: [llm]
 status: enriched
+chart: entity
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[suspicious]] — Use 'leery' for a more instinctive, immediate wariness, often in informal contexts.
+- synonym: [[chary]]
+- synonym: [[wary]]
+- synonym: [[cautious]]
+- synonym: [[skeptical]]

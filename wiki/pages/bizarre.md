@@ -9,6 +9,8 @@ rank: 880
 sfi: 47.216
 sources: [wordnet, llm]
 status: enriched
+chart: foreigner
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ conspicuously or grossly unconventional or unusual
 - advanced_form: [[outlandish]] — Use 'outlandish' for something extravagantly strange, often shocking or absurd.
 - builds_on: [[strange]] — Use 'bizarre' when something is very strange, odd, and perhaps shocking or laughable.
 - builds_on: [[fantastic]] — Use 'bizarre' to emphasize something extremely strange or unexpected, more formal than 'fantastic'.
+- synonym: [[curious]]

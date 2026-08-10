@@ -6,6 +6,8 @@ pos: noun
 forms: [surfeit]
 sources: [llm]
 status: enriched
+chart: surplus
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[surplus]] — Use 'surfeit' when emphasizing an excessive amount that leads to negative consequences, often of food or drink.
+- synonym: [[excess]]
+- synonym: [[inundation]]

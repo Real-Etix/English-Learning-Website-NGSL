@@ -6,6 +6,8 @@ pos: noun
 forms: [subassembly]
 sources: [llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition

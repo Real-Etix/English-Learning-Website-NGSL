@@ -6,6 +6,8 @@ pos: adjective
 forms: [unwarranted]
 sources: [llm]
 status: enriched
+chart: enter
+region: you
 ---
 
 ## Definition

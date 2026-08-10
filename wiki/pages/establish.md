@@ -9,6 +9,8 @@ rank: 696
 sfi: 61.37
 sources: [wordnet, llm]
 status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ _No sourced examples yet._
 - builds_on: [[organize]] — Use 'establish' when emphasizing the creation of an institution or organization with a formal structure, often with a sense of permanence.
 - builds_on: [[create]] — Use 'establish' when creating something that is meant to last, like an organization, rule, or reputation.
 - builds_on: [[launch]] — Use 'establish' instead of 'launch' when emphasizing the formal creation or founding of an institution, company, or system.
+- synonym: [[instate]]
+- collocation: [[rapport]]
+- collocation: [[veracity]]
+- synonym: [[headquarter]]
+- builds_on: [[found]] — use when emphasizing that something is created on a firm, permanent basis
+- collocation: [[culpability]]

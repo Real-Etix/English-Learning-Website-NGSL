@@ -6,6 +6,8 @@ pos: verb
 forms: [savor]
 sources: [llm]
 status: enriched
+chart: feel
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[feel]] — Use 'savor' when you enjoy or appreciate a positive feeling deliberately.
 - builds_on: [[enjoy]] — Use 'savor' when focusing on prolonged, deliberate enjoyment, especially of sensory experiences.
 - builds_on: [[taste]] — Use 'savor' for a more literary or appreciative tone, especially for pleasant or lingering flavors.
+- synonym: [[palate]]

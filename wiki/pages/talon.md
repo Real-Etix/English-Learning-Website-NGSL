@@ -6,6 +6,8 @@ pos: noun
 forms: [talon]
 sources: [llm]
 status: enriched
+chart: claw
+region: claw
 ---
 
 ## Definition

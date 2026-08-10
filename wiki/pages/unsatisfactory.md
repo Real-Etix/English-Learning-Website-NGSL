@@ -6,6 +6,8 @@ pos: adjective
 forms: [unsatisfactory]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition

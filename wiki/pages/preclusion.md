@@ -6,6 +6,8 @@ pos: noun
 forms: [preclusion]
 sources: [llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition

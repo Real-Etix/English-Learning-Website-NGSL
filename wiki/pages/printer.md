@@ -9,6 +9,8 @@ rank: 2664
 sfi: 53.38
 sources: [wordnet, llm]
 status: enriched
+chart: printer
+region: printer
 ---
 
 ## Definition

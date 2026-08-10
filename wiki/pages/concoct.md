@@ -6,6 +6,8 @@ pos: verb
 forms: [concoct]
 sources: [llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[cook]] — Use 'concoct' when the cooking involves creative mixing or inventing a dish, often with whatever is available, rather than following a specific recipe.
 - builds_on: [[evolve]] — Use 'concoct' instead of 'evolve' when the result is slightly contrived or involves mixing elements, often for a specific purpose.
 - builds_on: [[coin]] — Use 'concoct' when emphasizing clever or playful invention, often of a story or plan.
+- synonym: [[contrive]]

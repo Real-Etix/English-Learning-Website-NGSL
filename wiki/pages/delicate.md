@@ -9,6 +9,8 @@ rank: 902
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ exquisitely fine and subtle and pleasing
 - builds_on: [[fragile]] — Use 'delicate' for items that are fine, intricate, or easily damaged by rough treatment.
 - builds_on: [[sensitive]] — Use 'delicate' when something is easily hurt or irritated, implying fragility.
 - builds_on: [[gentle]] — Use 'delicate' instead of 'gentle' when focusing on careful handling to avoid damage.
+- synonym: [[brittle]]
+- collocation: [[equipoise]]
+- collocation: [[exquisiteness]]
+- collocation: [[palate]]
+- collocation: [[parasol]]

@@ -9,6 +9,8 @@ rank: 28
 sfi: 60.96
 sources: [wordnet, llm]
 status: enriched
+chart: intake
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - advanced_form: [[intake]] — Use 'intake' when referring to measured or quantified eating, as in dietary intake, rather than the act itself.
 - builds_on: [[intake]] — Use 'consumption' to refer generally to eating or drinking, especially when quantifying or focusing on the act of taking in food or drink.
 - builds_on: [[ingestion]] — Use 'consumption' over 'ingestion' when emphasizing the act of taking in food or drink in a general sense, often in health or dietary contexts.
+- collocation: [[conspicuous]]
+- collocation: [[externality]]

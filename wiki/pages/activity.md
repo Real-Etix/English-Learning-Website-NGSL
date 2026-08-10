@@ -9,6 +9,8 @@ rank: 432
 sfi: 63.68
 sources: [wordnet, llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,14 @@ any specific behavior
 - advanced_form: [[endeavor]] — Use 'endeavor' for a serious, purposeful, or difficult activity that requires effort.
 - advanced_form: [[pursuit]] — Use 'pursuit' for an activity done regularly as a hobby or interest.
 - advanced_form: [[undertaking]] — Use 'undertaking' for a large, complex, or formal activity that involves responsibility.
+- collocation: [[anthropic]]
+- collocation: [[avocational]]
+- collocation: [[biocatalyst]]
+- collocation: [[clandestine]]
+- collocation: [[eruptive]]
+- collocation: [[flurry]]
+- collocation: [[illegal]]
+- collocation: [[neuronal]]
+- collocation: [[pleasurable]]
+- collocation: [[potentiated]]
+- synonym: [[conditioner]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [scoundrel]
 sources: [llm]
 status: enriched
+chart: stock
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bum]] — Use 'scoundrel' instead of 'bum' when describing someone who is morally bad or dishonest, often in a slightly old-fashioned or dramatic way.
+- synonym: [[reprobate]]

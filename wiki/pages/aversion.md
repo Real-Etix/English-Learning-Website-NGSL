@@ -9,6 +9,8 @@ rank: 908
 sfi: 51.63
 sources: [wordnet, llm]
 status: enriched
+chart: regulatory
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[antipathy]] — Use 'antipathy' for a deep-seated, often instinctive dislike, stronger and more formal than 'aversion', which can be less persistent.
 - advanced_form: [[repugnance]] — Use 'repugnance' for a visceral, physical revulsion, more intense than 'aversion', which is a general feeling of dislike.
 - builds_on: [[reluctance]] — Use 'aversion' for a strong, deep-seated dislike, stronger than 'reluctance'.
+- synonym: [[disinclination]]
+- synonym: [[intolerance]]

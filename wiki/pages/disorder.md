@@ -9,6 +9,8 @@ rank: 2165
 sfi: 55.03
 sources: [wordnet, llm]
 status: enriched
+chart: health
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,14 @@ a physical condition in which there is a disturbance of normal functioning
 - advanced_form: [[malady]] — Use 'malady' for a more formal or literary tone, often implying a chronic or mysterious illness.
 - advanced_form: [[affliction]] — Use 'affliction' to emphasize the suffering or burden caused by the disorder, often in a serious or empathetic context.
 - advanced_form: [[pathology]] — Use 'pathology' specifically in medical or scientific contexts to refer to the structural and functional changes caused by a disorder.
+- collocation: [[bipolar]]
+- collocation: [[congenital]]
+- synonym: [[dislocate]]
+- collocation: [[factitious]]
+- collocation: [[hereditary]]
+- synonym: [[mayhem]]
+- collocation: [[neurological]]
+- collocation: [[psychiatric]]
+- synonym: [[syndrome]]
+- synonym: [[disruption]]
+- synonym: [[randomize]]

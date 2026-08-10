@@ -9,6 +9,8 @@ rank: 1175
 sfi: 58.74
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ the point or degree to which something extends
 - builds_on: [[length]] — Use 'extent' to emphasize the full range or magnitude, especially in formal or technical contexts.
 - builds_on: [[dimension]] — Use 'extent' when emphasizing the scope or range of a measurement, often in formal or technical contexts.
 - builds_on: [[quantity]] — Use 'extent' when referring to the range, scope, or degree of something, rather than a simple count or measure, to emphasize the breadth or limit of the quantity.
+- synonym: [[deepness]]
+- synonym: [[dimensions]]

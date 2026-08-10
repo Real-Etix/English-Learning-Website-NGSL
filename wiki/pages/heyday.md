@@ -6,6 +6,8 @@ pos: noun
 forms: [heyday]
 sources: [llm]
 status: enriched
+chart: substantial
+region: you
 ---
 
 ## Definition

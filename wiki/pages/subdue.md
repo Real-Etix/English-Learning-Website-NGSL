@@ -6,6 +6,8 @@ pos: verb
 forms: [subdue]
 sources: [llm]
 status: enriched
+chart: dull
+region: you
 ---
 
 ## Definition

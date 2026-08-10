@@ -9,6 +9,8 @@ rank: 1399
 sfi: 50.96
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[strip]] — Use when taking away something forcefully or completely.
 - advanced_form: [[dispossess]] — Use when legally or forcibly removing someone from property.
 - builds_on: [[strip]] — Use 'deprive' when focusing on denying someone something they had or should have, often by legal or authoritative action.
+- synonym: [[denude]]

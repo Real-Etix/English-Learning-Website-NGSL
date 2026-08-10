@@ -9,6 +9,8 @@ rank: 255
 sfi: 56.44
 sources: [wordnet, llm]
 status: enriched
+chart: insulin
+region: insulin
 ---
 
 ## Definition

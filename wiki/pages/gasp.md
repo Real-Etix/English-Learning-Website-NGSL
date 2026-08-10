@@ -6,6 +6,8 @@ pos: verb
 forms: [gasp]
 sources: [llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[choke]] — Use 'gasp' when the difficulty involves a sudden, sharp intake of breath, often due to surprise or emotion.
+- synonym: [[pant]]
+- synonym: [[wheeze]]
+- synonym: [[puff]]
+- collocation: [[out]]
+- collocation: [[incredulous]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [aspiration]
 sources: [llm]
 status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[inhalation]] — Use 'aspiration' when emphasizing the unintentional drawing of material into the respiratory tract, common in medical or safety contexts.
 - builds_on: [[desire]] — Use aspiration for a long-term, ambitious, or noble desire, often involving goals or career, while desire is broader and can be immediate.
 - builds_on: [[intention]] — Use 'aspiration' for a long-term, high-reaching goal that involves ambition, rather than a simple intention.
+- synonym: [[exsufflation]]

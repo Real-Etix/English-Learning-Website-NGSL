@@ -9,6 +9,8 @@ rank: 89
 sfi: 61.65
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: sole
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ the underside of footwear or a golf club
 - advanced_form: [[outsole]] — Use 'outsole' instead of 'sole' when referring specifically to the bottom layer of a shoe, often made of durable material, as in 'The outsole of these hiking boots has deep traction.'
 - advanced_form: [[tread]] — Use 'tread' instead of 'sole' when emphasizing the gripping design or pattern, as in 'The tread on my running shoes is worn out.'
 - builds_on: [[exclusive]] — Use 'sole' when emphasizing that only one person or entity has something, no others.
+- collocation: [[creator]]
+- collocation: [[heir]]
+- collocation: [[inheritor]]
+- collocation: [[occupier]]
+- collocation: [[watchkeeper]]
+- collocation: [[supplier]]

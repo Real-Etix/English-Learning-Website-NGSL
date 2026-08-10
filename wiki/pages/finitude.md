@@ -6,6 +6,8 @@ pos: noun
 forms: [finitude]
 sources: [llm]
 status: enriched
+chart: mortality
+region: mortality
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mortality]] — Use finitude to emphasize the limited nature of existence, often in philosophical or poetic contexts.
+- synonym: [[transience]]
+- collocation: [[human]]
+- collocation: [[existential]]
+- collocation: [[awareness]]
+- collocation: [[life]]
+- collocation: [[consciousness]]

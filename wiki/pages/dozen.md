@@ -9,6 +9,8 @@ rank: 1765
 sfi: 56.32
 sources: [wordnet, llm]
 status: enriched
+chart: dozen
+region: dozen
 ---
 
 ## Definition

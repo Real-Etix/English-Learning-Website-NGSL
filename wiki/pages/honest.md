@@ -9,6 +9,8 @@ rank: 2035
 sfi: 55.46
 sources: [wordnet, llm]
 status: enriched
+chart: disadvantage
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ not disposed to cheat or defraud
 - advanced_form: [[upright]] — Use 'upright' to emphasize strong moral principles and integrity, rather than just not cheating.
 - advanced_form: [[scrupulous]] — Use 'scrupulous' when someone is very careful to avoid doing anything dishonest or unethical.
 - advanced_form: [[forthright]] — Use 'forthright' to stress directness and openness, especially in speech or action.
+- collocation: [[intellectually]]
+- collocation: [[rawness]]
+- synonym: [[veracious]]

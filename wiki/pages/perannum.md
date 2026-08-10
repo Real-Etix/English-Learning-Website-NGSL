@@ -6,6 +6,8 @@ pos: adverb
 forms: [perannum]
 sources: [llm]
 status: enriched
+chart: short
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[annually]] — Use 'per annum' in formal, especially financial or legal contexts to mean 'for each year'.
+- synonym: [[yearly]]
+- collocation: [[rate]]
+- collocation: [[interest]]
+- collocation: [[salary]]
+- collocation: [[income]]
+- collocation: [[growth]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [assimilate]
 sources: [llm]
 status: enriched
+chart: encompass
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 - builds_on: [[digest]] — Use 'assimilate' to emphasize the incorporation of nutrients into body tissues, not just the breakdown.
 - builds_on: [[absorb]] — Use 'assimilate' when something is absorbed and fully integrated into a larger whole.
 - builds_on: [[incorporate]] — Use 'assimilate' when something is absorbed and becomes part of a larger whole, especially in social, cultural, or biological contexts.
+- synonym: [[imbibe]]
+- synonym: [[metabolize]]
+- builds_on: [[memorize]] — Use when information is absorbed and combined with existing knowledge.
+- synonym: [[internalize]]

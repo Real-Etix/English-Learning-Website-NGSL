@@ -6,6 +6,8 @@ pos: noun
 forms: [juvenile]
 sources: [llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - builds_on: [[fry]] — Use 'juvenile' as a formal term for young fish not yet mature; it is broader and used in scientific contexts.
 - builds_on: [[youth]] — Use 'juvenile' instead of 'youth' in formal or legal contexts, especially for young people involved in legal or institutional settings.
 - builds_on: [[teenager]] — Use 'juvenile' in legal, administrative, or clinical contexts, often implying immaturity or a minor status.
+- collocation: [[delinquency]]
+- synonym: [[fingerling]]
+- synonym: [[pubescent]]
+- collocation: [[reformatory]]

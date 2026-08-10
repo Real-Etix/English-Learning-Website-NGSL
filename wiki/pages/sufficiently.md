@@ -9,6 +9,8 @@ rank: 194
 sfi: 57.734
 sources: [wordnet, llm]
 status: enriched
+chart: properly
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ to a sufficient degree
 - advanced_form: [[amply]] — Use 'amply' when you mean more than just enough, often implying abundance or generosity, whereas 'sufficiently' is neutral.
 - advanced_form: [[adequately]] — Use 'adequately' when focusing on meeting minimal requirements or standards, while 'sufficiently' is more general about enough quantity or degree.
 - advanced_form: [[satisfactorily]] — Use 'satisfactorily' when emphasizing that the result meets expectations or criteria, whereas 'sufficiently' is about having enough to meet a need.
+- builds_on: [[adequately]] — Use when focusing on meeting a minimum requirement or enough quantity.

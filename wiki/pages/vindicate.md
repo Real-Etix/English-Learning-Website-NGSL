@@ -6,6 +6,8 @@ pos: verb
 forms: [vindicate]
 sources: [llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition

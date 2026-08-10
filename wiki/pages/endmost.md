@@ -6,6 +6,8 @@ pos: adjective
 forms: [endmost]
 sources: [llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[terminal]] — Use 'endmost' to emphasize the literal farthest point of a route, more spatially precise than 'terminal', which often refers to a station or facility.
+- synonym: [[last]]
+- collocation: [[point]]
+- collocation: [[station]]
+- collocation: [[seat]]
+- collocation: [[car]]
+- collocation: [[row]]

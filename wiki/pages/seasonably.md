@@ -6,6 +6,8 @@ pos: adverb
 forms: [seasonably]
 sources: [llm]
 status: enriched
+chart: properly
+region: you
 ---
 
 ## Definition

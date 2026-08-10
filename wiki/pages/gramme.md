@@ -6,6 +6,8 @@ pos: noun
 forms: [gramme]
 sources: [llm]
 status: enriched
+chart: gram
+region: gram
 ---
 
 ## Definition

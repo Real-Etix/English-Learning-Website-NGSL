@@ -6,6 +6,8 @@ pos: noun
 forms: [complaisance]
 sources: [llm]
 status: enriched
+chart: willingness
+region: willingness
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[willingness]] — Use complaisance to imply a disposition to please and oblige, formal synonym for willingness to comply.
+- collocation: [[gentle]]
+- collocation: [[easy]]
+- collocation: [[ready]]
+- collocation: [[habitual]]

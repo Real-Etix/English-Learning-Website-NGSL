@@ -6,6 +6,8 @@ pos: adjective
 forms: [unrestricted]
 sources: [llm]
 status: enriched
+chart: close
+region: you
 ---
 
 ## Definition

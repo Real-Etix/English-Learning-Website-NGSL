@@ -9,6 +9,8 @@ rank: 255
 sfi: 65.83
 sources: []
 status: seeded
+chart: interim
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[cream]]
+- collocation: [[daybreak]]
+- collocation: [[innocent]]
+- collocation: [[iterate]]
+- collocation: [[deadofnight]]

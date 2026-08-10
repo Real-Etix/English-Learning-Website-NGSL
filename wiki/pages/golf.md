@@ -9,6 +9,8 @@ rank: 2478
 sfi: 54.04
 sources: [wordnet, llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[links]] — Use 'links' for a coastal golf course or as a formal term for the game in British English.
 - advanced_form: [[course]] — Use 'course' as a concise way to refer to the golf course and by extension the game.
+- collocation: [[duffer]]
+- collocation: [[hacker]]

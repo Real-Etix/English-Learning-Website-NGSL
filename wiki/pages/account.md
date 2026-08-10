@@ -9,6 +9,8 @@ rank: 436
 sfi: 63.63
 sources: [wordnet, llm]
 status: enriched
+chart: account
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,13 @@ a record or narrative description of past events
 - advanced_form: [[narrative]] — Use 'narrative' for a structured story or account that emphasizes perspective and sequence.
 - builds_on: [[invoice]] — Use 'account' when referring to the record of money owed as a whole, rather than the specific itemized document.
 - builds_on: [[tale]] — Use 'account' when focusing on a report or description of facts, not a fictional or exaggerated tale.
+- collocation: [[deactivated]]
+- collocation: [[email]]
+- collocation: [[fictitious]]
+- collocation: [[harrowing]]
+- synonym: [[memoir]]
+- collocation: [[privileged]]
+- collocation: [[veracious]]
+- synonym: [[behalf]]
+- builds_on: [[narrative]] — Use for an orderly, factual report of events.
+- collocation: [[deletion]]

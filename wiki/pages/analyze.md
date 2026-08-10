@@ -9,6 +9,8 @@ rank: 1641
 sfi: 56.83
 sources: [wordnet, llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ consider in detail and subject to an analysis in order to discover essential fea
 - advanced_form: [[scrutinize]] — Use when examining very closely, often with suspicion or to find flaws, more intense than analyze.
 - advanced_form: [[dissect]] — Use when breaking something down into parts for detailed analysis, often for intellectual or creative works.
 - advanced_form: [[appraise]] — Use when assessing quality, value, or significance, often in professional or evaluative contexts.
+- collocation: [[comprehensively]]

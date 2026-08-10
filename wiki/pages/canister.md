@@ -6,6 +6,8 @@ pos: noun
 forms: [canister]
 sources: [llm]
 status: enriched
+chart: basin
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[can]] — Use 'canister' for larger, often recloseable metal containers (e.g., for storage or fuel) rather than single-use food/drink cans.
 - builds_on: [[bin]] — Refers to a container with a lid, often for dry goods; more specific than bin.
+- synonym: [[cylinder]]

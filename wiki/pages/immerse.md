@@ -6,6 +6,8 @@ pos: verb
 forms: [immerse]
 sources: [llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition

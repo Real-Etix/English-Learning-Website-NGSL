@@ -9,6 +9,8 @@ rank: 1266
 sfi: 58.35
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ put into a proper or systematic order
 - advanced_form: [[marshal]] — Use 'marshal' when arranging people or things in a deliberate, orderly way, often with authority.
 - advanced_form: [[systematize]] — Use 'systematize' when arranging according to a clear system or method, especially for processes or data.
 - advanced_form: [[array]] — Use 'array' when arranging items in a visible, often attractive order, like for display.
+- synonym: [[format]]
+- synonym: [[neaten]]
+- synonym: [[paragraph]]
+- synonym: [[prearrange]]

@@ -9,6 +9,8 @@ rank: 742
 sfi: 52.76
 sources: [wordnet, llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[execution]] — Use this euphemistic term in political or espionage contexts, often implying covert or summary execution.
 - advanced_form: [[dissolution]] — Use 'dissolution' instead of 'liquidation' when emphasizing the legal ending of a business entity rather than the process of selling assets.
 - advanced_form: [[realization]] — Use 'realization' instead of 'liquidation' when focusing on converting assets into cash, especially in formal financial contexts.
+- synonym: [[insolvent]]

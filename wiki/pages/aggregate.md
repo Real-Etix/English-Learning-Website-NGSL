@@ -9,6 +9,8 @@ rank: 42
 sfi: 59.8
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition
@@ -40,3 +42,5 @@ the whole amount
 - builds_on: [[macroeconomic]] — Use 'aggregate' when referring to the total or combined effect across the entire economy, similar to 'macroeconomic' but often used before nouns like 'demand' or 'supply'.
 - builds_on: [[compile]] — Use 'aggregate' when collecting data or pieces into a whole, especially in formal or technical contexts, rather than simply 'compile'.
 - builds_on: [[cluster]] — Use 'aggregate' when combining many individual items into a collective whole, especially for data, particles, or abstract concepts; 'cluster' implies a loose grouping without strong cohesion.
+- synonym: [[agglomerate]]
+- synonym: [[compounded]]

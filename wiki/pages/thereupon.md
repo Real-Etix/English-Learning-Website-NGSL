@@ -6,6 +6,8 @@ pos: adverb
 forms: [thereupon]
 sources: [llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition

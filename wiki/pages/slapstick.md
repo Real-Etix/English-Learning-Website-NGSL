@@ -6,6 +6,8 @@ pos: noun
 forms: [slapstick]
 sources: [llm]
 status: enriched
+chart: comedy
+region: comedy
 ---
 
 ## Definition

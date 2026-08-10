@@ -9,6 +9,8 @@ rank: 355
 sfi: 64.46
 sources: [wordnet, llm]
 status: enriched
+chart: effect
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ react verbally
 - synonym: [[respond]]
 - advanced_form: [[respond]] — Use 'respond' in formal contexts or writing instead of 'answer'.
 - advanced_form: [[retort]] — Use 'retort' for a quick, often angry or witty reply.
+- collocation: [[facile]]
+- collocation: [[forthright]]
+- collocation: [[obvious]]
+- collocation: [[politic]]
+- synonym: [[react]]
+- collocation: [[riddle]]
+- collocation: [[definite]]
+- collocation: [[questionnaire]]
+- synonym: [[rejoinder]]
+- synonym: [[riposte]]

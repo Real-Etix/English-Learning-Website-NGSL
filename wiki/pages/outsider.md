@@ -9,6 +9,8 @@ rank: 348
 sfi: 54.39
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: foreigner
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ someone who is excluded from or is not a member of a group
 - collocation: [[prefer]]
 - advanced_form: [[pariah]] — Emphasizes being rejected or shunned by others, often with a sense of disgrace; use when the outsider is actively excluded.
 - advanced_form: [[interloper]] — Implies the person intrudes where not welcome, often disrupting a closed group; use when the outsider is perceived as meddling.
+- synonym: [[alien]]
+- builds_on: [[stranger]] — Use 'outsider' to emphasize someone excluded from a group or community.
+- synonym: [[foreignnational]]

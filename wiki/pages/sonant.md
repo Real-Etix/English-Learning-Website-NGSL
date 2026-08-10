@@ -6,6 +6,8 @@ pos: noun
 forms: [sonant]
 sources: [llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition

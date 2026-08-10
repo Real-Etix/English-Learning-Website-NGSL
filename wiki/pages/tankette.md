@@ -6,6 +6,8 @@ pos: noun
 forms: [tankette]
 sources: [llm]
 status: enriched
+chart: tank
+region: tank
 ---
 
 ## Definition

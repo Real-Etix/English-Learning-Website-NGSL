@@ -6,6 +6,8 @@ pos: noun
 forms: [cultivator]
 sources: [llm]
 status: enriched
+chart: farmer
+region: farmer
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[farmer]] — Use for someone who prepares and tends land for crops.
+- synonym: [[agriculturist]]
+- collocation: [[soil]]
+- collocation: [[garden]]
+- collocation: [[mechanical]]
+- collocation: [[hand]]
+- synonym: [[horticulturist]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [ore]
 sources: [llm]
 status: enriched
+chart: leaf
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[metal]] — Use 'ore' instead of 'metal' when focusing on the raw, unrefined mineral from which metal is extracted, common in geology or mining.
+- collocation: [[concentrate]]
+- synonym: [[mineral]]
+- synonym: [[rock]]
+- synonym: [[deposit]]
+- collocation: [[iron]]
+- collocation: [[copper]]
+- collocation: [[gold]]
+- collocation: [[deposit]]

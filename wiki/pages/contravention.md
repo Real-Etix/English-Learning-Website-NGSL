@@ -6,6 +6,8 @@ pos: noun
 forms: [contravention]
 sources: [llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[violation]] — Use 'contravention' in formal or legal writing for deliberate acts of breaking a rule or law, emphasizing conflict with authority.
+- synonym: [[breach]]
+- synonym: [[infringement]]
+- synonym: [[transgression]]

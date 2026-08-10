@@ -9,6 +9,8 @@ rank: 130
 sfi: 59.82
 sources: [wordnet, llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[nourishment]] — Use for a more holistic or natural sense of what sustains life, often in biological or metaphorical contexts.
 - advanced_form: [[sustenance]] — Emphasizes the minimal or essential means of staying alive, often in harsh conditions.
 - advanced_form: [[nutriment]] — More technical or formal term, often used in scientific or medical writing.
+- synonym: [[micronutrient]]

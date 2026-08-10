@@ -9,6 +9,8 @@ rank: 1944
 sfi: 55.73
 sources: [wordnet, llm]
 status: enriched
+chart: indirectly
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ on or to one side
 - advanced_form: [[laterally]] — Use 'laterally' for precise, technical, or formal descriptions of sideways movement.
 - advanced_form: [[sideward]] — Use 'sideward' as a more formal alternative to 'aside' when describing direction.
 - advanced_form: [[obliquely]] — Use 'obliquely' when movement is at an angle rather than directly to the side.
+- collocation: [[jostle]]
+- synonym: [[parenthetical]]
+- collocation: [[parenthetical]]

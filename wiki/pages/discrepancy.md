@@ -9,6 +9,8 @@ rank: 970
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ _No sourced examples yet._
 - advanced_form: [[disparity]] — Use 'disparity' for significant, often unfair differences, stronger than 'discrepancy'.
 - builds_on: [[contrast]] — Use 'discrepancy' when highlighting an unexpected or problematic difference, especially in facts or accounts.
 - builds_on: [[variation]] — Use 'discrepancy' to highlight an unexpected difference or inconsistency, especially between things that should agree.
+- synonym: [[gap]]
+- synonym: [[irregularity]]
+- builds_on: [[gap]] — Use when pointing out an inconsistency or mismatch between numbers or facts.

@@ -6,6 +6,8 @@ pos: noun
 forms: [slog]
 sources: [llm]
 status: enriched
+chart: trouble
+region: you
 ---
 
 ## Definition

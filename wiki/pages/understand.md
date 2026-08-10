@@ -9,6 +9,8 @@ rank: 243
 sfi: 66.05
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ know and comprehend the nature or meaning of
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[comprehend]] — When you want to emphasize understanding something complex or abstract
 - advanced_form: [[grasp]] — When you want to convey a sudden or effortful understanding
+- synonym: [[construe]]
+- collocation: [[why]]

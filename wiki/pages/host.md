@@ -9,6 +9,8 @@ rank: 1327
 sfi: 58.15
 sources: [wordnet, llm]
 status: enriched
+chart: chair
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[convener]] — Use 'convener' for a more formal tone, especially when the host's role is to call people together for a specific purpose or meeting.
 - advanced_form: [[entertainer]] — Use 'entertainer' when focusing on the host's active engagement in amusing and delighting the guests, rather than just being responsible for them.
+- synonym: [[emcee]]
+- collocation: [[jovial]]
+- synonym: [[mainframe]]
+- collocation: [[municipality]]
+- synonym: [[throng]]

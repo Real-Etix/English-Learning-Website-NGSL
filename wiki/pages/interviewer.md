@@ -9,6 +9,8 @@ rank: 780
 sfi: 50.812
 sources: [wordnet, llm]
 status: enriched
+chart: interviewer
+region: interviewer
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [squad]
 sources: [llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition

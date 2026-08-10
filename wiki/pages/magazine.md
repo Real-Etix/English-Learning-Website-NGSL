@@ -9,6 +9,8 @@ rank: 985
 sfi: 59.69
 sources: [wordnet, llm]
 status: enriched
+chart: periodical
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ a periodic publication containing pictures and stories and articles of interest 
 - advanced_form: [[periodical]] — Use 'periodical' for any regularly published magazine, especially in a formal or academic context.
 - advanced_form: [[journal]] — Use 'journal' for scholarly or professional magazines that focus on research or specific fields.
 - builds_on: [[clip]] — Use 'magazine' when referring to a container that feeds cartridges into a firearm, as it is more precise than 'clip', which actually refers to a device that holds cartridges for loading into a magazine.
+- synonym: [[charger]]
+- collocation: [[charger]]
+- collocation: [[glossy]]
+- collocation: [[artwork]]
+- collocation: [[masthead]]

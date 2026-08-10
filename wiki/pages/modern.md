@@ -9,6 +9,8 @@ rank: 808
 sfi: 60.7
 sources: [wordnet, llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,18 @@ belonging to the modern era
 - advanced_form: [[progressive]] — Use 'progressive' instead of 'modern' when emphasizing forward-thinking, reform, or innovation.
 - advanced_form: [[modernistic]] — Use 'modernistic' instead of 'modern' when describing something that deliberately adopts modern styles, often in a bold or exaggerated manner.
 - builds_on: [[neo]] — Use 'modern' to describe something of the present time or recent style, while 'neo' is a combining form for 'new'.
+- collocation: [[contemporaries]]
+- collocation: [[distinctively]]
+- collocation: [[era]]
+- collocation: [[glottology]]
+- collocation: [[marvel]]
+- collocation: [[metropolis]]
+- collocation: [[parlance]]
+- collocation: [[philology]]
+- collocation: [[plutocracy]]
+- collocation: [[renaissance]]
+- collocation: [[voyager]]
+- collocation: [[warfare]]
+- collocation: [[weaponry]]
+- collocation: [[idiom]]
+- collocation: [[typography]]

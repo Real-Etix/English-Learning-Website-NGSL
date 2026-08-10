@@ -9,6 +9,8 @@ rank: 2096
 sfi: 55.23
 sources: [wordnet, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[manifestation]] — Use 'manifestation' when emphasizing that something is a visible or tangible example of a concept or force.
 - advanced_form: [[marvel]] — Use 'marvel' when the phenomenon inspires awe or wonder, often implying something remarkable.
 - advanced_form: [[spectacle]] — Use 'spectacle' for a visually impressive or dramatic phenomenon.
+- collocation: [[doppelgnger]]
+- collocation: [[worldwide]]

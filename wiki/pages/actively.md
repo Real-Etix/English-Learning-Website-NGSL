@@ -9,6 +9,8 @@ rank: 349
 sfi: 55.03
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: energetically
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ in an active manner
 - advanced_form: [[vigorously]] — Use when emphasizing physical or mental energy and forcefulness.
 - advanced_form: [[diligently]] — Use when highlighting careful, persistent effort and attention to detail.
 - advanced_form: [[proactively]] — Use when stressing taking initiative to prevent problems rather than reacting.
+- synonym: [[dynamically]]

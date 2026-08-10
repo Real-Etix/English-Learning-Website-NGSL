@@ -9,6 +9,8 @@ rank: 1234
 sfi: 49.08
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: cleanliness
+region: cleanliness
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ the habit of keeping free of superficial imperfections
 - advanced_form: [[tidiness]] — Use 'tidiness' when emphasizing order and neatness rather than just absence of dirt.
 - advanced_form: [[spotlessness]] — Use 'spotlessness' to stress that something is completely free of stains or marks.
 - advanced_form: [[immaculateness]] — Use 'immaculateness' for a formal, almost perfect lack of any flaw or blemish.
+- synonym: [[asepsis]]

@@ -9,6 +9,8 @@ rank: 605
 sfi: 53.723
 sources: [wordnet, llm]
 status: enriched
+chart: profound
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ showing intellectual penetration or emotional depth
 - builds_on: [[deep]] — Use 'profound' when the depth is intellectual or emotional, more formal than 'deep'.
 - builds_on: [[terrific]] — Use 'profound' instead of 'terrific' to stress a deep, intense effect or significance, often emotional or intellectual.
 - builds_on: [[intense]] — Use 'profound' for deep, intense feelings or effects that are not necessarily sudden but have great depth.
+- synonym: [[existential]]
+- collocation: [[myorelaxation]]

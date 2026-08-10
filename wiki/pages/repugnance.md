@@ -6,6 +6,8 @@ pos: noun
 forms: [repugnance]
 sources: [llm]
 status: enriched
+chart: regulatory
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[aversion]] — Use 'repugnance' for a visceral, physical revulsion, more intense than 'aversion', which is a general feeling of dislike.
+- synonym: [[disgust]]
+- collocation: [[deep]]
+- collocation: [[utter]]
+- collocation: [[feel]]
+- collocation: [[visceral]]
+- collocation: [[moral]]

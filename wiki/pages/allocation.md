@@ -9,6 +9,8 @@ rank: 51
 sfi: 59.23
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ a share set aside for a specific purpose
 - advanced_form: [[appropriation]] — Use 'appropriation' in formal or governmental/financial settings to refer to funds or resources officially assigned for a stated objective.
 - builds_on: [[tranche]] — Use 'allocation' instead of 'tranche' when highlighting the act of distributing or earmarking funds or assets, often with a sense of deliberate assignment.
 - builds_on: [[sum]] — Use for a sum of money assigned for a specific purpose.
+- collocation: [[budgetary]]
+- synonym: [[quota]]
+- builds_on: [[allowance]] — Use when referring to a portion of resources formally set aside for a specific purpose.
+- builds_on: [[quota]] — Use when emphasizing the act of distributing or setting aside a portion for a specific purpose.

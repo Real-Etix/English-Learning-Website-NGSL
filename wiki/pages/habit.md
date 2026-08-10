@@ -9,6 +9,8 @@ rank: 1828
 sfi: 56.08
 sources: [wordnet, llm]
 status: enriched
+chart: convention
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ an established custom
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[convention]] — Use 'convention' instead of 'habit' for social or widely accepted customs, not for personal routines.
 - advanced_form: [[ritual]] — Use 'ritual' when the habit is performed in a set order or has personal significance, often with a ceremonial feel.
+- collocation: [[endearing]]
+- collocation: [[ingrain]]

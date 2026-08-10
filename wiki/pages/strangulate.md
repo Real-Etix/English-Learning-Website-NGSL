@@ -6,6 +6,8 @@ pos: verb
 forms: [strangulate]
 sources: [llm]
 status: enriched
+chart: scarf
+region: scarf
 ---
 
 ## Definition

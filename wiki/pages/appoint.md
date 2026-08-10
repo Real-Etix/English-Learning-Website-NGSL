@@ -9,6 +9,8 @@ rank: 1788
 sfi: 56.23
 sources: [wordnet, llm]
 status: enriched
+chart: designate
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ _No sourced examples yet._
 - advanced_form: [[commission]] — Use 'commission' when the task or function involves a specific assignment, often with authority or special responsibility.
 - advanced_form: [[assign]] — Use 'assign' when distributing tasks or duties, typically in a work or educational setting.
 - builds_on: [[assign]] — Use 'appoint' when you formally assign someone to a position or role, often in an official or organizational context.
+- collocation: [[deputation]]
+- synonym: [[depute]]
+- synonym: [[instate]]

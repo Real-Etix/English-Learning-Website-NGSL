@@ -9,6 +9,8 @@ rank: 654
 sfi: 61.67
 sources: [wordnet, llm]
 status: enriched
+chart: summer
+region: summer
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ the warmest season of the year
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[summertime]] — Use 'summertime' instead of 'summer' for a slightly more poetic or nostalgic tone, e.g., 'In the summertime, we would go to the beach every weekend.'
 - advanced_form: [[midsummer]] — Use 'midsummer' to refer specifically to the height of summer, often associated with longest days, e.g., 'Midsummer is ideal for outdoor festivals.'
+- collocation: [[fete]]
+- collocation: [[haze]]
+- collocation: [[mugginess]]
+- collocation: [[wardrobe]]
+- collocation: [[austral]]

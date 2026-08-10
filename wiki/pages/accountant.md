@@ -9,6 +9,8 @@ rank: 22
 sfi: 61.57
 sources: [wordnet, llm]
 status: enriched
+chart: auditor
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[auditor]] — Use 'auditor' when focusing on the inspection and verification role, not routine bookkeeping.
 - advanced_form: [[comptroller]] — Use 'comptroller' for a high-level managerial position in large organizations, emphasizing oversight.
 - advanced_form: [[controller]] — Use 'controller' when referring to a senior accountant responsible for financial reporting and internal controls.
+- synonym: [[bookkeeper]]
+- synonym: [[bursar]]

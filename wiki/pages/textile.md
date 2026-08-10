@@ -9,6 +9,8 @@ rank: 805
 sfi: 52.67
 sources: [wordnet, llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[fabric]] — Use 'fabric' for general cloth in everyday speech; 'textile' is more technical and often used in industry or formal contexts.
 - advanced_form: [[cloth]] — Use 'cloth' for woven material, especially when referring to a specific piece or type; 'textile' is broader and can refer to the raw fibers or the manufacturing process.
 - advanced_form: [[material]] — Use 'material' as a general term for any fabric or substance used in making things; 'textile' is more specific to woven or knitted artifacts.
+- synonym: [[linen]]

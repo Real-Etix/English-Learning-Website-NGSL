@@ -9,6 +9,8 @@ rank: 1192
 sfi: 58.68
 sources: [wordnet, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - builds_on: [[type]] — Use 'category' when referring to a more formal or systematic group within a classification system, rather than a casual 'type'.
 - advanced_form: [[classification]] — Use 'classification' when emphasizing the systematic arrangement or taxonomy, not just any group.
 - advanced_form: [[genre]] — Use 'genre' specifically for artistic, literary, or media categories to sound more precise and refined.
+- synonym: [[grammaticalgender]]

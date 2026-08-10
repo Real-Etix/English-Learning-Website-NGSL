@@ -9,6 +9,8 @@ rank: 208
 sfi: 66.7
 sources: [wordnet, llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ a person you know well and regard with affection and trust
 - advanced_form: [[companion]] — Use 'companion' when emphasizing shared activities or journey, rather than emotional closeness.
 - advanced_form: [[confidant]] — Use 'confidant' to highlight trust and the sharing of private thoughts, implying a deeper level of intimacy.
 - advanced_form: [[ally]] — Use 'ally' when focusing on mutual support in a common cause or conflict, rather than personal friendship.
+- collocation: [[confide]]
+- collocation: [[faithful]]

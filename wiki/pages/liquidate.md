@@ -9,6 +9,8 @@ rank: 989
 sfi: 51.83
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[neutralize]] — Use 'neutralize' for a clinical, tactical context where the goal is to nullify a threat, often in espionage or military operations.
 - advanced_form: [[exterminate]] — Use 'exterminate' for systematic, large-scale killing of a group, implying total eradication.
 - builds_on: [[murder]] — Use liquidate as a formal or euphemistic term for murder, especially in contexts of organized crime or political repression, suggesting elimination.
+- synonym: [[amortize]]
+- builds_on: [[amortize]] — Use when paying off a debt in full, often from assets or funds, rather than gradually amortizing it.

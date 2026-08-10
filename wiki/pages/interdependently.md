@@ -6,6 +6,8 @@ pos: adverb
 forms: [interdependently]
 sources: [llm]
 status: enriched
+chart: sew
+region: you
 ---
 
 ## Definition

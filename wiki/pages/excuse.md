@@ -9,6 +9,8 @@ rank: 1915
 sfi: 55.8
 sources: [wordnet, llm]
 status: enriched
+chart: pardon
+region: pardon
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ accept an excuse for
 - synonym: [[pardon]]
 - advanced_form: [[pardon]] — Use 'pardon' for formal or legal contexts where a person in authority officially forgives or releases someone from penalty.
 - advanced_form: [[condone]] — Use 'condone' when someone accepts or overlooks a fault, often implying tacit approval, but it's more judgmental than 'excuse'.
+- collocation: [[feeble]]

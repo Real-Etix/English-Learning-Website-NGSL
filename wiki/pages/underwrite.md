@@ -9,6 +9,8 @@ rank: 581
 sfi: 53.67
 sources: [wordnet, llm]
 status: enriched
+chart: shop
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[subsidize]] — Use 'subsidize' when referring to financial support from an organization or government, often for a specific purpose; 'underwrite' is broader and often used in insurance or financial guarantees.
 - advanced_form: [[capitalize]] — Use 'capitalize' when emphasizing the provision of capital to start or fund a venture; 'underwrite' is more about guaranteeing or assuming risk.
 - builds_on: [[sponsor]] — Use 'underwrite' when emphasizing financial risk-taking or formal financial backing, often for large-scale ventures.
+- synonym: [[bankroll]]
+- builds_on: [[guarantee]] — Use when guaranteeing financial or risk aspects, like insurance or investments.

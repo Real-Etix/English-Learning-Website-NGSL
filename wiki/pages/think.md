@@ -9,6 +9,8 @@ rank: 47
 sfi: 73.86
 sources: [wordnet, llm]
 status: enriched
+chart: think
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ judge or regard
 - synonym: [[conceive]]
 - advanced_form: [[deem]] — Use 'deem' for a formal judgment or opinion, often after careful consideration.
 - advanced_form: [[opine]] — Use 'opine' to express a personal belief or opinion, especially in a formal or intellectual context.
+- collocation: [[concretely]]
+- collocation: [[meanly]]
+- collocation: [[optimistically]]
+- collocation: [[originally]]
+- collocation: [[unconventionally]]

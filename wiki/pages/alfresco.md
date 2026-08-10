@@ -6,6 +6,8 @@ pos: adjective
 forms: [alfresco]
 sources: [llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[outdoor]] — Use when describing elegant dining, social events, or activities enjoyed in the open air, emphasizing style or leisure over mere location.
+- synonym: [[outside]]
+- collocation: [[lunch]]
+- collocation: [[meal]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [tumbler]
 sources: [llm]
 status: enriched
+chart: cup
+region: cup
 ---
 
 ## Definition

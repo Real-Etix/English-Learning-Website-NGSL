@@ -6,6 +6,8 @@ pos: noun
 forms: [intercession]
 sources: [llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[intervention]] — Use 'intercession' when the intervention is done as a favor or plea for someone else, often in religious or formal contexts, not just general interference.
+- synonym: [[mediation]]
+- synonym: [[petition]]
+- synonym: [[interposition]]

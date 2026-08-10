@@ -7,8 +7,10 @@ forms: [subsequent]
 lists: [ngsl]
 rank: 2251
 sfi: 54.79
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: about
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ following in time or order
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - builds_on: [[next]] — Use when referring to something that follows directly or later in a sequence, more formal than 'next'.
 - builds_on: [[latter]] — Use this when you want to emphasize the order in time or sequence, whereas 'latter' specifically refers to the second of two mentioned items.
+- synonym: [[consequent]]
+- synonym: [[ensuing]]
+- collocation: [[restatement]]
+- advanced_form: [[ensuing]] — Use for something that follows immediately, often as a direct result
+- advanced_form: [[consequent]] — Use for outcomes that follow logically or as a direct effect
+- advanced_form: [[resultant]] — Use in formal or technical writing for something produced by a cause

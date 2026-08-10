@@ -9,6 +9,8 @@ rank: 831
 sfi: 51.42
 sources: [wordnet, llm]
 status: enriched
+chart: morale
+region: morale
 ---
 
 ## Definition

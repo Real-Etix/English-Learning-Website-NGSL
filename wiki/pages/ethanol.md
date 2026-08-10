@@ -9,6 +9,8 @@ rank: 1326
 sfi: 49.41
 sources: [wordnet, llm]
 status: enriched
+chart: extract
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[spirits]] — Use 'spirits' instead of 'ethanol' when referring to the drink itself in formal or classy contexts, rather than the chemical compound.
 - advanced_form: [[liquor]] — Use 'liquor' instead of 'ethanol' when talking about the beverage in casual or legal settings, focusing on consumption rather than chemistry.
+- collocation: [[miscible]]

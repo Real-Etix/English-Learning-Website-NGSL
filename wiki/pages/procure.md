@@ -6,6 +6,8 @@ pos: verb
 forms: [procure]
 sources: [llm]
 status: enriched
+chart: secure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[acquire]] — Use 'procure' instead of 'acquire' when emphasizing effort, skill, or formality in obtaining something that is difficult to get.
 - builds_on: [[secure]] — Use 'procure' when obtaining something requires deliberate effort or official steps; it is more formal than 'secure'.
 - builds_on: [[borrow]] — Use 'procure' when you need a formal word for obtaining something, often through effort or official channels, but not necessarily implying temporary use. 'Borrow' is simpler and implies returning.
+- builds_on: [[fundraise]] — Use when emphasizing the successful, effortful acquisition of funds.
+- builds_on: [[attain]] — Use in formal contexts for obtaining something through effort or careful action.

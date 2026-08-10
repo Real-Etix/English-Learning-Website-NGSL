@@ -9,6 +9,8 @@ rank: 1217
 sfi: 58.56
 sources: [wordnet, llm]
 status: enriched
+chart: soccer
+region: soccer
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[soccer]] — Use 'soccer' when you want to specify the version of football played mainly with the feet, especially in contexts where 'football' might be ambiguous (e.g., in the US).
 - advanced_form: [[rugby]] — Use 'rugby' when referring to a specific form of football where the ball is carried and passed backward, often contrasted with soccer.
 - advanced_form: [[gridiron]] — Use 'gridiron' as a more formal or stylistic synonym for American football, common in historical or literary contexts.
+- synonym: [[associationfootball]]
+- collocation: [[federation]]
+- collocation: [[jersey]]

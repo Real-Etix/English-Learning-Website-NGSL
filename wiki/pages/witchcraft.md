@@ -6,6 +6,8 @@ pos: noun
 forms: [witchcraft]
 sources: [llm]
 status: enriched
+chart: magic
+region: magic
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[magic]] — Use 'witchcraft' when referring to magic associated with witches, often implying a cultural or historical context.
+- synonym: [[sorcery]]
+- synonym: [[enchantment]]
+- synonym: [[wizardry]]
+- collocation: [[practicing]]
+- collocation: [[accused]]
+- collocation: [[trial]]
+- collocation: [[belief]]
+- collocation: [[charge]]

@@ -9,6 +9,8 @@ rank: 36
 sfi: 65.03
 sources: [wordnet, llm]
 status: enriched
+chart: lung
+region: lung
 ---
 
 ## Definition

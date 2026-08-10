@@ -6,6 +6,8 @@ pos: noun
 forms: [spurt]
 sources: [llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sprint]] — Use 'spurt' for a short, energetic acceleration, often in competition or when overcoming a last hurdle.
+- synonym: [[flurry]]
+- synonym: [[hemorrhage]]

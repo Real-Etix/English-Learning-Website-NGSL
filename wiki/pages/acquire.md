@@ -9,6 +9,8 @@ rank: 1464
 sfi: 57.54
 sources: [wordnet, llm]
 status: enriched
+chart: secure
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ _No sourced examples yet._
 - advanced_form: [[attain]] — Use 'attain' instead of 'acquire' when referring to achieving a goal, status, or abstract quality through sustained effort.
 - advanced_form: [[secure]] — Use 'secure' instead of 'acquire' when implying that the object is valuable or contested, and the acquisition is successful and certain.
 - builds_on: [[secure]] — Use 'acquire' when gaining something, often through purchase or effort; it is a versatile formal synonym for 'secure'.
+- synonym: [[inherit]]
+- synonym: [[subscribe]]
+- builds_on: [[attain]] — Use when focusing on gaining something lasting, like knowledge or assets, through deliberate effort.

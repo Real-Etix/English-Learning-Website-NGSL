@@ -9,6 +9,8 @@ rank: 1165
 sfi: 49.8
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: raincoat
+region: raincoat
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ a water-resistant coat
 - domain: toeic
 - advanced_form: [[mackintosh]] — Use 'mackintosh' for a more formal or vintage style of raincoat, often made of rubberized fabric.
 - advanced_form: [[slicker]] — Use 'slicker' for a lightweight, shiny raincoat, common in American English for casual or outdoor wear.
+- synonym: [[anorak]]

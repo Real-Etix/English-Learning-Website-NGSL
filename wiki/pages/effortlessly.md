@@ -6,6 +6,8 @@ pos: adverb
 forms: [effortlessly]
 sources: [llm]
 status: enriched
+chart: easy
+region: you
 ---
 
 ## Definition

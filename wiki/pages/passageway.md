@@ -6,6 +6,8 @@ pos: noun
 forms: [passageway]
 sources: [llm]
 status: enriched
+chart: lobby
+region: lobby
 ---
 
 ## Definition

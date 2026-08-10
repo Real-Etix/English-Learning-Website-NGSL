@@ -6,6 +6,8 @@ pos: adverb
 forms: [strategically]
 sources: [llm]
 status: enriched
+chart: politically
+region: politically
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [bosom]
 sources: [llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[heart]] — Use 'bosom' for a poetic or literary tone, especially when referring to a safe, intimate emotional center.
+- synonym: [[embrace]]
+- synonym: [[shelter]]

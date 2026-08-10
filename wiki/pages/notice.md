@@ -9,6 +9,8 @@ rank: 664
 sfi: 61.56
 sources: [wordnet, llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ an announcement containing information about an event
 - advanced_form: [[bulletin]] — Use 'bulletin' for a brief, official announcement, often posted on a board or issued regularly.
 - advanced_form: [[notification]] — Use 'notification' for a formal, often digital or written alert that informs someone of something.
 - advanced_form: [[advisory]] — Use 'advisory' for an official warning or cautionary announcement, especially about potential risks.
+- collocation: [[decease]]
+- collocation: [[disallowance]]
+- synonym: [[glimpse]]
+- collocation: [[revocation]]

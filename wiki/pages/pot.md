@@ -9,6 +9,8 @@ rank: 2550
 sfi: 53.8
 sources: [wordnet, llm]
 status: enriched
+chart: pot
+region: pot
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[saucepan]] — Use 'saucepan' for a metal pot with a handle and lid, typically used on a stove. It's more specific than 'pot' when referring to a smaller, handled cooking vessel.
 - advanced_form: [[crock]] — Use 'crock' for a pot made of clay or earthenware, often used in slow cooking or storage. It's a formal or specialized term compared to the generic 'pot'.
 - advanced_form: [[cauldron]] — Use 'cauldron' for a very large, deep pot, often with a handle, associated with old-fashioned or rustic cooking. It adds a dramatic or historical nuance versus a standard 'pot'.
+- collocation: [[earthenware]]
+- synonym: [[pan]]

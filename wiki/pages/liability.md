@@ -7,8 +7,10 @@ forms: [liability, liabilities]
 lists: [ngsl]
 rank: 2645
 sfi: 53.47
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,11 @@ _No sourced examples yet._
 - builds_on: [[debt]] — Use 'liability' when referring to a legal or financial responsibility, often in a formal or accounting context.
 - builds_on: [[obligation]] — Use 'liability' for a legal or financial obligation, often involving compensation or debt.
 - builds_on: [[burden]] — Use 'liability' when the burden is an unwanted responsibility that causes trouble or disadvantage.
+- synonym: [[answerability]]
+- synonym: [[detriment]]
+- collocation: [[occupier]]
+- collocation: [[waiver]]
+- builds_on: [[drawback]] — Use when something or someone is a burden that makes success less likely.
+- advanced_form: [[accountability]] — Use when emphasizing a duty to answer for results or actions, often in formal or organizational contexts.
+- advanced_form: [[culpability]] — Use when focusing on blame or fault for a wrongful act, especially in legal or moral judgments.
+- advanced_form: [[answerability]] — Use when stressing the obligation to explain or justify actions to an authority.

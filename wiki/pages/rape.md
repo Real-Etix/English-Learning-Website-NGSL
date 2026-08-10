@@ -9,6 +9,8 @@ rank: 1555
 sfi: 49.12
 sources: [wordnet, llm]
 status: enriched
+chart: rape
+region: rape
 ---
 
 ## Definition

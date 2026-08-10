@@ -9,6 +9,8 @@ rank: 365
 sfi: 56.275
 sources: [wordnet, llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ lacking stability or fixity or firmness
 - advanced_form: [[precarious]] — Use when the instability involves danger or risk of collapse, not just change.
 - advanced_form: [[volatile]] — Use for emotional, political, or chemical situations that change rapidly and unpredictably.
 - advanced_form: [[unsettled]] — Use for physical or emotional states that are not fixed, often with a sense of restlessness.
+- synonym: [[mutable]]
+- synonym: [[unsound]]

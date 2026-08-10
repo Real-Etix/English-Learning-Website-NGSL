@@ -6,6 +6,8 @@ pos: noun
 forms: [ala]
 sources: [llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wing]] — Use 'ala' in scientific or formal descriptions of anatomical wings.
+- synonym: [[pinion]]
+- collocation: [[beat]]
+- collocation: [[flight]]

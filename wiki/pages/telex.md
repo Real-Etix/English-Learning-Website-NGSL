@@ -6,6 +6,8 @@ pos: noun
 forms: [telex]
 sources: [llm]
 status: enriched
+chart: cable
+region: you
 ---
 
 ## Definition

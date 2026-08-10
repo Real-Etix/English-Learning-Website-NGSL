@@ -6,6 +6,8 @@ pos: adverb
 forms: [preponderantly]
 sources: [llm]
 status: enriched
+chart: first
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[predominantly]] — Use 'preponderantly' in formal or technical contexts to indicate a clear numerical or weight-based majority, often in legal or scientific writing.
+- synonym: [[mainly]]
+- synonym: [[chiefly]]
+- synonym: [[mostly]]
+- synonym: [[primarily]]
+- collocation: [[in]]
+- collocation: [[of]]
+- collocation: [[male]]
+- collocation: [[rural]]
+- collocation: [[white]]

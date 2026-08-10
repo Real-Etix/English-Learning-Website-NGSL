@@ -6,6 +6,8 @@ pos: noun
 forms: [accused]
 sources: [llm]
 status: enriched
+chart: guess
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[defendant]] — Use 'accused' specifically in criminal cases when referring to the person charged with a crime; more formal than 'defendant' in criminal contexts.
+- collocation: [[impiety]]
+- collocation: [[malfeasance]]
+- collocation: [[partiality]]
+- collocation: [[witchcraft]]
+- collocation: [[cartelist]]

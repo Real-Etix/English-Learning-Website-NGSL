@@ -6,6 +6,8 @@ pos: verb
 forms: [scuff]
 sources: [llm]
 status: enriched
+chart: shuffle
+region: shuffle
 ---
 
 ## Definition

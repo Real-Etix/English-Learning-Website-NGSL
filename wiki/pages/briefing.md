@@ -6,6 +6,8 @@ pos: noun
 forms: [briefing]
 sources: [llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[instruction]] — Use 'briefing' when the instruction is a concise, spoken summary of essential information for a specific task or situation.
+- synonym: [[orientation]]
+- synonym: [[summary]]
+- synonym: [[update]]

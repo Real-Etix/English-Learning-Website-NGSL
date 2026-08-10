@@ -9,6 +9,8 @@ rank: 566
 sfi: 62.33
 sources: [wordnet, llm]
 status: enriched
+chart: relieve
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[rescue]] — Use 'rescue' when actively freeing someone or something from immediate danger.
 - advanced_form: [[salvage]] — Use 'salvage' when saving something from a wreck, disaster, or loss.
 - advanced_form: [[preserve]] — Use 'preserve' when keeping something safe from harm or decay over time.
+- synonym: [[economize]]

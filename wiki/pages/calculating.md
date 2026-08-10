@@ -6,6 +6,8 @@ pos: adjective
 forms: [calculating]
 sources: [llm]
 status: enriched
+chart: clever
+region: clever
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[clever]] — Use 'calculating' instead of 'clever' when the person carefully plans actions for self-interest, often coldly.
+- synonym: [[cunning]]
+- collocation: [[nature]]
+- collocation: [[mind]]
+- collocation: [[manner]]

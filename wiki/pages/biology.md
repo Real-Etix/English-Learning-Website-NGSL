@@ -9,6 +9,8 @@ rank: 249
 sfi: 57.114
 sources: [wordnet, llm]
 status: enriched
+chart: biology
+region: biology
 ---
 
 ## Definition

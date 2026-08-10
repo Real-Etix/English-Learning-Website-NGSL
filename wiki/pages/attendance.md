@@ -9,6 +9,8 @@ rank: 2751
 sfi: 52.9
 sources: [wordnet, llm]
 status: enriched
+chart: care
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[presence]] — Use 'presence' instead of 'attendance' to emphasize the state of being there, often in formal or abstract contexts.
 - advanced_form: [[turnout]] — Use 'turnout' to refer to the number of people who attended an event, especially when measuring participation.
 - advanced_form: [[appearance]] — Use 'appearance' to highlight the act of showing up, often implying a short or notable visit.
+- collocation: [[obligatory]]
+- builds_on: [[presence]] — Use for being present at a formal event, class, or gathering.

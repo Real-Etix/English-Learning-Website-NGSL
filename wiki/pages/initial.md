@@ -9,6 +9,8 @@ rank: 1282
 sfi: 58.31
 sources: [wordnet, llm]
 status: enriched
+chart: null
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[original]] — Use 'initial' to emphasize the very first stage or version, often in a sequence or process.
 - advanced_form: [[monogram]] — Use 'monogram' to refer to an ornamental design of initials (often on personal items), while 'initial' is simply the first letter of a name used for signing or abbreviating.
 - advanced_form: [[cipher]] — Use 'cipher' in formal or historical contexts to mean a monogram or a cryptic symbol representing a person's initials, whereas 'initial' is the straightforward first letter.
+- collocation: [[greenness]]
+- collocation: [[obstruent]]
+- synonym: [[preparatory]]

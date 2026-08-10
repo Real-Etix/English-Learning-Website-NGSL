@@ -9,6 +9,8 @@ rank: 855
 sfi: 48.035
 sources: [wordnet, llm]
 status: enriched
+chart: acidic
+region: acidic
 ---
 
 ## Definition

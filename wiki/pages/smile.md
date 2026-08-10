@@ -9,6 +9,8 @@ rank: 990
 sfi: 59.67
 sources: [wordnet, llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,19 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[beam]] — Use 'beam' to describe a very wide, radiant smile that expresses great happiness, often involving the eyes.
 - advanced_form: [[grin]] — Use 'grin' for a wide, often playful or mischievous smile that shows teeth.
+- collocation: [[affectionate]]
+- collocation: [[alluring]]
+- collocation: [[appreciative]]
+- collocation: [[assenting]]
+- collocation: [[bright]]
+- collocation: [[cunning]]
+- collocation: [[deceitful]]
+- collocation: [[diffident]]
+- collocation: [[endearing]]
+- collocation: [[feeble]]
+- collocation: [[innocent]]
+- collocation: [[insouciant]]
+- collocation: [[obligatory]]
+- collocation: [[ravishing]]
+- collocation: [[wan]]
+- collocation: [[enigmatic]]

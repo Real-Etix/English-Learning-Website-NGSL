@@ -9,6 +9,8 @@ rank: 687
 sfi: 61.42
 sources: [wordnet, llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ a male human offspring
 - antonym: [[girl]]
 - advanced_form: [[scion]] — Use 'scion' for a formal or literary context, especially when emphasizing lineage or aristocratic family.
 - advanced_form: [[heir]] — Use 'heir' when focusing on inheritance or succession rights.
+- collocation: [[favored]]

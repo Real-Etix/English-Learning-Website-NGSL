@@ -6,6 +6,8 @@ pos: adverb
 forms: [identically]
 sources: [llm]
 status: enriched
+chart: likewise
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[alike]] — Use when emphasizing exact sameness, more precise than 'alike'.
+- synonym: [[exactly]]
+- synonym: [[equally]]
+- synonym: [[uniformly]]
+- synonym: [[precisely]]

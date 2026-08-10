@@ -9,6 +9,8 @@ rank: 353
 sfi: 56.408
 sources: [wordnet, llm]
 status: enriched
+chart: aesthetic
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ relating to or dealing with the subject of aesthetics
 - advanced_form: [[sublime]] — Use for something of such beauty that it inspires awe, a higher level than aesthetic.
 - builds_on: [[artistic]] — Use 'aesthetic' when focusing on the appreciation or theory of beauty, rather than general artistic skill.
 - builds_on: [[cultural]] — Use 'aesthetic' when emphasizing artistic beauty rather than general customs.
+- synonym: [[belletristic]]

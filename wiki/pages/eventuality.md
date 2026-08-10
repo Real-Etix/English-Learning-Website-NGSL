@@ -6,6 +6,8 @@ pos: noun
 forms: [eventuality]
 sources: [llm]
 status: enriched
+chart: would
+region: you
 ---
 
 ## Definition

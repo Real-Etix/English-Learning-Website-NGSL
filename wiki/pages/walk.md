@@ -9,6 +9,8 @@ rank: 339
 sfi: 64.63
 sources: [wordnet, llm]
 status: enriched
+chart: walk
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ use one's feet to advance
 - advanced_form: [[stroll]] — Use 'stroll' for a relaxed, unhurried walk, often for pleasure.
 - advanced_form: [[stride]] — Use 'stride' for long, purposeful steps, especially with confidence.
 - advanced_form: [[saunter]] — Use 'saunter' for a slow, leisurely walk with a carefree attitude.
+- collocation: [[briskly]]
+- collocation: [[invigorating]]
+- collocation: [[bracing]]
+- collocation: [[brisk]]

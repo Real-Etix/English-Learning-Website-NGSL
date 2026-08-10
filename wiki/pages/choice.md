@@ -9,6 +9,8 @@ rank: 565
 sfi: 62.33
 sources: [wordnet, llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[preference]] — Use 'preference' when emphasizing personal liking or favoritism in the choice.
 - advanced_form: [[appointee]] — Use 'appointee' specifically for a person chosen for a position or job.
 - builds_on: [[select]] — Use 'choice' to emphasize high quality, often for meats or other graded items.
+- collocation: [[agonizing]]
+- collocation: [[dichotomous]]
+- collocation: [[obvious]]
+- collocation: [[volitional]]
+- synonym: [[volition]]

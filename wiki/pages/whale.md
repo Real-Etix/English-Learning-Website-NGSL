@@ -9,6 +9,8 @@ rank: 884
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: whale
+region: whale
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1101
 sfi: 49.8
 sources: [wordnet, llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[discharge]] — Use 'discharge' to describe the flow of electricity through a gas, more general term for the event.
 - advanced_form: [[flashover]] — Use 'flashover' for a sudden, intense arc that jumps across insulators, common in high-voltage scenarios.
 - builds_on: [[curve]] — Use 'arc' for a segment of a curve, especially one that is part of a circle or has a smooth, sweeping shape.
+- synonym: [[curvature]]
+- synonym: [[meniscus]]
+- builds_on: [[bend]] — Use 'arc' when referring to a curved line or a segment of a circle, especially in geometry or describing shapes.

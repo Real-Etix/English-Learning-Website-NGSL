@@ -6,6 +6,8 @@ pos: noun
 forms: [metacarpus]
 sources: [llm]
 status: enriched
+chart: palm
+region: palm
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[palm]] — Use 'metacarpus' in anatomical contexts to refer to the intermediate part of the hand that includes the palm's skeletal structure, whereas 'palm' is broader and includes soft tissue.
+- collocation: [[fracture]]
+- collocation: [[left]]

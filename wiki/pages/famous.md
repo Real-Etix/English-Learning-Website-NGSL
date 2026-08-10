@@ -9,6 +9,8 @@ rank: 1017
 sfi: 59.51
 sources: [wordnet, llm]
 status: enriched
+chart: notable
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ widely known and esteemed
 - advanced_form: [[eminent]] — Use 'eminent' for someone who is highly respected and distinguished in their profession, implying expertise and prestige beyond just being known.
 - advanced_form: [[illustrious]] — Use 'illustrious' for someone or something famous for outstanding achievements, often with a sense of glory and honor.
 - advanced_form: [[prominent]] — Use 'prominent' for someone or something that is widely known and important within a specific context, emphasizing visibility and significance.
+- collocation: [[aviator]]
+- collocation: [[contemporaries]]
+- collocation: [[crooner]]
+- collocation: [[marque]]
+- collocation: [[maxim]]
+- synonym: [[celebrated]]
+- collocation: [[jumbo]]
+- collocation: [[naturalist]]
+- collocation: [[seer]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [malignancy]
 sources: [llm]
 status: enriched
+chart: transformation
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[tumor]] — Use 'malignancy' specifically when the tumor is cancerous or invasive, implying a serious, spreading condition.
 - builds_on: [[cancer]] — Use 'malignancy' for a formal or medical context, emphasizing the harmful nature instead of just the disease name.
+- synonym: [[carcinoma]]

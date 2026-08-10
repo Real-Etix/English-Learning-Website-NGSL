@@ -9,6 +9,8 @@ rank: 1234
 sfi: 58.51
 sources: [wordnet, llm]
 status: enriched
+chart: discourse
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[tutorial]] — Use 'tutorial' for a focused, often one-on-one or small-group teaching session, rather than a general lesson.
 - advanced_form: [[lecture]] — Use 'lecture' for a formal, one-way presentation of information, typical in university settings, as opposed to an interactive lesson.
 - advanced_form: [[seminar]] — Use 'seminar' for an advanced, interactive class with expert-led discussion and research, not a basic lesson.
+- collocation: [[instructive]]
+- collocation: [[recite]]

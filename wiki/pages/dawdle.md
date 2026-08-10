@@ -6,6 +6,8 @@ pos: verb
 forms: [dawdle]
 sources: [llm]
 status: enriched
+chart: interim
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lag]] — Use 'dawdle' when someone is moving too slowly because they are distracted or wasting time.
+- synonym: [[linger]]
+- synonym: [[delay]]
+- synonym: [[procrastinate]]

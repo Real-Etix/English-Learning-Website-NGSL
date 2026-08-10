@@ -6,6 +6,8 @@ pos: noun
 forms: [artistry]
 sources: [llm]
 status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition

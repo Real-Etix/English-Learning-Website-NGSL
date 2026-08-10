@@ -9,6 +9,8 @@ rank: 2259
 sfi: 54.77
 sources: [wordnet, llm]
 status: enriched
+chart: iron
+region: iron
 ---
 
 ## Definition
@@ -22,3 +24,15 @@ _No sourced examples yet._
 - advanced_form: [[ferrum]] — Use 'ferrum' in scientific or historical contexts, especially in Latin names or chemistry jargon.
 - advanced_form: [[ferrite]] — Use 'ferrite' when discussing the microscopic structure of iron alloys, not the pure metal.
 - advanced_form: [[magnetite]] — Use 'magnetite' when referring to the mineral form of iron oxide, not the element itself.
+- collocation: [[carriagewheel]]
+- collocation: [[cauldron]]
+- collocation: [[clad]]
+- collocation: [[ductile]]
+- collocation: [[forger]]
+- collocation: [[ore]]
+- collocation: [[oxidize]]
+- collocation: [[pleat]]
+- collocation: [[wagonwheel]]
+- collocation: [[works]]
+- collocation: [[handspike]]
+- collocation: [[oxide]]

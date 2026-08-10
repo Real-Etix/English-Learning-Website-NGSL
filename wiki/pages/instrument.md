@@ -9,6 +9,8 @@ rank: 1596
 sfi: 57.01
 sources: [wordnet, llm]
 status: enriched
+chart: transmission
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ _No sourced examples yet._
 - advanced_form: [[implement]] — Use 'implement' for a tool designed for a specific task, often in professional or technical contexts.
 - advanced_form: [[apparatus]] — Use 'apparatus' for a complex set of instruments or machinery used for a particular scientific or technical purpose.
 - builds_on: [[draft]] — Use 'instrument' instead of 'draft' when referring to any formal written document that represents a financial transaction, such as a check or money order.
+- collocation: [[negotiable]]
+- collocation: [[recalibrate]]
+- builds_on: [[tool]] — Use when the tool is specialized, often for measurement, surgery, or fine craftsmanship.
+- builds_on: [[camera]] — Use in formal or academic writing to emphasize precision or the camera's role in measurement or observation.
+- synonym: [[axe]]
+- synonym: [[pianoforte]]
+- synonym: [[utensil]]

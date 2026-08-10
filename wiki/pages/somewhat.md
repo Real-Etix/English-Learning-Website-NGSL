@@ -9,6 +9,8 @@ rank: 1679
 sfi: 56.65
 sources: [wordnet, llm]
 status: enriched
+chart: pretty
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ to a small degree or extent
 - advanced_form: [[moderately]] — Use 'moderately' when the degree is mid-range, not extreme; 'somewhat' is vaguer.
 - advanced_form: [[slightly]] — Use 'slightly' for a small degree, often more specific than 'somewhat' in measuring extent.
 - builds_on: [[partly]] — Use 'somewhat' when the extent is less than fully but not necessarily split into parts; it often expresses a moderate degree.
+- synonym: [[comparatively]]
+- synonym: [[quite]]
+- collocation: [[regretful]]
+- synonym: [[relatively]]

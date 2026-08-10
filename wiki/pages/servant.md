@@ -9,6 +9,8 @@ rank: 2641
 sfi: 53.48
 sources: [wordnet, llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition

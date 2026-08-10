@@ -6,6 +6,8 @@ pos: noun
 forms: [judicature]
 sources: [llm]
 status: enriched
+chart: bench
+region: you
 ---
 
 ## Definition

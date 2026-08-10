@@ -9,6 +9,8 @@ rank: 1271
 sfi: 50.72
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,9 @@ _No sourced examples yet._
 
 ## Connections
 - domain: business
+- synonym: [[extrapolate]]
+- synonym: [[project]]
+- synonym: [[convert]]
+- synonym: [[normalize]]
+- synonym: [[adjust]]
+- collocation: [[return]]

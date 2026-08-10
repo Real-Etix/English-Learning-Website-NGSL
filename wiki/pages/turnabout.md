@@ -6,6 +6,8 @@ pos: noun
 forms: [turnabout]
 sources: [llm]
 status: enriched
+chart: inversion
+region: inversion
 ---
 
 ## Definition

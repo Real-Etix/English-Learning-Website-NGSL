@@ -9,6 +9,8 @@ rank: 417
 sfi: 63.86
 sources: [wordnet, llm]
 status: enriched
+chart: yield
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ bring forth or yield
 - builds_on: [[generate]] — Use 'produce' when focusing on the result of a process or manufacturing, more specific than 'generate'.
 - builds_on: [[fruit]] — Use 'produce' instead of 'fruit' when referring to fruits and vegetables collectively, especially in retail or agricultural contexts.
 - builds_on: [[vegetable]] — More formal than 'vegetables', often used when referring to vegetables and fruits sold together.
+- synonym: [[beget]]
+- synonym: [[crops]]
+- synonym: [[greens]]
+- collocation: [[packer]]
+- collocation: [[purvey]]

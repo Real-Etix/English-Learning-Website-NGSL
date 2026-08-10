@@ -6,6 +6,8 @@ pos: noun
 forms: [bettingshop]
 sources: [llm]
 status: enriched
+chart: casino
+region: casino
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[casino]] — Use 'betting shop' especially in British English for a place where bets are placed on sports or races, as an alternative to 'casino'.
+- collocation: [[local]]
+- collocation: [[chain]]
+- collocation: [[staff]]

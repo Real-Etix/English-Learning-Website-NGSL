@@ -6,6 +6,8 @@ pos: noun
 forms: [reworking]
 sources: [llm]
 status: enriched
+chart: assertion
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[adaptation]] — Use 'reworking' to suggest a significant rewrite or restructuring, more active than 'adaptation'.
 - builds_on: [[revision]] — Use 'reworking' for a detailed, creative revision, especially in writing or design.
+- synonym: [[reformulation]]
+- synonym: [[rephrasing]]

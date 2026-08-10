@@ -6,6 +6,8 @@ pos: noun
 forms: [frond]
 sources: [llm]
 status: enriched
+chart: leaf
+region: you
 ---
 
 ## Definition

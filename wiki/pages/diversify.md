@@ -9,6 +9,8 @@ rank: 184
 sfi: 56.28
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: separate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ make (more) diverse
 - advanced_form: [[variegate]] — Use 'variegate' to emphasize introducing varied colors or patterns, more specific and literary than general 'diversify'.
 - advanced_form: [[differentiate]] — Use 'differentiate' to stress creating clear distinctions or categories, rather than just increasing variety.
 - advanced_form: [[heterogenize]] — Use 'heterogenize' in formal or academic writing to describe making a system or group more diverse in composition, often with a technical tone.
+- synonym: [[broaden]]
+- builds_on: [[broaden]] — Use 'diversify' when emphasizing variety and difference rather than just overall scope.

@@ -6,6 +6,8 @@ pos: noun
 forms: [ravine]
 sources: [llm]
 status: enriched
+chart: valley
+region: valley
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[valley]] — Use 'ravine' for a narrow, steep-sided valley, often with a stream, to emphasize depth and ruggedness.
+- synonym: [[gorge]]
+- synonym: [[defile]]
+- collocation: [[deep]]
+- collocation: [[narrow]]
+- collocation: [[steep]]

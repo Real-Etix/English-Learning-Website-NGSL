@@ -9,6 +9,8 @@ rank: 539
 sfi: 53.12
 sources: [wordnet, llm]
 status: enriched
+chart: prenatal
+region: prenatal
 ---
 
 ## Definition

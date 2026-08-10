@@ -6,6 +6,8 @@ pos: noun
 forms: [exodus]
 sources: [llm]
 status: enriched
+chart: accelerate
+region: you
 ---
 
 ## Definition

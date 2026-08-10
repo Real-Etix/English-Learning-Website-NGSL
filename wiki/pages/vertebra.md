@@ -9,6 +9,8 @@ rank: 217
 sfi: 57.14
 sources: [wordnet, llm]
 status: enriched
+chart: vertebra
+region: vertebra
 ---
 
 ## Definition

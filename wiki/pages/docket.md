@@ -6,6 +6,8 @@ pos: noun
 forms: [docket]
 sources: [llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[fare]] — Use in formal contexts for a list of tasks or proceedings, like a schedule or agenda.
 - builds_on: [[schedule]] — Use 'docket' instead of 'schedule' in formal or legal contexts, such as a list of cases to be heard or a busy agenda for proceedings.
 - builds_on: [[agenda]] — Use 'docket' in legal, court, or very formal meeting contexts where items are officially listed for consideration.
+- builds_on: [[tag]] — Use when the tag is an official or shipping label, especially in logistics, legal, or administrative contexts.

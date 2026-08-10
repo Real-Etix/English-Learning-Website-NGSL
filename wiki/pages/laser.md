@@ -9,6 +9,8 @@ rank: 1462
 sfi: 50.63
 sources: [wordnet, llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[beam]] — Use 'beam' to emphasize the straight, concentrated line of light from a laser, rather than the device itself.
 - advanced_form: [[ray]] — Use 'ray' for a more scientific or poetic description of a laser's light path, similar to 'beam' but less common.
+- collocation: [[pointer]]

@@ -9,6 +9,8 @@ rank: 1502
 sfi: 57.39
 sources: [wordnet, llm]
 status: enriched
+chart: sign
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,17 @@ _No sourced examples yet._
 - advanced_form: [[indicator]] — Use 'indicator' instead of 'signal' when focusing on the sign's role as evidence or a clue pointing to a condition or fact.
 - builds_on: [[motion]] — Use 'signal' for a prearranged movement that conveys information, especially in formal or technical contexts like traffic or sports.
 - builds_on: [[gesture]] — Use when the gesture conveys a specific message or cue, often in a context of communication.
+- collocation: [[amplification]]
+- collocation: [[distortion]]
+- collocation: [[flare]]
+- collocation: [[intercept]]
+- collocation: [[intermittent]]
+- collocation: [[modulate]]
+- collocation: [[modulator]]
+- collocation: [[potentiated]]
+- collocation: [[prearrange]]
+- builds_on: [[indication]] — Use when the indication conveys a message or warns of an upcoming event.
+- synonym: [[airwaves]]
+- collocation: [[decoder]]
+- collocation: [[demodulator]]
+- collocation: [[wideband]]

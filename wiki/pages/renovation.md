@@ -9,6 +9,8 @@ rank: 79
 sfi: 58.44
 sources: [wordnet, llm]
 status: enriched
+chart: overhaul
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ the act of improving by renewing and restoring
 - advanced_form: [[overhaul]] — Use 'overhaul' when the renovation is extensive and involves major structural or systemic changes, not just cosmetic updates.
 - advanced_form: [[refurbishment]] — Use 'refurbishment' when the renovation focuses on restoring appearance and functionality without major structural alterations.
 - advanced_form: [[rehabilitation]] — Use 'rehabilitation' when the renovation is aimed at bringing a deteriorated or damaged property back to a usable or safe state.
+- synonym: [[reconditioning]]

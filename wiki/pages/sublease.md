@@ -6,6 +6,8 @@ pos: verb
 forms: [sublease]
 sources: [llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition

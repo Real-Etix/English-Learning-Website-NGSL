@@ -6,6 +6,8 @@ pos: verb
 forms: [consign]
 sources: [llm]
 status: enriched
+chart: direct
+region: you
 ---
 
 ## Definition

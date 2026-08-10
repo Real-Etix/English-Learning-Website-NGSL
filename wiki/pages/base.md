@@ -9,6 +9,8 @@ rank: 327
 sfi: 64.78
 sources: [wordnet, llm]
 status: enriched
+chart: base
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - builds_on: [[headquarter]] — Use 'base' when focusing on establishing a central location for operations, especially common in military, corporate, or organizational contexts.
 - builds_on: [[bottom]] — Use 'base' when referring to the bottom part that supports or stabilizes an object, especially a structure or container.
 - builds_on: [[stem]] — Use 'base' when referring to the form to which affixes are attached, often as a more general term than 'stem'.
+- synonym: [[airbase]]
+- synonym: [[bedrock]]
+- collocation: [[cranium]]
+- synonym: [[pedestal]]
+- synonym: [[plinth]]
+- collocation: [[commandant]]

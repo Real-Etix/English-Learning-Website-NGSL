@@ -6,6 +6,8 @@ pos: noun
 forms: [escarpment]
 sources: [llm]
 status: enriched
+chart: rely
+region: you
 ---
 
 ## Definition

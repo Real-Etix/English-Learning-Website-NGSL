@@ -6,6 +6,8 @@ pos: noun
 forms: [supremebeing]
 sources: [llm]
 status: enriched
+chart: train
+region: you
 ---
 
 ## Definition

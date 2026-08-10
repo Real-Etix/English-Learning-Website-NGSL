@@ -9,6 +9,8 @@ rank: 841
 sfi: 50.62
 sources: [wordnet, llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,9 @@ a medium that disseminates moving pictures
 - builds_on: [[film]] — Use 'cinema' to refer to the art or industry of filmmaking, or a specific film in a formal, intellectual, or artistic context.
 - advanced_form: [[film]] — use 'film' when referring to the artistic medium or the physical strip; it is more specific than 'cinema', which can also mean the industry or the building.
 - advanced_form: [[motion-picture]] — use 'motion-picture' in formal or academic contexts; it is a more precise term for the medium than 'cinema'.
+- synonym: [[picture]]
+- synonym: [[screen]]
+- collocation: [[screen]]
+- collocation: [[industry]]
+- collocation: [[hall]]
+- builds_on: [[theater]] — Use when the theater is specifically for movies.

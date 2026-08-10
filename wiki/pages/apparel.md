@@ -6,6 +6,8 @@ pos: noun
 forms: [apparel]
 sources: [llm]
 status: enriched
+chart: attire
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[garment]] — Use 'apparel' in retail or industrial contexts to refer to clothing collectively, more formal than 'garment'.
 - builds_on: [[attire]] — Use 'apparel' as a formal term for clothing, especially in commercial or descriptive contexts, broader than 'attire'.
 - builds_on: [[clothing]] — Use 'apparel' in formal or commercial contexts, especially when referring to a collection of clothing items for sale or a specific category like business wear.
+- synonym: [[wardrobe]]

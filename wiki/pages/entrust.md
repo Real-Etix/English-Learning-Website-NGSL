@@ -6,6 +6,8 @@ pos: verb
 forms: [entrust]
 sources: [llm]
 status: enriched
+chart: competitor
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[delegate]] — Use 'entrust' when you emphasize giving someone responsibility with trust, often for safekeeping or important tasks.
 - builds_on: [[rely]] — Use 'entrust' when you rely on someone to take responsibility for something valuable or important.
+- synonym: [[confide]]

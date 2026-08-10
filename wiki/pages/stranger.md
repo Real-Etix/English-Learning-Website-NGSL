@@ -7,8 +7,10 @@ forms: [stranger, strangers]
 lists: [ngsl]
 rank: 2725
 sfi: 53.1
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - synonym: [[alien]]
 - synonym: [[unknown]]
 - antonym: [[friend]]
+- advanced_form: [[outsider]] — Use 'outsider' to emphasize someone excluded from a group or community.
+- advanced_form: [[foreigner]] — Use 'foreigner' when the person is from another country or place.
+- advanced_form: [[alien]] — Use 'alien' in formal or literary contexts to mean someone wholly unaccustomed to their surroundings.

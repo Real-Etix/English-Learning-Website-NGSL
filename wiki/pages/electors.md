@@ -6,6 +6,8 @@ pos: noun
 forms: [electors]
 sources: [llm]
 status: enriched
+chart: text
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[electorate]] — Use 'electors' for a more formal or legal tone, often in contexts emphasizing individual voting rights or the official act of voting.
+- synonym: [[constituents]]
+- collocation: [[eligible]]
+- collocation: [[presidential]]

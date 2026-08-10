@@ -6,6 +6,8 @@ pos: adverb
 forms: [haphazardly]
 sources: [llm]
 status: enriched
+chart: randomly
+region: randomly
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[randomly]] — Use haphazardly to emphasize lack of order or care, unlike the more neutral 'randomly'.
+- synonym: [[arbitrarily]]
+- synonym: [[erratically]]
+- synonym: [[indiscriminately]]

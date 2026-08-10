@@ -9,6 +9,8 @@ rank: 1098
 sfi: 51.23
 sources: [wordnet, llm]
 status: enriched
+chart: relaxation
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[relaxation]] — Use when focusing on making rules or standards less strict or severe, often in a gradual manner.
 - advanced_form: [[easing]] — Use when describing a reduction in difficulty or severity, especially in economic or policy contexts.
 - builds_on: [[deregulation]] — Use this for broad economic reforms involving trade and market openness, whereas deregulation often refers to removing specific industry rules.
+- synonym: [[decontrol]]
+- synonym: [[denationalization]]
+- synonym: [[marketization]]

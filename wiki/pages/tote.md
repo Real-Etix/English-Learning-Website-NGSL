@@ -6,6 +6,8 @@ pos: noun
 forms: [tote]
 sources: [llm]
 status: enriched
+chart: stakeholder
+region: you
 ---
 
 ## Definition

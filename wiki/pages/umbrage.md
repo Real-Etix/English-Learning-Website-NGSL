@@ -6,6 +6,8 @@ pos: noun
 forms: [umbrage]
 sources: [llm]
 status: enriched
+chart: charge
+region: you
 ---
 
 ## Definition

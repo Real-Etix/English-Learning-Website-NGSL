@@ -6,6 +6,8 @@ pos: verb
 forms: [pinpoint]
 sources: [llm]
 status: enriched
+chart: retrieve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[locate]] — more precise and exact than locate, often used for finding a specific point among many.
+- synonym: [[identify]]
+- synonym: [[determine]]
+- synonym: [[specify]]
+- synonym: [[detect]]
+- collocation: [[exact]]
+- collocation: [[location]]
+- collocation: [[source]]
+- collocation: [[problem]]
+- collocation: [[cause]]

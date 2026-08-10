@@ -6,6 +6,8 @@ pos: noun
 forms: [pharmacotherapy]
 sources: [llm]
 status: enriched
+chart: chemotherapy
+region: chemotherapy
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chemotherapy]] — Use pharmacotherapy when discussing drug treatments in a general medical context, whereas chemotherapy specifically implies chemical agents for cancer.
+- synonym: [[medication]]

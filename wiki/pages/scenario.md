@@ -9,6 +9,8 @@ rank: 110
 sfi: 57.35
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition

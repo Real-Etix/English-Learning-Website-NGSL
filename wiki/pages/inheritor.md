@@ -6,6 +6,8 @@ pos: noun
 forms: [inheritor]
 sources: [llm]
 status: enriched
+chart: not
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[successor]] — Use 'inheritor' when the successor receives a specific legacy, title, or property, often through tradition or law, rather than just following in order.
+- synonym: [[heir]]
+- synonym: [[beneficiary]]
+- synonym: [[legatee]]
+- synonym: [[recipient]]
+- collocation: [[sole]]
+- collocation: [[rightful]]
+- collocation: [[legal]]
+- collocation: [[direct]]
+- collocation: [[natural]]
+- builds_on: [[heir]] — Use when emphasizing the act of receiving, often for broader things than just legal estate.

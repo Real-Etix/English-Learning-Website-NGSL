@@ -6,6 +6,8 @@ pos: noun
 forms: [cub]
 sources: [llm]
 status: enriched
+chart: old
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[young]] — Use 'cub' instead of 'young' specifically for the offspring of large carnivores like bears, lions, and wolves.
+- synonym: [[pup]]
+- synonym: [[whelp]]
+- synonym: [[baby]]
+- synonym: [[offspring]]

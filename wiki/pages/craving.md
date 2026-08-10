@@ -6,6 +6,8 @@ pos: noun
 forms: [craving]
 sources: [llm]
 status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[yen]] — Use 'craving' for intense, often physical desires, especially for food or substances, whereas 'yen' is more general and less intense.
 - builds_on: [[desire]] — Use craving for a strong, often physical or urgent desire, especially for food or substances, while desire is more general.
+- synonym: [[hankering]]
+- synonym: [[yearning]]

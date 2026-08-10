@@ -9,6 +9,8 @@ rank: 1020
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: violin
+region: violin
 ---
 
 ## Definition

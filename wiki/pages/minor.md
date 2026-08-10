@@ -9,6 +9,8 @@ rank: 1997
 sfi: 55.54
 sources: [wordnet, llm]
 status: enriched
+chart: superior
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,15 @@ of lesser importance or stature or rank
 - advanced_form: [[subsidiary]] — Use when something is secondary and supports a main issue, often in formal or organizational contexts.
 - advanced_form: [[ancillary]] — Use when something provides supplementary or support services, especially in professional or academic settings.
 - advanced_form: [[peripheral]] — Use when something is on the edge of importance, not central, often in discussions or systems.
+- collocation: [[abrasion]]
+- collocation: [[altercation]]
+- collocation: [[contusion]]
+- collocation: [[glitch]]
+- synonym: [[insignificant]]
+- collocation: [[irregularity]]
+- collocation: [[mishap]]
+- collocation: [[misstep]]
+- synonym: [[petty]]
+- synonym: [[youngster]]
+- synonym: [[teen]]
+- collocation: [[sonneteer]]

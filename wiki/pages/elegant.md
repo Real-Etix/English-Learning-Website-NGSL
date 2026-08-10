@@ -9,6 +9,8 @@ rank: 633
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ refined and tasteful in appearance or behavior or style
 - builds_on: [[pretty]] — Use 'elegant' to emphasize sophisticated, stylish beauty, often in formal or refined contexts, rather than just simple prettiness.
 - advanced_form: [[sophisticated]] — Use 'sophisticated' when describing complex, cultured elegance, often implying worldliness or high social polish, rather than just simple beauty.
 - advanced_form: [[refined]] — Use 'refined' when emphasizing purity, exactness, or polished taste, often after improvement or removal of coarseness, rather than inherent grace.
+- synonym: [[belletristic]]
+- collocation: [[consummately]]
+- collocation: [[drapery]]
+- collocation: [[etagere]]
+- synonym: [[graceful]]
+- collocation: [[appointments]]

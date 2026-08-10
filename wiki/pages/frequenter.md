@@ -6,6 +6,8 @@ pos: noun
 forms: [frequenter]
 sources: [llm]
 status: enriched
+chart: patron
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[patron]] — More formal than 'patron', often used for someone who visits a place regularly, emphasizing the act of frequenting.
+- synonym: [[habitu]]

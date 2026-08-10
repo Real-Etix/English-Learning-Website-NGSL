@@ -6,6 +6,8 @@ pos: noun
 forms: [kinswoman]
 sources: [llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition

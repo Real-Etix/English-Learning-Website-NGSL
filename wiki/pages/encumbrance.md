@@ -6,6 +6,8 @@ pos: noun
 forms: [encumbrance]
 sources: [llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[load]] — Use 'encumbrance' when the load hinders movement or progress.
 - builds_on: [[burden]] — Use 'encumbrance' for a burden that is a legal or financial claim or obstacle.
 - builds_on: [[mortgage]] — Use 'encumbrance' in formal or legal contexts to describe any burden or claim on property, including but not limited to mortgages.
+- synonym: [[lien]]

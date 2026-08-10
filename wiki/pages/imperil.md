@@ -6,6 +6,8 @@ pos: verb
 forms: [imperil]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[threaten]] — Use 'imperil' when emphasizing a serious risk that could lead to failure or destruction, more formal than 'threaten'.
+- synonym: [[endanger]]
+- synonym: [[compromise]]
+- synonym: [[risk]]
+- collocation: [[future]]
+- collocation: [[stability]]
+- collocation: [[safety]]

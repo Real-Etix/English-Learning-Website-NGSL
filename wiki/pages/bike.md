@@ -9,6 +9,8 @@ rank: 1979
 sfi: 55.59
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - synonym: [[motorcycle]]
 - advanced_form: [[motorcycle]] — Use 'motorcycle' for a more formal or technical term when referring to a two-wheeled motor vehicle, especially in writing or in official contexts.
 - advanced_form: [[motorbike]] — Use 'motorbike' as a slightly more formal alternative to 'bike' that still sounds natural in casual conversation, often interchangeable with 'motorcycle'.
+- synonym: [[chopper]]
+- collocation: [[pannier]]
+- synonym: [[pushbike]]

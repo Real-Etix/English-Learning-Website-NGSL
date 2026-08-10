@@ -6,6 +6,8 @@ pos: noun
 forms: [stricture]
 sources: [llm]
 status: enriched
+chart: boundary
+region: you
 ---
 
 ## Definition

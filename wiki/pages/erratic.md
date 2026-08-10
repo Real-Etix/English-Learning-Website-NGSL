@@ -6,6 +6,8 @@ pos: adjective
 forms: [erratic]
 sources: [llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition

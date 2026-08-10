@@ -6,6 +6,8 @@ pos: adjective
 forms: [procedural]
 sources: [llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition

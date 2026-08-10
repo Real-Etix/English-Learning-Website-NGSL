@@ -7,8 +7,10 @@ forms: [invent, invents, invented, inventing]
 lists: [ngsl]
 rank: 2627
 sfi: 53.54
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - synonym: [[formulate]]
 - synonym: [[forge]]
 - builds_on: [[conceive]] — Use 'invent' when creating something entirely new or original, often tangible, more concrete than 'conceive'.
+- advanced_form: [[devise]] — Use when inventing a strategy or method through careful thought.
+- advanced_form: [[conceive]] — Use when inventing an abstract idea or concept, often in formal or intellectual contexts.
+- advanced_form: [[formulate]] — Use when inventing a systematic or detailed plan, idea, or policy, especially in writing or formal presentation.

@@ -7,8 +7,10 @@ forms: [poet, poets]
 lists: [ngsl]
 rank: 2515
 sfi: 53.91
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- advanced_form: [[bard]] — Use 'bard' for a poet in a formal, historical, or exalted context, especially when praising their literary stature.
+- advanced_form: [[sonneteer]] — Use 'sonneteer' when emphasizing a poet who writes sonnets or in a more technical/artistic discussion, but it is more specific than 'poet'.

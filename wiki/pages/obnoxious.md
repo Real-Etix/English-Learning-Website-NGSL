@@ -6,6 +6,8 @@ pos: adjective
 forms: [obnoxious]
 sources: [llm]
 status: enriched
+chart: unpleasant
+region: unpleasant
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[unpleasant]] — Use when something is extremely unpleasant, often in an irritating or annoying way.
+- synonym: [[offensive]]
+- synonym: [[objectionable]]
+- collocation: [[noise]]
+- collocation: [[person]]
+- collocation: [[behavior]]
+- collocation: [[smell]]

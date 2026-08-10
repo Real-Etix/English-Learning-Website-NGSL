@@ -9,6 +9,8 @@ rank: 400
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: prevail
+region: you
 ---
 
 ## Definition

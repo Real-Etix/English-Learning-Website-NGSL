@@ -9,6 +9,8 @@ rank: 533
 sfi: 62.65
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[murder]] — Use when referring to intentional, unlawful killing of another person.
 - advanced_form: [[execute]] — Use when killing is carried out as a legal punishment or as part of a premeditated plan.
 - advanced_form: [[slaughter]] — Use for brutal, large-scale killing, often of many people or animals.
+- synonym: [[assassinate]]

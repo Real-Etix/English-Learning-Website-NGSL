@@ -6,6 +6,8 @@ pos: adjective
 forms: [unjust]
 sources: [llm]
 status: enriched
+chart: objective
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[unfair]] — Use 'unjust' when describing actions, laws, or systems that violate moral principles of fairness.
+- collocation: [[exaction]]
+- synonym: [[inequitable]]

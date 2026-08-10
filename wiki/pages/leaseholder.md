@@ -6,6 +6,8 @@ pos: noun
 forms: [leaseholder]
 sources: [llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lessee]] — Use 'leaseholder' in legal documents as a more formal synonym for 'lessee'.
+- synonym: [[tenant]]
+- synonym: [[renter]]
+- synonym: [[occupant]]
+- collocation: [[responsible]]
+- collocation: [[property]]

@@ -9,6 +9,8 @@ rank: 1426
 sfi: 57.73
 sources: [wordnet, llm]
 status: enriched
+chart: yield
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[yield]] — Use 'yield' when something produces a result or outcome, often as a natural or expected consequence.
 - advanced_form: [[engender]] — Use 'engender' when talking about abstract things like feelings or conditions being brought into existence.
 - builds_on: [[breed]] — Use 'generate' when something produces a result or effect, often in a neutral or factual context.
+- synonym: [[beget]]

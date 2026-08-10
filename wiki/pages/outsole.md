@@ -6,6 +6,8 @@ pos: noun
 forms: [outsole]
 sources: [llm]
 status: enriched
+chart: sole
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adverb
 forms: [digitally]
 sources: [llm]
 status: enriched
+chart: vote
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[electronically]] — Use 'digitally' when emphasizing the conversion to or use of digital format, as opposed to analog or manual methods.
+- collocation: [[native]]

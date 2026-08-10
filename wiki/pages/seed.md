@@ -9,6 +9,8 @@ rank: 1815
 sfi: 56.15
 sources: [wordnet, llm]
 status: enriched
+chart: upgrade
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ go to seed
 - advanced_form: [[decay]] — Use 'decay' for gradual physical deterioration, like buildings or organic matter, instead of the informal 'go to seed'.
 - advanced_form: [[decline]] — Use 'decline' for a gradual loss of quality, health, or strength, especially over time.
 - advanced_form: [[degenerate]] — Use 'degenerate' when something worsens to a lower, often immoral or inferior state, stronger than 'go to seed'.
+- collocation: [[bromegrass]]
+- collocation: [[canola]]
+- collocation: [[colza]]
+- collocation: [[dispersal]]
+- synonym: [[egg]]
+- collocation: [[imbibition]]
+- collocation: [[integument]]
+- synonym: [[nutlet]]
+- synonym: [[nutmeat]]

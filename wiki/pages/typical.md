@@ -9,6 +9,8 @@ rank: 1536
 sfi: 57.23
 sources: [wordnet, llm]
 status: enriched
+chart: average
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ exhibiting the qualities or characteristics that identify a group or kind or cat
 - advanced_form: [[archetypal]] — Use 'archetypal' to describe the most typical or perfect example of a kind, often with a sense of original model.
 - advanced_form: [[quintessential]] — Use 'quintessential' to emphasize the purest or most perfect embodiment of a type.
 - advanced_form: [[representative]] — Use 'representative' when something serves as a typical example of a larger group.
+- synonym: [[emblematic]]
+- collocation: [[workday]]
+- collocation: [[workweek]]

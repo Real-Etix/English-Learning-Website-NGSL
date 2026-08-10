@@ -6,6 +6,8 @@ pos: noun
 forms: [curator]
 sources: [llm]
 status: enriched
+chart: collector
+region: collector
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[librarian]] — Use 'curator' when emphasizing the expert selection and presentation of specialized collections, often in a museum or special library section.
+- synonym: [[custodian]]
+- synonym: [[archivist]]
+- synonym: [[steward]]
+- synonym: [[overseer]]
+- collocation: [[museum]]
+- collocation: [[exhibition]]

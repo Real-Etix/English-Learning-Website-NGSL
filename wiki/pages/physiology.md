@@ -9,6 +9,8 @@ rank: 256
 sfi: 56.41
 sources: [wordnet, llm]
 status: enriched
+chart: physiology
+region: physiology
 ---
 
 ## Definition

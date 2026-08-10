@@ -6,6 +6,8 @@ pos: adjective
 forms: [fabricated]
 sources: [llm]
 status: enriched
+chart: true
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fraudulent]] — Use 'fabricated' when something has been deliberately made up or invented, often with the intent to deceive, but more specific to creation of false information.
+- synonym: [[false]]
+- synonym: [[fictitious]]
+- collocation: [[story]]
+- collocation: [[evidence]]
+- collocation: [[data]]
+- collocation: [[news]]
+- synonym: [[factitious]]

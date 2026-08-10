@@ -9,6 +9,8 @@ rank: 418
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ _No sourced examples yet._
 - advanced_form: [[endow]] — Use 'endow' when furnishing with a quality, ability, or financial resource permanently or generously, often in a formal or charitable context.
 - builds_on: [[equip]] — Use 'furnish' when equipping a place or person with necessary items, often in a formal or systematic way.
 - builds_on: [[yield]] — Use 'furnish' in formal or written contexts to mean 'provide' or 'supply' something needed; 'yield' often implies natural production or result.
+- synonym: [[purvey]]
+- builds_on: [[fuel]] — Use in more formal or technical writing to mean providing or supplying.

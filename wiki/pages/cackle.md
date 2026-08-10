@@ -6,6 +6,8 @@ pos: noun
 forms: [cackle]
 sources: [llm]
 status: enriched
+chart: laugh
+region: laugh
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[laugh]] — Use 'cackle' for an unpleasant or high-pitched laugh, different from the neutral 'laugh'.
+- synonym: [[chortle]]
+- synonym: [[guffaw]]
+- collocation: [[harsh]]
+- collocation: [[loud]]

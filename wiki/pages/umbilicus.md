@@ -6,6 +6,8 @@ pos: noun
 forms: [umbilicus]
 sources: [llm]
 status: enriched
+chart: navel
+region: navel
 ---
 
 ## Definition

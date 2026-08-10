@@ -6,6 +6,8 @@ pos: noun
 forms: [pinkie]
 sources: [llm]
 status: enriched
+chart: pinky
+region: pinky
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pinky]] — Use 'pinkie' in informal or standard contexts, same as 'pinky' but slightly more common in British English.
+- synonym: [[littlefinger]]

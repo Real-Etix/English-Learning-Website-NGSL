@@ -9,6 +9,8 @@ rank: 850
 sfi: 60.47
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ _No sourced examples yet._
 - advanced_form: [[vesta]] — Use 'vesta' as a dated, formal synonym for a match, derived from the Roman goddess of hearth.
 - builds_on: [[game]] — Use 'match' for specific one-on-one or team competitions, particularly in sports like tennis, soccer, or chess.
 - builds_on: [[equal]] — Use 'match' when emphasizing that two things are the same in value or amount.
+- collocation: [[associationfootball]]
+- synonym: [[befit]]
+- collocation: [[courttennis]]
+- collocation: [[forfeit]]
+- synonym: [[harmonize]]
+- synonym: [[joust]]
+- collocation: [[lawntennis]]
+- collocation: [[qualifier]]
+- collocation: [[spectator]]

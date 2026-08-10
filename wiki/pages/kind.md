@@ -9,6 +9,8 @@ rank: 176
 sfi: 67.43
 sources: [wordnet, llm]
 status: enriched
+chart: tender
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ having or showing a tender and considerate and helpful nature
 - advanced_form: [[benevolent]] — Use 'benevolent' to emphasize a generous, goodwill-driven kindness, often in a formal or moral context.
 - advanced_form: [[compassionate]] — Use 'compassionate' when the kindness involves deep empathy and understanding of another's suffering.
 - advanced_form: [[gracious]] — Use 'gracious' to describe kindness that is polite, courteous, and tactful, especially in social situations.
+- synonym: [[considerate]]
+- collocation: [[of]]
+- synonym: [[genre]]
+- synonym: [[avuncular]]

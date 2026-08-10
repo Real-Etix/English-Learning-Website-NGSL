@@ -9,6 +9,8 @@ rank: 1293
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ from that time on
 - advanced_form: [[henceforth]] — Use 'henceforth' to indicate from this point forward, often in formal or legal contexts; differs from 'thereafter' which refers to a past point.
 - builds_on: [[secondly]] — Use instead of 'secondly' to emphasize a sequence of events or steps, often in narrative or legal contexts.
 - builds_on: [[subsequently]] — Use 'thereafter' for a more formal or literary tone, often referring to a specific point in time after an event.
+- synonym: [[afterwards]]
+- synonym: [[hereafter]]

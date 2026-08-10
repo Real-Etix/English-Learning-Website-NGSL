@@ -6,6 +6,8 @@ pos: adverb
 forms: [astutely]
 sources: [llm]
 status: enriched
+chart: wisely
+region: wisely
 ---
 
 ## Definition

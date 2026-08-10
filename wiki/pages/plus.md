@@ -9,6 +9,8 @@ rank: 1256
 sfi: 58.43
 sources: [wordnet, llm]
 status: enriched
+chart: disadvantage
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - antonym: [[liability]]
 - advanced_form: [[advantage]] — Use 'advantage' when emphasizing a gain or edge over others, rather than a general positive quality.
 - advanced_form: [[asset]] — Use 'asset' when referring to a valuable resource or trait that is beneficial in a specific context, like work or a team.
+- synonym: [[and]]

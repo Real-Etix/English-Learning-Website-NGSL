@@ -6,6 +6,8 @@ pos: noun
 forms: [avoirdupois]
 sources: [llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pound]] — Use to specify the standard system of everyday weights, especially in contrast to troy or apothecary, e.g., 'the recipe uses avoirdupois ounces.'
+- synonym: [[weight]]
+- synonym: [[bulk]]
+- synonym: [[mass]]
+- synonym: [[heft]]
+- collocation: [[system]]
+- collocation: [[ounce]]
+- collocation: [[measure]]

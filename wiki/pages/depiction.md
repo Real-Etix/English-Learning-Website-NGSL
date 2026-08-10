@@ -6,6 +6,8 @@ pos: noun
 forms: [depiction]
 sources: [llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - builds_on: [[profile]] — Use 'depiction' instead of 'profile' when focusing on a visual or descriptive representation of characteristics.
 - builds_on: [[illustration]] — Use 'depiction' for formal or artistic representations, especially in academic or critical writing.
 - builds_on: [[portrait]] — Use 'depiction' instead of 'portrait' when focusing on the act or result of describing something in words, often with vivid detail.
+- synonym: [[portraiture]]
+- synonym: [[rendering]]

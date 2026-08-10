@@ -6,6 +6,8 @@ pos: noun
 forms: [swine]
 sources: [llm]
 status: enriched
+chart: pig
+region: pig
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pig]] — Use 'swine' as a more formal or collective term for pigs, often in agricultural or scientific contexts.
+- synonym: [[hog]]

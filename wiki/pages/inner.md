@@ -9,6 +9,8 @@ rank: 2235
 sfi: 54.83
 sources: [wordnet, llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ located inward
 - synonym: [[internal]]
 - advanced_form: [[internal]] — Use 'internal' for things inside a body, organization, or system, where 'inner' might sound too vague or poetic.
 - advanced_form: [[interior]] — Use 'interior' for the inside of a space or object, especially in architectural or design contexts, instead of 'inner'.
+- collocation: [[compulsion]]
+- collocation: [[emptiness]]
+- collocation: [[introspection]]
+- collocation: [[quietude]]
+- collocation: [[chambers]]

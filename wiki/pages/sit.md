@@ -9,6 +9,8 @@ rank: 356
 sfi: 64.44
 sources: [wordnet, llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[perch]] — Use 'perch' when sitting on something high or narrow, often temporarily or precariously.
 - advanced_form: [[settle]] — Use 'settle' when sitting down comfortably after moving around, implying making oneself at home.
 - advanced_form: [[ensconce]] — Use 'ensconce' when sitting down in a way that suggests making a comfortable, secure, or hidden place for oneself.
+- synonym: [[lie]]
+- collocation: [[pew]]

@@ -9,6 +9,8 @@ rank: 1516
 sfi: 57.33
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ neckwear consisting of a long narrow piece of material worn (mostly by men) unde
 - builds_on: [[link]] — Use 'tie' when referring to a formal or structural connection, often with a sense of interdependence.
 - advanced_form: [[cravat]] — Use 'cravat' for a more formal or vintage necktie, often with a wide or puffy shape.
 - advanced_form: [[ascot]] — Use 'ascot' for a necktie with wide ends that is folded over, typical of semi-formal or old-fashioned dress.
+- collocation: [[blazer]]
+- synonym: [[bowknot]]
+- collocation: [[bowknot]]
+- synonym: [[ligature]]

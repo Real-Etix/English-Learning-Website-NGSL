@@ -6,6 +6,8 @@ pos: noun
 forms: [mtier]
 sources: [llm]
 status: enriched
+chart: line
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[niche]] — Use 'métier' to highlight a professional or artistic field that perfectly fits one’s talents and training, often with a European or refined tone.
+- synonym: [[calling]]
+- synonym: [[vocation]]
+- synonym: [[forte]]
+- synonym: [[specialty]]
+- synonym: [[field]]
+- collocation: [[find]]
+- collocation: [[true]]
+- collocation: [[artistic]]
+- collocation: [[proper]]

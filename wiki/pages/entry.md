@@ -9,6 +9,8 @@ rank: 1655
 sfi: 56.75
 sources: [wordnet, llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[insertion]] — Use 'insertion' to emphasize the act or result of placing an item into a record.
 - advanced_form: [[notation]] — Use 'notation' for a brief written comment or note added to a record.
 - advanced_form: [[inclusion]] — Use 'inclusion' when focusing on the item being added as part of a larger record.
+- collocation: [[encyclopedia]]
+- synonym: [[importation]]
+- collocation: [[visa]]

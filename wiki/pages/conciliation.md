@@ -6,6 +6,8 @@ pos: noun
 forms: [conciliation]
 sources: [llm]
 status: enriched
+chart: realization
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[diplomacy]] — Use 'conciliation' to highlight the process of reducing hostility and building trust, a key goal of diplomacy.
 - builds_on: [[arbitration]] — Use 'conciliation' when focusing on bringing parties together through compromise, while 'arbitration' involves a binding decision by an impartial third party.
+- synonym: [[mediation]]
+- synonym: [[pacification]]
+- synonym: [[reconciliation]]

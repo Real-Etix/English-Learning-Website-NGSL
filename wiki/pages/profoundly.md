@@ -6,6 +6,8 @@ pos: adverb
 forms: [profoundly]
 sources: [llm]
 status: enriched
+chart: far
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - builds_on: [[extremely]] — Use 'profoundly' for deep, serious, or emotional impact; not typical for simple physical extremes.
 - builds_on: [[severely]] — Use 'profoundly' for deep, significant impact, often emotional or intellectual, whereas 'severely' emphasizes harshness or extreme degree.
 - builds_on: [[greatly]] — Use 'profoundly' to describe deep emotional or intellectual effects, stronger and more formal than 'greatly'.
+- synonym: [[deeply]]
+- builds_on: [[deeply]] — Use when the emotional or psychological impact is very deep and often lasting, more formal than 'deeply'.

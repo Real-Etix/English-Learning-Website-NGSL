@@ -9,6 +9,8 @@ rank: 139
 sfi: 68.16
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ put into a certain place or abstract location
 - advanced_form: [[set]] — Use 'set' when putting something down in a stable or upright position, or when arranging it as part of a pattern.
 - advanced_form: [[position]] — Use 'position' when you need to adjust or align something precisely in a particular spot or orientation.
 - builds_on: [[option]] — Use 'put' when referring to an option to sell the underlying asset.
+- collocation: [[circuitously]]
+- collocation: [[pedestal]]

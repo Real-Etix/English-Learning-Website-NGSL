@@ -6,6 +6,8 @@ pos: adjective
 forms: [driven]
 sources: [llm]
 status: enriched
+chart: active
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ambitious]] — Use 'driven' to emphasize an intense, almost relentless inner motivation, stronger than the general desire implied by 'ambitious'.
+- synonym: [[hardworking]]
+- synonym: [[purposeful]]
+- synonym: [[powered]]

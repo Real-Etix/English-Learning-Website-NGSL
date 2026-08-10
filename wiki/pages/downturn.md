@@ -9,6 +9,8 @@ rank: 319
 sfi: 55
 sources: [wordnet, llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ a worsening of business or economic activity
 - advanced_form: [[slump]] — Use 'slump' for a sharp, often temporary decline in a specific sector or activity, more informal than 'downturn'.
 - advanced_form: [[contraction]] — Use 'contraction' in formal economics contexts to describe a reduction in economic output, often measured over quarters.
 - builds_on: [[decrease]] — Use 'downturn' specifically for economic or business cycles, implying a negative shift from a previous positive period.
+- builds_on: [[slowdown]] — Use specifically for a slowdown in business, economy, or other measurable activity, often with negative connotations.

@@ -9,6 +9,8 @@ rank: 2784
 sfi: 52.38
 sources: [wordnet, llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ a piece broken off or cut off of something else
 - builds_on: [[segment]] — Use 'fragment' to emphasize a small, broken-off piece, often from something that was once whole, more specific than 'segment'.
 - advanced_form: [[shard]] — Use 'shard' for a sharp, often curved piece of broken glass, pottery, or stone, emphasizing the pointed or jagged nature; 'fragment' is more general.
 - advanced_form: [[splinter]] — Use 'splinter' for a thin, sharp piece of wood, metal, or bone that has broken off, especially one that can pierce the skin; 'fragment' is broader and less specific.
+- synonym: [[moiety]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [elide]
 sources: [llm]
 status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[omit]] — Use 'elide' in formal or academic contexts to mean deliberately leaving out details or steps, often for conciseness; 'omit' is more common.
+- synonym: [[delete]]
+- synonym: [[cut]]
+- synonym: [[drop]]
+- synonym: [[exclude]]
+- collocation: [[text]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [alimentation]
 sources: [llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition

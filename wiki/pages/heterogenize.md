@@ -6,6 +6,8 @@ pos: verb
 forms: [heterogenize]
 sources: [llm]
 status: enriched
+chart: separate
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 670
 sfi: 53.43
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[creation]] — Use 'creation' for the result of bringing something into existence, especially in arts, crafts, or intellectual work.
 - advanced_form: [[contraption]] — Use 'contraption' for a device or machine that seems overly complicated or makeshift, often with a humorous or informal tone.
 - builds_on: [[innovation]] — Use 'invention' when referring to a device or process that was created for the first time, often through deliberate effort.
+- builds_on: [[fiction]] — Use to refer to something created by the imagination, especially as a formal alternative to a made-up story.

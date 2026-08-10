@@ -6,6 +6,8 @@ pos: noun
 forms: [sixtieth]
 sources: [llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition

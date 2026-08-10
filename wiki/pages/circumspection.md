@@ -6,6 +6,8 @@ pos: noun
 forms: [circumspection]
 sources: [llm]
 status: enriched
+chart: notify
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adverb
 forms: [manifestly]
 sources: [llm]
 status: enriched
+chart: obviously
+region: you
 ---
 
 ## Definition

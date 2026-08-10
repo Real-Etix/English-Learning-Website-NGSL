@@ -9,6 +9,8 @@ rank: 1149
 sfi: 58.89
 sources: [wordnet, llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ provide as food
 - advanced_form: [[nourish]] — Use when emphasizing the provision of nutrients for growth and health, not just feeding.
 - advanced_form: [[sustain]] — Use when focusing on maintaining life or supporting over time, often in a more formal or holistic context.
 - advanced_form: [[cater]] — Use when referring to providing food as a service, especially for events or groups.
+- synonym: [[broadcasting]]
+- collocation: [[livestock]]
+- collocation: [[nocturnally]]
+- collocation: [[pellet]]
+- synonym: [[stoke]]

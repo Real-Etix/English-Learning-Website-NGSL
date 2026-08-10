@@ -6,6 +6,8 @@ pos: noun
 forms: [odyssey]
 sources: [llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [pinnacle]
 sources: [llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 - builds_on: [[summit]] — Use 'pinnacle' instead of 'summit' to convey a lofty, crowning achievement, often with a sense of utmost excellence.
 - builds_on: [[optimum]] — Use 'pinnacle' instead of 'optimum' when referring to the highest point of success or achievement in a specific domain.
 - builds_on: [[highlight]] — Use 'pinnacle' to emphasize the highest point of achievement or success.
+- synonym: [[acme]]
+- synonym: [[capstone]]
+- synonym: [[culmination]]
+- synonym: [[minaret]]

@@ -9,6 +9,8 @@ rank: 572
 sfi: 53.74
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ _No sourced examples yet._
 - builds_on: [[legacy]] — Use 'devise' when referring to a gift of real property (land or buildings) by will, as distinct from personal property.
 - builds_on: [[formulate]] — Use 'devise' when emphasizing the creative invention or planning of a theory, more formal than 'formulate'.
 - builds_on: [[evolve]] — Use 'devise' instead of 'evolve' to convey inventing or designing something through clever thinking.
+- builds_on: [[invent]] — Use when inventing a strategy or method through careful thought.

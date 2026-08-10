@@ -6,6 +6,8 @@ pos: adjective
 forms: [inflamed]
 sources: [llm]
 status: enriched
+chart: sore
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sore]] — Use 'inflamed' for pain with visible redness, swelling, or heat, often due to infection or irritation.
+- synonym: [[tender]]
+- collocation: [[throat]]
+- collocation: [[skin]]
+- collocation: [[tissue]]

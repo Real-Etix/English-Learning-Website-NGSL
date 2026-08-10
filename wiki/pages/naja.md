@@ -6,6 +6,8 @@ pos: noun
 forms: [naja]
 sources: [llm]
 status: enriched
+chart: cobra
+region: cobra
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cobra]] — Use when specifying the genus of true cobras in technical or taxonomic writing.
+- collocation: [[species]]
+- collocation: [[snake]]

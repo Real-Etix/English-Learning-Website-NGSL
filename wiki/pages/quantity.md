@@ -9,6 +9,8 @@ rank: 2267
 sfi: 54.76
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[magnitude]] — Use 'magnitude' for a large or significant amount, often in scientific or abstract contexts, instead of 'quantity' when emphasizing scale or intensity.
 - advanced_form: [[volume]] — Use 'volume' for the total amount of something that is measured in three-dimensional space or for a large, continuous quantity, especially in technical or statistical contexts.
 - advanced_form: [[extent]] — Use 'extent' when referring to the range, scope, or degree of something, rather than a simple count or measure, to emphasize the breadth or limit of the quantity.
+- synonym: [[dosage]]

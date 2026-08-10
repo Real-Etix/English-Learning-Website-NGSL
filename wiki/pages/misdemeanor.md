@@ -6,6 +6,8 @@ pos: noun
 forms: [misdemeanor]
 sources: [llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[violation]] — Use 'misdemeanor' in legal contexts for a minor crime specifically graded below a felony; 'violation' is broader and can include non-criminal infractions.
+- synonym: [[offense]]
+- synonym: [[transgression]]
+- synonym: [[infraction]]
+- collocation: [[charge]]
+- collocation: [[conviction]]
+- collocation: [[petty]]
+- collocation: [[commit]]
+- collocation: [[serious]]

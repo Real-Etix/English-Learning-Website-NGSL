@@ -9,6 +9,8 @@ rank: 1515
 sfi: 57.33
 sources: [wordnet, llm]
 status: enriched
+chart: breach
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,13 @@ _No sourced examples yet._
 - advanced_form: [[aperture]] — Use 'aperture' for scientific or technical openings, especially in optics or machinery.
 - advanced_form: [[orifice]] — Use 'orifice' for anatomical or precise openings, often in medical or formal contexts.
 - advanced_form: [[breach]] — Use 'breach' for an opening caused by breaking or forceful separation, often in structural or security contexts.
+- synonym: [[burrow]]
+- collocation: [[darn]]
+- collocation: [[dig]]
+- collocation: [[doughnut]]
+- collocation: [[dowel]]
+- synonym: [[eyelet]]
+- collocation: [[ozone]]
+- synonym: [[pit]]
+- synonym: [[puncture]]
+- collocation: [[tap]]

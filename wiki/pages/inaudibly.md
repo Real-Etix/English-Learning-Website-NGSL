@@ -6,6 +6,8 @@ pos: adverb
 forms: [inaudibly]
 sources: [llm]
 status: enriched
+chart: loud
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[quietly]] — Use when the sound is too low to be heard by the listener.
+- synonym: [[noiselessly]]

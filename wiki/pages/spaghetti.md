@@ -6,6 +6,8 @@ pos: noun
 forms: [spaghetti]
 sources: [llm]
 status: enriched
+chart: pasta
+region: pasta
 ---
 
 ## Definition

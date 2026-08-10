@@ -6,6 +6,8 @@ pos: verb
 forms: [modulate]
 sources: [llm]
 status: enriched
+chart: administer
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[regulate]] — Use 'modulate' when adjusting in response to changing conditions, often with a controlled variation.
+- synonym: [[adjust]]
+- synonym: [[control]]
+- synonym: [[balance]]
+- synonym: [[tune]]
+- collocation: [[frequency]]
+- collocation: [[voice]]
+- collocation: [[temperature]]
+- collocation: [[signal]]
+- collocation: [[amplitude]]

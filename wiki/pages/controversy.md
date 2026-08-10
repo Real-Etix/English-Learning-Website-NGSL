@@ -9,6 +9,8 @@ rank: 452
 sfi: 55.305
 sources: [wordnet, llm]
 status: enriched
+chart: issue
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[contention]] — Use 'contention' when focusing on active, often public disagreement or debate, especially when positions are clearly opposed.
 - advanced_form: [[dissension]] — Use 'dissension' when disagreement leads to conflict or lack of unity within a group, emphasizing internal discord.
 - advanced_form: [[imbroglio]] — Use 'imbroglio' for a complicated, embarrassing, or messy situation involving multiple parties and misunderstandings.
+- builds_on: [[dispute]] — Use when referring to a prolonged public disagreement involving many people.

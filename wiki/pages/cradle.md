@@ -6,6 +6,8 @@ pos: noun
 forms: [cradle]
 sources: [llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition

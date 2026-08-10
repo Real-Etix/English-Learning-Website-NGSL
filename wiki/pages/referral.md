@@ -9,6 +9,8 @@ rank: 647
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 15
 sfi: 79.37
 sources: [curated]
 status: verified
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ Used to point to a thing that is further away or already mentioned.
 - collocation: [[thin]]
 - collocation: [[i]]
 - collocation: [[not]]
+- collocation: [[alarmed]]
+- collocation: [[aver]]
+- collocation: [[brag]]
+- collocation: [[purport]]
+- synonym: [[whom]]
+- collocation: [[namely]]

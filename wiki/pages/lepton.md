@@ -6,6 +6,8 @@ pos: noun
 forms: [lepton]
 sources: [llm]
 status: enriched
+chart: electron
+region: electron
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[electron]] — Use when classifying particles at a more fundamental or formal level; it is broader than 'electron'.
+- collocation: [[family]]
+- collocation: [[number]]
+- collocation: [[flavor]]
+- collocation: [[tau]]

@@ -9,6 +9,8 @@ rank: 1931
 sfi: 55.76
 sources: [wordnet, llm]
 status: enriched
+chart: form
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[contour]] — Use 'contour' when emphasizing the shape and curves of an object's outline, especially in geography, art, or design.
 - advanced_form: [[silhouette]] — Use 'silhouette' when the outline appears dark against a lighter background, often with a sense of mystery or simplicity.
 - advanced_form: [[profile]] — Use 'profile' for a side view outline of a person or object, commonly in portraits or descriptions.
+- synonym: [[precis]]
+- synonym: [[recapitulate]]

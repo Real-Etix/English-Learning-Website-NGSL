@@ -6,6 +6,8 @@ pos: noun
 forms: [disc]
 sources: [llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[disk]] — Use 'disc' in formal, technical, or British English contexts for a flat circular object.
+- synonym: [[patty]]
+- synonym: [[wheel]]

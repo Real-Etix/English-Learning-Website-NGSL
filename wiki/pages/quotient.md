@@ -6,6 +6,8 @@ pos: noun
 forms: [quotient]
 sources: [llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition

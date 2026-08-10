@@ -6,6 +6,8 @@ pos: noun
 forms: [valet]
 sources: [llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[attendant]] — Use 'valet' when referring to a personal servant in a hotel, restaurant, or private home, often with a focus on specific tasks like parking or dressing.
+- synonym: [[butler]]

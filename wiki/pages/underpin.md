@@ -9,6 +9,8 @@ rank: 1697
 sfi: 50.41
 sources: [wordnet, llm]
 status: enriched
+chart: bolster
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[buttress]] — Use when you want to emphasize providing additional strength or support, often to an argument or structure, more forceful than 'underpin'.
 - advanced_form: [[undergird]] — Use when you want to convey foundational support, especially abstract or structural; slightly more formal and literary than 'underpin'.
 - builds_on: [[underlie]] — Use 'underpin' to emphasize structural or foundational support, often in academic or technical contexts.
+- builds_on: [[shore]] — Use when providing a foundation or basis for an argument, idea, or system.

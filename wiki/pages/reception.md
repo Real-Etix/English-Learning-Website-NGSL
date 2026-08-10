@@ -9,6 +9,8 @@ rank: 46
 sfi: 59.84
 sources: [wordnet, llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ the manner in which something is greeted
 - advanced_form: [[ovation]] — Use 'ovation' specifically for a positive reception involving applause or cheers, more vivid than 'reception'.
 - advanced_form: [[salutation]] — Use 'salutation' for a formal greeting or acknowledgment, especially in writing or polite address, more specific than 'reception'.
 - builds_on: [[completion]] — Use 'reception' to emphasize the receiver's successful catch rather than the quarterback's throw.
+- collocation: [[marquee]]
+- collocation: [[tumultuous]]

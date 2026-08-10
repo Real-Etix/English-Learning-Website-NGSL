@@ -6,6 +6,8 @@ pos: verb
 forms: [sidetrack]
 sources: [llm]
 status: enriched
+chart: divert
+region: you
 ---
 
 ## Definition

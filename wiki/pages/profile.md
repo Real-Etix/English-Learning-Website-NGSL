@@ -9,6 +9,8 @@ rank: 2065
 sfi: 55.35
 sources: [wordnet, llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ an analysis (often in graphical form) representing the extent to which something
 - advanced_form: [[delineation]] — Use 'delineation' instead of 'profile' when emphasizing a precise, systematic analysis often with graphical precision.
 - advanced_form: [[depiction]] — Use 'depiction' instead of 'profile' when focusing on a visual or descriptive representation of characteristics.
 - advanced_form: [[overview]] — Use 'overview' instead of 'profile' when referring to a general summary rather than a detailed graphical analysis.
+- collocation: [[lipid]]

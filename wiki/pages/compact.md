@@ -9,6 +9,8 @@ rank: 70
 sfi: 58.67
 sources: [wordnet, llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - builds_on: [[bargain]] — Use 'compact' instead of 'bargain' when emphasizing a formal, binding agreement, often between groups or nations.
 - builds_on: [[agreement]] — Use 'compact' for a formal, binding agreement between parties, often with legal or political weight.
 - builds_on: [[covenant]] — Use 'compact' when emphasizing the binding and solemn nature of the agreement, often between states or organizations.
+- synonym: [[compressed]]
+- synonym: [[portable]]
+- collocation: [[kitchenette]]

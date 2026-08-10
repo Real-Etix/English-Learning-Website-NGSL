@@ -9,6 +9,8 @@ rank: 2490
 sfi: 54.01
 sources: [wordnet, llm]
 status: enriched
+chart: sign
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[gesticulation]] — Use for dramatic or exaggerated gestures, more formal than 'gesture'.
 - advanced_form: [[signal]] — Use when the gesture conveys a specific message or cue, often in a context of communication.
 - advanced_form: [[indication]] — Use for a gesture that shows or implies something, more formal and often used in descriptive writing.
+- collocation: [[futile]]

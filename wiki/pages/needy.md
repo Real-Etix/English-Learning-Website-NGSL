@@ -9,6 +9,8 @@ rank: 1064
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: needy
+region: needy
 ---
 
 ## Definition

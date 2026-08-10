@@ -6,6 +6,8 @@ pos: noun
 forms: [trump]
 sources: [llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition

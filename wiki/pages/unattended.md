@@ -9,6 +9,8 @@ rank: 431
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: unattended
+region: unattended
 ---
 
 ## Definition

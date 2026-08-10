@@ -6,6 +6,8 @@ pos: verb
 forms: [stride]
 sources: [llm]
 status: enriched
+chart: measure
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[step]] — Use 'stride' when emphasizing a significant or decisive step forward.
 - builds_on: [[progress]] — Use 'stride' (often plural 'strides') to indicate notable, often positive steps forward, especially in innovation or achievement.
 - builds_on: [[yard]] — Use 'stride' when describing distance in a more poetic or informal way, but remember it is not as precise as 'yard'.
+- collocation: [[briskly]]

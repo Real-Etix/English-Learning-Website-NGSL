@@ -9,6 +9,8 @@ rank: 867
 sfi: 50.91
 sources: [wordnet, llm]
 status: enriched
+chart: accord
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[treaty]] — Use 'treaty' for official, binding agreements between states, especially after conflict.
 - advanced_form: [[accord]] — Use 'accord' for formal agreements, often in diplomatic contexts, implying mutual consent.
 - builds_on: [[arrangement]] — Use 'pact' for a binding agreement, often between people or parties, implying commitment.
+- synonym: [[entente]]

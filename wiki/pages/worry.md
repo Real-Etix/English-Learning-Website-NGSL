@@ -9,6 +9,8 @@ rank: 653
 sfi: 61.68
 sources: [wordnet, llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ be worried, concerned, anxious, troubled, or uneasy
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[fret]] — Use 'fret' when the worry is persistent and often about trivial matters.
 - advanced_form: [[agonize]] — Use 'agonize' when the worry involves intense mental struggle or suffering.
+- synonym: [[brood]]
+- synonym: [[fuss]]

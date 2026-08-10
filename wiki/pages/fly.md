@@ -9,6 +9,8 @@ rank: 881
 sfi: 60.3
 sources: [wordnet, llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ travel through the air
 - synonym: [[wing]]
 - advanced_form: [[soar]] — Use 'soar' instead of 'fly' when emphasizing graceful, high, or effortless flight, often with upward motion.
 - advanced_form: [[glide]] — Use 'glide' instead of 'fly' when describing smooth, sustained motion without visible effort or power, often with a downward or horizontal trajectory.
+- collocation: [[ensign]]
+- collocation: [[pectoral]]

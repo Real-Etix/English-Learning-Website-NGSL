@@ -6,6 +6,8 @@ pos: noun
 forms: [receipts]
 sources: [llm]
 status: enriched
+chart: outlay
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[revenue]] — Use 'receipts' when referring to actual money collected, often in a specific period, like daily or monthly cash intake.
+- synonym: [[proceeds]]
+- synonym: [[income]]
+- collocation: [[gross]]
+- collocation: [[total]]
+- collocation: [[cash]]
+- collocation: [[ticket]]

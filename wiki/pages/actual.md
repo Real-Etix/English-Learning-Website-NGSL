@@ -9,6 +9,8 @@ rank: 1335
 sfi: 58.08
 sources: [wordnet, llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ presently existing in fact and not merely potential or possible
 - advanced_form: [[genuine]] — Use 'genuine' when emphasizing authenticity or lack of imitation, rather than just factual existence.
 - advanced_form: [[tangible]] — Use 'tangible' when emphasizing something that can be physically touched or concretely perceived, unlike abstract 'actual'.
 - advanced_form: [[concrete]] — Use 'concrete' when referring to something specific and definite, as opposed to vague or theoretical.
+- synonym: [[very]]

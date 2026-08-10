@@ -6,6 +6,8 @@ pos: noun
 forms: [disintegration]
 sources: [llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition

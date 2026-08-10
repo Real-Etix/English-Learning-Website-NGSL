@@ -6,6 +6,8 @@ pos: adverb
 forms: [tangentially]
 sources: [llm]
 status: enriched
+chart: indirectly
+region: you
 ---
 
 ## Definition

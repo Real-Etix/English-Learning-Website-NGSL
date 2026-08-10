@@ -9,6 +9,8 @@ rank: 718
 sfi: 61.2
 sources: [wordnet, llm]
 status: enriched
+chart: pass
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[materialize]] — Use 'materialize' when an event or thing becomes real or concrete, often after anticipation.
 - advanced_form: [[befall]] — Use 'befall' for serious or unfortunate events, adding a literary or somber tone.
 - builds_on: [[arise]] — Use 'occur' for events that happen or take place, often unexpectedly.
+- collocation: [[concomitantly]]
+- collocation: [[concurrently]]

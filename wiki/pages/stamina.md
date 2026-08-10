@@ -6,6 +6,8 @@ pos: noun
 forms: [stamina]
 sources: [llm]
 status: enriched
+chart: strength
+region: you
 ---
 
 ## Definition

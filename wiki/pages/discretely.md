@@ -6,6 +6,8 @@ pos: adverb
 forms: [discretely]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[apart]] — Use 'discretely' to mean separate and distinct, not overlapping.
+- synonym: [[separately]]
+- synonym: [[individually]]
+- synonym: [[independently]]

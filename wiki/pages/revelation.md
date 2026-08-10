@@ -6,6 +6,8 @@ pos: noun
 forms: [revelation]
 sources: [llm]
 status: enriched
+chart: realization
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[breakthrough]] — Use 'revelation' to emphasize a surprising or enlightening insight that was previously hidden.
 - builds_on: [[realization]] — Use 'revelation' when the realization is surprising or previously unknown information, whereas 'realization' can be less dramatic.
 - builds_on: [[discovery]] — Use 'revelation' when the discovery is surprising or previously hidden/secret; it implies a dramatic reveal.
+- synonym: [[divulgence]]

@@ -9,6 +9,8 @@ rank: 2
 sfi: 66.71
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,17 @@ _No sourced examples yet._
 - advanced_form: [[merchandise]] — Use it in retail or commercial writing instead of casual 'goods.'
 - advanced_form: [[commodities]] — Use it when talking about global markets, economies, or untransformed products.
 - advanced_form: [[wares]] — Use it for handmade or specialty items sold by artisans, vendors, or small shops.
+- collocation: [[artisan]]
+- collocation: [[artisanal]]
+- synonym: [[belongings]]
+- synonym: [[chattel]]
+- collocation: [[confiscate]]
+- collocation: [[exporter]]
+- collocation: [[handcrafted]]
+- collocation: [[haulier]]
+- collocation: [[importation]]
+- collocation: [[leviable]]
+- collocation: [[purvey]]
+- collocation: [[worldly]]
+- collocation: [[vend]]
+- collocation: [[conveyable]]

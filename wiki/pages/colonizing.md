@@ -6,6 +6,8 @@ pos: adjective
 forms: [colonizing]
 sources: [llm]
 status: enriched
+chart: colonial
+region: colonial
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[colonial]] — Use 'colonizing' as an adjective when emphasizing the active process of establishing colonies, whereas 'colonial' describes the state or characteristics of being a colony.
+- synonym: [[imperial]]

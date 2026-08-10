@@ -6,6 +6,8 @@ pos: noun
 forms: [macrocosm]
 sources: [llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition

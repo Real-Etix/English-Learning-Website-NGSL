@@ -6,6 +6,8 @@ pos: noun
 forms: [clang]
 sources: [llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition

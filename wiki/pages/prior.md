@@ -9,6 +9,8 @@ rank: 1792
 sfi: 56.22
 sources: [wordnet, llm]
 status: enriched
+chart: empirical
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ the head of a religious order
 - builds_on: [[previous]] — Use 'prior' to emphasize something that came earlier in time, often in formal contexts like schedules or obligations.
 - advanced_form: [[abbot]] — Use 'abbot' when referring to the head of a monastery instead of 'prior'; a prior often serves under an abbot.
 - advanced_form: [[superior]] — Use 'superior' as a formal term for the leader of any religious house, broader than 'prior' which is specific to certain orders.
+- synonym: [[aforementioned]]
+- synonym: [[earlier]]
+- synonym: [[preparatory]]

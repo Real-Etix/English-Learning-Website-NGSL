@@ -6,6 +6,8 @@ pos: noun
 forms: [tribulation]
 sources: [llm]
 status: enriched
+chart: occupation
+region: you
 ---
 
 ## Definition

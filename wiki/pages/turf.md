@@ -6,6 +6,8 @@ pos: noun
 forms: [turf]
 sources: [llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition

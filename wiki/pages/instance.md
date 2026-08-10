@@ -9,6 +9,8 @@ rank: 864
 sfi: 60.38
 sources: [wordnet, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ an occurrence of something
 - advanced_form: [[manifestation]] — Use instead of 'instance' when the occurrence reveals an underlying concept.
 - advanced_form: [[phenomenon]] — Use instead of 'instance' for a notable or unusual occurrence, often in scientific or academic contexts.
 - builds_on: [[cite]] — Use when giving specific examples as evidence or illustration.
+- synonym: [[occurrence]]

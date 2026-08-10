@@ -6,6 +6,8 @@ pos: noun
 forms: [officialdom]
 sources: [llm]
 status: enriched
+chart: lucrative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bureaucracy]] — Use 'officialdom' to emphasize the people and their status as officials, especially when critiquing their collective behavior or power.
+- synonym: [[administration]]
+- synonym: [[authorities]]
+- synonym: [[government]]
+- synonym: [[establishment]]
+- collocation: [[government]]
+- collocation: [[local]]
+- collocation: [[petty]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [pictogram]
 sources: [llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[icon]] — Use 'pictogram' to emphasize the pictorial, representation-based nature of the icon, often in contexts of universal signage or user experience design.
+- synonym: [[glyph]]
+- synonym: [[symbol]]
+- collocation: [[hazard]]
+- collocation: [[ancient]]
+- collocation: [[universal]]
+- collocation: [[design]]

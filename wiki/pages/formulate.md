@@ -9,6 +9,8 @@ rank: 1071
 sfi: 51.8
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - advanced_form: [[conceive]] — Use 'conceive' when focusing on the initial formation of an idea or theory in one's mind.
 - advanced_form: [[frame]] — Use 'frame' when you mean to construct or express a theory in a particular way, often with attention to wording or structure.
 - builds_on: [[evolve]] — Use 'formulate' instead of 'evolve' when you want to emphasize careful, systematic creation of a plan or idea.
+- builds_on: [[invent]] — Use when inventing a systematic or detailed plan, idea, or policy, especially in writing or formal presentation.
+- synonym: [[conceptualize]]

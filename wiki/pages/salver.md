@@ -6,6 +6,8 @@ pos: noun
 forms: [salver]
 sources: [llm]
 status: enriched
+chart: hedge
+region: you
 ---
 
 ## Definition

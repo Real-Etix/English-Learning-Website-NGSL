@@ -9,6 +9,8 @@ rank: 1445
 sfi: 57.64
 sources: [wordnet, llm]
 status: enriched
+chart: average
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ well known or easily recognized
 - advanced_form: [[customary]] — Use 'customary' for actions or behaviors that are usual or habitual, whereas 'familiar' focuses on something being known or recognized.
 - advanced_form: [[commonplace]] — Use 'commonplace' for things that are ordinary or unremarkable due to being very common, while 'familiar' implies personal recognition or acquaintance.
 - advanced_form: [[intimate]] — Use 'intimate' for deep, detailed knowledge or a strong personal connection, whereas 'familiar' indicates general awareness or recognition.
+- collocation: [[comfortably]]
+- collocation: [[leitmotif]]
+- collocation: [[intimately]]

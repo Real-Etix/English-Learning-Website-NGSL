@@ -9,6 +9,8 @@ rank: 367
 sfi: 64.28
 sources: [wordnet, llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,16 @@ _No sourced examples yet._
 - advanced_form: [[nourishment]] — Use when emphasizing the health-giving or nutritional aspect of food.
 - advanced_form: [[sustenance]] — Use when focusing on food that keeps someone alive or maintains strength.
 - advanced_form: [[cuisine]] — Use when referring to the style, culture, or preparation of food, rather than food itself.
+- collocation: [[cache]]
+- collocation: [[caseinate]]
+- collocation: [[dehydrated]]
+- collocation: [[forage]]
+- collocation: [[healthful]]
+- synonym: [[nutriment]]
+- collocation: [[packer]]
+- collocation: [[potable]]
+- collocation: [[purvey]]
+- collocation: [[ration]]
+- collocation: [[refiner]]
+- collocation: [[flavorant]]
+- collocation: [[intolerance]]

@@ -9,6 +9,8 @@ rank: 236
 sfi: 66.23
 sources: [wordnet, llm]
 status: enriched
+chart: pass
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - synonym: [[pass]]
 - advanced_form: [[occur]] — Use 'occur' in more formal contexts, such as news reports or scientific writing, instead of 'happen'.
 - advanced_form: [[transpire]] — Use 'transpire' when revealing that something happened, often with an element of discovery or unfolding, in formal writing.
+- synonym: [[befall]]

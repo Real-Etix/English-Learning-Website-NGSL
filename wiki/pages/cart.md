@@ -9,6 +9,8 @@ rank: 196
 sfi: 56.3
 sources: [wordnet, llm]
 status: enriched
+chart: cart
+region: cart
 ---
 
 ## Definition

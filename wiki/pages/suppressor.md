@@ -6,6 +6,8 @@ pos: noun
 forms: [suppressor]
 sources: [llm]
 status: enriched
+chart: extinguisher
+region: extinguisher
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[extinguisher]] — Use 'suppressor' in formal or technical contexts for a fire‑control device, often part of a fixed system.
+- synonym: [[damper]]
+- synonym: [[quencher]]

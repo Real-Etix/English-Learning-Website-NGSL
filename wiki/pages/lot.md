@@ -9,6 +9,8 @@ rank: 123
 sfi: 68.54
 sources: [wordnet, llm]
 status: enriched
+chart: lot
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ status: enriched
 - advanced_form: [[plethora]] — Use 'plethora' to emphasize abundance that may be overwhelming or more than needed; stronger than 'a lot'.
 - advanced_form: [[myriad]] — Use 'myriad' for an impressively large, often uncountable number; more poetic and formal than 'a lot'.
 - builds_on: [[batch]] — Use 'lot' for a set of items produced or shipped together, especially in commerce or manufacturing, to sound more formal than 'batch'.
+- collocation: [[a]]
+- synonym: [[destiny]]
+- collocation: [[of]]

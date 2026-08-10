@@ -9,6 +9,8 @@ rank: 401
 sfi: 55.759
 sources: [wordnet, llm]
 status: enriched
+chart: spontaneous
+region: spontaneous
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ happening or arising without apparent external cause
 - advanced_form: [[extemporaneous]] — Use 'extemporaneous' for unplanned actions, especially speeches or performances, implying skill or grace without preparation.
 - advanced_form: [[unpremeditated]] — Use 'unpremeditated' to emphasize that an action was not planned or intended in advance, often for neutral or positive events.
 - advanced_form: [[unprompted]] — Use 'unprompted' when something is done without being asked or suggested, focusing on the absence of external stimulus.
+- collocation: [[abortion]]

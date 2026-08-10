@@ -6,6 +6,8 @@ pos: noun
 forms: [sabbatical]
 sources: [llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition

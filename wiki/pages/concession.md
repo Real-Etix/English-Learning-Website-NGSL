@@ -9,6 +9,8 @@ rank: 518
 sfi: 53.71
 sources: [wordnet, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ a contract granting the right to operate a subsidiary business
 - advanced_form: [[franchise]] — Use 'franchise' when the contract includes branding and operational guidelines from a larger company, unlike a generic concession.
 - advanced_form: [[license]] — Use 'license' when emphasizing the legal permission aspect, often for smaller or temporary operations, whereas 'concession' implies a broader business agreement.
 - advanced_form: [[lease]] — Use 'lease' when the contract primarily involves renting physical space, while 'concession' focuses on the right to run a business within a venue.
+- collocation: [[concessionaire]]
+- synonym: [[distributorship]]

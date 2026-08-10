@@ -9,6 +9,8 @@ rank: 841
 sfi: 51.22
 sources: [wordnet, llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[prickle]] — Use 'prickle' when referring to a small, sharp outgrowth from a plant's stem or leaf, especially one that is not a true thorn (e.g., on roses or brambles). More formal than 'sticker'.
 - advanced_form: [[spine]] — Use 'spine' for a stiff, pointed structure on a plant, especially in arid or desert species like cacti. More precise and scientific than 'sticker'.
+- synonym: [[spike]]
+- synonym: [[needle]]

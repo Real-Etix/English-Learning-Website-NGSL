@@ -6,6 +6,8 @@ pos: noun
 forms: [groundwork]
 sources: [llm]
 status: enriched
+chart: detail
+region: you
 ---
 
 ## Definition

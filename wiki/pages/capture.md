@@ -9,6 +9,8 @@ rank: 1658
 sfi: 56.75
 sources: [wordnet, llm]
 status: enriched
+chart: resume
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ succeed in representing or expressing something intangible
 - advanced_form: [[encapsulate]] — Use when emphasizing a concise and complete representation of an intangible idea.
 - advanced_form: [[embody]] — Use when the thing is a tangible or concrete example of an abstract quality.
 - advanced_form: [[distill]] — Use when extracting the most essential or pure form of something intangible.
+- synonym: [[abduct]]
+- synonym: [[conquest]]
+- collocation: [[elude]]
+- synonym: [[ensnare]]
+- collocation: [[negatron]]
+- builds_on: [[photograph]] — Use in formal or artistic contexts, focusing on preserving a moment or feeling.

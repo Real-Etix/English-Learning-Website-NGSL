@@ -9,6 +9,8 @@ rank: 252
 sfi: 56.48
 sources: [wordnet, llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ intentionally conceived
 - advanced_form: [[premeditated]] — Use 'premeditated' when the action was planned in advance, often implying intent to harm or deceive.
 - advanced_form: [[willful]] — Use 'willful' to stress that the action was done deliberately, often with a connotation of stubbornness or defiance.
 - advanced_form: [[calculated]] — Use 'calculated' to suggest careful planning and foresight, often for strategic effect.
+- collocation: [[acutely]]
+- synonym: [[volitional]]
+- synonym: [[sentient]]

@@ -9,6 +9,8 @@ rank: 1235
 sfi: 51.37
 sources: [wordnet, llm]
 status: enriched
+chart: transparent
+region: transparent
 ---
 
 ## Definition

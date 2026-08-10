@@ -6,6 +6,8 @@ pos: noun
 forms: [rebuff]
 sources: [llm]
 status: enriched
+chart: grant
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[refusal]] — Use 'rebuff' for a blunt or scornful refusal, often in social or political contexts.
 - builds_on: [[reject]] — Use when rejecting someone or something in a blunt, unfriendly way.
+- synonym: [[denial]]
+- synonym: [[snub]]

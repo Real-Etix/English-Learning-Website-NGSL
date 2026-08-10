@@ -6,6 +6,8 @@ pos: noun
 forms: [progeny]
 sources: [llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition

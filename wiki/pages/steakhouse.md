@@ -6,6 +6,8 @@ pos: noun
 forms: [steakhouse]
 sources: [llm]
 status: enriched
+chart: grill
+region: grill
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[grill]] — Use 'steakhouse' for a restaurant that specializes in grilled steaks, often more upscale than a general 'grill'.
+- synonym: [[chophouse]]

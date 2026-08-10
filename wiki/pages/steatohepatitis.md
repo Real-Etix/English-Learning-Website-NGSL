@@ -6,6 +6,8 @@ pos: noun
 forms: [steatohepatitis]
 sources: [llm]
 status: enriched
+chart: hepatitis
+region: hepatitis
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [creatine-monohydrate]
 sources: [llm]
 status: enriched
+chart: creatine
+region: creatine
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[creatine]] — Use this when referring to the specific supplemental compound.
+- collocation: [[supplement]]
+- collocation: [[powder]]
+- collocation: [[dose]]
+- collocation: [[take]]
+- collocation: [[muscle]]

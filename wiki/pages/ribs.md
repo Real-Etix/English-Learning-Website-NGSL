@@ -6,6 +6,8 @@ pos: noun
 forms: [ribs]
 sources: [llm]
 status: enriched
+chart: barbecue
+region: barbecue
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[barbecue]] — Use 'ribs' when specifying the type of barbecued meat, as 'barbecue' alone might be ambiguous or too general.
+- synonym: [[rack]]
+- collocation: [[pork]]
+- collocation: [[beef]]

@@ -9,6 +9,8 @@ rank: 674
 sfi: 61.5
 sources: [wordnet, llm]
 status: enriched
+chart: squeeze
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,11 @@ exert pressure or force to or upon
 - advanced_form: [[squeeze]] — Use 'squeeze' when pressing from opposite sides to extract or compress, often with hands or fingers; implies a tighter, more focused force than general 'press'.
 - builds_on: [[journalism]] — Use 'press' to refer to the entire news industry or its professionals collectively, often emphasizing its influence or role in society.
 - builds_on: [[publisher]] — Use 'press' instead of 'publisher' for academic, scholarly, or specialized publishing entities, especially those with a formal name (e.g., Oxford University Press).
+- synonym: [[clamp]]
+- collocation: [[keypad]]
+- collocation: [[lensman]]
+- collocation: [[mouthpiece]]
+- collocation: [[printing]]
+- collocation: [[redactor]]
+- collocation: [[trailing]]
+- collocation: [[treadle]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [squatting]
 sources: [llm]
 status: enriched
+chart: squat
+region: squat
 ---
 
 ## Definition

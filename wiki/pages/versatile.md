@@ -6,6 +6,8 @@ pos: adjective
 forms: [versatile]
 sources: [llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[adaptive]] — Use 'versatile' when something can be used in many different ways or contexts.
+- collocation: [[instrumentalist]]
+- synonym: [[flexible]]
+- collocation: [[extremely]]
+- collocation: [[incredibly]]
+- collocation: [[remarkably]]
+- collocation: [[tool]]
+- collocation: [[actor]]
+- synonym: [[adaptable]]

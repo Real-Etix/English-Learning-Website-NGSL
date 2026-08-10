@@ -6,6 +6,8 @@ pos: noun
 forms: [saurian]
 sources: [llm]
 status: enriched
+chart: lizard
+region: lizard
 ---
 
 ## Definition

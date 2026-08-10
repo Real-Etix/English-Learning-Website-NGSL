@@ -9,6 +9,8 @@ rank: 2557
 sfi: 53.79
 sources: [wordnet, llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ pass through
 - builds_on: [[suffer]] — Use 'undergo' for medical procedures, changes, or formal processes.
 - advanced_form: [[endure]] — Use 'endure' when the experience involves hardship or difficulty, stronger than 'undergo'.
 - advanced_form: [[sustain]] — Use 'sustain' for receiving damage, injury, or loss, more formal and specific than 'undergo'.
+- collocation: [[psychoanalysis]]
+- collocation: [[realignment]]
+- collocation: [[reassessment]]
+- collocation: [[reevaluation]]
+- collocation: [[restructuring]]
+- collocation: [[resocialization]]

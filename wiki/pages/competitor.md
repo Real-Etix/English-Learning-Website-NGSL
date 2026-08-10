@@ -9,6 +9,8 @@ rank: 2213
 sfi: 54.91
 sources: [wordnet, llm]
 status: enriched
+chart: competitor
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[adversary]] — Use 'adversary' for a more formal or hostile opponent, especially in legal, political, or strategic contexts.
 - advanced_form: [[opponent]] — Use 'opponent' as a neutral term for someone you compete against, suitable for sports, games, or arguments.
 - builds_on: [[athlete]] — Use when focusing on the competitive aspect or participation in contests rather than general training.
+- synonym: [[challenger]]

@@ -9,6 +9,8 @@ rank: 2771
 sfi: 52.75
 sources: [wordnet, llm]
 status: enriched
+chart: weird
+region: weird
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ suggesting the operation of supernatural influences
 - advanced_form: [[uncanny]] — Use 'uncanny' instead of 'weird' when the strangeness feels unsettling and hints at something more than ordinary, often associated with intuition or coincidence.
 - advanced_form: [[eerie]] — Use 'eerie' instead of 'weird' when the atmosphere is creepy and suggests the presence of something ghostly or supernatural.
 - advanced_form: [[otherworldly]] — Use 'otherworldly' instead of 'weird' to emphasize that something appears to belong to a different, supernatural realm rather than being merely odd.
+- collocation: [[contraption]]

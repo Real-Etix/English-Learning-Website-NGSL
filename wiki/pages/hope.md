@@ -9,6 +9,8 @@ rank: 250
 sfi: 65.89
 sources: [wordnet, llm]
 status: enriched
+chart: likelihood
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ a specific instance of feeling hopeful
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[aspiration]] — Use 'aspiration' when referring to a strong, specific hope for future achievement.
 - advanced_form: [[anticipation]] — Use 'anticipation' when the hope is coupled with eager expectation of something soon to happen.
+- collocation: [[dare]]
+- collocation: [[fervent]]
+- collocation: [[fervently]]
+- collocation: [[nourish]]
+- collocation: [[illusory]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [jingoist]
 sources: [llm]
 status: enriched
+chart: nationalist
+region: nationalist
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nationalist]] — Use 'jingoist' when the nationalism is aggressive, bellicose, or promotes war and superiority over other nations.
+- synonym: [[chauvinist]]
+- synonym: [[patriot]]

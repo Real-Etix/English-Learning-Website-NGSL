@@ -6,6 +6,8 @@ pos: noun
 forms: [antebrachium]
 sources: [llm]
 status: enriched
+chart: elbow
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[forearm]] — Use 'antebrachium' in formal or clinical writing instead of 'forearm' to sound precise and technical.
+- collocation: [[region]]
+- collocation: [[anatomy]]
+- collocation: [[fracture]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [decennium]
 sources: [llm]
 status: enriched
+chart: decade
+region: decade
 ---
 
 ## Definition

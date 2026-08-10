@@ -9,6 +9,8 @@ rank: 1692
 sfi: 50.14
 sources: [wordnet, llm]
 status: enriched
+chart: timber
+region: timber
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[lumber]] — Use 'lumber' when referring to wood that is processed and ready for building, especially in North American English; 'timber' is more common in British English and can refer to standing trees or the material.
 - advanced_form: [[beams]] — Use 'beams' when referring to specific structural members that bear loads, whereas 'timber' is the broader term for the wood material itself.
 - builds_on: [[wooden]] — Use 'timber' (as an adjective) in architectural or construction contexts to specify the material, often implying a more rugged or structural quality than 'wooden'.
+- collocation: [[floatage]]

@@ -9,6 +9,8 @@ rank: 498
 sfi: 52.98
 sources: [wordnet, llm]
 status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition

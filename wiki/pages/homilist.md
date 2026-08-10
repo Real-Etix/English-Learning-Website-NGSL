@@ -6,6 +6,8 @@ pos: noun
 forms: [homilist]
 sources: [llm]
 status: enriched
+chart: preacher
+region: preacher
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [midplane]
 sources: [llm]
 status: enriched
+chart: median
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[midline]] — Use 'midplane' to emphasize the two-dimensional planar nature of the midline division, often in medical imaging or geometry.
+- collocation: [[brain]]
+- collocation: [[tumor]]
+- collocation: [[shift]]
+- collocation: [[crossing]]
+- collocation: [[across]]

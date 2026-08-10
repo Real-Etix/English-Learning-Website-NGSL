@@ -9,6 +9,8 @@ rank: 1097
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: wrinkle
+region: you
 ---
 
 ## Definition

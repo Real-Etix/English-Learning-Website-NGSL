@@ -9,6 +9,8 @@ rank: 751
 sfi: 51.2
 sources: [wordnet, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[expatriate]] — Use 'expatriate' instead of 'migrant' when emphasizing voluntary, often professional relocation to another country, usually with a temporary or long-term stay.
 - advanced_form: [[transient]] — Use 'transient' instead of 'migrant' to highlight the temporary and often shifting nature of the person's residence, especially in contexts like seasonal labor or itinerant work.
+- synonym: [[immigrant]]
+- builds_on: [[seasonal]] — Use when the worker relocates for the season, unlike 'seasonal' which just describes the timing.
+- builds_on: [[immigrant]] — Use when focusing on movement and relocation, especially for work or temporary stays, rather than permanent settlement.

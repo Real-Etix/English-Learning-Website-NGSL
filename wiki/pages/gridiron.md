@@ -6,6 +6,8 @@ pos: noun
 forms: [gridiron]
 sources: [llm]
 status: enriched
+chart: soccer
+region: soccer
 ---
 
 ## Definition

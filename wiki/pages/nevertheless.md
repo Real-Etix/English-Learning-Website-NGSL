@@ -9,6 +9,8 @@ rank: 1560
 sfi: 57.16
 sources: [wordnet]
 status: seeded
+chart: still
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ despite anything to the contrary (usually preceding a concession)
 - synonym: [[still]]
 - synonym: [[yet]]
 - synonym: [[nonetheless]]
+- synonym: [[anyhow]]
+- synonym: [[anyway]]

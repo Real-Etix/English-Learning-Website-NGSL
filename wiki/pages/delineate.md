@@ -6,6 +6,8 @@ pos: verb
 forms: [delineate]
 sources: [llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[elaborate]] — Use when outlining or describing something precisely and clearly, often with boundaries or structure.
 - builds_on: [[portray]] — Use 'delineate' when describing something clearly and precisely, often outlining boundaries or details.
 - builds_on: [[trace]] — Use 'delineate' when you need to describe or outline the precise steps or stages of development, rather than just following a path.
+- builds_on: [[depict]] — Use delineate when you want to emphasize precise outlining or drawing of boundaries and contours.

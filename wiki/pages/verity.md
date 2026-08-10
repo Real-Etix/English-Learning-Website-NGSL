@@ -6,6 +6,8 @@ pos: noun
 forms: [verity]
 sources: [llm]
 status: enriched
+chart: dedication
+region: you
 ---
 
 ## Definition

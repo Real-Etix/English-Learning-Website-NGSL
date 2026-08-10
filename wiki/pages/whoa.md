@@ -9,6 +9,8 @@ rank: 163
 sfi: 58.83
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,11 @@ _No sourced examples yet._
 
 ## Connections
 - domain: fitness
+- synonym: [[wait]]
+- synonym: [[stop]]
+- synonym: [[easy]]
+- synonym: [[steady]]
+- collocation: [[there]]
+- collocation: [[boy]]
+- collocation: [[say]]
+- collocation: [[baby]]

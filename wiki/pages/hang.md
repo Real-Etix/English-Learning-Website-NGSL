@@ -9,6 +9,8 @@ rank: 1085
 sfi: 59.19
 sources: [wordnet, llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[suspend]] — Use 'suspend' when you want a more formal or technical term, especially for objects intentionally hung from above.
 - advanced_form: [[dangle]] — Use 'dangle' when something is hanging loosely and often swinging or moving.
 - advanced_form: [[loll]] — Use 'loll' when something hangs or droops limply, often due to relaxation or unconsciousness.
+- collocation: [[banner]]
+- collocation: [[noose]]

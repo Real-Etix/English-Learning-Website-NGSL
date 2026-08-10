@@ -6,6 +6,8 @@ pos: verb
 forms: [revere]
 sources: [llm]
 status: enriched
+chart: think
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[admire]] — Use 'revere' when you feel deep respect and awe, often for someone's contributions or qualities.
+- synonym: [[respect]]
+- synonym: [[honor]]
+- synonym: [[esteem]]
+- collocation: [[deeply]]
+- collocation: [[as]]
+- collocation: [[for]]
+- collocation: [[the]]
+- collocation: [[much]]

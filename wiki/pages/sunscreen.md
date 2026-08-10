@@ -7,8 +7,10 @@ forms: [sunscreen, sunscreens]
 lists: [toeic]
 rank: 1230
 sfi: 49.46
-sources: [wordnet, dictionaryapi, tatoeba]
-status: seeded
+sources: [wordnet, dictionaryapi, tatoeba, llm]
+status: enriched
+chart: use
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ a cream spread on the skin
 - domain: toeic
 - collocation: [[use]]
 - collocation: [[some]]
+- advanced_form: [[photoprotectant]] — The formal scientific term for a sunscreen or sun-blocking ingredient; use in medical or technical writing.
+- advanced_form: [[sunblock]] — A common synonym, but specifically refers to a physical blocker that sits on the skin; use for thicker, more protective products.

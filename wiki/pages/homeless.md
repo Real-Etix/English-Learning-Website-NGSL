@@ -9,6 +9,8 @@ rank: 991
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: lengthy
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ someone unfortunate without housing
 - domain: toeic
 - advanced_form: [[transient]] — Use 'transient' when emphasizing temporary or wandering status, often in formal or bureaucratic contexts.
 - advanced_form: [[indigent]] — Use 'indigent' when focusing on extreme poverty, especially in legal or social service settings.
+- collocation: [[destitute]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [dominion]
 sources: [llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition

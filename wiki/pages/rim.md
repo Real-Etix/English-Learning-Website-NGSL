@@ -6,6 +6,8 @@ pos: noun
 forms: [rim]
 sources: [llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[frame]] — Use 'rim' to specify the visible border around the lens, especially when describing style or frame design.
+- synonym: [[edge]]
+- synonym: [[border]]
+- synonym: [[lip]]
+- synonym: [[margin]]
+- collocation: [[wheel]]
+- collocation: [[glass]]
+- collocation: [[cup]]
+- collocation: [[shot]]
+- synonym: [[brink]]

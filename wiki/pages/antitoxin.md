@@ -6,6 +6,8 @@ pos: noun
 forms: [antitoxin]
 sources: [llm]
 status: enriched
+chart: antibody
+region: antibody
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[antibody]] — Use 'antitoxin' when emphasizing that the antibody works by neutralizing a specific toxin.
+- synonym: [[remedy]]
+- collocation: [[administer]]
+- collocation: [[serum]]

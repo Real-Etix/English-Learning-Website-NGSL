@@ -9,6 +9,8 @@ rank: 720
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: ideally
+region: ideally
 ---
 
 ## Definition

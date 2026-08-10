@@ -6,6 +6,8 @@ pos: verb
 forms: [conjecture]
 sources: [llm]
 status: enriched
+chart: guess
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[hypothetical]] — Use for an opinion based on incomplete information, more elegant than 'hypothetical'.
 - builds_on: [[suspect]] — Use when forming an opinion with incomplete information, often in academic or speculative contexts.
 - builds_on: [[speculate]] — Use 'conjecture' when the belief involves forming an opinion from incomplete or uncertain evidence, often in academic or formal contexts.
+- synonym: [[presumption]]
+- builds_on: [[hypothesis]] — Use when a hypothesis is speculative and lacks solid proof.
+- synonym: [[theorize]]

@@ -9,6 +9,8 @@ rank: 195
 sfi: 67.07
 sources: [wordnet]
 status: seeded
+chart: gamble
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,10 @@ a small elite group
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[a]]
+- collocation: [[centimetre]]
+- synonym: [[handful]]
+- synonym: [[select]]
+- synonym: [[elite]]
+- synonym: [[minority]]
+- collocation: [[relatively]]

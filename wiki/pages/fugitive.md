@@ -6,6 +6,8 @@ pos: adjective
 forms: [fugitive]
 sources: [llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[volatile]] — Use 'fugitive' to describe substances that evaporate rapidly, especially in technical contexts like emissions or chemical properties, whereas 'volatile' is more general and common.
+- synonym: [[asylee]]

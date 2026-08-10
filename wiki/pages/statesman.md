@@ -6,6 +6,8 @@ pos: noun
 forms: [statesman]
 sources: [llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition

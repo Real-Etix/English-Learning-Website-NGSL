@@ -6,6 +6,8 @@ pos: noun
 forms: [remuneration]
 sources: [llm]
 status: enriched
+chart: outlay
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: verb
 forms: [evince]
 sources: [llm]
 status: enriched
+chart: present
+region: you
 ---
 
 ## Definition

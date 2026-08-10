@@ -9,6 +9,8 @@ rank: 1940
 sfi: 55.75
 sources: [wordnet, llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,19 @@ happening without warning or in a short space of time
 - advanced_form: [[abrupt]] — Use 'abrupt' instead of 'sudden' to emphasize a break or interruption in continuity.
 - advanced_form: [[precipitous]] — Use 'precipitous' for a sudden and steep change, often in a downward direction.
 - advanced_form: [[instantaneous]] — Use 'instantaneous' when the sudden event happens in an extremely brief moment, often without any perceivable delay.
+- collocation: [[deluge]]
+- collocation: [[downpour]]
+- collocation: [[eruption]]
+- collocation: [[flurry]]
+- collocation: [[gust]]
+- collocation: [[iciness]]
+- collocation: [[incursion]]
+- collocation: [[jolt]]
+- collocation: [[outbreak]]
+- collocation: [[paroxysm]]
+- collocation: [[passing]]
+- synonym: [[peracute]]
+- collocation: [[cloudburst]]
+- collocation: [[deceleration]]
+- collocation: [[discontinuity]]
+- collocation: [[upsurge]]

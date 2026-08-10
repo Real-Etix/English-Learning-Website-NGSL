@@ -9,6 +9,8 @@ rank: 307
 sfi: 56.724
 sources: [wordnet, llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[effect]] — Use 'effect' (verb) to highlight causing a change or result, especially in formal contexts, whereas 'render' is more direct in meaning 'make' or 'cause to become'.
 - advanced_form: [[occasion]] — Use 'occasion' to imply that something brings about an event or situation, often unexpectedly; it is more formal than 'render' and implies a cause-effect relationship.
 - builds_on: [[translate]] — Use 'render' for formal or literary translation, focusing on the artistry of the output.
+- collocation: [[invalid]]
+- collocation: [[obsolete]]
+- collocation: [[powerless]]
+- builds_on: [[depict]] — Use render for technical or meticulous artistic depiction, emphasizing skill in reproducing a subject.

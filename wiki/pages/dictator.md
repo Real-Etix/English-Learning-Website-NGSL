@@ -9,6 +9,8 @@ rank: 1225
 sfi: 49.63
 sources: [wordnet, llm]
 status: enriched
+chart: dictator
+region: dictator
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[enunciator]] — Use 'enunciator' instead of 'dictator' when emphasizing clear pronunciation and articulation of speech for recording.
 - advanced_form: [[articulator]] — Use 'articulator' instead of 'dictator' when focusing on the precise formation of speech sounds during dictation.
+- synonym: [[autocrat]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [commencement]
 sources: [llm]
 status: enriched
+chart: offset
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[threshold]] — Use 'commencement' for official or ceremonial beginnings; 'threshold' is more metaphorical for a point of transition or potential change.
 - builds_on: [[graduation]] — Use 'commencement' when referring to the official ceremony or the formal completion of studies, especially in US academic settings; it is a more formal synonym for 'graduation'.
 - builds_on: [[introduction]] — Use 'commencement' for a formal or official start, such as the start of a project or a graduation ceremony.
+- synonym: [[outset]]

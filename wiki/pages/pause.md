@@ -9,6 +9,8 @@ rank: 649
 sfi: 61.7
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[interlude]] — Use 'interlude' for a planned, often artistic break within an event, unlike a general 'pause' which can be unplanned.
 - advanced_form: [[respite]] — Use 'respite' for a rest that provides relief from something difficult or unpleasant, whereas 'pause' is neutral.
 - advanced_form: [[recess]] — Use 'recess' for an official break in a formal proceeding or school day; 'pause' is less formal.
+- collocation: [[awkward]]
+- collocation: [[momentarily]]
+- collocation: [[momentary]]

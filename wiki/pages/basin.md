@@ -9,6 +9,8 @@ rank: 487
 sfi: 54.858
 sources: [wordnet, llm]
 status: enriched
+chart: basin
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ a bowl-shaped vessel
 - advanced_form: [[receptacle]] — use 'receptacle' for any container that receives things, more formal than 'basin'.
 - advanced_form: [[tureen]] — use 'tureen' specifically for a large bowl serving soup or stew, more elegant than 'basin'.
 - builds_on: [[bowl]] — Use for a wide, deep bowl, often for holding liquids or preparing food.
+- synonym: [[bath]]
+- synonym: [[cauldron]]
+- synonym: [[vat]]

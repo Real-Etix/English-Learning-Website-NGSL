@@ -6,6 +6,8 @@ pos: verb
 forms: [universalize]
 sources: [llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition

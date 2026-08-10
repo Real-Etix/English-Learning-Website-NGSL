@@ -6,6 +6,8 @@ pos: verb
 forms: [smack]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hit]] — Use 'smack' for a sharp, sudden hit, often with an open hand, conveying a sense of impact and sound.
+- synonym: [[peck]]

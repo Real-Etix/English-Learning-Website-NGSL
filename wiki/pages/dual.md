@@ -9,6 +9,8 @@ rank: 1226
 sfi: 51.62
 sources: [wordnet, llm]
 status: enriched
+chart: duplicate
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ consisting of or involving two parts or components usually in pairs
 - advanced_form: [[duplex]] — Use 'duplex' to describe something that has two parts or operates in two ways, especially in architecture, telecommunications, or engineering.
 - advanced_form: [[twofold]] — Use 'twofold' to emphasize that something has two aspects or effects, often in formal or analytical writing.
 - builds_on: [[bilateral]] — Use 'dual' when describing something that consists of two elements, aspects, or functions; it is slightly less formal than 'bilateral' but more advanced in academic writing.
+- synonym: [[dichotomous]]

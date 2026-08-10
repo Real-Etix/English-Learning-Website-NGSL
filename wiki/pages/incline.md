@@ -9,6 +9,8 @@ rank: 114
 sfi: 60.44
 sources: [wordnet, llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ _No sourced examples yet._
 - advanced_form: [[gravitate]] — Use to mean a natural or habitual tendency to move toward something, often with a sense of attraction.
 - builds_on: [[tip]] — Use 'incline' for a gradual, controlled tilt, often in formal or descriptive contexts.
 - builds_on: [[lean]] — Use 'incline' instead of 'lean' when you want a more formal or technical tone, especially for gradual or intentional tilting.
+- synonym: [[ascent]]
+- synonym: [[declivity]]

@@ -9,6 +9,8 @@ rank: 72
 sfi: 56.92
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition

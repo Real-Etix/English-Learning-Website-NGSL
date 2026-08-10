@@ -6,6 +6,8 @@ pos: adjective
 forms: [haphazard]
 sources: [llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[random]] — Use 'haphazard' when the randomness results in disorganization or lack of care.
+- synonym: [[aleatory]]
+- synonym: [[careless]]
+- collocation: [[manner]]
+- collocation: [[way]]
+- collocation: [[fashion]]
+- collocation: [[approach]]
+- collocation: [[arrangement]]
+- synonym: [[indiscriminate]]

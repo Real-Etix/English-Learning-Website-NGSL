@@ -6,6 +6,8 @@ pos: verb
 forms: [desist]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[quit]] — Use 'desist' when referring to stopping an action that is unwanted or forbidden, usually after a command or request.
+- synonym: [[stop]]
+- synonym: [[cease]]
+- synonym: [[forbear]]
+- synonym: [[halt]]

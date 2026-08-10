@@ -6,6 +6,8 @@ pos: verb
 forms: [pacify]
 sources: [llm]
 status: enriched
+chart: charge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[calm]] — Use 'pacify' when you need to restore peace or quiet to someone who is agitated or angry, often through gentle action or negotiation.
+- synonym: [[appease]]
+- synonym: [[conciliate]]
+- synonym: [[soothe]]
+- synonym: [[placate]]
+- collocation: [[baby]]
+- collocation: [[crowd]]
+- collocation: [[anger]]
+- collocation: [[child]]

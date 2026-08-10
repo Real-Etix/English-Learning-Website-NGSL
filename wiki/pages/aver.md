@@ -6,6 +6,8 @@ pos: verb
 forms: [aver]
 sources: [llm]
 status: enriched
+chart: assert
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[assert]] — Use 'aver' instead of 'assert' for a more formal, often legal, declaration.
+- synonym: [[declare]]
+- synonym: [[affirm]]
+- synonym: [[avow]]
+- collocation: [[that]]
+- collocation: [[publicly]]
+- collocation: [[testimony]]
+- builds_on: [[contend]] — Use 'aver' in formal or legal contexts to state something confidently, stronger than 'contend'.

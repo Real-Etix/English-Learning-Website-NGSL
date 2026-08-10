@@ -6,6 +6,8 @@ pos: noun
 forms: [nounclass]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gender]] — This term is often used in descriptions of non-Indo-European languages as a synonym for grammatical gender.
+- synonym: [[grammaticalgender]]
+- collocation: [[system]]
+- collocation: [[agreement]]
+- collocation: [[marker]]
+- collocation: [[language]]

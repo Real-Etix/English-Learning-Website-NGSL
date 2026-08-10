@@ -6,6 +6,8 @@ pos: noun
 forms: [toetip]
 sources: [llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition

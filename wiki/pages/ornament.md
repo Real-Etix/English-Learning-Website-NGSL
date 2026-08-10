@@ -6,6 +6,8 @@ pos: verb
 forms: [ornament]
 sources: [llm]
 status: enriched
+chart: decorate
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,7 @@ _No sourced examples yet._
 - builds_on: [[decorate]] — Use 'ornament' for adding formal or structural decorative elements, often in architecture or design.
 - builds_on: [[accessory]] — Use 'ornament' to highlight that the accessory is purely decorative, not functional.
 - builds_on: [[decoration]] — Use 'ornament' for a specific decorative object, like a bauble or figurine, rather than the general act of decorating.
+- synonym: [[adorn]]
+- synonym: [[brooch]]
+- synonym: [[embellishment]]
+- synonym: [[jewel]]

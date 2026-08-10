@@ -9,6 +9,8 @@ rank: 272
 sfi: 56.18
 sources: [wordnet, llm]
 status: enriched
+chart: nutritional
+region: nutritional
 ---
 
 ## Definition

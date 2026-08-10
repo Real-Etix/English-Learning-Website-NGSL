@@ -6,6 +6,8 @@ pos: noun
 forms: [occident]
 sources: [llm]
 status: enriched
+chart: west
+region: west
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[west]] — Use 'Occident' in formal writing instead of 'the West' to sound more sophisticated.
+- collocation: [[orient]]

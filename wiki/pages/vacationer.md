@@ -6,6 +6,8 @@ pos: noun
 forms: [vacationer]
 sources: [llm]
 status: enriched
+chart: tourist
+region: tourist
 ---
 
 ## Definition

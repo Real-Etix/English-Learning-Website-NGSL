@@ -9,6 +9,8 @@ rank: 795
 sfi: 52.44
 sources: [wordnet, llm]
 status: enriched
+chart: safeguard
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[indictment]] — Use indictment when referring to the formal charging document rather than the entire legal process.
 - advanced_form: [[arraignment]] — Use arraignment instead of prosecution when focusing on the initial court appearance where charges are read.
+- collocation: [[barrister]]
+- collocation: [[lawyer]]

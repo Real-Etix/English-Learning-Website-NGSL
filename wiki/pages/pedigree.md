@@ -6,6 +6,8 @@ pos: noun
 forms: [pedigree]
 sources: [llm]
 status: enriched
+chart: background
+region: background
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[background]] — Use 'pedigree' instead of 'background' when highlighting social class or lineage.
+- collocation: [[academic]]
+- collocation: [[family]]
+- collocation: [[distinguished]]
+- collocation: [[long]]

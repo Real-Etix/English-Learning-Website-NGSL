@@ -9,6 +9,8 @@ rank: 1918
 sfi: 55.79
 sources: [wordnet, llm]
 status: enriched
+chart: domestic
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ relating to or concerned with a city or densely populated area
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[metropolitan]] — Use when emphasizing a large, major city or its surrounding region, often implying a central hub.
 - advanced_form: [[municipal]] — Use when referring to local government, services, or administrative aspects of a city, not just its character.
+- collocation: [[conurbation]]
+- collocation: [[encroachment]]
+- collocation: [[exploration]]
+- collocation: [[periphery]]
+- collocation: [[renaissance]]
+- collocation: [[warfare]]
+- collocation: [[densification]]
+- collocation: [[revitalize]]

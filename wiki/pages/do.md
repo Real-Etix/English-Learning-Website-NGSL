@@ -9,6 +9,8 @@ rank: 21
 sfi: 78.33
 sources: [curated]
 status: verified
+chart: say
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ To perform an action; also used to make questions and negatives.
 - collocation: [[you]]
 - collocation: [[will]]
 - collocation: [[to]]
+- collocation: [[how]]
+- collocation: [[kneebend]]
+- collocation: [[nor]]
+- collocation: [[pressup]]

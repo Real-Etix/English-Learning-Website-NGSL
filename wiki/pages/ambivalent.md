@@ -6,6 +6,8 @@ pos: adjective
 forms: [ambivalent]
 sources: [llm]
 status: enriched
+chart: uncertain
+region: you
 ---
 
 ## Definition

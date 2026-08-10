@@ -9,6 +9,8 @@ rank: 858
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: dependable
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ worthy of reliance or trust
 - advanced_form: [[staunch]] — Use 'staunch' to emphasize unwavering loyalty or support, more intense than 'dependable'.
 - builds_on: [[consistent]] — Use 'dependable' when focusing on reliability or trustworthiness, especially for people or systems.
 - builds_on: [[reliable]] — Use 'dependable' when emphasizing consistency and reliability over time, often for objects or people that rarely fail.
+- synonym: [[serviceable]]

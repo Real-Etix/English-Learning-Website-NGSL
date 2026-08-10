@@ -9,6 +9,8 @@ rank: 628
 sfi: 61.84
 sources: [wordnet, llm]
 status: enriched
+chart: firm
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,11 @@ marked by firm determination or resolution
 - advanced_form: [[unwavering]] — Use 'unwavering' when describing a steady, continuous determination that does not falter.
 - advanced_form: [[steadfast]] — Use 'steadfast' to highlight loyalty and persistent adherence to a goal or principle.
 - builds_on: [[brokerage]] — Use 'firm' as a more formal synonym for the business entity, often interchangeable with 'brokerage' in professional contexts.
+- synonym: [[crisp]]
+- collocation: [[denial]]
+- synonym: [[employer]]
+- synonym: [[entrenched]]
+- synonym: [[inflexible]]
+- collocation: [[monopolist]]
+- collocation: [[paralegal]]
+- collocation: [[headhunter]]

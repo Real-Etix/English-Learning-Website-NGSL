@@ -6,6 +6,8 @@ pos: noun
 forms: [confederate]
 sources: [llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition

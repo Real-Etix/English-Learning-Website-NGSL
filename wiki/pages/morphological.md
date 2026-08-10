@@ -9,6 +9,8 @@ rank: 255
 sfi: 57.069
 sources: [wordnet, llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[morphemic]] — Use 'morphemic' when focusing on the smallest meaningful units, not just word formation in general.
 - advanced_form: [[inflectional]] — Use 'inflectional' specifically for grammatical changes like plural or tense, not for word formation via derivational affixes.
 - advanced_form: [[derivational]] — Use 'derivational' when referring to processes that change word category or meaning, as opposed to inflection.
+- collocation: [[hybridism]]
+- synonym: [[morphosyntactic]]
+- synonym: [[phenotypic]]

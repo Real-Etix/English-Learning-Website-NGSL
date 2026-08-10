@@ -6,6 +6,8 @@ pos: noun
 forms: [accoutrements]
 sources: [llm]
 status: enriched
+chart: motif
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[kit]] — Use 'accoutrements' for formal or specialized equipment, especially in professional or ceremonial contexts.
+- synonym: [[equipment]]
+- synonym: [[paraphernalia]]
+- synonym: [[gear]]
+- collocation: [[necessary]]
+- collocation: [[kitchen]]
+- collocation: [[travel]]
+- synonym: [[appointments]]

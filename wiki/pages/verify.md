@@ -9,6 +9,8 @@ rank: 240
 sfi: 55.74
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ confirm the truth of
 - advanced_form: [[corroborate]] — Use when evidence or testimony supports a claim, often in legal or formal contexts.
 - advanced_form: [[validate]] — Use when proving that something is true, correct, or acceptable through testing or formal approval.
 - advanced_form: [[substantiate]] — Use when providing concrete evidence or proof to back up a statement or claim.
+- synonym: [[authenticate]]
+- collocation: [[credentials]]
+- collocation: [[veracity]]

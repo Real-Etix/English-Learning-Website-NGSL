@@ -6,6 +6,8 @@ pos: noun
 forms: [sanctuary]
 sources: [llm]
 status: enriched
+chart: asylum
+region: asylum
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[asylum]] — Use sanctuary for a place of safety, especially for wildlife or as a holy refuge, rather than the legal or political protection implied by asylum.
 - builds_on: [[shelter]] — Use 'sanctuary' for a place of refuge where someone is safe from legal or physical harm, often with a sacred or protective connotation.
+- synonym: [[haven]]
+- collocation: [[wildlife]]
+- synonym: [[hideaway]]

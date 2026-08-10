@@ -6,6 +6,8 @@ pos: noun
 forms: [innovator]
 sources: [llm]
 status: enriched
+chart: progressive
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reformer]] — Use innovator when emphasizing the introduction of new methods or ideas, rather than just advocating change.
+- synonym: [[conceptualizer]]

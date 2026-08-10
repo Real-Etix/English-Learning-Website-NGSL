@@ -9,6 +9,8 @@ rank: 792
 sfi: 60.82
 sources: [wordnet, llm]
 status: enriched
+chart: beautiful
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ delighting the senses or exciting intellectual or emotional admiration
 - advanced_form: [[exquisite]] — Use 'exquisite' for something delicately and perfectly beautiful, often with fine details.
 - advanced_form: [[stunning]] — Use 'stunning' for something so beautiful it shocks or amazes you.
 - advanced_form: [[captivating]] — Use 'captivating' for beauty that holds your attention and charms you.
+- collocation: [[conventionally]]
+- collocation: [[extraordinarily]]
+- synonym: [[ravishing]]
+- collocation: [[classically]]

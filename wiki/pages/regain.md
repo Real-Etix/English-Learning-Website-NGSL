@@ -9,6 +9,8 @@ rank: 1380
 sfi: 50.85
 sources: [wordnet, llm]
 status: enriched
+chart: retrieve
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[recoup]] — Use 'recoup' when regaining something lost, especially money, time, or energy, often with effort or compensation.
 - advanced_form: [[reclaim]] — Use 'reclaim' when regaining possession or control of something that was taken away or lost, often with active effort or restoration.
 - builds_on: [[recover]] — Use 'regain' when focusing on recovering a former state, ability, or possession that was lost, emphasizing return to a previous condition.
+- collocation: [[composure]]
+- collocation: [[poise]]

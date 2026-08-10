@@ -9,6 +9,8 @@ rank: 109
 sfi: 60.66
 sources: [wordnet, llm]
 status: enriched
+chart: novice
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[novice]] — Use 'novice' for a general beginner in any field; it's more formal than 'beginner'.
 - advanced_form: [[neophyte]] — Use 'neophyte' to emphasize someone new to a craft, skill, or belief system; it's more specialized and formal.
 - advanced_form: [[tyro]] — Use 'tyro' for a beginner in a specific discipline or learning area; it's somewhat rare but standard.
+- synonym: [[hacker]]

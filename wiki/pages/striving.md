@@ -6,6 +6,8 @@ pos: noun
 forms: [striving]
 sources: [llm]
 status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition

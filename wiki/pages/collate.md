@@ -6,6 +6,8 @@ pos: verb
 forms: [collate]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[compare]] — Use 'collate' when comparing and organizing information, especially documents or data, in a systematic way.
+- synonym: [[compile]]
+- synonym: [[collect]]
+- synonym: [[assemble]]
+- synonym: [[gather]]
+- synonym: [[organize]]
+- collocation: [[data]]
+- collocation: [[information]]

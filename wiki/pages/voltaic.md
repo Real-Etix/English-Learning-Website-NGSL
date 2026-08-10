@@ -6,6 +6,8 @@ pos: adjective
 forms: [voltaic]
 sources: [llm]
 status: enriched
+chart: pattern
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[electrical]] — Use in historical or technical discussions of early electrical devices that produce direct current from chemical reactions.
+- synonym: [[galvanic]]
+- synonym: [[electric]]
+- collocation: [[pile]]
+- collocation: [[cell]]
+- collocation: [[battery]]
+- collocation: [[current]]
+- collocation: [[electricity]]

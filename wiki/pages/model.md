@@ -9,6 +9,8 @@ rank: 485
 sfi: 63.12
 sources: [wordnet, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,14 @@ a hypothetical description of a complex entity or process
 - advanced_form: [[framework]] — Use 'framework' instead of 'model' when focusing on the underlying structure or set of assumptions that supports a system or analysis.
 - advanced_form: [[representation]] — Use 'representation' instead of 'model' when highlighting how something is depicted or symbolized, often in a simplified or abstract form.
 - builds_on: [[framework]] — Use 'model' when focusing on a simplified representation used for analysis or prediction, often in scientific or mathematical settings.
+- collocation: [[behavioristic]]
+- collocation: [[concurrency]]
+- collocation: [[dimensional]]
+- synonym: [[figurine]]
+- collocation: [[macroeconometrics]]
+- collocation: [[microskirt]]
+- collocation: [[modifier]]
+- collocation: [[murine]]
+- collocation: [[generative]]
+- collocation: [[nude]]
+- synonym: [[paragon]]

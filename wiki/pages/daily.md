@@ -9,6 +9,8 @@ rank: 955
 sfi: 59.91
 sources: [wordnet, llm]
 status: enriched
+chart: levy
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ of or belonging to or occurring every day
 - builds_on: [[newspaper]] — Use 'daily' to refer to a newspaper that is published every day, especially in casual or journalistic contexts.
 - advanced_form: [[diurnal]] — Use 'diurnal' instead of 'daily' in scientific or formal contexts, especially when referring to animals or plants active during the day.
 - advanced_form: [[quotidian]] — Use 'quotidian' for repetitive, ordinary, everyday tasks or events, often with a slightly formal or literary tone.
+- collocation: [[compounded]]
+- collocation: [[dosage]]
+- collocation: [[grind]]
+- collocation: [[ration]]
+- collocation: [[occurrence]]

@@ -9,6 +9,8 @@ rank: 1265
 sfi: 51.48
 sources: [wordnet, llm]
 status: enriched
+chart: pulse
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[dowel]] — Use 'dowel' when referring to a cylindrical rod used in joinery or crafts, more specific than a general peg.
 - advanced_form: [[spike]] — Use 'spike' when the peg is sharp and intended for piercing or anchoring, often in outdoor or construction contexts.
+- synonym: [[leg]]

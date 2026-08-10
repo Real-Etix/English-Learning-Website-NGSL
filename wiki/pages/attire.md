@@ -9,6 +9,8 @@ rank: 1029
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: attire
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ clothing of a distinctive style or for a particular occasion
 - advanced_form: [[apparel]] — Use 'apparel' as a formal term for clothing, especially in commercial or descriptive contexts, broader than 'attire'.
 - advanced_form: [[ensemble]] — Use 'ensemble' when referring to a coordinated outfit as a whole, more specific than 'attire'.
 - builds_on: [[clothing]] — Use 'attire' to describe clothing suited for a particular occasion or purpose, often implying a dress code or specific style.
+- synonym: [[wardrobe]]
+- builds_on: [[suit]] — Use when referring to formal or professional clothing in general, not a specific set.

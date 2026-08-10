@@ -9,6 +9,8 @@ rank: 330
 sfi: 55.34
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,5 @@ furthest or highest in degree or order
 - advanced_form: [[consummate]] — Use instead of 'ultimate' to describe someone with the highest degree of skill or perfection.
 - builds_on: [[maximal]] — Use 'ultimate' for the final or absolute limit, often implying a culmination or end point; 'maximal' is more about a measured upper bound.
 - builds_on: [[eventual]] — Use 'ultimate' to emphasize the final or farthest outcome, like the last stage after a series of events; 'eventual' is more neutral about timing.
+- synonym: [[existential]]
+- collocation: [[vindication]]

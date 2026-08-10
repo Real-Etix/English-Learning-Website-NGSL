@@ -9,6 +9,8 @@ rank: 1389
 sfi: 57.9
 sources: [wordnet, llm]
 status: enriched
+chart: wine
+region: wine
 ---
 
 ## Definition
@@ -21,3 +23,12 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[vintage]] — Use 'vintage' when referring to a specific year's wine of high quality, often implying age and prestige.
 - advanced_form: [[varietal]] — Use 'varietal' when you want to highlight the specific grape variety used to make the wine.
+- collocation: [[amphora]]
+- collocation: [[carafe]]
+- collocation: [[carte]]
+- collocation: [[connoisseur]]
+- collocation: [[decant]]
+- collocation: [[purvey]]
+- collocation: [[aerate]]
+- collocation: [[aficionado]]
+- collocation: [[quaff]]

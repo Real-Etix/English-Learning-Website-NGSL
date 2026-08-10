@@ -6,6 +6,8 @@ pos: noun
 forms: [superannuation]
 sources: [llm]
 status: enriched
+chart: annuity
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 231
 sfi: 56.87
 sources: [wordnet, llm]
 status: enriched
+chart: offset
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[commencement]] — Use for formal or official beginnings, often of events or procedures.
 - advanced_form: [[initiation]] — Use when emphasizing the starting phase of a process or system.
 - advanced_form: [[launch]] — Use for the start of a product, campaign, or enterprise.
+- collocation: [[bankroll]]
+- collocation: [[ceo]]
+- synonym: [[entrepreneurship]]

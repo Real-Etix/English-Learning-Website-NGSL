@@ -6,6 +6,8 @@ pos: noun
 forms: [industrialism]
 sources: [llm]
 status: enriched
+chart: industrialization
+region: industrialization
 ---
 
 ## Definition

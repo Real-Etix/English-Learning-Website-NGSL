@@ -9,6 +9,8 @@ rank: 46
 sfi: 73.86
 sources: []
 status: seeded
+chart: part
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[conversely]]
+- synonym: [[whenever]]
+- synonym: [[whilst]]

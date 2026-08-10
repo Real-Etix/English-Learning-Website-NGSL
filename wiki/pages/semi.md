@@ -9,6 +9,8 @@ rank: 774
 sfi: 52.97
 sources: [wordnet, llm]
 status: enriched
+chart: semi
+region: semi
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [psychobiology]
 sources: [llm]
 status: enriched
+chart: psychology
+region: psychology
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [occupier]
 sources: [llm]
 status: enriched
+chart: card
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,14 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lessee]] — Use 'occupier' to emphasize physical possession under a lease, more formal than 'lessee' in some contexts.
+- synonym: [[householder]]
+- synonym: [[occupant]]
+- synonym: [[resident]]
+- synonym: [[tenant]]
+- synonym: [[inhabitant]]
+- synonym: [[holder]]
+- collocation: [[current]]
+- collocation: [[previous]]
+- collocation: [[sole]]
+- collocation: [[owner]]
+- collocation: [[liability]]

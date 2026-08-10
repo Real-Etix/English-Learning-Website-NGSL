@@ -9,6 +9,8 @@ rank: 1954
 sfi: 55.67
 sources: [wordnet, llm]
 status: enriched
+chart: first
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[principally]] — Use 'principally' to stress the main factor, often in formal contexts.
 - advanced_form: [[chiefly]] — Use 'chiefly' as a formal synonym for 'primarily', common in academic writing.
 - builds_on: [[firstly]] — Use 'primarily' to emphasize the main or first reason, rather than just enumerating steps.
+- synonym: [[preponderantly]]

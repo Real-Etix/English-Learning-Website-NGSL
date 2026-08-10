@@ -6,6 +6,8 @@ pos: adverb
 forms: [ardently]
 sources: [llm]
 status: enriched
+chart: enthusiastically
+region: enthusiastically
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[enthusiastically]] — Use when describing passionate, eager pursuit, often with strong desire.
+- synonym: [[fervently]]
+- synonym: [[zealously]]

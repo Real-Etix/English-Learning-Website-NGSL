@@ -6,6 +6,8 @@ pos: verb
 forms: [interrogate]
 sources: [llm]
 status: enriched
+chart: trouble
+region: you
 ---
 
 ## Definition

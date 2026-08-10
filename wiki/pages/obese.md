@@ -6,6 +6,8 @@ pos: noun
 forms: [obese]
 sources: [llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fatty]] — Use in medical or formal contexts to describe extreme overweight.
+- synonym: [[fat]]
+- synonym: [[corpulent]]
+- synonym: [[heavy]]
+- synonym: [[large]]
+- collocation: [[severely]]

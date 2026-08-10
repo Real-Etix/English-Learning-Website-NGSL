@@ -9,6 +9,8 @@ rank: 1556
 sfi: 57.16
 sources: [wordnet, llm]
 status: enriched
+chart: performer
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ an artist of consummate skill
 - builds_on: [[learn]] — Use 'master' when the learner achieves deep expertise or thorough understanding, not just basic knowledge.
 - advanced_form: [[virtuoso]] — Use 'virtuoso' to emphasize exceptional technical skill and brilliance in a performing art, rather than just general mastery.
 - advanced_form: [[maestro]] — Use 'maestro' to highlight authoritative leadership and artistic genius, especially in music or conducting.
+- collocation: [[cabinetmaker]]
+- collocation: [[culinarian]]
+- collocation: [[electrician]]
+- collocation: [[horticulturist]]
+- collocation: [[joiner]]
+- collocation: [[metalsmith]]
+- collocation: [[wordsmith]]
+- collocation: [[patissier]]

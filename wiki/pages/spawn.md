@@ -6,6 +6,8 @@ pos: noun
 forms: [spawn]
 sources: [llm]
 status: enriched
+chart: yield
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[fry]] — Use 'spawn' for the eggs or newly hatched fish collectively; it emphasizes the reproductive stage rather than the age.
 - builds_on: [[breed]] — Use 'spawn' when something leads to a sudden or prolific creation, often with a causal or initiating sense.
+- synonym: [[egg]]
+- builds_on: [[egg]] — Use 'spawn' for the eggs of aquatic animals like fish and amphibians, often massed together.
+- synonym: [[roe]]

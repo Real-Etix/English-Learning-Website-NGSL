@@ -9,6 +9,8 @@ rank: 1376
 sfi: 50.96
 sources: [wordnet, llm]
 status: enriched
+chart: outlay
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[disbursement]] — Use 'disbursement' when emphasizing the official payment of money from a fund or budget, often in accounting or legal contexts.
 - builds_on: [[expense]] — Use for a specific sum of money spent, often for a one-time or capital expense.
 - builds_on: [[expenditure]] — Use 'outlay' when highlighting the total sum spent on a particular investment or project, often implying a planned or capital expenditure.
+- synonym: [[outgoings]]

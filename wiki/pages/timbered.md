@@ -6,6 +6,8 @@ pos: adjective
 forms: [timbered]
 sources: [llm]
 status: enriched
+chart: timber
+region: timber
 ---
 
 ## Definition

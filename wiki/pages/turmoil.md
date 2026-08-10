@@ -9,6 +9,8 @@ rank: 1272
 sfi: 50.83
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[upheaval]] — Use 'upheaval' for a major, often disruptive change or disturbance, especially in society or politics, while 'turmoil' is more general.
 - advanced_form: [[tumult]] — Use 'tumult' for a noisy, chaotic disturbance involving a crowd or group, whereas 'turmoil' can refer to any violent disturbance.
 - builds_on: [[confusion]] — Use 'turmoil' instead of 'confusion' when emphasizing a state of great disturbance, often with emotional upset or conflict.
+- synonym: [[crisis]]
+- synonym: [[maelstrom]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [edifice]
 sources: [llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1306
 sfi: 51.09
 sources: [wordnet, llm]
 status: enriched
+chart: uncertain
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ open to doubt or suspicion
 - advanced_form: [[skeptical]] — Use 'skeptical' when expressing a tendency to doubt or question claims, especially due to lack of evidence.
 - advanced_form: [[dubious]] — Use 'dubious' to emphasize suspicion about honesty or reliability, often implying something is shady or questionable.
 - advanced_form: [[questionable]] — Use 'questionable' when something raises doubts about its appropriateness, validity, or morality.
+- synonym: [[improbable]]
+- synonym: [[incredulous]]
+- synonym: [[hesitant]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [understandably]
 sources: [llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition

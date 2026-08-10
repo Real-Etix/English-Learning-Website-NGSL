@@ -9,6 +9,8 @@ rank: 2688
 sfi: 53.26
 sources: [wordnet, llm]
 status: enriched
+chart: amend
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ make revisions in
 - advanced_form: [[emend]] — Use 'emend' for formal, careful corrections of errors in a text, especially scholarly or literary works, rather than general revision.
 - advanced_form: [[overhaul]] — Use 'overhaul' when you completely revise or redesign something from the ground up, often involving major changes, not just minor edits.
 - advanced_form: [[rework]] — Use 'rework' when you substantially redo or reshape something to improve it, often implying a creative or structural change rather than simple correction.
+- synonym: [[copyedit]]
+- synonym: [[recast]]
+- synonym: [[renegotiate]]

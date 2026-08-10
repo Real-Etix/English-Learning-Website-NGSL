@@ -9,6 +9,8 @@ rank: 809
 sfi: 51.37
 sources: [wordnet, llm]
 status: enriched
+chart: death
+region: you
 ---
 
 ## Definition

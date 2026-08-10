@@ -6,6 +6,8 @@ pos: verb
 forms: [deprave]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[corrupt]] — Use 'deprave' when emphasizing the act of making someone morally wicked or perverted, often through influence.
+- synonym: [[debauch]]
+- synonym: [[debase]]
+- synonym: [[degrade]]

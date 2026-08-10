@@ -9,6 +9,8 @@ rank: 746
 sfi: 51.498
 sources: [wordnet, llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,10 @@ artifact made by weaving or felting or knitting or crocheting natural or synthet
 - advanced_form: [[textile]] — Use 'textile' in formal, technical, or industrial contexts where 'fabric' might feel too general or informal.
 - advanced_form: [[weave]] — Use 'weave' to emphasize the pattern, structure, or construction of the fabric, especially when discussing texture or quality.
 - builds_on: [[textile]] — Use 'fabric' for general cloth in everyday speech; 'textile' is more technical and often used in industry or formal contexts.
+- synonym: [[drapery]]
+- collocation: [[eyelet]]
+- collocation: [[hem]]
+- collocation: [[mesh]]
+- collocation: [[pleat]]
+- synonym: [[linen]]
+- collocation: [[wristband]]

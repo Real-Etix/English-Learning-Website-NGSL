@@ -9,6 +9,8 @@ rank: 344
 sfi: 54.35
 sources: [wordnet, llm]
 status: enriched
+chart: domestic
+region: you
 ---
 
 ## Definition

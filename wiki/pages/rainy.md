@@ -9,6 +9,8 @@ rank: 235
 sfi: 55.74
 sources: [wordnet, llm]
 status: enriched
+chart: rainy
+region: rainy
 ---
 
 ## Definition

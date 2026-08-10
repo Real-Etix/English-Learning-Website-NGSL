@@ -9,6 +9,8 @@ rank: 137
 sfi: 57.24
 sources: [wordnet, llm]
 status: enriched
+chart: recipient
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ _No sourced examples yet._
 - advanced_form: [[beneficiary]] — Use for someone who receives a benefit, especially financial or legal, rather than a general receiver.
 - advanced_form: [[addressee]] — Use for someone to whom a message or package is directed, not just any receiver.
 - advanced_form: [[consignee]] — Use for someone who receives goods in a commercial or shipping context.
+- synonym: [[acceptor]]
+- synonym: [[annuitant]]
+- synonym: [[donee]]
+- synonym: [[grantee]]
+- synonym: [[hearer]]
+- synonym: [[inheritor]]
+- synonym: [[obligee]]

@@ -9,6 +9,8 @@ rank: 327
 sfi: 55.38
 sources: [wordnet, llm]
 status: enriched
+chart: relieve
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ provide physical relief, as from pain
 - advanced_form: [[alleviate]] — Used when reducing the severity of pain or discomfort without necessarily removing it entirely.
 - advanced_form: [[assuage]] — Used when soothing or calming pain, often implying a gentle or gradual relief.
 - advanced_form: [[mitigate]] — Used when lessening the intensity or impact of pain or a problem, often in a clinical or formal context.
+- synonym: [[allay]]
+- collocation: [[mugginess]]

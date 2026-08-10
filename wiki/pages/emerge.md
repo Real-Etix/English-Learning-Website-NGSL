@@ -9,6 +9,8 @@ rank: 1211
 sfi: 58.58
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[materialize]] — Use when something appears suddenly or magically, often unexpectedly.
 - advanced_form: [[surface]] — Use when something becomes visible or known after being hidden or unnoticed.
 - builds_on: [[arise]] — Use 'emerge' when something becomes known or appears from a hidden state, often gradually.
+- collocation: [[nocturnally]]

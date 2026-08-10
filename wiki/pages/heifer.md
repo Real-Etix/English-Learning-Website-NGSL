@@ -6,6 +6,8 @@ pos: noun
 forms: [heifer]
 sources: [llm]
 status: enriched
+chart: steer
+region: you
 ---
 
 ## Definition

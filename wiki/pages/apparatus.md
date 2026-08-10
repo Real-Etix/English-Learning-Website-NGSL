@@ -6,6 +6,8 @@ pos: noun
 forms: [apparatus]
 sources: [llm]
 status: enriched
+chart: motif
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - builds_on: [[setup]] — Use for technical or scientific equipment, often implying specialized components.
 - builds_on: [[device]] — Use 'apparatus' for technical, scientific, or institutional equipment, often implying a set of components working together, whereas 'device' is more general and everyday.
 - builds_on: [[instrument]] — Use 'apparatus' for a complex set of instruments or machinery used for a particular scientific or technical purpose.
+- synonym: [[contraption]]
+- builds_on: [[tool]] — Use when referring to complex or collective equipment, often in labs or industrial settings.
+- builds_on: [[camera]] — Use to sound more formal or scientific, when referring to a camera as part of a larger set of equipment.

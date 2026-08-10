@@ -6,6 +6,8 @@ pos: noun
 forms: [groundskeeper]
 sources: [llm]
 status: enriched
+chart: gardener
+region: gardener
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gardener]] — Use for a gardener who works on large estates or public parks, with duties beyond just the garden beds.
+- synonym: [[landscaper]]
+- synonym: [[custodian]]
+- collocation: [[head]]
+- collocation: [[stadium]]
+- collocation: [[school]]
+- collocation: [[park]]

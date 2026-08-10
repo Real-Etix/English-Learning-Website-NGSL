@@ -9,6 +9,8 @@ rank: 542
 sfi: 53.8
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -35,3 +37,4 @@ a hostile meeting of opposing military forces in the course of a war
 - builds_on: [[interaction]] — Use engagement to highlight active, involved participation in an interaction, often in educational or professional settings.
 - builds_on: [[involvement]] — Use 'engagement' when emphasizing active commitment and emotional investment, rather than just taking part.
 - builds_on: [[participation]] — Use 'engagement' to emphasize active involvement and commitment, rather than mere presence.
+- builds_on: [[battle]] — Use 'engagement' in formal or military contexts to describe a planned or significant battle.

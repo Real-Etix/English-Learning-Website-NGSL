@@ -9,6 +9,8 @@ rank: 920
 sfi: 60.12
 sources: [wordnet, llm]
 status: enriched
+chart: outlay
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[remuneration]] — Use 'remuneration' for formal or official contexts about pay, especially salary plus benefits.
 - advanced_form: [[proceeds]] — Use 'proceeds' specifically for money received from selling something or from an event.
 - advanced_form: [[yield]] — Use 'yield' for passive income from investments, like interest or dividends.
+- collocation: [[capita]]
+- collocation: [[operating]]
+- collocation: [[pensioners]]
+- collocation: [[perannum]]
+- collocation: [[pretax]]
+- synonym: [[receipts]]

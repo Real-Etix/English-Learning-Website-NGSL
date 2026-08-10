@@ -6,6 +6,8 @@ pos: adjective
 forms: [arcane]
 sources: [llm]
 status: enriched
+chart: obscure
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[rare]] — Use 'arcane' for knowledge that is secret, mysterious, or known only to a few, often with an old-fashioned or magical connotation.
+- synonym: [[obscure]]
+- synonym: [[esoteric]]
+- synonym: [[secret]]

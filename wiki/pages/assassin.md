@@ -6,6 +6,8 @@ pos: noun
 forms: [assassin]
 sources: [llm]
 status: enriched
+chart: killer
+region: killer
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[killer]] — Use 'assassin' when the killing is premeditated, targeted, and often for ideological or financial reasons. Adds a sense of profession or conspiracy.
+- synonym: [[murderer]]
+- collocation: [[political]]
+- collocation: [[professional]]
+- collocation: [[target]]

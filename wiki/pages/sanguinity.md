@@ -6,6 +6,8 @@ pos: noun
 forms: [sanguinity]
 sources: [llm]
 status: enriched
+chart: optimism
+region: optimism
 ---
 
 ## Definition

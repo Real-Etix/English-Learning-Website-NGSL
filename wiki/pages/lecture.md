@@ -9,6 +9,8 @@ rank: 2378
 sfi: 54.37
 sources: [wordnet, llm]
 status: enriched
+chart: discourse
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ a speech that is open to the public
 - advanced_form: [[address]] — Use 'address' for a formal, prepared speech, often to a large audience or on an important occasion.
 - advanced_form: [[discourse]] — Use 'discourse' for a lengthy, serious discussion or written treatment of a subject, more formal than a lecture.
 - advanced_form: [[oration]] — Use 'oration' for a formal, eloquent public speech, especially at ceremonial events.
+- collocation: [[expository]]
+- synonym: [[harangue]]
+- collocation: [[interminable]]
+- collocation: [[yawner]]

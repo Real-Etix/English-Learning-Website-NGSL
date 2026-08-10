@@ -6,6 +6,8 @@ pos: adjective
 forms: [liquefied]
 sources: [llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[liquid]] — Use for substances that have been turned from solid or gas into liquid, often under pressure or heat.
+- synonym: [[fluid]]
+- collocation: [[gas]]
+- collocation: [[hydrogen]]
+- collocation: [[soil]]

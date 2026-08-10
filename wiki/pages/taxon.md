@@ -6,6 +6,8 @@ pos: noun
 forms: [taxon]
 sources: [llm]
 status: enriched
+chart: strain
+region: you
 ---
 
 ## Definition

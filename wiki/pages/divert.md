@@ -9,6 +9,8 @@ rank: 1081
 sfi: 51.87
 sources: [wordnet, llm]
 status: enriched
+chart: divert
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[redirect]] — Use 'redirect' when intentionally steering someone or something toward a different course or purpose.
 - advanced_form: [[avert]] — Use 'avert' when preventing something undesirable from happening, often by turning it aside.
 - builds_on: [[entertain]] — Use 'divert' when the entertainment serves to take someone's mind off something, like a problem or tedious situation.
+- synonym: [[misappropriate]]

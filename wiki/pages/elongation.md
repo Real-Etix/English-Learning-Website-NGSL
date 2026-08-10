@@ -6,6 +6,8 @@ pos: noun
 forms: [elongation]
 sources: [llm]
 status: enriched
+chart: strain
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[strain]] — Use 'elongation' specifically for stretching or tensile deformation along one axis, rather than general strain.
+- synonym: [[extension]]
+- synonym: [[expansion]]
+- collocation: [[spring]]
+- collocation: [[muscle]]

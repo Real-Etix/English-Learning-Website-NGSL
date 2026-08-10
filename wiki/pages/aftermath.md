@@ -6,6 +6,8 @@ pos: noun
 forms: [aftermath]
 sources: [llm]
 status: enriched
+chart: effect
+region: you
 ---
 
 ## Definition

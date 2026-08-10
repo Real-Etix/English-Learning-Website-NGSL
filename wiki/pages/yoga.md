@@ -9,6 +9,8 @@ rank: 6
 sfi: 71.13
 sources: [wordnet, llm]
 status: enriched
+chart: line
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[contemplation]] — Use 'contemplation' when focusing on the reflective, thought-based aspect of spiritual discipline, rather than the physical postures.
 - advanced_form: [[introspection]] — Use 'introspection' to emphasize the inward examination of one's own thoughts and feelings, a key part of yogic practice.
+- collocation: [[handbalance]]
+- collocation: [[vinyasa]]
+- collocation: [[yogini]]

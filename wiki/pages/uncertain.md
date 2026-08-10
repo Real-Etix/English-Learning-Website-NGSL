@@ -9,6 +9,8 @@ rank: 415
 sfi: 54.72
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: uncertain
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ lacking or indicating lack of confidence or assurance
 - advanced_form: [[hesitant]] — Use 'hesitant' when the uncertainty involves reluctance or delay due to doubt.
 - advanced_form: [[ambivalent]] — Use 'ambivalent' when the uncertainty stems from having conflicting feelings or mixed emotions.
 - advanced_form: [[dubious]] — Use 'dubious' when the uncertainty involves suspicion, skepticism, or doubt about reliability.
+- synonym: [[borderline]]
+- synonym: [[debatable]]
+- synonym: [[indeterminate]]
+- synonym: [[insecure]]
+- synonym: [[equivocal]]
+- synonym: [[irresolute]]

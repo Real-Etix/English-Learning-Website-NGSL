@@ -9,6 +9,8 @@ rank: 1942
 sfi: 55.74
 sources: [wordnet, llm]
 status: enriched
+chart: dependable
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ status: enriched
 - advanced_form: [[uniform]] — Use 'uniform' when referring to something that is consistent in form, quality, or behavior across all instances.
 - advanced_form: [[dependable]] — Use 'dependable' when focusing on reliability or trustworthiness, especially for people or systems.
 - builds_on: [[uniform]] — Use 'consistent' to emphasize reliability and lack of variation over time, rather than just sameness.
+- synonym: [[concordant]]
+- synonym: [[conformable]]
+- synonym: [[homogeneous]]

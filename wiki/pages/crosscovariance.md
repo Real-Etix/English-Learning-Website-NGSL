@@ -6,6 +6,8 @@ pos: noun
 forms: [crosscovariance]
 sources: [llm]
 status: enriched
+chart: covariance
+region: covariance
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[covariance]] — Use crosscovariance when referring to the covariance between two different signals or series, especially in time series analysis.
+- synonym: [[correlation]]
+- synonym: [[association]]
+- synonym: [[dependence]]
+- collocation: [[function]]
+- collocation: [[matrix]]
+- collocation: [[sample]]
+- collocation: [[between]]

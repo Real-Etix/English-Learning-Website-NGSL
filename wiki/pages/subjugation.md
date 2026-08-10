@@ -6,6 +6,8 @@ pos: noun
 forms: [subjugation]
 sources: [llm]
 status: enriched
+chart: slavery
+region: slavery
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[slavery]] — Use 'subjugation' to stress the act of bringing under control, often implying violent or systemic oppression.
+- synonym: [[bondage]]
+- synonym: [[conquest]]
+- synonym: [[subjection]]

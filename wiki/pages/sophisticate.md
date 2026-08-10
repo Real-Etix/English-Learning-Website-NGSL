@@ -9,6 +9,8 @@ rank: 193
 sfi: 56.5
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition

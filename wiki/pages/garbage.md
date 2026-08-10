@@ -9,6 +9,8 @@ rank: 279
 sfi: 55.2
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[refuse]] — Use 'refuse' in formal or technical contexts (e.g., waste management) instead of 'garbage'.
 - advanced_form: [[waste]] — Use 'waste' for a broader, more general term that includes garbage and other discarded materials, especially in environmental or efficiency discussions.
+- collocation: [[compaction]]
+- collocation: [[hauler]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [viscera]
 sources: [llm]
 status: enriched
+chart: organ
+region: organ
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[organ]] — Use 'viscera' to refer to internal organs collectively, rather than listing individual organs, in formal or clinical writing.
 - builds_on: [[liver]] — Use 'viscera' when you want a formal, collective term for the internal organs, rather than specifying the liver alone.
+- synonym: [[bowel]]
+- synonym: [[entrail]]

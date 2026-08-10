@@ -9,6 +9,8 @@ rank: 35
 sfi: 61.142
 sources: [wordnet, llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ confined by bonds
 - builds_on: [[hop]] — Use 'bound' for an energetic, leaping movement that covers distance, instead of 'hop' which is a short, light jump.
 - builds_on: [[jump]] — Use 'bound' for energetic, light jumps, often in a series or with a sense of enthusiasm.
 - builds_on: [[leap]] — Use 'bound' for a light, energetic jump forward or upward, often with a sense of ease or grace.
+- collocation: [[corporeally]]
+- collocation: [[ineluctably]]
+- collocation: [[inescapably]]
+- collocation: [[irrevocably]]

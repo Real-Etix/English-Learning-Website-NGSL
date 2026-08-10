@@ -6,6 +6,8 @@ pos: verb
 forms: [assent]
 sources: [llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[acceptance]] — Use 'assent' when emphasizing agreement or approval to an idea, often after consideration, rather than the general attitude of belief.
 - builds_on: [[yes]] — Use 'assent' to express formal agreement or approval, especially in official or serious contexts.
 - builds_on: [[consent]] — Use 'assent' when referring to a formal, often official agreement, especially after consideration.
+- synonym: [[accede]]
+- collocation: [[royal]]

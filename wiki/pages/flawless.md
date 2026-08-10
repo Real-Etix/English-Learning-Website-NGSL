@@ -6,6 +6,8 @@ pos: adjective
 forms: [flawless]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[perfect]] — Use 'flawless' for physical objects or performances that have no visible defects, emphasizing absence of any imperfections.
+- synonym: [[impeccable]]

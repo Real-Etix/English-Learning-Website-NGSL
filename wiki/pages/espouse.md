@@ -6,6 +6,8 @@ pos: verb
 forms: [espouse]
 sources: [llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition

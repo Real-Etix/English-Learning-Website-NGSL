@@ -9,6 +9,8 @@ rank: 498
 sfi: 53.45
 sources: [wordnet, llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ not solid
 - domain: fitness
 - advanced_form: [[cavernous]] — Use 'cavernous' to emphasize extreme hollowness and vast empty space, like a cave, whereas 'hollow' might refer to any empty object.
 - advanced_form: [[void]] — Use 'void' in formal or technical contexts to mean completely empty or without content, often implying emptiness in a legal or abstract sense.
+- synonym: [[cavern]]
+- synonym: [[dale]]
+- synonym: [[depressed]]
+- synonym: [[excavate]]
+- synonym: [[glen]]
+- collocation: [[ovoid]]
+- collocation: [[viscus]]
+- synonym: [[fossa]]

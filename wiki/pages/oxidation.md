@@ -9,6 +9,8 @@ rank: 412
 sfi: 54.19
 sources: [wordnet, llm]
 status: enriched
+chart: oxidation
+region: oxidation
 ---
 
 ## Definition

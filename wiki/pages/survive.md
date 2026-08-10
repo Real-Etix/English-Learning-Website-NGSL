@@ -9,6 +9,8 @@ rank: 1218
 sfi: 58.56
 sources: [wordnet, llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ continue to live and avoid dying
 - advanced_form: [[endure]] — Use 'endure' to emphasize surviving with patience or suffering through difficult conditions.
 - advanced_form: [[persist]] — Use 'persist' when surviving by continuing firmly despite obstacles or challenges.
 - advanced_form: [[withstand]] — Use 'withstand' when surviving a specific force, attack, or difficult circumstance by resisting it.
+- collocation: [[holocaust]]
+- synonym: [[outlast]]

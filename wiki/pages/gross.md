@@ -9,6 +9,8 @@ rank: 77
 sfi: 58.51
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ before any deductions
 - collocation: [[mistake]]
 - advanced_form: [[aggregate]] — Use 'aggregate' instead of 'gross' in formal or financial contexts when emphasizing the total sum before deductions, such as in reports or statistical summaries.
 - advanced_form: [[pretax]] — Use 'pretax' instead of 'gross' specifically when referring to income or profits before taxes are subtracted, common in tax and accounting discussions.
+- collocation: [[impiety]]
+- collocation: [[receipts]]
+- collocation: [[incompetence]]

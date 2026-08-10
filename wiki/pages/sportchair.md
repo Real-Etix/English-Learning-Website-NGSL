@@ -6,6 +6,8 @@ pos: noun
 forms: [sportchair]
 sources: [llm]
 status: enriched
+chart: wheelchair
+region: wheelchair
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1924
 sfi: 55.78
 sources: [wordnet, llm]
 status: enriched
+chart: base
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ set up for use
 - builds_on: [[headquarter]] — Use 'install' when emphasizing the formal act of setting up and establishing a headquarters, often with administrative or official overtones.
 - advanced_form: [[deploy]] — Use when referring to rolling out a system, application, or equipment in a planned, often large-scale manner.
 - advanced_form: [[initialize]] — Use when focusing on the preparatory steps to make a device or system ready for its first operation.
+- collocation: [[automaticdishwasher]]
+- collocation: [[flooring]]
+- synonym: [[instate]]

@@ -9,6 +9,8 @@ rank: 2449
 sfi: 54.12
 sources: [wordnet, llm]
 status: enriched
+chart: confer
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[devote]] — Use 'devote' instead of 'dedicate' when focusing on time or effort given to a cause or activity, especially daily or habitual commitment.
 - advanced_form: [[consecrate]] — Use 'consecrate' instead of 'dedicate' for a formal, solemn, or sacred commitment, often implying a lifelong or spiritual devotion.
 - advanced_form: [[commit]] — Use 'commit' instead of 'dedicate' when emphasizing a personal pledge or binding decision to a cause or task.
+- synonym: [[bless]]
+- builds_on: [[devote]] — Use when emphasizing strong personal commitment to a cause or goal.
+- synonym: [[sanctify]]

@@ -9,6 +9,8 @@ rank: 331
 sfi: 54.46
 sources: [wordnet, llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ make a hole, especially with a pointed power or hand tool
 - advanced_form: [[bore]] — Use 'bore' instead of 'drill' when the action involves making a hole with a rotating tool, especially in a more technical or measured context.
 - advanced_form: [[perforate]] — Use 'perforate' instead of 'drill' when making small holes in a surface for a specific functional purpose, like in manufacturing or medical contexts.
 - builds_on: [[maneuver]] — Use 'drill' for a specific, repetitive training exercise focused on a particular skill, while 'maneuver' is broader and can refer to tactical movement in training.
+- collocation: [[battery-powered]]
+- synonym: [[rehearsal]]
+- synonym: [[rehearse]]
+- builds_on: [[rehearse]] — Use drill when the rehearsal involves repetitive, disciplined exercise, often for precision and memorization.
+- synonym: [[run-through]]

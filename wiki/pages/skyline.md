@@ -6,6 +6,8 @@ pos: noun
 forms: [skyline]
 sources: [llm]
 status: enriched
+chart: likelihood
+region: you
 ---
 
 ## Definition

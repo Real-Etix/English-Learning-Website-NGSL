@@ -6,6 +6,8 @@ pos: noun
 forms: [vocoid]
 sources: [llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vowel]] — Use 'vocoid' in technical phonetic descriptions instead of 'vowel' when emphasizing the articulatory nature.
+- synonym: [[sonorant]]

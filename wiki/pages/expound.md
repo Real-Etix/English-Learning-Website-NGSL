@@ -6,6 +6,8 @@ pos: verb
 forms: [expound]
 sources: [llm]
 status: enriched
+chart: forthcoming
+region: you
 ---
 
 ## Definition

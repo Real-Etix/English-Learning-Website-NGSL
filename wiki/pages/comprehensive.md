@@ -9,6 +9,8 @@ rank: 2384
 sfi: 54.35
 sources: [wordnet, llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ including all or everything
 - builds_on: [[inclusive]] — Use 'comprehensive' when emphasizing thorough and complete coverage, especially of a system or range.
 - advanced_form: [[exhaustive]] — Use 'exhaustive' when you want to emphasize that nothing has been left out; it is more formal and definitive than 'comprehensive'.
 - advanced_form: [[thorough]] — Use 'thorough' when focusing on careful, detailed coverage of every part; it implies meticulousness beyond just 'comprehensive'.
+- collocation: [[compendium]]
+- collocation: [[coverage]]
+- collocation: [[encyclopedia]]
+- synonym: [[extensive]]
+- builds_on: [[extensive]] — Use when something includes all or nearly all details, not just a large amount.
+- synonym: [[far-reaching]]

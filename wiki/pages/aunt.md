@@ -9,6 +9,8 @@ rank: 2781
 sfi: 52.45
 sources: [wordnet, llm]
 status: enriched
+chart: aunt
+region: aunt
 ---
 
 ## Definition

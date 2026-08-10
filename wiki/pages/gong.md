@@ -6,6 +6,8 @@ pos: noun
 forms: [gong]
 sources: [llm]
 status: enriched
+chart: bell
+region: bell
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [abidance]
 sources: [llm]
 status: enriched
+chart: pleasure
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[compliance]] — Use 'abidance' in legal or formal statements to stress ongoing conformity to a rule or regulation, especially in passive structures.
+- synonym: [[observance]]
+- synonym: [[adherence]]
+- collocation: [[strict]]
+- collocation: [[full]]
+- collocation: [[require]]

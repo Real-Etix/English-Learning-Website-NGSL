@@ -6,6 +6,8 @@ pos: adjective
 forms: [gregarious]
 sources: [llm]
 status: enriched
+chart: forthcoming
+region: you
 ---
 
 ## Definition

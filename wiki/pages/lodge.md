@@ -6,6 +6,8 @@ pos: noun
 forms: [lodge]
 sources: [llm]
 status: enriched
+chart: tender
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ _No sourced examples yet._
 - builds_on: [[stick]] — Use 'lodge' when something becomes stuck or fixed in a place, especially unintentionally or with force.
 - builds_on: [[embed]] — Use 'lodge' when something becomes stuck or fixed in a place, especially physically or with force.
 - builds_on: [[submit]] — Use 'lodge' specifically for submitting a complaint, appeal, or objection to an official body.
+- synonym: [[inn]]
+- synonym: [[wedge]]
+- builds_on: [[resort]] — Use for a rustic or outdoor-oriented resort hotel, often in mountains or wilderness.

@@ -9,6 +9,8 @@ rank: 2
 sfi: 74.82
 sources: [wordnet, llm]
 status: enriched
+chart: waste
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1184
 sfi: 58.69
 sources: [wordnet, llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ an open clash between two opposing groups (or individuals)
 - advanced_form: [[discord]] — Use 'discord' for ongoing disagreement or lack of harmony, often more emotional than a simple conflict.
 - advanced_form: [[strife]] — Use 'strife' for prolonged, bitter struggle, especially in social or political contexts.
 - advanced_form: [[antagonism]] — Use 'antagonism' to emphasize active hostility or opposition, often between individuals or groups.
+- collocation: [[embroil]]
+- collocation: [[mediation]]
+- synonym: [[warfare]]
+- collocation: [[intranational]]
+- collocation: [[recrudesce]]
+- collocation: [[unresolved]]

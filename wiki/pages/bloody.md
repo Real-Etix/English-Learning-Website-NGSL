@@ -9,6 +9,8 @@ rank: 2265
 sfi: 54.76
 sources: [wordnet, llm]
 status: enriched
+chart: bloody
+region: bloody
 ---
 
 ## Definition

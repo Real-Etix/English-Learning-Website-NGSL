@@ -9,6 +9,8 @@ rank: 1588
 sfi: 57.05
 sources: [wordnet, llm]
 status: enriched
+chart: unplug
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[bureau]] — Use 'bureau' to sound more formal or traditional, especially for a writing desk with drawers in a home office.
 - advanced_form: [[workstation]] — Use 'workstation' for a desk designed for a computer or specialized work, common in modern offices and tech contexts.
+- collocation: [[cubicle]]
+- collocation: [[neaten]]

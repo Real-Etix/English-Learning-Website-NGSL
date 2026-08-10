@@ -6,6 +6,8 @@ pos: noun
 forms: [emulsion]
 sources: [llm]
 status: enriched
+chart: integration
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[solution]] — Use 'emulsion' instead of 'solution' when the mixture consists of two immiscible liquids held together by an emulsifier.
+- synonym: [[colloid]]
+- synonym: [[mixture]]
+- synonym: [[blend]]
+- synonym: [[suspension]]
+- synonym: [[dispersion]]
+- collocation: [[stable]]
+- collocation: [[form]]
+- collocation: [[photographic]]
+- collocation: [[paint]]
+- synonym: [[latex]]

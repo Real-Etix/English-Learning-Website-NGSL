@@ -9,6 +9,8 @@ rank: 2636
 sfi: 53.51
 sources: [wordnet, llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ situated within or suitable for inside a building
 - builds_on: [[inner]] — Use 'interior' for the inside of a space or object, especially in architectural or design contexts, instead of 'inner'.
 - advanced_form: [[internal]] — Use 'internal' for formal or technical contexts referring to the inside of a building or structure.
 - advanced_form: [[domestic]] — Use 'domestic' when emphasizing the home or household aspect of interior areas.
+- collocation: [[capacious]]
+- collocation: [[cavernous]]
+- collocation: [[decorator]]
+- collocation: [[outback]]
+- builds_on: [[domestic]] — Use 'interior' in institutional or official titles, like 'Minister of the Interior,' to mean the same as 'domestic.'
+- synonym: [[intranational]]

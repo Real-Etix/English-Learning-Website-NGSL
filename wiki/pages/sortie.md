@@ -6,6 +6,8 @@ pos: noun
 forms: [sortie]
 sources: [llm]
 status: enriched
+chart: flutter
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[flight]] — Use 'sortie' for a specific military mission or operational flight, not just any flight.
+- synonym: [[foray]]

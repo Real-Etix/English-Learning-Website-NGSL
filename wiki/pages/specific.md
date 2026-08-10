@@ -9,6 +9,8 @@ rank: 791
 sfi: 60.82
 sources: [wordnet, llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ status: enriched
 - advanced_form: [[precise]] — Use when emphasizing exactness and clarity, often in technical or formal contexts.
 - advanced_form: [[particular]] — Use to highlight a single distinctive item or trait among a group; often implies special attention.
 - advanced_form: [[explicit]] — Use when something is stated clearly and in detail, leaving no room for confusion.
+- synonym: [[determinate]]
+- collocation: [[immunoglobulin]]
+- collocation: [[regionally]]

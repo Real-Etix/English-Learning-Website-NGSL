@@ -9,6 +9,8 @@ rank: 494
 sfi: 62.98
 sources: [wordnet, llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,14 @@ the piece of land on which something is located (or is to be located)
 - builds_on: [[scene]] — Use 'site' for a specific location where an activity, accident, or construction takes place, often in formal or technical contexts.
 - builds_on: [[spot]] — Use 'site' for a specific location associated with an event or activity.
 - builds_on: [[location]] — Use 'site' when referring to a specific area dedicated to a particular activity or development, often larger or more formal than a general location.
+- synonym: [[emplacement]]
+- collocation: [[excavate]]
+- collocation: [[firemarshal]]
+- collocation: [[insertion]]
+- collocation: [[inspect]]
+- collocation: [[reclamation]]
+- collocation: [[remediation]]
+- synonym: [[weblog]]
+- synonym: [[website]]
+- synonym: [[worksite]]
+- collocation: [[incisional]]

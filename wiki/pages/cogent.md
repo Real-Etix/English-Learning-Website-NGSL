@@ -6,6 +6,8 @@ pos: adjective
 forms: [cogent]
 sources: [llm]
 status: enriched
+chart: dependable
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[rational]] — Use 'cogent' when emphasizing that reasoning is both clear and persuasive, not just based on reason.
 - builds_on: [[plausible]] — Use 'cogent' for arguments or reasoning that are clear, logical, and powerfully persuasive.
 - builds_on: [[coherent]] — Use 'cogent' when highlighting strong, logical reasoning that is persuasive and well-structured.
+- synonym: [[convincing]]

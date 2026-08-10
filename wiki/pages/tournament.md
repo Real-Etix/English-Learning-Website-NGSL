@@ -9,6 +9,8 @@ rank: 2782
 sfi: 52.4
 sources: [wordnet, llm]
 status: enriched
+chart: game
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[contest]] — Use 'tournament' for a series of contests leading to a final champion, often in sports or games.
 - advanced_form: [[championship]] — Use when emphasizing the ultimate prize or the final stage of a tournament.
 - advanced_form: [[tourney]] — Use in informal or journalistic contexts as a shortened, punchier form of tournament.
+- synonym: [[joust]]

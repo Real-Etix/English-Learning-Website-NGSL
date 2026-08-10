@@ -9,6 +9,8 @@ rank: 2326
 sfi: 54.53
 sources: [wordnet, llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - synonym: [[condition]]
 - advanced_form: [[stipulate]] — Use 'stipulate' in formal or legal contexts to emphasize that a condition is explicitly demanded as part of an agreement, where 'specify' might be too general.
 - advanced_form: [[prescribe]] — Use 'prescribe' to indicate that a requirement is officially laid down by authority, such as a rule or regulation, rather than just stating it clearly.
+- synonym: [[itemize]]
+- synonym: [[pinpoint]]

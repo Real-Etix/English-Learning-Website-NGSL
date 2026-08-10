@@ -9,6 +9,8 @@ rank: 883
 sfi: 47.123
 sources: [wordnet, llm]
 status: enriched
+chart: novice
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[postulant]] — Use 'postulant' specifically for a novice in a religious order who is undergoing a trial period before being admitted to formal training or vows.
 - advanced_form: [[neophyte]] — Use 'neophyte' for a person newly initiated into a religious order or belief, often emphasizing recent conversion or entry.
 - builds_on: [[newcomer]] — Use 'novice' instead of 'newcomer' when emphasizing inexperience in a skill or activity.
+- synonym: [[duffer]]
+- synonym: [[probationer]]
+- synonym: [[hacker]]

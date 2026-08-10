@@ -9,6 +9,8 @@ rank: 1885
 sfi: 55.88
 sources: [wordnet, llm]
 status: enriched
+chart: expert
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ status: enriched
 - advanced_form: [[adept]] — Use 'adept' to emphasize natural skill and ease, more formal than 'capable'.
 - advanced_form: [[proficient]] — Use 'proficient' to indicate a high degree of competence, often after training or practice.
 - advanced_form: [[accomplished]] — Use 'accomplished' for someone with notable achievements, more specific than 'capable'.
+- collocation: [[eminently]]
+- collocation: [[innately]]

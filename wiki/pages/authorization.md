@@ -9,6 +9,8 @@ rank: 661
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - builds_on: [[empowerment]] — Use when emphasizing official permission or legal power, more formal than 'empowerment'.
 - builds_on: [[permission]] — Use authorization for official or formal approval, especially from an authority.
 - builds_on: [[sanction]] — Use 'authorization' when focusing on the granting of official power or permission; 'sanction' is broader and can imply moral approval as well.
+- synonym: [[dispensation]]
+- builds_on: [[license]] — Use 'authorization' to emphasize the formal granting of permission, often in legal, bureaucratic, or security contexts.

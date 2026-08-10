@@ -9,6 +9,8 @@ rank: 378
 sfi: 53.98
 sources: [wordnet, llm]
 status: enriched
+chart: chief
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ _No sourced examples yet._
 - advanced_form: [[director]] — Use 'director' when referring to a person who manages a specific department or leads the board, highlighting leadership of a team or organization.
 - advanced_form: [[official]] — Use 'official' when referring to a person with formal authority in an organization, often in a bureaucratic or governmental context, but also applicable in business.
 - builds_on: [[governor]] — Use 'administrator' for an appointed official managing a state or territory, often temporarily, rather than an elected governor.
+- synonym: [[bureaucrat]]
+- synonym: [[mandarin]]
+- synonym: [[policymaker]]
+- synonym: [[provost]]
+- synonym: [[registrar]]
+- builds_on: [[boss]] — Use for someone in a senior role overseeing systems or policies, especially in institutions.

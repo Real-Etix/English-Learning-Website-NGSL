@@ -9,6 +9,8 @@ rank: 1158
 sfi: 50.4
 sources: [wordnet, llm]
 status: enriched
+chart: vaccine
+region: vaccine
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[immunogen]] — Use 'immunogen' when focusing on the biological mechanism of immune response, rather than the common term 'vaccine' which is broader.
 - advanced_form: [[inoculant]] — Use 'inoculant' when emphasizing the act of introducing the substance, often in a laboratory or medical context.
+- collocation: [[influenza]]
+- synonym: [[inoculation]]

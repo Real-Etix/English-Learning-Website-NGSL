@@ -9,6 +9,8 @@ rank: 165
 sfi: 58.011
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ expressible as a quantity or relating to or susceptible of measurement
 - advanced_form: [[quantifiable]] — Use 'quantifiable' when focusing on the ability to be measured quantitatively, often in contexts where measurement is possible but not yet done.
 - advanced_form: [[metric]] — Use 'metric' as an adjective to refer to a specific system or standard of measurement, more precise than the broader 'quantitative'.
 - builds_on: [[mathematical]] — Use 'quantitative' when focusing on numerical measurement and data, more specific than 'mathematical'.
+- collocation: [[easing]]
+- synonym: [[numeric]]

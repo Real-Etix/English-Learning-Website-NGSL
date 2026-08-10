@@ -9,6 +9,8 @@ rank: 1003
 sfi: 59.6
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[discharge]] — More formal than 'shoot'; often used in legal, technical, or military contexts.
 - advanced_form: [[launch]] — Use when the missile is a projectile sent from a launcher, like a rocket, torpedo, or arrow.
 - advanced_form: [[blast]] — Informal but stronger than 'shoot'; suggests a powerful, explosive shot, often used for emphasis.
+- builds_on: [[photograph]] — Use in professional or casual photography contexts, often implying taking photos quickly or in a session.
+- collocation: [[boudoir]]
+- collocation: [[hoops]]

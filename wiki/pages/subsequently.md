@@ -9,6 +9,8 @@ rank: 2749
 sfi: 52.93
 sources: [wordnet, llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ happening at a time subsequent to a reference time
 - builds_on: [[secondly]] — Use instead of 'secondly' when the second point follows naturally in time or order, especially in formal writing.
 - advanced_form: [[thereafter]] — Use 'thereafter' for a more formal or literary tone, often referring to a specific point in time after an event.
 - advanced_form: [[thereupon]] — Use 'thereupon' to indicate immediate succession, often in formal or narrative contexts.
+- synonym: [[afterwards]]
+- synonym: [[hereafter]]
+- synonym: [[later]]

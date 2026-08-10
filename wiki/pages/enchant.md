@@ -6,6 +6,8 @@ pos: verb
 forms: [enchant]
 sources: [llm]
 status: enriched
+chart: divert
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[amuse]] — Use when amusement involves delighting or captivating someone, almost like magic.
 - builds_on: [[delight]] — Use 'enchant' when the pleasure feels almost magical or deeply captivating, stronger than simply 'delight'.
+- synonym: [[enrapture]]

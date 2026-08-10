@@ -6,6 +6,8 @@ pos: adjective
 forms: [imperiled]
 sources: [llm]
 status: enriched
+chart: vulnerable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vulnerable]] — Use 'imperiled' when focusing on immediate danger or risk of harm.
+- collocation: [[species]]
+- collocation: [[wildlife]]
+- collocation: [[by]]

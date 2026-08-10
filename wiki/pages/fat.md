@@ -9,6 +9,8 @@ rank: 1654
 sfi: 56.75
 sources: [wordnet, llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ having an (over)abundance of flesh
 - advanced_form: [[corpulent]] — Use 'corpulent' in formal or literary contexts to describe someone very overweight, often with a sense of heaviness or bulk.
 - advanced_form: [[portly]] — Use 'portly' for a dignified, often older person who is stout and somewhat heavy, suggesting a comfortable, respectable appearance.
 - advanced_form: [[rotund]] — Use 'rotund' to emphasize roundness or a plump, spherical shape, often in a neutral or even affectionate description.
+- collocation: [[billfold]]
+- collocation: [[globule]]
+- collocation: [[jowl]]
+- synonym: [[lipid]]
+- synonym: [[obese]]
+- collocation: [[oxidize]]

@@ -9,6 +9,8 @@ rank: 1236
 sfi: 50.55
 sources: [wordnet, llm]
 status: enriched
+chart: predictor
+region: predictor
 ---
 
 ## Definition

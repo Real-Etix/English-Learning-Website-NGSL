@@ -9,6 +9,8 @@ rank: 295
 sfi: 56.79
 sources: [wordnet, llm]
 status: enriched
+chart: conservation
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[stewardship]] — Use when focusing on responsible management and caretaking, especially of resources or property.
 - advanced_form: [[safeguarding]] — Use when highlighting active protection from threats, harm, or loss.
 - builds_on: [[retention]] — Use 'conservation' when referring to the careful management of resources to prevent waste or depletion.
+- collocation: [[wildlife]]

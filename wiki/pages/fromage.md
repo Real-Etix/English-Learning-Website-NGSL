@@ -6,6 +6,8 @@ pos: noun
 forms: [fromage]
 sources: [llm]
 status: enriched
+chart: cheese
+region: cheese
 ---
 
 ## Definition

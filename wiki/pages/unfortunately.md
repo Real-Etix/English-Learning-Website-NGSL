@@ -9,6 +9,8 @@ rank: 1269
 sfi: 58.34
 sources: [wordnet, llm]
 status: enriched
+chart: unfortunately
+region: unfortunately
 ---
 
 ## Definition

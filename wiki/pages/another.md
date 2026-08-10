@@ -9,6 +9,8 @@ rank: 140
 sfi: 68.16
 sources: [wordnet]
 status: seeded
+chart: refine
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,9 @@ any of various alternatives
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[different]]
+- synonym: [[other]]
+- synonym: [[additional]]
+- synonym: [[further]]
+- synonym: [[alternative]]
+- collocation: [[continent]]

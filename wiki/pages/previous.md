@@ -9,6 +9,8 @@ rank: 922
 sfi: 60.12
 sources: [wordnet, llm]
 status: enriched
+chart: empirical
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ just preceding something else in time or order
 - synonym: [[old]]
 - advanced_form: [[prior]] — Use 'prior' to emphasize something that came earlier in time, often in formal contexts like schedules or obligations.
 - advanced_form: [[former]] — Use 'former' to refer to something that held a previous position or state, implying it is no longer current.
+- synonym: [[aforementioned]]
+- synonym: [[bygone]]
+- synonym: [[earlier]]
+- collocation: [[occupier]]

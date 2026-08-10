@@ -6,6 +6,8 @@ pos: noun
 forms: [engorgement]
 sources: [llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[congestion]] — Use 'engorgement' when referring to a specific, often pronounced swelling due to fluid or blood accumulation, especially in tissues or vessels.
+- synonym: [[fullness]]
+- collocation: [[breast]]
+- collocation: [[vascular]]
+- collocation: [[tissue]]
+- synonym: [[hyperemia]]

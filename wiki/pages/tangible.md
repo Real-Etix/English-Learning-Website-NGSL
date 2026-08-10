@@ -9,6 +9,8 @@ rank: 601
 sfi: 53.42
 sources: [wordnet, llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ perceptible by the senses especially the sense of touch
 - advanced_form: [[palpable]] — Use when something is so obvious or intense that it feels almost touchable, often for emotions or atmospheres.
 - advanced_form: [[concrete]] — Use when emphasizing something specific, real, and not abstract, especially for facts or examples.
 - builds_on: [[actual]] — Use 'tangible' when emphasizing something that can be physically touched or concretely perceived, unlike abstract 'actual'.
+- collocation: [[assets]]

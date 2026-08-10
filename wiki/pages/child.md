@@ -9,6 +9,8 @@ rank: 102
 sfi: 69.59
 sources: [wordnet, llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,16 @@ _No sourced examples yet._
 - advanced_form: [[juvenile]] — Use 'juvenile' in formal or legal contexts, often implying a young person below the age of adulthood.
 - advanced_form: [[youth]] — Use 'youth' to refer to a young person in a broader, more positive or developmental sense, often emphasizing age range rather than dependency.
 - advanced_form: [[minor]] — Use 'minor' in legal or formal contexts to emphasize that the person is below the age of majority.
+- collocation: [[abduct]]
+- collocation: [[impressionable]]
+- collocation: [[innocent]]
+- collocation: [[missing]]
+- synonym: [[newborn]]
+- collocation: [[pacify]]
+- collocation: [[plaything]]
+- collocation: [[psychiatry]]
+- collocation: [[psychologist]]
+- collocation: [[recalcitrant]]
+- synonym: [[youngster]]
+- collocation: [[conceive]]
+- collocation: [[fretful]]

@@ -9,6 +9,8 @@ rank: 941
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ compensation paid (to someone) for damages or losses or money already spent etc.
 - advanced_form: [[restitution]] — Use when emphasizing restoration of something lost or taken, often in legal contexts.
 - advanced_form: [[indemnity]] — Use when referring to protection or compensation against future losses or damages.
 - builds_on: [[payment]] — Use 'reimbursement' when a payment is made to repay someone for money they spent on behalf of another.
+- synonym: [[recoupment]]

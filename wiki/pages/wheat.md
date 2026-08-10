@@ -9,6 +9,8 @@ rank: 453
 sfi: 55.29
 sources: [wordnet, llm]
 status: enriched
+chart: wheat
+region: wheat
 ---
 
 ## Definition

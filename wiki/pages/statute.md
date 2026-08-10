@@ -9,6 +9,8 @@ rank: 155
 sfi: 56.14
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ an act passed by a legislative body
 - advanced_form: [[legislation]] — Use 'legislation' when referring to a body of laws or the process of making laws, not just a single act.
 - advanced_form: [[enactment]] — Use 'enactment' to emphasize the official passing of a statute into law, highlighting the legislative action.
 - builds_on: [[legislation]] — Use 'statute' when referring to a specific written law, especially in legal or official contexts.
+- collocation: [[enacted]]
+- synonym: [[ordinance]]
+- synonym: [[by-law]]
+- builds_on: [[regulation]] — Use when focusing on a written, codified law passed by a parliament or congress, often more formal than a general regulation.

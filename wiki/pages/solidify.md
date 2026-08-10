@@ -6,6 +6,8 @@ pos: verb
 forms: [solidify]
 sources: [llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[stabilize]] — Use 'solidify' when emphasizing making something stronger or more stable, often physically or metaphorically as in solidifying a plan.
+- synonym: [[cement]]

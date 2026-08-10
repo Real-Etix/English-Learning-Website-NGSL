@@ -6,6 +6,8 @@ pos: noun
 forms: [acme]
 sources: [llm]
 status: enriched
+chart: summit
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[peak]] — Use 'acme' for the very highest point of perfection or achievement.
+- synonym: [[apex]]
+- synonym: [[zenith]]
+- synonym: [[pinnacle]]
+- synonym: [[summit]]
+- collocation: [[reach]]

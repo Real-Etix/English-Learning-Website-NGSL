@@ -9,6 +9,8 @@ rank: 150
 sfi: 56.85
 sources: [wordnet, llm]
 status: enriched
+chart: administration
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [alabaster]
 sources: [llm]
 status: enriched
+chart: marble
+region: marble
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[marble]] — Use 'alabaster' to refer to a fine-grained, translucent white or tinted gypsum stone, often considered more refined and poetic than marble for ornamental or sculptural work.
+- synonym: [[stone]]
+- collocation: [[white]]
+- collocation: [[statue]]
+- collocation: [[skin]]
+- collocation: [[vase]]

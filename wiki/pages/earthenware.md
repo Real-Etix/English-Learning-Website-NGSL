@@ -6,6 +6,8 @@ pos: noun
 forms: [earthenware]
 sources: [llm]
 status: enriched
+chart: pottery
+region: pottery
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pottery]] — Use 'earthenware' for pottery made from a porous clay that is fired at lower temperatures, typically lighter and less durable than stoneware, often in historical or rustic contexts.
+- synonym: [[ceramics]]
+- collocation: [[crock]]
+- synonym: [[stoneware]]
+- collocation: [[pot]]
+- collocation: [[bowl]]
+- collocation: [[dish]]
+- collocation: [[vessel]]

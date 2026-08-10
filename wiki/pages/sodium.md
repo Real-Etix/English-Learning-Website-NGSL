@@ -9,6 +9,8 @@ rank: 213
 sfi: 57.23
 sources: [wordnet, llm]
 status: enriched
+chart: sodium
+region: sodium
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[natrium]] — Use 'natrium' in formal chemical nomenclature or medical terminology.
 - advanced_form: [[sodic]] — Use 'sodic' as an adjective form when describing compounds containing sodium.
+- collocation: [[-hydroxypropanoate]]
+- collocation: [[caseinate]]
+- collocation: [[chloride]]
+- collocation: [[pyrophosphate]]

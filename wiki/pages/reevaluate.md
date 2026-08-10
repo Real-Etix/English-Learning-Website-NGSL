@@ -6,6 +6,8 @@ pos: verb
 forms: [reevaluate]
 sources: [llm]
 status: enriched
+chart: reconsider
+region: reconsider
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reconsider]] — Use 'reevaluate' when you want to examine or judge something again, especially based on new information or criteria, implying a more systematic process than reconsider.
+- synonym: [[reassess]]
+- synonym: [[review]]
+- collocation: [[constantly]]
+- collocation: [[carefully]]
+- collocation: [[strategy]]
+- collocation: [[decision]]
+- synonym: [[rethink]]

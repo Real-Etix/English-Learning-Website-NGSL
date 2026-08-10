@@ -9,6 +9,8 @@ rank: 1948
 sfi: 55.7
 sources: [wordnet, llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - synonym: [[factor]]
 - advanced_form: [[allele]] — Use 'allele' when referring to a specific variant of a gene, such as a dominant or recessive version, rather than the gene in general.
 - advanced_form: [[cistron]] — Use 'cistron' in technical or historical contexts of molecular biology, especially when emphasizing the functional unit of DNA coding for a protein.
+- collocation: [[amplification]]
+- collocation: [[inherited]]

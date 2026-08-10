@@ -9,6 +9,8 @@ rank: 335
 sfi: 55.19
 sources: [wordnet, llm]
 status: enriched
+chart: lap
+region: lap
 ---
 
 ## Definition

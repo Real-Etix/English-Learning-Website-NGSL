@@ -9,6 +9,8 @@ rank: 409
 sfi: 54.21
 sources: [wordnet, llm]
 status: enriched
+chart: uncomfortable
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ conducive to or feeling mental discomfort
 - advanced_form: [[uneasy]] — Use 'uneasy' for a milder, more internal sense of discomfort or anxiety, often without a clear external cause.
 - advanced_form: [[awkward]] — Use 'awkward' when the discomfort stems from social embarrassment or a lack of ease in a situation.
 - advanced_form: [[discomfited]] — Use 'discomfited' for a stronger sense of being unsettled, embarrassed, or thwarted, often by someone's words or actions.
+- synonym: [[cramped]]

@@ -9,6 +9,8 @@ rank: 937
 sfi: 51.97
 sources: [wordnet, llm]
 status: enriched
+chart: forthcoming
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[absolve]] — Use 'absolve' when emphasizing formal forgiveness or release from guilt, often in a religious or moral context.
 - advanced_form: [[expiate]] — Use 'expiate' when focusing on making amends or atoning for a sin or mistake through action or suffering.
+- builds_on: [[amortize]] — Use when paying off a debt, loan, or financial instrument to reclaim ownership or clear the liability.

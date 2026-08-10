@@ -6,6 +6,8 @@ pos: noun
 forms: [patriot]
 sources: [llm]
 status: enriched
+chart: nationalist
+region: nationalist
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nationalist]] — Use 'patriot' when emphasizing genuine love and devotion to one's country without aggressive or negative overtones.
+- synonym: [[jingoist]]
+- synonym: [[chauvinist]]
+- collocation: [[true]]
+- collocation: [[ardent]]
+- collocation: [[fervent]]

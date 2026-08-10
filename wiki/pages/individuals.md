@@ -6,6 +6,8 @@ pos: noun
 forms: [individuals]
 sources: [llm]
 status: enriched
+chart: public
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[people]] — Use 'individuals' to emphasize separate, distinct persons, especially in formal or legal contexts.
+- synonym: [[persons]]

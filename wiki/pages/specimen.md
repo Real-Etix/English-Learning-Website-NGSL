@@ -9,6 +9,8 @@ rank: 289
 sfi: 56.813
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[sample]] — Use 'specimen' when referring to a sample taken for scientific or medical examination.
 - advanced_form: [[exemplar]] — Use 'exemplar' when emphasizing an ideal or perfect example, not just any typical one.
 - advanced_form: [[prototype]] — Use 'prototype' when referring to an original model that serves as a basis for others, often in design or technology.
+- collocation: [[excisional]]

@@ -9,6 +9,8 @@ rank: 217
 sfi: 56.2
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: you
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,5 @@ unite into one
 - builds_on: [[centralize]] — Use 'consolidate' when combining multiple things into a single, more effective whole, often with a sense of strengthening.
 - builds_on: [[integrate]] — Use consolidate to emphasize strengthening and making something more efficient by combining.
 - builds_on: [[unite]] — Use 'consolidate' when separate units are combined into a stronger, more unified system, often in business or organizations.
+- synonym: [[cement]]
+- synonym: [[rationalize]]

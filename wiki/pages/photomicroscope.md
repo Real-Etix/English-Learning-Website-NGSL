@@ -6,6 +6,8 @@ pos: noun
 forms: [photomicroscope]
 sources: [llm]
 status: enriched
+chart: microscope
+region: microscope
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[microscope]] — Use when referring to a microscope with an integrated camera for documenting images.
+- collocation: [[digital]]
+- collocation: [[optical]]
+- collocation: [[compound]]
+- collocation: [[image]]

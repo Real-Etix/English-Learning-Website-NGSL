@@ -6,6 +6,8 @@ pos: noun
 forms: [edema]
 sources: [llm]
 status: enriched
+chart: inflammation
+region: inflammation
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inflammation]] — Use 'edema' when you mean the swelling (fluid accumulation) that accompanies inflammation, rather than the general inflammatory response.
+- collocation: [[pulmonary]]
+- collocation: [[peripheral]]
+- collocation: [[cerebral]]
+- collocation: [[ankle]]

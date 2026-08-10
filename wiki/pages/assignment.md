@@ -9,6 +9,8 @@ rank: 100
 sfi: 57.91
 sources: [wordnet, llm]
 status: enriched
+chart: detail
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[detail]] — Use 'detail' for a specific duty or chore within a larger organization, common in military or formal work settings.
 - advanced_form: [[posting]] — Use 'posting' for a job assignment that involves a change of location, especially in diplomatic or military contexts.
 - builds_on: [[homework]] — Use 'assignment' when referring to a specific piece of work given by a teacher, often more formal than 'homework'.
+- synonym: [[apportionment]]
+- synonym: [[attribution]]
+- synonym: [[subrogation]]

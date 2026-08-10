@@ -6,6 +6,8 @@ pos: adjective
 forms: [cardiac]
 sources: [llm]
 status: enriched
+chart: cardiovascular
+region: cardiovascular
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cardiovascular]] — Use 'cardiac' when specifically relating to the heart only, excluding the blood vessels; it is more precise for heart-focused topics.
+- synonym: [[heart]]
+- synonym: [[coronary]]
+- collocation: [[arrest]]
+- collocation: [[surgery]]
+- collocation: [[unit]]
+- collocation: [[patient]]
+- collocation: [[monitor]]

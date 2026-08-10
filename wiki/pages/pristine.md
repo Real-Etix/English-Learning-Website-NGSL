@@ -6,6 +6,8 @@ pos: adjective
 forms: [pristine]
 sources: [llm]
 status: enriched
+chart: breach
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - builds_on: [[unused]] — Use 'pristine' when emphasizing that the item is in its original, clean, and untouched condition, often implying it has never been used or soiled.
 - builds_on: [[fresh]] — Use 'pristine' when you want to emphasize that something is perfectly fresh and untouched, just as it was harvested or made.
 - builds_on: [[pure]] — Use when the purity comes from being original, clean, or unspoiled by human activity.
+- collocation: [[immaculateness]]
+- synonym: [[virgin]]

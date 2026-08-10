@@ -6,6 +6,8 @@ pos: adjective
 forms: [sizable]
 sources: [llm]
 status: enriched
+chart: substantial
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[substantial]] — Use 'sizable' instead of 'substantial' when referring specifically to size or amount, often in business or financial contexts.
+- synonym: [[commodious]]

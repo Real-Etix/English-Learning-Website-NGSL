@@ -9,6 +9,8 @@ rank: 33
 sfi: 75.02
 sources: [wordnet, dictionaryapi]
 status: seeded
+chart: part
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ status: seeded
 - collocation: [[quiet]]
 - collocation: [[when]]
 - collocation: [[go]]
+- synonym: [[each]]
+- synonym: [[every]]
+- synonym: [[everybody]]
+- synonym: [[everyone]]
+- synonym: [[everything]]
+- collocation: [[least]]

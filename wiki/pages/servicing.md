@@ -6,6 +6,8 @@ pos: noun
 forms: [servicing]
 sources: [llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition

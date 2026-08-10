@@ -6,6 +6,8 @@ pos: verb
 forms: [intercede]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition

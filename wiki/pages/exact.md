@@ -9,6 +9,8 @@ rank: 2327
 sfi: 54.52
 sources: [wordnet, llm]
 status: enriched
+chart: extract
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,13 @@ _No sourced examples yet._
 - advanced_form: [[levy]] — Use 'levy' when referring to officially imposing a tax, fee, or fine.
 - advanced_form: [[extract]] — Use 'extract' when obtaining something through effort or persuasion, often with a sense of difficulty.
 - advanced_form: [[wring]] — Use 'wring' when obtaining something through force, pressure, or emotional manipulation.
+- synonym: [[accurate]]
+- collocation: [[dimensions]]
+- collocation: [[doppelgnger]]
+- synonym: [[inflict]]
+- collocation: [[midpoint]]
+- collocation: [[pinpoint]]
+- synonym: [[very]]
+- collocation: [[wording]]
+- synonym: [[definite]]
+- synonym: [[faithful]]

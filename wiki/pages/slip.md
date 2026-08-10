@@ -9,6 +9,8 @@ rank: 1810
 sfi: 56.16
 sources: [wordnet, llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[gaffe]] — Use 'gaffe' instead of 'slip' when the mistake is public, embarrassing, and often discussed in formal or media contexts.
 - advanced_form: [[blunder]] — Use 'blunder' instead of 'slip' when the mistake is perceived as clumsy, foolish, or having significant negative consequences.
+- synonym: [[inadvertence]]
+- synonym: [[misstep]]
+- synonym: [[petticoat]]

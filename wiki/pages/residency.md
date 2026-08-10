@@ -6,6 +6,8 @@ pos: noun
 forms: [residency]
 sources: [llm]
 status: enriched
+chart: internship
+region: internship
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[internship]] — Use when referring to the advanced training period after medical school, which includes and extends beyond the internship year.
+- synonym: [[occupancy]]
+- collocation: [[preceptor]]
+- synonym: [[training]]
+- synonym: [[placement]]
+- synonym: [[appointment]]
+- synonym: [[post]]

@@ -9,6 +9,8 @@ rank: 226
 sfi: 55.85
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ promise solemnly and formally
 - advanced_form: [[avow]] — Use 'avow' when the pledge is a public, open declaration of beliefs or intentions, emphasizing sincerity and visibility.
 - advanced_form: [[covenant]] — Use 'covenant' when the pledge is a formal, binding agreement, often legal or religious, between parties.
 - builds_on: [[vow]] — Use 'pledge' for a formal or solemn promise, often in a public or binding context, stronger than a casual vow.
+- synonym: [[donate]]

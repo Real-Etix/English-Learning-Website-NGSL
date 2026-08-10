@@ -9,6 +9,8 @@ rank: 342
 sfi: 54.35
 sources: [wordnet, llm]
 status: enriched
+chart: indicator
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[register]] — Use 'register' for formal or official records (e.g., hotel guests, voters), whereas 'directory' is more like a phonebook or address list.
 - advanced_form: [[index]] — Use 'index' specifically for locating information within a larger work (e.g., book index), while 'directory' is a standalone list.
 - builds_on: [[catalog]] — Use 'directory' when the list focuses on contact details or entries for people or services, rather than product descriptions.
+- synonym: [[catalogue]]
+- synonym: [[masthead]]

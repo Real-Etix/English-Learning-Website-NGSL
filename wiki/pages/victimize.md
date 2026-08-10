@@ -6,6 +6,8 @@ pos: verb
 forms: [victimize]
 sources: [llm]
 status: enriched
+chart: measure
+region: you
 ---
 
 ## Definition

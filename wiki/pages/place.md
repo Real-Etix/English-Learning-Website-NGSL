@@ -9,6 +9,8 @@ rank: 114
 sfi: 69
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ a point located with respect to surface features of some region
 - advanced_form: [[locale]] — Use 'locale' instead of 'place' when referring to a specific area or setting, often with a cultural or social context.
 - advanced_form: [[venue]] — Use 'venue' instead of 'place' when emphasizing the location of an event, gathering, or activity.
 - builds_on: [[put]] — Use 'place' when you want to emphasize careful or deliberate positioning, often with a sense of intention or order.
+- collocation: [[crosswise]]
+- collocation: [[rightful]]
+- collocation: [[wager]]
+- collocation: [[where]]

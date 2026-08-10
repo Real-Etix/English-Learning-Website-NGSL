@@ -6,6 +6,8 @@ pos: noun
 forms: [supernumerary]
 sources: [llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition

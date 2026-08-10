@@ -6,6 +6,8 @@ pos: noun
 forms: [transmitter]
 sources: [llm]
 status: enriched
+chart: architect
+region: you
 ---
 
 ## Definition

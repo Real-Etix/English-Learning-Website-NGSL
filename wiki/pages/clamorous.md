@@ -6,6 +6,8 @@ pos: adjective
 forms: [clamorous]
 sources: [llm]
 status: enriched
+chart: loud
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[noisy]] — Use 'clamorous' for noisy and insistent, often involving shouting or urgent outcry.
+- synonym: [[loud]]
+- collocation: [[crowd]]
+- collocation: [[noise]]
+- collocation: [[applause]]

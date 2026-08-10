@@ -9,6 +9,8 @@ rank: 914
 sfi: 60.15
 sources: [wordnet, llm]
 status: enriched
+chart: man
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - builds_on: [[man]] — Use 'male' instead of 'man' in technical, statistical, or biological descriptions, or when contrasting with female.
 - advanced_form: [[gentleman]] — Use 'gentleman' for a polite or formal reference to a male person, especially when emphasizing good manners or respect.
 - advanced_form: [[fellow]] — Use 'fellow' as a slightly more informal or friendly term for a man, often used in casual conversation.
+- collocation: [[caucasian]]
+- collocation: [[chauvinism]]
+- collocation: [[coworker]]
+- collocation: [[domination]]
+- collocation: [[preponderantly]]

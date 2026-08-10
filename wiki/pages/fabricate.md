@@ -6,6 +6,8 @@ pos: verb
 forms: [fabricate]
 sources: [llm]
 status: enriched
+chart: make
+region: you
 ---
 
 ## Definition

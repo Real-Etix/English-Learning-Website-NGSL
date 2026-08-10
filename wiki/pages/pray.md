@@ -9,6 +9,8 @@ rank: 2639
 sfi: 53.49
 sources: [wordnet, llm]
 status: enriched
+chart: cite
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ address a deity, a prophet, a saint or an object of worship
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[supplicate]] — Use when emphasizing humble, earnest request to a higher power.
 - advanced_form: [[invoke]] — Use when calling upon a deity or spirit by name, often in a ritual context.
+- collocation: [[fervently]]

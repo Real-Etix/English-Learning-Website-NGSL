@@ -6,6 +6,8 @@ pos: noun
 forms: [cirrhosis]
 sources: [llm]
 status: enriched
+chart: hepatitis
+region: hepatitis
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hepatitis]] — Use cirrhosis when describing the chronic scarring of the liver that results from long-term inflammation, not the initial inflammation itself.
+- collocation: [[liver]]

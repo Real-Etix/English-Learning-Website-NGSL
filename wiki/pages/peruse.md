@@ -6,6 +6,8 @@ pos: verb
 forms: [peruse]
 sources: [llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition

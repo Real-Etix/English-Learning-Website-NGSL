@@ -9,6 +9,8 @@ rank: 885
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: wisely
+region: wisely
 ---
 
 ## Definition

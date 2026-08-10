@@ -9,6 +9,8 @@ rank: 2037
 sfi: 55.44
 sources: [wordnet, llm]
 status: enriched
+chart: supermarket
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ be sold at the retail level
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[vend]] — Use 'vend' instead of 'retail' when emphasizing the act of selling, especially through automated or street means, or in formal business contexts.
 - advanced_form: [[market]] — Use 'market' instead of 'retail' when focusing on the promotional and strategic aspects of making a product available for purchase, not just the act of selling.
+- collocation: [[mart]]
+- collocation: [[merchandiser]]

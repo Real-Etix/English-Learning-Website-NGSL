@@ -6,6 +6,8 @@ pos: noun
 forms: [cadre]
 sources: [llm]
 status: enriched
+chart: middle
+region: you
 ---
 
 ## Definition

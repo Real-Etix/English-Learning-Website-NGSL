@@ -9,6 +9,8 @@ rank: 1753
 sfi: 56.36
 sources: [wordnet]
 status: seeded
+chart: interim
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ at the same time but in another place
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[meantime]]
+- synonym: [[concurrently]]
+- synonym: [[simultaneously]]

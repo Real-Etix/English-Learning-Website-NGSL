@@ -9,6 +9,8 @@ rank: 201
 sfi: 57.58
 sources: [wordnet, llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[capitulation]] — Use 'capitulation' when emphasizing the formal or dramatic giving up after a struggle, unlike 'surrender' which is more general.
 - advanced_form: [[resignation]] — Use 'resignation' when focusing on the emotional acceptance of a hopeless situation, whereas 'surrender' can imply active handing over.
+- synonym: [[forfeit]]
+- synonym: [[relinquishment]]

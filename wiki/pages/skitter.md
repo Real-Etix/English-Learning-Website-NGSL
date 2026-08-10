@@ -6,6 +6,8 @@ pos: verb
 forms: [skitter]
 sources: [llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition

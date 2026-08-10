@@ -6,6 +6,8 @@ pos: noun
 forms: [atelier]
 sources: [llm]
 status: enriched
+chart: house
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[workshop]] — Use 'atelier' instead of 'workshop' when referring to a studio for an artist, designer, or craftsman, emphasizing creativity and artistry.
 - builds_on: [[studio]] — Use 'atelier' instead of 'studio' when emphasizing a chic or professional artist's workspace, especially in fashion or fine arts.
+- synonym: [[workroom]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [adjudication]
 sources: [llm]
 status: enriched
+chart: realization
+region: you
 ---
 
 ## Definition

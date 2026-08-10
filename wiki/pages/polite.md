@@ -9,6 +9,8 @@ rank: 321
 sfi: 54.58
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[courteous]] — Use 'courteous' instead of 'polite' to emphasize respectful and well-mannered behavior, especially in formal or professional settings.
 - advanced_form: [[deferential]] — Use 'deferential' instead of 'polite' when the politeness is due to respect for rank, age, or expertise.
 - advanced_form: [[gracious]] — Use 'gracious' instead of 'polite' to highlight a warm, generous, and elegant form of politeness that is especially comforting or welcoming.
+- synonym: [[decorous]]

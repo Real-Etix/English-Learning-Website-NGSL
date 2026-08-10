@@ -6,6 +6,8 @@ pos: noun
 forms: [carpal]
 sources: [llm]
 status: enriched
+chart: wrist
+region: wrist
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wrist]] — Use 'carpal' (noun) to refer to one of the bones of the wrist, not the joint itself.
+- collocation: [[tunnel]]
+- collocation: [[bone]]
+- collocation: [[fracture]]

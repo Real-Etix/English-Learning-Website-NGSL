@@ -6,6 +6,8 @@ pos: noun
 forms: [fortitude]
 sources: [llm]
 status: enriched
+chart: strength
+region: you
 ---
 
 ## Definition

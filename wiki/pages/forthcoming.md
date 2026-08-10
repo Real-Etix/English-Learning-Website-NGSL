@@ -9,6 +9,8 @@ rank: 1130
 sfi: 51.65
 sources: [wordnet, llm]
 status: enriched
+chart: forthcoming
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[affable]] — Use affable when you want to emphasize a warm, friendly ease in conversation, often with a gentle demeanor.
 - advanced_form: [[gregarious]] — Use gregarious for someone who not only talks easily but actively seeks out social interaction and enjoys being with others.
 - advanced_form: [[communicative]] — Use communicative when highlighting the willingness to share information or talk openly, especially in contexts where the person might otherwise seem reserved.
+- synonym: [[pending]]

@@ -9,6 +9,8 @@ rank: 2715
 sfi: 53.14
 sources: [wordnet, llm]
 status: enriched
+chart: sway
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - synonym: [[replacement]]
 - advanced_form: [[surrogate]] — Use 'surrogate' when emphasizing a person who substitutes in a functional or emotional role, especially in contexts like parenthood or representation.
 - advanced_form: [[proxy]] — Use 'proxy' when referring to a person authorized to act for another, often in formal voting or decision-making settings.
+- synonym: [[analog]]

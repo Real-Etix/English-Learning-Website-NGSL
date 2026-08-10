@@ -6,6 +6,8 @@ pos: adjective
 forms: [periodontal]
 sources: [llm]
 status: enriched
+chart: oral
+region: oral
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dental]] — Use 'periodontal' in medical/clinical contexts specifically about the gums and bone supporting the teeth, more technical than 'dental'.
+- collocation: [[disease]]
+- collocation: [[therapy]]
+- collocation: [[pocket]]
+- collocation: [[surgery]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [vertebralcolumn]
 sources: [llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[spine]] — Use 'vertebral column' in formal or medical contexts to emphasize the entire bony structure, rather than the more general 'spine'.
+- synonym: [[spinalcolumn]]
+- collocation: [[sacral]]
+- collocation: [[fracture]]

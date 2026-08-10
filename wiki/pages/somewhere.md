@@ -9,6 +9,8 @@ rank: 1320
 sfi: 58.19
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition

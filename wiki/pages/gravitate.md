@@ -6,6 +6,8 @@ pos: verb
 forms: [gravitate]
 sources: [llm]
 status: enriched
+chart: lean
+region: you
 ---
 
 ## Definition

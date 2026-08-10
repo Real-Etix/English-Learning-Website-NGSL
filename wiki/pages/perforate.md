@@ -6,6 +6,8 @@ pos: verb
 forms: [perforate]
 sources: [llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[drill]] — Use 'perforate' instead of 'drill' when making small holes in a surface for a specific functional purpose, like in manufacturing or medical contexts.
+- synonym: [[puncture]]
+- synonym: [[bore]]
+- synonym: [[punch]]
+- collocation: [[paper]]
+- collocation: [[line]]
+- collocation: [[sheet]]
+- collocation: [[stamp]]

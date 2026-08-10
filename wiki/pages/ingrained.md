@@ -6,6 +6,8 @@ pos: adjective
 forms: [ingrained]
 sources: [llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[inherent]] — Use when a characteristic or habit is so firmly established that it is difficult to change, often in social or psychological contexts.
 - builds_on: [[habitual]] — Use ingrained for a habit so firmly established that it is automatic or part of one's nature.
+- synonym: [[entrenched]]
+- synonym: [[indelible]]

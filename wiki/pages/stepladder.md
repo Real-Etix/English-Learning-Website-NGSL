@@ -6,6 +6,8 @@ pos: noun
 forms: [stepladder]
 sources: [llm]
 status: enriched
+chart: ladder
+region: ladder
 ---
 
 ## Definition

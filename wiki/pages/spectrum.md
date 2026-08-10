@@ -9,6 +9,8 @@ rank: 75
 sfi: 59.327
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ _No sourced examples yet._
 - advanced_form: [[continuum]] — Use 'continuum' when the focus is on gradual, unbroken progression within a range, often in scientific or philosophical discussions.
 - builds_on: [[array]] — Use 'spectrum' for an array that spans a continuous range, often with graded differences.
 - builds_on: [[scale]] — Use 'spectrum' when the scale covers a wide, continuous range rather than discrete steps.
+- synonym: [[cross-section]]
+- collocation: [[hue]]
+- collocation: [[microwave]]
+- collocation: [[negatron]]
+- builds_on: [[wireless]] — Use when talking about the technical allocation of wireless frequencies.
+- synonym: [[airwaves]]

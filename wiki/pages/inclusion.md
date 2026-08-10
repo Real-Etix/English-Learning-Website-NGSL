@@ -9,6 +9,8 @@ rank: 230
 sfi: 57.292
 sources: [wordnet, llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[incorporation]] — Use 'incorporation' when focusing on the act of making someone/something part of a larger entity, often with a formal or legal nuance.
 - builds_on: [[integration]] — Use 'inclusion' to emphasize the active effort to involve diverse groups as full participants, whereas 'integration' can sometimes imply simply placing groups together.
 - builds_on: [[entry]] — Use 'inclusion' when focusing on the item being added as part of a larger record.
+- synonym: [[desegregation]]
+- synonym: [[insertion]]

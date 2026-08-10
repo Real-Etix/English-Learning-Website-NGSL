@@ -6,6 +6,8 @@ pos: noun
 forms: [vantage]
 sources: [llm]
 status: enriched
+chart: opinion
+region: you
 ---
 
 ## Definition

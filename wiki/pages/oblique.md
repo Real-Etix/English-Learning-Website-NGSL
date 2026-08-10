@@ -6,6 +6,8 @@ pos: adjective
 forms: [oblique]
 sources: [llm]
 status: enriched
+chart: indirect
+region: you
 ---
 
 ## Definition

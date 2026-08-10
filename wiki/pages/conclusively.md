@@ -6,6 +6,8 @@ pos: adverb
 forms: [conclusively]
 sources: [llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[finally]] — Use 'conclusively' to show that something is resolved with finality, often after a lengthy process.
 - builds_on: [[ultimately]] — Use 'conclusively' when the end result is decisive and leaves no doubt; more formal than 'ultimately'.
+- synonym: [[definitively]]

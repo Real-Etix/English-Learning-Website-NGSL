@@ -6,6 +6,8 @@ pos: verb
 forms: [retrace]
 sources: [llm]
 status: enriched
+chart: form
+region: you
 ---
 
 ## Definition

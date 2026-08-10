@@ -9,6 +9,8 @@ rank: 211
 sfi: 57.26
 sources: [wordnet, llm]
 status: enriched
+chart: clasp
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[clutch]] — Use 'clutch' when you hold something tightly due to fear, nervousness, or to prevent loss. Implies a more urgent or protective grip than 'clasp'.
 - builds_on: [[embrace]] — Use 'clasp' for a firm, formal embrace, often with hands or arms locked.
 - builds_on: [[hook]] — Use 'clasp' when fastening something with a small hook and catch device, like jewelry.
+- synonym: [[brooch]]

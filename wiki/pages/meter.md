@@ -9,6 +9,8 @@ rank: 2112
 sfi: 55.17
 sources: [wordnet, llm]
 status: enriched
+chart: kilometer
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[metre]] — Use 'metre' instead of 'meter' in British English or formal scientific writing.
 - advanced_form: [[kilometer]] — Use 'kilometer' when referring to a larger unit of length, often in geography or engineering contexts.
+- collocation: [[therm]]

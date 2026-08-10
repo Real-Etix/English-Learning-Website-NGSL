@@ -9,6 +9,8 @@ rank: 490
 sfi: 54.827
 sources: [wordnet, llm]
 status: enriched
+chart: forthcoming
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ make clear and (more) comprehensible
 - advanced_form: [[expound]] — Use 'expound' when explaining or discussing something at length and in detail, especially in a speech or written work.
 - advanced_form: [[illuminate]] — Use 'illuminate' when clarifying by shedding light on a topic, often revealing new understanding or insight.
 - builds_on: [[filter]] — Use 'clarify' when the goal is to make the liquid clear and pure, often in culinary or scientific contexts.
+- synonym: [[enlighten]]
+- synonym: [[purify]]

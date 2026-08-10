@@ -9,6 +9,8 @@ rank: 656
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: transformation
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[fostering]] — Use 'fostering' when the focus is on nurturing or developing over time, implying care, unlike the broader 'advancement'.
 - advanced_form: [[cultivation]] — Use 'cultivation' when gradual growth through deliberate effort is intended, more specific than 'advancement' for personal or abstract development.
 - builds_on: [[progress]] — Use 'advancement' to emphasize intentional, career-oriented or structured progress.
+- synonym: [[betterment]]
+- synonym: [[headway]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [exemplary]
 sources: [llm]
 status: enriched
+chart: superior
+region: you
 ---
 
 ## Definition

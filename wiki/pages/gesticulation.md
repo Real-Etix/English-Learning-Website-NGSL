@@ -6,6 +6,8 @@ pos: noun
 forms: [gesticulation]
 sources: [llm]
 status: enriched
+chart: sign
+region: you
 ---
 
 ## Definition

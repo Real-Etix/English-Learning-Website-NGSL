@@ -9,6 +9,8 @@ rank: 1673
 sfi: 50.09
 sources: [wordnet, llm]
 status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[calamity]] — Use 'calamity' for a deeply tragic, often widespread event that stirs pity or sorrow, slightly more formal than 'catastrophe'.
 - advanced_form: [[cataclysm]] — Use 'cataclysm' for a violent, sudden upheaval, often natural, implying massive destruction and change, more dramatic than 'catastrophe'.
 - builds_on: [[disaster]] — Use when describing a sudden, widespread disaster with devastating consequences, often implying a tragic outcome.
+- synonym: [[crisis]]
+- synonym: [[debacle]]
+- synonym: [[fiasco]]
+- synonym: [[holocaust]]
+- builds_on: [[crisis]] — Use for a sudden, large-scale disaster with devastating consequences; stronger and more dramatic than crisis.

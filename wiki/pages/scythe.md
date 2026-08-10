@@ -6,6 +6,8 @@ pos: noun
 forms: [scythe]
 sources: [llm]
 status: enriched
+chart: mower
+region: mower
 ---
 
 ## Definition

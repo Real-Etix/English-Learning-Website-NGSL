@@ -9,6 +9,8 @@ rank: 441
 sfi: 63.58
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,22 @@ the act of working out the form of something (as by making a sketch or outline o
 - builds_on: [[pattern]] — Use 'design' when focusing on the intentional or aesthetic aspect of a pattern, often in art or decoration.
 - builds_on: [[intent]] — Use 'design' instead of 'intent' to emphasize the plan or scheme behind an action.
 - builds_on: [[intention]] — Use 'design' to emphasize a deliberate, often cunning plan or intention, especially when the outcome is carefully devised.
+- collocation: [[architectonic]]
+- collocation: [[capstone]]
+- collocation: [[co-twin]]
+- collocation: [[constructional]]
+- collocation: [[curvilinear]]
+- synonym: [[engineering]]
+- collocation: [[experiment]]
+- collocation: [[geometric]]
+- collocation: [[iteration]]
+- collocation: [[letterhead]]
+- collocation: [[modernistic]]
+- collocation: [[originally]]
+- collocation: [[pictogram]]
+- collocation: [[reconfigure]]
+- collocation: [[responsive]]
+- collocation: [[website]]
+- collocation: [[graphics]]
+- collocation: [[ornamental]]
+- collocation: [[typography]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [tumefaction]
 sources: [llm]
 status: enriched
+chart: hypertrophy
+region: hypertrophy
 ---
 
 ## Definition

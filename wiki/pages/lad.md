@@ -6,6 +6,8 @@ pos: noun
 forms: [lad]
 sources: [llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition

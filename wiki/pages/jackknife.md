@@ -9,6 +9,8 @@ rank: 478
 sfi: 53.61
 sources: [wordnet, llm]
 status: enriched
+chart: jackknife
+region: jackknife
 ---
 
 ## Definition

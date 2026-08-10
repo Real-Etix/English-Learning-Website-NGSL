@@ -9,6 +9,8 @@ rank: 686
 sfi: 61.42
 sources: [wordnet, llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,16 @@ _No sourced examples yet._
 - advanced_form: [[endeavor]] — Use 'endeavor' for a more formal and sustained attempt, often implying effort and commitment.
 - advanced_form: [[undertaking]] — Use 'undertaking' when the attempt involves a complex task or significant responsibility.
 - advanced_form: [[venture]] — Use 'venture' for an attempt that involves risk or uncertainty, often in business or exploration.
+- collocation: [[appease]]
+- collocation: [[assassinate]]
+- collocation: [[audacious]]
+- collocation: [[conciliate]]
+- collocation: [[denigrate]]
+- collocation: [[desperate]]
+- collocation: [[earnest]]
+- collocation: [[feeble]]
+- collocation: [[foil]]
+- collocation: [[futile]]
+- collocation: [[ineffectual]]
+- collocation: [[placate]]
+- collocation: [[resuscitate]]

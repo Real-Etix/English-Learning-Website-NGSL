@@ -9,6 +9,8 @@ rank: 69
 sfi: 72.02
 sources: []
 status: seeded
+chart: creditor
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- collocation: [[later]]
+- collocation: [[rather]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [guarantor]
 sources: [llm]
 status: enriched
+chart: shop
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [groundnut]
 sources: [llm]
 status: enriched
+chart: pulse
+region: you
 ---
 
 ## Definition

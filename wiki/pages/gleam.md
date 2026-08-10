@@ -6,6 +6,8 @@ pos: noun
 forms: [gleam]
 sources: [llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,7 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[spark]] — Use 'gleam' for a soft, steady but brief shine, often from a source that is not as intense as a spark.
 - builds_on: [[shine]] — Use 'gleam' for a bright, reflected light, often from a smooth surface.
+- synonym: [[glint]]
+- synonym: [[glow]]
+- synonym: [[ray]]
+- builds_on: [[ray]] — Use 'gleam' for a gentle or shining ray, often from a distant source.

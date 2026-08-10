@@ -9,6 +9,8 @@ rank: 320
 sfi: 56.642
 sources: [wordnet, llm]
 status: enriched
+chart: convergence
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[convergence]] — use when multiple routes or entities come together at a common destination, not just a single approach
 - advanced_form: [[advent]] — use when the destination is a significant event, season, or arrival, often with a sense of anticipation
+- synonym: [[occlusion]]

@@ -9,6 +9,8 @@ rank: 183
 sfi: 56.23
 sources: [wordnet, llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,5 @@ _No sourced examples yet._
 - advanced_form: [[aggregate]] — Use when combining separate items into a collective total, often in formal or technical contexts.
 - builds_on: [[accrue]] — Use 'accumulate' when emphasizing gradual gathering of items or wealth, often with a sense of deliberate or physical collection, while 'accrue' is more abstract and automatic (e.g., interest, benefits).
 - builds_on: [[compile]] — Use 'accumulate' when things gather gradually over time, especially for non-deliberate or incremental collection.
+- synonym: [[accrete]]
+- synonym: [[garner]]

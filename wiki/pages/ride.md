@@ -9,6 +9,8 @@ rank: 1050
 sfi: 59.34
 sources: [wordnet, llm]
 status: enriched
+chart: walk
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ sit and travel on the back of animal, usually while controlling its motions
 - advanced_form: [[trot]] — Use when riding at a moderate, steady pace between a walk and a canter.
 - advanced_form: [[canter]] — Use for a smooth, three‑beat gait faster than a trot.
 - advanced_form: [[gallop]] — Use for the fastest gait, a four‑beat run.
+- collocation: [[boat]]
+- collocation: [[carnival]]
+- collocation: [[chopper]]
+- collocation: [[hitch]]
+- collocation: [[metro]]
+- collocation: [[pushbike]]
+- synonym: [[surf]]

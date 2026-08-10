@@ -6,6 +6,8 @@ pos: verb
 forms: [unfasten]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition

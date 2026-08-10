@@ -6,6 +6,8 @@ pos: noun
 forms: [swivel]
 sources: [llm]
 status: enriched
+chart: forthcoming
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hinge]] — Use 'swivel' instead of 'hinge' when describing a mechanism that allows continuous rotation, not just a limited swing.
+- synonym: [[caster]]
+- collocation: [[caster]]

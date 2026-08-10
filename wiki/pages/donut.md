@@ -9,6 +9,8 @@ rank: 1126
 sfi: 49.8
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: donut
+region: donut
 ---
 
 ## Definition

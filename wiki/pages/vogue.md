@@ -6,6 +6,8 @@ pos: noun
 forms: [vogue]
 sources: [llm]
 status: enriched
+chart: notable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[popularity]] — Use 'vogue' for temporary, trendy popularity, especially in fashion or culture.
+- synonym: [[fashion]]
+- synonym: [[trend]]
+- synonym: [[style]]
+- collocation: [[in]]
+- collocation: [[into]]
+- collocation: [[for]]
+- collocation: [[current]]
+- collocation: [[new]]

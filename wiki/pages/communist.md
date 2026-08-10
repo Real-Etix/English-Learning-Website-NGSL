@@ -9,6 +9,8 @@ rank: 320
 sfi: 54.08
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ a member of the communist party
 - advanced_form: [[bolshevik]] — Use 'Bolshevik' instead of 'communist' when referring specifically to members of the Russian Communist Party before 1952, especially in historical contexts.
 - advanced_form: [[marxist]] — Use 'Marxist' when emphasizing adherence to Marx's theoretical ideology rather than formal party membership.
 - builds_on: [[socialist]] — Use 'communist' instead of 'socialist' for advocates of a more extreme form of socialism that typically aims for revolutionary change and abolition of private property.
+- synonym: [[collectivist]]
+- collocation: [[apparatchik]]

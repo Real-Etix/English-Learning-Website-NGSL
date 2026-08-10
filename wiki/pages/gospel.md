@@ -6,6 +6,8 @@ pos: noun
 forms: [gospel]
 sources: [llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition

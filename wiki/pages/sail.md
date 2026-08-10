@@ -9,6 +9,8 @@ rank: 2116
 sfi: 55.17
 sources: [wordnet, llm]
 status: enriched
+chart: force
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[navigate]] — More technical and often implies steering or plotting a course, whereas 'sail' is broader.
 - advanced_form: [[cruise]] — Suggests a leisurely or pleasure trip at a steady speed, unlike the more general 'sail'.
 - advanced_form: [[traverse]] — Formal and emphasizes crossing a body of water, often with a sense of distance or challenge.
+- collocation: [[boat]]

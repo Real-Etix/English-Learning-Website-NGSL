@@ -9,6 +9,8 @@ rank: 403
 sfi: 55.741
 sources: [wordnet, llm]
 status: enriched
+chart: duplicate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[double]] — Use 'double' for a person who looks exactly like another, often used in everyday contexts.
 - advanced_form: [[duplicate]] — Use 'duplicate' when emphasizing exact copy in appearance or nature, slightly more formal than 'clone'.
+- synonym: [[doppelgnger]]

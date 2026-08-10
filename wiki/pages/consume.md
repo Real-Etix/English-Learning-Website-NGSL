@@ -9,6 +9,8 @@ rank: 2659
 sfi: 53.4
 sources: [wordnet, llm]
 status: enriched
+chart: down
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - builds_on: [[burn]] — Use 'consume' instead of 'burn' when highlighting that the fire destroys something entirely, often with a sense of devouring.
 - advanced_form: [[devour]] — Use 'devour' when emphasizing eating quickly and hungrily, often with great enthusiasm.
 - advanced_form: [[gorge]] — Use 'gorge' when focusing on eating to excess, often until uncomfortably full.
+- synonym: [[deplete]]

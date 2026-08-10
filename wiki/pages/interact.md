@@ -9,6 +9,8 @@ rank: 156
 sfi: 58.098
 sources: [wordnet, llm]
 status: enriched
+chart: engage
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ act together or towards others or with others
 - domain: academic
 - advanced_form: [[engage]] — Use when emphasizing active, meaningful participation rather than just casual interaction.
 - advanced_form: [[liaise]] — Use in formal or professional contexts to mean coordinating or acting as a link between parties.
+- synonym: [[communicate]]
+- synonym: [[cooperate]]
+- synonym: [[relate]]
+- synonym: [[socialize]]
+- collocation: [[with]]

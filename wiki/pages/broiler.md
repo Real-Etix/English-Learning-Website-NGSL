@@ -6,6 +6,8 @@ pos: noun
 forms: [broiler]
 sources: [llm]
 status: enriched
+chart: homemade
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chicken]] — Use 'broiler' to specify a young chicken suitable for broiling or roasting, common in cooking and butchery contexts.
+- synonym: [[poultry]]

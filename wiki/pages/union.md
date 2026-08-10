@@ -9,6 +9,8 @@ rank: 1279
 sfi: 58.31
 sources: [wordnet, llm]
 status: enriched
+chart: union
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,19 @@ an organization of employees formed to bargain with the employer
 - advanced_form: [[guild]] — Use 'guild' when referring to a professional association that also functions like a labor union, especially in creative or trade fields.
 - advanced_form: [[syndicate]] — Use 'syndicate' to emphasize a more organized or powerful group that acts collectively, sometimes with a formal structure in labor or business contexts.
 - builds_on: [[northern]] — Use 'Union' in historical contexts referring to the northern states during the Civil War era.
+- synonym: [[coalescence]]
+- synonym: [[combination]]
+- collocation: [[dues]]
+- collocation: [[european]]
+- synonym: [[federation]]
+- synonym: [[matrimony]]
+- synonym: [[nuptials]]
+- collocation: [[pipefitter]]
+- collocation: [[pressman]]
+- synonym: [[wedlock]]
+- synonym: [[merger]]
+- synonym: [[brotherhood]]
+- synonym: [[coupler]]
+- collocation: [[federative]]
+- synonym: [[reunification]]
+- collocation: [[sanctify]]

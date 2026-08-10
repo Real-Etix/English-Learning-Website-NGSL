@@ -6,6 +6,8 @@ pos: noun
 forms: [custodian]
 sources: [llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,8 @@ _No sourced examples yet._
 - builds_on: [[wiper]] — Use 'custodian' for a formal title of a person responsible for cleaning and upkeep, often in schools or offices, as it sounds more professional than 'wiper'.
 - builds_on: [[concierge]] — Use 'custodian' instead of 'concierge' when emphasizing the role of taking care of a building or property, often in a more formal context.
 - builds_on: [[fiduciary]] — Use 'custodian' when emphasizing safekeeping of assets rather than legal obligations, often in financial contexts.
+- synonym: [[curator]]
+- synonym: [[depositary]]
+- synonym: [[groundskeeper]]
+- synonym: [[janitor]]
+- synonym: [[sweeper]]

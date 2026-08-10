@@ -6,6 +6,8 @@ pos: adverb
 forms: [triumphantly]
 sources: [llm]
 status: enriched
+chart: fundamentally
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2204
 sfi: 54.92
 sources: [wordnet, llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ how something is done or how it happens
 - advanced_form: [[method]] — Use 'method' when referring to a systematic, established way of doing something, often more concrete than 'mode'.
 - advanced_form: [[manner]] — Use 'manner' when emphasizing the style or way in which an action is performed, often relating to behavior or conduct.
 - advanced_form: [[modality]] — Use 'modality' in formal or technical contexts, especially in medicine, education, or philosophy, for a specific method or procedure.
+- collocation: [[beast]]
+- collocation: [[locomotion]]
+- builds_on: [[style]] — Use 'mode' for a formal or systematic way of doing something, especially in academic or technical writing.
+- builds_on: [[manner]] — Use 'mode' instead of 'manner' in technical or formal contexts to refer to a specific way of functioning.
+- synonym: [[idiom]]

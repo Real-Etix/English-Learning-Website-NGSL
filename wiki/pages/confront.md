@@ -9,6 +9,8 @@ rank: 758
 sfi: 52.97
 sources: [wordnet, llm]
 status: enriched
+chart: challenge
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ oppose, as in hostility or a competition
 - advanced_form: [[defy]] — Used when confronting authority or rules with open resistance.
 - advanced_form: [[combat]] — Used when confronting in a physical or metaphorical battle, often with more intensity than 'confront'.
 - builds_on: [[encounter]] — Use 'confront' when the encounter involves a challenge or direct opposition, unlike the neutral 'encounter'.
+- synonym: [[grapple]]

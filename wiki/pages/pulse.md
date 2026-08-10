@@ -9,6 +9,8 @@ rank: 76
 sfi: 62.57
 sources: [wordnet, llm]
 status: enriched
+chart: pulse
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[spike]] — Use 'spike' for a very sharp, momentary pulse that exceeds normal levels, often in voltage or current.
 - builds_on: [[rhythm]] — Use when referring to the underlying, steady beat that forms the foundation of the rhythm, like a heartbeat.
 - builds_on: [[bean]] — Use 'pulse' to refer specifically to the edible dried seeds of legumes, especially in nutritional or agricultural contexts.
+- synonym: [[throb]]
+- synonym: [[tock]]

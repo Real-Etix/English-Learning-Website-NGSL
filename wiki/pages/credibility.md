@@ -9,6 +9,8 @@ rank: 504
 sfi: 54.14
 sources: [wordnet, llm]
 status: enriched
+chart: no
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[plausibility]] — Use 'plausibility' when focusing on how reasonable or convincing an argument or story seems, especially in logical or factual contexts.
 - advanced_form: [[veracity]] — Use 'veracity' when emphasizing factual accuracy and truthfulness, often in formal or ethical discussions.
+- synonym: [[conceivability]]
+- collocation: [[impeach]]
+- collocation: [[reestablish]]

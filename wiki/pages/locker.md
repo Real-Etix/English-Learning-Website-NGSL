@@ -9,6 +9,8 @@ rank: 683
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: cabinet
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[cubbyhole]] — Use 'cubbyhole' for a small, often open-fronted compartment, like in a kindergarten or office, less secure than a locker.
 - advanced_form: [[lockbox]] — Use 'lockbox' for a portable lockable container for valuables, not built-in like a locker.
 - advanced_form: [[depository]] — Use 'depository' for a formal place where items are stored for safekeeping, e.g., a bank vault or warehouse.
+- synonym: [[cubby]]
+- synonym: [[cupboard]]
+- collocation: [[padlock]]
+- synonym: [[bay]]

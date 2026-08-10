@@ -6,6 +6,8 @@ pos: noun
 forms: [funnel]
 sources: [llm]
 status: enriched
+chart: cone
+region: cone
 ---
 
 ## Definition

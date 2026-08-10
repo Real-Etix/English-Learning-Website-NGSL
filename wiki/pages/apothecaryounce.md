@@ -6,6 +6,8 @@ pos: noun
 forms: [apothecaryounce]
 sources: [llm]
 status: enriched
+chart: ounce
+region: ounce
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ounce]] — Use in historical or specialized medical contexts to refer to the 480-grain ounce, the precise unit given.
+- synonym: [[troyounce]]
+- collocation: [[old]]
+- collocation: [[recipe]]
+- collocation: [[compound]]
+- collocation: [[weigh]]
+- collocation: [[medicine]]

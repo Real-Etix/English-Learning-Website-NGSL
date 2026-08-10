@@ -6,6 +6,8 @@ pos: adjective
 forms: [lawful]
 sources: [llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[legitimate]] — Use 'lawful' instead of 'legitimate' when emphasizing strict legal recognition, especially in formal contexts about marriage, inheritance, or offspring.
+- synonym: [[legal]]
+- synonym: [[authorized]]
+- synonym: [[valid]]
+- collocation: [[heir]]
+- collocation: [[wife]]
+- collocation: [[authority]]
+- collocation: [[business]]
+- synonym: [[licit]]
+- synonym: [[rightful]]

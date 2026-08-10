@@ -6,6 +6,8 @@ pos: adjective
 forms: [phraseological]
 sources: [llm]
 status: enriched
+chart: semantic
+region: semantic
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[lexical]] — Use 'phraseological' instead of 'lexical' when referring specifically to multi-word units or idioms, a more specialized term.
+- synonym: [[set]]
+- synonym: [[conventional]]

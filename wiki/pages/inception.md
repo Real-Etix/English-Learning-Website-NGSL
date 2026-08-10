@@ -6,6 +6,8 @@ pos: noun
 forms: [inception]
 sources: [llm]
 status: enriched
+chart: death
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - builds_on: [[birth]] — Use 'inception' when referring to the formal or marked beginning of an organization, plan, or era.
 - builds_on: [[creation]] — Use 'inception' instead of 'creation' when emphasizing the moment something began, especially for plans, businesses, or systems.
 - builds_on: [[origin]] — Use 'inception' for the start of a formal entity (organization, project, system) when emphasizing the precise moment or founding.
+- synonym: [[nativity]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [nourishment]
 sources: [llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[food]] — Use when emphasizing the health-giving or nutritional aspect of food.
 - builds_on: [[nutrient]] — Use for a more holistic or natural sense of what sustains life, often in biological or metaphorical contexts.
 - builds_on: [[nutrition]] — Use 'nourishment' to emphasize the health-giving and sustaining quality of food, especially in contexts of healing or well-being.
+- synonym: [[nutriment]]

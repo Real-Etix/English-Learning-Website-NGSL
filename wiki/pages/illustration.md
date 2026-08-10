@@ -9,6 +9,8 @@ rank: 2435
 sfi: 54.18
 sources: [wordnet, llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[figure]] — Use 'illustration' when the picture is specifically meant to clarify or embellish the content, not just to show data.
 - advanced_form: [[depiction]] — Use 'depiction' for formal or artistic representations, especially in academic or critical writing.
 - advanced_form: [[figure]] — Use 'figure' when the illustration is numbered and part of a scholarly or technical document.
+- synonym: [[rendering]]

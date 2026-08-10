@@ -9,6 +9,8 @@ rank: 328
 sfi: 56.559
 sources: [wordnet, llm]
 status: enriched
+chart: fertility
+region: fertility
 ---
 
 ## Definition

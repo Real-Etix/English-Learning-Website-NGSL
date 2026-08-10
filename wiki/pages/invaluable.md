@@ -9,6 +9,8 @@ rank: 868
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[inestimable]] — Use 'inestimable' when you want to emphasize that something is beyond measurement or calculation, often in a formal or literary context.
 - advanced_form: [[incomparable]] — Use 'incomparable' when the item is so exceptional that it has no equal, often in praise.
 - builds_on: [[valuable]] — Use when something is so valuable that its worth cannot be measured; extremely useful.
+- synonym: [[priceless]]

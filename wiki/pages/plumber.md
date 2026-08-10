@@ -9,6 +9,8 @@ rank: 359
 sfi: 54.23
 sources: [wordnet, llm]
 status: enriched
+chart: plumber
+region: plumber
 ---
 
 ## Definition

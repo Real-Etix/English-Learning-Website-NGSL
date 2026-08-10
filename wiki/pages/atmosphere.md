@@ -9,6 +9,8 @@ rank: 1579
 sfi: 57.08
 sources: [wordnet, llm]
 status: enriched
+chart: broadcast
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,17 @@ a particular environment or surrounding influence
 - advanced_form: [[ambience]] — Use 'ambience' to emphasize the sensory and emotional character of an environment, especially when describing a place's mood or feel.
 - advanced_form: [[milieu]] — Use 'milieu' to refer to the social, cultural, or intellectual environment in which a person lives or operates.
 - advanced_form: [[aura]] — Use 'aura' to suggest an intangible quality or distinctive atmosphere that seems to emanate from a person, place, or thing.
+- synonym: [[climate]]
+- collocation: [[conducive]]
+- collocation: [[cosmopolitan]]
+- collocation: [[cozy]]
+- collocation: [[eerie]]
+- collocation: [[electrified]]
+- collocation: [[imbibe]]
+- collocation: [[jovial]]
+- collocation: [[otherworldly]]
+- collocation: [[pervade]]
+- synonym: [[conditions]]
+- collocation: [[conviviality]]
+- synonym: [[ether]]
+- collocation: [[restful]]

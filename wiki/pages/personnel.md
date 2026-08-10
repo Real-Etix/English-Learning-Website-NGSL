@@ -9,6 +9,8 @@ rank: 2501
 sfi: 53.97
 sources: [wordnet, llm]
 status: enriched
+chart: middle
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - advanced_form: [[subordinates]] — Use when emphasizing hierarchical authority and direct command, rather than just a group of employees.
 - advanced_form: [[underlings]] — Use for a slightly informal or critical tone, focusing on lower-rank individuals who follow orders.
 - advanced_form: [[cadre]] — Use when referring to a trained, loyal core group ready to execute orders, often in military or ideological contexts.
+- collocation: [[authorized]]
+- collocation: [[expendable]]
+- synonym: [[manpower]]
+- collocation: [[nonmilitary]]

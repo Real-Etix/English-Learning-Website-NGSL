@@ -9,6 +9,8 @@ rank: 957
 sfi: 50.87
 sources: [wordnet, llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[cabal]] — Use when emphasizing secrecy and intrigue in a small, powerful group.
 - advanced_form: [[junta]] — Use when referring to a small group, especially military, that takes power by force.
 - advanced_form: [[splinter]] — Use for a breakaway group that leaves a larger organization.
+- synonym: [[bloc]]
+- synonym: [[clan]]
+- builds_on: [[minority]] — Use when referring to a politically dissenting subgroup within a larger organization or party.

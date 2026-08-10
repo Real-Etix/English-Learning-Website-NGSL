@@ -6,6 +6,8 @@ pos: noun
 forms: [predicator]
 sources: [llm]
 status: enriched
+chart: verb
+region: verb
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[verb]] — Use 'predicator' as a precise technical term to denote the verb element itself, excluding objects, in syntactic analysis.
+- synonym: [[predicate]]
+- collocation: [[clause]]
+- collocation: [[main]]
+- collocation: [[verbal]]
+- collocation: [[sentence]]
+- collocation: [[lexical]]

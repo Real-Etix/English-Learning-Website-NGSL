@@ -9,6 +9,8 @@ rank: 142
 sfi: 59.38
 sources: [wordnet, llm]
 status: enriched
+chart: pigeon
+region: pigeon
 ---
 
 ## Definition

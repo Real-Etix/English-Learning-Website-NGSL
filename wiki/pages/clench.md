@@ -9,6 +9,8 @@ rank: 426
 sfi: 54.07
 sources: [wordnet, llm]
 status: enriched
+chart: clasp
+region: you
 ---
 
 ## Definition

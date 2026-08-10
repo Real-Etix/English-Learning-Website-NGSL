@@ -9,6 +9,8 @@ rank: 2484
 sfi: 54.02
 sources: [wordnet, llm]
 status: enriched
+chart: relieve
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ make less severe or harsh or extreme
 - advanced_form: [[mitigate]] — Use 'mitigate' when you want to emphasize reducing the severity or impact of something negative, rather than simply changing it.
 - advanced_form: [[temper]] — Use 'temper' when you want to add restraint or moderation, especially to make something less harsh in tone or degree.
 - advanced_form: [[alleviate]] — Use 'alleviate' when you want to stress making a burden or suffering lighter, often in a physical or emotional context.
+- synonym: [[fine-tune]]
+- synonym: [[reconfigure]]
+- synonym: [[revoice]]

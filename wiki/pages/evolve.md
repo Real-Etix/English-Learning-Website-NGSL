@@ -9,6 +9,8 @@ rank: 2536
 sfi: 53.85
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[formulate]] — Use 'formulate' instead of 'evolve' when you want to emphasize careful, systematic creation of a plan or idea.
 - advanced_form: [[devise]] — Use 'devise' instead of 'evolve' to convey inventing or designing something through clever thinking.
 - advanced_form: [[concoct]] — Use 'concoct' instead of 'evolve' when the result is slightly contrived or involves mixing elements, often for a specific purpose.
+- synonym: [[metamorphose]]

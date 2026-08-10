@@ -9,6 +9,8 @@ rank: 1457
 sfi: 57.57
 sources: [wordnet, llm]
 status: enriched
+chart: pipeline
+region: you
 ---
 
 ## Definition

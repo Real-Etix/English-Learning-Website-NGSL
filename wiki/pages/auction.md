@@ -9,6 +9,8 @@ rank: 192
 sfi: 56.51
 sources: [wordnet, llm]
 status: enriched
+chart: span
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[contract]] — Use 'contract' when referring to the standard version of bridge that replaced auction.
 - advanced_form: [[bridge]] — Use 'bridge' as a general term for the game instead of specifying the variant.
+- synonym: [[sale]]

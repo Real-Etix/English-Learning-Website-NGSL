@@ -9,6 +9,8 @@ rank: 942
 sfi: 60
 sources: [wordnet, llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[artifact]] — Use 'artifact' for a man-made object, especially one of historical or cultural interest, to sound more specific and formal.
 - advanced_form: [[article]] — Use 'article' for a particular item or thing, often in commercial or formal inventory contexts, instead of the generic 'object'.
 - builds_on: [[complement]] — Use 'object' when the complement receives the verb's action directly.
+- synonym: [[remonstrate]]

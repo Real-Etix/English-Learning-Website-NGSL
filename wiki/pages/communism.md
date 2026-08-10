@@ -9,6 +9,8 @@ rank: 1422
 sfi: 50.28
 sources: [wordnet, llm]
 status: enriched
+chart: communism
+region: communism
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adverb
 forms: [indubitably]
 sources: [llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition

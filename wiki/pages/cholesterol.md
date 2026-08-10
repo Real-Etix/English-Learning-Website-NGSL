@@ -9,6 +9,8 @@ rank: 373
 sfi: 54.62
 sources: [wordnet, llm]
 status: enriched
+chart: cholesterol
+region: cholesterol
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [paramount]
 sources: [llm]
 status: enriched
+chart: ultimate
+region: you
 ---
 
 ## Definition

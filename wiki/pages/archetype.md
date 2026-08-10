@@ -6,6 +6,8 @@ pos: noun
 forms: [archetype]
 sources: [llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition

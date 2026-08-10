@@ -9,6 +9,8 @@ rank: 1284
 sfi: 50.38
 sources: [wordnet, llm]
 status: enriched
+chart: delicate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ easily broken or damaged or destroyed
 - domain: business
 - advanced_form: [[brittle]] — Use 'brittle' for hard materials that snap or crack easily, emphasizing lack of flexibility.
 - advanced_form: [[delicate]] — Use 'delicate' for items that are fine, intricate, or easily damaged by rough treatment.
+- collocation: [[ecosystem]]
+- collocation: [[ego]]
+- collocation: [[newborn]]
+- synonym: [[friable]]

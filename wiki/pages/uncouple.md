@@ -6,6 +6,8 @@ pos: verb
 forms: [uncouple]
 sources: [llm]
 status: enriched
+chart: unplug
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[detach]] — Use 'uncouple' specifically for separating linked units, like train cars or paired items.
+- synonym: [[decouple]]

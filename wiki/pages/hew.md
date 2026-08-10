@@ -6,6 +6,8 @@ pos: verb
 forms: [hew]
 sources: [llm]
 status: enriched
+chart: sole
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chop]] — Use 'hew' for cutting with an axe or heavy tool, often in woodworking or old-fashioned contexts; more formal than 'chop'.
+- synonym: [[chisel]]
+- synonym: [[cleave]]

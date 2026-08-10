@@ -9,6 +9,8 @@ rank: 208
 sfi: 57.38
 sources: [wordnet, llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[cloth]] — Use 'cloth' for any generic piece of fabric; 'towel' is specifically for drying.
 - advanced_form: [[rag]] — Use 'rag' for a piece of old, often torn cloth used for cleaning; 'towel' is more formal and for drying body or dishes.
 - advanced_form: [[napkin]] — Use 'napkin' for a cloth used during meals to wipe hands or mouth; 'towel' is larger and for drying after washing.
+- collocation: [[beach]]
+- collocation: [[rubdown]]

@@ -9,6 +9,8 @@ rank: 538
 sfi: 54.05
 sources: [wordnet, llm]
 status: enriched
+chart: legally
+region: legally
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[statutorily]] — Use when emphasizing that something is mandated by a specific statute or written law.
 - advanced_form: [[constitutionally]] — Use when the legality is based on constitutional principles or the constitution itself.
 - advanced_form: [[legitimately]] — Use to indicate something is done within legal boundaries, often implying moral right as well.
+- collocation: [[admissible]]
+- collocation: [[answerable]]
+- collocation: [[entitled]]
+- collocation: [[immigrate]]
+- synonym: [[formally]]
+- collocation: [[defensible]]
+- collocation: [[prohibited]]
+- synonym: [[validly]]

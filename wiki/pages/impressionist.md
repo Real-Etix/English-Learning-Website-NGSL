@@ -6,6 +6,8 @@ pos: noun
 forms: [impressionist]
 sources: [llm]
 status: enriched
+chart: simulate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[mimic]] — Use 'impressionist' specifically for a performer whose act consists of mimicking celebrities or public figures.
+- synonym: [[impersonator]]
+- collocation: [[celebrity]]
+- collocation: [[female]]

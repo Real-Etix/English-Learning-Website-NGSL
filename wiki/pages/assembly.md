@@ -9,6 +9,8 @@ rank: 196
 sfi: 56.669
 sources: [wordnet, llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,12 @@ _No sourced examples yet._
 - builds_on: [[rally]] — Use 'assembly' for a formally organized gathering, typically for a specific purpose like discussion or announcement, less emotional than 'rally'.
 - builds_on: [[legislature]] — Use 'assembly' when emphasizing the gathering of representatives, often for a specific session or for a regional legislature.
 - builds_on: [[session]] — Use 'assembly' for a gathering of a group for a common purpose, especially in legislative or educational contexts.
+- synonym: [[congregation]]
+- synonym: [[congress]]
+- synonym: [[forum]]
+- synonym: [[marshaling]]
+- collocation: [[virion]]
+- builds_on: [[construction]] — Use when focusing on fitting together components, not building from scratch.
+- collocation: [[automaton]]
+- synonym: [[erection]]
+- synonym: [[manufacturing]]

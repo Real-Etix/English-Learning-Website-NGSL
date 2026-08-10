@@ -9,6 +9,8 @@ rank: 659
 sfi: 52.77
 sources: [wordnet, llm]
 status: enriched
+chart: depreciate
+region: depreciate
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[disparage]] — Use 'disparage' when you want a more formal or precise term for expressing low opinion, especially in professional or critical contexts.
 - advanced_form: [[denigrate]] — Use 'denigrate' when the belittling involves attacking someone's reputation or worth, often unfairly or maliciously.
+- builds_on: [[undervalue]] — Use in formal or financial contexts to mean reducing the perceived value or worth of something or someone.

@@ -6,6 +6,8 @@ pos: noun
 forms: [kudos]
 sources: [llm]
 status: enriched
+chart: feel
+region: you
 ---
 
 ## Definition

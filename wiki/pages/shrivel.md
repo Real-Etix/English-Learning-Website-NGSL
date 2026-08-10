@@ -6,6 +6,8 @@ pos: verb
 forms: [shrivel]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shrink]] — Use 'shrivel' instead of 'shrink' when emphasizing the wrinkling and loss of moisture, especially for organic matter.
+- synonym: [[wilt]]

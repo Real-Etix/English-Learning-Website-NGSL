@@ -9,6 +9,8 @@ rank: 369
 sfi: 64.25
 sources: [wordnet, llm]
 status: enriched
+chart: to
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,19 @@ rid of obstructions
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[unclog]] — Use 'unclog' for removing a physical obstruction, especially in pipes or drains; 'clear' is more general.
 - advanced_form: [[disencumber]] — Use 'disencumber' to emphasize freeing from a burden or obstacle, often in a formal or figurative sense.
+- synonym: [[amortize]]
+- collocation: [[consomm]]
+- collocation: [[demarcation]]
+- collocation: [[enunciator]]
+- synonym: [[limpid]]
+- synonym: [[obvious]]
+- synonym: [[pellucid]]
+- collocation: [[recollection]]
+- collocation: [[restatement]]
+- synonym: [[definite]]
+- collocation: [[blaringly]]
+- collocation: [[expositor]]
+- synonym: [[extinguish]]
+- synonym: [[navigable]]
+- synonym: [[passable]]
+- collocation: [[rephrasing]]

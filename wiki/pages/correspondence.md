@@ -9,6 +9,8 @@ rank: 99
 sfi: 58.943
 sources: [wordnet, llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ _No sourced examples yet._
 - builds_on: [[analogy]] — Use 'correspondence' instead of 'analogy' when focusing on a systematic or functional relationship between two sets of items, often in scientific or technical contexts.
 - builds_on: [[postcard]] — Use 'correspondence' when referring to a postcard as part of exchanged messages, emphasizing the communication rather than the physical card.
 - builds_on: [[mail]] — Use 'correspondence' when referring to letters or written communication in a formal or professional context.
+- synonym: [[commonality]]
+- synonym: [[email]]
+- synonym: [[mapping]]
+- builds_on: [[email]] — Use instead of 'email' when referring to the overall exchange of messages, especially in a formal or professional context.

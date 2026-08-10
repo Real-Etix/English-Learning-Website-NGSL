@@ -9,6 +9,8 @@ rank: 1020
 sfi: 51.6
 sources: [wordnet, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition

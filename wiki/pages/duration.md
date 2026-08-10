@@ -9,6 +9,8 @@ rank: 65
 sfi: 59.577
 sources: [wordnet, llm]
 status: enriched
+chart: span
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,9 @@ _No sourced examples yet._
 - advanced_form: [[span]] — Use 'span' to emphasize the entire continuous period from start to finish, often with a modifier like 'life span' or 'attention span'.
 - advanced_form: [[stretch]] — Use 'stretch' for a relatively long, unbroken period, often in casual or narrative contexts.
 - builds_on: [[span]] — Use 'duration' to emphasize the length of time something lasts, often in technical or formal contexts, rather than the vague 'span'.
+- synonym: [[lifespan]]
+- synonym: [[length]]
+- synonym: [[time]]
+- synonym: [[term]]
+- collocation: [[long]]
+- collocation: [[short]]

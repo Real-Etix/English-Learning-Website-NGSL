@@ -6,6 +6,8 @@ pos: noun
 forms: [insignia]
 sources: [llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[logo]] — Use 'insignia' for a formal emblem of an organization, especially one associated with rank, authority, or official identity.
 - builds_on: [[badge]] — Use 'insignia' for official symbols of rank, membership, or authority, especially in military or formal uniforms, where 'badge' might sound too generic.
+- synonym: [[monogram]]

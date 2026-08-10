@@ -9,6 +9,8 @@ rank: 858
 sfi: 47.982
 sources: [wordnet, llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition

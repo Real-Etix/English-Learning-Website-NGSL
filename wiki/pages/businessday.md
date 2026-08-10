@@ -6,6 +6,8 @@ pos: noun
 forms: [businessday]
 sources: [llm]
 status: enriched
+chart: weekday
+region: weekday
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[weekday]] — Use in formal or financial contexts to specify operational days.
+- synonym: [[workday]]
+- collocation: [[within]]
+- collocation: [[next]]

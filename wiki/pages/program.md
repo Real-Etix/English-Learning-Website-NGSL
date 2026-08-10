@@ -9,6 +9,8 @@ rank: 240
 sfi: 66.17
 sources: [wordnet, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,24 @@ _No sourced examples yet._
 - advanced_form: [[blueprint]] — Use blueprint for a comprehensive, detailed plan or design, often in construction, strategy, or development.
 - builds_on: [[curriculum]] — Use 'program' when referring to the specific set of courses for a degree, similar to curriculum but often used for broader areas.
 - builds_on: [[software]] — Use 'program' when referring to a set of instructions that performs a specific function, often in more technical contexts.
+- synonym: [[app]]
+- collocation: [[austerity]]
+- collocation: [[denationalization]]
+- collocation: [[entrepreneurship]]
+- collocation: [[fellowship]]
+- collocation: [[indigent]]
+- collocation: [[mentorship]]
+- collocation: [[pacification]]
+- collocation: [[polytechnic]]
+- collocation: [[postulant]]
+- collocation: [[preceptor]]
+- collocation: [[reinitiate]]
+- collocation: [[reinstitute]]
+- collocation: [[reintegration]]
+- collocation: [[remediation]]
+- collocation: [[repurchase]]
+- collocation: [[vocational]]
+- builds_on: [[syllabus]] — Use 'program' for the complete, structured course of study that leads to a degree or certificate, which is a more formal term than 'syllabus'.
+- collocation: [[buyback]]
+- collocation: [[inoculation]]
+- collocation: [[resocialization]]

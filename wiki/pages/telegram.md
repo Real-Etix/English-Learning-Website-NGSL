@@ -6,6 +6,8 @@ pos: noun
 forms: [telegram]
 sources: [llm]
 status: enriched
+chart: cable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cable]] — Use 'telegram' as a more general term for any message sent by telegraph, while 'cable' specifically refers to one sent overseas via undersea lines.
+- synonym: [[cablegram]]

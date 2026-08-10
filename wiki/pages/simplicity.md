@@ -9,6 +9,8 @@ rank: 1180
 sfi: 51.62
 sources: [wordnet, llm]
 status: enriched
+chart: facility
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ the quality of being simple or uncompounded
 - domain: business
 - advanced_form: [[plainness]] — Use 'plainness' to emphasize lack of adornment rather than lack of complexity.
 - advanced_form: [[directness]] — Use 'directness' when simplicity involves clear, straight-to-the-point expression.
+- collocation: [[austere]]
+- synonym: [[naivete]]

@@ -9,6 +9,8 @@ rank: 295
 sfi: 65.24
 sources: [wordnet, llm]
 status: enriched
+chart: think
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ deem to be
 - advanced_form: [[deem]] — Use 'deem' for a more formal or official judgment than 'consider'.
 - advanced_form: [[regard]] — Use 'regard' when expressing how someone is generally seen or respected.
 - advanced_form: [[view]] — Use 'view' when describing a personal or specific perspective.
+- collocation: [[ourselves]]
+- synonym: [[ponder]]

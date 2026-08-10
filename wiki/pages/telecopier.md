@@ -6,6 +6,8 @@ pos: noun
 forms: [telecopier]
 sources: [llm]
 status: enriched
+chart: fax
+region: fax
 ---
 
 ## Definition

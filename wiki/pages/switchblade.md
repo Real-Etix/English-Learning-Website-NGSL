@@ -6,6 +6,8 @@ pos: noun
 forms: [switchblade]
 sources: [llm]
 status: enriched
+chart: jackknife
+region: jackknife
 ---
 
 ## Definition

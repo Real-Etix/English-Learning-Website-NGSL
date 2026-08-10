@@ -9,6 +9,8 @@ rank: 198
 sfi: 57.724
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: various
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ at right angles to the plane of the horizon or a base line
 - advanced_form: [[perpendicular]] — Use this when emphasizing a precise 90-degree angle to a surface or line.
 - advanced_form: [[upright]] — Use this when describing something in a vertical position, especially after being tilted or fallen.
 - advanced_form: [[plumb]] — Use this in construction or engineering contexts to indicate exact vertical alignment, often checked with a plumb line.
+- collocation: [[gridline]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [indexation]
 sources: [llm]
 status: enriched
+chart: spiral
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[escalator]] — Use 'indexation' when focusing on the automatic adjustment based on an index, rather than the specific clause name.
+- synonym: [[adjustment]]
+- synonym: [[escalation]]
+- synonym: [[linkage]]
+- synonym: [[revaluation]]
+- collocation: [[inflation]]
+- collocation: [[clause]]

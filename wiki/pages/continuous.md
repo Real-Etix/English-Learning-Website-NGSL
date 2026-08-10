@@ -9,6 +9,8 @@ rank: 2652
 sfi: 53.43
 sources: [wordnet, llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ continuing in time or space without interruption
 - builds_on: [[ongoing]] — Use 'continuous' to emphasize unbroken duration without interruption, more formal than 'ongoing'.
 - advanced_form: [[incessant]] — Use when describing something that is nonstop and often annoying or persistent.
 - advanced_form: [[unremitting]] — Use when emphasizing a relentless or unwavering continuation, often with a positive or determined connotation.
+- synonym: [[ceaseless]]
+- collocation: [[emanation]]
+- collocation: [[infusion]]

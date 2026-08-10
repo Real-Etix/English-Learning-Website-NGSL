@@ -6,6 +6,8 @@ pos: adjective
 forms: [unmatched]
 sources: [llm]
 status: enriched
+chart: revolutionary
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[unprecedented]] — Use 'unmatched' when you want to highlight that something has no equal, often in a comparative context, whereas 'unprecedented' focuses on the lack of previous occurrence.
+- collocation: [[exquisiteness]]
+- synonym: [[inimitable]]

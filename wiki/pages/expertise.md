@@ -9,6 +9,8 @@ rank: 161
 sfi: 56.75
 sources: [wordnet, llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ _No sourced examples yet._
 - builds_on: [[specialty]] — Use 'expertise' when focusing on deep knowledge or skill in a field.
 - builds_on: [[competency]] — Use 'expertise' to highlight deep, specialized knowledge and skill, usually gained through extensive experience or study.
 - builds_on: [[craft]] — Use 'expertise' to highlight the high level of specialized knowledge and skill acquired through experience in a craft.
+- synonym: [[adeptness]]
+- synonym: [[wizardry]]

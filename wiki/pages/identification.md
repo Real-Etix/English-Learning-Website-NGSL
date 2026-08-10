@@ -9,6 +9,8 @@ rank: 57
 sfi: 59.821
 sources: [wordnet, llm]
 status: enriched
+chart: information
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[recognition]] — Use 'recognition' when the act involves identifying something that has been previously known or encountered, emphasizing prior awareness.
 - advanced_form: [[discernment]] — Use 'discernment' when the identification involves keen insight or the ability to distinguish fine details, often in a more perceptive or analytical context.
 - builds_on: [[detection]] — Use when specifying the act of recognizing or pinpointing the exact nature or identity of something, rather than just noting its existence.
+- synonym: [[ascertainment]]

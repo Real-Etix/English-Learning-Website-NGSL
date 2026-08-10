@@ -6,6 +6,8 @@ pos: noun
 forms: [cravat]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[bow]] — Use 'cravat' for a necktie tied as a bow, especially in formal or period attire.
 - builds_on: [[tie]] — Use 'cravat' for a more formal or vintage necktie, often with a wide or puffy shape.
+- synonym: [[ascot]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [backdrop]
 sources: [llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition

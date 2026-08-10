@@ -6,6 +6,8 @@ pos: verb
 forms: [condone]
 sources: [llm]
 status: enriched
+chart: pardon
+region: pardon
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[excuse]] — Use 'condone' when someone accepts or overlooks a fault, often implying tacit approval, but it's more judgmental than 'excuse'.
+- synonym: [[overlook]]
+- synonym: [[pardon]]
+- synonym: [[tolerate]]
+- collocation: [[refuse]]
+- collocation: [[not]]
+- collocation: [[violence]]

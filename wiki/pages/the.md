@@ -9,6 +9,8 @@ rank: 1
 sfi: 87.85
 sources: [curated]
 status: verified
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,17 @@ Used before a noun for a specific thing that both people already know about.
 - collocation: [[more]]
 - collocation: [[i]]
 - collocation: [[much]]
+- collocation: [[antedate]]
+- collocation: [[crux]]
+- collocation: [[least]]
+- collocation: [[lifeblood]]
+- collocation: [[linchpin]]
+- collocation: [[moreover]]
+- collocation: [[preclude]]
+- collocation: [[predate]]
+- collocation: [[revere]]
+- collocation: [[meantime]]
+- collocation: [[namely]]
+- collocation: [[airarm]]
+- collocation: [[bard]]
+- collocation: [[consignor]]

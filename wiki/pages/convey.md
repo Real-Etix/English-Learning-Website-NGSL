@@ -9,6 +9,8 @@ rank: 702
 sfi: 53.2
 sources: [wordnet, llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[articulate]] — Use 'articulate' when emphasizing clear and effective expression, often in formal or professional contexts.
 - advanced_form: [[elucidate]] — Use 'elucidate' when making something clear or explaining a difficult concept, often in academic or explanatory contexts.
 - builds_on: [[communicate]] — Use 'convey' for formal or professional contexts, especially when emphasizing the successful transmission of a message or feeling.
+- synonym: [[relay]]

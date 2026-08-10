@@ -9,6 +9,8 @@ rank: 1397
 sfi: 57.87
 sources: [wordnet, llm]
 status: enriched
+chart: base
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[depository]] — Use 'depository' when emphasizing the storage and preservation function, often for official or archival items.
 - advanced_form: [[gallery]] — Use 'gallery' specifically for art museums or spaces displaying visual arts, while 'museum' is broader.
 - advanced_form: [[archive]] — Use 'archive' for a collection of documents, records, or historical materials, rather than objects.
+- collocation: [[curator]]
+- collocation: [[docent]]

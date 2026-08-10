@@ -9,6 +9,8 @@ rank: 1372
 sfi: 57.96
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,10 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[although]]
+- synonym: [[while]]
+- synonym: [[though]]
+- synonym: [[since]]
+- synonym: [[because]]
+- collocation: [[clause]]
+- synonym: [[whilst]]

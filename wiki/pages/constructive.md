@@ -9,6 +9,8 @@ rank: 1461
 sfi: 50.97
 sources: [wordnet, llm]
 status: enriched
+chart: synthetic
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ constructing or tending to construct or improve or promote development
 - advanced_form: [[salutary]] — Use when emphasizing a positive effect that corrects a problem or improves a situation, often with a sense of moral or practical benefit.
 - advanced_form: [[edifying]] — Use when the constructive aspect is intellectual or moral instruction, uplifting or enlightening.
 - advanced_form: [[conducive]] — Use when describing conditions that help bring about a constructive outcome; often followed by 'to'.
+- synonym: [[architectonic]]
+- synonym: [[productive]]

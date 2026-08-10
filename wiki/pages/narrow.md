@@ -9,6 +9,8 @@ rank: 1585
 sfi: 57.07
 sources: [wordnet, llm]
 status: enriched
+chart: thin
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ not wide
 - antonym: [[broad]]
 - advanced_form: [[slender]] — Use 'slender' for something gracefully narrow, often implying elegance or slightness, rather than just not wide.
 - advanced_form: [[cramped]] — Use 'cramped' when narrowness causes discomfort or lack of space, emphasizing tightness and restriction.
+- collocation: [[bookstack]]
+- collocation: [[fissure]]
+- collocation: [[footway]]
+- collocation: [[glen]]
+- collocation: [[ledge]]
+- collocation: [[pencil]]
+- collocation: [[ravine]]
+- collocation: [[vestibule]]
+- synonym: [[constraining]]

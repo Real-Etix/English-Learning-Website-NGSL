@@ -6,6 +6,8 @@ pos: noun
 forms: [steward]
 sources: [llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - builds_on: [[housekeep]] — Use 'steward' when emphasizing careful management and responsibility, rather than just routine tasks.
 - builds_on: [[fiduciary]] — Use 'steward' for a more general sense of care and management, broader than the strict legal role of a fiduciary.
 - builds_on: [[server]] — Use 'steward' for a server with specialized knowledge, such as in fine dining or on a luxury cruise, implying a higher level of responsibility.
+- synonym: [[butler]]
+- synonym: [[curator]]

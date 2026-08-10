@@ -9,6 +9,8 @@ rank: 1517
 sfi: 57.33
 sources: [wordnet, llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ happening or arising or located within some limits or especially surface
 - advanced_form: [[innate]] — Use 'innate' for qualities that are inborn or natural, while 'internal' refers more to location or internal processes.
 - builds_on: [[inner]] — Use 'internal' for things inside a body, organization, or system, where 'inner' might sound too vague or poetic.
 - builds_on: [[interior]] — Use 'internal' for formal or technical contexts referring to the inside of a building or structure.
+- collocation: [[coherence]]
+- collocation: [[nares]]
+- collocation: [[naris]]
+- collocation: [[politicking]]
+- builds_on: [[domestic]] — Use 'internal' when referring to matters within a country, especially in formal or political contexts.
+- synonym: [[intranational]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [householder]
 sources: [llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[homeowner]] — Use when emphasizing the person living in and managing a home, often with legal or administrative responsibilities.
+- synonym: [[occupier]]
+- synonym: [[resident]]
+- collocation: [[responsible]]
+- collocation: [[average]]
+- collocation: [[every]]
+- collocation: [[individual]]
+- collocation: [[local]]
+- synonym: [[ratepayer]]

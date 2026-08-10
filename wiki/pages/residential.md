@@ -9,6 +9,8 @@ rank: 426
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: domestic
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ used or designed for residence or limited to residences
 - domain: business
 - advanced_form: [[domestic]] — Use 'domestic' when emphasizing the home or family aspect, broader than just physical residence.
 - advanced_form: [[household]] — Use 'household' when referring to items, matters, or routines connected to a home and those living in it.
+- collocation: [[neighborhood]]
+- collocation: [[rehabilitationcenter]]

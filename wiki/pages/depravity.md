@@ -6,6 +6,8 @@ pos: noun
 forms: [depravity]
 sources: [llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[evil]] — Use 'depravity' to stress moral corruption or wickedness that is extreme, often ingrained in someone's character.
+- synonym: [[debauchery]]
+- synonym: [[corruption]]
+- synonym: [[vice]]
+- collocation: [[human]]
+- collocation: [[moral]]
+- collocation: [[utter]]
+- collocation: [[sexual]]

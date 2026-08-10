@@ -6,6 +6,8 @@ pos: noun
 forms: [immunogen]
 sources: [llm]
 status: enriched
+chart: vaccine
+region: vaccine
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vaccine]] — Use 'immunogen' when focusing on the biological mechanism of immune response, rather than the common term 'vaccine' which is broader.
+- collocation: [[strong]]
+- collocation: [[potent]]
+- collocation: [[protein]]

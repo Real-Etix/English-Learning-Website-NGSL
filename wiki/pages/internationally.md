@@ -9,6 +9,8 @@ rank: 867
 sfi: 51.96
 sources: [wordnet, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ throughout the world
 - advanced_form: [[globally]] — Use 'globally' to emphasize worldwide scope, especially in contexts of business, environment, or data.
 - advanced_form: [[transnationally]] — Use 'transnationally' when focusing on cross-border activities or relations, especially in political, legal, or corporate contexts.
 - builds_on: [[abroad]] — Use 'internationally' to highlight global scope or recognition, replacing 'abroad' when focusing on cross-country scale rather than just location.
+- synonym: [[worldwide]]
+- synonym: [[universally]]
+- synonym: [[everywhere]]
+- collocation: [[renowned]]
+- collocation: [[active]]

@@ -9,6 +9,8 @@ rank: 557
 sfi: 52.96
 sources: [wordnet, llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[whit]] — Use 'whit' for a tiny amount, especially in phrases like 'not a whit' or 'care a whit'.
 - advanced_form: [[jot]] — Use 'jot' for a small amount, often with 'not a jot' to emphasize negation.
 - builds_on: [[surf]] — Use 'shred' for aggressive, skilled surfing, more dynamic than 'surf'.
+- synonym: [[rip]]

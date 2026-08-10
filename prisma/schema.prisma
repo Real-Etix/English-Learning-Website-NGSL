@@ -205,6 +205,7 @@ model CollectedWord {
   xp           Int        @default(0)
   source       String     @default("collected") // collected | learned | clipped
   createdAt    DateTime   @default(now())
+  usedAt       DateTime? // last time the learner produced this word in a sentence (solid star); decays after 60 days
   collection   Collection @relation(fields: [collectionId], references: [id], onDelete: Cascade)
 
   @@unique([collectionId, lemma])

@@ -9,6 +9,8 @@ rank: 304
 sfi: 55.68
 sources: [wordnet, llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[channel]] — Use 'channel' when emphasizing the directed flow path, often in semiconductor or signal routing contexts.
 - advanced_form: [[conduit]] — Use 'conduit' when referring to the physical enclosure that houses the electrical circuit, especially in building wiring.
 - builds_on: [[tour]] — Use 'circuit' instead of 'tour' when the route is round-trip, returning to the starting point.
+- synonym: [[circumference]]
+- builds_on: [[league]] — Use it for a league or set of tournaments, especially in individual sports like tennis or golf.
+- collocation: [[de-energize]]
+- collocation: [[demodulator]]

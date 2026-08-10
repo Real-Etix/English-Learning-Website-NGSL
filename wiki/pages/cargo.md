@@ -9,6 +9,8 @@ rank: 413
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,8 @@ _No sourced examples yet._
 - advanced_form: [[payload]] — Use 'payload' for the goods or equipment carried by a vehicle, especially aircraft or spacecraft, focusing on the functional load.
 - builds_on: [[freight]] — Use 'cargo' instead of 'freight' when referring to goods transported by ship, aircraft, or large truck, often emphasizing commercial or international transport.
 - builds_on: [[consignment]] — Use 'cargo' when emphasizing goods transported by a large vessel, aircraft, or vehicle, especially for commercial or trade purposes; it is more specific than 'consignment' for the physical goods in transit.
+- collocation: [[containerize]]
+- collocation: [[lash]]
+- collocation: [[merchantman]]
+- collocation: [[offload]]
+- collocation: [[hoisting]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [immigrate]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[migrate]] — Use 'immigrate' when focusing on entering and settling in a new country, highlighting the destination, while 'migrate' is neutral about direction.
+- synonym: [[settle]]
+- synonym: [[relocate]]
+- synonym: [[move]]
+- synonym: [[arrive]]
+- collocation: [[to]]
+- collocation: [[from]]
+- collocation: [[legally]]
+- collocation: [[country]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [commemorate]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[celebrate]] — Use 'commemorate' when focusing on honoring a specific event or person, often with a solemn or respectful tone, rather than general festivities.
+- synonym: [[honor]]
+- synonym: [[observe]]
+- synonym: [[mark]]
+- collocation: [[anniversary]]
+- collocation: [[event]]
+- collocation: [[day]]
+- collocation: [[centenary]]

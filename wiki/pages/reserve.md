@@ -9,6 +9,8 @@ rank: 1688
 sfi: 56.61
 sources: [wordnet, llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ _No sourced examples yet._
 - advanced_form: [[restraint]] — Use 'restraint' for deliberate control of emotions or actions, stronger than 'reserve' in suggesting active suppression.
 - advanced_form: [[composure]] — Use 'composure' for calm and collected behavior, especially under pressure, rather than general reserve.
 - advanced_form: [[reticence]] — Use 'reticence' for a reserved, quiet manner that involves reluctance to speak or reveal thoughts.
+- synonym: [[auxiliary]]
+- collocation: [[biosphere]]
+- synonym: [[cache]]
+- collocation: [[federal]]
+- synonym: [[hoard]]
+- collocation: [[revaluation]]

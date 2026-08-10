@@ -6,6 +6,8 @@ pos: noun
 forms: [spelter]
 sources: [llm]
 status: enriched
+chart: zinc
+region: zinc
 ---
 
 ## Definition

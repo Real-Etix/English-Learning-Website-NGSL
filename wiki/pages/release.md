@@ -9,6 +9,8 @@ rank: 786
 sfi: 60.85
 sources: [wordnet, llm]
 status: enriched
+chart: issue
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,11 @@ merchandise issued for sale or public showing (especially a record or film)
 - builds_on: [[publish]] — Use 'release' when emphasizing making something available to the public, often in a planned or scheduled manner.
 - builds_on: [[handout]] — Use 'release' for formal statements distributed to journalists, whereas 'handout' is more generic and can refer to any distributed paper.
 - builds_on: [[album]] — Use 'release' to emphasize the act of issuing the album, often in a more formal or industry context.
+- synonym: [[disengage]]
+- synonym: [[emancipate]]
+- synonym: [[liberate]]
+- synonym: [[rollout]]
+- collocation: [[virion]]
+- synonym: [[waiver]]
+- synonym: [[bail]]
+- synonym: [[extricate]]

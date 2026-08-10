@@ -9,6 +9,8 @@ rank: 1981
 sfi: 55.58
 sources: [wordnet, llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,11 @@ of or associated with or requiring the use of the mind
 - advanced_form: [[cerebral]] — Use 'cerebral' for a more formal or medical tone, especially when emphasizing brain activity over emotion.
 - advanced_form: [[cognitive]] — Use 'cognitive' in scientific or technical contexts, particularly when referring to mental processes like memory or reasoning.
 - builds_on: [[scholar]] — Use 'intellectual' when focusing on broad intellectual capacity or engagement with ideas, not necessarily formal scholarship.
+- synonym: [[academician]]
+- collocation: [[cogency]]
+- collocation: [[eminence]]
+- synonym: [[literateur]]
+- collocation: [[loftiness]]
+- collocation: [[perspicacity]]
+- collocation: [[probity]]
+- collocation: [[profundity]]

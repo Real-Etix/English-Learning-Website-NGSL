@@ -6,6 +6,8 @@ pos: adverb
 forms: [lamentably]
 sources: [llm]
 status: enriched
+chart: unfortunately
+region: unfortunately
 ---
 
 ## Definition

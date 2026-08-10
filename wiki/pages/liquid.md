@@ -9,6 +9,8 @@ rank: 2692
 sfi: 53.24
 sources: [wordnet, llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ existing as or having characteristics of a liquid
 - advanced_form: [[fluid]] — Use when emphasizing smooth, free-flowing movement, often for substances that pour easily.
 - advanced_form: [[aqueous]] — Use in scientific or technical contexts to specify that a substance is dissolved in or mixed with water.
 - advanced_form: [[liquefied]] — Use for substances that have been turned from solid or gas into liquid, often under pressure or heat.
+- synonym: [[approximant]]
+- collocation: [[assets]]
+- collocation: [[concentrate]]
+- collocation: [[effervesce]]
+- collocation: [[effluent]]
+- collocation: [[fluidness]]
+- collocation: [[meniscus]]
+- collocation: [[hydrargyrum]]
+- collocation: [[sweetener]]

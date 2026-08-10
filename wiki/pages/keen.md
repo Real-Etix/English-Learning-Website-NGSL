@@ -9,6 +9,8 @@ rank: 2364
 sfi: 54.42
 sources: [wordnet, llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[acute]] — Use 'acute' to emphasize sharpness of perception, especially for senses or mental insight.
 - advanced_form: [[astute]] — Use 'astute' for practical intelligence and clever understanding of situations.
 - advanced_form: [[discerning]] — Use 'discerning' for the ability to make fine judgments and distinctions.
+- collocation: [[attentiveness]]
+- synonym: [[avid]]

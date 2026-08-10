@@ -9,6 +9,8 @@ rank: 2242
 sfi: 54.81
 sources: [wordnet, llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ the act of intervening (as to mediate a dispute, etc.)
 - advanced_form: [[intercession]] — Use 'intercession' when the intervention is done as a favor or plea for someone else, often in religious or formal contexts, not just general interference.
 - advanced_form: [[mediation]] — Use 'mediation' specifically when the intervention aims to settle a conflict, not for general interruption or assistance.
 - builds_on: [[surgery]] — Use 'intervention' in formal or clinical settings to emphasize a decisive action to treat a condition.
+- collocation: [[divine]]
+- synonym: [[interposition]]
+- collocation: [[providential]]
+- collocation: [[psychotherapeutic]]

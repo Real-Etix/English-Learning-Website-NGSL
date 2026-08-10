@@ -6,6 +6,8 @@ pos: noun
 forms: [smooch]
 sources: [llm]
 status: enriched
+chart: kiss
+region: kiss
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [lactoserum]
 sources: [llm]
 status: enriched
+chart: whey
+region: whey
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [infernal]
 sources: [llm]
 status: enriched
+chart: damn
+region: damn
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[damn]] — Use 'infernal' instead of 'damn' to sound more literary or old-fashioned, often expressing annoyance with a stubborn object or situation.
+- synonym: [[blasted]]
+- synonym: [[confounded]]

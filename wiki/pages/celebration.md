@@ -9,6 +9,8 @@ rank: 2477
 sfi: 54.04
 sources: [wordnet, llm]
 status: enriched
+chart: pleasure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[festivity]] — Use when focusing on the joyful, lively atmosphere of the event, rather than just the fact of celebration.
 - advanced_form: [[commemoration]] — Use when the celebration has a serious or solemn purpose, often honoring a person or event from the past.
 - advanced_form: [[jubilation]] — Use to emphasize the intense joy and happiness expressed by people during the celebration.
+- synonym: [[carnival]]
+- collocation: [[centennial]]
+- collocation: [[jubilant]]

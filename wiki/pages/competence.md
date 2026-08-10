@@ -9,6 +9,8 @@ rank: 292
 sfi: 56.8
 sources: [wordnet, llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[aptitude]] — Use when highlighting innate or natural ability, rather than learned skill.
 - builds_on: [[capacity]] — Use 'competence' for acquired ability to do something effectively.
 - builds_on: [[capability]] — Use 'competence' to emphasize skillful performance and reliability, whereas 'capability' is broader and includes potential.
+- synonym: [[adeptness]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [sugary]
 sources: [llm]
 status: enriched
+chart: sweet
+region: sweet
 ---
 
 ## Definition

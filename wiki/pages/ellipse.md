@@ -6,6 +6,8 @@ pos: noun
 forms: [ellipse]
 sources: [llm]
 status: enriched
+chart: oval
+region: oval
 ---
 
 ## Definition

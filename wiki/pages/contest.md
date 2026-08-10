@@ -9,6 +9,8 @@ rank: 2462
 sfi: 54.1
 sources: [wordnet, llm]
 status: enriched
+chart: game
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[tournament]] — Use 'tournament' for a series of contests leading to a final champion, often in sports or games.
 - advanced_form: [[bout]] — Use 'bout' for a single contest between two opponents, especially in combat sports or debates.
 - advanced_form: [[meet]] — Use 'meet' for an athletic competition where participants gather to compete in multiple events.
+- collocation: [[pageant]]

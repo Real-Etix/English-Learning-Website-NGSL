@@ -6,6 +6,8 @@ pos: verb
 forms: [sup]
 sources: [llm]
 status: enriched
+chart: dine
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 465
 sfi: 53.44
 sources: [wordnet, llm]
 status: enriched
+chart: inexperience
+region: you
 ---
 
 ## Definition

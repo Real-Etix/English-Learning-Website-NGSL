@@ -6,6 +6,8 @@ pos: noun
 forms: [twelvemonth]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [reminiscence]
 sources: [llm]
 status: enriched
+chart: memory
+region: memory
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[memory]] — Use 'reminiscence' instead of 'memory' to suggest a fond or nostalgic remembering of past experiences, often shared in storytelling.
+- synonym: [[recollection]]
+- synonym: [[remembrance]]
+- synonym: [[reflection]]
+- synonym: [[anecdote]]
+- collocation: [[childhood]]
+- collocation: [[personal]]

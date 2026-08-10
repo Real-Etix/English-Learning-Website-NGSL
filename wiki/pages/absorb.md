@@ -9,6 +9,8 @@ rank: 265
 sfi: 56.27
 sources: [wordnet, llm]
 status: enriched
+chart: encompass
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ become imbued
 - advanced_form: [[assimilate]] — Use 'assimilate' when something is absorbed and fully integrated into a larger whole.
 - advanced_form: [[imbibe]] — Use 'imbibe' when absorbing abstract things like ideas, culture, or knowledge, often with a sense of drinking in.
 - builds_on: [[occupy]] — Use 'absorb' when something fully captures interest or time, implying deep immersion.
+- collocation: [[moisture]]
+- synonym: [[internalize]]
+- synonym: [[takein]]

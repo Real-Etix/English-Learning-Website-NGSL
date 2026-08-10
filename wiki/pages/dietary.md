@@ -9,6 +9,8 @@ rank: 110
 sfi: 60.61
 sources: [wordnet, llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[regimen]] — Use when emphasizing a structured, often medically supervised plan, not just any diet.
 - advanced_form: [[alimentation]] — Use in formal or medical contexts to refer to the act or process of nourishing, rather than a specific diet plan.
+- synonym: [[alimentary]]
+- collocation: [[fibre]]

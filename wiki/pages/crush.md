@@ -9,6 +9,8 @@ rank: 1291
 sfi: 50.47
 sources: [wordnet, llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[oppress]] — Use 'oppress' when emphasizing cruel or unfair exercise of power over a group, more specific to unjust authority than 'crush'.
 - advanced_form: [[suppress]] — Use 'suppress' when focusing on preventing something from being expressed or known, often by force; stronger than 'crush' in the context of stifling opposition.
 - advanced_form: [[subjugate]] — Use 'subjugate' to convey complete control and domination, often after conquest; more formal and intense than 'crush'.
+- synonym: [[quash]]

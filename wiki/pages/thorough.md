@@ -9,6 +9,8 @@ rank: 262
 sfi: 55.57
 sources: [wordnet, llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,9 @@ painstakingly careful and accurate
 - advanced_form: [[rigorous]] — Use 'rigorous' when thoroughness involves strictness, precision, and often intellectual or methodological discipline.
 - builds_on: [[careful]] — Use 'thorough' when focusing on completeness and covering all aspects, not just caution.
 - builds_on: [[comprehensive]] — Use 'thorough' when focusing on careful, detailed coverage of every part; it implies meticulousness beyond just 'comprehensive'.
+- synonym: [[assiduous]]
+- synonym: [[conscientious]]
+- collocation: [[perusal]]
+- collocation: [[rubdown]]
+- collocation: [[vetting]]
+- synonym: [[intensive]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [modulator]
 sources: [llm]
 status: enriched
+chart: auditor
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[regulator]] — Use 'modulator' when the device adjusts or varies a signal, flow, or pressure in a controlled way, often in electronics or HVAC.
+- synonym: [[controller]]
+- synonym: [[governor]]
+- synonym: [[valve]]
+- collocation: [[pressure]]
+- collocation: [[signal]]
+- collocation: [[frequency]]
+- collocation: [[brake]]
+- collocation: [[air]]

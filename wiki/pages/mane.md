@@ -6,6 +6,8 @@ pos: noun
 forms: [mane]
 sources: [llm]
 status: enriched
+chart: hair
+region: hair
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hair]] — Use 'mane' for thick, unruly, or voluminous hair, often implying a dramatic or animal-like quality.
+- synonym: [[locks]]
+- synonym: [[tresses]]

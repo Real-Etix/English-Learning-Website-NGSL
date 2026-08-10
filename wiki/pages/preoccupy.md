@@ -6,6 +6,8 @@ pos: verb
 forms: [preoccupy]
 sources: [llm]
 status: enriched
+chart: encompass
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1307
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: ideological
+region: ideological
 ---
 
 ## Definition

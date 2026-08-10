@@ -9,6 +9,8 @@ rank: 1652
 sfi: 50.07
 sources: [wordnet, llm]
 status: enriched
+chart: enforceable
+region: enforceable
 ---
 
 ## Definition

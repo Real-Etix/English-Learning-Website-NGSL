@@ -6,6 +6,8 @@ pos: noun
 forms: [tresses]
 sources: [llm]
 status: enriched
+chart: hair
+region: hair
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hair]] — Use 'tresses' for long, luxuriant hair, especially in literary or descriptive contexts.
+- synonym: [[locks]]
+- synonym: [[mane]]

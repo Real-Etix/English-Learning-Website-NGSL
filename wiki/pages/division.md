@@ -9,6 +9,8 @@ rank: 1522
 sfi: 57.28
 sources: [wordnet, llm]
 status: enriched
+chart: shift
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - builds_on: [[department]] — Use 'division' instead of 'department' when referring to a larger, more autonomous segment within a company or institution, especially in business or military contexts.
 - advanced_form: [[corps]] — Use 'corps' instead of 'division' when referring to a larger army unit composed of two or more divisions.
 - advanced_form: [[echelon]] — Use 'echelon' instead of 'division' to emphasize a level of command or a specific part of a military formation.
+- synonym: [[apportionment]]
+- collocation: [[panzer]]
+- synonym: [[quartile]]
+- builds_on: [[county]] — Use 'division' to refer to an administrative area in a more abstract or generic way, especially when you want to emphasize the act of partitioning.
+- synonym: [[cleavage]]

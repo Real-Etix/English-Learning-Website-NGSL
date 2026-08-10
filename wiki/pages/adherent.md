@@ -6,6 +6,8 @@ pos: noun
 forms: [adherent]
 sources: [llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[member]] — Use 'adherent' when focusing on loyalty or strong support for a group, cause, or doctrine.
 - builds_on: [[follower]] — Use 'adherent' when emphasizing active support or commitment to a person, group, or cause, rather than passive acceptance.
+- synonym: [[devotee]]

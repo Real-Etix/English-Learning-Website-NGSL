@@ -6,6 +6,8 @@ pos: noun
 forms: [aviator]
 sources: [llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pilot]] — Use 'aviator' for a more formal or historic tone, especially in military or vintage contexts.
+- synonym: [[airman]]
+- synonym: [[flyer]]
+- collocation: [[military]]
+- collocation: [[famous]]

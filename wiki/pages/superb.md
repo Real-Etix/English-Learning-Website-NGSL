@@ -6,6 +6,8 @@ pos: adjective
 forms: [superb]
 sources: [llm]
 status: enriched
+chart: outstanding
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[wonderful]] — Use 'superb' to emphasize something of the highest excellence, often for achievements or craftsmanship.
 - builds_on: [[super]] — Use 'superb' to emphasize extremely high quality, more formal than 'super'.
 - builds_on: [[outstanding]] — Use for something of the highest quality, often implying elegance or mastery.
+- builds_on: [[fabulous]] — Use for a strong sense of excellence or high quality, often in formal or appreciative contexts.
+- synonym: [[splendid]]

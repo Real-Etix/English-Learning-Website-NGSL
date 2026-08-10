@@ -9,6 +9,8 @@ rank: 526
 sfi: 54.08
 sources: [wordnet, llm]
 status: enriched
+chart: administer
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ work in an administrative capacity
 - builds_on: [[inject]] — Use 'administer' in formal or clinical contexts when describing the act of giving an injection or medication.
 - builds_on: [[housekeep]] — Use 'administer' for a formal, organized approach to running a household, often involving planning and oversight.
 - builds_on: [[govern]] — Use 'administer' when the emphasis is on managing or carrying out rules, policies, or procedures within an organization.
+- collocation: [[antitoxin]]
+- synonym: [[inflict]]
+- collocation: [[questionnaire]]

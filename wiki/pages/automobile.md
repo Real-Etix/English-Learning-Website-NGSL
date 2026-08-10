@@ -9,6 +9,8 @@ rank: 241
 sfi: 55.66
 sources: [wordnet, llm]
 status: enriched
+chart: transmission
+region: you
 ---
 
 ## Definition

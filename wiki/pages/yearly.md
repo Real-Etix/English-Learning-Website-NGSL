@@ -9,6 +9,8 @@ rank: 411
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: short
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[annual]] — Use 'annual' instead of 'yearly' when referring to a reference book published once a year; it is the standard term.
 - advanced_form: [[yearbook]] — Use 'yearbook' for a book published yearly that records events and photos of a school or organization.
+- synonym: [[perannum]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [commendation]
 sources: [llm]
 status: enriched
+chart: quotation
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[endorsement]] — Use 'commendation' when the endorsement is an official or public expression of praise.
 - builds_on: [[recognition]] — Use when recognition is formal or official, often from an authority.
 - builds_on: [[praise]] — Use 'commendation' for official or public praise, especially from an authority figure or organization, implying formal recognition.
+- synonym: [[plaudit]]

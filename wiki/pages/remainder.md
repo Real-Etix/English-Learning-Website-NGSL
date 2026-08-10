@@ -9,6 +9,8 @@ rank: 534
 sfi: 52.82
 sources: [wordnet, llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition

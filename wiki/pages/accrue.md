@@ -9,6 +9,8 @@ rank: 335
 sfi: 54.73
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ grow by addition
 - builds_on: [[accumulate]] — Use when accumulation happens gradually, often of intangible things like interest or advantages.
 - advanced_form: [[accumulate]] — Use 'accumulate' when emphasizing gradual gathering of items or wealth, often with a sense of deliberate or physical collection, while 'accrue' is more abstract and automatic (e.g., interest, benefits).
 - advanced_form: [[amass]] — Use 'amass' when the accumulation is intentional and results in a large quantity, often for wealth or possessions, whereas 'accrue' can happen without conscious effort.
+- synonym: [[accrete]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [gorge]
 sources: [llm]
 status: enriched
+chart: down
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[consume]] — Use 'gorge' when focusing on eating to excess, often until uncomfortably full.
+- synonym: [[ravine]]

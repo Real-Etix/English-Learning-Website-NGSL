@@ -9,6 +9,8 @@ rank: 1570
 sfi: 50.64
 sources: [wordnet, llm]
 status: enriched
+chart: assertion
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ _No sourced examples yet._
 - advanced_form: [[contention]] — Use 'contention' when emphasizing that the assertion is debatable or part of an argument.
 - advanced_form: [[affirmation]] — Use 'affirmation' to stress that the assertion is positive, confident, and often formally stated.
 - builds_on: [[remark]] — Use when you want to emphasize a strong, confident statement, often one that is not yet proven.
+- synonym: [[allegation]]
+- collocation: [[dogmatic]]
+- synonym: [[lemma]]
+- builds_on: [[allegation]] — Use when the focus is on the act of declaring the charge as true, rather than the legal context.
+- builds_on: [[declaration]] — Use when emphasizing a confident, forceful statement of fact or belief.
+- synonym: [[predication]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [despotism]
 sources: [llm]
 status: enriched
+chart: dictatorship
+region: dictatorship
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dictatorship]] — Use 'despotism' when focusing on the arbitrary and often abusive control by a ruling figure.
+- synonym: [[autocracy]]
+- synonym: [[tyranny]]
+- collocation: [[absolute]]
+- collocation: [[rule]]
+- collocation: [[resistance]]

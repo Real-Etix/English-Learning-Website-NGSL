@@ -9,6 +9,8 @@ rank: 219
 sfi: 66.53
 sources: [wordnet, llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,25 @@ the world of commercial activity where goods and services are bought and sold
 - builds_on: [[economy]] — Use 'market' to emphasize the exchange and pricing mechanisms rather than the overall system.
 - builds_on: [[grocery]] — Use 'market' for a general place where goods are sold, often implying a public or outdoor setting, broader than a specific grocery store.
 - builds_on: [[retail]] — Use 'market' instead of 'retail' when focusing on the promotional and strategic aspects of making a product available for purchase, not just the act of selling.
+- collocation: [[antiquities]]
+- collocation: [[artisan]]
+- collocation: [[bull]]
+- synonym: [[commercialize]]
+- collocation: [[commodities]]
+- collocation: [[covered]]
+- collocation: [[cutthroat]]
+- collocation: [[deregulate]]
+- collocation: [[expanding]]
+- collocation: [[fluidity]]
+- collocation: [[glut]]
+- synonym: [[grocer's]]
+- collocation: [[gyration]]
+- synonym: [[mart]]
+- collocation: [[monopolist]]
+- collocation: [[positioning]]
+- collocation: [[prognosticator]]
+- collocation: [[recommerce]]
+- collocation: [[rent]]
+- synonym: [[vend]]
+- collocation: [[lucrativeness]]
+- synonym: [[mercantile]]

@@ -9,6 +9,8 @@ rank: 1347
 sfi: 58.04
 sources: [wordnet, llm]
 status: enriched
+chart: possibly
+region: possibly
 ---
 
 ## Definition

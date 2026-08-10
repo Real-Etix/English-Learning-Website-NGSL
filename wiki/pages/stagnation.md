@@ -6,6 +6,8 @@ pos: noun
 forms: [stagnation]
 sources: [llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition

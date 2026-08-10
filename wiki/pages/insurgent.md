@@ -9,6 +9,8 @@ rank: 1190
 sfi: 48.33
 sources: [wordnet, llm]
 status: enriched
+chart: irregular
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[insurrectionist]] — Use 'insurrectionist' instead of 'insurgent' when emphasizing active participation in a planned uprising against authority, often with a broader connotation of rebellion.
 - advanced_form: [[subversive]] — Use 'subversive' instead of 'insurgent' when focusing on someone who secretly works to weaken or overthrow a system, not necessarily through armed force.
 - advanced_form: [[radical]] — Use 'radical' instead of 'insurgent' to describe someone who advocates extreme reform, often nonviolently, rather than direct armed rebellion.
+- synonym: [[terrorist]]

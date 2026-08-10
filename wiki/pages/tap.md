@@ -9,6 +9,8 @@ rank: 2297
 sfi: 54.65
 sources: [wordnet, llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[thread]] — Use 'thread' when you cut internal screw threads by any method; 'tap' specifically uses a tap tool.
 - advanced_form: [[chase]] — Use 'chase' to clean or repair existing threads, not to cut new ones like 'tap'.
+- synonym: [[cut]]
+- collocation: [[hole]]
+- collocation: [[wrench]]
+- collocation: [[die]]
+- collocation: [[size]]
+- synonym: [[nudge]]
+- synonym: [[tock]]

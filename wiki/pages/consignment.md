@@ -9,6 +9,8 @@ rank: 1113
 sfi: 49.8
 sources: [wordnet, llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,4 @@ _No sourced examples yet._
 - advanced_form: [[freight]] — Use 'freight' when referring to goods transported commercially, often by rail, truck, or ship; it highlights the transportation service rather than the sender's arrangement.
 - advanced_form: [[payload]] — Use 'payload' when focusing on the weight or quantity of goods a vehicle can carry, especially in technical or logistical contexts; it is more precise than 'consignment' for the load itself.
 - builds_on: [[import]] — Use 'consignment' to refer to a specific shipment or batch of imported goods, especially in trade or logistics.
+- synonym: [[recommerce]]

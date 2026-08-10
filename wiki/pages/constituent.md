@@ -9,6 +9,8 @@ rank: 1573
 sfi: 50.76
 sources: [wordnet, llm]
 status: enriched
+chart: constituent
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,6 @@ an artifact that is one of the individual parts of which a composite entity is m
 - advanced_form: [[element]] — Use 'element' instead of 'constituent' when referring to a fundamental or abstract part of a whole.
 - advanced_form: [[ingredient]] — Use 'ingredient' instead of 'constituent' when talking about a part of a mixture, especially in cooking or chemistry.
 - builds_on: [[voter]] — Use 'constituent' when referring to a voter represented by a specific elected official, highlighting the representative-voter relationship.
+- synonym: [[elector]]
+- builds_on: [[element]] — Use in more technical or formal contexts when identifying the essential parts that make up something.
+- builds_on: [[component]] — Use when emphasizing the part's role in forming a larger structure, such as in politics, chemistry, or grammar.

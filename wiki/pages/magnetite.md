@@ -6,6 +6,8 @@ pos: noun
 forms: [magnetite]
 sources: [llm]
 status: enriched
+chart: iron
+region: iron
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [prognosis]
 sources: [llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition

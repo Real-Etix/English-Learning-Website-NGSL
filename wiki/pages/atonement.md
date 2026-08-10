@@ -6,6 +6,8 @@ pos: noun
 forms: [atonement]
 sources: [llm]
 status: enriched
+chart: redemption
+region: redemption
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[redemption]] — Use 'atonement' when the focus is on making amends or reparations for sin, often through sacrifice or suffering, whereas 'redemption' emphasizes the act of being freed from sin's penalty.
+- collocation: [[make]]
+- collocation: [[seek]]
+- collocation: [[offer]]
+- collocation: [[for]]
+- collocation: [[day]]

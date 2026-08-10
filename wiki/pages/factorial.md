@@ -9,6 +9,8 @@ rank: 898
 sfi: 46.511
 sources: [wordnet, llm]
 status: enriched
+chart: factorial
+region: factorial
 ---
 
 ## Definition

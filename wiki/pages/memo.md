@@ -9,6 +9,8 @@ rank: 6
 sfi: 64.07
 sources: [wordnet, llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[memorandum]] — Use when referring to a formal internal document, especially in official or business contexts.
 - advanced_form: [[dispatch]] — Use for an official written message sent quickly, often in military, diplomatic, or corporate settings.
+- collocation: [[notepad]]

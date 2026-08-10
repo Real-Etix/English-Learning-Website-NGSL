@@ -9,6 +9,8 @@ rank: 1089
 sfi: 51.97
 sources: [wordnet, llm]
 status: enriched
+chart: inflationary
+region: inflationary
 ---
 
 ## Definition

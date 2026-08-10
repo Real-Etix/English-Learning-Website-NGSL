@@ -6,6 +6,8 @@ pos: adjective
 forms: [immutable]
 sources: [llm]
 status: enriched
+chart: contingent
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: verb
 forms: [aspire]
 sources: [llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition

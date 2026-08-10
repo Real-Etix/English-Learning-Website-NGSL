@@ -6,6 +6,8 @@ pos: adjective
 forms: [acceding]
 sources: [llm]
 status: enriched
+chart: objective
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[affirmative]] — Use 'acceding' instead of 'affirmative' when the agreement comes after consideration or resistance, implying a granting of assent rather than a simple yes.
+- collocation: [[to]]
+- collocation: [[request]]
+- collocation: [[demand]]
+- collocation: [[pressure]]
+- collocation: [[eventually]]

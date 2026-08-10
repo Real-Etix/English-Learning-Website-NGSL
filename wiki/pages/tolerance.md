@@ -9,6 +9,8 @@ rank: 439
 sfi: 55.447
 sources: [wordnet, llm]
 status: enriched
+chart: strength
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[resilience]] — Use 'resilience' to emphasize the ability to recover quickly from adverse conditions, rather than just enduring them.
 - advanced_form: [[hardiness]] — Use 'hardiness' for a more specialized term often used in biology or horticulture to describe inherent toughness against harsh environments.
+- collocation: [[dimensional]]
+- synonym: [[forbearance]]

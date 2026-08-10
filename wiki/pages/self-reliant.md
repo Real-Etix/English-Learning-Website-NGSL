@@ -6,6 +6,8 @@ pos: adjective
 forms: [self-reliant]
 sources: [llm]
 status: enriched
+chart: manual
+region: you
 ---
 
 ## Definition

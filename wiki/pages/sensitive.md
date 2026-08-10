@@ -9,6 +9,8 @@ rank: 2077
 sfi: 55.29
 sources: [wordnet, llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ responsive to physical stimuli
 - advanced_form: [[acute]] — Use 'acute' when the sensitivity is sharp or highly developed, not just emotional.
 - advanced_form: [[keen]] — Use 'keen' for finely tuned senses, often implying eagerness or intensity.
 - advanced_form: [[delicate]] — Use 'delicate' when something is easily hurt or irritated, implying fragility.
+- collocation: [[acutely]]
+- synonym: [[classified]]
+- collocation: [[ecologically]]

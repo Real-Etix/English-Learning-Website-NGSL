@@ -6,6 +6,8 @@ pos: adjective
 forms: [bipolar]
 sources: [llm]
 status: enriched
+chart: polar
+region: polar
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[polar]] — Use 'bipolar' to describe a device or molecule with two distinct poles; it is less common in chemistry than 'dipolar' but common in electronics.
+- synonym: [[dipolar]]
+- collocation: [[disorder]]
+- collocation: [[junction]]

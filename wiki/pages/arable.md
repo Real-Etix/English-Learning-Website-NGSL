@@ -6,6 +6,8 @@ pos: adjective
 forms: [arable]
 sources: [llm]
 status: enriched
+chart: agricultural
+region: agricultural
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[agricultural]] — Use 'arable' specifically for land that is suitable for growing crops, whereas 'agricultural' is broader and includes livestock and other farming activities.
+- synonym: [[productive]]
+- collocation: [[land]]
+- collocation: [[crops]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [cauldron]
 sources: [llm]
 status: enriched
+chart: pot
+region: pot
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pot]] — Use 'cauldron' for a very large, deep pot, often with a handle, associated with old-fashioned or rustic cooking. It adds a dramatic or historical nuance versus a standard 'pot'.
+- synonym: [[boiler]]
+- synonym: [[basin]]
+- collocation: [[iron]]
+- collocation: [[black]]
+- collocation: [[over]]

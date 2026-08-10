@@ -9,6 +9,8 @@ rank: 1412
 sfi: 57.8
 sources: [wordnet, llm]
 status: enriched
+chart: persist
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[vest]] — Use 'vest' for legal or formal contexts where ownership is formally granted or transferred.
 - advanced_form: [[reside]] — Use 'reside' to indicate that ownership or authority is inherent or lies within someone.
 - advanced_form: [[appertain]] — Use 'appertain' for very formal, often legal, written contexts to mean 'belong as a part or possession'.
+- synonym: [[inhere]]

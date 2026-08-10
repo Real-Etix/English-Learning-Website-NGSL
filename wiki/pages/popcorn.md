@@ -9,6 +9,8 @@ rank: 932
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: particle
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[maize]] — Use 'maize' when referring to the plant in a formal or agricultural context.
 - advanced_form: [[grain]] — Use 'grain' when classifying popcorn as a cereal crop in a scientific or general sense.
+- synonym: [[corn]]
+- synonym: [[snack]]
+- collocation: [[microwave]]
+- collocation: [[movie]]
+- collocation: [[salt]]

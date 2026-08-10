@@ -9,6 +9,8 @@ rank: 1083
 sfi: 51.55
 sources: [wordnet, llm]
 status: enriched
+chart: arguably
+region: arguably
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1962
 sfi: 55.64
 sources: [wordnet, llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - synonym: [[voluntary]]
 - advanced_form: [[enlistee]] — Use 'enlistee' instead of 'volunteer' in formal military contexts to emphasize the official act of enlisting.
 - advanced_form: [[auxiliary]] — Use 'auxiliary' to refer to a volunteer who supplements regular military personnel, often in a support or specialized role.
+- collocation: [[docent]]

@@ -9,6 +9,8 @@ rank: 1740
 sfi: 50.24
 sources: [wordnet, llm]
 status: enriched
+chart: confer
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,4 @@ _No sourced examples yet._
 - advanced_form: [[converse]] — Use for general conversation, less formal than 'confer' but more elevated than 'talk'.
 - builds_on: [[consult]] — Use 'confer' instead of 'consult' when the interaction is more of a mutual discussion or exchange of ideas, not just one-sided seeking of advice.
 - builds_on: [[lend]] — Use 'confer' for bestowing a quality, status, or benefit, especially in formal or official contexts, whereas 'lend' is more general and informal.
+- synonym: [[negotiate]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [exemplar]
 sources: [llm]
 status: enriched
+chart: suitcase
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[template]] — Use 'exemplar' when referring to an ideal or perfect example that serves as a model for comparison.
 - builds_on: [[precedent]] — Use 'exemplar' instead of 'precedent' when focusing on the model as a perfect example to be imitated, rather than a justificatory reference.
 - builds_on: [[prototype]] — Use 'exemplar' for a perfect example worth imitating; highlights an ideal or model instance.
+- builds_on: [[hero]] — Use when emphasizing that the person is an outstanding example to be imitated.
+- synonym: [[paragon]]

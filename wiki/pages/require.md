@@ -9,6 +9,8 @@ rank: 402
 sfi: 63.97
 sources: [wordnet, llm]
 status: enriched
+chart: take
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[necessitate]] — Use when something makes a certain action unavoidable or necessary.
 - advanced_form: [[entail]] — Use to imply that a particular consequence or requirement is naturally involved.
 - advanced_form: [[mandate]] — Use when an official authority or rule commands that something be done.
+- collocation: [[abidance]]
+- collocation: [[meticulousness]]
+- synonym: [[impose]]

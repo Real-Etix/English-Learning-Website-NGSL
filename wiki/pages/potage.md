@@ -6,6 +6,8 @@ pos: noun
 forms: [potage]
 sources: [llm]
 status: enriched
+chart: soup
+region: soup
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[soup]] — Use 'potage' for a thick, often pureed soup, especially in French cuisine, to imply a rustic or elegant style rather than a simple 'soup'.
+- synonym: [[bisque]]
+- collocation: [[vegetable]]
+- collocation: [[thick]]

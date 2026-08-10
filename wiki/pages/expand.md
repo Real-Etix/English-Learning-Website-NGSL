@@ -9,6 +9,8 @@ rank: 1321
 sfi: 58.18
 sources: [wordnet, llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[augment]] — Use 'augment' when formally adding to something to increase its size or value.
 - advanced_form: [[amplify]] — Use 'amplify' when making something larger, especially in volume, effect, or extent, often with an emphasis on enhancing.
 - advanced_form: [[dilate]] — Use 'dilate' when expanding or widening something, especially in a scientific or medical context for hollow organs or openings.
+- synonym: [[broaden]]
+- synonym: [[inflate]]
+- builds_on: [[broaden]] — Use 'expand' when something grows in size, scope, or influence, often in a more formal context than 'broaden'.

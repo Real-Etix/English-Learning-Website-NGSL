@@ -9,6 +9,8 @@ rank: 522
 sfi: 54.515
 sources: [wordnet, llm]
 status: enriched
+chart: waste
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ _No sourced examples yet._
 - builds_on: [[trend]] — Use when the trend is slow or underlying, rather than obvious.
 - builds_on: [[till]] — Use 'drift' when referring to all glacial deposits, including till and outwash.
 - builds_on: [[float]] — Use 'drift' when the motion is slow and uncontrolled, often due to currents, rather than merely floating in place.
+- synonym: [[roam]]
+- synonym: [[rove]]
+- synonym: [[waft]]
+- synonym: [[floatage]]

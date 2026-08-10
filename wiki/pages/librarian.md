@@ -9,6 +9,8 @@ rank: 467
 sfi: 53.29
 sources: [wordnet, llm]
 status: enriched
+chart: collector
+region: collector
 ---
 
 ## Definition

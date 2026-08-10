@@ -6,6 +6,8 @@ pos: adjective
 forms: [derogatory]
 sources: [llm]
 status: enriched
+chart: conservation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[offensive]] — Use 'derogatory' when the offense belittles or shows a low opinion of someone or something, often regarding a group or identity.
+- synonym: [[abusive]]
+- synonym: [[insulting]]
+- collocation: [[language]]

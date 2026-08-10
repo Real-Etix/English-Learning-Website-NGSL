@@ -6,6 +6,8 @@ pos: adverb
 forms: [indiscriminately]
 sources: [llm]
 status: enriched
+chart: sew
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wholesale]] — Use 'indiscriminately' when describing a broad, unselective action, like the sweeping manner of a wholesale decision or sale.
+- synonym: [[randomly]]
+- synonym: [[arbitrarily]]
+- synonym: [[haphazardly]]

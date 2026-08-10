@@ -6,6 +6,8 @@ pos: verb
 forms: [flit]
 sources: [llm]
 status: enriched
+chart: flutter
+region: you
 ---
 
 ## Definition

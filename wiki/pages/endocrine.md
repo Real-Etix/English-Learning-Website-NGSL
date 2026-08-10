@@ -6,6 +6,8 @@ pos: noun
 forms: [endocrine]
 sources: [llm]
 status: enriched
+chart: hormone
+region: hormone
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hormone]] — Use 'endocrine' as a more formal, scientific synonym for 'hormone', especially in the context of glandular secretions.
+- synonym: [[messenger]]
+- synonym: [[regulator]]
+- collocation: [[system]]
+- collocation: [[function]]

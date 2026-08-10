@@ -9,6 +9,8 @@ rank: 453
 sfi: 53.72
 sources: [wordnet, llm]
 status: enriched
+chart: statutory
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ relating to or created by statutes
 - advanced_form: [[legislative]] — Use 'legislative' to emphasize the law-making procedure or branch, while 'statutory' focuses on the resulting law.
 - advanced_form: [[codified]] — Use 'codified' when the statutes are collected into a single code, whereas 'statutory' is a broader term for any law passed by a legislature.
 - advanced_form: [[enacted]] — Use 'enacted' to highlight the moment a statute becomes law, while 'statutory' describes the law's nature.
+- synonym: [[congressional]]

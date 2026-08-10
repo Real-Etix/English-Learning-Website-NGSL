@@ -9,6 +9,8 @@ rank: 1625
 sfi: 56.91
 sources: [wordnet, llm]
 status: enriched
+chart: feel
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ _No sourced examples yet._
 - advanced_form: [[accolade]] — Use 'accolade' for a formal, prestigious award or recognition, especially in professional contexts, instead of the more general 'honor'.
 - advanced_form: [[laurel]] — Use 'laurel' (often plural) to emphasize a symbolic, hard-won honor associated with achievement, like a crown of laurel in ancient times.
 - advanced_form: [[kudos]] — Use 'kudos' for informal praise or recognition, often in a group setting, where 'honor' might feel too formal.
+- synonym: [[commemorate]]
+- synonym: [[dignity]]
+- synonym: [[ennoble]]
+- synonym: [[exalt]]
+- synonym: [[revere]]
+- collocation: [[fallen]]

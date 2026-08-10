@@ -9,6 +9,8 @@ rank: 2539
 sfi: 53.84
 sources: [wordnet, llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[augment]] — Use 'augment' when adding to something to make it larger or more effective, often formally.
 - advanced_form: [[enhance]] — Use 'enhance' when improving the quality, value, or attractiveness of something.
 - advanced_form: [[amplify]] — Use 'amplify' when increasing the strength, volume, or effect, especially of sound or signals.
+- collocation: [[ego]]
+- synonym: [[embolden]]
+- synonym: [[inflate]]
+- collocation: [[productivity]]

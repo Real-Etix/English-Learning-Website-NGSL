@@ -6,6 +6,8 @@ pos: noun
 forms: [consignee]
 sources: [llm]
 status: enriched
+chart: recipient
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[recipient]] — Use for someone who receives goods in a commercial or shipping context.
+- synonym: [[receiver]]
+- synonym: [[addressee]]
+- collocation: [[address]]
+- collocation: [[name]]
+- collocation: [[signature]]
+- collocation: [[notify]]
+- collocation: [[delivery]]
+- collocation: [[consignor]]

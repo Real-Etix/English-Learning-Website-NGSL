@@ -6,6 +6,8 @@ pos: noun
 forms: [upstart]
 sources: [llm]
 status: enriched
+chart: old
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[junior]] — Use 'upstart' when emphasizing someone's presumptuous behavior and lack of respect, especially if they are new to a position or situation.
+- synonym: [[whippersnapper]]

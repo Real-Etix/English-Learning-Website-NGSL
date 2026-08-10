@@ -9,6 +9,8 @@ rank: 197
 sfi: 66.98
 sources: [wordnet, llm]
 status: enriched
+chart: just
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ at or near the beginning of a period of time or course of events or before the u
 - antonym: [[late]]
 - advanced_form: [[premature]] — Use 'premature' when something happens too early, especially before the expected or proper time, often with a negative connotation compared to the neutral 'early'.
 - advanced_form: [[incipient]] — Use 'incipient' for something just beginning to develop or become noticeable, more formal and specific than the general 'early'.
+- collocation: [[forenoon]]
+- collocation: [[modernity]]
+- collocation: [[precursor]]
+- synonym: [[proactively]]
+- collocation: [[sepsis]]
+- collocation: [[settler]]
+- collocation: [[springtide]]

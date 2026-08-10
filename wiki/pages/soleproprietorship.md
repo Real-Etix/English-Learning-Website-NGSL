@@ -6,6 +6,8 @@ pos: noun
 forms: [soleproprietorship]
 sources: [llm]
 status: enriched
+chart: equity
+region: you
 ---
 
 ## Definition

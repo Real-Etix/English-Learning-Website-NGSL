@@ -9,6 +9,8 @@ rank: 383
 sfi: 54.54
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ a tube through which a bullet travels when a gun is fired
 - collocation: [[trash]]
 - advanced_form: [[bore]] — Use 'bore' instead of 'barrel' when focusing on the internal diameter or the inside cavity through which the bullet travels.
 - advanced_form: [[muzzle]] — Use 'muzzle' instead of 'barrel' when referring specifically to the open front end, often in contexts of aiming or discharging.
+- collocation: [[bung]]
+- synonym: [[cylinder]]

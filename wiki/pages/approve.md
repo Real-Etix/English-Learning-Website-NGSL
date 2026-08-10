@@ -9,6 +9,8 @@ rank: 1575
 sfi: 57.1
 sources: [wordnet, llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ give sanction to
 - advanced_form: [[endorse]] — Use 'endorse' when you mean giving public support or approval, often after careful consideration.
 - advanced_form: [[sanction]] — Use 'sanction' for official approval, especially by an authority, often with a sense of formal permission.
 - advanced_form: [[ratify]] — Use 'ratify' for formally confirming or approving something like a law or agreement, typically after a vote.
+- synonym: [[accede]]
+- synonym: [[countersign]]
+- collocation: [[overwhelmingly]]
+- synonym: [[visa]]
+- collocation: [[formally]]

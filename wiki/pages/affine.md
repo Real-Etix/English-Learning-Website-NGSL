@@ -6,6 +6,8 @@ pos: adjective
 forms: [affine]
 sources: [llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition

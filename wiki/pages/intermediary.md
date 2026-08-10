@@ -7,8 +7,10 @@ forms: [intermediary, intermediaries]
 lists: [business]
 rank: 547
 sfi: 53.79
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - builds_on: [[realtor]] — Use 'intermediary' when emphasizing the role of a middleman in complex or formal transactions.
 - builds_on: [[interpreter]] — Use 'intermediary' in formal contexts to emphasize the person as a go‑between in official or business settings.
 - builds_on: [[negotiator]] — Use 'intermediary' to emphasize the role of communicating between two sides, often without direct involvement in negotiation.
+- synonym: [[middleman]]
+- advanced_form: [[conciliator]] — Use when emphasizing calming and reconciling opposing sides, more formal than 'intermediary'.
+- advanced_form: [[arbiter]] — Use when the person has authority to make a final judgment, not just facilitate.
+- advanced_form: [[liaison]] — Use when the main role is being a communication link, often in an official capacity.

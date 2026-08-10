@@ -6,6 +6,8 @@ pos: adjective
 forms: [seaward]
 sources: [llm]
 status: enriched
+chart: pipeline
+region: you
 ---
 
 ## Definition

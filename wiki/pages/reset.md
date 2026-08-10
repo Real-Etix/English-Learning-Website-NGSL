@@ -9,6 +9,8 @@ rank: 342
 sfi: 55.13
 sources: [wordnet, llm]
 status: enriched
+chart: reset
+region: reset
 ---
 
 ## Definition

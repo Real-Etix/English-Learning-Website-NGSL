@@ -9,6 +9,8 @@ rank: 638
 sfi: 53.282
 sources: [wordnet, llm]
 status: enriched
+chart: anthropology
+region: anthropology
 ---
 
 ## Definition

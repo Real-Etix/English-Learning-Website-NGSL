@@ -6,6 +6,8 @@ pos: adjective
 forms: [enormous]
 sources: [dictionaryapi, wordnet]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition

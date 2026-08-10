@@ -9,6 +9,8 @@ rank: 418
 sfi: 55.636
 sources: [wordnet, llm]
 status: enriched
+chart: issue
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ the immediate descendants of a person
 - builds_on: [[daughter]] — Use 'offspring' when the focus is on the biological or formal relationship, without specifying gender.
 - advanced_form: [[progeny]] — Use 'progeny' in formal or scientific contexts to emphasize lineage or breeding.
 - advanced_form: [[issue]] — Use 'issue' in legal or official documents to refer to children or descendants, especially in inheritance.
+- synonym: [[cub]]
+- synonym: [[whelp]]
+- collocation: [[sire]]

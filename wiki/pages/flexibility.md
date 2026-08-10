@@ -9,6 +9,8 @@ rank: 117
 sfi: 60.27
 sources: [wordnet, llm]
 status: enriched
+chart: flexibility
+region: flexibility
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[adaptability]] — Use 'adaptability' when emphasizing the ability to adjust to changing circumstances, whereas 'flexibility' is more general.
 - advanced_form: [[versatility]] — Use 'versatility' to highlight the capacity to serve multiple purposes, a more specific and formal alternative to 'flexibility'.
 - advanced_form: [[malleability]] — Use 'malleability' when referring to the ease of being influenced or shaped, often in a figurative sense, as a more precise substitute for 'flexibility'.
+- synonym: [[leeway]]
+- synonym: [[maneuverability]]

@@ -9,6 +9,8 @@ rank: 123
 sfi: 57.51
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: offset
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,9 @@ the time at which something is supposed to begin
 - advanced_form: [[inception]] — Use 'inception' instead of 'offset' to highlight the starting point of a process or initiative, often with a sense of origin.
 - advanced_form: [[onset]] — Use 'onset' instead of 'offset' when referring to the beginning of something unwelcome or intense, like a weather event or illness.
 - builds_on: [[compensate]] — Use 'offset' for cancelling out an effect, especially in financial or environmental contexts.
+- synonym: [[counterbalance]]
+- synonym: [[deductible]]
+- synonym: [[hedging]]
+- synonym: [[neutralize]]
+- collocation: [[printing]]
+- synonym: [[bulbil]]

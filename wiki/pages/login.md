@@ -9,6 +9,8 @@ rank: 525
 sfi: 52.82
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 
 ## Connections
 - domain: toeic
+- synonym: [[access]]
+- synonym: [[credentials]]

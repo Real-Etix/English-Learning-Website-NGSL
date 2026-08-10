@@ -9,6 +9,8 @@ rank: 2
 sfi: 65.56
 sources: [wordnet, llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ leisure time away from work devoted to rest or pleasure
 - advanced_form: [[retreat]] — Use 'retreat' when the vacation emphasizes solitude, peace, or spiritual/mental rejuvenation, often at a specialized location.
 - advanced_form: [[sabbatical]] — Use 'sabbatical' for a long, purposeful vacation (months to a year) granted to professionals, often tied to academic or career development.
 - builds_on: [[holiday]] — Use 'vacation' instead of 'holiday' in American English or for a planned trip away for rest.
+- collocation: [[extended]]

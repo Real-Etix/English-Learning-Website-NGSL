@@ -6,6 +6,8 @@ pos: noun
 forms: [bodyguard]
 sources: [llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[escort]] — Use 'bodyguard' when protection from physical harm is the primary role, not just accompaniment.
+- synonym: [[guard]]
+- collocation: [[personal]]
+- collocation: [[security]]
+- collocation: [[private]]
+- collocation: [[close]]

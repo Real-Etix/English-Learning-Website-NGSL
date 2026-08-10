@@ -6,6 +6,8 @@ pos: noun
 forms: [ovation]
 sources: [llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition

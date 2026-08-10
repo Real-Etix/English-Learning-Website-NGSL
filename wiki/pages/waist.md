@@ -9,6 +9,8 @@ rank: 145
 sfi: 59.32
 sources: [wordnet, llm]
 status: enriched
+chart: waist
+region: waist
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[midriff]] — Use 'midriff' to refer specifically to the front area between the chest and waist, often in fashion or physical descriptions.
 - advanced_form: [[girth]] — Use 'girth' when referring to the measurement around the waist, especially in tailoring or body size contexts.
+- synonym: [[midsection]]

@@ -9,6 +9,8 @@ rank: 53
 sfi: 59.56
 sources: [wordnet, llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[retainer]] — Use 'retainer' when emphasizing a fee that reserves a service or product over time, more formal than 'subscription'.
 - advanced_form: [[dues]] — Use 'dues' when the subscription is part of a membership or organization's regular payments, often more formal in club contexts.
+- collocation: [[renew]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [valise]
 sources: [llm]
 status: enriched
+chart: suitcase
+region: you
 ---
 
 ## Definition

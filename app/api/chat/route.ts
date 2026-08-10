@@ -1,4 +1,5 @@
 import { getListVocab, sampleWords } from "@/lib/content/list-vocab";
+import { readPage } from "@/lib/wiki/parse-wiki";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM, type ChatMessage } from "@/scripts/llm-client";
 
@@ -37,7 +38,7 @@ export async function POST(request: Request) {
     );
   }
 
-  let body: { messages?: ChatMessage[]; listSlug?: string };
+  let body: { messages?: ChatMessage[]; listSlug?: string; lemma?: string };
   try {
     body = await request.json();
   } catch {
@@ -60,7 +61,26 @@ export async function POST(request: Request) {
     ? `\nThe learner is currently viewing the "${vocab[body.listSlug].title}" list.`
     : "";
 
-  const system = `${SYSTEM_BASE}${context}\n\nWord lists you can draw from (samples):\n${vocabBlock}`;
+  // Ground the tutor in the open star: its real definition, example and the
+  // wiki's typed connections + glosses, so answers cite the actual entry.
+  let starBlock = "";
+  if (body.lemma) {
+    const page = await readPage(body.lemma);
+    if (page) {
+      const conns = page.connections
+        .slice(0, 12)
+        .map((c) => `  - ${c.type} → ${c.target}${c.gloss ? ` — ${c.gloss}` : ""}`)
+        .join("\n");
+      starBlock =
+        `\n\nThe learner has this word open — ground your answer in it and its links; don't invent relations:\n` +
+        `Word: ${page.display} (${page.pos}${page.tier === "advanced" ? ", advanced" : ""})\n` +
+        `Definition: ${page.definition}\n` +
+        (page.examples[0] ? `Example: ${page.examples[0]}\n` : "") +
+        (conns ? `Connections:\n${conns}` : "");
+    }
+  }
+
+  const system = `${SYSTEM_BASE}${context}${starBlock}\n\nWord lists you can draw from (samples):\n${vocabBlock}`;
 
   const reply = await completeChat([{ role: "system", content: system }, ...history]);
   if (reply == null) {

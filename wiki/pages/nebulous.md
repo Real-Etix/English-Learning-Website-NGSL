@@ -6,6 +6,8 @@ pos: adjective
 forms: [nebulous]
 sources: [llm]
 status: enriched
+chart: obscure
+region: you
 ---
 
 ## Definition

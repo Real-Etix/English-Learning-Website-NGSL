@@ -9,6 +9,8 @@ rank: 485
 sfi: 54.899
 sources: [wordnet, llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ a domain in which something is dominant
 - advanced_form: [[sphere]] — Use 'sphere' to denote a bounded domain of activity or interest, often with a sense of social or professional scope.
 - builds_on: [[affair]] — Use 'realm' instead of 'affair' to refer to a particular field of activity or interest, especially in abstract or formal contexts.
 - builds_on: [[empire]] — Use 'realm' to describe a kingdom or domain, often with a slightly more abstract or poetic tone, suitable for both literal and metaphorical contexts.
+- collocation: [[metaphysical]]

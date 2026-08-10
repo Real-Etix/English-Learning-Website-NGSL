@@ -9,6 +9,8 @@ rank: 1972
 sfi: 55.61
 sources: [wordnet, llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ orally recite the letters of or give the spelling of
 - builds_on: [[season]] — Use 'spell' for a continuous period of time with a particular quality, such as weather or activity, often shorter than a season.
 - advanced_form: [[enunciate]] — Use 'enunciate' when you want to emphasize clear, formal pronunciation of each letter, often used in teaching or dictation.
 - advanced_form: [[articulate]] — Use 'articulate' to stress distinct and careful utterance of each letter, more formal than 'spell'.
+- collocation: [[conjure]]
+- synonym: [[enchantment]]

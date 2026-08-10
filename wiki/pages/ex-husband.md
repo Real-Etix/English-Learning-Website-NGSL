@@ -6,6 +6,8 @@ pos: noun
 forms: [ex-husband]
 sources: [llm]
 status: enriched
+chart: ex
+region: ex
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ex]] — Use when you want to be more specific about the gender of the former partner, as 'ex' alone can be ambiguous.
+- synonym: [[ex-spouse]]

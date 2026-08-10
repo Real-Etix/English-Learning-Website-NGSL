@@ -9,6 +9,8 @@ rank: 1848
 sfi: 56
 sources: [wordnet, llm]
 status: enriched
+chart: sign
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[gesture]] — Use 'gesture' instead of 'motion' when referring to a hand or body movement with a specific communicative meaning, as it is more precise and natural.
 - advanced_form: [[signal]] — Use 'signal' for a prearranged movement that conveys information, especially in formal or technical contexts like traffic or sports.
 - advanced_form: [[gesticulation]] — Use 'gesticulation' for dramatic or emphatic hand movements, often while speaking, as a more formal and vivid alternative to 'motion'.
+- collocation: [[curvilinear]]
+- collocation: [[fluidness]]
+- synonym: [[locomotion]]
+- synonym: [[motility]]
+- collocation: [[nonsuit]]
+- collocation: [[petitioner]]
+- collocation: [[rectilinear]]
+- synonym: [[dynamics]]

@@ -9,6 +9,8 @@ rank: 607
 sfi: 52.28
 sources: [wordnet, llm]
 status: enriched
+chart: mentor
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ _No sourced examples yet._
 - advanced_form: [[adviser]] — Use 'adviser' for a formal role in an institution, whereas 'mentor' suggests a more informal, trusted guide.
 - builds_on: [[tutor]] — Use 'mentor' for long‑term guidance and career development, not just academic tutoring.
 - builds_on: [[adviser]] — Use 'mentor' for a more experienced person who provides long-term guidance and personal development, unlike a general 'adviser'.
+- collocation: [[protg]]
+- builds_on: [[coach]] — Use 'mentor' when focusing on long-term guidance and personal development rather than just technical coaching.

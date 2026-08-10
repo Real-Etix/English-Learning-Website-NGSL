@@ -9,6 +9,8 @@ rank: 2184
 sfi: 54.96
 sources: [wordnet, llm]
 status: enriched
+chart: clasp
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[snare]] — Use 'snare' for a trap that uses a noose or loop to catch an animal by the leg or neck; it's more specific than the general 'trap'.
 - advanced_form: [[pitfall]] — Use 'pitfall' for a hidden hole or pit used as a trap; it emphasizes the element of surprise and is often metaphorical.
+- synonym: [[enmesh]]
+- synonym: [[ensnare]]
+- synonym: [[entrap]]
+- synonym: [[noose]]

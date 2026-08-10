@@ -9,6 +9,8 @@ rank: 971
 sfi: 50.63
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -35,3 +37,6 @@ _No sourced examples yet._
 - builds_on: [[ship]] — Use when emphasizing speed or urgency of sending.
 - builds_on: [[delivery]] — Use 'dispatch' instead of 'delivery' to emphasize the sending or forwarding process, often in logistics or formal contexts.
 - builds_on: [[export]] — Use for sending goods quickly or officially, often with a sense of urgency or business logistics.
+- synonym: [[cablegram]]
+- builds_on: [[upload]] — Use to emphasize sending something rapidly or routinely to a destination, often in a technical or operational context.
+- builds_on: [[email]] — Use instead of 'email' for a formal, often official, message that is sent quickly or urgently.

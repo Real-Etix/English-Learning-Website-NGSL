@@ -6,6 +6,8 @@ pos: adverb
 forms: [courteously]
 sources: [llm]
 status: enriched
+chart: nicely
+region: nicely
 ---
 
 ## Definition

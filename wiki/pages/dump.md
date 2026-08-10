@@ -9,6 +9,8 @@ rank: 602
 sfi: 53.51
 sources: [wordnet, llm]
 status: enriched
+chart: arm
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[discard]] — Use 'discard' when intentionally getting rid of something that is no longer wanted, often with care or finality.
 - advanced_form: [[disposeof]] — Use 'dispose of' for formal or systematic removal, especially with specific procedures.
 - advanced_form: [[jettison]] — Use 'jettison' to emphasize urgent or forceful removal, often to lighten a load or eliminate a burden.
+- collocation: [[munition]]
+- synonym: [[offload]]

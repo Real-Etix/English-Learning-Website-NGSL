@@ -6,6 +6,8 @@ pos: verb
 forms: [detonate]
 sources: [llm]
 status: enriched
+chart: pulse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[explode]] — Use 'detonate' for controlled, deliberate explosions, especially involving explosives, rather than general bursting.
+- synonym: [[blast]]
+- collocation: [[bomb]]
+- collocation: [[explosive]]
+- collocation: [[device]]
+- collocation: [[remotely]]

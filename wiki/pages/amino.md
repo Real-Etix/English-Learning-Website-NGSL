@@ -9,6 +9,8 @@ rank: 91
 sfi: 61.59
 sources: [wordnet, llm]
 status: enriched
+chart: amino
+region: amino
 ---
 
 ## Definition

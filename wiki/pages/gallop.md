@@ -6,6 +6,8 @@ pos: verb
 forms: [gallop]
 sources: [llm]
 status: enriched
+chart: walk
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,14 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ride]] — Use for the fastest gait, a four‑beat run.
+- synonym: [[canter]]
+- synonym: [[race]]
+- synonym: [[bolt]]
+- synonym: [[charge]]
+- synonym: [[dash]]
+- synonym: [[sprint]]
+- collocation: [[horse]]
+- collocation: [[away]]
+- collocation: [[off]]
+- collocation: [[across]]
+- collocation: [[through]]

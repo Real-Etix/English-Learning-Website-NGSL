@@ -9,6 +9,8 @@ rank: 1959
 sfi: 55.66
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ hold back within
 - advanced_form: [[withhold]] — Use this instead of 'retain' when you mean to deliberately keep something back, especially information, money, or permission.
 - advanced_form: [[suppress]] — Use this instead of 'retain' when you mean to hold back or prevent something from being expressed or released, like an emotion or reaction.
 - advanced_form: [[restrain]] — Use this instead of 'retain' when you mean to physically or forcefully hold someone or something back from moving or acting.
+- synonym: [[memorize]]
+- collocation: [[moisture]]
+- builds_on: [[withhold]] — Use when keeping something from being given or released, often intentionally.
+- builds_on: [[memorize]] — Use when focusing on keeping information in memory over time.

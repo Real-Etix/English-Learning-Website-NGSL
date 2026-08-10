@@ -9,6 +9,8 @@ rank: 554
 sfi: 62.46
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - builds_on: [[achieve]] — Use 'realize' when the achievement involves making an abstract goal or aspiration a reality.
 - builds_on: [[earn]] — Use 'realize' when the profit results from a commercial transaction or investment, often implying it becomes actual or tangible.
 - builds_on: [[accomplish]] — Use 'realize' to convey making something concrete or tangible that was once only an idea or aspiration. It goes beyond simply finishing a task ('accomplish') and suggests actualization of a vision.
+- synonym: [[effectuate]]
+- synonym: [[operationalize]]

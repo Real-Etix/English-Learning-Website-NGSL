@@ -9,6 +9,8 @@ rank: 1611
 sfi: 56.96
 sources: [wordnet, llm]
 status: enriched
+chart: deduction
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ the process of taking in and expelling air during breathing
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[respiration]] — Use 'respiration' instead of 'breath' in scientific, medical, or formal contexts to refer to the physiological process of breathing.
 - advanced_form: [[ventilation]] — Use 'ventilation' when emphasizing the mechanical or systemic exchange of air, especially in medical or technical settings.
+- synonym: [[huff]]
+- collocation: [[vinyasa]]
+- synonym: [[zephyr]]

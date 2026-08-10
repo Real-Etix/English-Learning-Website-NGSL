@@ -6,6 +6,8 @@ pos: noun
 forms: [octogenarian]
 sources: [llm]
 status: enriched
+chart: ancient
+region: ancient
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ancient]] — Use 'octogenarian' to specify a person in their 80s (80–89 years old), which is more precise and neutral than the vague, often literary 'ancient'.
+- synonym: [[senior]]
+- synonym: [[elder]]
+- collocation: [[active]]
+- collocation: [[healthy]]
+- collocation: [[remarkable]]

@@ -9,6 +9,8 @@ rank: 1117
 sfi: 59.04
 sources: [wordnet, llm]
 status: enriched
+chart: dine
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ the main meal of the day served in the evening or at midday
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[supper]] — Use 'supper' instead of 'dinner' when referring to a casual or lighter evening meal.
 - advanced_form: [[repast]] — Use 'repast' instead of 'dinner' to sound more formal or literary.
+- collocation: [[napkin]]
+- collocation: [[skillet]]

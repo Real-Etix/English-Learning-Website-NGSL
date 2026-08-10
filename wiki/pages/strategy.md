@@ -9,6 +9,8 @@ rank: 839
 sfi: 60.55
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - advanced_form: [[stratagem]] — Use when emphasizing deception or cleverness in a military or competitive context.
 - advanced_form: [[blueprint]] — Use when referring to a detailed, concrete plan, often technical or architectural.
 - advanced_form: [[design]] — Use when focusing on the deliberate structure or arrangement of a plan.
+- collocation: [[internationalization]]
+- synonym: [[maneuvering]]
+- collocation: [[reassess]]
+- collocation: [[recalibrate]]
+- collocation: [[reevaluate]]
+- collocation: [[rethink]]
+- collocation: [[operationalize]]

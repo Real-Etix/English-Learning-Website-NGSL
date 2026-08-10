@@ -9,6 +9,8 @@ rank: 794
 sfi: 60.81
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ point or cause to go (blows, weapons, or objects such as photographic equipment)
 - advanced_form: [[direct]] — Use 'direct' when you want to emphasize guiding or pointing something toward a target.
 - advanced_form: [[level]] — Use 'level' when aiming a weapon or something that requires precise alignment.
 - advanced_form: [[train]] — Use 'train' for aiming an instrument or device like a camera, telescope, or weapon at a specific object.
+- collocation: [[unerring]]

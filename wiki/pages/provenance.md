@@ -6,6 +6,8 @@ pos: noun
 forms: [provenance]
 sources: [llm]
 status: enriched
+chart: death
+region: you
 ---
 
 ## Definition

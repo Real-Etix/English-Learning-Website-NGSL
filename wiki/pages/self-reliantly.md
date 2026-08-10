@@ -6,6 +6,8 @@ pos: adverb
 forms: [self-reliantly]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition

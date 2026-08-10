@@ -9,6 +9,8 @@ rank: 766
 sfi: 50.67
 sources: [wordnet, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[expatriate]] — Use 'expatriate' for someone living abroad by choice, often for work or lifestyle, whereas 'exile' suggests a sense of banishment or longing for home.
 - advanced_form: [[sojourner]] — Use 'sojourner' for a temporary resident who plans to return, while 'exile' implies a longer or indefinite absence.
 - builds_on: [[refugee]] — Use exile when emphasizing forced removal or banishment from one's country, often due to political reasons.
+- synonym: [[asylee]]
+- synonym: [[diaspora]]
+- synonym: [[pariah]]

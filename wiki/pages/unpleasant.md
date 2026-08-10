@@ -9,6 +9,8 @@ rank: 1019
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: unpleasant
+region: unpleasant
 ---
 
 ## Definition

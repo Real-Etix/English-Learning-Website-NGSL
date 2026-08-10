@@ -9,6 +9,8 @@ rank: 2262
 sfi: 54.77
 sources: [wordnet, llm]
 status: enriched
+chart: bread
+region: bread
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - advanced_form: [[baguette]] — Use when referring specifically to a long, thin French bread, not just any bread.
 - advanced_form: [[ciabatta]] — Use when describing a specific Italian bread ideal for sandwiches.
 - advanced_form: [[sourdough]] — Use when referring to bread with a tangy flavor from natural starter, distinct from standard yeast bread.
+- collocation: [[artisan]]
+- collocation: [[artisanal]]
+- collocation: [[corn]]
+- synonym: [[flatbread]]
+- collocation: [[house-made]]
+- collocation: [[leaven]]
+- collocation: [[morsel]]

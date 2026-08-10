@@ -6,6 +6,8 @@ pos: noun
 forms: [inoculant]
 sources: [llm]
 status: enriched
+chart: vaccine
+region: vaccine
 ---
 
 ## Definition

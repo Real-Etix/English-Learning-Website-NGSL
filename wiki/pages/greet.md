@@ -9,6 +9,8 @@ rank: 2614
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: you
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - synonym: [[recognize]]
 - advanced_form: [[salute]] — Use 'salute' instead of 'greet' in formal or military contexts, often with a gesture.
 - advanced_form: [[hail]] — Use 'hail' instead of 'greet' to emphasize enthusiastic public welcome or acclaim.
+- collocation: [[alacrity]]

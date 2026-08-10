@@ -6,6 +6,8 @@ pos: verb
 forms: [confide]
 sources: [llm]
 status: enriched
+chart: rely
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[rely]] — Use 'confide' when you rely on someone's discretion or trust them with personal matters, rather than general reliance.
+- synonym: [[trust]]
+- synonym: [[disclose]]
+- synonym: [[reveal]]
+- synonym: [[confess]]
+- synonym: [[entrust]]
+- collocation: [[in]]
+- collocation: [[secret]]
+- collocation: [[friend]]
+- collocation: [[trust]]

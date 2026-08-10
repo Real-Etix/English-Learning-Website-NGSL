@@ -9,6 +9,8 @@ rank: 443
 sfi: 53.44
 sources: [wordnet, llm]
 status: enriched
+chart: glove
+region: glove
 ---
 
 ## Definition

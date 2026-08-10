@@ -6,6 +6,8 @@ pos: noun
 forms: [maize]
 sources: [llm]
 status: enriched
+chart: particle
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[popcorn]] — Use 'maize' when referring to the plant in a formal or agricultural context.
+- synonym: [[corn]]
+- synonym: [[grain]]
+- synonym: [[cereal]]
+- synonym: [[meal]]
+- builds_on: [[corn]] — Use when referring to the plant or crop in agricultural, scientific, or formal contexts.

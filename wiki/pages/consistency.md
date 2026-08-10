@@ -9,6 +9,8 @@ rank: 1040
 sfi: 51.82
 sources: [wordnet, llm]
 status: enriched
+chart: collective
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ the property of holding together and retaining its shape
 - builds_on: [[reliability]] — Use 'consistency' when the emphasis is on uniformity and lack of variation over time, rather than general dependability.
 - advanced_form: [[cohesion]] — Use 'cohesion' when emphasizing the internal binding forces that keep parts together, especially in mixtures or groups.
 - advanced_form: [[solidity]] — Use 'solidity' when focusing on firmness and the ability to resist deformation, often for physical materials.
+- synonym: [[coherence]]
+- synonym: [[flowability]]

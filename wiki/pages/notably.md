@@ -9,6 +9,8 @@ rank: 275
 sfi: 54.97
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: notably
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,7 @@ especially
 - advanced_form: [[eminently]] — Use to stress that someone or something is highly suitable or outstanding in a particular quality, often in a positive sense.
 - builds_on: [[interestingly]] — Use to emphasize a particular detail or fact that is especially important or worthy of attention, often introducing a key point.
 - builds_on: [[remarkably]] — Use 'notably' when something is worthy of attention, often in a positive sense, similar but slightly more formal than 'remarkably'.
+- synonym: [[distinctively]]
+- synonym: [[importantly]]
+- builds_on: [[importantly]] — Use to highlight a particular fact or example deserving attention.
+- builds_on: [[significantly]] — Use to highlight a striking or remarkable difference, particularly when comparing results or observations.

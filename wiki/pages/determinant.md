@@ -9,6 +9,8 @@ rank: 936
 sfi: 52.01
 sources: [wordnet, llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition

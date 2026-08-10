@@ -6,6 +6,8 @@ pos: noun
 forms: [trophy]
 sources: [llm]
 status: enriched
+chart: cite
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [premature]
 sources: [llm]
 status: enriched
+chart: just
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[early]] — Use 'premature' when something happens too early, especially before the expected or proper time, often with a negative connotation compared to the neutral 'early'.
+- collocation: [[newborn]]
+- collocation: [[baby]]
+- collocation: [[birth]]
+- collocation: [[delivery]]
+- collocation: [[decision]]

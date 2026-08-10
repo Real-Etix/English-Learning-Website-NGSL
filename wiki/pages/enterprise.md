@@ -9,6 +9,8 @@ rank: 2051
 sfi: 55.39
 sources: [wordnet, llm]
 status: enriched
+chart: occupation
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ a purposeful or industrious undertaking (especially one that requires effort or 
 - advanced_form: [[endeavor]] — Use 'endeavor' for a formal or ambitious effort, especially one requiring sustained effort.
 - advanced_form: [[initiative]] — Use 'initiative' when referring to a new project or plan that someone starts, often with a proactive or positive connotation.
 - builds_on: [[venture]] — Use 'enterprise' to emphasize a commercial or organized project, often with risk, whereas 'venture' is more general.
+- synonym: [[entrepreneurialism]]
+- synonym: [[entrepreneurship]]
+- synonym: [[gumption]]

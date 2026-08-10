@@ -9,6 +9,8 @@ rank: 53
 sfi: 64.07
 sources: [wordnet, llm]
 status: enriched
+chart: intake
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ _No sourced examples yet._
 - advanced_form: [[ingestion]] — Use 'ingestion' in formal or scientific contexts to describe the act of taking food or drink into the body, often emphasizing the biological or technical aspect.
 - builds_on: [[dose]] — Use when focusing on the amount taken into the body, especially in a general or ongoing sense.
 - builds_on: [[ingestion]] — Use 'intake' over 'ingestion' when focusing on the quantity or volume of substances taken in, rather than the process of putting them into the mouth.
+- collocation: [[d-fructose]]
+- synonym: [[dosage]]
+- collocation: [[kilojoule]]
+- collocation: [[micronutrient]]
+- collocation: [[protein]]

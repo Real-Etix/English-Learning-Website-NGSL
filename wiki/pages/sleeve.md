@@ -9,6 +9,8 @@ rank: 553
 sfi: 52.64
 sources: [wordnet, llm]
 status: enriched
+chart: arm
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[cuff]] — Use 'cuff' to refer specifically to the end part of the sleeve, often around the wrist.
 - advanced_form: [[armhole]] — Use 'armhole' to refer to the opening in the garment where the sleeve attaches, not the sleeve itself.
+- synonym: [[wrapper]]

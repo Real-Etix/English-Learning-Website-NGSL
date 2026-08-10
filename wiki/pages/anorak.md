@@ -6,6 +6,8 @@ pos: noun
 forms: [anorak]
 sources: [llm]
 status: enriched
+chart: cover
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[jacket]] — Use 'anorak' for a waterproof, hooded jacket, typically for outdoor or casual wear.
+- synonym: [[raincoat]]
+- collocation: [[bright]]
+- collocation: [[wear]]

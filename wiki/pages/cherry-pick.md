@@ -6,6 +6,8 @@ pos: verb
 forms: [cherry-pick]
 sources: [llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pick]] — Use 'cherry-pick' when you select only the best or most favorable items, often with a connotation of bias.
+- synonym: [[select]]
+- synonym: [[choose]]
+- synonym: [[handpick]]
+- collocation: [[data]]
+- collocation: [[evidence]]
+- collocation: [[facts]]

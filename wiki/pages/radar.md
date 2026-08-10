@@ -9,6 +9,8 @@ rank: 909
 sfi: 45.872
 sources: [wordnet, llm]
 status: enriched
+chart: accelerate
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[detector]] — Use 'detector' when emphasizing the device's function of sensing or picking up signals, rather than the specific technology of radio waves.
 - advanced_form: [[scanner]] — Use 'scanner' when focusing on the systematic sweeping or probing action of the device, often in contexts like weather or airport surveillance.
+- collocation: [[aerostat]]

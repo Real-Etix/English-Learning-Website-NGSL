@@ -6,6 +6,8 @@ pos: noun
 forms: [nephron]
 sources: [llm]
 status: enriched
+chart: kidney
+region: kidney
 ---
 
 ## Definition

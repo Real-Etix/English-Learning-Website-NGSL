@@ -9,6 +9,8 @@ rank: 636
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: chase
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ empty rhetoric or insincere or exaggerated talk
 - advanced_form: [[blarney]] — Use 'blarney' for smooth, flattering, often insincere talk, more specific than 'jazz'.
 - advanced_form: [[bunkum]] — Use 'bunkum' for empty, pompous, or nonsensical rhetoric, more formal than 'jazz'.
 - advanced_form: [[claptrap]] — Use 'claptrap' for pretentious, insincere talk meant to impress, more formal than 'jazz'.
+- collocation: [[arranger]]
+- collocation: [[habitu]]
+- collocation: [[instrumentalist]]
+- collocation: [[vocalist]]
+- collocation: [[quintet]]

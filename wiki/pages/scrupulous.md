@@ -6,6 +6,8 @@ pos: adjective
 forms: [scrupulous]
 sources: [llm]
 status: enriched
+chart: adverse
+region: you
 ---
 
 ## Definition

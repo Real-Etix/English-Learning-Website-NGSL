@@ -6,6 +6,8 @@ pos: noun
 forms: [validation]
 sources: [llm]
 status: enriched
+chart: endorsement
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[certification]] — Use 'validation' when emphasizing the process of checking correctness or authenticity, especially in technical or formal contexts.
+- synonym: [[vindication]]

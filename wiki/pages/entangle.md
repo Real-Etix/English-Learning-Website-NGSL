@@ -6,6 +6,8 @@ pos: verb
 forms: [entangle]
 sources: [llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,7 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[involve]] — Use 'entangle' to suggest a messy, complicated involvement from which escape is difficult.
 - builds_on: [[complicate]] — Use 'entangle' when complications involve trapping or ensnaring someone in difficulties, more than just making something complex.
+- synonym: [[convolute]]
+- synonym: [[embroil]]
+- synonym: [[enmesh]]
+- synonym: [[ensnare]]

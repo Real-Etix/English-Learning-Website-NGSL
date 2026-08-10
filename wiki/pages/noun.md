@@ -9,6 +9,8 @@ rank: 2799
 sfi: 50.41
 sources: [wordnet, llm]
 status: enriched
+chart: explicit
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[substantive]] — Use 'substantive' in formal or academic writing when discussing grammar or parts of speech, instead of the simpler 'noun'.
 - advanced_form: [[nominal]] — Use 'nominal' in linguistic analysis or formal descriptions of language, as a more technical term than 'noun'.
+- collocation: [[appellative]]
+- collocation: [[phrase]]

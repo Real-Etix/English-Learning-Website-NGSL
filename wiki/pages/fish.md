@@ -9,6 +9,8 @@ rank: 828
 sfi: 60.6
 sources: [wordnet, llm]
 status: enriched
+chart: fish
+region: fish
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ any of various mostly cold-blooded aquatic vertebrates usually having scales and
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[finfish]] — Use 'finfish' when distinguishing fish from shellfish in fisheries or culinary contexts.
 - advanced_form: [[teleost]] — Use 'teleost' in scientific or formal biological discussions to refer to the vast majority of bony fish.
+- collocation: [[dredge]]

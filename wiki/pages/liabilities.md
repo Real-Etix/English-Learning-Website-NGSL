@@ -6,6 +6,8 @@ pos: noun
 forms: [liabilities]
 sources: [llm]
 status: enriched
+chart: payable
+region: payable
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[payable]] — Use 'liabilities' instead of 'payable' when referring broadly to all obligations, including accounts payable, in a formal or accounting context.
+- synonym: [[dues]]
+- collocation: [[current]]
+- collocation: [[total]]
+- collocation: [[financial]]
+- collocation: [[assets]]

@@ -9,6 +9,8 @@ rank: 1079
 sfi: 59.22
 sources: [wordnet, llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,15 @@ _No sourced examples yet._
 - advanced_form: [[stream]] — Use 'stream' for a continuous, narrow flow of liquid or gas, often implying a smaller or more defined path.
 - advanced_form: [[flux]] — Use 'flux' in technical or scientific contexts to describe the rate of flow through a surface or area.
 - builds_on: [[traffic]] — Use 'flow' to describe the continuous movement of vehicles or pedestrians.
+- synonym: [[emanate]]
+- synonym: [[flowability]]
+- synonym: [[fluidity]]
+- synonym: [[fluidness]]
+- collocation: [[lifeblood]]
+- collocation: [[meridional]]
+- collocation: [[occlude]]
+- collocation: [[rivulet]]
+- synonym: [[vinyasa]]
+- collocation: [[vinyasa]]
+- synonym: [[waft]]
+- synonym: [[hemorrhage]]

@@ -9,6 +9,8 @@ rank: 27
 sfi: 61.36
 sources: [wordnet, llm]
 status: enriched
+chart: cover
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[envelop]] — Use 'envelop' when something wraps around or surrounds completely, often with a sense of covering from all sides.
 - advanced_form: [[encase]] — Use 'encase' when something is completely enclosed or covered within a container or a protective layer.
 - advanced_form: [[shroud]] — Use 'shroud' when something hides or covers completely, often with a mysterious or concealing effect.
+- synonym: [[palisade]]

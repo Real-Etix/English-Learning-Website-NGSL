@@ -6,6 +6,8 @@ pos: verb
 forms: [typify]
 sources: [llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[characterize]] — Use 'typify' when something is a perfect example of a group or class, rather than just describing its qualities.
+- synonym: [[personify]]

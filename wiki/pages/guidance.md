@@ -9,6 +9,8 @@ rank: 242
 sfi: 55.7
 sources: [wordnet, llm]
 status: enriched
+chart: counsel
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ _No sourced examples yet._
 - advanced_form: [[tutelage]] — Use 'tutelage' for personalized instruction or training, often in a educational or artistic context.
 - builds_on: [[advice]] — Use 'guidance' when the advice involves direction or ongoing support, often from a trusted source.
 - builds_on: [[leadership]] — Use 'guidance' instead of 'leadership' when the role involves mentoring, advising, or showing the way rather than directing or managing.
+- synonym: [[advisement]]
+- synonym: [[aegis]]
+- collocation: [[divine]]
+- collocation: [[providential]]

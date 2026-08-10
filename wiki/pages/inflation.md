@@ -9,6 +9,8 @@ rank: 2494
 sfi: 54
 sources: [wordnet, llm]
 status: enriched
+chart: spiral
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ a general and progressive increase in prices
 - antonym: [[deflation]]
 - advanced_form: [[escalation]] — Use 'escalation' to emphasize a steady, step-by-step increase, often implying worsening.
 - advanced_form: [[spiral]] — Use 'spiral' to describe a rapid, accelerating increase that feeds on itself.
+- collocation: [[climbing]]
+- collocation: [[indexation]]
+- collocation: [[outpace]]
+- collocation: [[rampant]]

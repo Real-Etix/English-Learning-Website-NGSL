@@ -6,6 +6,8 @@ pos: noun
 forms: [ebb]
 sources: [llm]
 status: enriched
+chart: trend
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tide]] — Use 'ebb' instead of 'tide' to emphasize the outward movement or decreasing water level, especially in nautical or metaphorical contexts.
+- synonym: [[decline]]
+- synonym: [[recession]]
+- synonym: [[retreat]]
+- synonym: [[diminution]]

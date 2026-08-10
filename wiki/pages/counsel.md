@@ -9,6 +9,8 @@ rank: 2407
 sfi: 54.26
 sources: [wordnet, llm]
 status: enriched
+chart: counsel
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,11 @@ _No sourced examples yet._
 - advanced_form: [[advocate]] — Use 'advocate' when referring to a lawyer who pleads cases in court, especially in formal or legal contexts; it's more specific than 'counsel'.
 - advanced_form: [[barrister]] — Use 'barrister' in the context of the UK legal system, where it denotes a lawyer who specializes in courtroom advocacy, as opposed to 'counsel' which is more general.
 - advanced_form: [[litigator]] — Use 'litigator' when emphasizing the lawyer's role in conducting lawsuits and appearing in court; it's a more modern and specific term than 'counsel'.
+- synonym: [[advisement]]
+- synonym: [[attorney]]
+- synonym: [[lawyer]]
+- collocation: [[learned]]
+- synonym: [[mentorship]]
+- collocation: [[petitioner]]
+- builds_on: [[attorney]] — Use when referring to the legal representative in a formal or professional context, especially during a trial.
+- builds_on: [[lawyer]] — Use in formal or legal contexts, often as a collective or referring to the legal advisor.

@@ -6,6 +6,8 @@ pos: noun
 forms: [throughput]
 sources: [llm]
 status: enriched
+chart: rally
+region: you
 ---
 
 ## Definition

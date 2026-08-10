@@ -6,6 +6,8 @@ pos: adjective
 forms: [somatic]
 sources: [llm]
 status: enriched
+chart: physiological
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1619
 sfi: 56.93
 sources: [wordnet, llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[conception]] — Use 'conception' when emphasizing the formation or mental grasp of an idea, often more abstract or formal than 'notion'.
 - advanced_form: [[inkling]] — Use 'inkling' for a slight, vague suspicion or hint, stronger than 'notion' in implying uncertainty but more specific.
 - advanced_form: [[impression]] — Use 'impression' when the idea is based on feelings or initial observation, often subjective and less defined than 'notion'.
+- synonym: [[fancy]]
+- collocation: [[whimsical]]

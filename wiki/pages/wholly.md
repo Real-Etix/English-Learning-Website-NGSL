@@ -9,6 +9,8 @@ rank: 726
 sfi: 53.17
 sources: [wordnet, llm]
 status: enriched
+chart: part
+region: you
 ---
 
 ## Definition
@@ -35,3 +37,5 @@ to a complete degree or to the full or entire extent (`whole' is often used info
 - builds_on: [[exclusively]] — Use 'wholly' to mean 'completely and exclusively', often for abstract or collective concepts.
 - builds_on: [[fully]] — Use 'wholly' to indicate entirety without exception, often in contexts of devotion, agreement, or composition.
 - builds_on: [[totally]] — Use 'wholly' instead of 'totally' in formal or written contexts to stress absolute completeness.
+- builds_on: [[entirely]] — Use in formal or written contexts to mean 'entirely' with a sense of completeness.
+- builds_on: [[altogether]] — Use to stress total completeness, often with abstract or intangible concepts, very formal.

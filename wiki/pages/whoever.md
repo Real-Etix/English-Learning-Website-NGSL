@@ -9,6 +9,8 @@ rank: 912
 sfi: 50.13
 sources: []
 status: seeded
+chart: say
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 - domain: toeic
 - domain: academic
 - builds_on: [[who]] — Use 'whoever' as a more formal or emphatic alternative to 'anyone who', especially in official or literary contexts.
+- synonym: [[anybody]]
+- synonym: [[anyone]]
+- collocation: [[else]]
+- collocation: [[you]]

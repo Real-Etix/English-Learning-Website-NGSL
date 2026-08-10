@@ -9,6 +9,8 @@ rank: 484
 sfi: 63.12
 sources: [wordnet, llm]
 status: enriched
+chart: convention
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,15 @@ a customary way of operation or behavior
 - advanced_form: [[convention]] — Use 'convention' for a widely accepted social or professional norm.
 - advanced_form: [[usage]] — Use 'usage' for a habitual or customary way of doing something, especially in language or formal procedures.
 - builds_on: [[custom]] — Use 'practice' for a more neutral, routine action or method, often in professional or technical contexts.
+- collocation: [[clavier]]
+- collocation: [[handbalance]]
+- collocation: [[moderation]]
+- synonym: [[office]]
+- collocation: [[psychotherapist]]
+- synonym: [[rehearsal]]
+- synonym: [[rehearse]]
+- collocation: [[reinstitute]]
+- collocation: [[vinyasa]]
+- synonym: [[warmup]]
+- collocation: [[avunculate]]
+- synonym: [[run-through]]

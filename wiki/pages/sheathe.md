@@ -6,6 +6,8 @@ pos: verb
 forms: [sheathe]
 sources: [llm]
 status: enriched
+chart: plank
+region: plank
 ---
 
 ## Definition

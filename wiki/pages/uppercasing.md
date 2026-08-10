@@ -6,6 +6,8 @@ pos: noun
 forms: [uppercasing]
 sources: [llm]
 status: enriched
+chart: capitalization
+region: capitalization
 ---
 
 ## Definition

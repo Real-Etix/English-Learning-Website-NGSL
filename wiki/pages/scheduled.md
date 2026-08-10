@@ -6,6 +6,8 @@ pos: adjective
 forms: [scheduled]
 sources: [llm]
 status: enriched
+chart: online
+region: online
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[online]] — Use 'scheduled' to emphasize that the vehicle is part of a regular timetable, often in official contexts.
+- collocation: [[provisionally]]

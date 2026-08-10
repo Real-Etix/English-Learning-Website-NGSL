@@ -6,6 +6,8 @@ pos: noun
 forms: [laterality]
 sources: [llm]
 status: enriched
+chart: certainty
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dominance]] — Use when focusing on the tendency or preference for one side rather than the fact of being dominant.
+- synonym: [[asymmetry]]
+- synonym: [[lateralization]]
+- collocation: [[cerebral]]
+- collocation: [[language]]
+- collocation: [[functional]]

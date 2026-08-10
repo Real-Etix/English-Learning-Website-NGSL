@@ -9,6 +9,8 @@ rank: 2139
 sfi: 55.11
 sources: [wordnet, llm]
 status: enriched
+chart: measure
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - advanced_form: [[assess]] — Use 'assess' when you need a slightly more formal or systematic evaluation, often of performance or value.
 - advanced_form: [[appraise]] — Use 'appraise' when evaluating the monetary value or quality of something, especially art or property.
 - advanced_form: [[gauge]] — Use 'gauge' when estimating intangible things like feelings, reactions, or levels, implying a rough measurement.
+- collocation: [[creditworthiness]]
+- collocation: [[quantitatively]]

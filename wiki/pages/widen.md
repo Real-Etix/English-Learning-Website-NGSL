@@ -9,6 +9,8 @@ rank: 360
 sfi: 54.9
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[expand]] — Use 'expand' when describing something increasing in size, area, volume, or scope, often more general than 'widen' which is specific to width.
 - advanced_form: [[dilate]] — Use 'dilate' for openings or passages becoming wider, such as pupils, blood vessels, or a cervix.
 - advanced_form: [[extend]] — Use 'extend' when something is made longer in space or time, often emphasizing duration or length rather than just width.
+- synonym: [[broaden]]
+- builds_on: [[broaden]] — Use 'widen' when focusing on increasing the range or extent, especially in physical or figurative breadth.

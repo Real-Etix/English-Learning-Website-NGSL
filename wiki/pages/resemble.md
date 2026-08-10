@@ -9,6 +9,8 @@ rank: 419
 sfi: 55.63
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: patron
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,8 @@ appear like
 - collocation: [[other]]
 - advanced_form: [[mirror]] — Use 'mirror' when something closely resembles or reflects the features of another, often implying a direct or intentional similarity.
 - advanced_form: [[parallel]] — Use 'parallel' when two things resemble each other in a structural or thematic way, often used in comparisons of situations or developments.
+- synonym: [[echo]]
+- collocation: [[closely]]
+- collocation: [[strongly]]
+- collocation: [[something]]
+- collocation: [[nothing]]

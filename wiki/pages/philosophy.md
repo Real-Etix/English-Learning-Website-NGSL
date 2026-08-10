@@ -9,6 +9,8 @@ rank: 2298
 sfi: 54.65
 sources: [wordnet, llm]
 status: enriched
+chart: procedure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[ideology]] — Use 'ideology' to emphasize a comprehensive set of beliefs, often political or economic, that guides actions.
 - advanced_form: [[doctrine]] — Use 'doctrine' for formal, taught beliefs, especially in religion or military, that are authoritative.
 - advanced_form: [[creed]] — Use 'creed' for a concise, often personal or shared statement of faith or principles.
+- collocation: [[esoteric]]
+- synonym: [[ethos]]
+- collocation: [[meliorist]]

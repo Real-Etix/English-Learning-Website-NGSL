@@ -6,6 +6,8 @@ pos: verb
 forms: [clinch]
 sources: [llm]
 status: enriched
+chart: clasp
+region: you
 ---
 
 ## Definition

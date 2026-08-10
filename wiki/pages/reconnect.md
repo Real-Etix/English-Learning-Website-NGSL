@@ -9,6 +9,8 @@ rank: 530
 sfi: 53.16
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 
 ## Connections
 - domain: fitness
+- synonym: [[reacquaint]]

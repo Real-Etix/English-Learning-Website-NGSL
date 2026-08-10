@@ -9,6 +9,8 @@ rank: 402
 sfi: 55.75
 sources: [wordnet, llm]
 status: enriched
+chart: collective
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[trustworthiness]] — Use 'trustworthiness' to emphasize moral integrity and honesty, whereas 'reliability' focuses more on consistent performance.
 - advanced_form: [[consistency]] — Use 'consistency' when the emphasis is on uniformity and lack of variation over time, rather than general dependability.
+- collocation: [[psychometrics]]

@@ -9,6 +9,8 @@ rank: 1208
 sfi: 58.59
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[photograph]] — Use 'photograph' in formal writing or when you want to sound precise and polite, instead of the casual 'photo'.
 - advanced_form: [[image]] — Use 'image' in technical or broad contexts, such as describing a picture in a computer file or a mental picture, where 'photo' feels too specific.
 - advanced_form: [[snapshot]] — Use 'snapshot' for a spontaneous or informal photograph, often taken without much preparation, to emphasize the casual nature.
+- collocation: [[locket]]
+- collocation: [[yearbook]]
+- collocation: [[boudoir]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [infiltrate]
 sources: [llm]
 status: enriched
+chart: enter
+region: you
 ---
 
 ## Definition

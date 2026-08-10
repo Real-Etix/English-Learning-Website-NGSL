@@ -6,6 +6,8 @@ pos: noun
 forms: [sourdough]
 sources: [llm]
 status: enriched
+chart: bread
+region: bread
 ---
 
 ## Definition

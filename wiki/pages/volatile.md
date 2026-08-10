@@ -9,6 +9,8 @@ rank: 465
 sfi: 54.23
 sources: [wordnet, llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ evaporating readily at normal temperatures and pressures
 - advanced_form: [[volatilizable]] — Use 'volatilizable' to emphasize the capability of being turned into vapor, often in scientific writing, whereas 'volatile' directly describes the property of evaporating.
 - builds_on: [[unpredictable]] — Use 'volatile' when referring to situations that can change suddenly and often dangerously, implying a high degree of instability.
 - builds_on: [[inconsistent]] — Use 'volatile' for situations prone to explosive or sudden change, often with potential danger.
+- synonym: [[eruptive]]
+- synonym: [[mutable]]

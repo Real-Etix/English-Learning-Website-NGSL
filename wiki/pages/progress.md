@@ -9,6 +9,8 @@ rank: 1101
 sfi: 59.12
 sources: [wordnet, llm]
 status: enriched
+chart: advance
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ gradual improvement or growth or development
 - advanced_form: [[advancement]] — Use 'advancement' to emphasize intentional, career-oriented or structured progress.
 - advanced_form: [[headway]] — Use 'headway' to highlight overcoming obstacles or making forward movement in a difficult situation.
 - advanced_form: [[stride]] — Use 'stride' (often plural 'strides') to indicate notable, often positive steps forward, especially in innovation or achievement.
+- collocation: [[hinder]]

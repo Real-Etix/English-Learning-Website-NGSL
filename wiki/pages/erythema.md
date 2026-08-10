@@ -6,6 +6,8 @@ pos: noun
 forms: [erythema]
 sources: [llm]
 status: enriched
+chart: inflammation
+region: inflammation
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inflammation]] — Use 'erythema' when referring to the redness of the skin caused by inflammation, often in medical contexts.
+- synonym: [[blush]]
+- collocation: [[skin]]

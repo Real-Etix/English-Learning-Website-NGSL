@@ -9,6 +9,8 @@ rank: 1901
 sfi: 55.83
 sources: [wordnet, llm]
 status: enriched
+chart: cope
+region: cope
 ---
 
 ## Definition

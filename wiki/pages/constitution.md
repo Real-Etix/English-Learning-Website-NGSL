@@ -9,6 +9,8 @@ rank: 91
 sfi: 56.67
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ law determining the fundamental political principles of a government
 - advanced_form: [[charter]] — Use 'charter' when emphasizing the document itself as a formal grant of rights, e.g., 'The UN Charter outlines the rights of member states.'
 - advanced_form: [[framework]] — Use 'framework' when focusing on the overarching structure rather than the specific text, e.g., 'The legal framework of the country ensures checks and balances.'
 - builds_on: [[physique]] — Use 'constitution' to emphasize the inherent physical or biological makeup, especially regarding health or resilience, rather than just appearance.
+- collocation: [[codified]]
+- builds_on: [[chemistry]] — Use when referring to the specific chemical makeup of a material, instead of 'chemistry' in the sense of composition.

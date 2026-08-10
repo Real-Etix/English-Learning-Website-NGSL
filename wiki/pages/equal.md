@@ -9,6 +9,8 @@ rank: 1254
 sfi: 58.43
 sources: [wordnet, llm]
 status: enriched
+chart: hold
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[match]] — Use 'match' when emphasizing that two things are the same in value or amount.
 - advanced_form: [[parallel]] — Use 'parallel' to highlight similarities in development or structure.
 - advanced_form: [[correspond]] — Use 'correspond' when indicating agreement or conformity between things.
+- synonym: [[coequal]]
+- synonym: [[egalitarian]]
+- collocation: [[numerically]]

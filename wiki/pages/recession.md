@@ -9,6 +9,8 @@ rank: 33
 sfi: 60.73
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ the state of the economy declines
 - advanced_form: [[slump]] — Use 'slump' for a more sudden or severe drop, often in specific sectors.
 - advanced_form: [[contraction]] — Use 'contraction' for a formal, technical term describing reduced economic activity.
 - builds_on: [[downturn]] — Use 'recession' for a significant, prolonged downturn in economic activity, typically lasting several months.
+- synonym: [[ebb]]

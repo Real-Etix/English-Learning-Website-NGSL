@@ -9,6 +9,8 @@ rank: 136
 sfi: 57.24
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ a formal or official examination
 - advanced_form: [[audit]] — Use 'audit' specifically for a systematic and official examination of financial or operational records, often required by law or regulation.
 - advanced_form: [[survey]] — Use 'survey' for a broad and systematic inspection of a physical area, group, or situation to gather information or assess condition.
 - builds_on: [[examination]] — Use 'inspection' for an official or systematic examination, especially to check standards.
+- collocation: [[cursory]]
+- synonym: [[observation]]
+- synonym: [[perusal]]
+- collocation: [[worksite]]

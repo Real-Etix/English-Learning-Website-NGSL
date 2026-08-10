@@ -6,6 +6,8 @@ pos: adjective
 forms: [debatable]
 sources: [llm]
 status: enriched
+chart: uncertain
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[problematic]] — Use when something is open to argument or not certain, focusing on the possibility of different opinions.
+- synonym: [[questionable]]
+- synonym: [[uncertain]]
+- collocation: [[highly]]
+- collocation: [[point]]
+- collocation: [[issue]]
+- collocation: [[question]]
+- collocation: [[claim]]
+- synonym: [[negotiable]]

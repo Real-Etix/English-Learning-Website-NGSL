@@ -6,6 +6,8 @@ pos: adverb
 forms: [astonishingly]
 sources: [llm]
 status: enriched
+chart: notably
+region: you
 ---
 
 ## Definition

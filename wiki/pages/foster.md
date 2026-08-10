@@ -9,6 +9,8 @@ rank: 665
 sfi: 53.4
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -34,3 +36,5 @@ promote the growth of
 - advanced_form: [[nurture]] — Emphasizes care, protection, and development, often for living things or ideas; stronger emotional tone than foster.
 - advanced_form: [[encourage]] — Focuses on giving support or confidence; less about direct growth and more about enabling or motivating.
 - builds_on: [[promote]] — Use 'foster' when emphasizing nurturing or encouraging growth over time, often with a personal or emotional aspect.
+- synonym: [[instill]]
+- collocation: [[rapprochement]]

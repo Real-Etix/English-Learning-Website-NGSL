@@ -9,6 +9,8 @@ rank: 389
 sfi: 54.58
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition
@@ -35,3 +37,6 @@ a document giving an official instruction or command
 - builds_on: [[requirement]] — Use when the requirement comes from an authoritative source like government or employer.
 - builds_on: [[duty]] — Use 'mandate' instead of 'duty' when referring to an official, authoritative, or legally binding obligation.
 - builds_on: [[command]] — Use 'mandate' for a formal, often legal or political command that carries the weight of official approval or obligation.
+- collocation: [[mandatee]]
+- synonym: [[writ]]
+- builds_on: [[dictate]] — Use for official, legally binding orders from authorities.

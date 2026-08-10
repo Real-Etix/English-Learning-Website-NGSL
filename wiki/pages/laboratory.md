@@ -9,6 +9,8 @@ rank: 2442
 sfi: 54.15
 sources: [wordnet, llm]
 status: enriched
+chart: facility
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[institute]] — Use 'institute' instead of 'laboratory' when referring to the entire research organization, which may include several labs and support facilities, implying a broader formal entity.
 - advanced_form: [[facility]] — Use 'facility' instead of 'laboratory' when emphasizing the physical infrastructure, often in formal or technical contexts, especially for large or multi-purpose sites.
 - advanced_form: [[observatory]] — Use 'observatory' instead of 'laboratory' specifically for locations dedicated to astronomical research, where observation rather than experimental manipulation is primary.
+- collocation: [[biogenetics]]
+- collocation: [[microtube]]
+- collocation: [[murine]]
+- collocation: [[vivisection]]
+- synonym: [[workroom]]

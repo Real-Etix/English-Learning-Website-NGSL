@@ -6,6 +6,8 @@ pos: verb
 forms: [siphon]
 sources: [llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pump]] — Use 'siphon' when the action involves drawing liquid through a tube by suction, often for transferring or stealing, rather than the mechanical operation of a pump.
+- synonym: [[decant]]

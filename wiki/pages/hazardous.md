@@ -9,6 +9,8 @@ rank: 775
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: hazardous
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ involving risk or danger
 - advanced_form: [[treacherous]] — Use 'treacherous' when the hazard is deceptive or hidden, like unstable ground or bad weather.
 - advanced_form: [[precarious]] — Use 'precarious' to highlight instability and risk of sudden failure, not just danger.
 - builds_on: [[speculative]] — Use 'hazardous' to emphasize inherent danger or risk, especially in financial contexts where loss is likely.
+- synonym: [[dangerous]]
+- collocation: [[disposeof]]
+- builds_on: [[dangerous]] — Use for physical or environmental dangers, like materials, conditions, or jobs.
+- collocation: [[conditions]]

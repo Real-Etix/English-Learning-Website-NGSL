@@ -6,6 +6,8 @@ pos: adverb
 forms: [acrimoniously]
 sources: [llm]
 status: enriched
+chart: sharply
+region: sharply
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adverb
 forms: [unhurriedly]
 sources: [llm]
 status: enriched
+chart: slow
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[slowly]] — Use 'unhurriedly' to stress a deliberate, calm pace without any sense of rush.
+- synonym: [[leisurely]]

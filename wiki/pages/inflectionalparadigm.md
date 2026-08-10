@@ -6,6 +6,8 @@ pos: noun
 forms: [inflectionalparadigm]
 sources: [llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition

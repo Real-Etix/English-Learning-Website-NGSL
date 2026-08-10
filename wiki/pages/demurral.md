@@ -6,6 +6,8 @@ pos: noun
 forms: [demurral]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition

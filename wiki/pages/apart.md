@@ -9,6 +9,8 @@ rank: 1121
 sfi: 59.02
 sources: [wordnet, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ separated or at a distance in place or position or time
 - advanced_form: [[remotely]] — Use 'remotely' to emphasize physical distance from other places.
 - advanced_form: [[discretely]] — Use 'discretely' to mean separate and distinct, not overlapping.
 - advanced_form: [[independently]] — Use 'independently' to emphasize functioning separately without reliance.
+- collocation: [[cleave]]
+- collocation: [[rend]]

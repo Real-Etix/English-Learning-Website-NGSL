@@ -6,6 +6,8 @@ pos: noun
 forms: [vigilance]
 sources: [llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[alert]] — Use 'vigilance' to emphasize sustained, focused watchfulness for potential threats, more formal than 'alert'.
 - builds_on: [[surveillance]] — Use 'vigilance' when focusing on the state of being watchful and alert, especially as a proactive measure.
+- synonym: [[attentiveness]]

@@ -9,6 +9,8 @@ rank: 278
 sfi: 54.89
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ rise rapidly
 - advanced_form: [[skyrocket]] — Use 'skyrocket' for a sudden, dramatic increase, often in numbers or intensity, more intense than 'soar'.
 - advanced_form: [[surge]] — Use 'surge' for a powerful, often temporary upward movement, especially in finance or emotions, while 'soar' suggests a more sustained rise.
 - builds_on: [[rise]] — Use 'soar' for a swift, effortless, or dramatic upward movement, often implying grace or speed.
+- collocation: [[falcon]]

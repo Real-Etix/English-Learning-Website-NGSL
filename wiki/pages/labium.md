@@ -6,6 +6,8 @@ pos: noun
 forms: [labium]
 sources: [llm]
 status: enriched
+chart: lip
+region: lip
 ---
 
 ## Definition

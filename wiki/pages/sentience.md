@@ -6,6 +6,8 @@ pos: noun
 forms: [sentience]
 sources: [llm]
 status: enriched
+chart: mind
+region: you
 ---
 
 ## Definition

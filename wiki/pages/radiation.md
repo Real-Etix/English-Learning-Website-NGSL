@@ -9,6 +9,8 @@ rank: 197
 sfi: 57.725
 sources: [wordnet, llm]
 status: enriched
+chart: emission
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[emission]] — Use 'emission' when focusing on the release or discharge of radiation or particles from a source, often in a scientific or environmental context.
 - advanced_form: [[radiance]] — Use 'radiance' when emphasizing the outward flow or glow of energy, especially in contexts involving light or heat, and when a slightly more poetic or formal tone is acceptable.
+- synonym: [[emanation]]
+- collocation: [[microwave]]
+- collocation: [[pencil]]
+- builds_on: [[microwave]] — Use when referring to the general phenomenon rather than the specific microwave band.

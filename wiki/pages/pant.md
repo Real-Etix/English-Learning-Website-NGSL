@@ -9,6 +9,8 @@ rank: 372
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[huff]] — Use 'huff' for a single short burst of steam, similar but more formal than 'pant'.
 - builds_on: [[choke]] — Use 'pant' when the breathing is quick and shallow, typically after intense emotional or physical effort.
 - builds_on: [[breathe]] — Use 'pant' instead of 'breathe' when someone is breathing quickly or with effort, often after exercise.
+- synonym: [[gasp]]

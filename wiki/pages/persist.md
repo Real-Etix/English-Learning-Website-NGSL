@@ -9,6 +9,8 @@ rank: 926
 sfi: 52.44
 sources: [wordnet, llm]
 status: enriched
+chart: persist
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,4 @@ _No sourced examples yet._
 - advanced_form: [[prevail]] — Use 'prevail' when something continues to exist by overcoming opposition or proving stronger.
 - advanced_form: [[linger]] — Use 'linger' when something persists longer than expected, often with a sense of reluctance or fading slowly.
 - builds_on: [[survive]] — Use 'persist' when surviving by continuing firmly despite obstacles or challenges.
+- synonym: [[outlast]]

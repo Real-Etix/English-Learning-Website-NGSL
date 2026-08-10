@@ -9,6 +9,8 @@ rank: 219
 sfi: 57.08
 sources: [wordnet, llm]
 status: enriched
+chart: organ
+region: organ
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[hepar]] — Use 'hepar' in formal scientific or clinical writing instead of 'liver' for greater precision.
 - advanced_form: [[viscera]] — Use 'viscera' when you want a formal, collective term for the internal organs, rather than specifying the liver alone.
+- collocation: [[cirrhosis]]
+- collocation: [[metabolize]]

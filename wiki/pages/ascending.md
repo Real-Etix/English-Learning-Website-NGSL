@@ -6,6 +6,8 @@ pos: adjective
 forms: [ascending]
 sources: [llm]
 status: enriched
+chart: middle
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[upward]] — Use 'ascending' for a more formal or technical description of something moving upward, often in a steady or systematic way.
+- synonym: [[rising]]
+- synonym: [[climbing]]
+- synonym: [[mounting]]
+- collocation: [[airplane]]
+- collocation: [[path]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [constructional]
 sources: [llm]
 status: enriched
+chart: architectural
+region: architectural
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[architectural]] — Use 'constructional' when focusing on the process or method of building, rather than the broader artistic or scientific aspects of architecture.
+- synonym: [[structural]]
+- synonym: [[engineering]]
+- collocation: [[design]]
+- collocation: [[works]]

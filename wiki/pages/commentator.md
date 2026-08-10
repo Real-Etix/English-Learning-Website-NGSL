@@ -9,6 +9,8 @@ rank: 1318
 sfi: 51.17
 sources: [wordnet, llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[analyst]] — Use 'analyst' when the person systematically studies and interprets information, not just offers opinions.
 - advanced_form: [[pundit]] — Use 'pundit' for a self-assured, often media-savvy expert who makes bold predictions or commentary.
 - builds_on: [[critic]] — Use 'commentator' when focusing on public interpretation and discussion of art, often in media.
+- synonym: [[expositor]]

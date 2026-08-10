@@ -6,6 +6,8 @@ pos: noun
 forms: [commonwealth]
 sources: [llm]
 status: enriched
+chart: statutory
+region: you
 ---
 
 ## Definition

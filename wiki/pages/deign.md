@@ -6,6 +6,8 @@ pos: verb
 forms: [deign]
 sources: [llm]
 status: enriched
+chart: try
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bother]] — Use 'deign' when someone reluctantly or condescendingly does something, often implying they think it's beneath them, as a more formal substitute for 'bother'.
+- synonym: [[stoop]]

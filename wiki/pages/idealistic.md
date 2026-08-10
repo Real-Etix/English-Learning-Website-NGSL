@@ -6,6 +6,8 @@ pos: adjective
 forms: [idealistic]
 sources: [llm]
 status: enriched
+chart: strong
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[romantic]] — Use 'idealistic' to emphasize the pursuit of perfect beauty or moral values, while 'romantic' often implies a style.
+- collocation: [[young]]
+- collocation: [[vision]]
+- collocation: [[view]]
+- collocation: [[dream]]

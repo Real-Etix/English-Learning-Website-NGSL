@@ -9,6 +9,8 @@ rank: 1645
 sfi: 56.82
 sources: [wordnet, llm]
 status: enriched
+chart: academic
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ _No sourced examples yet._
 - advanced_form: [[investigator]] — Use 'investigator' for a more formal tone, especially in scientific or detective contexts.
 - advanced_form: [[scholar]] — Use 'scholar' to emphasize academic expertise and long-term study in a specific field.
 - advanced_form: [[academic]] — Use 'academic' to refer to a university-based researcher, often in humanities or social sciences.
+- synonym: [[academician]]
+- synonym: [[biologist]]
+- synonym: [[econometrician]]
+- builds_on: [[postgraduate]] — Use when focusing on the person's research work rather than their student status.
+- synonym: [[bioscientist]]
+- synonym: [[sourcer]]

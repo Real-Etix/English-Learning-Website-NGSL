@@ -9,6 +9,8 @@ rank: 41
 sfi: 60.25
 sources: [wordnet, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[leasehold]] — Use 'leasehold' when emphasizing the legal interest or ownership type of the rented property, especially in real estate contexts.
 - advanced_form: [[tenancy]] — Use 'tenancy' to focus on the occupancy arrangement or the period of renting, rather than the physical property itself.
+- collocation: [[limousine]]
+- synonym: [[rent]]
+- builds_on: [[rent]] — Use 'rental' when referring to the payment amount in a business or property-management context.

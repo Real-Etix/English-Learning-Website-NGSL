@@ -9,6 +9,8 @@ rank: 414
 sfi: 53.83
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition

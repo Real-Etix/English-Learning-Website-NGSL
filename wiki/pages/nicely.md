@@ -9,6 +9,8 @@ rank: 227
 sfi: 56.9
 sources: [wordnet, llm]
 status: enriched
+chart: nicely
+region: nicely
 ---
 
 ## Definition

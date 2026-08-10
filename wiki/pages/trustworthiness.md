@@ -6,6 +6,8 @@ pos: noun
 forms: [trustworthiness]
 sources: [llm]
 status: enriched
+chart: one
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reliability]] — Use 'trustworthiness' to emphasize moral integrity and honesty, whereas 'reliability' focuses more on consistent performance.
+- synonym: [[creditworthiness]]

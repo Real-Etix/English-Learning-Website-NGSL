@@ -9,6 +9,8 @@ rank: 2229
 sfi: 54.85
 sources: [wordnet, llm]
 status: enriched
+chart: constituent
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ something determined in relation to something that includes it
 - advanced_form: [[fraction]] — Use 'fraction' to highlight a numerical or proportional part, especially when the whole is considered as a unit.
 - advanced_form: [[share]] — Use 'share' when focusing on the part allocated to or belonging to a person or group.
 - builds_on: [[slice]] — Use 'portion' instead of 'slice' when emphasizing a part of a whole that is allocated or divided, especially in a formal or systematic context.
+- synonym: [[quota]]
+- synonym: [[ration]]
+- synonym: [[spoonful]]
+- synonym: [[subpopulation]]

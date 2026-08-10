@@ -6,6 +6,8 @@ pos: adjective
 forms: [punctilious]
 sources: [llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition

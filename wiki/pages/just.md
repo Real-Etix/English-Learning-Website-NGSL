@@ -9,6 +9,8 @@ rank: 64
 sfi: 72.43
 sources: [wordnet]
 status: seeded
+chart: just
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ and nothing more
 - synonym: [[simply]]
 - synonym: [[only]]
 - synonym: [[but]]
+- synonym: [[egalitarian]]
+- synonym: [[equitable]]
+- collocation: [[glimpse]]
+- collocation: [[embarked]]

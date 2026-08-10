@@ -6,6 +6,8 @@ pos: verb
 forms: [misapprehend]
 sources: [llm]
 status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition

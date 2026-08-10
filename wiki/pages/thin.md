@@ -9,6 +9,8 @@ rank: 1698
 sfi: 56.58
 sources: [wordnet, llm]
 status: enriched
+chart: thin
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ of relatively small extent from one surface to the opposite or in cross section
 - advanced_form: [[slender]] — Use 'slender' to describe a person or object that is gracefully thin, often with a positive connotation.
 - advanced_form: [[slim]] — Use 'slim' for a person or object that is thin in a healthy, attractive way, often implying fitness.
 - advanced_form: [[lean]] — Use 'lean' to emphasize a lack of excess fat and a muscular, efficient thinness, especially for people or animals.
+- collocation: [[filament]]
+- collocation: [[glaze]]
+- collocation: [[haze]]
+- collocation: [[layer]]
+- synonym: [[insubstantial]]

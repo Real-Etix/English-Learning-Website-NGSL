@@ -6,6 +6,8 @@ pos: noun
 forms: [brome]
 sources: [llm]
 status: enriched
+chart: cheat
+region: cheat
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[cheat]] — Use 'brome' instead of 'cheat' when you want a more general botanical term for grasses of the Bromus genus.
 - builds_on: [[chess]] — Use 'brome' for a scientific or botanical term when you want to be precise about the plant family.
+- synonym: [[bromegrass]]

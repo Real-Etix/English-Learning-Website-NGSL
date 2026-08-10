@@ -6,6 +6,8 @@ pos: noun
 forms: [metre]
 sources: [llm]
 status: enriched
+chart: kilometer
+region: you
 ---
 
 ## Definition

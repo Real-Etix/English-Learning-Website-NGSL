@@ -6,6 +6,8 @@ pos: adverb
 forms: [imminently]
 sources: [llm]
 status: enriched
+chart: now
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[soon]] — Use 'imminently' when something is about to happen at any moment, emphasizing urgency or threat.
+- synonym: [[shortly]]
+- synonym: [[momentarily]]
+- synonym: [[presently]]
+- synonym: [[directly]]

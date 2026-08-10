@@ -9,6 +9,8 @@ rank: 1966
 sfi: 55.64
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,16 @@ _No sourced examples yet._
 - advanced_form: [[analysis]] — Use 'analysis' when examining details to understand or explain something, often involving breaking down.
 - builds_on: [[exam]] — Use 'examination' in formal contexts, especially in writing or official announcements, instead of the shortened 'exam'.
 - builds_on: [[inquiry]] — Use 'examination' for a methodical inspection, often in academic or analytical settings.
+- synonym: [[anatomization]]
+- synonym: [[assay]]
+- synonym: [[checkup]]
+- collocation: [[cursory]]
+- synonym: [[inquest]]
+- collocation: [[microscopic]]
+- synonym: [[observation]]
+- collocation: [[ophthalmic]]
+- synonym: [[perusal]]
+- synonym: [[vetting]]
+- builds_on: [[checkup]] — More formal than 'checkup', often used in medical or professional contexts.
+- synonym: [[deposition]]
+- synonym: [[screening]]

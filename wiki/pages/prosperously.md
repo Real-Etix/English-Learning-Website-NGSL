@@ -6,6 +6,8 @@ pos: adverb
 forms: [prosperously]
 sources: [llm]
 status: enriched
+chart: fundamentally
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[successfully]] — Use for sustained or financial success, especially in ventures or long-term outcomes.
+- collocation: [[business]]

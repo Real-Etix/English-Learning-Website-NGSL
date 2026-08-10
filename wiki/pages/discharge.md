@@ -9,6 +9,8 @@ rank: 348
 sfi: 56.443
 sources: [wordnet, llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition
@@ -40,3 +42,18 @@ complete or carry out
 - builds_on: [[cast]] — Use 'discharge' for a sudden or forceful release of something, like gas, liquid, or energy.
 - builds_on: [[dismissal]] — used for a formal release from legal proceedings without trial.
 - builds_on: [[pour]] — Use 'discharge' when something releases or pours out a substance, often in a forceful or official manner.
+- synonym: [[detonation]]
+- synonym: [[effluent]]
+- collocation: [[effluent]]
+- synonym: [[effusion]]
+- synonym: [[emanation]]
+- synonym: [[eruption]]
+- synonym: [[excretion]]
+- collocation: [[firearm]]
+- synonym: [[flashover]]
+- collocation: [[honorably]]
+- builds_on: [[emit]] — Use in formal or technical contexts for releasing substances, often industrial.
+- builds_on: [[shot]] — Use 'discharge' in formal or technical writing to describe the act of firing a gun, often emphasizing the process or legal context.
+- synonym: [[extinguish]]
+- synonym: [[exudation]]
+- synonym: [[leakage]]

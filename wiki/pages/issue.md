@@ -9,6 +9,8 @@ rank: 218
 sfi: 66.56
 sources: [wordnet, llm]
 status: enriched
+chart: issue
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,25 @@ an important question that is in dispute and must be settled
 - builds_on: [[offspring]] — Use 'issue' in legal or official documents to refer to children or descendants, especially in inheritance.
 - builds_on: [[topic]] — Use 'issue' when the topic involves a problem, debate, or matter of concern, often requiring resolution or discussion.
 - builds_on: [[edition]] — Use 'issue' instead of 'edition' for periodicals like magazines or newspapers.
+- collocation: [[convolute]]
+- collocation: [[debatable]]
+- collocation: [[denunciation]]
+- collocation: [[divisive]]
+- collocation: [[dodge]]
+- synonym: [[emanate]]
+- collocation: [[grapple]]
+- collocation: [[oversubscribe]]
+- collocation: [[pressing]]
+- synonym: [[printing]]
+- collocation: [[proclamation]]
+- collocation: [[prohibition]]
+- collocation: [[retraction]]
+- collocation: [[revisit]]
+- collocation: [[vex]]
+- collocation: [[weighty]]
+- collocation: [[writ]]
+- collocation: [[confuse]]
+- collocation: [[resurface]]
+- collocation: [[tangential]]
+- collocation: [[troublesome]]
+- collocation: [[unresolved]]

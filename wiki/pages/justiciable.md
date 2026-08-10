@@ -6,6 +6,8 @@ pos: adjective
 forms: [justiciable]
 sources: [llm]
 status: enriched
+chart: enforceable
+region: enforceable
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[enforceable]] — Use 'justiciable' to stress that a matter is appropriate for judicial resolution; it is more formal and technical than 'enforceable', which generally means capable of being carried out or imposed.
+- synonym: [[actionable]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [meager]
 sources: [llm]
 status: enriched
+chart: little
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[minimal]] — Use 'meager' for an amount that is insufficient and often of poor quality.
 - builds_on: [[insufficient]] — Use 'meager' to describe an amount that is pitifully small, often with a negative connotation of inadequacy.
 - builds_on: [[slight]] — Use 'meager' for a stronger emphasis on insufficiency or scarcity than 'slight'.
+- collocation: [[ration]]

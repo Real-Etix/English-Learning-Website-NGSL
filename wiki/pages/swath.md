@@ -6,6 +6,8 @@ pos: noun
 forms: [swath]
 sources: [llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition

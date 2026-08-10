@@ -9,6 +9,8 @@ rank: 777
 sfi: 60.92
 sources: [wordnet, llm]
 status: enriched
+chart: kilometer
+region: you
 ---
 
 ## Definition

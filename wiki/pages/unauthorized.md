@@ -9,6 +9,8 @@ rank: 1247
 sfi: 48.67
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: enter
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ not endowed with authority
 - collocation: [[access]]
 - advanced_form: [[unwarranted]] — Use 'unwarranted' when emphasizing lack of justification rather than lack of permission; it implies something is not deserved or justified.
 - advanced_form: [[unapproved]] — Use 'unapproved' when focusing on the absence of official approval or endorsement, more formal than 'unauthorized'.
+- collocation: [[divulgence]]
+- synonym: [[illicit]]

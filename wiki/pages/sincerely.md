@@ -9,6 +9,8 @@ rank: 11
 sfi: 62.82
 sources: [wordnet, llm]
 status: enriched
+chart: severely
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ with sincerity
 - domain: toeic
 - advanced_form: [[earnestly]] — Use 'earnestly' when you want to emphasize intense, serious sincerity, often in a heartfelt plea or apology.
 - advanced_form: [[wholeheartedly]] — Use 'wholeheartedly' when you want to express total, unreserved sincerity and commitment, as opposed to merely polite sincerity.
+- collocation: [[congratulate]]

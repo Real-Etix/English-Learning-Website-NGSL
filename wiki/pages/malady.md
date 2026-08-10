@@ -6,6 +6,8 @@ pos: noun
 forms: [malady]
 sources: [llm]
 status: enriched
+chart: health
+region: you
 ---
 
 ## Definition

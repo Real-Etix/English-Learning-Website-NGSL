@@ -9,6 +9,8 @@ rank: 593
 sfi: 52.73
 sources: [wordnet, llm]
 status: enriched
+chart: inversion
+region: inversion
 ---
 
 ## Definition

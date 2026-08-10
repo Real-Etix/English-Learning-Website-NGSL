@@ -9,6 +9,8 @@ rank: 1091
 sfi: 51.09
 sources: [wordnet, llm]
 status: enriched
+chart: subway
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,11 @@ _No sourced examples yet._
 - builds_on: [[subway]] — Use 'underground' especially for the London system or as a formal term for any subway; it carries a slightly more official or British tone.
 - advanced_form: [[resistance]] — Use 'resistance' when emphasizing active opposition against an occupying force or regime.
 - advanced_form: [[insurgency]] — Use 'insurgency' to focus on the armed rebellion aspect of an underground movement.
+- synonym: [[basement-level]]
+- synonym: [[basement]]
+- collocation: [[cavern]]
+- collocation: [[lair]]
+- synonym: [[lower-level]]
+- synonym: [[metro]]
+- collocation: [[rhizome]]
+- collocation: [[watercourse]]

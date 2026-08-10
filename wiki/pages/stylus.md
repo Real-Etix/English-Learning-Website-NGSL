@@ -6,6 +6,8 @@ pos: noun
 forms: [stylus]
 sources: [llm]
 status: enriched
+chart: encompass
+region: you
 ---
 
 ## Definition

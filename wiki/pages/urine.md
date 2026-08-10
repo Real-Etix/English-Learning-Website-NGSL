@@ -9,6 +9,8 @@ rank: 561
 sfi: 52.92
 sources: [wordnet, llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition

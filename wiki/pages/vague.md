@@ -9,6 +9,8 @@ rank: 753
 sfi: 51.407
 sources: [wordnet, llm]
 status: enriched
+chart: obscure
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,11 @@ not clearly expressed or understood
 - advanced_form: [[ambiguous]] — Use when something has multiple possible interpretations, more than just unclear.
 - advanced_form: [[obscure]] — Use when something is hidden or not easily understood, often due to complexity or lack of clarity.
 - advanced_form: [[nebulous]] — Use for something that is hazy, ill-defined, or not yet concrete, like an idea or concept.
+- synonym: [[amorphous]]
+- synonym: [[impalpable]]
+- synonym: [[imprecise]]
+- synonym: [[indefinite]]
+- synonym: [[indeterminate]]
+- collocation: [[intentionally]]
+- synonym: [[diffuse]]
+- synonym: [[equivocal]]

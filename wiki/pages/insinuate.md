@@ -6,6 +6,8 @@ pos: verb
 forms: [insinuate]
 sources: [llm]
 status: enriched
+chart: take
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[imply]] — Use 'insinuate' when the implication is sly, negative, or intended to suggest something unpleasant—stronger and more negative than 'imply'.
+- synonym: [[suggest]]
+- synonym: [[hint]]
+- synonym: [[intimate]]
+- synonym: [[indicate]]

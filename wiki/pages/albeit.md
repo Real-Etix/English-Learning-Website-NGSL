@@ -9,6 +9,8 @@ rank: 615
 sfi: 53.02
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 
 ## Connections
 - domain: business
+- synonym: [[although]]
+- synonym: [[though]]
+- synonym: [[notwithstanding]]
+- synonym: [[while]]

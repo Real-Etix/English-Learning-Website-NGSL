@@ -6,6 +6,8 @@ pos: adjective
 forms: [futile]
 sources: [llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ineffective]] — Use 'futile' when an action is hopeless and certain to fail, highlighting the pointlessness rather than mere lack of effect.
+- collocation: [[attempt]]
+- collocation: [[effort]]
+- collocation: [[struggle]]
+- collocation: [[resistance]]
+- collocation: [[gesture]]
+- synonym: [[ineffectual]]
+- synonym: [[inefficacious]]

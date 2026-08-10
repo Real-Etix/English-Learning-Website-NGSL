@@ -9,6 +9,8 @@ rank: 1283
 sfi: 50.65
 sources: [wordnet, llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition

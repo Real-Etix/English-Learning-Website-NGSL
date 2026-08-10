@@ -44,7 +44,7 @@ async function main() {
       data: chosen.map((p) => ({
         collectionId: collection.id,
         lemma: p.lemma,
-        xp: wordXp({ tier: p.tier, rank: p.rank }),
+        xp: wordXp({ tier: p.tier, sfi: p.sfi }),
         source: "seed",
       })),
       skipDuplicates: true,

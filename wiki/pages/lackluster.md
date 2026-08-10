@@ -6,6 +6,8 @@ pos: adjective
 forms: [lackluster]
 sources: [llm]
 status: enriched
+chart: dull
+region: you
 ---
 
 ## Definition

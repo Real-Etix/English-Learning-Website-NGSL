@@ -9,6 +9,8 @@ rank: 2239
 sfi: 54.81
 sources: [wordnet, llm]
 status: enriched
+chart: form
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[umbra]] — Use 'umbra' in scientific or technical contexts to refer to the darkest, central part of a shadow where light is completely blocked.
 - builds_on: [[chase]] — Use when following someone secretly or covertly, often for surveillance.
 - builds_on: [[darkness]] — Use for a dark area cast by an object blocking light, rather than general absence of light.
+- synonym: [[penumbra]]
+- collocation: [[penumbra]]

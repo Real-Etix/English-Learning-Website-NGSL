@@ -9,6 +9,8 @@ rank: 181
 sfi: 56.45
 sources: [wordnet, llm]
 status: enriched
+chart: obscure
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ lacking definite form or limits
 - domain: toeic
 - advanced_form: [[nebulous]] — Use 'nebulous' when something is unclear or lacks a fixed form, often with a hint of being ill-defined or shapeless, like a cloud.
 - advanced_form: [[amorphous]] — Use 'amorphous' when something has no clear shape or structure, emphasizing a lack of organization or definiteness.
+- synonym: [[opaque]]

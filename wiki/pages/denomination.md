@@ -6,6 +6,8 @@ pos: noun
 forms: [denomination]
 sources: [llm]
 status: enriched
+chart: currency
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 - builds_on: [[unit]] — Use 'denomination' instead of 'unit' when referring to a specific value or size of currency, coin, or other means of exchange.
 - builds_on: [[lats]] — Use 'denomination' when referring to the specific face value or unit of a currency, especially in formal or technical contexts.
 - builds_on: [[religion]] — Use 'denomination' when discussing different organized branches of a religion, such as Catholicism or Protestantism within Christianity.
+- synonym: [[communion]]
+- builds_on: [[peso]] — Use when discussing the specific face value or unit of currency in financial contexts.
+- builds_on: [[euro]] — Use 'denomination' when referring to the unit of monetary value, especially in formal or economic contexts.

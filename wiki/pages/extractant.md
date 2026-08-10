@@ -6,6 +6,8 @@ pos: noun
 forms: [extractant]
 sources: [llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition

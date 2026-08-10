@@ -9,6 +9,8 @@ rank: 1500
 sfi: 57.4
 sources: [wordnet, llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ _No sourced examples yet._
 - advanced_form: [[tabulate]] — Use for recording data in an organized, often numerical, table format, more formal than 'register'.
 - builds_on: [[scorecard]] — Use 'register' for a formal or official record, often in a logbook sense.
 - builds_on: [[weigh]] — Use 'register' to sound more technical or formal, especially when referring to a measuring device showing a weight.
+- synonym: [[catalogue]]
+- synonym: [[matriculate]]
+- synonym: [[roster]]
+- builds_on: [[ledger]] — Use 'register' when emphasizing the official or systematic recording of transactions, often with a formal tone.

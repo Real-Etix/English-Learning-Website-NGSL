@@ -6,6 +6,8 @@ pos: adverb
 forms: [judiciously]
 sources: [llm]
 status: enriched
+chart: wisely
+region: wisely
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wisely]] — Use when emphasizing good judgment and careful consideration, especially in decisions involving risk or resources.
+- synonym: [[prudently]]
+- synonym: [[carefully]]
+- collocation: [[invest]]
+- collocation: [[use]]
+- collocation: [[apply]]
+- collocation: [[select]]
+- collocation: [[manage]]

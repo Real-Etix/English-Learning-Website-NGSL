@@ -6,6 +6,8 @@ pos: verb
 forms: [torment]
 sources: [llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 - builds_on: [[distress]] — Use 'torment' when the suffering involves persistent mental torture or agony, stronger than distress.
 - builds_on: [[torture]] — Use 'torment' to emphasize an ongoing, deliberate infliction of mental pain, while 'torture' is often more intense or extreme.
 - builds_on: [[pain]] — Use 'torment' when the pain is persistent and causes great distress, often implying cruelty.
+- synonym: [[afflict]]
+- synonym: [[agony]]
+- synonym: [[hell]]
+- synonym: [[purgatory]]

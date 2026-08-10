@@ -6,6 +6,8 @@ pos: noun
 forms: [grocer's]
 sources: [llm]
 status: enriched
+chart: supermarket
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[grocery]] — Use 'grocer's' (British English) to denote a small shop selling groceries, more formal or traditional than 'grocery'.
+- synonym: [[market]]
+- synonym: [[supermarket]]
+- collocation: [[corner]]
+- collocation: [[local]]
+- collocation: [[opposite]]

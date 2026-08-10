@@ -9,6 +9,8 @@ rank: 372
 sfi: 56.158
 sources: [wordnet, llm]
 status: enriched
+chart: pi
+region: pi
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: verb
 forms: [avert]
 sources: [llm]
 status: enriched
+chart: pass
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[prevent]] — Use 'avert' when the prevention is urgent and avoids an immediate threat or disaster.
 - builds_on: [[divert]] — Use 'avert' when preventing something undesirable from happening, often by turning it aside.
+- synonym: [[deflect]]
+- synonym: [[forestall]]
+- synonym: [[preempt]]

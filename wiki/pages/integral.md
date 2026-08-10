@@ -9,6 +9,8 @@ rank: 159
 sfi: 58.063
 sources: [wordnet, llm]
 status: enriched
+chart: constitutional
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ _No sourced examples yet._
 - advanced_form: [[intrinsic]] — Use 'intrinsic' when emphasizing that a quality is an inseparable, natural part of something, rather than simply being essential.
 - advanced_form: [[inherent]] — Use 'inherent' when describing a characteristic that is permanently and naturally part of something, often used for qualities or risks.
 - advanced_form: [[fundamental]] — Use 'fundamental' for something that serves as a basic, underlying principle or foundation, often more formal than 'integral'.
+- synonym: [[essential]]
+- synonym: [[necessary]]
+- synonym: [[indispensable]]
+- collocation: [[part]]
+- collocation: [[role]]

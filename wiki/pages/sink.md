@@ -9,6 +9,8 @@ rank: 2105
 sfi: 55.19
 sources: [wordnet, llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[plummet]] — Use 'plummet' for sudden, rapid, or steep descent, like a sharp drop in value or speed.
 - advanced_form: [[subside]] — Use 'subside' for a gradual sinking or lowering, especially of a surface or liquid level.
 - advanced_form: [[submerge]] — Use 'submerge' when something goes completely under the surface of a liquid.
+- collocation: [[despondency]]
+- collocation: [[kitchen]]
+- synonym: [[lower]]
+- collocation: [[overflow]]
+- collocation: [[pedestal]]

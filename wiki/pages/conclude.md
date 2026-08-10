@@ -9,6 +9,8 @@ rank: 1355
 sfi: 58.02
 sources: [wordnet, llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[complete]] — Use 'conclude' for formal endings, especially discussions, events, or written works.
 - advanced_form: [[deduce]] — Use 'deduce' when you are drawing a specific conclusion from given facts or evidence, more logical and step-by-step than the general 'conclude'.
 - advanced_form: [[infer]] — Use 'infer' when you are reading between the lines or deriving a conclusion indirectly from hints, rather than directly deciding as with 'conclude'.
+- synonym: [[culminate]]
+- builds_on: [[terminate]] — Use for bringing something to a formal or natural close, like events.

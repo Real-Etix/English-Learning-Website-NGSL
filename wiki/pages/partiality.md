@@ -6,6 +6,8 @@ pos: noun
 forms: [partiality]
 sources: [llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bias]] — Use 'partiality' when you want to emphasize an unfair preference that is often subtle or concealed; it is more formal and specific than the general 'bias'.
+- synonym: [[prejudice]]
+- synonym: [[preference]]
+- collocation: [[show]]
+- collocation: [[accused]]
+- collocation: [[without]]
+- synonym: [[partisanship]]

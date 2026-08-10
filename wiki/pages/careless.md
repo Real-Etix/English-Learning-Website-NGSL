@@ -9,6 +9,8 @@ rank: 808
 sfi: 51.22
 sources: [wordnet, llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ marked by lack of attention or consideration or forethought or thoroughness
 - advanced_form: [[reckless]] — Use 'reckless' when the carelessness involves ignoring risks or potential harm.
 - advanced_form: [[negligent]] — Use 'negligent' when the carelessness involves failing in a duty or responsibility.
 - advanced_form: [[heedless]] — Use 'heedless' when the carelessness comes from not paying attention to warnings or advice.
+- synonym: [[haphazard]]
+- collocation: [[motorist]]
+- synonym: [[perfunctory]]
+- synonym: [[regardless]]
+- synonym: [[unmindful]]

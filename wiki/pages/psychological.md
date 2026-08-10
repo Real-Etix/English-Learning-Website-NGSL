@@ -9,6 +9,8 @@ rank: 2523
 sfi: 53.87
 sources: [wordnet, llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ mental or emotional as opposed to physical in nature
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[cognitive]] — Use 'cognitive' to emphasize thought processes, reasoning, or mental functions, rather than emotions or general psychological state.
 - advanced_form: [[affective]] — Use 'affective' to specifically refer to emotions, moods, or feelings, as opposed to thoughts or behavior.
+- collocation: [[portraiture]]
+- synonym: [[psychiatric]]
+- collocation: [[warfare]]
+- synonym: [[psychotherapeutic]]

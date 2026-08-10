@@ -9,6 +9,8 @@ rank: 104
 sfi: 60.87
 sources: [wordnet, llm]
 status: enriched
+chart: strength
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ the power to withstand hardship or stress
 - advanced_form: [[resilience]] — Use 'resilience' when focusing on the ability to recover quickly from setbacks or adversity, rather than just enduring.
 - advanced_form: [[fortitude]] — Use 'fortitude' when highlighting moral strength, courage, and patience to endure pain or hardship calmly.
 - builds_on: [[survival]] — Use 'endurance' to emphasize the active process of withstanding hardship over time, whereas 'survival' focuses on the outcome of staying alive.
+- synonym: [[persistence]]

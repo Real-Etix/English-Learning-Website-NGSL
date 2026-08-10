@@ -6,6 +6,8 @@ pos: noun
 forms: [predicament]
 sources: [llm]
 status: enriched
+chart: challenge
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ _No sourced examples yet._
 - builds_on: [[pinch]] — Use when emphasizing a difficult, unpleasant, or embarrassing situation from which escape is not easy.
 - builds_on: [[situation]] — Use 'predicament' when the situation involves a difficult, unpleasant, or embarrassing problem with no easy solution.
 - builds_on: [[dilemma]] — Use 'predicament' when the situation is more serious, urgent, or unpleasant than a simple dilemma, often involving practical consequences.
+- synonym: [[crisis]]
+- synonym: [[imbroglio]]

@@ -9,6 +9,8 @@ rank: 849
 sfi: 60.49
 sources: [wordnet, llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ the state of being in effect or being operative
 - advanced_form: [[operability]] — Use 'operability' to focus on the ability to be operated or to function, often in engineering or systems contexts.
 - builds_on: [[maneuver]] — Use 'operation' for a planned, large-scale training exercise with a specific objective, more formal than 'maneuver'.
 - builds_on: [[surgery]] — Use 'operation' when referring to a specific surgical act, often more formal than 'surgery'.
+- collocation: [[clandestine]]
+- collocation: [[convolution]]
+- collocation: [[noiseless]]
+- synonym: [[operator]]
+- synonym: [[vivisection]]
+- collocation: [[hoisting]]

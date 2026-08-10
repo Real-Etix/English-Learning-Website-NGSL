@@ -6,6 +6,8 @@ pos: adjective
 forms: [fortifying]
 sources: [llm]
 status: enriched
+chart: conservation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[defensive]] — Use when adding strength or reinforcing defenses.
+- synonym: [[protective]]

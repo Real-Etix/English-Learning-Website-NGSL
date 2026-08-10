@@ -9,6 +9,8 @@ rank: 449
 sfi: 54.11
 sources: [wordnet, llm]
 status: enriched
+chart: forthcoming
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ of or concerned with or related to the future
 - builds_on: [[future]] — Use 'prospective' to describe something that is anticipated or likely to happen, especially in contexts of potential candidates, buyers, or future possibilities.
 - advanced_form: [[forthcoming]] — Use 'forthcoming' when emphasizing that something is planned or expected to happen soon, often for events or publications. 'Prospective' is broader, covering future possibilities without necessarily implying imminence.
 - advanced_form: [[eventual]] — Use 'eventual' to refer to the final result after a long process. 'Prospective' focuses on what is likely or anticipated in the future, not necessarily the endpoint.
+- collocation: [[matriculant]]

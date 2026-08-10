@@ -6,6 +6,8 @@ pos: noun
 forms: [shibboleth]
 sources: [llm]
 status: enriched
+chart: procedure
+region: you
 ---
 
 ## Definition

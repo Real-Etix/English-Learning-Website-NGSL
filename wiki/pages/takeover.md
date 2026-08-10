@@ -9,6 +9,8 @@ rank: 114
 sfi: 57.65
 sources: [wordnet, llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[putsch]] — Use 'putsch' instead of 'takeover' when emphasizing an organized, often violent uprising to overthrow a government, typically used in historical or political contexts.
 - advanced_form: [[usurpation]] — Use 'usurpation' instead of 'takeover' when focusing on the illegality and illegitimate seizure of authority, often in a formal or legalistic context.
 - builds_on: [[buyout]] — Use 'takeover' to emphasize the change in control, often implying an aggressive or contested process, while 'buyout' can be friendly or negotiated.
+- synonym: [[conquest]]

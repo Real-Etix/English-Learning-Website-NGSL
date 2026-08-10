@@ -6,6 +6,8 @@ pos: noun
 forms: [projectile]
 sources: [llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition

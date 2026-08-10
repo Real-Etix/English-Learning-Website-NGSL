@@ -6,6 +6,8 @@ pos: adjective
 forms: [congruous]
 sources: [llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition

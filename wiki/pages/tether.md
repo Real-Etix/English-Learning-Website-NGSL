@@ -6,6 +6,8 @@ pos: noun
 forms: [tether]
 sources: [llm]
 status: enriched
+chart: cable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[rope]] — Use 'tether' for a rope that restricts movement, typically tying an animal to a fixed point.
+- synonym: [[hitch]]

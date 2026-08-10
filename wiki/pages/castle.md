@@ -9,6 +9,8 @@ rank: 2673
 sfi: 53.36
 sources: [wordnet, llm]
 status: enriched
+chart: castle
+region: castle
 ---
 
 ## Definition

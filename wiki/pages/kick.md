@@ -9,6 +9,8 @@ rank: 1730
 sfi: 56.45
 sources: [wordnet, llm]
 status: enriched
+chart: cheer
+region: you
 ---
 
 ## Definition

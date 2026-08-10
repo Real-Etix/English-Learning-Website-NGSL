@@ -6,6 +6,8 @@ pos: noun
 forms: [decomposition]
 sources: [llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dissolution]] — Use 'decomposition' specifically for chemical or biological breakdown into simpler substances, especially in nature or organic matter.
+- synonym: [[biodegradation]]

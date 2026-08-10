@@ -9,6 +9,8 @@ rank: 1926
 sfi: 55.78
 sources: [wordnet, llm]
 status: enriched
+chart: she
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[murine]] — Use 'murine' in scientific or technical contexts when referring to mice as a group, especially in research or taxonomy.
 - advanced_form: [[murid]] — Use 'murid' as a formal term for any rodent in the family Muridae, including both mice and rats, often in biological or ecological discussions.
+- collocation: [[pointer]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [kismet]
 sources: [llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fate]] — Use kismet to suggest a destined romantic or serendipitous meeting, whereas fate is more neutral and can apply to any inevitable event.
+- synonym: [[destiny]]
+- synonym: [[providence]]
+- synonym: [[fortune]]
+- collocation: [[pure]]

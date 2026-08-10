@@ -6,6 +6,8 @@ pos: verb
 forms: [plummet]
 sources: [llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 491
 sfi: 53.55
 sources: [wordnet, llm]
 status: enriched
+chart: treadmill
+region: treadmill
 ---
 
 ## Definition

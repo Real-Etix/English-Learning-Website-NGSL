@@ -9,6 +9,8 @@ rank: 776
 sfi: 60.93
 sources: [wordnet, llm]
 status: enriched
+chart: strike
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,12 @@ deliver a sharp blow, as with the hand, fist, or weapon
 - builds_on: [[assault]] — Use 'strike' for a precise, often preemptive military attack, especially involving air or missile forces.
 - builds_on: [[kick]] — Use 'strike' as a formal or literary alternative to 'kick', often in sports commentary or precise descriptions of a hit with the foot.
 - builds_on: [[stroke]] — Use 'strike' when emphasizing the forceful hitting action rather than the sweeping motion of the swing
+- synonym: [[batter]]
+- collocation: [[bullseye]]
+- collocation: [[fancy]]
+- collocation: [[immobilize]]
+- collocation: [[kettledrum]]
+- collocation: [[lucifer]]
+- synonym: [[pummel]]
+- collocation: [[vesta]]
+- collocation: [[airpower]]

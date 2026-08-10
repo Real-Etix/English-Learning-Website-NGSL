@@ -9,6 +9,8 @@ rank: 1472
 sfi: 57.52
 sources: [wordnet, llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ capability to perform or produce
 - advanced_form: [[competence]] — Use 'competence' for acquired ability to do something effectively.
 - advanced_form: [[faculty]] — Use 'faculty' for inherent mental or physical power, often plural.
 - builds_on: [[module]] — Use 'capacity' to emphasize the inherent ability or potential of a mental power, as opposed to a modular component.
+- collocation: [[aerobic]]
+- collocation: [[diminished]]
+- synonym: [[potentiality]]
+- collocation: [[productive]]
+- collocation: [[progenitive]]
+- builds_on: [[gallon]] — Use in formal or technical descriptions of how much a container can hold.
+- collocation: [[cubicdecimeter]]

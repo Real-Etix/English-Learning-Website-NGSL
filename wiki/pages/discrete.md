@@ -9,6 +9,8 @@ rank: 253
 sfi: 57.08
 sources: [wordnet, llm]
 status: enriched
+chart: manual
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ constituting a separate entity or part
 - domain: academic
 - advanced_form: [[distinct]] — Use 'distinct' to emphasize clear differences or separateness, often in formal or technical contexts, whereas 'discrete' often implies indivisible units.
 - advanced_form: [[autonomous]] — Use 'autonomous' to stress independence and self-governance, whereas 'discrete' simply means separate without implying autonomy.
+- synonym: [[atomistic]]

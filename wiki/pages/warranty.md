@@ -9,6 +9,8 @@ rank: 42
 sfi: 60.19
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[covenant]] — Use 'covenant' for a formal, often legally binding promise in contracts or agreements, more solemn than 'warranty'.
 - advanced_form: [[undertaking]] — Use 'undertaking' for a formal commitment or promise, typically in business or legal contexts, broader than a product-specific warranty.
+- collocation: [[extended]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [gyration]
 sources: [llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[rotation]] — Use 'gyration' for a more technical or elegant description of rapid or spiral rotation, often in physics or dance.
+- synonym: [[spin]]
+- synonym: [[revolution]]
+- collocation: [[rapid]]
+- collocation: [[wild]]
+- collocation: [[hip]]
+- collocation: [[market]]

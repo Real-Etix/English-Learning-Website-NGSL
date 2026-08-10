@@ -6,6 +6,8 @@ pos: adjective
 forms: [unseemly]
 sources: [llm]
 status: enriched
+chart: select
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inappropriate]] — Use 'unseemly' to emphasize behavior that is not fitting for the occasion, especially in formal or dignified settings.
+- synonym: [[improper]]

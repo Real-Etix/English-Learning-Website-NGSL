@@ -6,6 +6,8 @@ pos: noun
 forms: [androgen]
 sources: [llm]
 status: enriched
+chart: testosterone
+region: testosterone
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[testosterone]] — Use 'androgen' when discussing the class of hormones rather than testosterone specifically.
+- collocation: [[receptor]]
+- collocation: [[deprivation]]
+- collocation: [[therapy]]
+- collocation: [[excess]]
+- builds_on: [[steroid]] — Use for steroid hormones with masculinizing effects, particularly in endocrinology or sports medicine.

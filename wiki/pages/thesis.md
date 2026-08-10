@@ -9,6 +9,8 @@ rank: 118
 sfi: 58.6
 sources: [wordnet, llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[contention]] — Use 'contention' to emphasize a strong, often debated point in an argument, rather than a formal academic proposition.
 - advanced_form: [[assertion]] — Use 'assertion' to highlight a confident, forceful statement, especially one that is not yet proven, instead of the more neutral 'thesis'.
 - builds_on: [[theme]] — Use 'thesis' for a central argument or proposition in academic or formal discussion, rather than a general subject.
+- collocation: [[restate]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [adduce]
 sources: [llm]
 status: enriched
+chart: cite
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cite]] — Use when formally presenting evidence or reasons in a structured argument.
+- synonym: [[quote]]
+- synonym: [[mention]]
+- synonym: [[present]]
+- synonym: [[advance]]
+- collocation: [[evidence]]

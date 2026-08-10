@@ -9,6 +9,8 @@ rank: 496
 sfi: 53.47
 sources: [wordnet, llm]
 status: enriched
+chart: abductor
+region: abductor
 ---
 
 ## Definition

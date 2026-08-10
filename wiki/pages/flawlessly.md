@@ -6,6 +6,8 @@ pos: adverb
 forms: [flawlessly]
 sources: [llm]
 status: enriched
+chart: slow
+region: you
 ---
 
 ## Definition

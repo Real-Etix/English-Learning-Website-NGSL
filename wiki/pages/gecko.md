@@ -6,6 +6,8 @@ pos: noun
 forms: [gecko]
 sources: [llm]
 status: enriched
+chart: lizard
+region: lizard
 ---
 
 ## Definition

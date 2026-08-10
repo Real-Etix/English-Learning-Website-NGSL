@@ -9,6 +9,8 @@ rank: 584
 sfi: 53.82
 sources: [wordnet, llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ force somebody to do something
 - advanced_form: [[impel]] — Use 'impel' when the drive is internal (strong feeling or motivation) rather than external force.
 - builds_on: [[obligate]] — Use 'compel' for a strong, often legal or authoritative obligation, more formal than 'obligate'.
 - builds_on: [[urge]] — Use 'compel' when the pressure is irresistible or forceful, stronger than 'urge'.
+- synonym: [[impose]]
+- builds_on: [[impose]] — Use for force coming from law, rules, or strong necessity, more formal than impose.

@@ -9,6 +9,8 @@ rank: 1410
 sfi: 57.81
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,15 @@ _No sourced examples yet._
 - advanced_form: [[forward]] — Use 'forward' especially for digital or written communications being sent along a chain; it suggests passing something received to another recipient.
 - advanced_form: [[channel]] — Use 'channel' when emphasizing a specific pathway or medium, often in bureaucratic or systematic contexts; more formal and structured than 'route'.
 - builds_on: [[mechanism]] — Use 'route' to highlight a specific, often alternative, set of steps in a reaction, like a chosen path among options.
+- synonym: [[artery]]
+- collocation: [[circuitous]]
+- collocation: [[egress]]
+- collocation: [[endpoint]]
+- collocation: [[flanking]]
+- collocation: [[parade]]
+- synonym: [[waterway]]
+- synonym: [[causeway]]
+- collocation: [[eastward]]
+- collocation: [[motorbus]]
+- collocation: [[omnibus]]
+- collocation: [[passable]]

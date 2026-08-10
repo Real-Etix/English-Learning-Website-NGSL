@@ -9,6 +9,8 @@ rank: 1099
 sfi: 59.13
 sources: [wordnet, llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - advanced_form: [[utterance]] — Use 'utterance' instead of 'sentence' when emphasizing the act of speaking or the spoken nature of the expression, especially in linguistic or formal contexts.
 - advanced_form: [[clause]] — Use 'clause' instead of 'sentence' when referring to a grammatical unit that is part of a larger sentence, or when distinguishing between main and subordinate structures.
 - advanced_form: [[statement]] — Use 'statement' instead of 'sentence' when focusing on the content or proposition expressed, especially in formal, legal, or logical contexts.
+- collocation: [[determinate]]
+- collocation: [[indeterminate]]
+- collocation: [[jail]]
+- collocation: [[lenient]]
+- collocation: [[predicator]]
+- collocation: [[rephrase]]
+- collocation: [[commutation]]

@@ -9,6 +9,8 @@ rank: 1127
 sfi: 51.64
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ remove the edges from and cut down to the desired size
 - advanced_form: [[prune]] — Use 'prune' when cutting away dead or unwanted parts to encourage growth or improve shape, common for plants but also for editing.
 - advanced_form: [[pare]] — Use 'pare' when trimming off a thin outer layer or reducing something gradually, often for fruit or budgets.
 - advanced_form: [[crop]] — Use 'crop' when cutting off parts of an image or hair to improve composition or fit a size.
+- synonym: [[hem]]
+- synonym: [[neckband]]
+- synonym: [[retrench]]
+- collocation: [[whitespace]]

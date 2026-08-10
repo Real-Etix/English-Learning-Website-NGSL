@@ -6,6 +6,8 @@ pos: noun
 forms: [devotion]
 sources: [llm]
 status: enriched
+chart: dedication
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,7 @@ _No sourced examples yet._
 - builds_on: [[dedication]] — Use when emphasizing deep love and personal attachment, not just a sense of duty.
 - builds_on: [[commitment]] — Use 'devotion' to convey deep emotional attachment and loyalty, often in personal relationships or religious contexts.
 - builds_on: [[attachment]] — Use 'devotion' for a deeper, more loyal affection than simple 'attachment'.
+- synonym: [[affection]]
+- synonym: [[nationalism]]
+- synonym: [[patriotism]]
+- synonym: [[piety]]

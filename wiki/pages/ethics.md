@@ -9,6 +9,8 @@ rank: 355
 sfi: 55.981
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ motivation based on ideas of right and wrong
 - advanced_form: [[probity]] — Use 'probity' to highlight incorruptible honesty as the driving force, more specific than 'ethics'.
 - advanced_form: [[scruples]] — Use 'scruples' (plural) to emphasize internal hesitation or ethical sensitivity, distinct from the systemic sense of 'ethics'.
 - builds_on: [[morality]] — Use 'ethics' when referring to a formal system or code of moral principles, especially in professional or academic contexts.
+- collocation: [[normative]]

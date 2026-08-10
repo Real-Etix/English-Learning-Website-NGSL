@@ -9,6 +9,8 @@ rank: 2245
 sfi: 54.81
 sources: [wordnet, llm]
 status: enriched
+chart: sin
+region: sin
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[turpitude]] — Use 'turpitude' for formal or legal contexts emphasizing inherent wickedness.
 - advanced_form: [[iniquity]] — Use 'iniquity' for a strong moral or religious sense of injustice or sin.
 - advanced_form: [[debauchery]] — Use 'debauchery' when focusing on excessive indulgence in sensual pleasures.
+- synonym: [[depravity]]

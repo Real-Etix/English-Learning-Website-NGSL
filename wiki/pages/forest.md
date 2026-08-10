@@ -9,6 +9,8 @@ rank: 1527
 sfi: 57.26
 sources: [wordnet, llm]
 status: enriched
+chart: timber
+region: timber
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - synonym: [[wood]]
 - advanced_form: [[woodland]] — Use 'woodland' for a more formal or scientific context, especially when emphasizing the ecological habitat.
 - advanced_form: [[timberland]] — Use 'timberland' when referring to forest managed for timber production, often in business or forestry contexts.
+- collocation: [[impenetrable]]
+- collocation: [[liana]]
+- collocation: [[virgin]]

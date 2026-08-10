@@ -6,6 +6,8 @@ pos: adverb
 forms: [correspondingly]
 sources: [llm]
 status: enriched
+chart: likewise
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,9 @@ _No sourced examples yet._
 - builds_on: [[likewise]] — Use 'correspondingly' to emphasize a parallel or proportional relationship between two events or facts, more formal than 'likewise'.
 - builds_on: [[equally]] — Use 'correspondingly' when one thing changes in direct relation to another, emphasizing a logical or proportional connection.
 - builds_on: [[respectively]] — Use when you want to emphasize the one-to-one matching between two ordered lists, often in formal writing.
+- synonym: [[commensurately]]
+- synonym: [[proportionally]]
+- synonym: [[proportionately]]
+- synonym: [[reciprocally]]
+- builds_on: [[similarly]] — Use when indicating a proportional or matching relationship between two things, especially in formal or analytical writing.
+- synonym: [[analogously]]

@@ -9,6 +9,8 @@ rank: 267
 sfi: 56.957
 sources: [wordnet, llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[portraiture]] — Use 'portraiture' when focusing on the artistic representation of a person's character or appearance, more literary than 'characterization'.
 - builds_on: [[portrayal]] — Use 'characterization' specifically when describing how a person's personality or traits are revealed in a story or account.
 - builds_on: [[portrait]] — Use 'characterization' instead of 'portrait' when emphasizing how a person's personality and traits are described, especially in literature or analysis.
+- builds_on: [[determination]] — Use when detailing the nature of something, especially in technical or scientific contexts.

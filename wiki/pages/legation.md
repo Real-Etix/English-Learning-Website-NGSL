@@ -6,6 +6,8 @@ pos: noun
 forms: [legation]
 sources: [llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition

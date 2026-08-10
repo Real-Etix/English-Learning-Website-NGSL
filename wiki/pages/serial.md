@@ -9,6 +9,8 @@ rank: 1175
 sfi: 50.37
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: annuity
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ in regular succession without gaps
 - builds_on: [[periodical]] — Use 'serial' for a periodical that is published in a sequence, often scholarly.
 - advanced_form: [[consecutive]] — Use when events follow one after another without a break, stronger than 'serial' which often implies a sequence in a set.
 - advanced_form: [[successive]] — Use for things that follow immediately one after another, focusing on the order rather than the linking as in 'serial'.
+- collocation: [[accumulator]]
+- collocation: [[murderer]]

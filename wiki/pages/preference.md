@@ -9,6 +9,8 @@ rank: 2383
 sfi: 54.36
 sources: [wordnet, llm]
 status: enriched
+chart: pick
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ a strong liking
 - advanced_form: [[predilection]] — Use 'predilection' for a strong, often innate or habitual preference.
 - advanced_form: [[proclivity]] — Use 'proclivity' for a natural tendency or inclination toward something.
 - advanced_form: [[penchant]] — Use 'penchant' for a strong, often noticeable liking or habit.
+- synonym: [[partiality]]
+- builds_on: [[selection]] — Use when emphasizing a predilection or liking rather than a neutral choice.

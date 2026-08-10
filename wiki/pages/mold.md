@@ -9,6 +9,8 @@ rank: 1661
 sfi: 50.56
 sources: [wordnet, llm]
 status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - builds_on: [[forge]] — Use 'mold' when the creation involves shaping a malleable material into a specific form, often with pressure or a cast.
 - advanced_form: [[template]] — More formal than 'mold' when referring to a pattern or guide for shaping something.
 - advanced_form: [[configuration]] — Emphasizes the arrangement or design of parts; suitable for technical or formal descriptions.
+- synonym: [[mildew]]

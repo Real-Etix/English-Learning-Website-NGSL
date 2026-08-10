@@ -6,6 +6,8 @@ pos: noun
 forms: [stranglehold]
 sources: [llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition

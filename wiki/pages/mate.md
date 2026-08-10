@@ -9,6 +9,8 @@ rank: 2288
 sfi: 54.69
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: verb
 forms: [expunge]
 sources: [llm]
 status: enriched
+chart: erase
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[omit]] — Use 'expunge' to emphasize the complete removal or erasure of something, especially from documents or memories; 'omit' does not imply permanent removal.
 - builds_on: [[erase]] — Use in formal or legal contexts for removing something like a record, memory, or text thoroughly.
 - builds_on: [[eliminate]] — Use 'expunge' when referring to erasing or deleting something from records, memory, or existence, often in legal or formal contexts.
+- synonym: [[efface]]
+- synonym: [[purge]]

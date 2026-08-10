@@ -6,6 +6,8 @@ pos: noun
 forms: [banner]
 sources: [llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[flag]] — Use 'banner' when emphasizing a large, often long cloth with a message or slogan, especially for protests or celebrations.
+- synonym: [[placard]]
+- synonym: [[sign]]
+- synonym: [[poster]]
+- collocation: [[carry]]
+- collocation: [[wave]]
+- collocation: [[hang]]
+- collocation: [[counterquarterly]]
+- synonym: [[ensign]]

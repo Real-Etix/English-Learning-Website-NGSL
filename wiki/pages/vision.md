@@ -9,6 +9,8 @@ rank: 1651
 sfi: 56.76
 sources: [wordnet, llm]
 status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ a vivid mental image
 - advanced_form: [[reverie]] — Use instead of 'vision' when describing a pleasant, dreamy mental image that you are absorbed in, often with a sense of nostalgia or daydreaming.
 - advanced_form: [[hallucination]] — Use instead of 'vision' when the vivid mental image is false, involuntary, and often associated with illness, drugs, or sleep deprivation.
 - builds_on: [[imagination]] — Use 'vision' when referring to a powerful or creative mental image that guides action or art.
+- collocation: [[conjure]]
+- collocation: [[idealistic]]
+- collocation: [[impair]]
+- synonym: [[mirage]]
+- synonym: [[phantasm]]

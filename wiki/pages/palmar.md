@@ -6,6 +6,8 @@ pos: adjective
 forms: [palmar]
 sources: [llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition

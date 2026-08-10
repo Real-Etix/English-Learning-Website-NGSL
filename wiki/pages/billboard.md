@@ -6,6 +6,8 @@ pos: noun
 forms: [billboard]
 sources: [llm]
 status: enriched
+chart: bill
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[poster]] — Use 'billboard' specifically for a large outdoor sign, usually along roads, while 'poster' can be any size and placed on walls or boards.
+- synonym: [[sign]]
+- synonym: [[advertisement]]
+- synonym: [[display]]
+- collocation: [[digital]]
+- collocation: [[highway]]

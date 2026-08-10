@@ -6,6 +6,8 @@ pos: noun
 forms: [exasperation]
 sources: [llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[frustration]] — Use 'exasperation' when frustration is intense and accompanied by a sense of being provoked beyond patience.
+- synonym: [[vexation]]
+- synonym: [[anger]]
+- collocation: [[in]]
+- collocation: [[with]]
+- collocation: [[sheer]]
+- collocation: [[sigh]]
+- collocation: [[at]]

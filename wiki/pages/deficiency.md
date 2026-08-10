@@ -9,6 +9,8 @@ rank: 200
 sfi: 57.6
 sources: [wordnet, llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ the state of needing something that is absent or unavailable
 - advanced_form: [[insufficiency]] — Use 'insufficiency' in formal or technical contexts to highlight a lack that renders something inadequate for a purpose.
 - builds_on: [[weakness]] — Use 'deficiency' when emphasizing a lack or insufficiency that causes a flaw.
 - builds_on: [[deficit]] — Use 'deficiency' to describe a lack of something essential or required, often in health, nutrition, or resources.
+- synonym: [[absence]]
+- synonym: [[deprivation]]
+- collocation: [[micronutrient]]
+- collocation: [[kalium]]

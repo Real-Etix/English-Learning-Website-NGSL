@@ -6,6 +6,8 @@ pos: noun
 forms: [fishfork]
 sources: [llm]
 status: enriched
+chart: fork
+region: fork
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fork]] — Use 'fish fork' when describing the specialized fork for fish dishes, showing more precise dining vocabulary.
+- collocation: [[silver]]
+- collocation: [[small]]
+- collocation: [[handle]]

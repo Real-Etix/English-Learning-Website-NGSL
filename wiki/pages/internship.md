@@ -9,6 +9,8 @@ rank: 345
 sfi: 54.35
 sources: [wordnet, llm]
 status: enriched
+chart: internship
+region: internship
 ---
 
 ## Definition

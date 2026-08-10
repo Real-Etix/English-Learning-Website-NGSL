@@ -6,6 +6,8 @@ pos: adjective
 forms: [anaerobiotic]
 sources: [llm]
 status: enriched
+chart: anaerobic
+region: anaerobic
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[anaerobic]] — Use 'anaerobiotic' when emphasizing the absence of oxygen in a biological process; it is a more precise and formal scientific term than 'anaerobic'.
+- synonym: [[anoxic]]
+- collocation: [[bacteria]]
+- collocation: [[environment]]
+- collocation: [[metabolism]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [amido]
 sources: [llm]
 status: enriched
+chart: amino
+region: amino
 ---
 
 ## Definition

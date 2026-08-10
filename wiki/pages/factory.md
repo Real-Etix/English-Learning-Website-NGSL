@@ -9,6 +9,8 @@ rank: 1530
 sfi: 57.25
 sources: [wordnet, llm]
 status: enriched
+chart: plant
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[plant]] — Use 'plant' for large industrial facilities, often for heavy manufacturing or assembly, compared to a general 'factory'.
 - advanced_form: [[mill]] — Use 'mill' for factories that process raw materials like grain, steel, or paper.
 - advanced_form: [[works]] — Use 'works' for industrial complexes, especially in heavy or chemical industries; note that 'works' is plural in form but often takes a singular verb.
+- synonym: [[distillery]]
+- collocation: [[munition]]
+- collocation: [[robotize]]
+- builds_on: [[mill]] — Use when referring to any manufacturing plant; 'mill' often has a specific or traditional connotation like a paper or steel mill.
+- collocation: [[automaton]]

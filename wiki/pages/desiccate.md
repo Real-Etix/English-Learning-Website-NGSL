@@ -6,6 +6,8 @@ pos: verb
 forms: [desiccate]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shrink]] — Use 'desiccate' instead of 'shrink' for a formal tone, especially in scientific or technical contexts describing thorough drying.
+- synonym: [[dry]]
+- synonym: [[sear]]
+- collocation: [[sun]]
+- collocation: [[heat]]
+- collocation: [[wind]]
+- collocation: [[soil]]
+- collocation: [[coconut]]

@@ -9,6 +9,8 @@ rank: 1622
 sfi: 56.92
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ the action of opposing something that you disapprove or disagree with
 - advanced_form: [[dissent]] — Use when opposition is expressed as disagreement, often within a group.
 - advanced_form: [[resistance]] — Use when opposition involves active efforts to prevent something.
 - builds_on: [[resistance]] — Use 'opposition' instead of 'resistance' to emphasize a formal or organized stance against an idea or policy.
+- synonym: [[disinclination]]
+- collocation: [[implacable]]

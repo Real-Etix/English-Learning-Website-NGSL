@@ -6,6 +6,8 @@ pos: noun
 forms: [spokedwheel]
 sources: [llm]
 status: enriched
+chart: cartwheel
+region: cartwheel
 ---
 
 ## Definition

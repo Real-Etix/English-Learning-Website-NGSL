@@ -9,6 +9,8 @@ rank: 1534
 sfi: 57.24
 sources: [wordnet, llm]
 status: enriched
+chart: counsel
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[proposal]] — Use 'proposal' for a formal suggestion that is put forward for consideration or adoption.
 - advanced_form: [[endorsement]] — Use 'endorsement' when the recommendation comes from a position of authority or public support.
 - advanced_form: [[counsel]] — Use 'counsel' for a more serious, advisory recommendation, often involving personal or ethical guidance.
+- synonym: [[advisement]]
+- builds_on: [[suggestion]] — Use when the suggestion carries a sense of endorsement, advising someone to choose or do something.

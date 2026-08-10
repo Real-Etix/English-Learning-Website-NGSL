@@ -9,6 +9,8 @@ rank: 1149
 sfi: 49.8
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ status: enriched
 - collocation: [[new]]
 - advanced_form: [[gateway]] — Use 'gateway' in formal or technical writing to specify the device that provides internet connectivity.
 - advanced_form: [[router]] — Use 'router' when the device handles both modem and routing functions, common in home networks.
+- collocation: [[demodulator]]

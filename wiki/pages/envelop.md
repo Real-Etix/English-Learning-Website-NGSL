@@ -6,6 +6,8 @@ pos: verb
 forms: [envelop]
 sources: [llm]
 status: enriched
+chart: cover
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[sweep]] — Use 'envelop' instead of 'sweep' when the action involves completely covering or surrounding something, as if wrapping it.
 - builds_on: [[wrap]] — Use 'envelop' when emphasizing a complete covering, often with a soft or surrounding action.
 - builds_on: [[carpet]] — Use 'envelop' when the cover surrounds or wraps around something, often with a sense of thoroughness or enclosure.
+- synonym: [[engulf]]

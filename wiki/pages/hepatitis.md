@@ -9,6 +9,8 @@ rank: 678
 sfi: 52.6
 sources: [wordnet, llm]
 status: enriched
+chart: hepatitis
+region: hepatitis
 ---
 
 ## Definition

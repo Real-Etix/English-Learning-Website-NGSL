@@ -6,6 +6,8 @@ pos: noun
 forms: [sonorant]
 sources: [llm]
 status: enriched
+chart: consonant
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[consonant]] — Use 'sonorant' instead of 'consonant' when referring to sounds like /m, n, l, r/ that are produced with a relatively open vocal tract.
+- synonym: [[vocoid]]

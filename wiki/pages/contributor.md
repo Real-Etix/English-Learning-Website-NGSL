@@ -9,6 +9,8 @@ rank: 1592
 sfi: 50.72
 sources: [wordnet, llm]
 status: enriched
+chart: patron
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[donor]] — Use 'donor' for formal or charitable financial contributions, especially to organizations.
 - advanced_form: [[sponsor]] — Use 'sponsor' when the contribution supports a specific event, activity, or person.
 - advanced_form: [[patron]] — Use 'patron' for supporters of the arts or cultural institutions, implying ongoing or generous support.
+- synonym: [[ratepayer]]
+- builds_on: [[participant]] — Use when emphasizing the person's active input or participation in a collaborative effort.
+- synonym: [[stringer]]

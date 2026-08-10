@@ -9,6 +9,8 @@ rank: 210
 sfi: 66.67
 sources: [wordnet, llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,14 @@ above average in size or number or quantity or magnitude or extent
 - advanced_form: [[enormous]] — Use for something extremely large, often exceeding normal expectations.
 - advanced_form: [[massive]] — Use for something bulky, heavy, or imposing in size.
 - advanced_form: [[vast]] — Use for something covering a very large area or extent.
+- collocation: [[assortment]]
+- collocation: [[aviary]]
+- synonym: [[bulky]]
+- collocation: [[concretion]]
+- collocation: [[contusion]]
+- collocation: [[implausibly]]
+- synonym: [[obese]]
+- collocation: [[print]]
+- collocation: [[wager]]
+- collocation: [[felid]]
+- collocation: [[feline]]

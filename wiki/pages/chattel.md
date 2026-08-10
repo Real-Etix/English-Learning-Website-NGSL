@@ -6,6 +6,8 @@ pos: noun
 forms: [chattel]
 sources: [llm]
 status: enriched
+chart: slave
+region: slave
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[slave]] — Use chattel when emphasizing the legal status of a slave as property.
+- synonym: [[property]]
+- synonym: [[possession]]
+- synonym: [[goods]]
+- synonym: [[effects]]
+- synonym: [[belongings]]

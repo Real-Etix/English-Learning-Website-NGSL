@@ -6,6 +6,8 @@ pos: verb
 forms: [unseat]
 sources: [llm]
 status: enriched
+chart: hire
+region: you
 ---
 
 ## Definition

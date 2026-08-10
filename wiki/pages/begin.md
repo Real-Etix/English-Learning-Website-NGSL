@@ -9,6 +9,8 @@ rank: 189
 sfi: 67.14
 sources: [wordnet, llm]
 status: enriched
+chart: get
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[commence]] — Use 'commence' instead of 'begin' in formal or official contexts, such as ceremonies, meetings, or formal events.
 - advanced_form: [[initiate]] — Use 'initiate' instead of 'begin' when referring to starting a process, project, or formal action, often implying a deliberate or official start.
 - advanced_form: [[embark]] — Use 'embark on' instead of 'begin' when starting a journey, endeavor, or significant new phase, often with a sense of adventure or commitment.
+- collocation: [[anew]]
+- collocation: [[pall]]
+- collocation: [[descent]]

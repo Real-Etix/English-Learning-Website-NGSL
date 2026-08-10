@@ -9,6 +9,8 @@ rank: 754
 sfi: 51.347
 sources: [wordnet, llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[substantiate]] — Use 'substantiate' when providing concrete proof or evidence to back up a statement, more formal than 'affirm'.
 - advanced_form: [[validate]] — Use 'validate' when confirming the accuracy or legitimacy of something, especially in scientific or technical contexts.
 - builds_on: [[insist]] — Use 'affirm' to formally declare something to be true, often in a legal or official setting.
+- synonym: [[aver]]

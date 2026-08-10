@@ -9,6 +9,8 @@ rank: 1446
 sfi: 50.6
 sources: [wordnet, llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[sanction]] — Use 'sanction' to imply official authorization or permission, often with a formal or authoritative tone.
 - advanced_form: [[validate]] — Use 'validate' to stress confirming the legality, accuracy, or binding nature of something, like verifying that an action is legitimate.
 - builds_on: [[approve]] — Use 'ratify' for formally confirming or approving something like a law or agreement, typically after a vote.
+- synonym: [[countersign]]
+- synonym: [[formalize]]

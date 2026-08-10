@@ -6,6 +6,8 @@ pos: noun
 forms: [ancientness]
 sources: [llm]
 status: enriched
+chart: rally
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[antiquity]] — Use when focusing on the age rather than the specific historical era.
+- synonym: [[age]]

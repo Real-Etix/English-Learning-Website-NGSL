@@ -9,6 +9,8 @@ rank: 197
 sfi: 57.67
 sources: [wordnet, llm]
 status: enriched
+chart: strain
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[stiffen]] — Use 'stiffen' to describe becoming rigid or less flexible, often for body parts or materials.
 - advanced_form: [[constrict]] — Use 'constrict' to describe becoming narrower or tighter, often for openings or encircling things.
 - builds_on: [[tighten]] — Use instead of 'tighten' when referring to making a part of the body stiff or taut, not for objects or fastenings.
+- synonym: [[jittery]]

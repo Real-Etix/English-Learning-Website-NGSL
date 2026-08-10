@@ -6,6 +6,8 @@ pos: noun
 forms: [fte]
 sources: [llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition

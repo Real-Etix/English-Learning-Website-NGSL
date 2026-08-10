@@ -9,6 +9,8 @@ rank: 2020
 sfi: 55.49
 sources: [wordnet, llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition

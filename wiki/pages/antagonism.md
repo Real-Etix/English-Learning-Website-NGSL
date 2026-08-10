@@ -6,6 +6,8 @@ pos: noun
 forms: [antagonism]
 sources: [llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[hostility]] — Use 'antagonism' when the hostility is active, ongoing, and often mutual, like in a rivalry or conflict.
 - builds_on: [[conflict]] — Use 'antagonism' to emphasize active hostility or opposition, often between individuals or groups.
 - builds_on: [[opposition]] — Use when the opposition is active and hostile.
+- synonym: [[enmity]]

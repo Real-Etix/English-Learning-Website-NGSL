@@ -9,6 +9,8 @@ rank: 1816
 sfi: 56.15
 sources: [wordnet, llm]
 status: enriched
+chart: repay
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - builds_on: [[wage]] — Use 'salary' instead of 'wage' when referring to a fixed regular payment, typically paid monthly or annually to professional or office workers.
 - advanced_form: [[stipend]] — Use 'stipend' instead of 'salary' when the payment is a fixed allowance, not tied to hours worked, and often for trainees or religious roles.
 - advanced_form: [[emolument]] — Use 'emolument' in formal or legal contexts, especially when referring to the total compensation of high-ranking officials.
+- collocation: [[annum]]
+- collocation: [[negotiable]]
+- collocation: [[negotiation]]
+- collocation: [[perannum]]
+- collocation: [[pretax]]

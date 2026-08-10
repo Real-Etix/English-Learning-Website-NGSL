@@ -9,6 +9,8 @@ rank: 292
 sfi: 54.75
 sources: [wordnet, llm]
 status: enriched
+chart: privatization
+region: privatization
 ---
 
 ## Definition

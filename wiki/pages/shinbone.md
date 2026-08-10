@@ -6,6 +6,8 @@ pos: noun
 forms: [shinbone]
 sources: [llm]
 status: enriched
+chart: shin
+region: shin
 ---
 
 ## Definition

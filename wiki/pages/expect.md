@@ -9,6 +9,8 @@ rank: 314
 sfi: 64.93
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[foresee]] — Use 'foresee' when you are predicting something based on knowledge or insight, emphasizing the ability to see it in advance.
 - advanced_form: [[envisage]] — Use 'envisage' when you are imagining or conceptualizing a future scenario, often with a creative or idealistic view.
 - builds_on: [[await]] — Use 'expect' instead of 'await' when the focus is on the likelihood or assumption that something will happen, rather than the act of waiting.
+- collocation: [[optimistically]]
+- builds_on: [[anticipate]] — Use when you are fairly sure something will happen, often based on facts or routine, but less formal than anticipate.

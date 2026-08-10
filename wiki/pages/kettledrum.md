@@ -6,6 +6,8 @@ pos: noun
 forms: [kettledrum]
 sources: [llm]
 status: enriched
+chart: drum
+region: drum
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[drum]] — Use 'kettledrum' for the large, bowl-shaped drums commonly found in orchestras, to specify a particular type of drum.
+- synonym: [[timpani]]
+- collocation: [[roll]]
+- collocation: [[strike]]
+- collocation: [[pair]]
+- collocation: [[boom]]

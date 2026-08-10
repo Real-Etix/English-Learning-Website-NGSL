@@ -6,6 +6,8 @@ pos: noun
 forms: [spire]
 sources: [llm]
 status: enriched
+chart: tower
+region: tower
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tower]] — Use 'spire' for a pointed, tapering structure on top of a building, especially a church tower.
+- synonym: [[minaret]]

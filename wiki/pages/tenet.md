@@ -6,6 +6,8 @@ pos: noun
 forms: [tenet]
 sources: [llm]
 status: enriched
+chart: reason
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[axiom]] — Use 'tenet' instead of 'axiom' when focusing on a fundamental doctrine of a system, ideology, or organization.
 - builds_on: [[conviction]] — Use 'tenet' when referring to a core principle or belief, especially one that forms part of a system of thought.
 - builds_on: [[belief]] — Use 'tenet' for a core principle or belief that is fundamental to a system or ideology.
+- builds_on: [[doctrine]] — Use for a specific core belief within a larger system, especially in philosophy or ethics.

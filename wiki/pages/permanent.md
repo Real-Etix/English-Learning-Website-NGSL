@@ -9,6 +9,8 @@ rank: 1782
 sfi: 56.25
 sources: [wordnet, llm]
 status: enriched
+chart: contingent
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ continuing or enduring without marked change in status or condition or place
 - advanced_form: [[immutable]] — Use 'immutable' for something that never changes, emphasizing unchangeability, more formal than 'permanent'.
 - advanced_form: [[indelible]] — Use 'indelible' for something that cannot be removed or erased, often for impressions or marks, stronger than 'permanent'.
 - advanced_form: [[perpetual]] — Use 'perpetual' for something that continues indefinitely without interruption, more formal and continuous than 'permanent'.
+- collocation: [[cantonment]]
+- collocation: [[ceasefire]]
+- collocation: [[deformation]]
+- synonym: [[enduring]]
+- collocation: [[handicap]]
+- collocation: [[inhabitants]]
+- collocation: [[deletion]]
+- collocation: [[dentition]]
+- collocation: [[habitation]]

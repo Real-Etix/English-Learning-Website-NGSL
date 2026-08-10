@@ -7,8 +7,10 @@ forms: [vanilla]
 lists: [toeic]
 rank: 1192
 sfi: 49.8
-sources: [wordnet, dictionaryapi]
-status: seeded
+sources: [wordnet, dictionaryapi, llm]
+status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ any of numerous climbing plants of the genus Vanilla having fleshy leaves and cl
 - domain: toeic
 - collocation: [[because]]
 - collocation: [[certain]]
+- collocation: [[ice-cream]]
+- advanced_form: [[vanillin]] — Use instead of 'vanilla' when you specifically mean the chemical compound that produces the flavor, as in chemistry or baking science.
+- advanced_form: [[flavorant]] — Use in technical or formal writing to mean any substance that adds flavor, where you might otherwise say 'flavoring'.
+- advanced_form: [[orchid]] — Use in botanical contexts when referring to the plant itself, emphasizing its status as an orchid, rather than the common name 'vanilla'.
+- collocation: [[wafer]]

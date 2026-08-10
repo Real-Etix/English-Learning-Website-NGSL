@@ -9,6 +9,8 @@ rank: 378
 sfi: 54.57
 sources: [wordnet, llm]
 status: enriched
+chart: roller
+region: roller
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[dribbler]] — Use 'dribbler' instead of 'roller' when you want to emphasize that the ball is rolling very slowly and weakly, often losing speed.
 - advanced_form: [[nubber]] — Use 'nubber' instead of 'roller' to describe a poorly hit ground ball that rolls slowly and usually stops quickly, often due to a weak swing.
+- synonym: [[wheel]]
+- synonym: [[caster]]

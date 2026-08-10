@@ -9,6 +9,8 @@ rank: 1498
 sfi: 57.42
 sources: [wordnet, llm]
 status: enriched
+chart: snap
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - builds_on: [[halt]] — Use 'arrest' to emphasize stopping movement or progress, often with authority.
 - advanced_form: [[apprehend]] — More formal than 'arrest,' often used in official reports, legal contexts, or news.
 - advanced_form: [[detain]] — Implies temporary holding, often for investigation or processing, rather than formal charging.
+- collocation: [[cardiac]]
+- collocation: [[murderer]]

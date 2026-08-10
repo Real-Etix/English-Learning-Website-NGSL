@@ -6,6 +6,8 @@ pos: noun
 forms: [ilium]
 sources: [llm]
 status: enriched
+chart: pelvis
+region: pelvis
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[pelvis]] — Use 'ilium' when referring specifically to the large, flared upper portion of the pelvis, rather than the whole structure.
+- collocation: [[os]]

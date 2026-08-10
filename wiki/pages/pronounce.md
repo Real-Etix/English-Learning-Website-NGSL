@@ -9,6 +9,8 @@ rank: 478
 sfi: 54.951
 sources: [wordnet, llm]
 status: enriched
+chart: articulate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[enunciate]] — Use 'enunciate' when emphasizing clear and distinct pronunciation, especially in formal or public speaking contexts.
 - advanced_form: [[articulate]] — Use 'articulate' when focusing on clear expression and proper formation of sounds, often implying skill or careful speech.
+- synonym: [[adjudge]]

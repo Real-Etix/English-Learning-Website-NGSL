@@ -9,6 +9,8 @@ rank: 492
 sfi: 53.53
 sources: [wordnet, llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition

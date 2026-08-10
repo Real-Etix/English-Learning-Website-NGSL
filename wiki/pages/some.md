@@ -9,6 +9,8 @@ rank: 53
 sfi: 73.28
 sources: [wordnet]
 status: seeded
+chart: some
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ status: seeded
 ## Connections
 - antonym: [[all]]
 - builds_on: [[about]] — Use before a number in journalistic or literary contexts to emphasize an approximate and often notably large amount.
+- synonym: [[a]]
+- collocation: [[latitude]]
+- collocation: [[leeway]]

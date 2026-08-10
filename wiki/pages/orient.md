@@ -9,6 +9,8 @@ rank: 285
 sfi: 55.736
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: position
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,5 @@ be oriented
 - advanced_form: [[direct]] — Use when the action involves pointing or aiming, often with a sense of purposeful guidance.
 - builds_on: [[familiarize]] — Use instead of 'familiarize' when introducing someone to a specific system, place, or role.
 - builds_on: [[east]] — Use 'Orient' instead of 'the East' in formal or literary contexts to refer to the eastern region of the world.
+- synonym: [[levant]]
+- collocation: [[occident]]

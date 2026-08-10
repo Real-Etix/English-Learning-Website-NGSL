@@ -9,6 +9,8 @@ rank: 1939
 sfi: 55.75
 sources: [wordnet, llm]
 status: enriched
+chart: author
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[writer]] — Use 'journalist' for writers who report news or write articles for media outlets.
 - advanced_form: [[correspondent]] — Use 'correspondent' instead of 'journalist' when emphasizing that the person is reporting from a specific location, often far away or from a specialized beat.
 - advanced_form: [[columnist]] — Use 'columnist' for a journalist who writes a regular column, typically expressing a viewpoint, rather than a general news reporter.
+- synonym: [[reporter]]
+- builds_on: [[reporter]] — Use for anyone who writes, edits, or reports news professionally; broader and more formal than reporter.
+- synonym: [[stringer]]

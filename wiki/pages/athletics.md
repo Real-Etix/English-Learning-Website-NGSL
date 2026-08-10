@@ -6,6 +6,8 @@ pos: noun
 forms: [athletics]
 sources: [llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sport]] — Use 'athletics' for organized, competitive physical sports, especially track and field, to sound more formal than 'sport'.
+- synonym: [[exercise]]
+- synonym: [[competition]]

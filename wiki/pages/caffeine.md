@@ -9,6 +9,8 @@ rank: 223
 sfi: 57
 sources: [wordnet, llm]
 status: enriched
+chart: caffeine
+region: caffeine
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[stimulant]] — Use instead of 'caffeine' when focusing on its general effect class rather than the specific chemical.
 - advanced_form: [[psychostimulant]] — Use in formal or scientific contexts to emphasize its action on the central nervous system.
 - advanced_form: [[methylxanthine]] — Use in technical or pharmacological discussions to refer to its chemical class.
+- synonym: [[java]]
+- collocation: [[jolt]]

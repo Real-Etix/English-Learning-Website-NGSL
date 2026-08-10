@@ -6,6 +6,8 @@ pos: adverb
 forms: [unconditionally]
 sources: [llm]
 status: enriched
+chart: sure
+region: you
 ---
 
 ## Definition

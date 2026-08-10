@@ -9,6 +9,8 @@ rank: 1094
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: wheelchair
+region: wheelchair
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[powerchair]] — Use when specifying a motorized wheelchair, more precise than the general term wheelchair.
 - advanced_form: [[sportchair]] — Use for a wheelchair designed specifically for athletic activities, emphasizing specialization over the generic term.
+- collocation: [[motorized]]
+- collocation: [[accessibility]]

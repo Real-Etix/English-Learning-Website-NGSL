@@ -9,6 +9,8 @@ rank: 1165
 sfi: 51.66
 sources: [wordnet, llm]
 status: enriched
+chart: spatial
+region: spatial
 ---
 
 ## Definition

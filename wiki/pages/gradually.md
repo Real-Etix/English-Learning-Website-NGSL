@@ -9,6 +9,8 @@ rank: 2188
 sfi: 54.95
 sources: [wordnet, llm]
 status: enriched
+chart: easy
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ in a gradual manner
 - builds_on: [[slowly]] — Use 'gradually' to emphasize a slow, steady progression over time, especially for change.
 - advanced_form: [[incrementally]] — Use 'incrementally' to emphasize small, measurable increases or additions, often in a systematic or planned process.
 - advanced_form: [[progressively]] — Use 'progressively' to highlight a continuous, often irreversible, change that moves forward step by step.
+- collocation: [[acclimate]]
+- collocation: [[metamorphose]]

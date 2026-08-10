@@ -9,6 +9,8 @@ rank: 496
 sfi: 53.14
 sources: [wordnet, llm]
 status: enriched
+chart: substantially
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ to a great extent or degree
 - advanced_form: [[significantly]] — Use 'significantly' to highlight a meaningful or noticeable change, often in statistics or academic writing.
 - advanced_form: [[markedly]] — Use 'markedly' to stress a clear, observable difference, often in descriptive or analytical contexts.
 - builds_on: [[heavily]] — Use 'considerably' in formal or written contexts to emphasize a noticeable degree, often with measurable changes.
+- synonym: [[extensively]]
+- synonym: [[much]]
+- synonym: [[appreciably]]

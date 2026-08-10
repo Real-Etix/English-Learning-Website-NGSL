@@ -9,6 +9,8 @@ rank: 206
 sfi: 57.621
 sources: [wordnet, llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[parity]] — Use 'parity' when emphasizing exact equality in status, value, or quantity, often in technical or formal contexts like economics or computing.
 - advanced_form: [[equivalence]] — Use 'equivalence' to stress that two things are essentially the same in value, function, or meaning, especially in scientific or logical settings.
+- builds_on: [[equation]] — Use when emphasizing the mathematical statement that two quantities are equal, often in formal proofs or discussions.

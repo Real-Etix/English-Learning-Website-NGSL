@@ -9,6 +9,8 @@ rank: 1749
 sfi: 56.38
 sources: [wordnet, llm]
 status: enriched
+chart: position
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[orient]] — Use 'Orient' instead of 'the East' in formal or literary contexts to refer to the eastern region of the world.
 - advanced_form: [[levant]] — Use 'Levant' when specifically referring to the historical region of the eastern Mediterranean, not for general compass direction.
 - advanced_form: [[easting]] — Use 'easting' in technical or navigational contexts to denote measured distance, not for the direction itself.
+- synonym: [[eastern]]
+- synonym: [[easterly]]

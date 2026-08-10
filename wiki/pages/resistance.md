@@ -9,6 +9,8 @@ rank: 2293
 sfi: 54.67
 sources: [wordnet, llm]
 status: enriched
+chart: subway
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ the action of opposing something that you disapprove or disagree with
 - builds_on: [[opposition]] — Use when opposition involves active efforts to prevent something.
 - advanced_form: [[opposition]] — Use 'opposition' instead of 'resistance' to emphasize a formal or organized stance against an idea or policy.
 - advanced_form: [[defiance]] — Use 'defiance' instead of 'resistance' to highlight open, bold, or rebellious refusal to obey.
+- collocation: [[antimicrobial]]
+- collocation: [[corrosion]]
+- collocation: [[despotism]]
+- collocation: [[futile]]
+- collocation: [[overcome]]
+- collocation: [[biocide]]
+- collocation: [[insecticide]]

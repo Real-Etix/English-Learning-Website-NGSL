@@ -6,6 +6,8 @@ pos: noun
 forms: [electioneering]
 sources: [llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[campaign]] — Use electioneering to refer specifically to the activities and tactics used to win votes.
+- synonym: [[politicking]]
+- collocation: [[intense]]
+- collocation: [[aggressive]]
+- collocation: [[political]]

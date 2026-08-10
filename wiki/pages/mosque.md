@@ -9,6 +9,8 @@ rank: 1340
 sfi: 48.91
 sources: [wordnet, llm]
 status: enriched
+chart: mosque
+region: mosque
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[masjid]] — Use 'masjid' when emphasizing the Islamic cultural or religious identity of the place, rather than the generic English term.
 - advanced_form: [[musalla]] — Use 'musalla' when referring to a designated prayer space that may not be a full mosque, especially in airports or schools.
+- collocation: [[minaret]]

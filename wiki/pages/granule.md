@@ -6,6 +6,8 @@ pos: noun
 forms: [granule]
 sources: [llm]
 status: enriched
+chart: particle
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 970
 sfi: 59.81
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ an administrative unit of government
 - advanced_form: [[directorate]] — Use 'directorate' for a larger administrative unit that oversees a specific area of government activity, often with managerial authority.
 - builds_on: [[behalf]] — Use 'agency' instead of 'behalf' when highlighting the intermediary role or official capacity of an agent.
 - builds_on: [[volition]] — Agency emphasizes the capacity to act intentionally and produce effects, often in a social context.
+- synonym: [[dealership]]
+- collocation: [[federal]]
+- builds_on: [[dealership]] — Use for a more formal or general sales representative arrangement, especially outside car retail.
+- synonym: [[distributorship]]
+- collocation: [[headhunter]]

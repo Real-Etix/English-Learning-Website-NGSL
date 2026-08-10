@@ -9,6 +9,8 @@ rank: 94
 sfi: 59.017
 sources: [wordnet, llm]
 status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[pencil]] — Use 'pencil' instead of 'beam' to describe an extremely narrow, concentrated path of radiation, typical in technical or engineering descriptions.
 - builds_on: [[laser]] — Use 'beam' to emphasize the straight, concentrated line of light from a laser, rather than the device itself.
 - builds_on: [[grin]] — Use 'beam' for a very wide, joyful grin that radiates happiness, often in a more formal or literary context.
+- collocation: [[mote]]
+- collocation: [[proton]]
+- synonym: [[strut]]

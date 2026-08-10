@@ -6,6 +6,8 @@ pos: verb
 forms: [wilt]
 sources: [llm]
 status: enriched
+chart: independently
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[shrink]] — Use 'wilt' instead of 'shrink' when referring to plants or things that droop and lose stiffness due to lack of moisture.
+- synonym: [[fade]]
+- synonym: [[shrivel]]
+- collocation: [[heat]]
+- collocation: [[quickly]]
+- collocation: [[under]]

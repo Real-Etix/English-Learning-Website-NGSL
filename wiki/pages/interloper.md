@@ -6,6 +6,8 @@ pos: noun
 forms: [interloper]
 sources: [llm]
 status: enriched
+chart: foreigner
+region: you
 ---
 
 ## Definition

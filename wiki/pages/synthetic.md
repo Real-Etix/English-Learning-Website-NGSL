@@ -9,6 +9,8 @@ rank: 677
 sfi: 52.608
 sources: [wordnet, llm]
 status: enriched
+chart: synthetic
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,11 @@ not of natural origin
 - advanced_form: [[ersatz]] — Use 'ersatz' when something is a substitute, often implying lower quality, as opposed to 'synthetic' which is more technical and neutral.
 - advanced_form: [[factitious]] — Use 'factitious' to emphasize deliberate artificial creation, often in scientific contexts, more formal than 'synthetic'.
 - builds_on: [[chemical]] — Use 'synthetic' to emphasize that a chemical is artificially made, not natural.
+- synonym: [[analog]]
+- collocation: [[elastomer]]
+- collocation: [[fibre]]
+- synonym: [[inflectional]]
+- synonym: [[inorganic]]
+- collocation: [[android]]
+- collocation: [[biopolymer]]
+- collocation: [[vanillin]]

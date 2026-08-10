@@ -9,6 +9,8 @@ rank: 320
 sfi: 64.89
 sources: [wordnet, llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ _No sourced examples yet._
 - advanced_form: [[tumble]] — Use 'tumble' for a fall involving rolling or flipping, often with a loss of balance.
 - advanced_form: [[drop]] — Use 'drop' for a simple, direct fall, often with less dramatic force than 'plummet' but more neutral than 'fall'.
 - builds_on: [[autumn]] — Use 'fall' in everyday American English instead of the more formal 'autumn'.
+- collocation: [[derrire]]
+- collocation: [[indigence]]
+- collocation: [[matriculate]]
+- collocation: [[nighttime]]
+- collocation: [[precipitous]]
+- collocation: [[victim]]
+- synonym: [[descent]]
+- collocation: [[topbunk]]

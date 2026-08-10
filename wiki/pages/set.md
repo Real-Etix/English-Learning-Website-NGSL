@@ -9,6 +9,8 @@ rank: 185
 sfi: 67.21
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,11 @@ put into a certain place or abstract location
 - advanced_form: [[deposit]] — Use 'deposit' when placing something down carefully or in a designated spot, often implying a deliberate or official action.
 - advanced_form: [[install]] — Use 'install' when setting up or placing equipment, software, or fixtures in a permanent or functional location.
 - advanced_form: [[position]] — Use 'position' when placing something in a specific or optimal location, often with precision or intention.
+- collocation: [[decorator]]
+- collocation: [[kneebend]]
+- collocation: [[libretto]]
+- synonym: [[phraseological]]
+- synonym: [[prepared]]
+- synonym: [[prescribed]]
+- collocation: [[pressup]]
+- synonym: [[primed]]

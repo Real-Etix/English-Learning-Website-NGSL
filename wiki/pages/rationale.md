@@ -9,6 +9,8 @@ rank: 1079
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: reason
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ status: enriched
 - builds_on: [[motive]] — Use 'rationale' when focusing on the logical justification or reason behind a decision or belief, rather than a personal desire.
 - advanced_form: [[justification]] — Use 'justification' when emphasizing the act of proving something right or reasonable, often in legal or formal contexts, whereas 'rationale' focuses on the underlying reasoning.
 - advanced_form: [[explication]] — Use 'explication' for a thorough, formal explanation of a theory or concept, more technical than 'rationale' which is a reason or set of reasons.
+- synonym: [[argumentation]]

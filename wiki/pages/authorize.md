@@ -9,6 +9,8 @@ rank: 138
 sfi: 57.1
 sources: [wordnet, llm]
 status: enriched
+chart: pass
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,6 @@ _No sourced examples yet._
 - advanced_form: [[mandate]] — Use 'mandate' when authorizing something as a compulsory order, implying obligation, unlike the permissive 'authorize'.
 - builds_on: [[empower]] — Use 'authorize' when giving official permission or legal power, often in formal or bureaucratic contexts, instead of the more general 'empower'.
 - builds_on: [[entitle]] — Use 'authorize' when the right is granted by an official or formal authority, often with documentation or legal backing.
+- synonym: [[accredit]]
+- synonym: [[depute]]
+- synonym: [[visa]]

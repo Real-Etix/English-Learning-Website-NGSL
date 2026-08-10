@@ -6,6 +6,8 @@ pos: noun
 forms: [surrogate]
 sources: [llm]
 status: enriched
+chart: sway
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[alternative]] — Use 'surrogate' when referring to a person or thing that takes the place of another, especially in a functional or representative role.
 - builds_on: [[ordinary]] — Use 'surrogate' instead of 'ordinary' when referring to a probate judge in jurisdictions like New York.
 - builds_on: [[substitute]] — Use 'surrogate' when emphasizing a person who substitutes in a functional or emotional role, especially in contexts like parenthood or representation.
+- builds_on: [[proxy]] — Use for a substitute who stands in for someone, often in a formal or legal context.

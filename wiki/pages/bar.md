@@ -9,6 +9,8 @@ rank: 837
 sfi: 60.55
 sources: [wordnet, llm]
 status: enriched
+chart: bar
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,15 @@ a room or establishment where alcoholic drinks are served over a counter
 - builds_on: [[block]] — Use when someone or something prevents access, often by official or authoritative action.
 - builds_on: [[dock]] — Use 'bar' instead of 'dock' in formal or historical legal contexts, where it refers to the railing or enclosure for the accused.
 - builds_on: [[stripe]] — Use 'bar' instead of 'stripe' for broad, rectangular bands of color, common in flags or heraldry.
+- synonym: [[barricade]]
+- collocation: [[chime]]
+- collocation: [[habitu]]
+- collocation: [[haunt]]
+- synonym: [[ingot]]
+- collocation: [[lawyer]]
+- synonym: [[lever]]
+- synonym: [[pole]]
+- collocation: [[protein]]
+- synonym: [[pub]]
+- synonym: [[handspike]]
+- synonym: [[honky-tonk]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [creek]
 sources: [llm]
 status: enriched
+chart: inexperience
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[stream]] — Use 'creek' for a stream that is larger than a brook, commonly used in American English.
+- synonym: [[brook]]
+- synonym: [[rivulet]]
+- synonym: [[watercourse]]
+- synonym: [[estuary]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [bolt]
 sources: [llm]
 status: enriched
+chart: soar
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,8 @@ _No sourced examples yet._
 - builds_on: [[run]] — Use 'bolt' for running away suddenly and quickly, often due to fear or surprise.
 - builds_on: [[flee]] — Use for a sudden, rapid movement away, often out of fear or alarm, like an animal or person darting off.
 - builds_on: [[lock]] — Use 'bolt' instead of 'lock' when the fastening involves a sliding metal bar, often for heavy doors.
+- synonym: [[abscond]]
+- synonym: [[dowel]]
+- synonym: [[gallop]]
+- synonym: [[latch]]
+- synonym: [[padlock]]

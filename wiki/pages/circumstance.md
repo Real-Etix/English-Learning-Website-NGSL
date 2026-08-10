@@ -9,6 +9,8 @@ rank: 1229
 sfi: 58.52
 sources: [wordnet, llm]
 status: enriched
+chart: domain
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[context]] — Use 'context' when focusing on the background or setting that explains why something happens, rather than a specific event.
 - advanced_form: [[scenario]] — Use 'scenario' for a possible or imagined sequence of circumstances, often in planning or forecasting.
 - advanced_form: [[juncture]] — Use 'juncture' for a critical point in time or a combination of circumstances that forces a decision.
+- synonym: [[occurrence]]

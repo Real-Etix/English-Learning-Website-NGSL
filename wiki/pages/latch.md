@@ -6,6 +6,8 @@ pos: verb
 forms: [latch]
 sources: [llm]
 status: enriched
+chart: clasp
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hook]] — Use 'latch' when securing a door or gate with a simple locking mechanism.
+- synonym: [[fasten]]
+- synonym: [[secure]]
+- synonym: [[lock]]
+- synonym: [[bolt]]
+- collocation: [[gate]]
+- collocation: [[door]]
+- collocation: [[window]]
+- collocation: [[shut]]
+- collocation: [[onto]]

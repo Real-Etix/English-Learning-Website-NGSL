@@ -9,6 +9,8 @@ rank: 2089
 sfi: 55.25
 sources: [wordnet, llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - builds_on: [[chain]] — Use 'string' instead of 'chain' when emphasizing a connected sequence, especially of events or objects.
 - advanced_form: [[strand]] — Use 'strand' when referring to a single thin piece of a cord, or a component of a larger rope.
 - advanced_form: [[twine]] — Use 'twine' for a lightweight cord made of twisted fibers, often used for tying or binding.
+- collocation: [[concatenation]]
+- collocation: [[delimiter]]
+- collocation: [[divertimento]]
+- synonym: [[cord]]
+- builds_on: [[row]] — Use for a sequence of objects or occurrences along a line, like lights or islands.
+- collocation: [[quintet]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [scintilla]
 sources: [llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition

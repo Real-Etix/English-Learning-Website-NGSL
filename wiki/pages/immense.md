@@ -6,6 +6,8 @@ pos: adjective
 forms: [immense]
 sources: [llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[terrific]] — Use 'immense' instead of 'terrific' to emphasize a large scale or magnitude that is overwhelming.
 - builds_on: [[vast]] — Use 'immense' when you want to emphasize overwhelming size or scope, often with a sense of awe or scale that 'vast' may lack.
 - builds_on: [[massive]] — Use 'immense' to stress great scale or extent, often abstract or measurable.
+- collocation: [[boon]]
+- synonym: [[cavernous]]

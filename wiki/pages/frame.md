@@ -9,6 +9,8 @@ rank: 1511
 sfi: 57.34
 sources: [wordnet, llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - builds_on: [[formulate]] — Use 'frame' when you mean to construct or express a theory in a particular way, often with attention to wording or structure.
 - advanced_form: [[mounting]] — Use 'mounting' when discussing the structural component that supports the lenses, often in technical or professional contexts.
 - advanced_form: [[rim]] — Use 'rim' to specify the visible border around the lens, especially when describing style or frame design.
+- synonym: [[casement]]
+- collocation: [[portly]]
+- collocation: [[wiry]]
+- synonym: [[ossature]]

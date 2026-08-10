@@ -9,6 +9,8 @@ rank: 1185
 sfi: 51.69
 sources: [wordnet, llm]
 status: enriched
+chart: occupation
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[remuneration]] — Use 'remuneration' instead of 'royalty' when emphasizing a formal payment for the use of intellectual property or services.
 - advanced_form: [[consideration]] — Use 'consideration' instead of 'royalty' in legal or contractual contexts to refer to the payment or value given for the right to use property.
+- synonym: [[fee]]
+- synonym: [[payment]]
+- synonym: [[commission]]
+- synonym: [[share]]

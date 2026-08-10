@@ -6,6 +6,8 @@ pos: noun
 forms: [acumen]
 sources: [llm]
 status: enriched
+chart: information
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[intuition]] — Use when referring to sharp, practical insight in a specialized field.
 - builds_on: [[intelligence]] — Use 'acumen' for sharp, practical intelligence in a specific field like business or finance.
+- builds_on: [[insight]] — Use in professional or practical contexts for sharp, quick insight, especially in business or decision-making.

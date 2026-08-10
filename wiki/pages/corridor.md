@@ -6,6 +6,8 @@ pos: noun
 forms: [corridor]
 sources: [llm]
 status: enriched
+chart: lobby
+region: lobby
 ---
 
 ## Definition

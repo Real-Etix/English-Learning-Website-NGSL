@@ -6,6 +6,8 @@ pos: adjective
 forms: [toasty]
 sources: [llm]
 status: enriched
+chart: sunny
+region: you
 ---
 
 ## Definition

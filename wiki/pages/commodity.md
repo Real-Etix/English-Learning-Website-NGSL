@@ -9,6 +9,8 @@ rank: 40
 sfi: 60.23
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: good
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,4 @@ articles of commerce
 - advanced_form: [[merchandise]] — Use 'merchandise' when referring to goods that are bought and sold in a retail context, especially in stores or markets.
 - advanced_form: [[wares]] — Use 'wares' for items offered for sale, often by a specific seller or at a market, and it carries a slightly more formal or old-fashioned tone.
 - advanced_form: [[stock]] — Use 'stock' for goods kept on hand for future sale or use, emphasizing inventory rather than individual items.
+- collocation: [[marketable]]

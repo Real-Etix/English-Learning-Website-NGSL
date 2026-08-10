@@ -6,6 +6,8 @@ pos: verb
 forms: [conquer]
 sources: [llm]
 status: enriched
+chart: prevail
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,5 @@ _No sourced examples yet._
 - builds_on: [[win]] — Use 'conquer' when the win involves complete dominance or overcoming a significant challenge.
 - builds_on: [[beat]] — Use 'conquer' to emphasize overwhelming, often decisive victory.
 - builds_on: [[triumph]] — Use when focusing on gaining control or mastery over a challenge, enemy, or personal weakness.
+- synonym: [[overcome]]
+- builds_on: [[overcome]] — Use for personal weaknesses or fears, or literal military victory.

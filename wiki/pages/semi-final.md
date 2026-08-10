@@ -6,6 +6,8 @@ pos: noun
 forms: [semi-final]
 sources: [llm]
 status: enriched
+chart: semi
+region: semi
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adverb
 forms: [sweepingly]
 sources: [llm]
 status: enriched
+chart: sew
+region: you
 ---
 
 ## Definition

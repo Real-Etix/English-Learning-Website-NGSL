@@ -9,6 +9,8 @@ rank: 151
 sfi: 56.99
 sources: [wordnet, llm]
 status: enriched
+chart: outside
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ located, suited for, or taking place within a building
 - advanced_form: [[interior]] — Use 'interior' to emphasize being within a building or structure, especially in formal or architectural contexts.
 - advanced_form: [[enclosed]] — Use 'enclosed' when describing a space that is surrounded or shut in, often contrasting with open-air areas.
 - advanced_form: [[covered]] — Use 'covered' when the focus is on protection from the elements rather than specifically being inside a building.
+- collocation: [[natatorium]]
+- collocation: [[volleyball]]
+- collocation: [[pyrotechnics]]

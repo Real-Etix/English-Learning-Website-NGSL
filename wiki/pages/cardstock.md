@@ -6,6 +6,8 @@ pos: noun
 forms: [cardstock]
 sources: [llm]
 status: enriched
+chart: register
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[paper]] — Use 'cardstock' instead of 'paper' when the material is thicker, stiffer, and more durable than ordinary writing paper, common for invitations, cards, or craft projects.
+- synonym: [[card]]
+- synonym: [[stock]]
+- synonym: [[board]]
+- collocation: [[thick]]
+- collocation: [[heavy]]
+- collocation: [[white]]

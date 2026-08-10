@@ -9,6 +9,8 @@ rank: 438
 sfi: 53.44
 sources: [wordnet, llm]
 status: enriched
+chart: carpenter
+region: carpenter
 ---
 
 ## Definition

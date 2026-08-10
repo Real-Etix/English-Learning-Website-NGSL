@@ -6,6 +6,8 @@ pos: noun
 forms: [cacophony]
 sources: [llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition

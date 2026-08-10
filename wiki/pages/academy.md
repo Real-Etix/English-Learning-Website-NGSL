@@ -6,6 +6,8 @@ pos: noun
 forms: [academy]
 sources: [llm]
 status: enriched
+chart: get
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,7 @@ _No sourced examples yet._
 - builds_on: [[school]] — Use 'academy' to emphasize a specialized or prestigious institution, often for arts, sciences, or military training, rather than a general school.
 - builds_on: [[college]] — Use 'academy' to refer to the college as a whole institution, especially in formal or traditional contexts.
 - builds_on: [[tech]] — Use 'academy' for specialized training schools, especially in technical fields.
+- synonym: [[academia]]
+- synonym: [[polytechnic]]
+- builds_on: [[gymnasium]] — Use 'academy' when emphasizing a prestigious or specialized secondary school, especially in formal or institutional contexts.
+- synonym: [[lyceum]]

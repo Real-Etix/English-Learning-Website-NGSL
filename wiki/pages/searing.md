@@ -6,6 +6,8 @@ pos: adjective
 forms: [searing]
 sources: [llm]
 status: enriched
+chart: seize
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hot]] — Use for heat that feels like it is burning or cutting through, often related to cooking or sharp heat.
+- synonym: [[blistering]]
+- synonym: [[exsiccation]]

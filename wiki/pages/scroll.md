@@ -9,6 +9,8 @@ rank: 939
 sfi: 43.465
 sources: [wordnet, llm]
 status: enriched
+chart: spiral
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[spiral]] — Use 'spiral' when the shape winds around a central point in a continuous curve, often in a single plane.
 - advanced_form: [[whorl]] — Use 'whorl' for a specific pattern of concentric circles, especially in botanical contexts like leaves or petals.
 - advanced_form: [[coil]] — Use 'coil' when the shape consists of circles stacked or lying one upon another, often implying a three-dimensional structure.
+- synonym: [[volute]]

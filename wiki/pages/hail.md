@@ -6,6 +6,8 @@ pos: verb
 forms: [hail]
 sources: [llm]
 status: enriched
+chart: you
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[welcome]] — Use for public acclaim or approval of an event or decision.
 - builds_on: [[greet]] — Use 'hail' instead of 'greet' to emphasize enthusiastic public welcome or acclaim.
+- synonym: [[barrage]]

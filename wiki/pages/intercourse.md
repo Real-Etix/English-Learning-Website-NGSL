@@ -6,6 +6,8 @@ pos: noun
 forms: [intercourse]
 sources: [llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[contact]] — Use when emphasizing formal or sustained mutual exchange, often in social or intellectual contexts.
 - builds_on: [[sex]] — Use in formal or clinical contexts instead of 'sex'.
+- synonym: [[lovemaking]]

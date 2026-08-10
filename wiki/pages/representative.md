@@ -9,6 +9,8 @@ rank: 1471
 sfi: 57.52
 sources: [wordnet, llm]
 status: enriched
+chart: representative
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,10 @@ _No sourced examples yet._
 - advanced_form: [[envoy]] — Use 'envoy' when referring to a diplomatic representative sent on a specific mission, often in international or high-level negotiations, implying a more formal and temporary role.
 - builds_on: [[typical]] — Use 'representative' when something serves as a typical example of a larger group.
 - builds_on: [[democratic]] — Use 'representative' to describe systems or bodies that act on behalf of a group, stressing delegation rather than direct rule.
+- synonym: [[congressperson]]
+- synonym: [[emblematic]]
+- synonym: [[mouthpiece]]
+- builds_on: [[salesman]] — Use in more formal business contexts, especially for services or corporate sales.
+- synonym: [[lawmaker]]
+- synonym: [[prolocutor]]
+- synonym: [[spokeswoman]]

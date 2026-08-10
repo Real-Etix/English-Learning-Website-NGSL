@@ -6,6 +6,8 @@ pos: adjective
 forms: [transitional]
 sources: [llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 784
 sfi: 60.86
 sources: [wordnet, llm]
 status: enriched
+chart: counsel
+region: you
 ---
 
 ## Definition

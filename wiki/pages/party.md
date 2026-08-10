@@ -9,6 +9,8 @@ rank: 299
 sfi: 65.08
 sources: [wordnet, llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,13 @@ an organization to gain political power
 - advanced_form: [[faction]] — Use 'faction' to emphasize internal division or a distinct subgroup, not the whole party.
 - advanced_form: [[bloc]] — Use 'bloc' when referring to a coalition of parties or voting groups, often in a legislative context.
 - advanced_form: [[movement]] — Use 'movement' for a broader, often grassroots political force, rather than a formal party organization.
+- synonym: [[acceptor]]
+- collocation: [[birthday]]
+- collocation: [[bolshevik]]
+- collocation: [[coffers]]
+- collocation: [[entertainer]]
+- collocation: [[hardliner]]
+- collocation: [[masquerade]]
+- collocation: [[warhorse]]
+- collocation: [[apparatchik]]
+- collocation: [[canap]]

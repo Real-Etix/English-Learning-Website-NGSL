@@ -7,8 +7,10 @@ forms: [overcome, overcomes, overcame, overcoming]
 lists: [ngsl]
 rank: 2222
 sfi: 54.88
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: suppress
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,11 @@ win a victory over
 
 ## Connections
 - synonym: [[defeat]]
+- synonym: [[beat]]
+- synonym: [[conquer]]
+- synonym: [[surmount]]
+- collocation: [[fear]]
+- collocation: [[resistance]]
+- advanced_form: [[surmount]] — Use for overcoming obstacles or challenges in a formal or figurative way.
+- advanced_form: [[conquer]] — Use for personal weaknesses or fears, or literal military victory.
+- advanced_form: [[vanquish]] — Use for a thorough or decisive defeat, often of opponents or abstract evils.

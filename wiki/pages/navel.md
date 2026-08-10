@@ -9,6 +9,8 @@ rank: 49
 sfi: 64.19
 sources: [wordnet, llm]
 status: enriched
+chart: navel
+region: navel
 ---
 
 ## Definition

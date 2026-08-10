@@ -9,6 +9,8 @@ rank: 172
 sfi: 58.49
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[pare]] — Use 'pare' when carefully cutting off the outer layer, often with a tool, implying precision.
 - advanced_form: [[skin]] — Use 'skin' when removing the outer layer from fruit or animals, often by hand or with minimal tools.
+- collocation: [[citron]]
+- collocation: [[citrus]]

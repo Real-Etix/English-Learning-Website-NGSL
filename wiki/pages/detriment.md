@@ -6,6 +6,8 @@ pos: noun
 forms: [detriment]
 sources: [llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[downside]] — Use 'detriment' to focus on harm or damage caused, highlighting a strong negative effect on something otherwise positive.
+- synonym: [[harm]]
+- synonym: [[damage]]
+- synonym: [[disadvantage]]
+- synonym: [[drawback]]
+- synonym: [[liability]]

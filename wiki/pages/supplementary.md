@@ -6,6 +6,8 @@ pos: adjective
 forms: [supplementary]
 sources: [llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition

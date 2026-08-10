@@ -6,6 +6,8 @@ pos: noun
 forms: [oration]
 sources: [llm]
 status: enriched
+chart: discourse
+region: you
 ---
 
 ## Definition

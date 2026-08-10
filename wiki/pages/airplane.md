@@ -9,6 +9,8 @@ rank: 99
 sfi: 57.91
 sources: [wordnet, llm]
 status: enriched
+chart: suite
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ an aircraft that has a fixed wing and is powered by propellers or jets
 - domain: fitness
 - advanced_form: [[aircraft]] — Use 'aircraft' as a formal or technical term for any flying vehicle, while 'airplane' is more casual.
 - advanced_form: [[airliner]] — Use 'airliner' specifically for large commercial passenger airplanes, while 'airplane' is general.
+- collocation: [[ascending]]

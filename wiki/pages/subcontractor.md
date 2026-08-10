@@ -6,6 +6,8 @@ pos: noun
 forms: [subcontractor]
 sources: [llm]
 status: enriched
+chart: contractor
+region: contractor
 ---
 
 ## Definition

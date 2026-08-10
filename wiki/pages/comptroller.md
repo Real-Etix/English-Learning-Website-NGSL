@@ -6,6 +6,8 @@ pos: noun
 forms: [comptroller]
 sources: [llm]
 status: enriched
+chart: auditor
+region: you
 ---
 
 ## Definition

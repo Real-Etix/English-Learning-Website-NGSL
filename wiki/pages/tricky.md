@@ -9,6 +9,8 @@ rank: 616
 sfi: 52.74
 sources: [wordnet, llm]
 status: enriched
+chart: tricky
+region: tricky
 ---
 
 ## Definition

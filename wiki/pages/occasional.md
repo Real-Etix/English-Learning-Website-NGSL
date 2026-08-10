@@ -9,6 +9,8 @@ rank: 1388
 sfi: 51.05
 sources: [wordnet, llm]
 status: enriched
+chart: occasional
+region: occasional
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ occurring from time to time
 - domain: business
 - advanced_form: [[sporadic]] — Use 'sporadic' when events happen at irregular intervals, with no pattern or predictability.
 - advanced_form: [[intermittent]] — Use 'intermittent' when something stops and starts repeatedly, often with brief periods of activity and silence.
+- collocation: [[indulgence]]

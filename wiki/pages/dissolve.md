@@ -9,6 +9,8 @@ rank: 654
 sfi: 53.089
 sources: [wordnet, llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[subside]] — Use 'subside' instead of 'dissolve' when describing feelings, emotions, or physical phenomena that become less intense over time, often naturally.
 - advanced_form: [[abate]] — Use 'abate' instead of 'dissolve' in formal or legal contexts to indicate a decrease in something undesirable, like noise, pain, or a problem.
 - builds_on: [[divorce]] — Use 'dissolve' for a formal, legal, or official termination of a marriage or partnership, rather than the everyday 'divorce'.
+- synonym: [[disappear]]
+- synonym: [[disintegrate]]
+- collocation: [[granules]]
+- synonym: [[liquefy]]
+- collocation: [[matrimony]]

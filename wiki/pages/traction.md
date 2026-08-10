@@ -9,6 +9,8 @@ rank: 236
 sfi: 56.78
 sources: [wordnet, llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[grip]] — Use 'grip' when focusing on the holding power between surfaces, often in contexts of safety or performance.
 - advanced_form: [[adherence]] — Use 'adherence' in technical or formal descriptions of how tightly two surfaces stick together.
 - advanced_form: [[purchase]] — Use 'purchase' when emphasizing the ability to gain a steady foothold or resistance against slipping, especially on vertical or uneven surfaces.
+- builds_on: [[haul]] — Use when emphasizing a controlled, often medical or mechanical pulling force.
+- synonym: [[draught]]

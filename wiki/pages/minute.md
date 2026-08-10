@@ -9,6 +9,8 @@ rank: 366
 sfi: 64.28
 sources: [wordnet, llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ a unit of time equal to 60 seconds or 1/60th of an hour
 - advanced_form: [[instant]] — Use 'instant' for an extremely brief, almost imperceptible time, more dramatic than 'minute'.
 - builds_on: [[micro]] — Use 'minute' when describing extremely small details or differences that require careful attention, rather than the general smallness implied by 'micro'.
 - builds_on: [[tiny]] — Use 'minute' for something so small it is difficult to notice or measure precisely, often used for differences or details.
+- synonym: [[fractional]]
+- synonym: [[microscopic]]

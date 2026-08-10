@@ -6,6 +6,8 @@ pos: noun
 forms: [transgression]
 sources: [llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[crime]] — Use for a broader, often moral or formal breach of a rule or law, emphasizing the act of going beyond a limit.
+- synonym: [[contravention]]
+- synonym: [[misdemeanor]]
+- synonym: [[wrongdoing]]

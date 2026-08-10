@@ -6,6 +6,8 @@ pos: verb
 forms: [trot]
 sources: [llm]
 status: enriched
+chart: walk
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[ride]] — Use when riding at a moderate, steady pace between a walk and a canter.
+- synonym: [[canter]]

@@ -9,6 +9,8 @@ rank: 1564
 sfi: 57.14
 sources: [wordnet, llm]
 status: enriched
+chart: first
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ in large part
 - advanced_form: [[chiefly]] — Use 'chiefly' to emphasize the main or most important factor, often in formal or written contexts.
 - advanced_form: [[primarily]] — Use 'primarily' to indicate the main focus or purpose, more precise than 'largely'.
 - advanced_form: [[predominantly]] — Use 'predominantly' to stress overwhelming majority or prevalence, stronger than 'largely'.
+- collocation: [[ascribable]]

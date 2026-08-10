@@ -9,6 +9,8 @@ rank: 2585
 sfi: 53.68
 sources: [wordnet, llm]
 status: enriched
+chart: cheese
+region: cheese
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[cheddar]] — Use 'cheddar' when speaking about a specific type of cheese, especially in contexts where the variety matters, rather than the generic 'cheese'.
 - advanced_form: [[gouda]] — Use 'gouda' to refer to a specific Dutch cheese, ideal for describing cheese boards or recipes where the name adds flavor and sophistication.
 - advanced_form: [[fromage]] — Use 'fromage' in upscale dining or French-themed contexts to sound more refined than the plain word 'cheese'.
+- collocation: [[artisan]]
+- collocation: [[artisanal]]
+- collocation: [[beefburger]]
+- collocation: [[burger]]
+- collocation: [[quiche]]
+- collocation: [[ripen]]
+- synonym: [[curd]]
+- collocation: [[curd]]

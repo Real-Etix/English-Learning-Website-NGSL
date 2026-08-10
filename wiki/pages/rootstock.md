@@ -6,6 +6,8 @@ pos: noun
 forms: [rootstock]
 sources: [llm]
 status: enriched
+chart: root
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[root]] — Use 'rootstock' when referring to a root system used for grafting in horticulture, rather than the general term 'root'.
+- synonym: [[bulb]]
+- synonym: [[rhizome]]
+- synonym: [[stock]]
+- collocation: [[vigorous]]
+- collocation: [[apple]]

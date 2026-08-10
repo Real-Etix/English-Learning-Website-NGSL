@@ -6,6 +6,8 @@ pos: noun
 forms: [tarnishing]
 sources: [llm]
 status: enriched
+chart: oxidation
+region: oxidation
 ---
 
 ## Definition

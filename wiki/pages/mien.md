@@ -6,6 +6,8 @@ pos: noun
 forms: [mien]
 sources: [llm]
 status: enriched
+chart: care
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[appearance]] — Use 'mien' for a person's bearing or demeanor that gives a visual impression.
+- synonym: [[demeanor]]
+- synonym: [[bearing]]
+- synonym: [[air]]
+- synonym: [[manner]]
+- collocation: [[calm]]
+- collocation: [[quiet]]
+- collocation: [[gentle]]

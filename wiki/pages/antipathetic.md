@@ -6,6 +6,8 @@ pos: adjective
 forms: [antipathetic]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[averse]] — Use when the opposition is deep-seated and almost instinctive, stronger than just being averse.
+- synonym: [[hostile]]
+- synonym: [[antagonistic]]
+- collocation: [[deeply]]
+- collocation: [[utterly]]
+- collocation: [[to]]
+- collocation: [[toward]]
+- collocation: [[attitude]]

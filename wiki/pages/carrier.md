@@ -9,6 +9,8 @@ rank: 144
 sfi: 57.16
 sources: [wordnet, llm]
 status: enriched
+chart: stakeholder
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ someone whose employment involves carrying something
 - advanced_form: [[haulier]] — Use when referring to someone whose job is transporting goods, especially by truck, more specific than 'carrier'.
 - builds_on: [[sack]] — Use 'carrier' to refer to a disposable plastic or paper bag; it is the standard retail term, more neutral than 'sack'.
 - builds_on: [[insurer]] — Use 'carrier' to refer to the insurance company as the provider of coverage.
+- collocation: [[ampholyte]]
+- synonym: [[bag]]
+- synonym: [[bulker]]
+- builds_on: [[channel]] — Use 'carrier' when focusing on the medium that transports a signal, especially in telecommunications.
+- synonym: [[anopheline]]
+- collocation: [[demodulator]]
+- synonym: [[hauler]]

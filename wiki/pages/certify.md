@@ -9,6 +9,8 @@ rank: 595
 sfi: 52.71
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - advanced_form: [[corroborate]] — Use 'corroborate' when additional evidence supports or confirms a claim or theory.
 - advanced_form: [[substantiate]] — Use 'substantiate' when providing solid proof or evidence to back up a statement, often in academic or formal contexts.
 - builds_on: [[validate]] — Use 'certify' when an authority formally attests to the validity or accuracy of something.
+- synonym: [[accredit]]
+- synonym: [[vouch]]

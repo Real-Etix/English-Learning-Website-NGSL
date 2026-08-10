@@ -9,6 +9,8 @@ rank: 790
 sfi: 51.92
 sources: [wordnet, llm]
 status: enriched
+chart: substantially
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ with respect to material aspects
 - advanced_form: [[substantially]] — Use 'substantially' when emphasizing a significant or essential impact on physical or practical matters, often implying a notable change.
 - advanced_form: [[concretely]] — Use 'concretely' when focusing on tangible, physical, or specific details rather than abstract ideas.
 - advanced_form: [[tangibly]] — Use 'tangibly' when something can be clearly perceived or measured in physical or material terms.
+- synonym: [[corporeally]]
+- builds_on: [[significantly]] — Use when emphasizing that the difference is important enough to affect the overall conclusion, especially in statistical or scientific contexts.

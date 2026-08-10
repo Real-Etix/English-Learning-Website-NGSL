@@ -6,6 +6,8 @@ pos: verb
 forms: [stifle]
 sources: [llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inhibit]] — Use 'stifle' when prevention feels suffocating or inhibits natural development.
+- synonym: [[asphyxiate]]
+- synonym: [[genu]]

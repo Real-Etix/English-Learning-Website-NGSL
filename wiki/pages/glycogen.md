@@ -9,6 +9,8 @@ rank: 122
 sfi: 60.06
 sources: [wordnet, llm]
 status: enriched
+chart: carbohydrate
+region: carbohydrate
 ---
 
 ## Definition

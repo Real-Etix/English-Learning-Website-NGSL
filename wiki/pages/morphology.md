@@ -9,6 +9,8 @@ rank: 188
 sfi: 57.76
 sources: [wordnet, llm]
 status: enriched
+chart: morphology
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[morphometrics]] — Use 'morphometrics' instead of 'morphology' when you specifically want to emphasize the quantitative measurement of forms.
 - advanced_form: [[morphogenesis]] — Use 'morphogenesis' instead of 'morphology' to focus on the developmental processes that create form.
 - builds_on: [[grammar]] — Use when focusing on word forms.
+- collocation: [[derivational]]
+- collocation: [[inflectional]]

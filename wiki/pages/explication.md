@@ -6,6 +6,8 @@ pos: noun
 forms: [explication]
 sources: [llm]
 status: enriched
+chart: reason
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[rationale]] — Use 'explication' for a thorough, formal explanation of a theory or concept, more technical than 'rationale' which is a reason or set of reasons.
 - builds_on: [[definition]] — Use 'explication' for a detailed, often academic, explanation of complex ideas, especially in texts.
+- synonym: [[clarification]]

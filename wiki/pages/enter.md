@@ -9,6 +9,8 @@ rank: 717
 sfi: 61.21
 sources: [wordnet, llm]
 status: enriched
+chart: enter
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - advanced_form: [[penetrate]] — Use when the entry is forceful, piercing, or goes through a barrier.
 - advanced_form: [[access]] — Use when entering a place or system by right, permission, or ability.
 - advanced_form: [[infiltrate]] — Use when entering secretly or gradually, often with hostile intent.
+- collocation: [[adulthood]]
+- collocation: [[keypad]]
+- synonym: [[matriculate]]
+- collocation: [[matrimony]]
+- collocation: [[passcode]]
+- collocation: [[passkey]]
+- collocation: [[wedlock]]

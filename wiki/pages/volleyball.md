@@ -9,6 +9,8 @@ rank: 1093
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: volleyball
+region: volleyball
 ---
 
 ## Definition
@@ -20,3 +22,8 @@ _No sourced examples yet._
 ## Connections
 - domain: toeic
 - advanced_form: [[volley]] — Use 'volley' as a casual, shortened form of 'volleyball', acceptable in informal contexts.
+- collocation: [[beach]]
+- collocation: [[indoor]]
+- collocation: [[play]]
+- collocation: [[team]]
+- collocation: [[court]]

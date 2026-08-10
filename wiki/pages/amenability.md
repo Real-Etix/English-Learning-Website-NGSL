@@ -6,6 +6,8 @@ pos: noun
 forms: [amenability]
 sources: [llm]
 status: enriched
+chart: willingness
+region: willingness
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[willingness]] — Use amenability to describe a cooperative and open-minded willingness, suitable in professional contexts.
+- synonym: [[answerability]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [thirstiness]
 sources: [llm]
 status: enriched
+chart: want
+region: you
 ---
 
 ## Definition

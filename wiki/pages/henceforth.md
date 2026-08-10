@@ -6,6 +6,8 @@ pos: adverb
 forms: [henceforth]
 sources: [llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[thereafter]] — Use 'henceforth' to indicate from this point forward, often in formal or legal contexts; differs from 'thereafter' which refers to a past point.
 - builds_on: [[anymore]] — Use 'henceforth' in formal or written contexts to indicate a permanent change starting now, whereas 'anymore' is more conversational and often negative.
+- synonym: [[hereafter]]

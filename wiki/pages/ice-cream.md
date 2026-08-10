@@ -9,6 +9,8 @@ rank: 291
 sfi: 55
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 
 ## Connections
 - domain: toeic
+- synonym: [[dessert]]
+- collocation: [[vanilla]]
+- collocation: [[chocolate]]
+- collocation: [[cone]]
+- collocation: [[scoop]]

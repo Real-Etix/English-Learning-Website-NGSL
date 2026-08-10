@@ -9,6 +9,8 @@ rank: 1894
 sfi: 55.86
 sources: [wordnet, llm]
 status: enriched
+chart: substantial
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ of considerable importance, size, or worth
 - advanced_form: [[appreciable]] — Use 'appreciable' when you want to stress that something is large enough to be noticed or measured, often for changes or amounts.
 - advanced_form: [[sizable]] — Use 'sizable' instead of 'substantial' when referring specifically to size or amount, often in business or financial contexts.
 - builds_on: [[thick]] — Use 'substantial' to emphasize solidity, strength, or importance, not just physical thickness.
+- synonym: [[weighty]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [outlying]
 sources: [llm]
 status: enriched
+chart: surplus
+region: you
 ---
 
 ## Definition

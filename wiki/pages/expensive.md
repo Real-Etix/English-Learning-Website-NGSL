@@ -9,6 +9,8 @@ rank: 1061
 sfi: 59.31
 sources: [wordnet, llm]
 status: enriched
+chart: economical
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 133
 sfi: 58.407
 sources: [wordnet, llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[typescript]] — Use 'typescript' when referring specifically to a typed or printed manuscript, as opposed to a handwritten one.
 - advanced_form: [[draft]] — Use 'draft' when emphasizing an early or preliminary version of a manuscript, often subject to revision.
+- collocation: [[copyedit]]
+- collocation: [[redactor]]

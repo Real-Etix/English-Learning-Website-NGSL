@@ -9,6 +9,8 @@ rank: 1262
 sfi: 58.38
 sources: [wordnet, llm]
 status: enriched
+chart: consignment
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ the social force that binds you to the courses of action demanded by that force
 - builds_on: [[tariff]] — Use 'duty' when referring specifically to customs taxes, often in trade contexts.
 - advanced_form: [[onus]] — Use 'onus' instead of 'duty' to emphasize a heavy or unwelcome responsibility, often in formal or legal contexts.
 - advanced_form: [[mandate]] — Use 'mandate' instead of 'duty' when referring to an official, authoritative, or legally binding obligation.
+- collocation: [[invigilator]]
+- collocation: [[leviable]]
+- collocation: [[mandatee]]
+- collocation: [[proctor]]
+- collocation: [[roster]]
+- collocation: [[watchkeeper]]

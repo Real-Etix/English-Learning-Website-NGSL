@@ -6,6 +6,8 @@ pos: noun
 forms: [churn]
 sources: [llm]
 status: enriched
+chart: outlay
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[turnover]] — Use 'churn' in informal or business jargon to emphasize rapid, frequent turnover, often with negative connotation.
+- synonym: [[attrition]]
+- synonym: [[departure]]
+- synonym: [[loss]]
+- synonym: [[replacement]]
+- collocation: [[employee]]
+- collocation: [[customer]]
+- collocation: [[rate]]
+- collocation: [[high]]
+- collocation: [[reduce]]

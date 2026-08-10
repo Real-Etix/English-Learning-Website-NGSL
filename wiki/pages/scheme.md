@@ -9,6 +9,8 @@ rank: 1267
 sfi: 58.35
 sources: [wordnet, llm]
 status: enriched
+chart: design
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ _No sourced examples yet._
 - builds_on: [[design]] — Use when the design involves a deliberate, often complex or systematic arrangement, sometimes with strategic intent.
 - advanced_form: [[stratagem]] — Use for a cunning or military-style scheme that involves deception or clever tactics.
 - advanced_form: [[blueprint]] — Use for a very detailed, concrete plan or design, often with diagrams or specifications.
+- collocation: [[categorization]]
+- synonym: [[collude]]
+- synonym: [[connive]]
+- synonym: [[contrive]]
+- collocation: [[contrive]]
+- collocation: [[cunning]]
+- collocation: [[foil]]
+- collocation: [[impracticable]]
+- collocation: [[kickback]]

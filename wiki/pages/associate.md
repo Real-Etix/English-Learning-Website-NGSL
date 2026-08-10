@@ -9,6 +9,8 @@ rank: 857
 sfi: 60.42
 sources: [wordnet, llm]
 status: enriched
+chart: friend
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ a person who joins with others in some activity or endeavor
 - advanced_form: [[cohort]] — Use 'cohort' to emphasize a group affiliation, often implying shared goals or experiences, rather than just a workmate.
 - advanced_form: [[collaborator]] — Use 'collaborator' when the association involves active joint work or co-creation, not just a loose connection.
 - advanced_form: [[ally]] — Use 'ally' when the association is based on mutual support or common interests, often in a competitive or adversarial context.
+- synonym: [[comrade]]
+- synonym: [[coworker]]
+- synonym: [[hobnob]]
+- synonym: [[implicate]]
+- collocation: [[provost]]

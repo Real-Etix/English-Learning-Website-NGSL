@@ -9,6 +9,8 @@ rank: 547
 sfi: 53.03
 sources: [wordnet, llm]
 status: enriched
+chart: firm
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ not moving or operating freely
 - advanced_form: [[immobile]] — Use 'immobile' when something cannot move at all, more absolute than 'stiff'.
 - advanced_form: [[taut]] — Use 'taut' for stiffness caused by tension or tightness, especially in muscles or ropes.
 - advanced_form: [[unyielding]] — Use 'unyielding' when something resists force or pressure, emphasizing stubborn resistance to motion.
+- collocation: [[bristle]]
+- synonym: [[inflexible]]
+- synonym: [[robotic]]

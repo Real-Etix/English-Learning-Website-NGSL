@@ -6,6 +6,8 @@ pos: noun
 forms: [pallium]
 sources: [llm]
 status: enriched
+chart: cortex
+region: cortex
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cortex]] — Use 'pallium' in formal anatomical or neurological contexts, especially when emphasizing the layered structure of the brain's outer surface.
+- collocation: [[lateral]]
+- collocation: [[medial]]
+- collocation: [[ventral]]

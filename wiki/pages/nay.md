@@ -6,6 +6,8 @@ pos: adverb
 forms: [nay]
 sources: [llm]
 status: enriched
+chart: not
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[non]] — Use 'nay' for emphatic or corrective negation, especially in formal or literary contexts, instead of simply 'non'.
+- synonym: [[indeed]]
+- synonym: [[rather]]
+- synonym: [[actually]]
+- synonym: [[truly]]

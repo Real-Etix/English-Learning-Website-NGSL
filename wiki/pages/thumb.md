@@ -9,6 +9,8 @@ rank: 47
 sfi: 64.42
 sources: [wordnet, llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[pollex]] — Use 'pollex' in anatomical or medical contexts for precision.
 - advanced_form: [[digit]] — Use 'digit' in formal or scientific writing when referring to fingers or toes, but note it is less specific than 'thumb'.
+- synonym: [[finger]]
+- collocation: [[green]]
+- collocation: [[sore]]
+- collocation: [[drive]]

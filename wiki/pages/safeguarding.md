@@ -6,6 +6,8 @@ pos: noun
 forms: [safeguarding]
 sources: [llm]
 status: enriched
+chart: conservation
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [observance]
 sources: [llm]
 status: enriched
+chart: pleasure
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[anniversary]] — Use 'observance' when referring to an anniversary that is marked by traditional rituals or official recognition, often for historical or cultural events.
 - builds_on: [[ritual]] — Use 'observance' when emphasizing the act of following a custom or practice.
 - builds_on: [[tradition]] — Use 'observance' when highlighting the act of following a tradition or custom, especially one with formal or moral significance.
+- synonym: [[abidance]]

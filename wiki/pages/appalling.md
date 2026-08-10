@@ -6,6 +6,8 @@ pos: adjective
 forms: [appalling]
 sources: [llm]
 status: enriched
+chart: awful
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[terrible]] — Use 'appalling' when something is so bad it causes dismay or disgust, often used for moral outrage.
 - builds_on: [[awful]] — Use 'appalling' to describe something that shocks you with its badness, emphasizing moral outrage or disgust.
 - builds_on: [[horrible]] — Use 'appalling' to describe something that shocks you by being very bad or unacceptable, focusing on the moral or emotional impact, more formal than 'horrible'.
+- synonym: [[horrific]]

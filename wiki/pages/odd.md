@@ -9,6 +9,8 @@ rank: 1574
 sfi: 57.11
 sources: [wordnet, llm]
 status: enriched
+chart: rough
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - antonym: [[even]]
 - advanced_form: [[uneven]] — Use 'uneven' in formal or mathematical writing to describe a number not divisible by two, though 'odd' is more common.
 - advanced_form: [[non-even]] — Use 'non-even' in technical contexts to emphasize the negation of being even, especially in formal logic or computer science.
+- synonym: [[curious]]
+- synonym: [[eccentric]]
+- collocation: [[juxtaposition]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [trough]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[minimum]] — Use 'trough' to describe the lowest point in a cycle or trend, more technical than 'minimum'.
+- synonym: [[nadir]]

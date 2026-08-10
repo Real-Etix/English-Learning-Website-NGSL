@@ -9,6 +9,8 @@ rank: 1734
 sfi: 56.44
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,13 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[per]]
+- synonym: [[through]]
+- synonym: [[by]]
+- synonym: [[along]]
+- collocation: [[travel]]
+- collocation: [[email]]
+- collocation: [[phone]]
+- collocation: [[satellite]]
+- collocation: [[internet]]
+- collocation: [[videoconference]]

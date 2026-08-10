@@ -6,6 +6,8 @@ pos: noun
 forms: [equanimity]
 sources: [llm]
 status: enriched
+chart: patience
+region: patience
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[patience]] — Use 'equanimity' when focusing on mental calmness and composure, especially under stress; it implies a balanced state of mind rather than just waiting.
+- synonym: [[composure]]
+- synonym: [[poise]]

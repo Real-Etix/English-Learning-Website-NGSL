@@ -9,6 +9,8 @@ rank: 870
 sfi: 52.66
 sources: [wordnet, llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[oversight]] — Use 'oversight' when emphasizing the supervisory role as a formal responsibility, often in organizational or regulatory contexts, instead of the more general 'supervision'.
 - advanced_form: [[direction]] — Use 'direction' when focusing on guiding and leading activities, often implying authority and strategic planning, rather than just the general act of watching over as with 'supervision'.
+- synonym: [[custody]]
+- collocation: [[detoxificationunit]]

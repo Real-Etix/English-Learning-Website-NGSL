@@ -9,6 +9,8 @@ rank: 1130
 sfi: 58.97
 sources: [wordnet, llm]
 status: enriched
+chart: decade
+region: decade
 ---
 
 ## Definition

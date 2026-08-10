@@ -6,6 +6,8 @@ pos: noun
 forms: [spicule]
 sources: [llm]
 status: enriched
+chart: needle
+region: needle
 ---
 
 ## Definition

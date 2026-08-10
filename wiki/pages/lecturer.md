@@ -9,6 +9,8 @@ rank: 860
 sfi: 50.71
 sources: [wordnet, llm]
 status: enriched
+chart: spokesperson
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[don]] — Use 'don' instead of 'lecturer' specifically at Oxford or Cambridge universities to emphasize the academic rank and tradition.
 - advanced_form: [[reader]] — Use 'reader' for a senior lecturer at a British university, often just below professor, to denote a higher academic rank than a standard lecturer.
 - builds_on: [[speaker]] — Use 'lecturer' for someone who speaks professionally in an academic or instructional setting.
+- synonym: [[docent]]
+- synonym: [[orator]]
+- synonym: [[admonisher]]

@@ -9,6 +9,8 @@ rank: 1779
 sfi: 56.26
 sources: [wordnet, llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ something that is likely to vary
 - advanced_form: [[parameter]] — Use 'parameter' when referring to a variable that defines a system or process, often in technical or scientific contexts.
 - advanced_form: [[fluctuation]] — Use 'fluctuation' when emphasizing irregular change or variation over time, especially in data or conditions.
 - advanced_form: [[modifier]] — Use 'modifier' when the variable alters or adjusts something else, common in statistics or programming.
+- collocation: [[dichotomous]]
+- collocation: [[initialize]]
+- synonym: [[mutable]]

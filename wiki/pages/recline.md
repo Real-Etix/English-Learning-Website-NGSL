@@ -9,6 +9,8 @@ rank: 369
 sfi: 54.71
 sources: [wordnet, llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition

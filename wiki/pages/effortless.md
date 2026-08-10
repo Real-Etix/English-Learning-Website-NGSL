@@ -6,6 +6,8 @@ pos: adjective
 forms: [effortless]
 sources: [llm]
 status: enriched
+chart: easy
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[easy]] — Use when emphasizing that something required no effort at all, similar to 'easy' but stronger.
+- synonym: [[simple]]
+- synonym: [[smooth]]
+- synonym: [[uncomplicated]]
+- collocation: [[seemingly]]
+- collocation: [[grace]]
+- collocation: [[style]]
+- collocation: [[look]]

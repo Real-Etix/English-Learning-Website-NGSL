@@ -9,6 +9,8 @@ rank: 374
 sfi: 54.62
 sources: [wordnet, llm]
 status: enriched
+chart: trouble
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ a painful or straitened circumstance
 - domain: fitness
 - advanced_form: [[predicament]] — Use when emphasizing a difficult, unpleasant, or embarrassing situation from which escape is not easy.
 - advanced_form: [[quandary]] — Use when focusing on the state of uncertainty or perplexity over a difficult choice.
+- collocation: [[chew]]
+- synonym: [[clamp]]
+- synonym: [[crimp]]
+- synonym: [[pilfer]]
+- synonym: [[purloin]]

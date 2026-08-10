@@ -9,6 +9,8 @@ rank: 250
 sfi: 55.57
 sources: [wordnet, llm]
 status: enriched
+chart: spokesperson
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[lecturer]] — Use this for formal, educational contexts where the presenter is an expert giving a talk.
 - advanced_form: [[spokesperson]] — Use this when the presenter represents an organization or group and delivers official messages.
 - advanced_form: [[moderator]] — Use this when the presenter's role is to manage a discussion or question-and-answer session.
+- synonym: [[emcee]]

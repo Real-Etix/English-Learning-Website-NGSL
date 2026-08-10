@@ -9,6 +9,8 @@ rank: 1652
 sfi: 56.76
 sources: [wordnet, llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ _No sourced examples yet._
 - advanced_form: [[temperament]] — Used when focusing on innate emotional tendencies rather than overall personality.
 - advanced_form: [[disposition]] — Used to describe a person's natural mood or attitude, often in a specific context.
 - advanced_form: [[persona]] — Used for the social facade or role someone adopts, distinct from inner personality.
+- collocation: [[borderline]]
+- collocation: [[colorful]]
+- collocation: [[conscientiousness]]
+- collocation: [[eccentric]]
+- collocation: [[endearing]]
+- collocation: [[forceful]]
+- collocation: [[histrionic]]
+- collocation: [[jovial]]

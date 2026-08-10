@@ -9,6 +9,8 @@ rank: 2504
 sfi: 53.95
 sources: [wordnet, llm]
 status: enriched
+chart: neck
+region: neck
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - builds_on: [[neck]] — Use 'throat' for the front part of the neck, particularly when referring to swallowing, speaking, or the airway, as distinct from the entire neck.
 - advanced_form: [[pharynx]] — Use 'pharynx' instead of 'throat' when discussing anatomy or medicine precisely.
 - advanced_form: [[esophagus]] — Use 'esophagus' instead of 'throat' when focusing on the passage for food.
+- collocation: [[inflamed]]
+- synonym: [[maw]]

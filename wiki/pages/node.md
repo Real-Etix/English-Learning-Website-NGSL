@@ -9,6 +9,8 @@ rank: 58
 sfi: 59.781
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ a connecting point at which several lines come together
 - advanced_form: [[hub]] — Use 'hub' for a central point of activity, transport, or communication, especially when emphasizing its role as a center of operations.
 - builds_on: [[point]] — Use 'node' instead of 'point' in contexts of networks, graphs, or systems where connections or intersections are involved.
 - builds_on: [[slot]] — Use 'node' when referring to a slot in a hierarchical or tree-like grammatical structure, common in formal syntactic theory.
+- synonym: [[ganglion]]

@@ -9,6 +9,8 @@ rank: 515
 sfi: 62.8
 sources: [wordnet, llm]
 status: enriched
+chart: engage
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,22 @@ perform an action, or work out or perform (an action)
 - advanced_form: [[engage]] — Use when someone actively participates in or commits to an action or activity.
 - advanced_form: [[undertake]] — Use when someone takes on a responsibility or begins a significant task, often with a sense of duty or challenge.
 - builds_on: [[serve]] — Use 'act' when referring to temporarily or specially fulfilling a role, particularly in a capacity or function.
+- collocation: [[autonomously]]
+- collocation: [[concertedly]]
+- collocation: [[courageous]]
+- collocation: [[dissimilarly]]
+- collocation: [[efficaciously]]
+- collocation: [[enacted]]
+- collocation: [[forbearance]]
+- collocation: [[honorably]]
+- collocation: [[impiety]]
+- collocation: [[juridical]]
+- collocation: [[meanly]]
+- collocation: [[parsimoniously]]
+- collocation: [[predictably]]
+- collocation: [[premeditated]]
+- synonym: [[pretense]]
+- collocation: [[procreation]]
+- collocation: [[prudently]]
+- collocation: [[reprehensible]]
+- collocation: [[victimizer]]

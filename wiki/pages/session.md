@@ -9,6 +9,8 @@ rank: 1558
 sfi: 57.16
 sources: [wordnet, llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ a meeting for execution of a group's functions
 - builds_on: [[semester]] — Use 'session' to refer to any distinct period of instruction within an academic year, which may be shorter than a full semester, often used for intensive courses.
 - advanced_form: [[conference]] — Use 'conference' for a more formal or larger meeting, often with multiple participants and planned agenda.
 - advanced_form: [[assembly]] — Use 'assembly' for a gathering of a group for a common purpose, especially in legislative or educational contexts.
+- synonym: [[hearing]]
+- collocation: [[instrumentalist]]
+- collocation: [[lovemaking]]
+- collocation: [[preside]]
+- collocation: [[psychoanalysis]]
+- collocation: [[vocalist]]
+- collocation: [[yogini]]
+- collocation: [[boudoir]]

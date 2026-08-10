@@ -9,6 +9,8 @@ rank: 164
 sfi: 67.6
 sources: [wordnet, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,17 @@ education imparted in a series of lessons or meetings
 - builds_on: [[itinerary]] — Use 'course' for the general direction of travel or a predetermined path, less detailed than an 'itinerary' which includes specific stops and times.
 - builds_on: [[path]] — Use 'course' for a direction of action or the path one takes in life, often implying a deliberate choice.
 - builds_on: [[golf]] — Use 'course' as a concise way to refer to the golf course and by extension the game.
+- collocation: [[capstone]]
+- collocation: [[geomorphology]]
+- synonym: [[heading]]
+- collocation: [[heading]]
+- synonym: [[links]]
+- collocation: [[macroeconometrics]]
+- collocation: [[obligatory]]
+- collocation: [[peracute]]
+- collocation: [[pharmacology]]
+- synonym: [[plat]]
+- collocation: [[postgraduate]]
+- collocation: [[predetermined]]
+- collocation: [[intensive]]
+- builds_on: [[syllabus]] — Use 'course' in formal contexts such as 'a course of study' to mean the entire integrated program, whereas 'syllabus' is the document describing individual topics.

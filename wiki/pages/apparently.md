@@ -9,6 +9,8 @@ rank: 1277
 sfi: 58.32
 sources: [wordnet, llm]
 status: enriched
+chart: obviously
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ from appearances alone
 - synonym: [[seemingly]]
 - advanced_form: [[ostensibly]] — Use 'ostensibly' when you want to emphasize that appearances are likely deceptive or that there's a hidden purpose.
 - advanced_form: [[seemingly]] — Use 'seemingly' when stating something appears true based on observation; it is slightly more formal than 'apparently' and can imply skepticism.
+- synonym: [[evidently]]
+- synonym: [[reportedly]]
+- builds_on: [[seemingly]] — Use when something seems true based on what you see or hear, but you're not completely sure.
+- synonym: [[outwardly]]

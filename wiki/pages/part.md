@@ -9,6 +9,8 @@ rank: 130
 sfi: 68.4
 sources: [wordnet, llm]
 status: enriched
+chart: part
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ something determined in relation to something that includes it
 - advanced_form: [[component]] — Use 'component' when emphasizing that the part is a functional piece of a larger system or mechanism.
 - advanced_form: [[constituent]] — Use 'constituent' when referring to a fundamental substance or element that makes up a whole, often in scientific or formal contexts.
 - advanced_form: [[element]] — Use 'element' when the part is an abstract or basic component of a larger concept or set.
+- collocation: [[essential]]
+- synonym: [[fitting]]
+- collocation: [[instrumental]]
+- collocation: [[midmost]]
+- synonym: [[moiety]]
+- collocation: [[integral]]

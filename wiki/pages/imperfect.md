@@ -6,6 +6,8 @@ pos: adjective
 forms: [imperfect]
 sources: [llm]
 status: enriched
+chart: defective
+region: defective
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[defective]] — Use 'imperfect' when the defect is minor or aesthetic, indicating something less than ideal but not necessarily broken.
+- synonym: [[flawed]]

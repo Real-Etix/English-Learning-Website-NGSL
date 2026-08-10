@@ -9,6 +9,8 @@ rank: 2199
 sfi: 54.93
 sources: [wordnet, llm]
 status: enriched
+chart: outstanding
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ beyond what is ordinary or usual
 - advanced_form: [[exceptional]] — Use 'exceptional' when something exceeds the norm to an unusual degree, often implying high quality or rarity.
 - advanced_form: [[phenomenal]] — Use 'phenomenal' for something that is extraordinarily impressive or awe-inspiring, often with a sense of wonder.
 - advanced_form: [[remarkable]] — Use 'remarkable' for something worthy of notice or comment, emphasizing a striking or notable quality.
+- builds_on: [[curious]] — Use when something is far beyond the normal or expected, often with a sense of surprise.

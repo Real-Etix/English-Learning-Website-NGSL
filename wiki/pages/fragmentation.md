@@ -6,6 +6,8 @@ pos: noun
 forms: [fragmentation]
 sources: [llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dissolution]] — Use 'fragmentation' when referring to breaking into distinct, often smaller, separate parts, especially in systems, data, or groups.
+- synonym: [[cleavage]]

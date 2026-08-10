@@ -6,6 +6,8 @@ pos: adjective
 forms: [inauspicious]
 sources: [llm]
 status: enriched
+chart: adverse
+region: you
 ---
 
 ## Definition

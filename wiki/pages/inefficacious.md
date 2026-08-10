@@ -6,6 +6,8 @@ pos: adjective
 forms: [inefficacious]
 sources: [llm]
 status: enriched
+chart: inefficient
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inefficient]] — Use 'inefficacious' in formal or scientific writing to emphasize that something fails to produce a desired effect; 'inefficient' focuses more on resource waste than outcome failure.
+- synonym: [[ineffective]]
+- synonym: [[futile]]
+- synonym: [[unproductive]]
+- collocation: [[treatment]]
+- collocation: [[remedy]]
+- collocation: [[against]]
+- collocation: [[in]]

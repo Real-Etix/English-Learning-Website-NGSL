@@ -6,6 +6,8 @@ pos: verb
 forms: [deduce]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition

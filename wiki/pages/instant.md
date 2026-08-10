@@ -9,6 +9,8 @@ rank: 834
 sfi: 52.88
 sources: [wordnet, llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ occurring with no delay
 - advanced_form: [[immediate]] — Use 'immediate' instead of 'instant' when emphasizing that something happens right away without any intervening time, often in formal or emotional contexts.
 - advanced_form: [[instantaneous]] — Use 'instantaneous' when stressing that an effect occurs in a single, indivisible moment; it is more precise than 'instant' in scientific or dramatic descriptions.
 - advanced_form: [[prompt]] — Use 'prompt' instead of 'instant' when focusing on a quick action that is done without unnecessary delay, often in professional or punctuality contexts.
+- collocation: [[gratification]]

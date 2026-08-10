@@ -6,6 +6,8 @@ pos: noun
 forms: [cavern]
 sources: [llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chamber]] — Use 'cavern' instead of 'chamber' when describing a large, natural underground space, especially a cave.
+- synonym: [[cave]]
+- synonym: [[hollow]]
+- synonym: [[tunnel]]
+- collocation: [[vast]]
+- collocation: [[underground]]
+- collocation: [[deep]]

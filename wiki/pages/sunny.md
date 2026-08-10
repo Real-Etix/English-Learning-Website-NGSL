@@ -9,6 +9,8 @@ rank: 125
 sfi: 57.47
 sources: [wordnet, llm]
 status: enriched
+chart: sunny
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ bright and pleasant
 - advanced_form: [[sunlit]] — Use 'sunlit' to emphasize that a place or object is directly illuminated by sunlight, rather than just describing the weather as pleasant.
 - advanced_form: [[radiant]] — Use 'radiant' for a more vivid, glowing brightness that suggests strong, dazzling sunshine, often with a sense of beauty or intensity.
 - advanced_form: [[balmy]] — Use 'balmy' when the sunny weather is also pleasantly warm and mild, focusing on the comfortable temperature rather than just brightness.
+- collocation: [[clime]]
+- collocation: [[isle]]

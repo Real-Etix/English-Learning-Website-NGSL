@@ -6,6 +6,8 @@ pos: noun
 forms: [shard]
 sources: [llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition

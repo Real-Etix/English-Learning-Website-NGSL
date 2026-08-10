@@ -9,6 +9,8 @@ rank: 106
 sfi: 60.78
 sources: [wordnet, llm]
 status: enriched
+chart: rub
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[knuckle]] — Use instead of 'knuckle' when the action is therapeutic and involves rubbing or pressing soft tissues.
 - advanced_form: [[knead]] — Use 'knead' for a deeper, more intense pressing and squeezing motion, often to loosen stiff muscles.
 - advanced_form: [[rub]] — Use 'rub' for a more general, less formal friction-based manipulation, but still advanced compared to 'massage' in certain contexts.
+- collocation: [[recliner]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [transnationally]
 sources: [llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 722
 sfi: 61.17
 sources: [wordnet, llm]
 status: enriched
+chart: partition
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,16 @@ an architectural partition with a height and length greater than its thickness
 - advanced_form: [[partition]] — Use 'partition' when emphasizing the function of dividing a space, especially in architecture or interior design.
 - advanced_form: [[barrier]] — Use 'barrier' when focusing on obstruction, prevention, or protection, rather than just a structural wall.
 - advanced_form: [[divider]] — Use 'divider' for a piece of furniture or temporary structure that splits a room, less formal but still advanced.
+- collocation: [[alveolus]]
+- synonym: [[bulkhead]]
+- collocation: [[coping]]
+- collocation: [[crumble]]
+- collocation: [[cubby]]
+- collocation: [[cubbyhole]]
+- collocation: [[cubicle]]
+- collocation: [[fitting]]
+- collocation: [[palisade]]
+- collocation: [[perimeter]]
+- collocation: [[deface]]
+- collocation: [[masonry]]
+- collocation: [[vent]]

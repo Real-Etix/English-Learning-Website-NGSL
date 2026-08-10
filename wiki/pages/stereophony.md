@@ -6,6 +6,8 @@ pos: noun
 forms: [stereophony]
 sources: [llm]
 status: enriched
+chart: stereo
+region: stereo
 ---
 
 ## Definition

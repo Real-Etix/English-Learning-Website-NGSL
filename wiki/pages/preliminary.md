@@ -9,6 +9,8 @@ rank: 301
 sfi: 56.779
 sources: [wordnet, llm]
 status: enriched
+chart: preliminary
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ _No sourced examples yet._
 - advanced_form: [[eliminator]] — Use 'eliminator' for a match that eliminates the loser, often used in knockout tournaments.
 - builds_on: [[beforehand]] — Use 'preliminary' instead of 'beforehand' when referring to initial steps or work done before the main event.
 - builds_on: [[introductory]] — Use 'preliminary' for steps or remarks that come before the main event, often implying preparation or prior arrangement.
+- synonym: [[anticipatory]]
+- synonym: [[exploratory]]
+- collocation: [[findings]]
+- synonym: [[prefatory]]
+- synonym: [[preparatory]]

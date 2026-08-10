@@ -9,6 +9,8 @@ rank: 958
 sfi: 59.89
 sources: [wordnet, llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ a line or route along which something travels or moves
 - builds_on: [[follow]] — Use 'track' when following based on clues, signs, or technology, suggesting systematic pursuit.
 - advanced_form: [[trajectory]] — Use 'trajectory' for the curved path of a moving object, especially in physics or formal contexts.
 - advanced_form: [[itinerary]] — Use 'itinerary' for a planned route or journey, especially for travel or schedules.
+- collocation: [[railroad]]

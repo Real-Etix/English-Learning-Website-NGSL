@@ -9,6 +9,8 @@ rank: 1015
 sfi: 59.52
 sources: [wordnet, llm]
 status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,16 @@ _No sourced examples yet._
 - builds_on: [[commerce]] — Use 'exchange' to emphasize the reciprocal transfer of items or money, whereas 'commerce' covers all aspects of trade.
 - builds_on: [[stockmarket]] — Use 'exchange' as a shorter, more formal synonym for 'stock market' when referring to the trading venue.
 - builds_on: [[chat]] — Use 'exchange' for a quick or transactional verbal interaction, often focusing on the giving and receiving of information.
+- collocation: [[anion]]
+- collocation: [[banter]]
+- collocation: [[cation]]
+- collocation: [[chromatid]]
+- collocation: [[commodities]]
+- synonym: [[interchange]]
+- synonym: [[mart]]
+- collocation: [[penfriend]]
+- synonym: [[reciprocity]]
+- synonym: [[recombination]]
+- collocation: [[renminbi]]
+- collocation: [[rmb]]
+- synonym: [[commutation]]

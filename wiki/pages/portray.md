@@ -9,6 +9,8 @@ rank: 640
 sfi: 53.275
 sources: [wordnet, llm]
 status: enriched
+chart: render
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[depict]] — Use 'depict' instead of 'portray' when describing something in a vivid, detailed way, often in art or literature.
 - advanced_form: [[characterize]] — Use 'characterize' when focusing on the distinctive qualities or traits of someone or something.
 - advanced_form: [[delineate]] — Use 'delineate' when describing something clearly and precisely, often outlining boundaries or details.
+- builds_on: [[depict]] — Use portray when the depiction involves interpretation, emotion, or a particular viewpoint, especially in art or acting.

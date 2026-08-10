@@ -9,6 +9,8 @@ rank: 981
 sfi: 49.64
 sources: [wordnet, llm]
 status: enriched
+chart: populist
+region: populist
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 108
 sfi: 58.719
 sources: [wordnet, llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ lying between two extremes in time or space or state
 - advanced_form: [[median]] — Use 'median' when referring to the exact middle position in a sequence or statistical distribution, more precise than 'intermediate'.
 - advanced_form: [[transitional]] — Use 'transitional' to emphasize a stage that is changing from one state to another, rather than just a static middle.
 - advanced_form: [[intervening]] — Use 'intervening' for time or space that comes between two specific points, highlighting the gap.
+- collocation: [[aminyl]]
+- synonym: [[medial]]
+- synonym: [[midmost]]

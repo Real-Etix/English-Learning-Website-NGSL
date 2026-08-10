@@ -6,6 +6,8 @@ pos: verb
 forms: [supersede]
 sources: [llm]
 status: enriched
+chart: replace
+region: replace
 ---
 
 ## Definition

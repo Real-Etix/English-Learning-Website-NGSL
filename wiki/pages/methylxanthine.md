@@ -6,6 +6,8 @@ pos: noun
 forms: [methylxanthine]
 sources: [llm]
 status: enriched
+chart: caffeine
+region: caffeine
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[caffeine]] — Use in technical or pharmacological discussions to refer to its chemical class.
+- synonym: [[stimulant]]
+- collocation: [[tea]]

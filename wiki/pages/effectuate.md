@@ -6,6 +6,8 @@ pos: verb
 forms: [effectuate]
 sources: [llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fulfill]] — Use 'effectuate' for formal or legal contexts where you want to emphasize causing something to happen successfully.
+- synonym: [[accomplish]]
+- synonym: [[achieve]]
+- synonym: [[execute]]
+- synonym: [[implement]]
+- synonym: [[realize]]

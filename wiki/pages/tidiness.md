@@ -6,6 +6,8 @@ pos: noun
 forms: [tidiness]
 sources: [llm]
 status: enriched
+chart: cleanliness
+region: cleanliness
 ---
 
 ## Definition

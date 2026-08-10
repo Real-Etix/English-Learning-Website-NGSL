@@ -6,6 +6,8 @@ pos: verb
 forms: [hurl]
 sources: [llm]
 status: enriched
+chart: cast
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[throw]] — Use for forceful, violent throwing.
+- synonym: [[fling]]
+- synonym: [[toss]]
+- synonym: [[cast]]
+- synonym: [[pitch]]
+- collocation: [[rock]]
+- collocation: [[stone]]
+- collocation: [[abuse]]
+- synonym: [[sling]]

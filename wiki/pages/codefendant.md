@@ -6,6 +6,8 @@ pos: noun
 forms: [codefendant]
 sources: [llm]
 status: enriched
+chart: client
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[respondent]] — Use codefendant when you want to emphasize that the respondent is being sued alongside another party, not just as a standalone defendant.
+- collocation: [[trial]]
+- collocation: [[joint]]
+- collocation: [[case]]
+- collocation: [[indictment]]

@@ -9,6 +9,8 @@ rank: 179
 sfi: 57.824
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: collective
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ done by or characteristic of individuals acting together
 - advanced_form: [[unified]] — Use 'unified' to stress the result of acting as one entity, more formal than 'collective'.
 - builds_on: [[cooperative]] — Use this when referring to the entire group's united action or responsibility.
 - builds_on: [[mutual]] — Use 'collective' to emphasize the group acting as a whole rather than individuals.
+- collocation: [[groan]]
+- synonym: [[participatory]]

@@ -9,6 +9,8 @@ rank: 836
 sfi: 60.56
 sources: [wordnet, llm]
 status: enriched
+chart: middle
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[midpoint]] — Use 'midpoint' for a precise, often mathematical central point within a line or area.
 - advanced_form: [[core]] — Use 'core' to emphasize the most essential or central part, often figurative or physical.
 - advanced_form: [[hub]] — Use 'hub' for a focal point of activity, transport, or distribution.
+- synonym: [[medial]]
+- synonym: [[midmost]]
+- synonym: [[midsection]]
+- collocation: [[row]]
+- collocation: [[ossicle]]

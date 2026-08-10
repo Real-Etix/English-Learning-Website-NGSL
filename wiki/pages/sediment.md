@@ -9,6 +9,8 @@ rank: 535
 sfi: 54.403
 sources: [wordnet, llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - builds_on: [[residue]] — Use 'sediment' instead of 'residue' when the leftover matter is a granular or powdery solid that has settled from a liquid.
 - advanced_form: [[precipitate]] — Use 'precipitate' instead of 'sediment' when the process involves solids coming out of a solution, especially in scientific contexts.
 - advanced_form: [[accrete]] — Use 'accrete' instead of 'sediment' to emphasize gradual accumulation and growth of a deposit, often in geology or astronomy.
+- collocation: [[anoxic]]
+- collocation: [[biogenic]]
+- collocation: [[decant]]
+- synonym: [[alluvium]]
+- synonym: [[colluvium]]
+- synonym: [[marl]]

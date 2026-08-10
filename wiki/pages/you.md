@@ -9,6 +9,8 @@ rank: 10
 sfi: 81.08
 sources: [curated]
 status: verified
+chart: you
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ Used to talk to the person or people you are speaking with.
 - collocation: [[should]]
 - collocation: [[get]]
 - collocation: [[tell]]
+- collocation: [[could]]
+- collocation: [[disappoint]]
+- collocation: [[whenever]]
+- collocation: [[whether]]
+- collocation: [[whoever]]

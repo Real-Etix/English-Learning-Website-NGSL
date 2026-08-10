@@ -9,6 +9,8 @@ rank: 737
 sfi: 52.27
 sources: [wordnet, llm]
 status: enriched
+chart: assembly
+region: you
 ---
 
 ## Definition

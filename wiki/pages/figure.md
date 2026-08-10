@@ -9,6 +9,8 @@ rank: 357
 sfi: 64.43
 sources: [wordnet, llm]
 status: enriched
+chart: figure
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,22 @@ a diagram or picture illustrating textual material
 - builds_on: [[value]] — Use 'figure' for a specific numeric value in financial or statistical reports.
 - builds_on: [[digit]] — Use 'figure' in contexts involving numerical data, statistics, or when emphasizing the written form of a number (e.g., 'in figures' vs 'in words').
 - builds_on: [[illustration]] — Use 'figure' when the illustration is numbered and part of a scholarly or technical document.
+- collocation: [[accumbent]]
+- collocation: [[authoritative]]
+- synonym: [[carving]]
+- collocation: [[divisive]]
+- collocation: [[emblematic]]
+- synonym: [[figurine]]
+- collocation: [[imposing]]
+- collocation: [[lithe]]
+- collocation: [[matronly]]
+- synonym: [[numeral]]
+- synonym: [[personage]]
+- collocation: [[pivotal]]
+- collocation: [[portly]]
+- collocation: [[rotund]]
+- builds_on: [[diagram]] — Use in academic or formal writing to refer to a diagram or illustration with a numbered caption.
+- builds_on: [[amount]] — Use when referring to an amount expressed as a number, often in a financial or statistical context.
+- builds_on: [[statue]] — Use 'figure' when emphasizing the human form, especially in sculpture.
+- synonym: [[effigy]]
+- collocation: [[enigmatic]]

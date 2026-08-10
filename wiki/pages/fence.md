@@ -9,6 +9,8 @@ rank: 2668
 sfi: 53.37
 sources: [wordnet, llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[encircle]] — Use 'encircle' instead of 'fence' to emphasize the complete surrounding action, often in a more formal or descriptive context.
 - advanced_form: [[circumscribe]] — Use 'circumscribe' for a formal or technical tone, especially when the boundary is clearly defined and often involves a geometric or strict enclosure.
 - advanced_form: [[palisade]] — Use 'palisade' when referring to enclosing with a fence of stakes or pales, typically in historical or defensive contexts.
+- collocation: [[electric]]
+- collocation: [[electrified]]
+- collocation: [[perimeter]]

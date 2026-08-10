@@ -6,6 +6,8 @@ pos: adjective
 forms: [unreasonable]
 sources: [llm]
 status: enriched
+chart: incredible
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[illogical]] — Use 'unreasonable' when the illogicality involves unfairness or excess, not just flawed reasoning.
+- synonym: [[inordinate]]
+- synonym: [[irrational]]

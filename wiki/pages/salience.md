@@ -6,6 +6,8 @@ pos: noun
 forms: [salience]
 sources: [llm]
 status: enriched
+chart: accent
+region: you
 ---
 
 ## Definition

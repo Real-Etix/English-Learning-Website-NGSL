@@ -6,6 +6,8 @@ pos: verb
 forms: [recoup]
 sources: [llm]
 status: enriched
+chart: retrieve
+region: you
 ---
 
 ## Definition

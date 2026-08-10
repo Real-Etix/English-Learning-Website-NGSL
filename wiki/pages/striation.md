@@ -6,6 +6,8 @@ pos: noun
 forms: [striation]
 sources: [llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition

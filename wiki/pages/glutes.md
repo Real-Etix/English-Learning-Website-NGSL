@@ -9,6 +9,8 @@ rank: 43
 sfi: 64.62
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 
 ## Connections
 - domain: fitness
+- synonym: [[nates]]

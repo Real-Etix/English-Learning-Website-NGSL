@@ -9,6 +9,8 @@ rank: 155
 sfi: 58.103
 sources: [wordnet, llm]
 status: enriched
+chart: information
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ the perception that something has occurred or some state exists
 - advanced_form: [[discernment]] — Use when emphasizing sharp, perceptive insight beyond simple detection, especially for subtle or hidden details.
 - advanced_form: [[identification]] — Use when specifying the act of recognizing or pinpointing the exact nature or identity of something, rather than just noting its existence.
 - builds_on: [[discovery]] — Use 'detection' when the discovery involves identifying something that is not obvious, often through careful observation or technology.
+- collocation: [[elude]]
+- synonym: [[observation]]

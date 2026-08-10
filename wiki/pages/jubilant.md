@@ -6,6 +6,8 @@ pos: adjective
 forms: [jubilant]
 sources: [llm]
 status: enriched
+chart: would
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[happy]] — Use 'jubilant' for happiness that is openly and loudly expressed, often in a group celebration.
+- synonym: [[triumphant]]
+- synonym: [[elated]]
+- collocation: [[crowd]]
+- collocation: [[mood]]
+- collocation: [[celebration]]
+- synonym: [[exultant]]

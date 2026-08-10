@@ -9,6 +9,8 @@ rank: 692
 sfi: 52.77
 sources: [wordnet, llm]
 status: enriched
+chart: creditor
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [d-fructose]
 sources: [llm]
 status: enriched
+chart: fructose
+region: fructose
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fructose]] — Use 'd-fructose' in biochemical or chemistry settings to specify the exact molecular form.
+- synonym: [[levulose]]
+- collocation: [[glucose]]
+- collocation: [[metabolism]]
+- collocation: [[intake]]

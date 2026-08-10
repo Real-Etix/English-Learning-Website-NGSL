@@ -9,6 +9,8 @@ rank: 953
 sfi: 51.43
 sources: [wordnet, llm]
 status: enriched
+chart: protocol
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - advanced_form: [[strike]] — Use 'strike' for a precise, often preemptive military attack, especially involving air or missile forces.
 - builds_on: [[raid]] — Use 'assault' for a stronger, more direct and violent attack than 'raid', often implying sustained force.
 - builds_on: [[violence]] — Use 'assault' for a specific, deliberate act of violence, especially in a legal or physical attack context.
+- synonym: [[aggression]]

@@ -9,6 +9,8 @@ rank: 109
 sfi: 58.718
 sources: [wordnet, llm]
 status: enriched
+chart: transmission
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[conveyance]] — Use 'conveyance' for a formal or technical sense of transmitting an idea or message, often implying a medium or method of delivery.
 - builds_on: [[conduction]] — Use 'transmission' instead of 'conduction' when the focus is on the process of passing energy or signals through a medium, especially in contexts like telecommunications or heat transfer in engineering.
 - builds_on: [[audio]] — Use 'transmission' for the electronic signal carrying audio, especially in broadcasting or telecommunications.
+- synonym: [[broadcasting]]
+- synonym: [[contagion]]
+- collocation: [[communicable]]

@@ -9,6 +9,8 @@ rank: 1167
 sfi: 58.8
 sources: [wordnet, llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ raise from a lower to a higher position
 - advanced_form: [[elevate]] — Use 'elevate' for a more formal or figurative sense of lifting, often implying improvement or raising to a higher status.
 - advanced_form: [[hoist]] — Use 'hoist' when lifting something heavy or using a mechanical device, often with effort.
 - advanced_form: [[heave]] — Use 'heave' when lifting with great effort or force, often implying strain.
+- synonym: [[derrick]]

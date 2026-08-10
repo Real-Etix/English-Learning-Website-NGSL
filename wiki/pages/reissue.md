@@ -6,6 +6,8 @@ pos: noun
 forms: [reissue]
 sources: [llm]
 status: enriched
+chart: fax
+region: fax
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reprint]] — Use 'reissue' to emphasize the act of releasing a previously published work again, often implying some updates or a new edition, whereas 'reprint' focuses on an unchanged copy.
+- collocation: [[book]]
+- collocation: [[album]]
+- collocation: [[deluxe]]

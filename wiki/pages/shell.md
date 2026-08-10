@@ -9,6 +9,8 @@ rank: 2570
 sfi: 53.74
 sources: [wordnet, llm]
 status: enriched
+chart: cycle
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[projectile]] — Use 'projectile' when focusing on the object that is launched, especially in technical or scientific contexts.
 - advanced_form: [[round]] — Use 'round' for a single unit of ammunition, especially for firearms, in military or shooting contexts.
 - advanced_form: [[cartridge]] — Use 'cartridge' when emphasizing the complete assembled unit of ammunition, including the casing, powder, and projectile.
+- synonym: [[bomb]]
+- collocation: [[dextral]]
+- synonym: [[integument]]

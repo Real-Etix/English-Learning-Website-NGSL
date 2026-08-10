@@ -6,6 +6,8 @@ pos: noun
 forms: [precept]
 sources: [llm]
 status: enriched
+chart: reason
+region: you
 ---
 
 ## Definition

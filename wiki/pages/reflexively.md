@@ -6,6 +6,8 @@ pos: adverb
 forms: [reflexively]
 sources: [llm]
 status: enriched
+chart: automatically
+region: automatically
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[automatically]] — Use when the action is a rapid, unthinking physical response to a stimulus.
+- synonym: [[instinctively]]

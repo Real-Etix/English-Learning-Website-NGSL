@@ -9,6 +9,8 @@ rank: 1233
 sfi: 49.08
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: bookcase
+region: bookcase
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 2427
 sfi: 54.21
 sources: [wordnet, llm]
 status: enriched
+chart: outlook
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - builds_on: [[configuration]] — Use 'architecture' for the structural design and organization of complex systems, especially in technology or engineering, where 'configuration' may imply adjustable settings.
 - advanced_form: [[edifice]] — Use 'edifice' instead of 'architecture' when you want to emphasize the building's imposing size and importance, especially for grand or monumental structures.
 - advanced_form: [[monument]] — Use 'monument' instead of 'architecture' when the structure is specifically designed to commemorate a person, event, or achievement.
+- collocation: [[imposing]]
+- collocation: [[modernistic]]
+- collocation: [[noble]]
+- collocation: [[adobe]]

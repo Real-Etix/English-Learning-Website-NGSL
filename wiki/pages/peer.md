@@ -9,6 +9,8 @@ rank: 2007
 sfi: 55.51
 sources: [wordnet, llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - advanced_form: [[counterpart]] — Use instead of 'peer' when emphasizing a matching role or position in a different group.
 - advanced_form: [[equivalent]] — Use instead of 'peer' when focusing on equal value, rank, or function, especially in comparisons.
 - advanced_form: [[coequal]] — Use instead of 'peer' to stress exactly equal status, often in formal or legal contexts.
+- synonym: [[aristocrat]]
+- synonym: [[classmate]]
+- synonym: [[coworker]]
+- builds_on: [[classmate]] — Use 'peer' when emphasizing equal standing or a shared social group, rather than exactly being in the same class.
+- synonym: [[schoolmate]]

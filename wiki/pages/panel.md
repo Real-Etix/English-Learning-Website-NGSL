@@ -9,6 +9,8 @@ rank: 1837
 sfi: 56.05
 sources: [wordnet, llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,14 @@ _No sourced examples yet._
 - advanced_form: [[plaque]] — Use 'plaque' when the panel is decorative or commemorative, often inscribed.
 - advanced_form: [[plate]] — Use 'plate' for a flat, rigid panel, especially made of metal or used as a cover.
 - advanced_form: [[slab]] — Use 'slab' for a thick, heavy panel, typically of stone or concrete.
+- collocation: [[adjudicators]]
+- synonym: [[clad]]
+- collocation: [[depressed]]
+- synonym: [[divider]]
+- synonym: [[forum]]
+- collocation: [[lipid]]
+- collocation: [[panelist]]
+- synonym: [[venire]]
+- synonym: [[tribunal]]
+- builds_on: [[forum]] — Use when a group of people publicly discuss a topic in front of an audience, often with a moderator.
+- synonym: [[pane]]

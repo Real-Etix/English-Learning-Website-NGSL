@@ -9,6 +9,8 @@ rank: 2700
 sfi: 53.2
 sources: [wordnet, llm]
 status: enriched
+chart: verb
+region: verb
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[predicate]] — Use 'predicate' instead of 'verb' when referring to the verb plus its objects or complements, especially in formal grammar discussions.
 - advanced_form: [[predicator]] — Use 'predicator' as a precise technical term to denote the verb element itself, excluding objects, in syntactic analysis.
+- collocation: [[conjugation]]
+- collocation: [[phrase]]

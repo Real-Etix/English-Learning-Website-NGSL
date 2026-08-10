@@ -6,6 +6,8 @@ pos: noun
 forms: [libation]
 sources: [llm]
 status: enriched
+chart: check
+region: you
 ---
 
 ## Definition

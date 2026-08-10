@@ -9,6 +9,8 @@ rank: 1639
 sfi: 50.37
 sources: [wordnet, llm]
 status: enriched
+chart: run
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ distinctive and stylish elegance
 - advanced_form: [[lan]] — Use élan when describing a lively, confident, and stylish energy, more refined than 'dash'.
 - advanced_form: [[verve]] — Use verve to emphasize vigorous spirit and enthusiasm in style, especially in creative or performance contexts.
 - advanced_form: [[flair]] — Use flair for a natural, distinctive elegance or talent, often implying a touch of showmanship.
+- synonym: [[elan]]
+- synonym: [[gallop]]
+- synonym: [[panache]]
+- builds_on: [[rush]] — Use for a sudden, quick movement, often to reach a destination or avoid something.

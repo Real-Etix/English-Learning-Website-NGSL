@@ -9,6 +9,8 @@ rank: 316
 sfi: 55.52
 sources: [wordnet, llm]
 status: enriched
+chart: position
+region: you
 ---
 
 ## Definition
@@ -31,3 +33,4 @@ place in a line or arrange so as to be parallel or straight
 - builds_on: [[reconcile]] — Use 'align' when adjusting things to be in agreement or coordination, common in business or organizational contexts.
 - builds_on: [[coincide]] — Use when stressing harmony or coordination, often in strategy or collaboration.
 - builds_on: [[correspond]] — Use 'align' to stress harmony or coordination between ideas, interests, or strategies.
+- collocation: [[gridline]]

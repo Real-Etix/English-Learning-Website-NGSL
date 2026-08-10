@@ -6,6 +6,8 @@ pos: noun
 forms: [exsufflation]
 sources: [llm]
 status: enriched
+chart: emission
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[exhalation]] — Use 'exsufflation' in very technical or clinical settings to emphasize a forced or assisted exhalation, often in respiratory therapy.
+- synonym: [[aspiration]]
+- synonym: [[clearance]]
+- collocation: [[mechanical]]
+- collocation: [[cough]]

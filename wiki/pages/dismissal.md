@@ -9,6 +9,8 @@ rank: 1642
 sfi: 49.34
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - builds_on: [[layoff]] — Use 'dismissal' for a formal or legal tone, especially when referring to the act of firing someone.
 - advanced_form: [[nonsuit]] — used when the case is ended without a verdict due to the plaintiff's failure to prosecute.
 - advanced_form: [[discharge]] — used for a formal release from legal proceedings without trial.
+- synonym: [[ousting]]
+- synonym: [[removal]]

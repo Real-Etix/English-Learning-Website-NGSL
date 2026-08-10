@@ -9,6 +9,8 @@ rank: 1066
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - builds_on: [[brochure]] — Use 'pamphlet' when the document is unbound, often single-folded, and more concise than a brochure.
 - advanced_form: [[brochure]] — Use 'brochure' for promotional or informational materials often with glossy pages, instead of a plain pamphlet.
 - advanced_form: [[booklet]] — Use 'booklet' for a small bound collection of pages, often more substantial than a pamphlet.
+- synonym: [[chapbook]]
+- synonym: [[handbill]]

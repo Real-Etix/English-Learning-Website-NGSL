@@ -6,6 +6,8 @@ pos: adjective
 forms: [rivalrous]
 sources: [llm]
 status: enriched
+chart: competitive
+region: competitive
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[competitive]] — Use 'rivalrous' when emphasizing direct competition between specific opponents or entities.
+- synonym: [[antagonistic]]
+- synonym: [[contentious]]
+- collocation: [[behavior]]
+- collocation: [[relationship]]
+- collocation: [[competition]]

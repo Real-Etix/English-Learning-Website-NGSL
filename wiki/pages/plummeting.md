@@ -6,6 +6,8 @@ pos: adjective
 forms: [plummeting]
 sources: [llm]
 status: enriched
+chart: root
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[descendent]] — Use instead of 'descendent' when you want to emphasize a rapid, steep downward movement, especially in numbers or levels.
+- synonym: [[falling]]
+- synonym: [[tumbling]]
+- synonym: [[declining]]

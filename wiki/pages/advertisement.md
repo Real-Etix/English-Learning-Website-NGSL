@@ -9,6 +9,8 @@ rank: 1941
 sfi: 55.74
 sources: [wordnet, llm]
 status: enriched
+chart: spread
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[ad]] — Use instead of 'ad' in formal writing or when referring to print, online, or broadcast promotions.
 - advanced_form: [[promotion]] — Use 'promotion' when emphasizing the active, often planned effort to increase sales or awareness, typically implying a campaign or strategic push.
 - advanced_form: [[publicity]] — Use 'publicity' when referring to media attention or public interest, especially unpaid or earned coverage, rather than a paid ad.
+- synonym: [[billboard]]

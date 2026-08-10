@@ -6,6 +6,8 @@ pos: noun
 forms: [interposition]
 sources: [llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[interference]] — Use 'interposition' in formal or legal contexts to describe a deliberate act of stepping in between parties, often with authority.
+- synonym: [[intervention]]
+- synonym: [[intercession]]
+- synonym: [[mediation]]
+- collocation: [[government]]
+- collocation: [[judicial]]
+- collocation: [[state]]
+- collocation: [[equitable]]
+- collocation: [[defense]]

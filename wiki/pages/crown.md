@@ -9,6 +9,8 @@ rank: 67
 sfi: 63.22
 sources: [wordnet, llm]
 status: enriched
+chart: manual
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ the Crown (or the reigning monarch) as the symbol of the power and authority of 
 - advanced_form: [[sovereign]] — Use 'sovereign' to emphasize the supreme authority and legal status of the monarch, more formal than 'crown'.
 - advanced_form: [[throne]] — Use 'throne' to refer to the monarch's office or political power as an institution, often in government contexts.
 - builds_on: [[championship]] — Use 'crown' metaphorically to emphasize the prestige and glory of being champion, especially in sports or pageants.
+- synonym: [[coping]]
+- collocation: [[jewel]]

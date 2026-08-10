@@ -9,6 +9,8 @@ rank: 252
 sfi: 57.084
 sources: [wordnet, llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ very opposed in nature or character or purpose
 - advanced_form: [[adverse]] — Use when the opposition is harmful or unfavorable, especially in circumstances or conditions.
 - builds_on: [[negative]] — Use 'contrary' instead of 'negative' when emphasizing active opposition or contradiction, often in debates or writing.
 - builds_on: [[opposite]] — Use 'contrary' when emphasizing active disagreement or opposition in views or actions.
+- synonym: [[against]]
+- synonym: [[antipodal]]
+- synonym: [[contrastive]]

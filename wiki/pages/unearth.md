@@ -6,6 +6,8 @@ pos: verb
 forms: [unearth]
 sources: [llm]
 status: enriched
+chart: find
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[discover]] — Use 'unearth' for discovering something that was buried, hidden, or forgotten, often literal or metaphorical excavation.
 - builds_on: [[reveal]] — Use 'unearth' when discovering something hidden or buried, often after effort or searching.
+- synonym: [[excavate]]
+- builds_on: [[detect]] — Use when discovering something that was deliberately hidden or not known before.

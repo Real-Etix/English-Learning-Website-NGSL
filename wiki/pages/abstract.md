@@ -7,8 +7,10 @@ forms: [abstract, abstracts, abstracted, abstracting]
 lists: [ngsl]
 rank: 2721
 sfi: 53.12
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: scenario
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ _No sourced examples yet._
 - builds_on: [[scenario]] — Use 'abstract' instead of 'scenario' to emphasize a condensed version that highlights key points, common in academic contexts.
 - builds_on: [[conceptual]] — Use 'abstract' when emphasizing ideas detached from physical reality, more formal than 'conceptual'.
 - builds_on: [[theoretical]] — Use 'abstract' when emphasizing that an idea is not concrete or tangible, more so than 'theoretical' which often implies a scientific or formal hypothesis.
+- collocation: [[algebra]]
+- collocation: [[conceptualizer]]
+- synonym: [[metaphysical]]
+- synonym: [[precis]]
+- advanced_form: [[conceptualize]] — to form an abstract concept in your mind, focusing on ideas rather than specific instances
+- advanced_form: [[generalize]] — to draw broad principles from specific cases, similar to abstracting away details
+- advanced_form: [[theorize]] — to form a theory or abstract explanation based on reasoning

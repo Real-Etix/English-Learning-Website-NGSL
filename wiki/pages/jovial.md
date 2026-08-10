@@ -6,6 +6,8 @@ pos: adjective
 forms: [jovial]
 sources: [llm]
 status: enriched
+chart: sunny
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[gay]] — Use 'jovial' for a more specific, hearty cheerfulness often associated with good company and celebration.
+- synonym: [[merry]]
+- synonym: [[happy]]
+- collocation: [[mood]]
+- collocation: [[laugh]]
+- collocation: [[host]]
+- collocation: [[atmosphere]]
+- collocation: [[personality]]

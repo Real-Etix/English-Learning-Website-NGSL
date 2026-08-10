@@ -9,6 +9,8 @@ rank: 1142
 sfi: 49.8
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ someone who mediates between speakers of different languages
 - advanced_form: [[mediator]] — Use 'mediator' when focusing on the role of facilitating communication and resolving differences, not just translating words.
 - advanced_form: [[intermediary]] — Use 'intermediary' in formal contexts to emphasize the person as a go‑between in official or business settings.
 - advanced_form: [[liaison]] — Use 'liaison' when the person is a connecting link between groups, often in professional or organizational settings.
+- synonym: [[docent]]
+- synonym: [[decoder]]
+- synonym: [[expositor]]

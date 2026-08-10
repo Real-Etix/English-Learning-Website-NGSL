@@ -9,6 +9,8 @@ rank: 33
 sfi: 65.27
 sources: [wordnet, llm]
 status: enriched
+chart: crunch
+region: crunch
 ---
 
 ## Definition

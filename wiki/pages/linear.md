@@ -9,6 +9,8 @@ rank: 16
 sfi: 62.119
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,9 @@ designating or involving an equation whose terms are of the first degree
 - advanced_form: [[proportional]] — Use when you want to emphasize that the ratio is constant, but note that not all linear equations are proportional (e.g., those with a constant term).
 - advanced_form: [[affine]] — Use in advanced mathematics to describe linear equations that are not necessarily through the origin; it's a more precise term than 'linear'.
 - advanced_form: [[rectilinear]] — Use in geometry or physics to describe motion or shape that is in a straight line; more formal than 'straight' or 'linear'.
+- collocation: [[algebra]]
+- synonym: [[geometric]]
+- synonym: [[longitudinal]]
+- collocation: [[mapping]]
+- collocation: [[operator]]
+- collocation: [[luminaire]]

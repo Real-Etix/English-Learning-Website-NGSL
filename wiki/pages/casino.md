@@ -9,6 +9,8 @@ rank: 1281
 sfi: 51.15
 sources: [wordnet, llm]
 status: enriched
+chart: casino
+region: casino
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 5
 sfi: 65.02
 sources: [wordnet, llm]
 status: enriched
+chart: airport
+region: airport
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 392
 sfi: 55.933
 sources: [wordnet, llm]
 status: enriched
+chart: substrate
+region: substrate
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 786
 sfi: 50.699
 sources: [wordnet, llm]
 status: enriched
+chart: emperor
+region: emperor
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[autocrat]] — Use 'autocrat' to emphasize absolute power and often oppressive control, rather than just the title of an emperor.
 - advanced_form: [[potentate]] — Use 'potentate' to highlight immense personal power and sovereign authority, often in a historical or formal context.
+- synonym: [[monarch]]
+- collocation: [[kowtow]]

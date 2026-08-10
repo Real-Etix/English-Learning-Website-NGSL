@@ -6,6 +6,8 @@ pos: noun
 forms: [insurrection]
 sources: [llm]
 status: enriched
+chart: subway
+region: you
 ---
 
 ## Definition

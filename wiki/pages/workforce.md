@@ -9,6 +9,8 @@ rank: 177
 sfi: 56.71
 sources: [wordnet, llm]
 status: enriched
+chart: specialty
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ _No sourced examples yet._
 - advanced_form: [[personnel]] — Use 'personnel' when referring to an organization's staff in an official or administrative context, especially in HR or formal documents.
 - advanced_form: [[manpower]] — Use 'manpower' when emphasizing the number of people available for physical or manual work, often in industrial or operational settings.
 - advanced_form: [[talent]] — Use 'talent' to refer to skilled or highly qualified workers, especially in professional or creative industries.
+- synonym: [[labor]]
+- collocation: [[diverse]]
+- collocation: [[development]]
+- collocation: [[participation]]

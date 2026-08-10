@@ -9,6 +9,8 @@ rank: 1383
 sfi: 57.92
 sources: [wordnet, llm]
 status: enriched
+chart: affect
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ the feeling of distress and disbelief that you have when something bad happens a
 - builds_on: [[impact]] — Use 'shock' to emphasize the sudden, violent force or vibration of an impact, often in mechanics or sensory contexts.
 - advanced_form: [[consternation]] — Use 'consternation' for a more formal, intense feeling of shock combined with anxiety or confusion.
 - advanced_form: [[bewilderment]] — Use 'bewilderment' when the shock involves a strong sense of confusion or disbelief.
+- collocation: [[damper]]
+- synonym: [[earthquake]]
+- collocation: [[electric]]
+- synonym: [[jolt]]
+- synonym: [[seism]]

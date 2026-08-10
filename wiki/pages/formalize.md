@@ -6,6 +6,8 @@ pos: verb
 forms: [formalize]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[contract]] — Use when making an arrangement official and legally binding.
+- synonym: [[systematize]]
+- synonym: [[ratify]]
+- collocation: [[agreement]]
+- collocation: [[relationship]]
+- collocation: [[process]]
+- collocation: [[arrangement]]
+- collocation: [[commitment]]

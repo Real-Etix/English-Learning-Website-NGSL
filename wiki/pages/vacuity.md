@@ -6,6 +6,8 @@ pos: noun
 forms: [vacuity]
 sources: [llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bankruptcy]] — Use 'vacuity' to convey a profound emptiness or lack of substance, more formal and philosophical than 'bankruptcy'.
+- synonym: [[emptiness]]

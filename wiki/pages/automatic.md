@@ -9,6 +9,8 @@ rank: 436
 sfi: 53.77
 sources: [wordnet, llm]
 status: enriched
+chart: manual
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ operating with minimal human intervention
 - advanced_form: [[autonomous]] — Use 'autonomous' for machines or systems that have the ability to make decisions and function independently, often with a sense of self-governance.
 - advanced_form: [[self-regulating]] — Use 'self-regulating' when the system automatically adjusts its own behavior based on feedback or conditions, emphasizing internal control.
 - builds_on: [[reflexive]] — Use for actions done without thinking, as if by reflex, often implying routine or habit.
+- collocation: [[categorization]]
+- synonym: [[instinctive]]
+- synonym: [[involuntary]]
+- synonym: [[robotic]]

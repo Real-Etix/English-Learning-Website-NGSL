@@ -9,6 +9,8 @@ rank: 759
 sfi: 51.45
 sources: [wordnet, llm]
 status: enriched
+chart: conveniently
+region: conveniently
 ---
 
 ## Definition

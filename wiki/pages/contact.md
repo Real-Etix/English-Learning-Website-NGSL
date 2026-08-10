@@ -9,6 +9,8 @@ rank: 600
 sfi: 62.09
 sources: [wordnet, llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ close interaction
 - advanced_form: [[dealings]] — Use when referring to interactions in a business, professional, or transactional context.
 - advanced_form: [[engagement]] — Use when focusing on active participation, involvement, or committed interaction.
 - builds_on: [[touch]] — Use in more formal or technical contexts to mean 'come into physical contact with'.
+- collocation: [[reestablish]]
+- collocation: [[communicable]]

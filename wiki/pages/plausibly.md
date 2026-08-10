@@ -6,6 +6,8 @@ pos: adverb
 forms: [plausibly]
 sources: [llm]
 status: enriched
+chart: arguably
+region: arguably
 ---
 
 ## Definition

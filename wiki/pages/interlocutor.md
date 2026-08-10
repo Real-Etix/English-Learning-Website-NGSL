@@ -6,6 +6,8 @@ pos: noun
 forms: [interlocutor]
 sources: [llm]
 status: enriched
+chart: author
+region: you
 ---
 
 ## Definition

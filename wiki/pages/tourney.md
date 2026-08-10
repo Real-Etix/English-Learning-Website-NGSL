@@ -6,6 +6,8 @@ pos: noun
 forms: [tourney]
 sources: [llm]
 status: enriched
+chart: game
+region: you
 ---
 
 ## Definition

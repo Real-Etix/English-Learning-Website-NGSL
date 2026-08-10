@@ -9,6 +9,8 @@ rank: 139
 sfi: 58.305
 sources: [wordnet, llm]
 status: enriched
+chart: cortex
+region: cortex
 ---
 
 ## Definition

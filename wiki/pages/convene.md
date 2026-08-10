@@ -6,6 +6,8 @@ pos: verb
 forms: [convene]
 sources: [llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition

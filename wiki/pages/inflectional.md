@@ -6,6 +6,8 @@ pos: adjective
 forms: [inflectional]
 sources: [llm]
 status: enriched
+chart: crude
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[morphological]] — Use 'inflectional' specifically for grammatical changes like plural or tense, not for word formation via derivational affixes.
+- synonym: [[grammatical]]
+- synonym: [[synthetic]]
+- collocation: [[morphology]]
+- collocation: [[marker]]
+- collocation: [[paradigm]]
+- synonym: [[morphemic]]
+- synonym: [[morphosyntactic]]

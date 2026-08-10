@@ -6,6 +6,8 @@ pos: verb
 forms: [dispense]
 sources: [llm]
 status: enriched
+chart: lot
+region: you
 ---
 
 ## Definition

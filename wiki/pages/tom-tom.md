@@ -6,6 +6,8 @@ pos: noun
 forms: [tom-tom]
 sources: [llm]
 status: enriched
+chart: drum
+region: drum
 ---
 
 ## Definition

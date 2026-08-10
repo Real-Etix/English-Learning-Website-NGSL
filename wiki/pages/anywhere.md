@@ -9,6 +9,8 @@ rank: 1648
 sfi: 56.78
 sources: [wordnet]
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -20,3 +22,9 @@ at or in or to any place
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[wherever]]
+- collocation: [[else]]
+- collocation: [[near]]
+- collocation: [[from]]
+- collocation: [[but]]
+- collocation: [[go]]

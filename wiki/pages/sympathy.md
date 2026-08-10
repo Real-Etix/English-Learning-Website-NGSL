@@ -9,6 +9,8 @@ rank: 1611
 sfi: 49.38
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[affinity]] — Use 'affinity' to emphasize a natural, instinctive sympathy or attraction, rather than just general agreement.
 - advanced_form: [[accord]] — Use 'accord' for formal agreements or harmony between parties, especially after discussion.
 - advanced_form: [[solidarity]] — Use 'solidarity' to indicate unity and mutual support within a group, especially in a cause.
+- synonym: [[commiseration]]
+- synonym: [[humanity]]

@@ -9,6 +9,8 @@ rank: 398
 sfi: 55.83
 sources: [wordnet, llm]
 status: enriched
+chart: free
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - advanced_form: [[circumscribe]] — More formal than 'confine', emphasizes drawing a boundary around something, often used for abstract limits like authority or scope.
 - advanced_form: [[constrain]] — Implies a restriction that limits movement or action, often due to external forces or conditions.
 - advanced_form: [[curtail]] — Suggests cutting something short or reducing it, more forceful than 'confine' and implies an active reduction.
+- synonym: [[corral]]
+- synonym: [[quarantine]]

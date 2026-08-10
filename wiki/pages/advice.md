@@ -9,6 +9,8 @@ rank: 1040
 sfi: 59.4
 sources: [wordnet, llm]
 status: enriched
+chart: counsel
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[counsel]] — Use 'counsel' when the advice is professional, formal, or from an expert, often implying deliberation.
 - advanced_form: [[guidance]] — Use 'guidance' when the advice involves direction or ongoing support, often from a trusted source.
 - advanced_form: [[recommendation]] — Use 'recommendation' when the advice is specific, actionable, and often results from evaluation.
+- collocation: [[actionable]]
+- synonym: [[advisement]]
+- collocation: [[disregard]]
+- collocation: [[heed]]
+- collocation: [[unsound]]

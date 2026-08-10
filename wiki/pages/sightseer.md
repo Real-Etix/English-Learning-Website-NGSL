@@ -6,6 +6,8 @@ pos: noun
 forms: [sightseer]
 sources: [llm]
 status: enriched
+chart: tourist
+region: tourist
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tourist]] — Use when focusing on someone visiting landmarks and attractions, often moving from one famous site to another.
+- synonym: [[visitor]]

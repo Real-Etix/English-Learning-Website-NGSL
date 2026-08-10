@@ -6,6 +6,8 @@ pos: adverb
 forms: [confidentially]
 sources: [llm]
 status: enriched
+chart: directly
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1766
 sfi: 56.32
 sources: [wordnet, llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ _No sourced examples yet._
 - builds_on: [[arrangement]] — Use 'settlement' for resolving a dispute or finalizing terms, especially in legal or financial contexts.
 - advanced_form: [[colony]] — Use 'colony' when referring to a settlement that is established and governed by a distant homeland, often with political and economic ties.
 - advanced_form: [[outpost]] — Use 'outpost' for a small, isolated settlement, often military or exploratory, that maintains contact with a larger home base.
+- synonym: [[hamlet]]
+- synonym: [[reconciliation]]

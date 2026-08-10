@@ -6,6 +6,8 @@ pos: noun
 forms: [abatement]
 sources: [llm]
 status: enriched
+chart: upgrade
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[deduction]] — Use 'abatement' for a reduction or rebate in tax liability, often temporary or for specific incentives.
 - builds_on: [[reduction]] — Use for reduction of something unpleasant or harmful, often in legal or environmental contexts.
+- synonym: [[alleviation]]
+- synonym: [[nonsuit]]
+- builds_on: [[deductible]] — Use in formal or legal writing to describe a reduction or rebate of taxes, less common but precise.

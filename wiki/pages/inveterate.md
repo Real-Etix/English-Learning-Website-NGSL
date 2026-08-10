@@ -6,6 +6,8 @@ pos: adjective
 forms: [inveterate]
 sources: [llm]
 status: enriched
+chart: perception
+region: you
 ---
 
 ## Definition

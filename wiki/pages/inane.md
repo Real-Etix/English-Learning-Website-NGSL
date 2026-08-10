@@ -6,6 +6,8 @@ pos: adjective
 forms: [inane]
 sources: [llm]
 status: enriched
+chart: parcel
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[vacant]] — Use 'inane' instead of 'vacant' to highlight that the emptiness is specifically foolish or senseless.
+- synonym: [[silly]]
+- synonym: [[absurd]]
+- collocation: [[comment]]
+- collocation: [[chatter]]
+- collocation: [[question]]
+- collocation: [[remark]]
+- synonym: [[fatuous]]

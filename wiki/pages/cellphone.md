@@ -9,6 +9,8 @@ rank: 69
 sfi: 58.92
 sources: [wordnet, llm]
 status: enriched
+chart: cell
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[mobile]] — Use 'mobile' in casual or formal contexts, especially in British English, as a short form of 'mobile phone'.
 - advanced_form: [[smartphone]] — Use 'smartphone' when referring to a modern cellphone with advanced computing capabilities, internet access, and apps.
+- synonym: [[handset]]

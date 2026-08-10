@@ -9,6 +9,8 @@ rank: 373
 sfi: 56.124
 sources: [wordnet, llm]
 status: enriched
+chart: monkey
+region: monkey
 ---
 
 ## Definition

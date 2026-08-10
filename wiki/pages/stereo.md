@@ -9,6 +9,8 @@ rank: 1085
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: stereo
+region: stereo
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [formidable]
 sources: [llm]
 status: enriched
+chart: awful
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,6 @@ _No sourced examples yet._
 - builds_on: [[strong]] — Use 'formidable' to imply strength that is daunting or impressive, often in a competitive or challenging context.
 - builds_on: [[awesome]] — Use 'formidable' when something inspires awe due to its size, strength, or difficulty, often with a hint of fear or respect.
 - builds_on: [[powerful]] — Use 'formidable' instead of 'powerful' when suggesting awe-inspiring strength or difficulty that commands respect.
+- collocation: [[foe]]
+- synonym: [[imposing]]
+- builds_on: [[difficult]] — Use 'formidable' when the difficulty is intimidating or awe-inspiring, like a powerful opponent or a huge obstacle.

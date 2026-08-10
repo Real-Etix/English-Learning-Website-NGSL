@@ -9,6 +9,8 @@ rank: 475
 sfi: 54.09
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[consolidate]] — Use 'consolidate' when combining multiple items into a single, unified whole, often for organization or efficiency.
 - advanced_form: [[aggregate]] — Use 'aggregate' when collecting and grouping items (especially data or objects) into a mass or total, often for analysis.
 - builds_on: [[package]] — Use 'bundle' for items tied or wrapped together, typically irregular or cylindrical.
+- synonym: [[bunch]]
+- synonym: [[nerve]]

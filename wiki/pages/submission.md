@@ -9,6 +9,8 @@ rank: 157
 sfi: 56.86
 sources: [wordnet, llm]
 status: enriched
+chart: bill
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ something (manuscripts or architectural plans and models or estimates or works o
 - advanced_form: [[entry]] — Use 'entry' when referring to a submission in a contest or competition.
 - advanced_form: [[proposal]] — Use 'proposal' when the submission is a formal plan or suggestion, especially for approval.
 - advanced_form: [[tender]] — Use 'tender' when the submission is a formal bid in a business or governmental procurement process.
+- collocation: [[pummel]]
+- builds_on: [[proposal]] — Use when a formal document or plan is officially presented for review or approval.
+- synonym: [[deference]]

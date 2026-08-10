@@ -9,6 +9,8 @@ rank: 2059
 sfi: 55.36
 sources: [wordnet, llm]
 status: enriched
+chart: new
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ characteristic of the present
 - builds_on: [[neo]] — Use 'contemporary' to refer to things happening now or in the recent past, as a standalone adjective unlike 'neo'.
 - advanced_form: [[current]] — Use 'current' when emphasizing things happening or existing now, rather than just generally characteristic of the present period.
 - advanced_form: [[prevailing]] — Use 'prevailing' to suggest the most common or dominant condition or opinion at the present time, often with a sense of generality.
+- synonym: [[modernistic]]
+- collocation: [[portraiture]]
+- synonym: [[schoolmate]]

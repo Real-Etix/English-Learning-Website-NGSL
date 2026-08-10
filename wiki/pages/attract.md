@@ -9,6 +9,8 @@ rank: 1298
 sfi: 58.25
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ direct toward itself or oneself by means of some psychological power or physical
 - advanced_form: [[lure]] — Use 'lure' when you imply a strong temptation or a trap, often with an element of deception or bait.
 - advanced_form: [[entice]] — Use 'entice' when you draw someone in by offering something desirable, often with gentle persuasion.
 - advanced_form: [[allure]] — Use 'allure' when emphasizing a mysterious or powerful attraction, often through charm or appeal.
+- synonym: [[invite]]
+- synonym: [[seduce]]

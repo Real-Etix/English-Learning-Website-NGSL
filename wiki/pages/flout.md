@@ -6,6 +6,8 @@ pos: verb
 forms: [flout]
 sources: [llm]
 status: enriched
+chart: trouble
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[defy]] — Flout emphasizes open and contemptuous disregard, especially for rules or laws, while defy is broader and can be about any resistance.
+- synonym: [[disregard]]
+- synonym: [[scorn]]
+- collocation: [[law]]
+- collocation: [[convention]]
+- collocation: [[openly]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [admonish]
 sources: [llm]
 status: enriched
+chart: notify
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[warn]] — Use when warning with a sense of authority or moral correction, often implying a reprimand.
+- collocation: [[gently]]
+- collocation: [[publicly]]
+- collocation: [[privately]]
+- collocation: [[strongly]]
+- synonym: [[chastise]]
+- synonym: [[harangue]]

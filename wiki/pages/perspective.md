@@ -9,6 +9,8 @@ rank: 1496
 sfi: 57.42
 sources: [wordnet, llm]
 status: enriched
+chart: opinion
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,6 @@ _No sourced examples yet._
 - advanced_form: [[standpoint]] — Use when emphasizing a logical or principled basis for a view, often in debates or analysis.
 - advanced_form: [[outlook]] — Use when emphasizing a habitual or long-term way of thinking, often about life or the future.
 - advanced_form: [[vantage]] — Use when emphasizing a physical or metaphorical position that offers a clear, broad view, often in descriptive or strategic contexts.
+- collocation: [[behavioristic]]
+- synonym: [[mentality]]
+- collocation: [[broaden]]

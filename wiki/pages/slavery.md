@@ -9,6 +9,8 @@ rank: 635
 sfi: 53.344
 sources: [wordnet, llm]
 status: enriched
+chart: slavery
+region: slavery
 ---
 
 ## Definition

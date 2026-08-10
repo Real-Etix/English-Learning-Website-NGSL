@@ -6,6 +6,8 @@ pos: noun
 forms: [aberration]
 sources: [llm]
 status: enriched
+chart: deviation
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[mutation]] — Use 'aberration' to highlight that the organism deviates strikingly from the norm, often with a connotation of rarity or anomaly.
 - builds_on: [[variant]] — Use 'aberration' to imply a temporary or abnormal departure from a norm, often with a negative connotation; more specific than 'variant' for a one-time event.
 - builds_on: [[deflection]] — Use 'aberration' for a temporary or exceptional departure from the normal or expected, implying a flaw or anomaly rather than a deliberate twist.
+- synonym: [[abnormality]]

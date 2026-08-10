@@ -6,6 +6,8 @@ pos: noun
 forms: [worktext]
 sources: [llm]
 status: enriched
+chart: textbook
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[workbook]] — Use 'worktext' when the book combines textbook content with exercises, more formal than 'workbook'.
+- synonym: [[textbook]]
+- synonym: [[manual]]
+- collocation: [[student]]
+- collocation: [[series]]

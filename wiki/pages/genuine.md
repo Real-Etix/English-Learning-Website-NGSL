@@ -9,6 +9,8 @@ rank: 2698
 sfi: 53.21
 sources: [wordnet, llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ not fake or counterfeit
 - builds_on: [[actual]] — Use 'genuine' when emphasizing authenticity or lack of imitation, rather than just factual existence.
 - advanced_form: [[authentic]] — Use 'authentic' for objects or documents proven to be real or original.
 - advanced_form: [[legitimate]] — Use 'legitimate' for things that are valid, lawful, or genuine in a broader sense.
+- collocation: [[affection]]
+- synonym: [[earnest]]

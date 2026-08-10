@@ -6,6 +6,8 @@ pos: adjective
 forms: [dauntless]
 sources: [llm]
 status: enriched
+chart: inexperience
+region: you
 ---
 
 ## Definition

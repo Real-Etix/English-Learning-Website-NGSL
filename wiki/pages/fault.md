@@ -9,6 +9,8 @@ rank: 1995
 sfi: 55.55
 sources: [wordnet, llm]
 status: enriched
+chart: fault
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[blunder]] — Use 'blunder' when the fault is a significant and often embarrassing mistake due to carelessness or poor judgment.
 - advanced_form: [[lapse]] — Use 'lapse' when the fault is a temporary failure of attention or memory, not a permanent flaw.
 - advanced_form: [[misstep]] — Use 'misstep' when the fault is a minor error in judgment or action that leads to negative consequences.
+- synonym: [[blame]]
+- collocation: [[dextral]]
+- synonym: [[glitch]]
+- synonym: [[culpability]]

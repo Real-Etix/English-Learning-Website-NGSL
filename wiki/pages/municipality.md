@@ -6,6 +6,8 @@ pos: noun
 forms: [municipality]
 sources: [llm]
 status: enriched
+chart: town
+region: town
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[town]] — Use 'municipality' when referring to the administrative or governmental unit of a town or city, often in formal or legal contexts.
+- synonym: [[borough]]
+- synonym: [[city]]
+- synonym: [[district]]
+- collocation: [[small]]
+- collocation: [[local]]
+- collocation: [[host]]
+- collocation: [[within]]

@@ -9,6 +9,8 @@ rank: 789
 sfi: 60.83
 sources: [wordnet, llm]
 status: enriched
+chart: equity
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,11 @@ _No sourced examples yet._
 - advanced_form: [[equity]] — Use 'equity' when capital comes from ownership shares rather than loans, emphasizing ownership stake.
 - builds_on: [[corpus]] — Use 'capital' instead of 'corpus' when discussing assets that are not intended to be consumed, emphasizing investment value.
 - builds_on: [[principal]] — Use 'capital' for the principal amount in investment or financial contexts.
+- synonym: [[assets]]
+- synonym: [[finance]]
+- synonym: [[majuscule]]
+- synonym: [[metropolis]]
+- collocation: [[overrun]]
+- collocation: [[reinvestment]]
+- collocation: [[volute]]
+- synonym: [[financing]]

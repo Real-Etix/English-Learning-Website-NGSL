@@ -9,6 +9,8 @@ rank: 688
 sfi: 61.41
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,14 @@ having few parts
 - advanced_form: [[uncomplicated]] — Use 'uncomplicated' to emphasize that something is easy to understand or do, often when describing processes or designs that are not complex.
 - advanced_form: [[elementary]] — Use 'elementary' when referring to the simplest or most basic level of a subject, especially in academic or formal contexts.
 - advanced_form: [[rudimentary]] — Use 'rudimentary' to highlight that something is at a very basic or initial stage, often implying it is not fully developed.
+- collocation: [[concatenation]]
+- synonym: [[effortless]]
+- collocation: [[enumeration]]
+- collocation: [[inadvertence]]
+- collocation: [[melody]]
+- synonym: [[mere]]
+- collocation: [[predicate]]
+- collocation: [[relatively]]
+- collocation: [[restatement]]
+- collocation: [[civility]]
+- collocation: [[extraction]]

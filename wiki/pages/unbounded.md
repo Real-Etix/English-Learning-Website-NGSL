@@ -6,6 +6,8 @@ pos: adjective
 forms: [unbounded]
 sources: [llm]
 status: enriched
+chart: close
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[infinite]] — Use 'unbounded' instead of 'infinite' to emphasize a lack of constraints or boundaries, often in abstract or spatial contexts.
+- synonym: [[boundless]]

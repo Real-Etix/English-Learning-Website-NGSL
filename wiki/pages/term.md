@@ -9,6 +9,8 @@ rank: 280
 sfi: 65.44
 sources: [wordnet, llm]
 status: enriched
+chart: detail
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - builds_on: [[word]] — Use 'term' when referring to a specific word or phrase within a specialized field or context, rather than a general word.
 - advanced_form: [[designation]] — Use 'designation' instead of 'term' when emphasizing the official or technical label assigned to something.
 - advanced_form: [[appellation]] — Use 'appellation' instead of 'term' when referring to a formal name or title, especially in contexts like geography or branding.
+- collocation: [[connote]]
+- collocation: [[indeterminate]]
+- synonym: [[phrase]]
+- collocation: [[reproach]]
+- synonym: [[duration]]

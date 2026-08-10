@@ -9,6 +9,8 @@ rank: 435
 sfi: 63.63
 sources: [wordnet, llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ the waging of armed conflict against an enemy
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[warfare]] — Use instead of 'war' when focusing on the methods, strategies, or conduct of war rather than the conflict itself.
 - advanced_form: [[hostilities]] — Use instead of 'war' to emphasize the state of active fighting or conflict, often in diplomatic or political contexts.
+- collocation: [[loot]]
+- collocation: [[memorial]]
+- collocation: [[outbreak]]
+- collocation: [[plunder]]
+- collocation: [[ravage]]
+- collocation: [[reportage]]

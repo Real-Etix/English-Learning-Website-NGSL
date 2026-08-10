@@ -9,6 +9,8 @@ rank: 402
 sfi: 54.3
 sources: [wordnet, llm]
 status: enriched
+chart: balance
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ a lack of balance or state of disequilibrium
 - domain: fitness
 - advanced_form: [[disparity]] — Use 'disparity' to emphasize a significant and often unfair difference between two things, especially in quantity or quality.
 - advanced_form: [[asymmetry]] — Use 'asymmetry' when referring to a lack of symmetry or balance in a system, structure, or relationship, often in a technical or formal context.
+- synonym: [[gap]]

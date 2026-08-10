@@ -6,6 +6,8 @@ pos: noun
 forms: [glut]
 sources: [llm]
 status: enriched
+chart: surplus
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[surplus]] — Use 'glut' when emphasizing oversupply in a market or economic context.
+- synonym: [[excess]]
+- synonym: [[abundance]]
+- collocation: [[market]]
+- collocation: [[supply]]
+- collocation: [[flood]]
+- collocation: [[corn]]
+- collocation: [[oil]]
+- builds_on: [[excess]] — Use when the excess is so large that it causes a problem or imbalance, like oversupply.

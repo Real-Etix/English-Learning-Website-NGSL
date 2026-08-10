@@ -9,6 +9,8 @@ rank: 573
 sfi: 53.81
 sources: [wordnet, llm]
 status: enriched
+chart: guess
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - builds_on: [[rumor]] — Use 'speculation' when the rumor is based on conjecture rather than confirmed facts.
 - advanced_form: [[conjecture]] — Use conjecture when you want to sound more academic or formal than speculation, often implying a reasoned guess.
 - advanced_form: [[surmise]] — Use surmise when the guess is based on slight evidence but expressed with more confidence than speculation.
+- collocation: [[amid]]
+- collocation: [[metaphysical]]
+- collocation: [[rampant]]
+- synonym: [[wager]]

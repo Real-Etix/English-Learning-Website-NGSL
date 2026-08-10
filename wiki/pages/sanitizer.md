@@ -6,6 +6,8 @@ pos: noun
 forms: [sanitizer]
 sources: [llm]
 status: enriched
+chart: cleaner
+region: cleaner
 ---
 
 ## Definition

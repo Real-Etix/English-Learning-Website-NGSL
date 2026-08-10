@@ -6,6 +6,8 @@ pos: noun
 forms: [venality]
 sources: [llm]
 status: enriched
+chart: corruption
+region: corruption
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[corruption]] — Use 'venality' when the focus is on being open to bribery or other monetary corruption, rather than general dishonest behavior.
+- collocation: [[political]]
+- collocation: [[police]]
+- collocation: [[expose]]
+- collocation: [[rampant]]

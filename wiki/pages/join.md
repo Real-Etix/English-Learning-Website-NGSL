@@ -9,6 +9,8 @@ rank: 469
 sfi: 63.33
 sources: [wordnet, llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[enlist]] — Use 'enlist' when joining a cause, military, or formal group with a commitment.
 - advanced_form: [[affiliate]] — Use 'affiliate' when formally becoming a member of an organization or network.
 - advanced_form: [[accede]] — Use 'accede' when joining an agreement, treaty, or group by consent or formal action.
+- collocation: [[festivity]]
+- collocation: [[healthclub]]
+- synonym: [[matriculate]]
+- synonym: [[partake]]
+- collocation: [[queue]]

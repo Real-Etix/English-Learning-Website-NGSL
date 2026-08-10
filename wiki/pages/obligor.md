@@ -6,6 +6,8 @@ pos: noun
 forms: [obligor]
 sources: [llm]
 status: enriched
+chart: there
+region: you
 ---
 
 ## Definition

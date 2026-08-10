@@ -6,6 +6,8 @@ pos: noun
 forms: [tormentor]
 sources: [llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bully]] — Use 'tormentor' when emphasizing the infliction of ongoing mental or physical pain, not just occasional aggression.
+- synonym: [[oppressor]]

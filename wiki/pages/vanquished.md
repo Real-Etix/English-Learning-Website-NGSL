@@ -6,6 +6,8 @@ pos: noun
 forms: [vanquished]
 sources: [llm]
 status: enriched
+chart: support
+region: you
 ---
 
 ## Definition

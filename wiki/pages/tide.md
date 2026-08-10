@@ -9,6 +9,8 @@ rank: 1732
 sfi: 49.94
 sources: [wordnet, llm]
 status: enriched
+chart: trend
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - builds_on: [[trend]] — Use when emphasizing the strength and inevitability of a trend.
 - advanced_form: [[ebb]] — Use 'ebb' instead of 'tide' to emphasize the outward movement or decreasing water level, especially in nautical or metaphorical contexts.
 - advanced_form: [[flood]] — Use 'flood' to refer specifically to the incoming or rising tide, often in navigation or coastal descriptions.
+- collocation: [[outflowing]]
+- collocation: [[rising]]
+- collocation: [[incoming]]

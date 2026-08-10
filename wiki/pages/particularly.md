@@ -9,6 +9,8 @@ rank: 601
 sfi: 62.09
 sources: [wordnet, llm]
 status: enriched
+chart: particularly
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,7 @@ to a distinctly greater extent or degree than is common
 - advanced_form: [[exceptionally]] — Use 'exceptionally' to stress that something is out of the ordinary, often implying a high degree of excellence or rarity.
 - advanced_form: [[unusually]] — Use 'unusually' to highlight a deviation from the norm, often in descriptive or comparative contexts.
 - builds_on: [[namely]] — Use 'particularly' to single out one or more items as more important or relevant.
+- synonym: [[distinctively]]
+- synonym: [[eminently]]
+- synonym: [[expressly]]
+- collocation: [[prevalent]]

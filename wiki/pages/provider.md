@@ -9,6 +9,8 @@ rank: 87
 sfi: 57.76
 sources: [wordnet, llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ _No sourced examples yet._
 - advanced_form: [[supplier]] — Use 'supplier' instead of 'provider' when emphasizing the provision of goods or materials, often for manufacturing or resale.
 - advanced_form: [[purveyor]] — Use 'purveyor' instead of 'provider' for a more formal or nuanced tone, often implying a provider of specialized or high-quality goods or services.
 - builds_on: [[supplier]] — Focuses on the act of providing a service or utility; common for ongoing or essential services.
+- synonym: [[nurturer]]
+- synonym: [[provisioner]]

@@ -6,6 +6,8 @@ pos: adjective
 forms: [discomfited]
 sources: [llm]
 status: enriched
+chart: uncomfortable
+region: you
 ---
 
 ## Definition

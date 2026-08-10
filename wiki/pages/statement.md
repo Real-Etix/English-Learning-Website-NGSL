@@ -9,6 +9,8 @@ rank: 769
 sfi: 60.95
 sources: [wordnet, llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ a message that is stated or declared
 - advanced_form: [[declaration]] — Use 'declaration' for official, public, or solemn statements, as opposed to a casual or everyday statement.
 - builds_on: [[invoice]] — Use 'statement' when referring to a formal summary of charges over a period, especially in ongoing business or account relationships.
 - builds_on: [[sentence]] — Use 'statement' instead of 'sentence' when focusing on the content or proposition expressed, especially in formal, legal, or logical contexts.
+- collocation: [[attester]]
+- collocation: [[forthright]]
+- collocation: [[lemma]]
+- collocation: [[prefatory]]
+- collocation: [[rephrase]]
+- collocation: [[veracious]]
+- synonym: [[affidavit]]
+- synonym: [[deposition]]
+- synonym: [[predication]]

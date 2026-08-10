@@ -9,6 +9,8 @@ rank: 2402
 sfi: 54.3
 sources: [wordnet, llm]
 status: enriched
+chart: partition
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,11 @@ _No sourced examples yet._
 - advanced_form: [[obstacle]] — Use 'obstacle' for something that blocks progress, often figuratively.
 - advanced_form: [[hindrance]] — Use 'hindrance' for something that delays or makes progress difficult.
 - advanced_form: [[impediment]] — Use 'impediment' for a physical or abstract obstacle that seriously interferes.
+- synonym: [[bulkhead]]
+- synonym: [[cordon]]
+- synonym: [[divider]]
+- collocation: [[impenetrable]]
+- collocation: [[interpose]]
+- collocation: [[island]]
+- synonym: [[obstruction]]
+- synonym: [[blocker]]

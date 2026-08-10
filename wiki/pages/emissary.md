@@ -6,6 +6,8 @@ pos: noun
 forms: [emissary]
 sources: [llm]
 status: enriched
+chart: courier
+region: you
 ---
 
 ## Definition

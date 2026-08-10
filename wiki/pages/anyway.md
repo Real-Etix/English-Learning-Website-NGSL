@@ -9,6 +9,8 @@ rank: 893
 sfi: 60.25
 sources: [wordnet]
 status: seeded
+chart: anyway
+region: anyway
 ---
 
 ## Definition
@@ -20,3 +22,12 @@ used to indicate that a statement explains or supports a previous statement
 
 ## Connections
 - synonym: [[anyhow]]
+- synonym: [[nevertheless]]
+- synonym: [[nonetheless]]
+- synonym: [[regardless]]
+- synonym: [[still]]
+- collocation: [[but]]
+- collocation: [[so]]
+- collocation: [[well]]
+- collocation: [[though]]
+- collocation: [[and]]

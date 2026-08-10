@@ -9,6 +9,8 @@ rank: 744
 sfi: 61.02
 sources: [wordnet, llm]
 status: enriched
+chart: no
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,9 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[denomination]] — Use 'denomination' when referring to an organized branch of Christianity with distinct practices, e.g., Catholic, Methodist.
 - advanced_form: [[communion]] — Use 'communion' to emphasize fellowship among churches, e.g., the Anglican Communion.
+- collocation: [[congregation]]
+- collocation: [[elders]]
+- collocation: [[fete]]
+- collocation: [[patriarch]]
+- collocation: [[pew]]
+- collocation: [[vestibule]]

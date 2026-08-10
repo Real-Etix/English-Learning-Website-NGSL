@@ -9,6 +9,8 @@ rank: 1230
 sfi: 51.51
 sources: [wordnet, llm]
 status: enriched
+chart: amend
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[corrode]] — Use 'corrode' instead of 'erode' when the process involves chemical reaction or is more destructive.
 - advanced_form: [[undermine]] — Use 'undermine' instead of 'erode' when the deterioration is figurative or hidden, often affecting stability or strength.
 - advanced_form: [[degrade]] — Use 'degrade' instead of 'erode' when the focus is on reducing quality or status rather than physical wearing away.
+- synonym: [[abrade]]

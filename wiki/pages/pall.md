@@ -6,6 +6,8 @@ pos: verb
 forms: [pall]
 sources: [llm]
 status: enriched
+chart: disable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tire]] — Use 'pall' to describe something that becomes boring or loses its appeal over time, often used for experiences or entertainment.
+- synonym: [[weary]]
+- synonym: [[bore]]
+- collocation: [[begin]]
+- collocation: [[soon]]
+- collocation: [[never]]
+- collocation: [[quickly]]
+- collocation: [[on]]

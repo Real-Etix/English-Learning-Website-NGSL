@@ -9,6 +9,8 @@ rank: 1007
 sfi: 59.58
 sources: [wordnet, llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition

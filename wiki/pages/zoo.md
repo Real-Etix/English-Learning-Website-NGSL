@@ -9,6 +9,8 @@ rank: 514
 sfi: 52.98
 sources: [wordnet, llm]
 status: enriched
+chart: zoo
+region: zoo
 ---
 
 ## Definition

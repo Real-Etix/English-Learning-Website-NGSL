@@ -9,6 +9,8 @@ rank: 95
 sfi: 56.21
 sources: [llm]
 status: enriched
+chart: table
+region: you
 ---
 
 ## Definition

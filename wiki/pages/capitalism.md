@@ -9,6 +9,8 @@ rank: 431
 sfi: 54.18
 sources: [wordnet, llm]
 status: enriched
+chart: capitalism
+region: capitalism
 ---
 
 ## Definition

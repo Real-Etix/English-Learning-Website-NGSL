@@ -9,6 +9,8 @@ rank: 722
 sfi: 52.011
 sources: [wordnet, llm]
 status: enriched
+chart: minimize
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[attenuate]] — Use 'attenuate' in formal or scientific writing to describe reducing the strength or concentration of a solution, especially when the process is precise or the effect is measured.
 - advanced_form: [[adulterate]] — Use 'adulterate' to emphasize the deliberate addition of an inferior substance to weaken or corrupt the original, often with a negative or deceptive connotation, unlike the neutral 'dilute'.
+- synonym: [[diffuse]]

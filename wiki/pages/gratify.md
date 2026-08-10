@@ -6,6 +6,8 @@ pos: verb
 forms: [gratify]
 sources: [llm]
 status: enriched
+chart: accommodate
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adverb
 forms: [intermittently]
 sources: [llm]
 status: enriched
+chart: periodically
+region: periodically
 ---
 
 ## Definition

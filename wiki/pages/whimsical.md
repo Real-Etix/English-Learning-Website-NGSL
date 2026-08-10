@@ -6,6 +6,8 @@ pos: adjective
 forms: [whimsical]
 sources: [llm]
 status: enriched
+chart: volatile
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[arbitrary]] — Use 'whimsical' when the arbitrariness stems from playful or fanciful impulse, often with a lighter tone.
+- synonym: [[capricious]]
+- synonym: [[eccentric]]
+- collocation: [[notion]]
+- collocation: [[sense]]
+- collocation: [[charm]]
+- collocation: [[tale]]
+- collocation: [[humor]]

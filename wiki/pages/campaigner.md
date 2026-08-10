@@ -6,6 +6,8 @@ pos: noun
 forms: [campaigner]
 sources: [llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition

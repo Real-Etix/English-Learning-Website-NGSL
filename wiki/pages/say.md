@@ -9,6 +9,8 @@ rank: 30
 sfi: 75.35
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,6 @@ express in words
 - advanced_form: [[state]] — Use for formal, clear, or official expression of facts in writing or serious conversation.
 - advanced_form: [[assert]] — Use when saying something confidently and firmly, often to defend or emphasize a point.
 - advanced_form: [[declare]] — Use for official, public, or emphatic announcements in formal or legal contexts.
+- collocation: [[adieu]]
+- collocation: [[dare]]
+- collocation: [[whoa]]

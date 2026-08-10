@@ -6,6 +6,8 @@ pos: noun
 forms: [suitability]
 sources: [llm]
 status: enriched
+chart: health
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fitness]] — Use as a direct formal alternative to 'fitness' in contexts of general compatibility, though slightly more formal.
+- synonym: [[applicability]]
+- synonym: [[appropriateness]]
+- synonym: [[aptness]]

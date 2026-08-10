@@ -6,6 +6,8 @@ pos: noun
 forms: [hiatus]
 sources: [llm]
 status: enriched
+chart: suitcase
+region: you
 ---
 
 ## Definition

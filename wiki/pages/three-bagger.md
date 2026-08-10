@@ -6,6 +6,8 @@ pos: noun
 forms: [three-bagger]
 sources: [llm]
 status: enriched
+chart: triple
+region: triple
 ---
 
 ## Definition

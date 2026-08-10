@@ -9,6 +9,8 @@ rank: 1787
 sfi: 56.24
 sources: [wordnet, llm]
 status: enriched
+chart: competitor
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,11 @@ an opposing military force
 - advanced_form: [[adversary]] — Use 'adversary' to emphasize a more formal or strategic opposition, like in military or competitive contexts.
 - advanced_form: [[foe]] — Use 'foe' for a more poetic or dramatic tone, often implying a long-standing or bitter enemy.
 - advanced_form: [[antagonist]] — Use 'antagonist' to highlight active opposition in a conflict, suitable for military or ideological struggles.
+- collocation: [[flank]]
+- collocation: [[implacable]]
+- collocation: [[incursion]]
+- collocation: [[neutralize]]
+- collocation: [[overrun]]
+- collocation: [[warplane]]
+- collocation: [[alien]]
+- collocation: [[demoralize]]

@@ -9,6 +9,8 @@ rank: 792
 sfi: 52.75
 sources: [wordnet, llm]
 status: enriched
+chart: grip
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ the act of getting possession of something
 - advanced_form: [[acquisition]] — Use 'acquisition' instead of 'procurement' when emphasizing the act of obtaining something as an asset or through a formal purchase, especially in business contexts.
 - advanced_form: [[sourcing]] — Use 'sourcing' instead of 'procurement' when focusing on the process of finding and selecting suppliers, often in supply chain management.
 - advanced_form: [[obtainment]] — Use 'obtainment' instead of 'procurement' when emphasizing the act of getting something through effort or request, in formal or legal contexts.
+- builds_on: [[acquisition]] — Use in formal/business contexts for the process of buying or obtaining supplies.

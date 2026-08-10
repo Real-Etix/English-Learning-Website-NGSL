@@ -9,6 +9,8 @@ rank: 2153
 sfi: 55.06
 sources: [wordnet, llm]
 status: enriched
+chart: rise
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[enlargement]] — Use 'enlargement' when emphasizing physical size increase, often for spaces or objects.
 - advanced_form: [[augmentation]] — Use 'augmentation' when the increase is systematic or deliberate, often for resources or capabilities.
 - advanced_form: [[proliferation]] — Use 'proliferation' when the increase is rapid and spreading, often for numbers or distribution.
+- synonym: [[elongation]]
+- collocation: [[eastward]]
+- collocation: [[joule]]

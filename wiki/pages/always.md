@@ -9,6 +9,8 @@ rank: 183
 sfi: 67.25
 sources: [wordnet]
 status: seeded
+chart: annuity
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ at all times
 ## Connections
 - synonym: [[ever]]
 - antonym: [[never]]
+- synonym: [[forever]]
+- synonym: [[historically]]
+- synonym: [[invariably]]
+- synonym: [[perennially]]
+- synonym: [[eternally]]

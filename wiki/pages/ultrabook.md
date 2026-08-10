@@ -6,6 +6,8 @@ pos: noun
 forms: [ultrabook]
 sources: [llm]
 status: enriched
+chart: laptop
+region: laptop
 ---
 
 ## Definition

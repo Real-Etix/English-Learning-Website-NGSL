@@ -9,6 +9,8 @@ rank: 2148
 sfi: 55.08
 sources: [wordnet, llm]
 status: enriched
+chart: endure
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - advanced_form: [[brook]] — Use 'brook' for a small, gentle stream, especially in a picturesque or rural setting.
 - advanced_form: [[creek]] — Use 'creek' for a stream that is larger than a brook, commonly used in American English.
 - advanced_form: [[rivulet]] — Use 'rivulet' for an especially small or delicate stream, often in literary or poetic contexts.
+- collocation: [[lazy]]
+- collocation: [[limpid]]
+- collocation: [[outflowing]]
+- collocation: [[pellucid]]
+- synonym: [[pencil]]
+- synonym: [[watercourse]]

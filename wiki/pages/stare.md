@@ -9,6 +9,8 @@ rank: 2106
 sfi: 55.19
 sources: [wordnet, llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 - synonym: [[gaze]]
 - advanced_form: [[gaze]] — Use 'gaze' for a long, steady, often admiring or thoughtful stare.
 - advanced_form: [[gape]] — Use 'gape' for an open-mouthed stare, often due to surprise or wonder.
+- collocation: [[bewilderment]]
+- collocation: [[expectantly]]
+- collocation: [[impassive]]
+- collocation: [[incredulous]]

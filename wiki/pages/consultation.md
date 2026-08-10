@@ -9,6 +9,8 @@ rank: 441
 sfi: 53.832
 sources: [wordnet, llm]
 status: enriched
+chart: counsel
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ a conference (usually with someone important)
 - advanced_form: [[audience]] — Use 'audience' for a formal meeting with a high-ranking or important person, often implying a private conversation. 'Consultation' is broader and less formal.
 - advanced_form: [[counsel]] — Use 'counsel' when the discussion involves giving or receiving advice, especially in professional or legal contexts. 'Consultation' can be more general.
 - advanced_form: [[hearing]] — Use 'hearing' for a formal proceeding where evidence or opinions are presented, often in official or legal settings. 'Consultation' is less structured.
+- synonym: [[advisement]]

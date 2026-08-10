@@ -9,6 +9,8 @@ rank: 1185
 sfi: 58.69
 sources: [wordnet, llm]
 status: enriched
+chart: discharge
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ constituting the full quantity or extent
 - advanced_form: [[complete]] — Use 'complete' when emphasizing that nothing is missing or unfinished, similar to 'entire' but often implies a whole made of parts.
 - advanced_form: [[total]] — Use 'total' to stress the full extent or degree, often in a quantitative or emphatic sense.
 - advanced_form: [[absolute]] — Use 'absolute' for an unqualified, complete state, often with a stronger tone than 'entire'.
+- collocation: [[arsenal]]
+- collocation: [[panoply]]
+- collocation: [[pastorate]]

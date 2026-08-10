@@ -6,6 +6,8 @@ pos: adjective
 forms: [somber]
 sources: [llm]
 status: enriched
+chart: dismal
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1131
 sfi: 58.97
 sources: [wordnet, llm]
 status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,7 @@ _No sourced examples yet._
 - advanced_form: [[establish]] — Use 'establish' instead of 'launch' when emphasizing the formal creation or founding of an institution, company, or system.
 - advanced_form: [[found]] — Use 'found' instead of 'launch' specifically for starting an organization, institution, or place that will have a lasting presence.
 - builds_on: [[commence]] — Use 'launch' when referring to the start of a significant enterprise, product, or event, often with a sense of public announcement.
+- collocation: [[abort]]
+- collocation: [[candidacy]]
+- synonym: [[rollout]]
+- collocation: [[website]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [delude]
 sources: [llm]
 status: enriched
+chart: mislead
+region: mislead
 ---
 
 ## Definition

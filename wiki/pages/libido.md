@@ -6,6 +6,8 @@ pos: noun
 forms: [libido]
 sources: [llm]
 status: enriched
+chart: match
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sexuality]] — Use 'libido' instead of 'sexuality' when referring specifically to sexual drive or desire, rather than broader identity or biological roles.
+- synonym: [[desire]]
+- synonym: [[passion]]
+- collocation: [[low]]
+- collocation: [[high]]
+- collocation: [[increased]]
+- collocation: [[sex]]

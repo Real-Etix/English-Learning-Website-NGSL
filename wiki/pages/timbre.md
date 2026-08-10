@@ -6,6 +6,8 @@ pos: noun
 forms: [timbre]
 sources: [llm]
 status: enriched
+chart: accent
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tone]] — Use 'timbre' to describe the distinctive quality or character of a voice, beyond just its pitch or loudness, often when referring to its richness or color.
+- builds_on: [[voice]] — Use when describing the unique, characteristic sound quality that distinguishes one voice from another.

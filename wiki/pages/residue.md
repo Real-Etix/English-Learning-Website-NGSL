@@ -9,6 +9,8 @@ rank: 364
 sfi: 56.279
 sources: [wordnet, llm]
 status: enriched
+chart: residual
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[sediment]] — Use 'sediment' instead of 'residue' when the leftover matter is a granular or powdery solid that has settled from a liquid.
 - advanced_form: [[vestige]] — Use 'vestige' instead of 'residue' when emphasizing a minor but detectable sign of something past, like an ancient custom or structure.
 - builds_on: [[remainder]] — Use 'residue' for scientific or abstract leftover material; 'remainder' is broader.
+- synonym: [[ash]]
+- collocation: [[carbonaceous]]

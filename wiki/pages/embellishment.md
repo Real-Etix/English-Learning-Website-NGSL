@@ -6,6 +6,8 @@ pos: noun
 forms: [embellishment]
 sources: [llm]
 status: enriched
+chart: decorate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[decoration]] — Use 'embellishment' for added details that enhance or exaggerate, especially in narratives or design.
+- synonym: [[ornament]]
+- synonym: [[adornment]]
+- synonym: [[enhancement]]
+- collocation: [[artistic]]
+- collocation: [[truth]]
+- collocation: [[unnecessary]]

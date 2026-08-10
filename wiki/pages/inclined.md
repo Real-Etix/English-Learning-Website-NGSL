@@ -6,6 +6,8 @@ pos: adjective
 forms: [inclined]
 sources: [llm]
 status: enriched
+chart: man
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[prone]] — Use 'inclined' when the tendency is a personal preference or natural disposition, often neutral or positive.
+- collocation: [[nowise]]
+- synonym: [[predisposed]]

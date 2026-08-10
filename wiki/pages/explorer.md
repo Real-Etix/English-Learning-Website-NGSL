@@ -9,6 +9,8 @@ rank: 1212
 sfi: 49.46
 sources: [wordnet, llm]
 status: enriched
+chart: academic
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[pioneer]] — Use 'pioneer' when emphasizing the role of being the first to explore or settle a new area.
 - advanced_form: [[discoverer]] — Use 'discoverer' when focusing on finding something previously unknown, often with a specific result.
 - advanced_form: [[adventurer]] — Use 'adventurer' when the exploration involves risk and excitement, rather than purely scientific goals.
+- collocation: [[intrepid]]
+- collocation: [[venturesome]]
+- synonym: [[voyager]]

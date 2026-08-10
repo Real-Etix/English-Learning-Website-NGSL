@@ -9,6 +9,8 @@ rank: 248
 sfi: 55.57
 sources: [wordnet, llm]
 status: enriched
+chart: just
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ in the recent past
 - builds_on: [[recently]] — Use 'lately' to refer to a period of time up to the present, often with perfect tenses.
 - advanced_form: [[latterly]] — Use 'latterly' in formal writing or when contrasting recent events with earlier ones; it is more sophisticated than 'lately'.
 - advanced_form: [[newly]] — Use 'newly' to emphasize that something is brand new or just recently happened, often before a past participle; it sounds more precise than 'lately'.
+- synonym: [[anymore]]

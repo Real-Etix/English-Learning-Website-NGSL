@@ -9,6 +9,8 @@ rank: 1877
 sfi: 55.92
 sources: [wordnet, llm]
 status: enriched
+chart: engagement
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - advanced_form: [[interplay]] — Use interplay when emphasizing a dynamic, reciprocal influence between two or more things, rather than a simple exchange.
 - advanced_form: [[reciprocity]] — Use reciprocity in formal or academic contexts to stress mutual give-and-take, especially in social or economic relationships.
 - advanced_form: [[engagement]] — Use engagement to highlight active, involved participation in an interaction, often in educational or professional settings.
+- collocation: [[dipolar]]
+- collocation: [[macromolecule]]
+- builds_on: [[reaction]] — Use when focusing on the mutual action between two or more substances.
+- collocation: [[nucleon]]

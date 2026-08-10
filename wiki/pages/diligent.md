@@ -6,6 +6,8 @@ pos: adjective
 forms: [diligent]
 sources: [llm]
 status: enriched
+chart: hardworking
+region: hardworking
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hardworking]] — Use 'diligent' for careful, persistent effort, often in tasks requiring attention to detail.
+- synonym: [[assiduous]]
+- synonym: [[conscientious]]
+- synonym: [[industrious]]
+- synonym: [[meticulous]]
+- synonym: [[careful]]
+- collocation: [[student]]
+- collocation: [[worker]]
+- collocation: [[effort]]
+- collocation: [[work]]
+- collocation: [[attention]]

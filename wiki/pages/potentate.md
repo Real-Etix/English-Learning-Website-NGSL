@@ -6,6 +6,8 @@ pos: noun
 forms: [potentate]
 sources: [llm]
 status: enriched
+chart: emperor
+region: emperor
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[emperor]] — Use 'potentate' to highlight immense personal power and sovereign authority, often in a historical or formal context.
+- synonym: [[ruler]]
+- synonym: [[monarch]]
+- synonym: [[sovereign]]
+- synonym: [[autocrat]]
+- collocation: [[eastern]]
+- collocation: [[powerful]]
+- collocation: [[absolute]]
+- collocation: [[wealthy]]
+- collocation: [[local]]

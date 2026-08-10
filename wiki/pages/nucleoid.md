@@ -6,6 +6,8 @@ pos: noun
 forms: [nucleoid]
 sources: [llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nucleus]] — Used specifically for prokaryotic cells instead of 'nucleus'.
+- collocation: [[bacterial]]
+- collocation: [[region]]
+- collocation: [[structure]]

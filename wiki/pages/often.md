@@ -9,6 +9,8 @@ rank: 288
 sfi: 65.33
 sources: [wordnet]
 status: seeded
+chart: seldom
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ many times at short intervals
 - synonym: [[frequently]]
 - antonym: [[rarely]]
 - antonym: [[seldom]]
+- collocation: [[conflate]]
+- collocation: [[connote]]
+- collocation: [[liken]]
+- collocation: [[depress]]

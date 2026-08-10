@@ -9,6 +9,8 @@ rank: 461
 sfi: 53.73
 sources: [wordnet, llm]
 status: enriched
+chart: beautiful
+region: you
 ---
 
 ## Definition

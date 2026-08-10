@@ -9,6 +9,8 @@ rank: 868
 sfi: 52.6
 sources: [wordnet, llm]
 status: enriched
+chart: certainty
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[latitude]] — Use when emphasizing the extent of freedom allowed, often in professional or formal contexts.
 - advanced_form: [[leeway]] — Use when highlighting the allowance for flexible action within limits, especially in organizational or procedural settings.
 - builds_on: [[volition]] — Discretion highlights freedom to decide based on one's own judgment, often within a framework.
+- synonym: [[judiciousness]]

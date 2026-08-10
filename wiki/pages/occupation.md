@@ -9,6 +9,8 @@ rank: 64
 sfi: 59.23
 sources: [wordnet, llm]
 status: enriched
+chart: occupation
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,5 @@ _No sourced examples yet._
 - advanced_form: [[vocation]] — Use 'vocation' to emphasize a strong sense of calling or suitability for a particular line of work, often implying personal fulfillment.
 - advanced_form: [[calling]] — Use 'calling' when the occupation is seen as a deep personal mission or life purpose, typically with spiritual or moral weight.
 - builds_on: [[employment]] — Use 'occupation' when referring to a person's regular work or job title, especially in official or formal contexts.
+- synonym: [[occupancy]]
+- synonym: [[habitation]]

@@ -9,6 +9,8 @@ rank: 632
 sfi: 61.79
 sources: [wordnet, llm]
 status: enriched
+chart: protocol
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,13 @@ status: enriched
 - advanced_form: [[assault]] — Use 'assault' for a violent, close-range attack often with a sense of immediacy and direct contact.
 - advanced_form: [[offensive]] — Use 'offensive' for a strategy-driven, sustained attack aimed at gaining territory or advantage.
 - advanced_form: [[onslaught]] — Use 'onslaught' to emphasize a fierce, overwhelming, and often continuous attack.
+- synonym: [[aggression]]
+- collocation: [[flank]]
+- collocation: [[flanking]]
+- collocation: [[perpetrate]]
+- collocation: [[premeditated]]
+- collocation: [[repel]]
+- collocation: [[vicious]]
+- collocation: [[vitriolically]]
+- collocation: [[withstand]]
+- collocation: [[terrorist]]

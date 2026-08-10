@@ -6,6 +6,8 @@ pos: adverb
 forms: [eminently]
 sources: [llm]
 status: enriched
+chart: particularly
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[notably]] — Use to stress that someone or something is highly suitable or outstanding in a particular quality, often in a positive sense.
+- synonym: [[exceptionally]]
+- synonym: [[remarkably]]
+- synonym: [[extremely]]
+- synonym: [[particularly]]
+- collocation: [[suitable]]
+- collocation: [[capable]]
+- collocation: [[sensible]]

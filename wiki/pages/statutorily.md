@@ -6,6 +6,8 @@ pos: adverb
 forms: [statutorily]
 sources: [llm]
 status: enriched
+chart: legally
+region: legally
 ---
 
 ## Definition

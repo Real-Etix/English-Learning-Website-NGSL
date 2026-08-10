@@ -6,6 +6,8 @@ pos: noun
 forms: [dishwashingmachine]
 sources: [llm]
 status: enriched
+chart: dishwasher
+region: dishwasher
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[dishwasher]] — Use 'dishwashing machine' in formal or technical contexts instead of the more casual 'dishwasher'.
+- synonym: [[automaticdishwasher]]
+- collocation: [[load]]
+- collocation: [[unload]]
+- collocation: [[run]]
+- collocation: [[detergent]]
+- collocation: [[rack]]

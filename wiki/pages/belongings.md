@@ -6,6 +6,8 @@ pos: noun
 forms: [belongings]
 sources: [llm]
 status: enriched
+chart: pattern
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[luggage]] — Use 'belongings' for a broader sense of personal items; 'luggage' specifically means suitcases or bags.
+- synonym: [[effects]]
+- synonym: [[stuff]]
+- synonym: [[property]]
+- synonym: [[goods]]
+- collocation: [[personal]]
+- collocation: [[take]]
+- collocation: [[pack]]
+- collocation: [[leave]]
+- collocation: [[gather]]
+- synonym: [[chattel]]

@@ -9,6 +9,8 @@ rank: 1829
 sfi: 56.08
 sources: [wordnet, llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ something with a round shape resembling a flat circular plate
 - builds_on: [[circle]] — Use 'disk' for a flat, round object, especially when emphasizing its shape as a solid surface rather than just a line.
 - advanced_form: [[disc]] — Use 'disc' in formal, technical, or British English contexts for a flat circular object.
 - advanced_form: [[platter]] — Use 'platter' for a flat circular object in data storage or when referring to a serving dish.
+- collocation: [[format]]
+- synonym: [[wafer]]

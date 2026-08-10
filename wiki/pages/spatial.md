@@ -9,6 +9,8 @@ rank: 38
 sfi: 60.886
 sources: [wordnet, llm]
 status: enriched
+chart: spatial
+region: spatial
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ pertaining to or involving or having the nature of space
 - advanced_form: [[geometric]] — Use when emphasizing shapes, lines, and spatial relationships in a structured or mathematical way.
 - builds_on: [[geographic]] — Use 'spatial' to emphasize the arrangement, distribution, or relationship of features in space, especially in technical or scientific contexts.
 - builds_on: [[geographical]] — Use 'spatial' to emphasize the arrangement or position in space, often in scientific or analytical contexts.
+- collocation: [[periodicity]]
+- builds_on: [[dimensional]] — Use for physical space, position, and three-dimensional relations in technical or scientific contexts.

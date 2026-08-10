@@ -9,6 +9,8 @@ rank: 413
 sfi: 54.19
 sources: [wordnet, llm]
 status: enriched
+chart: peaceful
+region: peaceful
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ not disturbed by strife or turmoil or war
 - advanced_form: [[serene]] — Use 'serene' to emphasize a calm, unruffled state, often in a natural or spiritual context.
 - advanced_form: [[tranquil]] — Use 'tranquil' for a deep, quiet stillness, usually in a setting or atmosphere.
 - advanced_form: [[placid]] — Use 'placid' for a person or animal that is naturally calm and not easily agitated.
+- collocation: [[dale]]
+- collocation: [[haven]]
+- collocation: [[passing]]
+- collocation: [[quietude]]
+- synonym: [[restful]]
+- collocation: [[reunification]]

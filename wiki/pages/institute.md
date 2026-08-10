@@ -9,6 +9,8 @@ rank: 524
 sfi: 53.18
 sources: [wordnet, llm]
 status: enriched
+chart: institute
+region: you
 ---
 
 ## Definition
@@ -34,3 +36,7 @@ _No sourced examples yet._
 - advanced_form: [[constitute]] — Use 'constitute' when focusing on the legal or formal establishment of an organization, board, or body.
 - advanced_form: [[instate]] — Use 'instate' when referring to putting something (like a rule, policy, or official) into effect, often in a legal or authoritative context.
 - builds_on: [[laboratory]] — Use 'institute' instead of 'laboratory' when referring to the entire research organization, which may include several labs and support facilities, implying a broader formal entity.
+- synonym: [[polytechnic]]
+- collocation: [[polytechnic]]
+- builds_on: [[found]] — use when the founding involves official rules, policies, or procedures
+- synonym: [[lyceum]]

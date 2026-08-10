@@ -9,6 +9,8 @@ rank: 1137
 sfi: 49.05
 sources: [wordnet, llm]
 status: enriched
+chart: revolutionary
+region: you
 ---
 
 ## Definition

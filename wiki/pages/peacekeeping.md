@@ -9,6 +9,8 @@ rank: 1723
 sfi: 48.4
 sources: [wordnet, llm]
 status: enriched
+chart: workout
+region: you
 ---
 
 ## Definition

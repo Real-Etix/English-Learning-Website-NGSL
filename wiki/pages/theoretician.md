@@ -6,6 +6,8 @@ pos: noun
 forms: [theoretician]
 sources: [llm]
 status: enriched
+chart: intellectual
+region: you
 ---
 
 ## Definition

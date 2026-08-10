@@ -9,6 +9,8 @@ rank: 1760
 sfi: 56.33
 sources: [wordnet, llm]
 status: enriched
+chart: notion
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,14 @@ _No sourced examples yet._
 - synonym: [[input]]
 - advanced_form: [[assertion]] — Use when you want to emphasize a strong, confident statement, often one that is not yet proven.
 - advanced_form: [[utterance]] — Use for any spoken word or phrase, especially in formal or linguistic contexts.
+- collocation: [[acidulous]]
+- collocation: [[apposite]]
+- collocation: [[caustic]]
+- collocation: [[inane]]
+- collocation: [[interpose]]
+- collocation: [[mordant]]
+- collocation: [[parenthetical]]
+- synonym: [[quip]]
+- collocation: [[callous]]
+- collocation: [[fatuous]]
+- collocation: [[tangential]]

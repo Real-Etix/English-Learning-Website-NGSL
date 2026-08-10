@@ -9,6 +9,8 @@ rank: 1896
 sfi: 55.85
 sources: [wordnet, llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[producer]] — Use 'manufacturer' instead of 'producer' when emphasizing the industrial or large-scale process of making goods, especially in formal or business contexts.
 - advanced_form: [[producer]] — Use 'producer' when emphasizing the creation or output of goods, especially in economic or supply chain contexts; it is more formal than 'manufacturer'.
 - advanced_form: [[industrialist]] — Use 'industrialist' when referring to a person who owns or controls a large manufacturing business, highlighting wealth and influence rather than the business itself.
+- synonym: [[packer]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [incumbency]
 sources: [llm]
 status: enriched
+chart: administration
+region: you
 ---
 
 ## Definition

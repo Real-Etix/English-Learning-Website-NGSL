@@ -9,6 +9,8 @@ rank: 2674
 sfi: 53.35
 sources: [wordnet, llm]
 status: enriched
+chart: advocate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - builds_on: [[warrior]] — Use 'veteran' instead of 'warrior' to emphasize experience and long service, not just fighting.
 - advanced_form: [[campaigner]] — Use 'campaigner' to emphasize active participation in multiple military operations; more formal and specific than 'veteran'.
 - advanced_form: [[warhorse]] — Use 'warhorse' for a seasoned veteran with long service, often with an informal admiring tone, highlighting toughness and experience.
+- collocation: [[lensman]]
+- collocation: [[hardened]]
+- synonym: [[journeyman]]

@@ -9,6 +9,8 @@ rank: 261
 sfi: 56.36
 sources: [wordnet, llm]
 status: enriched
+chart: climber
+region: climber
 ---
 
 ## Definition

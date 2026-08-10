@@ -6,6 +6,8 @@ pos: adjective
 forms: [vigilant]
 sources: [llm]
 status: enriched
+chart: thorough
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[cautious]] — Use 'vigilant' when caution includes constant watchfulness and alertness to danger.
 - builds_on: [[careful]] — Use 'vigilant' when watchfulness and alertness to danger or problems is key.
+- synonym: [[observant]]
+- synonym: [[attentive]]
+- collocation: [[eternally]]

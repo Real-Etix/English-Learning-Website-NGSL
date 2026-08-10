@@ -9,6 +9,8 @@ rank: 2253
 sfi: 54.78
 sources: [wordnet, llm]
 status: enriched
+chart: cover
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[anorak]] — Use 'anorak' for a waterproof, hooded jacket, typically for outdoor or casual wear.
 - advanced_form: [[cardigan]] — Use 'cardigan' for a knitted jacket that opens at the front, often worn over a shirt or blouse.
 - builds_on: [[envelope]] — Use 'jacket' for a protective outer covering made of stiff material, often for documents or files, implying a more formal or sturdy container than a standard paper envelope.
+- synonym: [[coat]]
+- collocation: [[leather]]
+- collocation: [[spud]]

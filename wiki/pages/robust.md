@@ -9,6 +9,8 @@ rank: 567
 sfi: 53.62
 sources: [wordnet, llm]
 status: enriched
+chart: accommodate
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 70
 sfi: 59.459
 sources: [wordnet, llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[affinity]] — Use 'affinity' to suggest a natural or inherent similarity, often implying a connection or attraction.
 - advanced_form: [[congruence]] — Use 'congruence' for precise, logical, or formal similarity, often in technical or abstract contexts.
+- synonym: [[commonality]]
+- synonym: [[likeness]]

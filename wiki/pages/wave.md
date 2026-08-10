@@ -9,6 +9,8 @@ rank: 1158
 sfi: 58.84
 sources: [wordnet, llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,13 @@ _No sourced examples yet._
 - advanced_form: [[swell]] — Use 'swell' for a long, smooth, unbroken wave, often in open water, emphasizing its gradual rise and fall.
 - advanced_form: [[surge]] — Use 'surge' for a strong, sudden, and often forceful wave, emphasizing its power and momentum.
 - advanced_form: [[billow]] — Use 'billow' for a large, rolling, and often dramatic wave, especially in poetry or descriptive writing.
+- collocation: [[adieu]]
+- collocation: [[banner]]
+- collocation: [[detonation]]
+- collocation: [[euphoria]]
+- collocation: [[longitudinal]]
+- collocation: [[nationalism]]
+- collocation: [[perfunctory]]
+- collocation: [[pogrom]]
+- collocation: [[millimetre]]
+- synonym: [[spate]]

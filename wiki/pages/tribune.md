@@ -6,6 +6,8 @@ pos: noun
 forms: [tribune]
 sources: [llm]
 status: enriched
+chart: populist
+region: populist
 ---
 
 ## Definition

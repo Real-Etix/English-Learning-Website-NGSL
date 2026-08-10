@@ -9,6 +9,8 @@ rank: 232
 sfi: 56.85
 sources: [wordnet, llm]
 status: enriched
+chart: blender
+region: blender
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [snowfall]
 sources: [llm]
 status: enriched
+chart: powder
+region: you
 ---
 
 ## Definition

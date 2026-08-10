@@ -6,6 +6,8 @@ pos: noun
 forms: [wordsmith]
 sources: [llm]
 status: enriched
+chart: author
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[author]] — Use 'wordsmith' instead of 'author' when you want to emphasize skillful or artistic use of language, especially in creative writing.
+- synonym: [[writer]]
+- synonym: [[stylist]]
+- collocation: [[master]]
+- collocation: [[accomplished]]
+- collocation: [[renowned]]

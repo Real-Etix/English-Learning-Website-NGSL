@@ -6,6 +6,8 @@ pos: noun
 forms: [misadventure]
 sources: [llm]
 status: enriched
+chart: accident
+region: accident
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[accident]] — Use 'misadventure' for an accident that occurs as part of an adventurous or unplanned event, often implying a series of unfortunate incidents.
+- synonym: [[mishap]]
+- synonym: [[disaster]]
+- synonym: [[setback]]
+- collocation: [[series]]
+- collocation: [[tale]]

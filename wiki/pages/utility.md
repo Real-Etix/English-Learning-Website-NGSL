@@ -9,6 +9,8 @@ rank: 35
 sfi: 60.39
 sources: [wordnet, llm]
 status: enriched
+chart: vendor
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[purveyor]] — Use 'purveyor' for a formal tone when referring to a company that supplies essential public services like water or gas.
 - advanced_form: [[concessionaire]] — Use 'concessionaire' when the utility operates under a government-granted concession or franchise, emphasizing the legal arrangement.
+- synonym: [[app]]
+- synonym: [[expediency]]
+- synonym: [[versatility]]
+- collocation: [[linesman]]

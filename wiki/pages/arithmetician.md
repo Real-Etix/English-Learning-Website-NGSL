@@ -6,6 +6,8 @@ pos: noun
 forms: [arithmetician]
 sources: [llm]
 status: enriched
+chart: unplug
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[calculator]] — Use 'arithmetician' instead of 'calculator' when emphasizing formal expertise in arithmetic, often in academic or professional settings.
+- collocation: [[accomplished]]
+- collocation: [[brilliant]]
+- collocation: [[mental]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [pleasantly]
 sources: [llm]
 status: enriched
+chart: nicely
+region: nicely
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nicely]] — Use 'pleasantly' to emphasize a pleasing, enjoyable manner, more formal than 'nicely'.
+- synonym: [[agreeably]]
+- collocation: [[warm]]
+- collocation: [[cool]]

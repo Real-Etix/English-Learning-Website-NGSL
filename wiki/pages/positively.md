@@ -9,6 +9,8 @@ rank: 497
 sfi: 54.762
 sources: [wordnet, llm]
 status: enriched
+chart: sector
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ extremely
 - advanced_form: [[absolutely]] — Use 'absolutely' for strong intensification, often with extreme adjectives like 'freezing'.
 - advanced_form: [[utterly]] — Use 'utterly' for complete, total emphasis, often with negative or strong adjectives.
 - advanced_form: [[thoroughly]] — Use 'thoroughly' to mean completely and in every way, often for emotional states.
+- synonym: [[optimistically]]

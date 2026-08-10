@@ -9,6 +9,8 @@ rank: 680
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: accent
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[inflection]] — Use 'inflection' to emphasize grammatical or emotional pitch change in a phrase, often implying a specific pattern.
 - advanced_form: [[modulation]] — Use 'modulation' to highlight deliberate, controlled shifts in pitch or tone for effect.
 - advanced_form: [[prosody]] — Use 'prosody' for the broader system of pitch, rhythm, and stress patterns in language.
+- builds_on: [[voice]] — Use when referring to the rise and fall of pitch in speech, especially how it affects meaning.

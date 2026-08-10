@@ -9,6 +9,8 @@ rank: 1137
 sfi: 58.95
 sources: [wordnet, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,7 @@ _No sourced examples yet._
 - advanced_form: [[establishment]] — Use 'establishment' to emphasize a well-known, long-lasting institution, often with a sense of authority or tradition.
 - advanced_form: [[foundation]] — Use 'foundation' to refer to a non-profit institution that supports a cause with financial grants or charitable work.
 - advanced_form: [[consortium]] — Use 'consortium' for an association of multiple institutions working together for a common purpose, often in business or academia.
+- collocation: [[penal]]
+- builds_on: [[establishment]] — Use when emphasizing the formal setting up of a rule, system, or practice.
+- collocation: [[avunculate]]
+- synonym: [[instillation]]

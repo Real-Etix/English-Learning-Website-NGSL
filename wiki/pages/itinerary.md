@@ -9,6 +9,8 @@ rank: 146
 sfi: 57.05
 sources: [wordnet, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[course]] — Use 'course' for the general direction of travel or a predetermined path, less detailed than an 'itinerary' which includes specific stops and times.
 - builds_on: [[schedule]] — Use 'itinerary' instead of 'schedule' when referring specifically to a planned sequence of travel destinations or events, like during a trip.
 - builds_on: [[agenda]] — Use 'itinerary' for a detailed schedule of events during a trip or conference, often with times and locations, more specific than a general agenda.
+- builds_on: [[timetable]] — Use for travel plans instead of timetable; timetable is more for classes or trains.

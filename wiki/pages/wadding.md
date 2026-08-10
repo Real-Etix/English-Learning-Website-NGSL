@@ -6,6 +6,8 @@ pos: noun
 forms: [wadding]
 sources: [llm]
 status: enriched
+chart: cotton
+region: cotton
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cotton]] — Use 'wadding' when referring to raw cotton processed for padding or stuffing, especially in sewing or crafts.
+- synonym: [[batting]]
+- collocation: [[soft]]

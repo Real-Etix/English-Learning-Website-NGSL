@@ -9,6 +9,8 @@ rank: 721
 sfi: 53.24
 sources: [wordnet, llm]
 status: enriched
+chart: line
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,7 @@ a position particularly well suited to the person who occupies it
 - advanced_form: [[calling]] — Use 'calling' when emphasizing a strong inner drive or destiny for a role, rather than just a suitable position.
 - advanced_form: [[mtier]] — Use 'métier' to highlight a professional or artistic field that perfectly fits one’s talents and training, often with a European or refined tone.
 - advanced_form: [[province]] — Use 'province' to indicate an area of responsibility or expertise that is naturally suited to someone, often implying a distinct domain or territory of work.
+- synonym: [[cubby]]
+- synonym: [[cubbyhole]]
+- synonym: [[nook]]
+- synonym: [[bay]]

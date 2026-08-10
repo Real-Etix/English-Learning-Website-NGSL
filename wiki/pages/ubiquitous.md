@@ -6,6 +6,8 @@ pos: adjective
 forms: [ubiquitous]
 sources: [llm]
 status: enriched
+chart: cable
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[widespread]] — Suggests something is found everywhere, often with a sense of omnipresence.
 - builds_on: [[generic]] — Use 'ubiquitous' when something is so common or generic that it appears everywhere, emphasizing omnipresence.
+- synonym: [[pervasive]]
+- synonym: [[prevalent]]

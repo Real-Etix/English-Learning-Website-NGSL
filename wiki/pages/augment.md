@@ -6,6 +6,8 @@ pos: verb
 forms: [augment]
 sources: [llm]
 status: enriched
+chart: expand
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - builds_on: [[enrich]] — Use 'augment' when emphasizing that something is increased in size, amount, or degree, especially by adding more.
 - builds_on: [[enhance]] — Use 'augment' when adding to something to make it larger or more effective, often in a formal or technical context.
 - builds_on: [[boost]] — Use 'augment' when adding to something to make it larger or more effective, often formally.
+- synonym: [[heighten]]

@@ -9,6 +9,8 @@ rank: 1034
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: crawl
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,7 @@ _No sourced examples yet._
 - advanced_form: [[centimetre]] — Use in British English or formal writing instead of centimeter; same meaning.
 - advanced_form: [[millimeter]] — Use when you need a smaller unit for precise measurements, often in scientific or technical contexts; not a direct synonym but a related finer unit.
 - builds_on: [[inch]] — Use 'centimeter' in international or metric-based communication where 'inch' would be used in imperial systems, especially for moderate lengths.
+- collocation: [[square]]
+- collocation: [[ruler]]
+- collocation: [[metric]]
+- collocation: [[per]]

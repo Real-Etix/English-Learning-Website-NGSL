@@ -9,6 +9,8 @@ rank: 80
 sfi: 59.25
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ exercising influence or control
 - advanced_form: [[preeminent]] — Use 'preeminent' when you want to emphasize that someone or something stands out as the best or most respected among all others, often due to exceptional ability or achievement.
 - advanced_form: [[paramount]] — Use 'paramount' when you want to stress that something is the most important or essential, above all other considerations.
 - advanced_form: [[predominant]] — Use 'predominant' to indicate that something is the most common, widespread, or influential in a particular context, especially when comparing multiple factors.
+- collocation: [[allele]]
+- collocation: [[numerically]]

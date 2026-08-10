@@ -9,6 +9,8 @@ rank: 954
 sfi: 59.92
 sources: [wordnet, llm]
 status: enriched
+chart: lot
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ a collection containing a variety of sorts of things
 - advanced_form: [[assortment]] — Use 'assortment' when emphasizing a deliberately mixed collection of items, often in a retail or curated context.
 - advanced_form: [[diversity]] — Use 'diversity' when emphasizing variation in qualities, such as in biology, culture, or opinions.
 - advanced_form: [[multitude]] — Use 'multitude' when emphasizing a large number or great quantity of items, often with a sense of abundance.
+- synonym: [[eclecticism]]
+- collocation: [[heirloom]]
+- synonym: [[menagerie]]
+- synonym: [[multifariousness]]
+- synonym: [[pippin]]
+- synonym: [[pluralism]]
+- synonym: [[richness]]
+- synonym: [[multiplicity]]

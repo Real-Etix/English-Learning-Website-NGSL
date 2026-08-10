@@ -9,6 +9,8 @@ rank: 1128
 sfi: 51.89
 sources: [wordnet, llm]
 status: enriched
+chart: subordinate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ of less size or importance
 - advanced_form: [[inferior]] — Use 'inferior' when comparing quality, status, or value, implying it is worse or lower-ranked than another.
 - advanced_form: [[minor]] — Use 'minor' for less significant or consequential things, especially in terms of importance or degree.
 - advanced_form: [[subordinate]] — Use 'subordinate' for someone or something lower in rank, authority, or hierarchy.
+- synonym: [[less]]
+- synonym: [[petty]]

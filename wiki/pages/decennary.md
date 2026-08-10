@@ -6,6 +6,8 @@ pos: noun
 forms: [decennary]
 sources: [llm]
 status: enriched
+chart: decade
+region: decade
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[decade]] — Use 'decennary' to refer to a tenth anniversary or a period of ten years, especially in historical or ceremonial contexts.
+- collocation: [[next]]
+- collocation: [[last]]

@@ -9,6 +9,8 @@ rank: 432
 sfi: 53.44
 sources: [wordnet, llm]
 status: enriched
+chart: accessible
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ capable of being reached
 - advanced_form: [[attainable]] — Use 'attainable' when emphasizing the effort or achievement involved in reaching something.
 - advanced_form: [[approachable]] — Use 'approachable' when referring to physical access via a specific route or path.
 - builds_on: [[handy]] — Use 'accessible' to emphasize that something is easy to reach or obtain, often in a more formal or physical context than 'handy'.
+- collocation: [[readily]]

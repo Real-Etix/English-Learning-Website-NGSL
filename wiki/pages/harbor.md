@@ -9,6 +9,8 @@ rank: 2704
 sfi: 53.18
 sources: [wordnet, llm]
 status: enriched
+chart: feel
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ maintain (a theory, thoughts, or feelings)
 - advanced_form: [[entertain]] — Use 'entertain' when considering an idea or feeling without necessarily acting on it, often implying openness to it.
 - advanced_form: [[cherish]] — Use 'cherish' when you hold a feeling or belief dearly, especially positive ones like hope or memories.
 - advanced_form: [[nurture]] — Use 'nurture' when you actively foster and develop a feeling or thought over time.
+- synonym: [[haven]]

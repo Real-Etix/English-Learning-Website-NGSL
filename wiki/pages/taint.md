@@ -6,6 +6,8 @@ pos: verb
 forms: [taint]
 sources: [llm]
 status: enriched
+chart: direct
+region: you
 ---
 
 ## Definition

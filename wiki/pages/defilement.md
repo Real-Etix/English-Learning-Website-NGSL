@@ -6,6 +6,8 @@ pos: noun
 forms: [defilement]
 sources: [llm]
 status: enriched
+chart: dye
+region: you
 ---
 
 ## Definition

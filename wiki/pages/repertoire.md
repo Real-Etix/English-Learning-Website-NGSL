@@ -9,6 +9,8 @@ rank: 1
 sfi: 72.452
 sources: [wordnet, llm]
 status: enriched
+chart: repertoire
+region: repertoire
 ---
 
 ## Definition

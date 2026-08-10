@@ -9,6 +9,8 @@ rank: 14
 sfi: 68.94
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: squeeze
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,7 @@ to compress with violence, out of natural shape or condition
 - builds_on: [[press]] — Use 'squeeze' when pressing from opposite sides to extract or compress, often with hands or fingers; implies a tighter, more focused force than general 'press'.
 - advanced_form: [[crush]] — Use 'crush' when the compression is strong enough to deform or break the object, often implying a violent or forceful action.
 - advanced_form: [[squash]] — Use 'squash' when the compression flattens or deforms something into a soft or pulpy mass, often with a sudden force.
+- synonym: [[cuddle]]
+- synonym: [[jam]]
+- synonym: [[wedge]]
+- synonym: [[cram]]

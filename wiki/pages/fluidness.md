@@ -6,6 +6,8 @@ pos: noun
 forms: [fluidness]
 sources: [llm]
 status: enriched
+chart: fluid
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[liquidity]] — Use 'fluidness' as a synonym for 'liquidity' when emphasizing a smooth, liquid-like state, less common but acceptable in formal writing.
+- synonym: [[fluidity]]
+- synonym: [[flow]]
+- collocation: [[movement]]
+- collocation: [[motion]]
+- collocation: [[liquid]]
+- collocation: [[dance]]

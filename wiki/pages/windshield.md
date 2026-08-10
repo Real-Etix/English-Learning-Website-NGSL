@@ -9,6 +9,8 @@ rank: 506
 sfi: 53.39
 sources: [wordnet, llm]
 status: enriched
+chart: windshield
+region: windshield
 ---
 
 ## Definition

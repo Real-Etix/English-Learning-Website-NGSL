@@ -9,6 +9,8 @@ rank: 1199
 sfi: 58.66
 sources: [wordnet, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ an ordered reference standard
 - advanced_form: [[gradation]] — Use 'gradation' when emphasizing the step-by-step nature of the scale.
 - advanced_form: [[spectrum]] — Use 'spectrum' when the scale covers a wide, continuous range rather than discrete steps.
 - builds_on: [[climb]] — Use 'scale' when emphasizing the difficulty or effort of climbing a vertical or near-vertical surface, like a cliff or wall.
+- collocation: [[biospheric]]
+- collocation: [[descending]]
+- collocation: [[microscopic]]
+- collocation: [[nanometer]]
+- collocation: [[recalibrate]]

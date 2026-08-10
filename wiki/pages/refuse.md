@@ -9,6 +9,8 @@ rank: 1209
 sfi: 58.59
 sources: [wordnet, llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ _No sourced examples yet._
 - builds_on: [[trash]] — Use 'refuse' in formal or technical contexts, like waste management, instead of 'trash'.
 - advanced_form: [[eschew]] — Use 'eschew' to emphasize deliberate avoidance or abstention, stronger than simply refusing.
 - advanced_form: [[forbear]] — Use 'forbear' when you choose to refrain from doing something despite a desire or opportunity to act, often implying self-restraint.
+- collocation: [[condone]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [abruptly]
 sources: [llm]
 status: enriched
+chart: deliberately
+region: you
 ---
 
 ## Definition

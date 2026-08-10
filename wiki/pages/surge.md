@@ -9,6 +9,8 @@ rank: 260
 sfi: 55.23
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -30,3 +32,5 @@ rise and move, as in waves or billows
 - builds_on: [[bout]] — Use 'surge' instead of 'bout' when describing a powerful, sudden forward movement or increase in offensive activity.
 - builds_on: [[eager]] — Use 'surge' as a broader, more common term for a powerful wave or rush of water; it is less specific than 'bore' for tidal bores but avoids the confusion of 'eager'.
 - builds_on: [[wave]] — Use 'surge' for a strong, sudden, and often forceful wave, emphasizing its power and momentum.
+- synonym: [[spate]]
+- synonym: [[upsurge]]

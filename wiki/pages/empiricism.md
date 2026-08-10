@@ -6,6 +6,8 @@ pos: noun
 forms: [empiricism]
 sources: [llm]
 status: enriched
+chart: realism
+region: realism
 ---
 
 ## Definition

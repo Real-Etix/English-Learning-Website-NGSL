@@ -7,8 +7,10 @@ forms: [unemployed]
 lists: [toeic, business, academic]
 rank: 605
 sfi: 53.27
-sources: [wordnet, dictionaryapi]
-status: seeded
+sources: [wordnet, dictionaryapi, llm]
+status: enriched
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ people who are involuntarily out of work (considered as a group)
 - domain: toeic
 - domain: business
 - domain: academic
+- advanced_form: [[unwaged]] — Use 'unwaged' in formal or financial contexts to emphasize not earning a wage.
+- advanced_form: [[workless]] — Use 'workless' in policy discussions about unemployment as a collective noun.

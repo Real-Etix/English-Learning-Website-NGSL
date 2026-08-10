@@ -9,6 +9,8 @@ rank: 1487
 sfi: 50.28
 sources: [wordnet, llm]
 status: enriched
+chart: mandate
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,10 @@ issue a decree
 - advanced_form: [[ordain]] — Use when the decree is made by a formal body or higher power with a sense of destiny or established order.
 - advanced_form: [[enact]] — Use when focusing on the formal process of making a decree into law or policy.
 - builds_on: [[command]] — Use 'decree' for an official order issued by a ruler or legal authority, often with a sense of finality and lack of debate.
+- collocation: [[annulment]]
+- synonym: [[ordinance]]
+- synonym: [[proclamation]]
+- synonym: [[writ]]
+- synonym: [[by-law]]
+- builds_on: [[regulation]] — Use when the rule comes from an executive or autocratic power, emphasizing its authoritative and sometimes unappealable nature.
+- synonym: [[preordain]]

@@ -9,6 +9,8 @@ rank: 1138
 sfi: 58.94
 sources: [wordnet, llm]
 status: enriched
+chart: site
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ a point located with respect to surface features of some region
 - advanced_form: [[site]] — Use 'site' for a specific location associated with an event or activity.
 - advanced_form: [[locale]] — Use 'locale' for a place where something happens or is set, often with cultural or contextual nuances.
 - advanced_form: [[locus]] — Use 'locus' for a central or focal point of activity or interest.
+- synonym: [[blotch]]
+- synonym: [[bullseye]]
+- collocation: [[coveted]]
+- synonym: [[dot]]
+- synonym: [[glimpse]]
+- synonym: [[mottle]]
+- synonym: [[speck]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [bearing]
 sources: [llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,11 @@ _No sourced examples yet._
 - builds_on: [[direction]] — Use 'bearing' for precise navigational direction, often in formal or technical contexts.
 - builds_on: [[posture]] — Use 'bearing' to describe the manner in which one holds oneself, often implying composure or dignity.
 - builds_on: [[stance]] — Use 'bearing' to emphasize the manner or style of standing, often suggesting composure or dignity.
+- synonym: [[carriage]]
+- synonym: [[demeanor]]
+- synonym: [[deportment]]
+- synonym: [[heading]]
+- synonym: [[mien]]
+- collocation: [[noble]]
+- synonym: [[pertinence]]
+- collocation: [[regal]]

@@ -9,6 +9,8 @@ rank: 59
 sfi: 72.73
 sources: [wordnet, llm]
 status: enriched
+chart: take
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,17 @@ carry out
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[undertake]] — Use 'undertake' when committing to start and complete a task or responsibility, implying initiation and effort.
 - advanced_form: [[execute]] — Use 'execute' when carrying out a specific action or plan with precision and completion, often in formal or professional contexts.
+- collocation: [[belongings]]
+- collocation: [[catnap]]
+- synonym: [[commandeer]]
+- synonym: [[confiscate]]
+- synonym: [[construe]]
+- collocation: [[creatine-monohydrate]]
+- collocation: [[dimensions]]
+- collocation: [[fancy]]
+- collocation: [[forever]]
+- collocation: [[markdown]]
+- collocation: [[metro]]
+- synonym: [[subscribe]]
+- collocation: [[dislike]]
+- collocation: [[deposition]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [catalyst]
 sources: [llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,6 @@ _No sourced examples yet._
 - builds_on: [[agent]] — Use 'catalyst' when the cause speeds up or triggers a significant change, especially in a system or reaction.
 - builds_on: [[stimulus]] — Use 'catalyst' when referring to something that causes a significant change or event, often without being changed itself, like a chemical catalyst.
 - builds_on: [[determinant]] — Use 'catalyst' when referring to something that speeds up or initiates change, rather than directly determining an outcome.
+- synonym: [[biocatalyst]]
+- synonym: [[catalyzer]]
+- synonym: [[leaven]]

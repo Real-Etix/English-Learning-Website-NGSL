@@ -6,6 +6,8 @@ pos: noun
 forms: [furnace]
 sources: [llm]
 status: enriched
+chart: heater
+region: heater
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[heater]] — Use furnace for a central heating system that heats air for a whole building.
+- synonym: [[boiler]]
+- synonym: [[oven]]
+- collocation: [[blast]]
+- collocation: [[gas]]
+- collocation: [[electric]]
+- collocation: [[repair]]
+- collocation: [[filter]]
+- collocation: [[igniter]]
+- collocation: [[stoke]]

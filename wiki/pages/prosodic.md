@@ -6,6 +6,8 @@ pos: adjective
 forms: [prosodic]
 sources: [llm]
 status: enriched
+chart: phonological
+region: phonological
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[phonological]] — Use 'prosodic' to refer specifically to suprasegmental aspects like rhythm and intonation, whereas 'phonological' encompasses all sound patterns.
+- synonym: [[rhythmic]]
+- collocation: [[structure]]
+- collocation: [[analysis]]

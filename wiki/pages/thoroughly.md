@@ -9,6 +9,8 @@ rank: 384
 sfi: 53.98
 sources: [wordnet, llm]
 status: enriched
+chart: part
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,11 @@ in an exhaustive manner
 - builds_on: [[wholly]] — Use 'thoroughly' to stress completeness in detail or degree, often with actions or states.
 - builds_on: [[fully]] — Use 'thoroughly' when emphasizing careful and complete attention to detail, often in actions or processes.
 - builds_on: [[totally]] — Use 'thoroughly' instead of 'totally' to emphasize depth or detail, especially for experiences or actions.
+- synonym: [[conscientiously]]
+- collocation: [[dedust]]
+- synonym: [[deeply]]
+- synonym: [[extensively]]
+- collocation: [[inspect]]
+- synonym: [[painstakingly]]
+- collocation: [[disillusion]]
+- collocation: [[exasperate]]

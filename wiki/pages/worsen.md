@@ -9,6 +9,8 @@ rank: 1173
 sfi: 51.32
 sources: [wordnet, llm]
 status: enriched
+chart: amend
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[deteriorate]] — Use 'deteriorate' for a gradual or steady decline in quality, condition, or state, often in medical or material contexts.
 - advanced_form: [[exacerbate]] — Use 'exacerbate' when something makes an existing problem, situation, or negative condition even worse.
+- synonym: [[aggravate]]
+- synonym: [[impair]]

@@ -9,6 +9,8 @@ rank: 1021
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: contingent
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[protg]] — Use 'protégé' when the ward is being guided or mentored by a more experienced person.
 - advanced_form: [[dependent]] — Use 'dependent' when emphasizing financial or legal reliance.
+- synonym: [[borough]]
+- synonym: [[district]]
+- collocation: [[psychiatry]]

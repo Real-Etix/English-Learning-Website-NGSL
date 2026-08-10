@@ -6,6 +6,8 @@ pos: noun
 forms: [clinician]
 sources: [llm]
 status: enriched
+chart: mentor
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,5 @@ _No sourced examples yet._
 - builds_on: [[physician]] — Use 'clinician' when emphasizing hands-on patient care in a hospital or clinic, rather than the general title of physician.
 - builds_on: [[therapist]] — Use 'clinician' to emphasize the medical or clinical aspect of therapy, especially when referring to a therapist working in a hospital or clinic setting.
 - builds_on: [[practitioner]] — Use 'clinician' specifically for medical or health professionals who work directly with patients, not for other learned professions like law.
+- synonym: [[psychologist]]
+- builds_on: [[psychologist]] — Use in medical or clinical settings to highlight hands-on patient care.

@@ -6,6 +6,8 @@ pos: adjective
 forms: [societal]
 sources: [llm]
 status: enriched
+chart: domestic
+region: you
 ---
 
 ## Definition

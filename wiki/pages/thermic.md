@@ -6,6 +6,8 @@ pos: adjective
 forms: [thermic]
 sources: [llm]
 status: enriched
+chart: instant
+region: you
 ---
 
 ## Definition

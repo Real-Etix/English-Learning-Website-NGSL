@@ -9,6 +9,8 @@ rank: 876
 sfi: 60.31
 sources: [wordnet, llm]
 status: enriched
+chart: paradigm
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,10 @@ a well-substantiated explanation of some aspect of the natural world
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[paradigm]] — Use 'paradigm' when referring to a broad, established framework or model that shapes thinking, not a single hypothesis.
 - advanced_form: [[postulate]] — Use 'postulate' for a foundational assumption within a theory, rather than the theory itself.
+- collocation: [[behavioristic]]
+- collocation: [[controvert]]
+- synonym: [[hypothesis]]
+- collocation: [[operator]]
+- collocation: [[propound]]
+- collocation: [[psychoanalysis]]
+- collocation: [[refute]]

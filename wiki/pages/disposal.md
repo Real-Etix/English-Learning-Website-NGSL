@@ -9,6 +9,8 @@ rank: 324
 sfi: 54.97
 sources: [wordnet, llm]
 status: enriched
+chart: authority
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ the power to use something or someone
 - advanced_form: [[authority]] — Use 'authority' when emphasizing official or hierarchical power to use resources, rather than general availability.
 - advanced_form: [[command]] — Use 'command' to stress control and mastery over resources, often implying skillful or decisive use.
 - advanced_form: [[discretion]] — Use 'discretion' when focusing on the freedom or choice to use something, not just the power itself.
+- collocation: [[improper]]

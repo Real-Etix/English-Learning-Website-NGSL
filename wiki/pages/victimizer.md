@@ -6,6 +6,8 @@ pos: noun
 forms: [victimizer]
 sources: [llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bully]] — Use 'victimizer' to focus on the act of making someone a victim, often in a predatory or calculating way.
+- synonym: [[oppressor]]
+- synonym: [[predator]]
+- collocation: [[play]]
+- collocation: [[role]]
+- collocation: [[become]]
+- collocation: [[act]]

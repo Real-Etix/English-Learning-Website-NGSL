@@ -9,6 +9,8 @@ rank: 1168
 sfi: 51.61
 sources: [wordnet, llm]
 status: enriched
+chart: comparable
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ properly related in size or degree or other measurable characteristics
 - advanced_form: [[commensurate]] — Use 'commensurate' when emphasizing that two things match exactly in degree or amount, often in formal or legal contexts.
 - advanced_form: [[corresponding]] — Use 'corresponding' when describing a direct relationship or parallel change between two things.
 - advanced_form: [[proportionate]] — Use 'proportionate' when stressing that something is appropriately scaled or balanced relative to another factor, though it is very similar to 'proportional'.
+- synonym: [[dimensional]]

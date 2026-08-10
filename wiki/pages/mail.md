@@ -9,6 +9,8 @@ rank: 1643
 sfi: 56.83
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[correspondence]] — Use 'correspondence' when referring to letters or written communication in a formal or professional context.
 - advanced_form: [[shipment]] — Use 'shipment' when emphasizing the transport of goods or packages, often in a business or logistics context.
+- synonym: [[email]]
+- collocation: [[hate]]
+- synonym: [[postal]]
+- collocation: [[incoming]]

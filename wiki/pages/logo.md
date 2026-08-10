@@ -9,6 +9,8 @@ rank: 177
 sfi: 56.52
 sources: [wordnet, llm]
 status: enriched
+chart: picture
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[emblem]] — Use 'emblem' when you want a more formal or symbolic term for a logo, often implying deeper meaning or tradition.
 - advanced_form: [[insignia]] — Use 'insignia' for a formal emblem of an organization, especially one associated with rank, authority, or official identity.
+- collocation: [[letterhead]]
+- synonym: [[monogram]]

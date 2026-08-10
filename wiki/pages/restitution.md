@@ -6,6 +6,8 @@ pos: noun
 forms: [restitution]
 sources: [llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition

@@ -9,6 +9,8 @@ rank: 1879
 sfi: 55.92
 sources: [wordnet, llm]
 status: enriched
+chart: break
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,4 @@ _No sourced examples yet._
 - advanced_form: [[crumble]] — Use 'crumble' when something disintegrates gradually into small pieces, unlike 'collapse' which often implies a sudden fall.
 - advanced_form: [[disintegrate]] — Use 'disintegrate' when something breaks into many small parts or loses cohesion, often more thoroughly than 'collapse.'
 - advanced_form: [[implode]] — Use 'implode' when something collapses inward from internal forces, especially metaphorical for systems or organizations, whereas 'collapse' is more general.
+- collocation: [[circulatory]]

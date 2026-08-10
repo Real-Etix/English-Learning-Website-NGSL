@@ -9,6 +9,8 @@ rank: 693
 sfi: 61.38
 sources: [wordnet, llm]
 status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,17 @@ an imaginary person represented in a work of fiction (play or film or story)
 - advanced_form: [[figure]] — Use 'figure' when the character is iconic, representative, or central to a narrative or historical context.
 - builds_on: [[flavor]] — Use when referring to the distinctive qualities or spirit of a place, more formal than 'flavor'.
 - builds_on: [[stamp]] — Use 'character' instead of 'stamp' when referring to the distinctive nature or quality of something.
+- synonym: [[ambience]]
+- collocation: [[comical]]
+- collocation: [[delimiter]]
+- collocation: [[denigrate]]
+- collocation: [[ennoble]]
+- synonym: [[ethos]]
+- collocation: [[fictitious]]
+- collocation: [[flawed]]
+- synonym: [[glyph]]
+- synonym: [[grapheme]]
+- synonym: [[numeral]]
+- collocation: [[recast]]
+- collocation: [[whitespace]]
+- collocation: [[aspersion]]

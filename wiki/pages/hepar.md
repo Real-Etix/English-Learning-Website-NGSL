@@ -6,6 +6,8 @@ pos: noun
 forms: [hepar]
 sources: [llm]
 status: enriched
+chart: organ
+region: organ
 ---
 
 ## Definition

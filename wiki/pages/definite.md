@@ -9,6 +9,8 @@ rank: 364
 sfi: 55.167
 sources: [wordnet, llm]
 status: enriched
+chart: actual
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ precise
 - advanced_form: [[explicit]] — Use 'explicit' when something is stated clearly and in detail, leaving no room for confusion or doubt.
 - advanced_form: [[specific]] — Use 'specific' when referring to a particular, clearly defined item or detail, rather than a general or vague one.
 - advanced_form: [[concrete]] — Use 'concrete' when something is tangible, real, and not abstract or hypothetical.
+- synonym: [[determinate]]
+- collocation: [[must]]
+- synonym: [[certain]]
+- synonym: [[clear]]
+- synonym: [[exact]]
+- collocation: [[article]]
+- collocation: [[answer]]

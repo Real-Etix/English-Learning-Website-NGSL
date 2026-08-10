@@ -9,6 +9,8 @@ rank: 269
 sfi: 65.59
 sources: [wordnet, llm]
 status: enriched
+chart: city
+region: city
 ---
 
 ## Definition
@@ -22,3 +24,12 @@ a large and densely populated urban area
 - advanced_form: [[metropolis]] — Use for a large, important city, often a cultural or economic hub.
 - advanced_form: [[conurbation]] — Use for a region where multiple cities and towns have merged into a continuous urban area.
 - advanced_form: [[megalopolis]] — Use for an extremely large, densely populated urban complex formed by several cities merging.
+- collocation: [[borough]]
+- collocation: [[cosmopolitan]]
+- collocation: [[epicenter]]
+- collocation: [[inhabitant]]
+- synonym: [[municipality]]
+- collocation: [[overpopulate]]
+- collocation: [[panorama]]
+- collocation: [[philharmonic]]
+- collocation: [[polyclinic]]

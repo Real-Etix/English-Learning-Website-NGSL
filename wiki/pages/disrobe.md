@@ -6,6 +6,8 @@ pos: verb
 forms: [disrobe]
 sources: [llm]
 status: enriched
+chart: cover
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[uncover]] — Use 'disrobe' for a formal or euphemistic tone, especially in descriptions of professional or staged undressing.
+- synonym: [[strip]]
+- synonym: [[bare]]
+- synonym: [[divest]]
+- collocation: [[completely]]
+- collocation: [[slowly]]
+- collocation: [[before]]
+- collocation: [[behind]]

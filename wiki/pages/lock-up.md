@@ -6,6 +6,8 @@ pos: noun
 forms: [lock-up]
 sources: [llm]
 status: enriched
+chart: house
+region: you
 ---
 
 ## Definition

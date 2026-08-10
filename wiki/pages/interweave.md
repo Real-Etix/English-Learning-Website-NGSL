@@ -6,6 +6,8 @@ pos: verb
 forms: [interweave]
 sources: [llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition

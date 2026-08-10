@@ -9,6 +9,8 @@ rank: 276
 sfi: 56.895
 sources: [wordnet, llm]
 status: enriched
+chart: explicit
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ implied though not directly expressed
 - domain: academic
 - advanced_form: [[tacit]] — Use 'tacit' instead of 'implicit' when referring to unspoken agreements or understandings that are assumed without verbal confirmation.
 - advanced_form: [[unspoken]] — Use 'unspoken' instead of 'implicit' when emphasizing that something remains intentionally or naturally not verbalized, often in emotional or relational contexts.
+- synonym: [[connotative]]

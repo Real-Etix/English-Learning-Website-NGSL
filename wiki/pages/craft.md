@@ -9,6 +9,8 @@ rank: 2567
 sfi: 53.75
 sources: [wordnet, llm]
 status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,10 @@ _No sourced examples yet._
 - advanced_form: [[artistry]] — Use 'artistry' to emphasize the creative skill and aesthetic quality involved in a craft, rather than just the mechanical practice.
 - advanced_form: [[vocation]] — Use 'vocation' when focusing on a strong personal calling or suitability for a particular craft or profession, implying deeper dedication.
 - advanced_form: [[expertise]] — Use 'expertise' to highlight the high level of specialized knowledge and skill acquired through experience in a craft.
+- synonym: [[boat]]
+- collocation: [[distillery]]
+- collocation: [[guild]]
+- synonym: [[merchantman]]
+- collocation: [[workroom]]
+- builds_on: [[boat]] — Use 'craft' in nautical or military settings, often for a small or specific type of boat.
+- synonym: [[watercraft]]

@@ -9,6 +9,8 @@ rank: 720
 sfi: 61.18
 sources: [wordnet, llm]
 status: enriched
+chart: substantial
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ important in effect or meaning
 - advanced_form: [[momentous]] — Use 'momentous' for something of great historical or personal significance, often with a sense of gravity or celebration.
 - builds_on: [[meaningful]] — Use when emphasizing importance or impact, rather than just having meaning.
 - builds_on: [[considerable]] — Use 'significant' when emphasizing importance or notable degree, rather than just size.
+- collocation: [[alleviation]]
+- synonym: [[appreciable]]
+- collocation: [[headway]]
+- collocation: [[historically]]
+- collocation: [[modifier]]
+- collocation: [[numerically]]
+- synonym: [[phonemic]]

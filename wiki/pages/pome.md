@@ -6,6 +6,8 @@ pos: noun
 forms: [pome]
 sources: [llm]
 status: enriched
+chart: apple
+region: apple
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[apple]] — Use 'pome' in technical or scientific contexts instead of the common word 'apple' when referring to the fruit type.
+- synonym: [[fruit]]
+- collocation: [[core]]

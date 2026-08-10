@@ -6,6 +6,8 @@ pos: noun
 forms: [landmass]
 sources: [llm]
 status: enriched
+chart: mainland
+region: mainland
 ---
 
 ## Definition

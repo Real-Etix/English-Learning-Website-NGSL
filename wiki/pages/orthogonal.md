@@ -6,6 +6,8 @@ pos: noun
 forms: [orthogonal]
 sources: [llm]
 status: enriched
+chart: average
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[perpendicular]] — Use 'orthogonal' in advanced mathematics or computing contexts involving axes and vectors.
+- synonym: [[normal]]
+- collocation: [[axis]]
+- collocation: [[line]]
+- collocation: [[vector]]
+- collocation: [[projection]]
+- collocation: [[coordinate]]

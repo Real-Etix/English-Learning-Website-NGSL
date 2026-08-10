@@ -6,6 +6,8 @@ pos: adjective
 forms: [budgetary]
 sources: [llm]
 status: enriched
+chart: she
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fiscal]] — Use 'budgetary' when referring specifically to planned income and spending, whereas 'fiscal' is broader and often used for government revenue/taxation.
+- synonym: [[financial]]
+- synonym: [[monetary]]
+- synonym: [[economic]]
+- collocation: [[year]]
+- collocation: [[deficit]]
+- collocation: [[allocation]]

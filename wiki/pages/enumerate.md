@@ -6,6 +6,8 @@ pos: verb
 forms: [enumerate]
 sources: [llm]
 status: enriched
+chart: rely
+region: you
 ---
 
 ## Definition
@@ -20,3 +22,4 @@ _No sourced examples yet._
 - builds_on: [[count]] — Use for a formal or detailed listing of items one by one.
 - builds_on: [[quantify]] — Use 'enumerate' when listing or counting items one by one, often in a formal or detailed context.
 - builds_on: [[calculate]] — Use 'enumerate' when you need to count each item individually, often in a formal or systematic way.
+- synonym: [[itemize]]

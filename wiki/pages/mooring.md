@@ -6,6 +6,8 @@ pos: noun
 forms: [mooring]
 sources: [llm]
 status: enriched
+chart: embed
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[anchor]] — Use 'mooring' when referring to the entire anchoring system or location, not just the anchor device itself.
+- synonym: [[berth]]
+- synonym: [[dock]]

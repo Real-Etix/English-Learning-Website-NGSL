@@ -9,6 +9,8 @@ rank: 646
 sfi: 52.09
 sources: [wordnet, llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[reviewer]] — Use referee for the expert who evaluates manuscripts in academic or professional peer review, more specific than reviewer.
 - advanced_form: [[umpire]] — Use 'umpire' for sports like baseball, tennis, or cricket where the official is called an umpire instead of a referee.
 - advanced_form: [[arbiter]] — Use 'arbiter' in formal or figurative contexts, or in sports like figure skating where the arbiter has authority over disputes.
+- synonym: [[arbitrator]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [manifestation]
 sources: [llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[instance]] — Use instead of 'instance' when the occurrence reveals an underlying concept.
 - builds_on: [[symptom]] — Use 'manifestation' when referring to a visible or observable expression of a disease or condition, often in medical or formal contexts.
 - builds_on: [[phenomenon]] — Use 'manifestation' when emphasizing that something is a visible or tangible example of a concept or force.
+- builds_on: [[indication]] — Use for a visible or concrete expression of something abstract like an emotion or idea.

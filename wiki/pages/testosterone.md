@@ -9,6 +9,8 @@ rank: 345
 sfi: 55.1
 sources: [wordnet, llm]
 status: enriched
+chart: testosterone
+region: testosterone
 ---
 
 ## Definition

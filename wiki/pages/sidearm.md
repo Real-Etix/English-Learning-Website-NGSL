@@ -6,6 +6,8 @@ pos: noun
 forms: [sidearm]
 sources: [llm]
 status: enriched
+chart: gun
+region: gun
 ---
 
 ## Definition

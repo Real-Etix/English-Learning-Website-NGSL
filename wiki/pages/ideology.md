@@ -9,6 +9,8 @@ rank: 163
 sfi: 58.025
 sources: [wordnet, llm]
 status: enriched
+chart: procedure
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[creed]] — Use 'creed' for a formal system of beliefs, often with a moral or religious flavor, narrower than a broad 'ideology'.
 - advanced_form: [[doctrine]] — Use 'doctrine' for a taught or officially established set of principles, suggesting a more authoritative or institutional source than 'ideology'.
 - builds_on: [[philosophy]] — Use 'ideology' to emphasize a comprehensive set of beliefs, often political or economic, that guides actions.
+- collocation: [[bolshevik]]
+- collocation: [[collectivist]]
+- collocation: [[neoliberal]]

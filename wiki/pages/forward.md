@@ -9,6 +9,8 @@ rank: 452
 sfi: 63.48
 sources: [wordnet, llm]
 status: enriched
+chart: dispatch
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,10 @@ at or to or toward the front
 - builds_on: [[ship]] — Use when redirecting something to another recipient or onward.
 - builds_on: [[route]] — Use 'forward' especially for digital or written communications being sent along a chain; it suggests passing something received to another recipient.
 - builds_on: [[forth]] — Use 'forward' to indicate direction ahead instead of the archaic 'forth'.
+- collocation: [[bulkhead]]
+- synonym: [[fore]]
+- collocation: [[hunch]]
+- collocation: [[propel]]
+- synonym: [[relay]]
+- synonym: [[rostral]]
+- synonym: [[onwards]]

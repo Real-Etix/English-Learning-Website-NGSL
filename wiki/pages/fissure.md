@@ -6,6 +6,8 @@ pos: noun
 forms: [fissure]
 sources: [llm]
 status: enriched
+chart: fresh
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[leak]] — Use 'fissure' for a narrow, crack-like opening, especially in solid materials like rock or metal.
+- synonym: [[crack]]
+- synonym: [[split]]
+- synonym: [[rift]]
+- collocation: [[deep]]
+- collocation: [[narrow]]

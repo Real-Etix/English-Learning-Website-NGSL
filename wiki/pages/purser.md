@@ -9,6 +9,8 @@ rank: 1005
 sfi: 50.43
 sources: [wordnet, llm]
 status: enriched
+chart: auditor
+region: you
 ---
 
 ## Definition

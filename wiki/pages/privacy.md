@@ -9,6 +9,8 @@ rank: 599
 sfi: 53.5
 sources: [wordnet, llm]
 status: enriched
+chart: privacy
+region: privacy
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: business
 - advanced_form: [[seclusion]] — Use 'seclusion' instead of 'privacy' when emphasizing a deliberate or physical separation from others, often in a remote or quiet place.
 - advanced_form: [[solitude]] — Use 'solitude' instead of 'privacy' to highlight the positive, peaceful experience of being alone, rather than just the absence of intrusion.
+- collocation: [[divider]]

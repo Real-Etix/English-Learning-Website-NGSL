@@ -6,6 +6,8 @@ pos: noun
 forms: [breastplate]
 sources: [llm]
 status: enriched
+chart: sternum
+region: sternum
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sternum]] — Use 'breastplate' in historical, literary, or religious writing, not in modern anatomy.
+- synonym: [[breast]]
+- synonym: [[chest]]
+- synonym: [[ribcage]]
+- collocation: [[righteousness]]
+- collocation: [[judgment]]

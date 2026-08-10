@@ -6,6 +6,8 @@ pos: noun
 forms: [luna]
 sources: [llm]
 status: enriched
+chart: telecom
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[moon]] — Use 'luna' in poetic or fantasy writing for a more mythic or romantic tone.
+- collocation: [[park]]
+- collocation: [[glow]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [detoxificationunit]
 sources: [llm]
 status: enriched
+chart: detox
+region: detox
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[detox]] — Use when emphasizing the clinical, hospital-based setting of detox, more formal than just 'detox'.
+- collocation: [[alcohol]]
+- collocation: [[drug]]
+- collocation: [[medical]]
+- collocation: [[supervision]]
+- collocation: [[patient]]

@@ -9,6 +9,8 @@ rank: 240
 sfi: 57.181
 sources: [wordnet, llm]
 status: enriched
+chart: periodical
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ happening or recurring at regular intervals
 - builds_on: [[hourly]] — Use 'periodic' for events that occur at set intervals in a regular pattern; 'hourly' explicitly states the interval as one hour, whereas 'periodic' is more general.
 - builds_on: [[cyclic]] — Use 'periodic' for a more formal tone when describing events that repeat at regular intervals, which is more precise than the general 'cyclic'.
 - builds_on: [[cyclical]] — Use 'periodic' to emphasize a fixed, regular interval of recurrence, whereas 'cyclical' is broader and can include irregular cycles.
+- synonym: [[intermittent]]
+- collocation: [[reassessment]]
+- collocation: [[reevaluation]]

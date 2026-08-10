@@ -9,6 +9,8 @@ rank: 997
 sfi: 51.32
 sources: [wordnet, llm]
 status: enriched
+chart: elevate
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ make optimal
 - advanced_form: [[maximize]] — Use 'maximize' to emphasize achieving the highest possible degree or level, often in quantitative contexts.
 - advanced_form: [[enhance]] — Use 'enhance' to focus on improving quality or value, often in a more general or qualitative sense.
 - advanced_form: [[refine]] — Use 'refine' to stress making small improvements or adjustments to perfect something, often a process or skill.
+- synonym: [[rationalize]]

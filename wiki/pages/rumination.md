@@ -6,6 +6,8 @@ pos: noun
 forms: [rumination]
 sources: [llm]
 status: enriched
+chart: gauge
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[meditation]] — Use 'rumination' for prolonged, often repetitive or melancholic thinking, especially about past events; 'meditation' is more neutral and deliberate.
 - builds_on: [[reflection]] — Use when the thought is repetitive or brooding, often with a slightly negative or obsessive tone.
+- synonym: [[cogitation]]

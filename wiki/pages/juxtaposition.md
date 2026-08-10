@@ -6,6 +6,8 @@ pos: noun
 forms: [juxtaposition]
 sources: [llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[comparison]] — Use when placing things side by side to highlight differences or contrasts, especially in analysis or critique.
+- synonym: [[contrast]]
+- synonym: [[antithesis]]
+- collocation: [[deliberate]]
+- collocation: [[visual]]
+- collocation: [[odd]]

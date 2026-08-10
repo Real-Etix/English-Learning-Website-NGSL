@@ -9,6 +9,8 @@ rank: 562
 sfi: 52.47
 sources: [wordnet, llm]
 status: enriched
+chart: accessible
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[missing]] — Use 'missing' when something is lost or cannot be located, rather than just not present.
 - advanced_form: [[unavailable]] — Use 'unavailable' when a person cannot attend due to other commitments, or something is not accessible.
 - advanced_form: [[nonexistent]] — Use 'nonexistent' to emphasize that something does not exist at all, not just absent.
+- collocation: [[conspicuously]]

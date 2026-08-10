@@ -9,6 +9,8 @@ rank: 69
 sfi: 58.84
 sources: [wordnet, llm]
 status: enriched
+chart: stimulus
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ _No sourced examples yet._
 - advanced_form: [[intermediary]] — Use when emphasizing the role of linking or facilitating transactions between parties, often more formal than 'broker'.
 - advanced_form: [[liaison]] — Use when focusing on communication and coordination between groups, especially in business or organizational contexts.
 - builds_on: [[realtor]] — Use 'broker' when referring to a licensed professional with advanced training, often a step above a standard agent.
+- synonym: [[jobber]]
+- synonym: [[middleman]]
+- builds_on: [[negotiate]] — Use when someone actively arranges or negotiates an agreement for others.

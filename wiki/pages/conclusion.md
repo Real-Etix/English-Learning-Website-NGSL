@@ -9,6 +9,8 @@ rank: 931
 sfi: 60.05
 sources: [wordnet, llm]
 status: enriched
+chart: deduction
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,9 @@ a position or opinion or judgment reached after consideration
 - advanced_form: [[inference]] — Use 'inference' when the conclusion is reached by reasoning from facts or observations.
 - advanced_form: [[deduction]] — Use 'deduction' when the conclusion follows logically from general principles or premises.
 - advanced_form: [[resolution]] — Use 'resolution' when the conclusion is a formal decision that ends a debate or problem.
+- synonym: [[denouement]]
+- synonym: [[endpoint]]
+- synonym: [[expiry]]
+- collocation: [[ineluctable]]
+- synonym: [[lattermost]]
+- builds_on: [[termination]] — Use as a more formal alternative for the finishing point of any agreement period.

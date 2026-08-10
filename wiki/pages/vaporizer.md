@@ -6,6 +6,8 @@ pos: noun
 forms: [vaporizer]
 sources: [llm]
 status: enriched
+chart: generator
+region: generator
 ---
 
 ## Definition

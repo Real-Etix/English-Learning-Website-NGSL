@@ -9,6 +9,8 @@ rank: 1066
 sfi: 59.29
 sources: [wordnet, llm]
 status: enriched
+chart: bond
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ a relation between things or events (as in the case of one causing the other or 
 - advanced_form: [[nexus]] — Use 'nexus' when referring to a central or focal point where multiple connections converge, implying a more complex or pivotal linkage.
 - advanced_form: [[affinity]] — Use 'affinity' when the connection is based on natural liking, similarity, or attraction, rather than a logical or causal relationship.
 - builds_on: [[completion]] — Use 'connection' to highlight the teamwork or chemistry involved in the pass, often in commentary.
+- collocation: [[broadband]]
+- synonym: [[concatenation]]
+- synonym: [[interconnection]]
+- synonym: [[interrelationship]]
+- synonym: [[ligature]]
+- synonym: [[rapport]]
+- collocation: [[wideband]]

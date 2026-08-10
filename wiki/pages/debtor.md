@@ -9,6 +9,8 @@ rank: 136
 sfi: 56.5
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: creditor
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ a person who owes a creditor
 - builds_on: [[borrower]] — Use 'debtor' when emphasizing the obligation to repay money, often in financial or legal contexts.
 - advanced_form: [[obligor]] — Use in formal, especially legal contexts where a binding obligation exists; more specific than debtor.
 - advanced_form: [[defaulter]] — Use when emphasizing failure to meet payment obligations; carries a negative connotation.
+- synonym: [[insolvent]]

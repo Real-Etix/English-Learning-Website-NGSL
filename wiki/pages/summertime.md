@@ -6,6 +6,8 @@ pos: noun
 forms: [summertime]
 sources: [llm]
 status: enriched
+chart: summer
+region: summer
 ---
 
 ## Definition

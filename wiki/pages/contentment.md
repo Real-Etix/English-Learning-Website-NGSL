@@ -6,6 +6,8 @@ pos: noun
 forms: [contentment]
 sources: [llm]
 status: enriched
+chart: upbeat
+region: you
 ---
 
 ## Definition

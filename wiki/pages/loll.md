@@ -6,6 +6,8 @@ pos: verb
 forms: [loll]
 sources: [llm]
 status: enriched
+chart: contraction
+region: you
 ---
 
 ## Definition

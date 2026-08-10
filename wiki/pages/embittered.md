@@ -6,6 +6,8 @@ pos: adjective
 forms: [embittered]
 sources: [llm]
 status: enriched
+chart: acid
+region: acid
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bitter]] — Use when the bitterness is a result of past experiences that have poisoned one's outlook, making someone feel resentful and cynical.
+- collocation: [[feel]]
+- collocation: [[become]]
+- collocation: [[by]]
+- collocation: [[against]]
+- collocation: [[old]]

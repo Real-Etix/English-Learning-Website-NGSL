@@ -6,6 +6,8 @@ pos: noun
 forms: [underside]
 sources: [llm]
 status: enriched
+chart: base
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bottom]] — Use 'underside' when emphasizing the hidden or lower surface of an object, often one that is not normally visible.
+- synonym: [[ventral]]

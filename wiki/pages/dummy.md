@@ -6,6 +6,8 @@ pos: noun
 forms: [dummy]
 sources: [llm]
 status: enriched
+chart: placebo
+region: placebo
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[placebo]] — Use 'dummy' as a more informal, everyday term for an inert substitute, especially in experimental setups.
+- synonym: [[sham]]
+- synonym: [[effigy]]

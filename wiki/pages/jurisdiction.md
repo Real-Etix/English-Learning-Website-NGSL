@@ -9,6 +9,8 @@ rank: 345
 sfi: 54.95
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: magnitude
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,6 @@ status: enriched
 - advanced_form: [[cognizance]] — Use when emphasizing judicial awareness or formal recognition of authority, often in legal contexts.
 - advanced_form: [[purview]] — Use when referring to the range or limits of authority or control.
 - advanced_form: [[ambit]] — Use in formal writing to denote the boundaries of influence or jurisdiction.
+- collocation: [[adjudicative]]
+- builds_on: [[district]] — Use jurisdiction for an official area of legal or governmental authority.
+- builds_on: [[territory]] — Use it when emphasizing legal or administrative authority over an area, rather than just the area itself.

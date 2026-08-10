@@ -9,6 +9,8 @@ rank: 786
 sfi: 51.45
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ _No sourced examples yet._
 
 ## Connections
 - domain: toeic
+- synonym: [[technician]]
+- synonym: [[mechanic]]
+- collocation: [[appliance]]
+- collocation: [[call]]
+- collocation: [[emergency]]

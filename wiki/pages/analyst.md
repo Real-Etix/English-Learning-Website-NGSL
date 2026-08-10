@@ -9,6 +9,8 @@ rank: 2170
 sfi: 55
 sources: [wordnet, llm]
 status: enriched
+chart: observer
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[evaluator]] — Use 'evaluator' when emphasizing the systematic judgment or assessment of data, often in a formal or professional context.
 - advanced_form: [[assessor]] — Use 'assessor' when focusing on estimating the value, quality, or significance of data, often in official or appraisal settings.
 - advanced_form: [[reviewer]] — Use 'reviewer' when highlighting a careful, critical examination of data, especially in academic or editorial contexts.
+- synonym: [[econometrician]]
+- synonym: [[macro-economist]]
+- synonym: [[psychologist]]
+- synonym: [[pundit]]
+- builds_on: [[psychologist]] — Use when referring to someone who does in-depth, often Freudian or Jungian, analysis.

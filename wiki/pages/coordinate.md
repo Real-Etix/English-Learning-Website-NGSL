@@ -9,6 +9,8 @@ rank: 82
 sfi: 59.192
 sources: [wordnet, llm]
 status: enriched
+chart: administer
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,9 @@ _No sourced examples yet._
 - advanced_form: [[orchestrate]] — Use when emphasizing skillful and coordinated planning, similar to a conductor directing an orchestra.
 - advanced_form: [[systematize]] — Use when focusing on creating a clear, orderly system or method.
 - builds_on: [[administer]] — Use 'coordinate' when the main role is organizing and aligning different people or activities, rather than direct administration.
+- collocation: [[easting]]
+- synonym: [[harmonize]]
+- synonym: [[liaise]]
+- collocation: [[orthogonal]]
+- synonym: [[prearrange]]
+- collocation: [[geometry]]

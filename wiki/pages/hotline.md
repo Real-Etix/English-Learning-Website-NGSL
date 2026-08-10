@@ -9,6 +9,8 @@ rank: 679
 sfi: 51.89
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,7 @@ _No sourced examples yet._
 
 ## Connections
 - domain: toeic
+- collocation: [[call]]
+- collocation: [[number]]
+- collocation: [[crisis]]
+- collocation: [[suicide]]

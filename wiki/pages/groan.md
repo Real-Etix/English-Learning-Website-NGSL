@@ -6,6 +6,8 @@ pos: noun
 forms: [groan]
 sources: [llm]
 status: enriched
+chart: emission
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sigh]] — Use 'groan' when the sigh expresses pain, distress, or deep annoyance rather than relief.
+- synonym: [[moan]]
+- synonym: [[cry]]
+- collocation: [[give]]
+- collocation: [[collective]]
+- collocation: [[deep]]

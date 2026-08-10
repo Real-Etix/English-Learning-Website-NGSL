@@ -6,6 +6,8 @@ pos: noun
 forms: [retroflexion]
 sources: [llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[backbend]] — A medical/anatomical term for backward bending of a body part, more technical and formal than 'backbend'.
+- synonym: [[curvature]]
+- synonym: [[flexion]]
+- collocation: [[deep]]
+- collocation: [[marked]]
+- collocation: [[degree]]

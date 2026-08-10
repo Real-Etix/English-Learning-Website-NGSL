@@ -9,6 +9,8 @@ rank: 23
 sfi: 61.5
 sources: [wordnet, llm]
 status: enriched
+chart: clerk
+region: clerk
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[recorder]] — Use 'recorder' for an official who makes a formal record of proceedings or events.
 - advanced_form: [[registrar]] — Use 'registrar' for an official who maintains official records, especially in academic or governmental institutions.
 - builds_on: [[cashier]] — Use 'clerk' as a more formal or general term for a bank employee dealing with paperwork and transactions.
+- builds_on: [[paralegal]] — Use in formal legal contexts, especially when referring to someone working in a court or law office.

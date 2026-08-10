@@ -6,6 +6,8 @@ pos: noun
 forms: [dullard]
 sources: [llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bore]] — Use 'dullard' when you want to emphasize the person's lack of intelligence or tediousness, often with a sharper insult than 'bore'.
+- synonym: [[fool]]
+- synonym: [[simpleton]]
+- collocation: [[complete]]
+- collocation: [[total]]

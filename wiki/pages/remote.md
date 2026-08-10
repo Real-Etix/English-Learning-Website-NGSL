@@ -9,6 +9,8 @@ rank: 2497
 sfi: 53.98
 sources: [wordnet, llm]
 status: enriched
+chart: close
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ located far away spatially
 - advanced_form: [[faraway]] — Use 'faraway' for a more evocative or literary tone, implying exoticness or remoteness.
 - advanced_form: [[outlying]] — Use 'outlying' to emphasize being on the periphery or outskirts of a main area.
 - builds_on: [[distant]] — Use 'remote' instead of 'distant' when emphasizing isolation or inaccessibility, not just spatial separation.
+- collocation: [[airfield]]
+- collocation: [[depressed]]
+- collocation: [[hamlet]]
+- collocation: [[island]]
+- synonym: [[isolated]]
+- collocation: [[outback]]
+- collocation: [[atoll]]
+- synonym: [[inaccessible]]

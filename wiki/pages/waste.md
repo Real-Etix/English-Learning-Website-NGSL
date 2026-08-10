@@ -9,6 +9,8 @@ rank: 1246
 sfi: 58.46
 sources: [wordnet, llm]
 status: enriched
+chart: waste
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,11 @@ _No sourced examples yet._
 - advanced_form: [[squander]] — Use when emphasizing reckless or foolish waste of money or opportunity.
 - advanced_form: [[dissipate]] — Use when wasting resources like time, energy, or money gradually, often implying something valuable disappears.
 - advanced_form: [[fritter]] — Use when wasting small amounts of time or money on unimportant things.
+- collocation: [[disposeof]]
+- synonym: [[effluent]]
+- synonym: [[excretion]]
+- collocation: [[excretion]]
+- collocation: [[reprocess]]
+- collocation: [[compaction]]
+- collocation: [[hauler]]
+- synonym: [[wastage]]

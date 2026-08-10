@@ -6,6 +6,8 @@ pos: adjective
 forms: [elevated]
 sources: [llm]
 status: enriched
+chart: foster
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[up]] — Use 'elevated' instead of 'up' when describing something physically higher or in a higher position, especially in formal or technical contexts.
 - builds_on: [[tall]] — Use 'elevated' instead of 'tall' when referring to something raised above the ground or a reference point.
+- synonym: [[heightened]]
+- collocation: [[immunoglobulin]]
+- synonym: [[lofty]]

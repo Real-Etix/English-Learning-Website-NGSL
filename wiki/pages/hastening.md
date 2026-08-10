@@ -6,6 +6,8 @@ pos: noun
 forms: [hastening]
 sources: [llm]
 status: enriched
+chart: spiral
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[acceleration]] — Use when emphasizing the deliberate or urgent speeding up of a process, rather than a natural increase in speed.
+- collocation: [[process]]
+- collocation: [[arrival]]
+- collocation: [[death]]
+- collocation: [[demise]]
+- collocation: [[pace]]

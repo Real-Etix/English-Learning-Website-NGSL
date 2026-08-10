@@ -9,6 +9,8 @@ rank: 274
 sfi: 55.29
 sources: [wordnet, llm]
 status: enriched
+chart: competitor
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,9 @@ _No sourced examples yet._
 - advanced_form: [[depute]] — Use 'depute' when you officially appoint someone to act on your behalf, often in a formal or organizational context.
 - builds_on: [[representative]] — Use 'delegate' when someone is officially sent to represent a group or organization at a meeting or event, emphasizing the authorization to act on behalf of others.
 - builds_on: [[assign]] — Use 'delegate' when you assign a task or responsibility to someone, often implying trust and the transfer of authority.
+- synonym: [[devolve]]
+- synonym: [[mandatee]]
+- synonym: [[offload]]
+- synonym: [[outsource]]
+- builds_on: [[proxy]] — Use for a person chosen to represent a group or organization.
+- synonym: [[externalize]]

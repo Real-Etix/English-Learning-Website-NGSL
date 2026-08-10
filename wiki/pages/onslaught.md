@@ -6,6 +6,8 @@ pos: noun
 forms: [onslaught]
 sources: [llm]
 status: enriched
+chart: protocol
+region: you
 ---
 
 ## Definition

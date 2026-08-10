@@ -9,6 +9,8 @@ rank: 98
 sfi: 61.24
 sources: [wordnet, llm]
 status: enriched
+chart: fall
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,5 @@ immerse briefly into a liquid so as to wet, coat, or saturate
 - advanced_form: [[submerge]] — Use 'submerge' when the object is fully covered by the liquid, emphasizing that nothing remains above the surface.
 - advanced_form: [[plunge]] — Use 'plunge' for a rapid, forceful, or sudden immersion, often implying a dramatic or energetic action.
 - builds_on: [[pushup]] — Use 'dip' when referring to a similar pushing exercise using bars, often considered more advanced than a floor pushup.
+- synonym: [[declivity]]
+- collocation: [[labneh]]

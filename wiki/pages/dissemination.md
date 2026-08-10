@@ -6,6 +6,8 @@ pos: noun
 forms: [dissemination]
 sources: [llm]
 status: enriched
+chart: spread
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[issuance]] — Use 'dissemination' instead of 'issuance' when emphasizing the widespread distribution of information or knowledge.
 - builds_on: [[publicity]] — Use 'dissemination' when focusing on the broad distribution of information to many people, not just through media but any channel.
 - builds_on: [[spread]] — Use 'dissemination' when emphasizing active, deliberate spreading of information or knowledge, rather than physical extent.
+- synonym: [[dispersal]]

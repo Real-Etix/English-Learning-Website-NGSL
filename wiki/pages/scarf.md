@@ -9,6 +9,8 @@ rank: 739
 sfi: 51.68
 sources: [wordnet, llm]
 status: enriched
+chart: scarf
+region: scarf
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: toeic
 - advanced_form: [[asphyxiate]] — Use 'asphyxiate' instead of 'scarf' when you need a clinical, formal term for oxygen deprivation, avoiding the slang and emphasizing the medical or legal aspect.
 - advanced_form: [[strangulate]] — Use 'strangulate' instead of 'scarf' when you want to focus on the constriction of the neck, with a more technical or medical tone.
+- synonym: [[ascot]]
+- collocation: [[lambswool]]

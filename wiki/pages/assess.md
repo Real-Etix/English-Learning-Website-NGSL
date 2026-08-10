@@ -9,6 +9,8 @@ rank: 1499
 sfi: 57.41
 sources: [wordnet, llm]
 status: enriched
+chart: measure
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ _No sourced examples yet._
 - advanced_form: [[gauge]] — Use 'gauge' when you need to estimate or measure something abstract, like feelings, opinions, or capacity, often by inference.
 - advanced_form: [[scrutinize]] — Use 'scrutinize' when you examine something very carefully and critically, looking for flaws or details.
 - builds_on: [[evaluate]] — Use 'assess' when you need a slightly more formal or systematic evaluation, often of performance or value.
+- collocation: [[comprehensively]]
+- collocation: [[creditworthiness]]
+- collocation: [[quantitatively]]
+- builds_on: [[tax]] — Use when focusing on calculating or determining the amount of tax owed.

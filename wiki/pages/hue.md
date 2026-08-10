@@ -6,6 +6,8 @@ pos: noun
 forms: [hue]
 sources: [llm]
 status: enriched
+chart: sunshine
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[color]] — Use 'hue' when focusing on the specific type or position of a color in the spectrum, especially in technical or artistic contexts.
+- synonym: [[shade]]
+- synonym: [[tint]]
+- synonym: [[tone]]
+- synonym: [[cast]]
+- collocation: [[spectrum]]
+- collocation: [[wheel]]
+- collocation: [[saturation]]
+- collocation: [[primary]]
+- collocation: [[viridian]]

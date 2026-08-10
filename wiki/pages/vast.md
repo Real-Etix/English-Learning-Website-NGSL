@@ -9,6 +9,8 @@ rank: 1802
 sfi: 56.17
 sources: [wordnet, llm]
 status: enriched
+chart: big
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,14 @@ unusually great in size or amount or degree or especially extent or scope
 - advanced_form: [[immense]] — Use 'immense' when you want to emphasize overwhelming size or scope, often with a sense of awe or scale that 'vast' may lack.
 - advanced_form: [[enormous]] — Use 'enormous' when focusing on great magnitude that is surprising or difficult to manage, compared to 'vast' which is more neutral.
 - advanced_form: [[colossal]] — Use 'colossal' for extreme, almost exaggerated size or degree, often to stress enormity in a striking or dramatic way.
+- collocation: [[armada]]
+- collocation: [[cavern]]
+- synonym: [[cavernous]]
+- collocation: [[conglomeration]]
+- collocation: [[erudition]]
+- synonym: [[extensive]]
+- synonym: [[immeasurable]]
+- collocation: [[megalopolis]]
+- collocation: [[outback]]
+- collocation: [[panoply]]
+- collocation: [[firmament]]

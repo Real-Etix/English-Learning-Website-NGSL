@@ -9,6 +9,8 @@ rank: 111
 sfi: 58.698
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -29,3 +31,8 @@ an event that happens
 - advanced_form: [[episode]] — Use when referring to an event that is part of a series or a specific period, like in a story or history.
 - builds_on: [[event]] — Use 'occurrence' for a more formal or neutral tone, especially in writing or reporting.
 - builds_on: [[incident]] — Use 'occurrence' instead of 'incident' when you want a more formal, neutral word for something that happens, often in a statistical or routine context.
+- synonym: [[circumstance]]
+- synonym: [[instance]]
+- collocation: [[common]]
+- collocation: [[rare]]
+- collocation: [[daily]]

@@ -9,6 +9,8 @@ rank: 1471
 sfi: 49.9
 sources: [wordnet, llm]
 status: enriched
+chart: skeptic
+region: skeptic
 ---
 
 ## Definition

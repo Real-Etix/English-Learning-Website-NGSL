@@ -9,6 +9,8 @@ rank: 1148
 sfi: 49.8
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ an attendant employed at a beach or pool to protect swimmers from accidents
 - advanced_form: [[guard]] — Use 'guard' for a more formal or professional context, emphasizing the protective role, though it is less specific than 'lifeguard'.
 - advanced_form: [[attendant]] — Use 'attendant' to highlight the service and assistance aspect, suitable for formal descriptions of lifeguard duties.
 - advanced_form: [[monitor]] — Use 'monitor' when focusing on the surveillance role, common in institutional or training contexts.
+- synonym: [[rescuer]]
+- collocation: [[beach]]
+- collocation: [[pool]]
+- collocation: [[tower]]
+- collocation: [[stand]]

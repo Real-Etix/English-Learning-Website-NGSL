@@ -6,6 +6,8 @@ pos: noun
 forms: [three-basehit]
 sources: [llm]
 status: enriched
+chart: triple
+region: triple
 ---
 
 ## Definition

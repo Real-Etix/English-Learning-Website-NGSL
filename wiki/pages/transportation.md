@@ -9,6 +9,8 @@ rank: 2703
 sfi: 53.18
 sources: [wordnet, llm]
 status: enriched
+chart: force
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[transit]] — Use 'transit' when referring specifically to public transportation systems or the movement of people through a network, often implying scheduled routes.
 - advanced_form: [[conveyance]] — Use 'conveyance' in formal or legal contexts for the act of transporting something, especially documents, goods, or legal rights.
 - advanced_form: [[haulage]] — Use 'haulage' for the commercial transport of goods, particularly bulky, heavy, or freight items by truck or rail.
+- collocation: [[outage]]
+- synonym: [[shipping]]

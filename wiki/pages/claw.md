@@ -9,6 +9,8 @@ rank: 332
 sfi: 55.25
 sources: [wordnet, llm]
 status: enriched
+chart: claw
+region: claw
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[talon]] — Use 'talon' specifically for the claws of birds of prey like eagles, hawks, and owls.
 - advanced_form: [[pincer]] — Use 'pincer' for the claw-like appendages of crustaceans such as crabs and lobsters.
+- synonym: [[paw]]

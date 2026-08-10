@@ -9,6 +9,8 @@ rank: 1048
 sfi: 59.35
 sources: [wordnet, llm]
 status: enriched
+chart: text
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,15 @@ the words of something written
 - advanced_form: [[content]] — Use 'content' when focusing on the ideas or information within the text, rather than the physical words.
 - advanced_form: [[wording]] — Use 'wording' when emphasizing the specific choice and arrangement of words in a text.
 - advanced_form: [[copy]] — Use 'copy' for text intended for commercial or publishing purposes, such as advertising or journalism.
+- collocation: [[elide]]
+- collocation: [[encipher]]
+- collocation: [[expository]]
+- collocation: [[footnote]]
+- collocation: [[format]]
+- collocation: [[illuminate]]
+- synonym: [[libretto]]
+- synonym: [[lyric]]
+- collocation: [[paragraph]]
+- synonym: [[print]]
+- collocation: [[redact]]
+- collocation: [[redactor]]

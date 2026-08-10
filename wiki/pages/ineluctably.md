@@ -6,6 +6,8 @@ pos: adverb
 forms: [ineluctably]
 sources: [llm]
 status: enriched
+chart: inevitably
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[necessarily]] — Use ineluctably for a very formal or philosophical tone, describing something inevitable by nature.
+- synonym: [[inevitably]]
+- synonym: [[unavoidably]]
+- synonym: [[inescapably]]
+- synonym: [[inexorably]]
+- collocation: [[bound]]

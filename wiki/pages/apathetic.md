@@ -6,6 +6,8 @@ pos: adjective
 forms: [apathetic]
 sources: [llm]
 status: enriched
+chart: static
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[passive]] — Use 'apathetic' to stress emotional indifference or lack of concern, especially about matters that should evoke interest.
+- synonym: [[impassive]]
+- synonym: [[listless]]
+- collocation: [[remain]]
+- collocation: [[become]]
+- collocation: [[politically]]
+- collocation: [[about]]

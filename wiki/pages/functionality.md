@@ -6,6 +6,8 @@ pos: noun
 forms: [functionality]
 sources: [llm]
 status: enriched
+chart: replication
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[operation]] — Use 'functionality' to emphasize the quality or capability of operating effectively, especially in technical contexts.
+- synonym: [[operability]]

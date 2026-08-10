@@ -6,6 +6,8 @@ pos: adverb
 forms: [unquestionably]
 sources: [llm]
 status: enriched
+chart: explicitly
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 - builds_on: [[undoubtedly]] — Use when you want to emphasize that something is beyond any question, often preferred in formal writing.
 - builds_on: [[definitely]] — Use when emphasizing something is certain and not open to doubt, similar to 'definitely' but more formal.
 - builds_on: [[alright]] — Use 'unquestionably' when you want to convey that there is no room for doubt, especially in academic or professional discourse, instead of the less precise 'alright'.
+- builds_on: [[surely]] — Use to emphasize that something is beyond doubt, especially in arguments or analysis.

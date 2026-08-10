@@ -9,6 +9,8 @@ rank: 2069
 sfi: 55.33
 sources: [wordnet, llm]
 status: enriched
+chart: uncomfortable
+region: you
 ---
 
 ## Definition

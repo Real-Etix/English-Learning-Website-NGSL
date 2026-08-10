@@ -9,6 +9,8 @@ rank: 261
 sfi: 65.74
 sources: [wordnet, llm]
 status: enriched
+chart: train
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[acquire]] — Use 'acquire' to emphasize the process of gaining knowledge or skill through effort, often systematically.
 - advanced_form: [[master]] — Use 'master' when the learner achieves deep expertise or thorough understanding, not just basic knowledge.
 - advanced_form: [[assimilate]] — Use 'assimilate' to highlight fully integrating knowledge into one's understanding, often after absorbing it gradually.
+- synonym: [[memorize]]
+- collocation: [[youngster]]

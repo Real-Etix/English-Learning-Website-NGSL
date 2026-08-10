@@ -6,6 +6,8 @@ pos: adjective
 forms: [elucidative]
 sources: [llm]
 status: enriched
+chart: qualitative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[explanatory]] — Use when the explanation clarifies something that was previously obscure or confusing.
+- synonym: [[illustrative]]
+- synonym: [[informative]]
+- collocation: [[style]]
+- synonym: [[expository]]

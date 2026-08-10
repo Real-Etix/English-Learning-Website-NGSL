@@ -6,6 +6,8 @@ pos: noun
 forms: [augmentation]
 sources: [llm]
 status: enriched
+chart: upgrade
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[reinforcement]] — Use when emphasizing a formal increase in size, capacity, or strength, often in military or organizational contexts.
 - builds_on: [[enhancement]] — Use when emphasizing an increase in size, value, or capability.
 - builds_on: [[expansion]] — Use 'augmentation' when the increase is systematic or deliberate, often for resources or capabilities.
+- builds_on: [[proliferation]] — Use when highlighting deliberate or incremental growth, like augmentation of resources.

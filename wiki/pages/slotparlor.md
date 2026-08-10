@@ -6,6 +6,8 @@ pos: noun
 forms: [slotparlor]
 sources: [llm]
 status: enriched
+chart: casino
+region: casino
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [curvilinear]
 sources: [llm]
 status: enriched
+chart: linear
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[nonlinear]] — Use 'curvilinear' when the nonlinear relationship is specifically a smooth curve, rather than any nonlinear function.
+- collocation: [[relationship]]
+- collocation: [[line]]
+- collocation: [[design]]
+- collocation: [[path]]
+- collocation: [[motion]]

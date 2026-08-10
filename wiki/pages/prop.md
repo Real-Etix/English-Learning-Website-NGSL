@@ -9,6 +9,8 @@ rank: 121
 sfi: 60.08
 sources: [wordnet, llm]
 status: enriched
+chart: bolster
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - advanced_form: [[buttress]] — Use 'buttress' when describing a support that strengthens a structure from the outside, often in architecture or figuratively for ideas.
 - advanced_form: [[stanchion]] — Use 'stanchion' for a vertical pole or post that provides upright support, common in construction or crowd control.
 - advanced_form: [[shoring]] — Use 'shoring' when referring to a system of props or supports used temporarily to hold up a structure during repair or digging.
+- synonym: [[strut]]

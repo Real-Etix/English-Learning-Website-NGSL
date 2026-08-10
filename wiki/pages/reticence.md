@@ -6,6 +6,8 @@ pos: noun
 forms: [reticence]
 sources: [llm]
 status: enriched
+chart: reserve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[reserve]] — Use 'reticence' for a reserved, quiet manner that involves reluctance to speak or reveal thoughts.
+- synonym: [[silence]]
+- synonym: [[restraint]]

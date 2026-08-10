@@ -9,6 +9,8 @@ rank: 1957
 sfi: 55.66
 sources: [wordnet, llm]
 status: enriched
+chart: convention
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ a large formal assembly
 - advanced_form: [[conference]] — Use 'conference' for a formal meeting for discussion, especially in professional or academic contexts, often with multiple sessions.
 - advanced_form: [[convocation]] — Use 'convocation' for a large formal gathering, typically academic or ecclesiastical, for a ceremonial or official purpose.
 - builds_on: [[custom]] — Use 'convention' to highlight social agreement or formal protocol rather than personal routine.
+- collocation: [[flout]]
+- synonym: [[orthodoxy]]

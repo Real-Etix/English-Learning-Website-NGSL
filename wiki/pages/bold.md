@@ -9,6 +9,8 @@ rank: 636
 sfi: 53.09
 sources: [wordnet, llm]
 status: enriched
+chart: inexperience
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ fearless and daring
 - advanced_form: [[audacious]] — Use when the boldness is especially daring or reckless, often involving risk or defiance.
 - advanced_form: [[intrepid]] — Use for a person who shows fearless courage, especially in the face of danger or adventure.
 - advanced_form: [[dauntless]] — Use to emphasize unwavering resolve and determination that cannot be intimidated.
+- collocation: [[adventurer]]
+- synonym: [[assertive]]
+- synonym: [[courageous]]
+- collocation: [[print]]
+- synonym: [[venturesome]]

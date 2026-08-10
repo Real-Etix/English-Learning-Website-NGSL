@@ -9,6 +9,8 @@ rank: 2094
 sfi: 55.24
 sources: [wordnet]
 status: seeded
+chart: therefore
+region: therefore
 ---
 
 ## Definition
@@ -20,3 +22,5 @@ status: seeded
 ## Connections
 - synonym: [[therefore]]
 - synonym: [[thus]]
+- synonym: [[thereby]]
+- synonym: [[ergo]]

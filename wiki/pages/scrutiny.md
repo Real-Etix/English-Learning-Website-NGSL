@@ -9,6 +9,8 @@ rank: 764
 sfi: 52.78
 sources: [wordnet, llm]
 status: enriched
+chart: scrutiny
+region: you
 ---
 
 ## Definition
@@ -32,3 +34,10 @@ _No sourced examples yet._
 - builds_on: [[surveillance]] — Use 'scrutiny' when emphasizing detailed, critical examination rather than just passive watching.
 - builds_on: [[examination]] — Use 'scrutiny' for a very close, critical examination, often implying looking for faults.
 - builds_on: [[inquiry]] — Use 'scrutiny' for a critical, detailed examination, often implying careful observation.
+- synonym: [[anatomization]]
+- collocation: [[exacting]]
+- synonym: [[observation]]
+- synonym: [[vetting]]
+- collocation: [[withstand]]
+- builds_on: [[investigation]] — Use 'scrutiny' when the focus is on close, critical examination rather than the process of investigating.
+- builds_on: [[gaze]] — Use 'scrutiny' when the gaze is critical or searching for details.

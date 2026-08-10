@@ -6,6 +6,8 @@ pos: noun
 forms: [ischium]
 sources: [llm]
 status: enriched
+chart: pelvis
+region: pelvis
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [sumptuous]
 sources: [llm]
 status: enriched
+chart: poor
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[deluxe]] — Use 'sumptuous' for rich, splendid things that appeal to the senses, especially food or decor.
+- synonym: [[extravagant]]
+- synonym: [[luxurious]]
+- synonym: [[plush]]

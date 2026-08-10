@@ -9,6 +9,8 @@ rank: 2410
 sfi: 54.25
 sources: [wordnet, llm]
 status: enriched
+chart: pull
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[engine]] — Use 'engine' for internal combustion or large power sources, especially vehicles; 'motor' is more general for electric or small devices.
 - advanced_form: [[turbine]] — Use 'turbine' for devices that convert fluid flow into rotational motion, often in power plants; 'motor' is broader.
 - advanced_form: [[actuator]] — Use 'actuator' for a device that converts energy into motion in control systems; 'motor' is simpler and more common.
+- collocation: [[boat]]
+- synonym: [[powerplant]]

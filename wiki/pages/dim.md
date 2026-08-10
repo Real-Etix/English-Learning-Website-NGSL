@@ -6,6 +6,8 @@ pos: adjective
 forms: [dim]
 sources: [llm]
 status: enriched
+chart: obscure
+region: you
 ---
 
 ## Definition

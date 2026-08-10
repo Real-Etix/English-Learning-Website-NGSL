@@ -9,6 +9,8 @@ rank: 144
 sfi: 58.258
 sources: [wordnet, llm]
 status: enriched
+chart: assessment
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,8 @@ _No sourced examples yet._
 - builds_on: [[prediction]] — Use 'projection' for predictions based on calculations or extrapolation of current trends.
 - advanced_form: [[extrapolation]] — Use 'extrapolation' to emphasize the mathematical or statistical method of extending known data into the future, more technical and formal than 'projection'.
 - advanced_form: [[prognosis]] — Use 'prognosis' for a formal or scientific prediction, especially in medical, economic, or weather contexts; it is less common and more specialized than 'projection'.
+- synonym: [[cusp]]
+- synonym: [[ledge]]
+- collocation: [[orthogonal]]
+- collocation: [[airpower]]
+- synonym: [[protuberance]]

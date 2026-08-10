@@ -9,6 +9,8 @@ rank: 292
 sfi: 55.89
 sources: [wordnet, llm]
 status: enriched
+chart: collarbone
+region: collarbone
 ---
 
 ## Definition

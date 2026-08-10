@@ -9,6 +9,8 @@ rank: 1245
 sfi: 51.35
 sources: [wordnet, llm]
 status: enriched
+chart: renewable
+region: renewable
 ---
 
 ## Definition

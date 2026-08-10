@@ -9,6 +9,8 @@ rank: 760
 sfi: 60.99
 sources: [wordnet, llm]
 status: enriched
+chart: coalition
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ a team of professional baseball players who play and travel together
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[franchise]] — Use 'franchise' when emphasizing the business, ownership, or commercial aspect of the team.
 - advanced_form: [[organization]] — Use 'organization' when focusing on the structured management, staff, and overall system behind the team.
+- collocation: [[associationfootball]]
+- collocation: [[habitu]]
+- collocation: [[lawntennis]]

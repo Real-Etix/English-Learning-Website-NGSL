@@ -6,6 +6,8 @@ pos: noun
 forms: [automaker]
 sources: [llm]
 status: enriched
+chart: executive
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[carmaker]] — Use 'automaker' in formal writing or news reports instead of the more casual 'carmaker'.
+- collocation: [[foreign]]

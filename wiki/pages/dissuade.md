@@ -6,6 +6,8 @@ pos: verb
 forms: [dissuade]
 sources: [llm]
 status: enriched
+chart: bound
+region: you
 ---
 
 ## Definition

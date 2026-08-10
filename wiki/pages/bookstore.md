@@ -9,6 +9,8 @@ rank: 263
 sfi: 55.48
 sources: [wordnet, llm]
 status: enriched
+chart: bookstore
+region: bookstore
 ---
 
 ## Definition

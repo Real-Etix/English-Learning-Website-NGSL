@@ -6,6 +6,8 @@ pos: adjective
 forms: [evaluative]
 sources: [llm]
 status: enriched
+chart: qualitative
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[qualitative]] — Use 'evaluative' when the qualitative assessment involves judgment or grading.
+- synonym: [[interpretive]]

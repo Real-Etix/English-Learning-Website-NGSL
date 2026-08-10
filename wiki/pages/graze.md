@@ -9,6 +9,8 @@ rank: 528
 sfi: 53.16
 sources: [wordnet, llm]
 status: enriched
+chart: graze
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[browse]] — Use 'browse' when describing animals feeding on leaves, twigs, or other high-growing vegetation, especially at a leisurely pace.
 - advanced_form: [[forage]] — Use 'forage' when emphasizing the active search for food, often in a wild or sparse environment.
 - advanced_form: [[pasture]] — Use 'pasture' as a verb when referring to the act of putting animals out to graze on grassland, often implying managed or intentional feeding.
+- synonym: [[abrasion]]

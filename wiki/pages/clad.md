@@ -6,6 +6,8 @@ pos: verb
 forms: [clad]
 sources: [llm]
 status: enriched
+chart: plank
+region: plank
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[plank]] — Use 'clad' when covering a structure or surface with a material, especially wood, for aesthetic or protective purposes, more formal than 'plank'.
+- synonym: [[cover]]
+- synonym: [[face]]
+- synonym: [[coat]]
+- synonym: [[panel]]
+- collocation: [[in]]
+- collocation: [[with]]
+- collocation: [[steel]]
+- collocation: [[iron]]
+- collocation: [[wood]]

@@ -9,6 +9,8 @@ rank: 1072
 sfi: 51.55
 sources: [wordnet, llm]
 status: enriched
+chart: say
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ _No sourced examples yet._
 - advanced_form: [[leftist]] — Use 'leftist' instead of 'socialist' when referring broadly to anyone on the left wing, including socialists, but also progressives and others.
 - advanced_form: [[collectivist]] — Use 'collectivist' instead of 'socialist' to emphasize the philosophical commitment to collective control over production and distribution.
 - advanced_form: [[communist]] — Use 'communist' instead of 'socialist' for advocates of a more extreme form of socialism that typically aims for revolutionary change and abolition of private property.
+- synonym: [[bolshevik]]
+- synonym: [[marxist]]

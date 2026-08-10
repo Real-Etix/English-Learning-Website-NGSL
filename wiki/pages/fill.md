@@ -9,6 +9,8 @@ rank: 845
 sfi: 60.53
 sources: [wordnet, llm]
 status: enriched
+chart: saturate
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ make full, also in a metaphorical sense
 - advanced_form: [[saturate]] — Use when something is completely filled to the point of no more absorption, often with liquid or figurative abundance.
 - advanced_form: [[infuse]] — Use when filling something with a quality or feeling, especially gradually or through blending.
 - advanced_form: [[imbue]] — Use when inspiring or permeating someone or something with a feeling, idea, or quality, often more formal than 'imbue'.
+- collocation: [[carafe]]
+- collocation: [[coffers]]
+- collocation: [[emptiness]]
+- collocation: [[flask]]
+- collocation: [[quota]]

@@ -9,6 +9,8 @@ rank: 72
 sfi: 71.91
 sources: [wordnet]
 status: seeded
+chart: likewise
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,7 @@ _No sourced examples yet._
 - synonym: [[besides]]
 - synonym: [[too]]
 - synonym: [[likewise]]
+- synonym: [[and]]
+- synonym: [[either]]
+- collocation: [[importantly]]
+- synonym: [[moreover]]

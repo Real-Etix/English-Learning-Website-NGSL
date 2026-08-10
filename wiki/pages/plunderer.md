@@ -6,6 +6,8 @@ pos: noun
 forms: [plunderer]
 sources: [llm]
 status: enriched
+chart: predator
+region: predator
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[predator]] — Use plunderer when focusing on the act of stealing goods by force, especially during conflict or invasion.
+- synonym: [[marauder]]
+- collocation: [[temple]]
+- collocation: [[grave]]
+- collocation: [[ruthless]]

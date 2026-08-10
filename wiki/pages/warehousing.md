@@ -6,6 +6,8 @@ pos: noun
 forms: [warehousing]
 sources: [llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[storage]] — Use when storing large quantities of goods in a dedicated facility, often for commercial or industrial purposes.
+- collocation: [[distribution]]
+- collocation: [[logistics]]
+- collocation: [[fulfillment]]

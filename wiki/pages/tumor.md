@@ -9,6 +9,8 @@ rank: 212
 sfi: 57.567
 sources: [wordnet, llm]
 status: enriched
+chart: transformation
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,9 @@ _No sourced examples yet._
 - advanced_form: [[neoplasm]] — Use 'neoplasm' in medical or formal contexts to emphasize the abnormal cell growth, often when discussing pathology or diagnosis.
 - advanced_form: [[malignancy]] — Use 'malignancy' specifically when the tumor is cancerous or invasive, implying a serious, spreading condition.
 - advanced_form: [[growth]] — Use 'growth' as a milder, less clinical synonym, often when the nature (benign or malignant) is unknown or less grave.
+- collocation: [[benign]]
+- synonym: [[carcinoma]]
+- collocation: [[gangliocyte]]
+- collocation: [[malignant]]
+- collocation: [[midplane]]
+- collocation: [[stroma]]

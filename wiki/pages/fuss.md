@@ -6,6 +6,8 @@ pos: verb
 forms: [fuss]
 sources: [llm]
 status: enriched
+chart: distress
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fret]] — Use 'fuss' when the worry is focused on small, unimportant details and often involves visible agitation.
+- synonym: [[worry]]
+- synonym: [[bother]]
+- synonym: [[complain]]

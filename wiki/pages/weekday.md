@@ -9,6 +9,8 @@ rank: 194
 sfi: 56.37
 sources: [wordnet, llm]
 status: enriched
+chart: weekday
+region: weekday
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [walkover]
 sources: [llm]
 status: enriched
+chart: autonomy
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bye]] — Use 'walkover' when the advancement is forced by the opponent not showing up, not by the tournament structure.
+- synonym: [[forfeit]]
+- synonym: [[default]]
+- collocation: [[easy]]
+- collocation: [[complete]]
+- collocation: [[victory]]
+- collocation: [[declare]]
+- collocation: [[give]]

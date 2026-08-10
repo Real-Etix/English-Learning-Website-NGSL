@@ -6,6 +6,8 @@ pos: noun
 forms: [reasoning]
 sources: [llm]
 status: enriched
+chart: deduction
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,14 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[logic]] — Use 'reasoning' when focusing on the process of thinking logically, especially in problem-solving or forming conclusions.
+- collocation: [[anthropic]]
+- synonym: [[argumentation]]
+- collocation: [[circuitous]]
+- synonym: [[cognition]]
+- collocation: [[flawed]]
+- synonym: [[analysis]]
+- synonym: [[deduction]]
+- synonym: [[inference]]
+- collocation: [[logical]]
+- collocation: [[careful]]
+- collocation: [[critical]]

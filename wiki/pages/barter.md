@@ -6,6 +6,8 @@ pos: noun
 forms: [barter]
 sources: [llm]
 status: enriched
+chart: exchange
+region: you
 ---
 
 ## Definition

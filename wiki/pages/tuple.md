@@ -9,6 +9,8 @@ rank: 710
 sfi: 49.76
 sources: []
 status: seeded
+chart: motive
+region: you
 ---
 
 ## Definition

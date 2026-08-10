@@ -6,6 +6,8 @@ pos: adjective
 forms: [incorporeal]
 sources: [llm]
 status: enriched
+chart: explicit
+region: you
 ---
 
 ## Definition

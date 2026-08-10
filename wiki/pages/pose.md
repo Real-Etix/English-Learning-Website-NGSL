@@ -9,6 +9,8 @@ rank: 2207
 sfi: 54.92
 sources: [wordnet, llm]
 status: enriched
+chart: direction
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ _No sourced examples yet._
 - advanced_form: [[present]] — Use 'present' when formally introducing an issue, problem, or opportunity, often in written or professional contexts.
 - advanced_form: [[raise]] — Use 'raise' when bringing up a topic or concern for discussion, common in conversational or meeting settings.
 - advanced_form: [[proffer]] — Use 'proffer' when offering an idea, suggestion, or help in a formal or polite manner; slightly more formal than 'pose'.
+- collocation: [[riddle]]
+- collocation: [[nude]]

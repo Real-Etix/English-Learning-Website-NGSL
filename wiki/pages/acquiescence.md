@@ -6,6 +6,8 @@ pos: noun
 forms: [acquiescence]
 sources: [llm]
 status: enriched
+chart: refuse
+region: you
 ---
 
 ## Definition

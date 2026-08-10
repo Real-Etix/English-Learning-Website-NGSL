@@ -9,6 +9,8 @@ rank: 534
 sfi: 54.436
 sources: [wordnet, llm]
 status: enriched
+chart: correlation
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,6 @@ _No sourced examples yet._
 - advanced_form: [[iota]] — Use 'iota' to emphasize an extremely small amount, often in negative contexts, while 'quantum' is more technical and refers to a discrete unit.
 - advanced_form: [[modicum]] — Use 'modicum' for a small but sufficient amount, often in positive contexts, whereas 'quantum' is scientific and precise.
 - advanced_form: [[scintilla]] — Use 'scintilla' for a tiny trace or spark, more vivid than 'iota', while 'quantum' is neutral and technical.
+- collocation: [[physics]]
+- collocation: [[indeterminacy]]
+- synonym: [[photon]]

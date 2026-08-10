@@ -6,6 +6,8 @@ pos: verb
 forms: [reclaim]
 sources: [llm]
 status: enriched
+chart: retrieve
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[recycle]] — Use 'reclaim' when emphasizing recovery of materials from waste for a new cycle.
 - builds_on: [[retrieve]] — Use 'reclaim' instead of 'retrieve' when you are taking back something that belonged to you, often from a place or after it was taken away.
 - builds_on: [[regain]] — Use 'reclaim' when regaining possession or control of something that was taken away or lost, often with active effort or restoration.
+- synonym: [[reprocess]]

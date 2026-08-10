@@ -6,6 +6,8 @@ pos: verb
 forms: [hoodwink]
 sources: [llm]
 status: enriched
+chart: mislead
+region: mislead
 ---
 
 ## Definition

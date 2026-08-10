@@ -6,6 +6,8 @@ pos: verb
 forms: [incise]
 sources: [llm]
 status: enriched
+chart: disable
+region: you
 ---
 
 ## Definition

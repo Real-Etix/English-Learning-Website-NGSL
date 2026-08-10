@@ -6,6 +6,8 @@ pos: noun
 forms: [captor]
 sources: [llm]
 status: enriched
+chart: abductor
+region: abductor
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[abductor]] — Use 'captor' when emphasizing the act of holding someone captive, especially in formal or narrative contexts; it is less specific than 'abductor' but more advanced in tone.
+- synonym: [[kidnapper]]
+- synonym: [[oppressor]]
+- collocation: [[escape]]

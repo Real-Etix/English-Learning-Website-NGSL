@@ -9,6 +9,8 @@ rank: 2121
 sfi: 55.16
 sources: [wordnet, llm]
 status: enriched
+chart: militant
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ a radical who employs terror as a political weapon
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[extremist]] — Use 'extremist' to emphasize ideological radicalism over the specific tactic of terror; it is broader than 'terrorist'.
 - advanced_form: [[militant]] — Use 'militant' to highlight active combat or confrontation, often in a paramilitary context, without necessarily implying targeting civilians.
+- synonym: [[radical]]
+- synonym: [[insurgent]]
+- synonym: [[guerrilla]]
+- collocation: [[attack]]
+- collocation: [[organization]]

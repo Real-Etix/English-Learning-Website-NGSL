@@ -6,6 +6,8 @@ pos: adjective
 forms: [accomplished]
 sources: [llm]
 status: enriched
+chart: expert
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,9 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[expert]] — Use 'accomplished' to highlight recognized achievement and refined skill, often in arts or professions.
 - builds_on: [[capable]] — Use 'accomplished' for someone with notable achievements, more specific than 'capable'.
+- collocation: [[arithmetician]]
+- synonym: [[distinguished]]
+- collocation: [[melodist]]
+- collocation: [[polyglot]]
+- collocation: [[wordsmith]]
+- collocation: [[cajoler]]

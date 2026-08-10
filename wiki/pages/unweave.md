@@ -6,6 +6,8 @@ pos: verb
 forms: [unweave]
 sources: [llm]
 status: enriched
+chart: unravel
+region: unravel
 ---
 
 ## Definition

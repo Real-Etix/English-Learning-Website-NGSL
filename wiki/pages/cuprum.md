@@ -6,6 +6,8 @@ pos: noun
 forms: [cuprum]
 sources: [llm]
 status: enriched
+chart: cent
+region: cent
 ---
 
 ## Definition

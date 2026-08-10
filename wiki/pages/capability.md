@@ -9,6 +9,8 @@ rank: 2397
 sfi: 54.3
 sources: [wordnet, llm]
 status: enriched
+chart: expertise
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ the quality of being capable -- physically or intellectually or legally
 - advanced_form: [[competence]] — Use 'competence' to emphasize skillful performance and reliability, whereas 'capability' is broader and includes potential.
 - advanced_form: [[aptitude]] — Use 'aptitude' to highlight innate or learned talent in a specific area, while 'capability' is more general.
 - advanced_form: [[proficiency]] — Use 'proficiency' to stress a high level of skill or expertness after practice, rather than mere ability.
+- synonym: [[aptness]]
+- synonym: [[potentiality]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [scalar]
 sources: [llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition

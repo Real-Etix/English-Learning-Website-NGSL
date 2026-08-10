@@ -9,6 +9,8 @@ rank: 2295
 sfi: 54.66
 sources: [wordnet, llm]
 status: enriched
+chart: bulk
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ the number of occurrences within a given time period
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[prevalence]] — Use 'prevalence' when emphasizing how widespread or common something is, especially in a population or context, rather than just the raw number of occurrences.
 - advanced_form: [[incidence]] — Use 'incidence' when referring to the rate or number of new occurrences of an event over a specific period, often in scientific or statistical contexts.
+- collocation: [[chiasma]]
+- collocation: [[histogram]]
+- collocation: [[microwave]]
+- collocation: [[modulate]]
+- collocation: [[modulator]]
+- collocation: [[resonance]]
+- collocation: [[submultiple]]

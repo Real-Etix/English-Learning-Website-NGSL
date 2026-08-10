@@ -9,6 +9,8 @@ rank: 408
 sfi: 55.716
 sources: [wordnet, llm]
 status: enriched
+chart: transmission
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,5 @@ _No sourced examples yet._
 - domain: academic
 - advanced_form: [[procreation]] — Use 'procreation' for the formal, purposeful act of producing offspring, especially in humans or animals.
 - advanced_form: [[propagation]] — Use 'propagation' for reproduction in a broader sense, including plants or spreading of organisms, often in scientific contexts.
+- synonym: [[xerox]]
+- builds_on: [[transcription]] — Use for a copy of an original text or document, especially in academic or archival contexts.

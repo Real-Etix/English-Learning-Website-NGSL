@@ -9,6 +9,8 @@ rank: 1914
 sfi: 55.81
 sources: [wordnet, llm]
 status: enriched
+chart: spouse
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ draw air into, and expel out of, the lungs
 - advanced_form: [[respire]] — Use 'respire' in formal or scientific writing instead of 'breathe' to sound more precise.
 - advanced_form: [[pant]] — Use 'pant' instead of 'breathe' when someone is breathing quickly or with effort, often after exercise.
 - advanced_form: [[wheeze]] — Use 'wheeze' instead of 'breathe' when the person makes a whistling or rattling sound, often due to asthma or illness.
+- synonym: [[be]]

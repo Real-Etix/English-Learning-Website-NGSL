@@ -6,6 +6,8 @@ pos: verb
 forms: [undergird]
 sources: [llm]
 status: enriched
+chart: bolster
+region: you
 ---
 
 ## Definition

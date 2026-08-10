@@ -6,6 +6,8 @@ pos: adjective
 forms: [effectual]
 sources: [llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition

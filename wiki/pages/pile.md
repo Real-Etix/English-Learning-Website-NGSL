@@ -9,6 +9,8 @@ rank: 2518
 sfi: 53.9
 sources: [wordnet, llm]
 status: enriched
+chart: elevation
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[heap]] — Use 'heap' for a disorderly, often messy pile of items, unlike 'pile' which can be neat.
 - advanced_form: [[mound]] — Use 'mound' for a raised, rounded pile, typically of natural materials like soil or snow.
+- collocation: [[voltaic]]

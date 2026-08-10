@@ -6,6 +6,8 @@ pos: verb
 forms: [slant]
 sources: [llm]
 status: enriched
+chart: care
+region: you
 ---
 
 ## Definition

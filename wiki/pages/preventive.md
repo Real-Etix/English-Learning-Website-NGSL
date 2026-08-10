@@ -6,6 +6,8 @@ pos: adjective
 forms: [preventive]
 sources: [llm]
 status: enriched
+chart: conservation
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[protective]] — Use 'preventive' when focusing on stopping harm before it occurs, rather than general protection.
 - builds_on: [[safeguard]] — Use 'preventive' when focusing on stopping something before it happens, rather than just protecting.
+- synonym: [[deterrent]]
+- synonym: [[precautionary]]

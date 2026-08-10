@@ -9,6 +9,8 @@ rank: 889
 sfi: 60.26
 sources: [wordnet, llm]
 status: enriched
+chart: pursuit
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - advanced_form: [[hunt]] — Use 'hunt' when emphasizing active, determined pursuit, often with urgency.
 - advanced_form: [[quest]] — Use 'quest' for a long, difficult, or noble search, often with a specific goal.
 - advanced_form: [[probe]] — Use 'probe' for a systematic, investigative search, often into hidden or complex matters.
+- collocation: [[countrywide]]
+- synonym: [[forage]]
+- synonym: [[delve]]
+- collocation: [[headhunter]]
+- synonym: [[hunting]]

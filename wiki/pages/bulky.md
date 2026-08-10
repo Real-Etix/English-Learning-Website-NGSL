@@ -6,6 +6,8 @@ pos: adjective
 forms: [bulky]
 sources: [llm]
 status: enriched
+chart: uncomfortable
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,12 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[thick]] — Use 'bulky' to describe something thick and large, often awkward or heavy to handle.
+- synonym: [[large]]
+- synonym: [[heavy]]
+- synonym: [[massive]]
+- collocation: [[backpack]]
+- collocation: [[package]]
+- collocation: [[item]]
+- collocation: [[equipment]]
+- collocation: [[sweater]]
+- synonym: [[elephant]]

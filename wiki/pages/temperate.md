@@ -6,6 +6,8 @@ pos: adjective
 forms: [temperate]
 sources: [llm]
 status: enriched
+chart: analytical
+region: you
 ---
 
 ## Definition

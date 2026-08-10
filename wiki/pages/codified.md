@@ -6,6 +6,8 @@ pos: adjective
 forms: [codified]
 sources: [llm]
 status: enriched
+chart: statutory
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[statutory]] — Use 'codified' when the statutes are collected into a single code, whereas 'statutory' is a broader term for any law passed by a legislature.
+- synonym: [[classified]]
+- collocation: [[law]]
+- collocation: [[constitution]]
+- collocation: [[system]]
+- collocation: [[legislation]]

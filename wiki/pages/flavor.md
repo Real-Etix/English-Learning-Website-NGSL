@@ -9,6 +9,8 @@ rank: 208
 sfi: 56.15
 sources: [wordnet, llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[ambiance]] — Use when emphasizing the physical or sensory atmosphere of a place, more specific than 'flavor'.
 - advanced_form: [[character]] — Use when referring to the distinctive qualities or spirit of a place, more formal than 'flavor'.
+- collocation: [[acidulous]]
+- collocation: [[lepton]]
+- synonym: [[palate]]
+- collocation: [[richness]]

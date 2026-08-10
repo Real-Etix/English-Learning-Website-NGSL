@@ -9,6 +9,8 @@ rank: 1214
 sfi: 49.46
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: mask
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ an object firmly fixed in place (especially in a household)
 - domain: toeic
 - advanced_form: [[fitting]] — Use when referring to a detachable component that completes a fixture, such as a lamp or tap fitting.
 - advanced_form: [[mounting]] — Use when emphasizing the hardware or bracket that holds an object firmly in place, often for devices or structural elements.
+- synonym: [[invariant]]

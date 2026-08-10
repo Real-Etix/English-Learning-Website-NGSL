@@ -6,6 +6,8 @@ pos: noun
 forms: [serendipity]
 sources: [llm]
 status: enriched
+chart: gamble
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[fortune]] — Use serendipity instead of fortune for accidental happy discoveries.
+- synonym: [[happenstance]]

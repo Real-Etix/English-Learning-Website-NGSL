@@ -9,6 +9,8 @@ rank: 168
 sfi: 57.953
 sources: [wordnet, llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ _No sourced examples yet._
 - advanced_form: [[intercede]] — Use 'intercede' when someone steps in to plead or intervene, often in a personal or moral context.
 - advanced_form: [[conciliate]] — Use 'conciliate' when the goal is to win over or pacify someone through friendly gestures, not just negotiation.
 - builds_on: [[intervene]] — Use 'mediate' when intervening to help opposing sides reach an agreement.
+- synonym: [[negotiate]]
+- builds_on: [[negotiate]] — Use when a neutral third party helps two sides reach an agreement.

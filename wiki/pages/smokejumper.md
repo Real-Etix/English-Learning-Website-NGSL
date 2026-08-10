@@ -6,6 +6,8 @@ pos: noun
 forms: [smokejumper]
 sources: [llm]
 status: enriched
+chart: firefighter
+region: firefighter
 ---
 
 ## Definition

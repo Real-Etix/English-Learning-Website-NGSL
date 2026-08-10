@@ -6,6 +6,8 @@ pos: noun
 forms: [levant]
 sources: [llm]
 status: enriched
+chart: set
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[east]] — Use 'Levant' when specifically referring to the historical region of the eastern Mediterranean, not for general compass direction.
+- synonym: [[orient]]
+- collocation: [[ancient]]
+- collocation: [[eastern]]
+- collocation: [[southern]]

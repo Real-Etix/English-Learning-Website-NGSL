@@ -6,6 +6,8 @@ pos: adjective
 forms: [belated]
 sources: [llm]
 status: enriched
+chart: just
+region: you
 ---
 
 ## Definition

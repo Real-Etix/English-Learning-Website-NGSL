@@ -2,16 +2,21 @@ import { describe, expect, it } from "vitest";
 
 import { badgesFor, levelForXp, wordXp, xpForLevel } from "./xp";
 
-describe("wordXp", () => {
-  it("common core words are worth the base", () => {
-    expect(wordXp({ tier: "core", rank: 100 })).toBe(10);
+describe("wordXp (banded on SFI)", () => {
+  it("common core words (high SFI) are worth the base", () => {
+    expect(wordXp({ tier: "core", sfi: 84 })).toBe(10);
   });
-  it("gives a bonus for less common words", () => {
-    expect(wordXp({ tier: "core", rank: 1000 })).toBe(15); // 10 + 5
-    expect(wordXp({ tier: "core", rank: 3000 })).toBe(22); // 10 + 12
+  it("gives a bonus as words get rarer (lower SFI)", () => {
+    expect(wordXp({ tier: "core", sfi: 55 })).toBe(15); // 10 + 5
+    expect(wordXp({ tier: "core", sfi: 45 })).toBe(22); // 10 + 12
   });
-  it("advanced words (no rank) are worth the most", () => {
-    expect(wordXp({ tier: "advanced", rank: null })).toBe(40); // 25 + 15
+  it("advanced words (no SFI) are worth the most", () => {
+    expect(wordXp({ tier: "advanced", sfi: null })).toBe(40); // 25 + 15
+  });
+  it("advanced always outscores any core word (guards the advancedCount split)", () => {
+    const coreValues = [84, 59, 58, 53, 52, 39, null].map((sfi) => wordXp({ tier: "core", sfi }));
+    const advancedMin = wordXp({ tier: "advanced", sfi: null });
+    expect(Math.max(...coreValues)).toBeLessThan(advancedMin);
   });
 });
 

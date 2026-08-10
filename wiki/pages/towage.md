@@ -6,6 +6,8 @@ pos: noun
 forms: [towage]
 sources: [llm]
 status: enriched
+chart: force
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[tow]] — Use 'towage' when referring to the official service or fee associated with towing, rather than the physical act itself.
+- builds_on: [[haul]] — Use when referring to the act or service of towing a vehicle or boat.

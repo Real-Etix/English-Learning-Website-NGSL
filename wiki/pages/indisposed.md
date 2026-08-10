@@ -6,6 +6,8 @@ pos: adjective
 forms: [indisposed]
 sources: [llm]
 status: enriched
+chart: well
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [startling]
 sources: [llm]
 status: enriched
+chart: unexpected
+region: unexpected
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[unexpected]] — Use 'startling' when the unexpected event causes a shock or surprise, implying a strong emotional reaction.
+- synonym: [[galvanic]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [elucidation]
 sources: [llm]
 status: enriched
+chart: reason
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[definition]] — Use 'elucidation' when focusing on making something clear, often more formal than 'definition'.
 - builds_on: [[explanation]] — Use 'elucidation' when the explanation sheds light on something complex or obscure, often in formal or academic contexts.
+- synonym: [[clarification]]

@@ -9,6 +9,8 @@ rank: 554
 sfi: 54.153
 sources: [wordnet, llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,5 @@ _No sourced examples yet._
 - advanced_form: [[rationale]] — Use 'rationale' when focusing on the logical justification or reason behind a decision or belief, rather than a personal desire.
 - advanced_form: [[impetus]] — Use 'impetus' when emphasizing the driving force or spark that starts or accelerates an action, rather than a specific goal.
 - builds_on: [[sake]] — Use 'motive' to specify a concrete reason or intention, making the cause explicit rather than general.
+- collocation: [[altruistic]]
+- synonym: [[why]]

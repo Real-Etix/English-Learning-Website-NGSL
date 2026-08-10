@@ -9,6 +9,8 @@ rank: 2430
 sfi: 54.21
 sources: [wordnet, llm]
 status: enriched
+chart: coal
+region: coal
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[char]] — Use 'char' when describing the process of burning organic material until it becomes blackened and mostly carbon, often from a fire or heat source.
 - advanced_form: [[carbonize]] — Use 'carbonize' in technical or scientific contexts for the conversion of organic matter into carbon, typically by controlled heating without oxygen.
+- collocation: [[gasifier]]

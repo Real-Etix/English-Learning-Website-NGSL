@@ -6,6 +6,8 @@ pos: adjective
 forms: [enceinte]
 sources: [llm]
 status: enriched
+chart: pregnant
+region: pregnant
 ---
 
 ## Definition

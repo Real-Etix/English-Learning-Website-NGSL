@@ -6,6 +6,8 @@ pos: noun
 forms: [transnationalization]
 sources: [llm]
 status: enriched
+chart: surplus
+region: you
 ---
 
 ## Definition

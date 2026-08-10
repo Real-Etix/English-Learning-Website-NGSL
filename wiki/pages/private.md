@@ -9,6 +9,8 @@ rank: 648
 sfi: 61.71
 sources: [wordnet, llm]
 status: enriched
+chart: confidential
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ confined to particular persons or groups or providing privacy
 - advanced_form: [[confidential]] — Use 'confidential' for private information that is officially or legally secret, especially in professional or formal contexts.
 - advanced_form: [[secluded]] — Use 'secluded' for a private place that is isolated and hidden from others, emphasizing physical separation.
 - advanced_form: [[intimate]] — Use 'intimate' for a private event or setting that is small, cozy, and personal, often involving close relationships.
+- collocation: [[aerodrome]]
+- collocation: [[bodyguard]]
+- collocation: [[chauffeur]]
+- collocation: [[menagerie]]
+- synonym: [[privileged]]
+- collocation: [[bibliotheca]]
+- collocation: [[chambers]]
+- collocation: [[intensely]]

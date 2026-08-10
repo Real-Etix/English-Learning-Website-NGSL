@@ -6,6 +6,8 @@ pos: adjective
 forms: [tolerable]
 sources: [llm]
 status: enriched
+chart: rational
+region: you
 ---
 
 ## Definition

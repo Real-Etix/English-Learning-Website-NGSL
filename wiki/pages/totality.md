@@ -6,6 +6,8 @@ pos: noun
 forms: [totality]
 sources: [llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[aggregate]] — More formal than 'aggregate', emphasizes completeness and unity of all parts.
+- synonym: [[everything]]

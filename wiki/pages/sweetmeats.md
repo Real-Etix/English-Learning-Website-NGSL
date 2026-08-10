@@ -6,6 +6,8 @@ pos: noun
 forms: [sweetmeats]
 sources: [llm]
 status: enriched
+chart: tuck
+region: tuck
 ---
 
 ## Definition

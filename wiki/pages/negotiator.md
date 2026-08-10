@@ -9,6 +9,8 @@ rank: 1553
 sfi: 50.13
 sources: [wordnet, llm]
 status: enriched
+chart: motive
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[mediator]] — Use 'mediator' when the person facilitates agreement without bias, unlike a negotiator who represents one party.
 - advanced_form: [[arbitrator]] — Use 'arbitrator' when the person has authority to settle a dispute with a final ruling.
 - advanced_form: [[intermediary]] — Use 'intermediary' to emphasize the role of communicating between two sides, often without direct involvement in negotiation.
+- synonym: [[conciliator]]

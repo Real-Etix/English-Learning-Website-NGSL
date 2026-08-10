@@ -6,6 +6,8 @@ pos: noun
 forms: [affection]
 sources: [llm]
 status: enriched
+chart: mind
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[sentiment]] — Use 'affection' when emphasizing a warm, fond attachment to someone or something, more direct and personal than 'sentiment'.
+- synonym: [[tenderness]]
+- synonym: [[love]]
+- synonym: [[devotion]]
+- collocation: [[deep]]
+- collocation: [[genuine]]
+- collocation: [[mutual]]

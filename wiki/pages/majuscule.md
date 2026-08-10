@@ -6,6 +6,8 @@ pos: noun
 forms: [majuscule]
 sources: [llm]
 status: enriched
+chart: capitalization
+region: capitalization
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[capitalization]] — Use 'majuscule' in typographic or academic contexts for precision; 'capitalization' is more general for everyday use.
+- synonym: [[capital]]
+- collocation: [[letters]]
+- collocation: [[script]]
+- collocation: [[style]]

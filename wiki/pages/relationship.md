@@ -9,6 +9,8 @@ rank: 502
 sfi: 62.93
 sources: [wordnet, llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,17 @@ a relation between people
 - advanced_form: [[bond]] — Use 'bond' for a close, emotional connection between people, stronger than a general relationship.
 - advanced_form: [[affiliation]] — Use 'affiliation' for a formal or organizational connection, often involving membership or association.
 - advanced_form: [[rapport]] — Use 'rapport' for a harmonious, understanding relationship characterized by mutual trust and communication.
+- collocation: [[abusive]]
+- collocation: [[consanguineous]]
+- collocation: [[correlative]]
+- synonym: [[covariation]]
+- collocation: [[covenantal]]
+- collocation: [[curvilinear]]
+- collocation: [[familial]]
+- collocation: [[flounder]]
+- collocation: [[formalize]]
+- collocation: [[rivalrous]]
+- collocation: [[wreck]]
+- collocation: [[avunculate]]
+- collocation: [[illicit]]
+- collocation: [[tumultuous]]

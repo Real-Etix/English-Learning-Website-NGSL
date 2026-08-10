@@ -6,6 +6,8 @@ pos: noun
 forms: [defaulter]
 sources: [llm]
 status: enriched
+chart: there
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,4 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[debtor]] — Use when emphasizing failure to meet payment obligations; carries a negative connotation.
 - builds_on: [[bankrupt]] — Use 'defaulter' when focusing on the failure to meet payment obligations, even if bankruptcy has not been formally declared.
+- synonym: [[insolvent]]

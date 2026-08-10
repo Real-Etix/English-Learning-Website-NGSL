@@ -9,6 +9,8 @@ rank: 350
 sfi: 64.51
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,8 @@ _No sourced examples yet._
 - advanced_form: [[devise]] — Use 'devise' when emphasizing careful planning or inventing a method or plan, rather than just making something.
 - advanced_form: [[conceive]] — Use 'conceive' when focusing on the initial formation of an idea or concept, especially a creative or original one.
 - advanced_form: [[formulate]] — Use 'formulate' when developing something systematic, such as a theory, policy, or plan, often with precision and structure.
+- collocation: [[concomitantly]]
+- collocation: [[rapport]]
+- synonym: [[ripen]]
+- collocation: [[intolerance]]
+- collocation: [[septicemia]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [offeror]
 sources: [llm]
 status: enriched
+chart: commissioner
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bidder]] — Use 'offeror' in formal or legal contexts where a bid is a binding proposal, not just an auction bid.
+- collocation: [[acceptance]]
+- collocation: [[revocation]]
+- collocation: [[contract]]
+- collocation: [[intention]]

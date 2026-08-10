@@ -9,6 +9,8 @@ rank: 417
 sfi: 55.644
 sources: [wordnet, llm]
 status: enriched
+chart: devise
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,10 @@ _No sourced examples yet._
 - advanced_form: [[formulate]] — Use 'formulate' when developing an idea into a systematic or detailed plan, more structured than 'conceive'.
 - advanced_form: [[invent]] — Use 'invent' when creating something entirely new or original, often tangible, more concrete than 'conceive'.
 - builds_on: [[formulate]] — Use 'conceive' when focusing on the initial formation of an idea or theory in one's mind.
+- synonym: [[envision]]
+- collocation: [[of]]
+- collocation: [[idea]]
+- collocation: [[plan]]
+- collocation: [[child]]
+- builds_on: [[invent]] — Use when inventing an abstract idea or concept, often in formal or intellectual contexts.
+- synonym: [[conceptualize]]

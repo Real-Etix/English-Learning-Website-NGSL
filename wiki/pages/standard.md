@@ -9,6 +9,8 @@ rank: 547
 sfi: 62.5
 sources: [wordnet, llm]
 status: enriched
+chart: benchmark
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,11 @@ _No sourced examples yet._
 - builds_on: [[average]] — Use 'standard' to imply conformity to a widely accepted norm or benchmark, rather than just an average value.
 - builds_on: [[regular]] — Use 'standard' when referring to a widely accepted norm or benchmark, more formal than 'regular'.
 - builds_on: [[flag]] — Use 'standard' for a flag used as a military or ceremonial symbol, often on a pole or carried in parades.
+- collocation: [[deductible]]
+- synonym: [[ensign]]
+- collocation: [[evidentiary]]
+- collocation: [[nomenclature]]
+- synonym: [[normative]]
+- collocation: [[normative]]
+- collocation: [[workweek]]
+- collocation: [[illuminant]]

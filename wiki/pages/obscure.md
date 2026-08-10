@@ -7,8 +7,10 @@ forms: [obscure, obscures, obscured, obscuring]
 lists: [business, academic]
 rank: 619
 sfi: 53.555
-sources: [wordnet]
-status: seeded
+sources: [wordnet, llm]
+status: enriched
+chart: obscure
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,13 @@ not clearly expressed or understood
 - builds_on: [[hide]] — Use 'obscure' when something is hidden by being made unclear, dim, or blocked, not necessarily intentionally.
 - builds_on: [[rare]] — Use 'obscure' when something is not widely known or understood because it is hidden, vague, or not popular; stronger than 'rare' for lack of familiarity.
 - builds_on: [[cloud]] — Use 'obscure' when something physical or abstract covers or hides something from view, often suggesting a more complete or intentional hiding than 'cloud'.
+- synonym: [[arcane]]
+- synonym: [[esoteric]]
+- synonym: [[opaque]]
+- synonym: [[redact]]
+- advanced_form: [[ambiguous]] — Use when something has more than one possible meaning and causes confusion.
+- advanced_form: [[enigmatic]] — Use when something is puzzling or mysterious, often intentionally.
+- advanced_form: [[opaque]] — Use when something is dense or impenetrable, hard to see through.
+- builds_on: [[conceal]] — Use when making something difficult to see, hear, or understand, often by covering it.
+- builds_on: [[unknown]] — Use when something is known only vaguely or by few people, emphasizing lack of clarity.
+- synonym: [[lowly]]

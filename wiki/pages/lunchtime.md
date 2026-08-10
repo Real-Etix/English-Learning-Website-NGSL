@@ -9,6 +9,8 @@ rank: 580
 sfi: 52.47
 sources: [wordnet, llm]
 status: enriched
+chart: noon
+region: noon
 ---
 
 ## Definition

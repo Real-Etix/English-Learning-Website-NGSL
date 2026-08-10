@@ -6,6 +6,8 @@ pos: noun
 forms: [naivete]
 sources: [llm]
 status: enriched
+chart: inexperience
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[inexperience]] — use when emphasizing innocence or lack of worldly wisdom
+- synonym: [[greenness]]
+- synonym: [[simplicity]]
+- collocation: [[sheer]]
+- collocation: [[political]]

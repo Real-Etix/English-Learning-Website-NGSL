@@ -6,6 +6,8 @@ pos: adverb
 forms: [categorically]
 sources: [llm]
 status: enriched
+chart: explicitly
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 - builds_on: [[explicitly]] — Use 'categorically' to emphasize a firm and unconditional denial or statement, often in a formal or assertive context, whereas 'explicitly' is more about clarity of expression.
 - builds_on: [[outright]] — Use 'categorically' for emphatic denial or rejection, stronger than 'outright'.
 - builds_on: [[definitely]] — Use when expressing an absolute statement, often in denial or affirmation, stronger than 'definitely'.
+- synonym: [[definitively]]
+- synonym: [[generically]]
+- synonym: [[emphatically]]

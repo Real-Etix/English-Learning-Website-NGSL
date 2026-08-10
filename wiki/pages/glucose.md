@@ -9,6 +9,8 @@ rank: 118
 sfi: 60.16
 sources: [wordnet, llm]
 status: enriched
+chart: glucose
+region: glucose
 ---
 
 ## Definition
@@ -21,3 +23,6 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[dextrose]] — Use 'dextrose' in medical or chemical contexts instead of 'glucose' for precision.
 - advanced_form: [[monosaccharide]] — Use 'monosaccharide' when describing the chemical classification of sugars, not as a direct replacement for everyday use.
+- collocation: [[d-fructose]]
+- collocation: [[metabolize]]
+- collocation: [[sucrose]]

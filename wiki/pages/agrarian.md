@@ -6,6 +6,8 @@ pos: adjective
 forms: [agrarian]
 sources: [llm]
 status: enriched
+chart: agricultural
+region: agricultural
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[agricultural]] — Use 'agrarian' to emphasize the social or economic aspects of farming communities, rather than the technical or physical aspects of cultivation.
+- synonym: [[rural]]
+- synonym: [[pastoral]]
+- synonym: [[bucolic]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [frigidity]
 sources: [llm]
 status: enriched
+chart: chill
+region: chill
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chill]] — Use 'frigidity' for a formal or scientific description of intense cold.
+- synonym: [[iciness]]

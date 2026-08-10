@@ -9,6 +9,8 @@ rank: 646
 sfi: 61.72
 sources: [wordnet, llm]
 status: enriched
+chart: forge
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,11 @@ the products of human creativity
 - advanced_form: [[craft]] — Use 'craft' to emphasize the skill and technique involved in creating art, rather than just the final product.
 - advanced_form: [[artistry]] — Use 'artistry' to focus on the creative skill, imagination, and aesthetic quality.
 - advanced_form: [[masterwork]] — Use 'masterwork' for an outstanding piece of art, implying exceptional quality.
+- collocation: [[avant-garde]]
+- collocation: [[commercialize]]
+- collocation: [[connoisseur]]
+- collocation: [[representational]]
+- collocation: [[workroom]]
+- collocation: [[aficionado]]
+- collocation: [[generative]]
+- collocation: [[oriental]]

@@ -9,6 +9,8 @@ rank: 587
 sfi: 52.47
 sources: [wordnet, llm]
 status: enriched
+chart: specialty
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,4 @@ _No sourced examples yet._
 - advanced_form: [[expertise]] — Use 'expertise' when focusing on deep knowledge or skill in a field.
 - advanced_form: [[mastery]] — Use 'mastery' to imply complete command or proficiency.
 - builds_on: [[discipline]] — Use 'specialty' to highlight a focused area of study or practice, often within a profession, more specific than 'discipline'.
+- synonym: [[mtier]]

@@ -9,6 +9,8 @@ rank: 17
 sfi: 68.11
 sources: [wordnet, llm]
 status: enriched
+chart: flutter
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[thrust]] — Use for a forceful lunge, often with a weapon.
 - advanced_form: [[dart]] — Use for a quick, agile lunge, often to escape or reach something.
 - advanced_form: [[spring]] — Use for a lunge that involves jumping or bounding.
+- synonym: [[kneebend]]

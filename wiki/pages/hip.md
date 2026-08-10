@@ -9,6 +9,8 @@ rank: 3
 sfi: 74.03
 sources: [wordnet, llm]
 status: enriched
+chart: pelvis
+region: pelvis
 ---
 
 ## Definition
@@ -22,3 +24,8 @@ _No sourced examples yet._
 - domain: fitness
 - advanced_form: [[haunch]] — Use 'haunch' instead of 'hip' when referring to the fleshy part of the hip and upper thigh, often in a more formal or literary context.
 - advanced_form: [[pelvis]] — Use 'pelvis' instead of 'hip' when focusing on the bony structure or anatomical region, usually in medical or formal descriptions.
+- synonym: [[flank]]
+- collocation: [[flask]]
+- collocation: [[gyration]]
+- collocation: [[iliacus]]
+- collocation: [[orthopedist]]

@@ -9,6 +9,8 @@ rank: 903
 sfi: 60.2
 sources: [wordnet, llm]
 status: enriched
+chart: secure
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[safeguard]] — use when proactively protecting against potential harm or risk
 - advanced_form: [[preserve]] — use for protecting something valuable from damage, decay, or loss over time
 - advanced_form: [[secure]] — use when making something safe from threat or unauthorized access, often by physical means
+- synonym: [[indemnify]]

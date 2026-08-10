@@ -9,6 +9,8 @@ rank: 281
 sfi: 55.13
 sources: [wordnet, dictionaryapi, tatoeba, llm]
 status: enriched
+chart: gamble
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ status: enriched
 - advanced_form: [[repute]] — Use 'repute' instead of 'goodwill' when emphasizing the reputation aspect rather than the accounting asset.
 - advanced_form: [[prestige]] — Use 'prestige' to focus on the honor and respect associated with the business, similar to goodwill.
 - advanced_form: [[cachet]] — Use 'cachet' for a sense of exclusivity and high status, a component of goodwill.
+- synonym: [[comity]]

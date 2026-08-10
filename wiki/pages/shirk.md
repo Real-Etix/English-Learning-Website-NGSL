@@ -6,6 +6,8 @@ pos: verb
 forms: [shirk]
 sources: [llm]
 status: enriched
+chart: remember
+region: you
 ---
 
 ## Definition

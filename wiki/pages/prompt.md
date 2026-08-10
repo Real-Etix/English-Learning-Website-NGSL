@@ -9,6 +9,8 @@ rank: 2375
 sfi: 54.38
 sources: [wordnet, llm]
 status: enriched
+chart: prompt
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,10 @@ _No sourced examples yet._
 - advanced_form: [[motivate]] — Use when emphasizing internal drive or encouragement, often positive.
 - advanced_form: [[spur]] — Use when the incentive is a sudden or forceful push, like a kick.
 - advanced_form: [[prod]] — Use when the action is repeated or gentle but persistent urging.
+- synonym: [[actuate]]
+- synonym: [[catalyze]]
+- synonym: [[instigate]]
+- synonym: [[refresh]]
+- builds_on: [[prod]] — Use this in formal or academic settings when you 'prod' someone mentally to take an action.
+- synonym: [[incite]]
+- synonym: [[nudge]]

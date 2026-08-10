@@ -6,6 +6,8 @@ pos: adjective
 forms: [inordinate]
 sources: [llm]
 status: enriched
+chart: economical
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,10 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[excessive]] — Use 'inordinate' for amounts of time, effort, or care that are unreasonably large or beyond normal limits.
+- synonym: [[unreasonable]]
+- synonym: [[extravagant]]
+- collocation: [[amount]]
+- collocation: [[time]]
+- collocation: [[number]]
+- collocation: [[degree]]
+- collocation: [[share]]

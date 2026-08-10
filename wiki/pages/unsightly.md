@@ -6,6 +6,8 @@ pos: adjective
 forms: [unsightly]
 sources: [llm]
 status: enriched
+chart: strong
+region: you
 ---
 
 ## Definition

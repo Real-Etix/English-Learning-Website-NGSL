@@ -6,6 +6,8 @@ pos: adverb
 forms: [synchronously]
 sources: [llm]
 status: enriched
+chart: simultaneously
+region: simultaneously
 ---
 
 ## Definition

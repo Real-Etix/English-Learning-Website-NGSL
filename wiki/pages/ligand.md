@@ -6,6 +6,8 @@ pos: noun
 forms: [ligand]
 sources: [llm]
 status: enriched
+chart: hormone
+region: hormone
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[hormone]] — Use 'ligand' when focusing on the receptor-binding role of a hormone, common in biochemistry and molecular biology.
+- synonym: [[molecule]]
+- synonym: [[agent]]
+- collocation: [[receptor]]
+- collocation: [[bind]]
+- collocation: [[protein]]
+- collocation: [[affinity]]

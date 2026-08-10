@@ -9,6 +9,8 @@ rank: 214
 sfi: 66.61
 sources: [wordnet, llm]
 status: enriched
+chart: close
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,21 @@ affording unobstructed entrance and exit
 - advanced_form: [[unimpeded]] — Use 'unimpeded' to emphasize that no obstacles are blocking passage.
 - advanced_form: [[unrestricted]] — Use 'unrestricted' to emphasize the absence of rules or physical barriers limiting entry.
 - advanced_form: [[unobstructed]] — Use 'unobstructed' to emphasize that nothing is in the way physically.
+- synonym: [[approachable]]
+- collocation: [[forum]]
+- collocation: [[gape]]
+- collocation: [[inquest]]
+- collocation: [[lockbox]]
+- collocation: [[mouth]]
+- synonym: [[negotiable]]
+- collocation: [[notepad]]
+- collocation: [[parentheses]]
+- synonym: [[responsive]]
+- collocation: [[webpage]]
+- collocation: [[wedge]]
+- collocation: [[wrench]]
+- collocation: [[maw]]
+- synonym: [[navigable]]
+- synonym: [[passable]]
+- synonym: [[unresolved]]
+- collocation: [[yank]]

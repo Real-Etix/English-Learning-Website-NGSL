@@ -6,6 +6,8 @@ pos: adjective
 forms: [wintry]
 sources: [llm]
 status: enriched
+chart: black
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[snowy]] — Use 'wintry' to describe the cold, snowy atmosphere or scene, not just the presence of snow but the overall feel of winter. It is more formal than 'snowy'.
+- synonym: [[cold]]
+- synonym: [[icy]]
+- synonym: [[bleak]]
+- collocation: [[weather]]
+- collocation: [[landscape]]
+- collocation: [[mix]]
+- collocation: [[blast]]
+- collocation: [[scene]]

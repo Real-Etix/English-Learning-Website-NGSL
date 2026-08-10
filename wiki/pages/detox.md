@@ -9,6 +9,8 @@ rank: 400
 sfi: 54.31
 sources: [wordnet, llm]
 status: enriched
+chart: detox
+region: detox
 ---
 
 ## Definition

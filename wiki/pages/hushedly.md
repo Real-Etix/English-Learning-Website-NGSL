@@ -6,6 +6,8 @@ pos: adverb
 forms: [hushedly]
 sources: [llm]
 status: enriched
+chart: loud
+region: you
 ---
 
 ## Definition

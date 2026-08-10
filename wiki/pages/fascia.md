@@ -9,6 +9,8 @@ rank: 258
 sfi: 56.4
 sources: [wordnet, llm]
 status: enriched
+chart: fascia
+region: fascia
 ---
 
 ## Definition

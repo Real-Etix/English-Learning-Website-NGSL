@@ -6,6 +6,8 @@ pos: noun
 forms: [virtuoso]
 sources: [llm]
 status: enriched
+chart: performer
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[artist]] — Use 'virtuoso' when emphasizing extraordinary technical mastery, not just general artistic talent.
 - builds_on: [[master]] — Use 'virtuoso' to emphasize exceptional technical skill and brilliance in a performing art, rather than just general mastery.
 - builds_on: [[musician]] — Use 'virtuoso' to emphasize exceptional technical skill or mastery, not just any musician.
+- synonym: [[instrumentalist]]

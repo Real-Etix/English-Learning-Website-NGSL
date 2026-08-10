@@ -6,6 +6,8 @@ pos: noun
 forms: [spondyl]
 sources: [llm]
 status: enriched
+chart: vertebra
+region: vertebra
 ---
 
 ## Definition

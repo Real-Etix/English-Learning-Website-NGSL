@@ -9,6 +9,8 @@ rank: 558
 sfi: 52.94
 sources: [wordnet, llm]
 status: enriched
+chart: bat
+region: bat
 ---
 
 ## Definition

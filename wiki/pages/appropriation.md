@@ -6,6 +6,8 @@ pos: noun
 forms: [appropriation]
 sources: [llm]
 status: enriched
+chart: aggregate
+region: you
 ---
 
 ## Definition

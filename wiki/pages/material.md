@@ -9,6 +9,8 @@ rank: 571
 sfi: 62.26
 sources: [wordnet, llm]
 status: enriched
+chart: material
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,16 @@ concerned with worldly rather than spiritual interests
 - builds_on: [[stuff]] — Use 'material' when referring to the physical components of an object, especially in a more formal or descriptive context than 'stuff'.
 - builds_on: [[textile]] — Use 'material' as a general term for any fabric or substance used in making things; 'textile' is more specific to woven or knitted artifacts.
 - builds_on: [[substance]] — Use 'material' instead of 'substance' when specifying the type of stuff something is made from, especially in manufacturing, construction, or craft contexts.
+- collocation: [[brittle]]
+- collocation: [[carbonaceous]]
+- collocation: [[classified]]
+- synonym: [[copolymer]]
+- collocation: [[documental]]
+- collocation: [[evidentiary]]
+- collocation: [[fissile]]
+- collocation: [[ligneous]]
+- collocation: [[opaque]]
+- collocation: [[prefatory]]
+- collocation: [[reprocess]]
+- synonym: [[earthly]]
+- collocation: [[friable]]

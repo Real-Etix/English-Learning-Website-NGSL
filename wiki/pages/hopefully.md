@@ -9,6 +9,8 @@ rank: 2615
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: hopefully
+region: hopefully
 ---
 
 ## Definition

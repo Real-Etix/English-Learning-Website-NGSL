@@ -9,6 +9,8 @@ rank: 288
 sfi: 55.99
 sources: [wordnet, llm]
 status: enriched
+chart: armpit
+region: armpit
 ---
 
 ## Definition

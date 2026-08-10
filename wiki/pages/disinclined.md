@@ -6,6 +6,8 @@ pos: adjective
 forms: [disinclined]
 sources: [llm]
 status: enriched
+chart: they
+region: you
 ---
 
 ## Definition

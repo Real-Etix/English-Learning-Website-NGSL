@@ -9,6 +9,8 @@ rank: 2115
 sfi: 55.17
 sources: []
 status: seeded
+chart: drift
+region: drift
 ---
 
 ## Definition
@@ -19,3 +21,6 @@ _No sourced examples yet._
 
 ## Connections
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
+- synonym: [[alongside]]
+- synonym: [[by]]
+- synonym: [[near]]

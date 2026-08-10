@@ -9,6 +9,8 @@ rank: 1480
 sfi: 57.49
 sources: [wordnet, llm]
 status: enriched
+chart: lobby
+region: lobby
 ---
 
 ## Definition
@@ -21,3 +23,11 @@ an interior passage or corridor onto which rooms open
 - synonym: [[hallway]]
 - advanced_form: [[corridor]] — Use 'corridor' instead of 'hall' in formal or institutional settings like hospitals, schools, or hotels.
 - advanced_form: [[passageway]] — Use 'passageway' when emphasizing a connecting route, often narrower or less formal than a main hall.
+- collocation: [[cavernous]]
+- collocation: [[commodious]]
+- collocation: [[guild]]
+- synonym: [[manor]]
+- synonym: [[palace]]
+- synonym: [[pavilion]]
+- synonym: [[vestibule]]
+- collocation: [[cinema]]

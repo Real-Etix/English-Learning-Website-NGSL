@@ -9,6 +9,8 @@ rank: 145
 sfi: 57.19
 sources: [wordnet, llm]
 status: enriched
+chart: world
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,10 @@ spanning or extending throughout the entire world
 - advanced_form: [[global]] — Use 'global' for abstract or broad concepts; 'worldwide' is more concrete (e.g., worldwide shipping).
 - advanced_form: [[international]] — Use 'international' when emphasizing relations between countries; 'worldwide' implies covering all regions.
 - advanced_form: [[universal]] — Use 'universal' for principles or truths that apply everywhere; 'worldwide' is more literal geographic.
+- collocation: [[communion]]
+- synonym: [[planetary]]
+- synonym: [[internationally]]
+- collocation: [[company]]
+- collocation: [[network]]
+- collocation: [[recognition]]
+- collocation: [[phenomenon]]

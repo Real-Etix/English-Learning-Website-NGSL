@@ -6,6 +6,8 @@ pos: adjective
 forms: [venturesome]
 sources: [llm]
 status: enriched
+chart: active
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[entrepreneurial]] — Use 'venturesome' to highlight a bold, risk-taking spirit, often in business contexts.
+- synonym: [[bold]]
+- synonym: [[enterprising]]
+- synonym: [[audacious]]
+- collocation: [[spirit]]
+- collocation: [[explorer]]
+- collocation: [[investor]]
+- collocation: [[undertaking]]
+- collocation: [[journey]]

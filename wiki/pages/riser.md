@@ -6,6 +6,8 @@ pos: noun
 forms: [riser]
 sources: [llm]
 status: enriched
+chart: measure
+region: you
 ---
 
 ## Definition

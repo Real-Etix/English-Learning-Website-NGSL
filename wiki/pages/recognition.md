@@ -9,6 +9,8 @@ rank: 2013
 sfi: 55.5
 sources: [wordnet, llm]
 status: enriched
+chart: quotation
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,7 @@ the state or quality of being recognized or acknowledged
 - builds_on: [[gratitude]] — Use it to emphasize formal appreciation or credit given.
 - advanced_form: [[commendation]] — Use when recognition is formal or official, often from an authority.
 - advanced_form: [[accolade]] — Use when recognition is a prestigious honor or award.
+- synonym: [[acknowledgment]]
+- synonym: [[attribution]]
+- synonym: [[laurel]]
+- collocation: [[worldwide]]

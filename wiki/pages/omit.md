@@ -9,6 +9,8 @@ rank: 280
 sfi: 55.2
 sources: [wordnet, llm]
 status: enriched
+chart: omit
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ _No sourced examples yet._
 - advanced_form: [[exclude]] — Use 'exclude' when you want to emphasize the deliberate act of not allowing something to be part of a group or list; 'omit' is more general.
 - advanced_form: [[elide]] — Use 'elide' in formal or academic contexts to mean deliberately leaving out details or steps, often for conciseness; 'omit' is more common.
 - advanced_form: [[expunge]] — Use 'expunge' to emphasize the complete removal or erasure of something, especially from documents or memories; 'omit' does not imply permanent removal.
+- builds_on: [[exclude]] — Use when leaving something out of a list, text, or group, often deliberately.

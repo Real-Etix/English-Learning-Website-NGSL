@@ -9,6 +9,8 @@ rank: 784
 sfi: 52.88
 sources: [wordnet, llm]
 status: enriched
+chart: levy
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,5 @@ _No sourced examples yet._
 - advanced_form: [[tariff]] — Use 'tariff' specifically for taxes on imported or exported goods; it is more specialized than the general 'levy'.
 - builds_on: [[fee]] — Use 'levy' when the fee is officially imposed by an authority, like a government, often as a tax or mandatory charge.
 - builds_on: [[exact]] — Use 'levy' when referring to officially imposing a tax, fee, or fine.
+- synonym: [[dues]]
+- builds_on: [[tax]] — Use when focusing on the official act of collecting or imposing a tax.

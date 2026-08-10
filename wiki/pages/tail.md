@@ -9,6 +9,8 @@ rank: 2540
 sfi: 53.83
 sources: [wordnet, llm]
 status: enriched
+chart: arm
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,4 @@ _No sourced examples yet._
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[appendage]] — Use 'appendage' when emphasizing the tail as an external body part extending from the main body, often in technical or formal descriptions.
 - advanced_form: [[cauda]] — Use 'cauda' in scientific or anatomical contexts to refer specifically to the tail of a vertebrate, especially in zoology or medicine.
+- collocation: [[rotor]]

@@ -6,6 +6,8 @@ pos: verb
 forms: [wallop]
 sources: [llm]
 status: enriched
+chart: strike
+region: you
 ---
 
 ## Definition

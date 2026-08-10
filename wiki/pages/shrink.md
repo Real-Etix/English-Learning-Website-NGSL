@@ -9,6 +9,8 @@ rank: 211
 sfi: 55.74
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: shrink
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,6 @@ wither, as with a loss of moisture
 - advanced_form: [[shrivel]] — Use 'shrivel' instead of 'shrink' when emphasizing the wrinkling and loss of moisture, especially for organic matter.
 - advanced_form: [[wilt]] — Use 'wilt' instead of 'shrink' when referring to plants or things that droop and lose stiffness due to lack of moisture.
 - advanced_form: [[desiccate]] — Use 'desiccate' instead of 'shrink' for a formal tone, especially in scientific or technical contexts describing thorough drying.
+- synonym: [[dwindle]]
+- synonym: [[psychologist]]
+- synonym: [[psychotherapist]]

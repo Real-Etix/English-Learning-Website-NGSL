@@ -6,6 +6,8 @@ pos: adverb
 forms: [rearward]
 sources: [llm]
 status: enriched
+chart: contrary
+region: you
 ---
 
 ## Definition

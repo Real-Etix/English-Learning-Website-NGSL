@@ -6,6 +6,8 @@ pos: adjective
 forms: [torrid]
 sources: [llm]
 status: enriched
+chart: yield
+region: you
 ---
 
 ## Definition

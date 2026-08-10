@@ -6,6 +6,8 @@ pos: adverb
 forms: [expertly]
 sources: [llm]
 status: enriched
+chart: well
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,6 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[professionally]] — Use when highlighting high level of expertise or mastery, stronger than 'professionally'.
+- synonym: [[adeptly]]
+- synonym: [[consummately]]
+- synonym: [[proficiently]]

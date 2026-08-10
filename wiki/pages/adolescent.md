@@ -9,6 +9,8 @@ rank: 125
 sfi: 58.461
 sources: [wordnet, llm]
 status: enriched
+chart: youth
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,4 @@ relating to or peculiar to or suggestive of an adolescent
 - builds_on: [[teen]] — Use 'adolescent' in formal or clinical contexts; 'teen' is more casual.
 - builds_on: [[youth]] — Use 'adolescent' instead of 'youth' when referring to someone in the teenage years, often implying a stage of development.
 - builds_on: [[teenager]] — Use 'adolescent' in formal or clinical contexts to emphasize the developmental stage rather than just age.
+- synonym: [[youngster]]

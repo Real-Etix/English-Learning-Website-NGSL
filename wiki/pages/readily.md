@@ -9,6 +9,8 @@ rank: 330
 sfi: 56.553
 sources: [wordnet, llm]
 status: enriched
+chart: easy
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,10 @@ without much difficulty
 - builds_on: [[easily]] — Use 'readily' to highlight quickness and willingness, often in contexts involving access or compliance, rather than general ease.
 - advanced_form: [[effortlessly]] — Use 'effortlessly' to emphasize the absence of any struggle or strain, more vivid than 'readily'.
 - advanced_form: [[smoothly]] — Use 'smoothly' when describing a process or action that proceeds without interruptions or obstacles, more formal than 'readily'.
+- synonym: [[simply]]
+- collocation: [[available]]
+- collocation: [[accessible]]
+- collocation: [[apparent]]
+- collocation: [[agree]]
+- collocation: [[combust]]
+- collocation: [[conveyable]]

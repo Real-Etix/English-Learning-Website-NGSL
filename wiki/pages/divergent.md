@@ -6,6 +6,8 @@ pos: adjective
 forms: [divergent]
 sources: [llm]
 status: enriched
+chart: various
+region: you
 ---
 
 ## Definition
@@ -18,3 +20,4 @@ _No sourced examples yet._
 - builds_on: [[different]] — Use 'divergent' when differences are growing or moving apart in direction.
 - builds_on: [[unlike]] — Use 'divergent' when differences are growing apart or moving in separate directions.
 - builds_on: [[distinct]] — Use 'divergent' when highlighting that things move apart or differ increasingly, often in a dynamic or developing sense, rather than the static 'distinct'.
+- synonym: [[dissimilar]]

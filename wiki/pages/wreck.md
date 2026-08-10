@@ -6,6 +6,8 @@ pos: verb
 forms: [wreck]
 sources: [llm]
 status: enriched
+chart: preserve
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,11 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[bust]] — Use 'wreck' for ruining something completely, often through force or disastrous events.
+- synonym: [[ravage]]
+- synonym: [[destroy]]
+- synonym: [[ruin]]
+- synonym: [[damage]]
+- collocation: [[career]]
+- collocation: [[car]]
+- collocation: [[relationship]]
+- collocation: [[reputation]]

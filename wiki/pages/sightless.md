@@ -6,6 +6,8 @@ pos: noun
 forms: [sightless]
 sources: [llm]
 status: enriched
+chart: blind
+region: blind
 ---
 
 ## Definition

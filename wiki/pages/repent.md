@@ -6,6 +6,8 @@ pos: verb
 forms: [repent]
 sources: [llm]
 status: enriched
+chart: proclaim
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[apologize]] — Use 'repent' to express deep regret and a change of heart, often with a moral or religious tone.
+- synonym: [[expiate]]

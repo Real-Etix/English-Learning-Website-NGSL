@@ -6,6 +6,8 @@ pos: noun
 forms: [iciness]
 sources: [llm]
 status: enriched
+chart: chill
+region: chill
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[chill]] — Use 'iciness' for a vivid, descriptive term suggesting extreme cold, often with a biting quality.
+- synonym: [[frigidity]]
+- collocation: [[bitter]]
+- collocation: [[sudden]]
+- collocation: [[wind]]
+- collocation: [[air]]
+- collocation: [[tone]]

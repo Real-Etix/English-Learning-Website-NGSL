@@ -9,6 +9,8 @@ rank: 1593
 sfi: 57.02
 sources: [wordnet, llm]
 status: enriched
+chart: commission
+region: you
 ---
 
 ## Definition
@@ -26,3 +28,8 @@ _No sourced examples yet._
 - advanced_form: [[board]] — Use 'board' when the group is a formal governing or advisory body, usually with a more permanent or structured role than a commission.
 - advanced_form: [[council]] — Use 'council' when the group is assembled for legislative or advisory purposes, often with elected or appointed members.
 - builds_on: [[appoint]] — Use 'commission' when the task or function involves a specific assignment, often with authority or special responsibility.
+- synonym: [[accredit]]
+- synonym: [[deputation]]
+- synonym: [[depute]]
+- collocation: [[reconciliation]]
+- synonym: [[royalty]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [sham]
 sources: [llm]
 status: enriched
+chart: placebo
+region: placebo
 ---
 
 ## Definition
@@ -16,3 +18,8 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[placebo]] — Use 'sham' when emphasizing the deceptive or fake nature of the treatment, often in clinical contexts.
+- synonym: [[dummy]]
+- synonym: [[farce]]
+- synonym: [[feign]]
+- synonym: [[masquerade]]
+- synonym: [[pretense]]

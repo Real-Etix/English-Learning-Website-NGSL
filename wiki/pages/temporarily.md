@@ -9,6 +9,8 @@ rank: 429
 sfi: 53.58
 sources: [wordnet, llm]
 status: enriched
+chart: permanently
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,5 @@ for a limited time only
 - domain: business
 - advanced_form: [[provisionally]] — Use 'provisionally' when something is done for the time being, subject to confirmation or finalization, more formal than 'temporarily'.
 - advanced_form: [[transiently]] — Use 'transiently' to emphasize a very short, passing duration, often in technical or formal contexts.
+- collocation: [[disabled]]
+- synonym: [[momentarily]]

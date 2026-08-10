@@ -9,6 +9,8 @@ rank: 164
 sfi: 58.82
 sources: [wordnet, llm]
 status: enriched
+chart: shuffle
+region: shuffle
 ---
 
 ## Definition

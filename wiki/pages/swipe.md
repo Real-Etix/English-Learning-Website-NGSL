@@ -6,6 +6,8 @@ pos: noun
 forms: [swipe]
 sources: [llm]
 status: enriched
+chart: rub
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,5 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[wipe]] — Use 'swipe' for a fast, single wiping motion, often across a surface.
+- synonym: [[pilfer]]
+- synonym: [[purloin]]

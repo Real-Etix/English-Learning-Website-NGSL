@@ -6,6 +6,8 @@ pos: verb
 forms: [encircle]
 sources: [llm]
 status: enriched
+chart: band
+region: you
 ---
 
 ## Definition

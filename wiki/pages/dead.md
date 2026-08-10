@@ -9,6 +9,8 @@ rank: 947
 sfi: 59.96
 sources: [wordnet, llm]
 status: enriched
+chart: explicitly
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ no longer having or seeming to have or expecting to have life
 - antonym: [[live]]
 - advanced_form: [[deceased]] — Use 'deceased' when you need a formal or respectful term for someone who has died, especially in official or legal contexts.
 - advanced_form: [[lifeless]] — Use 'lifeless' to emphasize the absence of life or vitality, often for dramatic or sensory descriptions.
+- synonym: [[midwinter]]
+- collocation: [[reanimate]]
+- synonym: [[fallen]]

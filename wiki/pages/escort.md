@@ -9,6 +9,8 @@ rank: 482
 sfi: 53.14
 sources: [wordnet, llm]
 status: enriched
+chart: attendant
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,6 @@ _No sourced examples yet._
 - advanced_form: [[bodyguard]] — Use 'bodyguard' when protection from physical harm is the primary role, not just accompaniment.
 - advanced_form: [[guardian]] — Use 'guardian' when the escort has broader protective and caregiving responsibilities, often with authority.
 - advanced_form: [[attendant]] — Use 'attendant' when the escort is more focused on service and assistance than security.
+- synonym: [[accompany]]
+- builds_on: [[accompany]] — Use when physically guiding or accompanying someone, especially for safety or formality.
+- synonym: [[convoy]]

@@ -9,6 +9,8 @@ rank: 316
 sfi: 64.92
 sources: [wordnet, llm]
 status: enriched
+chart: course
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,4 @@ _No sourced examples yet._
 - advanced_form: [[variety]] — Use 'variety' when focusing on the range or diversity within a category, more specific than 'sort'.
 - advanced_form: [[genre]] — Use 'genre' for artistic or cultural categories, such as literature, music, or film, rather than general objects.
 - advanced_form: [[classification]] — Use 'classification' for formal or systematic groupings, often in science or libraries, rather than informal 'sort'.
+- collocation: [[of]]

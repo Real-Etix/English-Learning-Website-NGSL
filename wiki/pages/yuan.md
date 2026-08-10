@@ -9,6 +9,8 @@ rank: 912
 sfi: 51.51
 sources: [wordnet, llm]
 status: enriched
+chart: yuan
+region: yuan
 ---
 
 ## Definition

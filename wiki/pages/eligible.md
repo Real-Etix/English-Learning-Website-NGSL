@@ -9,6 +9,8 @@ rank: 150
 sfi: 56.99
 sources: [wordnet, llm]
 status: enriched
+chart: eligible
+region: eligible
 ---
 
 ## Definition
@@ -23,3 +25,5 @@ qualified for or allowed or worthy of being chosen
 - domain: business
 - advanced_form: [[entitled]] — Use 'entitled' when emphasizing a legal or moral right, not just meeting criteria.
 - advanced_form: [[admissible]] — Use 'admissible' in formal or legal contexts to stress being allowed by rules.
+- collocation: [[elector]]
+- collocation: [[electors]]

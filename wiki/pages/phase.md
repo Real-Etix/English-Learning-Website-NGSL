@@ -9,6 +9,8 @@ rank: 1697
 sfi: 56.58
 sources: [wordnet, llm]
 status: enriched
+chart: segment
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,9 @@ _No sourced examples yet._
 - advanced_form: [[chapter]] — Use when emphasizing a distinct, self-contained part of a longer story or process, often with a clear beginning and end, instead of a general phase.
 - advanced_form: [[epoch]] — Use for a long, significant period in history or nature, implying major changes or defining characteristics, instead of a routine phase.
 - advanced_form: [[segment]] — Use for a defined, often smaller portion of a sequence or timeline, similar to phase but more neutral and precise for discrete parts.
+- collocation: [[aqueous]]
+- collocation: [[cephalic]]
+- collocation: [[eruptive]]
+- collocation: [[exploratory]]
+- collocation: [[latency]]
+- collocation: [[preparatory]]

@@ -9,6 +9,8 @@ rank: 200
 sfi: 57.723
 sources: [wordnet, llm]
 status: enriched
+chart: acute
+region: you
 ---
 
 ## Definition
@@ -28,3 +30,4 @@ having or experiencing a rapid onset and short but severe course
 - builds_on: [[sensitive]] — Use 'acute' when the sensitivity is sharp or highly developed, not just emotional.
 - builds_on: [[keen]] — Use 'acute' to emphasize sharpness of perception, especially for senses or mental insight.
 - builds_on: [[intense]] — Use 'acute' for sudden, sharp intensity, especially of physical sensations or emotions.
+- collocation: [[pyrexia]]

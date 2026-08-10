@@ -6,6 +6,8 @@ pos: noun
 forms: [carport]
 sources: [llm]
 status: enriched
+chart: house
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[garage]] — Used instead of 'garage' when the structure is open-sided and attached to a house.
+- synonym: [[shelter]]
+- synonym: [[canopy]]
+- collocation: [[detached]]
+- collocation: [[metal]]
+- collocation: [[roof]]
+- collocation: [[under]]

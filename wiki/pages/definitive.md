@@ -6,6 +6,8 @@ pos: adjective
 forms: [definitive]
 sources: [llm]
 status: enriched
+chart: empirical
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,6 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[final]] — Use when something is authoritative and settles the matter, unlike final which just means last.
 - builds_on: [[diagnostic]] — Use 'definitive' to emphasize that the diagnostic result is conclusive and final, unlike the broader term 'diagnostic'.
+- synonym: [[authoritative]]
+- collocation: [[chemoradiotherapy]]
+- synonym: [[conclusive]]

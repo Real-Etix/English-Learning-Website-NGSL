@@ -6,6 +6,8 @@ pos: noun
 forms: [windscreen]
 sources: [llm]
 status: enriched
+chart: windshield
+region: windshield
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[windshield]] — Use 'windscreen' instead of 'windshield' in British English or formal automotive writing; it is the standard term in the UK and often appears in manuals.
+- synonym: [[autoglass]]
+- synonym: [[glass]]
+- collocation: [[car]]
+- collocation: [[wiper]]

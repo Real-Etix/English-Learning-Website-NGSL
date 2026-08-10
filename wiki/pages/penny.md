@@ -6,6 +6,8 @@ pos: noun
 forms: [penny]
 sources: [llm]
 status: enriched
+chart: cent
+region: cent
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[cent]] — Use 'penny' when referring to the one-cent coin in US or UK currency, especially in informal contexts.
+- synonym: [[centavo]]

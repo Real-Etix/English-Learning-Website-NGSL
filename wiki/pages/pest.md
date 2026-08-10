@@ -9,6 +9,8 @@ rank: 644
 sfi: 53.215
 sources: [wordnet, llm]
 status: enriched
+chart: insect
+region: insect
 ---
 
 ## Definition
@@ -23,3 +25,4 @@ _No sourced examples yet._
 - builds_on: [[insect]] — Use 'pest' specifically when referring to insects that cause harm or annoyance to humans, crops, or property.
 - advanced_form: [[plague]] — Use 'plague' instead of 'pest' when referring to the specific infectious disease, as 'pest' is a much broader term for any annoying organism.
 - advanced_form: [[pestilence]] — Use 'pestilence' in formal or historical contexts to describe a devastating outbreak, rather than the more general 'pest'.
+- synonym: [[mosquito]]

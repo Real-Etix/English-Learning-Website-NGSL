@@ -9,6 +9,8 @@ rank: 394
 sfi: 55.438
 sources: [wordnet, dictionaryapi, llm]
 status: enriched
+chart: patron
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,7 @@ person who makes a gift of property
 - advanced_form: [[benefactor]] — Use 'benefactor' when emphasizing a generous gift that helps a cause or institution, rather than a simple donation.
 - advanced_form: [[patron]] — Use 'patron' for someone who consistently supports a specific person, organization, or the arts, often with ongoing financial backing.
 - builds_on: [[contributor]] — Use 'donor' for formal or charitable financial contributions, especially to organizations.
+- collocation: [[donee]]
+- synonym: [[grantor]]
+- collocation: [[munificent]]
+- collocation: [[hydron]]

@@ -6,6 +6,8 @@ pos: noun
 forms: [epistle]
 sources: [llm]
 status: enriched
+chart: correspondence
+region: you
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: noun
 forms: [vault]
 sources: [llm]
 status: enriched
+chart: activate
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,11 @@ _No sourced examples yet._
 - builds_on: [[ceiling]] — Use 'vault' for an arched or curved ceiling, common in architecture and large buildings.
 - builds_on: [[chamber]] — Use 'vault' instead of 'chamber' when emphasizing security, a strong enclosure, or an arched roof.
 - builds_on: [[leap]] — Use 'vault' when the leap involves using hands or arms to propel oneself over an obstacle.
+- synonym: [[basement]]
+- synonym: [[dome]]
+- synonym: [[grave]]
+- builds_on: [[basement]] — Use for an underground room designed for secure storage or protection.
+- builds_on: [[archive]] — Use when stressing security and protection, like a bank vault or a digital vault for sensitive files.
+- synonym: [[cellar]]
+- synonym: [[firmament]]
+- synonym: [[subbasement]]

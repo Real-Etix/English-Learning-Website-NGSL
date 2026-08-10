@@ -6,6 +6,8 @@ pos: noun
 forms: [upkeep]
 sources: [llm]
 status: enriched
+chart: deal
+region: you
 ---
 
 ## Definition

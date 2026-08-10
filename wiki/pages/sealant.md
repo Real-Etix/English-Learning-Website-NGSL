@@ -6,6 +6,8 @@ pos: noun
 forms: [sealant]
 sources: [llm]
 status: enriched
+chart: close
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,4 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[seal]] — Use when referring to a synthetic compound designed specifically for sealing gaps and providing a waterproof barrier.
+- synonym: [[caulk]]

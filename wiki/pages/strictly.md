@@ -9,6 +9,8 @@ rank: 315
 sfi: 56.653
 sources: [wordnet, llm]
 status: enriched
+chart: right
+region: you
 ---
 
 ## Definition
@@ -27,3 +29,8 @@ restricted to something
 - advanced_form: [[solely]] — Use 'solely' to stress that something is only for one thing or person, like 'strictly' but with a more formal tone.
 - advanced_form: [[purely]] — Use 'purely' to indicate that something is only for a particular reason, similar to 'strictly' but with a sense of being unmixed.
 - builds_on: [[literally]] — Use 'strictly' to mean 'in a strict or exact sense', without any exaggeration or figurative meaning, replacing 'literally' when precision is meant.
+- collocation: [[circumscribed]]
+- collocation: [[construe]]
+- collocation: [[licit]]
+- collocation: [[restricted]]
+- collocation: [[prohibited]]

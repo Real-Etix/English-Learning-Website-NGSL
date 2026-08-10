@@ -9,6 +9,8 @@ rank: 601
 sfi: 53.775
 sources: [wordnet, llm]
 status: enriched
+chart: powder
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,5 @@ of or relating to or comprising atoms
 - domain: academic
 - advanced_form: [[atomistic]] — Use this to emphasize the philosophical or scientific perspective of atoms as fundamental units.
 - advanced_form: [[particulate]] — Use this when focusing on matter in the form of small distinct particles, often in environmental or mechanical contexts.
+- collocation: [[bomb]]
+- collocation: [[holocaust]]

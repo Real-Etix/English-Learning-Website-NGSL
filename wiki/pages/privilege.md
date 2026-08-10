@@ -9,6 +9,8 @@ rank: 2437
 sfi: 54.18
 sources: [wordnet, llm]
 status: enriched
+chart: upbeat
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - advanced_form: [[prerogative]] — Use 'prerogative' to emphasize an exclusive right or privilege tied to a specific role or position.
 - advanced_form: [[entitlement]] — Use 'entitlement' to highlight a privilege that is perceived as a right, often with a negative connotation of undeservedness.
 - advanced_form: [[perquisite]] — Use 'perquisite' (often shortened to 'perk') for a formal, job-related privilege or benefit.
+- collocation: [[prepayment]]

@@ -9,6 +9,8 @@ rank: 9
 sfi: 81.39
 sources: [curated]
 status: verified
+chart: assert
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,8 @@ Used to talk about a thing, animal, or idea already mentioned.
 
 ## Connections
 - collocation: [[play]]
+- collocation: [[although]]
+- collocation: [[make]]
+- collocation: [[liken]]
+- collocation: [[moreover]]
+- collocation: [[whether]]

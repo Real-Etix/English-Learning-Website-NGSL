@@ -6,6 +6,8 @@ pos: adjective
 forms: [outflowing]
 sources: [llm]
 status: enriched
+chart: pipeline
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,9 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[offshore]] — Use 'outflowing' to describe air moving outward from land, a more technical term.
+- synonym: [[outgoing]]
+- collocation: [[air]]
+- collocation: [[water]]
+- collocation: [[current]]
+- collocation: [[tide]]
+- collocation: [[stream]]

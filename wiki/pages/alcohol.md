@@ -9,6 +9,8 @@ rank: 2214
 sfi: 54.91
 sources: [wordnet, llm]
 status: enriched
+chart: extract
+region: you
 ---
 
 ## Definition
@@ -21,3 +23,8 @@ a liquor or brew containing alcohol as the active agent
 <!-- awaiting LLM enrichment: intensity / advanced_form -->
 - advanced_form: [[spirits]] — Used for distilled alcoholic beverages, often in formal or technical contexts.
 - advanced_form: [[intoxicant]] — A formal term for any substance that causes intoxication, including alcohol; useful in legal or medical contexts.
+- collocation: [[bootleg]]
+- collocation: [[detoxificationunit]]
+- collocation: [[imbibe]]
+- collocation: [[prohibition]]
+- collocation: [[rehabilitationcenter]]

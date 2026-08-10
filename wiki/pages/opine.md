@@ -6,6 +6,8 @@ pos: verb
 forms: [opine]
 sources: [llm]
 status: enriched
+chart: think
+region: you
 ---
 
 ## Definition

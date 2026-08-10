@@ -9,6 +9,8 @@ rank: 1250
 sfi: 58.45
 sources: [wordnet, llm]
 status: enriched
+chart: dine
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,10 @@ _No sourced examples yet._
 - advanced_form: [[repast]] — Use 'repast' for a formal or literary sense of a meal, often implying a specific occasion or simplicity.
 - advanced_form: [[feast]] — Use 'feast' for a large, elaborate, or celebratory meal.
 - advanced_form: [[spread]] — Use 'spread' for an informal, abundant meal with many dishes laid out.
+- collocation: [[alfresco]]
+- collocation: [[delightful]]
+- synonym: [[djeuner]]
+- synonym: [[maize]]
+- collocation: [[noonday]]
+- collocation: [[partake]]
+- collocation: [[insubstantial]]

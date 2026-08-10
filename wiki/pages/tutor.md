@@ -9,6 +9,8 @@ rank: 811
 sfi: 49.932
 sources: [wordnet, llm]
 status: enriched
+chart: mentor
+region: you
 ---
 
 ## Definition
@@ -22,3 +24,4 @@ _No sourced examples yet._
 - builds_on: [[teacher]] — Use 'tutor' when referring to individualized or small-group teaching.
 - advanced_form: [[mentor]] — Use 'mentor' for long‑term guidance and career development, not just academic tutoring.
 - advanced_form: [[coach]] — Use 'coach' when focusing on skill‑building and performance in a specific activity.
+- synonym: [[preceptor]]

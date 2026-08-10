@@ -9,6 +9,8 @@ rank: 383
 sfi: 53.98
 sources: [wordnet, llm]
 status: enriched
+chart: beneficial
+region: you
 ---
 
 ## Definition
@@ -25,3 +27,5 @@ aware or expressing awareness of things as they really are
 - advanced_form: [[pragmatic]] — Use 'pragmatic' when emphasizing a focus on practical results rather than ideals or theory.
 - advanced_form: [[sensible]] — Use 'sensible' when highlighting sound judgment and reasonableness, especially in everyday decisions.
 - advanced_form: [[levelheaded]] — Use 'levelheaded' to stress calm, rational thinking without emotional bias.
+- synonym: [[representational]]
+- synonym: [[unsentimental]]

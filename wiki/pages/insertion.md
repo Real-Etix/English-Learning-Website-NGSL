@@ -6,6 +6,8 @@ pos: noun
 forms: [insertion]
 sources: [llm]
 status: enriched
+chart: entry
+region: you
 ---
 
 ## Definition
@@ -16,3 +18,13 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[entry]] — Use 'insertion' to emphasize the act or result of placing an item into a record.
+- synonym: [[addition]]
+- synonym: [[insert]]
+- synonym: [[inclusion]]
+- synonym: [[supplement]]
+- synonym: [[note]]
+- collocation: [[needle]]
+- collocation: [[tube]]
+- collocation: [[data]]
+- collocation: [[site]]
+- synonym: [[parenthetical]]

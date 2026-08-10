@@ -9,6 +9,8 @@ rank: 2195
 sfi: 54.94
 sources: [wordnet, llm]
 status: enriched
+chart: shift
+region: you
 ---
 
 ## Definition
@@ -24,3 +26,6 @@ _No sourced examples yet._
 - advanced_form: [[shift]] — Use 'shift' for a noticeable change in direction or focus, often less formal than 'transition' but more dynamic.
 - advanced_form: [[conversion]] — Use 'conversion' when something is transformed into a completely different form or function.
 - advanced_form: [[metamorphosis]] — Use 'metamorphosis' for a profound, often dramatic transformation, implying a complete change in nature or character.
+- collocation: [[adulthood]]
+- synonym: [[vinyasa]]
+- builds_on: [[convert]] — Use when emphasizing the process of moving from one system or policy to another, often step by step.

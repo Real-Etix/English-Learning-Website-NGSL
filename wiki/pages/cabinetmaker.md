@@ -6,6 +6,8 @@ pos: noun
 forms: [cabinetmaker]
 sources: [llm]
 status: enriched
+chart: carpenter
+region: carpenter
 ---
 
 ## Definition
@@ -16,3 +18,7 @@ _No sourced examples yet._
 
 ## Connections
 - builds_on: [[carpenter]] — Use 'cabinetmaker' for a carpenter specializing in making cabinets, furniture, and intricate wooden items.
+- synonym: [[joiner]]
+- collocation: [[master]]
+- collocation: [[apprentice]]
+- collocation: [[custom]]

@@ -6,6 +6,8 @@ pos: adverb
 forms: [quadripartitely]
 sources: [llm]
 status: enriched
+chart: quarterly
+region: quarterly
 ---
 
 ## Definition

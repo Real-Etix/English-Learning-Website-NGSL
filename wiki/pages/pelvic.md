@@ -9,6 +9,8 @@ rank: 178
 sfi: 58.3
 sources: [wordnet, llm]
 status: enriched
+chart: pelvic
+region: pelvic
 ---
 
 ## Definition

@@ -6,6 +6,8 @@ pos: adjective
 forms: [incessant]
 sources: [llm]
 status: enriched
+chart: operative
+region: you
 ---
 
 ## Definition
@@ -19,3 +21,4 @@ _No sourced examples yet._
 - builds_on: [[constant]] — Use 'incessant' to describe an unending, often annoying or relentless action or state; implies no breaks or pauses.
 - builds_on: [[persistent]] — Use 'incessant' to emphasize something annoyingly or tediously constant, more formal than 'persistent'.
 - builds_on: [[continuous]] — Use when describing something that is nonstop and often annoying or persistent.
+- synonym: [[ceaseless]]

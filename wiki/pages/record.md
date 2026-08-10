@@ -9,6 +9,8 @@ rank: 344
 sfi: 64.59
 sources: [wordnet, llm]
 status: enriched
+chart: account
+region: you
 ---
 
 ## Definition
@@ -23,3 +25,12 @@ anything (such as a document or a phonograph record or a photograph) providing p
 - advanced_form: [[archive]] — Use 'archive' for a collection of historical records or documents kept for reference, often implying preservation and organization.
 - advanced_form: [[dossier]] — Use 'dossier' for a file containing detailed information about a person or topic, especially in official or investigative contexts.
 - builds_on: [[document]] — Use 'record' when referring to a document that serves as an official account or evidence.
+- collocation: [[distinguished]]
+- collocation: [[expungement]]
+- collocation: [[illustrious]]
+- collocation: [[impeccable]]
+- collocation: [[macro]]
+- collocation: [[observation]]
+- synonym: [[yearbook]]
+- collocation: [[blameless]]
+- collocation: [[nonattendance]]

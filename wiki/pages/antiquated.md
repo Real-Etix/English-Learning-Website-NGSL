@@ -6,6 +6,8 @@ pos: adjective
 forms: [antiquated]
 sources: [llm]
 status: enriched
+chart: historical
+region: you
 ---
 
 ## Definition
@@ -17,3 +19,5 @@ _No sourced examples yet._
 ## Connections
 - builds_on: [[outdated]] — Use 'antiquated' to emphasize something is very old and unsuitable for modern needs.
 - builds_on: [[historic]] — Use 'antiquated' to suggest something is out of date, whereas 'historic' can be neutral or positive.
+- synonym: [[obsolete]]
+- synonym: [[outmoded]]

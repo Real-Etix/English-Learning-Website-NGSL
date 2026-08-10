@@ -9,6 +9,8 @@ rank: 516
 sfi: 53.25
 sources: [wordnet, llm]
 status: enriched
+chart: antioxidant
+region: antioxidant
 ---
 
 ## Definition

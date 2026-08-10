@@ -6,6 +6,8 @@ pos: noun
 forms: [ambiance]
 sources: [llm]
 status: enriched
+chart: look
+region: you
 ---
 
 ## Definition
