@@ -17,6 +17,8 @@ const LEARNING_ROUTE_LISTS = new Set(["ngsl", "toeic", "business", "academic", "
 
 type RouteCandidate = LadderRung & { targetAdvanced: boolean; targetDegree: number };
 
+const compareOrdinal = (left: string, right: string) => left < right ? -1 : left > right ? 1 : 0;
+
 function hash(value: string) {
   let hashValue = 2166136261;
   for (let index = 0; index < value.length; index += 1) {
@@ -38,7 +40,15 @@ export function isLearningRouteList(slug: string): boolean {
   return LEARNING_ROUTE_LISTS.has(slug);
 }
 
+export function getLearningRouteList(request: Request): string | null {
+  const requestedList = new URL(request.url).searchParams.get("list");
+  const list = requestedList === null ? "ngsl" : requestedList;
+  return isLearningRouteList(list) ? list : null;
+}
+
 export function buildRunStops(graph: LiteGraph, day: string, limit: number): RunStop[] {
+  if (limit <= 0) return [];
+
   const byChart = new Map<string, RunStop[]>();
   for (const node of graph.nodes) {
     if (!node.chart || node.chart === "drift" || node.degree <= 0) continue;
@@ -62,6 +72,8 @@ export function buildRunStops(graph: LiteGraph, day: string, limit: number): Run
 }
 
 export function buildLadderRungs(graph: LiteGraph, ownedLemmas: Set<string>, limit: number): LadderRung[] {
+  if (limit <= 0) return [];
+
   const nodes = new Map(graph.nodes.map((node) => [node.lemma, node]));
   const candidates: RouteCandidate[] = [];
 
@@ -92,9 +104,9 @@ export function buildLadderRungs(graph: LiteGraph, ownedLemmas: Set<string>, lim
     Number(right.baseHeld) - Number(left.baseHeld)
     || Number(right.targetAdvanced) - Number(left.targetAdvanced)
     || right.targetDegree - left.targetDegree
-    || left.to.localeCompare(right.to)
-    || left.from.localeCompare(right.from)
-    || left.type.localeCompare(right.type),
+    || compareOrdinal(left.to, right.to)
+    || compareOrdinal(left.from, right.from)
+    || compareOrdinal(left.type, right.type),
   );
 
   const seenTargets = new Set<string>();
