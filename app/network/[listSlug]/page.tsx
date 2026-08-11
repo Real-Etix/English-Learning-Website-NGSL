@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import { IBM_Plex_Mono, IBM_Plex_Sans, Instrument_Serif } from "next/font/google";
 
-import { StarAtlas } from "@/components/network/star-atlas";
+import { StarAtlasEntry } from "@/components/network/star-atlas-entry";
 import { getListBySlug } from "@/lib/content/content-service";
-import { loadListGraph } from "@/lib/wiki/graph-store";
+import { loadGalaxyManifest } from "@/lib/galaxy/manifest-store";
 import type { LearningListSlug } from "@/lib/types";
 
 // The Star Atlas typeface system — a serif for display, Plex Sans for body,
@@ -48,14 +48,14 @@ export default async function NetworkPage({
     notFound();
   }
 
-  const graph = await loadListGraph(listSlug);
+  const manifest = await loadGalaxyManifest(listSlug);
 
   return (
     <div
       className={`${serif.variable} ${sans.variable} ${mono.variable}`}
       style={{ position: "fixed", inset: 0, background: "#070B16" }}
     >
-      <StarAtlas graph={graph} listSlug={listSlug} />
+      <StarAtlasEntry manifest={manifest} listSlug={listSlug} />
     </div>
   );
 }

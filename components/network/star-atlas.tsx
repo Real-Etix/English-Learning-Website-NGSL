@@ -3,13 +3,21 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-import { toAtlas, type AtlasChart, type AtlasWord } from "@/components/network/galaxy/atlas";
-import { StarEngine } from "@/components/network/galaxy/engine";
+import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
+import {
+  GalaxyController,
+  galaxyStoreOptions,
+  type GalaxyControllerStatus,
+} from "@/components/network/galaxy/galaxy-controller";
+import { ProgressiveStarEngine } from "@/components/network/galaxy/progressive-engine";
+import { GalaxySearchCatalog } from "@/components/network/galaxy/search-catalog";
 import { wordXp } from "@/lib/collection/xp";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
 import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
-import type { LiteGraph, WikiPage } from "@/lib/wiki/parse-wiki";
 import type { WordDetail } from "@/lib/content/word-detail";
+import type { LadderRung, RunStop } from "@/lib/galaxy/learning-routes";
+import type { ChartShard, GalaxyChart, GalaxyManifest, SearchEntry } from "@/lib/galaxy/types";
+import type { WikiPage } from "@/lib/wiki/parse-wiki";
 
 /* ============================================================================
    Star Atlas — a faithful rebuild of the design-handoff prototype.
@@ -66,6 +74,34 @@ const norm = (s: string) => String(s || "").trim().toLowerCase().replace(/[^a-z]
 function hash(str: string) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
 function rng(seed: number) { let s = seed; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
 
+type WordMeta = Omit<SearchEntry, "normalized">;
+type AtlasModel = {
+  byLemma: Map<string, WordMeta>;
+  chartById: Map<string, GalaxyChart>;
+  wordsByChart: Map<string, WordMeta[]>;
+  listedCharts: GalaxyChart[];
+};
+
+type AtlasResources = {
+  engine: ProgressiveStarEngine;
+  store: ChartShardStore;
+  catalog: GalaxySearchCatalog;
+  controller: GalaxyController;
+};
+
+const INITIAL_CONTROLLER_STATUS: GalaxyControllerStatus = {
+  chartId: null,
+  chartLoad: "idle",
+  chartError: null,
+  searchLoad: "idle",
+};
+
+function chartBlurb(chart: GalaxyChart): string {
+  return chart.id === "drift"
+    ? "Unconnected stars — words that haven't found their neighbours yet."
+    : `Words that orbit “${chart.name}” — ${chart.wordCount} stars linked by meaning.`;
+}
+
 type WordResponse = { page: WikiPage; detail: WordDetail | null; rarity: WordRarity | null };
 type QuizKind = "type" | "word";
 type QuizState = {
@@ -76,27 +112,26 @@ type QuizState = {
 type Toast = { glyph: string; text: string; sub: string; tone: "mint" | "gold" };
 type ComposeState = { task: ComposeTask; text: string; text2: string; verdict: Verdict | null; gate: string | null; busy: boolean; attempts: number; tried: string[] };
 
-export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: string }) {
-  // ---- client atlas model (from the pre-generated lite graph) ----
-  const atlas = useMemo(() => {
-    const data = toAtlas(graph);
-    const byLemma = new Map<string, AtlasWord>();
-    for (const w of data.words) byLemma.set(w.lemma, w);
-    const chartById = new Map<string, AtlasChart>();
-    for (const c of data.charts) chartById.set(c.id, c);
-    const wordsByChart = new Map<string, AtlasWord[]>();
-    for (const w of data.words) {
-      const arr = wordsByChart.get(w.chart) ?? [];
-      arr.push(w);
-      wordsByChart.set(w.chart, arr);
-    }
-    // Every real chart (Louvain communities are already coherent + ≥5 words),
-    // biggest first — the rail scrolls, no cap. "drift" field stars aren't a chart.
-    const listedCharts = data.charts
-      .filter((c) => c.id !== "drift" && (wordsByChart.get(c.id)?.length ?? 0) > 0)
-      .sort((a, b) => (wordsByChart.get(b.id)?.length ?? 0) - (wordsByChart.get(a.id)?.length ?? 0));
-    return { data, byLemma, chartById, wordsByChart, listedCharts };
-  }, [graph]);
+export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; listSlug: string }) {
+  const [catalogEntries, setCatalogEntries] = useState<SearchEntry[] | null>(null);
+  const [residentShards, setResidentShards] = useState<Map<string, ChartShard>>(() => new Map());
+  const atlas = useMemo<AtlasModel>(() => {
+    const byLemma = new Map<string, WordMeta>();
+    const wordsByChart = new Map<string, WordMeta[]>();
+    const addWord = (word: WordMeta) => {
+      byLemma.set(word.lemma, word);
+      const words = wordsByChart.get(word.chartId) ?? [];
+      if (!words.some((candidate) => candidate.lemma === word.lemma)) words.push(word);
+      wordsByChart.set(word.chartId, words);
+    };
+    for (const entry of catalogEntries ?? []) addWord(entry);
+    for (const shard of residentShards.values()) for (const word of shard.words) addWord(word);
+    const chartById = new Map(manifest.charts.map((item) => [item.id, item]));
+    const listedCharts = manifest.charts
+      .filter((item) => item.id !== "drift" && item.wordCount > 0)
+      .sort((left, right) => right.wordCount - left.wordCount);
+    return { byLemma, chartById, wordsByChart, listedCharts };
+  }, [catalogEntries, residentShards, manifest]);
 
   // ---- state ----
   const [view, setView] = useState<"galaxy" | "space" | "board">("galaxy");
@@ -108,6 +143,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
   const [me, setMe] = useState<CollectionSummary | null>(null);
   const [meLoaded, setMeLoaded] = useState(false);
   const [q, setQ] = useState("");
+  const [results, setResults] = useState<SearchEntry[]>([]);
   const [searchFocus, setSearchFocus] = useState(false);
   const [listMenuOpen, setListMenuOpen] = useState(false);
   const [keyOpen, setKeyOpen] = useState(false);
@@ -122,6 +158,10 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
   // tonight's run
   const [runStarted, setRunStarted] = useState(false);
   const [runSeconds, setRunSeconds] = useState(0);
+  const [runStops, setRunStops] = useState<RunStop[]>([]);
+  const [runLoad, setRunLoad] = useState<"idle" | "loading" | "ready" | "error">("idle");
+  const [ladderRungs, setLadderRungs] = useState<LadderRung[]>([]);
+  const [ladderLoad, setLadderLoad] = useState<"idle" | "loading" | "ready" | "error">("idle");
   // composition: words you've produced (solid stars), plus the open task
   const [used, setUsed] = useState<Set<string>>(new Set());
   const [compose, setCompose] = useState<ComposeState | null>(null);
@@ -133,13 +173,20 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
   const [chatInput, setChatInput] = useState("");
   const [chatBusy, setChatBusy] = useState(false);
   const [chatError, setChatError] = useState<string | null>(null);
+  const [controllerStatus, setControllerStatus] = useState<GalaxyControllerStatus>(INITIAL_CONTROLLER_STATUS);
+  const [engineReady, setEngineReady] = useState(false);
+  const [engineError, setEngineError] = useState<string | null>(null);
 
   const hostRef = useRef<HTMLDivElement | null>(null);
-  const engineRef = useRef<StarEngine | null>(null);
+  const resourcesRef = useRef<AtlasResources | null>(null);
+  const selectHandlerRef = useRef<(lemma: string | null) => void>(() => undefined);
+  const chartHandlerRef = useRef<(chartId: string) => void>(() => undefined);
+  const selectionUiRevision = useRef(0);
+  const searchRevision = useRef(0);
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const ringIdx = useRef<number | null>(null);
   const router = useRouter();
-  const currentList = LISTS.find((l) => l.slug === listSlug) ?? { slug: listSlug, label: listSlug.toUpperCase() };
+  const currentList = { slug: listSlug, label: manifest.list.label };
 
   const persistLocal = useCallback((patch: Record<string, unknown>) => {
     try {
@@ -154,45 +201,112 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     toastTimer.current = setTimeout(() => setToast(null), 2800);
   }, []);
 
+  const rememberShard = useCallback((shard: ChartShard) => {
+    setResidentShards((previous) => {
+      if (previous.get(shard.chartId) === shard) return previous;
+      const next = new Map(previous);
+      next.set(shard.chartId, shard);
+      return next;
+    });
+  }, []);
+
+  const loadCatalog = useCallback(async () => {
+    const resources = resourcesRef.current;
+    if (!resources) return null;
+    const entries = await resources.controller.loadCatalog();
+    if (!entries || resourcesRef.current !== resources) return null;
+    setCatalogEntries(entries);
+    return entries;
+  }, []);
+
   // ---- selection ----
   const select = useCallback((lemma: string | null) => {
+    const revision = ++selectionUiRevision.current;
+    const resources = resourcesRef.current;
     if (!lemma) {
       setFocus(null);
-      const e = engineRef.current;
-      if (e) { e.setPanelOffset(narrow ? 0 : -272); e.clearFocus(); }
+      resources?.controller.clearSelection();
+      if (resources) { resources.engine.setPanelOffset(narrow ? 0 : -272); resources.engine.clearFocus(); }
       return;
     }
     setFocus(lemma);
     setTrail((prev) => prev.filter((x) => x !== lemma).concat([lemma]).slice(-5));
     setQ("");
+    setResults([]);
     setSearchFocus(false);
     setRailOpen(false);
-    const e = engineRef.current;
-    if (e) { e.setPanelOffset(narrow ? 0 : 420); e.focusStar(lemma, { keepCamera: false }); }
-  }, [narrow]);
+    resources?.engine.setPanelOffset(narrow ? 0 : 420);
+    if (!resources) return;
+    void resources.controller.openWord(lemma).then((opened) => {
+      if (!opened || revision !== selectionUiRevision.current || resourcesRef.current !== resources) return;
+      setCatalogEntries(resources.catalog.entries());
+      const entry = resources.catalog.get(lemma);
+      if (!entry) return;
+      const shard = resources.store.get(entry.chartId);
+      if (shard) rememberShard(shard);
+      setChart(entry.chartId);
+    });
+  }, [narrow, rememberShard]);
+
+  useEffect(() => {
+    selectHandlerRef.current = select;
+  }, [select]);
 
   // ---- engine mount ----
   useEffect(() => {
-    if (!hostRef.current) return;
-    const engine = new StarEngine(hostRef.current, atlas.data, {
-      onSelect: (lemma) => select(lemma),
-      onZoomLevel: (level) => setZoom(level as "galaxy" | "cluster" | "star"),
+    const host = hostRef.current;
+    if (!host) return;
+    const engine = new ProgressiveStarEngine(host, manifest, {
+      onSelectWord: (lemma) => selectHandlerRef.current(lemma),
+      onSelectChart: (chartId) => chartHandlerRef.current(chartId),
+      onApproachChart: (chartId) => resourcesRef.current?.controller.approachChart(chartId),
+      onZoomLevel: setZoom,
+      onContextFailure: () => setEngineError("The 3D sky could not be restored. Chart controls and search are still available."),
+      onInteractive: () => setEngineReady(true),
     });
-    engineRef.current = engine;
-    return () => { engine.dispose(); engineRef.current = null; };
+    const store = new ChartShardStore(manifest, {
+      ...galaxyStoreOptions(window.innerWidth < 860),
+      onEvict: (chartId) => engine.removeChart(chartId),
+    });
+    const catalog = new GalaxySearchCatalog(manifest);
+    const connection = (navigator as Navigator & { connection?: EventTarget & { saveData?: boolean } }).connection;
+    const controller = new GalaxyController({
+      manifest,
+      store,
+      catalog,
+      engine,
+      saveData: connection?.saveData === true,
+    });
+    const unsubscribe = controller.subscribe(setControllerStatus);
+    const cancelIdlePrefetch = () => controller.approachChart(null);
+    const updateSaveData = () => controller.setSaveData(connection?.saveData === true);
+    host.addEventListener("pointerdown", cancelIdlePrefetch, { passive: true });
+    host.addEventListener("wheel", cancelIdlePrefetch, { passive: true });
+    host.addEventListener("touchstart", cancelIdlePrefetch, { passive: true });
+    connection?.addEventListener("change", updateSaveData);
+    resourcesRef.current = { engine, store, catalog, controller };
+    return () => {
+      unsubscribe();
+      host.removeEventListener("pointerdown", cancelIdlePrefetch);
+      host.removeEventListener("wheel", cancelIdlePrefetch);
+      host.removeEventListener("touchstart", cancelIdlePrefetch);
+      connection?.removeEventListener("change", updateSaveData);
+      resourcesRef.current = null;
+      controller.dispose();
+      engine.dispose();
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [atlas]);
+  }, [manifest.version]);
 
   // push claimed / used / mode / chart / route / offset to the engine
-  useEffect(() => { engineRef.current?.setClaimed(owned); }, [owned]);
-  useEffect(() => { engineRef.current?.setUsed(used); }, [used]);
+  useEffect(() => { resourcesRef.current?.engine.setClaimed(owned); }, [owned]);
+  useEffect(() => { resourcesRef.current?.engine.setUsed(used); }, [used]);
   useEffect(() => {
-    const e = engineRef.current;
+    const e = resourcesRef.current?.engine;
     if (!e) return;
     e.setMode(mode);
-    if (mode === "chart") e.setChart(chart);
-    else e.setChart(null);
-  }, [mode, chart]);
+    if (mode !== "chart") e.setChart(null);
+  }, [mode]);
 
   // responsive
   useEffect(() => {
@@ -220,14 +334,20 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
         if (local.streak) setStreak(local.streak);
         // resume today's run; a new day starts fresh
         if (local.runDay === runDay) { setRunStarted(!!local.runStarted); setRunSeconds(local.runSeconds || 0); }
-        if (d?.me) { setMe(d.me); setOwned(new Set(d.me.lemmas)); setUsed(new Set(d.me.usedLemmas ?? [])); setIntro(d.me.lemmas.length === 0 && !local.introDone); }
+        if (d?.me) {
+          setMe(d.me);
+          setOwned(new Set(d.me.lemmas));
+          setUsed(new Set(d.me.usedLemmas ?? []));
+          setIntro(d.me.lemmas.length === 0 && !local.introDone);
+          if (d.me.lemmas.length > 0) void loadCatalog();
+        }
         else setIntro(!local.introDone);
       })
       .catch(() => {})
       .finally(() => alive && setMeLoaded(true));
     return () => { alive = false; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [loadCatalog]);
 
 
   // fetch detail for the focused star (loading is derived from whether the
@@ -283,7 +403,8 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     // Need the word's definition/example — use the already-fetched detail when present.
     const build = (page: WikiPage) => {
       const r = rng(hash(lemma + owned.size));
-      const siblings = (atlas.wordsByChart.get(atlas.byLemma.get(lemma)?.chart ?? "") || [])
+      const chartId = atlas.byLemma.get(lemma)?.chartId ?? "";
+      const siblings = (residentShards.get(chartId)?.words ?? [])
         .filter((w) => w.lemma !== lemma);
       const others = siblings.sort(() => r() - 0.5).slice(0, 3);
       const ex = page.examples?.[0] || "";
@@ -307,7 +428,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     if (wordData?.page && wordData.page.lemma === lemma) build(wordData.page);
     else fetch(`/api/word/${encodeURIComponent(lemma)}`).then((r) => (r.ok ? r.json() : null))
       .then((d: WordResponse | null) => { if (d?.page) build(d.page); }).catch(() => {});
-  }, [owned, atlas, wordData]);
+  }, [owned, atlas, residentShards, wordData]);
 
   const answerChoice = useCallback((id: string) => {
     setQuiz((q0) => {
@@ -331,7 +452,23 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     });
   }, [doClaim]);
 
-  // keyboard navigation (arrows walk the link ring, Esc lets go, Enter opens check)
+  const focusedNeighbors = useMemo(() => {
+    if (!focus) return [] as { lemma: string; type: string }[];
+    const chartId = atlas.byLemma.get(focus)?.chartId;
+    const shard = chartId ? residentShards.get(chartId) : null;
+    if (!shard) return [];
+    const neighbors: { lemma: string; type: string }[] = [];
+    for (const edge of shard.edges) {
+      if (edge.source === focus) neighbors.push({ lemma: edge.target, type: edge.type });
+      else if (edge.target === focus) neighbors.push({ lemma: edge.source, type: edge.type });
+    }
+    for (const portal of shard.portals) {
+      if (portal.source === focus) neighbors.push({ lemma: portal.target, type: portal.type });
+    }
+    return neighbors;
+  }, [atlas, focus, residentShards]);
+
+  // keyboard navigation (arrows walk the focused resident shard, Esc lets go, Enter opens check)
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
       if (view !== "galaxy") return;
@@ -341,11 +478,11 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
       if (ev.key === "Escape") {
         ev.preventDefault();
         if (focus) select(null);
-        else if (chart) { setChart(null); }
+        else if (chart) { setChart(null); resourcesRef.current?.controller.clearSelection(); }
         return;
       }
       if (typing || !focus) return;
-      const nb = atlas.data.adj[focus] || [];
+      const nb = focusedNeighbors;
       if (ev.key === "Enter") { ev.preventDefault(); openQuiz(focus); return; }
       if (ev.key === "ArrowUp") {
         const up = nb.find((x) => x.type === "advanced_form");
@@ -362,7 +499,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [view, quiz, focus, chart, select, atlas, openQuiz, doClaim]);
+  }, [view, quiz, focus, chart, select, focusedNeighbors, openQuiz]);
 
   // ---- tutor ----
   const sendChat = useCallback((preset?: string) => {
@@ -388,24 +525,75 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
   }, [chatInput, chatBusy, chatLog, listSlug, focus]);
 
   // ---- chart / mode actions ----
+  const loadRun = useCallback(() => {
+    if (runLoad === "loading" || runLoad === "ready") return;
+    setRunLoad("loading");
+    fetch(`/api/run?list=${encodeURIComponent(listSlug)}`)
+      .then(async (response) => {
+        if (!response.ok) throw new Error("Run unavailable");
+        return response.json() as Promise<{ stops?: RunStop[] }>;
+      })
+      .then((data) => {
+        setRunStops(Array.isArray(data.stops) ? data.stops : []);
+        setRunLoad("ready");
+      })
+      .catch(() => setRunLoad("error"));
+  }, [listSlug, runLoad]);
+
+  const loadLadder = useCallback(() => {
+    if (ladderLoad === "loading" || ladderLoad === "ready") return;
+    setLadderLoad("loading");
+    fetch(`/api/ladder?list=${encodeURIComponent(listSlug)}`)
+      .then(async (response) => {
+        if (!response.ok) throw new Error("Ladder unavailable");
+        return response.json() as Promise<{ rungs?: LadderRung[] }>;
+      })
+      .then((data) => {
+        setLadderRungs(Array.isArray(data.rungs) ? data.rungs : []);
+        setLadderLoad("ready");
+      })
+      .catch(() => setLadderLoad("error"));
+  }, [ladderLoad, listSlug]);
+
   const pickChart = useCallback((id: string) => {
     const next = chart === id ? null : id;
+    const revision = ++selectionUiRevision.current;
     setChart(next);
     setFocus(null);
-    const e = engineRef.current;
-    if (e) { e.setPanelOffset(narrow ? 0 : -272); e.clearFocus(); e.setChart(next); }
-  }, [chart, narrow]);
+    const resources = resourcesRef.current;
+    if (!resources) return;
+    resources.engine.setPanelOffset(narrow ? 0 : -272);
+    resources.engine.clearFocus();
+    if (!next) {
+      resources.controller.clearSelection();
+      return;
+    }
+    void resources.controller.openChart(next).then((shard) => {
+      if (!shard || revision !== selectionUiRevision.current || resourcesRef.current !== resources) return;
+      rememberShard(shard);
+    });
+  }, [chart, narrow, rememberShard]);
+
+  useEffect(() => {
+    chartHandlerRef.current = pickChart;
+  }, [pickChart]);
 
   const setModeTo = useCallback((m: "chart" | "run" | "ladder") => {
     setMode(m); setChart(null); setFocus(null);
-    const e = engineRef.current;
-    if (e) { e.setPanelOffset(narrow ? 0 : -272); e.clearFocus(); e.setChart(null); if (m !== "chart") e.resetView(); }
-  }, [narrow]);
+    selectionUiRevision.current += 1;
+    const resources = resourcesRef.current;
+    resources?.controller.clearSelection();
+    if (resources) { resources.engine.setPanelOffset(narrow ? 0 : -272); resources.engine.clearFocus(); if (m !== "chart") resources.engine.resetView(); }
+    if (m === "run") loadRun();
+    if (m === "ladder") loadLadder();
+  }, [loadLadder, loadRun, narrow]);
 
   const resetView = useCallback(() => {
     setChart(null); setFocus(null); setRailOpen(false);
-    const e = engineRef.current;
-    if (e) { e.setPanelOffset(narrow ? 0 : -272); e.resetView(); }
+    selectionUiRevision.current += 1;
+    const resources = resourcesRef.current;
+    resources?.controller.clearSelection();
+    if (resources) { resources.engine.setPanelOffset(narrow ? 0 : -272); resources.engine.resetView(); }
   }, [narrow]);
 
   const speak = useCallback(() => {
@@ -426,76 +614,50 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
   const chartStats = useMemo(() => atlas.listedCharts.map((ch) => {
     const words = atlas.wordsByChart.get(ch.id) || [];
     const got = words.filter((w) => owned.has(w.lemma)).length;
-    return { ch, total: words.length, got, pct: Math.round((got / Math.max(1, words.length)) * 100), done: words.length > 0 && got === words.length };
+    return { ch, total: ch.wordCount, got, pct: Math.round((got / Math.max(1, ch.wordCount)) * 100), done: ch.wordCount > 0 && got === ch.wordCount };
   }), [atlas, owned]);
   const chartsDone = chartStats.filter((c) => c.done).length;
 
   // search
-  const results = useMemo(() => {
-    const query = q.trim().toLowerCase();
-    if (!query) return [] as AtlasWord[];
-    const ex: AtlasWord[] = [], st: AtlasWord[] = [], ct: AtlasWord[] = [];
-    for (const w of atlas.data.words) {
-      const d = w.display.toLowerCase();
-      if (d === query) ex.push(w); else if (d.startsWith(query)) st.push(w); else if (d.includes(query)) ct.push(w);
-    }
-    return ex.concat(st, ct).slice(0, 7);
-  }, [q, atlas]);
+  const runSearch = useCallback((query: string) => {
+    const revision = ++searchRevision.current;
+    const resources = resourcesRef.current;
+    if (!resources) return;
+    void resources.controller.search(query).then((matches) => {
+      if (revision !== searchRevision.current || resourcesRef.current !== resources) return;
+      setResults(matches);
+      const entries = resources.catalog.entries();
+      if (entries.length > 0) setCatalogEntries(entries);
+    });
+  }, []);
 
-  // Tonight's run — one star per chart, stable for the local day. The route is
-  // generated server-side (authoritative) with a client fallback so it always works.
+  const retrySearch = useCallback(() => {
+    void loadCatalog().then((entries) => {
+      if (!entries) return;
+      const resources = resourcesRef.current;
+      setResults(resources?.catalog.find(q) ?? []);
+    });
+  }, [loadCatalog, q]);
+
+  // Tonight's run is authoritative and chart-aware; it is requested only when opened.
   const runDay = new Date().toISOString().slice(0, 10);
-  const localRoute = useMemo(() => {
-    const r = rng(hash("run" + runDay + listSlug));
-    const order = atlas.listedCharts.map((c) => c.id).sort(() => r() - 0.5);
-    const pick: string[] = [];
-    for (const id of order) {
-      const pool = (atlas.wordsByChart.get(id) || []).filter((w) => w.degree > 0);
-      if (!pool.length) continue;
-      pick.push(pool[Math.floor(r() * pool.length)].lemma);
-      if (pick.length >= 8) break;
-    }
-    return pick;
-  }, [atlas, listSlug, runDay]);
-  const [serverRoute, setServerRoute] = useState<string[] | null>(null);
-  useEffect(() => {
-    let alive = true;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setServerRoute(null);
-    fetch(`/api/run?list=${encodeURIComponent(listSlug)}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d: { route?: string[] } | null) => { if (alive && d?.route?.length) setServerRoute(d.route.filter((l) => atlas.byLemma.has(l))); })
-      .catch(() => {});
-    return () => { alive = false; };
-  }, [listSlug, atlas]);
-  const route = serverRoute ?? localRoute;
+  const route = useMemo(() => runStops.map((stop) => stop.lemma), [runStops]);
   const runDone = route.filter((l) => owned.has(l)).length;
   const runComplete = route.length > 0 && runDone === route.length;
 
-  // ladder rungs — scored: climbs you've earned (base held) first, then by how
-  // much of a level-up the target is (advanced tier, then how central it is).
+  // Ladder scoring and ownership are authoritative in the chart-aware API.
   const rungs = useMemo(() => {
-    const seen = new Set<string>();
-    const scored: { from: string; to: string; hint: string; to_lemma: string; owned: boolean; score: number }[] = [];
-    for (const ed of atlas.data.edges) {
-      if (ed.type !== "advanced_form" && ed.type !== "builds_on") continue;
-      const from = ed.type === "advanced_form" ? ed.source : ed.target;
-      const to = ed.type === "advanced_form" ? ed.target : ed.source;
-      if (owned.has(to) || seen.has(to)) continue;
-      const fw = atlas.byLemma.get(from), tw = atlas.byLemma.get(to);
-      if (!fw || !tw) continue;
-      seen.add(to);
-      const baseHeld = owned.has(from);
-      const score = (baseHeld ? 100 : 0) + (tw.tier === "advanced" ? 20 : 0) + Math.min(10, tw.degree);
-      scored.push({
-        from: fw.display, to: tw.display, to_lemma: to, owned: baseHeld, score,
-        hint: baseHeld ? `You hold “${fw.display}” — reach for “${tw.display}”.` : `Hold “${fw.display}” first, then climb to “${tw.display}”.`,
-      });
-    }
-    scored.sort((a, b) => b.score - a.score);
-    const earned = scored.filter((r) => r.owned);
-    return { list: (earned.length ? earned : scored).slice(0, 7), hasEarned: earned.length > 0 };
-  }, [atlas, owned]);
+    const list = ladderRungs.map((rung) => ({
+      from: rung.fromDisplay,
+      to: rung.toDisplay,
+      to_lemma: rung.to,
+      owned: rung.baseHeld,
+      hint: rung.baseHeld
+        ? `You hold “${rung.fromDisplay}” — reach for “${rung.toDisplay}”.`
+        : `Hold “${rung.fromDisplay}” first, then climb to “${rung.toDisplay}”.`,
+    }));
+    return { list, hasEarned: list.some((rung) => rung.owned) };
+  }, [ladderRungs]);
 
   // Begin the run, or fly to the next unclaimed stop.
   const runAction = useCallback(() => {
@@ -559,7 +721,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
 
   // gold route polyline: lit only in run mode
   useEffect(() => {
-    const e = engineRef.current;
+    const e = resourcesRef.current?.engine;
     if (!e) return;
     if (mode === "run") e.setRoute(route, runDone);
     else e.setRoute([], 0);
@@ -592,7 +754,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     if (!focus) return null;
     const wd = atlas.byLemma.get(focus);
     // Use the per-list chart the galaxy/rail show, not the page's global frontmatter chart.
-    const chartMeta = wd ? atlas.chartById.get(wd.chart) : null;
+    const chartMeta = wd ? atlas.chartById.get(wd.chartId) : null;
     const page = wordData?.page;
     const held = owned.has(focus);
     const rarity = wordData?.rarity;
@@ -611,7 +773,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     return {
       display: wd?.display ?? page?.display ?? focus,
       ipa: wordData?.detail?.ipa ?? "",
-      pos: wd?.pos ?? page?.pos ?? "",
+      pos: wd?.partOfSpeech ?? page?.pos ?? "",
       def: page?.definition ?? "",
       ex: page?.examples?.[0] ?? "",
       isAdvanced: (wd?.tier ?? page?.tier) === "advanced",
@@ -623,12 +785,13 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
     };
   }, [focus, wordData, atlas, owned, used]);
 
-  const modeBlurb = chart ? (atlas.chartById.get(chart)?.blurb ?? "") : (MODE_DEFS.find((m) => m[0] === mode) || MODE_DEFS[0])[3];
+  const selectedChartMeta = chart ? atlas.chartById.get(chart) : null;
+  const modeBlurb = selectedChartMeta ? chartBlurb(selectedChartMeta) : (MODE_DEFS.find((m) => m[0] === mode) || MODE_DEFS[0])[3];
   const usedCount = used.size;
   const legend = [
-    { dot: "#BFD9F2", label: "core word", n: atlas.data.words.filter((w) => w.tier === "core").length },
-    { dot: "#CBB9E9", label: "advanced", n: atlas.data.words.filter((w) => w.tier === "advanced").length },
-    { dot: "#F2D9A0", label: "hub — many links", n: atlas.data.words.filter((w) => w.degree >= 8).length },
+    { dot: "#BFD9F2", label: "core word", n: manifest.list.coreCount },
+    { dot: "#CBB9E9", label: "advanced", n: manifest.list.advancedCount },
+    { dot: "#F2D9A0", label: "drift — finding neighbours", n: manifest.list.driftCount },
     { dot: "#7ACBA9", label: "held — you recognised it", n: owned.size - usedCount },
     { dot: "#BDFFE0", label: "solid — you used it", n: usedCount },
   ];
@@ -646,10 +809,18 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
   const barLeft = narrow || focus ? "16px" : "286px";
   const barRight = !narrow && focus ? "436px" : "16px";
   const zoomLabel = zoom === "galaxy" ? "wide" : zoom === "cluster" ? "chart" : "close";
+  const loadingChart = controllerStatus.chartId ? atlas.chartById.get(controllerStatus.chartId) : null;
+  const chartStatusText = controllerStatus.chartLoad === "loading"
+    ? `Loading ${loadingChart?.name ?? "chart"}…`
+    : controllerStatus.chartLoad === "ready"
+      ? `${loadingChart?.name ?? "Chart"} ready`
+      : controllerStatus.chartLoad === "error"
+        ? `${loadingChart?.name ?? "Chart"} could not be loaded.`
+        : `Constellation view · ${manifest.list.chartCount} charts · ${manifest.list.wordCount.toLocaleString()} stars`;
 
   // ============================ RENDER ============================
   return (
-    <div style={{ position: "absolute", inset: 0, background: "#070B16", color: "#F1EEE6", overflow: "hidden", fontFamily: SS }}>
+    <div className="star-atlas" style={{ position: "absolute", inset: 0, background: "#070B16", color: "#F1EEE6", overflow: "hidden", fontFamily: SS }}>
       {/* ---------- HEADER ---------- */}
       <header style={{ position: "absolute", top: 0, left: 0, right: 0, height: 57, zIndex: 40, display: "flex", alignItems: "center", gap: 16, padding: "0 16px", borderBottom: "1px solid rgba(241,238,230,.09)", background: "rgba(7,11,22,.72)", backdropFilter: "blur(14px)" }}>
         <button onClick={() => setView("galaxy")} style={{ display: "flex", alignItems: "baseline", gap: 9, background: "none", border: "none", padding: 0, cursor: "pointer", color: "#F1EEE6", textAlign: "left" }}>
@@ -683,17 +854,18 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
 
         <nav style={{ display: "flex", gap: 2, padding: 3, borderRadius: 999, background: "rgba(241,238,230,.05)", border: "1px solid rgba(241,238,230,.07)" }}>
           {([["galaxy", "Sky"], ["space", "Your space"], ["board", "Log"]] as const).map(([id, label]) => (
-            <button key={id} onClick={() => setView(id)} style={{ padding: "6px 13px", border: "none", borderRadius: 999, cursor: "pointer", font: `500 12.5px/1 ${SS}`, letterSpacing: ".01em", transition: "background .18s ease, color .18s ease", background: view === id ? "rgba(241,238,230,.11)" : "transparent", color: view === id ? "#F1EEE6" : "#94A0B4" }}>{label}</button>
+            <button key={id} onClick={() => { setView(id); if (id === "space") void loadCatalog(); }} style={{ padding: "6px 13px", border: "none", borderRadius: 999, cursor: "pointer", font: `500 12.5px/1 ${SS}`, letterSpacing: ".01em", transition: "background .18s ease, color .18s ease", background: view === id ? "rgba(241,238,230,.11)" : "transparent", color: view === id ? "#F1EEE6" : "#94A0B4" }}>{label}</button>
           ))}
         </nav>
 
         <div style={{ flex: 1, minWidth: 0, display: "flex", justifyContent: "center" }}>
           <div style={{ position: "relative", width: "100%", maxWidth: 340 }}>
-            <input value={q} onChange={(e) => { setQ(e.target.value); setSearchFocus(true); }} onFocus={() => setSearchFocus(true)} onBlur={() => setTimeout(() => setSearchFocus(false), 160)}
+            <input value={q} disabled={controllerStatus.searchLoad === "error"} aria-label={`Search ${manifest.list.label} stars`} onChange={(e) => { setQ(e.target.value); setSearchFocus(true); runSearch(e.target.value); }} onFocus={() => { setSearchFocus(true); runSearch(q); }} onBlur={() => setTimeout(() => setSearchFocus(false), 160)}
               onKeyDown={(e) => { if (e.key === "Enter" && results[0]) { e.preventDefault(); select(results[0].lemma); } if (e.key === "Escape") { setQ(""); setSearchFocus(false); } }}
-              placeholder={`Search ${atlas.data.words.length.toLocaleString()} stars…`}
+              placeholder={controllerStatus.searchLoad === "error" ? "Search temporarily unavailable" : `Search ${manifest.list.wordCount.toLocaleString()} stars…`}
               style={{ width: "100%", padding: "8px 13px 8px 32px", borderRadius: 999, border: "1px solid rgba(241,238,230,.11)", background: "rgba(241,238,230,.05)", color: "#F1EEE6", fontSize: 13, outline: "none" }} />
             <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", font: `400 12px/1 ${MN}`, color: "#6B7789", pointerEvents: "none" }}>⌕</span>
+            {controllerStatus.searchLoad === "error" && <button onClick={retrySearch} style={{ position: "absolute", right: 5, top: 4, padding: "5px 10px", border: "1px solid rgba(232,168,159,.3)", borderRadius: 999, background: "rgba(10,15,28,.95)", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>Retry search</button>}
             {searchFocus && results.length > 0 && (
               <ul style={{ position: "absolute", top: "calc(100% + 6px)", left: 0, right: 0, margin: 0, padding: 5, listStyle: "none", borderRadius: 14, border: "1px solid rgba(241,238,230,.1)", background: "rgba(10,15,28,.97)", backdropFilter: "blur(18px)", boxShadow: "0 22px 50px rgba(0,0,0,.6)", maxHeight: 320, overflowY: "auto", animation: "riseIn .16s ease both" }}>
                 {results.map((w) => (
@@ -701,7 +873,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
                     <button onMouseDown={(e) => { e.preventDefault(); select(w.lemma); }} style={{ display: "flex", width: "100%", alignItems: "center", gap: 9, padding: "8px 10px", border: "none", borderRadius: 10, background: "transparent", color: "#F1EEE6", cursor: "pointer", textAlign: "left", fontSize: 13 }}>
                       <span style={{ width: 7, height: 7, borderRadius: 999, flex: "none", background: owned.has(w.lemma) ? "#8FE3C0" : w.tier === "advanced" ? "#CBB9E9" : w.degree >= 8 ? "#F2D9A0" : "#BFD9F2" }} />
                       <span style={{ flex: 1 }}>{w.display}</span>
-                      <span style={{ font: `400 10.5px/1 ${MN}`, color: "#6B7789" }}>{owned.has(w.lemma) ? "held" : w.pos}</span>
+                      <span style={{ font: `400 10.5px/1 ${MN}`, color: "#6B7789" }}>{owned.has(w.lemma) ? "held" : w.partOfSpeech}</span>
                     </button>
                   </li>
                 ))}
@@ -736,6 +908,11 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
       <div style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 0, opacity: view === "galaxy" ? 1 : 0, pointerEvents: view === "galaxy" ? "auto" : "none", transition: "opacity .32s ease" }}>
         <div ref={hostRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} />
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: "radial-gradient(120% 90% at 50% 45%,transparent 40%,rgba(7,11,22,.55) 100%)" }} />
+      </div>
+
+      <div aria-live="polite" role="status" style={{ position: "absolute", left: "50%", top: narrow ? 110 : 68, zIndex: 22, transform: "translateX(-50%)", display: view === "galaxy" ? "flex" : "none", alignItems: "center", gap: 8, maxWidth: "calc(100% - 32px)", padding: "6px 11px", borderRadius: 999, background: "rgba(10,15,28,.78)", color: controllerStatus.chartLoad === "error" || engineError ? "#E8A89F" : "#6B7789", backdropFilter: "blur(12px)", font: `500 10px/1.3 ${MN}`, letterSpacing: ".04em", pointerEvents: controllerStatus.chartLoad === "error" ? "auto" : "none", whiteSpace: "nowrap" }}>
+        <span>{engineError ?? (engineReady ? chartStatusText : "Charting constellations…")}</span>
+        {controllerStatus.chartLoad === "error" && !engineError && <button onClick={() => { void resourcesRef.current?.controller.retryChart().then((shard) => { if (shard) rememberShard(shard); }); }} style={{ padding: "3px 8px", border: "1px solid rgba(232,168,159,.34)", borderRadius: 999, background: "transparent", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>Retry</button>}
       </div>
 
       {/* ---------- TUTOR ---------- */}
@@ -797,21 +974,21 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
                   <span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#F2D9A0" }}>Tonight&apos;s run</span>
                   <span style={{ font: `500 11px/1 ${MN}`, color: "#94A0B4" }}>{runStarted ? `${String(Math.floor(runSeconds / 60)).padStart(2, "0")}:${String(runSeconds % 60).padStart(2, "0")}` : "not started"}</span>
                 </div>
-                <p style={{ margin: "0 0 11px", font: `400 20px/1.25 ${SF}`, color: "#F1EEE6" }}>{runComplete ? "Tonight's run is done." : runStarted ? `${runDone} of ${route.length} charted.` : `${route.length} stars, one per chart.`}</p>
+                <p style={{ margin: "0 0 11px", font: `400 20px/1.25 ${SF}`, color: "#F1EEE6" }}>{runLoad === "loading" ? "Charting tonight's route…" : runLoad === "error" ? "Tonight's route is unavailable." : runComplete ? "Tonight's run is done." : runStarted ? `${runDone} of ${route.length} charted.` : `${route.length} stars, one per chart.`}</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                  {route.map((lemma, i) => {
-                    const w = atlas.byLemma.get(lemma); const done = owned.has(lemma);
+                  {runStops.map((stop, i) => {
+                    const done = owned.has(stop.lemma);
                     const current = !done && route.slice(0, i).every((l) => owned.has(l));
                     return (
-                      <button key={lemma} onClick={() => select(lemma)} style={{ display: "flex", alignItems: "center", gap: 9, padding: "6px 8px", border: "none", borderRadius: 8, background: current ? "rgba(242,217,160,.1)" : "transparent", cursor: "pointer", textAlign: "left" }}>
+                      <button key={stop.lemma} onClick={() => select(stop.lemma)} style={{ display: "flex", alignItems: "center", gap: 9, padding: "6px 8px", border: "none", borderRadius: 8, background: current ? "rgba(242,217,160,.1)" : "transparent", cursor: "pointer", textAlign: "left" }}>
                         <span style={{ display: "grid", placeItems: "center", width: 18, height: 18, flex: "none", borderRadius: 999, font: `600 9.5px/1 ${MN}`, background: done ? "rgba(143,227,192,.18)" : current ? "rgba(242,217,160,.2)" : "transparent", color: done ? "#8FE3C0" : current ? "#F2D9A0" : "#6B7789", border: `1px solid ${done ? "rgba(143,227,192,.4)" : current ? "rgba(242,217,160,.5)" : "rgba(241,238,230,.14)"}` }}>{done ? "✓" : i + 1}</span>
-                        <span style={{ flex: 1, font: `500 12.5px/1 ${SS}`, color: done ? "#8FE3C0" : current ? "#F1EEE6" : "#94A0B4" }}>{w?.display ?? lemma}</span>
-                        <span style={{ font: `400 10px/1 ${MN}`, color: "#6B7789" }}>{atlas.chartById.get(w?.chart ?? "")?.glyph}</span>
+                        <span style={{ flex: 1, font: `500 12.5px/1 ${SS}`, color: done ? "#8FE3C0" : current ? "#F1EEE6" : "#94A0B4" }}>{stop.display}</span>
+                        <span style={{ font: `400 10px/1 ${MN}`, color: "#6B7789" }}>{atlas.chartById.get(stop.chartId)?.glyph}</span>
                       </button>
                     );
                   })}
                 </div>
-                <button onClick={runAction} style={{ width: "100%", marginTop: 11, padding: 9, border: "none", borderRadius: 10, cursor: runComplete ? "default" : "pointer", font: `600 12px/1 ${SS}`, letterSpacing: ".02em", background: runComplete ? "rgba(241,238,230,.07)" : "linear-gradient(96deg,#F2D9A0,#E8C79F)", color: runComplete ? "#6B7789" : "#0A1020" }}>{runComplete ? "Come back tomorrow" : runStarted ? "Go to the next star" : "Begin the run"}</button>
+                {runLoad === "error" ? <button onClick={loadRun} style={{ width: "100%", marginTop: 11, padding: 9, border: "1px solid rgba(232,168,159,.3)", borderRadius: 10, cursor: "pointer", font: `600 12px/1 ${SS}`, background: "rgba(232,168,159,.08)", color: "#E8A89F" }}>Retry run</button> : <button onClick={runAction} disabled={runLoad !== "ready"} style={{ width: "100%", marginTop: 11, padding: 9, border: "none", borderRadius: 10, cursor: runComplete || runLoad !== "ready" ? "default" : "pointer", font: `600 12px/1 ${SS}`, letterSpacing: ".02em", background: runComplete || runLoad !== "ready" ? "rgba(241,238,230,.07)" : "linear-gradient(96deg,#F2D9A0,#E8C79F)", color: runComplete || runLoad !== "ready" ? "#6B7789" : "#0A1020" }}>{runComplete ? "Come back tomorrow" : runStarted ? "Go to the next star" : "Begin the run"}</button>}
               </div>
             )}
 
@@ -820,7 +997,11 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
                 <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", padding: "0 3px 2px" }}>
                   <span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#6B7789" }}>{rungs.hasEarned ? "Ready to climb" : "Climbs to aim for"}</span>
                 </div>
-                {rungs.list.length === 0 ? (
+                {ladderLoad === "loading" ? (
+                  <p style={{ margin: 0, padding: 12, borderRadius: 12, background: "rgba(10,15,28,.82)", border: "1px dashed rgba(241,238,230,.14)", fontSize: 12, lineHeight: 1.6, color: "#94A0B4" }}>Finding a climb that fits your space…</p>
+                ) : ladderLoad === "error" ? (
+                  <button onClick={loadLadder} style={{ padding: 12, borderRadius: 12, background: "rgba(232,168,159,.07)", border: "1px solid rgba(232,168,159,.24)", fontSize: 12, color: "#E8A89F", cursor: "pointer" }}>Retry ladder</button>
+                ) : rungs.list.length === 0 ? (
                   <p style={{ margin: 0, padding: 12, borderRadius: 12, background: "rgba(10,15,28,.82)", border: "1px dashed rgba(241,238,230,.14)", fontSize: 12, lineHeight: 1.6, color: "#94A0B4" }}>Once you hold the plain word on the left, this list narrows to climbs you have actually earned.</p>
                 ) : rungs.list.map((rung) => (
                   <button key={rung.to_lemma} onClick={() => select(rung.to_lemma)} style={{ display: "flex", flexDirection: "column", gap: 4, width: "100%", padding: "9px 11px", border: "1px solid rgba(203,185,233,.16)", borderRadius: 12, background: "rgba(10,15,28,.82)", cursor: "pointer", textAlign: "left", backdropFilter: "blur(16px)" }}>
@@ -962,7 +1143,7 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
               <div style={{ width: "min(100%,560px)", padding: 34, borderRadius: 22, background: "rgba(11,16,31,.97)", border: "1px solid rgba(241,238,230,.12)", boxShadow: "0 30px 90px rgba(0,0,0,.7)", animation: "riseIn .28s cubic-bezier(.2,.8,.2,1) both" }}>
                 <p style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".24em", textTransform: "uppercase", color: "#6B7789" }}>Star Atlas · Observatory</p>
                 <h2 style={{ margin: "14px 0 0", font: `400 40px/1.1 ${SF}`, letterSpacing: "-.015em", color: "#F1EEE6" }}>Every word you own becomes a star you can see.</h2>
-                <p style={{ margin: "16px 0 0", font: `400 15.5px/1.7 ${SS}`, color: "#A9B2C0" }}>{atlas.data.words.length.toLocaleString()} English words, arranged into charts by what they mean. Claiming a star takes one quick check — get it right and it lights up for good.</p>
+                <p style={{ margin: "16px 0 0", font: `400 15.5px/1.7 ${SS}`, color: "#A9B2C0" }}>{manifest.list.wordCount.toLocaleString()} English words, arranged into charts by what they mean. Claiming a star takes one quick check — get it right and it lights up for good.</p>
                 <div style={{ display: "flex", flexDirection: "column", gap: 10, margin: "22px 0 24px" }}>
                   {[["1", "Find a star", "the charts sit apart in the sky. Zoom into one and the words name themselves."], ["2", "Pass the check", "one question — a meaning, a word, or a missing word in a sentence. Two tries."], ["3", "Watch it light", "held stars glow mint and ring. Seal a chart to finish it."]].map(([n, title, body]) => (
                     <div key={n} style={{ display: "flex", gap: 13, alignItems: "flex-start" }}>
@@ -1005,11 +1186,11 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
 
       {/* ---------- YOUR SPACE ---------- */}
       {view === "space" && (
-        <SpaceView me={me} owned={owned} used={used} streak={streak} atlas={atlas} chartStats={chartStats} chartsDone={chartsDone}
+        <SpaceView me={me} owned={owned} used={used} streak={streak} atlas={atlas} chartStats={chartStats} chartsDone={chartsDone} wordCount={manifest.list.wordCount} catalogReady={catalogEntries !== null}
           onOpenGalaxy={() => setView("galaxy")}
           onPickChart={(id) => { setView("galaxy"); setMode("chart"); setTimeout(() => pickChart(id), 60); }}
           onSelect={(l) => { setView("galaxy"); setTimeout(() => select(l), 60); }}
-          onRestored={(m) => { setMe(m); setOwned(new Set(m.lemmas)); }} />
+          onRestored={(m) => { setMe(m); setOwned(new Set(m.lemmas)); void loadCatalog(); }} />
       )}
 
       {/* ---------- LOG / LEADERBOARD ---------- */}
@@ -1023,12 +1204,12 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
       {dev && (
         <div style={{ position: "absolute", right: 12, bottom: 60, zIndex: 80, maxWidth: 260, padding: "10px 12px", borderRadius: 10, background: "rgba(4,7,14,.86)", border: "1px solid rgba(242,217,160,.28)", backdropFilter: "blur(10px)", font: `400 10.5px/1.7 ${MN}`, color: "#94A0B4", pointerEvents: "none" }}>
           <div style={{ color: "#F2D9A0", letterSpacing: ".16em", textTransform: "uppercase", marginBottom: 4 }}>author · {listSlug}</div>
-          <div>{atlas.data.words.length} words · {atlas.data.edges.length} edges</div>
-          <div>{atlas.listedCharts.length} charts · {atlas.data.words.filter((w) => w.chart === "drift").length} drift</div>
+          <div>{manifest.list.wordCount} words · {residentShards.size} resident shards</div>
+          <div>{manifest.list.chartCount} charts · {manifest.list.driftCount} drift</div>
           <div>zoom {zoom} · mode {mode}{chart ? ` · chart ${chart}` : ""}</div>
-          <div>run {route.length} stops · {serverRoute ? "server" : "local"}</div>
+          <div>run {route.length} stops · {runLoad}</div>
           {focus && atlas.byLemma.has(focus) && (
-            <div style={{ color: "#BFD9F2", marginTop: 4 }}>★ {focus} · {atlas.byLemma.get(focus)!.chart} · {atlas.byLemma.get(focus)!.tier} · deg {atlas.byLemma.get(focus)!.degree} · rank {atlas.byLemma.get(focus)!.rank ?? "—"}{used.has(focus) ? " · solid" : owned.has(focus) ? " · held" : ""}</div>
+            <div style={{ color: "#BFD9F2", marginTop: 4 }}>★ {focus} · {atlas.byLemma.get(focus)!.chartId} · {atlas.byLemma.get(focus)!.tier} · deg {atlas.byLemma.get(focus)!.degree} · rank {atlas.byLemma.get(focus)!.rank ?? "—"}{used.has(focus) ? " · solid" : owned.has(focus) ? " · held" : ""}</div>
           )}
         </div>
       )}
@@ -1041,20 +1222,16 @@ export function StarAtlas({ graph, listSlug }: { graph: LiteGraph; listSlug: str
         @keyframes tickUp { from { opacity: 0; transform: translate(-50%, 8px) scale(.96); } to { opacity: 1; transform: translate(-50%, 0) scale(1); } }
         .atlas-scroll::-webkit-scrollbar { width: 5px; height: 5px; }
         .atlas-scroll::-webkit-scrollbar-thumb { background: rgba(241,238,230,.10); border-radius: 8px; }
+        .star-atlas :is(button,input,textarea):focus-visible { outline: 2px solid #BFD9F2 !important; outline-offset: 3px; }
+        @media (prefers-reduced-motion: reduce) {
+          .star-atlas, .star-atlas * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+        }
       `}</style>
     </div>
   );
 }
 
 /* ============================ SUB-VIEWS ============================ */
-
-type AtlasModel = {
-  data: ReturnType<typeof toAtlas>;
-  byLemma: Map<string, AtlasWord>;
-  chartById: Map<string, AtlasChart>;
-  wordsByChart: Map<string, AtlasWord[]>;
-  listedCharts: AtlasChart[];
-};
 
 function QuizModal({ quiz, atlas, onClose, onInput, onChoice, onSubmitType }: {
   quiz: QuizState; atlas: AtlasModel; onClose: () => void;
@@ -1232,9 +1409,10 @@ function Tutor({ focusName, chartName, log, busy, error, input, onInput, onSend,
   );
 }
 
-function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, onOpenGalaxy, onPickChart, onSelect, onRestored }: {
+function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, wordCount, catalogReady, onOpenGalaxy, onPickChart, onSelect, onRestored }: {
   me: CollectionSummary | null; owned: Set<string>; used: Set<string>; streak: number; atlas: AtlasModel;
-  chartStats: { ch: AtlasChart; total: number; got: number; pct: number; done: boolean }[]; chartsDone: number;
+  chartStats: { ch: GalaxyChart; total: number; got: number; pct: number; done: boolean }[]; chartsDone: number;
+  wordCount: number; catalogReady: boolean;
   onOpenGalaxy: () => void; onPickChart: (id: string) => void; onSelect: (l: string) => void;
   onRestored: (m: CollectionSummary) => void;
 }) {
@@ -1251,7 +1429,7 @@ function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, onO
   ];
   const coverage = BANDS.map(([label, lo, hi]) => {
     let total = 0, got = 0;
-    for (const w of atlas.data.words) {
+    for (const w of atlas.byLemma.values()) {
       const rk = w.rank ?? (w.tier === "advanced" ? 9999 : 6000);
       if (rk < lo || rk > hi) continue;
       total++;
@@ -1308,7 +1486,7 @@ function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, onO
                 <span style={{ display: "block", height: 3, borderRadius: 999, background: "rgba(241,238,230,.1)", overflow: "hidden" }}>
                   <span style={{ display: "block", height: "100%", borderRadius: 999, background: ch.hue, width: `${pct}%` }} />
                 </span>
-                <span style={{ font: `400 12px/1.55 ${SS}`, color: "#94A0B4" }}>{ch.blurb}</span>
+                <span style={{ font: `400 12px/1.55 ${SS}`, color: "#94A0B4" }}>{chartBlurb(ch)}</span>
               </button>
             ))}
           </div>
@@ -1330,7 +1508,7 @@ function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, onO
         <section>
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 10, marginBottom: 14 }}>
             <h2 style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#6B7789" }}>Stars you hold</h2>
-            <span style={{ font: `500 11px/1 ${MN}`, color: "#94A0B4" }}>{owned.size} of {atlas.data.words.length.toLocaleString()}</span>
+            <span style={{ font: `500 11px/1 ${MN}`, color: "#94A0B4" }}>{owned.size} of {wordCount.toLocaleString()}</span>
           </div>
           {owned.size > 0 ? (
             <div style={{ display: "flex", flexWrap: "wrap", gap: 7 }}>
@@ -1338,7 +1516,7 @@ function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, onO
                 const w = atlas.byLemma.get(l);
                 return (
                   <button key={l} onClick={() => onSelect(l)} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 13px", border: "1px solid rgba(143,227,192,.2)", borderRadius: 999, background: "rgba(143,227,192,.07)", cursor: "pointer" }}>
-                    <span style={{ width: 6, height: 6, borderRadius: 999, background: atlas.chartById.get(w?.chart ?? "")?.hue ?? "#8FE3C0" }} />
+                    <span style={{ width: 6, height: 6, borderRadius: 999, background: atlas.chartById.get(w?.chartId ?? "")?.hue ?? "#8FE3C0" }} />
                     <span style={{ font: `500 13px/1 ${SS}`, color: "#F1EEE6" }}>{w?.display ?? l}</span>
                   </button>
                 );
@@ -1359,7 +1537,9 @@ function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, onO
             <span style={{ font: `500 11px/1 ${MN}`, color: "#94A0B4" }}>how much of each frequency band you hold</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {coverage.map((b) => (
+            {!catalogReady ? (
+              <div aria-live="polite" style={{ padding: "14px 16px", borderRadius: 12, border: "1px dashed rgba(241,238,230,.14)", color: "#94A0B4", font: `400 12.5px/1.6 ${SS}` }}>Mapping your stars across the frequency bands…</div>
+            ) : coverage.map((b) => (
               <div key={b.label} style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                 <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between" }}>
                   <span style={{ font: `500 12.5px/1 ${SS}`, color: "#E8E4DA" }}>{b.label}</span>
