@@ -62,11 +62,13 @@ export class GalaxyController {
   }
 
   openChart(chartId: string): Promise<ChartShard | null> {
+    this.cancelApproachPrefetch();
     const revision = ++this.selectionRevision;
     return this.openChartForSelection(chartId, revision);
   }
 
   clearSelection(): void {
+    this.cancelApproachPrefetch();
     this.selectionRevision += 1;
     const requestedChartId = this.requestedChartId;
     this.requestedChartId = null;
@@ -78,6 +80,7 @@ export class GalaxyController {
   }
 
   async openWord(lemma: string): Promise<boolean> {
+    this.cancelApproachPrefetch();
     const revision = ++this.selectionRevision;
     if (!await this.ensureCatalog(revision)) return false;
     const entry = this.catalog.get(lemma);
@@ -88,6 +91,7 @@ export class GalaxyController {
   }
 
   async search(query: string): Promise<SearchEntry[]> {
+    this.cancelApproachPrefetch();
     const entries = await this.loadCatalog();
     return entries ? this.catalog.find(query) : [];
   }
@@ -107,8 +111,7 @@ export class GalaxyController {
   }
 
   approachChart(chartId: string | null): void {
-    const revision = ++this.approachRevision;
-    this.clearPrefetch();
+    const revision = this.cancelApproachPrefetch();
     if (!chartId || this.disposed) return;
 
     void this.store.load(chartId, { pin: false }).then((shard) => {
@@ -117,6 +120,11 @@ export class GalaxyController {
       this.engine.upsertChart(shard);
       this.scheduleNeighborPrefetch(chartId, revision);
     }).catch(() => undefined);
+  }
+
+  evictChart(chartId: string): void {
+    this.loadedCharts.delete(chartId);
+    this.prefetchedCharts.delete(chartId);
   }
 
   setSaveData(value: boolean): void {
@@ -197,6 +205,12 @@ export class GalaxyController {
     if (!this.prefetchTimer) return;
     clearTimeout(this.prefetchTimer);
     this.prefetchTimer = null;
+  }
+
+  private cancelApproachPrefetch(): number {
+    this.approachRevision += 1;
+    this.clearPrefetch();
+    return this.approachRevision;
   }
 
   private update(patch: Partial<GalaxyControllerStatus>): void {

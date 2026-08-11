@@ -171,6 +171,87 @@ describe("GalaxyController", () => {
     if (strongest) expect(store.prefetch).toHaveBeenCalledWith(strongest);
   });
 
+  it("cancels a scheduled neighbour prefetch when a chart is opened", async () => {
+    const { controller, store } = setup();
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+
+    await controller.openChart("motion");
+    await vi.advanceTimersByTimeAsync(1000);
+
+    expect(store.prefetch).not.toHaveBeenCalled();
+  });
+
+  it("cancels a scheduled neighbour prefetch when a word is opened", async () => {
+    const { controller, store } = setup();
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+
+    await controller.openWord("move");
+    await vi.advanceTimersByTimeAsync(1000);
+
+    expect(store.prefetch).not.toHaveBeenCalled();
+  });
+
+  it("cancels a scheduled neighbour prefetch when search input changes", async () => {
+    const { controller, store } = setup();
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+
+    await controller.search("move");
+    await vi.advanceTimersByTimeAsync(1000);
+
+    expect(store.prefetch).not.toHaveBeenCalled();
+  });
+
+  it("cancels a scheduled neighbour prefetch when selection is cleared", async () => {
+    const { controller, store } = setup();
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+
+    controller.clearSelection();
+    await vi.advanceTimersByTimeAsync(1000);
+
+    expect(store.prefetch).not.toHaveBeenCalled();
+  });
+
+  it("cancels a scheduled neighbour prefetch when a failed chart is retried", async () => {
+    const load = vi.fn(async (chartId: string) => {
+      if (chartId === "motion" && load.mock.calls.filter(([id]) => id === "motion").length === 1) {
+        throw new Error("offline");
+      }
+      return shards.get(chartId)!;
+    });
+    const { controller, store } = setup(load);
+    await controller.openChart("motion");
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+
+    await controller.retryChart();
+    await vi.advanceTimersByTimeAsync(1000);
+
+    expect(store.prefetch).not.toHaveBeenCalled();
+  });
+
+  it("allows an evicted prefetched chart to become the strongest unloaded neighbour again", async () => {
+    const { controller, store } = setup();
+    const strongest = manifest.charts.find((chart) => chart.id === "speech")!.neighbors
+      .toSorted((left, right) => right.weight - left.weight)[0]?.chartId;
+    expect(strongest).toBeTruthy();
+
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+    await vi.advanceTimersByTimeAsync(750);
+    controller.evictChart(strongest!);
+
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+    await vi.advanceTimersByTimeAsync(750);
+
+    expect(store.prefetch).toHaveBeenCalledTimes(2);
+    expect(store.prefetch).toHaveBeenLastCalledWith(strongest);
+  });
+
   it("cancels pending prefetch and ignores loads after disposal", async () => {
     const pending = deferred<ChartShard>();
     const { controller, store, engine } = setup(vi.fn(() => pending.promise));

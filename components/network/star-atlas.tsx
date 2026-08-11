@@ -10,6 +10,7 @@ import {
   type GalaxyControllerStatus,
 } from "@/components/network/galaxy/galaxy-controller";
 import { ProgressiveStarEngine } from "@/components/network/galaxy/progressive-engine";
+import { createChartEvictionHandler } from "@/components/network/galaxy/resident-shards";
 import { GalaxySearchCatalog } from "@/components/network/galaxy/search-catalog";
 import { wordXp } from "@/lib/collection/xp";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
@@ -264,13 +265,18 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       onContextFailure: () => setEngineError("The 3D sky could not be restored. Chart controls and search are still available."),
       onInteractive: () => setEngineReady(true),
     });
+    let controller: GalaxyController | null = null;
     const store = new ChartShardStore(manifest, {
       ...galaxyStoreOptions(window.innerWidth < 860),
-      onEvict: (chartId) => engine.removeChart(chartId),
+      onEvict: createChartEvictionHandler({
+        engine,
+        getController: () => controller,
+        updateResidentShards: setResidentShards,
+      }),
     });
     const catalog = new GalaxySearchCatalog(manifest);
     const connection = (navigator as Navigator & { connection?: EventTarget & { saveData?: boolean } }).connection;
-    const controller = new GalaxyController({
+    controller = new GalaxyController({
       manifest,
       store,
       catalog,
@@ -632,12 +638,8 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   }, []);
 
   const retrySearch = useCallback(() => {
-    void loadCatalog().then((entries) => {
-      if (!entries) return;
-      const resources = resourcesRef.current;
-      setResults(resources?.catalog.find(q) ?? []);
-    });
-  }, [loadCatalog, q]);
+    runSearch(q);
+  }, [q, runSearch]);
 
   // Tonight's run is authoritative and chart-aware; it is requested only when opened.
   const runDay = new Date().toISOString().slice(0, 10);

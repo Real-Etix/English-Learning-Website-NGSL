@@ -2,6 +2,7 @@ import { describe, expect, it, vi } from "vitest";
 
 import { GalaxyAssetError, downloadBytes, fetchVersionedJson } from "./asset-client";
 import { ChartShardStore } from "./chart-shard-store";
+import { createChartEvictionHandler } from "./resident-shards";
 import { buildGalaxyArtifacts } from "../../../lib/galaxy/build-artifacts";
 import { fixtureGraph } from "../../../lib/galaxy/test-fixture";
 import type { ChartShard, GalaxyManifest } from "../../../lib/galaxy/types";
@@ -198,6 +199,33 @@ describe("ChartShardStore", () => {
     await store.load("drift");
 
     expect(store.residentIds()).toEqual(["speech", "drift"]);
+  });
+
+  it("removes a store-evicted chart from the engine, controller tracking, and React residency", async () => {
+    let residentShards = new Map<string, ChartShard>();
+    const engine = { removeChart: vi.fn() };
+    const controller = { evictChart: vi.fn() };
+    const onEvict = createChartEvictionHandler({
+      engine,
+      getController: () => controller,
+      updateResidentShards: (update) => { residentShards = update(residentShards); },
+    });
+    const store = new ChartShardStore(manifest, {
+      capacity: 1,
+      concurrency: 1,
+      fetcher: shardFetcher(),
+      onEvict,
+    });
+
+    const speech = await store.load("speech");
+    residentShards = new Map([[speech.chartId, speech]]);
+    const motion = await store.load("motion");
+    residentShards = new Map(residentShards).set(motion.chartId, motion);
+
+    expect(store.residentIds()).toEqual(["motion"]);
+    expect([...residentShards.keys()]).toEqual(["motion"]);
+    expect(engine.removeChart).toHaveBeenCalledWith("speech");
+    expect(controller.evictChart).toHaveBeenCalledWith("speech");
   });
 
   it("aborts pending work when disposed", async () => {
