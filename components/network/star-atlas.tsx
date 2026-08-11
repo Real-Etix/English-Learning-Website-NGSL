@@ -12,6 +12,7 @@ import {
 import { ProgressiveStarEngine } from "@/components/network/galaxy/progressive-engine";
 import { createChartEvictionHandler } from "@/components/network/galaxy/resident-shards";
 import { GalaxySearchCatalog } from "@/components/network/galaxy/search-catalog";
+import { WordSelectionCoordinator } from "@/components/network/galaxy/word-selection-coordinator";
 import { wordXp } from "@/lib/collection/xp";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
 import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
@@ -88,6 +89,7 @@ type AtlasResources = {
   store: ChartShardStore;
   catalog: GalaxySearchCatalog;
   controller: GalaxyController;
+  selection: WordSelectionCoordinator;
 };
 
 const INITIAL_CONTROLLER_STATUS: GalaxyControllerStatus = {
@@ -182,6 +184,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const resourcesRef = useRef<AtlasResources | null>(null);
   const selectHandlerRef = useRef<(lemma: string | null) => void>(() => undefined);
   const chartHandlerRef = useRef<(chartId: string) => void>(() => undefined);
+  const wordCommitHandlerRef = useRef<(lemma: string) => void>(() => undefined);
   const selectionUiRevision = useRef(0);
   const searchRevision = useRef(0);
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -221,33 +224,41 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   }, []);
 
   // ---- selection ----
+  const commitWordSelection = useCallback((lemma: string) => {
+    const resources = resourcesRef.current;
+    if (!resources) return;
+    setFocus(lemma);
+    setTrail((previous) => previous.filter((item) => item !== lemma).concat([lemma]).slice(-5));
+    setCatalogEntries(resources.catalog.entries());
+    const entry = resources.catalog.get(lemma);
+    if (!entry) return;
+    const shard = resources.store.get(entry.chartId);
+    if (shard) rememberShard(shard);
+    setChart(entry.chartId);
+  }, [rememberShard]);
+
+  useEffect(() => {
+    wordCommitHandlerRef.current = commitWordSelection;
+  }, [commitWordSelection]);
+
   const select = useCallback((lemma: string | null) => {
-    const revision = ++selectionUiRevision.current;
+    selectionUiRevision.current += 1;
     const resources = resourcesRef.current;
     if (!lemma) {
       setFocus(null);
+      resources?.selection.clear();
       resources?.controller.clearSelection();
       if (resources) { resources.engine.setPanelOffset(narrow ? 0 : -272); resources.engine.clearFocus(); }
       return;
     }
-    setFocus(lemma);
-    setTrail((prev) => prev.filter((x) => x !== lemma).concat([lemma]).slice(-5));
     setQ("");
     setResults([]);
     setSearchFocus(false);
     setRailOpen(false);
     resources?.engine.setPanelOffset(narrow ? 0 : 420);
     if (!resources) return;
-    void resources.controller.openWord(lemma).then((opened) => {
-      if (!opened || revision !== selectionUiRevision.current || resourcesRef.current !== resources) return;
-      setCatalogEntries(resources.catalog.entries());
-      const entry = resources.catalog.get(lemma);
-      if (!entry) return;
-      const shard = resources.store.get(entry.chartId);
-      if (shard) rememberShard(shard);
-      setChart(entry.chartId);
-    });
-  }, [narrow, rememberShard]);
+    void resources.selection.select(lemma);
+  }, [narrow]);
 
   useEffect(() => {
     selectHandlerRef.current = select;
@@ -276,29 +287,35 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     });
     const catalog = new GalaxySearchCatalog(manifest);
     const connection = (navigator as Navigator & { connection?: EventTarget & { saveData?: boolean } }).connection;
-    controller = new GalaxyController({
+    const activeController = new GalaxyController({
       manifest,
       store,
       catalog,
       engine,
       saveData: connection?.saveData === true,
     });
-    const unsubscribe = controller.subscribe(setControllerStatus);
-    const cancelIdlePrefetch = () => controller.approachChart(null);
-    const updateSaveData = () => controller.setSaveData(connection?.saveData === true);
+    controller = activeController;
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => activeController.openWord(lemma),
+      commitWord: (lemma) => wordCommitHandlerRef.current(lemma),
+    });
+    const unsubscribe = activeController.subscribe(setControllerStatus);
+    const cancelIdlePrefetch = () => activeController.approachChart(null);
+    const updateSaveData = () => activeController.setSaveData(connection?.saveData === true);
     host.addEventListener("pointerdown", cancelIdlePrefetch, { passive: true });
     host.addEventListener("wheel", cancelIdlePrefetch, { passive: true });
     host.addEventListener("touchstart", cancelIdlePrefetch, { passive: true });
     connection?.addEventListener("change", updateSaveData);
-    resourcesRef.current = { engine, store, catalog, controller };
+    resourcesRef.current = { engine, store, catalog, controller: activeController, selection };
     return () => {
       unsubscribe();
       host.removeEventListener("pointerdown", cancelIdlePrefetch);
       host.removeEventListener("wheel", cancelIdlePrefetch);
       host.removeEventListener("touchstart", cancelIdlePrefetch);
       connection?.removeEventListener("change", updateSaveData);
+      selection.clear();
       resourcesRef.current = null;
-      controller.dispose();
+      activeController.dispose();
       engine.dispose();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -484,7 +501,12 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       if (ev.key === "Escape") {
         ev.preventDefault();
         if (focus) select(null);
-        else if (chart) { setChart(null); resourcesRef.current?.controller.clearSelection(); }
+        else if (chart) {
+          setChart(null);
+          const resources = resourcesRef.current;
+          resources?.selection.clear();
+          resources?.controller.clearSelection();
+        }
         return;
       }
       if (typing || !focus) return;
@@ -568,6 +590,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setFocus(null);
     const resources = resourcesRef.current;
     if (!resources) return;
+    resources.selection.clear();
     resources.engine.setPanelOffset(narrow ? 0 : -272);
     resources.engine.clearFocus();
     if (!next) {
@@ -588,6 +611,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setMode(m); setChart(null); setFocus(null);
     selectionUiRevision.current += 1;
     const resources = resourcesRef.current;
+    resources?.selection.clear();
     resources?.controller.clearSelection();
     if (resources) { resources.engine.setPanelOffset(narrow ? 0 : -272); resources.engine.clearFocus(); if (m !== "chart") resources.engine.resetView(); }
     if (m === "run") loadRun();
@@ -598,6 +622,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setChart(null); setFocus(null); setRailOpen(false);
     selectionUiRevision.current += 1;
     const resources = resourcesRef.current;
+    resources?.selection.clear();
     resources?.controller.clearSelection();
     if (resources) { resources.engine.setPanelOffset(narrow ? 0 : -272); resources.engine.resetView(); }
   }, [narrow]);
@@ -640,6 +665,18 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const retrySearch = useCallback(() => {
     runSearch(q);
   }, [q, runSearch]);
+
+  const retrySelection = useCallback(() => {
+    const resources = resourcesRef.current;
+    if (!resources) return;
+    if (resources.selection.pendingRetryLemma()) {
+      void resources.selection.retryPending();
+      return;
+    }
+    void resources.controller.retryChart().then((shard) => {
+      if (shard && resourcesRef.current === resources) rememberShard(shard);
+    });
+  }, [rememberShard]);
 
   // Tonight's run is authoritative and chart-aware; it is requested only when opened.
   const runDay = new Date().toISOString().slice(0, 10);
@@ -914,7 +951,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
       <div aria-live="polite" role="status" style={{ position: "absolute", left: "50%", top: narrow ? 110 : 68, zIndex: 22, transform: "translateX(-50%)", display: view === "galaxy" ? "flex" : "none", alignItems: "center", gap: 8, maxWidth: "calc(100% - 32px)", padding: "6px 11px", borderRadius: 999, background: "rgba(10,15,28,.78)", color: controllerStatus.chartLoad === "error" || engineError ? "#E8A89F" : "#6B7789", backdropFilter: "blur(12px)", font: `500 10px/1.3 ${MN}`, letterSpacing: ".04em", pointerEvents: controllerStatus.chartLoad === "error" ? "auto" : "none", whiteSpace: "nowrap" }}>
         <span>{engineError ?? (engineReady ? chartStatusText : "Charting constellations…")}</span>
-        {controllerStatus.chartLoad === "error" && !engineError && <button onClick={() => { void resourcesRef.current?.controller.retryChart().then((shard) => { if (shard) rememberShard(shard); }); }} style={{ padding: "3px 8px", border: "1px solid rgba(232,168,159,.34)", borderRadius: 999, background: "transparent", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>Retry</button>}
+        {controllerStatus.chartLoad === "error" && !engineError && <button onClick={retrySelection} style={{ padding: "3px 8px", border: "1px solid rgba(232,168,159,.34)", borderRadius: 999, background: "transparent", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>Retry</button>}
       </div>
 
       {/* ---------- TUTOR ---------- */}

@@ -5,6 +5,7 @@ import { fixtureGraph } from "../../../lib/galaxy/test-fixture";
 import type { ChartShard } from "../../../lib/galaxy/types";
 
 import { GalaxyController, galaxyStoreOptions } from "./galaxy-controller";
+import { WordSelectionCoordinator } from "./word-selection-coordinator";
 
 const bundle = buildGalaxyArtifacts(fixtureGraph, "Fixture");
 const manifest = bundle.manifest;
@@ -97,6 +98,103 @@ describe("GalaxyController", () => {
 
     expect(engine.focusStar).toHaveBeenCalledTimes(1);
     expect(engine.focusStar).toHaveBeenCalledWith("move", { keepCamera: false });
+  });
+
+  it("keeps the previous committed focus when a word flight fails", async () => {
+    const load = vi.fn(async (chartId: string) => {
+      if (chartId === "speech") throw new Error("offline");
+      return shards.get(chartId)!;
+    });
+    const { controller, engine } = setup(load);
+    await controller.openWord("move");
+    let committedFocus = "move";
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => controller.openWord(lemma),
+      commitWord: (lemma) => { committedFocus = lemma; },
+    });
+
+    expect(await selection.select("speak")).toBe(false);
+
+    expect(committedFocus).toBe("move");
+    expect(selection.pendingRetryLemma()).toBe("speak");
+    expect(engine.focusStar).toHaveBeenCalledTimes(1);
+    expect(engine.focusStar).toHaveBeenLastCalledWith("move", { keepCamera: false });
+  });
+
+  it("retries a failed word through the full flight before committing focus", async () => {
+    const load = vi.fn()
+      .mockRejectedValueOnce(new Error("offline"))
+      .mockResolvedValueOnce(speechShard);
+    const { controller, engine } = setup(load);
+    const committed: string[] = [];
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => controller.openWord(lemma),
+      commitWord: (lemma) => committed.push(lemma),
+    });
+
+    expect(await selection.select("speak")).toBe(false);
+    expect(await selection.retryPending()).toBe(true);
+
+    expect(load).toHaveBeenCalledTimes(2);
+    expect(engine.focusStar).toHaveBeenCalledWith("speak", { keepCamera: false });
+    expect(committed).toEqual(["speak"]);
+    expect(selection.pendingRetryLemma()).toBeNull();
+  });
+
+  it("does not commit a superseded word retry after a newer selection succeeds", async () => {
+    const pendingSpeech = deferred<ChartShard>();
+    let speechAttempts = 0;
+    const load = vi.fn((chartId: string) => {
+      if (chartId !== "speech") return Promise.resolve(shards.get(chartId)!);
+      speechAttempts += 1;
+      return speechAttempts === 1
+        ? Promise.reject(new Error("offline"))
+        : pendingSpeech.promise;
+    });
+    const { controller, engine } = setup(load);
+    const committed: string[] = [];
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => controller.openWord(lemma),
+      commitWord: (lemma) => committed.push(lemma),
+    });
+    await selection.select("speak");
+
+    const staleRetry = selection.retryPending();
+    await selection.select("move");
+    pendingSpeech.resolve(speechShard);
+    await staleRetry;
+
+    expect(committed).toEqual(["move"]);
+    expect(engine.focusStar).toHaveBeenCalledTimes(1);
+    expect(engine.focusStar).toHaveBeenCalledWith("move", { keepCamera: false });
+    expect(selection.pendingRetryLemma()).toBeNull();
+  });
+
+  it("clears a failed word so it can no longer be retried", async () => {
+    const { controller } = setup(vi.fn(async () => { throw new Error("offline"); }));
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => controller.openWord(lemma),
+      commitWord: vi.fn(),
+    });
+    await selection.select("speak");
+
+    selection.clear();
+
+    expect(selection.pendingRetryLemma()).toBeNull();
+    expect(await selection.retryPending()).toBe(false);
+  });
+
+  it("replaces a failed retry target when another word is selected", async () => {
+    const { controller } = setup(vi.fn(async () => { throw new Error("offline"); }));
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => controller.openWord(lemma),
+      commitWord: vi.fn(),
+    });
+
+    await selection.select("speak");
+    await selection.select("move");
+
+    expect(selection.pendingRetryLemma()).toBe("move");
   });
 
   it("cancels a pending chart selection when the constellation view is restored", async () => {
