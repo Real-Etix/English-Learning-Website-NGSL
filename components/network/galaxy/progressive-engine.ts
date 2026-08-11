@@ -176,7 +176,45 @@ export type ProgressiveEngineOptions = {
 };
 
 type GalaxyMode = "chart" | "run" | "ladder";
-type ZoomLevel = "galaxy" | "cluster" | "star";
+export type ZoomLevel = "galaxy" | "cluster" | "star";
+
+export type TransferableAlphaState = {
+  lemmas: readonly string[];
+  current: ArrayLike<number>;
+  target: ArrayLike<number>;
+};
+
+export function transferAlphaStateByLemma(
+  nextLemmas: readonly string[],
+  defaultTarget: ArrayLike<number>,
+  previous?: TransferableAlphaState | null,
+): { current: Float32Array; target: Float32Array } {
+  const current = new Float32Array(nextLemmas.length);
+  const target = new Float32Array(defaultTarget);
+  if (!previous) return { current, target };
+
+  const previousIndex = new Map(previous.lemmas.map((lemma, index) => [lemma, index]));
+  nextLemmas.forEach((lemma, index) => {
+    const oldIndex = previousIndex.get(lemma);
+    if (oldIndex === undefined) return;
+    current[index] = previous.current[oldIndex];
+    target[index] = previous.target[oldIndex];
+  });
+  return { current, target };
+}
+
+export function focusCameraDistance(currentDistance: number): number {
+  const capped = Math.min(currentDistance, 235);
+  return capped < 175 ? 190 : capped;
+}
+
+export function zoomLevelTransition(
+  previous: ZoomLevel | null,
+  distance: number,
+): { level: ZoomLevel; changed: boolean } {
+  const level = zoomLevel(distance);
+  return { level, changed: level !== previous };
+}
 
 type WordLayer = {
   words: PositionedWord[];
@@ -268,6 +306,7 @@ export class ProgressiveStarEngine {
   private height = 600;
   private startTime = 0;
   private level: ZoomLevel = "galaxy";
+  private notifiedLevel: ZoomLevel | null = null;
   private nearestChart: string | null = null;
   private approachCandidate: string | null = null;
   private approachSince = 0;
@@ -408,9 +447,11 @@ export class ProgressiveStarEngine {
   }
 
   enterFull(data: FullGalaxyData): void {
+    const previousLayer = this.fullLayer ?? this.residentLayer;
+    const oldFullLayer = this.fullLayer;
     this.model.enterFull(data);
-    this.disposeWordLayer(this.fullLayer);
-    this.fullLayer = this.buildWordLayer(this.model.visibleWords());
+    this.fullLayer = this.buildWordLayer(this.model.visibleWords(), previousLayer);
+    this.disposeWordLayer(oldFullLayer);
     this.fullLayer.points.visible = true;
     this.fullLayer.rings.visible = true;
     if (this.residentLayer) {
@@ -492,8 +533,7 @@ export class ProgressiveStarEngine {
     this.refreshLabelAssignments();
     if (!options?.keepCamera) {
       this.cameraState.targetGoal.set(...word.xyz);
-      this.cameraState.targetDistance = Math.max(175, Math.min(this.cameraState.targetDistance, 235));
-      if (this.cameraState.targetDistance < 175) this.cameraState.targetDistance = 190;
+      this.cameraState.targetDistance = focusCameraDistance(this.cameraState.targetDistance);
     }
     return true;
   }
@@ -617,7 +657,7 @@ export class ProgressiveStarEngine {
     };
   }
 
-  private buildWordLayer(words: PositionedWord[]): WordLayer {
+  private buildWordLayer(words: PositionedWord[], previous: WordLayer | null = null): WordLayer {
     const count = words.length;
     const positions = new Float32Array(count * 3);
     const colors = new Float32Array(count * 3);
@@ -673,6 +713,20 @@ export class ProgressiveStarEngine {
       onScreen: new Uint8Array(count),
     };
     this.refreshLayerAttributes(layer);
+    const transferred = transferAlphaStateByLemma(
+      words.map((word) => word.lemma),
+      targetAlpha,
+      previous && {
+        lemmas: previous.words.map((word) => word.lemma),
+        current: previous.alpha,
+        target: previous.targetAlpha,
+      },
+    );
+    alpha.set(transferred.current);
+    targetAlpha.set(transferred.target);
+    for (let index = 0; index < count; index++) {
+      ringAlpha[index] = ringGain[index] * Math.max(0.18, alpha[index]);
+    }
     return layer;
   }
 
@@ -685,7 +739,7 @@ export class ProgressiveStarEngine {
 
   private rebuildResidentLayer(): void {
     const oldLayer = this.residentLayer;
-    this.residentLayer = this.buildWordLayer(this.model.residentWords());
+    this.residentLayer = this.buildWordLayer(this.model.residentWords(), oldLayer);
     const residentVisible = !this.fullLayer;
     this.residentLayer.points.visible = residentVisible;
     this.residentLayer.rings.visible = residentVisible;
@@ -1119,9 +1173,13 @@ export class ProgressiveStarEngine {
   private project(now: number): void {
     const previousLevel = this.level;
     const previousNearest = this.nearestChart;
-    this.level = zoomLevel(this.cameraState.distance);
+    const transition = zoomLevelTransition(this.notifiedLevel, this.cameraState.distance);
+    this.level = transition.level;
     this.nearestChart = this.findNearestChart();
-    if (this.level !== previousLevel) this.options.onZoomLevel?.(this.level);
+    if (transition.changed) {
+      this.notifiedLevel = transition.level;
+      this.options.onZoomLevel?.(transition.level);
+    }
     if (this.level !== previousLevel || this.nearestChart !== previousNearest) this.rebuildLinks();
     this.updateApproach(now);
 
