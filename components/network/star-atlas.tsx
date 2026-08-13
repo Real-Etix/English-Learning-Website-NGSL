@@ -177,6 +177,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [chatBusy, setChatBusy] = useState(false);
   const [chatError, setChatError] = useState<string | null>(null);
   const [controllerStatus, setControllerStatus] = useState<GalaxyControllerStatus>(INITIAL_CONTROLLER_STATUS);
+  const [pendingWordRetryLemma, setPendingWordRetryLemma] = useState<string | null>(null);
   const [engineReady, setEngineReady] = useState(false);
   const [engineError, setEngineError] = useState<string | null>(null);
 
@@ -221,6 +222,10 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     if (!entries || resourcesRef.current !== resources) return null;
     setCatalogEntries(entries);
     return entries;
+  }, []);
+
+  const foregroundAction = useCallback(() => {
+    resourcesRef.current?.controller.foregroundAction();
   }, []);
 
   // ---- selection ----
@@ -300,7 +305,8 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       commitWord: (lemma) => wordCommitHandlerRef.current(lemma),
     });
     const unsubscribe = activeController.subscribe(setControllerStatus);
-    const cancelIdlePrefetch = () => activeController.approachChart(null);
+    const unsubscribeSelection = selection.subscribe(setPendingWordRetryLemma);
+    const cancelIdlePrefetch = () => activeController.foregroundAction();
     const updateSaveData = () => activeController.setSaveData(connection?.saveData === true);
     host.addEventListener("pointerdown", cancelIdlePrefetch, { passive: true });
     host.addEventListener("wheel", cancelIdlePrefetch, { passive: true });
@@ -313,6 +319,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       host.removeEventListener("wheel", cancelIdlePrefetch);
       host.removeEventListener("touchstart", cancelIdlePrefetch);
       connection?.removeEventListener("change", updateSaveData);
+      unsubscribeSelection();
       selection.clear();
       resourcesRef.current = null;
       activeController.dispose();
@@ -663,6 +670,11 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   }, []);
 
   const retrySearch = useCallback(() => {
+    const resources = resourcesRef.current;
+    if (resources?.selection.pendingRetryLemma()) {
+      void resources.selection.retryPending();
+      return;
+    }
     runSearch(q);
   }, [q, runSearch]);
 
@@ -859,7 +871,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
   // ============================ RENDER ============================
   return (
-    <div className="star-atlas" style={{ position: "absolute", inset: 0, background: "#070B16", color: "#F1EEE6", overflow: "hidden", fontFamily: SS }}>
+    <div className="star-atlas" onPointerDownCapture={foregroundAction} onClickCapture={foregroundAction} onWheelCapture={foregroundAction} onKeyDownCapture={foregroundAction} style={{ position: "absolute", inset: 0, background: "#070B16", color: "#F1EEE6", overflow: "hidden", fontFamily: SS }}>
       {/* ---------- HEADER ---------- */}
       <header style={{ position: "absolute", top: 0, left: 0, right: 0, height: 57, zIndex: 40, display: "flex", alignItems: "center", gap: 16, padding: "0 16px", borderBottom: "1px solid rgba(241,238,230,.09)", background: "rgba(7,11,22,.72)", backdropFilter: "blur(14px)" }}>
         <button onClick={() => setView("galaxy")} style={{ display: "flex", alignItems: "baseline", gap: 9, background: "none", border: "none", padding: 0, cursor: "pointer", color: "#F1EEE6", textAlign: "left" }}>
@@ -901,10 +913,10 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
           <div style={{ position: "relative", width: "100%", maxWidth: 340 }}>
             <input value={q} disabled={controllerStatus.searchLoad === "error"} aria-label={`Search ${manifest.list.label} stars`} onChange={(e) => { setQ(e.target.value); setSearchFocus(true); runSearch(e.target.value); }} onFocus={() => { setSearchFocus(true); runSearch(q); }} onBlur={() => setTimeout(() => setSearchFocus(false), 160)}
               onKeyDown={(e) => { if (e.key === "Enter" && results[0]) { e.preventDefault(); select(results[0].lemma); } if (e.key === "Escape") { setQ(""); setSearchFocus(false); } }}
-              placeholder={controllerStatus.searchLoad === "error" ? "Search temporarily unavailable" : `Search ${manifest.list.wordCount.toLocaleString()} stars…`}
+              placeholder={controllerStatus.searchLoad === "error" ? (pendingWordRetryLemma ? `Opening “${pendingWordRetryLemma}” failed` : "Search temporarily unavailable") : `Search ${manifest.list.wordCount.toLocaleString()} stars…`}
               style={{ width: "100%", padding: "8px 13px 8px 32px", borderRadius: 999, border: "1px solid rgba(241,238,230,.11)", background: "rgba(241,238,230,.05)", color: "#F1EEE6", fontSize: 13, outline: "none" }} />
             <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", font: `400 12px/1 ${MN}`, color: "#6B7789", pointerEvents: "none" }}>⌕</span>
-            {controllerStatus.searchLoad === "error" && <button onClick={retrySearch} style={{ position: "absolute", right: 5, top: 4, padding: "5px 10px", border: "1px solid rgba(232,168,159,.3)", borderRadius: 999, background: "rgba(10,15,28,.95)", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>Retry search</button>}
+            {controllerStatus.searchLoad === "error" && <button onClick={retrySearch} aria-label={pendingWordRetryLemma ? `Retry opening ${pendingWordRetryLemma}` : "Retry search"} style={{ position: "absolute", right: 5, top: 4, padding: "5px 10px", border: "1px solid rgba(232,168,159,.3)", borderRadius: 999, background: "rgba(10,15,28,.95)", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>{pendingWordRetryLemma ? "Retry word" : "Retry search"}</button>}
             {searchFocus && results.length > 0 && (
               <ul style={{ position: "absolute", top: "calc(100% + 6px)", left: 0, right: 0, margin: 0, padding: 5, listStyle: "none", borderRadius: 14, border: "1px solid rgba(241,238,230,.1)", background: "rgba(10,15,28,.97)", backdropFilter: "blur(18px)", boxShadow: "0 22px 50px rgba(0,0,0,.6)", maxHeight: 320, overflowY: "auto", animation: "riseIn .16s ease both" }}>
                 {results.map((w) => (

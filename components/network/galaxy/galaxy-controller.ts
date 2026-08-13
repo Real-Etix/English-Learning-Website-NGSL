@@ -62,13 +62,17 @@ export class GalaxyController {
   }
 
   openChart(chartId: string): Promise<ChartShard | null> {
-    this.cancelApproachPrefetch();
+    this.foregroundAction();
     const revision = ++this.selectionRevision;
     return this.openChartForSelection(chartId, revision);
   }
 
-  clearSelection(): void {
+  foregroundAction(): void {
     this.cancelApproachPrefetch();
+  }
+
+  clearSelection(): void {
+    this.foregroundAction();
     this.selectionRevision += 1;
     const requestedChartId = this.requestedChartId;
     this.requestedChartId = null;
@@ -80,7 +84,7 @@ export class GalaxyController {
   }
 
   async openWord(lemma: string): Promise<boolean> {
-    this.cancelApproachPrefetch();
+    this.foregroundAction();
     const revision = ++this.selectionRevision;
     if (!await this.ensureCatalog(revision)) return false;
     const entry = this.catalog.get(lemma);
@@ -91,7 +95,7 @@ export class GalaxyController {
   }
 
   async search(query: string): Promise<SearchEntry[]> {
-    this.cancelApproachPrefetch();
+    this.foregroundAction();
     const entries = await this.loadCatalog();
     return entries ? this.catalog.find(query) : [];
   }

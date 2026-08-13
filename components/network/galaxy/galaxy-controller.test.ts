@@ -141,6 +141,52 @@ describe("GalaxyController", () => {
     expect(selection.pendingRetryLemma()).toBeNull();
   });
 
+  it("publishes a catalog-failed word so visible retry completes the full flight", async () => {
+    const { controller, catalog, engine } = setup();
+    catalog.load.mockRejectedValueOnce(new Error("offline"));
+    const committed: string[] = [];
+    const retryStates: Array<string | null> = [];
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => controller.openWord(lemma),
+      commitWord: (lemma) => committed.push(lemma),
+    });
+    selection.subscribe((lemma) => retryStates.push(lemma));
+
+    expect(await selection.select("speak")).toBe(false);
+    expect(retryStates.at(-1)).toBe("speak");
+    expect(await selection.retryPending()).toBe(true);
+
+    expect(catalog.load).toHaveBeenCalledTimes(2);
+    expect(engine.focusStar).toHaveBeenCalledWith("speak", { keepCamera: false });
+    expect(committed).toEqual(["speak"]);
+    expect(retryStates.at(-1)).toBeNull();
+  });
+
+  it("does not commit a catalog retry after a newer word supersedes it", async () => {
+    const pendingCatalog = deferred<typeof searchData.entries>();
+    const { controller, catalog, engine } = setup();
+    catalog.load
+      .mockRejectedValueOnce(new Error("offline"))
+      .mockImplementationOnce(() => pendingCatalog.promise)
+      .mockResolvedValueOnce(searchData.entries);
+    const committed: string[] = [];
+    const selection = new WordSelectionCoordinator({
+      openWord: (lemma) => controller.openWord(lemma),
+      commitWord: (lemma) => committed.push(lemma),
+    });
+    await selection.select("speak");
+
+    const staleRetry = selection.retryPending();
+    expect(await selection.select("move")).toBe(true);
+    pendingCatalog.resolve(searchData.entries);
+    expect(await staleRetry).toBe(false);
+
+    expect(committed).toEqual(["move"]);
+    expect(engine.focusStar).toHaveBeenCalledTimes(1);
+    expect(engine.focusStar).toHaveBeenCalledWith("move", { keepCamera: false });
+    expect(selection.pendingRetryLemma()).toBeNull();
+  });
+
   it("does not commit a superseded word retry after a newer selection succeeds", async () => {
     const pendingSpeech = deferred<ChartShard>();
     let speechAttempts = 0;
@@ -297,6 +343,17 @@ describe("GalaxyController", () => {
     await vi.runAllTicks();
 
     await controller.search("move");
+    await vi.advanceTimersByTimeAsync(1000);
+
+    expect(store.prefetch).not.toHaveBeenCalled();
+  });
+
+  it("cancels a scheduled neighbour prefetch for any foreground UI action", async () => {
+    const { controller, store } = setup();
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+
+    controller.foregroundAction();
     await vi.advanceTimersByTimeAsync(1000);
 
     expect(store.prefetch).not.toHaveBeenCalled();
