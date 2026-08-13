@@ -220,6 +220,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [fullMode, dispatchFullMode] = useReducer(reduceFullMode, initialFullModeState);
 
   const hostRef = useRef<HTMLDivElement | null>(null);
+  const searchAreaRef = useRef<HTMLDivElement | null>(null);
   const resourcesRef = useRef<AtlasResources | null>(null);
   const engineDelegateRef = useRef<ProgressiveStarEngine | null>(null);
   const previewVisibleRef = useRef(true);
@@ -605,6 +606,11 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   }, []);
   const cancelFullMode = useCallback(() => leaveFullMode("cancel"), [leaveFullMode]);
   const returnToConstellations = useCallback(() => leaveFullMode("exit"), [leaveFullMode]);
+  const openYourSpace = useCallback(() => {
+    leaveFullMode("exit");
+    void loadCatalog();
+    setView("space");
+  }, [leaveFullMode, loadCatalog]);
 
   const loadFullGalaxy = useCallback(() => {
     const revision = ++fullLoadRevision.current;
@@ -686,7 +692,6 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
           setOwned(new Set(d.me.lemmas));
           setUsed(new Set(d.me.usedLemmas ?? []));
           setIntro(d.me.lemmas.length === 0 && !local.introDone);
-          if (d.me.lemmas.length > 0) void loadCatalog();
         }
         else setIntro(!local.introDone);
       })
@@ -1248,23 +1253,44 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
         <nav style={{ display: "flex", gap: 2, padding: 3, borderRadius: 999, background: "rgba(241,238,230,.05)", border: "1px solid rgba(241,238,230,.07)" }}>
           {([["galaxy", "Sky"], ["space", "Your space"], ["board", "Log"]] as const).map(([id, label]) => (
-            <button key={id} onClick={() => { if (id !== "galaxy") leaveFullMode("exit"); setView(id); if (id === "space") void loadCatalog(); }} style={{ padding: "6px 13px", border: "none", borderRadius: 999, cursor: "pointer", font: `500 12.5px/1 ${SS}`, letterSpacing: ".01em", transition: "background .18s ease, color .18s ease", background: view === id ? "rgba(241,238,230,.11)" : "transparent", color: view === id ? "#F1EEE6" : "#94A0B4" }}>{label}</button>
+            <button
+              key={id}
+              onClick={() => {
+                if (id === "space") {
+                  openYourSpace();
+                  return;
+                }
+                if (id !== "galaxy") leaveFullMode("exit");
+                setView(id);
+              }}
+              style={{ padding: "6px 13px", border: "none", borderRadius: 999, cursor: "pointer", font: `500 12.5px/1 ${SS}`, letterSpacing: ".01em", transition: "background .18s ease, color .18s ease", background: view === id ? "rgba(241,238,230,.11)" : "transparent", color: view === id ? "#F1EEE6" : "#94A0B4" }}
+            >
+              {label}
+            </button>
           ))}
         </nav>
 
         <div style={{ flex: 1, minWidth: 0, display: "flex", justifyContent: "center" }}>
-          <div style={{ position: "relative", width: "100%", maxWidth: 340 }}>
-            <input value={q} disabled={controllerStatus.searchLoad === "error"} aria-label={`Search ${manifest.list.label} stars`} onChange={(e) => { setQ(e.target.value); setSearchFocus(true); runSearch(e.target.value); }} onFocus={() => { setSearchFocus(true); runSearch(q); }} onBlur={() => setTimeout(() => setSearchFocus(false), 160)}
+          <div ref={searchAreaRef} style={{ position: "relative", width: "100%", maxWidth: 340 }}>
+            <input value={q} disabled={controllerStatus.searchLoad === "error"} aria-label={`Search ${manifest.list.label} stars`} onChange={(e) => { setQ(e.target.value); setSearchFocus(true); runSearch(e.target.value); }} onFocus={() => { setSearchFocus(true); runSearch(q); }} onBlur={(e) => {
+              const nextTarget = e.relatedTarget;
+              if (nextTarget instanceof HTMLElement && searchAreaRef.current?.contains(nextTarget)) return;
+              setTimeout(() => setSearchFocus(false), 160);
+            }}
               onKeyDown={(e) => { if (e.key === "Enter" && results[0]) { e.preventDefault(); select(results[0].lemma); } if (e.key === "Escape") { setQ(""); setSearchFocus(false); } }}
               placeholder={controllerStatus.searchLoad === "error" ? (pendingWordRetryLemma ? `Opening “${pendingWordRetryLemma}” failed` : "Search temporarily unavailable") : `Search ${manifest.list.wordCount.toLocaleString()} stars…`}
               style={{ width: "100%", padding: "8px 13px 8px 32px", borderRadius: 999, border: "1px solid rgba(241,238,230,.11)", background: "rgba(241,238,230,.05)", color: "#F1EEE6", fontSize: 13, outline: "none" }} />
             <span style={{ position: "absolute", left: 12, top: "50%", transform: "translateY(-50%)", font: `400 12px/1 ${MN}`, color: "#6B7789", pointerEvents: "none" }}>⌕</span>
             {controllerStatus.searchLoad === "error" && <button onClick={retrySearch} aria-label={pendingWordRetryLemma ? `Retry opening ${pendingWordRetryLemma}` : "Retry search"} style={{ position: "absolute", right: 5, top: 4, padding: "5px 10px", border: "1px solid rgba(232,168,159,.3)", borderRadius: 999, background: "rgba(10,15,28,.95)", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>{pendingWordRetryLemma ? "Retry word" : "Retry search"}</button>}
             {searchFocus && results.length > 0 && (
-              <ul style={{ position: "absolute", top: "calc(100% + 6px)", left: 0, right: 0, margin: 0, padding: 5, listStyle: "none", borderRadius: 14, border: "1px solid rgba(241,238,230,.1)", background: "rgba(10,15,28,.97)", backdropFilter: "blur(18px)", boxShadow: "0 22px 50px rgba(0,0,0,.6)", maxHeight: 320, overflowY: "auto", animation: "riseIn .16s ease both" }}>
+              <ul onBlur={(e) => {
+                const nextTarget = e.relatedTarget;
+                if (nextTarget instanceof HTMLElement && searchAreaRef.current?.contains(nextTarget)) return;
+                setSearchFocus(false);
+              }} style={{ position: "absolute", top: "calc(100% + 6px)", left: 0, right: 0, margin: 0, padding: 5, listStyle: "none", borderRadius: 14, border: "1px solid rgba(241,238,230,.1)", background: "rgba(10,15,28,.97)", backdropFilter: "blur(18px)", boxShadow: "0 22px 50px rgba(0,0,0,.6)", maxHeight: 320, overflowY: "auto", animation: "riseIn .16s ease both" }}>
                 {results.map((w) => (
                   <li key={w.lemma}>
-                    <button onMouseDown={(e) => { e.preventDefault(); select(w.lemma); }} style={{ display: "flex", width: "100%", alignItems: "center", gap: 9, padding: "8px 10px", border: "none", borderRadius: 10, background: "transparent", color: "#F1EEE6", cursor: "pointer", textAlign: "left", fontSize: 13 }}>
+                    <button data-search-result={w.lemma} onMouseDown={(e) => e.preventDefault()} onClick={() => select(w.lemma)} style={{ display: "flex", width: "100%", alignItems: "center", gap: 9, padding: "8px 10px", border: "none", borderRadius: 10, background: "transparent", color: "#F1EEE6", cursor: "pointer", textAlign: "left", fontSize: 13 }}>
                       <span style={{ width: 7, height: 7, borderRadius: 999, flex: "none", background: owned.has(w.lemma) ? "#8FE3C0" : w.tier === "advanced" ? "#CBB9E9" : w.degree >= 8 ? "#F2D9A0" : "#BFD9F2" }} />
                       <span style={{ flex: 1 }}>{w.display}</span>
                       <span style={{ font: `400 10.5px/1 ${MN}`, color: "#6B7789" }}>{owned.has(w.lemma) ? "held" : w.partOfSpeech}</span>
@@ -1286,7 +1312,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
             <span style={{ font: `400 12px/1 ${MN}` }}>✳</span><span>Tutor</span>
           </button>
           <div style={{ width: 1, height: 22, background: "rgba(241,238,230,.1)" }} />
-          <button onClick={() => setView("space")} style={{ display: "flex", alignItems: "center", gap: 9, padding: "5px 6px 5px 5px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(241,238,230,.04)", cursor: "pointer", color: "#F1EEE6" }}>
+          <button data-testid="your-space-shortcut" onClick={openYourSpace} style={{ display: "flex", alignItems: "center", gap: 9, padding: "5px 6px 5px 5px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(241,238,230,.04)", cursor: "pointer", color: "#F1EEE6" }}>
             <span style={{ display: "grid", placeItems: "center", width: 26, height: 26, borderRadius: 999, background: "rgba(191,217,242,.14)", font: `600 11px/1 ${MN}`, color: "#BFD9F2" }}>{level}</span>
             <span style={{ display: "flex", flexDirection: "column", gap: 3, paddingRight: 6 }}>
               <span style={{ font: `500 10px/1 ${MN}`, letterSpacing: ".1em", color: "#94A0B4", textTransform: "uppercase" }}>{totalXp} xp</span>

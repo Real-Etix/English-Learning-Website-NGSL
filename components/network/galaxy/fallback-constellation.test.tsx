@@ -70,6 +70,8 @@ describe("FallbackConstellation", () => {
     expect(html).not.toContain('role="img"');
     expect(html).toContain('role="button"');
     expect(html).toContain('tabindex="0"');
+    expect(html).toContain('data-fallback-hit-ring=""');
+    expect(html).toContain('vector-effect="non-scaling-stroke"');
     expect(html).toContain(speechChart.name.replace("&", "&amp;"));
     expect(html).toContain("words ready");
     expect(html).toContain("speak");

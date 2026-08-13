@@ -282,11 +282,11 @@ function classifyLongTask(
 }
 
 test.describe("progressive galaxy performance gates", () => {
-  test("startup stays within the throttled local 75th-percentile budgets", async ({ browser, baseURL }) => {
+  test("startup stays within the throttled mobile 75th-percentile budgets", async ({ browser, baseURL }) => {
     const samples: StartupMetrics[] = [];
 
     for (let index = 0; index < startupSampleCount; index += 1) {
-      const { context, page, track } = await openInstrumentedPage(browser, baseURL!, "desktop");
+      const { context, page, track } = await openInstrumentedPage(browser, baseURL!, "mobile");
       await page.waitForFunction(() => performance.getEntriesByName("galaxy:boot-start").length > 0);
       await waitForAtlasControls(page);
       await page.waitForTimeout(1_600);

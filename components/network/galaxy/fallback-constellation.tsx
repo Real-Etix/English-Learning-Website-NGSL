@@ -11,6 +11,7 @@ import type { ChartShard, GalaxyChart, GalaxyManifest } from "../../../lib/galax
 const VIEWBOX_WIDTH = 1000;
 const VIEWBOX_HEIGHT = 700;
 const VIEWBOX_PADDING = 72;
+const FALLBACK_HIT_RING_PX = 56;
 
 export const FULL_3D_UNAVAILABLE_MESSAGE = "Full 3D mode is unavailable in this browser.";
 
@@ -179,6 +180,16 @@ export function FallbackConstellation({
                 key={chart.id}
                 {...buildFallbackChartTargetProps(chart.id, chart.name, chartWords, activate)}
               >
+                <circle
+                  data-fallback-hit-ring=""
+                  cx={x}
+                  cy={y}
+                  r={radius}
+                  fill="transparent"
+                  stroke="transparent"
+                  strokeWidth={FALLBACK_HIT_RING_PX}
+                  vectorEffect="non-scaling-stroke"
+                />
                 <circle
                   className="fallback-hit"
                   cx={x}

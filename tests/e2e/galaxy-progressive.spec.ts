@@ -10,7 +10,18 @@ type GalaxyManifest = {
   charts: GalaxyChart[];
   assets: { searchIndex: AssetRef; full: AssetRef };
 };
-type SearchEntry = { lemma: string; display: string; chartId: string };
+type SearchEntry = { lemma: string; display: string; chartId: string; normalized: string };
+type CollectionSummary = {
+  slug: string;
+  displayName: string | null;
+  lemmas: string[];
+  usedLemmas: string[];
+  decayedCount: number;
+  wordCount: number;
+  totalXp: number;
+  level: number;
+  badges: unknown[];
+};
 
 function readJson<T>(relativePath: string): T {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), relativePath), "utf8")) as T;
@@ -36,9 +47,48 @@ function galaxyTracker(page: Page) {
   };
 }
 
-async function stubCommonApis(page: Page, listLabel = "NGSL") {
+function buildCollectionSummary(
+  lemmas: string[],
+  overrides: Partial<CollectionSummary> = {},
+): CollectionSummary {
+  const totalXp = overrides.totalXp ?? Math.max(40, lemmas.length * 20);
+  return {
+    slug: overrides.slug ?? "fixture-owner",
+    displayName: overrides.displayName ?? "Fixture Owner",
+    lemmas,
+    usedLemmas: overrides.usedLemmas ?? [],
+    decayedCount: overrides.decayedCount ?? 0,
+    wordCount: overrides.wordCount ?? lemmas.length,
+    totalXp,
+    level: overrides.level ?? Math.max(1, Math.floor(totalXp / 100) + 1),
+    badges: overrides.badges ?? [],
+  };
+}
+
+function findSearchPrefixWithMultipleMatches(entries: SearchEntry[]): string {
+  for (const length of [2, 1, 3, 4]) {
+    for (const entry of entries) {
+      const prefix = entry.normalized.slice(0, length);
+      if (!prefix) continue;
+      const prefixMatches = entries.filter((candidate) => candidate.normalized.startsWith(prefix));
+      if (prefixMatches.length >= 2) return prefix;
+    }
+  }
+  throw new Error("Expected at least one multi-result search prefix");
+}
+
+async function stubCommonApis(
+  page: Page,
+  {
+    listLabel = "NGSL",
+    me = null,
+  }: {
+    listLabel?: string;
+    me?: CollectionSummary | null;
+  } = {},
+) {
   await page.route("**/api/me", async (route) => {
-    await route.fulfill({ json: { me: null } });
+    await route.fulfill({ json: { me } });
   });
   await page.route("**/api/ladder?*", async (route) => {
     await route.fulfill({
@@ -74,8 +124,13 @@ async function stubCommonApis(page: Page, listLabel = "NGSL") {
   });
 }
 
-async function gotoNgsl(page: Page) {
-  await stubCommonApis(page);
+async function gotoNgsl(
+  page: Page,
+  options?: {
+    me?: CollectionSummary | null;
+  },
+) {
+  await stubCommonApis(page, options);
   await page.goto("/network/ngsl");
   await dismissOnboardingIfPresent(page);
   await expect(page.getByTestId("galaxy-status")).toContainText(/Constellation view/i);
@@ -103,6 +158,7 @@ const searchCatalog = readJson<{ entries: SearchEntry[] }>(path.join("public", m
 const firstChart = manifest.charts[0];
 const searchWord = searchCatalog.entries.find((entry) => /^[A-Za-z][A-Za-z' -]{4,}$/.test(entry.display) && entry.chartId !== "drift") ?? searchCatalog.entries[0];
 const searchWordChart = manifest.charts.find((chart) => chart.id === searchWord.chartId) ?? firstChart;
+const keyboardSearchQuery = findSearchPrefixWithMultipleMatches(searchCatalog.entries);
 
 test.describe("progressive galaxy browser verification", () => {
   test("normal opening stays manifest-only until chart interaction", async ({ page }) => {
@@ -131,6 +187,38 @@ test.describe("progressive galaxy browser verification", () => {
     await expect(page.getByRole("heading", { name: new RegExp(`^${escapeRegExp(searchWord.display)}$`, "i") })).toBeVisible({ timeout: 10_000 });
     await expect(page.getByTestId("galaxy-status")).toContainText(`${searchWordChart.name} ready`);
     expect(tracker.requested(searchWordChart.asset.url)).toBe(true);
+    expect(tracker.requested(manifest.assets.full.url)).toBe(false);
+  });
+
+  test("returning users stay manifest-only until explicitly opening Your Space", async ({ page }) => {
+    const tracker = galaxyTracker(page);
+
+    await gotoNgsl(page, {
+      me: buildCollectionSummary([searchWord.lemma], { totalXp: 120, level: 2 }),
+    });
+
+    expect(tracker.urls).toEqual([]);
+    expect(tracker.requested(manifest.assets.searchIndex.url)).toBe(false);
+
+    await page.getByRole("button", { name: /^Your space$/i }).click();
+
+    await expect.poll(() => tracker.requested(manifest.assets.searchIndex.url)).toBe(true);
+    expect(tracker.requested(manifest.assets.full.url)).toBe(false);
+  });
+
+  test("returning users request the catalog only after explicit search focus", async ({ page }) => {
+    const tracker = galaxyTracker(page);
+
+    await gotoNgsl(page, {
+      me: buildCollectionSummary([searchWord.lemma], { totalXp: 120, level: 2 }),
+    });
+
+    expect(tracker.urls).toEqual([]);
+    expect(tracker.requested(manifest.assets.searchIndex.url)).toBe(false);
+
+    await page.getByRole("textbox", { name: `Search ${manifest.list.label} stars` }).focus();
+
+    await expect.poll(() => tracker.requested(manifest.assets.searchIndex.url)).toBe(true);
     expect(tracker.requested(manifest.assets.full.url)).toBe(false);
   });
 
@@ -217,6 +305,35 @@ test.describe("progressive galaxy browser verification", () => {
     expect(tracker.requestedCount(manifest.assets.full.url)).toBe(1);
   });
 
+  test("the header level shortcut exits full mode before opening Your Space", async ({ page }) => {
+    const tracker = galaxyTracker(page);
+
+    await gotoNgsl(page, {
+      me: buildCollectionSummary([searchWord.lemma], { totalXp: 120, level: 2 }),
+    });
+
+    await page.getByTestId("full-mode-toggle").click();
+    await page.getByRole("button", { name: "Load full galaxy" }).click();
+
+    await expect(page.getByTestId("galaxy-status")).toContainText(
+      `Complete ${manifest.list.label} galaxy · ${manifest.list.wordCount.toLocaleString()} stars`,
+      { timeout: 120_000 },
+    );
+    await expect.poll(() => tracker.requestedCount(manifest.assets.full.url)).toBe(1);
+    expect(tracker.requested(manifest.assets.searchIndex.url)).toBe(false);
+
+    await page.getByRole("button", { name: /120 xp/i }).click();
+
+    await expect.poll(() => tracker.requested(manifest.assets.searchIndex.url)).toBe(true);
+    await expect(page.getByRole("heading", { name: /Level 2, 1 star held/i })).toBeVisible();
+
+    await page.getByRole("button", { name: /^Sky$/i }).click();
+
+    await expect(page.getByTestId("galaxy-status")).toContainText(/Constellation view/i);
+    await expect(page.getByTestId("full-mode-toggle")).toContainText(`Load full ${manifest.list.label} galaxy`);
+    expect(tracker.requestedCount(manifest.assets.full.url)).toBe(1);
+  });
+
   test("fallback charts support keyboard activation", async ({ page }) => {
     await page.addInitScript(() => {
       const original = HTMLCanvasElement.prototype.getContext as (
@@ -242,6 +359,25 @@ test.describe("progressive galaxy browser verification", () => {
     await expect(page.getByTestId("galaxy-status")).toContainText("Full 3D mode is unavailable in this browser.");
     await expect(page.getByLabel(`${firstChart.name} words`)).toBeVisible();
     await expect(page.getByText(new RegExp(`${escapeRegExp(firstChart.name)} words ready|Loading ${escapeRegExp(firstChart.name)}…`))).toBeVisible();
+  });
+
+  test("focused non-first search results can be activated with Enter", async ({ page }) => {
+    await gotoNgsl(page);
+
+    const search = page.getByRole("textbox", { name: `Search ${manifest.list.label} stars` });
+    await search.fill(keyboardSearchQuery);
+
+    const secondResult = page.locator("[data-search-result]").nth(1);
+    await expect(secondResult).toBeVisible();
+    const targetLabel = (await secondResult.locator("span").nth(1).textContent())?.trim();
+    if (!targetLabel) throw new Error("Second search result did not expose a label");
+
+    await secondResult.focus();
+    await page.keyboard.press("Enter");
+
+    await expect(page.getByRole("heading", { name: new RegExp(`^${escapeRegExp(targetLabel)}$`, "i") })).toBeVisible({
+      timeout: 10_000,
+    });
   });
 
   test("reduced-motion rendering keeps label transitions disabled", async ({ page }) => {
