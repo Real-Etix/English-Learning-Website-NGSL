@@ -3,6 +3,7 @@ export const GALAXY_CRITICAL_READY_MARK = "galaxy:critical-ready";
 export const GALAXY_BOOT_START_MARK = "galaxy:boot-start";
 export const GALAXY_INTERACTIVE_MARK = "galaxy:interactive";
 export const GALAXY_CONSTELLATION_VISIBLE_MARK = "galaxy:constellation-visible";
+export const GALAXY_RENDERER_VISIBLE_MARK = "galaxy:renderer-visible";
 
 type TimerId = ReturnType<typeof globalThis.setTimeout>;
 type FrameId = number;
@@ -48,8 +49,18 @@ export function markLifecycleOnce(name: string, marker: PerformanceMarker = perf
 
 export function markGalaxyCriticalReady(marker: PerformanceMarker = performance): void {
   markLifecycleOnce(GALAXY_CRITICAL_READY_MARK, marker);
+}
+
+export function markGalaxyInteractive(marker: PerformanceMarker = performance): void {
   markLifecycleOnce(GALAXY_INTERACTIVE_MARK, marker);
+}
+
+export function markGalaxyConstellationVisible(marker: PerformanceMarker = performance): void {
   markLifecycleOnce(GALAXY_CONSTELLATION_VISIBLE_MARK, marker);
+}
+
+export function markGalaxyRendererVisible(marker: PerformanceMarker = performance): void {
+  markLifecycleOnce(GALAXY_RENDERER_VISIBLE_MARK, marker);
 }
 
 export function markGalaxyBootStart(marker: PerformanceMarker = performance): void {

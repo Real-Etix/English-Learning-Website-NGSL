@@ -5,13 +5,17 @@ import {
   GALAXY_CONSTELLATION_VISIBLE_MARK,
   GALAXY_CRITICAL_READY_MARK,
   GALAXY_INTERACTIVE_MARK,
+  GALAXY_RENDERER_VISIBLE_MARK,
   markGalaxyBootStart,
+  markGalaxyConstellationVisible,
   markGalaxyCriticalReady,
+  markGalaxyInteractive,
+  markGalaxyRendererVisible,
   scheduleDeferredEngineBoot,
 } from "./deferred-boot";
 
 describe("galaxy lifecycle marks", () => {
-  it("records the critical shell boundary once before the heavy renderer boots", () => {
+  it("records the critical shell boundary without collapsing later lifecycle marks", () => {
     const marks: string[] = [];
     const performanceLike = {
       getEntriesByName: (name: string) => marks.filter((mark) => mark === name).map((name) => ({ name })),
@@ -21,10 +25,27 @@ describe("galaxy lifecycle marks", () => {
     markGalaxyCriticalReady(performanceLike);
     markGalaxyCriticalReady(performanceLike);
 
+    expect(marks).toEqual([GALAXY_CRITICAL_READY_MARK]);
+  });
+
+  it("records interactive, constellation-visible, and renderer-visible as separate idempotent boundaries", () => {
+    const marks: string[] = [];
+    const performanceLike = {
+      getEntriesByName: (name: string) => marks.filter((mark) => mark === name).map((name) => ({ name })),
+      mark: (name: string) => { marks.push(name); },
+    };
+
+    markGalaxyInteractive(performanceLike);
+    markGalaxyInteractive(performanceLike);
+    markGalaxyConstellationVisible(performanceLike);
+    markGalaxyConstellationVisible(performanceLike);
+    markGalaxyRendererVisible(performanceLike);
+    markGalaxyRendererVisible(performanceLike);
+
     expect(marks).toEqual([
-      GALAXY_CRITICAL_READY_MARK,
       GALAXY_INTERACTIVE_MARK,
       GALAXY_CONSTELLATION_VISIBLE_MARK,
+      GALAXY_RENDERER_VISIBLE_MARK,
     ]);
   });
 

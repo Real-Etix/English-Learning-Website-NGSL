@@ -17,6 +17,7 @@ type StartupMetrics = {
   longestProgressiveStartupTaskMs: number;
   longestDeferredBootTaskMs: number;
   starLabelNodes: number;
+  requestedAssetCount: number;
   requestedBytes: number;
   fullAssetRequested: boolean;
   longTasks: LongTaskEntry[];
@@ -25,6 +26,7 @@ type StartupMetrics = {
 };
 
 type FrameMetrics = {
+  frameSampleCount: number;
   frameP75Ms: number;
   fullAssetRequested: boolean;
 };
@@ -66,7 +68,13 @@ function percentile75(values: number[]): number {
 }
 
 function tracker(page: Page) {
+  const requests = new Set<string>();
   const responses = new Map<string, number>();
+  page.on("request", (request) => {
+    const url = request.url();
+    if (!url.includes("/generated/galaxy/assets/")) return;
+    requests.add(url);
+  });
   page.on("response", (response) => {
     const url = response.url();
     if (!url.includes("/generated/galaxy/assets/")) return;
@@ -74,11 +82,14 @@ function tracker(page: Page) {
     responses.set(url, /^\d+$/.test(contentLength ?? "") ? Number(contentLength) : 0);
   });
   return {
+    requestedAssetCount() {
+      return requests.size;
+    },
     requestedBytes() {
       return [...responses.values()].reduce((sum, value) => sum + value, 0);
     },
     requested(relativeUrl: string) {
-      return [...responses.keys()].some((url) => url.includes(relativeUrl));
+      return [...requests].some((url) => url.includes(relativeUrl));
     },
   };
 }
@@ -311,6 +322,7 @@ test.describe("progressive galaxy performance gates", () => {
       });
       samples.push({
         ...metrics,
+        requestedAssetCount: track.requestedAssetCount(),
         requestedBytes: track.requestedBytes(),
         fullAssetRequested: track.requested(manifest.assets.full.url),
       });
@@ -343,6 +355,7 @@ test.describe("progressive galaxy performance gates", () => {
     );
     console.info("startup longestDeferredBootTaskP75 diagnostic (non-gating):", longestDeferredBootTaskP75);
     console.info("startup starLabelNodes samples:", JSON.stringify(samples.map((sample) => sample.starLabelNodes)));
+    console.info("startup requestedAssetCount samples:", JSON.stringify(samples.map((sample) => sample.requestedAssetCount)));
     console.info("startup requestedBytes samples:", JSON.stringify(samples.map((sample) => sample.requestedBytes)));
 
     expect(criticalReadyP75).toBeLessThanOrEqual(2000);
@@ -356,6 +369,7 @@ test.describe("progressive galaxy performance gates", () => {
     // boot that starts after galaxy:boot-start and outside the critical shell /
     // progressive startup window.
     expect(labelCountP75).toBeLessThanOrEqual(200);
+    expect(samples.every((sample) => sample.requestedAssetCount === 0)).toBe(true);
     expect(samples.every((sample) => sample.requestedBytes === 0)).toBe(true);
     expect(samples.some((sample) => sample.fullAssetRequested)).toBe(false);
   });
@@ -363,6 +377,10 @@ test.describe("progressive galaxy performance gates", () => {
   test("mobile-profile scripted orbit keeps 75th-percentile frame times within budget", async ({ browser, baseURL }) => {
     const { context, page, track } = await openInstrumentedPage(browser, baseURL!, "mobile");
     await waitForAtlasControls(page);
+    await page.waitForFunction(() =>
+      performance.getEntriesByName("galaxy:renderer-visible").length > 0
+      && document.querySelector('[data-testid="galaxy-host"] canvas') instanceof HTMLCanvasElement,
+    );
 
     await page.evaluate(() => {
       const scope = window as typeof window & { __galaxyFrameCaptureStart?: number };
@@ -381,7 +399,14 @@ test.describe("progressive galaxy performance gates", () => {
     await page.mouse.move(centerX + 140, centerY + 45, { steps: 28 });
     await page.mouse.move(centerX - 60, centerY + 90, { steps: 18 });
     await page.mouse.up();
-    await page.waitForTimeout(1200);
+    await page.waitForFunction(() => {
+      const scope = window as typeof window & {
+        __galaxyFrameSamples?: Array<{ t: number; dt: number }>;
+        __galaxyFrameCaptureStart?: number;
+      };
+      const captureStart = scope.__galaxyFrameCaptureStart ?? 0;
+      return (scope.__galaxyFrameSamples ?? []).filter((sample) => sample.t >= captureStart).length >= 30;
+    }, undefined, { timeout: 5_000 });
 
     const metrics = await page.evaluate(() => {
       const scope = window as typeof window & {
@@ -394,16 +419,20 @@ test.describe("progressive galaxy performance gates", () => {
         .map((sample) => sample.dt)
         .filter((sample) => Number.isFinite(sample) && sample > 0);
       return {
+        frameSampleCount: frameDurations.length,
         frameDurations,
         fullAssetRequested: false,
       };
     });
 
     const result: FrameMetrics = {
+      frameSampleCount: metrics.frameSampleCount,
       frameP75Ms: percentile75(metrics.frameDurations),
       fullAssetRequested: track.requested(manifest.assets.full.url),
     };
 
+    console.info("mobile orbit post-capture frame samples:", result.frameSampleCount);
+    expect(result.frameSampleCount).toBeGreaterThanOrEqual(30);
     expect(result.frameP75Ms).toBeLessThanOrEqual(33);
     expect(result.fullAssetRequested).toBe(false);
 

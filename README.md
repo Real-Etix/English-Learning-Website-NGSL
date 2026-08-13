@@ -36,7 +36,7 @@ Reading 11k files per request is too slow, so `scripts/build-graph-data.ts` pre-
   - search catalogs
   - optional full-list binaries
 - `components/network/star-atlas.tsx` mounts the active client atlas: raw Three.js `ProgressiveStarEngine` plus `GalaxyController`, `ChartShardStore`, and `GalaxySearchCatalog`.
-- The server/client boundary carries a compact manifest only; the first paint is a tiny CSS observatory shell, then the controls and renderer boot after the browser is idle. Chart shards and search catalogs are loaded lazily, and the **full** binary is never requested unless the learner explicitly opts into full-list mode.
+- The server/client boundary carries a compact manifest only; the first paint is a tiny CSS observatory shell with one lightweight chart proxy per manifest chart, then the controls and renderer boot after the browser is idle. `galaxy:constellation-visible` measures that first CSS constellation paint, while the deferred Three.js first frame is tracked separately at `galaxy:renderer-visible`. Chart shards and search catalogs are loaded lazily, and the **full** binary is never requested unless the learner explicitly opts into full-list mode.
 - Full mode is optional and scoped to the selected list. Returning to constellation view drops back to the lighter progressive path.
 - After chart names, wiki content, or generated search data change, rebuild the galaxy assets with `npm run build:graphs` and commit the refreshed outputs.
 

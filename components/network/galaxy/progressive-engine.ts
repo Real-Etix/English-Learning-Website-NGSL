@@ -12,7 +12,10 @@ import type {
 } from "../../../lib/galaxy/types";
 
 import { GalaxySceneModel } from "./scene-model";
-import { markLifecycleOnce } from "./deferred-boot";
+import {
+  markGalaxyInteractive,
+  markGalaxyRendererVisible,
+} from "./deferred-boot";
 import type { GalaxyQualityProfile } from "./quality";
 
 const MAX_WORD_LABELS = 200;
@@ -287,10 +290,6 @@ type ProxyLayer = {
 
 type PickResult = { type: "word"; id: string } | { type: "chart"; id: string } | null;
 
-function lifecycleMark(name: string): void {
-  if (typeof performance !== "undefined" && typeof performance.mark === "function") markLifecycleOnce(name);
-}
-
 function wordColor(word: PositionedWord, claimed: boolean, used: boolean): Vec3 {
   if (used) return COL.used;
   if (claimed) return COL.claimed;
@@ -470,7 +469,7 @@ export class ProgressiveStarEngine {
 
     this.bindContextLifecycle();
     this.bindInput();
-    lifecycleMark("galaxy:interactive");
+    markGalaxyInteractive();
     this.options.onInteractive?.();
 
     this.resizeObserver = new ResizeObserver(() => this.resize());
@@ -1256,7 +1255,7 @@ export class ProgressiveStarEngine {
       this.renderer.render(this.scene, this.camera);
       if (!this.firstRender) {
         this.firstRender = true;
-        lifecycleMark("galaxy:constellation-visible");
+        markGalaxyRendererVisible();
         this.options.onConstellationVisible?.();
         this.scheduleDeferredLabels();
       }

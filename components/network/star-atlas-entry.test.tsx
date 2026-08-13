@@ -27,6 +27,10 @@ describe("StarAtlasEntry", () => {
 
     expect(html).toContain('data-testid="star-atlas-entry-shell"');
     expect(html).toContain('data-testid="galaxy-status"');
+    expect((html.match(/data-chart-proxy=/g) ?? [])).toHaveLength(manifest.charts.length);
+    for (const chart of manifest.charts) {
+      expect(html).toContain(`data-chart-id="${chart.id}"`);
+    }
     expect(html).toContain(
       `Constellation view · ${manifest.list.chartCount} charts · ${manifest.list.wordCount.toLocaleString()} stars`,
     );

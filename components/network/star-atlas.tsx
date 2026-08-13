@@ -5,7 +5,11 @@ import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "r
 
 import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
-import { markGalaxyCriticalReady, scheduleDeferredEngineBoot } from "@/components/network/galaxy/deferred-boot";
+import {
+  markGalaxyCriticalReady,
+  markGalaxyInteractive,
+  scheduleDeferredEngineBoot,
+} from "@/components/network/galaxy/deferred-boot";
 import {
   FallbackConstellation,
   getFallbackFullModeControl,
@@ -253,6 +257,10 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   });
   const router = useRouter();
   const currentList = { slug: listSlug, label: manifest.list.label };
+
+  useEffect(() => {
+    markGalaxyInteractive();
+  }, []);
 
   const persistLocal = useCallback((patch: Record<string, unknown>) => {
     try {

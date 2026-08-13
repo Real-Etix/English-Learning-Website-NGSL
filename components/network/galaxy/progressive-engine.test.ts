@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+
 import { describe, expect, it } from "vitest";
 
 import { buildGalaxyArtifacts } from "../../../lib/galaxy/build-artifacts";
@@ -116,5 +118,18 @@ describe("zoomLevelTransition", () => {
   it("emits the initial galaxy level once", () => {
     expect(zoomLevelTransition(null, 980)).toEqual({ level: "galaxy", changed: true });
     expect(zoomLevelTransition("galaxy", 980)).toEqual({ level: "galaxy", changed: false });
+  });
+});
+
+describe("ProgressiveStarEngine lifecycle source", () => {
+  it("marks renderer-visible on the first renderer frame while keeping the preview handoff callback", () => {
+    const source = readFileSync(
+      new URL("./progressive-engine.ts", import.meta.url),
+      "utf8",
+    );
+
+    expect(source).toContain("markGalaxyRendererVisible()");
+    expect(source).toContain("this.options.onConstellationVisible?.()");
+    expect(source).not.toContain("markGalaxyConstellationVisible();");
   });
 });

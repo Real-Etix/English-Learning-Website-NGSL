@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import {
+  markGalaxyConstellationVisible,
   markGalaxyCriticalReady,
   scheduleDeferredEngineBoot,
 } from "./galaxy/deferred-boot";
@@ -21,7 +22,46 @@ const SHELL_STARS = [
   { left: "88%", top: "30%", size: 1.5, opacity: 0.54 },
 ] as const;
 
+type EntryChartProxy = {
+  chartId: string;
+  top: string;
+  left: string;
+  size: number;
+  opacity: number;
+  blur: number;
+  hue: string;
+  ambient: boolean;
+};
+
+function clamp(value: number, min: number, max: number) {
+  return Math.min(max, Math.max(min, value));
+}
+
+function buildEntryChartProxies(manifest: GalaxyManifest): EntryChartProxy[] {
+  return manifest.charts.map((chart, index) => {
+    const horizontal = clamp(50 + chart.center[0] * 0.075 + chart.center[2] * 0.018, 12, 88);
+    const vertical = clamp(48 - chart.center[1] * 0.11 + chart.center[2] * 0.012, 16, 82);
+    const ambient = chart.id === "drift";
+    const size = ambient
+      ? clamp(5 + Math.sqrt(Math.max(1, chart.wordCount)) * 0.5, 6, 12)
+      : clamp(14 + Math.sqrt(Math.max(1, chart.wordCount)) * 1.2, 16, 34);
+
+    return {
+      chartId: chart.id,
+      left: `${horizontal.toFixed(1)}%`,
+      top: `${(vertical + ((index % 3) - 1) * 1.6).toFixed(1)}%`,
+      size,
+      opacity: ambient ? 0.52 : 0.72,
+      blur: ambient ? 8 : 18,
+      hue: chart.hue,
+      ambient,
+    };
+  });
+}
+
 function StarAtlasEntryShell({ manifest }: { manifest: GalaxyManifest }) {
+  const proxies = buildEntryChartProxies(manifest);
+
   return (
     <div
       data-testid="star-atlas-entry-shell"
@@ -86,6 +126,27 @@ function StarAtlasEntryShell({ manifest }: { manifest: GalaxyManifest }) {
             }}
           />
         ))}
+        {proxies.map((proxy) => (
+          <span
+            key={proxy.chartId}
+            aria-hidden="true"
+            data-chart-proxy={proxy.chartId}
+            data-chart-id={proxy.chartId}
+            style={{
+              position: "absolute",
+              left: proxy.left,
+              top: proxy.top,
+              width: proxy.size,
+              height: proxy.size,
+              borderRadius: "50%",
+              opacity: proxy.opacity,
+              transform: "translate(-50%, -50%)",
+              background: `radial-gradient(circle, rgba(243, 246, 255, 0.98) 0%, ${proxy.hue} 45%, rgba(255, 255, 255, 0) 100%)`,
+              boxShadow: `0 0 ${proxy.blur}px color-mix(in srgb, ${proxy.hue} 62%, rgba(214, 228, 255, 0.55))`,
+              filter: proxy.ambient ? "saturate(0.72)" : "none",
+            }}
+          />
+        ))}
       </div>
       <div
         data-testid="galaxy-status"
@@ -130,6 +191,7 @@ function StarAtlasLoader(props: {
   useEffect(() => {
     let active = true;
     markGalaxyCriticalReady();
+    markGalaxyConstellationVisible();
 
     const cancelDeferredMount = scheduleDeferredEngineBoot(() => {
       void import("./star-atlas")
