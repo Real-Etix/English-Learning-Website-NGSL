@@ -101,6 +101,29 @@ describe("GalaxyController", () => {
     expect(engine.focusStar).toHaveBeenCalledWith("move", { keepCamera: false });
   });
 
+  it("unpins a stale rejected chart after a newer selection supersedes it", async () => {
+    const pendingMotion = deferred<ChartShard>();
+    const nextChartId = manifest.charts.find((chart) => chart.id !== "speech" && chart.id !== "motion")?.id;
+    if (!nextChartId) throw new Error("Expected a third fixture chart");
+    const load = vi.fn((chartId: string) => {
+      if (chartId === "motion") return pendingMotion.promise;
+      return Promise.resolve(shards.get(chartId)!);
+    });
+    const { controller, store, engine } = setup(load);
+
+    await controller.openChart("speech");
+
+    const stale = controller.openChart("motion");
+    const current = controller.openChart(nextChartId);
+    await current;
+    pendingMotion.reject(new Error("offline"));
+    await stale;
+
+    expect(engine.setChart).toHaveBeenLastCalledWith(nextChartId);
+    expect(store.unpin.mock.calls).toEqual([["speech"], ["motion"]]);
+    expect(store.unpin).not.toHaveBeenCalledWith(nextChartId);
+  });
+
   it("keeps the previous committed focus when a word flight fails", async () => {
     const load = vi.fn(async (chartId: string) => {
       if (chartId === "speech") throw new Error("offline");

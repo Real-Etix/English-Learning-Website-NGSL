@@ -1359,7 +1359,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       {view === "galaxy" && (
         <main style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 1, overflow: "hidden", pointerEvents: "none" }}>
           {narrow && (
-            <button onClick={() => setRailOpen((v) => !v)} style={{ position: "absolute", left: 12, top: 12, zIndex: 26, pointerEvents: "auto", display: "flex", alignItems: "center", gap: 8, padding: "9px 14px", border: "1px solid rgba(241,238,230,.12)", borderRadius: 999, background: "rgba(10,15,28,.9)", color: "#F1EEE6", cursor: "pointer", font: `500 12.5px/1 ${SS}`, backdropFilter: "blur(14px)" }}>
+            <button data-testid="mobile-rail-toggle" onClick={() => setRailOpen((v) => !v)} style={{ position: "absolute", left: 12, top: 12, zIndex: 26, pointerEvents: "auto", display: "flex", alignItems: "center", gap: 8, padding: "9px 14px", border: "1px solid rgba(241,238,230,.12)", borderRadius: 999, background: "rgba(10,15,28,.9)", color: "#F1EEE6", cursor: "pointer", font: `500 12.5px/1 ${SS}`, backdropFilter: "blur(14px)" }}>
               <span style={{ font: `400 12px/1 ${MN}`, color: "#BFD9F2" }}>{railOpen ? "✕" : "◇"}</span>
               <span>{railOpen ? "Close" : mode === "run" ? "Tonight's run" : mode === "ladder" ? "Ladder" : "Charts"}</span>
             </button>

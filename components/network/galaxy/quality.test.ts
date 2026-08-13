@@ -3,11 +3,25 @@ import { describe, expect, it } from "vitest";
 import { GalaxyQualityController, degradeQuality, initialQuality } from "./quality";
 
 describe("initialQuality", () => {
-  it("starts mobile with bounded DPR and three resident charts", () => {
+  it("starts mobile with the orbit-safe initial quality budget", () => {
     expect(initialQuality({ width: 390, devicePixelRatio: 3, reducedMotion: false })).toMatchObject({
       tier: "mobile",
-      pixelRatio: 1.25,
+      pixelRatio: 1,
       residentCharts: 3,
+      backgroundStars: 400,
+      glow: 0,
+    });
+  });
+
+  it("assigns a smaller mobile contextual word-label budget while keeping desktop at the full cap", () => {
+    expect(initialQuality({ width: 390, devicePixelRatio: 3, reducedMotion: false })).toMatchObject({
+      tier: "mobile",
+      maxWordLabels: 64,
+    });
+
+    expect(initialQuality({ width: 1440, devicePixelRatio: 2, reducedMotion: false })).toMatchObject({
+      tier: "desktop",
+      maxWordLabels: 200,
     });
   });
 

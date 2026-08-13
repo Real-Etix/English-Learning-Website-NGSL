@@ -64,7 +64,8 @@ function readJson<T>(relativePath: string): T {
 
 function percentile75(values: number[]): number {
   const sorted = [...values].sort((left, right) => left - right);
-  return sorted[Math.min(3, sorted.length - 1)] ?? 0;
+  if (sorted.length === 0) return 0;
+  return sorted[Math.ceil(sorted.length * 0.75) - 1] ?? 0;
 }
 
 function tracker(page: Page) {
@@ -246,8 +247,10 @@ async function openInstrumentedPage(
 }
 
 const manifest = readJson<GalaxyManifest>("public/generated/galaxy/manifests/ngsl.json");
+const firstChart = manifest.charts[0] as ({ id: string } & { name: string; asset: AssetRef }) | undefined;
 const firstChartId = manifest.charts[0]?.id ?? "";
 const startupSampleCount = Math.max(1, Number.parseInt(process.env.PERF_SAMPLE_COUNT ?? "5", 10) || 5);
+const SUSTAINED_30_FPS_FRAME_MS = 1000 / 30;
 
 async function waitForAtlasControls(page: Page) {
   await expect(page.getByRole("textbox", { name: `Search ${manifest.list.label} stars` })).toBeVisible();
@@ -280,6 +283,10 @@ function classifyLongTask(
     bootStartDeltaMs: task.startTime - bootStartMs,
   };
 }
+
+test("percentile75 uses nearest-rank selection for arbitrary sample lengths", async () => {
+  expect(percentile75([10, 60, 20, 50, 40, 30, 70])).toBe(60);
+});
 
 test.describe("progressive galaxy performance gates", () => {
   test("startup stays within the throttled mobile 75th-percentile budgets", async ({ browser, baseURL }) => {
@@ -381,6 +388,13 @@ test.describe("progressive galaxy performance gates", () => {
       performance.getEntriesByName("galaxy:renderer-visible").length > 0
       && document.querySelector('[data-testid="galaxy-host"] canvas') instanceof HTMLCanvasElement,
     );
+    if (!firstChart) throw new Error("Expected a first chart in the manifest");
+    await page.getByTestId("mobile-rail-toggle").click();
+    const firstChartButton = page.getByTestId(`chart-${firstChart.id}`);
+    await firstChartButton.scrollIntoViewIfNeeded();
+    await firstChartButton.click();
+    await expect(page.getByTestId("galaxy-status")).toContainText(`${firstChart.name} ready`);
+    await expect.poll(() => track.requested(firstChart.asset.url)).toBe(true);
 
     await page.evaluate(() => {
       const scope = window as typeof window & { __galaxyFrameCaptureStart?: number };
@@ -433,7 +447,7 @@ test.describe("progressive galaxy performance gates", () => {
 
     console.info("mobile orbit post-capture frame samples:", result.frameSampleCount);
     expect(result.frameSampleCount).toBeGreaterThanOrEqual(30);
-    expect(result.frameP75Ms).toBeLessThanOrEqual(33);
+    expect(result.frameP75Ms).toBeLessThanOrEqual(SUSTAINED_30_FPS_FRAME_MS);
     expect(result.fullAssetRequested).toBe(false);
 
     await context.close();

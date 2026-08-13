@@ -122,6 +122,37 @@ describe("zoomLevelTransition", () => {
 });
 
 describe("ProgressiveStarEngine lifecycle source", () => {
+  it("routes contextual word labels through the active quality budget instead of the hard-coded 200 count", () => {
+    const source = readFileSync(
+      new URL("./progressive-engine.ts", import.meta.url),
+      "utf8",
+    );
+
+    expect(source).toMatch(/private maxWordLabels = MAX_WORD_LABELS;/);
+    expect(source).toMatch(/max:\s*this\.maxWordLabels/);
+    expect(source).toMatch(/this\.maxWordLabels\s*=\s*clampWordLabelBudget\(profile\.maxWordLabels\);/);
+  });
+
+  it("avoids rendering an empty claim-ring layer", () => {
+    const source = readFileSync(
+      new URL("./progressive-engine.ts", import.meta.url),
+      "utf8",
+    );
+
+    expect(source).toMatch(/layer\.rings\.visible\s*=\s*hasVisibleRingData\(layer\);/);
+    expect(source).toContain("function hasVisibleRingData");
+  });
+
+  it("projects only assigned word labels on each frame", () => {
+    const source = readFileSync(
+      new URL("./progressive-engine.ts", import.meta.url),
+      "utf8",
+    );
+
+    expect(source).toContain("const labelCount = Math.min(this.labelWords.length, this.labelElements.length);");
+    expect(source).toContain("labelIndex < labelCount");
+  });
+
   it("marks renderer-visible on the first renderer frame while keeping the preview handoff callback", () => {
     const source = readFileSync(
       new URL("./progressive-engine.ts", import.meta.url),

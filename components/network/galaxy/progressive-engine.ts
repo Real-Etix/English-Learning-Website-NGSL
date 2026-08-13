@@ -24,6 +24,10 @@ const MAX_ROUTE_SEGMENTS = 64;
 const DEFERRED_WORD_LABEL_BATCH = 12;
 const DEFERRED_CHART_LABEL_BATCH = 4;
 
+function clampWordLabelBudget(value: number): number {
+  return Math.max(1, Math.min(MAX_WORD_LABELS, Math.round(value || MAX_WORD_LABELS)));
+}
+
 const COL: Record<string, Vec3> = {
   core: [0.749, 0.851, 0.949],
   advanced: [0.796, 0.725, 0.914],
@@ -277,6 +281,10 @@ type WordLayer = {
   onScreen: Uint8Array;
 };
 
+function hasVisibleRingData(layer: Pick<WordLayer, "ringGain">): boolean {
+  return layer.ringGain.some((gain) => gain > 0);
+}
+
 type ProxyLayer = {
   points: ProxyPoint[];
   positions: Float32Array;
@@ -344,6 +352,7 @@ export class ProgressiveStarEngine {
   private labelBuildChunkIndex = 0;
   private labelBuildTimer = 0;
   private restoreTimer?: ReturnType<typeof setTimeout>;
+  private maxWordLabels = MAX_WORD_LABELS;
 
   private dpr = 1;
   private width = 800;
@@ -482,6 +491,7 @@ export class ProgressiveStarEngine {
 
   setQuality(profile: GalaxyQualityProfile): void {
     this.dpr = profile.pixelRatio;
+    this.maxWordLabels = clampWordLabelBudget(profile.maxWordLabels);
     this.transitionMs = Math.max(80, profile.transitionMs);
     this.renderer.setPixelRatio(profile.pixelRatio);
     this.starMaterial.uniforms.uDpr.value = profile.pixelRatio;
@@ -516,7 +526,7 @@ export class ProgressiveStarEngine {
     this.fullLayer = this.buildWordLayer(this.model.visibleWords(), previousLayer);
     this.disposeWordLayer(oldFullLayer);
     this.fullLayer.points.visible = true;
-    this.fullLayer.rings.visible = true;
+    this.fullLayer.rings.visible = hasVisibleRingData(this.fullLayer);
     if (this.residentLayer) {
       this.residentLayer.points.visible = false;
       this.residentLayer.rings.visible = false;
@@ -531,7 +541,7 @@ export class ProgressiveStarEngine {
     this.fullLayer = null;
     if (this.residentLayer) {
       this.residentLayer.points.visible = true;
-      this.residentLayer.rings.visible = true;
+      this.residentLayer.rings.visible = hasVisibleRingData(this.residentLayer);
     }
     this.syncProxyTargets();
     this.refreshContext();
@@ -808,7 +818,7 @@ export class ProgressiveStarEngine {
     this.residentLayer = this.buildWordLayer(this.model.residentWords(), oldLayer);
     const residentVisible = !this.fullLayer;
     this.residentLayer.points.visible = residentVisible;
-    this.residentLayer.rings.visible = residentVisible;
+    this.residentLayer.rings.visible = residentVisible && hasVisibleRingData(this.residentLayer);
     this.disposeWordLayer(oldLayer);
   }
 
@@ -1105,6 +1115,7 @@ export class ProgressiveStarEngine {
     layer.geometry.getAttribute("aColor").needsUpdate = true;
     layer.geometry.getAttribute("aSize").needsUpdate = true;
     layer.ringGeometry.getAttribute("aSize").needsUpdate = true;
+    layer.rings.visible = hasVisibleRingData(layer);
   }
 
   private browseVisibility(word: PositionedWord): number {
@@ -1200,7 +1211,7 @@ export class ProgressiveStarEngine {
       hover: this.state.hover,
       route: this.state.routeSet,
       claimed: this.state.claimed,
-      max: MAX_WORD_LABELS,
+      max: this.maxWordLabels,
     });
     for (let index = 0; index < this.labelElements.length; index++) {
       const word = this.labelWords[index];
@@ -1372,7 +1383,8 @@ export class ProgressiveStarEngine {
   }
 
   private projectWordLabels(layer: WordLayer | null): void {
-    for (let labelIndex = 0; labelIndex < this.labelElements.length; labelIndex++) {
+    const labelCount = Math.min(this.labelWords.length, this.labelElements.length);
+    for (let labelIndex = 0; labelIndex < labelCount; labelIndex++) {
       const element = this.labelElements[labelIndex];
       const word = this.labelWords[labelIndex];
       const wordIndex = word && layer ? layer.index.get(word.lemma) : undefined;

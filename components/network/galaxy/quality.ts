@@ -6,6 +6,7 @@ export type GalaxyQualityProfile = {
   glow: 0 | 1 | 2;
   twinkle: boolean;
   transitionMs: number;
+  maxWordLabels: number;
 };
 
 type GalaxyQualityInput = {
@@ -36,12 +37,13 @@ export function initialQuality(input: GalaxyQualityInput): GalaxyQualityProfile 
   const tier = input.width < MOBILE_WIDTH ? "mobile" : "desktop";
   return {
     tier,
-    pixelRatio: clampPixelRatio(input.devicePixelRatio, tier === "mobile" ? 1.25 : 1.75),
+    pixelRatio: clampPixelRatio(input.devicePixelRatio, tier === "mobile" ? 1 : 1.75),
     residentCharts: tier === "mobile" ? 3 : 8,
-    backgroundStars: tier === "mobile" ? 700 : 1500,
-    glow: tier === "mobile" ? 1 : 2,
+    backgroundStars: tier === "mobile" ? 400 : 1500,
+    glow: tier === "mobile" ? 0 : 2,
     twinkle: !input.reducedMotion,
     transitionMs: baseTransitionMs(tier, input.reducedMotion),
+    maxWordLabels: tier === "mobile" ? 64 : 200,
   };
 }
 

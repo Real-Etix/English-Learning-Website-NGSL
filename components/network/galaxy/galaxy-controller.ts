@@ -177,7 +177,10 @@ export class GalaxyController {
       this.update({ chartId, chartLoad: "ready", chartError: null });
       return shard;
     } catch (error) {
-      if (this.disposed || revision !== this.selectionRevision) return null;
+      if (this.disposed || revision !== this.selectionRevision) {
+        if (this.requestedChartId !== chartId && this.pinnedChartId !== chartId) this.store.unpin(chartId);
+        return null;
+      }
       this.store.unpin(chartId);
       this.update({ chartId, chartLoad: "error", chartError: errorMessage(error) });
       return null;
