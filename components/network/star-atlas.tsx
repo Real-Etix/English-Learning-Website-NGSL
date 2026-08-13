@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "r
 
 import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
+import { markGalaxyCriticalReady, scheduleDeferredEngineBoot } from "@/components/network/galaxy/deferred-boot";
 import {
   FallbackConstellation,
   getFallbackFullModeControl,
@@ -17,7 +18,6 @@ import {
   galaxyStoreOptions,
   type GalaxyControllerStatus,
 } from "@/components/network/galaxy/galaxy-controller";
-import { ProgressiveStarEngine } from "@/components/network/galaxy/progressive-engine";
 import { GalaxyQualityController, initialQuality } from "@/components/network/galaxy/quality";
 import { createChartEvictionHandler } from "@/components/network/galaxy/resident-shards";
 import { GalaxySearchCatalog } from "@/components/network/galaxy/search-catalog";
@@ -30,6 +30,7 @@ import type { FullGalaxyData } from "@/lib/galaxy/full-codec";
 import type { LadderRung, RunStop } from "@/lib/galaxy/learning-routes";
 import type { ChartShard, GalaxyChart, GalaxyManifest, SearchEntry } from "@/lib/galaxy/types";
 import type { WikiPage } from "@/lib/wiki/parse-wiki";
+import type { ProgressiveStarEngine } from "@/components/network/galaxy/progressive-engine";
 
 /* ============================================================================
    Star Atlas — a faithful rebuild of the design-handoff prototype.
@@ -209,6 +210,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [pendingWordRetryLemma, setPendingWordRetryLemma] = useState<string | null>(null);
   const [engineReady, setEngineReady] = useState(false);
   const [engineError, setEngineError] = useState<string | null>(null);
+  const [previewVisible, setPreviewVisible] = useState(true);
   const [renderFallback, setRenderFallback] = useState(false);
   const [fallbackController, setFallbackController] = useState<Pick<GalaxyController, "openChart" | "openWord"> | null>(null);
   const [fullMode, dispatchFullMode] = useReducer(reduceFullMode, initialFullModeState);
@@ -216,6 +218,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const hostRef = useRef<HTMLDivElement | null>(null);
   const resourcesRef = useRef<AtlasResources | null>(null);
   const engineDelegateRef = useRef<ProgressiveStarEngine | null>(null);
+  const previewVisibleRef = useRef(true);
   const renderFallbackRef = useRef(false);
   const qualitySamplerRef = useRef<{ start: () => void; stop: () => void } | null>(null);
   const selectHandlerRef = useRef<(lemma: string | null) => void>(() => undefined);
@@ -228,6 +231,26 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const fullAbortRef = useRef<AbortController | null>(null);
   const fullDataRef = useRef<FullGalaxyData | null>(null);
   const fullLoadRevision = useRef(0);
+  const deferredBootCancelRef = useRef<(() => void) | null>(null);
+  const latestSkyStateRef = useRef<{
+    owned: Set<string>;
+    used: Set<string>;
+    mode: "chart" | "run" | "ladder";
+    chart: string | null;
+    focus: string | null;
+    route: string[];
+    routeIndex: number;
+    panelOffset: number;
+  }>({
+    owned: new Set(),
+    used: new Set(),
+    mode: "chart",
+    chart: null,
+    focus: null,
+    route: [],
+    routeIndex: 0,
+    panelOffset: -272,
+  });
   const router = useRouter();
   const currentList = { slug: listSlug, label: manifest.list.label };
 
@@ -258,9 +281,14 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setRenderFallback(value);
   }, []);
 
+  const setPreviewMode = useCallback((value: boolean) => {
+    previewVisibleRef.current = value;
+    setPreviewVisible(value);
+  }, []);
+
   const atlasEngine = useMemo<AtlasEngine>(() => ({
     clearFocus: () => {
-      if (renderFallbackRef.current) setFocus(null);
+      if (renderFallbackRef.current || (previewVisibleRef.current && !engineDelegateRef.current)) setFocus(null);
       engineDelegateRef.current?.clearFocus();
     },
     dispose: () => {
@@ -275,7 +303,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       engineDelegateRef.current?.exitFull();
     },
     focusStar: (lemma, options) => {
-      if (renderFallbackRef.current) {
+      if (renderFallbackRef.current || (previewVisibleRef.current && !engineDelegateRef.current)) {
         setFocus(lemma);
         return true;
       }
@@ -285,14 +313,14 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       engineDelegateRef.current?.removeChart(chartId);
     },
     resetView: () => {
-      if (renderFallbackRef.current) {
+      if (renderFallbackRef.current || (previewVisibleRef.current && !engineDelegateRef.current)) {
         setChart(null);
         setFocus(null);
       }
       engineDelegateRef.current?.resetView();
     },
     setChart: (chartId, options) => {
-      if (renderFallbackRef.current) {
+      if (renderFallbackRef.current || (previewVisibleRef.current && !engineDelegateRef.current)) {
         setChart(chartId);
         setFocus(null);
       }
@@ -324,6 +352,9 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
   const activateFallback = useCallback(() => {
     if (renderFallbackRef.current) return;
+    deferredBootCancelRef.current?.();
+    deferredBootCancelRef.current = null;
+    setPreviewMode(false);
     qualitySamplerRef.current?.stop();
     fullLoadRevision.current += 1;
     fullAbortRef.current?.abort();
@@ -337,7 +368,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setEngineError(FULL_3D_UNAVAILABLE_MESSAGE);
     setEngineReady(true);
     setFallbackMode(true);
-  }, [setFallbackMode]);
+  }, [setFallbackMode, setPreviewMode]);
 
   const loadCatalog = useCallback(async () => {
     const resources = resourcesRef.current;
@@ -400,6 +431,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     if (!host) return;
     setEngineReady(false);
     setEngineError(null);
+    setPreviewMode(true);
     setFallbackMode(false);
     engineDelegateRef.current = null;
     const connection = (navigator as Navigator & { connection?: EventTarget & { saveData?: boolean } }).connection;
@@ -440,20 +472,6 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       },
     };
 
-    try {
-      const engine = new ProgressiveStarEngine(host, manifest, {
-        onSelectWord: (lemma) => selectHandlerRef.current(lemma),
-        onSelectChart: (chartId) => chartHandlerRef.current(chartId),
-        onApproachChart: (chartId) => resourcesRef.current?.controller.approachChart(chartId),
-        onZoomLevel: setZoom,
-        onContextFailure: activateFallback,
-        onInteractive: () => setEngineReady(true),
-      });
-      engineDelegateRef.current = engine;
-      atlasEngine.setQuality(qualityProfile);
-    } catch {
-      activateFallback();
-    }
     let controller: GalaxyController | null = null;
     const storeOptions = galaxyStoreOptions(qualityProfile.tier === "mobile");
     const store = new ChartShardStore(manifest, {
@@ -491,7 +509,61 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     connection?.addEventListener("change", updateSaveData);
     resourcesRef.current = { engine: atlasEngine, store, catalog, controller: activeController, selection };
     setFallbackController(activeController);
+    markGalaxyCriticalReady();
+    setEngineReady(true);
+
+    const hydrateEngine = (engine: ProgressiveStarEngine) => {
+      engine.setQuality(qualityProfile);
+      for (const chartId of store.residentIds()) {
+        const shard = store.get(chartId);
+        if (shard) engine.upsertChart(shard);
+      }
+      const state = latestSkyStateRef.current;
+      engine.setClaimed(state.owned);
+      engine.setUsed(state.used);
+      engine.setMode(state.mode);
+      engine.setRoute(state.mode === "run" ? state.route : [], state.mode === "run" ? state.routeIndex : 0);
+      engine.setPanelOffset(state.panelOffset);
+      if (fullDataRef.current) engine.enterFull(fullDataRef.current);
+      if (state.mode === "chart") engine.setChart(state.chart, { keepCamera: !!state.focus });
+      else engine.setChart(null);
+      if (state.focus) engine.focusStar(state.focus, { keepCamera: false });
+    };
+
+    let disposed = false;
+    const cancelDeferredBoot = scheduleDeferredEngineBoot(() => {
+      if (disposed || renderFallbackRef.current || hostRef.current !== host) return;
+      void import("@/components/network/galaxy/progressive-engine")
+        .then((module) => {
+          if (disposed || renderFallbackRef.current || hostRef.current !== host) return;
+          const engine = new module.ProgressiveStarEngine(host, manifest, {
+            onSelectWord: (lemma) => selectHandlerRef.current(lemma),
+            onSelectChart: (chartId) => chartHandlerRef.current(chartId),
+            onApproachChart: (chartId) => resourcesRef.current?.controller.approachChart(chartId),
+            onZoomLevel: setZoom,
+            onContextFailure: activateFallback,
+            onInteractive: () => setEngineReady(true),
+            onConstellationVisible: () => setPreviewMode(false),
+          });
+          if (disposed || renderFallbackRef.current || hostRef.current !== host) {
+            engine.dispose();
+            return;
+          }
+          engineDelegateRef.current = engine;
+          hydrateEngine(engine);
+        })
+        .catch(() => {
+          if (!disposed && !renderFallbackRef.current && hostRef.current === host) activateFallback();
+        })
+        .finally(() => {
+          if (deferredBootCancelRef.current === cancelDeferredBoot) deferredBootCancelRef.current = null;
+        });
+    });
+    deferredBootCancelRef.current = cancelDeferredBoot;
     return () => {
+      disposed = true;
+      cancelDeferredBoot();
+      if (deferredBootCancelRef.current === cancelDeferredBoot) deferredBootCancelRef.current = null;
       qualitySamplerRef.current?.stop();
       qualitySamplerRef.current = null;
       fullLoadRevision.current += 1;
@@ -510,6 +582,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       setFallbackController(null);
       activeController.dispose();
       atlasEngine.dispose();
+      setPreviewMode(false);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [manifest.version]);
@@ -936,6 +1009,19 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const runDone = route.filter((l) => owned.has(l)).length;
   const runComplete = route.length > 0 && runDone === route.length;
 
+  useEffect(() => {
+    latestSkyStateRef.current = {
+      owned,
+      used,
+      mode,
+      chart,
+      focus,
+      route,
+      routeIndex: runDone,
+      panelOffset: narrow ? 0 : focus ? 420 : -272,
+    };
+  }, [owned, used, mode, chart, focus, route, runDone, narrow]);
+
   // Ladder scoring and ownership are authoritative in the chart-aware API.
   const rungs = useMemo(() => {
     const list = ladderRungs.map((rung) => ({
@@ -1130,7 +1216,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
         {/* List switcher — each list is its own sky */}
         <div style={{ position: "relative", flex: "none" }}>
-          <button onClick={() => setListMenuOpen((v) => !v)} style={{ display: "flex", alignItems: "center", gap: 8, padding: "6px 11px", border: `1px solid ${listMenuOpen ? "rgba(191,217,242,.32)" : "rgba(241,238,230,.1)"}`, borderRadius: 999, background: listMenuOpen ? "rgba(191,217,242,.12)" : "rgba(241,238,230,.05)", color: "#F1EEE6", cursor: "pointer", font: `500 12px/1 ${SS}` }}>
+          <button data-testid="list-switcher" onClick={() => setListMenuOpen((v) => !v)} style={{ display: "flex", alignItems: "center", gap: 8, padding: "6px 11px", border: `1px solid ${listMenuOpen ? "rgba(191,217,242,.32)" : "rgba(241,238,230,.1)"}`, borderRadius: 999, background: listMenuOpen ? "rgba(191,217,242,.12)" : "rgba(241,238,230,.05)", color: "#F1EEE6", cursor: "pointer", font: `500 12px/1 ${SS}` }}>
             <span style={{ font: `500 9px/1 ${MN}`, letterSpacing: ".16em", color: "#6B7789", textTransform: "uppercase" }}>List</span>
             <span>{currentList.label}</span>
             <span style={{ font: `400 9px/1 ${MN}`, color: "#6B7789" }}>▾</span>
@@ -1141,7 +1227,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
               <ul style={{ position: "absolute", top: "calc(100% + 6px)", left: 0, minWidth: 180, margin: 0, padding: 5, listStyle: "none", borderRadius: 12, border: "1px solid rgba(241,238,230,.1)", background: "rgba(10,15,28,.97)", backdropFilter: "blur(18px)", boxShadow: "0 22px 50px rgba(0,0,0,.6)", zIndex: 45, animation: "riseIn .16s ease both" }}>
                 {LISTS.map((l) => (
                   <li key={l.slug}>
-                    <button onClick={() => { setListMenuOpen(false); if (l.slug !== listSlug) { leaveFullMode("exit"); router.push(`/network/${l.slug}`); } }} style={{ display: "flex", width: "100%", alignItems: "center", gap: 9, padding: "8px 11px", border: "none", borderRadius: 9, background: l.slug === listSlug ? "rgba(191,217,242,.12)" : "transparent", color: l.slug === listSlug ? "#BFD9F2" : "#F1EEE6", cursor: "pointer", textAlign: "left", font: `500 13px/1 ${SS}` }}>
+                    <button data-testid={`list-option-${l.slug}`} onClick={() => { setListMenuOpen(false); if (l.slug !== listSlug) { leaveFullMode("exit"); router.push(`/network/${l.slug}`); } }} style={{ display: "flex", width: "100%", alignItems: "center", gap: 9, padding: "8px 11px", border: "none", borderRadius: 9, background: l.slug === listSlug ? "rgba(191,217,242,.12)" : "transparent", color: l.slug === listSlug ? "#BFD9F2" : "#F1EEE6", cursor: "pointer", textAlign: "left", font: `500 13px/1 ${SS}` }}>
                       <span style={{ width: 6, height: 6, borderRadius: 999, flex: "none", background: l.slug === listSlug ? "#8FE3C0" : "rgba(241,238,230,.2)" }} />
                       <span>{l.label}</span>
                     </button>
@@ -1206,8 +1292,8 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
       {/* ---------- MOUNTED SKY ---------- */}
       <div style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 0, opacity: view === "galaxy" ? 1 : 0, pointerEvents: view === "galaxy" ? "auto" : "none", transition: "opacity .32s ease" }}>
-        <div ref={hostRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: renderFallback ? "none" : "auto" }} />
-        {renderFallback && (
+        <div data-testid="galaxy-host" ref={hostRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: renderFallback || previewVisible ? "none" : "auto" }} />
+        {(renderFallback || previewVisible) && (
           <FallbackConstellation
             manifest={manifest}
             controller={fallbackController}
@@ -1217,12 +1303,13 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
             owned={owned}
             used={used}
             route={new Set(route)}
+            variant={renderFallback ? "fallback" : "preview"}
           />
         )}
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: "radial-gradient(120% 90% at 50% 45%,transparent 40%,rgba(7,11,22,.55) 100%)" }} />
       </div>
 
-      <div aria-live="polite" role="status" style={{ position: "absolute", left: "50%", top: narrow ? 110 : 68, zIndex: 22, transform: "translateX(-50%)", display: view === "galaxy" ? "flex" : "none", alignItems: "center", gap: 8, maxWidth: "calc(100% - 32px)", padding: "6px 11px", borderRadius: 999, background: "rgba(10,15,28,.78)", color: controllerStatus.chartLoad === "error" || engineError ? "#E8A89F" : "#6B7789", backdropFilter: "blur(12px)", font: `500 10px/1.3 ${MN}`, letterSpacing: ".04em", pointerEvents: controllerStatus.chartLoad === "error" ? "auto" : "none", whiteSpace: "nowrap" }}>
+      <div data-testid="galaxy-status" aria-live="polite" role="status" style={{ position: "absolute", left: "50%", top: narrow ? 110 : 68, zIndex: 22, transform: "translateX(-50%)", display: view === "galaxy" ? "flex" : "none", alignItems: "center", gap: 8, maxWidth: "calc(100% - 32px)", padding: "6px 11px", borderRadius: 999, background: "rgba(10,15,28,.78)", color: controllerStatus.chartLoad === "error" || engineError ? "#E8A89F" : "#6B7789", backdropFilter: "blur(12px)", font: `500 10px/1.3 ${MN}`, letterSpacing: ".04em", pointerEvents: controllerStatus.chartLoad === "error" ? "auto" : "none", whiteSpace: "nowrap" }}>
         <span>{engineError ?? (engineReady ? skyStatusText : "Charting constellations…")}</span>
         {controllerStatus.chartLoad === "error" && !engineError && <button onClick={retrySelection} style={{ padding: "3px 8px", border: "1px solid rgba(232,168,159,.34)", borderRadius: 999, background: "transparent", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>Retry</button>}
       </div>
@@ -1248,7 +1335,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
           <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 272, zIndex: 25, display: "flex", flexDirection: "column", gap: 10, padding: 14, paddingTop: narrow ? 60 : 14, overflowY: "auto", pointerEvents: "none", transform: `translateX(${railX})`, transition: "transform .3s cubic-bezier(.2,.8,.2,1)" }}>
             <div style={{ pointerEvents: "auto", display: "flex", gap: 3, padding: 3, borderRadius: 12, background: "rgba(10,15,28,.86)", border: "1px solid rgba(241,238,230,.1)", backdropFilter: "blur(16px)" }}>
               {MODE_DEFS.map(([id, glyph, label]) => (
-                <button key={id} onClick={() => setModeTo(id as "chart" | "run" | "ladder")} style={{ flex: 1, padding: "8px 4px 7px", border: "none", borderRadius: 9, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, transition: "background .18s ease", background: mode === id ? "rgba(241,238,230,.12)" : "transparent" }}>
+                <button data-testid={`mode-${id}`} key={id} onClick={() => setModeTo(id as "chart" | "run" | "ladder")} style={{ flex: 1, padding: "8px 4px 7px", border: "none", borderRadius: 9, cursor: "pointer", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, transition: "background .18s ease", background: mode === id ? "rgba(241,238,230,.12)" : "transparent" }}>
                   <span style={{ font: `400 14px/1 ${MN}`, color: mode === id ? "#F1EEE6" : "#6B7789" }}>{glyph}</span>
                   <span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".12em", textTransform: "uppercase", color: mode === id ? "#F1EEE6" : "#6B7789" }}>{label}</span>
                 </button>
@@ -1259,6 +1346,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
             {narrow && (
               <button
+                data-testid="full-mode-toggle"
                 onClick={toggleFullMode}
                 disabled={fullModeControl.disabled}
                 aria-disabled={fullModeControl.disabled}
@@ -1275,7 +1363,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
                   <span style={{ font: `500 10.5px/1 ${MN}`, color: "#94A0B4" }}>{chartsDone} sealed</span>
                 </div>
                 {chartStats.map(({ ch, total, got, pct, done }) => (
-                  <button key={ch.id} onClick={() => pickChart(ch.id)} style={{ display: "flex", alignItems: "center", gap: 10, width: "100%", padding: "9px 11px", border: `1px solid ${chart === ch.id ? "rgba(241,238,230,.26)" : done ? "rgba(242,217,160,.26)" : "rgba(241,238,230,.08)"}`, borderRadius: 12, background: chart === ch.id ? "rgba(241,238,230,.1)" : "rgba(10,15,28,.82)", cursor: "pointer", textAlign: "left", backdropFilter: "blur(16px)", transition: "background .18s ease, border-color .18s ease" }}>
+                  <button data-testid={`chart-${ch.id}`} key={ch.id} onClick={() => pickChart(ch.id)} style={{ display: "flex", alignItems: "center", gap: 10, width: "100%", padding: "9px 11px", border: `1px solid ${chart === ch.id ? "rgba(241,238,230,.26)" : done ? "rgba(242,217,160,.26)" : "rgba(241,238,230,.08)"}`, borderRadius: 12, background: chart === ch.id ? "rgba(241,238,230,.1)" : "rgba(10,15,28,.82)", cursor: "pointer", textAlign: "left", backdropFilter: "blur(16px)", transition: "background .18s ease, border-color .18s ease" }}>
                     <span style={{ display: "grid", placeItems: "center", width: 24, height: 24, flex: "none", borderRadius: 7, font: `400 12px/1 ${MN}`, background: "rgba(241,238,230,.07)", color: ch.hue }}>{ch.glyph}</span>
                     <span style={{ flex: 1, minWidth: 0, display: "flex", flexDirection: "column", gap: 5 }}>
                       <span style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: 6 }}>
@@ -1357,6 +1445,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
               )}
               {!narrow && (
                 <button
+                  data-testid="full-mode-toggle"
                   onClick={toggleFullMode}
                   disabled={fullModeControl.disabled}
                   aria-disabled={fullModeControl.disabled}

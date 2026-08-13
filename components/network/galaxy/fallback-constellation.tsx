@@ -120,6 +120,7 @@ export function FallbackConstellation({
   owned,
   used,
   route,
+  variant = "fallback",
 }: {
   manifest: GalaxyManifest;
   controller: FallbackController | null;
@@ -129,6 +130,7 @@ export function FallbackConstellation({
   owned: ReadonlySet<string>;
   used: ReadonlySet<string>;
   route: ReadonlySet<string>;
+  variant?: "fallback" | "preview";
 }) {
   const projectedCharts = useMemo(() => projectChartsToConstellation(manifest.charts), [manifest.charts]);
   const selectedChart = selectedChartId ? manifest.charts.find((chart) => chart.id === selectedChartId) ?? null : null;
@@ -144,7 +146,7 @@ export function FallbackConstellation({
         position: "absolute",
         inset: 0,
         display: "grid",
-        gridTemplateColumns: "minmax(0, 1.6fr) minmax(280px, 0.9fr)",
+        gridTemplateColumns: variant === "preview" ? "minmax(0, 1fr)" : "minmax(0, 1.6fr) minmax(280px, 0.9fr)",
         gap: 16,
         padding: 16,
         pointerEvents: "auto",
@@ -159,7 +161,7 @@ export function FallbackConstellation({
           border: "1px solid rgba(241,238,230,.08)",
           background: "rgba(10,15,28,.72)",
           backdropFilter: "blur(18px)",
-          boxShadow: "0 20px 50px rgba(0,0,0,.36)",
+          boxShadow: variant === "preview" ? "none" : "0 20px 50px rgba(0,0,0,.36)",
         }}
       >
         <svg
@@ -224,7 +226,7 @@ export function FallbackConstellation({
         </svg>
       </section>
 
-      <aside
+      {variant === "fallback" && <aside
         aria-label={selectedChart ? `${selectedChart.name} words` : "Chart words"}
         style={{
           minWidth: 0,
@@ -298,7 +300,7 @@ export function FallbackConstellation({
             Select any chart in the constellation to load its words here. Search, Run, Ladder, Tutor, and the detail drawer still work in this fallback view.
           </p>
         )}
-      </aside>
+      </aside>}
     </div>
   );
 }

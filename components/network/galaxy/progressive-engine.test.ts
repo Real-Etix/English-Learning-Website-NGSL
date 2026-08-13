@@ -7,6 +7,7 @@ import type { GalaxyManifest } from "../../../lib/galaxy/types";
 import {
   buildProxyLayout,
   focusCameraDistance,
+  planDeferredLabelChunks,
   transferAlphaStateByLemma,
   zoomLevelTransition,
 } from "./progressive-engine";
@@ -89,6 +90,25 @@ describe("focusCameraDistance", () => {
     expect(focusCameraDistance(150)).toBe(190);
     expect(focusCameraDistance(200)).toBe(200);
     expect(focusCameraDistance(500)).toBe(235);
+  });
+});
+
+describe("planDeferredLabelChunks", () => {
+  it("splits label DOM creation into bounded batches while preserving exact totals", () => {
+    const chunks = planDeferredLabelChunks(200, 44);
+
+    expect(chunks.length).toBeGreaterThan(1);
+    expect(chunks.every((chunk) => chunk.wordCount <= 12)).toBe(true);
+    expect(chunks.every((chunk) => chunk.chartCount <= 4)).toBe(true);
+    expect(chunks.reduce((sum, chunk) => sum + chunk.wordCount, 0)).toBe(200);
+    expect(chunks.reduce((sum, chunk) => sum + chunk.chartCount, 0)).toBe(44);
+  });
+
+  it("omits empty chunks for small totals", () => {
+    expect(planDeferredLabelChunks(0, 0)).toEqual([]);
+    expect(planDeferredLabelChunks(3, 1)).toEqual([
+      { wordStart: 0, wordCount: 3, chartStart: 0, chartCount: 1 },
+    ]);
   });
 });
 

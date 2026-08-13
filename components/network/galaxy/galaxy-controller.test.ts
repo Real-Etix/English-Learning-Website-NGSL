@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { buildGalaxyArtifacts } from "../../../lib/galaxy/build-artifacts";
+import { compactGalaxyManifestForClient } from "../../../lib/galaxy/client-manifest";
 import { fixtureGraph } from "../../../lib/galaxy/test-fixture";
 import type { ChartShard } from "../../../lib/galaxy/types";
 
@@ -313,6 +314,38 @@ describe("GalaxyController", () => {
     const strongest = manifest.charts.find((chart) => chart.id === "speech")!.neighbors
       .toSorted((left, right) => right.weight - left.weight)[0]?.chartId;
     if (strongest) expect(store.prefetch).toHaveBeenCalledWith(strongest);
+  });
+
+  it("prefetches the retained neighbour when startup uses a compact client manifest", async () => {
+    const compactManifest = compactGalaxyManifestForClient(manifest);
+    const store = {
+      load: vi.fn(async (chartId: string) => shards.get(chartId)!),
+      prefetch: vi.fn(),
+      pin: vi.fn(),
+      unpin: vi.fn(),
+      dispose: vi.fn(),
+    };
+    const catalog = {
+      load: vi.fn(async () => searchData.entries),
+      find: vi.fn((query: string) => searchData.entries.filter((entry) => entry.normalized.includes(query))),
+      get: vi.fn((lemma: string) => searchData.entries.find((entry) => entry.lemma === lemma) ?? null),
+    };
+    const engine = {
+      upsertChart: vi.fn(),
+      removeChart: vi.fn(),
+      setChart: vi.fn(),
+      focusStar: vi.fn(() => true),
+    };
+    const controller = new GalaxyController({ manifest: compactManifest, store, catalog, engine, saveData: false });
+
+    controller.approachChart("speech");
+    await vi.runAllTicks();
+    await vi.advanceTimersByTimeAsync(750);
+
+    expect(compactManifest.charts.find((chart) => chart.id === "speech")?.neighbors).toHaveLength(1);
+    expect(store.prefetch).toHaveBeenCalledWith(
+      compactManifest.charts.find((chart) => chart.id === "speech")!.neighbors[0]!.chartId,
+    );
   });
 
   it("cancels a scheduled neighbour prefetch when a chart is opened", async () => {

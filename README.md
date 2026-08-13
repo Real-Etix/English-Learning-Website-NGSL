@@ -10,7 +10,7 @@ It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM 
 
 ## What's in it
 
-- **3D vocabulary galaxy** (`react-force-graph-3d` / Three.js) — per list (NGSL, TOEIC, Business, Academic, Fitness) or "All". Orbit, zoom, search, and click a star to fly to it.
+- **3D vocabulary galaxy** (raw Three.js progressive constellations) — per list (NGSL, TOEIC, Business, Academic, Fitness) or "All". Orbit, zoom, search, and click a star to fly to it.
 - **Cambridge-style word cards** — IPA + UK/US audio (Free Dictionary API), definition, examples, the **advanced-word ladder** (`buy → purchase → procure`), synonyms/antonyms, word family.
 - **AI assistant** — a floating DeepSeek-powered tutor that writes with a list's real vocabulary, explains/quizzes words, and checks your writing.
 - **Collection spaces (Phase 1)** — collect words to earn XP, build **Your Space**, and share it (`/g/<slug>`). Visiting a space highlights the words you *don't* have in magenta.
@@ -27,6 +27,18 @@ It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM 
 ### From wiki → graph (build-time)
 Reading 11k files per request is too slow, so `scripts/build-graph-data.ts` pre-computes a small **lite graph** (nodes + edges) per list into `data/generated/graphs/*.json`. Pages read those (`lib/wiki/graph-store.ts`), and word detail is fetched per-click via `/api/word/[lemma]`.
 > ⚠️ **Re-run `npm run build:graphs` and commit after any change to the wiki**, or the deployed galaxy shows stale data.
+
+### Progressive Star Atlas delivery
+- The production `/network/[listSlug]` route is **manifest-only on the server**. It embeds a list manifest, not the whole chart graph.
+- `npm run build:graphs` emits both the server graph JSON and the public progressive assets under `public/generated/galaxy/`:
+  - one manifest per list
+  - chart shards
+  - search catalogs
+  - optional full-list binaries
+- `components/network/star-atlas.tsx` mounts the active client atlas: raw Three.js `ProgressiveStarEngine` plus `GalaxyController`, `ChartShardStore`, and `GalaxySearchCatalog`.
+- The server/client boundary carries a compact manifest only; the first paint is a tiny CSS observatory shell, then the controls and renderer boot after the browser is idle. Chart shards and search catalogs are loaded lazily, and the **full** binary is never requested unless the learner explicitly opts into full-list mode.
+- Full mode is optional and scoped to the selected list. Returning to constellation view drops back to the lighter progressive path.
+- After chart names, wiki content, or generated search data change, rebuild the galaxy assets with `npm run build:graphs` and commit the refreshed outputs.
 
 ### User data → Postgres
 Collections are per-user and mutable, so they live in **Postgres** (via **Prisma 7** with the `@prisma/adapter-pg` driver). Identity is an anonymous `ownerToken` cookie — no login. Models: `Collection`, `CollectedWord` (`prisma/schema.prisma`). The wiki content stays in files; only "who collected what" is in the DB.
@@ -53,6 +65,8 @@ npm run seed:spaces          # seed curated public explore-spaces (needs a DB)
 npm run dev                  # local dev
 npm run build && npm start   # production
 npm test                     # vitest (xp + graph logic)
+npm run test:e2e             # progressive browser flow checks (Playwright)
+npm run test:perf            # throttled browser performance gates (Playwright)
 npm run lint
 ```
 
@@ -105,10 +119,10 @@ npm run dev              # http://localhost:3000
 ## Tech stack
 
 - **Next.js 16** (App Router), **React 19**, **TypeScript**, **Tailwind v4**
-- **Three.js** + `react-force-graph-3d` (galaxy), **WordNet** via `wordpos` (offline defs/edges)
+- **Three.js** progressive renderer (galaxy), **WordNet** via `wordpos` (offline defs/edges)
 - **DeepSeek** (OpenAI-compatible) for enrichment + chat, via `scripts/llm-client.ts`
 - **Prisma 7** + **PostgreSQL** (`@prisma/adapter-pg`)
-- **Vitest** for the pure core logic
+- **Vitest** for the pure core logic, **Playwright** for production browser and performance verification
 - **tsx** for the CLI pipeline scripts
 
 ---

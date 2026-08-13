@@ -3,6 +3,7 @@ import { IBM_Plex_Mono, IBM_Plex_Sans, Instrument_Serif } from "next/font/google
 
 import { StarAtlasEntry } from "@/components/network/star-atlas-entry";
 import { getListBySlug } from "@/lib/content/content-service";
+import { compactGalaxyManifestForClient } from "@/lib/galaxy/client-manifest";
 import { loadGalaxyManifest } from "@/lib/galaxy/manifest-store";
 import type { LearningListSlug } from "@/lib/types";
 
@@ -48,7 +49,7 @@ export default async function NetworkPage({
     notFound();
   }
 
-  const manifest = await loadGalaxyManifest(listSlug);
+  const manifest = compactGalaxyManifestForClient(await loadGalaxyManifest(listSlug));
 
   return (
     <div

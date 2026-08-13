@@ -12,11 +12,14 @@ import type {
 } from "../../../lib/galaxy/types";
 
 import { GalaxySceneModel } from "./scene-model";
+import { markLifecycleOnce } from "./deferred-boot";
 import type { GalaxyQualityProfile } from "./quality";
 
 const MAX_WORD_LABELS = 200;
 const PICK_RADIUS_SQ = 26 * 26;
 const MAX_ROUTE_SEGMENTS = 64;
+const DEFERRED_WORD_LABEL_BATCH = 12;
+const DEFERRED_CHART_LABEL_BATCH = 4;
 
 const COL: Record<string, Vec3> = {
   core: [0.749, 0.851, 0.949],
@@ -104,6 +107,37 @@ export type ProxyLayout = {
   labelChartIds: string[];
 };
 
+export type DeferredLabelChunk = {
+  wordStart: number;
+  wordCount: number;
+  chartStart: number;
+  chartCount: number;
+};
+
+export function planDeferredLabelChunks(
+  wordLabelCount: number,
+  chartLabelCount: number,
+  options: { wordBatchSize?: number; chartBatchSize?: number } = {},
+): DeferredLabelChunk[] {
+  const wordBatchSize = Math.max(1, options.wordBatchSize ?? DEFERRED_WORD_LABEL_BATCH);
+  const chartBatchSize = Math.max(1, options.chartBatchSize ?? DEFERRED_CHART_LABEL_BATCH);
+  const chunks: DeferredLabelChunk[] = [];
+  let wordStart = 0;
+  let chartStart = 0;
+
+  while (wordStart < wordLabelCount || chartStart < chartLabelCount) {
+    const wordCount = Math.min(wordBatchSize, Math.max(0, wordLabelCount - wordStart));
+    const chartCount = Math.min(chartBatchSize, Math.max(0, chartLabelCount - chartStart));
+    if (wordCount || chartCount) {
+      chunks.push({ wordStart, wordCount, chartStart, chartCount });
+    }
+    wordStart += wordCount;
+    chartStart += chartCount;
+  }
+
+  return chunks;
+}
+
 function normalizedCrossUp(center: Vec3): { axis: Vec3; u: Vec3; v: Vec3 } {
   const length = Math.hypot(center[0], center[1], center[2]) || 1;
   const axis: Vec3 = [center[0] / length, center[1] / length, center[2] / length];
@@ -177,6 +211,7 @@ export type ProgressiveEngineOptions = {
   onZoomLevel?: (level: "galaxy" | "cluster" | "star") => void;
   onContextFailure?: () => void;
   onInteractive?: () => void;
+  onConstellationVisible?: () => void;
 };
 
 type GalaxyMode = "chart" | "run" | "ladder";
@@ -253,7 +288,7 @@ type ProxyLayer = {
 type PickResult = { type: "word"; id: string } | { type: "chart"; id: string } | null;
 
 function lifecycleMark(name: string): void {
-  if (typeof performance !== "undefined" && typeof performance.mark === "function") performance.mark(name);
+  if (typeof performance !== "undefined" && typeof performance.mark === "function") markLifecycleOnce(name);
 }
 
 function wordColor(word: PositionedWord, claimed: boolean, used: boolean): Vec3 {
@@ -285,6 +320,8 @@ export class ProgressiveStarEngine {
   private readonly starMaterial: THREE.ShaderMaterial;
   private readonly ringMaterial: THREE.ShaderMaterial;
   private readonly proxyLayer: ProxyLayer;
+  private readonly labelChartIds: string[];
+  private readonly deferredLabelChunks: DeferredLabelChunk[];
   private readonly labelElements: HTMLDivElement[] = [];
   private readonly chartElements = new Map<string, HTMLDivElement>();
 
@@ -302,8 +339,11 @@ export class ProgressiveStarEngine {
   private animationFrame = 0;
   private dead = false;
   private firstRender = false;
+  private labelsBuilt = false;
   private contextLost = false;
   private contextFailureReported = false;
+  private labelBuildChunkIndex = 0;
+  private labelBuildTimer = 0;
   private restoreTimer?: ReturnType<typeof setTimeout>;
 
   private dpr = 1;
@@ -380,7 +420,6 @@ export class ProgressiveStarEngine {
       canvas: this.canvas,
       antialias: true,
       alpha: true,
-      preserveDrawingBuffer: true,
     });
     this.renderer.setClearColor(0x070b16, 1);
     this.renderer.sortObjects = false;
@@ -406,6 +445,8 @@ export class ProgressiveStarEngine {
 
     ({ geometry: this.backgroundGeometry, material: this.backgroundMaterial, object: this.backgroundObject } = this.buildBackground());
     const proxyLayout = buildProxyLayout(manifest);
+    this.labelChartIds = proxyLayout.labelChartIds;
+    this.deferredLabelChunks = planDeferredLabelChunks(MAX_WORD_LABELS, this.labelChartIds.length);
     this.proxyLayer = this.buildProxyLayer(proxyLayout);
     this.linkObject = new THREE.LineSegments(this.linkGeometry, new THREE.LineBasicMaterial({
       vertexColors: true,
@@ -427,7 +468,6 @@ export class ProgressiveStarEngine {
     this.routeObject.visible = false;
     this.scene.add(this.routeObject);
 
-    this.buildLabels(proxyLayout.labelChartIds);
     this.bindContextLifecycle();
     this.bindInput();
     lifecycleMark("galaxy:interactive");
@@ -599,6 +639,7 @@ export class ProgressiveStarEngine {
     cancelAnimationFrame(this.animationFrame);
     this.events.abort();
     this.resizeObserver?.disconnect();
+    if (this.labelBuildTimer) window.clearTimeout(this.labelBuildTimer);
     if (this.restoreTimer) clearTimeout(this.restoreTimer);
     this.disposeWordLayer(this.residentLayer);
     this.disposeWordLayer(this.fullLayer);
@@ -772,38 +813,86 @@ export class ProgressiveStarEngine {
     this.disposeWordLayer(oldLayer);
   }
 
-  private buildLabels(labelChartIds: string[]): void {
-    const transition = this.reducedMotion ? "none" : "opacity .22s ease";
-    for (let index = 0; index < MAX_WORD_LABELS; index++) {
-      const element = document.createElement("div");
-      element.dataset.starLabel = "";
-      element.style.cssText = "position:absolute;transform:translate(-50%,-50%);white-space:nowrap;" +
-        "font:500 12.5px/1 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:.01em;" +
-        `color:#F1EEE6;opacity:0;transition:${transition};text-shadow:0 1px 8px rgba(7,11,22,.95),0 0 2px rgba(7,11,22,1);` +
-        "padding:2px 5px;border-radius:5px;will-change:transform,opacity";
-      this.labels.appendChild(element);
+  private wordLabelTransition(): string {
+    return this.reducedMotion ? "none" : `opacity ${Math.max(120, this.transitionMs * 0.75)}ms ease`;
+  }
+
+  private chartLabelTransition(): string {
+    return this.reducedMotion ? "none" : `opacity ${Math.max(140, this.transitionMs * 0.9)}ms ease`;
+  }
+
+  private createWordLabelElement(): HTMLDivElement {
+    const element = document.createElement("div");
+    element.dataset.starLabel = "";
+    element.style.cssText = "position:absolute;transform:translate(-50%,-50%);white-space:nowrap;" +
+      "font:500 12.5px/1 'IBM Plex Sans',system-ui,sans-serif;letter-spacing:.01em;" +
+      `color:#F1EEE6;opacity:0;transition:${this.wordLabelTransition()};text-shadow:0 1px 8px rgba(7,11,22,.95),0 0 2px rgba(7,11,22,1);` +
+      "padding:2px 5px;border-radius:5px;will-change:transform,opacity";
+    return element;
+  }
+
+  private createChartLabelElement(chartId: string): HTMLDivElement | null {
+    const chart = this.chartById.get(chartId);
+    if (!chart) return null;
+    const element = document.createElement("div");
+    element.dataset.chartLabel = chart.id;
+    const glyph = document.createElement("span");
+    glyph.textContent = chart.glyph;
+    glyph.style.cssText = "font-size:10px;letter-spacing:.22em;opacity:.55";
+    const name = document.createElement("span");
+    name.textContent = chart.name.toUpperCase();
+    name.style.marginLeft = "8px";
+    element.append(glyph, name);
+    element.style.cssText = "position:absolute;transform:translate(-50%,-50%);white-space:nowrap;" +
+      "font:600 11px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.18em;" +
+      `color:${chart.hue};opacity:0;transition:${this.chartLabelTransition()};` +
+      "text-shadow:0 1px 10px rgba(7,11,22,.98);will-change:transform,opacity";
+    return element;
+  }
+
+  private buildLabelChunk(chunk: DeferredLabelChunk): void {
+    const fragment = document.createDocumentFragment();
+    for (let index = 0; index < chunk.wordCount; index++) {
+      const element = this.createWordLabelElement();
+      fragment.appendChild(element);
       this.labelElements.push(element);
     }
 
-    for (const chartId of labelChartIds) {
-      const chart = this.chartById.get(chartId);
-      if (!chart) continue;
-      const element = document.createElement("div");
-      element.dataset.chartLabel = chart.id;
-      const glyph = document.createElement("span");
-      glyph.textContent = chart.glyph;
-      glyph.style.cssText = "font-size:10px;letter-spacing:.22em;opacity:.55";
-      const name = document.createElement("span");
-      name.textContent = chart.name.toUpperCase();
-      name.style.marginLeft = "8px";
-      element.append(glyph, name);
-      element.style.cssText = "position:absolute;transform:translate(-50%,-50%);white-space:nowrap;" +
-        "font:600 11px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.18em;" +
-        `color:${chart.hue};opacity:0;transition:${this.reducedMotion ? "none" : "opacity .3s ease"};` +
-        "text-shadow:0 1px 10px rgba(7,11,22,.98);will-change:transform,opacity";
-      this.labels.appendChild(element);
-      this.chartElements.set(chart.id, element);
+    for (let index = 0; index < chunk.chartCount; index++) {
+      const chartId = this.labelChartIds[chunk.chartStart + index];
+      if (!chartId) continue;
+      const element = this.createChartLabelElement(chartId);
+      if (!element) continue;
+      fragment.appendChild(element);
+      this.chartElements.set(chartId, element);
     }
+
+    if (fragment.childNodes.length) this.labels.appendChild(fragment);
+  }
+
+  private scheduleDeferredLabels(): void {
+    if (this.labelsBuilt || this.labelBuildTimer || this.dead) return;
+    if (this.labelBuildChunkIndex >= this.deferredLabelChunks.length) {
+      this.labelsBuilt = true;
+      return;
+    }
+    this.labelBuildTimer = window.setTimeout(() => {
+      this.labelBuildTimer = 0;
+      if (this.dead) return;
+      const chunk = this.deferredLabelChunks[this.labelBuildChunkIndex];
+      if (!chunk) {
+        this.labelsBuilt = true;
+        return;
+      }
+      this.buildLabelChunk(chunk);
+      this.labelBuildChunkIndex += 1;
+      this.refreshLabelAssignments();
+      if (this.labelBuildChunkIndex >= this.deferredLabelChunks.length) {
+        this.labelsBuilt = true;
+        return;
+      }
+      this.scheduleDeferredLabels();
+    }, 0);
   }
 
   private updateLabelTransitions(transitionMs: number): void {
@@ -1168,6 +1257,8 @@ export class ProgressiveStarEngine {
       if (!this.firstRender) {
         this.firstRender = true;
         lifecycleMark("galaxy:constellation-visible");
+        this.options.onConstellationVisible?.();
+        this.scheduleDeferredLabels();
       }
     }
   };
