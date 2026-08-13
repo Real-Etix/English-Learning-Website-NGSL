@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
 
-import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
+import { FullGalaxyDialog, getFullModeActionLabel } from "@/components/network/full-galaxy-dialog";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
 import { FullGalaxyLoader } from "@/components/network/galaxy/full-galaxy-loader";
 import { initialFullModeState, reduceFullMode } from "@/components/network/galaxy/full-mode-state";
@@ -935,9 +935,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const skyStatusText = fullMode.phase === "ready"
     ? `Complete ${manifest.list.label} galaxy · ${manifest.list.wordCount.toLocaleString()} stars`
     : chartStatusText;
-  const fullActionLabel = fullMode.phase === "ready"
-    ? "Return to constellation view"
-    : `Load full ${manifest.list.label} galaxy`;
+  const fullActionLabel = getFullModeActionLabel(manifest.list.label, fullMode.phase);
   const toggleFullMode = () => {
     if (fullMode.phase === "ready") leaveFullMode("exit");
     else dispatchFullMode({ type: "open" });

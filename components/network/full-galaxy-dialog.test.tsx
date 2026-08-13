@@ -1,7 +1,7 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
 
-import { FullGalaxyDialog } from "./full-galaxy-dialog";
+import { FullGalaxyDialog, getFullModeActionLabel, getTabTrapTarget } from "./full-galaxy-dialog";
 
 const handlers = {
   onConfirm: vi.fn(),
@@ -11,6 +11,25 @@ const handlers = {
 };
 
 describe("FullGalaxyDialog", () => {
+  it("keeps tab focus inside the dialog when the heading has initial focus", () => {
+    const heading = { id: "heading" } as HTMLElement;
+    const first = { id: "first" } as HTMLElement;
+    const last = { id: "last" } as HTMLElement;
+
+    expect(getTabTrapTarget({
+      activeElement: heading,
+      heading,
+      focusable: [first, last],
+      shiftKey: false,
+    })).toBe(first);
+    expect(getTabTrapTarget({
+      activeElement: heading,
+      heading,
+      focusable: [first, last],
+      shiftKey: true,
+    })).toBe(last);
+  });
+
   it("shows list-specific confirmation details and the mobile warning", () => {
     const html = renderToStaticMarkup(
       <FullGalaxyDialog
@@ -61,5 +80,10 @@ describe("FullGalaxyDialog", () => {
     expect(failed).toContain("Retry");
     expect(ready).toContain("1,000 stars are ready");
     expect(ready).toContain("Return to constellation view");
+  });
+
+  it("keeps the active list name in the ready-state return label", () => {
+    expect(getFullModeActionLabel("NGSL", "ready")).toBe("Return to NGSL constellation view");
+    expect(getFullModeActionLabel("Academic", "confirm")).toBe("Load full Academic galaxy");
   });
 });

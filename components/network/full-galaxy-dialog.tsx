@@ -22,6 +22,33 @@ function progressText(state: Extract<FullModeState, { phase: "loading" }>, wordC
   return `Downloading full galaxy… ${amount}`;
 }
 
+export function getFullModeActionLabel(listLabel: string, phase: FullModeState["phase"]): string {
+  return phase === "ready"
+    ? `Return to ${listLabel} constellation view`
+    : `Load full ${listLabel} galaxy`;
+}
+
+export function getTabTrapTarget({
+  activeElement,
+  heading,
+  focusable,
+  shiftKey,
+}: {
+  activeElement: Element | null;
+  heading: HTMLElement | null;
+  focusable: HTMLElement[];
+  shiftKey: boolean;
+}): HTMLElement | null {
+  if (!heading) return null;
+  if (focusable.length === 0) return heading;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (activeElement === heading) return shiftKey ? last : first;
+  if (shiftKey && activeElement === first) return last;
+  if (!shiftKey && activeElement === last) return first;
+  return null;
+}
+
 export function FullGalaxyDialog({
   listLabel,
   wordCount,
@@ -59,19 +86,15 @@ export function FullGalaxyDialog({
       const focusable = Array.from(dialogRef.current?.querySelectorAll<HTMLElement>(
         'button:not([disabled]), [href], input:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
       ) ?? []);
-      if (focusable.length === 0) {
+      const target = getTabTrapTarget({
+        activeElement: document.activeElement,
+        heading: headingRef.current,
+        focusable,
+        shiftKey: event.shiftKey,
+      });
+      if (target) {
         event.preventDefault();
-        headingRef.current?.focus();
-        return;
-      }
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
+        target.focus();
       }
     };
     document.addEventListener("keydown", onKeyDown);
