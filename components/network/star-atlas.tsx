@@ -3,8 +3,13 @@
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
 
-import { FullGalaxyDialog, getFullModeActionLabel } from "@/components/network/full-galaxy-dialog";
+import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
+import {
+  FallbackConstellation,
+  getFallbackFullModeControl,
+  FULL_3D_UNAVAILABLE_MESSAGE,
+} from "@/components/network/galaxy/fallback-constellation";
 import { FullGalaxyLoader } from "@/components/network/galaxy/full-galaxy-loader";
 import { initialFullModeState, reduceFullMode } from "@/components/network/galaxy/full-mode-state";
 import {
@@ -13,6 +18,7 @@ import {
   type GalaxyControllerStatus,
 } from "@/components/network/galaxy/galaxy-controller";
 import { ProgressiveStarEngine } from "@/components/network/galaxy/progressive-engine";
+import { GalaxyQualityController, initialQuality } from "@/components/network/galaxy/quality";
 import { createChartEvictionHandler } from "@/components/network/galaxy/resident-shards";
 import { GalaxySearchCatalog } from "@/components/network/galaxy/search-catalog";
 import { WordSelectionCoordinator } from "@/components/network/galaxy/word-selection-coordinator";
@@ -90,12 +96,30 @@ type AtlasModel = {
 };
 
 type AtlasResources = {
-  engine: ProgressiveStarEngine;
+  engine: AtlasEngine;
   store: ChartShardStore;
   catalog: GalaxySearchCatalog;
   controller: GalaxyController;
   selection: WordSelectionCoordinator;
 };
+
+type AtlasEngine = Pick<ProgressiveStarEngine,
+  | "clearFocus"
+  | "dispose"
+  | "enterFull"
+  | "exitFull"
+  | "focusStar"
+  | "removeChart"
+  | "resetView"
+  | "setChart"
+  | "setClaimed"
+  | "setMode"
+  | "setPanelOffset"
+  | "setQuality"
+  | "setRoute"
+  | "setUsed"
+  | "upsertChart"
+>;
 
 const INITIAL_CONTROLLER_STATUS: GalaxyControllerStatus = {
   chartId: null,
@@ -185,10 +209,15 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [pendingWordRetryLemma, setPendingWordRetryLemma] = useState<string | null>(null);
   const [engineReady, setEngineReady] = useState(false);
   const [engineError, setEngineError] = useState<string | null>(null);
+  const [renderFallback, setRenderFallback] = useState(false);
+  const [fallbackController, setFallbackController] = useState<Pick<GalaxyController, "openChart" | "openWord"> | null>(null);
   const [fullMode, dispatchFullMode] = useReducer(reduceFullMode, initialFullModeState);
 
   const hostRef = useRef<HTMLDivElement | null>(null);
   const resourcesRef = useRef<AtlasResources | null>(null);
+  const engineDelegateRef = useRef<ProgressiveStarEngine | null>(null);
+  const renderFallbackRef = useRef(false);
+  const qualitySamplerRef = useRef<{ start: () => void; stop: () => void } | null>(null);
   const selectHandlerRef = useRef<(lemma: string | null) => void>(() => undefined);
   const chartHandlerRef = useRef<(chartId: string) => void>(() => undefined);
   const wordCommitHandlerRef = useRef<(lemma: string) => void>(() => undefined);
@@ -224,6 +253,92 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     });
   }, []);
 
+  const setFallbackMode = useCallback((value: boolean) => {
+    renderFallbackRef.current = value;
+    setRenderFallback(value);
+  }, []);
+
+  const atlasEngine = useMemo<AtlasEngine>(() => ({
+    clearFocus: () => {
+      if (renderFallbackRef.current) setFocus(null);
+      engineDelegateRef.current?.clearFocus();
+    },
+    dispose: () => {
+      engineDelegateRef.current?.dispose();
+      engineDelegateRef.current = null;
+    },
+    enterFull: (data) => {
+      if (renderFallbackRef.current) return;
+      engineDelegateRef.current?.enterFull(data);
+    },
+    exitFull: () => {
+      engineDelegateRef.current?.exitFull();
+    },
+    focusStar: (lemma, options) => {
+      if (renderFallbackRef.current) {
+        setFocus(lemma);
+        return true;
+      }
+      return engineDelegateRef.current?.focusStar(lemma, options) ?? false;
+    },
+    removeChart: (chartId) => {
+      engineDelegateRef.current?.removeChart(chartId);
+    },
+    resetView: () => {
+      if (renderFallbackRef.current) {
+        setChart(null);
+        setFocus(null);
+      }
+      engineDelegateRef.current?.resetView();
+    },
+    setChart: (chartId, options) => {
+      if (renderFallbackRef.current) {
+        setChart(chartId);
+        setFocus(null);
+      }
+      engineDelegateRef.current?.setChart(chartId, options);
+    },
+    setClaimed: (lemmas) => {
+      engineDelegateRef.current?.setClaimed(lemmas);
+    },
+    setMode: (nextMode) => {
+      engineDelegateRef.current?.setMode(nextMode);
+    },
+    setPanelOffset: (offset) => {
+      engineDelegateRef.current?.setPanelOffset(offset);
+    },
+    setQuality: (profile) => {
+      engineDelegateRef.current?.setQuality(profile);
+    },
+    setRoute: (lemmas, index) => {
+      engineDelegateRef.current?.setRoute(lemmas, index);
+    },
+    setUsed: (lemmas) => {
+      engineDelegateRef.current?.setUsed(lemmas);
+    },
+    upsertChart: (shard) => {
+      rememberShard(shard);
+      engineDelegateRef.current?.upsertChart(shard);
+    },
+  }), [rememberShard]);
+
+  const activateFallback = useCallback(() => {
+    if (renderFallbackRef.current) return;
+    qualitySamplerRef.current?.stop();
+    fullLoadRevision.current += 1;
+    fullAbortRef.current?.abort();
+    fullAbortRef.current = null;
+    fullDataRef.current = null;
+    engineDelegateRef.current?.exitFull();
+    dispatchFullMode({ type: "exit" });
+    const delegate = engineDelegateRef.current;
+    engineDelegateRef.current = null;
+    delegate?.dispose();
+    setEngineError(FULL_3D_UNAVAILABLE_MESSAGE);
+    setEngineReady(true);
+    setFallbackMode(true);
+  }, [setFallbackMode]);
+
   const loadCatalog = useCallback(async () => {
     const resources = resourcesRef.current;
     if (!resources) return null;
@@ -234,6 +349,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   }, []);
 
   const foregroundAction = useCallback(() => {
+    qualitySamplerRef.current?.start();
     resourcesRef.current?.controller.foregroundAction();
   }, []);
 
@@ -282,30 +398,79 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   useEffect(() => {
     const host = hostRef.current;
     if (!host) return;
-    const engine = new ProgressiveStarEngine(host, manifest, {
-      onSelectWord: (lemma) => selectHandlerRef.current(lemma),
-      onSelectChart: (chartId) => chartHandlerRef.current(chartId),
-      onApproachChart: (chartId) => resourcesRef.current?.controller.approachChart(chartId),
-      onZoomLevel: setZoom,
-      onContextFailure: () => setEngineError("The 3D sky could not be restored. Chart controls and search are still available."),
-      onInteractive: () => setEngineReady(true),
+    setEngineReady(false);
+    setEngineError(null);
+    setFallbackMode(false);
+    engineDelegateRef.current = null;
+    const connection = (navigator as Navigator & { connection?: EventTarget & { saveData?: boolean } }).connection;
+    const qualityProfile = initialQuality({
+      width: window.innerWidth,
+      devicePixelRatio: window.devicePixelRatio || 1,
+      reducedMotion: window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false,
+      saveData: connection?.saveData === true,
     });
+    const qualityController = new GalaxyQualityController(qualityProfile);
+    let sampling = false;
+    let sampleFrame = 0;
+    let sampleLast = 0;
+    const sampleQuality = (now: number) => {
+      if (!sampling || renderFallbackRef.current) return;
+      if (!sampleLast) {
+        sampleLast = now;
+        sampleFrame = requestAnimationFrame(sampleQuality);
+        return;
+      }
+      const nextProfile = qualityController.sample(now - sampleLast);
+      sampleLast = now;
+      if (nextProfile) atlasEngine.setQuality(nextProfile);
+      sampleFrame = requestAnimationFrame(sampleQuality);
+    };
+    qualitySamplerRef.current = {
+      start: () => {
+        if (sampling || renderFallbackRef.current) return;
+        sampling = true;
+        sampleLast = 0;
+        sampleFrame = requestAnimationFrame(sampleQuality);
+      },
+      stop: () => {
+        sampling = false;
+        sampleLast = 0;
+        if (sampleFrame) cancelAnimationFrame(sampleFrame);
+        sampleFrame = 0;
+      },
+    };
+
+    try {
+      const engine = new ProgressiveStarEngine(host, manifest, {
+        onSelectWord: (lemma) => selectHandlerRef.current(lemma),
+        onSelectChart: (chartId) => chartHandlerRef.current(chartId),
+        onApproachChart: (chartId) => resourcesRef.current?.controller.approachChart(chartId),
+        onZoomLevel: setZoom,
+        onContextFailure: activateFallback,
+        onInteractive: () => setEngineReady(true),
+      });
+      engineDelegateRef.current = engine;
+      atlasEngine.setQuality(qualityProfile);
+    } catch {
+      activateFallback();
+    }
     let controller: GalaxyController | null = null;
+    const storeOptions = galaxyStoreOptions(qualityProfile.tier === "mobile");
     const store = new ChartShardStore(manifest, {
-      ...galaxyStoreOptions(window.innerWidth < 860),
+      ...storeOptions,
+      capacity: qualityProfile.residentCharts,
       onEvict: createChartEvictionHandler({
-        engine,
+        engine: atlasEngine,
         getController: () => controller,
         updateResidentShards: setResidentShards,
       }),
     });
     const catalog = new GalaxySearchCatalog(manifest);
-    const connection = (navigator as Navigator & { connection?: EventTarget & { saveData?: boolean } }).connection;
     const activeController = new GalaxyController({
       manifest,
       store,
       catalog,
-      engine,
+      engine: atlasEngine,
       saveData: connection?.saveData === true,
     });
     controller = activeController;
@@ -315,19 +480,25 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     });
     const unsubscribe = activeController.subscribe(setControllerStatus);
     const unsubscribeSelection = selection.subscribe(setPendingWordRetryLemma);
-    const cancelIdlePrefetch = () => activeController.foregroundAction();
+    const cancelIdlePrefetch = () => {
+      qualitySamplerRef.current?.start();
+      activeController.foregroundAction();
+    };
     const updateSaveData = () => activeController.setSaveData(connection?.saveData === true);
     host.addEventListener("pointerdown", cancelIdlePrefetch, { passive: true });
     host.addEventListener("wheel", cancelIdlePrefetch, { passive: true });
     host.addEventListener("touchstart", cancelIdlePrefetch, { passive: true });
     connection?.addEventListener("change", updateSaveData);
-    resourcesRef.current = { engine, store, catalog, controller: activeController, selection };
+    resourcesRef.current = { engine: atlasEngine, store, catalog, controller: activeController, selection };
+    setFallbackController(activeController);
     return () => {
+      qualitySamplerRef.current?.stop();
+      qualitySamplerRef.current = null;
       fullLoadRevision.current += 1;
       fullAbortRef.current?.abort();
       fullAbortRef.current = null;
       fullDataRef.current = null;
-      engine.exitFull();
+      atlasEngine.exitFull();
       unsubscribe();
       host.removeEventListener("pointerdown", cancelIdlePrefetch);
       host.removeEventListener("wheel", cancelIdlePrefetch);
@@ -336,8 +507,9 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       unsubscribeSelection();
       selection.clear();
       resourcesRef.current = null;
+      setFallbackController(null);
       activeController.dispose();
-      engine.dispose();
+      atlasEngine.dispose();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [manifest.version]);
@@ -568,9 +740,13 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       if (view !== "galaxy") return;
       const tag = (ev.target as HTMLElement)?.tagName || "";
       const typing = tag === "INPUT" || tag === "TEXTAREA";
-      if (quiz) { if (ev.key === "Escape") { ev.preventDefault(); setQuiz(null); } return; }
       if (ev.key === "Escape") {
         ev.preventDefault();
+        if (quiz) { setQuiz(null); return; }
+        if (listMenuOpen) { setListMenuOpen(false); return; }
+        if (keyOpen) { setKeyOpen(false); return; }
+        if (chatOpen) { setChatOpen(false); return; }
+        if (narrow && railOpen) { setRailOpen(false); return; }
         if (focus) select(null);
         else if (chart) {
           setChart(null);
@@ -598,7 +774,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [view, quiz, focus, chart, select, focusedNeighbors, openQuiz]);
+  }, [view, quiz, listMenuOpen, keyOpen, chatOpen, narrow, railOpen, focus, chart, select, focusedNeighbors, openQuiz]);
 
   // ---- tutor ----
   const sendChat = useCallback((preset?: string) => {
@@ -935,8 +1111,9 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const skyStatusText = fullMode.phase === "ready"
     ? `Complete ${manifest.list.label} galaxy · ${manifest.list.wordCount.toLocaleString()} stars`
     : chartStatusText;
-  const fullActionLabel = getFullModeActionLabel(manifest.list.label, fullMode.phase);
+  const fullModeControl = getFallbackFullModeControl(manifest.list.label, fullMode.phase, renderFallback);
   const toggleFullMode = () => {
+    if (fullModeControl.disabled) return;
     if (fullMode.phase === "ready") leaveFullMode("exit");
     else dispatchFullMode({ type: "open" });
   };
@@ -1029,7 +1206,19 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
       {/* ---------- MOUNTED SKY ---------- */}
       <div style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 0, opacity: view === "galaxy" ? 1 : 0, pointerEvents: view === "galaxy" ? "auto" : "none", transition: "opacity .32s ease" }}>
-        <div ref={hostRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} />
+        <div ref={hostRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: renderFallback ? "none" : "auto" }} />
+        {renderFallback && (
+          <FallbackConstellation
+            manifest={manifest}
+            controller={fallbackController}
+            selectedChartId={chart}
+            selectedLemma={focus}
+            selectedShard={chart ? residentShards.get(chart) ?? null : null}
+            owned={owned}
+            used={used}
+            route={new Set(route)}
+          />
+        )}
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: "radial-gradient(120% 90% at 50% 45%,transparent 40%,rgba(7,11,22,.55) 100%)" }} />
       </div>
 
@@ -1069,8 +1258,13 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
             <p style={{ pointerEvents: "auto", margin: 0, padding: "10px 12px", borderRadius: 12, background: "rgba(10,15,28,.8)", border: "1px solid rgba(241,238,230,.08)", backdropFilter: "blur(16px)", fontSize: 12, lineHeight: 1.55, color: "#94A0B4" }}>{modeBlurb}</p>
 
             {narrow && (
-              <button onClick={toggleFullMode} style={{ pointerEvents: "auto", width: "100%", padding: "10px 12px", border: `1px solid ${fullMode.phase === "ready" ? "rgba(143,227,192,.3)" : "rgba(191,217,242,.2)"}`, borderRadius: 12, background: fullMode.phase === "ready" ? "rgba(143,227,192,.09)" : "rgba(10,15,28,.86)", color: fullMode.phase === "ready" ? "#8FE3C0" : "#BFD9F2", cursor: "pointer", textAlign: "left", font: `600 11.5px/1.4 ${SS}`, backdropFilter: "blur(16px)" }}>
-                {fullActionLabel}
+              <button
+                onClick={toggleFullMode}
+                disabled={fullModeControl.disabled}
+                aria-disabled={fullModeControl.disabled}
+                style={{ pointerEvents: "auto", width: "100%", padding: "10px 12px", border: `1px solid ${fullModeControl.disabled ? "rgba(232,168,159,.24)" : fullMode.phase === "ready" ? "rgba(143,227,192,.3)" : "rgba(191,217,242,.2)"}`, borderRadius: 12, background: fullModeControl.disabled ? "rgba(232,168,159,.08)" : fullMode.phase === "ready" ? "rgba(143,227,192,.09)" : "rgba(10,15,28,.86)", color: fullModeControl.disabled ? "#E8A89F" : fullMode.phase === "ready" ? "#8FE3C0" : "#BFD9F2", cursor: fullModeControl.disabled ? "not-allowed" : "pointer", textAlign: "left", font: `600 11.5px/1.4 ${SS}`, backdropFilter: "blur(16px)" }}
+              >
+                {fullModeControl.label}
               </button>
             )}
 
@@ -1161,7 +1355,16 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
                   <span style={{ font: `600 11px/1 ${MN}`, color: "#F1EEE6" }}>{route.filter((l) => owned.has(l)).length} / {route.length}</span>
                 </span>
               )}
-              {!narrow && <button onClick={toggleFullMode} style={{ padding: "6px 11px", border: `1px solid ${fullMode.phase === "ready" ? "rgba(143,227,192,.3)" : "rgba(191,217,242,.2)"}`, borderRadius: 999, background: fullMode.phase === "ready" ? "rgba(143,227,192,.09)" : "rgba(10,15,28,.86)", color: fullMode.phase === "ready" ? "#8FE3C0" : "#BFD9F2", cursor: "pointer", font: `500 11px/1 ${SS}`, backdropFilter: "blur(14px)" }}>{fullActionLabel}</button>}
+              {!narrow && (
+                <button
+                  onClick={toggleFullMode}
+                  disabled={fullModeControl.disabled}
+                  aria-disabled={fullModeControl.disabled}
+                  style={{ padding: "6px 11px", border: `1px solid ${fullModeControl.disabled ? "rgba(232,168,159,.24)" : fullMode.phase === "ready" ? "rgba(143,227,192,.3)" : "rgba(191,217,242,.2)"}`, borderRadius: 999, background: fullModeControl.disabled ? "rgba(232,168,159,.08)" : fullMode.phase === "ready" ? "rgba(143,227,192,.09)" : "rgba(10,15,28,.86)", color: fullModeControl.disabled ? "#E8A89F" : fullMode.phase === "ready" ? "#8FE3C0" : "#BFD9F2", cursor: fullModeControl.disabled ? "not-allowed" : "pointer", font: `500 11px/1 ${SS}`, backdropFilter: "blur(14px)" }}
+                >
+                  {fullModeControl.label}
+                </button>
+              )}
               <button onClick={() => setKeyOpen((v) => !v)} style={{ padding: "6px 11px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(10,15,28,.86)", color: "#94A0B4", cursor: "pointer", font: `500 11px/1 ${SS}`, backdropFilter: "blur(14px)" }}>Key</button>
               <button onClick={resetView} style={{ padding: "6px 11px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(10,15,28,.86)", color: "#94A0B4", cursor: "pointer", font: `500 11px/1 ${SS}`, backdropFilter: "blur(14px)" }}>Reset view</button>
               <span style={{ padding: "6px 11px", borderRadius: 999, background: "rgba(10,15,28,.7)", font: `500 10px/1 ${MN}`, letterSpacing: ".14em", textTransform: "uppercase", color: "#6B7789", backdropFilter: "blur(14px)" }}>{zoomLabel}</span>
@@ -1366,6 +1569,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
         .atlas-scroll::-webkit-scrollbar { width: 5px; height: 5px; }
         .atlas-scroll::-webkit-scrollbar-thumb { background: rgba(241,238,230,.10); border-radius: 8px; }
         .star-atlas :is(button,input,textarea):focus-visible { outline: 2px solid #BFD9F2 !important; outline-offset: 3px; }
+        .star-atlas [data-fallback-chart]:focus-visible .fallback-hit { stroke: #F1EEE6; stroke-width: 5px; }
         @media (prefers-reduced-motion: reduce) {
           .star-atlas, .star-atlas * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
         }

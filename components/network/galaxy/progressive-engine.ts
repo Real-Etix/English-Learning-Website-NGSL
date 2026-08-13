@@ -12,6 +12,7 @@ import type {
 } from "../../../lib/galaxy/types";
 
 import { GalaxySceneModel } from "./scene-model";
+import type { GalaxyQualityProfile } from "./quality";
 
 const MAX_WORD_LABELS = 200;
 const PICK_RADIUS_SQ = 26 * 26;
@@ -38,11 +39,12 @@ const LINK: Record<string, Vec3> = {
 
 const VERT = `
 attribute vec3 aColor; attribute float aSize; attribute float aAlpha; attribute float aSeed;
-uniform float uTime; uniform float uDpr;
+uniform float uTime; uniform float uDpr; uniform float uTwinkle;
 varying vec3 vColor; varying float vAlpha;
 void main(){
   vColor = aColor;
-  float tw = 0.86 + 0.14 * sin(uTime * 0.7 + aSeed * 6.2831);
+  float twinkle = 0.86 + 0.14 * sin(uTime * 0.7 + aSeed * 6.2831);
+  float tw = mix(1.0, twinkle, uTwinkle);
   vAlpha = aAlpha * tw;
   vec4 mv = modelViewMatrix * vec4(position, 1.0);
   gl_PointSize = min(48.0, aSize * uDpr * (820.0 / max(1.0, -mv.z)));
@@ -50,12 +52,13 @@ void main(){
 }`;
 
 const FRAG = `
+uniform float uGlow;
 varying vec3 vColor; varying float vAlpha;
 void main(){
   float d = length(gl_PointCoord - vec2(0.5)) * 2.0;
   if (d > 1.0) discard;
   float core = smoothstep(0.46, 0.0, d);
-  float halo = smoothstep(1.0, 0.16, d) * 0.34;
+  float halo = smoothstep(1.0, 0.16, d) * (0.18 + uGlow * 0.16);
   float a = (core * 1.15 + halo) * vAlpha;
   gl_FragColor = vec4(vColor * (0.80 + core * 1.15), a);
 }`;
@@ -71,12 +74,13 @@ void main(){
 }`;
 
 const RING_FRAG = `
+uniform float uGlow;
 varying float vAlpha;
 void main(){
   float d = length(gl_PointCoord - vec2(0.5)) * 2.0;
   float ring = smoothstep(0.62, 0.76, d) * (1.0 - smoothstep(0.88, 1.0, d));
   if (ring < 0.01) discard;
-  gl_FragColor = vec4(0.60, 0.93, 0.79, ring * vAlpha * 0.95);
+  gl_FragColor = vec4(0.60, 0.93, 0.79, ring * vAlpha * (0.45 + uGlow * 0.5));
 }`;
 
 function mulberry(seed: number): () => number {
@@ -292,6 +296,7 @@ export class ProgressiveStarEngine {
   private routeGeometry = new THREE.BufferGeometry();
   private routeObject: THREE.LineSegments;
   private backgroundGeometry: THREE.BufferGeometry;
+  private backgroundObject: THREE.Points;
   private backgroundMaterial: THREE.PointsMaterial;
   private resizeObserver?: ResizeObserver;
   private animationFrame = 0;
@@ -305,6 +310,9 @@ export class ProgressiveStarEngine {
   private width = 800;
   private height = 600;
   private startTime = 0;
+  private lastFrameNow = 0;
+  private frameDeltaMs = 16.67;
+  private transitionMs = 320;
   private level: ZoomLevel = "galaxy";
   private notifiedLevel: ZoomLevel | null = null;
   private nearestChart: string | null = null;
@@ -380,7 +388,7 @@ export class ProgressiveStarEngine {
     this.renderer.setPixelRatio(this.dpr);
 
     this.starMaterial = new THREE.ShaderMaterial({
-      uniforms: { uTime: { value: 0 }, uDpr: { value: this.dpr } },
+      uniforms: { uTime: { value: 0 }, uDpr: { value: this.dpr }, uTwinkle: { value: 1 }, uGlow: { value: 1 } },
       vertexShader: VERT,
       fragmentShader: FRAG,
       transparent: true,
@@ -388,7 +396,7 @@ export class ProgressiveStarEngine {
       blending: THREE.AdditiveBlending,
     });
     this.ringMaterial = new THREE.ShaderMaterial({
-      uniforms: { uDpr: { value: this.dpr } },
+      uniforms: { uDpr: { value: this.dpr }, uGlow: { value: 1 } },
       vertexShader: RING_VERT,
       fragmentShader: RING_FRAG,
       transparent: true,
@@ -396,7 +404,7 @@ export class ProgressiveStarEngine {
       blending: THREE.AdditiveBlending,
     });
 
-    ({ geometry: this.backgroundGeometry, material: this.backgroundMaterial } = this.buildBackground());
+    ({ geometry: this.backgroundGeometry, material: this.backgroundMaterial, object: this.backgroundObject } = this.buildBackground());
     const proxyLayout = buildProxyLayout(manifest);
     this.proxyLayer = this.buildProxyLayer(proxyLayout);
     this.linkObject = new THREE.LineSegments(this.linkGeometry, new THREE.LineBasicMaterial({
@@ -429,7 +437,23 @@ export class ProgressiveStarEngine {
     this.resizeObserver.observe(host);
     this.resize();
     this.startTime = performance.now();
+    this.lastFrameNow = this.startTime;
     this.animationFrame = requestAnimationFrame(this.loop);
+  }
+
+  setQuality(profile: GalaxyQualityProfile): void {
+    this.dpr = profile.pixelRatio;
+    this.transitionMs = Math.max(80, profile.transitionMs);
+    this.renderer.setPixelRatio(profile.pixelRatio);
+    this.starMaterial.uniforms.uDpr.value = profile.pixelRatio;
+    this.starMaterial.uniforms.uTwinkle.value = profile.twinkle ? 1 : 0;
+    this.starMaterial.uniforms.uGlow.value = profile.glow / 2;
+    this.ringMaterial.uniforms.uDpr.value = profile.pixelRatio;
+    this.ringMaterial.uniforms.uGlow.value = profile.glow / 2;
+    this.backgroundGeometry.setDrawRange(0, profile.backgroundStars);
+    this.backgroundMaterial.opacity = profile.glow === 0 ? 0.18 : profile.glow === 1 ? 0.24 : 0.32;
+    this.updateLabelTransitions(profile.transitionMs);
+    this.resize();
   }
 
   upsertChart(shard: ChartShard): void {
@@ -592,7 +616,7 @@ export class ProgressiveStarEngine {
     this.labels.remove();
   }
 
-  private buildBackground(): { geometry: THREE.BufferGeometry; material: THREE.PointsMaterial } {
+  private buildBackground(): { geometry: THREE.BufferGeometry; material: THREE.PointsMaterial; object: THREE.Points } {
     const count = 1500;
     const positions = new Float32Array(count * 3);
     const random = mulberry(99);
@@ -614,8 +638,10 @@ export class ProgressiveStarEngine {
       opacity: 0.32,
       depthWrite: false,
     });
-    this.scene.add(new THREE.Points(geometry, material));
-    return { geometry, material };
+    geometry.setDrawRange(0, count);
+    const object = new THREE.Points(geometry, material);
+    this.scene.add(object);
+    return { geometry, material, object };
   }
 
   private buildProxyLayer(layout: ProxyLayout): ProxyLayer {
@@ -778,6 +804,14 @@ export class ProgressiveStarEngine {
       this.labels.appendChild(element);
       this.chartElements.set(chart.id, element);
     }
+  }
+
+  private updateLabelTransitions(transitionMs: number): void {
+    if (this.reducedMotion) return;
+    const wordTransition = `opacity ${Math.max(120, transitionMs * 0.75)}ms ease`;
+    const chartTransition = `opacity ${Math.max(140, transitionMs * 0.9)}ms ease`;
+    for (const element of this.labelElements) element.style.transition = wordTransition;
+    for (const element of this.chartElements.values()) element.style.transition = chartTransition;
   }
 
   private bindContextLifecycle(): void {
@@ -1098,7 +1132,9 @@ export class ProgressiveStarEngine {
   private loop = (now: number): void => {
     if (this.dead) return;
     this.animationFrame = requestAnimationFrame(this.loop);
-    const damping = this.reducedMotion ? 1 : 0.085;
+    this.frameDeltaMs = Math.max(1, now - this.lastFrameNow);
+    this.lastFrameNow = now;
+    const damping = this.reducedMotion ? 1 : Math.min(1, (this.frameDeltaMs * 2.5) / this.transitionMs);
     const camera = this.cameraState;
     camera.theta += (camera.targetTheta - camera.theta) * damping;
     camera.phi += (camera.targetPhi - camera.phi) * damping;
@@ -1137,7 +1173,7 @@ export class ProgressiveStarEngine {
   };
 
   private updateAlphas(): void {
-    const rate = this.reducedMotion ? 1 : 0.11;
+    const rate = this.reducedMotion ? 1 : Math.min(1, (this.frameDeltaMs * 2.75) / this.transitionMs);
     let proxyChanged = false;
     for (let index = 0; index < this.proxyLayer.alpha.length; index++) {
       const delta = this.proxyLayer.targetAlpha[index] - this.proxyLayer.alpha[index];
