@@ -66,12 +66,49 @@ export function projectChartsToConstellation(charts: GalaxyChart[]): ProjectedFa
 }
 
 function onActivateKey(
-  event: React.KeyboardEvent<SVGGElement | HTMLButtonElement>,
+  event: React.KeyboardEvent<SVGGElement>,
   activate: () => void,
 ): void {
   if (event.key !== "Enter" && event.key !== " ") return;
   event.preventDefault();
   activate();
+}
+
+export function buildFallbackChartTargetProps(
+  chartId: string,
+  chartName: string,
+  chartWords: number,
+  activate: () => void,
+): {
+  "data-fallback-chart": "";
+  role: "button";
+  tabIndex: number;
+  "aria-label": string;
+  onClick: () => void;
+  onKeyDown: (event: React.KeyboardEvent<SVGGElement>) => void;
+  style: { cursor: "pointer" };
+} {
+  return {
+    "data-fallback-chart": "",
+    role: "button",
+    tabIndex: 0,
+    "aria-label": `${chartName}, ${chartWords} words`,
+    onClick: activate,
+    onKeyDown: (event) => onActivateKey(event, activate),
+    style: { cursor: "pointer" },
+  };
+}
+
+export function buildFallbackWordButtonProps(
+  activate: () => void,
+): {
+  type: "button";
+  onClick: () => void;
+} {
+  return {
+    type: "button",
+    onClick: activate,
+  };
 }
 
 export function FallbackConstellation({
@@ -127,7 +164,6 @@ export function FallbackConstellation({
       >
         <svg
           viewBox={`0 0 ${VIEWBOX_WIDTH} ${VIEWBOX_HEIGHT}`}
-          role="img"
           aria-label={`${manifest.list.label} chart constellation`}
           style={{ display: "block", width: "100%", height: "100%" }}
         >
@@ -139,13 +175,7 @@ export function FallbackConstellation({
             return (
               <g
                 key={chart.id}
-                data-fallback-chart=""
-                role="button"
-                tabIndex={0}
-                aria-label={`${chart.name}, ${chartWords} words`}
-                onClick={activate}
-                onKeyDown={(event) => onActivateKey(event, activate)}
-                style={{ cursor: "pointer" }}
+                {...buildFallbackChartTargetProps(chart.id, chart.name, chartWords, activate)}
               >
                 <circle
                   className="fallback-hit"
@@ -226,9 +256,7 @@ export function FallbackConstellation({
               return (
                 <button
                   key={word.lemma}
-                  type="button"
-                  onClick={activate}
-                  onKeyDown={(event) => onActivateKey(event, activate)}
+                  {...buildFallbackWordButtonProps(activate)}
                   style={{
                     width: "100%",
                     display: "flex",

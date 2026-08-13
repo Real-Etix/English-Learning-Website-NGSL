@@ -32,18 +32,9 @@ function baseTransitionMs(tier: GalaxyQualityProfile["tier"], reducedMotion: boo
   return tier === "mobile" ? 240 : 320;
 }
 
-function withSaveData(profile: GalaxyQualityProfile): GalaxyQualityProfile {
-  const degraded = degradeQuality(profile);
-  return {
-    ...degraded,
-    twinkle: false,
-    transitionMs: Math.min(degraded.transitionMs, 180),
-  };
-}
-
 export function initialQuality(input: GalaxyQualityInput): GalaxyQualityProfile {
   const tier = input.width < MOBILE_WIDTH ? "mobile" : "desktop";
-  const profile: GalaxyQualityProfile = {
+  return {
     tier,
     pixelRatio: clampPixelRatio(input.devicePixelRatio, tier === "mobile" ? 1.25 : 1.75),
     residentCharts: tier === "mobile" ? 3 : 8,
@@ -52,7 +43,6 @@ export function initialQuality(input: GalaxyQualityInput): GalaxyQualityProfile 
     twinkle: !input.reducedMotion,
     transitionMs: baseTransitionMs(tier, input.reducedMotion),
   };
-  return input.saveData ? withSaveData(profile) : profile;
 }
 
 export function degradeQuality(profile: GalaxyQualityProfile): GalaxyQualityProfile {

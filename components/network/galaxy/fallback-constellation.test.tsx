@@ -7,6 +7,8 @@ import { fixtureGraph } from "../../../lib/galaxy/test-fixture";
 import {
   FallbackConstellation,
   FULL_3D_UNAVAILABLE_MESSAGE,
+  buildFallbackChartTargetProps,
+  buildFallbackWordButtonProps,
   getFallbackFullModeControl,
   projectChartsToConstellation,
 } from "./fallback-constellation";
@@ -65,6 +67,7 @@ describe("FallbackConstellation", () => {
     );
 
     expect(html).toContain('viewBox="0 0 1000 700"');
+    expect(html).not.toContain('role="img"');
     expect(html).toContain('role="button"');
     expect(html).toContain('tabindex="0"');
     expect(html).toContain(speechChart.name.replace("&", "&amp;"));
@@ -72,5 +75,23 @@ describe("FallbackConstellation", () => {
     expect(html).toContain("speak");
     expect(html).toContain("Held");
     expect(html).toContain("Route");
+  });
+
+  it("keeps keyboard activation on chart groups without adding duplicate key handlers to native word buttons", () => {
+    const openChart = vi.fn();
+    const openWord = vi.fn();
+    const preventDefault = vi.fn();
+
+    const chartProps = buildFallbackChartTargetProps("speech", speechChart.name, speechChart.wordCount, openChart);
+    const wordProps = buildFallbackWordButtonProps(openWord);
+
+    chartProps.onKeyDown?.({ key: "Enter", preventDefault } as unknown as React.KeyboardEvent<SVGGElement>);
+    chartProps.onKeyDown?.({ key: " ", preventDefault } as unknown as React.KeyboardEvent<SVGGElement>);
+    expect(openChart).toHaveBeenCalledTimes(2);
+    expect(preventDefault).toHaveBeenCalledTimes(2);
+
+    expect("onKeyDown" in wordProps).toBe(false);
+    wordProps.onClick();
+    expect(openWord).toHaveBeenCalledTimes(1);
   });
 });

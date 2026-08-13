@@ -11,6 +11,32 @@ describe("initialQuality", () => {
     });
   });
 
+  it("preserves the exact required initial profiles for Save-Data users until sampling degrades later", () => {
+    expect(initialQuality({
+      width: 390,
+      devicePixelRatio: 3,
+      reducedMotion: false,
+      saveData: true,
+    })).toEqual(initialQuality({
+      width: 390,
+      devicePixelRatio: 3,
+      reducedMotion: false,
+      saveData: false,
+    }));
+
+    expect(initialQuality({
+      width: 1440,
+      devicePixelRatio: 2,
+      reducedMotion: false,
+      saveData: true,
+    })).toEqual(initialQuality({
+      width: 1440,
+      devicePixelRatio: 2,
+      reducedMotion: false,
+      saveData: false,
+    }));
+  });
+
   it("degrades effects before interaction content", () => {
     const degraded = degradeQuality(initialQuality({ width: 1440, devicePixelRatio: 2, reducedMotion: false }));
     expect(degraded.backgroundStars).toBeLessThan(1500);
