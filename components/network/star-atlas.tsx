@@ -1,9 +1,12 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
 
+import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
+import { FullGalaxyLoader } from "@/components/network/galaxy/full-galaxy-loader";
+import { initialFullModeState, reduceFullMode } from "@/components/network/galaxy/full-mode-state";
 import {
   GalaxyController,
   galaxyStoreOptions,
@@ -17,6 +20,7 @@ import { wordXp } from "@/lib/collection/xp";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
 import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
 import type { WordDetail } from "@/lib/content/word-detail";
+import type { FullGalaxyData } from "@/lib/galaxy/full-codec";
 import type { LadderRung, RunStop } from "@/lib/galaxy/learning-routes";
 import type { ChartShard, GalaxyChart, GalaxyManifest, SearchEntry } from "@/lib/galaxy/types";
 import type { WikiPage } from "@/lib/wiki/parse-wiki";
@@ -75,6 +79,7 @@ const xpForLevel = (level: number) => 50 * (level - 1) ** 2;
 const norm = (s: string) => String(s || "").trim().toLowerCase().replace(/[^a-z]/g, "");
 function hash(str: string) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
 function rng(seed: number) { let s = seed; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
+function isAbortError(error: unknown) { return typeof error === "object" && error !== null && "name" in error && error.name === "AbortError"; }
 
 type WordMeta = Omit<SearchEntry, "normalized">;
 type AtlasModel = {
@@ -180,6 +185,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [pendingWordRetryLemma, setPendingWordRetryLemma] = useState<string | null>(null);
   const [engineReady, setEngineReady] = useState(false);
   const [engineError, setEngineError] = useState<string | null>(null);
+  const [fullMode, dispatchFullMode] = useReducer(reduceFullMode, initialFullModeState);
 
   const hostRef = useRef<HTMLDivElement | null>(null);
   const resourcesRef = useRef<AtlasResources | null>(null);
@@ -190,6 +196,9 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const searchRevision = useRef(0);
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const ringIdx = useRef<number | null>(null);
+  const fullAbortRef = useRef<AbortController | null>(null);
+  const fullDataRef = useRef<FullGalaxyData | null>(null);
+  const fullLoadRevision = useRef(0);
   const router = useRouter();
   const currentList = { slug: listSlug, label: manifest.list.label };
 
@@ -314,6 +323,11 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     connection?.addEventListener("change", updateSaveData);
     resourcesRef.current = { engine, store, catalog, controller: activeController, selection };
     return () => {
+      fullLoadRevision.current += 1;
+      fullAbortRef.current?.abort();
+      fullAbortRef.current = null;
+      fullDataRef.current = null;
+      engine.exitFull();
       unsubscribe();
       host.removeEventListener("pointerdown", cancelIdlePrefetch);
       host.removeEventListener("wheel", cancelIdlePrefetch);
@@ -327,6 +341,56 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [manifest.version]);
+
+  const leaveFullMode = useCallback((event: "cancel" | "exit") => {
+    fullLoadRevision.current += 1;
+    fullAbortRef.current?.abort();
+    fullAbortRef.current = null;
+    fullDataRef.current = null;
+    resourcesRef.current?.engine.exitFull();
+    dispatchFullMode({ type: event });
+  }, []);
+  const cancelFullMode = useCallback(() => leaveFullMode("cancel"), [leaveFullMode]);
+  const returnToConstellations = useCallback(() => leaveFullMode("exit"), [leaveFullMode]);
+
+  const loadFullGalaxy = useCallback(() => {
+    const revision = ++fullLoadRevision.current;
+    fullAbortRef.current?.abort();
+    resourcesRef.current?.engine.exitFull();
+    fullDataRef.current = null;
+    const controller = new AbortController();
+    fullAbortRef.current = controller;
+    dispatchFullMode({ type: "confirm" });
+    const loader = new FullGalaxyLoader(manifest);
+    void loader.load({
+      signal: controller.signal,
+      onProgress: (progress) => {
+        if (revision === fullLoadRevision.current && !controller.signal.aborted) {
+          dispatchFullMode({ type: "progress", ...progress });
+        }
+      },
+    }).then((data) => {
+      if (revision !== fullLoadRevision.current || controller.signal.aborted) return;
+      if (data.version !== manifest.version) throw new Error("Full galaxy version mismatch");
+      if (data.words.length !== manifest.list.wordCount) throw new Error("Full galaxy word count mismatch");
+      const engine = resourcesRef.current?.engine;
+      if (!engine) throw new Error("The star field is no longer available");
+      fullDataRef.current = data;
+      engine.enterFull(data);
+      dispatchFullMode({ type: "ready" });
+    }).catch((error: unknown) => {
+      if (revision !== fullLoadRevision.current) return;
+      fullDataRef.current = null;
+      resourcesRef.current?.engine.exitFull();
+      if (isAbortError(error)) dispatchFullMode({ type: "cancel" });
+      else dispatchFullMode({
+        type: "fail",
+        message: error instanceof Error ? error.message : "The complete galaxy could not be loaded.",
+      });
+    }).finally(() => {
+      if (revision === fullLoadRevision.current) fullAbortRef.current = null;
+    });
+  }, [manifest]);
 
   // push claimed / used / mode / chart / route / offset to the engine
   useEffect(() => { resourcesRef.current?.engine.setClaimed(owned); }, [owned]);
@@ -868,6 +932,16 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       : controllerStatus.chartLoad === "error"
         ? `${loadingChart?.name ?? "Chart"} could not be loaded.`
         : `Constellation view · ${manifest.list.chartCount} charts · ${manifest.list.wordCount.toLocaleString()} stars`;
+  const skyStatusText = fullMode.phase === "ready"
+    ? `Complete ${manifest.list.label} galaxy · ${manifest.list.wordCount.toLocaleString()} stars`
+    : chartStatusText;
+  const fullActionLabel = fullMode.phase === "ready"
+    ? "Return to constellation view"
+    : `Load full ${manifest.list.label} galaxy`;
+  const toggleFullMode = () => {
+    if (fullMode.phase === "ready") leaveFullMode("exit");
+    else dispatchFullMode({ type: "open" });
+  };
 
   // ============================ RENDER ============================
   return (
@@ -892,7 +966,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
               <ul style={{ position: "absolute", top: "calc(100% + 6px)", left: 0, minWidth: 180, margin: 0, padding: 5, listStyle: "none", borderRadius: 12, border: "1px solid rgba(241,238,230,.1)", background: "rgba(10,15,28,.97)", backdropFilter: "blur(18px)", boxShadow: "0 22px 50px rgba(0,0,0,.6)", zIndex: 45, animation: "riseIn .16s ease both" }}>
                 {LISTS.map((l) => (
                   <li key={l.slug}>
-                    <button onClick={() => { setListMenuOpen(false); if (l.slug !== listSlug) router.push(`/network/${l.slug}`); }} style={{ display: "flex", width: "100%", alignItems: "center", gap: 9, padding: "8px 11px", border: "none", borderRadius: 9, background: l.slug === listSlug ? "rgba(191,217,242,.12)" : "transparent", color: l.slug === listSlug ? "#BFD9F2" : "#F1EEE6", cursor: "pointer", textAlign: "left", font: `500 13px/1 ${SS}` }}>
+                    <button onClick={() => { setListMenuOpen(false); if (l.slug !== listSlug) { leaveFullMode("exit"); router.push(`/network/${l.slug}`); } }} style={{ display: "flex", width: "100%", alignItems: "center", gap: 9, padding: "8px 11px", border: "none", borderRadius: 9, background: l.slug === listSlug ? "rgba(191,217,242,.12)" : "transparent", color: l.slug === listSlug ? "#BFD9F2" : "#F1EEE6", cursor: "pointer", textAlign: "left", font: `500 13px/1 ${SS}` }}>
                       <span style={{ width: 6, height: 6, borderRadius: 999, flex: "none", background: l.slug === listSlug ? "#8FE3C0" : "rgba(241,238,230,.2)" }} />
                       <span>{l.label}</span>
                     </button>
@@ -905,7 +979,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
         <nav style={{ display: "flex", gap: 2, padding: 3, borderRadius: 999, background: "rgba(241,238,230,.05)", border: "1px solid rgba(241,238,230,.07)" }}>
           {([["galaxy", "Sky"], ["space", "Your space"], ["board", "Log"]] as const).map(([id, label]) => (
-            <button key={id} onClick={() => { setView(id); if (id === "space") void loadCatalog(); }} style={{ padding: "6px 13px", border: "none", borderRadius: 999, cursor: "pointer", font: `500 12.5px/1 ${SS}`, letterSpacing: ".01em", transition: "background .18s ease, color .18s ease", background: view === id ? "rgba(241,238,230,.11)" : "transparent", color: view === id ? "#F1EEE6" : "#94A0B4" }}>{label}</button>
+            <button key={id} onClick={() => { if (id !== "galaxy") leaveFullMode("exit"); setView(id); if (id === "space") void loadCatalog(); }} style={{ padding: "6px 13px", border: "none", borderRadius: 999, cursor: "pointer", font: `500 12.5px/1 ${SS}`, letterSpacing: ".01em", transition: "background .18s ease, color .18s ease", background: view === id ? "rgba(241,238,230,.11)" : "transparent", color: view === id ? "#F1EEE6" : "#94A0B4" }}>{label}</button>
           ))}
         </nav>
 
@@ -962,7 +1036,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       </div>
 
       <div aria-live="polite" role="status" style={{ position: "absolute", left: "50%", top: narrow ? 110 : 68, zIndex: 22, transform: "translateX(-50%)", display: view === "galaxy" ? "flex" : "none", alignItems: "center", gap: 8, maxWidth: "calc(100% - 32px)", padding: "6px 11px", borderRadius: 999, background: "rgba(10,15,28,.78)", color: controllerStatus.chartLoad === "error" || engineError ? "#E8A89F" : "#6B7789", backdropFilter: "blur(12px)", font: `500 10px/1.3 ${MN}`, letterSpacing: ".04em", pointerEvents: controllerStatus.chartLoad === "error" ? "auto" : "none", whiteSpace: "nowrap" }}>
-        <span>{engineError ?? (engineReady ? chartStatusText : "Charting constellations…")}</span>
+        <span>{engineError ?? (engineReady ? skyStatusText : "Charting constellations…")}</span>
         {controllerStatus.chartLoad === "error" && !engineError && <button onClick={retrySelection} style={{ padding: "3px 8px", border: "1px solid rgba(232,168,159,.34)", borderRadius: 999, background: "transparent", color: "#E8A89F", cursor: "pointer", font: `600 10px/1 ${SS}` }}>Retry</button>}
       </div>
 
@@ -995,6 +1069,12 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
             </div>
 
             <p style={{ pointerEvents: "auto", margin: 0, padding: "10px 12px", borderRadius: 12, background: "rgba(10,15,28,.8)", border: "1px solid rgba(241,238,230,.08)", backdropFilter: "blur(16px)", fontSize: 12, lineHeight: 1.55, color: "#94A0B4" }}>{modeBlurb}</p>
+
+            {narrow && (
+              <button onClick={toggleFullMode} style={{ pointerEvents: "auto", width: "100%", padding: "10px 12px", border: `1px solid ${fullMode.phase === "ready" ? "rgba(143,227,192,.3)" : "rgba(191,217,242,.2)"}`, borderRadius: 12, background: fullMode.phase === "ready" ? "rgba(143,227,192,.09)" : "rgba(10,15,28,.86)", color: fullMode.phase === "ready" ? "#8FE3C0" : "#BFD9F2", cursor: "pointer", textAlign: "left", font: `600 11.5px/1.4 ${SS}`, backdropFilter: "blur(16px)" }}>
+                {fullActionLabel}
+              </button>
+            )}
 
             {mode === "chart" && (
               <div style={{ pointerEvents: "auto", display: "flex", flexDirection: "column", gap: 5 }}>
@@ -1083,6 +1163,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
                   <span style={{ font: `600 11px/1 ${MN}`, color: "#F1EEE6" }}>{route.filter((l) => owned.has(l)).length} / {route.length}</span>
                 </span>
               )}
+              {!narrow && <button onClick={toggleFullMode} style={{ padding: "6px 11px", border: `1px solid ${fullMode.phase === "ready" ? "rgba(143,227,192,.3)" : "rgba(191,217,242,.2)"}`, borderRadius: 999, background: fullMode.phase === "ready" ? "rgba(143,227,192,.09)" : "rgba(10,15,28,.86)", color: fullMode.phase === "ready" ? "#8FE3C0" : "#BFD9F2", cursor: "pointer", font: `500 11px/1 ${SS}`, backdropFilter: "blur(14px)" }}>{fullActionLabel}</button>}
               <button onClick={() => setKeyOpen((v) => !v)} style={{ padding: "6px 11px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(10,15,28,.86)", color: "#94A0B4", cursor: "pointer", font: `500 11px/1 ${SS}`, backdropFilter: "blur(14px)" }}>Key</button>
               <button onClick={resetView} style={{ padding: "6px 11px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(10,15,28,.86)", color: "#94A0B4", cursor: "pointer", font: `500 11px/1 ${SS}`, backdropFilter: "blur(14px)" }}>Reset view</button>
               <span style={{ padding: "6px 11px", borderRadius: 999, background: "rgba(10,15,28,.7)", font: `500 10px/1 ${MN}`, letterSpacing: ".14em", textTransform: "uppercase", color: "#6B7789", backdropFilter: "blur(14px)" }}>{zoomLabel}</span>
@@ -1217,6 +1298,19 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
             </div>
           )}
         </main>
+      )}
+
+      {fullMode.phase !== "idle" && fullMode.phase !== "ready" && (
+        <FullGalaxyDialog
+          listLabel={manifest.list.label}
+          wordCount={manifest.list.wordCount}
+          bytes={manifest.assets.full.bytes}
+          state={fullMode}
+          onConfirm={loadFullGalaxy}
+          onCancel={cancelFullMode}
+          onRetry={loadFullGalaxy}
+          onReturn={returnToConstellations}
+        />
       )}
 
       {/* QUIZ (shared across galaxy) */}
