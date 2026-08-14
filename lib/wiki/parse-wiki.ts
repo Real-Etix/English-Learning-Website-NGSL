@@ -24,7 +24,9 @@ export type WikiPage = {
   lists: string[];
   forms: string[];
   status: string;
+  sources: string[];
   definition: string;
+  usageNote: string | null;
   examples: string[];
   connections: WikiConnection[];
   domains: string[];
@@ -144,7 +146,9 @@ export function parsePage(markdown: string): WikiPage | null {
     lists: parseYamlList(fm.lists),
     forms: parseYamlList(fm.forms),
     status: fm.status || "seeded",
+    sources: parseYamlList(fm.sources),
     definition,
+    usageNote: sectionBody(body, "Usage note") || null,
     examples,
     connections,
     domains,
