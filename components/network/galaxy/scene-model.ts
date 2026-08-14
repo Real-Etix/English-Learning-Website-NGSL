@@ -6,6 +6,7 @@ export type GalaxyView = "constellation" | "chart" | "full";
 type LabelCandidateInput = {
   focus?: string | null;
   hover?: string | null;
+  neighbors?: Set<string>;
   route?: Set<string>;
   claimed?: Set<string>;
   max: number;
@@ -100,6 +101,7 @@ export class GalaxySceneModel {
 
     append(input.focus);
     append(input.hover);
+    input.neighbors?.forEach(append);
     input.route?.forEach(append);
     input.claimed?.forEach(append);
     words

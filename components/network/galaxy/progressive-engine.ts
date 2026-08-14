@@ -262,6 +262,75 @@ export function zoomLevelTransition(
   return { level, changed: level !== previous };
 }
 
+export function selectChartBackboneEdges(
+  edges: readonly ShardEdge[],
+  words: readonly PositionedWord[],
+  chartId: string,
+): ShardEdge[] {
+  const chartWords = new Set(
+    words.filter((word) => word.chartId === chartId).map((word) => word.lemma),
+  );
+  const limit = Math.min(96, Math.max(18, Math.round(Math.sqrt(chartWords.size) * 4)));
+  const internalEdges = edges.filter(
+    (edge) => chartWords.has(edge.source) && chartWords.has(edge.target),
+  );
+  if (internalEdges.length <= limit) return [...internalEdges];
+  const priority: Record<string, number> = {
+    antonym: 0,
+    synonym: 1,
+    intensity: 2,
+    advanced_form: 3,
+    builds_on: 4,
+    morphological: 5,
+    collocation: 6,
+  };
+  const byPair = new Map<string, ShardEdge>();
+  for (const edge of internalEdges) {
+    const pair = edge.source < edge.target
+      ? `${edge.source}\u0000${edge.target}`
+      : `${edge.target}\u0000${edge.source}`;
+    const current = byPair.get(pair);
+    if (!current || (priority[edge.type] ?? 99) < (priority[current.type] ?? 99)) {
+      byPair.set(pair, edge);
+    }
+  }
+
+  const stableHash = (value: string): number => {
+    let hash = 2166136261;
+    for (let index = 0; index < value.length; index += 1) {
+      hash ^= value.charCodeAt(index);
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+  };
+  const candidates = [...byPair.values()].sort((left, right) => {
+    const leftKey = `${left.source}\u0000${left.target}\u0000${left.type}`;
+    const rightKey = `${right.source}\u0000${right.target}\u0000${right.type}`;
+    return stableHash(leftKey) - stableHash(rightKey) || (leftKey < rightKey ? -1 : leftKey > rightKey ? 1 : 0);
+  });
+  if (candidates.length <= limit) return candidates;
+
+  const incident = new Map<string, number>();
+  const selected: ShardEdge[] = [];
+  for (const edge of candidates) {
+    if ((incident.get(edge.source) ?? 0) >= 4 || (incident.get(edge.target) ?? 0) >= 4) continue;
+    selected.push(edge);
+    incident.set(edge.source, (incident.get(edge.source) ?? 0) + 1);
+    incident.set(edge.target, (incident.get(edge.target) ?? 0) + 1);
+    if (selected.length >= limit) break;
+  }
+  return selected;
+}
+
+export function contextualWordLabelBudget(
+  maximum: number,
+  context: { chart: boolean; focus: boolean; hover: boolean },
+): number {
+  if (context.focus || context.hover) return Math.min(maximum, 48);
+  if (context.chart) return Math.min(maximum, 36);
+  return maximum;
+}
+
 type WordLayer = {
   words: PositionedWord[];
   index: Map<string, number>;
@@ -369,6 +438,7 @@ export class ProgressiveStarEngine {
   private approachedChart: string | null = null;
   private labelWords: PositionedWord[] = [];
   private focusNeighbors = new Set<string>();
+  private hoverNeighbors = new Set<string>();
 
   private readonly cameraState = {
     theta: 0.7,
@@ -459,9 +529,9 @@ export class ProgressiveStarEngine {
     this.linkObject = new THREE.LineSegments(this.linkGeometry, new THREE.LineBasicMaterial({
       vertexColors: true,
       transparent: true,
-      opacity: 0.9,
+      opacity: 0.5,
       depthWrite: false,
-      blending: THREE.AdditiveBlending,
+      blending: THREE.NormalBlending,
     }));
     this.linkObject.frustumCulled = false;
     this.scene.add(this.linkObject);
@@ -969,7 +1039,9 @@ export class ProgressiveStarEngine {
       if (hover !== this.state.hover) {
         this.state.hover = hover;
         this.host.style.cursor = pick ? "pointer" : "grab";
+        this.refreshHoverNeighbors();
         this.refreshWordAttributes();
+        this.rebuildLinks();
         this.refreshLabelAssignments();
       }
     }, { signal });
@@ -1069,6 +1141,7 @@ export class ProgressiveStarEngine {
 
   private refreshContext(): void {
     this.refreshFocusNeighbors();
+    this.refreshHoverNeighbors();
     this.refreshWordAttributes();
     this.rebuildLinks();
     this.writeRoute();
@@ -1081,6 +1154,15 @@ export class ProgressiveStarEngine {
     for (const edge of this.model.residentEdges()) {
       if (edge.source === this.state.focus) this.focusNeighbors.add(edge.target);
       if (edge.target === this.state.focus) this.focusNeighbors.add(edge.source);
+    }
+  }
+
+  private refreshHoverNeighbors(): void {
+    this.hoverNeighbors.clear();
+    if (!this.state.hover) return;
+    for (const edge of this.model.residentEdges()) {
+      if (edge.source === this.state.hover) this.hoverNeighbors.add(edge.target);
+      if (edge.target === this.state.hover) this.hoverNeighbors.add(edge.source);
     }
   }
 
@@ -1135,7 +1217,11 @@ export class ProgressiveStarEngine {
     const positions: number[] = [];
     const colors: number[] = [];
     if (layer) {
-      for (const edge of this.model.residentEdges()) {
+      const residentEdges = this.model.residentEdges();
+      const visibleEdges = this.state.chart && !this.state.focus && !this.state.hover
+        ? selectChartBackboneEdges(residentEdges, layer.words, this.state.chart)
+        : residentEdges;
+      for (const edge of visibleEdges) {
         const source = layer.index.get(edge.source);
         const target = layer.index.get(edge.target);
         if (source === undefined || target === undefined || !this.edgeVisible(edge, layer)) continue;
@@ -1162,6 +1248,7 @@ export class ProgressiveStarEngine {
 
   private edgeVisible(edge: ShardEdge, layer: WordLayer): boolean {
     if (this.state.focus) return edge.source === this.state.focus || edge.target === this.state.focus;
+    if (this.state.hover) return edge.source === this.state.hover || edge.target === this.state.hover;
     if (this.state.chart) {
       return layer.words[layer.index.get(edge.source)!].chartId === this.state.chart
         && layer.words[layer.index.get(edge.target)!].chartId === this.state.chart;
@@ -1176,8 +1263,8 @@ export class ProgressiveStarEngine {
   }
 
   private edgeWeight(edge: ShardEdge, layer: WordLayer): number {
-    if (this.state.focus) return 0.95;
-    if (this.state.chart) return 0.3;
+    if (this.state.focus || this.state.hover) return 0.95;
+    if (this.state.chart) return 0.58;
     if (this.state.mode === "ladder") return 0.75;
     if (this.state.mode === "run") return 0.55;
     const sourceWord = layer.words[layer.index.get(edge.source)!];
@@ -1209,9 +1296,14 @@ export class ProgressiveStarEngine {
     this.labelWords = this.model.labelCandidates({
       focus: this.state.focus,
       hover: this.state.hover,
+      neighbors: this.state.focus ? this.focusNeighbors : this.hoverNeighbors,
       route: this.state.routeSet,
       claimed: this.state.claimed,
-      max: this.maxWordLabels,
+      max: contextualWordLabelBudget(this.maxWordLabels, {
+        chart: Boolean(this.state.chart),
+        focus: Boolean(this.state.focus),
+        hover: Boolean(this.state.hover),
+      }),
     });
     for (let index = 0; index < this.labelElements.length; index++) {
       const word = this.labelWords[index];
@@ -1407,7 +1499,7 @@ export class ProgressiveStarEngine {
 
   private wordLabelVisible(word: PositionedWord): boolean {
     if (this.state.focus) return word.lemma === this.state.focus || this.focusNeighbors.has(word.lemma);
-    if (word.lemma === this.state.hover) return true;
+    if (this.state.hover) return word.lemma === this.state.hover || this.hoverNeighbors.has(word.lemma);
     if (this.state.mode === "run" && this.state.routeSet.has(word.lemma)) return true;
     if (this.state.chart) return word.chartId === this.state.chart;
     if (this.level === "star" || this.level === "cluster") return word.chartId === this.nearestChart;

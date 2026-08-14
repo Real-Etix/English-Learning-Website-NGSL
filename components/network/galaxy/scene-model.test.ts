@@ -67,4 +67,17 @@ describe("GalaxySceneModel", () => {
     expect(labels.map((word) => word.lemma)).toEqual(["zebra", "move", "talk"]);
     expect(model.labelCandidates({ max: 200 })).toHaveLength(manifest.list.wordCount);
   });
+
+  it("places the active star's neighbors ahead of unrelated high-degree labels", () => {
+    const model = new GalaxySceneModel(manifest);
+    model.enterFull(fullData);
+
+    const labels = model.labelCandidates({
+      hover: "move",
+      neighbors: new Set(["zebra"]),
+      max: 2,
+    } as Parameters<GalaxySceneModel["labelCandidates"]>[0] & { neighbors: Set<string> });
+
+    expect(labels.map((word) => word.lemma)).toEqual(["move", "zebra"]);
+  });
 });
