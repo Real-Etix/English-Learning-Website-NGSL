@@ -1,7 +1,8 @@
 import { getWordRarity } from "@/lib/collection/service";
 import { fetchWordDetail } from "@/lib/content/word-detail";
 import { buildWordLearningProfile } from "@/lib/content/word-learning";
-import { readPage } from "@/lib/wiki/parse-wiki";
+import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
+import { toLegacyPage } from "@/lib/vocabulary/legacy-profile-adapter";
 
 export const runtime = "nodejs";
 
@@ -15,14 +16,14 @@ export async function GET(
   context: { params: Promise<{ lemma: string }> },
 ) {
   const { lemma } = await context.params;
-  const page = await readPage(lemma);
-  if (!page) {
+  const record = await loadGeneratedWord(lemma);
+  if (!record) {
     return Response.json({ error: "not found" }, { status: 404 });
   }
   const [detail, rarity] = await Promise.all([
-    fetchWordDetail(lemma),
-    getWordRarity(lemma).catch(() => null), // DB may be unset in some envs
+    fetchWordDetail(record.lemma),
+    getWordRarity(record.lemma).catch(() => null), // DB may be unset in some envs
   ]);
-  const learning = buildWordLearningProfile(page, detail);
-  return Response.json({ page, detail, learning, rarity });
+  const learning = buildWordLearningProfile(record, detail);
+  return Response.json({ page: toLegacyPage(record), detail, learning, rarity });
 }

@@ -3,6 +3,9 @@ import { describe, expect, it } from "vitest";
 import type { WordDetail } from "./word-detail";
 import { buildWordLearningProfile } from "./word-learning";
 import type { WikiPage } from "../wiki/parse-wiki";
+import { toCanonicalRecord } from "../vocabulary/legacy-profile-adapter";
+import type { VocabularyRecord } from "../vocabulary/schema";
+import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
 
 const emptyDetail: WordDetail = {
   ipa: null,
@@ -25,8 +28,8 @@ const detail: WordDetail = {
   synonyms: [],
 };
 
-function page(overrides: Partial<WikiPage> = {}): WikiPage {
-  return {
+function page(overrides: Partial<WikiPage> = {}): VocabularyRecord {
+  const legacyPage: WikiPage = {
     lemma: "core",
     display: "core",
     tier: "core",
@@ -46,9 +49,21 @@ function page(overrides: Partial<WikiPage> = {}): WikiPage {
     domains: [],
     ...overrides,
   };
+  return toCanonicalRecord(legacyPage);
 }
 
 describe("buildWordLearningProfile", () => {
+  it("maps the canonical primary sense and examples into the learner profile", () => {
+    const record = vocabularyRecordFixture();
+
+    expect(buildWordLearningProfile(record, emptyDetail)).toMatchObject({
+      lemma: record.lemma,
+      partOfSpeech: record.senses[0].partOfSpeech,
+      senses: [expect.objectContaining({ definition: record.senses[0].definition, primary: true })],
+      examples: [expect.objectContaining({ text: record.senses[0].examples[0].text })],
+    });
+  });
+
   it("keeps a source-backed wiki meaning before later dictionary senses", () => {
     const corePage = page();
 

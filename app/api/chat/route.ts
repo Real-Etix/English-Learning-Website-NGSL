@@ -2,7 +2,7 @@ import { getListVocab, sampleWords } from "@/lib/content/list-vocab";
 import { buildTutorStarContext } from "@/lib/content/tutor-context";
 import { fetchWordDetail } from "@/lib/content/word-detail";
 import { buildWordLearningProfile } from "@/lib/content/word-learning";
-import { readPage } from "@/lib/wiki/parse-wiki";
+import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM, type ChatMessage } from "@/scripts/llm-client";
 
@@ -67,10 +67,10 @@ export async function POST(request: Request) {
   // Ground the tutor in the open star's demand-loaded learner profile.
   let starBlock = "";
   if (body.lemma) {
-    const page = await readPage(body.lemma);
-    if (page) {
-      const detail = await fetchWordDetail(page.lemma);
-      const profile = buildWordLearningProfile(page, detail);
+    const record = await loadGeneratedWord(body.lemma);
+    if (record) {
+      const detail = await fetchWordDetail(record.lemma);
+      const profile = buildWordLearningProfile(record, detail);
       starBlock =
         `\n\nThe learner has this word open. Ground your answer only in this reference:\n` +
         buildTutorStarContext(profile);

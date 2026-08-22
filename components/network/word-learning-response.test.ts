@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { buildWordLearningProfile } from "../../lib/content/word-learning";
 import type { WikiPage } from "@/lib/wiki/parse-wiki";
+import { toCanonicalRecord } from "@/lib/vocabulary/legacy-profile-adapter";
 import { resolveWordLearningProfile } from "./word-learning-response";
 
 const page: WikiPage = {
@@ -24,7 +25,7 @@ const page: WikiPage = {
   domains: [],
 };
 
-const learningProfile = () => buildWordLearningProfile(page, null);
+const learningProfile = () => buildWordLearningProfile(toCanonicalRecord(page), null);
 
 describe("resolveWordLearningProfile", () => {
   it("derives a learning profile from a compatible raw word response", () => {

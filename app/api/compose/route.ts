@@ -4,7 +4,8 @@ import {
 } from "@/lib/compose/tasks";
 import { fetchWordDetail } from "@/lib/content/word-detail";
 import { buildWordLearningProfile } from "@/lib/content/word-learning";
-import { readPage } from "@/lib/wiki/parse-wiki";
+import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
+import type { VocabularyRecord } from "@/lib/vocabulary/schema";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM } from "@/scripts/llm-client";
 
@@ -36,37 +37,44 @@ export async function POST(request: Request) {
   // ---- pick a task ----
   if (body.action === "task") {
     if (!body.lemma) return Response.json({ error: "no lemma" }, { status: 400 });
-    const page = await readPage(body.lemma);
-    if (!page) return Response.json({ error: "not found" }, { status: 404 });
+    const record = await loadGeneratedWord(body.lemma);
+    if (!record) return Response.json({ error: "not found" }, { status: 404 });
 
     const partners: PartnerInfo[] = [];
-    const partnerPages = new Map<string, NonNullable<typeof page>>();
-    for (const c of page.connections) {
+    const partnerRecords = new Map<string, VocabularyRecord>();
+    for (const c of record.connections) {
       if (!COMPOSABLE.has(c.type)) continue;
-      const pp = await readPage(c.target);
-      if (!pp || !pp.definition) continue;
-      partnerPages.set(pp.lemma, pp);
+      const partner = await loadGeneratedWord(c.target);
+      const definition = partner?.senses[0]?.definition;
+      if (!partner || !definition) continue;
+      partnerRecords.set(partner.lemma, partner);
       partners.push({
-        lemma: pp.lemma, display: pp.display, def: pp.definition, tier: pp.tier,
-        rank: pp.rank, type: c.type, gloss: c.gloss ?? null, dir: "out",
+        lemma: partner.lemma, display: partner.display, def: definition, tier: partner.tier,
+        rank: partner.lists[0]?.rank ?? null, type: c.type, gloss: c.gloss ?? null, dir: "out",
       });
     }
     const task = pickTask(
-      { lemma: page.lemma, display: page.display, def: page.definition, tier: page.tier, rank: page.rank },
+      {
+        lemma: record.lemma,
+        display: record.display,
+        def: record.senses[0]?.definition ?? "",
+        tier: record.tier,
+        rank: record.lists[0]?.rank ?? null,
+      },
       partners,
       new Set(body.claimed ?? []),
       body.avoid ?? [],
     );
     if (!task) return Response.json({ task: null });
 
-    const partnerPage = partnerPages.get(task.partner);
-    if (!partnerPage) return Response.json({ task });
+    const partnerRecord = partnerRecords.get(task.partner);
+    if (!partnerRecord) return Response.json({ task });
     const [targetDetail, partnerDetail] = await Promise.all([
-      fetchWordDetail(page.lemma).catch(() => null),
-      fetchWordDetail(partnerPage.lemma).catch(() => null),
+      fetchWordDetail(record.lemma).catch(() => null),
+      fetchWordDetail(partnerRecord.lemma).catch(() => null),
     ]);
-    const targetDefinition = buildWordLearningProfile(page, targetDetail).senses.find((sense) => sense.primary)?.definition;
-    const partnerDefinition = buildWordLearningProfile(partnerPage, partnerDetail).senses.find((sense) => sense.primary)?.definition;
+    const targetDefinition = buildWordLearningProfile(record, targetDetail).senses.find((sense) => sense.primary)?.definition;
+    const partnerDefinition = buildWordLearningProfile(partnerRecord, partnerDetail).senses.find((sense) => sense.primary)?.definition;
     return Response.json({
       task: {
         ...task,

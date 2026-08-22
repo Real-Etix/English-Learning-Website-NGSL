@@ -1,5 +1,5 @@
 import type { WordDetail } from "./word-detail";
-import type { WikiConnection, WikiPage } from "../wiki/parse-wiki";
+import type { VocabularyRecord } from "../vocabulary/schema";
 
 export type LearningEvidence = "verified" | "source-backed" | "ai-draft";
 
@@ -17,7 +17,10 @@ export type LearningExample = {
   source: "wiki" | "dictionaryapi";
 };
 
-export type LearningConnection = WikiConnection & {
+export type LearningConnection = {
+  type: string;
+  target: string;
+  gloss?: string | null;
   explained: boolean;
 };
 
@@ -78,14 +81,18 @@ function addExample(examples: LearningExample[], seenExamples: Set<string>, exam
 }
 
 export function buildWordLearningProfile(
-  page: WikiPage,
+  record: VocabularyRecord,
   detail: WordDetail | null,
 ): WordLearningProfile {
-  const factualWikiSource = page.sources.some((source) => FACTUAL_SOURCES.has(source));
-  const advancedWithoutFactualSource = page.tier === "advanced" && !factualWikiSource;
-  const usableWikiDefinition = Boolean(page.definition.trim()) && !isPlaceholder(page.definition);
+  const primarySense = record.senses[0];
+  const primaryDefinition = primarySense?.definition ?? "";
+  const primaryExamples = primarySense?.examples ?? [];
+  const sourceIds = record.sources.map((source) => source.sourceId);
+  const factualWikiSource = sourceIds.some((source) => FACTUAL_SOURCES.has(source));
+  const advancedWithoutFactualSource = record.tier === "advanced" && !factualWikiSource;
+  const usableWikiDefinition = Boolean(primaryDefinition.trim()) && !isPlaceholder(primaryDefinition);
   const verifiedWikiDefinition =
-    !advancedWithoutFactualSource && page.status === "verified" && usableWikiDefinition;
+    !advancedWithoutFactualSource && record.status === "verified" && usableWikiDefinition;
   const sourceBackedWikiDefinition = factualWikiSource && usableWikiDefinition;
 
   const dictionarySenses = (detail?.senses ?? []).filter(
@@ -107,16 +114,16 @@ export function buildWordLearningProfile(
     addSense(senses, seenDefinitions, {
       source: "wiki",
       sourceIndex: 0,
-      partOfSpeech: page.pos,
-      definition: page.definition,
-      example: page.examples[0] ?? null,
+      partOfSpeech: primarySense?.partOfSpeech ?? record.partOfSpeech,
+      definition: primaryDefinition,
+      example: primaryExamples[0]?.text ?? null,
     });
   }
   dictionarySenses.forEach((sense, index) => {
     addSense(senses, seenDefinitions, {
       source: "dictionaryapi",
       sourceIndex: index,
-      partOfSpeech: sense.partOfSpeech || page.pos,
+      partOfSpeech: sense.partOfSpeech || record.partOfSpeech,
       definition: sense.definition,
       example: sense.example,
     });
@@ -125,7 +132,7 @@ export function buildWordLearningProfile(
 
   const examples: LearningExample[] = [];
   const seenExamples = new Set<string>();
-  page.examples.forEach((text) => addExample(examples, seenExamples, { text, source: "wiki" }));
+  primaryExamples.forEach(({ text }) => addExample(examples, seenExamples, { text, source: "wiki" }));
   dictionarySenses.forEach((sense) => {
     if (sense.example) addExample(examples, seenExamples, { text: sense.example, source: "dictionaryapi" });
   });
@@ -142,13 +149,13 @@ export function buildWordLearningProfile(
       : "This word needs a sourced example before it can be claimed.";
 
   return {
-    lemma: page.lemma,
-    display: page.display,
-    tier: page.tier,
-    partOfSpeech: page.pos,
-    forms: page.forms,
-    status: page.status,
-    sources: page.sources,
+    lemma: record.lemma,
+    display: record.display,
+    tier: record.tier,
+    partOfSpeech: primarySense?.partOfSpeech ?? record.partOfSpeech,
+    forms: record.forms,
+    status: record.status,
+    sources: sourceIds,
     evidence,
     evidenceLabel:
       evidence === "verified" ? "Verified" : evidence === "source-backed" ? "Source-backed" : "AI draft",
@@ -160,8 +167,8 @@ export function buildWordLearningProfile(
     },
     senses,
     examples,
-    usageNote: page.usageNote,
-    connections: page.connections.map((connection) => ({
+    usageNote: record.usageNote,
+    connections: record.connections.map((connection) => ({
       ...connection,
       explained: Boolean(connection.gloss?.trim()),
     })),

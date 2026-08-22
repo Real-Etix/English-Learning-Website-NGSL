@@ -1,6 +1,7 @@
 import type { WordDetail } from "../../lib/content/word-detail";
 import { buildWordLearningProfile, type WordLearningProfile } from "../../lib/content/word-learning";
 import type { WikiPage } from "../../lib/wiki/parse-wiki";
+import { toCanonicalRecord } from "../../lib/vocabulary/legacy-profile-adapter";
 
 export type WordLearningResponse = {
   page: WikiPage;
@@ -67,5 +68,5 @@ export function resolveWordLearningProfile(
     || (expectedLemma !== undefined && !lemmasMatch(response.page.lemma, expectedLemma))) return null;
   return isWordLearningProfile(response.learning) && lemmasMatch(response.learning.lemma, response.page.lemma)
     ? response.learning
-    : buildWordLearningProfile(response.page, response.detail);
+    : buildWordLearningProfile(toCanonicalRecord(response.page), response.detail);
 }
