@@ -3,7 +3,7 @@ import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
-import { verifyEnrichmentPaths } from "./verify-enrichment-diff";
+import { verifyEnrichmentPaths, verifyEnrichmentReport } from "./verify-enrichment-diff";
 
 describe("verifyEnrichmentPaths", () => {
   it("accepts canonical vocabulary and all regenerated graph artifacts", () => {
@@ -117,5 +117,43 @@ describe("verifyEnrichmentPaths", () => {
     expect(valid.stdout).toContain("Validated 1 enrichment change(s).");
     expect(invalid.status).not.toBe(0);
     expect(invalid.stderr).toContain("repository-relative");
+  });
+});
+
+describe("verifyEnrichmentReport", () => {
+  it("accepts aggregate-only enrichment reports", () => {
+    expect(verifyEnrichmentReport(JSON.stringify({
+      stage: "advanced",
+      factualImports: 2,
+      reviewProposals: 3,
+      hiddenRecords: 1,
+      rejections: 4,
+      unknownTargets: 2,
+      tokenUsage: { inputTokens: 120, outputTokens: 80 },
+      estimatedRemainingDebt: 9,
+    }))).toEqual({ allowed: true, errors: [] });
+  });
+
+  it("rejects reports containing prompts, provider responses, or API keys", () => {
+    const result = verifyEnrichmentReport(JSON.stringify({
+      stage: "ngsl",
+      factualImports: 0,
+      reviewProposals: 0,
+      hiddenRecords: 0,
+      rejections: 0,
+      unknownTargets: 0,
+      tokenUsage: { inputTokens: 0, outputTokens: 0 },
+      estimatedRemainingDebt: 0,
+      prompt: "private prompt",
+      response: { choices: [] },
+      apiKey: "secret",
+    }));
+
+    expect(result.allowed).toBe(false);
+    expect(result.errors).toEqual(expect.arrayContaining([
+      "sensitive report field: prompt",
+      "sensitive report field: response",
+      "sensitive report field: apiKey",
+    ]));
   });
 });

@@ -1,0 +1,16 @@
+{
+  "source": { "sourceId": "dictionaryapi", "url": "https://example.com/fixture-dictionary", "retrievedAt": "2026-08-23T00:00:00.000Z", "contentHash": "sha256:enrichment-source-backed" },
+  "dictionary": {
+    "default": {
+      "ipa": null,
+      "audioUk": null,
+      "audioUs": null,
+      "audioAny": null,
+      "sourceEntryId": "fixture-entry",
+      "sourceUrl": "https://example.com/fixture-dictionary/entry",
+      "senses": [{ "partOfSpeech": "noun", "definition": "A source-backed fixture meaning for enrichment testing.", "example": "The fixture provides a sourced example.", "sourceSenseId": "fixture-sense" }],
+      "synonyms": []
+    }
+  },
+  "proposals": { "default": { "proposal": {}, "usage": { "inputTokens": 1, "outputTokens": 1 } } }
+}
