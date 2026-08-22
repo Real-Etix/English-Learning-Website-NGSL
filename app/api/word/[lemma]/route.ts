@@ -1,5 +1,6 @@
 import { getWordRarity } from "@/lib/collection/service";
 import { fetchWordDetail } from "@/lib/content/word-detail";
+import { buildWordLearningProfile } from "@/lib/content/word-learning";
 import { readPage } from "@/lib/wiki/parse-wiki";
 
 export const runtime = "nodejs";
@@ -22,5 +23,6 @@ export async function GET(
     fetchWordDetail(lemma),
     getWordRarity(lemma).catch(() => null), // DB may be unset in some envs
   ]);
-  return Response.json({ page, detail, rarity });
+  const learning = buildWordLearningProfile(page, detail);
+  return Response.json({ page, detail, learning, rarity });
 }

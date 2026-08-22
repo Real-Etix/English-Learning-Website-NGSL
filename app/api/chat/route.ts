@@ -1,4 +1,7 @@
 import { getListVocab, sampleWords } from "@/lib/content/list-vocab";
+import { buildTutorStarContext } from "@/lib/content/tutor-context";
+import { fetchWordDetail } from "@/lib/content/word-detail";
+import { buildWordLearningProfile } from "@/lib/content/word-learning";
 import { readPage } from "@/lib/wiki/parse-wiki";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM, type ChatMessage } from "@/scripts/llm-client";
@@ -61,22 +64,16 @@ export async function POST(request: Request) {
     ? `\nThe learner is currently viewing the "${vocab[body.listSlug].title}" list.`
     : "";
 
-  // Ground the tutor in the open star: its real definition, example and the
-  // wiki's typed connections + glosses, so answers cite the actual entry.
+  // Ground the tutor in the open star's demand-loaded learner profile.
   let starBlock = "";
   if (body.lemma) {
     const page = await readPage(body.lemma);
     if (page) {
-      const conns = page.connections
-        .slice(0, 12)
-        .map((c) => `  - ${c.type} → ${c.target}${c.gloss ? ` — ${c.gloss}` : ""}`)
-        .join("\n");
+      const detail = await fetchWordDetail(page.lemma);
+      const profile = buildWordLearningProfile(page, detail);
       starBlock =
-        `\n\nThe learner has this word open — ground your answer in it and its links; don't invent relations:\n` +
-        `Word: ${page.display} (${page.pos}${page.tier === "advanced" ? ", advanced" : ""})\n` +
-        `Definition: ${page.definition}\n` +
-        (page.examples[0] ? `Example: ${page.examples[0]}\n` : "") +
-        (conns ? `Connections:\n${conns}` : "");
+        `\n\nThe learner has this word open. Ground your answer only in this reference:\n` +
+        buildTutorStarContext(profile);
     }
   }
 

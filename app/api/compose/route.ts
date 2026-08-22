@@ -2,6 +2,8 @@ import {
   gate, graderMessage, heuristicGrade, parseVerdict, pickTask,
   type ComposeTask, type PartnerInfo,
 } from "@/lib/compose/tasks";
+import { fetchWordDetail } from "@/lib/content/word-detail";
+import { buildWordLearningProfile } from "@/lib/content/word-learning";
 import { readPage } from "@/lib/wiki/parse-wiki";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM } from "@/scripts/llm-client";
@@ -38,10 +40,12 @@ export async function POST(request: Request) {
     if (!page) return Response.json({ error: "not found" }, { status: 404 });
 
     const partners: PartnerInfo[] = [];
+    const partnerPages = new Map<string, NonNullable<typeof page>>();
     for (const c of page.connections) {
       if (!COMPOSABLE.has(c.type)) continue;
       const pp = await readPage(c.target);
       if (!pp || !pp.definition) continue;
+      partnerPages.set(pp.lemma, pp);
       partners.push({
         lemma: pp.lemma, display: pp.display, def: pp.definition, tier: pp.tier,
         rank: pp.rank, type: c.type, gloss: c.gloss ?? null, dir: "out",
@@ -53,7 +57,22 @@ export async function POST(request: Request) {
       new Set(body.claimed ?? []),
       body.avoid ?? [],
     );
-    return Response.json({ task });
+    if (!task) return Response.json({ task: null });
+
+    const partnerPage = partnerPages.get(task.partner);
+    if (!partnerPage) return Response.json({ task });
+    const [targetDetail, partnerDetail] = await Promise.all([
+      fetchWordDetail(page.lemma).catch(() => null),
+      fetchWordDetail(partnerPage.lemma).catch(() => null),
+    ]);
+    const targetDefinition = buildWordLearningProfile(page, targetDetail).senses.find((sense) => sense.primary)?.definition;
+    const partnerDefinition = buildWordLearningProfile(partnerPage, partnerDetail).senses.find((sense) => sense.primary)?.definition;
+    return Response.json({
+      task: {
+        ...task,
+        defs: [targetDefinition ?? task.defs[0], partnerDefinition ?? task.defs[1]],
+      },
+    });
   }
 
   // ---- grade a submission ----

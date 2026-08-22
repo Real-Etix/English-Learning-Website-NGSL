@@ -102,6 +102,7 @@ export function pickTask(target: TargetInfo, neighbours: PartnerInfo[], claimed:
   for (const link of neighbours) {
     if (!(link.type in PRIORITY)) continue;
     if (!link.def) continue;
+    if (!link.gloss?.trim()) continue;
     if (avoid.indexOf(link.lemma) >= 0) continue;
     let score = PRIORITY[link.type] * 100;
     if (link.tier === "advanced") score += 34;
