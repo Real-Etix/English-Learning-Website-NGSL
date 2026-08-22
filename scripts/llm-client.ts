@@ -4,6 +4,7 @@
  * One source of truth for every script that calls the model.
  */
 import "dotenv/config";
+import { randomUUID } from "node:crypto";
 
 const BASE_URL = process.env.LLM_BASE_URL ?? "https://api.moonshot.ai/v1";
 
@@ -29,17 +30,44 @@ function extractJSON<T>(content: string): T | null {
 }
 
 export type ChatMessage = { role: "system" | "user" | "assistant"; content: string };
+export type LlmUsage = { inputTokens: number; outputTokens: number };
+export type LlmResult<T> = { value: T; usage: LlmUsage; requestId: string };
+export type LlmResultOptions = {
+  requestId?: string;
+  fallbackUsage?: LlmUsage;
+  maxOutputTokens?: number;
+};
+
+type ChatCompletionResponse = {
+  choices?: Array<{ message?: { content?: string } }>;
+  usage?: {
+    prompt_tokens?: number;
+    completion_tokens?: number;
+    input_tokens?: number;
+    output_tokens?: number;
+  };
+};
+
+function providerUsage(data: ChatCompletionResponse): LlmUsage | null {
+  const inputTokens = data.usage?.prompt_tokens ?? data.usage?.input_tokens;
+  const outputTokens = data.usage?.completion_tokens ?? data.usage?.output_tokens;
+  return typeof inputTokens === "number" && typeof outputTokens === "number"
+    ? { inputTokens, outputTokens }
+    : null;
+}
 
 /**
  * Core chat call: returns the raw reply text, or null on failure.
  * Retries transient failures (429 overload / 5xx) with exponential backoff.
  * No response_format / temperature — some models reject them.
  */
-export async function completeChat(
+export async function completeChatResult(
   messages: ChatMessage[],
   model: string = LLM_MODEL,
   maxAttempts = 4,
-): Promise<string | null> {
+  options: LlmResultOptions = {},
+): Promise<LlmResult<string> | null> {
+  const requestId = options.requestId ?? randomUUID();
   for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
     // Everything — including reading the response body — is inside the try, so a
     // timeout that fires mid-body-read is caught and retried, not thrown uncaught.
@@ -48,12 +76,20 @@ export async function completeChat(
         method: "POST",
         headers: { Authorization: `Bearer ${LLM_API_KEY}`, "Content-Type": "application/json" },
         signal: AbortSignal.timeout(90_000),
-        body: JSON.stringify({ model, messages }),
+        body: JSON.stringify({
+          model,
+          messages,
+          ...(options.maxOutputTokens === undefined ? {} : { max_tokens: options.maxOutputTokens }),
+        }),
       });
 
       if (res.ok) {
-        const data = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
-        return data.choices?.[0]?.message?.content ?? "";
+        const data = (await res.json()) as ChatCompletionResponse;
+        return {
+          value: data.choices?.[0]?.message?.content ?? "",
+          usage: providerUsage(data) ?? options.fallbackUsage ?? { inputTokens: 0, outputTokens: 0 },
+          requestId,
+        };
       }
 
       const retriable = res.status === 429 || res.status >= 500;
@@ -77,20 +113,45 @@ export async function completeChat(
   return null;
 }
 
+/** Compatibility wrapper for callers that only need the reply text. */
+export async function completeChat(
+  messages: ChatMessage[],
+  model: string = LLM_MODEL,
+  maxAttempts = 4,
+): Promise<string | null> {
+  const result = await completeChatResult(messages, model, maxAttempts);
+  return result?.value ?? null;
+}
+
 /** Call the chat API and parse a JSON object from the reply (for the enrichment scripts). */
-export async function completeJSON<T>(
+export async function completeJSONResult<T>(
   system: string,
   user: string,
   model: string = LLM_MODEL,
   maxAttempts = 4,
-): Promise<T | null> {
-  const content = await completeChat(
+  options: LlmResultOptions = {},
+): Promise<LlmResult<T> | null> {
+  const result = await completeChatResult(
     [
       { role: "system", content: system },
       { role: "user", content: user },
     ],
     model,
     maxAttempts,
+    options,
   );
-  return content == null ? null : extractJSON<T>(content);
+  if (!result) return null;
+  const value = extractJSON<T>(result.value);
+  return value === null ? null : { ...result, value };
+}
+
+/** Compatibility wrapper for callers that only need parsed JSON. */
+export async function completeJSON<T>(
+  system: string,
+  user: string,
+  model: string = LLM_MODEL,
+  maxAttempts = 4,
+): Promise<T | null> {
+  const result = await completeJSONResult<T>(system, user, model, maxAttempts);
+  return result?.value ?? null;
 }
