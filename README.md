@@ -80,6 +80,35 @@ npm run test:perf            # throttled browser performance gates (Playwright)
 npm run lint
 ```
 
+### Reviewed vocabulary enrichment
+
+Canonical vocabulary lives in `content/vocabulary/*.ndjson`. To preview a local
+enrichment without changing files, run:
+
+```bash
+npm run enrich:vocabulary -- --list=ngsl --limit=20 --dry-run
+```
+
+After an intentional local enrichment, run `npm run lint:vocabulary`,
+`npm run audit:dictionary`, `npm test`, `npx tsc --noEmit`, `npm run lint`,
+`npm run build:graphs`, and `npm run build`. `build:graphs` regenerates the
+committed graph data, public galaxy assets, and `data/generated/vocabulary/`
+word shards (including that directory's manifest).
+
+For production enrichment, manually run the **Vocabulary enrichment** GitHub
+Actions workflow. Configure `LLM_API_KEY` as a repository Actions secret; set
+`LLM_BASE_URL` and `LLM_MODEL` as optional repository variables. Keep
+`dry_run` enabled to validate the full pipeline without creating a branch or
+pull request. With `dry_run` disabled, the workflow validates every changed
+or deleted path, then opens one `automation/vocabulary-<run-id>` pull request
+only when validated changes exist. Review that PR before merging; the workflow
+never pushes to the default branch.
+
+Never commit `.env` files or put `LLM_API_KEY` in workflow arguments, logs,
+or generated artifacts. The workflow passes the key only through a masked
+environment variable and rejects any diff outside canonical vocabulary or its
+generated graph, word, and galaxy outputs.
+
 ---
 
 ## Local setup

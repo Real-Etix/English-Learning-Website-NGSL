@@ -1,0 +1,119 @@
+name: Vocabulary enrichment
+
+on:
+  workflow_dispatch:
+    inputs:
+      list:
+        description: Vocabulary list to enrich
+        required: true
+        type: choice
+        options: [ngsl, academic, business, toeic, fitness]
+        default: ngsl
+      limit:
+        description: Maximum core records to enrich
+        required: true
+        type: number
+        default: 20
+      dry_run:
+        description: Validate the pipeline without opening a pull request
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check enrichment secret
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: |
+          if [[ -z "$LLM_API_KEY" ]]; then
+            echo "::error::LLM_API_KEY must be configured as a repository secret."
+            exit 1
+          fi
+
+      - name: Enrich canonical vocabulary
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: |
+          if [[ "${{ inputs.dry_run }}" == "true" ]]; then
+            npm run enrich:vocabulary -- --list="${{ inputs.list }}" --limit="${{ inputs.limit }}" --dry-run
+          else
+            npm run enrich:vocabulary -- --list="${{ inputs.list }}" --limit="${{ inputs.limit }}"
+          fi
+
+      - name: Lint vocabulary
+        run: npm run lint:vocabulary
+
+      - name: Audit dictionary
+        run: npm run audit:dictionary
+
+      - name: Test
+        run: npm test
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Lint application
+        run: npm run lint
+
+      - name: Build generated graph artifacts
+        run: npm run build:graphs
+
+      - name: Production build
+        run: npm run build
+
+      - name: Validate generated diff
+        id: diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          diff_file="${RUNNER_TEMP}/enrichment-diff.txt"
+          {
+            git diff --name-status --no-renames
+            git ls-files --others --exclude-standard | sed $'s/^/A\t/'
+          } > "$diff_file"
+          if [[ ! -s "$diff_file" ]]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          npx tsx scripts/verify-enrichment-diff.ts < "$diff_file"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create enrichment pull request
+        if: inputs.dry_run == false && steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          branch="automation/vocabulary-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -- content/vocabulary data/generated/graphs data/generated/vocabulary public/generated/galaxy
+          git commit -m "content: enrich ${{ inputs.list }} vocabulary"
+          git push --set-upstream origin "$branch"
+          gh pr create \
+            --base "${{ github.event.repository.default_branch }}" \
+            --head "$branch" \
+            --title "content: enrich ${{ inputs.list }} vocabulary" \
+            --body "Automated vocabulary enrichment from GitHub Actions run ${GITHUB_RUN_ID}." \
+            --label content \
+            --label automated-enrichment
