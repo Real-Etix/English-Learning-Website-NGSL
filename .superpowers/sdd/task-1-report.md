@@ -208,3 +208,82 @@ Results:
 - The Vite configuration warning about native config loading appears on every Vitest command and is unrelated to this fix.
 - The two ESLint unused-parameter warnings are pre-existing and outside the allowed scope.
 - Existing untracked Dictionary v2 plan/spec files remain untouched and are excluded from the fix commit.
+
+---
+
+# Task 1 Review-Finding Fix: Core Placeholder Dictionary Primary
+
+## Scope
+
+Fixed the remaining learner-profile review finding only. The profile now prefers a usable live dictionary sense whenever the wiki definition is blank or a placeholder, and never displays unusable wiki definitions. Existing advanced-page and dictionary-placeholder regressions remain covered.
+
+## RED
+
+Added `uses a usable dictionary sense when a core wiki definition is a placeholder` before changing production code. The fixture is a core page with `definition: "Definition pending — needs review."`, a factual wiki source, and a valid dictionary definition/example.
+
+Command:
+
+```sh
+npx vitest run lib/content/word-learning.test.ts
+```
+
+Output before the fix:
+
+```text
+Test Files  1 failed (1)
+Tests  1 failed | 12 passed (13)
+Expected: evidence "source-backed", canClaim true
+Received: evidence "ai-draft", canClaim false
+```
+
+Root cause: `preferDictionaryPrimary` was limited to advanced pages without factual provenance, and the sense builder separately admitted any non-blank wiki definition, including placeholders.
+
+## GREEN
+
+Focused profile suite after the minimal fix:
+
+```sh
+npx vitest run lib/content/word-learning.test.ts
+```
+
+```text
+Test Files  1 passed (1)
+Tests  13 passed (13)
+```
+
+Focused Task 1 verification:
+
+```sh
+npx vitest run lib/content/word-learning.test.ts lib/wiki/parse-wiki.test.ts
+```
+
+```text
+Test Files  2 passed (2)
+Tests  22 passed (22)
+```
+
+Full verification:
+
+```sh
+npx tsc --noEmit
+npm test
+npm run lint
+```
+
+Results:
+
+- TypeScript passed with no output.
+- Full Vitest suite: **21 files passed, 161 tests passed**.
+- ESLint completed with no errors and the two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset` unused parameters.
+
+## Implementation
+
+- Dictionary primary selection now applies when an advanced page lacks factual provenance or the wiki definition is unusable.
+- Only a non-blank, non-placeholder wiki definition can be added to displayed senses.
+- Added the core-page placeholder regression, asserting a dictionary-primary, source-backed, claimable profile and absence of the placeholder from displayed senses.
+
+## Files changed
+
+- `lib/content/word-learning.ts`
+- `lib/content/word-learning.test.ts`
+- `.superpowers/sdd/task-1-report.md`

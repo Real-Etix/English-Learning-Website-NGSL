@@ -92,7 +92,8 @@ export function buildWordLearningProfile(
     (sense) => Boolean(normalizeText(sense.definition)) && !isPlaceholder(sense.definition),
   );
   const hasDictionaryDefinition = dictionarySenses.some((sense) => Boolean(normalizeText(sense.definition)));
-  const preferDictionaryPrimary = advancedWithoutFactualSource && hasDictionaryDefinition;
+  const preferDictionaryPrimary =
+    (advancedWithoutFactualSource || !usableWikiDefinition) && hasDictionaryDefinition;
 
   const evidence: LearningEvidence = verifiedWikiDefinition
     ? "verified"
@@ -102,7 +103,7 @@ export function buildWordLearningProfile(
 
   const senses: LearningSense[] = [];
   const seenDefinitions = new Set<string>();
-  if (!preferDictionaryPrimary && page.definition.trim()) {
+  if (!preferDictionaryPrimary && usableWikiDefinition) {
     addSense(senses, seenDefinitions, {
       source: "wiki",
       sourceIndex: 0,

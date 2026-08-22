@@ -136,6 +136,30 @@ describe("buildWordLearningProfile", () => {
     expect(profile.examples).toEqual([{ text: "A wiki-only example.", source: "wiki" }]);
   });
 
+  it("uses a usable dictionary sense when a core wiki definition is a placeholder", () => {
+    const profile = buildWordLearningProfile(
+      page({ definition: "Definition pending — needs review." }),
+      {
+        ...emptyDetail,
+        senses: [
+          {
+            partOfSpeech: "noun",
+            definition: "A valid dictionary meaning.",
+            example: "A valid dictionary example.",
+          },
+        ],
+      },
+    );
+
+    expect(profile).toMatchObject({ evidence: "source-backed", canClaim: true });
+    expect(profile.senses[0]).toMatchObject({
+      definition: "A valid dictionary meaning.",
+      source: "dictionaryapi",
+      primary: true,
+    });
+    expect(profile.senses.map((sense) => sense.definition)).not.toContain("Definition pending — needs review.");
+  });
+
   it("blocks a source-backed word without an example", () => {
     const corePageWithoutExamples = page({ examples: [] });
 
