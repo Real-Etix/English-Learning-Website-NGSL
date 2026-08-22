@@ -93,4 +93,30 @@ describe("resolveWordLearningProfile", () => {
       commonMistakes: [],
     })).toBe(false);
   });
+
+  it.each([
+    ["an llm source", { sourceId: "llm", label: "LLM drafting pass" }],
+    ["an unknown source", { sourceId: "unknown-provider", label: "Manual curation" }],
+    ["a mismatched source label", { sourceId: "curated", label: "Wrong label" }],
+  ])("falls back from learning data containing %s", (_description, source) => {
+    const learning = {
+      ...learningProfile(),
+      usagePatterns: [{
+        pattern: "untrusted pattern",
+        explanation: "This must never reach the learner.",
+        examples: [],
+        sources: [{ ...source, externalId: null, url: null, retrievedAt: null, contentHash: null }],
+      }],
+      collocations: [],
+      commonMistakes: [],
+    };
+
+    expect(isWordLearningProfile(learning)).toBe(false);
+    const resolved = resolveWordLearningProfile({ page, detail: null, learning });
+
+    expect(resolved).not.toBe(learning);
+    expect(resolved?.usagePatterns).toEqual([]);
+    expect(resolved?.collocations).toEqual([]);
+    expect(resolved?.commonMistakes).toEqual([]);
+  });
 });

@@ -29,6 +29,25 @@ const CONNECTION_MARKS: Record<string, string> = {
 type Tab = "meaning" | "use" | "connect";
 type AudioRegion = "uk" | "us" | "any";
 
+export type WordLearningTab = Tab;
+
+export function tabNavigationForKey(
+  current: WordLearningTab,
+  key: string,
+  tabsId: string,
+): { next: WordLearningTab; focusId: string } | null {
+  const tabs: WordLearningTab[] = ["meaning", "use", "connect"];
+  const index = tabs.indexOf(current);
+  let nextIndex: number | null = null;
+  if (key === "ArrowRight" || key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+  if (key === "ArrowLeft" || key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+  if (key === "Home") nextIndex = 0;
+  if (key === "End") nextIndex = tabs.length - 1;
+  if (nextIndex === null) return null;
+  const next = tabs[nextIndex];
+  return { next, focusId: `${tabsId}-${next}` };
+}
+
 type WordLearningDrawerProps = {
   profile: WordLearningProfile | null;
   display: string;
@@ -106,17 +125,11 @@ export function WordLearningDrawer({
   ];
 
   function handleTabKeys(event: KeyboardEvent<HTMLButtonElement>, current: Tab) {
-    const index = tabs.findIndex((item) => item.id === current);
-    let nextIndex: number | null = null;
-    if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
-    if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
-    if (event.key === "Home") nextIndex = 0;
-    if (event.key === "End") nextIndex = tabs.length - 1;
-    if (nextIndex === null) return;
+    const navigation = tabNavigationForKey(current, event.key, tabsId);
+    if (!navigation) return;
     event.preventDefault();
-    const next = tabs[nextIndex];
-    setTab(next.id);
-    document.getElementById(`${tabsId}-${next.id}`)?.focus();
+    setTab(navigation.next);
+    document.getElementById(navigation.focusId)?.focus();
   }
 
   return (

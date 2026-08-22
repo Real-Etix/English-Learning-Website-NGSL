@@ -1,6 +1,7 @@
 import type { WordDetail } from "../../lib/content/word-detail";
 import { buildWordLearningProfile, type WordLearningProfile } from "../../lib/content/word-learning";
 import { toCanonicalRecord, type LegacyWordPage } from "../../lib/vocabulary/legacy-profile-adapter";
+import { isFactualSourceId, sourceEntryFor } from "../../lib/vocabulary/source-evidence";
 
 export type WordLearningResponse = {
   page: LegacyWordPage;
@@ -12,14 +13,25 @@ const isText = (value: unknown) => typeof value === "string";
 const isOptionalText = (value: unknown) => value === null || isText(value);
 const isOptionalNumber = (value: unknown) => value === null || typeof value === "number";
 const isTextArray = (value: unknown) => Array.isArray(value) && value.every(isText);
-const isLearningSource = (value: unknown) => typeof value === "object" && value !== null
-  && isText((value as Record<string, unknown>).sourceId) && isText((value as Record<string, unknown>).label)
-  && isOptionalText((value as Record<string, unknown>).externalId) && isOptionalText((value as Record<string, unknown>).url)
-  && isOptionalText((value as Record<string, unknown>).retrievedAt) && isOptionalText((value as Record<string, unknown>).contentHash);
+function isLearningSource(value: unknown): boolean {
+  if (typeof value !== "object" || value === null) return false;
+  const source = value as Record<string, unknown>;
+  if (!isText(source.sourceId) || !isText(source.label)
+    || !isOptionalText(source.externalId) || !isOptionalText(source.url)
+    || !isOptionalText(source.retrievedAt) || !isOptionalText(source.contentHash)) return false;
+
+  try {
+    const entry = sourceEntryFor(source.sourceId);
+    return isFactualSourceId(source.sourceId) && source.label === entry.label;
+  } catch {
+    return false;
+  }
+}
+
 const isLearningSourceArray = (value: unknown) => Array.isArray(value) && value.every(isLearningSource);
+const isLearningSourceArrayWithEntries = (value: unknown) => isLearningSourceArray(value) && (value as unknown[]).length > 0;
 const isAttributedGuidance = (value: unknown) => typeof value === "object" && value !== null
-  && isLearningSourceArray((value as Record<string, unknown>).sources)
-  && ((value as Record<string, unknown>).sources as unknown[]).length > 0;
+  && isLearningSourceArrayWithEntries((value as Record<string, unknown>).sources);
 const normalizeLemma = (lemma: string) => lemma.trim().toLowerCase().replace(/\s+/g, " ");
 const lemmasMatch = (left: string, right: string) => {
   const normalizedLeft = normalizeLemma(left);
@@ -63,7 +75,7 @@ export function isWordLearningProfile(value: unknown): value is WordLearningProf
       && isText((pattern as Record<string, unknown>).pattern) && isText((pattern as Record<string, unknown>).explanation)
       && Array.isArray((pattern as Record<string, unknown>).examples)
       && ((pattern as Record<string, unknown>).examples as unknown[]).every((example) => typeof example === "object" && example !== null
-        && isText((example as Record<string, unknown>).text) && isLearningSourceArray((example as Record<string, unknown>).sources)))
+        && isText((example as Record<string, unknown>).text) && isLearningSourceArrayWithEntries((example as Record<string, unknown>).sources)))
     && Array.isArray(profile.collocations) && profile.collocations.every((collocation) => isAttributedGuidance(collocation)
       && isText((collocation as Record<string, unknown>).phrase) && isOptionalText((collocation as Record<string, unknown>).explanation))
     && Array.isArray(profile.commonMistakes) && profile.commonMistakes.every((mistake) => isAttributedGuidance(mistake)

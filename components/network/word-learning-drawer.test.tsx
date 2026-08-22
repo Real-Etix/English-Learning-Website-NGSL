@@ -2,7 +2,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
 import type { WordLearningProfile } from "@/lib/content/word-learning";
-import { WordLearningDrawer } from "./word-learning-drawer";
+import { tabNavigationForKey, WordLearningDrawer } from "./word-learning-drawer";
 
 const profile: WordLearningProfile = {
   lemma: "anchor",
@@ -39,6 +39,15 @@ function composeButton(markup: string) {
 }
 
 describe("WordLearningDrawer", () => {
+  it("maps tab keys to wrapping selection and the matching focus target", () => {
+    expect(tabNavigationForKey("meaning", "ArrowLeft", "tabs")).toEqual({ next: "connect", focusId: "tabs-connect" });
+    expect(tabNavigationForKey("connect", "ArrowRight", "tabs")).toEqual({ next: "meaning", focusId: "tabs-meaning" });
+    expect(tabNavigationForKey("use", "Home", "tabs")).toEqual({ next: "meaning", focusId: "tabs-meaning" });
+    expect(tabNavigationForKey("meaning", "End", "tabs")).toEqual({ next: "connect", focusId: "tabs-connect" });
+    expect(tabNavigationForKey("use", "ArrowDown", "tabs")).toEqual({ next: "connect", focusId: "tabs-connect" });
+    expect(tabNavigationForKey("use", "PageDown", "tabs")).toBeNull();
+  });
+
   it("renders a stable tabpanel for every tab control", () => {
     const markup = renderToStaticMarkup(
       <WordLearningDrawer

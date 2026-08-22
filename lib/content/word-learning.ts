@@ -1,7 +1,7 @@
 import type { WordDetail } from "./word-detail";
 import { isLearnerConnection } from "../vocabulary/publication";
 import type { CollocationPhrase, CommonMistake, ContentSourceRef, UsagePattern, VocabularyRecord } from "../vocabulary/schema";
-import { evidenceForSources, sourceEntryFor } from "../vocabulary/source-evidence";
+import { evidenceForSources, isFactualSourceId, sourceEntryFor } from "../vocabulary/source-evidence";
 
 export type LearningEvidence = "verified" | "source-backed" | "ai-draft";
 
@@ -113,37 +113,56 @@ function addExample(examples: LearningExample[], seenExamples: Set<string>, exam
   examples.push(example);
 }
 
-function labelSources(sources: readonly ContentSourceRef[]): LearningSource[] {
-  return sources.map((source) => ({ ...source, label: sourceEntryFor(source.sourceId).label }));
+function factualSources(sources: readonly ContentSourceRef[]): LearningSource[] {
+  return sources.flatMap((source) => {
+    try {
+      const entry = sourceEntryFor(source.sourceId);
+      if (!isFactualSourceId(source.sourceId)) return [];
+      return [{ ...source, label: entry.label }];
+    } catch {
+      return [];
+    }
+  });
 }
 
-function isPublishedSourcedGuidance<T extends { status: string; sources: readonly ContentSourceRef[] }>(item: T): boolean {
-  return item.status === "published" && item.sources.length > 0;
-}
+function learningPattern(pattern: UsagePattern): LearningUsagePattern | null {
+  if (pattern.status !== "published") return null;
+  const sources = factualSources(pattern.sources);
+  if (sources.length === 0) return null;
 
-function learningPattern(pattern: UsagePattern): LearningUsagePattern {
   return {
     pattern: pattern.pattern,
     explanation: pattern.explanation,
-    examples: pattern.examples.map((example) => ({ text: example.text, sources: labelSources(example.sources) })),
-    sources: labelSources(pattern.sources),
+    examples: pattern.examples.flatMap((example) => {
+      const exampleSources = factualSources(example.sources);
+      return exampleSources.length > 0 ? [{ text: example.text, sources: exampleSources }] : [];
+    }),
+    sources,
   };
 }
 
-function learningCollocation(collocation: CollocationPhrase): LearningCollocation {
+function learningCollocation(collocation: CollocationPhrase): LearningCollocation | null {
+  if (collocation.status !== "published") return null;
+  const sources = factualSources(collocation.sources);
+  if (sources.length === 0) return null;
+
   return {
     phrase: collocation.phrase,
     explanation: collocation.explanation,
-    sources: labelSources(collocation.sources),
+    sources,
   };
 }
 
-function learningCommonMistake(mistake: CommonMistake): LearningCommonMistake {
+function learningCommonMistake(mistake: CommonMistake): LearningCommonMistake | null {
+  if (mistake.status !== "published") return null;
+  const sources = factualSources(mistake.sources);
+  if (sources.length === 0) return null;
+
   return {
     incorrect: mistake.incorrect,
     correction: mistake.correction,
     explanation: mistake.explanation,
-    sources: labelSources(mistake.sources),
+    sources,
   };
 }
 
@@ -235,15 +254,18 @@ export function buildWordLearningProfile(
     },
     senses,
     examples,
-    usagePatterns: selectedPublishedSense?.usagePatterns
-      .filter(isPublishedSourcedGuidance)
-      .map(learningPattern) ?? [],
-    collocations: selectedPublishedSense?.collocations
-      .filter(isPublishedSourcedGuidance)
-      .map(learningCollocation) ?? [],
-    commonMistakes: selectedPublishedSense?.commonMistakes
-      .filter(isPublishedSourcedGuidance)
-      .map(learningCommonMistake) ?? [],
+    usagePatterns: selectedPublishedSense?.usagePatterns.flatMap((pattern) => {
+      const learning = learningPattern(pattern);
+      return learning ? [learning] : [];
+    }) ?? [],
+    collocations: selectedPublishedSense?.collocations.flatMap((collocation) => {
+      const learning = learningCollocation(collocation);
+      return learning ? [learning] : [];
+    }) ?? [],
+    commonMistakes: selectedPublishedSense?.commonMistakes.flatMap((mistake) => {
+      const learning = learningCommonMistake(mistake);
+      return learning ? [learning] : [];
+    }) ?? [],
     usageNote: record.usageNote,
     connections: record.connections.filter(isLearnerConnection).map((connection) => ({
       ...connection,

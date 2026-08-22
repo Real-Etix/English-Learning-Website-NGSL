@@ -162,6 +162,53 @@ describe("buildWordLearningProfile", () => {
     expect(JSON.stringify(profile)).not.toContain("other + pattern");
   });
 
+  it("excludes nonfactual and unknown guidance sources without throwing", () => {
+    const record = vocabularyRecordFixture();
+    const selectedSense = {
+      ...record.senses[0]!,
+      usagePatterns: [{
+        pattern: "obtain + noun",
+        explanation: "Keep this authored explanation.",
+        examples: [
+          sourcedExample("Factual example."),
+          { text: "LLM example.", sources: [sourceRef("llm")] },
+          { text: "Unknown example.", sources: [sourceRef("unknown-provider")] },
+        ],
+        sources: [sourceRef("curated"), sourceRef("llm"), sourceRef("unknown-provider")],
+        status: "published" as const,
+      }],
+      collocations: [{
+        phrase: "draft phrase",
+        explanation: "LLM-only guidance must stay editorial.",
+        sources: [sourceRef("llm")],
+        status: "published" as const,
+      }],
+      commonMistakes: [{
+        incorrect: "unknown mistake",
+        correction: "correct mistake",
+        explanation: "Unknown source guidance must stay out.",
+        sources: [sourceRef("unknown-provider")],
+        status: "published" as const,
+      }],
+    };
+
+    const profile = buildWordLearningProfile({ ...record, senses: [selectedSense] }, emptyDetail);
+
+    expect(profile.usagePatterns).toHaveLength(1);
+    expect(profile.usagePatterns[0]).toMatchObject({
+      pattern: "obtain + noun",
+      sources: [expect.objectContaining({ sourceId: "curated", label: "Manual curation" })],
+      examples: [{
+        text: "Factual example.",
+        sources: [expect.objectContaining({ sourceId: "curated", label: "Manual curation" })],
+      }],
+    });
+    expect(profile.collocations).toEqual([]);
+    expect(profile.commonMistakes).toEqual([]);
+    expect(JSON.stringify(profile)).not.toContain("LLM example.");
+    expect(JSON.stringify(profile)).not.toContain("Unknown example.");
+  });
+
   it("keeps a source-backed wiki meaning before later dictionary senses", () => {
     const corePage = page();
 
