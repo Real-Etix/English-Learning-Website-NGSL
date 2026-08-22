@@ -371,7 +371,7 @@ describe("auditDictionaryRecords", () => {
     expect(second).toEqual(first);
   });
 
-  it("keeps distinct published edges from collapsing into one strict identity", () => {
+  it("counts distinct published edges while using one semantic strict identity", () => {
     const report = auditDictionaryRecords([record({
       connections: [
         connection({ target: "missing-target", type: "synonym", status: "published", gloss: "explained" }),
@@ -380,7 +380,36 @@ describe("auditDictionaryRecords", () => {
     })]);
 
     expect(report.total.strict.publishedConnectionsToHiddenOrMissingTargets).toBe(2);
-    expect(report.strictViolations.filter((identity) => identity.startsWith("published-connection-hidden-or-missing-target:"))).toHaveLength(2);
+    expect(report.strictViolations.filter((identity) => identity.startsWith("published-connection-hidden-or-missing-target:"))).toEqual([
+      "published-connection-hidden-or-missing-target:[\"anchor\",\"synonym\",\"missing-target\"]",
+    ]);
+  });
+
+  it("keeps an inherited unexplained edge identity stable when a glossed duplicate is inserted", () => {
+    const target = record({ lemma: "visible-target", connections: [] });
+    const inherited = connection({ target: target.lemma, type: "synonym", status: "published", gloss: null });
+    const base = auditDictionaryRecords([record({ connections: [inherited] }), target]);
+    const current = auditDictionaryRecords([record({
+      connections: [
+        connection({ target: target.lemma, type: "synonym", status: "published", gloss: "explained duplicate" }),
+        inherited,
+      ],
+    }), target]);
+
+    expect(strictViolationRegressions(current.total.strict, base.total.strict)).toEqual([]);
+    expect(strictViolationIdentityRegressions(current.strictViolations, base.strictViolations)).toEqual([]);
+  });
+
+  it("counts a new unexplained duplicate even when its strict identity already exists", () => {
+    const target = record({ lemma: "visible-target", connections: [] });
+    const inherited = connection({ target: target.lemma, type: "synonym", status: "published", gloss: null });
+    const base = auditDictionaryRecords([record({ connections: [inherited] }), target]);
+    const current = auditDictionaryRecords([record({ connections: [inherited, inherited] }), target]);
+
+    expect(strictViolationRegressions(current.total.strict, base.total.strict)).toEqual([
+      "learnerConnectionsWithoutGloss increased from 1 to 2",
+    ]);
+    expect(strictViolationIdentityRegressions(current.strictViolations, base.strictViolations)).toEqual([]);
   });
 
   it("does not let explained unreviewed or hidden edges mask an unexplained published edge", () => {

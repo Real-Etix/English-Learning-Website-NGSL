@@ -228,7 +228,6 @@ function addRecord(
     }
   }
 
-  const duplicateEdgeOrdinals = new Map<string, number>();
   for (const connection of [...record.connections].sort(compareConnections)) {
     const edge = counts.edges.byType[connection.type] ?? {
       total: 0, published: 0, unreviewed: 0, hidden: 0, explained: 0, unexplained: 0,
@@ -251,10 +250,7 @@ function addRecord(
       counts.connections.unexplained += 1;
     }
     if (connection.status === "published") {
-      const edgeKey = JSON.stringify([connection.type, connection.target]);
-      const edgeOrdinal = duplicateEdgeOrdinals.get(edgeKey) ?? 0;
-      duplicateEdgeOrdinals.set(edgeKey, edgeOrdinal + 1);
-      const edgeIdentity = [record.lemma, connection.type, connection.target, edgeOrdinal];
+      const edgeIdentity = [record.lemma, connection.type, connection.target];
       if (recordsByLemma.get(connection.target)?.publicationStatus !== "published") {
         counts.strict.publishedConnectionsToHiddenOrMissingTargets += 1;
         addStrictViolation(strictViolations, "publishedConnectionsToHiddenOrMissingTargets", edgeIdentity);
@@ -340,9 +336,7 @@ export function isStrictViolationIdentity(identity: string): boolean {
   }
   if (!Array.isArray(parts)) return false;
   if (category === "publishedConnectionsToHiddenOrMissingTargets" || category === "learnerConnectionsWithoutGloss") {
-    return parts.length === 4
-      && parts.slice(0, 3).every((part) => typeof part === "string")
-      && typeof parts[3] === "number" && Number.isInteger(parts[3]) && parts[3] >= 0;
+    return parts.length === 3 && parts.every((part) => typeof part === "string");
   }
   return parts.length === 2 && parts.every((part) => typeof part === "string");
 }

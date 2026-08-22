@@ -19,6 +19,20 @@ describe("strictAuditBaselineFromManifest", () => {
     });
   });
 
+  it("accepts one semantic connection identity for multiple strict edge occurrences", () => {
+    const strictWithDuplicateConnections = {
+      ...strict,
+      learnerConnectionsWithoutGloss: 2,
+    };
+    expect(strictAuditBaselineFromManifest({
+      total: { strict: strictWithDuplicateConnections },
+      strictViolations: ["learner-facing-published-connection-without-gloss:[\"anchor\",\"synonym\",\"target\"]"],
+    })).toEqual({
+      strict: strictWithDuplicateConnections,
+      strictViolations: ["learner-facing-published-connection-without-gloss:[\"anchor\",\"synonym\",\"target\"]"],
+    });
+  });
+
   it.each([
     {},
     { total: { strict } },

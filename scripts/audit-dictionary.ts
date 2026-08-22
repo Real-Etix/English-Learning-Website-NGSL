@@ -76,8 +76,8 @@ export function strictAuditBaselineFromManifest(value: unknown): StrictAuditBase
     const category = strictViolationCategoryFromIdentity(identity);
     if (category) identityCounts[category] += 1;
   }
-  if (strictViolationKeys.some((key) => identityCounts[key] !== strict[key])) {
-    throw new Error("Base audit manifest strict counts do not match its strict violation identity list.");
+  if (strictViolationKeys.some((key) => identityCounts[key] > strict[key] || (strict[key] > 0 && identityCounts[key] === 0))) {
+    throw new Error("Base audit manifest strict counts are inconsistent with its strict violation identity list.");
   }
   return { strict, strictViolations };
 }
