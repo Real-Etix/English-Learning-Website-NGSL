@@ -1,9 +1,10 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
-import { collectWord, getMySummary, newOwnerToken } from "@/lib/collection/service";
+import { collectWord, getMySummary, hasCollectedWord, newOwnerToken } from "@/lib/collection/service";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
 import { claimReadiness } from "@/lib/vocabulary/claim-readiness";
+import { openNdjsonRepository } from "@/lib/vocabulary/ndjson-repository";
 
 export const runtime = "nodejs";
 
@@ -14,15 +15,24 @@ export async function POST(request: Request) {
   const lemma = String(body.lemma ?? "").trim();
   const senseId = typeof body.senseId === "string" ? body.senseId : "";
   if (!lemma) return NextResponse.json({ error: "missing lemma" }, { status: 400 });
-  if (!senseId.trim()) return NextResponse.json({ error: "missing senseId" }, { status: 400 });
 
-  const record = await loadGeneratedWord(lemma);
+  // Generated shards contain only public records. The canonical repository's
+  // normalized get reads one lemma shard and is required for hidden history.
+  const record = await loadGeneratedWord(lemma) ?? await openNdjsonRepository().get(lemma) ?? null;
   if (!record || record.lemma !== lemma) return NextResponse.json({ error: "unknown word" }, { status: 404 });
+
+  const cookieStore = await cookies();
+  const existingToken = cookieStore.get("ownerToken")?.value;
+  if (existingToken && await hasCollectedWord(existingToken, record.lemma)) {
+    const summary = await getMySummary(existingToken);
+    return NextResponse.json({ added: false, xp: 0, display: record.display, summary });
+  }
+
+  if (!senseId.trim()) return NextResponse.json({ error: "missing senseId" }, { status: 400 });
   const readiness = claimReadiness(record, senseId);
   if (!readiness.canClaim) return NextResponse.json({ error: readiness.reason }, { status: 409 });
 
-  const cookieStore = await cookies();
-  let token = cookieStore.get("ownerToken")?.value;
+  let token = existingToken;
   const isNew = !token;
   if (!token) token = newOwnerToken();
 

@@ -26,6 +26,18 @@ export function newOwnerToken() {
   return randomUUID();
 }
 
+/** Checks whether a caller already holds one lemma without creating a collection. */
+export async function hasCollectedWord(ownerToken: string | undefined, lemma: string): Promise<boolean> {
+  if (!ownerToken || !lemma) return false;
+  const collection = await prisma.collection.findUnique({ where: { ownerToken }, select: { id: true } });
+  if (!collection) return false;
+  const word = await prisma.collectedWord.findUnique({
+    where: { collectionId_lemma: { collectionId: collection.id, lemma } },
+    select: { id: true },
+  });
+  return word !== null;
+}
+
 /** Get the caller's collection (by cookie token), creating it on first use. */
 export async function getOrCreateCollection(ownerToken: string) {
   const existing = await prisma.collection.findUnique({ where: { ownerToken } });

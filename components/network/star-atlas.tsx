@@ -90,6 +90,13 @@ function normalizeAudioUrl(value: string | null | undefined) {
   }
 }
 
+export function rollbackOptimisticClaim(owned: Set<string>, lemma: string, wasOwned: boolean): Set<string> {
+  if (wasOwned) return owned;
+  const next = new Set(owned);
+  next.delete(lemma);
+  return next;
+}
+
 type WordMeta = Omit<SearchEntry, "normalized">;
 type AtlasModel = {
   byLemma: Map<string, WordMeta>;
@@ -796,11 +803,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
         showToast(t);
       })
       .catch((error: unknown) => {
-        if (!wasOwned) setOwned((previous) => {
-          const next = new Set(previous);
-          next.delete(lemma);
-          return next;
-        });
+        setOwned((previous) => rollbackOptimisticClaim(previous, lemma, wasOwned));
         showToast({ glyph: "·", text: "Claim unavailable", sub: error instanceof Error ? error.message : "Claim could not be completed.", tone: "mint" });
       });
   }, [me, streak, atlas, showToast, persistLocal, owned, wordData]);
