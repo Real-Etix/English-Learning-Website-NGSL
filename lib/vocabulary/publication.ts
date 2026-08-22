@@ -4,6 +4,7 @@ import {
   SourceRegistrySchema,
   type ContentSourceRef,
   type PublicationStatus,
+  type VocabularyConnection,
   type VocabularyRecord,
   type VocabularySense,
 } from "./schema";
@@ -34,8 +35,14 @@ export function factualEvidenceFor(record: VocabularyRecord, sense: VocabularySe
 /** A public sense needs factual meaning evidence, usable authored content, and a factual example. */
 export function isSensePublishable(record: VocabularyRecord, sense: VocabularySense): boolean {
   return factualEvidenceFor(record, sense) !== "ai-draft"
+    && sense.status === "published"
     && isUsableDefinition(sense.definition)
     && hasSourcedExample(sense);
+}
+
+/** Learner-facing edges must have both an explicit publication review and guidance. */
+export function isLearnerConnection(connection: Pick<VocabularyConnection, "status" | "gloss">): boolean {
+  return connection.status === "published" && Boolean(connection.gloss?.trim());
 }
 
 function isPublicCoreRecord(record: VocabularyRecord): boolean {

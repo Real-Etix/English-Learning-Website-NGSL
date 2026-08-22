@@ -8,6 +8,8 @@
 
 // Relations worth composing with, best first. Synonym/morphological are absent:
 // forcing two synonyms into one sentence teaches redundancy.
+import { isLearnerConnection } from "../vocabulary/publication";
+
 const PRIORITY: Record<string, number> = { antonym: 0, intensity: 1, advanced_form: 2, builds_on: 3, collocation: 4 };
 const SUFFIX = ["s", "es", "ed", "d", "ing", "er", "r", "ly", "ness", "ion", "al"];
 
@@ -27,7 +29,7 @@ export type Gate = { ok: true } | { ok: false; msg: string };
 
 export type PartnerInfo = {
   lemma: string; display: string; def: string; tier: "core" | "advanced";
-  rank: number | null; type: string; gloss: string | null; dir: "out" | "in";
+  rank: number | null; type: string; gloss: string | null; status: "unreviewed" | "published" | "hidden"; dir: "out" | "in";
 };
 export type TargetInfo = { lemma: string; display: string; def: string; tier: "core" | "advanced"; rank: number | null };
 
@@ -102,7 +104,7 @@ export function pickTask(target: TargetInfo, neighbours: PartnerInfo[], claimed:
   for (const link of neighbours) {
     if (!(link.type in PRIORITY)) continue;
     if (!link.def) continue;
-    if (!link.gloss?.trim()) continue;
+    if (!isLearnerConnection(link)) continue;
     if (avoid.indexOf(link.lemma) >= 0) continue;
     let score = PRIORITY[link.type] * 100;
     if (link.tier === "advanced") score += 34;

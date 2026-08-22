@@ -3,8 +3,8 @@ import { describe, expect, it } from "vitest";
 import { buildGalaxyArtifacts } from "../galaxy/build-artifacts";
 import { decodeFullGalaxy } from "../galaxy/full-codec";
 import { buildListGraph, toLiteGraph } from "./graph";
-import { toPublicGraphInputs } from "./graph-input";
-import { factualEvidenceFor, isSensePublishable, isWordPublic, publicationStatusFor } from "./publication";
+import { toGraphInput, toPublicGraphInputs } from "./graph-input";
+import { factualEvidenceFor, isLearnerConnection, isSensePublishable, isWordPublic, publicationStatusFor } from "./publication";
 import { vocabularyRecordFixture } from "./test-fixtures";
 
 const sourceRef = (sourceId: string) => ({
@@ -76,6 +76,36 @@ describe("vocabulary publication", () => {
       ...supported,
       connections: [{ ...supported.connections[0]!, gloss: null }],
     }, [core, supported])).toBe("hidden");
+  });
+
+  it.each(["draft", "review"] as const)("does not publish a %s sense even when all other evidence gates pass", (status) => {
+    const { core, advanced } = advancedFixture();
+    const candidate = {
+      ...advanced,
+      sources: [sourceRef("wordnet")],
+      senses: [{
+        ...advanced.senses[0]!,
+        status,
+        sources: [sourceRef("wordnet")],
+        examples: [{ text: "She mastered the material.", sources: [sourceRef("tatoeba")] }],
+      }],
+    };
+
+    expect(isSensePublishable(candidate, candidate.senses[0]!)).toBe(false);
+    expect(publicationStatusFor(candidate, [core, candidate])).toBe("hidden");
+  });
+
+  it("keeps only published, glossed connections in graph inputs and learner connection checks", () => {
+    const record = vocabularyRecordFixture();
+    const [valid] = record.connections;
+    const unreviewed = { ...valid!, target: "draft-link", status: "unreviewed" as const, gloss: "draft guidance" };
+    const glossless = { ...valid!, target: "empty-link", status: "published" as const, gloss: " " };
+    const withInvalidEdges = { ...record, connections: [valid!, unreviewed, glossless] };
+
+    expect(isLearnerConnection(valid!)).toBe(true);
+    expect(isLearnerConnection(unreviewed)).toBe(false);
+    expect(isLearnerConnection(glossless)).toBe(false);
+    expect(toGraphInput(withInvalidEdges).connections).toEqual([{ target: valid!.target, type: valid!.type }]);
   });
 
   it("omits hidden advanced words from graph and galaxy artifacts", () => {

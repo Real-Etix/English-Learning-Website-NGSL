@@ -1,4 +1,5 @@
 import type { VocabularyConnection, VocabularyRecord } from "./schema";
+import { isLearnerConnection } from "./publication";
 
 /**
  * Compatibility projection returned by the word endpoint while clients consume
@@ -55,7 +56,7 @@ export function toLegacyPage(record: VocabularyRecord): LegacyWordPage {
     definition: primarySense?.definition ?? "",
     usageNote: record.usageNote,
     examples: primarySense?.examples.map(({ text }) => text) ?? [],
-    connections: record.connections.map(({ type, target, gloss }) => ({
+    connections: record.connections.filter(isLearnerConnection).map(({ type, target, gloss }) => ({
       type,
       target,
       ...(gloss === null ? {} : { gloss }),

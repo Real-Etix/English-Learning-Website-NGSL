@@ -5,6 +5,7 @@ import {
 import { fetchWordDetail } from "@/lib/content/word-detail";
 import { buildWordLearningProfile } from "@/lib/content/word-learning";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
+import { isLearnerConnection } from "@/lib/vocabulary/publication";
 import type { VocabularyRecord } from "@/lib/vocabulary/schema";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM } from "@/scripts/llm-client";
@@ -44,13 +45,14 @@ export async function POST(request: Request) {
     const partnerRecords = new Map<string, VocabularyRecord>();
     for (const c of record.connections) {
       if (!COMPOSABLE.has(c.type)) continue;
+      if (!isLearnerConnection(c)) continue;
       const partner = await loadGeneratedWord(c.target);
       const definition = partner?.senses[0]?.definition;
       if (!partner || !definition) continue;
       partnerRecords.set(partner.lemma, partner);
       partners.push({
         lemma: partner.lemma, display: partner.display, def: definition, tier: partner.tier,
-        rank: partner.lists[0]?.rank ?? null, type: c.type, gloss: c.gloss ?? null, dir: "out",
+        rank: partner.lists[0]?.rank ?? null, type: c.type, gloss: c.gloss ?? null, status: c.status, dir: "out",
       });
     }
     const task = pickTask(

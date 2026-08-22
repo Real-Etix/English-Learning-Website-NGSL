@@ -1,4 +1,5 @@
 import type { WordDetail } from "./word-detail";
+import { isLearnerConnection } from "../vocabulary/publication";
 import type { VocabularyRecord } from "../vocabulary/schema";
 
 export type LearningEvidence = "verified" | "source-backed" | "ai-draft";
@@ -168,7 +169,7 @@ export function buildWordLearningProfile(
     senses,
     examples,
     usageNote: record.usageNote,
-    connections: record.connections.map((connection) => ({
+    connections: record.connections.filter(isLearnerConnection).map((connection) => ({
       ...connection,
       explained: Boolean(connection.gloss?.trim()),
     })),

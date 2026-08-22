@@ -3,7 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
-import { isWordPublic } from "../lib/vocabulary/publication";
+import { isLearnerConnection, isWordPublic } from "../lib/vocabulary/publication";
 import type { VocabularyRecord } from "../lib/vocabulary/schema";
 import { shardIdForLemma } from "../lib/vocabulary/shards";
 
@@ -23,7 +23,10 @@ async function main() {
   for await (const record of openNdjsonRepository().all()) records.push(record);
   for (const record of records) {
     if (!isWordPublic(record, records)) continue;
-    recordsByShard.get(shardIdForLemma(record.lemma))?.push(record);
+    recordsByShard.get(shardIdForLemma(record.lemma))?.push({
+      ...record,
+      connections: record.connections.filter(isLearnerConnection),
+    });
   }
 
   const root = path.join(process.cwd(), "data", "generated", "vocabulary");

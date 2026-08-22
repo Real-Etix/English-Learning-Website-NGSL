@@ -1,5 +1,5 @@
 import type { VocabularyRecord } from "./schema";
-import { isWordPublic } from "./publication";
+import { isLearnerConnection, isWordPublic } from "./publication";
 
 export type GraphConnection = {
   target: string;
@@ -43,7 +43,7 @@ export function toGraphInput(record: VocabularyRecord): GraphInput {
     chart: record.chart,
     region: record.region,
     domains: [...record.domains],
-    connections: record.connections.map(({ target, type }) => ({ target, type })),
+    connections: record.connections.filter(isLearnerConnection).map(({ target, type }) => ({ target, type })),
   };
 }
 

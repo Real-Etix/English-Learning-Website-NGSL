@@ -215,6 +215,21 @@ describe("buildWordLearningProfile", () => {
     expect(buildWordLearningProfile(corePage, detail).connections[0].gloss).toBe(corePage.connections[0].gloss);
   });
 
+  it("exposes only published, glossed connections in the learner profile", () => {
+    const record = page();
+    const [valid] = record.connections;
+    const profile = buildWordLearningProfile({
+      ...record,
+      connections: [
+        valid!,
+        { ...valid!, target: "draft-link", gloss: "draft guidance", status: "unreviewed" },
+        { ...valid!, target: "empty-link", gloss: " ", status: "published" },
+      ],
+    }, emptyDetail);
+
+    expect(profile.connections.map((connection) => connection.target)).toEqual([valid!.target]);
+  });
+
   it("deduplicates exact examples while preserving their displayed text and source", () => {
     const profile = buildWordLearningProfile(
       page({ examples: ["A duplicate example.", " A second wiki example. "] }),

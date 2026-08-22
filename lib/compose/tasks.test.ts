@@ -19,6 +19,7 @@ function partner(overrides: Partial<PartnerInfo>): PartnerInfo {
     rank: 10,
     type: "antonym",
     gloss: "authored contrast guidance",
+    status: "published",
     dir: "out",
     ...overrides,
   };
@@ -48,5 +49,16 @@ describe("pickTask", () => {
     );
 
     expect(task?.defs).toEqual(["free from excitement", "an explained definition"]);
+  });
+
+  it("rejects an unreviewed partner even when it has a gloss", () => {
+    const task = pickTask(
+      target,
+      [partner({ status: "unreviewed", gloss: "draft contrast guidance" })],
+      new Set(),
+      [],
+    );
+
+    expect(task).toBeNull();
   });
 });
