@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "r
 
 import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
 import { WordLearningDrawer } from "@/components/network/word-learning-drawer";
+import { getWordLearningDrawerMetadata } from "@/components/network/word-learning-drawer-metadata";
 import { playAudioWithSpeechFallback } from "@/components/network/pronunciation-playback";
 import { resolveWordLearningProfile, type WordLearningResponse } from "@/components/network/word-learning-response";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
@@ -29,7 +30,6 @@ import { GalaxyQualityController, initialQuality } from "@/components/network/ga
 import { createChartEvictionHandler } from "@/components/network/galaxy/resident-shards";
 import { GalaxySearchCatalog } from "@/components/network/galaxy/search-catalog";
 import { WordSelectionCoordinator } from "@/components/network/galaxy/word-selection-coordinator";
-import { wordXp } from "@/lib/collection/xp";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
 import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
 import type { WordLearningProfile } from "@/lib/content/word-learning";
@@ -1202,18 +1202,13 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     const page = wordData?.page?.lemma === focus ? wordData.page : null;
     const learning = page ? resolveWordLearningProfile(wordData) : null;
     const held = owned.has(focus);
-    const rarity = wordData?.rarity;
-    const percent = rarity?.percent ?? 0;
-    const rarityWord = percent <= 12 ? "Rare" : percent <= 40 ? "Uncommon" : "Common";
-    const xp = page ? wordXp({ tier: page.tier, sfi: page.sfi }) : 0;
+    const metadata = getWordLearningDrawerMetadata(focus, wordData);
     return {
       display: learning?.display ?? wd?.display ?? page?.display ?? focus,
       partOfSpeech: learning?.partOfSpeech ?? wd?.partOfSpeech ?? page?.pos ?? null,
       learning,
       chart: { name: chartMeta?.name ?? "", hue: chartMeta?.hue ?? "#94A0B4", glyph: chartMeta?.glyph ?? "◇" },
-      held, solid: used.has(focus), xp, rarityWord,
-      rarityDot: percent <= 12 ? "#F2D9A0" : percent <= 40 ? "#BFD9F2" : "#94A0B4",
-      rarityText: `${percent}% of explorers hold it`,
+      held, solid: used.has(focus), ...metadata,
     };
   }, [focus, wordData, atlas, owned, used]);
 
@@ -1554,7 +1549,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
           {/* DETAIL DRAWER */}
           {focus && (
-            drawer && <WordLearningDrawer profile={drawer.learning} display={drawer.display} partOfSpeech={drawer.partOfSpeech} loadState={wordLoadState} errorMessage={wordError?.lemma === focus ? wordError.message : null} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={{ word: drawer.rarityWord, dot: drawer.rarityDot, text: drawer.rarityText }} onClose={() => select(null)} onRetry={retryWord} onNavigate={select} onOpenQuiz={() => openQuiz(focus)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} />
+            drawer && <WordLearningDrawer profile={drawer.learning} display={drawer.display} partOfSpeech={drawer.partOfSpeech} loadState={wordLoadState} errorMessage={wordError?.lemma === focus ? wordError.message : null} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={drawer.rarity} onClose={() => select(null)} onRetry={retryWord} onNavigate={select} onOpenQuiz={() => openQuiz(focus)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} />
           )}
 
           {/* FIRST-RUN INTRO */}

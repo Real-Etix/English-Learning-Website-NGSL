@@ -145,3 +145,23 @@ This review fix changes only the profile compatibility and drawer loading/failur
 ## Scope
 
 - Added a pre-playback, one-shot `error` listener with a shared guard for both media errors and `play()` rejection. Regional URL selection and the existing speech callback are preserved. Profile fallback, tab panels, and compose behavior are unchanged.
+
+---
+
+# Dictionary v2 Task 3 Review Fix: Truthful Loading and Failure Metadata
+
+## TDD evidence
+
+- RED: `npx vitest run components/network/word-learning-drawer-metadata.test.ts` failed with `Cannot find module './word-learning-drawer-metadata'`, proving the current-lemma metadata decision did not yet exist.
+- GREEN: after adding the minimal pure metadata helper, `npx vitest run components/network/word-learning-drawer-metadata.test.ts components/network/word-learning-drawer.test.tsx` passed (`5` tests across `2` files).
+
+## Verification
+
+- `npx tsc --noEmit` passed with no output/errors.
+- `npm run lint` completed with `0` errors. It retains the two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset`.
+- `npm test` passed (`175` tests across `28` files). Vitest continues to print its pre-existing Vite config-loader deprecation warning.
+- `npm run build` passed. It retains five pre-existing Turbopack warnings for dynamic wiki-page file reads in `lib/wiki/parse-wiki.ts`.
+
+## Scope
+
+- Rarity and XP are now derived only from a response whose page lemma matches the focused star. Loading or failed selections show `Rarity unavailable` and omit XP; a ready current page retains its real XP, including when live rarity is unavailable. Compose behavior is intentionally unchanged.

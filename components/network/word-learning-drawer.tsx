@@ -38,7 +38,7 @@ type WordLearningDrawerProps = {
   chart: { name: string; hue: string; glyph: string };
   held: boolean;
   solid: boolean;
-  xp: number;
+  xp: number | null;
   rarity: { word: string; dot: string; text: string };
   onClose: () => void;
   onRetry: () => void;
@@ -190,7 +190,7 @@ export function WordLearningDrawer({
             <div style={{ marginTop: "auto", paddingTop: 14, borderTop: "1px solid rgba(241,238,230,.08)", display: "flex", flexDirection: "column", gap: 9 }}>
               <button className="word-learning-drawer-focus" type="button" onClick={onOpenQuiz} disabled={held || !profile.canClaim} style={{ ...buttonStyle, width: "100%", padding: 12, border: `1px solid ${held ? "rgba(143,227,192,.28)" : !profile.canClaim ? "rgba(232,168,159,.28)" : "transparent"}`, cursor: held || !profile.canClaim ? "default" : "pointer", background: held ? "rgba(143,227,192,.1)" : !profile.canClaim ? "rgba(232,168,159,.08)" : "linear-gradient(96deg,#BFD9F2,#8FE3C0)", color: held ? "#8FE3C0" : !profile.canClaim ? "#E8A89F" : "#0A1020", font: `600 13px/1 ${SS}` }}>{held ? "✓ Held — this star is yours" : "Check what you know, then claim it"}</button>
               {!held && !profile.canClaim && profile.claimBlockReason && <p style={{ margin: 0, font: `400 11.5px/1.55 ${SS}`, color: "#E8A89F" }}>{profile.claimBlockReason}</p>}
-              <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "space-between", fontSize: 11.5, color: "#6B7789" }}><span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ width: 6, height: 6, borderRadius: 999, background: rarity.dot }} /><span style={{ color: rarity.dot, fontWeight: 500 }}>{rarity.word}</span><span>{rarity.text}</span></span><span style={{ font: `500 10.5px/1 ${MN}`, color: "#F2D9A0" }}>+{xp} xp</span></div>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "space-between", fontSize: 11.5, color: "#6B7789" }}><span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ width: 6, height: 6, borderRadius: 999, background: rarity.dot }} /><span style={{ color: rarity.dot, fontWeight: 500 }}>{rarity.word}</span><span>{rarity.text}</span></span>{xp !== null && <span style={{ font: `500 10.5px/1 ${MN}`, color: "#F2D9A0" }}>+{xp} xp</span>}</div>
             </div>
             </div>;
           })}
@@ -233,7 +233,7 @@ function UnavailableDrawer({
       <div style={{ marginTop: "auto", paddingTop: 14, borderTop: "1px solid rgba(241,238,230,.08)", display: "flex", flexDirection: "column", gap: 9 }}>
         {held && <button className="word-learning-drawer-focus" type="button" onClick={onCompose} disabled={solid} style={{ ...buttonStyle, width: "100%", padding: 12, border: `1px solid ${solid ? "rgba(143,227,192,.3)" : "rgba(203,185,233,.32)"}`, background: solid ? "rgba(143,227,192,.12)" : "rgba(203,185,233,.14)", color: solid ? "#8FE3C0" : "#CBB9E9", font: `600 13px/1 ${SS}` }}>{solid ? "◆ Used in a sentence" : "✎ Use it in a sentence"}</button>}
         {!held && <button type="button" disabled style={{ ...buttonStyle, width: "100%", padding: 12, border: "1px solid rgba(232,168,159,.22)", background: "rgba(232,168,159,.06)", color: "#E8A89F", cursor: "default", font: `600 13px/1 ${SS}` }}>Learning details are needed to claim this star</button>}
-        <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "space-between", fontSize: 11.5, color: "#6B7789" }}><span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ width: 6, height: 6, borderRadius: 999, background: rarity.dot }} /><span style={{ color: rarity.dot, fontWeight: 500 }}>{rarity.word}</span><span>{rarity.text}</span></span><span style={{ font: `500 10.5px/1 ${MN}`, color: "#F2D9A0" }}>+{xp} xp</span></div>
+        <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "space-between", fontSize: 11.5, color: "#6B7789" }}><span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ width: 6, height: 6, borderRadius: 999, background: rarity.dot }} /><span style={{ color: rarity.dot, fontWeight: 500 }}>{rarity.word}</span><span>{rarity.text}</span></span>{xp !== null && <span style={{ font: `500 10.5px/1 ${MN}`, color: "#F2D9A0" }}>+{xp} xp</span>}</div>
       </div>
     </div>
   </>;
