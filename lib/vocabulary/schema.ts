@@ -2,6 +2,10 @@ import { z } from "zod";
 import { normalizeVocabularyLemma } from "./shards";
 
 const nonEmpty = z.string().trim().min(1);
+const normalizedLemma = nonEmpty.refine(
+  (value) => normalizeVocabularyLemma(value) === value,
+  "Lemma must be normalized",
+);
 const nullableText = nonEmpty.nullable();
 const sourceId = nonEmpty.regex(/^[a-z0-9][a-z0-9._-]*$/);
 const finiteRank = z.number().int().min(1).finite().nullable();
@@ -69,7 +73,7 @@ const PronunciationRecordSchema = z.object({
 }).strict();
 
 const VocabularyConnectionSchema = z.object({
-  target: nonEmpty,
+  target: normalizedLemma,
   type: z.enum([
     "synonym",
     "antonym",
@@ -93,7 +97,7 @@ const VocabularyListMembershipSchema = z.object({
 
 export const VocabularyRecordSchema = z.object({
   schemaVersion: z.literal(1),
-  lemma: nonEmpty,
+  lemma: normalizedLemma,
   display: nonEmpty,
   tier: z.enum(["core", "advanced"]),
   partOfSpeech: nonEmpty,
@@ -109,10 +113,6 @@ export const VocabularyRecordSchema = z.object({
   domains: z.array(nonEmpty),
   chart: nullableText,
   region: nullableText,
-}).strict().superRefine((record, ctx) => {
-  if (normalizeVocabularyLemma(record.lemma) !== record.lemma) {
-    ctx.addIssue({ code: "custom", path: ["lemma"], message: "Lemma must be normalized" });
-  }
-});
+}).strict();
 
 export type VocabularyRecord = z.infer<typeof VocabularyRecordSchema>;
