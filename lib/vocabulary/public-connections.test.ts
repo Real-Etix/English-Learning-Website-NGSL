@@ -51,4 +51,17 @@ describe("publicConnections", () => {
       includeLegacyUnreviewedForClustering: true,
     }).connections).toEqual([{ target: "legacy-target", type: connection!.type }]);
   });
+
+  it("retains a valid cross-record edge when the full known-record set is supplied", () => {
+    const record = vocabularyRecordFixture();
+    const [connection] = record.connections;
+    const targetRecord = target("published-target");
+    const source = {
+      ...record,
+      connections: [{ ...connection!, target: "published-target", gloss: "authored relation", status: "published" as const }],
+    };
+
+    expect(toGraphInput(source, { records: [source, targetRecord] }).connections)
+      .toEqual([{ target: "published-target", type: connection!.type }]);
+  });
 });

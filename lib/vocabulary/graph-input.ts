@@ -33,10 +33,10 @@ export type GraphInput = {
  * same graph builder.
  */
 export type GraphInputOptions = ClusteringConnectionOptions & {
-  records?: Iterable<VocabularyRecord>;
+  records: Iterable<VocabularyRecord>;
 };
 
-export function toGraphInput(record: VocabularyRecord, options: GraphInputOptions = {}): GraphInput {
+export function toGraphInput(record: VocabularyRecord, options: GraphInputOptions): GraphInput {
   const primarySense = record.senses[0];
   return {
     lemma: record.lemma,
@@ -48,7 +48,7 @@ export function toGraphInput(record: VocabularyRecord, options: GraphInputOption
     chart: record.chart,
     region: record.region,
     domains: [...record.domains],
-    connections: connectionsForClustering(record, options.records ?? [], options).map(({ target, type }) => ({ target, type })),
+    connections: connectionsForClustering(record, options.records, options).map(({ target, type }) => ({ target, type })),
   };
 }
 

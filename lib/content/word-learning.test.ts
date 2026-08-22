@@ -391,7 +391,7 @@ describe("buildWordLearningProfile", () => {
     ]).connections[0]?.gloss).toBe(corePage.connections[0].gloss);
   });
 
-  it("exposes only published, glossed connections to known public targets in the learner profile", () => {
+  it("uses the public connection selector so only published, glossed known targets reach the learner profile", () => {
     const record = page();
     const [valid] = record.connections;
     const publicTarget = { ...record, lemma: valid!.target, display: valid!.target, publicationStatus: "published" as const };

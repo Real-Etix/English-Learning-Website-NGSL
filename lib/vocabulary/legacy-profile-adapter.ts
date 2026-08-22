@@ -1,5 +1,5 @@
 import type { VocabularyConnection, VocabularyRecord } from "./schema";
-import { isLearnerConnection } from "./publication";
+import { publicConnections } from "./public-connections";
 
 /**
  * Compatibility projection returned by the word endpoint while clients consume
@@ -37,7 +37,7 @@ function sourceRefs(sourceIds: string[]) {
 }
 
 /** Temporary API response projection while clients still expect the former page-shaped payload. */
-export function toLegacyPage(record: VocabularyRecord): LegacyWordPage {
+export function toLegacyPage(record: VocabularyRecord, knownRecords: Iterable<VocabularyRecord>): LegacyWordPage {
   const primarySense = record.senses[0];
   const primaryMembership = record.lists[0];
   return {
@@ -56,7 +56,7 @@ export function toLegacyPage(record: VocabularyRecord): LegacyWordPage {
     definition: primarySense?.definition ?? "",
     usageNote: record.usageNote,
     examples: primarySense?.examples.map(({ text }) => text) ?? [],
-    connections: record.connections.filter(isLearnerConnection).map(({ type, target, gloss }) => ({
+    connections: publicConnections(record, knownRecords).map(({ type, target, gloss }) => ({
       type,
       target,
       ...(gloss === null ? {} : { gloss }),

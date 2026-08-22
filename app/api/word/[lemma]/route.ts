@@ -27,5 +27,5 @@ export async function GET(
   const connectionTargets = (await Promise.all(record.connections.map((connection) => loadGeneratedWord(connection.target))))
     .flatMap((target) => target ? [target] : []);
   const learning = buildWordLearningProfile(record, detail, [record, ...connectionTargets]);
-  return Response.json({ page: toLegacyPage(record), detail, learning, rarity });
+  return Response.json({ page: toLegacyPage(record, [record, ...connectionTargets]), detail, learning, rarity });
 }

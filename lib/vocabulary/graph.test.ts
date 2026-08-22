@@ -94,23 +94,25 @@ describe("buildListGraph", () => {
   });
 
   it("uses the legacy Markdown filename order for hyphenated lemmas", () => {
-    const ordered = ["also", "also-ran"].map((lemma) => toGraphInput(record({
+    const orderedRecords = ["also", "also-ran"].map((lemma) => record({
       lemma,
       display: lemma,
       lists: [{ id: "ngsl", rank: 1, sfi: 60 }],
       connections: [],
-    })));
+    }));
+    const ordered = orderedRecords.map((entry) => toGraphInput(entry, { records: orderedRecords }));
 
     expect(buildListGraph(ordered, "ngsl").nodes.map((node) => node.lemma)).toEqual(["also-ran", "also"]);
   });
 
   it("preserves the legacy lexical hub order when degree and rank tie", () => {
-    const tied = ["a", "b", "c", "z", "ä"].map((lemma) => toGraphInput(record({
+    const tiedRecords = ["a", "b", "c", "z", "ä"].map((lemma) => record({
       lemma,
       display: lemma,
       lists: [{ id: "ngsl", rank: 1, sfi: 60 }],
       connections: [],
-    })));
+    }));
+    const tied = tiedRecords.map((entry) => toGraphInput(entry, { records: tiedRecords }));
     const byLemma = new Map(tied.map((input) => [input.lemma, input]));
     byLemma.get("a")!.connections = [
       { target: "z", type: "synonym" },

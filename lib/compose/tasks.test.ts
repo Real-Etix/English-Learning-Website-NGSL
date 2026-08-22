@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { pickTask, type PartnerInfo, type TargetInfo } from "./tasks";
-import { publicConnections } from "../vocabulary/public-connections";
+import { composableConnections, pickTask, type PartnerInfo, type TargetInfo } from "./tasks";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
 
 const target: TargetInfo = {
@@ -75,9 +74,11 @@ describe("pickTask", () => {
         { ...connection!, target: "explained", type: "antonym" as const, gloss: "authored contrast guidance", status: "published" as const },
         { ...connection!, target: "hidden", type: "antonym" as const, gloss: "hidden target", status: "published" as const },
         { ...connection!, target: "explained", type: "intensity" as const, gloss: "draft relation", status: "unreviewed" as const },
+        { ...connection!, target: "explained", type: "intensity" as const, gloss: " ", status: "published" as const },
+        { ...connection!, target: "missing", type: "intensity" as const, gloss: "missing target", status: "published" as const },
       ],
     };
-    const partners = publicConnections(source, [source, publishedTarget, hiddenTarget]).map((link) => partner({
+    const partners = composableConnections(source, [source, publishedTarget, hiddenTarget]).map((link) => partner({
       lemma: link.target,
       display: link.target,
       type: link.type,
