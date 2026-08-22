@@ -29,6 +29,12 @@ function openingTag(markup: string, id: string) {
   return markup.slice(start, end + 1);
 }
 
+function composeButton(markup: string) {
+  const match = markup.match(/<button\b[^>]*>◆ Used in a sentence<\/button>/);
+  if (!match) throw new Error("Expected a solid-word compose button");
+  return match[0];
+}
+
 describe("WordLearningDrawer", () => {
   it("renders a stable tabpanel for every tab control", () => {
     const markup = renderToStaticMarkup(
@@ -68,5 +74,32 @@ describe("WordLearningDrawer", () => {
       expect(panel).toContain('hidden=""');
       expect(panel).toContain('aria-hidden="true"');
     }
+  });
+
+  it("keeps the compose action enabled for a solid held word", () => {
+    const markup = renderToStaticMarkup(
+      <WordLearningDrawer
+        profile={profile}
+        display="anchor"
+        partOfSpeech="noun"
+        loadState="ready"
+        errorMessage={null}
+        chart={{ name: "NGSL", hue: "#BFD9F2", glyph: "A" }}
+        held
+        solid
+        xp={10}
+        rarity={{ word: "Common", dot: "#BFD9F2", text: "1,000 words" }}
+        onClose={() => {}}
+        onRetry={() => {}}
+        onNavigate={() => {}}
+        onOpenQuiz={() => {}}
+        onCompose={() => {}}
+        onSpeak={() => {}}
+        onPlayAudio={() => {}}
+        displayConnection={(lemma) => lemma}
+      />,
+    );
+
+    expect(composeButton(markup)).not.toContain("disabled");
   });
 });

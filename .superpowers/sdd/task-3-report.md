@@ -107,3 +107,22 @@ This review fix changes only the profile compatibility and drawer loading/failur
 ## Scope
 
 - The drawer now renders all three `tabpanel` elements with matching `aria-labelledby` values. Inactive panels use `hidden` and `aria-hidden`, while the existing tab focus and keyboard behavior, content, Star Atlas styles, profile fallback, compose behavior, and audio behavior remain unchanged.
+
+---
+
+# Dictionary v2 Task 3 Review Fix: Solid Held-Word Compose Access
+
+## TDD evidence
+
+- RED: `npx vitest run components/network/word-learning-drawer.test.tsx` failed as expected because the solid held-word compose button rendered with `disabled=""`.
+- GREEN: after removing only the `disabled={solid}` condition from the existing held-word compose control, the same focused test passed (`2` tests).
+
+## Verification
+
+- `npx vitest run components/network/word-learning-drawer.test.tsx components/network/word-learning-drawer-model.test.ts components/network/word-learning-response.test.ts` passed (`5` tests across `3` files).
+- `npx tsc --noEmit` passed with no output or errors.
+- `npm run lint` exited successfully with the two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset`; it reported no lint errors.
+
+## Scope
+
+- Solid held words retain the existing compose action while keeping the used-state label and visual treatment. Profile fallback behavior, tab markup, and audio behavior are unchanged.
