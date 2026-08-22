@@ -20,10 +20,10 @@ function legacyPage(overrides: Partial<WikiPage> = {}): WikiPage {
     lists: ["business", "ngsl"],
     forms: ["bank", "banks"],
     status: "enriched",
-    sources: ["fixture-dictionary"],
+    sources: ["wordnet"],
     definition: "old",
     usageNote: "Use this sense for money.",
-    examples: [{ text: "The bank is open.", sourceIds: ["fixture-example"] }],
+    examples: [{ text: "The bank is open.", sourceIds: ["tatoeba"] }],
     connections: [{ type: "collocation", target: "money", gloss: "money at a bank" }],
     domains: ["finance"],
     ...overrides,
@@ -50,7 +50,7 @@ function canonicalRecord(overrides: Partial<VocabularyRecord> = {}): VocabularyR
       partOfSpeech: "noun",
       definition: "old",
       sources: [source],
-      examples: [{ text: "The bank is open.", sources: [{ ...source, sourceId: "fixture-example" }] }],
+      examples: [{ text: "The bank is open.", sources: [{ ...source, sourceId: "tatoeba" }] }],
     }],
     usageNote: "Use this sense for money.",
     connections: [{
@@ -92,7 +92,7 @@ describe("compareLegacyAndCanonical", () => {
     })]);
 
     expect(report.mismatches).toContainEqual({
-      lemma: "bank", field: "senses[0].examples[0]", legacy: { text: "The bank is open.", sources: ["fixture-example"] }, canonical: undefined,
+      lemma: "bank", field: "senses[0].examples[0]", legacy: { text: "The bank is open.", sources: ["tatoeba"] }, canonical: undefined,
     });
   });
 
