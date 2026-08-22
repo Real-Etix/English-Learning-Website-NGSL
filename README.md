@@ -127,20 +127,23 @@ never pushes to the default branch. Review the generated diff and merge the PR o
 Enrichment works core-first in deterministic NGSL/Academic/Business/TOEIC/Fitness
 order, with supported hidden advanced drafts last. Use the workflow’s required
 `limit`, `max_input_tokens`, and `max_output_tokens` budgets; do not raise them to
-force a larger batch. It captures a JSON strict-audit manifest before proposing
-changes, then blocks the branch only when a strict violation category increases.
-This permits review PRs that reduce inherited blocking debt without permitting new
-debt. The ordinary `--strict` audit remains the release gate and fails for every
-remaining blocking category: published placeholders, unsupported published senses,
-otherwise-claimable senses lacking sourced examples, public connections to hidden or
-missing targets, and learner-facing connections without glosses. Missing optional
-patterns or mistakes, plus hidden/unreviewed debt, are reported but non-blocking.
+force a larger batch. Before proposing changes it captures JSON strict-audit and
+vocabulary-lint baselines. The strict-audit gate blocks both a category increase and
+any newly introduced strict violation identity; the lint gate permits unchanged or
+reduced inherited errors but rejects new error identities or malformed/crashed lint
+output. This permits review PRs that reduce inherited debt without permitting new
+debt. The ordinary `npm run lint:vocabulary` and `--strict` audit remain local release
+gates: `--strict` fails for every remaining blocking category—published placeholders,
+unsupported published senses, otherwise-claimable senses lacking sourced examples,
+public connections to hidden or missing targets, and learner-facing connections
+without glosses. Missing optional patterns or mistakes, plus hidden/unreviewed debt,
+are reported but non-blocking.
 
 Read the audit’s global and per-list totals as coverage, not generated content: it
 counts publication state, sense evidence/examples, usage debt, connection status,
-advanced quarantine, claim readiness, provider coverage, and strict blockers. Audit
-output is deterministic and sorted; it never calls dictionary, LLM, or other remote
-providers.
+advanced quarantine, claim readiness, provider coverage, and strict blockers. Its
+JSON report also contains a deterministic, sorted `strictViolations` identity list.
+Audit never calls dictionary, LLM, or other remote providers.
 
 Never commit `.env` files or put `LLM_API_KEY` in workflow arguments, logs,
 or generated artifacts. The workflow passes the key only through a masked

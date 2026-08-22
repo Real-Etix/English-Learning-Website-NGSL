@@ -67,6 +67,19 @@ jobs:
       - name: Capture base strict audit manifest
         run: npx tsx scripts/audit-dictionary.ts --json > "${RUNNER_TEMP}/dictionary-base-audit.json"
 
+      - name: Capture base vocabulary lint report
+        shell: bash
+        run: |
+          set -euo pipefail
+          report_path="${RUNNER_TEMP}/vocabulary-base-lint.json"
+          set +e
+          npx tsx scripts/lint-vocabulary.ts --json > "$report_path"
+          lint_exit_code=$?
+          set -e
+          npx tsx scripts/gate-vocabulary-lint.ts --validate="$report_path" --exit-code="$lint_exit_code"
+          echo "VOCABULARY_BASE_LINT_REPORT=$report_path" >> "$GITHUB_ENV"
+          echo "VOCABULARY_BASE_LINT_EXIT_CODE=$lint_exit_code" >> "$GITHUB_ENV"
+
       - name: Enrich canonical vocabulary
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
@@ -91,8 +104,20 @@ jobs:
           path: ${{ runner.temp }}/vocabulary-enrichment-report.json
           if-no-files-found: error
 
-      - name: Lint vocabulary
-        run: npm run lint:vocabulary
+      - name: Gate vocabulary lint regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          report_path="${RUNNER_TEMP}/vocabulary-current-lint.json"
+          set +e
+          npx tsx scripts/lint-vocabulary.ts --json > "$report_path"
+          lint_exit_code=$?
+          set -e
+          npx tsx scripts/gate-vocabulary-lint.ts \
+            --base="$VOCABULARY_BASE_LINT_REPORT" \
+            --current="$report_path" \
+            --base-exit-code="$VOCABULARY_BASE_LINT_EXIT_CODE" \
+            --current-exit-code="$lint_exit_code"
 
       - name: Audit dictionary
         run: npm run audit:dictionary

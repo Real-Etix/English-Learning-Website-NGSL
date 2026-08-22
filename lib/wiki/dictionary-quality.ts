@@ -17,6 +17,8 @@ export type DictionaryStrictViolationCounts = {
   learnerConnectionsWithoutGloss: number;
 };
 
+export type DictionaryStrictViolationCategory = keyof DictionaryStrictViolationCounts;
+
 type DictionaryPublicationCounts = { draft: number; review: number; published: number; hidden: number };
 type DictionarySenseCounts = { total: number; unsupported: number; withoutExamples: number };
 type DictionaryUsageCounts = { withoutPatterns: number; withoutMistakes: number };
@@ -65,18 +67,27 @@ export type DictionaryQualityCounts = {
 export type DictionaryQualityReport = {
   total: DictionaryQualityCounts;
   lists: Record<string, DictionaryQualityCounts>;
+  strictViolations: string[];
 };
 
 const isPlaceholder = (value: string) =>
   /definition pending|needs a fuller dictionary source/i.test(value);
 
-const strictViolationKeys: Array<keyof DictionaryStrictViolationCounts> = [
+export const strictViolationKeys: DictionaryStrictViolationCategory[] = [
   "publishedPlaceholders",
   "publishedUnsupportedSenses",
   "claimableSensesWithoutSourcedExamples",
   "publishedConnectionsToHiddenOrMissingTargets",
   "learnerConnectionsWithoutGloss",
 ];
+
+const strictViolationIdentityPrefixes: Record<DictionaryStrictViolationCategory, string> = {
+  publishedPlaceholders: "published-placeholder",
+  publishedUnsupportedSenses: "published-unsupported-sense",
+  claimableSensesWithoutSourcedExamples: "claimable-sense-without-sourced-example",
+  publishedConnectionsToHiddenOrMissingTargets: "published-connection-hidden-or-missing-target",
+  learnerConnectionsWithoutGloss: "learner-facing-published-connection-without-gloss",
+};
 
 function emptyRecord<T>(): Record<string, T> {
   return Object.create(null) as Record<string, T>;
@@ -139,7 +150,42 @@ function recordSourceIds(record: VocabularyRecord): Set<keyof DictionarySourceCo
   ));
 }
 
-function addRecord(counts: DictionaryQualityCounts, record: VocabularyRecord, recordsByLemma: ReadonlyMap<string, VocabularyRecord>) {
+function strictViolationIdentity(category: DictionaryStrictViolationCategory, parts: readonly unknown[]): string {
+  return `${strictViolationIdentityPrefixes[category]}:${JSON.stringify(parts)}`;
+}
+
+function addStrictViolation(
+  violations: Set<string> | undefined,
+  category: DictionaryStrictViolationCategory,
+  parts: readonly unknown[],
+): void {
+  violations?.add(strictViolationIdentity(category, parts));
+}
+
+function compareConnections(left: VocabularyRecord["connections"][number], right: VocabularyRecord["connections"][number]): number {
+  const leftKey = JSON.stringify({
+    gloss: left.gloss,
+    sources: [...left.sources].sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b))),
+    status: left.status,
+    target: left.target,
+    type: left.type,
+  });
+  const rightKey = JSON.stringify({
+    gloss: right.gloss,
+    sources: [...right.sources].sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b))),
+    status: right.status,
+    target: right.target,
+    type: right.type,
+  });
+  return leftKey.localeCompare(rightKey);
+}
+
+function addRecord(
+  counts: DictionaryQualityCounts,
+  record: VocabularyRecord,
+  recordsByLemma: ReadonlyMap<string, VocabularyRecord>,
+  strictViolations?: Set<string>,
+) {
   const primarySense = record.senses[0];
   counts.pages += 1;
   if (!primarySense?.definition.trim() || isPlaceholder(primarySense.definition)) counts.placeholders += 1;
@@ -167,15 +213,23 @@ function addRecord(counts: DictionaryQualityCounts, record: VocabularyRecord, re
     if (claim.canClaim) counts.claimableSenses += 1;
 
     if (record.publicationStatus === "published" && sense.status === "published") {
-      if (!sense.definition.trim() || isPlaceholder(sense.definition)) counts.strict.publishedPlaceholders += 1;
-      if (unsupported) counts.strict.publishedUnsupportedSenses += 1;
+      if (!sense.definition.trim() || isPlaceholder(sense.definition)) {
+        counts.strict.publishedPlaceholders += 1;
+        addStrictViolation(strictViolations, "publishedPlaceholders", [record.lemma, sense.id]);
+      }
+      if (unsupported) {
+        counts.strict.publishedUnsupportedSenses += 1;
+        addStrictViolation(strictViolations, "publishedUnsupportedSenses", [record.lemma, sense.id]);
+      }
       if (claim.reason === "This meaning needs a sourced example before it can be claimed.") {
         counts.strict.claimableSensesWithoutSourcedExamples += 1;
+        addStrictViolation(strictViolations, "claimableSensesWithoutSourcedExamples", [record.lemma, sense.id]);
       }
     }
   }
 
-  for (const connection of record.connections) {
+  const duplicateEdgeOrdinals = new Map<string, number>();
+  for (const connection of [...record.connections].sort(compareConnections)) {
     const edge = counts.edges.byType[connection.type] ?? {
       total: 0, published: 0, unreviewed: 0, hidden: 0, explained: 0, unexplained: 0,
       explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 },
@@ -197,11 +251,17 @@ function addRecord(counts: DictionaryQualityCounts, record: VocabularyRecord, re
       counts.connections.unexplained += 1;
     }
     if (connection.status === "published") {
+      const edgeKey = JSON.stringify([connection.type, connection.target]);
+      const edgeOrdinal = duplicateEdgeOrdinals.get(edgeKey) ?? 0;
+      duplicateEdgeOrdinals.set(edgeKey, edgeOrdinal + 1);
+      const edgeIdentity = [record.lemma, connection.type, connection.target, edgeOrdinal];
       if (recordsByLemma.get(connection.target)?.publicationStatus !== "published") {
         counts.strict.publishedConnectionsToHiddenOrMissingTargets += 1;
+        addStrictViolation(strictViolations, "publishedConnectionsToHiddenOrMissingTargets", edgeIdentity);
       }
       if (!connection.gloss?.trim()) {
         counts.strict.learnerConnectionsWithoutGloss += 1;
+        addStrictViolation(strictViolations, "learnerConnectionsWithoutGloss", edgeIdentity);
       }
     }
   }
@@ -220,20 +280,23 @@ function sortedCounts(counts: DictionaryQualityCounts): DictionaryQualityCounts 
 
 /** Aggregate dictionary-quality signals from canonical vocabulary records. */
 export function auditDictionaryRecords(records: VocabularyRecord[]): DictionaryQualityReport {
-  const report: DictionaryQualityReport = { total: emptyCounts(), lists: emptyRecord() };
+  const report: DictionaryQualityReport = { total: emptyCounts(), lists: emptyRecord(), strictViolations: [] };
+  const strictViolations = new Set<string>();
   const recordsByLemma = new Map(records.map((record) => [record.lemma, record]));
 
   for (const record of records) {
-    addRecord(report.total, record, recordsByLemma);
+    addRecord(report.total, record, recordsByLemma, strictViolations);
     for (const membership of new Set(record.lists.map((entry) => entry.id))) {
       report.lists[membership] ??= emptyCounts();
       addRecord(report.lists[membership], record, recordsByLemma);
     }
   }
 
+  report.strictViolations = [...strictViolations].sort();
   return {
     total: sortedCounts(report.total),
     lists: sortedRecord(Object.fromEntries(Object.entries(report.lists).map(([list, counts]) => [list, sortedCounts(counts)]))),
+    strictViolations: report.strictViolations,
   };
 }
 
@@ -249,4 +312,37 @@ export function strictViolationRegressions(
   return strictViolationKeys.flatMap((key) => current[key] > base[key]
     ? [`${key} increased from ${base[key]} to ${current[key]}`]
     : []);
+}
+
+/** Returns new strict violation identities that were absent from a base audit report. */
+export function strictViolationIdentityRegressions(current: readonly string[], base: readonly string[]): string[] {
+  const baseIdentities = new Set(base);
+  return [...new Set(current)].filter((identity) => !baseIdentities.has(identity)).sort();
+}
+
+export function strictViolationCategoryFromIdentity(identity: string): DictionaryStrictViolationCategory | null {
+  for (const category of strictViolationKeys) {
+    if (identity.startsWith(`${strictViolationIdentityPrefixes[category]}:`)) return category;
+  }
+  return null;
+}
+
+/** Validates the stable JSON-array identity format emitted by this audit. */
+export function isStrictViolationIdentity(identity: string): boolean {
+  const category = strictViolationCategoryFromIdentity(identity);
+  if (!category) return false;
+  const prefix = `${strictViolationIdentityPrefixes[category]}:`;
+  let parts: unknown;
+  try {
+    parts = JSON.parse(identity.slice(prefix.length));
+  } catch {
+    return false;
+  }
+  if (!Array.isArray(parts)) return false;
+  if (category === "publishedConnectionsToHiddenOrMissingTargets" || category === "learnerConnectionsWithoutGloss") {
+    return parts.length === 4
+      && parts.slice(0, 3).every((part) => typeof part === "string")
+      && typeof parts[3] === "number" && Number.isInteger(parts[3]) && parts[3] >= 0;
+  }
+  return parts.length === 2 && parts.every((part) => typeof part === "string");
 }

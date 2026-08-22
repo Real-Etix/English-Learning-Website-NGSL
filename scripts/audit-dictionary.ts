@@ -3,6 +3,10 @@ import { readFile } from "node:fs/promises";
 import {
   auditDictionaryRecords,
   hasStrictFailures,
+  isStrictViolationIdentity,
+  strictViolationCategoryFromIdentity,
+  strictViolationIdentityRegressions,
+  strictViolationKeys,
   strictViolationRegressions,
   type DictionaryQualityCounts,
   type DictionaryStrictViolationCounts,
@@ -42,7 +46,12 @@ function isStrictViolationCounts(value: unknown): value is DictionaryStrictViola
     });
 }
 
-function strictCountsFromManifest(value: unknown): DictionaryStrictViolationCounts {
+export type StrictAuditBaseline = {
+  strict: DictionaryStrictViolationCounts;
+  strictViolations: string[];
+};
+
+export function strictAuditBaselineFromManifest(value: unknown): StrictAuditBaseline {
   const strict = typeof value === "object" && value !== null
     && "total" in value
     && typeof value.total === "object"
@@ -53,7 +62,24 @@ function strictCountsFromManifest(value: unknown): DictionaryStrictViolationCoun
   if (!isStrictViolationCounts(strict)) {
     throw new Error("Base audit manifest contains invalid strict violation counts.");
   }
-  return strict;
+  const strictViolations = typeof value === "object" && value !== null && "strictViolations" in value
+    ? value.strictViolations
+    : null;
+  if (!Array.isArray(strictViolations)
+    || strictViolations.some((identity) => typeof identity !== "string" || !isStrictViolationIdentity(identity))
+    || [...strictViolations].sort().some((identity, index) => identity !== strictViolations[index])
+    || new Set(strictViolations).size !== strictViolations.length) {
+    throw new Error("Base audit manifest contains an invalid strict violation identity list.");
+  }
+  const identityCounts = Object.fromEntries(strictViolationKeys.map((key) => [key, 0])) as DictionaryStrictViolationCounts;
+  for (const identity of strictViolations) {
+    const category = strictViolationCategoryFromIdentity(identity);
+    if (category) identityCounts[category] += 1;
+  }
+  if (strictViolationKeys.some((key) => identityCounts[key] !== strict[key])) {
+    throw new Error("Base audit manifest strict counts do not match its strict violation identity list.");
+  }
+  return { strict, strictViolations };
 }
 
 function printSummary(label: string, counts: DictionaryQualityCounts) {
@@ -115,13 +141,18 @@ async function main() {
   if (!strict) return;
 
   if (baseManifestPath) {
-    const base = strictCountsFromManifest(JSON.parse(await readFile(baseManifestPath, "utf8")));
-    const regressions = strictViolationRegressions(report.total.strict, base);
-    if (regressions.length > 0) {
-      console.error(`\nStrict audit regression against base manifest: ${regressions.join("; ")}.`);
+    const base = strictAuditBaselineFromManifest(JSON.parse(await readFile(baseManifestPath, "utf8")));
+    const countRegressions = strictViolationRegressions(report.total.strict, base.strict);
+    const identityRegressions = strictViolationIdentityRegressions(report.strictViolations, base.strictViolations);
+    if (countRegressions.length > 0 || identityRegressions.length > 0) {
+      const details = [
+        ...countRegressions,
+        ...identityRegressions.map((identity) => `new strict violation identity ${identity}`),
+      ];
+      console.error(`\nStrict audit regression against base manifest: ${details.join("; ")}.`);
       process.exitCode = 1;
     } else if (!json) {
-      console.log("\nStrict audit base-manifest comparison found no increased blocking categories.");
+      console.log("\nStrict audit base-manifest comparison found no increased blocking categories or violation identities.");
     }
     return;
   }

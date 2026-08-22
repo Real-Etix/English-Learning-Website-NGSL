@@ -2,7 +2,12 @@ import { describe, expect, it } from "vitest";
 
 import type { ContentSourceRef, VocabularyRecord } from "../vocabulary/schema";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
-import { auditDictionaryRecords, hasStrictFailures, strictViolationRegressions } from "./dictionary-quality";
+import {
+  auditDictionaryRecords,
+  hasStrictFailures,
+  strictViolationIdentityRegressions,
+  strictViolationRegressions,
+} from "./dictionary-quality";
 
 const fixture = vocabularyRecordFixture();
 const source = fixture.sources[0]!;
@@ -321,6 +326,61 @@ describe("auditDictionaryRecords", () => {
     expect(strictViolationRegressions(current.total.strict, base.total.strict)).toEqual([
       "learnerConnectionsWithoutGloss increased from 0 to 1",
     ]);
+  });
+
+  it("rejects a new strict violation identity when the category count stays flat", () => {
+    const base = auditDictionaryRecords([record({
+      lemma: "base-placeholder",
+      connections: [],
+      senses: [sense({ definition: "Definition pending." })],
+    })]);
+    const current = auditDictionaryRecords([record({
+      lemma: "current-placeholder",
+      connections: [],
+      senses: [sense({ definition: "Definition pending." })],
+    })]);
+
+    expect(strictViolationRegressions(current.total.strict, base.total.strict)).toEqual([]);
+    expect(strictViolationIdentityRegressions(current.strictViolations, base.strictViolations)).toEqual([
+      expect.stringContaining("current-placeholder"),
+    ]);
+  });
+
+  it("sorts strict violation identities independently of record and edge input order", () => {
+    const target = record({ lemma: "visible-target", connections: [] });
+    const alpha = record({
+      lemma: "alpha",
+      connections: [
+        connection({ target: "visible-target", type: "synonym", status: "published", gloss: null }),
+        connection({ target: "missing-target", type: "antonym", status: "published", gloss: "explained" }),
+      ],
+    });
+    const zeta = record({
+      lemma: "zeta",
+      connections: [],
+      senses: [sense({ definition: "Needs a fuller dictionary source." })],
+    });
+
+    const first = auditDictionaryRecords([zeta, alpha, target]).strictViolations;
+    const second = auditDictionaryRecords([target, {
+      ...alpha,
+      connections: [...alpha.connections].reverse(),
+    }, zeta]).strictViolations;
+
+    expect(first).toEqual([...first].sort());
+    expect(second).toEqual(first);
+  });
+
+  it("keeps distinct published edges from collapsing into one strict identity", () => {
+    const report = auditDictionaryRecords([record({
+      connections: [
+        connection({ target: "missing-target", type: "synonym", status: "published", gloss: "explained" }),
+        connection({ target: "missing-target", type: "synonym", status: "published", gloss: "also explained" }),
+      ],
+    })]);
+
+    expect(report.total.strict.publishedConnectionsToHiddenOrMissingTargets).toBe(2);
+    expect(report.strictViolations.filter((identity) => identity.startsWith("published-connection-hidden-or-missing-target:"))).toHaveLength(2);
   });
 
   it("does not let explained unreviewed or hidden edges mask an unexplained published edge", () => {

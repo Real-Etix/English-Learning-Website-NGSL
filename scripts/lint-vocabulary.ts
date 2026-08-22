@@ -14,6 +14,7 @@ const ALLOWED_EDGES = new Set([
 ]);
 
 export type Finding = { level: "error" | "warn"; lemma: string; message: string };
+export type VocabularyLintReport = { version: 1; records: number; findings: Finding[] };
 
 const SHARD_IDS = Array.from({ length: 32 }, (_, index) => index.toString(16).padStart(2, "0"));
 
@@ -126,6 +127,7 @@ export function lintVocabularyRecords(records: VocabularyRecord[]): Finding[] {
 }
 
 async function main(): Promise<void> {
+  const json = process.argv.slice(2).includes("--json");
   const root = path.join(process.cwd(), "content", "vocabulary");
   const sources = await knownSourceIds();
   const records: VocabularyRecord[] = [];
@@ -141,9 +143,14 @@ async function main(): Promise<void> {
 
   const errors = findings.filter((finding) => finding.level === "error");
   const warnings = findings.filter((finding) => finding.level === "warn");
-  console.log(`Linted ${records.length} canonical vocabulary record(s).`);
-  for (const finding of findings.sort(compareFindings)) console.log(`  ${finding.level.toUpperCase()} ${finding.lemma}: ${finding.message}`);
-  console.log(`${errors.length} error(s), ${warnings.length} warning(s).`);
+  const report: VocabularyLintReport = { version: 1, records: records.length, findings: findings.sort(compareFindings) };
+  if (json) {
+    console.log(JSON.stringify(report));
+  } else {
+    console.log(`Linted ${records.length} canonical vocabulary record(s).`);
+    for (const finding of report.findings) console.log(`  ${finding.level.toUpperCase()} ${finding.lemma}: ${finding.message}`);
+    console.log(`${errors.length} error(s), ${warnings.length} warning(s).`);
+  }
   if (errors.length > 0) process.exitCode = 1;
 }
 

@@ -47,11 +47,12 @@ Allowed connection types are `synonym`, `antonym`, `intensity`, `builds_on`,
 and reciprocity; `npm run audit:dictionary` reports quality debt without editing files.
 It prints stable global and per-list totals for publication, senses, usage,
 connections, advanced quarantine, claimable senses, source coverage, and strict
-categories. `npm run audit:dictionary -- --strict` is the release gate: it blocks only
-published placeholders, unsupported published senses, otherwise-claimable senses with
-no sourced example, published connections to hidden/missing targets, and published
-connections without glosses. Missing optional patterns/mistakes and hidden/unreviewed
-debt remain non-blocking. Audit is deterministic and never calls live providers.
+categories plus a deterministic, sorted `strictViolations` identity list.
+`npm run audit:dictionary -- --strict` is the release gate: it blocks only published
+placeholders, unsupported published senses, otherwise-claimable senses with no sourced
+example, published connections to hidden/missing targets, and published connections
+without glosses. Missing optional patterns/mistakes and hidden/unreviewed debt remain
+non-blocking. Audit is deterministic and never calls live providers.
 
 ## Generated artifacts and local workflow
 
@@ -90,11 +91,14 @@ paths, and opens one `automation/vocabulary-<run-id>` pull request when there is
 It never pushes directly to the default branch. Review that PR before merging; never
 place the key in a command argument, log, committed file, or generated artifact.
 
-The workflow first saves a JSON strict-audit manifest for the base corpus. After
-proposals it runs the strict audit against that manifest and rejects any increase in a
-blocking category, while allowing a PR to reduce legacy debt. Review the generated
-diff, audit categories, source provenance, selected-sense claim evidence, and graph
-artifacts before merge. It intentionally does not upload full provider responses.
+Before proposals, the workflow saves JSON strict-audit and vocabulary-lint reports for
+the base corpus. After proposals, it rejects a strict category increase or a new strict
+violation identity. It also rejects newly introduced vocabulary-lint error identities,
+but allows unchanged or reduced inherited findings; malformed or crashed lint output
+fails the gate. `npm run lint:vocabulary` itself stays strict for local use. Review the
+generated diff, audit categories, source provenance, selected-sense claim evidence,
+and graph artifacts before merge. It intentionally does not upload full provider
+responses.
 
 ## Recovery-only Markdown migration
 
