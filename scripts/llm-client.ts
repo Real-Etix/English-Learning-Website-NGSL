@@ -74,7 +74,11 @@ export async function completeChatResult(
     try {
       const res = await fetch(LLM_ENDPOINT, {
         method: "POST",
-        headers: { Authorization: `Bearer ${LLM_API_KEY}`, "Content-Type": "application/json" },
+        headers: {
+          Authorization: `Bearer ${LLM_API_KEY}`,
+          "Content-Type": "application/json",
+          "Idempotency-Key": requestId,
+        },
         signal: AbortSignal.timeout(90_000),
         body: JSON.stringify({
           model,

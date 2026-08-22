@@ -101,4 +101,22 @@ describe("selectEnrichmentBatch", () => {
       "core-b",
     ]);
   });
+
+  test("skips enriched core records while keeping enriched hidden advanced drafts eligible", () => {
+    const records = [
+      recordFor("enriched-core", {
+        status: "enriched",
+        lists: [{ id: "ngsl", rank: 1, sfi: 99 }],
+      }),
+      recordFor("enriched-hidden-advanced", {
+        tier: "advanced",
+        status: "enriched",
+        publicationStatus: "hidden",
+      }),
+    ];
+
+    expect(selectEnrichmentBatch(records, { limit: 10 }).map((word) => word.lemma)).toEqual([
+      "enriched-hidden-advanced",
+    ]);
+  });
 });

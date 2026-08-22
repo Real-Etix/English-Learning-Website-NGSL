@@ -57,7 +57,7 @@ function publishedCoreAnchors(record: VocabularyRecord, publishedCoreLemmas: Set
 function candidateFor(record: VocabularyRecord, publishedCoreLemmas: Set<string>): Candidate | null {
   // Verified records already satisfy the automated enrichment contract and are
   // never sent through a drafting batch.
-  if (record.status === "verified") return null;
+  if (record.status === "verified" || (record.tier === "core" && record.status === "enriched")) return null;
 
   const namedStage = earliestNamedStage(record);
   if (record.tier === "core" && namedStage) {
