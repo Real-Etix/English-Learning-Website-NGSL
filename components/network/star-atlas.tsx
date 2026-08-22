@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
 
 import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
+import { WordLearningDrawer } from "@/components/network/word-learning-drawer";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
 import {
   markGalaxyCriticalReady,
@@ -30,6 +31,7 @@ import { wordXp } from "@/lib/collection/xp";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
 import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
 import type { WordDetail } from "@/lib/content/word-detail";
+import type { WordLearningProfile } from "@/lib/content/word-learning";
 import type { FullGalaxyData } from "@/lib/galaxy/full-codec";
 import type { LadderRung, RunStop } from "@/lib/galaxy/learning-routes";
 import type { ChartShard, GalaxyChart, GalaxyManifest, SearchEntry } from "@/lib/galaxy/types";
@@ -46,20 +48,6 @@ import type { ProgressiveStarEngine } from "@/components/network/galaxy/progress
 const SF = "var(--font-atlas-serif), Georgia, serif";
 const SS = "var(--font-atlas-sans), system-ui, sans-serif";
 const MN = "var(--font-atlas-mono), ui-monospace, monospace";
-
-const CHART_TONE: Record<string, string> = {
-  synonym: "#8FE3C0", antonym: "#E8A89F", intensity: "#F2D9A0", collocation: "#94A0B4",
-  builds_on: "#CBB9E9", advanced_form: "#CBB9E9", morphological: "#9FC4E8",
-};
-const CONN_LABEL: Record<string, string> = {
-  advanced_form: "Level up to", builds_on: "Builds on", synonym: "Means about the same",
-  antonym: "Means the opposite", intensity: "Stronger / weaker", collocation: "Goes with",
-  morphological: "Word family",
-};
-const CONN_ORDER = ["advanced_form", "builds_on", "intensity", "synonym", "antonym", "morphological", "collocation"];
-const MARK: Record<string, string> = {
-  advanced_form: "↑", builds_on: "↓", synonym: "=", antonym: "≠", intensity: "±", collocation: "+", morphological: "~",
-};
 
 const BOARD_SEED: [string, number, number][] = [
   ["quiet-heron-214", 4120, 96], ["cosmic-lynx-77", 3480, 84], ["bold-orca-512", 2905, 71],
@@ -91,6 +79,42 @@ const norm = (s: string) => String(s || "").trim().toLowerCase().replace(/[^a-z]
 function hash(str: string) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
 function rng(seed: number) { let s = seed; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
 function isAbortError(error: unknown) { return typeof error === "object" && error !== null && "name" in error && error.name === "AbortError"; }
+function isWordLearningProfile(value: unknown): value is WordLearningProfile {
+  if (typeof value !== "object" || value === null) return false;
+  const profile = value as Record<string, unknown>;
+  const isText = (item: unknown) => typeof item === "string";
+  const isOptionalText = (item: unknown) => item === null || isText(item);
+  const pronunciation = profile.pronunciation as Record<string, unknown> | null;
+  return isText(profile.lemma) && isText(profile.display) && isText(profile.tier)
+    && isText(profile.partOfSpeech) && Array.isArray(profile.forms) && profile.forms.every(isText)
+    && isText(profile.status) && Array.isArray(profile.sources) && profile.sources.every(isText)
+    && isText(profile.evidence) && isText(profile.evidenceLabel)
+    && typeof pronunciation === "object" && pronunciation !== null
+    && isOptionalText(pronunciation.ipa) && isOptionalText(pronunciation.audioUk)
+    && isOptionalText(pronunciation.audioUs) && isOptionalText(pronunciation.audioAny)
+    && Array.isArray(profile.senses) && profile.senses.every((sense) => typeof sense === "object" && sense !== null
+      && isText((sense as Record<string, unknown>).id) && isText((sense as Record<string, unknown>).partOfSpeech)
+      && isText((sense as Record<string, unknown>).definition) && isOptionalText((sense as Record<string, unknown>).example)
+      && isText((sense as Record<string, unknown>).source) && typeof (sense as Record<string, unknown>).primary === "boolean")
+    && Array.isArray(profile.examples) && profile.examples.every((example) => typeof example === "object" && example !== null
+      && isText((example as Record<string, unknown>).text) && isText((example as Record<string, unknown>).source))
+    && isOptionalText(profile.usageNote)
+    && Array.isArray(profile.connections) && profile.connections.every((connection) => typeof connection === "object" && connection !== null
+      && isText((connection as Record<string, unknown>).type) && isText((connection as Record<string, unknown>).target)
+      && ("gloss" in connection ? isOptionalText((connection as Record<string, unknown>).gloss) : true)
+      && typeof (connection as Record<string, unknown>).explained === "boolean")
+    && typeof profile.canClaim === "boolean" && isOptionalText(profile.claimBlockReason);
+}
+function normalizeAudioUrl(value: string | null | undefined) {
+  if (!value) return null;
+  const candidate = value.trim().startsWith("//") ? `https:${value.trim()}` : value.trim();
+  try {
+    const url = new URL(candidate, window.location.origin);
+    return url.protocol === "https:" || url.protocol === "http:" ? url.href : null;
+  } catch {
+    return null;
+  }
+}
 
 type WordMeta = Omit<SearchEntry, "normalized">;
 type AtlasModel = {
@@ -139,7 +163,7 @@ function chartBlurb(chart: GalaxyChart): string {
     : `Words that orbit “${chart.name}” — ${chart.wordCount} stars linked by meaning.`;
 }
 
-type WordResponse = { page: WikiPage; detail: WordDetail | null; rarity: WordRarity | null };
+type WordResponse = { page: WikiPage; detail: WordDetail | null; learning?: WordLearningProfile | null; rarity: WordRarity | null };
 type QuizKind = "type" | "word";
 type QuizState = {
   kind: QuizKind; lemma: string; prompt: string; sentence?: string; answer: string;
@@ -752,35 +776,41 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   // ---- quiz ----
   const openQuiz = useCallback((lemma: string) => {
     if (owned.has(lemma)) return;
-    // Need the word's definition/example — use the already-fetched detail when present.
-    const build = (page: WikiPage) => {
+    // Quiz prompts use the same sourced profile that the drawer presents.
+    const build = (profile: WordLearningProfile) => {
+      if (!profile.canClaim) {
+        showToast({ glyph: "·", text: "Not ready to claim", sub: profile.claimBlockReason ?? "", tone: "mint" });
+        return;
+      }
+      const primarySense = profile.senses.find((sense) => sense.primary) ?? profile.senses[0];
+      const example = profile.examples[0];
+      if (!primarySense || !example) return;
       const r = rng(hash(lemma + owned.size));
       const chartId = atlas.byLemma.get(lemma)?.chartId ?? "";
       const siblings = (residentShards.get(chartId)?.words ?? [])
         .filter((w) => w.lemma !== lemma);
       const others = siblings.sort(() => r() - 0.5).slice(0, 3);
-      const ex = page.examples?.[0] || "";
-      const canType = ex && ex.toLowerCase().includes(page.display.toLowerCase());
+      const canType = example.text.toLowerCase().includes(profile.display.toLowerCase());
       if (canType) {
-        const re = new RegExp(page.display, "i");
+        const re = new RegExp(profile.display, "i");
         setQuiz({
           kind: "type", lemma, input: "", prompt: "Which word is missing?",
-          sentence: ex.replace(re, "———"), answer: page.display, revealed: false, correct: false, attempts: 0,
+          sentence: example.text.replace(re, "———"), answer: profile.display, revealed: false, correct: false, attempts: 0,
         });
       } else {
         const opts = others.map((w) => ({ id: w.lemma, text: w.display }))
-          .concat([{ id: lemma, text: page.display }]);
+          .concat([{ id: lemma, text: profile.display }]);
         setQuiz({
           kind: "word", lemma, input: "",
-          prompt: `${page.definition.charAt(0).toUpperCase()}${page.definition.slice(1)} — which word is it?`,
+          prompt: `${primarySense.definition.charAt(0).toUpperCase()}${primarySense.definition.slice(1)} — which word is it?`,
           options: opts.sort(() => r() - 0.5), answer: lemma, revealed: false, correct: false, attempts: 0,
         });
       }
     };
-    if (wordData?.page && wordData.page.lemma === lemma) build(wordData.page);
+    if (wordData?.page?.lemma === lemma && isWordLearningProfile(wordData.learning)) build(wordData.learning);
     else fetch(`/api/word/${encodeURIComponent(lemma)}`).then((r) => (r.ok ? r.json() : null))
-      .then((d: WordResponse | null) => { if (d?.page) build(d.page); }).catch(() => {});
-  }, [owned, atlas, residentShards, wordData]);
+      .then((d: WordResponse | null) => { if (isWordLearningProfile(d?.learning)) build(d.learning); }).catch(() => {});
+  }, [owned, atlas, residentShards, wordData, showToast]);
 
   const answerChoice = useCallback((id: string) => {
     setQuiz((q0) => {
@@ -969,6 +999,23 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     window.speechSynthesis.speak(u);
   }, [focus, atlas]);
 
+  const playPronunciation = useCallback((region: "uk" | "us" | "any") => {
+    const pronunciation = isWordLearningProfile(wordData?.learning) ? wordData.learning.pronunciation : null;
+    const requested = region === "uk"
+      ? pronunciation?.audioUk ?? pronunciation?.audioAny ?? pronunciation?.audioUs
+      : region === "us"
+        ? pronunciation?.audioUs ?? pronunciation?.audioAny ?? pronunciation?.audioUk
+        : pronunciation?.audioAny ?? pronunciation?.audioUk ?? pronunciation?.audioUs;
+    const audioUrl = normalizeAudioUrl(requested);
+    if (!audioUrl) { speak(); return; }
+    try {
+      const audio = new Audio(audioUrl);
+      void audio.play().catch(() => speak());
+    } catch {
+      speak();
+    }
+  }, [wordData, speak]);
+
   // ---- derived view models ----
   const level = me?.level ?? 1;
   const totalXp = me?.totalXp ?? 0;
@@ -1139,39 +1186,25 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     if (!runComplete) runDoneRef.current = false;
   }, [runComplete, runStarted, streak, showToast]);
 
-  // detail drawer view model (from fetched wordData)
+  // Detail-drawer metadata remains separate from the normalized learning profile.
   const drawer = useMemo(() => {
     if (!focus) return null;
     const wd = atlas.byLemma.get(focus);
-    // Use the per-list chart the galaxy/rail show, not the page's global frontmatter chart.
     const chartMeta = wd ? atlas.chartById.get(wd.chartId) : null;
     const page = wordData?.page;
+    const learning = isWordLearningProfile(wordData?.learning) ? wordData.learning : null;
     const held = owned.has(focus);
     const rarity = wordData?.rarity;
     const percent = rarity?.percent ?? 0;
     const rarityWord = percent <= 12 ? "Rare" : percent <= 40 ? "Uncommon" : "Common";
     const xp = page ? wordXp({ tier: page.tier, sfi: page.sfi }) : 0;
-    const grouped: Record<string, WikiPage["connections"]> = {};
-    for (const c of page?.connections || []) (grouped[c.type] = grouped[c.type] || []).push(c);
-    const connGroups = CONN_ORDER.filter((t) => grouped[t]).map((t) => ({
-      type: t, label: CONN_LABEL[t] || t, tone: CHART_TONE[t] || "#94A0B4",
-      items: grouped[t].map((c) => ({
-        lemma: c.target, display: atlas.byLemma.get(c.target)?.display ?? c.target,
-        mark: MARK[t] || "·", gloss: c.gloss || "", held: owned.has(c.target), type: t,
-      })),
-    }));
     return {
-      display: wd?.display ?? page?.display ?? focus,
-      ipa: wordData?.detail?.ipa ?? "",
-      pos: wd?.partOfSpeech ?? page?.pos ?? "",
-      def: page?.definition ?? "",
-      ex: page?.examples?.[0] ?? "",
-      isAdvanced: (wd?.tier ?? page?.tier) === "advanced",
-      chartName: chartMeta?.name ?? "", chartHue: chartMeta?.hue ?? "#94A0B4", chartGlyph: chartMeta?.glyph ?? "◇",
+      display: learning?.display ?? wd?.display ?? page?.display ?? focus,
+      learning,
+      chart: { name: chartMeta?.name ?? "", hue: chartMeta?.hue ?? "#94A0B4", glyph: chartMeta?.glyph ?? "◇" },
       held, solid: used.has(focus), xp, rarityWord,
       rarityDot: percent <= 12 ? "#F2D9A0" : percent <= 40 ? "#BFD9F2" : "#94A0B4",
       rarityText: `${percent}% of explorers hold it`,
-      connGroups,
     };
   }, [focus, wordData, atlas, owned, used]);
 
@@ -1512,85 +1545,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
           {/* DETAIL DRAWER */}
           {focus && (
-            <aside style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "min(100%,420px)", pointerEvents: "auto", display: "flex", flexDirection: "column", background: "rgba(9,13,25,.94)", borderLeft: "1px solid rgba(241,238,230,.1)", backdropFilter: "blur(22px)", boxShadow: "-24px 0 60px rgba(0,0,0,.45)", animation: "slideIn .26s cubic-bezier(.2,.8,.2,1) both", zIndex: 35 }}>
-              {drawer && wordReady ? (
-                <>
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "18px 18px 14px", borderBottom: "1px solid rgba(241,238,230,.08)" }}>
-                    <div style={{ flex: 1, minWidth: 0 }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                        <span style={{ display: "grid", placeItems: "center", width: 20, height: 20, borderRadius: 6, font: `400 10px/1 ${MN}`, background: "rgba(241,238,230,.07)", color: drawer.chartHue }}>{drawer.chartGlyph}</span>
-                        <span style={{ font: `500 9.5px/1 ${MN}`, letterSpacing: ".16em", textTransform: "uppercase", color: drawer.chartHue }}>{drawer.chartName}</span>
-                      </div>
-                      <h2 style={{ margin: "9px 0 0", font: `400 38px/1.02 ${SF}`, letterSpacing: "-.01em", color: "#F1EEE6" }}>{drawer.display}</h2>
-                      <div style={{ display: "flex", alignItems: "center", gap: 9, flexWrap: "wrap", marginTop: 8 }}>
-                        {drawer.ipa && <span style={{ font: `400 12px/1 ${MN}`, color: "#BFD9F2" }}>{drawer.ipa}</span>}
-                        <span style={{ padding: "3px 8px", borderRadius: 999, border: "1px solid rgba(241,238,230,.12)", font: `400 10.5px/1 ${MN}`, color: "#94A0B4" }}>{drawer.pos}</span>
-                        {drawer.isAdvanced && <span style={{ padding: "3px 8px", borderRadius: 999, background: "rgba(203,185,233,.16)", font: `500 10.5px/1 ${MN}`, letterSpacing: ".08em", textTransform: "uppercase", color: "#CBB9E9" }}>advanced</span>}
-                        <button onClick={speak} style={{ padding: "3px 9px", border: "1px solid rgba(241,238,230,.12)", borderRadius: 999, background: "rgba(241,238,230,.04)", color: "#BFD9F2", cursor: "pointer", font: `400 11px/1.4 ${SS}` }}>◂)) say it</button>
-                      </div>
-                    </div>
-                    <button onClick={() => select(null)} aria-label="Close" style={{ flex: "none", width: 28, height: 28, display: "grid", placeItems: "center", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "none", color: "#94A0B4", cursor: "pointer", fontSize: 13 }}>✕</button>
-                  </div>
-
-                  <div style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "16px 18px 22px", display: "flex", flexDirection: "column", gap: 18 }}>
-                    <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
-                      <button onClick={() => { if (!drawer.held) openQuiz(focus); }} style={{ width: "100%", padding: 12, border: `1px solid ${drawer.held ? "rgba(143,227,192,.28)" : "transparent"}`, borderRadius: 13, cursor: drawer.held ? "default" : "pointer", font: `600 13px/1 ${SS}`, letterSpacing: ".01em", background: drawer.held ? "rgba(143,227,192,.1)" : "linear-gradient(96deg,#BFD9F2,#8FE3C0)", color: drawer.held ? "#8FE3C0" : "#0A1020", transition: "opacity .2s ease" }}>{drawer.held ? "✓ Held — this star is yours" : "Check what you know, then claim it"}</button>
-
-                      {drawer.held && (
-                        <>
-                          <button onClick={() => { if (!drawer.solid) openCompose(focus); }} style={{ width: "100%", padding: 12, border: `1px solid ${drawer.solid ? "rgba(143,227,192,.3)" : "rgba(203,185,233,.32)"}`, borderRadius: 13, cursor: drawer.solid ? "default" : "pointer", font: `600 13px/1 ${SS}`, background: drawer.solid ? "rgba(143,227,192,.12)" : "rgba(203,185,233,.14)", color: drawer.solid ? "#8FE3C0" : "#CBB9E9", display: "flex", alignItems: "center", justifyContent: "center", gap: 9 }}>
-                            <span style={{ font: `400 13px/1 ${MN}` }}>{drawer.solid ? "◆" : "✎"}</span>
-                            <span>{drawer.solid ? "Used in a sentence" : "Use it in a sentence"}</span>
-                          </button>
-                          <p style={{ margin: 0, font: `400 11.5px/1.6 ${SS}`, color: "#6B7789" }}>{drawer.solid ? "Solid star — you produced it, not just recognised it." : "Held means you recognised it. Solid means you produced it."}</p>
-                        </>
-                      )}
-
-                      <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "space-between", fontSize: 11.5, color: "#6B7789" }}>
-                        <span style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                          <span style={{ width: 6, height: 6, borderRadius: 999, background: drawer.rarityDot }} />
-                          <span style={{ color: drawer.rarityDot, fontWeight: 500 }}>{drawer.rarityWord}</span>
-                          <span>{drawer.rarityText}</span>
-                        </span>
-                        <span style={{ font: `500 10.5px/1 ${MN}`, color: "#F2D9A0" }}>+{drawer.xp} xp</span>
-                      </div>
-                    </div>
-
-                    {drawer.def && <p style={{ margin: 0, font: `400 16.5px/1.62 ${SS}`, color: "#E8E4DA" }}>{drawer.def}</p>}
-
-                    {drawer.ex && (
-                      <div style={{ padding: "13px 15px", borderLeft: "2px solid rgba(191,217,242,.4)", background: "rgba(191,217,242,.05)", borderRadius: "0 10px 10px 0" }}>
-                        <p style={{ margin: 0, font: `italic 400 15px/1.65 ${SF}`, color: "#D8D3C8" }}>{drawer.ex}</p>
-                      </div>
-                    )}
-
-                    {drawer.connGroups.map((g) => (
-                      <section key={g.type}>
-                        <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 9 }}>
-                          <h3 style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: g.tone }}>{g.label}</h3>
-                          <span style={{ flex: 1, height: 1, background: "rgba(241,238,230,.08)" }} />
-                        </div>
-                        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                          {g.items.map((c, idx) => (
-                            <div key={c.lemma + idx} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-                              <button onClick={() => select(c.lemma)} style={{ alignSelf: "flex-start", display: "flex", alignItems: "center", gap: 7, padding: "5px 11px", border: `1px solid ${c.held ? "rgba(143,227,192,.3)" : c.type === "advanced_form" ? "rgba(203,185,233,.32)" : "rgba(241,238,230,.12)"}`, borderRadius: 999, background: c.held ? "rgba(143,227,192,.09)" : c.type === "advanced_form" ? "rgba(203,185,233,.1)" : "rgba(241,238,230,.04)", color: c.held ? "#8FE3C0" : c.type === "advanced_form" ? "#CBB9E9" : "#F1EEE6", cursor: "pointer", font: `500 13px/1 ${SS}` }}>
-                                <span>{c.display}</span>
-                                <span style={{ font: `400 10px/1 ${MN}`, opacity: .65 }}>{c.mark}</span>
-                              </button>
-                              {c.gloss && <p style={{ margin: 0, paddingLeft: 2, font: `400 12px/1.6 ${SS}`, color: "#94A0B4" }}>{c.gloss}</p>}
-                            </div>
-                          ))}
-                        </div>
-                      </section>
-                    ))}
-
-                    <p style={{ margin: 0, paddingTop: 14, borderTop: "1px solid rgba(241,238,230,.08)", font: `400 11.5px/1.6 ${SS}`, color: "#6B7789" }}>← → walks the ring of linked stars · ↑ climbs to the advanced form · Enter opens the check</p>
-                  </div>
-                </>
-              ) : (
-                <div style={{ display: "flex", height: "100%", alignItems: "center", justifyContent: "center", fontSize: 13, color: "#6B7789" }}>Reading the star…</div>
-              )}
-            </aside>
+            drawer && wordReady ? <WordLearningDrawer profile={drawer.learning} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={{ word: drawer.rarityWord, dot: drawer.rarityDot, text: drawer.rarityText }} onClose={() => select(null)} onNavigate={select} onOpenQuiz={() => openQuiz(focus)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} /> : <aside style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "min(100vw, 420px)", display: "grid", placeItems: "center", background: "rgba(9,13,25,.94)", borderLeft: "1px solid rgba(241,238,230,.1)", color: "#6B7789", font: `400 13px/1 ${SS}`, zIndex: 35 }}>Reading the star…</aside>
           )}
 
           {/* FIRST-RUN INTRO */}
