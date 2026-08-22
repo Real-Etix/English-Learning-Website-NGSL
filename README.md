@@ -2,7 +2,7 @@
 
 A **Next.js** app that turns the [New General Service List (NGSL)](https://www.newgeneralservicelist.com/new-general-service-list) family of vocabulary lists into an explorable **3D universe of words**. Every word is a star; every line is a real relationship (synonym, antonym, "level-up" ladder). Learners orbit the galaxy, open a star for a dictionary-style entry, **collect** words into their own space, and explore other people's spaces to discover vocabulary they don't have yet.
 
-It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM Wiki" pattern**: the vocabulary is a folder of interlinked markdown pages that an LLM maintains, and that same link structure powers the graph.
+It began as a flashcard trainer and was rebuilt around a versioned vocabulary corpus: canonical NDJSON records maintain the learner content and typed relationships that power the graph.
 
 **Live demo:** https://english-learning-website-ngsl.vercel.app
 
@@ -20,22 +20,26 @@ It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM 
 
 ## Architecture
 
-### The wiki is the source of truth
-- `wiki/pages/*.md` — one markdown page per word (~11k), with YAML frontmatter and a `## Connections` section whose `[[wiki-links]]` are the graph edges. Schema in `wiki/CLAUDE.md`.
-- `wiki/raw/` — clippings ingested from articles (see the clipper below).
+### Canonical vocabulary is NDJSON
+
+- `content/vocabulary/*.ndjson` is the only editable source of truth: one JSON vocabulary record per line, distributed across the 32 deterministic shards `00.ndjson` through `1f.ndjson`.
+- Every record follows the v1 schema in `content/vocabulary/schema.json`: identity (`schemaVersion`, `lemma`, `display`, `tier`), grammatical/list metadata, source-backed senses and examples, pronunciation, usage guidance, typed connections, domains, and chart/region assignments. Runtime validation lives in `lib/vocabulary/schema.ts`.
+- Normalize a lemma by trimming, lowercasing, and collapsing whitespace; its shard is `sha256(normalizedLemma)[0] & 31`, formatted as two lowercase hex digits. Keep records sorted by normalized lemma within each shard.
+- `content/vocabulary/sources.json` is the source registry. Each source reference in a record must use a registered ID and retain its factual/provenance status.
+- `wiki/raw/` remains the immutable clipping inbox. It is not an active vocabulary source. Markdown conversion code (`lib/vocabulary/legacy-markdown.ts`, `lib/vocabulary/migrate-markdown.ts`, and `scripts/migrate-wiki-to-ndjson.ts`) is **recovery-only**.
 
 ### Normalized learner profile
 
-When a learner selects a word, the app keeps the raw wiki page and Free Dictionary API
-response for compatibility, then builds a normalized learner profile. It prioritizes a
+When a learner selects a word, the app keeps a compatibility-shaped projection of the
+canonical record and the Free Dictionary API response, then builds a normalized learner profile. It prioritizes a
 verified or factual-source-backed primary meaning, preserves authored examples and
 connection glosses verbatim, labels unsupported content as an AI draft, and allows a
 new claim only when a trustworthy meaning and sourced example are available. This
 detail remains demand-loaded and is not included in the galaxy manifests.
 
-### From wiki → graph (build-time)
-Reading 11k files per request is too slow, so `scripts/build-graph-data.ts` pre-computes a small **lite graph** (nodes + edges) per list into `data/generated/graphs/*.json`. Pages read those (`lib/wiki/graph-store.ts`), and word detail is fetched per-click via `/api/word/[lemma]`.
-> ⚠️ **Re-run `npm run build:graphs` and commit after any change to the wiki**, or the deployed galaxy shows stale data.
+### From NDJSON → generated learner artifacts (build-time)
+`npm run build:graphs` reads the canonical corpus and pre-computes graph JSON, word shards, and progressive galaxy assets. Pages read the generated lite graphs (`lib/wiki/graph-store.ts`), and word detail is fetched per-click via `/api/word/[lemma]`.
+> ⚠️ **After any canonical vocabulary change, run `npm run build:graphs` and commit the generated artifacts**, or the deployed galaxy can be stale.
 
 ### Progressive Star Atlas delivery
 - The production `/network/[listSlug]` route is **manifest-only on the server**. It embeds a list manifest, not the whole chart graph.
@@ -47,28 +51,22 @@ Reading 11k files per request is too slow, so `scripts/build-graph-data.ts` pre-
 - `components/network/star-atlas.tsx` mounts the active client atlas: raw Three.js `ProgressiveStarEngine` plus `GalaxyController`, `ChartShardStore`, and `GalaxySearchCatalog`.
 - The server/client boundary carries a compact manifest only; the first paint is a tiny CSS observatory shell with one lightweight chart proxy per manifest chart, then the controls and renderer boot after the browser is idle. `galaxy:constellation-visible` measures that first CSS constellation paint, while the deferred Three.js first frame is tracked separately at `galaxy:renderer-visible`. Chart shards and search catalogs are loaded lazily, and the **full** binary is never requested unless the learner explicitly opts into full-list mode.
 - Full mode is optional and scoped to the selected list. Returning to constellation view drops back to the lighter progressive path.
-- After chart names, wiki content, or generated search data change, rebuild the galaxy assets with `npm run build:graphs` and commit the refreshed outputs.
+- After chart names, canonical vocabulary, or generated search data change, rebuild the galaxy assets with `npm run build:graphs` and commit the refreshed outputs.
 
 ### User data → Postgres
-Collections are per-user and mutable, so they live in **Postgres** (via **Prisma 7** with the `@prisma/adapter-pg` driver). Identity is an anonymous `ownerToken` cookie — no login. Models: `Collection`, `CollectedWord` (`prisma/schema.prisma`). The wiki content stays in files; only "who collected what" is in the DB.
-
-### Data pipeline (LLM + WordNet)
-```
-NGSL lists ──seed──> wiki/pages/*.md ──enrich(DeepSeek)──> advanced-word ladders
-   (WordNet defs + synonym/antonym edges; curated function words)
-```
+Collections are per-user and mutable, so they live in **Postgres** (via **Prisma 7** with the `@prisma/adapter-pg` driver). Identity is an anonymous `ownerToken` cookie — no login. Models: `Collection`, `CollectedWord` (`prisma/schema.prisma`). Canonical vocabulary remains in Git; only "who collected what" is in the DB.
 
 ---
 
 ## Scripts
 
 ```bash
-# Content pipeline (the wiki)
-npm run build:graphs         # regenerate per-list graph JSON (run after any wiki change)
-tsx scripts/seed-wiki-pages.ts        # WordNet + curated defs → wiki/pages/*.md
-tsx scripts/enrich-wiki-llm.ts        # DeepSeek adds advanced_form ladders (needs LLM_API_KEY)
-tsx scripts/lint-wiki.ts              # validate the wiki (0 errors expected)
-npm run audit:dictionary               # read-only dictionary quality totals and per-list coverage
+# Canonical vocabulary pipeline
+npm run lint:vocabulary      # validate schemas, shards, sources, links, and reciprocity
+npm run audit:dictionary     # read-only quality totals and per-list coverage
+npm run build:graphs         # regenerate committed word, graph, and galaxy artifacts
+npm run validate:vocabulary-migration # recovery parity check while legacy Markdown is available
+npm run migrate:vocabulary -- --source=<legacy-pages> --out=<output> --force # RECOVERY-ONLY
 npm run seed:spaces          # seed curated public explore-spaces (needs a DB)
 
 # App
@@ -82,8 +80,7 @@ npm run lint
 
 ### Reviewed vocabulary enrichment
 
-Canonical vocabulary lives in `content/vocabulary/*.ndjson`. To preview a local
-enrichment without changing files, run:
+Canonical vocabulary lives in `content/vocabulary/*.ndjson`; edit those records, never generated output. To preview a local enrichment without changing files, run:
 
 ```bash
 npm run enrich:vocabulary -- --list=ngsl --limit=20 --dry-run
@@ -102,12 +99,16 @@ Actions workflow. Configure `LLM_API_KEY` as a repository Actions secret; set
 pull request. With `dry_run` disabled, the workflow validates every changed
 or deleted path, then opens one `automation/vocabulary-<run-id>` pull request
 only when validated changes exist. Review that PR before merging; the workflow
-never pushes to the default branch.
+never pushes to the default branch. Review the generated diff and merge the PR only after the canonical records and generated artifacts are acceptable.
 
 Never commit `.env` files or put `LLM_API_KEY` in workflow arguments, logs,
 or generated artifacts. The workflow passes the key only through a masked
 environment variable and rejects any diff outside canonical vocabulary or its
 generated graph, word, and galaxy outputs.
+
+### Recovery-only Markdown migration
+
+`pre-ndjson-vocabulary` is a local recovery tag at the last commit containing the active Markdown corpus. Do not push it. If recovery is necessary, inspect or check out that tag, then run `npm run migrate:vocabulary` against a copied legacy `wiki/pages` directory to regenerate a separate NDJSON output. Do not revive Markdown as an active source or overwrite the canonical corpus without review.
 
 ---
 
@@ -149,7 +150,7 @@ npm run dev              # http://localhost:3000
    DATABASE_URL="<neon-DIRECT-url>" npm run seed:spaces
    ```
 2. **Env vars on Vercel** (Production): `DATABASE_URL` (pooled), `LLM_API_KEY`, `LLM_BASE_URL`, `LLM_MODEL`.
-3. **Push** — `postinstall` runs `prisma generate`; the graph JSONs are committed so builds don't read the wiki.
+3. **Push** — `postinstall` runs `prisma generate`; canonical NDJSON and the derived graph JSONs are committed, so builds do not scan per-word source files at request time.
 
 > The Chrome **clipper** (`extension/`) is a local authoring tool — it writes to the filesystem, which Vercel's read-only FS doesn't allow.
 

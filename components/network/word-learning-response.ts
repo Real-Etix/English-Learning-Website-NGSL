@@ -1,10 +1,9 @@
 import type { WordDetail } from "../../lib/content/word-detail";
 import { buildWordLearningProfile, type WordLearningProfile } from "../../lib/content/word-learning";
-import type { WikiPage } from "../../lib/wiki/parse-wiki";
-import { toCanonicalRecord } from "../../lib/vocabulary/legacy-profile-adapter";
+import { toCanonicalRecord, type LegacyWordPage } from "../../lib/vocabulary/legacy-profile-adapter";
 
 export type WordLearningResponse = {
-  page: WikiPage;
+  page: LegacyWordPage;
   detail: WordDetail | null;
   learning?: unknown;
 };
@@ -20,7 +19,7 @@ const lemmasMatch = (left: string, right: string) => {
   return Boolean(normalizedLeft) && normalizedLeft === normalizedRight;
 };
 
-function isWikiPage(value: unknown): value is WikiPage {
+function isLegacyWordPage(value: unknown): value is LegacyWordPage {
   if (typeof value !== "object" || value === null) return false;
   const page = value as Record<string, unknown>;
   return isText(page.lemma) && Boolean(normalizeLemma(page.lemma))
@@ -64,7 +63,7 @@ export function resolveWordLearningProfile(
   response: WordLearningResponse | null | undefined,
   expectedLemma?: string,
 ): WordLearningProfile | null {
-  if (!response || !isWikiPage(response.page)
+  if (!response || !isLegacyWordPage(response.page)
     || (expectedLemma !== undefined && !lemmasMatch(response.page.lemma, expectedLemma))) return null;
   return isWordLearningProfile(response.learning) && lemmasMatch(response.learning.lemma, response.page.lemma)
     ? response.learning

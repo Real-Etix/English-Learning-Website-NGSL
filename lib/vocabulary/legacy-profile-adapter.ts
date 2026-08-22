@@ -1,5 +1,31 @@
-import type { WikiConnection, WikiPage } from "../wiki/parse-wiki";
 import type { VocabularyConnection, VocabularyRecord } from "./schema";
+
+/**
+ * Compatibility projection returned by the word endpoint while clients consume
+ * the former page-shaped payload. It is derived from canonical NDJSON records;
+ * it is not a Markdown parser contract.
+ */
+export type LegacyWordConnection = { type: string; target: string; gloss?: string };
+
+export type LegacyWordPage = {
+  lemma: string;
+  display: string;
+  tier: "core" | "advanced";
+  pos: string;
+  rank: number | null;
+  sfi: number | null;
+  chart: string | null;
+  region: string | null;
+  lists: string[];
+  forms: string[];
+  status: string;
+  sources: string[];
+  definition: string;
+  usageNote: string | null;
+  examples: string[];
+  connections: LegacyWordConnection[];
+  domains: string[];
+};
 
 const CONNECTION_TYPES = new Set<VocabularyConnection["type"]>([
   "synonym", "antonym", "intensity", "builds_on", "advanced_form", "morphological", "collocation",
@@ -9,8 +35,8 @@ function sourceRefs(sourceIds: string[]) {
   return sourceIds.map((sourceId) => ({ sourceId, externalId: null, url: null, retrievedAt: null, contentHash: null }));
 }
 
-/** Temporary API response projection while clients still expect the Markdown page shape. */
-export function toLegacyPage(record: VocabularyRecord): WikiPage {
+/** Temporary API response projection while clients still expect the former page-shaped payload. */
+export function toLegacyPage(record: VocabularyRecord): LegacyWordPage {
   const primarySense = record.senses[0];
   const primaryMembership = record.lists[0];
   return {
@@ -39,10 +65,10 @@ export function toLegacyPage(record: VocabularyRecord): WikiPage {
 }
 
 /** Converts the temporary legacy response shape back to the canonical learning input. */
-export function toCanonicalRecord(page: WikiPage): VocabularyRecord {
+export function toCanonicalRecord(page: LegacyWordPage): VocabularyRecord {
   const sources = sourceRefs(page.sources);
   const connections: VocabularyRecord["connections"] = page.connections
-    .filter((connection): connection is WikiConnection & { type: VocabularyConnection["type"] } => CONNECTION_TYPES.has(connection.type as VocabularyConnection["type"]))
+    .filter((connection): connection is LegacyWordConnection & { type: VocabularyConnection["type"] } => CONNECTION_TYPES.has(connection.type as VocabularyConnection["type"]))
     .map((connection) => ({
       target: connection.target,
       type: connection.type,

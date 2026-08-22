@@ -2,8 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import type { WordDetail } from "./word-detail";
 import { buildWordLearningProfile } from "./word-learning";
-import type { WikiPage } from "../wiki/parse-wiki";
-import { toCanonicalRecord } from "../vocabulary/legacy-profile-adapter";
+import { toCanonicalRecord, type LegacyWordPage } from "../vocabulary/legacy-profile-adapter";
 import type { VocabularyRecord } from "../vocabulary/schema";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
 
@@ -28,8 +27,8 @@ const detail: WordDetail = {
   synonyms: [],
 };
 
-function page(overrides: Partial<WikiPage> = {}): VocabularyRecord {
-  const legacyPage: WikiPage = {
+function page(overrides: Partial<LegacyWordPage> = {}): VocabularyRecord {
+  const legacyPage: LegacyWordPage = {
     lemma: "core",
     display: "core",
     tier: "core",

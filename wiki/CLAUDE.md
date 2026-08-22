@@ -1,137 +1,78 @@
-# Vocabulary Wiki — Schema & Operating Rules
+# Vocabulary Corpus — Operating Rules
 
-This folder is an **LLM-maintained vocabulary wiki** (Karpathy LLM Wiki pattern).
-Its markdown pages and their typed `[[wiki-links]]` are the single source of truth for
-word content and connections between words.
-The frontend graph and the study pages are both *generated* from these files — do not
-hand-edit generated output; edit the wiki pages here.
+`content/vocabulary/*.ndjson` is the canonical, editable vocabulary source. Do not add
+or restore `wiki/pages`; Markdown parsing is recovery-only. This `wiki/` directory now
+holds retained raw clippings and these operating rules.
 
-## Folder layout
+## Corpus layout and deterministic writes
 
-- `raw/` — immutable source clippings (articles, book excerpts). Never edited after ingest. Each file starts with a provenance header (url, title, date, license). **Store only what license permits; for copyrighted sources keep a short excerpt + link, not the full text.**
-- `pages/` — one markdown page per lemma. Filename is the normalized lemma: `pages/big.md`. This is the wiki.
-- `CLAUDE.md` — this file. The schema and the ingest/lint rules.
+- `content/vocabulary/00.ndjson` through `content/vocabulary/1f.ndjson` contain one
+  v1 JSON record per line. Normalize a lemma by trimming, lowercasing, and collapsing
+  whitespace; place it in `sha256(normalizedLemma)[0] & 31`, formatted as two lowercase
+  hexadecimal digits. Sort records by normalized lemma in every shard.
+- `content/vocabulary/schema.json` is the generated public schema; runtime validation
+  is `lib/vocabulary/schema.ts`. A record includes identity/tier, forms and list
+  memberships, status/publication status, source references, senses/examples,
+  pronunciation, usage notes, typed connections, domains, chart, and region.
+- `content/vocabulary/sources.json` is the authoritative source registry. Use a
+  registered `sourceId`; preserve source URLs, external IDs, retrieval times, and hashes
+  when they are known. `llm` is drafting provenance, not factual evidence.
+- `content/vocabulary/manifest.json` records deterministic shard metadata and historical
+  migration provenance. Do not hand-edit it; regenerate it only through approved
+  recovery tooling.
 
-## The anchor rule (the core of this product)
+## Content and relationship rules
 
-Every page belongs to a **tier**:
+Keep authored definitions, examples, usage notes, and connection glosses verbatim.
+Factual sources are `curated`, `wordnet`, `dictionaryapi`, and `tatoeba`; distinguish
+them from an `llm` drafting pass. A learner may claim a word only when the normalized
+profile has a trustworthy primary meaning and a sourced example.
 
-- `core` — a word from an NGSL/base list. These are the anchors learners already know.
-- `advanced` — a word added by ingesting clippings. **Every `advanced` page MUST link to at least one `core` anchor** via a `builds_on` edge. A new advanced word with no path back to a core word is an orphan and is rejected by `lint`. This is what keeps the network learnable instead of an infinite dictionary.
+Allowed connection types are `synonym`, `antonym`, `intensity`, `builds_on`,
+`advanced_form`, `morphological`, and `collocation`. Every advanced record needs a
+`builds_on` connection to a core anchor, and `builds_on` / `advanced_form` are reciprocal.
+`npm run lint:vocabulary` validates schema, shard placement, links, sources, duplicates,
+and reciprocity; `npm run audit:dictionary` reports quality debt without editing files.
 
-## Page schema
+## Generated artifacts and local workflow
 
-Every `pages/*.md` file has YAML frontmatter followed by fixed sections. Missing
-optional sections are allowed; missing required ones are a `lint` error.
+Do not hand-edit `data/generated/graphs/`, `data/generated/vocabulary/`, or
+`public/generated/galaxy/`. After an intentional NDJSON change, run:
 
-```markdown
----
-lemma: <normalized lemma>            # required, matches filename
-display: <surface form>              # required, e.g. "big"
-tier: core | advanced                # required
-pos: <part of speech>                # required
-forms: [big, bigger, biggest]        # inflected forms
-lists: [ngsl]                        # which base lists it appears in (core only)
-rank: 184                            # frequency rank within its primary list (core only)
-sfi: 67.22                           # standard frequency index if known
-sources: [dictionaryapi, tatoeba]    # source ids backing the factual layer
-status: seeded | enriched | verified # review status (see evidence rules below)
----
-
-## Definition
-One learner-friendly sentence. Factual layer — source it, preserve it faithfully, and
-never invent it with an LLM.
-
-## Examples
-- Real, source-backed example sentence. _(source)_
-
-## Connections
-<!-- The edges. Each bullet is `<edge-type>: [[target]] — short gloss`. -->
-- intensity: [[large]] — a bigger, slightly more formal "big"
-- intensity: [[enormous]] — much bigger than big
-- builds_on: [[big]]        <!-- advanced pages only; points at the anchor -->
-- synonym: [[great]]
-- antonym: [[small]]
-- collocation: [[deal]] — "a big deal"
-- domain: size
-
-## Usage note
-Optional authored guidance about register or nuance. It may be absent; never generate
-one at request time or use it to replace a factual definition or sourced example.
+```bash
+npm run lint:vocabulary
+npm run audit:dictionary
+npm test
+npx tsc --noEmit
+npm run lint
+npm run build:graphs
+npm run build
 ```
 
-## Factual sources, evidence, and claim readiness
+For a no-write local enrichment preview:
 
-`sources` records the page-level provenance of the factual layer. The factual source
-ids are `curated`, `wordnet`, `dictionaryapi`, and `tatoeba`. Attribute facts and
-examples to their actual source, preserve authored text, and do not fabricate missing
-definitions, examples, relationship glosses, or usage guidance. `llm` identifies a
-drafting pass, not factual evidence.
+```bash
+npm run enrich:vocabulary -- --list=ngsl --limit=20 --dry-run
+```
 
-For quality reporting, `status: verified` is verified evidence; otherwise a page with
-any factual source is source-backed; remaining pages are AI drafts. An advanced page
-whose only source is `llm` is an LLM-only advanced draft. In the learner profile it
-remains an AI draft until trustworthy dictionary evidence supplies a primary meaning.
-A learner may newly claim a word only when its normalized profile has a trustworthy
-primary meaning and at least one sourced example. Existing held words stay held.
+## Reviewed enrichment PR workflow
 
-Run `npm run audit:dictionary` to measure current coverage without changing wiki
-files. `npm run audit:dictionary -- --strict` exits non-zero only for placeholder
-definitions or LLM-only advanced pages; ordinary coverage debt remains reportable.
+Run the **Vocabulary enrichment** GitHub Actions workflow manually. Keep `dry_run`
+enabled to validate first. With it disabled, the workflow uses the `LLM_API_KEY`
+repository secret (and optional `LLM_BASE_URL` / `LLM_MODEL` variables), validates the
+canonical corpus and generated artifacts, permits only approved vocabulary/artifact
+paths, and opens one `automation/vocabulary-<run-id>` pull request when there is a diff.
+It never pushes directly to the default branch. Review that PR before merging; never
+place the key in a command argument, log, committed file, or generated artifact.
 
-## Edge types (the only allowed link relations)
+## Recovery-only Markdown migration
 
-Connections are typed. Use exactly these verbs; `lint` rejects unknown ones.
+`wiki/raw/` remains the immutable clipping inbox; store only license-permitted excerpts
+and provenance. Legacy Markdown conversion survives only in
+`lib/vocabulary/legacy-markdown.ts`, `lib/vocabulary/migrate-markdown.ts`, and
+`scripts/migrate-wiki-to-ndjson.ts`. `npm run migrate:vocabulary` is recovery-only and
+must target a copied legacy source and a separate output directory.
 
-| edge | meaning | direction |
-|---|---|---|
-| `synonym` | same meaning, register may differ | symmetric |
-| `antonym` | opposite | symmetric |
-| `intensity` | same idea, stronger/weaker (`warm→hot→scorching`) | ordered |
-| `builds_on` | advanced word → the core anchor it extends | advanced → core |
-| `advanced_form` | core word → a more advanced word for it (`buy→purchase`) | core → advanced |
-| `morphological` | shares a root (`nation→national`) | symmetric |
-| `collocation` | frequently co-occurs (`make a decision`) | symmetric |
-| `domain` | topic tag, not a word link (value is a bare tag, not `[[link]]`) | n/a |
-
-`advanced_form` and `builds_on` are inverses — when `ingest` adds a `builds_on`
-edge to an advanced page, it MUST add the matching `advanced_form` edge to the
-core anchor page. `lint` checks this reciprocity.
-
-## `status` field — review status
-
-- `seeded` — page was created from its recorded sources. Connections may be empty or
-  naive. Safe to overwrite.
-- `enriched` — an LLM pass has proposed connections. It is not factual evidence by
-  itself and remains unreviewed.
-- `verified` — a human confirmed the page. Never auto-overwrite.
-
-## Operations
-
-### `ingest <raw-file>`
-1. Save the source to `raw/` with a provenance header.
-2. Lemmatize; diff tokens against existing `pages/`.
-3. For each **unknown** word above a usefulness bar (skip proper nouns, typos, ultra-rare): create `pages/<lemma>.md`, `tier: advanced`, fill the factual layer from the dictionary source.
-4. Connect it: add at least one `builds_on` edge to a `core` anchor, plus any `synonym`/`intensity`/`domain` edges. Add the reciprocal `advanced_form` edge to the anchor page.
-5. For **known** words that appear in a new sense/collocation: update that page's Connections, don't duplicate the page.
-6. Never touch the factual layer of a `verified` page; only append connections.
-
-### `query <question>`
-Answer from `pages/` only. Cite the pages used by their `[[lemma]]`.
-
-### `lint`
-Fail on: required frontmatter/section missing; unknown edge type; `advanced` page
-with no `builds_on`; non-reciprocal `builds_on`/`advanced_form`; `[[link]]` to a
-non-existent page; a `verified` page modified by an automated pass; duplicate lemma.
-Warn on: `core` page with zero connections (an under-connected anchor); orphan page
-(no inbound links).
-
-## Frontend contract
-
-A build step parses `pages/*.md` → emits `{nodes, edges}`:
-- node = `{ lemma, display, tier, rank, domain }`
-- edge = `{ source, target, type }` from every `[[link]]` in a `## Connections` bullet
-- `domain:` bullets become node tags, not edges.
-
-The graph renders per list; clicking a node renders that page's markdown. Keep this
-contract stable — it is the only coupling between the wiki and the app.
+The local `pre-ndjson-vocabulary` tag marks the last committed active Markdown corpus.
+Do not push it. If recovery is necessary, inspect that tag and regenerate NDJSON for
+review; do not make Markdown active again.
