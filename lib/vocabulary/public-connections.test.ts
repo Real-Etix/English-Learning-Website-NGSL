@@ -64,4 +64,23 @@ describe("publicConnections", () => {
     expect(toGraphInput(source, { records: [source, targetRecord] }).connections)
       .toEqual([{ target: "published-target", type: connection!.type }]);
   });
+
+  it("supports one-shot known-record iterables for the migration path", () => {
+    const record = vocabularyRecordFixture();
+    const [connection] = record.connections;
+    const targetRecord = target("generator-target");
+    const source = {
+      ...record,
+      connections: [{ ...connection!, target: "generator-target", gloss: "legacy wording", status: "unreviewed" as const }],
+    };
+    function* records() {
+      yield source;
+      yield targetRecord;
+    }
+
+    expect(toGraphInput(source, {
+      records: records(),
+      includeLegacyUnreviewedForClustering: true,
+    }).connections).toEqual([{ target: "generator-target", type: connection!.type }]);
+  });
 });

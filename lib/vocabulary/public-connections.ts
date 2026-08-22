@@ -34,9 +34,11 @@ export function connectionsForClustering(
   records: PublicConnectionTargets,
   options: ClusteringConnectionOptions = {},
 ): VocabularyConnection[] {
-  const publicLinks = publicConnections(record, records);
+  // Materialize once because callers may provide a one-shot generator.
+  const knownRecords = [...records];
+  const publicLinks = publicConnections(record, knownRecords);
   if (!options.includeLegacyUnreviewedForClustering) return publicLinks;
-  const targets = publicTargetLemmas(records);
+  const targets = publicTargetLemmas(knownRecords);
   return [
     ...publicLinks,
     ...record.connections.filter((connection) => connection.status === "unreviewed" && targets.has(connection.target)),
