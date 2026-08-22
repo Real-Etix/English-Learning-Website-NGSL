@@ -80,3 +80,11 @@ as unrelated task-history.
   3 tests.
 - Verification: `npx tsc --noEmit` exited 0. `npm run lint` exited 0 with the two
   pre-existing unused-variable warnings in `lib/galaxy/build-artifacts.ts`.
+
+### Browser Verification Limitations
+
+- The local Next development server was started with `npm run dev -- --hostname 0.0.0.0` and returned HTTP 200 for `/network/ngsl` when checked from the same host shell.
+- The required Codex in-app browser was initialized and attempted to navigate to `http://localhost:3000/network/ngsl` and the local network host. Its page remained an `ERR_CONNECTION_REFUSED` interstitial because the browser surface cannot reach the escalated local server namespace.
+- Chrome/extension browser surfaces were unavailable.
+- Therefore desktop/narrow visual interaction checks of this current unpushed branch could not be completed in this environment; no fabricated success is reported. Existing focused render tests, typecheck, and build are the available verification.
+- The Free Dictionary fallback was not exercised in the browser because the current app could not be reached; the code-level fallback/render tests are recorded elsewhere.
