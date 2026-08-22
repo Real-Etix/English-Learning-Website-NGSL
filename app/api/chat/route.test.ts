@@ -42,7 +42,17 @@ function record(): VocabularyRecord {
       { ...source.senses[0]!, id: "bank:money", definition: "a financial institution", status: "published" as const },
       { ...source.senses[0]!, id: "bank:tilt", definition: "to tilt while turning", status: "published" as const },
     ],
+    connections: [
+      { ...source.connections[0]!, target: "study", gloss: "  Known authored connection.  ", status: "published" as const },
+      { ...source.connections[0]!, target: "missing", gloss: "Missing authored connection.", status: "published" as const },
+      { ...source.connections[0]!, target: "hidden", gloss: "Hidden authored connection.", status: "published" as const },
+    ],
   };
+}
+
+function targetRecord(lemma: string, publicationStatus: VocabularyRecord["publicationStatus"] = "published"): VocabularyRecord {
+  const source = vocabularyRecordFixture();
+  return { ...source, lemma, display: lemma, publicationStatus };
 }
 
 describe("POST /api/chat", () => {
@@ -52,7 +62,10 @@ describe("POST /api/chat", () => {
     mocks.rateLimit.mockReturnValue({ ok: true, remaining: 14, retryAfterSec: 0 });
     mocks.clientIp.mockReturnValue("test-client");
     mocks.getListVocab.mockResolvedValue({ ngsl: { title: "NGSL", words: ["bank"] } });
-    mocks.loadGeneratedWord.mockResolvedValue(record());
+    const word = record();
+    mocks.loadGeneratedWord.mockImplementation((lemma: string) => Promise.resolve(
+      lemma === "bank" ? word : lemma === "study" ? targetRecord("study") : lemma === "hidden" ? targetRecord("hidden", "hidden") : null,
+    ));
     mocks.completeChat.mockResolvedValue("grounded reply");
   });
 
@@ -90,11 +103,52 @@ describe("POST /api/chat", () => {
     expect(sent).toHaveLength(9);
     expect(sent[0].content).toContain("to tilt while turning");
     expect(sent[0].content).not.toContain("a financial institution");
+    expect(sent[0].content).toContain("  Known authored connection.  ");
+    expect(sent[0].content).not.toContain("Missing authored connection.");
+    expect(sent[0].content).not.toContain("Hidden authored connection.");
+    expect(mocks.loadGeneratedWord).toHaveBeenCalledWith("study");
+    expect(mocks.loadGeneratedWord).toHaveBeenCalledWith("missing");
+    expect(mocks.loadGeneratedWord).toHaveBeenCalledWith("hidden");
     expect(sent[1].content).toBe("message 3");
 
     mocks.rateLimit.mockReturnValue({ ok: false, remaining: 0, retryAfterSec: 9 });
     const blocked = await POST(request({ messages: [{ role: "user", content: "Again" }] }));
     expect(blocked.status).toBe(429);
     expect(mocks.completeChat).toHaveBeenCalledTimes(1);
+  });
+
+  it("uses the first published sense only when senseId is omitted", async () => {
+    const word = record();
+    word.senses[0] = { ...word.senses[0]!, status: "hidden" };
+    mocks.loadGeneratedWord.mockImplementation((lemma: string) => Promise.resolve(
+      lemma === "bank" ? word : lemma === "study" ? targetRecord("study") : lemma === "hidden" ? targetRecord("hidden", "hidden") : null,
+    ));
+
+    const response = await POST(request({ messages: [{ role: "user", content: "What is it?" }], lemma: "bank" }));
+
+    expect(response.status).toBe(200);
+    expect(mocks.completeChat.mock.calls[0]![0][0].content).toContain("to tilt while turning");
+    expect(mocks.completeChat.mock.calls[0]![0][0].content).not.toContain("a financial institution");
+  });
+
+  it.each([null, 42, {}, "", "   "]) ("rejects an explicitly malformed senseId (%j) without calling the LLM", async (senseId) => {
+    const response = await POST(request({ messages: [{ role: "user", content: "Help" }], lemma: "bank", senseId }));
+
+    expect(response.status).toBe(400);
+    expect(mocks.completeChat).not.toHaveBeenCalled();
+  });
+
+  it("rejects an LLM-only selected definition", async () => {
+    const llmOnly = record();
+    llmOnly.senses[1] = {
+      ...llmOnly.senses[1]!,
+      sources: [{ ...llmOnly.senses[1]!.sources[0]!, sourceId: "llm" }],
+    };
+    mocks.loadGeneratedWord.mockImplementation((lemma: string) => Promise.resolve(lemma === "bank" ? llmOnly : null));
+
+    const response = await POST(request({ messages: [{ role: "user", content: "Help" }], lemma: "bank", senseId: "bank:tilt" }));
+
+    expect(response.status).toBe(409);
+    expect(mocks.completeChat).not.toHaveBeenCalled();
   });
 });

@@ -143,23 +143,30 @@ describe("buildTutorSenseContext", () => {
       definition: "Draft meaning that must not appear.",
       status: "draft" as const,
     };
+    const authoredGloss = "  Published connection explanation.  ";
     const context = buildTutorSenseContext({
       ...record,
       lemma: "bank",
       display: "bank",
       senses: [selected, other, draft],
       connections: [
-        { ...record.connections[0]!, target: "ledger", gloss: "Published connection explanation.", status: "published" as const },
-        { ...record.connections[0]!, target: "hidden-link", gloss: "Hidden connection explanation.", status: "hidden" as const },
+        { ...record.connections[0]!, target: "ledger", gloss: authoredGloss, status: "published" as const },
+        { ...record.connections[0]!, target: "hidden-link", gloss: "Hidden connection explanation.", status: "published" as const },
         { ...record.connections[0]!, target: "unglossed-link", gloss: null, status: "published" as const },
+        { ...record.connections[0]!, target: "missing-link", gloss: "Missing target explanation.", status: "published" as const },
         ...Array.from({ length: 12 }, (_, index) => ({
           ...record.connections[0]!,
-          target: `published-link-${index + 1}`,
+          target: `known-link-${index + 1}`,
           gloss: `Published link explanation ${index + 1}.`,
           status: "published" as const,
         })),
       ],
-    }, selected.id);
+    }, selected.id, [
+      { lemma: "bank", publicationStatus: "published" as const },
+      { lemma: "ledger", publicationStatus: "published" as const },
+      { lemma: "hidden-link", publicationStatus: "hidden" as const },
+      ...Array.from({ length: 12 }, (_, index) => ({ lemma: `known-link-${index + 1}`, publicationStatus: "published" as const })),
+    ]);
 
     expect(context).toContain("a financial institution that keeps money");
     expect(context).not.toContain("to tilt an airplane while turning");
@@ -170,14 +177,34 @@ describe("buildTutorSenseContext", () => {
     expect(context).toContain("selected collocation 2");
     expect(context).toContain("selected mistake 2");
     expect(context).not.toContain("other-sense pattern");
+    expect(context).toContain(authoredGloss);
     expect(context).toContain("Published link explanation 11.");
     expect(context).not.toContain("Published link explanation 12.");
     expect(context).not.toContain("Hidden connection explanation.");
+    expect(context).not.toContain("Missing target explanation.");
     expect(context).not.toContain("unglossed-link");
     expect(context?.endsWith("Do not invent missing usage guidance or relationships.")).toBe(true);
   });
 
   it("returns null instead of falling back when a requested sense does not belong to the record", () => {
     expect(buildTutorSenseContext(vocabularyRecordFixture(), "other-word:sense")).toBeNull();
+  });
+
+  it("rejects an LLM-only selected definition while allowing the explicit verified empty-source policy", () => {
+    const record = vocabularyRecordFixture();
+    const llmSource = { ...record.sources[0]!, sourceId: "llm" as const };
+    const llmOnly = {
+      ...record,
+      senses: [{ ...record.senses[0]!, sources: [llmSource], status: "published" as const }],
+    };
+    expect(buildTutorSenseContext(llmOnly, llmOnly.senses[0]!.id)).toBeNull();
+
+    const verifiedWithoutSource = {
+      ...record,
+      status: "verified" as const,
+      sources: [],
+      senses: [{ ...record.senses[0]!, sources: [], status: "published" as const }],
+    };
+    expect(buildTutorSenseContext(verifiedWithoutSource, verifiedWithoutSource.senses[0]!.id)).not.toBeNull();
   });
 });

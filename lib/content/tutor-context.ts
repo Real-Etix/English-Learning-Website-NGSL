@@ -1,11 +1,20 @@
-import { isFactualSourceId } from "../vocabulary/source-evidence";
+import { evidenceForSources, isFactualSourceId } from "../vocabulary/source-evidence";
+import { publicConnections } from "../vocabulary/public-connections";
 import type { VocabularyRecord, VocabularySense } from "../vocabulary/schema";
 import type { WordLearningProfile } from "./word-learning";
 
 const ANTI_FABRICATION_INSTRUCTION = "Do not invent missing usage guidance or relationships.";
 
-function hasFactualSource(sources: { sourceId: string }[]): boolean {
+function hasFactualSource(sources: readonly { sourceId: string }[]): boolean {
   return sources.some((source) => isFactualSourceId(source.sourceId));
+}
+
+function hasDefinitionEvidence(record: VocabularyRecord, sense: VocabularySense): boolean {
+  return evidenceForSources(sense.sources, {
+    verified: record.status === "verified",
+    allowVerifiedWithoutFactualSource:
+      record.status === "verified" && sense.sources.length === 0 && record.sources.length === 0,
+  }) !== "ai-draft";
 }
 
 function publishedGuidance(sense: VocabularySense): string[] {
@@ -23,10 +32,15 @@ function publishedGuidance(sense: VocabularySense): string[] {
 }
 
 /** Builds a bounded tutor reference for one exact, published canonical sense. */
-export function buildTutorSenseContext(record: VocabularyRecord, senseId: string): string | null {
+export function buildTutorSenseContext(
+  record: VocabularyRecord,
+  senseId: string,
+  knownRecords: Iterable<Pick<VocabularyRecord, "lemma" | "publicationStatus">> = [],
+): string | null {
   if (record.publicationStatus !== "published") return null;
   const sense = record.senses.find((candidate) => candidate.id === senseId);
   if (!sense || sense.status !== "published") return null;
+  if (!hasDefinitionEvidence(record, sense)) return null;
 
   const lines = [
     "Open word reference:",
@@ -47,9 +61,7 @@ export function buildTutorSenseContext(record: VocabularyRecord, senseId: string
     lines.push("Published usage guidance:");
     for (const item of guidance) lines.push(`- ${item}`);
   }
-  const connections = record.connections
-    .filter((connection) => connection.status === "published" && Boolean(connection.gloss?.trim()))
-    .slice(0, 12);
+  const connections = publicConnections(record, knownRecords).slice(0, 12);
   if (connections.length > 0) {
     lines.push("Authored connection explanations:");
     for (const connection of connections) lines.push(`- ${connection.type} → ${connection.target} — ${connection.gloss}`);

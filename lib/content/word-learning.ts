@@ -13,6 +13,7 @@ export type LearningSense = {
   example: string | null;
   source: "wiki" | "dictionaryapi";
   primary: boolean;
+  published?: boolean;
   canClaim?: boolean;
   claimBlockReason?: string | null;
 };
@@ -106,6 +107,7 @@ function addSense(
     example: sense.example,
     source: sense.source,
     primary: false,
+    published: sense.published,
     canClaim: sense.canClaim,
     claimBlockReason: sense.claimBlockReason,
   });
@@ -214,6 +216,7 @@ export function buildWordLearningProfile(
       partOfSpeech: sense.partOfSpeech,
       definition: sense.definition,
       example: sense.examples[0]?.text ?? null,
+      published: sense.status === "published",
       canClaim: readiness.canClaim,
       claimBlockReason: readiness.reason,
     });
@@ -226,6 +229,7 @@ export function buildWordLearningProfile(
       partOfSpeech: sense.partOfSpeech || record.partOfSpeech,
       definition: sense.definition,
       example: sense.example,
+      published: false,
       canClaim: false,
       claimBlockReason: "This meaning needs to be imported and published before it can be claimed.",
     });

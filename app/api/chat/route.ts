@@ -46,6 +46,11 @@ export async function POST(request: Request) {
     return Response.json({ error: "invalid request" }, { status: 400 });
   }
 
+  const hasExplicitSenseId = Object.prototype.hasOwnProperty.call(body, "senseId");
+  if (hasExplicitSenseId && (typeof body.senseId !== "string" || !body.senseId.trim())) {
+    return Response.json({ error: "invalid senseId" }, { status: 400 });
+  }
+
   const history = (body.messages ?? [])
     .filter((m) => m.role === "user" || m.role === "assistant")
     .slice(-8);
@@ -64,7 +69,7 @@ export async function POST(request: Request) {
 
   // Ground the tutor in the open star's demand-loaded learner profile.
   let starBlock = "";
-  if (typeof body.senseId === "string" && !body.lemma) {
+  if (hasExplicitSenseId && !body.lemma) {
     return Response.json({ error: "senseId requires lemma" }, { status: 400 });
   }
   if (body.lemma) {
@@ -75,7 +80,7 @@ export async function POST(request: Request) {
     if (record.publicationStatus !== "published") {
       return Response.json({ error: "This word is not available for learning." }, { status: 409 });
     }
-    const requestedSense = typeof body.senseId === "string"
+    const requestedSense = hasExplicitSenseId
       ? record.senses.find((sense) => sense.id === body.senseId)
       : record.senses.find((sense) => sense.status === "published");
     if (!requestedSense) {
@@ -84,7 +89,10 @@ export async function POST(request: Request) {
     if (requestedSense.status !== "published") {
       return Response.json({ error: "This meaning is not published yet." }, { status: 409 });
     }
-    const context = buildTutorSenseContext(record, requestedSense.id);
+    const connectionTargets = (await Promise.all(
+      record.connections.map((connection) => loadGeneratedWord(connection.target)),
+    )).flatMap((target) => target ? [target] : []);
+    const context = buildTutorSenseContext(record, requestedSense.id, [record, ...connectionTargets]);
     if (!context) return Response.json({ error: "This meaning is not available for learning." }, { status: 409 });
     starBlock = `\n\nThe learner has this word open. Ground your answer only in this reference:\n${context}`;
   }
