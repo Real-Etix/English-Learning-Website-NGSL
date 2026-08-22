@@ -17,6 +17,7 @@
     "seed:spaces": "tsx scripts/seed-spaces.ts",
     "build:graphs": "tsx scripts/build-graph-data.ts && tsx scripts/build-galaxy-assets.ts",
     "migrate:vocabulary": "tsx scripts/migrate-wiki-to-ndjson.ts",
+    "validate:vocabulary-migration": "tsx scripts/validate-vocabulary-migration.ts",
     "schema:vocabulary": "tsx scripts/generate-vocabulary-schema.ts",
     "import:lists": "tsx scripts/import-ngsl.ts",
     "generate:enrichments": "tsx scripts/generate-enrichments.ts",
