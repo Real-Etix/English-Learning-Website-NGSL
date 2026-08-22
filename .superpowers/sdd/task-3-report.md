@@ -126,3 +126,22 @@ This review fix changes only the profile compatibility and drawer loading/failur
 ## Scope
 
 - Solid held words retain the existing compose action while keeping the used-state label and visual treatment. Profile fallback behavior, tab markup, and audio behavior are unchanged.
+
+---
+
+# Dictionary v2 Task 3 Review Fix: Pronunciation Media-Error Fallback
+
+## TDD evidence
+
+- RED: `npx vitest run components/network/pronunciation-playback.test.ts` failed with `Cannot find module './pronunciation-playback'`, proving the helper for the late media-error path did not exist.
+- GREEN: after adding the one-shot guarded playback helper and wiring it into Star Atlas, the same command passed (`1` test).
+
+## Verification
+
+- `npx vitest run components/network/pronunciation-playback.test.ts` passed (`1` test). The regression emits an `error` event as `play()` begins and then rejects the pending playback promise; browser speech runs exactly once.
+- `npx tsc --noEmit` passed with no output/errors.
+- `npm run lint` completed with `0` errors. It retains the two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset`.
+
+## Scope
+
+- Added a pre-playback, one-shot `error` listener with a shared guard for both media errors and `play()` rejection. Regional URL selection and the existing speech callback are preserved. Profile fallback, tab panels, and compose behavior are unchanged.

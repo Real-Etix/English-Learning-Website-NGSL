@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "r
 
 import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
 import { WordLearningDrawer } from "@/components/network/word-learning-drawer";
+import { playAudioWithSpeechFallback } from "@/components/network/pronunciation-playback";
 import { resolveWordLearningProfile, type WordLearningResponse } from "@/components/network/word-learning-response";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
 import {
@@ -1017,7 +1018,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     if (!audioUrl) { speak(); return; }
     try {
       const audio = new Audio(audioUrl);
-      void audio.play().catch(() => speak());
+      playAudioWithSpeechFallback(audio, speak);
     } catch {
       speak();
     }
