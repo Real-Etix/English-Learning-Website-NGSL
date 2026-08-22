@@ -14,12 +14,12 @@ function normalizeIdentityText(value: string): string {
 
 /** Creates a stable identity without changing the source wording persisted on the sense. */
 export function senseIdFor(input: SenseIdInput): string {
-  const material = [
+  const material = JSON.stringify([
     normalizeIdentityText(input.lemma),
     normalizeIdentityText(input.sourceId),
     normalizeIdentityText(input.externalId),
     normalizeIdentityText(input.partOfSpeech),
     normalizeIdentityText(input.definition),
-  ].join("\u0000");
+  ]);
   return `source-${createHash("sha256").update(material, "utf8").digest("hex").slice(0, 20)}`;
 }

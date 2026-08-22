@@ -112,6 +112,64 @@ describe("importDictionaryDetail", () => {
     expect(second.record.senses[1]?.id).not.toBe(second.record.senses[2]?.id);
   });
 
+  it("preserves distinct external IDs and URLs from multiple dictionary entries", () => {
+    const multiEntryDetail: WordDetail = {
+      ipa: null,
+      audioUk: null,
+      audioUs: null,
+      audioAny: null,
+      senses: [
+        {
+          partOfSpeech: "noun",
+          definition: "A financial institution.",
+          example: null,
+          sourceEntryId: "bank-noun",
+          sourceUrl: "https://dictionaryapi.dev/entries/bank-noun",
+        },
+        {
+          partOfSpeech: "verb",
+          definition: "To tilt an aircraft.",
+          example: null,
+          sourceEntryId: "bank-verb",
+          sourceUrl: "https://dictionaryapi.dev/entries/bank-verb",
+        },
+      ],
+      synonyms: [],
+    };
+
+    const result = importDictionaryDetail(record(), multiEntryDetail, dictionarySource);
+
+    expect(result.record.senses.slice(1).map((sense) => ({
+      externalId: sense.sources[0]?.externalId,
+      url: sense.sources[0]?.url,
+    }))).toEqual([
+      { externalId: "bank-noun", url: "https://dictionaryapi.dev/entries/bank-noun" },
+      { externalId: "bank-verb", url: "https://dictionaryapi.dev/entries/bank-verb" },
+    ]);
+  });
+
+  it("is idempotent when source entries are reordered without external IDs", () => {
+    const senses = [
+      { partOfSpeech: "noun", definition: "A financial institution.", example: null },
+      { partOfSpeech: "verb", definition: "To tilt an aircraft.", example: null },
+    ];
+    const firstDetail: WordDetail = {
+      ipa: null,
+      audioUk: null,
+      audioUs: null,
+      audioAny: null,
+      senses,
+      synonyms: [],
+    };
+    const reorderedDetail: WordDetail = { ...firstDetail, senses: [...senses].reverse() };
+
+    const first = importDictionaryDetail(record(), firstDetail, dictionarySource);
+    const second = importDictionaryDetail(first.record, reorderedDetail, dictionarySource);
+
+    expect(second.changed).toBe(false);
+    expect(second.record).toEqual(first.record);
+  });
+
   it("rejects a non-factual import source", () => {
     expect(() => importDictionaryDetail(record(), detail, {
       ...dictionarySource,

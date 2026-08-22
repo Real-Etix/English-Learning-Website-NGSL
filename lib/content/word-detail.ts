@@ -46,6 +46,16 @@ type ApiEntry = {
   }>;
 };
 
+type EntryProvenance = {
+  entryId?: string;
+  url?: string | null;
+};
+
+type PhoneticMatch = {
+  value: string;
+  entry: ApiEntry;
+};
+
 const EMPTY: WordDetail = {
   ipa: null,
   audioUk: null,
@@ -64,21 +74,39 @@ export async function fetchWordDetail(word: string): Promise<WordDetail> {
     if (!res.ok) return EMPTY;
     const data = (await res.json()) as ApiEntry[];
 
-    const phonetics = data.flatMap((e) => e.phonetics ?? []);
-    const sourceEntry = data.find((entry) => entry.word)?.word;
-    const sourceUrl = data.flatMap((entry) => entry.sourceUrls ?? []).find(Boolean) ?? null;
-    const sourceMetadata = sourceEntry ? { entryId: sourceEntry, url: sourceUrl } : undefined;
-    const ipa =
-      data.find((e) => e.phonetic)?.phonetic ??
-      phonetics.find((p) => p.text)?.text ??
-      null;
-
-    const audioFor = (region: string) =>
-      phonetics.find((p) => p.audio && p.audio.includes(`-${region}.`))?.audio ?? null;
-    const audioAny = phonetics.find((p) => p.audio)?.audio ?? null;
+    const entryProvenance = (entry: ApiEntry): EntryProvenance => ({
+      ...(entry.word ? { entryId: entry.word } : {}),
+      url: entry.sourceUrls?.find(Boolean) ?? null,
+    });
+    const sourceMetadataFor = (entry: ApiEntry): DictionarySourceMetadata | undefined => {
+      const provenance = entryProvenance(entry);
+      return provenance.entryId || provenance.url ? provenance : undefined;
+    };
+    const phoneticMatch = (
+      select: (phonetic: { text?: string; audio?: string }) => string | undefined,
+    ): PhoneticMatch | null => {
+      for (const entry of data) {
+        for (const phonetic of entry.phonetics ?? []) {
+          const value = select(phonetic);
+          if (value) return { value, entry };
+        }
+      }
+      return null;
+    };
+    const phoneticEntry = data.find((entry) => entry.phonetic);
+    const ipaEntry = phoneticEntry?.phonetic
+      ? { value: phoneticEntry.phonetic, entry: phoneticEntry }
+      : phoneticMatch((phonetic) => phonetic.text);
+    const audioFor = (region: string) => phoneticMatch((phonetic) =>
+      phonetic.audio?.includes(`-${region}.`) ? phonetic.audio : undefined,
+    );
+    const audioUk = audioFor("uk");
+    const audioUs = audioFor("us");
+    const audioAny = phoneticMatch((phonetic) => phonetic.audio);
 
     const senses: DictionarySense[] = [];
     for (const entry of data) {
+      const provenance = entryProvenance(entry);
       for (const meaning of entry.meanings ?? []) {
         for (const def of meaning.definitions ?? []) {
           if (!def.definition) continue;
@@ -86,7 +114,8 @@ export async function fetchWordDetail(word: string): Promise<WordDetail> {
             partOfSpeech: meaning.partOfSpeech ?? "",
             definition: def.definition,
             example: def.example ?? null,
-            ...(sourceEntry ? { sourceEntryId: sourceEntry, sourceUrl } : {}),
+            ...(provenance.entryId ? { sourceEntryId: provenance.entryId } : {}),
+            ...(provenance.url ? { sourceUrl: provenance.url } : {}),
           });
         }
       }
@@ -97,16 +126,18 @@ export async function fetchWordDetail(word: string): Promise<WordDetail> {
     ).slice(0, 8);
 
     return {
-      ipa,
-      audioUk: audioFor("uk"),
-      audioUs: audioFor("us"),
-      audioAny,
-      ...(sourceEntry ? { sourceEntryId: sourceEntry, sourceUrl } : {}),
+      ipa: ipaEntry?.value ?? null,
+      audioUk: audioUk?.value ?? null,
+      audioUs: audioUs?.value ?? null,
+      audioAny: audioAny?.value ?? null,
+      ...(data.length === 1 && data[0]?.word ? { sourceEntryId: data[0].word } : {}),
+      ...(data.length === 1 && data[0]?.sourceUrls?.find(Boolean)
+        ? { sourceUrl: data[0].sourceUrls.find(Boolean) } : {}),
       pronunciationSources: {
-        ...(ipa ? { ipa: sourceMetadata } : {}),
-        ...(audioFor("uk") ? { audioUk: sourceMetadata } : {}),
-        ...(audioFor("us") ? { audioUs: sourceMetadata } : {}),
-        ...(audioAny ? { audioAny: sourceMetadata } : {}),
+        ...(ipaEntry ? { ipa: sourceMetadataFor(ipaEntry.entry) } : {}),
+        ...(audioUk ? { audioUk: sourceMetadataFor(audioUk.entry) } : {}),
+        ...(audioUs ? { audioUs: sourceMetadataFor(audioUs.entry) } : {}),
+        ...(audioAny ? { audioAny: sourceMetadataFor(audioAny.entry) } : {}),
       },
       senses: senses.slice(0, 6),
       synonyms,

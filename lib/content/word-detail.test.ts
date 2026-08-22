@@ -47,4 +47,38 @@ describe("fetchWordDetail", () => {
       synonyms: [],
     });
   });
+
+  it("keeps provenance attached to the response entry that supplied each sense", async () => {
+    vi.stubGlobal("fetch", vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => [
+        {
+          word: "bank",
+          sourceUrls: ["https://dictionaryapi.dev/entries/bank-noun"],
+          meanings: [{ partOfSpeech: "noun", definitions: [{ definition: "A financial institution." }] }],
+        },
+        {
+          word: "bank",
+          sourceUrls: ["https://dictionaryapi.dev/entries/bank-verb"],
+          meanings: [{ partOfSpeech: "verb", definitions: [{ definition: "To tilt an aircraft." }] }],
+        },
+      ],
+    }));
+
+    const result = await fetchWordDetail("bank");
+
+    expect(result).not.toHaveProperty("sourceEntryId");
+    expect(result.senses).toEqual([
+      expect.objectContaining({
+        definition: "A financial institution.",
+        sourceEntryId: "bank",
+        sourceUrl: "https://dictionaryapi.dev/entries/bank-noun",
+      }),
+      expect.objectContaining({
+        definition: "To tilt an aircraft.",
+        sourceEntryId: "bank",
+        sourceUrl: "https://dictionaryapi.dev/entries/bank-verb",
+      }),
+    ]);
+  });
 });

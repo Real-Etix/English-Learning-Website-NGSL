@@ -46,4 +46,11 @@ describe("source evidence", () => {
     })).toBe("verified");
     expect(evidenceForSources([], { verified: true })).toBe("ai-draft");
   });
+
+  it("never treats a verified LLM-only record as factual", () => {
+    expect(evidenceForSources([sourceRef("llm")], {
+      verified: true,
+      allowVerifiedWithoutFactualSource: true,
+    })).toBe("ai-draft");
+  });
 });

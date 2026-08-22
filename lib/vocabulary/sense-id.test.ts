@@ -23,4 +23,23 @@ describe("senseIdFor", () => {
   it("keeps different external source senses separate", () => {
     expect(senseIdFor(input)).not.toBe(senseIdFor({ ...input, externalId: "bank.n.02" }));
   });
+
+  it("does not collide when identity fields contain the old separator character", () => {
+    const first = senseIdFor({
+      lemma: "a",
+      sourceId: "b",
+      externalId: "c",
+      partOfSpeech: "d",
+      definition: "e\u0000f",
+    });
+    const second = senseIdFor({
+      lemma: "a",
+      sourceId: "b",
+      externalId: "c",
+      partOfSpeech: "d\u0000e",
+      definition: "f",
+    });
+
+    expect(first).not.toBe(second);
+  });
 });

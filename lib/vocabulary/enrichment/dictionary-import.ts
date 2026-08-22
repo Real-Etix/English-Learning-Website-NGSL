@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+
 import type { WordDetail } from "../../content/word-detail";
 import { VocabularyRecordSchema, type ContentSourceRef, type VocabularyRecord } from "../schema";
 import { senseIdFor } from "../sense-id";
@@ -37,12 +39,27 @@ function sourceRef(
   };
 }
 
-function senseExternalId(record: VocabularyRecord, detail: WordDetail, index: number): string {
-  const sense = detail.senses[index]!;
+function normalizeFallbackText(value: string | null | undefined): string {
+  return (value ?? "").trim().toLowerCase().replace(/\s+/g, " ");
+}
+
+function fallbackExternalId(record: VocabularyRecord, detail: WordDetail, sense: WordDetail["senses"][number]): string {
+  const material = JSON.stringify([
+    normalizeFallbackText(record.lemma),
+    normalizeFallbackText(sense.sourceEntryId ?? detail.sourceEntryId),
+    normalizeFallbackText(sense.sourceUrl ?? detail.sourceUrl),
+    normalizeFallbackText(sense.partOfSpeech || record.partOfSpeech),
+    normalizeFallbackText(sense.definition),
+    normalizeFallbackText(sense.example),
+  ]);
+  return `content-${createHash("sha256").update(material, "utf8").digest("hex").slice(0, 20)}`;
+}
+
+function senseExternalId(record: VocabularyRecord, detail: WordDetail, sense: WordDetail["senses"][number]): string {
   return sense.sourceSenseId
     ?? sense.sourceEntryId
     ?? detail.sourceEntryId
-    ?? `${record.lemma}:${sense.partOfSpeech || record.partOfSpeech}:${index + 1}`;
+    ?? fallbackExternalId(record, detail, sense);
 }
 
 function appendPronunciation(
@@ -81,9 +98,9 @@ export function importDictionaryDetail(
     : [...record.sources, entrySource];
   let senses = record.senses;
 
-  detail.senses.forEach((sense, index) => {
+  detail.senses.forEach((sense) => {
     if (!sense.definition.trim()) return;
-    const externalId = senseExternalId(record, detail, index);
+    const externalId = senseExternalId(record, detail, sense);
     const senseSource = sourceRef(source, externalId, sense.sourceUrl ?? entryUrl);
     const id = senseIdFor({
       lemma: record.lemma,

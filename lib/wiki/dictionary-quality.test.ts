@@ -117,4 +117,13 @@ describe("auditDictionaryRecords", () => {
     expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [] })]))).toBe(false);
     expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [{ ...source, sourceId: "llm" }, { ...source, sourceId: "wordnet" }] })]))).toBe(false);
   });
+
+  it("does not classify a verified LLM-only record as verified evidence", () => {
+    const report = auditDictionaryRecords([record({
+      status: "verified",
+      sources: [{ ...source, sourceId: "llm" }],
+    })]);
+
+    expect(report.total.evidence).toEqual({ verified: 0, sourceBacked: 0, aiDraft: 1 });
+  });
 });

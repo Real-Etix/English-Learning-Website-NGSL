@@ -30,7 +30,9 @@ export function evidenceForSources(
   options: { verified: boolean; allowVerifiedWithoutFactualSource?: boolean },
 ): SourceEvidence {
   if (!sources.some((source) => isFactualSourceId(source.sourceId))) {
-    return options.verified && options.allowVerifiedWithoutFactualSource ? "verified" : "ai-draft";
+    return sources.length === 0 && options.verified && options.allowVerifiedWithoutFactualSource
+      ? "verified"
+      : "ai-draft";
   }
   return options.verified ? "verified" : "source-backed";
 }
