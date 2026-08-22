@@ -1,5 +1,5 @@
 import type { VocabularyRecord } from "../vocabulary/schema";
-import { evidenceForSources } from "../vocabulary/source-evidence";
+import { evidenceForSources, sourceRefsForSense } from "../vocabulary/source-evidence";
 
 export type DictionaryEvidenceCounts = {
   verified: number;
@@ -50,7 +50,8 @@ function emptyCounts(): DictionaryQualityCounts {
 }
 
 function evidenceFor(record: VocabularyRecord): keyof DictionaryEvidenceCounts {
-  const evidence = evidenceForSources(record.sources, {
+  const primarySense = record.senses[0];
+  const evidence = evidenceForSources(primarySense ? sourceRefsForSense(record, primarySense) : record.sources, {
     verified: record.status === "verified",
     allowVerifiedWithoutFactualSource: true,
   });

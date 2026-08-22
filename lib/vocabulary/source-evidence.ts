@@ -1,6 +1,12 @@
 import sourceRegistryFile from "../../content/vocabulary/sources.json";
 
-import { SourceRegistrySchema, type ContentSourceRef, type SourceRegistryEntry } from "./schema";
+import {
+  SourceRegistrySchema,
+  type ContentSourceRef,
+  type SourceRegistryEntry,
+  type VocabularyRecord,
+  type VocabularySense,
+} from "./schema";
 
 export type SourceEvidence = "verified" | "source-backed" | "ai-draft";
 
@@ -16,6 +22,14 @@ export function sourceEntryFor(sourceId: string): SourceRegistryEntry {
 
 export function isFactualSourceId(sourceId: string): boolean {
   return sourceEntryFor(sourceId).factual;
+}
+
+/** Sense evidence is authoritative; record evidence is only a legacy fallback for source-less senses. */
+export function sourceRefsForSense(
+  record: Pick<VocabularyRecord, "sources">,
+  sense: Pick<VocabularySense, "sources">,
+): readonly ContentSourceRef[] {
+  return sense.sources.length > 0 ? sense.sources : record.sources;
 }
 
 /** Curated wording wins over factual imports, which in turn win over LLM drafts. */

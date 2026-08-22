@@ -50,7 +50,12 @@ describe("auditDictionaryRecords", () => {
         tier: "advanced",
         lists: [{ id: "ngsl", rank: 1, sfi: 70 }, { id: "academic", rank: 1, sfi: 70 }],
         sources: [{ ...source, sourceId: "llm" }],
-        senses: [sense({ partOfSpeech: "unknown", definition: "Definition pending — needs review.", examples: [] })],
+        senses: [sense({
+          sources: [{ ...source, sourceId: "llm" }],
+          partOfSpeech: "unknown",
+          definition: "Definition pending — needs review.",
+          examples: [],
+        })],
         connections: [connection({ type: "builds_on", target: "anchor", gloss: null }), connection({ target: "support", gloss: " " })],
       }),
       record({
@@ -58,14 +63,14 @@ describe("auditDictionaryRecords", () => {
         lists: [{ id: "academic", rank: 1, sfi: 70 }],
         status: "verified",
         sources: [],
-        senses: [sense({ examples: [] })],
+        senses: [sense({ sources: [], examples: [] })],
         connections: [],
       }),
       record({
         lemma: "draft-core",
         lists: [],
         sources: [{ ...source, sourceId: "llm" }],
-        senses: [sense({ partOfSpeech: "  " })],
+        senses: [sense({ sources: [{ ...source, sourceId: "llm" }], partOfSpeech: "  " })],
         connections: [connection({ type: "antonym", target: "support", gloss: null })],
       }),
     ]);
@@ -122,6 +127,22 @@ describe("auditDictionaryRecords", () => {
     const report = auditDictionaryRecords([record({
       status: "verified",
       sources: [{ ...source, sourceId: "llm" }],
+      senses: [sense({ sources: [{ ...source, sourceId: "llm" }] })],
+    })]);
+
+    expect(report.total.evidence).toEqual({ verified: 0, sourceBacked: 0, aiDraft: 1 });
+  });
+
+  it("scopes primary evidence to the primary sense in a mixed-source record", () => {
+    const llmSource = { ...source, sourceId: "llm" };
+    const dictionarySource = { ...source, sourceId: "dictionaryapi" };
+    const report = auditDictionaryRecords([record({
+      status: "verified",
+      sources: [llmSource, dictionarySource],
+      senses: [
+        sense({ id: "mixed-llm-primary", sources: [llmSource] }),
+        sense({ id: "mixed-dictionary-import", sources: [dictionarySource], status: "review" }),
+      ],
     })]);
 
     expect(report.total.evidence).toEqual({ verified: 0, sourceBacked: 0, aiDraft: 1 });

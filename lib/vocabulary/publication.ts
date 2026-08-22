@@ -4,7 +4,7 @@ import {
   type VocabularyRecord,
   type VocabularySense,
 } from "./schema";
-import { evidenceForSources } from "./source-evidence";
+import { evidenceForSources, sourceRefsForSense } from "./source-evidence";
 const PLACEHOLDER_CONTENT = /definition pending|needs a fuller dictionary source/i;
 
 function isUsableDefinition(value: string): boolean {
@@ -19,7 +19,7 @@ function hasSourcedExample(sense: VocabularySense): boolean {
 
 /** Classifies one sense without treating LLM output as factual evidence. */
 export function factualEvidenceFor(record: VocabularyRecord, sense: VocabularySense): "verified" | "source-backed" | "ai-draft" {
-  return evidenceForSources([...record.sources, ...sense.sources], {
+  return evidenceForSources(sourceRefsForSense(record, sense), {
     verified: isUsableDefinition(sense.definition) && (record.status === "verified" || sense.status === "published"),
   });
 }

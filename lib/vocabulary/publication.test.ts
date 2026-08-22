@@ -5,6 +5,7 @@ import { decodeFullGalaxy } from "../galaxy/full-codec";
 import { buildListGraph, toLiteGraph } from "./graph";
 import { toGraphInput, toPublicGraphInputs } from "./graph-input";
 import { factualEvidenceFor, isLearnerConnection, isSensePublishable, isWordPublic, publicationStatusFor } from "./publication";
+import type { VocabularyRecord } from "./schema";
 import { vocabularyRecordFixture } from "./test-fixtures";
 
 const sourceRef = (sourceId: string) => ({
@@ -41,6 +42,35 @@ function advancedFixture() {
   return { core, advanced };
 }
 
+function mixedSourceFixture(status: VocabularyRecord["status"]): VocabularyRecord {
+  const fixture = vocabularyRecordFixture();
+  const llmSource = sourceRef("llm");
+  const dictionarySource = sourceRef("dictionaryapi");
+  return {
+    ...fixture,
+    lemma: "mixed",
+    display: "mixed",
+    status,
+    sources: [llmSource, dictionarySource],
+    senses: [
+      {
+        ...fixture.senses[0]!,
+        id: "mixed-llm-primary",
+        definition: "An existing LLM draft meaning.",
+        sources: [llmSource],
+        status: "published",
+      },
+      {
+        ...fixture.senses[0]!,
+        id: "mixed-dictionary-import",
+        definition: "A factual imported meaning.",
+        sources: [dictionarySource],
+        status: "review",
+      },
+    ],
+  };
+}
+
 describe("vocabulary publication", () => {
   it("hides an LLM-only advanced record", () => {
     const { advanced } = advancedFixture();
@@ -56,6 +86,17 @@ describe("vocabulary publication", () => {
 
     expect(publicationStatusFor(record)).toBe("published");
     expect(isWordPublic(record)).toBe(true);
+  });
+
+  it("scopes evidence to each sense when record sources are mixed", () => {
+    const verifiedRecord = mixedSourceFixture("verified");
+    const [llmSense, importedSense] = verifiedRecord.senses;
+
+    expect(factualEvidenceFor(verifiedRecord, llmSense!)).toBe("ai-draft");
+    expect(factualEvidenceFor(verifiedRecord, importedSense!)).toBe("verified");
+
+    const enrichedRecord = mixedSourceFixture("enriched");
+    expect(factualEvidenceFor(enrichedRecord, enrichedRecord.senses[1]!)).toBe("source-backed");
   });
 
   it("requires a sourced publishable sense and a glossed published connection to a public core word", () => {
