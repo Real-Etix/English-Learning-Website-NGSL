@@ -88,3 +88,22 @@ Implementation commit: `aa2fd22e9cf1277bc48b18fb4603f6415733da33`
 ## Scope
 
 This review fix changes only the profile compatibility and drawer loading/failure behavior. It intentionally does not address tab-panel IDs, solid-word composition, or media-error fallback.
+
+---
+
+# Dictionary v2 Task 3 Review Fix: Stable Accessible Tab Panels
+
+## TDD evidence
+
+- RED: `npx vitest run components/network/word-learning-drawer.test.tsx` failed as expected with `expected [ 'role="tabpanel"' ] to have a length of 3 but got 1`, proving that the three tabs did not all have rendered panel targets.
+- GREEN: after rendering one stable panel for each tab, the same focused test passed (`1` test).
+
+## Verification
+
+- `npx vitest run components/network/word-learning-drawer.test.tsx components/network/word-learning-drawer-model.test.ts` passed (`3` tests across `2` files).
+- `npx tsc --noEmit` passed with no output/errors.
+- `npm run lint` exited successfully with the two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset`; it reported no lint errors.
+
+## Scope
+
+- The drawer now renders all three `tabpanel` elements with matching `aria-labelledby` values. Inactive panels use `hidden` and `aria-hidden`, while the existing tab focus and keyboard behavior, content, Star Atlas styles, profile fallback, compose behavior, and audio behavior remain unchanged.
