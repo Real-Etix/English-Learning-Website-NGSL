@@ -2,6 +2,7 @@ import type { WordDetail } from "./word-detail";
 import { isLearnerConnection } from "../vocabulary/publication";
 import type { CollocationPhrase, CommonMistake, ContentSourceRef, UsagePattern, VocabularyRecord } from "../vocabulary/schema";
 import { evidenceForSources, isFactualSourceId, sourceEntryFor } from "../vocabulary/source-evidence";
+import { claimReadiness } from "../vocabulary/claim-readiness";
 
 export type LearningEvidence = "verified" | "source-backed" | "ai-draft";
 
@@ -12,6 +13,8 @@ export type LearningSense = {
   example: string | null;
   source: "wiki" | "dictionaryapi";
   primary: boolean;
+  canClaim?: boolean;
+  claimBlockReason?: string | null;
 };
 
 export type LearningExample = {
@@ -91,18 +94,20 @@ const isPlaceholder = (value: string) =>
 function addSense(
   senses: LearningSense[],
   seenDefinitions: Set<string>,
-  sense: Omit<LearningSense, "id" | "primary"> & { sourceIndex: number },
+  sense: Omit<LearningSense, "primary"> & { sourceIndex: number },
 ) {
   const normalizedDefinition = normalizeText(sense.definition);
   if (!normalizedDefinition || seenDefinitions.has(normalizedDefinition) || senses.length >= 6) return;
   seenDefinitions.add(normalizedDefinition);
   senses.push({
-    id: `${sense.source}:${sense.sourceIndex}`,
+    id: sense.id,
     partOfSpeech: sense.partOfSpeech,
     definition: sense.definition,
     example: sense.example,
     source: sense.source,
     primary: false,
+    canClaim: sense.canClaim,
+    claimBlockReason: sense.claimBlockReason,
   });
 }
 
@@ -197,22 +202,31 @@ export function buildWordLearningProfile(
 
   const senses: LearningSense[] = [];
   const seenDefinitions = new Set<string>();
-  if (!preferDictionaryPrimary && usableWikiDefinition) {
+  record.senses.forEach((sense, index) => {
+    if (index === 0 && preferDictionaryPrimary) return;
+    if (!normalizeText(sense.definition) || isPlaceholder(sense.definition)) return;
+    const readiness = claimReadiness(record, sense.id);
     addSense(senses, seenDefinitions, {
-      source: "wiki",
-      sourceIndex: 0,
-      partOfSpeech: primarySense?.partOfSpeech ?? record.partOfSpeech,
-      definition: primaryDefinition,
-      example: primaryExamples[0]?.text ?? null,
+      id: sense.id,
+      source: sense.sources.some((source) => source.sourceId === "dictionaryapi") ? "dictionaryapi" : "wiki",
+      sourceIndex: index,
+      partOfSpeech: sense.partOfSpeech,
+      definition: sense.definition,
+      example: sense.examples[0]?.text ?? null,
+      canClaim: readiness.canClaim,
+      claimBlockReason: readiness.reason,
     });
-  }
+  });
   dictionarySenses.forEach((sense, index) => {
     addSense(senses, seenDefinitions, {
+      id: `dictionaryapi:${index}`,
       source: "dictionaryapi",
       sourceIndex: index,
       partOfSpeech: sense.partOfSpeech || record.partOfSpeech,
       definition: sense.definition,
       example: sense.example,
+      canClaim: false,
+      claimBlockReason: "This meaning needs to be imported and published before it can be claimed.",
     });
   });
   if (senses[0]) senses[0].primary = true;

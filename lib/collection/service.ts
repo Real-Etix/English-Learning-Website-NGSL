@@ -4,6 +4,7 @@ import { prisma } from "@/lib/db";
 import { badgesFor, levelForXp, wordXp } from "@/lib/collection/xp";
 import { loadListGraph } from "@/lib/wiki/graph-store";
 import { openNdjsonRepository } from "@/lib/vocabulary/ndjson-repository";
+import { claimReadiness } from "@/lib/vocabulary/claim-readiness";
 
 /** Which collected lemmas are advanced-tier in the canonical vocabulary corpus. */
 async function countAdvanced(lemmas: string[]): Promise<number> {
@@ -41,9 +42,11 @@ export async function getOrCreateCollection(ownerToken: string) {
 }
 
 /** Add a word to the caller's collection. Returns whether it was newly added + xp gained. */
-export async function collectWord(ownerToken: string, lemma: string) {
+export async function collectWord(ownerToken: string, lemma: string, senseId?: string) {
   const record = await openNdjsonRepository().get(lemma);
   if (!record) return { added: false, error: "unknown word" as const };
+  const readiness = claimReadiness(record, senseId ?? "");
+  if (!readiness.canClaim) return { added: false, error: "not claimable" as const, reason: readiness.reason };
 
   const collection = await getOrCreateCollection(ownerToken);
   const xp = wordXp({ tier: record.tier, sfi: record.lists[0]?.sfi ?? null });

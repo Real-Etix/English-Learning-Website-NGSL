@@ -101,6 +101,8 @@ describe("WordLearningDrawer", () => {
         onClose={() => {}}
         onRetry={() => {}}
         onNavigate={() => {}}
+        selectedSenseId="wiki:0"
+        onSelectSense={() => {}}
         onOpenQuiz={() => {}}
         onCompose={() => {}}
         onSpeak={() => {}}
@@ -141,6 +143,8 @@ describe("WordLearningDrawer", () => {
         onClose={() => {}}
         onRetry={() => {}}
         onNavigate={() => {}}
+        selectedSenseId="wiki:0"
+        onSelectSense={() => {}}
         onOpenQuiz={() => {}}
         onCompose={() => {}}
         onSpeak={() => {}}
@@ -168,6 +172,8 @@ describe("WordLearningDrawer", () => {
         onClose={() => {}}
         onRetry={() => {}}
         onNavigate={() => {}}
+        selectedSenseId="wiki:0"
+        onSelectSense={() => {}}
         onOpenQuiz={() => {}}
         onCompose={() => {}}
         onSpeak={() => {}}
@@ -215,6 +221,8 @@ describe("WordLearningDrawer", () => {
         onClose={() => {}}
         onRetry={() => {}}
         onNavigate={() => {}}
+        selectedSenseId="wiki:0"
+        onSelectSense={() => {}}
         onOpenQuiz={() => {}}
         onCompose={() => {}}
         onSpeak={() => {}}
@@ -236,5 +244,49 @@ describe("WordLearningDrawer", () => {
     expect(emptyMarkup).toContain("No reviewed usage patterns yet.");
     expect(emptyMarkup).toContain("No reviewed collocation phrases yet.");
     expect(emptyMarkup).toContain("No reviewed common mistakes yet.");
+  });
+
+  it("marks the selected additional meaning as the claim target", () => {
+    const markup = renderToStaticMarkup(
+      <WordLearningDrawer
+        profile={{
+          ...profile,
+          senses: [profile.senses[0]!, {
+            id: "anchor:wordnet:2",
+            partOfSpeech: "verb",
+            definition: "to secure something firmly",
+            example: "Anchor the tent before the storm.",
+            source: "wiki",
+            primary: false,
+            canClaim: true,
+            claimBlockReason: null,
+          }],
+        }}
+        display="anchor"
+        partOfSpeech="noun"
+        loadState="ready"
+        errorMessage={null}
+        chart={{ name: "NGSL", hue: "#BFD9F2", glyph: "A" }}
+        held={false}
+        solid={false}
+        xp={10}
+        rarity={{ word: "Common", dot: "#BFD9F2", text: "1,000 words" }}
+        onClose={() => {}}
+        onRetry={() => {}}
+        onNavigate={() => {}}
+        selectedSenseId="anchor:wordnet:2"
+        onSelectSense={() => {}}
+        onOpenQuiz={() => {}}
+        onCompose={() => {}}
+        onSpeak={() => {}}
+        onPlayAudio={() => {}}
+        displayConnection={(lemma) => lemma}
+      />,
+    );
+
+    expect(markup).toContain('data-sense-id="anchor:wordnet:2"');
+    expect(markup).toContain('aria-pressed="true"');
+    expect(markup).toContain("Anchor the tent before the storm.");
+    expect(markup).not.toContain("The boat dropped anchor.");
   });
 });

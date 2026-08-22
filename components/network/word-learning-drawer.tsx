@@ -82,6 +82,8 @@ type WordLearningDrawerProps = {
   onClose: () => void;
   onRetry: () => void;
   onNavigate: (lemma: string) => void;
+  selectedSenseId: string | null;
+  onSelectSense: (senseId: string) => void;
   onOpenQuiz: () => void;
   onCompose: () => void;
   onSpeak: () => void;
@@ -129,6 +131,8 @@ export function WordLearningDrawer({
   onClose,
   onRetry,
   onNavigate,
+  selectedSenseId,
+  onSelectSense,
   onOpenQuiz,
   onCompose,
   onSpeak,
@@ -138,6 +142,14 @@ export function WordLearningDrawer({
   const [tab, setTab] = useState<Tab>("meaning");
   const tabsId = useId();
   const model = profile ? buildWordLearningDrawerModel(profile) : null;
+  const selectedSense = profile?.senses.find((sense) => sense.id === selectedSenseId)
+    ?? model?.primarySense
+    ?? null;
+  const selectedSenseCanClaim = selectedSense?.canClaim ?? profile?.canClaim ?? false;
+  const selectedSenseBlockReason = selectedSense?.claimBlockReason ?? profile?.claimBlockReason ?? null;
+  const selectedExamples = selectedSense?.example
+    ? [{ text: selectedSense.example, source: selectedSense.source }]
+    : [];
   const tabs: { id: Tab; label: string }[] = [
     { id: "meaning", label: "Meaning" },
     { id: "use", label: "Use" },
@@ -195,19 +207,19 @@ export function WordLearningDrawer({
             {item.id === "meaning" && (
               <>
                 {profile.evidence === "ai-draft" && <p style={{ margin: 0, padding: "11px 13px", borderRadius: 10, border: "1px solid rgba(232,168,159,.25)", background: "rgba(232,168,159,.07)", font: `400 12px/1.55 ${SS}`, color: "#E8A89F" }}>This meaning is an AI draft, not a sourced dictionary meaning.</p>}
-                {model.primarySense ? <Sense sense={model.primarySense} primary /> : <EmptyState>There is no meaning available for this word yet.</EmptyState>}
+                {model.primarySense ? <Sense sense={model.primarySense} primary selected={selectedSense?.id === model.primarySense.id} onSelect={onSelectSense} /> : <EmptyState>There is no meaning available for this word yet.</EmptyState>}
                 {model.otherSenses.length > 0 && <section aria-label="Additional meanings" style={{ display: "flex", flexDirection: "column", gap: 11 }}>
                   <h3 style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#94A0B4" }}>Other meanings</h3>
-                  {model.otherSenses.map((sense) => <Sense key={sense.id} sense={sense} />)}
+                  {model.otherSenses.map((sense) => <Sense key={sense.id} sense={sense} selected={selectedSense?.id === sense.id} onSelect={onSelectSense} />)}
                 </section>}
               </>
             )}
 
             {item.id === "use" && (
               <>
-                {model.examples.length > 0 ? <section aria-label="Examples" style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                {selectedExamples.length > 0 ? <section aria-label="Examples" style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   <h3 style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#94A0B4" }}>Examples</h3>
-                  {model.examples.map((example, index) => <blockquote key={`${example.text}-${index}`} style={{ margin: 0, padding: "13px 15px", borderLeft: "2px solid rgba(191,217,242,.4)", background: "rgba(191,217,242,.05)", borderRadius: "0 10px 10px 0" }}><p style={{ margin: 0, font: `italic 400 15px/1.65 ${SF}`, color: "#D8D3C8" }}>{example.text}</p><footer style={{ marginTop: 8, font: `500 9.5px/1 ${MN}`, letterSpacing: ".12em", textTransform: "uppercase", color: "#6B7789" }}>{sourceLabel(example.source)}</footer></blockquote>)}
+                  {selectedExamples.map((example, index) => <blockquote key={`${example.text}-${index}`} style={{ margin: 0, padding: "13px 15px", borderLeft: "2px solid rgba(191,217,242,.4)", background: "rgba(191,217,242,.05)", borderRadius: "0 10px 10px 0" }}><p style={{ margin: 0, font: `italic 400 15px/1.65 ${SF}`, color: "#D8D3C8" }}>{example.text}</p><footer style={{ marginTop: 8, font: `500 9.5px/1 ${MN}`, letterSpacing: ".12em", textTransform: "uppercase", color: "#6B7789" }}>{sourceLabel(example.source)}</footer></blockquote>)}
                 </section> : <EmptyState>Usage examples have not been authored for this word yet.</EmptyState>}
                 <UsageSection title="Patterns" label="Usage patterns" items={model.usage.patterns} empty="No reviewed usage patterns yet.">
                   {model.usage.patterns.map((pattern, index) => <section key={`${pattern.pattern}-${index}`} style={{ display: "flex", flexDirection: "column", gap: 8, padding: "12px 13px", borderRadius: 10, background: "rgba(241,238,230,.04)" }}>
@@ -237,8 +249,8 @@ export function WordLearningDrawer({
             )}
 
             <div style={{ marginTop: "auto", paddingTop: 14, borderTop: "1px solid rgba(241,238,230,.08)", display: "flex", flexDirection: "column", gap: 9 }}>
-              <button className="word-learning-drawer-focus" type="button" onClick={onOpenQuiz} disabled={held || !profile.canClaim} style={{ ...buttonStyle, width: "100%", padding: 12, border: `1px solid ${held ? "rgba(143,227,192,.28)" : !profile.canClaim ? "rgba(232,168,159,.28)" : "transparent"}`, cursor: held || !profile.canClaim ? "default" : "pointer", background: held ? "rgba(143,227,192,.1)" : !profile.canClaim ? "rgba(232,168,159,.08)" : "linear-gradient(96deg,#BFD9F2,#8FE3C0)", color: held ? "#8FE3C0" : !profile.canClaim ? "#E8A89F" : "#0A1020", font: `600 13px/1 ${SS}` }}>{held ? "✓ Held — this star is yours" : "Check what you know, then claim it"}</button>
-              {!held && !profile.canClaim && profile.claimBlockReason && <p style={{ margin: 0, font: `400 11.5px/1.55 ${SS}`, color: "#E8A89F" }}>{profile.claimBlockReason}</p>}
+              <button className="word-learning-drawer-focus" type="button" onClick={onOpenQuiz} disabled={held || !selectedSenseCanClaim} style={{ ...buttonStyle, width: "100%", padding: 12, border: `1px solid ${held ? "rgba(143,227,192,.28)" : !selectedSenseCanClaim ? "rgba(232,168,159,.28)" : "transparent"}`, cursor: held || !selectedSenseCanClaim ? "default" : "pointer", background: held ? "rgba(143,227,192,.1)" : !selectedSenseCanClaim ? "rgba(232,168,159,.08)" : "linear-gradient(96deg,#BFD9F2,#8FE3C0)", color: held ? "#8FE3C0" : !selectedSenseCanClaim ? "#E8A89F" : "#0A1020", font: `600 13px/1 ${SS}` }}>{held ? "✓ Held — this star is yours" : "Check what you know, then claim it"}</button>
+              {!held && !selectedSenseCanClaim && selectedSenseBlockReason && <p style={{ margin: 0, font: `400 11.5px/1.55 ${SS}`, color: "#E8A89F" }}>{selectedSenseBlockReason}</p>}
               <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "space-between", fontSize: 11.5, color: "#6B7789" }}><span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ width: 6, height: 6, borderRadius: 999, background: rarity.dot }} /><span style={{ color: rarity.dot, fontWeight: 500 }}>{rarity.word}</span><span>{rarity.text}</span></span>{xp !== null && <span style={{ font: `500 10.5px/1 ${MN}`, color: "#F2D9A0" }}>+{xp} xp</span>}</div>
             </div>
             </div>;
@@ -288,8 +300,8 @@ function UnavailableDrawer({
   </>;
 }
 
-function Sense({ sense, primary = false }: { sense: WordLearningProfile["senses"][number]; primary?: boolean }) {
-  return <section style={{ display: "flex", flexDirection: "column", gap: 8 }}><div style={{ display: "flex", alignItems: "center", gap: 7, flexWrap: "wrap" }}><h3 style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: primary ? "#BFD9F2" : "#94A0B4" }}>{primary ? "Primary meaning" : sense.partOfSpeech}</h3>{primary && <span style={{ font: `400 10px/1 ${MN}`, color: "#94A0B4" }}>{sense.partOfSpeech}</span>}<span style={{ padding: "3px 7px", borderRadius: 999, background: "rgba(241,238,230,.06)", font: `400 9.5px/1 ${MN}`, color: "#94A0B4" }}>{sourceLabel(sense.source)}</span></div><p style={{ margin: 0, font: `400 ${primary ? "16.5px" : "15px"}/1.62 ${SS}`, color: "#E8E4DA" }}>{sense.definition}</p>{sense.example && <p style={{ margin: 0, font: `italic 400 14px/1.6 ${SF}`, color: "#D8D3C8" }}>{sense.example}</p>}</section>;
+function Sense({ sense, primary = false, selected, onSelect }: { sense: WordLearningProfile["senses"][number]; primary?: boolean; selected: boolean; onSelect: (senseId: string) => void }) {
+  return <button className="word-learning-drawer-focus" type="button" data-sense-id={sense.id} aria-pressed={selected} onClick={() => onSelect(sense.id)} style={{ ...buttonStyle, display: "flex", flexDirection: "column", gap: 8, padding: 11, textAlign: "left", border: `1px solid ${selected ? "rgba(191,217,242,.45)" : "rgba(241,238,230,.1)"}`, background: selected ? "rgba(191,217,242,.09)" : "rgba(241,238,230,.025)", color: "inherit" }}><div style={{ display: "flex", alignItems: "center", gap: 7, flexWrap: "wrap" }}><span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: primary ? "#BFD9F2" : "#94A0B4" }}>{primary ? "Primary meaning" : sense.partOfSpeech}</span>{primary && <span style={{ font: `400 10px/1 ${MN}`, color: "#94A0B4" }}>{sense.partOfSpeech}</span>}<span style={{ padding: "3px 7px", borderRadius: 999, background: "rgba(241,238,230,.06)", font: `400 9.5px/1 ${MN}`, color: "#94A0B4" }}>{sourceLabel(sense.source)}</span></div><span style={{ font: `400 ${primary ? "16.5px" : "15px"}/1.62 ${SS}`, color: "#E8E4DA" }}>{sense.definition}</span>{sense.example && <span style={{ font: `italic 400 14px/1.6 ${SF}`, color: "#D8D3C8" }}>{sense.example}</span>}</button>;
 }
 
 function ConnectionHeading({ group }: { group: { label: string; type: string } }) {

@@ -140,7 +140,7 @@ function chartBlurb(chart: GalaxyChart): string {
 type WordResponse = WordLearningResponse & { rarity: WordRarity | null };
 type QuizKind = "type" | "word";
 type QuizState = {
-  kind: QuizKind; lemma: string; prompt: string; sentence?: string; answer: string;
+  kind: QuizKind; lemma: string; senseId: string; prompt: string; sentence?: string; answer: string;
   options?: { id: string; text: string }[]; input: string;
   revealed: boolean; correct: boolean; attempts: number; wrong?: string | null; nudge?: boolean;
 };
@@ -202,6 +202,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [compose, setCompose] = useState<ComposeState | null>(null);
   // detail data for the focused star
   const [wordData, setWordData] = useState<WordResponse | null>(null);
+  const [selectedSenseId, setSelectedSenseId] = useState<string | null>(null);
   const [wordError, setWordError] = useState<{ lemma: string; message: string } | null>(null);
   const [wordRetry, setWordRetry] = useState(0);
   // tutor
@@ -738,17 +739,42 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setWordRetry((retry) => retry + 1);
   }, [focus]);
 
+  useEffect(() => {
+    const profile = wordData?.page?.lemma === focus ? resolveWordLearningProfile(wordData, focus ?? undefined) : null;
+    if (!profile) {
+      setSelectedSenseId(null);
+      return;
+    }
+    setSelectedSenseId((current) => current && profile.senses.some((sense) => sense.id === current)
+      ? current
+      : profile.senses.find((sense) => sense.canClaim)?.id
+        ?? profile.senses.find((sense) => sense.primary)?.id
+        ?? profile.senses[0]?.id
+        ?? null);
+  }, [focus, wordData]);
+
 
   // ---- claiming ----
-  const doClaim = useCallback((lemma: string) => {
+  const doClaim = useCallback((lemma: string, senseId: string) => {
+    const profile = wordData?.page?.lemma === lemma ? resolveWordLearningProfile(wordData, lemma) : null;
+    const selectedSense = profile?.senses.find((sense) => sense.id === senseId);
+    if (!selectedSense?.canClaim) {
+      showToast({ glyph: "·", text: "Not ready to claim", sub: selectedSense?.claimBlockReason ?? "Choose a sourced meaning first.", tone: "mint" });
+      return;
+    }
+    const wasOwned = owned.has(lemma);
     setOwned((prev) => new Set(prev).add(lemma)); // optimistic
     fetch("/api/collect", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ lemma }),
+      body: JSON.stringify({ lemma, senseId }),
     })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d: { added?: boolean; xp?: number; summary?: CollectionSummary } | null) => {
-        if (!d?.summary) return;
+      .then(async (response) => {
+        const data = await response.json().catch(() => null) as { error?: string } | null;
+        if (!response.ok) throw new Error(data?.error ?? "Claim could not be completed.");
+        return data as { added?: boolean; xp?: number; summary?: CollectionSummary };
+      })
+      .then((d) => {
+        if (!d.summary) return;
         const before = me?.level ?? 1;
         setMe(d.summary);
         setOwned(new Set(d.summary.lemmas));
@@ -769,39 +795,46 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
         if (d.summary.level > before) t = { glyph: "▲", text: `Level ${d.summary.level}`, sub: "the sky opens a little wider", tone: "gold" };
         showToast(t);
       })
-      .catch(() => {});
-  }, [me, streak, atlas, showToast, persistLocal]);
+      .catch((error: unknown) => {
+        if (!wasOwned) setOwned((previous) => {
+          const next = new Set(previous);
+          next.delete(lemma);
+          return next;
+        });
+        showToast({ glyph: "·", text: "Claim unavailable", sub: error instanceof Error ? error.message : "Claim could not be completed.", tone: "mint" });
+      });
+  }, [me, streak, atlas, showToast, persistLocal, owned, wordData]);
 
   // ---- quiz ----
-  const openQuiz = useCallback((lemma: string) => {
+  const openQuiz = useCallback((lemma: string, senseId: string | null) => {
     if (owned.has(lemma)) return;
     // Quiz prompts use the same sourced profile that the drawer presents.
     const build = (profile: WordLearningProfile) => {
-      if (!profile.canClaim) {
-        showToast({ glyph: "·", text: "Not ready to claim", sub: profile.claimBlockReason ?? "", tone: "mint" });
+      const selectedSense = profile.senses.find((sense) => sense.id === senseId);
+      if (!selectedSense?.canClaim) {
+        showToast({ glyph: "·", text: "Not ready to claim", sub: selectedSense?.claimBlockReason ?? "Choose a sourced meaning first.", tone: "mint" });
         return;
       }
-      const primarySense = profile.senses.find((sense) => sense.primary) ?? profile.senses[0];
-      const example = profile.examples[0];
-      if (!primarySense || !example) return;
+      const example = selectedSense.example;
+      if (!example) return;
       const r = rng(hash(lemma + owned.size));
       const chartId = atlas.byLemma.get(lemma)?.chartId ?? "";
       const siblings = (residentShards.get(chartId)?.words ?? [])
         .filter((w) => w.lemma !== lemma);
       const others = siblings.sort(() => r() - 0.5).slice(0, 3);
-      const canType = example.text.toLowerCase().includes(profile.display.toLowerCase());
+      const canType = example.toLowerCase().includes(profile.display.toLowerCase());
       if (canType) {
         const re = new RegExp(profile.display, "i");
         setQuiz({
-          kind: "type", lemma, input: "", prompt: "Which word is missing?",
-          sentence: example.text.replace(re, "———"), answer: profile.display, revealed: false, correct: false, attempts: 0,
+          kind: "type", lemma, senseId: selectedSense.id, input: "", prompt: "Which word is missing?",
+          sentence: example.replace(re, "———"), answer: profile.display, revealed: false, correct: false, attempts: 0,
         });
       } else {
         const opts = others.map((w) => ({ id: w.lemma, text: w.display }))
           .concat([{ id: lemma, text: profile.display }]);
         setQuiz({
-          kind: "word", lemma, input: "",
-          prompt: `${primarySense.definition.charAt(0).toUpperCase()}${primarySense.definition.slice(1)} — which word is it?`,
+          kind: "word", lemma, senseId: selectedSense.id, input: "",
+          prompt: `${selectedSense.definition.charAt(0).toUpperCase()}${selectedSense.definition.slice(1)} — which word is it?`,
           options: opts.sort(() => r() - 0.5), answer: lemma, revealed: false, correct: false, attempts: 0,
         });
       }
@@ -824,7 +857,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       const ok = id === q0.answer;
       const attempts = q0.attempts + 1;
       if (!ok && attempts < 2) return { ...q0, attempts, wrong: id, nudge: true };
-      if (ok) doClaim(q0.lemma);
+      if (ok) doClaim(q0.lemma, q0.senseId);
       return { ...q0, attempts, revealed: true, correct: ok, wrong: ok ? null : id };
     });
   }, [doClaim]);
@@ -835,7 +868,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       const ok = norm(q0.input) === norm(q0.answer);
       const attempts = q0.attempts + 1;
       if (!ok && attempts < 2) return { ...q0, attempts, nudge: true };
-      if (ok) doClaim(q0.lemma);
+      if (ok) doClaim(q0.lemma, q0.senseId);
       return { ...q0, attempts, revealed: true, correct: ok };
     });
   }, [doClaim]);
@@ -880,7 +913,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       }
       if (typing || !focus) return;
       const nb = focusedNeighbors;
-      if (ev.key === "Enter") { ev.preventDefault(); openQuiz(focus); return; }
+      if (ev.key === "Enter") { ev.preventDefault(); openQuiz(focus, selectedSenseId); return; }
       if (ev.key === "ArrowUp") {
         const up = nb.find((x) => x.type === "advanced_form");
         if (up) { ev.preventDefault(); select(up.lemma); }
@@ -896,7 +929,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [view, quiz, listMenuOpen, keyOpen, chatOpen, narrow, railOpen, focus, chart, select, focusedNeighbors, openQuiz]);
+  }, [view, quiz, listMenuOpen, keyOpen, chatOpen, narrow, railOpen, focus, chart, select, focusedNeighbors, openQuiz, selectedSenseId]);
 
   // ---- tutor ----
   const sendChat = useCallback((preset?: string) => {
@@ -1549,7 +1582,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
           {/* DETAIL DRAWER */}
           {focus && (
-            drawer && <WordLearningDrawer profile={drawer.learning} display={drawer.display} partOfSpeech={drawer.partOfSpeech} loadState={wordLoadState} errorMessage={wordError?.lemma === focus ? wordError.message : null} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={drawer.rarity} onClose={() => select(null)} onRetry={retryWord} onNavigate={select} onOpenQuiz={() => openQuiz(focus)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} />
+            drawer && <WordLearningDrawer profile={drawer.learning} display={drawer.display} partOfSpeech={drawer.partOfSpeech} loadState={wordLoadState} errorMessage={wordError?.lemma === focus ? wordError.message : null} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={drawer.rarity} onClose={() => select(null)} onRetry={retryWord} onNavigate={select} selectedSenseId={selectedSenseId} onSelectSense={setSelectedSenseId} onOpenQuiz={() => openQuiz(focus, selectedSenseId)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} />
           )}
 
           {/* FIRST-RUN INTRO */}
