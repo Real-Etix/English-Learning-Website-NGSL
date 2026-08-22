@@ -81,6 +81,17 @@ as unrelated task-history.
 - Verification: `npx tsc --noEmit` exited 0. `npm run lint` exited 0 with the two
   pre-existing unused-variable warnings in `lib/galaxy/build-artifacts.ts`.
 
+### Review Fix: Reserved Record Keys
+
+- RED: `npx vitest run lib/wiki/dictionary-quality.test.ts` failed 1/4 with
+  `TypeError: Cannot read properties of undefined (reading 'sourceBacked')` when a
+  page used `__proto__` as both its list ID and edge type.
+- GREEN: prototype-free `Record` accumulators for per-list and per-edge-type counts
+  made the focused suite pass 4/4 while retaining the serialized report shape.
+- Verification: the focused suite passed 4/4, `npx tsc --noEmit` exited 0, and
+  `npm run lint` exited 0 with the two pre-existing warnings in
+  `lib/galaxy/build-artifacts.ts`.
+
 ### Browser Verification Limitations
 
 - The local Next development server was started with `npm run dev -- --hostname 0.0.0.0` and returned HTTP 200 for `/network/ngsl` when checked from the same host shell.

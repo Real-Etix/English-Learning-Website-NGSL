@@ -33,6 +33,10 @@ const FACTUAL_SOURCES = new Set(["curated", "wordnet", "dictionaryapi", "tatoeba
 const isPlaceholder = (value: string) =>
   /definition pending|needs a fuller dictionary source/i.test(value);
 
+function emptyRecord<T>(): Record<string, T> {
+  return Object.create(null) as Record<string, T>;
+}
+
 function emptyCounts(): DictionaryQualityCounts {
   return {
     pages: 0,
@@ -42,7 +46,7 @@ function emptyCounts(): DictionaryQualityCounts {
     llmOnlyAdvanced: 0,
     zeroConnections: 0,
     evidence: { verified: 0, sourceBacked: 0, aiDraft: 0 },
-    edges: { total: 0, unexplained: 0, byType: {} },
+    edges: { total: 0, unexplained: 0, byType: emptyRecord() },
   };
 }
 
@@ -79,7 +83,7 @@ function addPage(counts: DictionaryQualityCounts, page: WikiPage) {
 
 /** Aggregate dictionary-quality signals without mutating wiki pages. */
 export function auditDictionaryPages(pages: WikiPage[]): DictionaryQualityReport {
-  const report: DictionaryQualityReport = { total: emptyCounts(), lists: {} };
+  const report: DictionaryQualityReport = { total: emptyCounts(), lists: emptyRecord() };
 
   for (const page of pages) {
     addPage(report.total, page);

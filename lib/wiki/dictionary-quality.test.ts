@@ -136,6 +136,36 @@ describe("auditDictionaryPages", () => {
     }
   });
 
+  it("counts reserved list IDs and edge types without polluting Object.prototype", () => {
+    const pagesDescriptor = Object.getOwnPropertyDescriptor(Object.prototype, "pages");
+    const totalDescriptor = Object.getOwnPropertyDescriptor(Object.prototype, "total");
+
+    try {
+      const report = auditDictionaryPages([
+        page({
+          lists: ["__proto__"],
+          connections: [{ type: "__proto__", target: "support", gloss: "a reserved-key edge" }],
+        }),
+      ]);
+
+      expect(report.total.edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
+      expect(report.lists["__proto__"]).toMatchObject({
+        pages: 1,
+        edges: {
+          total: 1,
+        },
+      });
+      expect(report.lists["__proto__"].edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
+      expect(Object.getOwnPropertyDescriptor(Object.prototype, "pages")).toEqual(pagesDescriptor);
+      expect(Object.getOwnPropertyDescriptor(Object.prototype, "total")).toEqual(totalDescriptor);
+    } finally {
+      if (pagesDescriptor) Object.defineProperty(Object.prototype, "pages", pagesDescriptor);
+      else Reflect.deleteProperty(Object.prototype, "pages");
+      if (totalDescriptor) Object.defineProperty(Object.prototype, "total", totalDescriptor);
+      else Reflect.deleteProperty(Object.prototype, "total");
+    }
+  });
+
   it("reports strict failures only for placeholders and LLM-only advanced pages", () => {
     expect(hasStrictFailures(auditDictionaryPages([page({ examples: [], connections: [] })]))).toBe(false);
     expect(hasStrictFailures(auditDictionaryPages([page({ definition: "Needs a fuller dictionary source." })]))).toBe(true);
