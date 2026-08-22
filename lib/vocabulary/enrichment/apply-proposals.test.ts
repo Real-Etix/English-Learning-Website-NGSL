@@ -75,6 +75,27 @@ describe("applyVocabularyProposals", () => {
     });
   });
 
+  test("reports an unknown target before rejecting its blank gloss", () => {
+    const result = applyVocabularyProposals(
+      [recordFor("buy")],
+      [{
+        kind: "connection",
+        lemma: "buy",
+        target: "procure",
+        type: "advanced_form",
+        gloss: "   ",
+        sourceId: "llm",
+      }],
+    );
+
+    expect(result.rejected).toContainEqual({
+      lemma: "buy", reason: "unknown target: procure",
+    });
+    expect(result.rejected).not.toContainEqual({
+      lemma: "buy", reason: "blank gloss",
+    });
+  });
+
   test("rejects malformed or untrusted connection proposals", () => {
     const records = [recordFor("buy"), recordFor("purchase")];
     const result = applyVocabularyProposals(records, [

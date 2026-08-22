@@ -92,7 +92,7 @@ async function main() {
   const proposals: VocabularyProposal[] = forms.flatMap(({ record, forms: suggested }) => suggested.flatMap((form) => {
     const target = normalizeVocabularyLemma(form.word ?? "");
     const gloss = form.gloss?.trim() ?? "";
-    if (!target || !gloss) return [];
+    if (!target) return [];
     return [{ kind: "connection", lemma: record.lemma, target, type: "advanced_form", gloss, sourceId: "llm" }];
   }));
   const result = applyVocabularyProposals(records, proposals);

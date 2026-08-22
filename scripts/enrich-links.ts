@@ -104,7 +104,7 @@ async function main() {
         if (added >= MAX_ADD) break;
         const target = normalizeVocabularyLemma(link.word ?? "");
         const gloss = link.gloss?.trim() ?? "";
-        if (!target || !gloss || target === record.lemma) continue;
+        if (!target || target === record.lemma) continue;
         proposals.push({ kind: "connection", lemma: record.lemma, target, type, gloss, sourceId: "llm" });
         proposals.push({ kind: "connection", lemma: target, target: record.lemma, type, gloss, sourceId: "llm" });
         added += 1;
