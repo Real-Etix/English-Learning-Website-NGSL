@@ -27,6 +27,10 @@ permissions:
 jobs:
   enrich:
     runs-on: ubuntu-latest
+    env:
+      ENRICHMENT_LIST: ${{ inputs.list }}
+      ENRICHMENT_LIMIT: ${{ inputs.limit }}
+      ENRICHMENT_DRY_RUN: ${{ inputs.dry_run }}
     steps:
       - uses: actions/checkout@v4
 
@@ -53,10 +57,10 @@ jobs:
           LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
           LLM_MODEL: ${{ vars.LLM_MODEL }}
         run: |
-          if [[ "${{ inputs.dry_run }}" == "true" ]]; then
-            npm run enrich:vocabulary -- --list="${{ inputs.list }}" --limit="${{ inputs.limit }}" --dry-run
+          if [[ "$ENRICHMENT_DRY_RUN" == "true" ]]; then
+            npm run enrich:vocabulary -- --list="$ENRICHMENT_LIST" --limit="$ENRICHMENT_LIMIT" --dry-run
           else
-            npm run enrich:vocabulary -- --list="${{ inputs.list }}" --limit="${{ inputs.limit }}"
+            npm run enrich:vocabulary -- --list="$ENRICHMENT_LIST" --limit="$ENRICHMENT_LIMIT"
           fi
 
       - name: Lint vocabulary
@@ -95,6 +99,9 @@ jobs:
             exit 0
           fi
           npx tsx scripts/verify-enrichment-diff.ts < "$diff_file"
+          paths_file="${RUNNER_TEMP}/enrichment-paths.txt"
+          cut -f2- "$diff_file" > "$paths_file"
+          echo "paths_file=$paths_file" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Create enrichment pull request
@@ -103,17 +110,18 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          paths_file="${{ steps.diff.outputs.paths_file }}"
           branch="automation/vocabulary-${GITHUB_RUN_ID}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
-          git add -- content/vocabulary data/generated/graphs data/generated/vocabulary public/generated/galaxy
-          git commit -m "content: enrich ${{ inputs.list }} vocabulary"
+          git add --pathspec-from-file="$paths_file"
+          git commit -m "content: enrich $ENRICHMENT_LIST vocabulary"
           git push --set-upstream origin "$branch"
           gh pr create \
             --base "${{ github.event.repository.default_branch }}" \
             --head "$branch" \
-            --title "content: enrich ${{ inputs.list }} vocabulary" \
+            --title "content: enrich $ENRICHMENT_LIST vocabulary" \
             --body "Automated vocabulary enrichment from GitHub Actions run ${GITHUB_RUN_ID}." \
             --label content \
             --label automated-enrichment

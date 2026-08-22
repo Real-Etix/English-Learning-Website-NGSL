@@ -575,10 +575,20 @@ git commit -m "refactor: enrich canonical vocabulary shards"
 
 - [ ] **Step 1: Write diff-policy RED tests**
 
-Test `verifyEnrichmentPaths(paths)` accepts only `content/vocabulary/*.ndjson`,
-`content/vocabulary/manifest.json`, `data/generated/graphs/**`, and
-`public/generated/galaxy/**`; it must reject `.env`, application source, workflow files,
-and deleted schema/source-registry files.
+Test `verifyEnrichmentPaths(paths)` accepts only the exact generated outputs:
+`content/vocabulary/(?:0[0-9a-f]|1[0-9a-f]).ndjson`,
+`content/vocabulary/manifest.json`,
+`data/generated/graphs/(?:academic|all|business|fitness|ngsl|toeic).json`,
+`data/generated/vocabulary/manifest.json`,
+`data/generated/vocabulary/words-(?:0[0-9a-f]|1[0-9a-f]).json`,
+`public/generated/galaxy/manifests/(?:academic|all|business|fitness|ngsl|toeic).json`,
+`public/generated/galaxy/assets/(?:academic|all|business|fitness|ngsl|toeic)-(?:chart|search)-[0-9a-f]{12}.json`,
+and `public/generated/galaxy/assets/(?:academic|all|business|fitness|ngsl|toeic)-full-[0-9a-f]{12}.bin`.
+The word-shard expression is exactly `words-00.json` through `words-1f.json`,
+plus its manifest; arbitrary files under `data/generated/vocabulary/` are not
+allowed. Reject `.env`, application source, workflow files, absolute paths,
+backslashes, `.`/`..` path segments, malformed status/path entries, rename
+entries, and deleted schema/source-registry files.
 
 - [ ] **Step 2: Run test and confirm RED**
 
@@ -588,9 +598,11 @@ Expected: FAIL because the verifier does not exist.
 
 - [ ] **Step 3: Implement the deterministic path gate**
 
-Export a pure verifier and a CLI that consumes newline-delimited paths from stdin.
-Return a non-zero exit for any disallowed path or deletion of `schema.json`,
-`sources.json`, or `manifest.json`.
+Export a pure verifier and a CLI that consumes newline-delimited `git diff
+--name-status --no-renames` entries (`A`, `M`, or `D`, one tab-delimited path).
+Reject malformed entries and unsafe repository paths before applying the exact
+allow-list. Return a non-zero exit for any disallowed path or deletion of
+`schema.json`, `sources.json`, or the canonical `manifest.json`.
 
 - [ ] **Step 4: Add the manual workflow**
 
@@ -618,8 +630,9 @@ on:
 
 The workflow runs enrichment, `lint:vocabulary`, audit, tests, typecheck, lint,
 `build:graphs`, and production build. If `dry_run` is false and the diff is allowed,
-it creates `automation/vocabulary-${GITHUB_RUN_ID}`, commits, pushes that branch, and
-uses `gh pr create` with labels `content` and `automated-enrichment`. If no diff exists,
+it stages only the validated changed-path list, creates
+`automation/vocabulary-${GITHUB_RUN_ID}`, commits, pushes that branch, and uses
+`gh pr create` with labels `content` and `automated-enrichment`. If no diff exists,
 it exits successfully without a branch.
 
 - [ ] **Step 5: Verify workflow syntax and secret hygiene**
