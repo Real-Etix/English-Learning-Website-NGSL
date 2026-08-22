@@ -1,4 +1,12 @@
-import type { LearningConnection, LearningExample, LearningSense, WordLearningProfile } from "@/lib/content/word-learning";
+import type {
+  LearningCollocation,
+  LearningCommonMistake,
+  LearningConnection,
+  LearningExample,
+  LearningSense,
+  LearningUsagePattern,
+  WordLearningProfile,
+} from "@/lib/content/word-learning";
 
 export const CONNECTION_LABELS: Record<string, string> = {
   advanced_form: "Level up to",
@@ -30,6 +38,11 @@ export type WordLearningDrawerModel = {
   primarySense: LearningSense | null;
   otherSenses: LearningSense[];
   examples: LearningExample[];
+  usage: {
+    patterns: LearningUsagePattern[];
+    collocations: LearningCollocation[];
+    commonMistakes: LearningCommonMistake[];
+  };
   explainedGroups: DrawerConnectionGroup[];
   unreviewedGroups: DrawerConnectionGroup[];
   unreviewedCount: number;
@@ -71,6 +84,11 @@ export function buildWordLearningDrawerModel(profile: WordLearningProfile): Word
     primarySense,
     otherSenses,
     examples: profile.examples,
+    usage: {
+      patterns: profile.usagePatterns,
+      collocations: profile.collocations,
+      commonMistakes: profile.commonMistakes,
+    },
     explainedGroups: groupConnections(explained),
     unreviewedGroups: groupConnections(unreviewed),
     unreviewedCount: unreviewed.length,

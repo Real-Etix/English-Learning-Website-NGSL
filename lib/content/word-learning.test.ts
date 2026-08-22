@@ -27,6 +27,20 @@ const detail: WordDetail = {
   synonyms: [],
 };
 
+function sourceRef(sourceId: string) {
+  return {
+    sourceId,
+    externalId: null,
+    url: null,
+    retrievedAt: null,
+    contentHash: null,
+  };
+}
+
+function sourcedExample(text: string) {
+  return { text, sources: [sourceRef("curated")] };
+}
+
 function page(overrides: Partial<LegacyWordPage> = {}): VocabularyRecord {
   const legacyPage: LegacyWordPage = {
     lemma: "core",
@@ -61,6 +75,91 @@ describe("buildWordLearningProfile", () => {
       senses: [expect.objectContaining({ definition: record.senses[0].definition, primary: true })],
       examples: [expect.objectContaining({ text: record.senses[0].examples[0].text })],
     });
+  });
+
+  it("exposes only sourced published guidance from the selected published sense", () => {
+    const record = vocabularyRecordFixture();
+    const selectedSense = {
+      ...record.senses[0]!,
+      usagePatterns: [
+        {
+          pattern: "obtain + noun",
+          explanation: "Used with something acquired formally.",
+          examples: [sourcedExample("They obtained permission.")],
+          sources: [sourceRef("curated")],
+          status: "published" as const,
+        },
+        {
+          pattern: "draft pattern",
+          explanation: "Draft guidance must stay editorial.",
+          examples: [],
+          sources: [sourceRef("curated")],
+          status: "draft" as const,
+        },
+      ],
+      collocations: [
+        {
+          phrase: "obtain permission",
+          explanation: "a common formal combination",
+          sources: [sourceRef("curated")],
+          status: "published" as const,
+        },
+        {
+          phrase: "unattributed phrase",
+          explanation: "This must not reach learners.",
+          sources: [],
+          status: "published" as const,
+        },
+      ],
+      commonMistakes: [
+        {
+          incorrect: "obtain to permission",
+          correction: "obtain permission",
+          explanation: "Obtain takes a direct object here.",
+          sources: [sourceRef("curated")],
+          status: "published" as const,
+        },
+      ],
+    };
+    const otherSense = {
+      ...selectedSense,
+      id: "other-published-sense",
+      usagePatterns: [{
+        pattern: "other + pattern",
+        explanation: "Guidance for another sense.",
+        examples: [],
+        sources: [sourceRef("curated")],
+        status: "published" as const,
+      }],
+    };
+
+    const profile = buildWordLearningProfile({
+      ...record,
+      senses: [selectedSense, otherSense],
+    }, emptyDetail);
+
+    expect(profile.usagePatterns).toEqual([{
+      pattern: "obtain + noun",
+      explanation: "Used with something acquired formally.",
+      examples: [{
+        text: "They obtained permission.",
+        sources: [expect.objectContaining({ sourceId: "curated", label: "Manual curation" })],
+      }],
+      sources: [expect.objectContaining({ sourceId: "curated", label: "Manual curation" })],
+    }]);
+    expect(profile.collocations).toEqual([{
+      phrase: "obtain permission",
+      explanation: "a common formal combination",
+      sources: [expect.objectContaining({ sourceId: "curated", label: "Manual curation" })],
+    }]);
+    expect(profile.commonMistakes).toEqual([{
+      incorrect: "obtain to permission",
+      correction: "obtain permission",
+      explanation: "Obtain takes a direct object here.",
+      sources: [expect.objectContaining({ sourceId: "curated", label: "Manual curation" })],
+    }]);
+    expect(JSON.stringify(profile)).not.toContain("draft pattern");
+    expect(JSON.stringify(profile)).not.toContain("other + pattern");
   });
 
   it("keeps a source-backed wiki meaning before later dictionary senses", () => {

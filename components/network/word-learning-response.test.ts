@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { buildWordLearningProfile } from "../../lib/content/word-learning";
 import { toCanonicalRecord, type LegacyWordPage } from "@/lib/vocabulary/legacy-profile-adapter";
-import { resolveWordLearningProfile } from "./word-learning-response";
+import { isWordLearningProfile, resolveWordLearningProfile } from "./word-learning-response";
 
 const page: LegacyWordPage = {
   lemma: "anchor",
@@ -78,5 +78,19 @@ describe("resolveWordLearningProfile", () => {
       detail: null,
       learning: null,
     } as unknown as Parameters<typeof resolveWordLearningProfile>[0])).toBeNull();
+  });
+
+  it("rejects an attributed guidance item without its required source label", () => {
+    expect(isWordLearningProfile({
+      ...learningProfile(),
+      usagePatterns: [{
+        pattern: "anchor + noun",
+        explanation: "Used with something held firmly.",
+        examples: [],
+        sources: [{ sourceId: "curated" }],
+      }],
+      collocations: [],
+      commonMistakes: [],
+    })).toBe(false);
   });
 });

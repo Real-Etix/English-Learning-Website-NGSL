@@ -1,7 +1,7 @@
 import type { WordDetail } from "./word-detail";
 import { isLearnerConnection } from "../vocabulary/publication";
-import type { VocabularyRecord } from "../vocabulary/schema";
-import { evidenceForSources } from "../vocabulary/source-evidence";
+import type { CollocationPhrase, CommonMistake, ContentSourceRef, UsagePattern, VocabularyRecord } from "../vocabulary/schema";
+import { evidenceForSources, sourceEntryFor } from "../vocabulary/source-evidence";
 
 export type LearningEvidence = "verified" | "source-backed" | "ai-draft";
 
@@ -26,6 +26,36 @@ export type LearningConnection = {
   explained: boolean;
 };
 
+/** A canonical source reference paired with its learner-readable registry label. */
+export type LearningSource = ContentSourceRef & {
+  label: string;
+};
+
+export type LearningPatternExample = {
+  text: string;
+  sources: LearningSource[];
+};
+
+export type LearningUsagePattern = {
+  pattern: string;
+  explanation: string;
+  examples: LearningPatternExample[];
+  sources: LearningSource[];
+};
+
+export type LearningCollocation = {
+  phrase: string;
+  explanation: string | null;
+  sources: LearningSource[];
+};
+
+export type LearningCommonMistake = {
+  incorrect: string;
+  correction: string;
+  explanation: string;
+  sources: LearningSource[];
+};
+
 export type WordLearningProfile = {
   lemma: string;
   display: string;
@@ -44,6 +74,9 @@ export type WordLearningProfile = {
   };
   senses: LearningSense[];
   examples: LearningExample[];
+  usagePatterns: LearningUsagePattern[];
+  collocations: LearningCollocation[];
+  commonMistakes: LearningCommonMistake[];
   usageNote: string | null;
   connections: LearningConnection[];
   canClaim: boolean;
@@ -80,6 +113,40 @@ function addExample(examples: LearningExample[], seenExamples: Set<string>, exam
   examples.push(example);
 }
 
+function labelSources(sources: readonly ContentSourceRef[]): LearningSource[] {
+  return sources.map((source) => ({ ...source, label: sourceEntryFor(source.sourceId).label }));
+}
+
+function isPublishedSourcedGuidance<T extends { status: string; sources: readonly ContentSourceRef[] }>(item: T): boolean {
+  return item.status === "published" && item.sources.length > 0;
+}
+
+function learningPattern(pattern: UsagePattern): LearningUsagePattern {
+  return {
+    pattern: pattern.pattern,
+    explanation: pattern.explanation,
+    examples: pattern.examples.map((example) => ({ text: example.text, sources: labelSources(example.sources) })),
+    sources: labelSources(pattern.sources),
+  };
+}
+
+function learningCollocation(collocation: CollocationPhrase): LearningCollocation {
+  return {
+    phrase: collocation.phrase,
+    explanation: collocation.explanation,
+    sources: labelSources(collocation.sources),
+  };
+}
+
+function learningCommonMistake(mistake: CommonMistake): LearningCommonMistake {
+  return {
+    incorrect: mistake.incorrect,
+    correction: mistake.correction,
+    explanation: mistake.explanation,
+    sources: labelSources(mistake.sources),
+  };
+}
+
 export function buildWordLearningProfile(
   record: VocabularyRecord,
   detail: WordDetail | null,
@@ -87,6 +154,7 @@ export function buildWordLearningProfile(
   const primarySense = record.senses[0];
   const primaryDefinition = primarySense?.definition ?? "";
   const primaryExamples = primarySense?.examples ?? [];
+  const selectedPublishedSense = primarySense?.status === "published" ? primarySense : null;
   const sourceIds = record.sources.map((source) => source.sourceId);
   const wikiEvidence = evidenceForSources(primarySense?.sources ?? [], { verified: record.status === "verified" });
   const factualWikiSource = wikiEvidence !== "ai-draft";
@@ -167,6 +235,15 @@ export function buildWordLearningProfile(
     },
     senses,
     examples,
+    usagePatterns: selectedPublishedSense?.usagePatterns
+      .filter(isPublishedSourcedGuidance)
+      .map(learningPattern) ?? [],
+    collocations: selectedPublishedSense?.collocations
+      .filter(isPublishedSourcedGuidance)
+      .map(learningCollocation) ?? [],
+    commonMistakes: selectedPublishedSense?.commonMistakes
+      .filter(isPublishedSourcedGuidance)
+      .map(learningCommonMistake) ?? [],
     usageNote: record.usageNote,
     connections: record.connections.filter(isLearnerConnection).map((connection) => ({
       ...connection,

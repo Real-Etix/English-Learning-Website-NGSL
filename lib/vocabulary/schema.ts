@@ -59,6 +59,7 @@ const UsagePatternSchema = z.object({
   sources: z.array(ContentSourceRefSchema),
   status: PublicationStatusSchema,
 }).strict();
+export type UsagePattern = z.infer<typeof UsagePatternSchema>;
 
 const CollocationPhraseSchema = z.object({
   phrase: nonEmpty,
@@ -66,6 +67,7 @@ const CollocationPhraseSchema = z.object({
   sources: z.array(ContentSourceRefSchema),
   status: PublicationStatusSchema,
 }).strict();
+export type CollocationPhrase = z.infer<typeof CollocationPhraseSchema>;
 
 const CommonMistakeSchema = z.object({
   incorrect: nonEmpty,
@@ -74,6 +76,7 @@ const CommonMistakeSchema = z.object({
   sources: z.array(ContentSourceRefSchema),
   status: PublicationStatusSchema,
 }).strict();
+export type CommonMistake = z.infer<typeof CommonMistakeSchema>;
 
 const VocabularySenseSchema = z.object({
   id: nonEmpty,

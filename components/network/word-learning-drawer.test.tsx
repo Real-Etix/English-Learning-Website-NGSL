@@ -17,6 +17,9 @@ const profile: WordLearningProfile = {
   pronunciation: { ipa: "/ˈæŋ.kər/", audioUk: null, audioUs: null, audioAny: null },
   senses: [{ id: "wiki:0", partOfSpeech: "noun", definition: "a heavy object that holds a vessel", example: null, source: "wiki", primary: true }],
   examples: [{ text: "The boat dropped anchor.", source: "wiki" }],
+  usagePatterns: [],
+  collocations: [],
+  commonMistakes: [],
   usageNote: null,
   connections: [],
   canClaim: true,
@@ -128,5 +131,64 @@ describe("WordLearningDrawer", () => {
     );
 
     expect(composeButton(markup)).not.toContain("disabled");
+  });
+
+  it("renders sourced published guidance and honest empty Use states", () => {
+    const sourcedProfile: WordLearningProfile = {
+      ...profile,
+      usagePatterns: [{
+        pattern: "anchor + noun",
+        explanation: "Used with something held firmly.",
+        examples: [{ text: "Anchor the tent.", sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }] }],
+        sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }],
+      }],
+      collocations: [{
+        phrase: "drop anchor",
+        explanation: "a common nautical phrase",
+        sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }],
+      }],
+      commonMistakes: [{
+        incorrect: "anchor to the tent",
+        correction: "anchor the tent",
+        explanation: "Anchor takes a direct object here.",
+        sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }],
+      }],
+    };
+    const render = (drawerProfile: WordLearningProfile) => renderToStaticMarkup(
+      <WordLearningDrawer
+        profile={drawerProfile}
+        display="anchor"
+        partOfSpeech="noun"
+        loadState="ready"
+        errorMessage={null}
+        chart={{ name: "NGSL", hue: "#BFD9F2", glyph: "A" }}
+        held={false}
+        solid={false}
+        xp={10}
+        rarity={{ word: "Common", dot: "#BFD9F2", text: "1,000 words" }}
+        onClose={() => {}}
+        onRetry={() => {}}
+        onNavigate={() => {}}
+        onOpenQuiz={() => {}}
+        onCompose={() => {}}
+        onSpeak={() => {}}
+        onPlayAudio={() => {}}
+        displayConnection={(lemma) => lemma}
+      />,
+    );
+
+    const sourcedMarkup = render(sourcedProfile);
+    expect(sourcedMarkup).toContain("Patterns");
+    expect(sourcedMarkup).toContain("Common phrases");
+    expect(sourcedMarkup).toContain("Watch out");
+    expect(sourcedMarkup).toContain("Manual curation");
+    expect(sourcedMarkup).toContain("Used with something held firmly.");
+    expect(sourcedMarkup).toContain("anchor to the tent");
+    expect(sourcedMarkup).toContain("anchor the tent");
+
+    const emptyMarkup = render(profile);
+    expect(emptyMarkup).toContain("No reviewed usage patterns yet.");
+    expect(emptyMarkup).toContain("No reviewed collocation phrases yet.");
+    expect(emptyMarkup).toContain("No reviewed common mistakes yet.");
   });
 });

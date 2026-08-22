@@ -29,6 +29,9 @@ function profile(overrides: Partial<WordLearningProfile> = {}): WordLearningProf
       { text: "The boat dropped anchor.", source: "wiki" },
       { text: "Anchor the tent.", source: "dictionaryapi" },
     ],
+    usagePatterns: [],
+    collocations: [],
+    commonMistakes: [],
     usageNote: "Often used figuratively for stability.",
     connections: [
       { type: "collocation", target: "boat", gloss: "a boat can drop one" , explained: true },
@@ -76,5 +79,33 @@ describe("buildWordLearningDrawerModel", () => {
     expect(model.otherSenses).toHaveLength(5);
     expect(model.examples).toEqual(source.examples);
     expect(model.audio).toEqual({ uk: "//audio.example/anchor-uk.mp3", us: "https://audio.example/anchor-us.mp3", any: "https://audio.example/anchor.mp3", available: true });
+  });
+
+  it("groups source-attributed guidance in the Use model without changing authored wording", () => {
+    const source = profile({
+      usagePatterns: [{
+        pattern: "anchor + noun",
+        explanation: "Used with something held firmly.",
+        examples: [{ text: "Anchor the tent.", sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }] }],
+        sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }],
+      }],
+      collocations: [{
+        phrase: "drop anchor",
+        explanation: "a common nautical phrase",
+        sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }],
+      }],
+      commonMistakes: [{
+        incorrect: "anchor to the tent",
+        correction: "anchor the tent",
+        explanation: "Anchor takes a direct object here.",
+        sources: [{ sourceId: "curated", label: "Manual curation", externalId: null, url: null, retrievedAt: null, contentHash: null }],
+      }],
+    });
+
+    expect(buildWordLearningDrawerModel(source).usage).toEqual({
+      patterns: source.usagePatterns,
+      collocations: source.collocations,
+      commonMistakes: source.commonMistakes,
+    });
   });
 });

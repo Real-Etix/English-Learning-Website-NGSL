@@ -28,6 +28,9 @@ function profile(overrides: Partial<WordLearningProfile> = {}): WordLearningProf
       { text: "A third sourced example.", source: "dictionaryapi" },
       { text: "A fourth sourced example.", source: "dictionaryapi" },
     ],
+    usagePatterns: [],
+    collocations: [],
+    commonMistakes: [],
     usageNote: "Use the authored note unchanged.",
     connections: [
       { type: "builds_on", target: "procedure", gloss: "authored relation wording", explained: true },
