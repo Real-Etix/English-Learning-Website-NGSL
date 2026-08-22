@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "curated",
+      "label": "Manual curation",
+      "homepage": "https://www.newgeneralservicelist.com/new-general-service-list",
+      "license": "Project-authored content",
+      "factual": true
+    },
+    {
+      "id": "dictionaryapi",
+      "label": "Dictionary API",
+      "homepage": "https://dictionaryapi.dev/",
+      "license": "Free public API",
+      "factual": true
+    },
+    {
+      "id": "llm",
+      "label": "LLM drafting pass",
+      "homepage": null,
+      "license": null,
+      "factual": false
+    },
+    {
+      "id": "tatoeba",
+      "label": "Tatoeba",
+      "homepage": "https://tatoeba.org/",
+      "license": "CC BY 2.0 FR / CC0 1.0",
+      "factual": true
+    },
+    {
+      "id": "wordnet",
+      "label": "WordNet",
+      "homepage": "https://wordnet.princeton.edu/",
+      "license": "WordNet License",
+      "factual": true
+    }
+  ]
+}
