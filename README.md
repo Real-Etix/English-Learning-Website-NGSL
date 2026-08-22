@@ -28,6 +28,21 @@ It began as a flashcard trainer and was rebuilt around a versioned vocabulary co
 - `content/vocabulary/sources.json` is the source registry. Each source reference in a record must use a registered ID and retain its factual/provenance status.
 - `wiki/raw/` remains the immutable clipping inbox. It is not an active vocabulary source. Markdown conversion code (`lib/vocabulary/legacy-markdown.ts`, `lib/vocabulary/migrate-markdown.ts`, and `scripts/migrate-wiki-to-ndjson.ts`) is **recovery-only**.
 
+### Vocabulary v2 operating contract
+
+Canonical NDJSON is the editable source of truth; this README and `wiki/CLAUDE.md`
+describe the operating rules, while `wiki/raw/` is a provenance-only clipping inbox.
+Do not use Markdown pages as a second corpus. Source precedence is authored
+`curated` content first, then factual imports (`wordnet`, `dictionaryapi`,
+`tatoeba`), then `llm` drafting provenance. LLM output is never factual evidence by
+itself, and all source references must remain attached to the content they support.
+
+Records move deliberately through `draft` (work in progress), `review` (awaiting
+editorial decision), `published` (learner-visible), and `hidden` (quarantined or
+retained editorial material). Hidden drafts are excluded from public word and graph
+artifacts, including public star counts; they remain available to enrichment and
+quality audits.
+
 ### Normalized learner profile
 
 When a learner selects a word, the app keeps a compatibility-shaped projection of the
@@ -36,6 +51,13 @@ verified or factual-source-backed primary meaning, preserves authored examples a
 connection glosses verbatim, labels unsupported content as an AI draft, and allows a
 new claim only when a trustworthy meaning and sourced example are available. This
 detail remains demand-loaded and is not included in the galaxy manifests.
+
+Claims are for one exact selected canonical sense, not merely the word. The record
+and sense must both be published, the definition must be complete, the sense must be
+factual-source-backed (or verified under the established editorial rule), and that
+same sense needs a sourced example. A published connection is learner-facing only
+when its target is also published and it has an authored, non-empty gloss; unreviewed
+and hidden connections stay editorial debt rather than public guidance.
 
 ### From NDJSON → generated learner artifacts (build-time)
 `npm run build:graphs` reads the canonical corpus and pre-computes graph JSON, word shards, and progressive galaxy assets. Pages read the generated lite graphs (`lib/wiki/graph-store.ts`), and word detail is fetched per-click via `/api/word/[lemma]`.
@@ -64,6 +86,7 @@ Collections are per-user and mutable, so they live in **Postgres** (via **Prisma
 # Canonical vocabulary pipeline
 npm run lint:vocabulary      # validate schemas, shards, sources, links, and reciprocity
 npm run audit:dictionary     # read-only quality totals and per-list coverage
+npm run audit:dictionary -- --strict # fail only published-content release blockers
 npm run build:graphs         # regenerate committed word, graph, and galaxy artifacts
 npm run validate:vocabulary-migration # recovery parity check while legacy Markdown is available
 npm run migrate:vocabulary -- --source=<legacy-pages> --out=<output> --force # RECOVERY-ONLY
@@ -87,7 +110,7 @@ npm run enrich:vocabulary -- --list=ngsl --limit=20 --dry-run
 ```
 
 After an intentional local enrichment, run `npm run lint:vocabulary`,
-`npm run audit:dictionary`, `npm test`, `npx tsc --noEmit`, `npm run lint`,
+`npm run audit:dictionary`, `npm run audit:dictionary -- --strict`, `npm test`, `npx tsc --noEmit`, `npm run lint`,
 `npm run build:graphs`, and `npm run build`. `build:graphs` regenerates the
 committed graph data, public galaxy assets, and `data/generated/vocabulary/`
 word shards (including that directory's manifest).
@@ -100,6 +123,24 @@ pull request. With `dry_run` disabled, the workflow validates every changed
 or deleted path, then opens one `automation/vocabulary-<run-id>` pull request
 only when validated changes exist. Review that PR before merging; the workflow
 never pushes to the default branch. Review the generated diff and merge the PR only after the canonical records and generated artifacts are acceptable.
+
+Enrichment works core-first in deterministic NGSL/Academic/Business/TOEIC/Fitness
+order, with supported hidden advanced drafts last. Use the workflow’s required
+`limit`, `max_input_tokens`, and `max_output_tokens` budgets; do not raise them to
+force a larger batch. It captures a JSON strict-audit manifest before proposing
+changes, then blocks the branch only when a strict violation category increases.
+This permits review PRs that reduce inherited blocking debt without permitting new
+debt. The ordinary `--strict` audit remains the release gate and fails for every
+remaining blocking category: published placeholders, unsupported published senses,
+otherwise-claimable senses lacking sourced examples, public connections to hidden or
+missing targets, and learner-facing connections without glosses. Missing optional
+patterns or mistakes, plus hidden/unreviewed debt, are reported but non-blocking.
+
+Read the audit’s global and per-list totals as coverage, not generated content: it
+counts publication state, sense evidence/examples, usage debt, connection status,
+advanced quarantine, claim readiness, provider coverage, and strict blockers. Audit
+output is deterministic and sorted; it never calls dictionary, LLM, or other remote
+providers.
 
 Never commit `.env` files or put `LLM_API_KEY` in workflow arguments, logs,
 or generated artifacts. The workflow passes the key only through a masked

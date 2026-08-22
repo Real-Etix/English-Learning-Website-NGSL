@@ -16,23 +16,42 @@ holds retained raw clippings and these operating rules.
   pronunciation, usage notes, typed connections, domains, chart, and region.
 - `content/vocabulary/sources.json` is the authoritative source registry. Use a
   registered `sourceId`; preserve source URLs, external IDs, retrieval times, and hashes
-  when they are known. `llm` is drafting provenance, not factual evidence.
+  when they are known. Source precedence is `curated` wording, then factual imports
+  (`wordnet`, `dictionaryapi`, `tatoeba`), then an `llm` drafting pass. `llm` is
+  drafting provenance, not factual evidence.
 - `content/vocabulary/manifest.json` records deterministic shard metadata and historical
   migration provenance. Do not hand-edit it; regenerate it only through approved
   recovery tooling.
 
-## Content and relationship rules
+## Publication, claims, and relationship rules
+
+Use publication states deliberately: `draft` is incomplete work, `review` awaits an
+editorial decision, `published` is learner-visible, and `hidden` is retained
+quarantine/editorial material. Only published records flow into public word, graph,
+and star-count artifacts. Hidden drafts remain visible to deterministic audits and
+advanced-draft enrichment, but never inflate public star counts.
 
 Keep authored definitions, examples, usage notes, and connection glosses verbatim.
 Factual sources are `curated`, `wordnet`, `dictionaryapi`, and `tatoeba`; distinguish
-them from an `llm` drafting pass. A learner may claim a word only when the normalized
-profile has a trustworthy primary meaning and a sourced example.
+them from an `llm` drafting pass. A learner claims exactly one selected canonical
+sense, not an arbitrary word-level substitute. The record and selected sense must be
+published, with a complete factual/verified meaning and a sourced example for that
+same sense. A published connection is public guidance only if it targets a published
+record and has a non-empty authored gloss. Hidden and unreviewed connections may be
+kept as editorial debt but must not appear as public guidance.
 
 Allowed connection types are `synonym`, `antonym`, `intensity`, `builds_on`,
 `advanced_form`, `morphological`, and `collocation`. Every advanced record needs a
 `builds_on` connection to a core anchor, and `builds_on` / `advanced_form` are reciprocal.
 `npm run lint:vocabulary` validates schema, shard placement, links, sources, duplicates,
 and reciprocity; `npm run audit:dictionary` reports quality debt without editing files.
+It prints stable global and per-list totals for publication, senses, usage,
+connections, advanced quarantine, claimable senses, source coverage, and strict
+categories. `npm run audit:dictionary -- --strict` is the release gate: it blocks only
+published placeholders, unsupported published senses, otherwise-claimable senses with
+no sourced example, published connections to hidden/missing targets, and published
+connections without glosses. Missing optional patterns/mistakes and hidden/unreviewed
+debt remain non-blocking. Audit is deterministic and never calls live providers.
 
 ## Generated artifacts and local workflow
 
@@ -42,6 +61,7 @@ Do not hand-edit `data/generated/graphs/`, `data/generated/vocabulary/`, or
 ```bash
 npm run lint:vocabulary
 npm run audit:dictionary
+npm run audit:dictionary -- --strict
 npm test
 npx tsc --noEmit
 npm run lint
@@ -55,6 +75,11 @@ For a no-write local enrichment preview:
 npm run enrich:vocabulary -- --list=ngsl --limit=20 --dry-run
 ```
 
+Select enrichment in the deterministic core-first NGSL, Academic, Business, TOEIC,
+Fitness order; supported hidden advanced drafts follow. Keep each batch inside the
+configured record limit plus input/output token budgets. Do not treat a larger token
+budget as permission to bypass review or invent facts.
+
 ## Reviewed enrichment PR workflow
 
 Run the **Vocabulary enrichment** GitHub Actions workflow manually. Keep `dry_run`
@@ -64,6 +89,12 @@ canonical corpus and generated artifacts, permits only approved vocabulary/artif
 paths, and opens one `automation/vocabulary-<run-id>` pull request when there is a diff.
 It never pushes directly to the default branch. Review that PR before merging; never
 place the key in a command argument, log, committed file, or generated artifact.
+
+The workflow first saves a JSON strict-audit manifest for the base corpus. After
+proposals it runs the strict audit against that manifest and rejects any increase in a
+blocking category, while allowing a PR to reduce legacy debt. Review the generated
+diff, audit categories, source provenance, selected-sense claim evidence, and graph
+artifacts before merge. It intentionally does not upload full provider responses.
 
 ## Recovery-only Markdown migration
 

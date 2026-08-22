@@ -64,6 +64,9 @@ jobs:
             exit 1
           fi
 
+      - name: Capture base strict audit manifest
+        run: npx tsx scripts/audit-dictionary.ts --json > "${RUNNER_TEMP}/dictionary-base-audit.json"
+
       - name: Enrich canonical vocabulary
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
@@ -93,6 +96,9 @@ jobs:
 
       - name: Audit dictionary
         run: npm run audit:dictionary
+
+      - name: Gate strict audit regressions against base manifest
+        run: npm run audit:dictionary -- --strict --base-manifest="${RUNNER_TEMP}/dictionary-base-audit.json"
 
       - name: Test
         run: npm test

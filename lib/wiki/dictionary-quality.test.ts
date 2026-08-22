@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 
-import type { VocabularyRecord } from "../vocabulary/schema";
+import type { ContentSourceRef, VocabularyRecord } from "../vocabulary/schema";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
-import { auditDictionaryRecords, hasStrictFailures } from "./dictionary-quality";
+import { auditDictionaryRecords, hasStrictFailures, strictViolationRegressions } from "./dictionary-quality";
 
 const fixture = vocabularyRecordFixture();
 const source = fixture.sources[0]!;
@@ -41,7 +41,160 @@ function connection(overrides: Partial<VocabularyRecord["connections"][number]> 
   return { ...record().connections[0]!, ...overrides };
 }
 
+function providerRef(sourceId: ContentSourceRef["sourceId"]): ContentSourceRef {
+  return { ...source, sourceId };
+}
+
+function metricRecord(options: {
+  lemma: string;
+  tier: VocabularyRecord["tier"];
+  publicationStatus: VocabularyRecord["publicationStatus"];
+  provider: ContentSourceRef["sourceId"];
+  listIds?: string[];
+  recordStatus?: VocabularyRecord["status"];
+  examples?: boolean;
+  patterns?: boolean;
+  mistakes?: boolean;
+  connections?: VocabularyRecord["connections"];
+}): VocabularyRecord {
+  const sourceRef = providerRef(options.provider);
+  return record({
+    lemma: options.lemma,
+    display: options.lemma,
+    tier: options.tier,
+    publicationStatus: options.publicationStatus,
+    status: options.recordStatus ?? "enriched",
+    lists: (options.listIds ?? []).map((id, index) => ({ id, rank: index + 1, sfi: 70 })),
+    sources: [sourceRef],
+    senses: [{
+      ...fixture.senses[0]!,
+      id: `${options.lemma}-sense`,
+      definition: `A complete definition for ${options.lemma}.`,
+      sources: [sourceRef],
+      examples: options.examples === false ? [] : [{ text: `An example of ${options.lemma}.`, sources: [sourceRef] }],
+      usagePatterns: options.patterns === false ? [] : [{
+        pattern: `use ${options.lemma}`,
+        explanation: `Use ${options.lemma} in context.`,
+        examples: [],
+        sources: [sourceRef],
+        status: "published",
+      }],
+      collocations: [],
+      commonMistakes: options.mistakes === false ? [] : [{
+        incorrect: `wrong ${options.lemma}`,
+        correction: options.lemma,
+        explanation: `Use ${options.lemma} here.`,
+        sources: [sourceRef],
+        status: "published",
+      }],
+      status: "published",
+    }],
+    connections: options.connections ?? [],
+  });
+}
+
 describe("auditDictionaryRecords", () => {
+  it("reports deterministic Vocabulary v2 metrics globally and per list", () => {
+    const publishedCore = metricRecord({
+      lemma: "published-core",
+      tier: "core",
+      publicationStatus: "published",
+      provider: "curated",
+      listIds: ["ngsl", "ngsl", "__proto__"],
+      recordStatus: "verified",
+      mistakes: false,
+      connections: [connection({ target: "review-core", type: "synonym", gloss: "published guidance" })],
+    });
+    const draftCore = metricRecord({
+      lemma: "draft-core",
+      tier: "core",
+      publicationStatus: "draft",
+      provider: "wordnet",
+      listIds: ["academic", "total"],
+      examples: false,
+      patterns: false,
+      mistakes: false,
+      connections: [],
+    });
+    const reviewCore = metricRecord({
+      lemma: "review-core",
+      tier: "core",
+      publicationStatus: "review",
+      provider: "dictionaryapi",
+      listIds: ["academic", "academic"],
+      examples: false,
+      connections: [connection({ target: "published-core", type: "antonym", status: "unreviewed", gloss: null })],
+    });
+    const hiddenAdvanced = metricRecord({
+      lemma: "hidden-advanced",
+      tier: "advanced",
+      publicationStatus: "hidden",
+      provider: "llm",
+      listIds: ["business"],
+      examples: false,
+      patterns: false,
+      mistakes: false,
+      connections: [connection({ target: "missing-target", type: "builds_on", status: "hidden", gloss: null })],
+    });
+    const reviewAdvanced = metricRecord({
+      lemma: "review-advanced",
+      tier: "advanced",
+      publicationStatus: "review",
+      provider: "tatoeba",
+      listIds: ["toeic"],
+      patterns: false,
+      connections: [connection({ target: "published-core", type: "collocation", status: "published", gloss: " " })],
+    });
+    const publishedAdvanced = metricRecord({
+      lemma: "published-advanced",
+      tier: "advanced",
+      publicationStatus: "published",
+      provider: "wordnet",
+      listIds: ["fitness"],
+      connections: [connection({ target: "published-core", type: "intensity", status: "published", gloss: "published guidance" })],
+    });
+
+    const report = auditDictionaryRecords([
+      publishedAdvanced,
+      hiddenAdvanced,
+      reviewCore,
+      publishedCore,
+      reviewAdvanced,
+      draftCore,
+    ]);
+
+    expect(report.total.publication).toEqual({ draft: 1, review: 2, published: 2, hidden: 1 });
+    expect(report.total.senses).toEqual({ total: 6, unsupported: 1, withoutExamples: 3 });
+    expect(report.total.usage).toEqual({ withoutPatterns: 3, withoutMistakes: 3 });
+    expect(report.total.connections).toEqual({ published: 3, unreviewed: 1, hidden: 1, unexplained: 3 });
+    expect(report.total.advanced).toEqual({ quarantined: 1, reviewable: 1, published: 1 });
+    expect(report.total.claimableSenses).toBe(2);
+    expect(report.total.sources).toEqual({ curated: 1, wordnet: 2, dictionaryapi: 1, tatoeba: 1, llm: 1 });
+    expect(report.total.strict).toEqual({
+      publishedPlaceholders: 0,
+      publishedUnsupportedSenses: 0,
+      claimableSensesWithoutSourcedExamples: 0,
+      publishedConnectionsToHiddenOrMissingTargets: 1,
+      learnerConnectionsWithoutGloss: 1,
+    });
+
+    expect(report.lists.ngsl).toMatchObject({
+      pages: 1,
+      publication: { draft: 0, review: 0, published: 1, hidden: 0 },
+      senses: { total: 1, unsupported: 0, withoutExamples: 0 },
+      usage: { withoutPatterns: 0, withoutMistakes: 1 },
+      connections: { published: 1, unreviewed: 0, hidden: 0, unexplained: 0 },
+      advanced: { quarantined: 0, reviewable: 0, published: 0 },
+      claimableSenses: 1,
+      sources: { curated: 1, wordnet: 0, dictionaryapi: 0, tatoeba: 0, llm: 0 },
+    });
+    expect(report.lists["__proto__"]).toMatchObject({ pages: 1, claimableSenses: 1 });
+    expect(Object.getPrototypeOf(report.lists)).toBeNull();
+    expect(Object.keys(report.lists)).toEqual(["__proto__", "academic", "business", "fitness", "ngsl", "toeic", "total"]);
+    expect(Object.keys(report.total.edges.byType)).toEqual(["antonym", "builds_on", "collocation", "intensity", "synonym"]);
+    expect(Object.getPrototypeOf(report.total.edges.byType)).toBeNull();
+  });
+
   it("counts global and per-list dictionary quality from primary canonical senses", () => {
     const report = auditDictionaryRecords([
       record(),
@@ -75,12 +228,12 @@ describe("auditDictionaryRecords", () => {
       }),
     ]);
 
-    expect(report.total).toEqual({
+    expect(report.total).toMatchObject({
       pages: 4, placeholders: 1, noExamples: 2, unknownPartOfSpeech: 2, llmOnlyAdvanced: 1, zeroConnections: 1,
       evidence: { verified: 1, sourceBacked: 1, aiDraft: 2 },
       edges: { total: 4, published: 4, unreviewed: 0, hidden: 0, explained: 1, unexplained: 3, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 }, byType: { antonym: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 } }, builds_on: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 } }, synonym: { total: 2, published: 2, unreviewed: 0, hidden: 0, explained: 1, unexplained: 1, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 } } } },
     });
-    expect(report.lists).toEqual({
+    expect(report.lists).toMatchObject({
       academic: {
         pages: 2, placeholders: 1, noExamples: 2, unknownPartOfSpeech: 1, llmOnlyAdvanced: 1, zeroConnections: 1,
         evidence: { verified: 1, sourceBacked: 0, aiDraft: 1 },
@@ -115,14 +268,59 @@ describe("auditDictionaryRecords", () => {
     expect(report.lists["__proto__"].edges.byType["__proto__"]).toEqual({ total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 1, unexplained: 0, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 } });
   });
 
-  it("reports strict failures for learner-facing connections without authored glosses, but not editorial debt", () => {
-    expect(hasStrictFailures(auditDictionaryRecords([record({ senses: [sense({ examples: [] })], connections: [] })]))).toBe(false);
+  it("reports only published blocking violations as strict failures", () => {
+    expect(hasStrictFailures(auditDictionaryRecords([record({ senses: [sense({ examples: [] })], connections: [] })]))).toBe(true);
     expect(hasStrictFailures(auditDictionaryRecords([record({ senses: [sense({ definition: "Needs a fuller dictionary source." })] })]))).toBe(true);
-    expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [{ ...source, sourceId: "llm" }] })]))).toBe(true);
-    expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [] })]))).toBe(false);
-    expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [{ ...source, sourceId: "llm" }, { ...source, sourceId: "wordnet" }] })]))).toBe(false);
+    expect(hasStrictFailures(auditDictionaryRecords([record({
+      tier: "advanced",
+      sources: [{ ...source, sourceId: "llm" }],
+      senses: [sense({ sources: [{ ...source, sourceId: "llm" }] })],
+      connections: [],
+    })]))).toBe(true);
+    expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [], connections: [] })]))).toBe(false);
+    expect(hasStrictFailures(auditDictionaryRecords([record({
+      tier: "advanced",
+      sources: [{ ...source, sourceId: "llm" }, { ...source, sourceId: "wordnet" }],
+      connections: [],
+    })]))).toBe(false);
     expect(hasStrictFailures(auditDictionaryRecords([record({ connections: [connection({ status: "published", gloss: null })] })]))).toBe(true);
     expect(hasStrictFailures(auditDictionaryRecords([record({ connections: [connection({ status: "unreviewed", gloss: null }), connection({ status: "hidden", gloss: null })] })]))).toBe(false);
+  });
+
+  it.each(["hidden", "missing"] as const)("blocks a published connection to a %s target", (targetState) => {
+    const target = targetState === "hidden"
+      ? record({ lemma: "hidden-target", publicationStatus: "hidden" })
+      : null;
+    const sourceRecord = record({
+      lemma: "source-record",
+      connections: [connection({ target: target?.lemma ?? "missing-target", status: "published", gloss: "explained" })],
+    });
+
+    expect(hasStrictFailures(auditDictionaryRecords(target ? [sourceRecord, target] : [sourceRecord]))).toBe(true);
+  });
+
+  it("does not make hidden or unreviewed connection debt strict", () => {
+    const target = record({ lemma: "public-target", connections: [] });
+    const sourceRecord = record({
+      lemma: "editorial-debt",
+      connections: [
+        connection({ target: "missing-target", status: "hidden", gloss: null }),
+        connection({ target: "missing-target", status: "unreviewed", gloss: null }),
+      ],
+    });
+
+    expect(hasStrictFailures(auditDictionaryRecords([sourceRecord, target]))).toBe(false);
+  });
+
+  it("reports strict-count increases against a base audit manifest", () => {
+    const base = auditDictionaryRecords([record({ connections: [] })]);
+    const current = auditDictionaryRecords([record({
+      connections: [connection({ target: "anchor", status: "published", gloss: null })],
+    })]);
+
+    expect(strictViolationRegressions(current.total.strict, base.total.strict)).toEqual([
+      "learnerConnectionsWithoutGloss increased from 0 to 1",
+    ]);
   });
 
   it("does not let explained unreviewed or hidden edges mask an unexplained published edge", () => {
