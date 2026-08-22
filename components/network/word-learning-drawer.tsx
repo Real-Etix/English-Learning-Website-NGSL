@@ -31,12 +31,17 @@ type AudioRegion = "uk" | "us" | "any";
 
 type WordLearningDrawerProps = {
   profile: WordLearningProfile | null;
+  display: string;
+  partOfSpeech: string | null;
+  loadState: "loading" | "ready" | "error";
+  errorMessage: string | null;
   chart: { name: string; hue: string; glyph: string };
   held: boolean;
   solid: boolean;
   xp: number;
   rarity: { word: string; dot: string; text: string };
   onClose: () => void;
+  onRetry: () => void;
   onNavigate: (lemma: string) => void;
   onOpenQuiz: () => void;
   onCompose: () => void;
@@ -73,12 +78,17 @@ function connectionButtonStyle(type: string, held: boolean) {
 
 export function WordLearningDrawer({
   profile,
+  display,
+  partOfSpeech,
+  loadState,
+  errorMessage,
   chart,
   held,
   solid,
   xp,
   rarity,
   onClose,
+  onRetry,
   onNavigate,
   onOpenQuiz,
   onCompose,
@@ -184,9 +194,48 @@ export function WordLearningDrawer({
             </div>
           </div>
         </>
-      ) : <div style={{ display: "flex", height: "100%", padding: 24, alignItems: "center", justifyContent: "center", textAlign: "center", font: `400 13px/1.6 ${SS}`, color: "#94A0B4" }}>Learning details are unavailable for this star right now.</div>}
+      ) : <UnavailableDrawer display={display} partOfSpeech={partOfSpeech} loadState={loadState} errorMessage={errorMessage} chart={chart} held={held} solid={solid} xp={xp} rarity={rarity} onClose={onClose} onRetry={onRetry} onCompose={onCompose} />}
     </aside>
   );
+}
+
+function UnavailableDrawer({
+  display,
+  partOfSpeech,
+  loadState,
+  errorMessage,
+  chart,
+  held,
+  solid,
+  xp,
+  rarity,
+  onClose,
+  onRetry,
+  onCompose,
+}: Pick<WordLearningDrawerProps, "display" | "partOfSpeech" | "loadState" | "errorMessage" | "chart" | "held" | "solid" | "xp" | "rarity" | "onClose" | "onRetry" | "onCompose">) {
+  const failed = loadState === "error";
+  return <>
+    <header style={{ display: "flex", alignItems: "flex-start", gap: 12, padding: "18px 18px 14px", borderBottom: "1px solid rgba(241,238,230,.08)" }}>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+          <span style={{ display: "grid", placeItems: "center", width: 20, height: 20, borderRadius: 6, font: `400 10px/1 ${MN}`, background: "rgba(241,238,230,.07)", color: chart.hue }}>{chart.glyph}</span>
+          <span style={{ font: `500 9.5px/1 ${MN}`, letterSpacing: ".16em", textTransform: "uppercase", color: chart.hue }}>{chart.name}</span>
+        </div>
+        <h2 style={{ margin: "9px 0 0", font: `400 38px/1.02 ${SF}`, letterSpacing: "-.01em", color: "#F1EEE6" }}>{display}</h2>
+        {partOfSpeech && <div style={{ marginTop: 8 }}><span style={{ padding: "3px 8px", borderRadius: 999, border: "1px solid rgba(241,238,230,.12)", font: `400 10.5px/1 ${MN}`, color: "#94A0B4" }}>{partOfSpeech}</span></div>}
+      </div>
+      <button className="word-learning-drawer-focus" type="button" onClick={onClose} aria-label="Close word learning drawer" style={{ ...buttonStyle, flex: "none", width: 44, height: 44, display: "grid", placeItems: "center", border: "1px solid rgba(241,238,230,.1)", background: "none", color: "#94A0B4", fontSize: 13 }}>✕</button>
+    </header>
+    <div aria-live="polite" style={{ flex: 1, minHeight: 0, overflowY: "auto", padding: "22px 18px", display: "flex", flexDirection: "column", gap: 16 }}>
+      <EmptyState>{failed ? errorMessage ?? "Learning details could not be loaded for this star." : "Reading this star’s learning details…"}</EmptyState>
+      {failed && <button className="word-learning-drawer-focus" type="button" onClick={onRetry} style={{ ...buttonStyle, alignSelf: "flex-start", padding: "9px 13px", border: "1px solid rgba(191,217,242,.34)", background: "rgba(191,217,242,.1)", color: "#BFD9F2", font: `600 12px/1 ${SS}` }}>Retry learning details</button>}
+      <div style={{ marginTop: "auto", paddingTop: 14, borderTop: "1px solid rgba(241,238,230,.08)", display: "flex", flexDirection: "column", gap: 9 }}>
+        {held && <button className="word-learning-drawer-focus" type="button" onClick={onCompose} disabled={solid} style={{ ...buttonStyle, width: "100%", padding: 12, border: `1px solid ${solid ? "rgba(143,227,192,.3)" : "rgba(203,185,233,.32)"}`, background: solid ? "rgba(143,227,192,.12)" : "rgba(203,185,233,.14)", color: solid ? "#8FE3C0" : "#CBB9E9", font: `600 13px/1 ${SS}` }}>{solid ? "◆ Used in a sentence" : "✎ Use it in a sentence"}</button>}
+        {!held && <button type="button" disabled style={{ ...buttonStyle, width: "100%", padding: 12, border: "1px solid rgba(232,168,159,.22)", background: "rgba(232,168,159,.06)", color: "#E8A89F", cursor: "default", font: `600 13px/1 ${SS}` }}>Learning details are needed to claim this star</button>}
+        <div style={{ display: "flex", alignItems: "center", gap: 8, justifyContent: "space-between", fontSize: 11.5, color: "#6B7789" }}><span style={{ display: "flex", alignItems: "center", gap: 6 }}><span style={{ width: 6, height: 6, borderRadius: 999, background: rarity.dot }} /><span style={{ color: rarity.dot, fontWeight: 500 }}>{rarity.word}</span><span>{rarity.text}</span></span><span style={{ font: `500 10.5px/1 ${MN}`, color: "#F2D9A0" }}>+{xp} xp</span></div>
+      </div>
+    </div>
+  </>;
 }
 
 function Sense({ sense, primary = false }: { sense: WordLearningProfile["senses"][number]; primary?: boolean }) {

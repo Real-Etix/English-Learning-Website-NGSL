@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "r
 
 import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
 import { WordLearningDrawer } from "@/components/network/word-learning-drawer";
+import { resolveWordLearningProfile, type WordLearningResponse } from "@/components/network/word-learning-response";
 import { ChartShardStore } from "@/components/network/galaxy/chart-shard-store";
 import {
   markGalaxyCriticalReady,
@@ -30,12 +31,10 @@ import { WordSelectionCoordinator } from "@/components/network/galaxy/word-selec
 import { wordXp } from "@/lib/collection/xp";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
 import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
-import type { WordDetail } from "@/lib/content/word-detail";
 import type { WordLearningProfile } from "@/lib/content/word-learning";
 import type { FullGalaxyData } from "@/lib/galaxy/full-codec";
 import type { LadderRung, RunStop } from "@/lib/galaxy/learning-routes";
 import type { ChartShard, GalaxyChart, GalaxyManifest, SearchEntry } from "@/lib/galaxy/types";
-import type { WikiPage } from "@/lib/wiki/parse-wiki";
 import type { ProgressiveStarEngine } from "@/components/network/galaxy/progressive-engine";
 
 /* ============================================================================
@@ -79,32 +78,6 @@ const norm = (s: string) => String(s || "").trim().toLowerCase().replace(/[^a-z]
 function hash(str: string) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
 function rng(seed: number) { let s = seed; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
 function isAbortError(error: unknown) { return typeof error === "object" && error !== null && "name" in error && error.name === "AbortError"; }
-function isWordLearningProfile(value: unknown): value is WordLearningProfile {
-  if (typeof value !== "object" || value === null) return false;
-  const profile = value as Record<string, unknown>;
-  const isText = (item: unknown) => typeof item === "string";
-  const isOptionalText = (item: unknown) => item === null || isText(item);
-  const pronunciation = profile.pronunciation as Record<string, unknown> | null;
-  return isText(profile.lemma) && isText(profile.display) && isText(profile.tier)
-    && isText(profile.partOfSpeech) && Array.isArray(profile.forms) && profile.forms.every(isText)
-    && isText(profile.status) && Array.isArray(profile.sources) && profile.sources.every(isText)
-    && isText(profile.evidence) && isText(profile.evidenceLabel)
-    && typeof pronunciation === "object" && pronunciation !== null
-    && isOptionalText(pronunciation.ipa) && isOptionalText(pronunciation.audioUk)
-    && isOptionalText(pronunciation.audioUs) && isOptionalText(pronunciation.audioAny)
-    && Array.isArray(profile.senses) && profile.senses.every((sense) => typeof sense === "object" && sense !== null
-      && isText((sense as Record<string, unknown>).id) && isText((sense as Record<string, unknown>).partOfSpeech)
-      && isText((sense as Record<string, unknown>).definition) && isOptionalText((sense as Record<string, unknown>).example)
-      && isText((sense as Record<string, unknown>).source) && typeof (sense as Record<string, unknown>).primary === "boolean")
-    && Array.isArray(profile.examples) && profile.examples.every((example) => typeof example === "object" && example !== null
-      && isText((example as Record<string, unknown>).text) && isText((example as Record<string, unknown>).source))
-    && isOptionalText(profile.usageNote)
-    && Array.isArray(profile.connections) && profile.connections.every((connection) => typeof connection === "object" && connection !== null
-      && isText((connection as Record<string, unknown>).type) && isText((connection as Record<string, unknown>).target)
-      && ("gloss" in connection ? isOptionalText((connection as Record<string, unknown>).gloss) : true)
-      && typeof (connection as Record<string, unknown>).explained === "boolean")
-    && typeof profile.canClaim === "boolean" && isOptionalText(profile.claimBlockReason);
-}
 function normalizeAudioUrl(value: string | null | undefined) {
   if (!value) return null;
   const candidate = value.trim().startsWith("//") ? `https:${value.trim()}` : value.trim();
@@ -163,7 +136,7 @@ function chartBlurb(chart: GalaxyChart): string {
     : `Words that orbit “${chart.name}” — ${chart.wordCount} stars linked by meaning.`;
 }
 
-type WordResponse = { page: WikiPage; detail: WordDetail | null; learning?: WordLearningProfile | null; rarity: WordRarity | null };
+type WordResponse = WordLearningResponse & { rarity: WordRarity | null };
 type QuizKind = "type" | "word";
 type QuizState = {
   kind: QuizKind; lemma: string; prompt: string; sentence?: string; answer: string;
@@ -228,6 +201,8 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [compose, setCompose] = useState<ComposeState | null>(null);
   // detail data for the focused star
   const [wordData, setWordData] = useState<WordResponse | null>(null);
+  const [wordError, setWordError] = useState<{ lemma: string; message: string } | null>(null);
+  const [wordRetry, setWordRetry] = useState(0);
   // tutor
   const [chatOpen, setChatOpen] = useState(false);
   const [chatLog, setChatLog] = useState<{ role: "user" | "assistant"; text: string }[]>([]);
@@ -732,12 +707,35 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     if (!focus) return;
     let alive = true;
     fetch(`/api/word/${encodeURIComponent(focus)}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d: WordResponse | null) => { if (alive && d) setWordData(d); })
-      .catch(() => {});
+      .then(async (response) => {
+        if (!response.ok) throw new Error("Learning details could not be loaded.");
+        const data = await response.json() as WordResponse;
+        if (!data?.page || data.page.lemma !== focus) throw new Error("Learning details could not be loaded.");
+        return data;
+      })
+      .then((data) => {
+        if (!alive) return;
+        setWordData(data);
+        setWordError(null);
+      })
+      .catch((error: unknown) => {
+        if (!alive || isAbortError(error)) return;
+        setWordError({
+          lemma: focus,
+          message: error instanceof Error ? error.message : "Learning details could not be loaded.",
+        });
+      });
     return () => { alive = false; };
-  }, [focus]);
+  }, [focus, wordRetry]);
   const wordReady = !!focus && wordData?.page?.lemma === focus;
+  const wordLoadState = wordReady
+    ? "ready"
+    : wordError?.lemma === focus ? "error" : "loading";
+  const retryWord = useCallback(() => {
+    if (!focus) return;
+    setWordError(null);
+    setWordRetry((retry) => retry + 1);
+  }, [focus]);
 
 
   // ---- claiming ----
@@ -807,9 +805,16 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
         });
       }
     };
-    if (wordData?.page?.lemma === lemma && isWordLearningProfile(wordData.learning)) build(wordData.learning);
-    else fetch(`/api/word/${encodeURIComponent(lemma)}`).then((r) => (r.ok ? r.json() : null))
-      .then((d: WordResponse | null) => { if (isWordLearningProfile(d?.learning)) build(d.learning); }).catch(() => {});
+    const currentProfile = wordData?.page?.lemma === lemma ? resolveWordLearningProfile(wordData) : null;
+    if (currentProfile) {
+      build(currentProfile);
+      return;
+    }
+    fetch(`/api/word/${encodeURIComponent(lemma)}`).then((r) => (r.ok ? r.json() : null))
+      .then((d: WordResponse | null) => {
+        const profile = resolveWordLearningProfile(d);
+        if (profile) build(profile);
+      }).catch(() => {});
   }, [owned, atlas, residentShards, wordData, showToast]);
 
   const answerChoice = useCallback((id: string) => {
@@ -1000,7 +1005,9 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   }, [focus, atlas]);
 
   const playPronunciation = useCallback((region: "uk" | "us" | "any") => {
-    const pronunciation = isWordLearningProfile(wordData?.learning) ? wordData.learning.pronunciation : null;
+    const pronunciation = wordData?.page?.lemma === focus
+      ? resolveWordLearningProfile(wordData)?.pronunciation ?? null
+      : null;
     const requested = region === "uk"
       ? pronunciation?.audioUk ?? pronunciation?.audioAny ?? pronunciation?.audioUs
       : region === "us"
@@ -1014,7 +1021,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     } catch {
       speak();
     }
-  }, [wordData, speak]);
+  }, [focus, wordData, speak]);
 
   // ---- derived view models ----
   const level = me?.level ?? 1;
@@ -1191,8 +1198,8 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     if (!focus) return null;
     const wd = atlas.byLemma.get(focus);
     const chartMeta = wd ? atlas.chartById.get(wd.chartId) : null;
-    const page = wordData?.page;
-    const learning = isWordLearningProfile(wordData?.learning) ? wordData.learning : null;
+    const page = wordData?.page?.lemma === focus ? wordData.page : null;
+    const learning = page ? resolveWordLearningProfile(wordData) : null;
     const held = owned.has(focus);
     const rarity = wordData?.rarity;
     const percent = rarity?.percent ?? 0;
@@ -1200,6 +1207,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     const xp = page ? wordXp({ tier: page.tier, sfi: page.sfi }) : 0;
     return {
       display: learning?.display ?? wd?.display ?? page?.display ?? focus,
+      partOfSpeech: learning?.partOfSpeech ?? wd?.partOfSpeech ?? page?.pos ?? null,
       learning,
       chart: { name: chartMeta?.name ?? "", hue: chartMeta?.hue ?? "#94A0B4", glyph: chartMeta?.glyph ?? "◇" },
       held, solid: used.has(focus), xp, rarityWord,
@@ -1545,7 +1553,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
           {/* DETAIL DRAWER */}
           {focus && (
-            drawer && wordReady ? <WordLearningDrawer profile={drawer.learning} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={{ word: drawer.rarityWord, dot: drawer.rarityDot, text: drawer.rarityText }} onClose={() => select(null)} onNavigate={select} onOpenQuiz={() => openQuiz(focus)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} /> : <aside style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "min(100vw, 420px)", display: "grid", placeItems: "center", background: "rgba(9,13,25,.94)", borderLeft: "1px solid rgba(241,238,230,.1)", color: "#6B7789", font: `400 13px/1 ${SS}`, zIndex: 35 }}>Reading the star…</aside>
+            drawer && <WordLearningDrawer profile={drawer.learning} display={drawer.display} partOfSpeech={drawer.partOfSpeech} loadState={wordLoadState} errorMessage={wordError?.lemma === focus ? wordError.message : null} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={{ word: drawer.rarityWord, dot: drawer.rarityDot, text: drawer.rarityText }} onClose={() => select(null)} onRetry={retryWord} onNavigate={select} onOpenQuiz={() => openQuiz(focus)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} />
           )}
 
           {/* FIRST-RUN INTRO */}
