@@ -1,7 +1,8 @@
 # Vocabulary Wiki — Schema & Operating Rules
 
 This folder is an **LLM-maintained vocabulary wiki** (Karpathy LLM Wiki pattern).
-It is the single source of truth for word content and the connections between words.
+Its markdown pages and their typed `[[wiki-links]]` are the single source of truth for
+word content and connections between words.
 The frontend graph and the study pages are both *generated* from these files — do not
 hand-edit generated output; edit the wiki pages here.
 
@@ -34,14 +35,15 @@ lists: [ngsl]                        # which base lists it appears in (core only
 rank: 184                            # frequency rank within its primary list (core only)
 sfi: 67.22                           # standard frequency index if known
 sources: [dictionaryapi, tatoeba]    # source ids backing the factual layer
-status: seeded | enriched | verified # provenance of the connections (see below)
+status: seeded | enriched | verified # review status (see evidence rules below)
 ---
 
 ## Definition
-One learner-friendly sentence. Factual layer — sourced, never invented by the LLM.
+One learner-friendly sentence. Factual layer — source it, preserve it faithfully, and
+never invent it with an LLM.
 
 ## Examples
-- Real example sentence. _(source)_
+- Real, source-backed example sentence. _(source)_
 
 ## Connections
 <!-- The edges. Each bullet is `<edge-type>: [[target]] — short gloss`. -->
@@ -54,8 +56,28 @@ One learner-friendly sentence. Factual layer — sourced, never invented by the 
 - domain: size
 
 ## Usage note
-Optional. Register/nuance an LLM can add on top of the factual layer.
+Optional authored guidance about register or nuance. It may be absent; never generate
+one at request time or use it to replace a factual definition or sourced example.
 ```
+
+## Factual sources, evidence, and claim readiness
+
+`sources` records the page-level provenance of the factual layer. The factual source
+ids are `curated`, `wordnet`, `dictionaryapi`, and `tatoeba`. Attribute facts and
+examples to their actual source, preserve authored text, and do not fabricate missing
+definitions, examples, relationship glosses, or usage guidance. `llm` identifies a
+drafting pass, not factual evidence.
+
+For quality reporting, `status: verified` is verified evidence; otherwise a page with
+any factual source is source-backed; remaining pages are AI drafts. An advanced page
+whose only source is `llm` is an LLM-only advanced draft. In the learner profile it
+remains an AI draft until trustworthy dictionary evidence supplies a primary meaning.
+A learner may newly claim a word only when its normalized profile has a trustworthy
+primary meaning and at least one sourced example. Existing held words stay held.
+
+Run `npm run audit:dictionary` to measure current coverage without changing wiki
+files. `npm run audit:dictionary -- --strict` exits non-zero only for placeholder
+definitions or LLM-only advanced pages; ordinary coverage debt remains reportable.
 
 ## Edge types (the only allowed link relations)
 
@@ -76,12 +98,13 @@ Connections are typed. Use exactly these verbs; `lint` rejects unknown ones.
 edge to an advanced page, it MUST add the matching `advanced_form` edge to the
 core anchor page. `lint` checks this reciprocity.
 
-## `status` field — how trustworthy the connections are
+## `status` field — review status
 
-- `seeded` — page was auto-generated from dictionary data. Definition/examples are
-  real; connections may be empty or naive. Safe to overwrite.
-- `enriched` — an LLM pass has proposed connections. Usable, not yet reviewed.
-- `verified` — a human confirmed the connections. Never auto-overwrite.
+- `seeded` — page was created from its recorded sources. Connections may be empty or
+  naive. Safe to overwrite.
+- `enriched` — an LLM pass has proposed connections. It is not factual evidence by
+  itself and remains unreviewed.
+- `verified` — a human confirmed the page. Never auto-overwrite.
 
 ## Operations
 

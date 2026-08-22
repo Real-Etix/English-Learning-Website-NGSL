@@ -1,6 +1,6 @@
 # NGSL Vocabulary Galaxy
 
-A **Next.js** app that turns the [New General Service List (NGSL)](https://www.newgeneralservicelist.com/new-general-service-list) family of vocabulary lists into an explorable **3D universe of words**. Every word is a star; every line is a real relationship (synonym, antonym, "level-up" ladder). Learners orbit the galaxy, open a star for a Cambridge-style entry, **collect** words into their own space, and explore other people's spaces to discover vocabulary they don't have yet.
+A **Next.js** app that turns the [New General Service List (NGSL)](https://www.newgeneralservicelist.com/new-general-service-list) family of vocabulary lists into an explorable **3D universe of words**. Every word is a star; every line is a real relationship (synonym, antonym, "level-up" ladder). Learners orbit the galaxy, open a star for a dictionary-style entry, **collect** words into their own space, and explore other people's spaces to discover vocabulary they don't have yet.
 
 It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM Wiki" pattern**: the vocabulary is a folder of interlinked markdown pages that an LLM maintains, and that same link structure powers the graph.
 
@@ -11,7 +11,7 @@ It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM 
 ## What's in it
 
 - **3D vocabulary galaxy** (raw Three.js progressive constellations) — per list (NGSL, TOEIC, Business, Academic, Fitness) or "All". Orbit, zoom, search, and click a star to fly to it.
-- **Cambridge-style word cards** — IPA + UK/US audio (Free Dictionary API), definition, examples, the **advanced-word ladder** (`buy → purchase → procure`), synonyms/antonyms, word family.
+- **Evidence-aware word cards** — IPA + UK/US audio from the [Free Dictionary API](https://dictionaryapi.dev/), definitions, examples, the **advanced-word ladder** (`buy → purchase → procure`), synonyms/antonyms, and word family. The Free Dictionary API is not Cambridge Dictionary and its content is never labelled Cambridge.
 - **AI assistant** — a floating DeepSeek-powered tutor that writes with a list's real vocabulary, explains/quizzes words, and checks your writing.
 - **Collection spaces (Phase 1)** — collect words to earn XP, build **Your Space**, and share it (`/g/<slug>`). Visiting a space highlights the words you *don't* have in magenta.
 - **Rarity & leaderboard (Phase 2)** — each word shows how rare it is across explorers; spaces are ranked by XP at `/leaderboard`.
@@ -23,6 +23,15 @@ It began as a flashcard trainer and was rebuilt around **Andrej Karpathy's "LLM 
 ### The wiki is the source of truth
 - `wiki/pages/*.md` — one markdown page per word (~11k), with YAML frontmatter and a `## Connections` section whose `[[wiki-links]]` are the graph edges. Schema in `wiki/CLAUDE.md`.
 - `wiki/raw/` — clippings ingested from articles (see the clipper below).
+
+### Normalized learner profile
+
+When a learner selects a word, the app keeps the raw wiki page and Free Dictionary API
+response for compatibility, then builds a normalized learner profile. It prioritizes a
+verified or factual-source-backed primary meaning, preserves authored examples and
+connection glosses verbatim, labels unsupported content as an AI draft, and allows a
+new claim only when a trustworthy meaning and sourced example are available. This
+detail remains demand-loaded and is not included in the galaxy manifests.
 
 ### From wiki → graph (build-time)
 Reading 11k files per request is too slow, so `scripts/build-graph-data.ts` pre-computes a small **lite graph** (nodes + edges) per list into `data/generated/graphs/*.json`. Pages read those (`lib/wiki/graph-store.ts`), and word detail is fetched per-click via `/api/word/[lemma]`.
@@ -59,6 +68,7 @@ npm run build:graphs         # regenerate per-list graph JSON (run after any wik
 tsx scripts/seed-wiki-pages.ts        # WordNet + curated defs → wiki/pages/*.md
 tsx scripts/enrich-wiki-llm.ts        # DeepSeek adds advanced_form ladders (needs LLM_API_KEY)
 tsx scripts/lint-wiki.ts              # validate the wiki (0 errors expected)
+npm run audit:dictionary               # read-only dictionary quality totals and per-list coverage
 npm run seed:spaces          # seed curated public explore-spaces (needs a DB)
 
 # App

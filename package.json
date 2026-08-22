@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "audit:dictionary": "tsx scripts/audit-dictionary.ts",
     "test:e2e": "playwright test tests/e2e/galaxy-progressive.spec.ts",
     "test:perf": "playwright test tests/e2e/galaxy-performance.spec.ts",
     "postinstall": "prisma generate",
