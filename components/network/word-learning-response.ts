@@ -8,11 +8,35 @@ export type WordLearningResponse = {
   learning?: unknown;
 };
 
+const isText = (value: unknown) => typeof value === "string";
+const isOptionalText = (value: unknown) => value === null || isText(value);
+const isOptionalNumber = (value: unknown) => value === null || typeof value === "number";
+const isTextArray = (value: unknown) => Array.isArray(value) && value.every(isText);
+const normalizeLemma = (lemma: string) => lemma.trim().toLowerCase().replace(/\s+/g, " ");
+const lemmasMatch = (left: string, right: string) => {
+  const normalizedLeft = normalizeLemma(left);
+  const normalizedRight = normalizeLemma(right);
+  return Boolean(normalizedLeft) && normalizedLeft === normalizedRight;
+};
+
+function isWikiPage(value: unknown): value is WikiPage {
+  if (typeof value !== "object" || value === null) return false;
+  const page = value as Record<string, unknown>;
+  return isText(page.lemma) && Boolean(normalizeLemma(page.lemma))
+    && isText(page.display) && (page.tier === "core" || page.tier === "advanced")
+    && isText(page.pos) && isOptionalNumber(page.rank) && isOptionalNumber(page.sfi)
+    && isOptionalText(page.chart) && isOptionalText(page.region) && isTextArray(page.lists)
+    && isTextArray(page.forms) && isText(page.status) && isTextArray(page.sources)
+    && isText(page.definition) && isOptionalText(page.usageNote) && isTextArray(page.examples)
+    && Array.isArray(page.connections) && page.connections.every((connection) => typeof connection === "object" && connection !== null
+      && isText((connection as Record<string, unknown>).type) && isText((connection as Record<string, unknown>).target)
+      && (!("gloss" in connection) || isOptionalText((connection as Record<string, unknown>).gloss)))
+    && isTextArray(page.domains);
+}
+
 export function isWordLearningProfile(value: unknown): value is WordLearningProfile {
   if (typeof value !== "object" || value === null) return false;
   const profile = value as Record<string, unknown>;
-  const isText = (item: unknown) => typeof item === "string";
-  const isOptionalText = (item: unknown) => item === null || isText(item);
   const pronunciation = profile.pronunciation as Record<string, unknown> | null;
   return isText(profile.lemma) && isText(profile.display) && isText(profile.tier)
     && isText(profile.partOfSpeech) && Array.isArray(profile.forms) && profile.forms.every(isText)
@@ -35,9 +59,13 @@ export function isWordLearningProfile(value: unknown): value is WordLearningProf
     && typeof profile.canClaim === "boolean" && isOptionalText(profile.claimBlockReason);
 }
 
-export function resolveWordLearningProfile(response: WordLearningResponse | null | undefined): WordLearningProfile | null {
-  if (!response) return null;
-  return isWordLearningProfile(response.learning)
+export function resolveWordLearningProfile(
+  response: WordLearningResponse | null | undefined,
+  expectedLemma?: string,
+): WordLearningProfile | null {
+  if (!response || !isWikiPage(response.page)
+    || (expectedLemma !== undefined && !lemmasMatch(response.page.lemma, expectedLemma))) return null;
+  return isWordLearningProfile(response.learning) && lemmasMatch(response.learning.lemma, response.page.lemma)
     ? response.learning
     : buildWordLearningProfile(response.page, response.detail);
 }

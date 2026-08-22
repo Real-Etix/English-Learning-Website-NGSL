@@ -813,7 +813,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     }
     fetch(`/api/word/${encodeURIComponent(lemma)}`).then((r) => (r.ok ? r.json() : null))
       .then((d: WordResponse | null) => {
-        const profile = resolveWordLearningProfile(d);
+        const profile = resolveWordLearningProfile(d, lemma);
         if (profile) build(profile);
       }).catch(() => {});
   }, [owned, atlas, residentShards, wordData, showToast]);

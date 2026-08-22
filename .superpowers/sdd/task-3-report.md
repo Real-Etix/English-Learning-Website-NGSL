@@ -184,3 +184,22 @@ This review fix changes only the profile compatibility and drawer loading/failur
 ## Scope
 
 - The unavailable/loading drawer’s solid held-word compose action remains enabled while preserving its existing `◆ Used in a sentence` label, green solid-state styling, and truthful loading/error content. The ready-profile path and unrelated documentation are unchanged.
+
+---
+
+# Dictionary v2 Task 3 Review Fix: Lemma Integrity for Profiles and Quiz Loading
+
+## TDD evidence
+
+- RED: `npx vitest run components/network/word-learning-response.test.ts` failed as expected with three regressions: a structurally valid `learning` profile for `compass` was trusted for the `anchor` page, a response for `anchor` was accepted for a requested `compass` quiz, and an invalid raw page caused `buildWordLearningProfile` to throw.
+- GREEN: The resolver now normalizes and compares profile/page lemmas, validates raw pages before fallback construction, and accepts an optional expected lemma for async callers. The focused test command passed (`5` tests).
+
+## Verification
+
+- `npx vitest run components/network/word-learning-response.test.ts` passed (`5` tests).
+- `npx tsc --noEmit` passed with no output/errors.
+- `npm run lint` completed with `0` errors. It retains two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset`.
+
+## Scope
+
+- `openQuiz` now passes its requested lemma to the shared resolver, so a response with a mismatched page cannot create a quiz or claim a different word. Drawer UI, metadata, compose, tabs, and audio behavior are unchanged.
