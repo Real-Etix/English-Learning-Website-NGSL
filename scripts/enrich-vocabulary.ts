@@ -1,10 +1,7 @@
-/** Add validated lateral links between vocabulary records that already exist. */
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { applyVocabularyProposals, type VocabularyProposal } from "../lib/vocabulary/enrichment/apply-proposals";
-import { buildListGraph } from "../lib/vocabulary/graph";
-import { toGraphInput } from "../lib/vocabulary/graph-input";
 import { openNdjsonRepository, writeVocabularyRecords } from "../lib/vocabulary/ndjson-repository";
 import { normalizeVocabularyLemma } from "../lib/vocabulary/shards";
 import type { VocabularyRecord } from "../lib/vocabulary/schema";
@@ -12,20 +9,23 @@ import { completeJSON, hasLLM, LLM_MODEL } from "./llm-client";
 
 const RAW_DIR = path.join(process.cwd(), "wiki", "raw");
 const UNRESOLVED = path.join(RAW_DIR, "unresolved.json");
-const MAX_ADD = 5;
 
-type SuggestedLink = { word?: string; gloss?: string };
+type Args = { list: string; limit: number; dryRun: boolean };
+type SuggestedForm = { word?: string; gloss?: string };
 type UnresolvedWord = { word: string; reason: string };
 
-function parseArgs() {
+function parseArgs(): Args {
   const arguments_ = process.argv.slice(2);
   const get = (name: string) => arguments_.find((argument) => argument.startsWith(`--${name}=`))?.slice(name.length + 3);
   return {
-    list: get("list"),
-    maxDegree: Number(get("max-degree")) || 3,
-    limit: Number(get("limit")) || Number.POSITIVE_INFINITY,
+    list: get("list") ?? "ngsl",
+    limit: Number(get("limit")) || 10,
     dryRun: arguments_.includes("--dry-run"),
   };
+}
+
+function listRank(record: VocabularyRecord, list: string): number {
+  return record.lists.find((membership) => membership.id === list)?.rank ?? Number.MAX_SAFE_INTEGER;
 }
 
 async function collectRecords(): Promise<VocabularyRecord[]> {
@@ -34,22 +34,22 @@ async function collectRecords(): Promise<VocabularyRecord[]> {
   return records;
 }
 
-async function askLinks(record: VocabularyRecord): Promise<{ synonyms: SuggestedLink[]; collocations: SuggestedLink[] }> {
-  const response = await completeJSON<{ synonyms?: SuggestedLink[]; collocations?: SuggestedLink[] }>(
-    "You give lateral English vocabulary links. Only propose common existing words and include concise learner guidance. Reply JSON only.",
+async function requestForms(record: VocabularyRecord): Promise<SuggestedForm[]> {
+  const definition = record.senses[0]?.definition;
+  if (!definition) return [];
+  const response = await completeJSON<{ advanced_forms?: SuggestedForm[] }>(
+    "You propose concise, learner-safe advanced vocabulary links. Return strict JSON only. " +
+      "Each proposal must be a standard single English word and explain when to use it.",
     JSON.stringify({
       word: record.display,
       partOfSpeech: record.partOfSpeech,
-      definition: record.senses[0]?.definition ?? "",
-      format: {
-        synonyms: [{ word: "string", gloss: "non-empty learner guidance" }],
-        collocations: [{ word: "string", gloss: "non-empty learner guidance" }],
-      },
+      definition,
+      format: { advanced_forms: [{ word: "string", gloss: "non-empty learner guidance" }] },
     }),
     LLM_MODEL,
     2,
   );
-  return { synonyms: response?.synonyms ?? [], collocations: response?.collocations ?? [] };
+  return response?.advanced_forms ?? [];
 }
 
 async function reportUnresolved(entries: UnresolvedWord[]): Promise<void> {
@@ -66,7 +66,7 @@ async function reportUnresolved(entries: UnresolvedWord[]): Promise<void> {
       );
     }
   } catch {
-    // The report is recreated when it is absent or cannot be parsed.
+    // A missing or legacy malformed report is replaced with validated entries.
   }
   const unique = new Map<string, UnresolvedWord>();
   for (const entry of [...existing, ...entries]) unique.set(`${entry.word}\u0000${entry.reason}`, entry);
@@ -76,46 +76,31 @@ async function reportUnresolved(entries: UnresolvedWord[]): Promise<void> {
 async function main() {
   const args = parseArgs();
   const records = await collectRecords();
-  const degree = new Map<string, number>();
-  if (args.list) {
-    for (const node of buildListGraph(records.map(toGraphInput), args.list).nodes) degree.set(node.lemma, node.degree);
-  } else {
-    for (const record of records) for (const connection of record.connections) {
-      degree.set(record.lemma, (degree.get(record.lemma) ?? 0) + 1);
-      degree.set(connection.target, (degree.get(connection.target) ?? 0) + 1);
-    }
-  }
-  const candidates = records
-    .filter((record) => (!args.list || record.lists.some((membership) => membership.id === args.list)) && (degree.get(record.lemma) ?? 0) < args.maxDegree)
+  const selected = records
+    .filter((record) => record.tier === "core" && record.lists.some((membership) => membership.id === args.list))
+    .sort((left, right) => listRank(left, args.list) - listRank(right, args.list) || (left.lemma < right.lemma ? -1 : 1))
     .slice(0, args.limit);
-  console.log(`Selected lemmas (${candidates.length}): ${candidates.map((record) => record.lemma).join(", ") || "none"}`);
+
+  console.log(`Selected lemmas (${selected.length}): ${selected.map((record) => record.lemma).join(", ") || "none"}`);
   if (!hasLLM()) {
     console.log("Enrichment unavailable: no LLM configured (set LLM_API_KEY).");
     console.log("Proposed 0 connection(s); rejected 0; changed 0 record(s).");
     return;
   }
 
-  const suggestions = await Promise.all(candidates.map(async (record) => ({ record, links: await askLinks(record) })));
-  const proposals: VocabularyProposal[] = [];
-  for (const { record, links } of suggestions) {
-    let added = 0;
-    for (const [type, linksForType] of [["synonym", links.synonyms], ["collocation", links.collocations]] as const) {
-      for (const link of linksForType) {
-        if (added >= MAX_ADD) break;
-        const target = normalizeVocabularyLemma(link.word ?? "");
-        const gloss = link.gloss?.trim() ?? "";
-        if (!target || !gloss || target === record.lemma) continue;
-        proposals.push({ kind: "connection", lemma: record.lemma, target, type, gloss, sourceId: "llm" });
-        proposals.push({ kind: "connection", lemma: target, target: record.lemma, type, gloss, sourceId: "llm" });
-        added += 1;
-      }
-    }
-  }
+  const forms = await Promise.all(selected.map(async (record) => ({ record, forms: await requestForms(record) })));
+  const proposals: VocabularyProposal[] = forms.flatMap(({ record, forms: suggested }) => suggested.flatMap((form) => {
+    const target = normalizeVocabularyLemma(form.word ?? "");
+    const gloss = form.gloss?.trim() ?? "";
+    if (!target || !gloss) return [];
+    return [{ kind: "connection", lemma: record.lemma, target, type: "advanced_form", gloss, sourceId: "llm" }];
+  }));
   const result = applyVocabularyProposals(records, proposals);
   const unresolved = result.rejected.flatMap((rejection) => {
     const match = /^unknown target: (.+)$/.exec(rejection.reason);
     return match ? [{ word: match[1], reason: `enrichment suggestion from ${rejection.lemma}` }] : [];
   });
+
   if (!args.dryRun) {
     const shards = await writeVocabularyRecords(path.join(process.cwd(), "content", "vocabulary"), result.changed);
     await reportUnresolved(unresolved);
