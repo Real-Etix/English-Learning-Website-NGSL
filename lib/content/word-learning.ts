@@ -88,7 +88,7 @@ export function buildWordLearningProfile(
   const primaryDefinition = primarySense?.definition ?? "";
   const primaryExamples = primarySense?.examples ?? [];
   const sourceIds = record.sources.map((source) => source.sourceId);
-  const wikiEvidence = evidenceForSources(record.sources, { verified: record.status === "verified" });
+  const wikiEvidence = evidenceForSources(primarySense?.sources ?? [], { verified: record.status === "verified" });
   const factualWikiSource = wikiEvidence !== "ai-draft";
   const advancedWithoutFactualSource = record.tier === "advanced" && !factualWikiSource;
   const usableWikiDefinition = Boolean(primaryDefinition.trim()) && !isPlaceholder(primaryDefinition);

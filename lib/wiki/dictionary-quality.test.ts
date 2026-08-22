@@ -147,4 +147,19 @@ describe("auditDictionaryRecords", () => {
 
     expect(report.total.evidence).toEqual({ verified: 0, sourceBacked: 0, aiDraft: 1 });
   });
+
+  it("does not use unrelated record sources for an unsourced primary sense", () => {
+    const llmSource = { ...source, sourceId: "llm" };
+    const dictionarySource = { ...source, sourceId: "dictionaryapi" };
+    const report = auditDictionaryRecords([record({
+      status: "verified",
+      sources: [llmSource, dictionarySource],
+      senses: [
+        sense({ sources: [] }),
+        sense({ id: "mixed-dictionary-import", sources: [dictionarySource], status: "review" }),
+      ],
+    })]);
+
+    expect(report.total.evidence).toEqual({ verified: 0, sourceBacked: 0, aiDraft: 1 });
+  });
 });

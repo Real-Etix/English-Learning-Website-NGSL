@@ -19,7 +19,7 @@ function hasSourcedExample(sense: VocabularySense): boolean {
 
 /** Classifies one sense without treating LLM output as factual evidence. */
 export function factualEvidenceFor(record: VocabularyRecord, sense: VocabularySense): "verified" | "source-backed" | "ai-draft" {
-  return evidenceForSources(sourceRefsForSense(record, sense), {
+  return evidenceForSources(sourceRefsForSense(sense), {
     verified: isUsableDefinition(sense.definition) && (record.status === "verified" || sense.status === "published"),
   });
 }

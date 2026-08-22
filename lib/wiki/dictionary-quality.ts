@@ -51,9 +51,12 @@ function emptyCounts(): DictionaryQualityCounts {
 
 function evidenceFor(record: VocabularyRecord): keyof DictionaryEvidenceCounts {
   const primarySense = record.senses[0];
-  const evidence = evidenceForSources(primarySense ? sourceRefsForSense(record, primarySense) : record.sources, {
+  const primarySources = primarySense ? sourceRefsForSense(primarySense) : [];
+  const evidence = evidenceForSources(primarySources, {
     verified: record.status === "verified",
-    allowVerifiedWithoutFactualSource: true,
+    allowVerifiedWithoutFactualSource: record.status === "verified"
+      && primarySources.length === 0
+      && record.sources.length === 0,
   });
   return evidence === "source-backed" ? "sourceBacked" : evidence === "ai-draft" ? "aiDraft" : "verified";
 }

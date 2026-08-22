@@ -5,6 +5,7 @@ import {
   isFactualSourceId,
   sourceEntryFor,
   sourcePrecedenceFor,
+  sourceRefsForSense,
 } from "./source-evidence";
 
 const sourceRef = (sourceId: string) => ({
@@ -52,5 +53,12 @@ describe("source evidence", () => {
       verified: true,
       allowVerifiedWithoutFactualSource: true,
     })).toBe("ai-draft");
+  });
+
+  it("returns only explicit sense references without a record-level fallback", () => {
+    expect(sourceRefsForSense({ sources: [sourceRef("dictionaryapi")] })).toEqual([
+      sourceRef("dictionaryapi"),
+    ]);
+    expect(sourceRefsForSense({ sources: [] })).toEqual([]);
   });
 });

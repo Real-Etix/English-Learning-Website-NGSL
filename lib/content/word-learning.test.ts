@@ -121,6 +121,33 @@ describe("buildWordLearningProfile", () => {
     expect(profile.senses.find((sense) => sense.primary)?.definition).not.toBe("LLM-generated core wording.");
   });
 
+  it("keeps an LLM-primary sense as an unclaimable draft when another sense is factual", () => {
+    const mixedRecord = page({
+      status: "enriched",
+      sources: ["llm", "dictionaryapi"],
+      definition: "LLM-generated primary wording.",
+      examples: ["An LLM-generated primary example."],
+    });
+    const llmSource = mixedRecord.sources.find((source) => source.sourceId === "llm")!;
+    const dictionarySource = mixedRecord.sources.find((source) => source.sourceId === "dictionaryapi")!;
+
+    const profile = buildWordLearningProfile({
+      ...mixedRecord,
+      senses: [
+        { ...mixedRecord.senses[0]!, sources: [llmSource] },
+        {
+          ...mixedRecord.senses[0]!,
+          id: "dictionary-imported-sense",
+          definition: "A separately imported factual meaning.",
+          sources: [dictionarySource],
+          status: "review",
+        },
+      ],
+    }, emptyDetail);
+
+    expect(profile).toMatchObject({ evidence: "ai-draft", canClaim: false });
+  });
+
   it("marks an LLM-only advanced draft without dictionary detail as unclaimable", () => {
     const aiDraftAdvancedPage = page({
       tier: "advanced",

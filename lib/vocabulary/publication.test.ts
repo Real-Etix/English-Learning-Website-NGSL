@@ -99,6 +99,17 @@ describe("vocabulary publication", () => {
     expect(factualEvidenceFor(enrichedRecord, enrichedRecord.senses[1]!)).toBe("source-backed");
   });
 
+  it("does not promote an unsourced sense from unrelated record sources", () => {
+    const mixed = mixedSourceFixture("verified");
+    const [primary, imported] = mixed.senses;
+    const unsourcedPrimary = {
+      ...mixed,
+      senses: [{ ...primary!, sources: [] }, imported!],
+    };
+
+    expect(factualEvidenceFor(unsourcedPrimary, unsourcedPrimary.senses[0]!)).toBe("ai-draft");
+  });
+
   it("requires a sourced publishable sense and a glossed published connection to a public core word", () => {
     const { core, advanced } = advancedFixture();
     const supported = {
