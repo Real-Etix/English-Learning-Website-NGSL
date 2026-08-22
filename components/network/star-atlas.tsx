@@ -754,7 +754,8 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     }
     setSelectedSenseId((current) => current && profile.senses.some((sense) => sense.id === current)
       ? current
-      : profile.senses.find((sense) => sense.canClaim)?.id
+      : profile.senses.find((sense) => sense.primary && sense.canClaim)?.id
+        ?? profile.senses.find((sense) => sense.canClaim)?.id
         ?? profile.senses.find((sense) => sense.primary)?.id
         ?? profile.senses[0]?.id
         ?? null);
@@ -945,7 +946,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setChatError(null);
     fetch("/api/chat", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: log.map((m) => ({ role: m.role, content: m.text })), listSlug, lemma: focus }),
+      body: JSON.stringify({ messages: log.map((m) => ({ role: m.role, content: m.text })), listSlug, lemma: focus, senseId: selectedSenseId ?? undefined }),
     })
       .then(async (r) => {
         const d = await r.json().catch(() => ({}));
@@ -955,7 +956,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       .then((d) => setChatLog((prev) => prev.concat([{ role: "assistant", text: d.reply || d.text || "" }])))
       .catch((e) => setChatError(e.message))
       .finally(() => setChatBusy(false));
-  }, [chatInput, chatBusy, chatLog, listSlug, focus]);
+  }, [chatInput, chatBusy, chatLog, listSlug, focus, selectedSenseId]);
 
   // ---- chart / mode actions ----
   const loadRun = useCallback(() => {
@@ -1152,12 +1153,12 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   }, [runComplete, route, owned, runStarted, runDay, runSeconds, persistLocal, select]);
 
   // ---- composition (production evidence) ----
-  const openCompose = useCallback((lemma: string, avoid: string[] = []) => {
-    if (!owned.has(lemma)) return;
+  const openCompose = useCallback((lemma: string, senseId: string | null, avoid: string[] = []) => {
+    if (!owned.has(lemma) || !senseId) return;
     setCompose({ task: null as unknown as ComposeTask, text: "", text2: "", verdict: null, gate: null, busy: true, attempts: 0, tried: avoid });
     fetch("/api/compose", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "task", lemma, claimed: Array.from(owned), avoid }),
+      body: JSON.stringify({ action: "task", lemma, senseId, claimed: Array.from(owned), avoid }),
     })
       .then((r) => (r.ok ? r.json() : null))
       .then((d: { task: ComposeTask | null } | null) => {
@@ -1585,7 +1586,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
           {/* DETAIL DRAWER */}
           {focus && (
-            drawer && <WordLearningDrawer profile={drawer.learning} display={drawer.display} partOfSpeech={drawer.partOfSpeech} loadState={wordLoadState} errorMessage={wordError?.lemma === focus ? wordError.message : null} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={drawer.rarity} onClose={() => select(null)} onRetry={retryWord} onNavigate={select} selectedSenseId={selectedSenseId} onSelectSense={setSelectedSenseId} onOpenQuiz={() => openQuiz(focus, selectedSenseId)} onCompose={() => openCompose(focus)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} />
+            drawer && <WordLearningDrawer profile={drawer.learning} display={drawer.display} partOfSpeech={drawer.partOfSpeech} loadState={wordLoadState} errorMessage={wordError?.lemma === focus ? wordError.message : null} chart={drawer.chart} held={drawer.held} solid={drawer.solid} xp={drawer.xp} rarity={drawer.rarity} onClose={() => select(null)} onRetry={retryWord} onNavigate={select} selectedSenseId={selectedSenseId} onSelectSense={setSelectedSenseId} onOpenQuiz={() => openQuiz(focus, selectedSenseId)} onCompose={() => openCompose(focus, selectedSenseId ?? drawer.learning?.senses.find((sense) => sense.primary && sense.canClaim)?.id ?? drawer.learning?.senses.find((sense) => sense.canClaim)?.id ?? drawer.learning?.senses.find((sense) => sense.primary)?.id ?? null)} onSpeak={speak} onPlayAudio={playPronunciation} displayConnection={(lemma) => atlas.byLemma.get(lemma)?.display ?? lemma} />
           )}
 
           {/* FIRST-RUN INTRO */}
@@ -1645,7 +1646,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
           onInput2={(v) => setCompose((c) => (c ? { ...c, text2: v, gate: null } : c))}
           onSubmit={submitCompose}
           onRevise={() => setCompose((c) => (c ? { ...c, verdict: null } : c))}
-          onSwap={() => { if (compose.task) openCompose(compose.task.lemma, compose.tried); }} />
+          onSwap={() => { if (compose.task) openCompose(compose.task.lemma, compose.task.senseId, compose.tried); }} />
       )}
 
       {/* ---------- YOUR SPACE ---------- */}

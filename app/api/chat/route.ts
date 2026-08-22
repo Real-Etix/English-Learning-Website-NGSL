@@ -1,7 +1,5 @@
 import { getListVocab, sampleWords } from "@/lib/content/list-vocab";
-import { buildTutorStarContext } from "@/lib/content/tutor-context";
-import { fetchWordDetail } from "@/lib/content/word-detail";
-import { buildWordLearningProfile } from "@/lib/content/word-learning";
+import { buildTutorSenseContext } from "@/lib/content/tutor-context";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM, type ChatMessage } from "@/scripts/llm-client";
@@ -41,7 +39,7 @@ export async function POST(request: Request) {
     );
   }
 
-  let body: { messages?: ChatMessage[]; listSlug?: string; lemma?: string };
+  let body: { messages?: ChatMessage[]; listSlug?: string; lemma?: string; senseId?: string };
   try {
     body = await request.json();
   } catch {
@@ -66,17 +64,29 @@ export async function POST(request: Request) {
 
   // Ground the tutor in the open star's demand-loaded learner profile.
   let starBlock = "";
+  if (typeof body.senseId === "string" && !body.lemma) {
+    return Response.json({ error: "senseId requires lemma" }, { status: 400 });
+  }
   if (body.lemma) {
     const record = await loadGeneratedWord(body.lemma);
-    if (record) {
-      const detail = await fetchWordDetail(record.lemma);
-      const connectionTargets = (await Promise.all(record.connections.map((connection) => loadGeneratedWord(connection.target))))
-        .flatMap((target) => target ? [target] : []);
-      const profile = buildWordLearningProfile(record, detail, [record, ...connectionTargets]);
-      starBlock =
-        `\n\nThe learner has this word open. Ground your answer only in this reference:\n` +
-        buildTutorStarContext(profile);
+    if (!record || record.lemma !== body.lemma) {
+      return Response.json({ error: "not found" }, { status: 404 });
     }
+    if (record.publicationStatus !== "published") {
+      return Response.json({ error: "This word is not available for learning." }, { status: 409 });
+    }
+    const requestedSense = typeof body.senseId === "string"
+      ? record.senses.find((sense) => sense.id === body.senseId)
+      : record.senses.find((sense) => sense.status === "published");
+    if (!requestedSense) {
+      return Response.json({ error: "That meaning does not belong to this word." }, { status: 400 });
+    }
+    if (requestedSense.status !== "published") {
+      return Response.json({ error: "This meaning is not published yet." }, { status: 409 });
+    }
+    const context = buildTutorSenseContext(record, requestedSense.id);
+    if (!context) return Response.json({ error: "This meaning is not available for learning." }, { status: 409 });
+    starBlock = `\n\nThe learner has this word open. Ground your answer only in this reference:\n${context}`;
   }
 
   const system = `${SYSTEM_BASE}${context}${starBlock}\n\nWord lists you can draw from (samples):\n${vocabBlock}`;

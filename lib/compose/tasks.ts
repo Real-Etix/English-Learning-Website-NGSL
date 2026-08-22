@@ -9,7 +9,7 @@
 // Relations worth composing with, best first. Synonym/morphological are absent:
 // forcing two synonyms into one sentence teaches redundancy.
 import { publicConnections } from "../vocabulary/public-connections";
-import type { VocabularyConnection, VocabularyRecord } from "../vocabulary/schema";
+import type { VocabularyConnection, VocabularyRecord, VocabularySense } from "../vocabulary/schema";
 
 const PRIORITY: Record<string, number> = { antonym: 0, intensity: 1, advanced_form: 2, builds_on: 3, collocation: 4 };
 const SUFFIX = ["s", "es", "ed", "d", "ing", "er", "r", "ly", "ness", "ion", "al"];
@@ -20,9 +20,17 @@ export function composableConnections(record: VocabularyRecord, records: Iterabl
   return publicConnections(record, records).filter((connection) => COMPOSABLE.has(connection.type));
 }
 
+/** Returns an explicit published sense, or the word's first published sense when none is requested. */
+export function publishedSense(record: VocabularyRecord, senseId?: string): VocabularySense | null {
+  const sense = senseId === undefined
+    ? record.senses.find((candidate) => candidate.status === "published")
+    : record.senses.find((candidate) => candidate.id === senseId);
+  return sense?.status === "published" ? sense : null;
+}
+
 export type ComposeMode = "single" | "pair";
 export type ComposeTask = {
-  lemma: string; relation: string; taskId: string; label: string; kicker: string;
+  lemma: string; senseId: string; relation: string; taskId: string; label: string; kicker: string;
   mode: ComposeMode; tip: string; ask: string; first: string; second: string;
   partner: string; gloss: string | null; required: [string, string];
   // definitions carried along so the server grader can judge sense without re-reading
@@ -132,7 +140,7 @@ export function pickTask(target: TargetInfo, neighbours: PartnerInfo[], claimed:
     a = target; b = best;
   }
   return {
-    lemma: target.lemma, relation: best.type, taskId: spec.id, label: spec.label,
+    lemma: target.lemma, senseId: "", relation: best.type, taskId: spec.id, label: spec.label,
     kicker: spec.kicker, mode: spec.mode, tip: spec.tip,
     ask: spec.ask(`“${a.display}”`, `“${b.display}”`),
     first: a.display, second: b.display, partner: best.lemma, gloss: best.gloss || null,

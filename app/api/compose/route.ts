@@ -1,11 +1,8 @@
 import {
-  composableConnections, gate, graderMessage, heuristicGrade, parseVerdict, pickTask,
+  composableConnections, gate, graderMessage, heuristicGrade, parseVerdict, pickTask, publishedSense,
   type ComposeTask, type PartnerInfo,
 } from "@/lib/compose/tasks";
-import { fetchWordDetail } from "@/lib/content/word-detail";
-import { buildWordLearningProfile } from "@/lib/content/word-learning";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
-import type { VocabularyRecord } from "@/lib/vocabulary/schema";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM } from "@/scripts/llm-client";
 
@@ -18,7 +15,7 @@ const COMPOSABLE = new Set(["antonym", "intensity", "advanced_form", "builds_on"
 
 /**
  * Two actions on one route:
- *  - `{ action: "task", lemma, claimed?, avoid? }` → pick a sentence task for a word.
+ *  - `{ action: "task", lemma, senseId, claimed?, avoid? }` → pick a sentence task for one word meaning.
  *  - `{ action: "grade", task, text, text2?, example? }` → deterministic gate, then
  *    a model verdict (falls back to the offline heuristic when no model is configured).
  */
@@ -29,7 +26,7 @@ export async function POST(request: Request) {
   }
 
   let body: {
-    action?: string; lemma?: string; claimed?: string[]; avoid?: string[];
+    action?: string; lemma?: string; senseId?: string; claimed?: string[]; avoid?: string[];
     task?: ComposeTask; text?: string; text2?: string; example?: string | null;
   };
   try { body = await request.json(); } catch { return Response.json({ error: "invalid request" }, { status: 400 }); }
@@ -37,11 +34,15 @@ export async function POST(request: Request) {
   // ---- pick a task ----
   if (body.action === "task") {
     if (!body.lemma) return Response.json({ error: "no lemma" }, { status: 400 });
+    if (typeof body.senseId !== "string" || !body.senseId.trim()) return Response.json({ error: "missing senseId" }, { status: 400 });
     const record = await loadGeneratedWord(body.lemma);
-    if (!record) return Response.json({ error: "not found" }, { status: 404 });
+    if (!record || record.lemma !== body.lemma) return Response.json({ error: "not found" }, { status: 404 });
+    if (record.publicationStatus !== "published") return Response.json({ error: "This word is not available for learning." }, { status: 409 });
+    const requestedSense = record.senses.find((sense) => sense.id === body.senseId);
+    if (!requestedSense) return Response.json({ error: "That meaning does not belong to this word." }, { status: 400 });
+    if (requestedSense.status !== "published") return Response.json({ error: "This meaning is not published yet." }, { status: 409 });
 
     const partners: PartnerInfo[] = [];
-    const partnerRecords = new Map<string, VocabularyRecord>();
     const loadedPartners = await Promise.all(record.connections.map(async (connection) => ({
       connection,
       record: await loadGeneratedWord(connection.target),
@@ -51,11 +52,10 @@ export async function POST(request: Request) {
     for (const c of composableConnections(record, knownRecords)) {
       if (!COMPOSABLE.has(c.type)) continue;
       const partner = partnersByLemma.get(c.target);
-      const definition = partner?.senses[0]?.definition;
-      if (!partner || !definition) continue;
-      partnerRecords.set(partner.lemma, partner);
+      const sense = partner ? publishedSense(partner) : null;
+      if (!partner || !sense) continue;
       partners.push({
-        lemma: partner.lemma, display: partner.display, def: definition, tier: partner.tier,
+        lemma: partner.lemma, display: partner.display, def: sense.definition, tier: partner.tier,
         rank: partner.lists[0]?.rank ?? null, type: c.type, gloss: c.gloss ?? null, status: c.status, dir: "out",
       });
     }
@@ -63,7 +63,7 @@ export async function POST(request: Request) {
       {
         lemma: record.lemma,
         display: record.display,
-        def: record.senses[0]?.definition ?? "",
+        def: requestedSense.definition,
         tier: record.tier,
         rank: record.lists[0]?.rank ?? null,
       },
@@ -72,21 +72,7 @@ export async function POST(request: Request) {
       body.avoid ?? [],
     );
     if (!task) return Response.json({ task: null });
-
-    const partnerRecord = partnerRecords.get(task.partner);
-    if (!partnerRecord) return Response.json({ task });
-    const [targetDetail, partnerDetail] = await Promise.all([
-      fetchWordDetail(record.lemma).catch(() => null),
-      fetchWordDetail(partnerRecord.lemma).catch(() => null),
-    ]);
-    const targetDefinition = buildWordLearningProfile(record, targetDetail).senses.find((sense) => sense.primary)?.definition;
-    const partnerDefinition = buildWordLearningProfile(partnerRecord, partnerDetail).senses.find((sense) => sense.primary)?.definition;
-    return Response.json({
-      task: {
-        ...task,
-        defs: [targetDefinition ?? task.defs[0], partnerDefinition ?? task.defs[1]],
-      },
-    });
+    return Response.json({ task: { ...task, senseId: requestedSense.id } });
   }
 
   // ---- grade a submission ----

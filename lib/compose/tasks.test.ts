@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { composableConnections, pickTask, type PartnerInfo, type TargetInfo } from "./tasks";
+import { composableConnections, pickTask, publishedSense, type PartnerInfo, type TargetInfo } from "./tasks";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
 
 const target: TargetInfo = {
@@ -87,5 +87,19 @@ describe("pickTask", () => {
     }));
 
     expect(pickTask(target, partners, new Set(), [])?.partner).toBe("explained");
+  });
+});
+
+describe("publishedSense", () => {
+  it("returns only an explicitly selected published sense without falling back", () => {
+    const record = vocabularyRecordFixture();
+    const draft = { ...record.senses[0]!, id: "learn:draft", definition: "a draft meaning", status: "draft" as const };
+    const published = { ...record.senses[0]!, id: "learn:published", definition: "the selected published meaning", status: "published" as const };
+    const word = { ...record, senses: [draft, published] };
+
+    expect(publishedSense(word, "learn:published")?.definition).toBe("the selected published meaning");
+    expect(publishedSense(word, "learn:draft")).toBeNull();
+    expect(publishedSense(word, "another-word:sense")).toBeNull();
+    expect(publishedSense(word)?.id).toBe("learn:published");
   });
 });
