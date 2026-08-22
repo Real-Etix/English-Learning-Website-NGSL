@@ -105,3 +105,106 @@ Results:
 - This is foundational only. The API, drawer, tutor, composition flow, and quality audit still consume the older raw word data until their later tasks are implemented.
 - Existing corpus provenance is page-level, not example-level. The profile conservatively counts wiki examples toward claim readiness only when the page definition is verified or backed by a factual source; dictionary examples are always sourced.
 - The Vite configuration warning is unrelated to Task 1 and appears on every Vitest run.
+
+
+---
+
+# Task 1 Review-Finding Fixes
+
+## Scope
+
+Fixed only the two reviewer findings in the pure learner-profile transform and its focused regression tests. No API, UI, wiki-page, graph-asset, or public-type changes were made.
+
+## RED
+
+### Verified LLM-only advanced page
+
+Added `does not verify an advanced LLM-only page from status and a wiki example alone` before changing production code. The fixture uses `tier: "advanced"`, `status: "verified"`, `sources: ["llm"]`, a wiki definition, and a wiki example.
+
+Command: `npx vitest run lib/content/word-learning.test.ts`
+
+Output before the fix:
+
+```text
+Tests  1 failed | 10 passed (11)
+Expected: evidence "ai-draft", canClaim false
+Received: evidence "verified", canClaim true
+```
+
+Root cause: status-based verification did not account for the absence of a factual source on advanced pages, so the wiki example also satisfied claim readiness.
+
+### Empty and placeholder live dictionary senses
+
+After the first regression was green, added `excludes empty and placeholder dictionary senses from an advanced AI draft` before the second production change. The fixture supplies an empty definition and `Definition pending — needs review.` dictionary definition, both with examples, to an advanced verified LLM-only page.
+
+Command: `npx vitest run lib/content/word-learning.test.ts`
+
+Output before the fix:
+
+```text
+Tests  1 failed | 11 passed (12)
+Expected: evidence "ai-draft", canClaim false
+Received: evidence "source-backed", canClaim true
+```
+
+Root cause: dictionary definitions were only checked for non-empty normalized text. Placeholder senses therefore became dictionary evidence, displayed senses, displayed examples, and claim evidence.
+
+## GREEN
+
+### Focused profile suite
+
+Command: `npx vitest run lib/content/word-learning.test.ts`
+
+Output after each corresponding minimal fix:
+
+```text
+Test Files  1 passed (1)
+Tests  11 passed (11)
+```
+
+and then:
+
+```text
+Test Files  1 passed (1)
+Tests  12 passed (12)
+```
+
+### Focused Task 1 verification
+
+Command: `npx vitest run lib/content/word-learning.test.ts lib/wiki/parse-wiki.test.ts`
+
+Output:
+
+```text
+Test Files  2 passed (2)
+Tests  21 passed (21)
+```
+
+### Full verification
+
+Commands: `npx tsc --noEmit`, `npm test`, `npm run lint`, and `git diff --check`.
+
+Results:
+
+- TypeScript passed with no output.
+- Full Vitest suite: **21 files passed, 160 tests passed**.
+- ESLint completed with no errors and the same two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset` unused parameters.
+- `git diff --check` passed.
+
+## Implementation
+
+- Advanced pages without any factual source (`curated`, `wordnet`, `dictionaryapi`, or `tatoeba`) cannot gain `verified` evidence from their status alone. They remain AI drafts unless a usable live dictionary sense replaces their primary displayed sense.
+- Reused `isPlaceholder` when filtering live dictionary senses. Empty and placeholder definitions are excluded before evidence selection, sense display, example display, and claim gating.
+- Existing public types and authored strings are unchanged.
+
+## Files changed
+
+- `lib/content/word-learning.ts`
+- `lib/content/word-learning.test.ts`
+- `.superpowers/sdd/task-1-report.md`
+
+## Concerns
+
+- The Vite configuration warning about native config loading appears on every Vitest command and is unrelated to this fix.
+- The two ESLint unused-parameter warnings are pre-existing and outside the allowed scope.
+- Existing untracked Dictionary v2 plan/spec files remain untouched and are excluded from the fix commit.

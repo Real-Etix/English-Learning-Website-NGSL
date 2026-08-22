@@ -92,6 +92,50 @@ describe("buildWordLearningProfile", () => {
     });
   });
 
+  it("does not verify an advanced LLM-only page from status and a wiki example alone", () => {
+    const verifiedAiDraftAdvancedPage = page({
+      tier: "advanced",
+      status: "verified",
+      sources: ["llm"],
+      definition: "AI draft wording",
+      examples: ["A wiki-only example."],
+    });
+
+    expect(buildWordLearningProfile(verifiedAiDraftAdvancedPage, emptyDetail)).toMatchObject({
+      evidence: "ai-draft",
+      canClaim: false,
+    });
+  });
+
+  it("excludes empty and placeholder dictionary senses from an advanced AI draft", () => {
+    const profile = buildWordLearningProfile(
+      page({
+        tier: "advanced",
+        status: "verified",
+        sources: ["llm"],
+        definition: "AI draft wording",
+        examples: ["A wiki-only example."],
+      }),
+      {
+        ...emptyDetail,
+        senses: [
+          { partOfSpeech: "noun", definition: " ", example: "An empty-definition example." },
+          {
+            partOfSpeech: "noun",
+            definition: "Definition pending — needs review.",
+            example: "A placeholder-definition example.",
+          },
+        ],
+      },
+    );
+
+    expect(profile).toMatchObject({ evidence: "ai-draft", canClaim: false });
+    expect(profile.senses).toEqual([
+      expect.objectContaining({ definition: "AI draft wording", source: "wiki", primary: true }),
+    ]);
+    expect(profile.examples).toEqual([{ text: "A wiki-only example.", source: "wiki" }]);
+  });
+
   it("blocks a source-backed word without an example", () => {
     const corePageWithoutExamples = page({ examples: [] });
 

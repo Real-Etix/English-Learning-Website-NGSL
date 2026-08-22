@@ -82,15 +82,17 @@ export function buildWordLearningProfile(
   detail: WordDetail | null,
 ): WordLearningProfile {
   const factualWikiSource = page.sources.some((source) => FACTUAL_SOURCES.has(source));
+  const advancedWithoutFactualSource = page.tier === "advanced" && !factualWikiSource;
   const usableWikiDefinition = Boolean(page.definition.trim()) && !isPlaceholder(page.definition);
-  const verifiedWikiDefinition = page.status === "verified" && usableWikiDefinition;
+  const verifiedWikiDefinition =
+    !advancedWithoutFactualSource && page.status === "verified" && usableWikiDefinition;
   const sourceBackedWikiDefinition = factualWikiSource && usableWikiDefinition;
-  const llmOnlyAdvancedDraft =
-    page.tier === "advanced" && page.sources.length > 0 && page.sources.every((source) => source === "llm");
 
-  const dictionarySenses = detail?.senses ?? [];
+  const dictionarySenses = (detail?.senses ?? []).filter(
+    (sense) => Boolean(normalizeText(sense.definition)) && !isPlaceholder(sense.definition),
+  );
   const hasDictionaryDefinition = dictionarySenses.some((sense) => Boolean(normalizeText(sense.definition)));
-  const preferDictionaryPrimary = llmOnlyAdvancedDraft && hasDictionaryDefinition;
+  const preferDictionaryPrimary = advancedWithoutFactualSource && hasDictionaryDefinition;
 
   const evidence: LearningEvidence = verifiedWikiDefinition
     ? "verified"
