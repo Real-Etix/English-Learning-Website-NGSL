@@ -20,7 +20,9 @@ import path from "node:path";
 
 import { completeJSON, hasLLM, LLM_MODEL } from "./llm-client";
 import { appendConnection } from "./wiki-edit";
-import { buildListGraph, readAllPages, type WikiPage } from "../lib/wiki/parse-wiki";
+import { buildListGraph } from "../lib/vocabulary/graph";
+import type { GraphInput } from "../lib/vocabulary/graph-input";
+import { readAllPages, type WikiPage } from "../lib/wiki/parse-wiki";
 
 const PAGES_DIR = path.join(process.cwd(), "wiki", "pages");
 const DONE = path.join(process.cwd(), "data", "generated", "sidelinks-done.json");
@@ -29,6 +31,22 @@ const CALL_TIMEOUT_MS = 20_000;
 const MAX_ADD = 5; // cap new edges per word so we don't over-connect hubs
 
 const norm = (s: string) => String(s || "").toLowerCase().trim().replace(/[^a-z]/g, "");
+
+/** Temporary legacy adapter; Task 7 ports enrichment writes to canonical NDJSON. */
+function toLegacyGraphInput(page: WikiPage): GraphInput {
+  return {
+    lemma: page.lemma,
+    display: page.display,
+    tier: page.tier,
+    partOfSpeech: page.pos,
+    definition: page.definition,
+    memberships: page.lists.map((id) => ({ id, rank: page.rank, sfi: page.sfi })),
+    chart: page.chart,
+    region: page.region,
+    domains: page.domains,
+    connections: page.connections.map(({ target, type }) => ({ target, type })),
+  };
+}
 function withTimeout<T>(p: Promise<T>, ms: number): Promise<T | null> {
   return Promise.race([p, new Promise<null>((r) => setTimeout(() => r(null), ms))]);
 }
@@ -74,7 +92,7 @@ async function main() {
   // subgraph when --list is set (that's where drift comes from), else globally.
   const degree = new Map<string, number>();
   if (a.list) {
-    for (const n of buildListGraph(pages, a.list).nodes) degree.set(n.lemma, n.degree);
+    for (const n of buildListGraph(pages.map(toLegacyGraphInput), a.list).nodes) degree.set(n.lemma, n.degree);
   } else {
     for (const p of pages) for (const c of p.connections) {
       degree.set(p.lemma, (degree.get(p.lemma) ?? 0) + 1);

@@ -15,7 +15,9 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { completeJSON, hasLLM, LLM_MODEL } from "./llm-client";
-import { buildListGraph, readAllPages, type GraphNode } from "../lib/wiki/parse-wiki";
+import { buildListGraph, type GraphNode } from "../lib/vocabulary/graph";
+import { toGraphInput } from "../lib/vocabulary/graph-input";
+import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
 
 const SLUGS = ["ngsl", "toeic", "business", "academic", "fitness", "all"];
 const OUT = path.join(process.cwd(), "data", "generated", "chart-names.json");
@@ -77,12 +79,13 @@ async function main() {
   if (!hasLLM()) { console.error("No LLM configured (set LLM_API_KEY). Aborting."); process.exitCode = 1; return; }
   const { list, limit, force, offline } = args();
   const slugs = list ? [list] : SLUGS;
-  const pages = await readAllPages();
+  const inputs = [];
+  for await (const record of openNdjsonRepository().all()) inputs.push(toGraphInput(record));
   const cache = force ? {} : await loadCache();
   await mkdir(path.dirname(OUT), { recursive: true });
 
   for (const slug of slugs) {
-    const graph = buildListGraph(pages, slug);
+    const graph = buildListGraph(inputs, slug);
     const byChart = new Map<string, GraphNode[]>();
     for (const n of graph.nodes) {
       if (!n.chart || n.chart === "drift") continue;

@@ -1,13 +1,12 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
-import { buildListGraph, readAllPages, toLiteGraph } from "./parse-wiki";
-import type { GraphNode, LiteGraph } from "./parse-wiki";
+import type { GraphNode, LiteGraph } from "../vocabulary/graph";
 
 /**
  * Loads pre-generated per-list graph JSON (from scripts/build-graph-data.ts).
- * Fast path avoids reading 11k wiki files; falls back to building live if the
- * JSON is missing (e.g. right after seeding, before regenerating).
+ * Graph assets are a build artifact: serving a request must never scan the
+ * canonical corpus as a fallback.
  */
 const DIR = path.join(process.cwd(), "data", "generated", "graphs");
 const cache = new Map<string, Promise<LiteGraph>>();
@@ -18,9 +17,11 @@ export function loadListGraph(slug: string): Promise<LiteGraph> {
     cached = (async () => {
       try {
         return JSON.parse(await readFile(path.join(DIR, `${slug}.json`), "utf8")) as LiteGraph;
-      } catch {
-        const pages = await readAllPages(); // fallback: regenerate on the fly
-        return toLiteGraph(buildListGraph(pages, slug));
+      } catch (error) {
+        throw new Error(
+          `Generated graph for "${slug}" is unavailable. Run npm run build:graphs during the build before serving this deployment.`,
+          { cause: error },
+        );
       }
     })();
     cache.set(slug, cached);

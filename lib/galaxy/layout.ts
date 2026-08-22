@@ -1,4 +1,4 @@
-import type { LiteGraph } from "@/lib/wiki/parse-wiki";
+import type { LiteGraph } from "@/lib/vocabulary/graph";
 import type { ChartLink, PositionedGalaxy, PositionedWord, Vec3 } from "./types";
 
 const GLYPHS = ["≈", "|", "⌐", "∧", "✦", "◦", "◇", "○", "▲", "↑", "◆", "✳", "⌕", "∴", "⋄", "✧"];

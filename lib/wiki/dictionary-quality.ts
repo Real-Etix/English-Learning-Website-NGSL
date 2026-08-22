@@ -1,4 +1,4 @@
-import type { WikiPage } from "./parse-wiki";
+import type { VocabularyRecord } from "../vocabulary/schema";
 
 export type DictionaryEvidenceCounts = {
   verified: number;
@@ -50,26 +50,27 @@ function emptyCounts(): DictionaryQualityCounts {
   };
 }
 
-function evidenceFor(page: WikiPage): keyof DictionaryEvidenceCounts {
-  if (page.status === "verified") return "verified";
-  if (page.sources.some((source) => FACTUAL_SOURCES.has(source))) return "sourceBacked";
+function evidenceFor(record: VocabularyRecord): keyof DictionaryEvidenceCounts {
+  if (record.status === "verified") return "verified";
+  if (record.sources.some((source) => FACTUAL_SOURCES.has(source.sourceId))) return "sourceBacked";
   return "aiDraft";
 }
 
-function isLlmOnlyAdvanced(page: WikiPage): boolean {
-  return page.tier === "advanced" && page.sources.length > 0 && page.sources.every((source) => source === "llm");
+function isLlmOnlyAdvanced(record: VocabularyRecord): boolean {
+  return record.tier === "advanced" && record.sources.length > 0 && record.sources.every((source) => source.sourceId === "llm");
 }
 
-function addPage(counts: DictionaryQualityCounts, page: WikiPage) {
+function addRecord(counts: DictionaryQualityCounts, record: VocabularyRecord) {
+  const primarySense = record.senses[0];
   counts.pages += 1;
-  if (!page.definition.trim() || isPlaceholder(page.definition)) counts.placeholders += 1;
-  if (page.examples.length === 0) counts.noExamples += 1;
-  if (!page.pos.trim() || page.pos.trim().toLowerCase() === "unknown") counts.unknownPartOfSpeech += 1;
-  if (isLlmOnlyAdvanced(page)) counts.llmOnlyAdvanced += 1;
-  if (page.connections.length === 0) counts.zeroConnections += 1;
-  counts.evidence[evidenceFor(page)] += 1;
+  if (!primarySense?.definition.trim() || isPlaceholder(primarySense.definition)) counts.placeholders += 1;
+  if (!primarySense || primarySense.examples.length === 0) counts.noExamples += 1;
+  if (!primarySense?.partOfSpeech.trim() || primarySense.partOfSpeech.trim().toLowerCase() === "unknown") counts.unknownPartOfSpeech += 1;
+  if (isLlmOnlyAdvanced(record)) counts.llmOnlyAdvanced += 1;
+  if (record.connections.length === 0) counts.zeroConnections += 1;
+  counts.evidence[evidenceFor(record)] += 1;
 
-  for (const connection of page.connections) {
+  for (const connection of record.connections) {
     const edge = counts.edges.byType[connection.type] ?? { total: 0, unexplained: 0 };
     counts.edges.byType[connection.type] = edge;
     counts.edges.total += 1;
@@ -81,15 +82,15 @@ function addPage(counts: DictionaryQualityCounts, page: WikiPage) {
   }
 }
 
-/** Aggregate dictionary-quality signals without mutating wiki pages. */
-export function auditDictionaryPages(pages: WikiPage[]): DictionaryQualityReport {
+/** Aggregate dictionary-quality signals from canonical vocabulary records. */
+export function auditDictionaryRecords(records: VocabularyRecord[]): DictionaryQualityReport {
   const report: DictionaryQualityReport = { total: emptyCounts(), lists: emptyRecord() };
 
-  for (const page of pages) {
-    addPage(report.total, page);
-    for (const list of new Set(page.lists)) {
-      report.lists[list] ??= emptyCounts();
-      addPage(report.lists[list], page);
+  for (const record of records) {
+    addRecord(report.total, record);
+    for (const membership of new Set(record.lists.map((entry) => entry.id))) {
+      report.lists[membership] ??= emptyCounts();
+      addRecord(report.lists[membership], record);
     }
   }
 

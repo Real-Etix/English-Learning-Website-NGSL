@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 
-import { buildListGraph, type GraphEdge, type GraphNode, type WikiPage as RuntimeWikiPage } from "../wiki/parse-wiki";
+import { buildListGraph, type GraphEdge, type GraphNode } from "./graph";
+import type { GraphInput } from "./graph-input";
 import type { WikiPage } from "./legacy-markdown";
 import type { ContentSourceRef, VocabularyRecord } from "./schema";
 
@@ -228,36 +229,24 @@ function normalizeMismatches(mismatches: MigrationParityMismatch[]): MigrationPa
   return mismatches.toSorted((left, right) => compareOrdinal(left.lemma, right.lemma) || compareOrdinal(left.field, right.field));
 }
 
-function asRuntimePage(page: ProjectedPage): RuntimeWikiPage {
-  const membership = page.lists[0];
+function asGraphInput(page: ProjectedPage): GraphInput {
   return {
     lemma: page.lemma,
     display: page.display,
     tier: page.tier,
-    pos: page.partOfSpeech,
-    rank: membership?.rank ?? null,
-    sfi: membership?.sfi ?? null,
+    partOfSpeech: page.partOfSpeech,
+    definition: page.senses[0]?.definition ?? "",
+    memberships: page.lists,
     chart: page.chart,
     region: page.region,
-    lists: page.lists.map((entry) => entry.id),
-    forms: page.forms,
-    status: page.status,
-    sources: page.sources,
-    definition: page.senses[0]?.definition ?? "",
-    usageNote: page.usageNote,
-    examples: page.senses.flatMap((sense) => sense.examples.map((example) => example.text)),
-    connections: page.connections.map((connection) => ({
-      type: connection.type,
-      target: connection.target,
-      ...(connection.gloss === null ? {} : { gloss: connection.gloss }),
-    })),
     domains: page.domains,
+    connections: page.connections.map(({ type, target }) => ({ type, target })),
   };
 }
 
 function graphStructure(pages: ProjectedPage[], slug: string): GraphStructure {
   const graph = buildListGraph(
-    pages.toSorted((left, right) => compareOrdinal(left.lemma, right.lemma)).map(asRuntimePage),
+    pages.toSorted((left, right) => compareOrdinal(left.lemma, right.lemma)).map(asGraphInput),
     slug,
   );
   return {

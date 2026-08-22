@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { buildCollectionGraph, buildListGraph, parsePage, toLiteGraph } from "./parse-wiki";
+import { parsePage } from "./parse-wiki";
 
 const page = (frontmatter: string, body: string) =>
   parsePage(`---\n${frontmatter}\n---\n\n${body}`)!;
@@ -36,48 +36,5 @@ describe("parsePage", () => {
 
   it("returns null when there is no frontmatter", () => {
     expect(parsePage("just some text")).toBeNull();
-  });
-});
-
-describe("buildListGraph", () => {
-  const big = page("lemma: big\ntier: core\nlists: [ngsl]\nrank: 184", "## Connections\n- synonym: [[large]]\n- advanced_form: [[enormous]]\n");
-  const large = page("lemma: large\ntier: core\nlists: [ngsl]\nrank: 210", "## Connections\n- synonym: [[big]]\n");
-  const enormous = page("lemma: enormous\ntier: advanced", "## Connections\n- builds_on: [[big]]\n");
-  const zebra = page("lemma: zebra\ntier: core\nlists: [ngsl]", "## Connections\n");
-  const pages = [big, large, enormous, zebra];
-
-  it("pulls in advanced words linked from list words", () => {
-    const g = buildListGraph(pages, "ngsl");
-    expect(g.nodes.map((n) => n.lemma).sort()).toEqual(["big", "enormous", "large", "zebra"]);
-  });
-
-  it("keeps unconnected words but counts them isolated", () => {
-    const g = buildListGraph(pages, "ngsl");
-    expect(g.nodes.find((n) => n.lemma === "zebra")?.degree).toBe(0);
-    expect(g.isolatedCount).toBe(1);
-  });
-
-  it("dedupes edges by unordered pair + type, both ends in-graph", () => {
-    const g = buildListGraph(pages, "ngsl");
-    // big–large synonym (deduped to 1) + big–enormous advanced_form + big–enormous builds_on
-    expect(g.edges).toHaveLength(3);
-    const ids = new Set(g.nodes.map((n) => n.lemma));
-    for (const e of g.edges) {
-      expect(ids.has(e.source)).toBe(true);
-      expect(ids.has(e.target)).toBe(true);
-    }
-  });
-
-  it("buildCollectionGraph keeps only the owned lemmas and their internal edges", () => {
-    const g = buildCollectionGraph(pages, new Set(["big", "large"]));
-    expect(g.nodes.map((n) => n.lemma).sort()).toEqual(["big", "large"]);
-    expect(g.edges).toHaveLength(1); // just the big–large synonym
-  });
-
-  it("toLiteGraph drops the heavy pages map", () => {
-    const lite = toLiteGraph(buildListGraph(pages, "ngsl"));
-    expect(lite).not.toHaveProperty("pages");
-    expect(lite.nodes.length).toBeGreaterThan(0);
-    expect(lite.edges.length).toBeGreaterThan(0);
   });
 });

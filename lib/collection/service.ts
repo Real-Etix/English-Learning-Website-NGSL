@@ -4,11 +4,15 @@ import { prisma } from "@/lib/db";
 import { badgesFor, levelForXp, wordXp } from "@/lib/collection/xp";
 import { loadListGraph } from "@/lib/wiki/graph-store";
 import { readPage } from "@/lib/wiki/parse-wiki";
+import { openNdjsonRepository } from "@/lib/vocabulary/ndjson-repository";
 
-/** Which of these lemmas are advanced-tier (read from the pre-generated all-graph). */
+/** Which collected lemmas are advanced-tier in the canonical vocabulary corpus. */
 async function countAdvanced(lemmas: string[]): Promise<number> {
-  const all = await loadListGraph("all");
-  const advanced = new Set(all.nodes.filter((n) => n.tier === "advanced").map((n) => n.lemma));
+  const wanted = new Set(lemmas);
+  const advanced = new Set<string>();
+  for await (const record of openNdjsonRepository().all()) {
+    if (record.tier === "advanced" && wanted.has(record.lemma)) advanced.add(record.lemma);
+  }
   return lemmas.filter((l) => advanced.has(l)).length;
 }
 

@@ -1,7 +1,7 @@
 /**
- * Cluster the wiki graph into "charts" (~12-20 semantically-related words) and
- * group charts into "regions", then write `chart:` / `region:` into each page's
- * frontmatter. This is the spatial hierarchy the Star Atlas renderer needs to
+ * Cluster the canonical vocabulary graph into charts and regions, then write
+ * `chart` / `region` back to canonical NDJSON records. This is the spatial
+ * hierarchy the Star Atlas renderer needs to
  * scale (its layout is chart-scoped).
  *
  * Method (dependency-free): label propagation for base communities, then greedy
@@ -11,12 +11,12 @@
  *
  * Usage: tsx scripts/build-charts.ts [--write]   (dry-run unless --write)
  */
-import { readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { parsePage, type WikiPage } from "../lib/wiki/parse-wiki";
+import { toGraphInput, type GraphInput } from "../lib/vocabulary/graph-input";
+import { openNdjsonRepository, writeVocabularyRecords } from "../lib/vocabulary/ndjson-repository";
+import type { VocabularyRecord } from "../lib/vocabulary/schema";
 
-const WIKI_DIR = path.join(process.cwd(), "wiki", "pages");
 const CHART_MIN = 10;
 const CHART_TARGET = 15;
 const CHART_CAP = 24;
@@ -26,7 +26,7 @@ const write = process.argv.includes("--write");
 
 type Node = { lemma: string; degree: number; rank: number | null };
 
-function buildAdjacency(pages: WikiPage[]) {
+function buildAdjacency(pages: GraphInput[]) {
   const has = new Set(pages.map((p) => p.lemma));
   const adj = new Map<string, Set<string>>();
   const add = (a: string, b: string) => {
@@ -183,19 +183,13 @@ function hubName(members: string[], nodeOf: Map<string, Node>): string {
 }
 
 async function main() {
-  const files = (await readdir(WIKI_DIR)).filter((f) => f.endsWith(".md"));
-  const raws = new Map<string, string>();
-  const pages: WikiPage[] = [];
-  for (const f of files) {
-    const text = await readFile(path.join(WIKI_DIR, f), "utf8");
-    raws.set(f.replace(/\.md$/, ""), text);
-    const p = parsePage(text);
-    if (p) pages.push(p);
-  }
+  const records: VocabularyRecord[] = [];
+  for await (const record of openNdjsonRepository().all()) records.push(record);
+  const pages = records.map(toGraphInput);
 
   const adj = buildAdjacency(pages);
   const nodeOf = new Map<string, Node>(
-    pages.map((p) => [p.lemma, { lemma: p.lemma, degree: adj.get(p.lemma)?.size ?? 0, rank: p.rank }]),
+    pages.map((p) => [p.lemma, { lemma: p.lemma, degree: adj.get(p.lemma)?.size ?? 0, rank: p.memberships[0]?.rank ?? null }]),
   );
 
   const connected = pages.filter((p) => (adj.get(p.lemma)?.size ?? 0) > 0).map((p) => p.lemma);
@@ -255,34 +249,17 @@ async function main() {
   console.log(`Chart size buckets: ${JSON.stringify(buckets)} · max: ${Math.max(...sizes)}`);
 
   if (!write) {
-    console.log("\n(dry run — pass --write to update frontmatter)");
+    console.log("\n(dry run — pass --write to update canonical NDJSON)");
     return;
   }
 
-  // Write chart:/region: into each page's frontmatter (idempotent).
-  let updated = 0;
-  for (const [lemma, raw] of raws) {
-    const a = assign.get(lemma);
-    if (!a) continue;
-    let out = setFm(raw, "chart", a.chart);
-    out = setFm(out, "region", a.region);
-    if (out !== raw) {
-      await writeFile(path.join(WIKI_DIR, `${lemma}.md`), out, "utf8");
-      updated += 1;
-    }
-  }
-  console.log(`\nWrote chart/region to ${updated} pages.`);
-}
-
-/** Insert or replace a `key: value` line inside the leading `---` frontmatter block. */
-function setFm(raw: string, key: string, value: string): string {
-  const m = raw.match(/^---\n([\s\S]*?)\n---/);
-  if (!m) return raw;
-  const block = m[1];
-  const line = `${key}: ${value}`;
-  const re = new RegExp(`^${key}:.*$`, "m");
-  const newBlock = re.test(block) ? block.replace(re, line) : `${block}\n${line}`;
-  return raw.replace(m[0], `---\n${newBlock}\n---`);
+  const updates = records.flatMap((record) => {
+    const next = assign.get(record.lemma);
+    if (!next || (record.chart === next.chart && record.region === next.region)) return [];
+    return [{ ...record, chart: next.chart, region: next.region }];
+  });
+  await writeVocabularyRecords(path.join(process.cwd(), "content", "vocabulary"), updates);
+  console.log(`\nWrote chart/region to ${updates.length} canonical record(s).`);
 }
 
 main().catch((e) => {

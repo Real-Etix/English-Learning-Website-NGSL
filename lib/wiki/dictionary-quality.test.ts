@@ -1,178 +1,120 @@
 import { describe, expect, it } from "vitest";
 
-import { auditDictionaryPages, hasStrictFailures } from "./dictionary-quality";
-import type { WikiPage } from "./parse-wiki";
+import type { VocabularyRecord } from "../vocabulary/schema";
+import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
+import { auditDictionaryRecords, hasStrictFailures } from "./dictionary-quality";
 
-function page(overrides: Partial<WikiPage> = {}): WikiPage {
+const fixture = vocabularyRecordFixture();
+const source = fixture.sources[0]!;
+
+function record(overrides: Partial<VocabularyRecord> = {}): VocabularyRecord {
   return {
+    ...fixture,
     lemma: "anchor",
     display: "anchor",
     tier: "core",
-    pos: "noun",
-    rank: 1,
-    sfi: 70,
-    chart: null,
-    region: null,
-    lists: ["ngsl"],
-    forms: ["anchor"],
+    partOfSpeech: "noun",
+    lists: [{ id: "ngsl", rank: 1, sfi: 70 }],
     status: "seeded",
-    sources: ["wordnet"],
-    definition: "A fixed point used for support.",
-    usageNote: null,
-    examples: ["The boat dropped its anchor."],
-    connections: [{ type: "synonym", target: "support", gloss: "a related support idea" }],
-    domains: [],
+    sources: [{ ...source, sourceId: "wordnet" }],
+    senses: [{
+      ...fixture.senses[0]!,
+      partOfSpeech: "noun",
+      definition: "A fixed point used for support.",
+      examples: [{ text: "The boat dropped its anchor.", sources: [source] }],
+    }],
+    connections: [{
+      ...fixture.connections[0]!,
+      target: "support",
+      type: "synonym",
+      gloss: "a related support idea",
+    }],
     ...overrides,
   };
 }
 
-describe("auditDictionaryPages", () => {
-  it("counts global and per-list dictionary quality in one serializable report", () => {
-    const report = auditDictionaryPages([
-      page(),
-      page({
+function sense(overrides: Partial<VocabularyRecord["senses"][number]> = {}) {
+  return { ...record().senses[0]!, ...overrides };
+}
+
+function connection(overrides: Partial<VocabularyRecord["connections"][number]> = {}) {
+  return { ...record().connections[0]!, ...overrides };
+}
+
+describe("auditDictionaryRecords", () => {
+  it("counts global and per-list dictionary quality from primary canonical senses", () => {
+    const report = auditDictionaryRecords([
+      record(),
+      record({
         lemma: "draft",
         tier: "advanced",
-        pos: "unknown",
-        lists: ["ngsl", "academic"],
-        sources: ["llm"],
-        definition: "Definition pending — needs review.",
-        examples: [],
-        connections: [
-          { type: "builds_on", target: "anchor" },
-          { type: "synonym", target: "support", gloss: " " },
-        ],
+        lists: [{ id: "ngsl", rank: 1, sfi: 70 }, { id: "academic", rank: 1, sfi: 70 }],
+        sources: [{ ...source, sourceId: "llm" }],
+        senses: [sense({ partOfSpeech: "unknown", definition: "Definition pending — needs review.", examples: [] })],
+        connections: [connection({ type: "builds_on", target: "anchor", gloss: null }), connection({ target: "support", gloss: " " })],
       }),
-      page({
+      record({
         lemma: "isolated",
-        lists: ["academic"],
+        lists: [{ id: "academic", rank: 1, sfi: 70 }],
         status: "verified",
         sources: [],
-        examples: [],
+        senses: [sense({ examples: [] })],
         connections: [],
       }),
-      page({
+      record({
         lemma: "draft-core",
-        pos: "  ",
         lists: [],
-        sources: ["llm"],
-        connections: [{ type: "antonym", target: "support" }],
+        sources: [{ ...source, sourceId: "llm" }],
+        senses: [sense({ partOfSpeech: "  " })],
+        connections: [connection({ type: "antonym", target: "support", gloss: null })],
       }),
     ]);
 
     expect(report.total).toEqual({
-      pages: 4,
-      placeholders: 1,
-      noExamples: 2,
-      unknownPartOfSpeech: 2,
-      llmOnlyAdvanced: 1,
-      zeroConnections: 1,
+      pages: 4, placeholders: 1, noExamples: 2, unknownPartOfSpeech: 2, llmOnlyAdvanced: 1, zeroConnections: 1,
       evidence: { verified: 1, sourceBacked: 1, aiDraft: 2 },
-      edges: {
-        total: 4,
-        unexplained: 3,
-        byType: {
-          antonym: { total: 1, unexplained: 1 },
-          builds_on: { total: 1, unexplained: 1 },
-          synonym: { total: 2, unexplained: 1 },
-        },
-      },
+      edges: { total: 4, unexplained: 3, byType: { antonym: { total: 1, unexplained: 1 }, builds_on: { total: 1, unexplained: 1 }, synonym: { total: 2, unexplained: 1 } } },
     });
     expect(report.lists).toEqual({
       academic: {
-        pages: 2,
-        placeholders: 1,
-        noExamples: 2,
-        unknownPartOfSpeech: 1,
-        llmOnlyAdvanced: 1,
-        zeroConnections: 1,
+        pages: 2, placeholders: 1, noExamples: 2, unknownPartOfSpeech: 1, llmOnlyAdvanced: 1, zeroConnections: 1,
         evidence: { verified: 1, sourceBacked: 0, aiDraft: 1 },
-        edges: {
-          total: 2,
-          unexplained: 2,
-          byType: {
-            builds_on: { total: 1, unexplained: 1 },
-            synonym: { total: 1, unexplained: 1 },
-          },
-        },
+        edges: { total: 2, unexplained: 2, byType: { builds_on: { total: 1, unexplained: 1 }, synonym: { total: 1, unexplained: 1 } } },
       },
       ngsl: {
-        pages: 2,
-        placeholders: 1,
-        noExamples: 1,
-        unknownPartOfSpeech: 1,
-        llmOnlyAdvanced: 1,
-        zeroConnections: 0,
+        pages: 2, placeholders: 1, noExamples: 1, unknownPartOfSpeech: 1, llmOnlyAdvanced: 1, zeroConnections: 0,
         evidence: { verified: 0, sourceBacked: 1, aiDraft: 1 },
-        edges: {
-          total: 3,
-          unexplained: 2,
-          byType: {
-            builds_on: { total: 1, unexplained: 1 },
-            synonym: { total: 2, unexplained: 1 },
-          },
-        },
+        edges: { total: 3, unexplained: 2, byType: { builds_on: { total: 1, unexplained: 1 }, synonym: { total: 2, unexplained: 1 } } },
       },
     });
   });
 
-  it("counts a page and its edges once per distinct list ID", () => {
-    const report = auditDictionaryPages([
-      page({
-        lists: ["ngsl", "ngsl", "academic", "academic"],
-        connections: [{ type: "synonym", target: "support" }],
-      }),
-    ]);
+  it("counts a record and its edges once per distinct list ID", () => {
+    const report = auditDictionaryRecords([record({
+      lists: [{ id: "ngsl", rank: 1, sfi: 70 }, { id: "ngsl", rank: 1, sfi: 70 }, { id: "academic", rank: 1, sfi: 70 }, { id: "academic", rank: 1, sfi: 70 }],
+      connections: [connection({ gloss: null })],
+    })]);
 
     for (const list of ["ngsl", "academic"]) {
-      expect(report.lists[list]).toMatchObject({
-        pages: 1,
-        edges: {
-          total: 1,
-          unexplained: 1,
-          byType: { synonym: { total: 1, unexplained: 1 } },
-        },
-      });
+      expect(report.lists[list]).toMatchObject({ pages: 1, edges: { total: 1, unexplained: 1, byType: { synonym: { total: 1, unexplained: 1 } } } });
     }
   });
 
-  it("counts reserved list IDs and edge types without polluting Object.prototype", () => {
-    const pagesDescriptor = Object.getOwnPropertyDescriptor(Object.prototype, "pages");
-    const totalDescriptor = Object.getOwnPropertyDescriptor(Object.prototype, "total");
+  it("keeps reserved list IDs and edge types out of Object.prototype", () => {
+    const report = auditDictionaryRecords([record({
+      lists: [{ id: "__proto__", rank: 1, sfi: 70 }],
+      connections: [connection({ type: "__proto__" as "synonym", gloss: "a reserved-key edge" })],
+    })]);
 
-    try {
-      const report = auditDictionaryPages([
-        page({
-          lists: ["__proto__"],
-          connections: [{ type: "__proto__", target: "support", gloss: "a reserved-key edge" }],
-        }),
-      ]);
-
-      expect(report.total.edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
-      expect(report.lists["__proto__"]).toMatchObject({
-        pages: 1,
-        edges: {
-          total: 1,
-        },
-      });
-      expect(report.lists["__proto__"].edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
-      expect(Object.getOwnPropertyDescriptor(Object.prototype, "pages")).toEqual(pagesDescriptor);
-      expect(Object.getOwnPropertyDescriptor(Object.prototype, "total")).toEqual(totalDescriptor);
-    } finally {
-      if (pagesDescriptor) Object.defineProperty(Object.prototype, "pages", pagesDescriptor);
-      else Reflect.deleteProperty(Object.prototype, "pages");
-      if (totalDescriptor) Object.defineProperty(Object.prototype, "total", totalDescriptor);
-      else Reflect.deleteProperty(Object.prototype, "total");
-    }
+    expect(report.total.edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
+    expect(report.lists["__proto__"].edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
   });
 
-  it("reports strict failures only for placeholders and LLM-only advanced pages", () => {
-    expect(hasStrictFailures(auditDictionaryPages([page({ examples: [], connections: [] })]))).toBe(false);
-    expect(hasStrictFailures(auditDictionaryPages([page({ definition: "Needs a fuller dictionary source." })]))).toBe(true);
-    expect(hasStrictFailures(auditDictionaryPages([page({ tier: "advanced", sources: ["llm"] })]))).toBe(true);
-    expect(hasStrictFailures(auditDictionaryPages([page({ tier: "advanced", sources: [] })]))).toBe(false);
-    expect(
-      hasStrictFailures(auditDictionaryPages([page({ tier: "advanced", sources: ["llm", "wordnet"] })])),
-    ).toBe(false);
+  it("reports strict failures only for placeholders and LLM-only advanced records", () => {
+    expect(hasStrictFailures(auditDictionaryRecords([record({ senses: [sense({ examples: [] })], connections: [] })]))).toBe(false);
+    expect(hasStrictFailures(auditDictionaryRecords([record({ senses: [sense({ definition: "Needs a fuller dictionary source." })] })]))).toBe(true);
+    expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [{ ...source, sourceId: "llm" }] })]))).toBe(true);
+    expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [] })]))).toBe(false);
+    expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [{ ...source, sourceId: "llm" }, { ...source, sourceId: "wordnet" }] })]))).toBe(false);
   });
 });

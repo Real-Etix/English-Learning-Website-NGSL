@@ -4,7 +4,7 @@ import path from "node:path";
 
 import { buildGalaxyArtifacts } from "../lib/galaxy/build-artifacts";
 import { decodeFullGalaxy } from "../lib/galaxy/full-codec";
-import type { LiteGraph } from "../lib/wiki/parse-wiki";
+import type { LiteGraph } from "../lib/vocabulary/graph";
 
 const LISTS = {
   ngsl: "NGSL",

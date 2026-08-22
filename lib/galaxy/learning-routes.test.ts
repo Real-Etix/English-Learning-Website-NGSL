@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import type { LiteGraph } from "@/lib/wiki/parse-wiki";
+import type { LiteGraph } from "@/lib/vocabulary/graph";
 import { buildLadderRungs, buildRunStops, getLearningRouteList } from "./learning-routes";
 
 const graph: LiteGraph = {

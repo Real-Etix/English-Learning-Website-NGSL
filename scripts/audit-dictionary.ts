@@ -1,9 +1,9 @@
 import {
-  auditDictionaryPages,
+  auditDictionaryRecords,
   hasStrictFailures,
   type DictionaryQualityCounts,
 } from "../lib/wiki/dictionary-quality";
-import { readAllPages } from "../lib/wiki/parse-wiki";
+import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
 
 const percentage = (count: number, total: number) =>
   total === 0 ? "0.0%" : `${((count / total) * 100).toFixed(1)}%`;
@@ -34,8 +34,9 @@ function printSummary(label: string, counts: DictionaryQualityCounts) {
 }
 
 async function main() {
-  const pages = await readAllPages();
-  const report = auditDictionaryPages(pages);
+  const records = [];
+  for await (const record of openNdjsonRepository().all()) records.push(record);
+  const report = auditDictionaryRecords(records);
 
   console.log("Dictionary quality audit");
   printSummary("Global totals", report.total);

@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-import type { LiteGraph } from "@/lib/wiki/parse-wiki";
+import type { LiteGraph } from "@/lib/vocabulary/graph";
 
 import { encodeFullGalaxy } from "./full-codec";
 import { layoutGalaxy } from "./layout";

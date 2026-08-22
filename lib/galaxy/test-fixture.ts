@@ -1,4 +1,4 @@
-import type { LiteGraph } from "@/lib/wiki/parse-wiki";
+import type { LiteGraph } from "@/lib/vocabulary/graph";
 
 export const fixtureGraph: LiteGraph = {
   slug: "fixture",
