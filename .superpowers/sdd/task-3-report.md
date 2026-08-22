@@ -165,3 +165,22 @@ This review fix changes only the profile compatibility and drawer loading/failur
 ## Scope
 
 - Rarity and XP are now derived only from a response whose page lemma matches the focused star. Loading or failed selections show `Rarity unavailable` and omit XP; a ready current page retains its real XP, including when live rarity is unavailable. Compose behavior is intentionally unchanged.
+
+---
+
+# Dictionary v2 Task 3 Review Fix: Unavailable Solid Held-Word Compose Access
+
+## TDD evidence
+
+- RED: `npx vitest run components/network/word-learning-drawer.test.tsx` failed as expected: with `profile={null}`, `loadState="loading"`, `held`, and `solid`, the retained `◆ Used in a sentence` compose button rendered with `disabled=""`.
+- GREEN: after removing only `disabled={solid}` from the unavailable drawer’s held-word compose control, the same focused command passed (`3` tests).
+
+## Verification
+
+- `npx vitest run components/network/word-learning-drawer.test.tsx` passed (`3` tests).
+- `npx tsc --noEmit` passed with no output or errors.
+- `npm run lint` completed with `0` errors. It retains the two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset`.
+
+## Scope
+
+- The unavailable/loading drawer’s solid held-word compose action remains enabled while preserving its existing `◆ Used in a sentence` label, green solid-state styling, and truthful loading/error content. The ready-profile path and unrelated documentation are unchanged.

@@ -102,4 +102,31 @@ describe("WordLearningDrawer", () => {
 
     expect(composeButton(markup)).not.toContain("disabled");
   });
+
+  it("keeps the compose action enabled for a solid held word while learning details load", () => {
+    const markup = renderToStaticMarkup(
+      <WordLearningDrawer
+        profile={null}
+        display="anchor"
+        partOfSpeech="noun"
+        loadState="loading"
+        errorMessage={null}
+        chart={{ name: "NGSL", hue: "#BFD9F2", glyph: "A" }}
+        held
+        solid
+        xp={null}
+        rarity={{ word: "Rarity unavailable", dot: "#94A0B4", text: "Loading learning details" }}
+        onClose={() => {}}
+        onRetry={() => {}}
+        onNavigate={() => {}}
+        onOpenQuiz={() => {}}
+        onCompose={() => {}}
+        onSpeak={() => {}}
+        onPlayAudio={() => {}}
+        displayConnection={(lemma) => lemma}
+      />,
+    );
+
+    expect(composeButton(markup)).not.toContain("disabled");
+  });
 });
