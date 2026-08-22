@@ -73,6 +73,7 @@ const REPORT_FIELDS = new Set([
   "estimatedRemainingDebt",
 ]);
 const TOKEN_USAGE_FIELDS = new Set(["inputTokens", "outputTokens"]);
+const VALID_REPORT_STAGES = new Set(["all", "ngsl", "academic", "business", "toeic", "fitness", "advanced"]);
 const SENSITIVE_REPORT_FIELD = /(?:api[_-]?key|authorization|prompt|response|completion|message|secret|token(?!usage))/i;
 
 function isCount(value: unknown): value is number {
@@ -98,6 +99,7 @@ export function verifyEnrichmentReport(value: string): EnrichmentDiffResult {
   }
   const candidate = report as Partial<EnrichmentReport>;
   if (typeof candidate.stage !== "string" || !candidate.stage.trim()) errors.push("report stage must be non-blank");
+  else if (!VALID_REPORT_STAGES.has(candidate.stage)) errors.push(`report stage is not an allowed enrichment stage: ${candidate.stage}`);
   for (const field of ["factualImports", "reviewProposals", "hiddenRecords", "rejections", "unknownTargets", "estimatedRemainingDebt"] as const) {
     if (!isCount(candidate[field])) errors.push(`report ${field} must be a non-negative integer`);
   }

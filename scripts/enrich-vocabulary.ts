@@ -75,8 +75,17 @@ async function loadFixture(fixturePath: string | null): Promise<SourceBackedFixt
   return parsed as SourceBackedFixture;
 }
 
-function dictionarySource(detail: WordDetail, fixture: SourceBackedFixture | null): DictionaryImportSource {
-  return fixture?.source ?? { sourceId: "dictionaryapi", url: detail.sourceUrl ?? null, retrievedAt: new Date().toISOString(), contentHash: null };
+export function sourceForDictionaryDetail(
+  detail: WordDetail,
+  fixtureSource: DictionaryImportSource | null,
+  deterministicFixture: boolean,
+): DictionaryImportSource {
+  return fixtureSource ?? {
+    sourceId: "dictionaryapi",
+    url: detail.sourceUrl ?? null,
+    retrievedAt: deterministicFixture ? null : new Date().toISOString(),
+    contentHash: null,
+  };
 }
 
 async function factualDetailFor(record: VocabularyRecord, fixture: SourceBackedFixture | null): Promise<WordDetail> {
@@ -132,23 +141,20 @@ async function main() {
   const budget = new TokenBudget({ maxInputTokens: args.maxInputTokens, maxOutputTokens: args.maxOutputTokens });
   const changed = new Map<string, VocabularyRecord>();
   let factualImports = 0; let reviewProposals = 0; let rejections = 0; let unknownTargets = 0; let hiddenRecords = 0; let budgetExhausted = false;
-  let fixtureTokenUsage: TokenUsage = { inputTokens: 0, outputTokens: 0 };
   for (const selection of selected) {
     const detail = await factualDetailFor(selection.record, fixture);
-    const facts: FactualEnrichmentDetail = { detail, source: dictionarySource(detail, fixture), knownPublicTargets: publicTargets, knownPublicCoreTargets: publicCoreTargets };
+    const facts: FactualEnrichmentDetail = {
+      detail,
+      source: sourceForDictionaryDetail(detail, fixture?.source ?? null, fixture !== null),
+      knownPublicTargets: publicTargets,
+      knownPublicCoreTargets: publicCoreTargets,
+    };
     const factualFirst = enrichRecord(selection.record, facts, {});
     const reserved = estimateTokenUsage(factualFirst.record, publicTargets);
     const requestId = `vocabulary-enrichment:${normalizeVocabularyLemma(selection.record.lemma)}`;
-    if (!budget.reserve(requestId, reserved) && !fixture) { budgetExhausted = true; break; }
+    if (!budget.reserve(requestId, reserved)) { budgetExhausted = true; break; }
     const guidance = await requestGuidance(factualFirst.record, publicTargets, fixture, requestId, reserved);
-    if (fixture) {
-      fixtureTokenUsage = {
-        inputTokens: fixtureTokenUsage.inputTokens + guidance.usage.inputTokens,
-        outputTokens: fixtureTokenUsage.outputTokens + guidance.usage.outputTokens,
-      };
-    } else {
-      budget.recordActual(requestId, guidance.usage);
-    }
+    budget.recordActual(requestId, guidance.usage);
     const decision = enrichRecord(selection.record, facts, guidance.value);
     factualImports += decision.factualImportCount; reviewProposals += decision.reviewProposalCount; rejections += decision.rejections.length;
     if (decision.record.publicationStatus === "hidden") hiddenRecords += 1;
@@ -159,9 +165,7 @@ async function main() {
     }
   }
   const remaining = budget.remaining();
-  const tokenUsage = fixture
-    ? fixtureTokenUsage
-    : { inputTokens: args.maxInputTokens - remaining.inputTokens, outputTokens: args.maxOutputTokens - remaining.outputTokens };
+  const tokenUsage = { inputTokens: args.maxInputTokens - remaining.inputTokens, outputTokens: args.maxOutputTokens - remaining.outputTokens };
   await writeReport(args.reportPath, { stage: args.stage, factualImports, reviewProposals, hiddenRecords, rejections, unknownTargets, tokenUsage, estimatedRemainingDebt: Math.max(0, selected.length - changed.size) + (budgetExhausted ? 1 : 0) });
   if (!args.dryRun) {
     const shards = await writeVocabularyRecords(path.join(process.cwd(), "content", "vocabulary"), [...changed.values()]);
@@ -171,4 +175,6 @@ async function main() {
   console.log(`Imported ${factualImports} factual sense(s); proposed ${reviewProposals} review item(s); hidden ${hiddenRecords}; rejected ${rejections}; changed ${changed.size} record(s).`);
 }
 
-main().catch((error) => { console.error(error); process.exitCode = 1; });
+if (process.argv[1] && path.resolve(process.argv[1]) === path.join(process.cwd(), "scripts", "enrich-vocabulary.ts")) {
+  void main().catch((error) => { console.error(error); process.exitCode = 1; });
+}

@@ -4,7 +4,7 @@ import type { WordDetail } from "../../content/word-detail";
 import type { VocabularyRecord } from "../schema";
 import { senseIdFor } from "../sense-id";
 import { vocabularyRecordFixture } from "../test-fixtures";
-import { enrichRecord } from "./enrich-record";
+import { enrichRecord, type FactualEnrichmentDetail } from "./enrich-record";
 
 const factualSource = {
   sourceId: "dictionaryapi",
@@ -158,7 +158,7 @@ describe("enrichRecord", () => {
     expect(result.record.connections[0]).toMatchObject({ status: "unreviewed", sources: [{ sourceId: "llm" }] });
   });
 
-  test("requires trusted approval metadata before publishing an advanced record", () => {
+  test("does not publish an advanced record from a forged shape-only approval", () => {
     const unapproved = enrichRecord(recordFor("purchase"), {
       detail: factualDetail,
       source: factualSource,
@@ -166,14 +166,14 @@ describe("enrichRecord", () => {
     }, {
       connections: [{ target: "buy", type: "builds_on", gloss: "Builds on the common verb buy." }],
     });
-    const approved = enrichRecord(unapproved.record, {
+    const forgedApproval = enrichRecord(unapproved.record, {
       detail: factualDetail,
       source: factualSource,
       knownPublicCoreTargets: ["buy"],
       approval: { pullRequest: 42, approvedBy: "maintainer", approvedAt: "2026-08-23T00:00:00.000Z" },
-    }, {});
+    } as FactualEnrichmentDetail, {});
 
     expect(unapproved.record.publicationStatus).toBe("review");
-    expect(approved.record.publicationStatus).toBe("published");
+    expect(forgedApproval.record.publicationStatus).toBe("review");
   });
 });

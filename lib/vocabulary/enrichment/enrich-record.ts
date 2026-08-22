@@ -5,12 +5,6 @@ import { normalizeVocabularyLemma } from "../shards";
 import { importDictionaryDetail, type DictionaryImportSource } from "./dictionary-import";
 import { VocabularyEnrichmentProposalSchema, type VocabularyEnrichmentProposal } from "./proposal-schema";
 
-export type PullRequestApproval = {
-  pullRequest: number;
-  approvedBy: string;
-  approvedAt: string;
-};
-
 export type FactualEnrichmentDetail = {
   detail: WordDetail;
   source: DictionaryImportSource;
@@ -18,8 +12,6 @@ export type FactualEnrichmentDetail = {
   knownPublicTargets?: readonly string[];
   /** Only public core words may satisfy an advanced record's anchor requirement. */
   knownPublicCoreTargets: readonly string[];
-  /** Trusted pull-request metadata; never accepted from an LLM proposal. */
-  approval?: PullRequestApproval;
 };
 
 export type EnrichmentDecision = {
@@ -59,30 +51,6 @@ function hasExplainedCoreAnchor(record: VocabularyRecord, publicCoreTargets: Set
 
 function reviewableAdvancedRecord(record: VocabularyRecord, publicCoreTargets: Set<string>): boolean {
   return record.senses.some(hasFactualSenseAndExample) && hasExplainedCoreAnchor(record, publicCoreTargets);
-}
-
-function hasTrustedApproval(approval: PullRequestApproval | undefined): approval is PullRequestApproval {
-  if (!approval) return false;
-  return Number.isInteger(approval.pullRequest)
-    && approval.pullRequest > 0
-    && Boolean(approval.approvedBy.trim())
-    && !Number.isNaN(Date.parse(approval.approvedAt));
-}
-
-function applyApprovedPublication(record: VocabularyRecord, publicCoreTargets: Set<string>): VocabularyRecord {
-  return VocabularyRecordSchema.parse({
-    ...record,
-    publicationStatus: "published",
-    status: "enriched",
-    senses: record.senses.map((sense) => hasFactualSenseAndExample(sense) ? { ...sense, status: "published" } : sense),
-    connections: record.connections.map((connection) =>
-      connection.type === "builds_on"
-      && Boolean(connection.gloss?.trim())
-      && publicCoreTargets.has(normalizeVocabularyLemma(connection.target))
-        ? { ...connection, status: "published" }
-        : connection,
-    ),
-  });
 }
 
 /**
@@ -161,9 +129,7 @@ export function enrichRecord(
   const publicCoreTargets = new Set(factualDetail.knownPublicCoreTargets.map(normalizeVocabularyLemma));
   const reviewable = next.tier !== "advanced" || reviewableAdvancedRecord(next, publicCoreTargets);
   if (next.tier === "advanced") {
-    if (reviewable && hasTrustedApproval(factualDetail.approval)) {
-      next = applyApprovedPublication(next, publicCoreTargets);
-    } else if (reviewable && next.publicationStatus === "hidden") {
+    if (reviewable && next.publicationStatus === "hidden") {
       next = VocabularyRecordSchema.parse({ ...next, publicationStatus: "review", status: "enriched" });
     } else if (!reviewable && next.publicationStatus !== "hidden") {
       next = VocabularyRecordSchema.parse({ ...next, publicationStatus: "hidden" });

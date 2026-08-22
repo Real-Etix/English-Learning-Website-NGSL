@@ -156,4 +156,20 @@ describe("verifyEnrichmentReport", () => {
       "sensitive report field: apiKey",
     ]));
   });
+
+  it("rejects reports with an unknown stage", () => {
+    const result = verifyEnrichmentReport(JSON.stringify({
+      stage: "secret-stage",
+      factualImports: 0,
+      reviewProposals: 0,
+      hiddenRecords: 0,
+      rejections: 0,
+      unknownTargets: 0,
+      tokenUsage: { inputTokens: 0, outputTokens: 0 },
+      estimatedRemainingDebt: 0,
+    }));
+
+    expect(result.allowed).toBe(false);
+    expect(result.errors).toContain("report stage is not an allowed enrichment stage: secret-stage");
+  });
 });
