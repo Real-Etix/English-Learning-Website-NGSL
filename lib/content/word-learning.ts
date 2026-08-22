@@ -1,6 +1,7 @@
 import type { WordDetail } from "./word-detail";
 import { isLearnerConnection } from "../vocabulary/publication";
 import type { VocabularyRecord } from "../vocabulary/schema";
+import { evidenceForSources } from "../vocabulary/source-evidence";
 
 export type LearningEvidence = "verified" | "source-backed" | "ai-draft";
 
@@ -49,8 +50,6 @@ export type WordLearningProfile = {
   claimBlockReason: string | null;
 };
 
-const FACTUAL_SOURCES = new Set(["curated", "wordnet", "dictionaryapi", "tatoeba"]);
-
 const normalizeText = (value: string) => value.trim().toLowerCase().replace(/\s+/g, " ");
 
 const isPlaceholder = (value: string) =>
@@ -89,11 +88,11 @@ export function buildWordLearningProfile(
   const primaryDefinition = primarySense?.definition ?? "";
   const primaryExamples = primarySense?.examples ?? [];
   const sourceIds = record.sources.map((source) => source.sourceId);
-  const factualWikiSource = sourceIds.some((source) => FACTUAL_SOURCES.has(source));
+  const wikiEvidence = evidenceForSources(record.sources, { verified: record.status === "verified" });
+  const factualWikiSource = wikiEvidence !== "ai-draft";
   const advancedWithoutFactualSource = record.tier === "advanced" && !factualWikiSource;
   const usableWikiDefinition = Boolean(primaryDefinition.trim()) && !isPlaceholder(primaryDefinition);
-  const verifiedWikiDefinition =
-    !advancedWithoutFactualSource && record.status === "verified" && usableWikiDefinition;
+  const verifiedWikiDefinition = !advancedWithoutFactualSource && wikiEvidence === "verified" && usableWikiDefinition;
   const sourceBackedWikiDefinition = factualWikiSource && usableWikiDefinition;
 
   const dictionarySenses = (detail?.senses ?? []).filter(

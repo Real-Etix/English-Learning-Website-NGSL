@@ -7,6 +7,14 @@ export interface DictionarySense {
   partOfSpeech: string;
   definition: string;
   example: string | null;
+  sourceEntryId?: string;
+  sourceSenseId?: string;
+  sourceUrl?: string | null;
+}
+
+export interface DictionarySourceMetadata {
+  entryId?: string;
+  url?: string | null;
 }
 
 export interface WordDetail {
@@ -14,11 +22,21 @@ export interface WordDetail {
   audioUk: string | null;
   audioUs: string | null;
   audioAny: string | null;
+  sourceEntryId?: string;
+  sourceUrl?: string | null;
+  pronunciationSources?: {
+    ipa?: DictionarySourceMetadata;
+    audioUk?: DictionarySourceMetadata;
+    audioUs?: DictionarySourceMetadata;
+    audioAny?: DictionarySourceMetadata;
+  };
   senses: DictionarySense[];
   synonyms: string[];
 }
 
 type ApiEntry = {
+  word?: string;
+  sourceUrls?: string[];
   phonetic?: string;
   phonetics?: Array<{ text?: string; audio?: string }>;
   meanings?: Array<{
@@ -47,6 +65,9 @@ export async function fetchWordDetail(word: string): Promise<WordDetail> {
     const data = (await res.json()) as ApiEntry[];
 
     const phonetics = data.flatMap((e) => e.phonetics ?? []);
+    const sourceEntry = data.find((entry) => entry.word)?.word;
+    const sourceUrl = data.flatMap((entry) => entry.sourceUrls ?? []).find(Boolean) ?? null;
+    const sourceMetadata = sourceEntry ? { entryId: sourceEntry, url: sourceUrl } : undefined;
     const ipa =
       data.find((e) => e.phonetic)?.phonetic ??
       phonetics.find((p) => p.text)?.text ??
@@ -65,6 +86,7 @@ export async function fetchWordDetail(word: string): Promise<WordDetail> {
             partOfSpeech: meaning.partOfSpeech ?? "",
             definition: def.definition,
             example: def.example ?? null,
+            ...(sourceEntry ? { sourceEntryId: sourceEntry, sourceUrl } : {}),
           });
         }
       }
@@ -79,6 +101,13 @@ export async function fetchWordDetail(word: string): Promise<WordDetail> {
       audioUk: audioFor("uk"),
       audioUs: audioFor("us"),
       audioAny,
+      ...(sourceEntry ? { sourceEntryId: sourceEntry, sourceUrl } : {}),
+      pronunciationSources: {
+        ...(ipa ? { ipa: sourceMetadata } : {}),
+        ...(audioFor("uk") ? { audioUk: sourceMetadata } : {}),
+        ...(audioFor("us") ? { audioUs: sourceMetadata } : {}),
+        ...(audioAny ? { audioAny: sourceMetadata } : {}),
+      },
       senses: senses.slice(0, 6),
       synonyms,
     };

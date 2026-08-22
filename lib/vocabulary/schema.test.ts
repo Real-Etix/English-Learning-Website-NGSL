@@ -101,6 +101,10 @@ describe("VocabularyRecordSchema", () => {
       ...record,
       sources: [{ ...record.sources[0], retrievedAt: "not-a-timestamp" }],
     }).success).toBe(false);
+    expect(VocabularyRecordSchema.safeParse({
+      ...record,
+      sources: [{ ...record.sources[0], sourceId: "unknown-source" }],
+    }).success).toBe(false);
   });
 
   it("rejects invalid connection types", () => {

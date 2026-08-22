@@ -1,35 +1,27 @@
-import sourceRegistryFile from "../../content/vocabulary/sources.json";
-
 import {
-  SourceRegistrySchema,
-  type ContentSourceRef,
   type PublicationStatus,
   type VocabularyConnection,
   type VocabularyRecord,
   type VocabularySense,
 } from "./schema";
-
-const sourceRegistry = SourceRegistrySchema.parse(sourceRegistryFile);
-const FACTUAL_SOURCE_IDS = new Set(sourceRegistry.sources.filter((source) => source.factual).map((source) => source.id));
+import { evidenceForSources } from "./source-evidence";
 const PLACEHOLDER_CONTENT = /definition pending|needs a fuller dictionary source/i;
-
-function hasFactualSource(sources: ContentSourceRef[]): boolean {
-  return sources.some((source) => FACTUAL_SOURCE_IDS.has(source.sourceId));
-}
 
 function isUsableDefinition(value: string): boolean {
   return Boolean(value.trim()) && !PLACEHOLDER_CONTENT.test(value);
 }
 
 function hasSourcedExample(sense: VocabularySense): boolean {
-  return sense.examples.some((example) => Boolean(example.text.trim()) && hasFactualSource(example.sources));
+  return sense.examples.some((example) =>
+    Boolean(example.text.trim()) && evidenceForSources(example.sources, { verified: false }) !== "ai-draft",
+  );
 }
 
 /** Classifies one sense without treating LLM output as factual evidence. */
 export function factualEvidenceFor(record: VocabularyRecord, sense: VocabularySense): "verified" | "source-backed" | "ai-draft" {
-  if (!hasFactualSource([...record.sources, ...sense.sources])) return "ai-draft";
-  if (isUsableDefinition(sense.definition) && (record.status === "verified" || sense.status === "published")) return "verified";
-  return "source-backed";
+  return evidenceForSources([...record.sources, ...sense.sources], {
+    verified: isUsableDefinition(sense.definition) && (record.status === "verified" || sense.status === "published"),
+  });
 }
 
 /** A public sense needs factual meaning evidence, usable authored content, and a factual example. */

@@ -1,4 +1,5 @@
 import type { VocabularyRecord } from "../vocabulary/schema";
+import { evidenceForSources } from "../vocabulary/source-evidence";
 
 export type DictionaryEvidenceCounts = {
   verified: number;
@@ -28,8 +29,6 @@ export type DictionaryQualityReport = {
   lists: Record<string, DictionaryQualityCounts>;
 };
 
-const FACTUAL_SOURCES = new Set(["curated", "wordnet", "dictionaryapi", "tatoeba"]);
-
 const isPlaceholder = (value: string) =>
   /definition pending|needs a fuller dictionary source/i.test(value);
 
@@ -51,9 +50,11 @@ function emptyCounts(): DictionaryQualityCounts {
 }
 
 function evidenceFor(record: VocabularyRecord): keyof DictionaryEvidenceCounts {
-  if (record.status === "verified") return "verified";
-  if (record.sources.some((source) => FACTUAL_SOURCES.has(source.sourceId))) return "sourceBacked";
-  return "aiDraft";
+  const evidence = evidenceForSources(record.sources, {
+    verified: record.status === "verified",
+    allowVerifiedWithoutFactualSource: true,
+  });
+  return evidence === "source-backed" ? "sourceBacked" : evidence === "ai-draft" ? "aiDraft" : "verified";
 }
 
 function isLlmOnlyAdvanced(record: VocabularyRecord): boolean {

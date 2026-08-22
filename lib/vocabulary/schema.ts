@@ -1,4 +1,5 @@
 import { z } from "zod";
+import sourceRegistryFile from "../../content/vocabulary/sources.json";
 import { normalizeVocabularyLemma } from "./shards";
 
 /** Validates authored text without coercing it: canonical files retain exact spacing. */
@@ -9,6 +10,13 @@ const normalizedLemma = z.string().min(1).refine(
 );
 const nullableText = nonEmpty.nullable();
 const sourceId = nonEmpty.regex(/^[a-z0-9][a-z0-9._-]*$/);
+const registeredSourceIds = new Set(
+  sourceRegistryFile.sources.map((source) => source.id),
+);
+const registeredSourceId = sourceId.refine(
+  (value) => registeredSourceIds.has(value),
+  "Source ID must be registered",
+);
 const finiteRank = z.number().int().min(1).finite().nullable();
 const finiteSfi = z.number().min(0).max(100).finite().nullable();
 
@@ -31,7 +39,7 @@ export const SourceRegistrySchema = z.object({
 export type SourceRegistry = z.infer<typeof SourceRegistrySchema>;
 
 const ContentSourceRefSchema = z.object({
-  sourceId,
+  sourceId: registeredSourceId,
   externalId: nullableText,
   url: z.url().nullable(),
   retrievedAt: z.iso.datetime().nullable(),

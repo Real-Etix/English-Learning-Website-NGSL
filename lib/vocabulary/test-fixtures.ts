@@ -12,7 +12,7 @@ export function vocabularyRecordFixture(): VocabularyRecord {
     status: "verified",
     publicationStatus: "published",
     sources: [{
-      sourceId: "fixture-dictionary",
+      sourceId: "wordnet",
       externalId: "learn",
       url: "https://example.com/learn",
       retrievedAt: "2026-01-01T00:00:00.000Z",
@@ -24,7 +24,7 @@ export function vocabularyRecordFixture(): VocabularyRecord {
       definition: "to gain knowledge or skill through study or experience",
       labels: [],
       sources: [{
-        sourceId: "fixture-dictionary",
+        sourceId: "wordnet",
         externalId: "learn-verb-1",
         url: "https://example.com/learn#verb-1",
         retrievedAt: "2026-01-01T00:00:00.000Z",
@@ -33,7 +33,7 @@ export function vocabularyRecordFixture(): VocabularyRecord {
       examples: [{
         text: "Children learn quickly when they are curious.",
         sources: [{
-          sourceId: "fixture-example",
+          sourceId: "tatoeba",
           externalId: "learn-example-1",
           url: "https://example.com/examples/learn-1",
           retrievedAt: "2026-01-01T00:00:00.000Z",
@@ -50,7 +50,7 @@ export function vocabularyRecordFixture(): VocabularyRecord {
       region: "uk",
       audioUrl: "https://example.com/audio/learn-uk.mp3",
       sources: [{
-        sourceId: "fixture-dictionary",
+        sourceId: "wordnet",
         externalId: "learn-pronunciation-uk",
         url: "https://example.com/learn#pronunciation",
         retrievedAt: "2026-01-01T00:00:00.000Z",
@@ -63,7 +63,7 @@ export function vocabularyRecordFixture(): VocabularyRecord {
       type: "synonym",
       gloss: "Both words describe gaining knowledge; study emphasizes the activity.",
       sources: [{
-        sourceId: "fixture-dictionary",
+        sourceId: "wordnet",
         externalId: "learn-study",
         url: "https://example.com/learn#related",
         retrievedAt: "2026-01-01T00:00:00.000Z",
