@@ -40,7 +40,12 @@ export function toLiteGraph(graph: ListGraph): LiteGraph {
 }
 
 function compareLemma(left: GraphInput, right: GraphInput): number {
-  return left.lemma < right.lemma ? -1 : left.lemma > right.lemma ? 1 : 0;
+  // The legacy reader sorted Markdown filenames, not bare lemmas. Appending the
+  // extension preserves its ordering around hyphenated lemmas ("also-ran.md"
+  // precedes "also.md"), which seeds Louvain identically to the old builder.
+  const leftFile = `${left.lemma}.md`;
+  const rightFile = `${right.lemma}.md`;
+  return leftFile < rightFile ? -1 : leftFile > rightFile ? 1 : 0;
 }
 
 function membershipFor(page: GraphInput, slug: string): { rank: number | null; sfi: number | null } {
@@ -96,7 +101,9 @@ function clusterCharts(
   degree: Map<string, number>,
   rankOf: Map<string, number | null>,
 ): Map<string, string> {
-  const connected = nodeIds.filter((id) => (degree.get(id) ?? 0) > 0).sort();
+  // Keep legacy Markdown filename order through Louvain and all ties so existing
+  // chart assignments and their themed hub IDs remain stable.
+  const connected = nodeIds.filter((id) => (degree.get(id) ?? 0) > 0);
   const weightedEdges = edges.map((edge) => ({
     source: edge.source,
     target: edge.target,
@@ -129,10 +136,15 @@ function clusterCharts(
       const current = resolve(community.get(id)!);
       sizes.set(current, (sizes.get(current) ?? 0) + 1);
     }
-    const small = [...sizes]
-      .filter(([id, size]) => !frozen.has(id) && size < MIN_CHART)
-      .sort(([leftId, leftSize], [rightId, rightSize]) => leftSize - rightSize || leftId - rightId)[0]?.[0];
-    if (small === undefined) break;
+    let small: number | null = null;
+    let smallSize = Infinity;
+    for (const [id, size] of sizes) {
+      if (!frozen.has(id) && size < MIN_CHART && size < smallSize) {
+        small = id;
+        smallSize = size;
+      }
+    }
+    if (small === null) break;
 
     let target: number | undefined;
     let bestWeight = -1;
@@ -140,8 +152,8 @@ function clusterCharts(
       const [left, right] = key.split("|").map(Number);
       const resolvedLeft = resolve(left);
       const resolvedRight = resolve(right);
-      const candidate = resolvedLeft === small ? resolvedRight : resolvedRight === small ? resolvedLeft : undefined;
-      if (candidate !== undefined && candidate !== small && (weight > bestWeight || (weight === bestWeight && candidate < (target ?? Infinity)))) {
+      const candidate: number | undefined = resolvedLeft === small ? resolvedRight : resolvedRight === small ? resolvedLeft : undefined;
+      if (candidate !== undefined && candidate !== small && weight > bestWeight) {
         target = candidate;
         bestWeight = weight;
       }
@@ -164,7 +176,7 @@ function clusterCharts(
       const degreeDifference = (degree.get(right) ?? 0) - (degree.get(left) ?? 0);
       if (degreeDifference !== 0) return degreeDifference;
       const rankDifference = (rankOf.get(left) ?? Infinity) - (rankOf.get(right) ?? Infinity);
-      return rankDifference || left.localeCompare(right);
+      return rankDifference;
     })[0]!;
     for (const id of group) chartOf.set(id, hub);
   }
@@ -193,7 +205,7 @@ function assembleGraph(inputs: GraphInput[], includedSet: Set<string>, slug: str
   }
 
   const rankOf = new Map(included.map((page) => [page.lemma, membershipFor(page, slug).rank]));
-  const chartOf = clusterCharts([...nodeSet].sort(), edges, degree, rankOf);
+  const chartOf = clusterCharts([...nodeSet], edges, degree, rankOf);
   const nodes = included.map((page) => ({
     lemma: page.lemma,
     display: page.display,

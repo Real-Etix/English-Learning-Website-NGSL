@@ -3,7 +3,6 @@ import { randomUUID } from "node:crypto";
 import { prisma } from "@/lib/db";
 import { badgesFor, levelForXp, wordXp } from "@/lib/collection/xp";
 import { loadListGraph } from "@/lib/wiki/graph-store";
-import { readPage } from "@/lib/wiki/parse-wiki";
 import { openNdjsonRepository } from "@/lib/vocabulary/ndjson-repository";
 
 /** Which collected lemmas are advanced-tier in the canonical vocabulary corpus. */
@@ -43,18 +42,18 @@ export async function getOrCreateCollection(ownerToken: string) {
 
 /** Add a word to the caller's collection. Returns whether it was newly added + xp gained. */
 export async function collectWord(ownerToken: string, lemma: string) {
-  const page = await readPage(lemma);
-  if (!page) return { added: false, error: "unknown word" as const };
+  const record = await openNdjsonRepository().get(lemma);
+  if (!record) return { added: false, error: "unknown word" as const };
 
   const collection = await getOrCreateCollection(ownerToken);
-  const xp = wordXp({ tier: page.tier, sfi: page.sfi });
+  const xp = wordXp({ tier: record.tier, sfi: record.lists[0]?.sfi ?? null });
   try {
     await prisma.collectedWord.create({
       data: { collectionId: collection.id, lemma, xp, source: "collected" },
     });
-    return { added: true, xp, display: page.display };
+    return { added: true, xp, display: record.display };
   } catch {
-    return { added: false, xp: 0, display: page.display }; // already collected (unique constraint)
+    return { added: false, xp: 0, display: record.display }; // already collected (unique constraint)
   }
 }
 

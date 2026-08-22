@@ -92,6 +92,44 @@ describe("buildListGraph", () => {
       .toEqual(first.nodes.map(({ lemma, chart }) => ({ lemma, chart })).sort((a, b) => a.lemma.localeCompare(b.lemma)));
   });
 
+  it("uses the legacy Markdown filename order for hyphenated lemmas", () => {
+    const ordered = ["also", "also-ran"].map((lemma) => toGraphInput(record({
+      lemma,
+      display: lemma,
+      lists: [{ id: "ngsl", rank: 1, sfi: 60 }],
+      connections: [],
+    })));
+
+    expect(buildListGraph(ordered, "ngsl").nodes.map((node) => node.lemma)).toEqual(["also-ran", "also"]);
+  });
+
+  it("preserves the legacy lexical hub order when degree and rank tie", () => {
+    const tied = ["a", "b", "c", "z", "ä"].map((lemma) => toGraphInput(record({
+      lemma,
+      display: lemma,
+      lists: [{ id: "ngsl", rank: 1, sfi: 60 }],
+      connections: [],
+    })));
+    const byLemma = new Map(tied.map((input) => [input.lemma, input]));
+    byLemma.get("a")!.connections = [
+      { target: "z", type: "synonym" },
+      { target: "ä", type: "synonym" },
+    ];
+    byLemma.get("b")!.connections = [{ target: "z", type: "synonym" }];
+    byLemma.get("c")!.connections = [{ target: "ä", type: "synonym" }];
+    byLemma.get("z")!.connections = [{ target: "ä", type: "synonym" }];
+
+    const graph = buildListGraph(tied, "ngsl");
+
+    expect(graph.nodes.map(({ lemma, chart }) => ({ lemma, chart }))).toEqual([
+      { lemma: "a", chart: "z" },
+      { lemma: "b", chart: "z" },
+      { lemma: "c", chart: "z" },
+      { lemma: "z", chart: "z" },
+      { lemma: "ä", chart: "z" },
+    ]);
+  });
+
   it("builds a collection graph only from the owned canonical records", () => {
     const graph = buildCollectionGraph(inputs, new Set(["big", "large"]));
 

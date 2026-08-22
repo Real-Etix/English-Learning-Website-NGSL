@@ -98,8 +98,7 @@ export function convertLegacyMarkdown(markdown: string): VocabularyRecord | null
         status: gloss ? "published" : "unreviewed",
       };
     })
-    .filter((connection) => connection.target)
-    .sort((left, right) => compareText(`${left.type}\u0000${left.target}\u0000${left.gloss ?? ""}`, `${right.type}\u0000${right.target}\u0000${right.gloss ?? ""}`));
+    .filter((connection) => connection.target);
   const record = {
     schemaVersion: 1,
     lemma,

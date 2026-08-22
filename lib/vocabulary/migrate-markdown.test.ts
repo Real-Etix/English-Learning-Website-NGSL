@@ -94,4 +94,30 @@ ${connection}
     expect(record.senses[0].examples[0]?.text).toBe(" Keep  the example margin ");
     expect(record.connections[0]?.gloss).toBe(" keep  every  gloss gap  ");
   });
+
+  test("preserves the authored Markdown connection order", () => {
+    const record = convertLegacyMarkdown(`---
+lemma: a
+display: a
+tier: core
+pos: article
+sources: [curated]
+---
+
+## Definition
+An article.
+
+## Connections
+- collocation: [[lot]] — authored order
+- collocation: [[one]] — authored order
+- collocation: [[any]] — authored order
+- collocation: [[some]] — authored order
+- collocation: [[few]] — authored order
+- collocation: [[namely]] — authored order
+`)!;
+
+    expect(record.connections.map((connection) => connection.target)).toEqual([
+      "lot", "one", "any", "some", "few", "namely",
+    ]);
+  });
 });

@@ -6,14 +6,58 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
-import type { ContentSourceRef, VocabularyRecord } from "../lib/vocabulary/schema";
+import { VocabularyRecordSchema, type ContentSourceRef, type VocabularyRecord } from "../lib/vocabulary/schema";
 import { shardIdForLemma } from "../lib/vocabulary/shards";
 
 const ALLOWED_EDGES = new Set([
   "synonym", "antonym", "intensity", "builds_on", "advanced_form", "morphological", "collocation",
 ]);
 
-type Finding = { level: "error" | "warn"; lemma: string; message: string };
+export type Finding = { level: "error" | "warn"; lemma: string; message: string };
+
+const SHARD_IDS = Array.from({ length: 32 }, (_, index) => index.toString(16).padStart(2, "0"));
+
+function compareFindings(left: Finding, right: Finding): number {
+  return left.lemma < right.lemma ? -1 : left.lemma > right.lemma ? 1 : left.message < right.message ? -1 : left.message > right.message ? 1 : 0;
+}
+
+function isMissingFile(error: unknown): boolean {
+  return typeof error === "object" && error !== null && "code" in error && error.code === "ENOENT";
+}
+
+/** Reports records stored outside the physical shard calculated from their canonical lemma. */
+export async function findMisplacedShardFindings(root: string): Promise<Finding[]> {
+  const findings: Finding[] = [];
+  for (const actualShard of SHARD_IDS) {
+    const filePath = path.join(root, `${actualShard}.ndjson`);
+    let text: string;
+    try {
+      text = await readFile(filePath, "utf8");
+    } catch (error) {
+      if (isMissingFile(error)) continue;
+      throw error;
+    }
+    for (const [index, line] of text.split("\n").entries()) {
+      if (!line.trim()) continue;
+      let record: VocabularyRecord;
+      try {
+        record = VocabularyRecordSchema.parse(JSON.parse(line));
+      } catch (error) {
+        const detail = error instanceof Error ? error.message : String(error);
+        throw new Error(`Invalid vocabulary record in ${filePath}:${index + 1}: ${detail}`, { cause: error });
+      }
+      const expectedShard = shardIdForLemma(record.lemma);
+      if (actualShard !== expectedShard) {
+        findings.push({
+          level: "error",
+          lemma: record.lemma,
+          message: `stored in ${actualShard}.ndjson; expected ${expectedShard}.ndjson`,
+        });
+      }
+    }
+  }
+  return findings.sort(compareFindings);
+}
 
 function sourceReferences(record: VocabularyRecord): ContentSourceRef[] {
   return [
@@ -43,11 +87,10 @@ async function main(): Promise<void> {
   for await (const record of openNdjsonRepository(root).all()) records.push(record);
 
   const byLemma = new Map<string, VocabularyRecord>();
-  const findings: Finding[] = [];
+  const findings: Finding[] = await findMisplacedShardFindings(root);
   for (const record of records) {
     if (byLemma.has(record.lemma)) findings.push({ level: "error", lemma: record.lemma, message: "duplicate lemma" });
     byLemma.set(record.lemma, record);
-    if (shardIdForLemma(record.lemma) === "") findings.push({ level: "error", lemma: record.lemma, message: "invalid shard placement" });
     const listIds = record.lists.map((membership) => membership.id);
     if (new Set(listIds).size !== listIds.length) findings.push({ level: "error", lemma: record.lemma, message: "duplicate list membership" });
     for (const source of sourceReferences(record)) {
@@ -83,12 +126,14 @@ async function main(): Promise<void> {
   const errors = findings.filter((finding) => finding.level === "error");
   const warnings = findings.filter((finding) => finding.level === "warn");
   console.log(`Linted ${records.length} canonical vocabulary record(s).`);
-  for (const finding of findings) console.log(`  ${finding.level.toUpperCase()} ${finding.lemma}: ${finding.message}`);
+  for (const finding of findings.sort(compareFindings)) console.log(`  ${finding.level.toUpperCase()} ${finding.lemma}: ${finding.message}`);
   console.log(`${errors.length} error(s), ${warnings.length} warning(s).`);
   if (errors.length > 0) process.exitCode = 1;
 }
 
-void main().catch((error: unknown) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === path.join(process.cwd(), "scripts", "lint-vocabulary.ts")) {
+  void main().catch((error: unknown) => {
+    console.error(error instanceof Error ? error.message : error);
+    process.exitCode = 1;
+  });
+}
