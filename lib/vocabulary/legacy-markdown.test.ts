@@ -32,7 +32,7 @@ Often used when someone is required to give something.
       lemma: "hand over",
       forms: ["hands over", "handed over"],
       definition: "to give something to another person",
-      examples: ["Please hand over the keys."],
+      examples: [{ text: "Please hand over the keys.", sourceIds: ["curated"] }],
       connections: [{ type: "builds_on", target: "give", gloss: "transfer possession" }],
       domains: ["exchange"],
     });
@@ -41,5 +41,34 @@ Often used when someone is required to give something.
   test("rejects malformed markdown without frontmatter or a lemma", () => {
     expect(parseLegacyMarkdownPage("## Definition\nno frontmatter")).toBeNull();
     expect(parseLegacyMarkdownPage("---\ndisplay: no lemma\n---\n")).toBeNull();
+  });
+
+  test("preserves authored spacing while removing Markdown structure", () => {
+    const definition = "  Intentional  definition spacing.  ";
+    const example = "-  Keep  the example margin  _(curated)_";
+    const connection = "- collocation: [[space]] —  keep  every  gloss gap  ";
+    const page = parseLegacyMarkdownPage(`---
+lemma: spacing
+display: spacing
+tier: core
+pos: noun
+sources: [curated]
+---
+
+## Definition
+${definition}
+
+## Examples
+${example}
+
+## Connections
+${connection}
+`)!;
+
+    expect(page.definition).toBe("  Intentional  definition spacing.  ");
+    expect(page.examples).toEqual([{ text: " Keep  the example margin ", sourceIds: ["curated"] }]);
+    expect(page.connections).toEqual([
+      { type: "collocation", target: "space", gloss: " keep  every  gloss gap  " },
+    ]);
   });
 });

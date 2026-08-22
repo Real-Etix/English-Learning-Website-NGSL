@@ -67,4 +67,31 @@ describe("convertLegacyMarkdown", () => {
     expect(convertLegacyMarkdown("")).toBeNull();
     expect(convertLegacyMarkdown("## Definition\nMissing frontmatter")).toBeNull();
   });
+
+  test("stores authored definition, example, and gloss spacing verbatim", () => {
+    const definition = "  Intentional  definition spacing.  ";
+    const example = "-  Keep  the example margin  _(curated)_";
+    const connection = "- collocation: [[space]] —  keep  every  gloss gap  ";
+    const record = convertLegacyMarkdown(`---
+lemma: spacing
+display: spacing
+tier: core
+pos: noun
+sources: [curated]
+---
+
+## Definition
+${definition}
+
+## Examples
+${example}
+
+## Connections
+${connection}
+`)!;
+
+    expect(record.senses[0].definition).toBe("  Intentional  definition spacing.  ");
+    expect(record.senses[0].examples[0]?.text).toBe(" Keep  the example margin ");
+    expect(record.connections[0]?.gloss).toBe(" keep  every  gloss gap  ");
+  });
 });

@@ -65,21 +65,6 @@ function legacySenseId(page: WikiPage, sources: ContentSourceRef[]): string {
   return `legacy-${createHash("sha256").update(material, "utf8").digest("hex").slice(0, 20)}`;
 }
 
-function rawExamples(markdown: string, pageSources: ContentSourceRef[]) {
-  const section = markdown.match(/##\s+Examples\s*\n([\s\S]*?)(?=\n##\s|$)/)?.[1] ?? "";
-  return section
-    .split("\n")
-    .map((line) => line.trim())
-    .filter((line) => line.startsWith("- "))
-    .map((line) => {
-      const bullet = line.slice(2);
-      const suffix = bullet.match(/\s*_\(([^)]+)\)_\s*$/);
-      const text = suffix ? bullet.slice(0, suffix.index).trim() : bullet.trim();
-      const suffixes = suffix?.[1].split(",").map((value) => value.trim()).filter(Boolean) ?? [];
-      return { text, sources: suffixes.length ? sourceRefs(suffixes) : pageSources };
-    });
-}
-
 function legacyStatus(value: string): VocabularyRecord["status"] {
   return value === "verified" || value === "enriched" ? value : "seeded";
 }
@@ -132,7 +117,10 @@ export function convertLegacyMarkdown(markdown: string): VocabularyRecord | null
       definition: page.definition,
       labels: [],
       sources: pageSources,
-      examples: rawExamples(markdown, pageSources),
+      examples: page.examples.map((example) => ({
+        text: example.text,
+        sources: example.sourceIds.length ? sourceRefs(example.sourceIds) : pageSources,
+      })),
       usagePatterns: [],
       collocations: [],
       commonMistakes: [],

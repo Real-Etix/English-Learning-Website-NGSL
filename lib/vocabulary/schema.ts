@@ -1,7 +1,8 @@
 import { z } from "zod";
 import { normalizeVocabularyLemma } from "./shards";
 
-const nonEmpty = z.string().trim().min(1);
+/** Validates authored text without coercing it: canonical files retain exact spacing. */
+const nonEmpty = z.string().min(1).refine((value) => value.trim().length > 0, "Text must not be blank");
 const normalizedLemma = z.string().min(1).refine(
   (value) => normalizeVocabularyLemma(value) === value,
   "Lemma must be normalized",
