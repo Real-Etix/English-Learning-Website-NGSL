@@ -2,7 +2,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
 import type { WordLearningProfile } from "@/lib/content/word-learning";
-import { tabNavigationForKey, WordLearningDrawer } from "./word-learning-drawer";
+import { handleWordLearningTabKey, WordLearningDrawer } from "./word-learning-drawer";
 
 const profile: WordLearningProfile = {
   lemma: "anchor",
@@ -39,13 +39,50 @@ function composeButton(markup: string) {
 }
 
 describe("WordLearningDrawer", () => {
-  it("maps tab keys to wrapping selection and the matching focus target", () => {
-    expect(tabNavigationForKey("meaning", "ArrowLeft", "tabs")).toEqual({ next: "connect", focusId: "tabs-connect" });
-    expect(tabNavigationForKey("connect", "ArrowRight", "tabs")).toEqual({ next: "meaning", focusId: "tabs-meaning" });
-    expect(tabNavigationForKey("use", "Home", "tabs")).toEqual({ next: "meaning", focusId: "tabs-meaning" });
-    expect(tabNavigationForKey("meaning", "End", "tabs")).toEqual({ next: "connect", focusId: "tabs-connect" });
-    expect(tabNavigationForKey("use", "ArrowDown", "tabs")).toEqual({ next: "connect", focusId: "tabs-connect" });
-    expect(tabNavigationForKey("use", "PageDown", "tabs")).toBeNull();
+  it("applies tab key side effects for handled keys and ignores unhandled keys", () => {
+    const cases = [
+      ["meaning", "ArrowLeft", "connect"],
+      ["connect", "ArrowRight", "meaning"],
+      ["meaning", "ArrowRight", "use"],
+      ["use", "ArrowLeft", "meaning"],
+      ["connect", "ArrowUp", "use"],
+      ["meaning", "ArrowUp", "connect"],
+      ["use", "ArrowDown", "connect"],
+      ["connect", "ArrowDown", "meaning"],
+      ["use", "Home", "meaning"],
+      ["meaning", "End", "connect"],
+    ] as const;
+
+    for (const [current, key, next] of cases) {
+      let prevented = 0;
+      const selected: string[] = [];
+      const focused: string[] = [];
+
+      expect(handleWordLearningTabKey(
+        { key, preventDefault: () => { prevented += 1; } },
+        current,
+        "tabs",
+        (tab) => selected.push(tab),
+        (focusId) => focused.push(focusId),
+      )).toBe(true);
+      expect(prevented).toBe(1);
+      expect(selected).toEqual([next]);
+      expect(focused).toEqual([`tabs-${next}`]);
+    }
+
+    let prevented = 0;
+    const selected: string[] = [];
+    const focused: string[] = [];
+    expect(handleWordLearningTabKey(
+      { key: "PageDown", preventDefault: () => { prevented += 1; } },
+      "use",
+      "tabs",
+      (tab) => selected.push(tab),
+      (focusId) => focused.push(focusId),
+    )).toBe(false);
+    expect(prevented).toBe(0);
+    expect(selected).toEqual([]);
+    expect(focused).toEqual([]);
   });
 
   it("renders a stable tabpanel for every tab control", () => {

@@ -48,6 +48,26 @@ export function tabNavigationForKey(
   return { next, focusId: `${tabsId}-${next}` };
 }
 
+export type WordLearningTabKeyEvent = {
+  key: string;
+  preventDefault: () => void;
+};
+
+export function handleWordLearningTabKey(
+  event: WordLearningTabKeyEvent,
+  current: WordLearningTab,
+  tabsId: string,
+  setTab: (tab: WordLearningTab) => void,
+  focusTab: (focusId: string) => void,
+): boolean {
+  const navigation = tabNavigationForKey(current, event.key, tabsId);
+  if (!navigation) return false;
+  event.preventDefault();
+  setTab(navigation.next);
+  focusTab(navigation.focusId);
+  return true;
+}
+
 type WordLearningDrawerProps = {
   profile: WordLearningProfile | null;
   display: string;
@@ -125,11 +145,13 @@ export function WordLearningDrawer({
   ];
 
   function handleTabKeys(event: KeyboardEvent<HTMLButtonElement>, current: Tab) {
-    const navigation = tabNavigationForKey(current, event.key, tabsId);
-    if (!navigation) return;
-    event.preventDefault();
-    setTab(navigation.next);
-    document.getElementById(navigation.focusId)?.focus();
+    handleWordLearningTabKey(
+      event,
+      current,
+      tabsId,
+      setTab,
+      (focusId) => document.getElementById(focusId)?.focus(),
+    );
   }
 
   return (
