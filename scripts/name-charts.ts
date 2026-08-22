@@ -18,6 +18,7 @@ import { completeJSON, hasLLM, LLM_MODEL } from "./llm-client";
 import { buildListGraph, type GraphNode } from "../lib/vocabulary/graph";
 import { toGraphInput } from "../lib/vocabulary/graph-input";
 import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
+import type { VocabularyRecord } from "../lib/vocabulary/schema";
 
 const SLUGS = ["ngsl", "toeic", "business", "academic", "fitness", "all"];
 const OUT = path.join(process.cwd(), "data", "generated", "chart-names.json");
@@ -79,8 +80,9 @@ async function main() {
   if (!hasLLM()) { console.error("No LLM configured (set LLM_API_KEY). Aborting."); process.exitCode = 1; return; }
   const { list, limit, force, offline } = args();
   const slugs = list ? [list] : SLUGS;
-  const inputs = [];
-  for await (const record of openNdjsonRepository().all()) inputs.push(toGraphInput(record));
+  const records: VocabularyRecord[] = [];
+  for await (const record of openNdjsonRepository().all()) records.push(record);
+  const inputs = records.map((record) => toGraphInput(record, { records }));
   const cache = force ? {} : await loadCache();
   await mkdir(path.dirname(OUT), { recursive: true });
 

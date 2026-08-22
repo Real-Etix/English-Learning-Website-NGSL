@@ -1,11 +1,10 @@
 import {
-  gate, graderMessage, heuristicGrade, parseVerdict, pickTask,
+  composableConnections, gate, graderMessage, heuristicGrade, parseVerdict, pickTask,
   type ComposeTask, type PartnerInfo,
 } from "@/lib/compose/tasks";
 import { fetchWordDetail } from "@/lib/content/word-detail";
 import { buildWordLearningProfile } from "@/lib/content/word-learning";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
-import { isLearnerConnection } from "@/lib/vocabulary/publication";
 import type { VocabularyRecord } from "@/lib/vocabulary/schema";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM } from "@/scripts/llm-client";
@@ -43,10 +42,15 @@ export async function POST(request: Request) {
 
     const partners: PartnerInfo[] = [];
     const partnerRecords = new Map<string, VocabularyRecord>();
-    for (const c of record.connections) {
+    const loadedPartners = await Promise.all(record.connections.map(async (connection) => ({
+      connection,
+      record: await loadGeneratedWord(connection.target),
+    })));
+    const knownRecords = [record, ...loadedPartners.flatMap(({ record: partner }) => partner ? [partner] : [])];
+    const partnersByLemma = new Map(loadedPartners.flatMap(({ record: partner }) => partner ? [[partner.lemma, partner] as const] : []));
+    for (const c of composableConnections(record, knownRecords)) {
       if (!COMPOSABLE.has(c.type)) continue;
-      if (!isLearnerConnection(c)) continue;
-      const partner = await loadGeneratedWord(c.target);
+      const partner = partnersByLemma.get(c.target);
       const definition = partner?.senses[0]?.definition;
       if (!partner || !definition) continue;
       partnerRecords.set(partner.lemma, partner);

@@ -78,18 +78,18 @@ describe("auditDictionaryRecords", () => {
     expect(report.total).toEqual({
       pages: 4, placeholders: 1, noExamples: 2, unknownPartOfSpeech: 2, llmOnlyAdvanced: 1, zeroConnections: 1,
       evidence: { verified: 1, sourceBacked: 1, aiDraft: 2 },
-      edges: { total: 4, unexplained: 3, byType: { antonym: { total: 1, unexplained: 1 }, builds_on: { total: 1, unexplained: 1 }, synonym: { total: 2, unexplained: 1 } } },
+      edges: { total: 4, published: 4, unreviewed: 0, hidden: 0, explained: 1, unexplained: 3, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 }, byType: { antonym: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 } }, builds_on: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 } }, synonym: { total: 2, published: 2, unreviewed: 0, hidden: 0, explained: 1, unexplained: 1, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 } } } },
     });
     expect(report.lists).toEqual({
       academic: {
         pages: 2, placeholders: 1, noExamples: 2, unknownPartOfSpeech: 1, llmOnlyAdvanced: 1, zeroConnections: 1,
         evidence: { verified: 1, sourceBacked: 0, aiDraft: 1 },
-        edges: { total: 2, unexplained: 2, byType: { builds_on: { total: 1, unexplained: 1 }, synonym: { total: 1, unexplained: 1 } } },
+        edges: { total: 2, published: 2, unreviewed: 0, hidden: 0, explained: 0, unexplained: 2, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 }, byType: { builds_on: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 } }, synonym: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 } } } },
       },
       ngsl: {
         pages: 2, placeholders: 1, noExamples: 1, unknownPartOfSpeech: 1, llmOnlyAdvanced: 1, zeroConnections: 0,
         evidence: { verified: 0, sourceBacked: 1, aiDraft: 1 },
-        edges: { total: 3, unexplained: 2, byType: { builds_on: { total: 1, unexplained: 1 }, synonym: { total: 2, unexplained: 1 } } },
+        edges: { total: 3, published: 3, unreviewed: 0, hidden: 0, explained: 1, unexplained: 2, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 }, byType: { builds_on: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 } }, synonym: { total: 2, published: 2, unreviewed: 0, hidden: 0, explained: 1, unexplained: 1, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 } } } },
       },
     });
   });
@@ -101,7 +101,7 @@ describe("auditDictionaryRecords", () => {
     })]);
 
     for (const list of ["ngsl", "academic"]) {
-      expect(report.lists[list]).toMatchObject({ pages: 1, edges: { total: 1, unexplained: 1, byType: { synonym: { total: 1, unexplained: 1 } } } });
+      expect(report.lists[list]).toMatchObject({ pages: 1, edges: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1, byType: { synonym: { total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 0, unexplained: 1 } } } });
     }
   });
 
@@ -111,16 +111,36 @@ describe("auditDictionaryRecords", () => {
       connections: [connection({ type: "__proto__" as "synonym", gloss: "a reserved-key edge" })],
     })]);
 
-    expect(report.total.edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
-    expect(report.lists["__proto__"].edges.byType["__proto__"]).toEqual({ total: 1, unexplained: 0 });
+    expect(report.total.edges.byType["__proto__"]).toEqual({ total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 1, unexplained: 0, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 } });
+    expect(report.lists["__proto__"].edges.byType["__proto__"]).toEqual({ total: 1, published: 1, unreviewed: 0, hidden: 0, explained: 1, unexplained: 0, explainedByStatus: { published: 1, unreviewed: 0, hidden: 0 } });
   });
 
-  it("reports strict failures only for placeholders and LLM-only advanced records", () => {
+  it("reports strict failures for learner-facing connections without authored glosses, but not editorial debt", () => {
     expect(hasStrictFailures(auditDictionaryRecords([record({ senses: [sense({ examples: [] })], connections: [] })]))).toBe(false);
     expect(hasStrictFailures(auditDictionaryRecords([record({ senses: [sense({ definition: "Needs a fuller dictionary source." })] })]))).toBe(true);
     expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [{ ...source, sourceId: "llm" }] })]))).toBe(true);
     expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [] })]))).toBe(false);
     expect(hasStrictFailures(auditDictionaryRecords([record({ tier: "advanced", sources: [{ ...source, sourceId: "llm" }, { ...source, sourceId: "wordnet" }] })]))).toBe(false);
+    expect(hasStrictFailures(auditDictionaryRecords([record({ connections: [connection({ status: "published", gloss: null })] })]))).toBe(true);
+    expect(hasStrictFailures(auditDictionaryRecords([record({ connections: [connection({ status: "unreviewed", gloss: null }), connection({ status: "hidden", gloss: null })] })]))).toBe(false);
+  });
+
+  it("does not let explained unreviewed or hidden edges mask an unexplained published edge", () => {
+    const report = auditDictionaryRecords([record({
+      connections: [
+        connection({ status: "published", gloss: null }),
+        connection({ status: "unreviewed", gloss: "editorial wording" }),
+        connection({ status: "hidden", gloss: "hidden wording" }),
+      ],
+    })]);
+
+    expect(report.total.edges.byType.synonym).toMatchObject({
+      published: 1,
+      unreviewed: 1,
+      hidden: 1,
+      explainedByStatus: { published: 0, unreviewed: 1, hidden: 1 },
+    });
+    expect(hasStrictFailures(report)).toBe(true);
   });
 
   it("does not classify a verified LLM-only record as verified evidence", () => {

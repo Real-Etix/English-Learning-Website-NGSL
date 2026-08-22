@@ -76,11 +76,12 @@ async function reportUnresolved(entries: UnresolvedWord[]): Promise<void> {
 async function main() {
   const args = parseArgs();
   const records = await collectRecords();
+  const graphInputs = records.map((record) => toGraphInput(record, { records }));
   const degree = new Map<string, number>();
   if (args.list) {
-    for (const node of buildListGraph(records.map(toGraphInput), args.list).nodes) degree.set(node.lemma, node.degree);
+    for (const node of buildListGraph(graphInputs, args.list).nodes) degree.set(node.lemma, node.degree);
   } else {
-    for (const record of records) for (const connection of record.connections) {
+    for (const record of graphInputs) for (const connection of record.connections) {
       degree.set(record.lemma, (degree.get(record.lemma) ?? 0) + 1);
       degree.set(connection.target, (degree.get(connection.target) ?? 0) + 1);
     }

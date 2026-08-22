@@ -80,22 +80,15 @@ async function knownSourceIds(): Promise<Set<string>> {
   return new Set(parsed.sources?.flatMap((source) => source.id ? [source.id] : []) ?? []);
 }
 
-async function main(): Promise<void> {
-  const root = path.join(process.cwd(), "content", "vocabulary");
-  const sources = await knownSourceIds();
-  const records: VocabularyRecord[] = [];
-  for await (const record of openNdjsonRepository(root).all()) records.push(record);
-
+/** Lints deterministic corpus relationships without touching the filesystem. */
+export function lintVocabularyRecords(records: VocabularyRecord[]): Finding[] {
+  const findings: Finding[] = [];
   const byLemma = new Map<string, VocabularyRecord>();
-  const findings: Finding[] = await findMisplacedShardFindings(root);
   for (const record of records) {
     if (byLemma.has(record.lemma)) findings.push({ level: "error", lemma: record.lemma, message: "duplicate lemma" });
     byLemma.set(record.lemma, record);
     const listIds = record.lists.map((membership) => membership.id);
     if (new Set(listIds).size !== listIds.length) findings.push({ level: "error", lemma: record.lemma, message: "duplicate list membership" });
-    for (const source of sourceReferences(record)) {
-      if (!sources.has(source.sourceId)) findings.push({ level: "error", lemma: record.lemma, message: `unknown source ID "${source.sourceId}"` });
-    }
   }
 
   const hasEdge = (from: string, type: string, to: string) => byLemma.get(from)?.connections.some((connection) => connection.type === type && connection.target === to) ?? false;
@@ -105,7 +98,14 @@ async function main(): Promise<void> {
         findings.push({ level: "error", lemma: record.lemma, message: `unknown edge type "${connection.type}" → ${connection.target}` });
         continue;
       }
-      if (!byLemma.has(connection.target)) {
+      const target = byLemma.get(connection.target);
+      if (connection.status === "published" && !connection.gloss?.trim()) {
+        findings.push({ level: "error", lemma: record.lemma, message: `published connection to [[${connection.target}]] needs a gloss` });
+      }
+      if (connection.status === "published" && target?.publicationStatus !== "published") {
+        findings.push({ level: "error", lemma: record.lemma, message: `published connection targets non-public word [[${connection.target}]]` });
+      }
+      if (!target) {
         findings.push({ level: "error", lemma: record.lemma, message: `${connection.type} dangling target [[${connection.target}]]` });
         continue;
       }
@@ -120,6 +120,22 @@ async function main(): Promise<void> {
       const anchors = record.connections.filter((connection) => connection.type === "builds_on");
       if (anchors.length === 0) findings.push({ level: "error", lemma: record.lemma, message: "advanced record has no builds_on anchor" });
       else if (!anchors.some((anchor) => byLemma.get(anchor.target)?.tier === "core")) findings.push({ level: "error", lemma: record.lemma, message: "builds_on target is not a core record" });
+    }
+  }
+  return findings.sort(compareFindings);
+}
+
+async function main(): Promise<void> {
+  const root = path.join(process.cwd(), "content", "vocabulary");
+  const sources = await knownSourceIds();
+  const records: VocabularyRecord[] = [];
+  for await (const record of openNdjsonRepository(root).all()) records.push(record);
+
+  const findings: Finding[] = await findMisplacedShardFindings(root);
+  findings.push(...lintVocabularyRecords(records));
+  for (const record of records) {
+    for (const source of sourceReferences(record)) {
+      if (!sources.has(source.sourceId)) findings.push({ level: "error", lemma: record.lemma, message: `unknown source ID "${source.sourceId}"` });
     }
   }
 

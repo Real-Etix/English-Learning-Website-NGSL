@@ -70,7 +70,9 @@ export async function POST(request: Request) {
     const record = await loadGeneratedWord(body.lemma);
     if (record) {
       const detail = await fetchWordDetail(record.lemma);
-      const profile = buildWordLearningProfile(record, detail);
+      const connectionTargets = (await Promise.all(record.connections.map((connection) => loadGeneratedWord(connection.target))))
+        .flatMap((target) => target ? [target] : []);
+      const profile = buildWordLearningProfile(record, detail, [record, ...connectionTargets]);
       starBlock =
         `\n\nThe learner has this word open. Ground your answer only in this reference:\n` +
         buildTutorStarContext(profile);

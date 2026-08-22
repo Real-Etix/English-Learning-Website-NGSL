@@ -55,7 +55,8 @@ describe("buildListGraph", () => {
     lists: [{ id: "ngsl", rank: 220, sfi: 65 }],
     connections: [{ ...vocabularyRecordFixture().connections[0]!, target: "bridge", type: "collocation" }],
   });
-  const inputs = [big, large, enormous, zebra, bridge, other].map(toGraphInput);
+  const records = [big, large, enormous, zebra, bridge, other];
+  const inputs = records.map((entry) => toGraphInput(entry, { records }));
 
   it("keeps list words, pulls advanced targets, and adds bridges linked by two list words", () => {
     const graph = buildListGraph(inputs, "ngsl");

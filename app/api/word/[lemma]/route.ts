@@ -24,6 +24,8 @@ export async function GET(
     fetchWordDetail(record.lemma),
     getWordRarity(record.lemma).catch(() => null), // DB may be unset in some envs
   ]);
-  const learning = buildWordLearningProfile(record, detail);
+  const connectionTargets = (await Promise.all(record.connections.map((connection) => loadGeneratedWord(connection.target))))
+    .flatMap((target) => target ? [target] : []);
+  const learning = buildWordLearningProfile(record, detail, [record, ...connectionTargets]);
   return Response.json({ page: toLegacyPage(record), detail, learning, rarity });
 }

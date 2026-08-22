@@ -75,4 +75,13 @@ describe("buildTutorStarContext", () => {
     expect(context).toContain("AI draft");
     expect(context).toContain("formal process only");
   });
+
+  it("receives only a selector-filtered connection list", () => {
+    const context = buildTutorStarContext(profile({
+      connections: [{ type: "synonym", target: "reviewed-target", gloss: "authored relation wording", explained: true }],
+    }));
+
+    expect(context).toContain("reviewed-target");
+    expect(context).not.toContain("unreviewed-target");
+  });
 });

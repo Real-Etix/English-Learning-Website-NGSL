@@ -157,7 +157,8 @@ describe("vocabulary publication", () => {
     expect(isLearnerConnection(valid!)).toBe(true);
     expect(isLearnerConnection(unreviewed)).toBe(false);
     expect(isLearnerConnection(glossless)).toBe(false);
-    expect(toGraphInput(withInvalidEdges).connections).toEqual([{ target: valid!.target, type: valid!.type }]);
+    const target = { ...record, lemma: valid!.target, display: valid!.target, publicationStatus: "published" as const };
+    expect(toGraphInput(withInvalidEdges, { records: [withInvalidEdges, target] }).connections).toEqual([{ target: valid!.target, type: valid!.type }]);
   });
 
   it("omits hidden advanced words from graph and galaxy artifacts", () => {

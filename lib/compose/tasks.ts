@@ -8,10 +8,17 @@
 
 // Relations worth composing with, best first. Synonym/morphological are absent:
 // forcing two synonyms into one sentence teaches redundancy.
-import { isLearnerConnection } from "../vocabulary/publication";
+import { publicConnections } from "../vocabulary/public-connections";
+import type { VocabularyConnection, VocabularyRecord } from "../vocabulary/schema";
 
 const PRIORITY: Record<string, number> = { antonym: 0, intensity: 1, advanced_form: 2, builds_on: 3, collocation: 4 };
 const SUFFIX = ["s", "es", "ed", "d", "ing", "er", "r", "ly", "ness", "ion", "al"];
+const COMPOSABLE = new Set(["antonym", "intensity", "advanced_form", "builds_on", "collocation"]);
+
+/** Selects the reviewed, explained public relations that composition can teach. */
+export function composableConnections(record: VocabularyRecord, records: Iterable<VocabularyRecord>): VocabularyConnection[] {
+  return publicConnections(record, records).filter((connection) => COMPOSABLE.has(connection.type));
+}
 
 export type ComposeMode = "single" | "pair";
 export type ComposeTask = {
@@ -104,7 +111,7 @@ export function pickTask(target: TargetInfo, neighbours: PartnerInfo[], claimed:
   for (const link of neighbours) {
     if (!(link.type in PRIORITY)) continue;
     if (!link.def) continue;
-    if (!isLearnerConnection(link)) continue;
+    if (link.status !== "published" || !link.gloss?.trim()) continue;
     if (avoid.indexOf(link.lemma) >= 0) continue;
     let score = PRIORITY[link.type] * 100;
     if (link.tier === "advanced") score += 34;

@@ -1,6 +1,6 @@
 import type { WordDetail } from "./word-detail";
-import { isLearnerConnection } from "../vocabulary/publication";
 import type { CollocationPhrase, CommonMistake, ContentSourceRef, UsagePattern, VocabularyRecord } from "../vocabulary/schema";
+import { publicConnections } from "../vocabulary/public-connections";
 import { evidenceForSources, isFactualSourceId, sourceEntryFor } from "../vocabulary/source-evidence";
 import { claimReadiness } from "../vocabulary/claim-readiness";
 
@@ -174,6 +174,7 @@ function learningCommonMistake(mistake: CommonMistake): LearningCommonMistake | 
 export function buildWordLearningProfile(
   record: VocabularyRecord,
   detail: WordDetail | null,
+  connectionTargets: Iterable<VocabularyRecord> = [],
 ): WordLearningProfile {
   const primarySense = record.senses[0];
   const primaryDefinition = primarySense?.definition ?? "";
@@ -281,7 +282,7 @@ export function buildWordLearningProfile(
       return learning ? [learning] : [];
     }) ?? [],
     usageNote: record.usageNote,
-    connections: record.connections.filter(isLearnerConnection).map((connection) => ({
+    connections: publicConnections(record, connectionTargets).map((connection) => ({
       ...connection,
       explained: Boolean(connection.gloss?.trim()),
     })),

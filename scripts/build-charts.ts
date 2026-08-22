@@ -185,7 +185,7 @@ function hubName(members: string[], nodeOf: Map<string, Node>): string {
 async function main() {
   const records: VocabularyRecord[] = [];
   for await (const record of openNdjsonRepository().all()) records.push(record);
-  const pages = records.map(toGraphInput);
+  const pages = records.map((record) => toGraphInput(record, { records }));
 
   const adj = buildAdjacency(pages);
   const nodeOf = new Map<string, Node>(

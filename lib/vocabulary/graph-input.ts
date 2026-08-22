@@ -1,5 +1,6 @@
 import type { VocabularyRecord } from "./schema";
-import { isLearnerConnection, isWordPublic } from "./publication";
+import { isWordPublic } from "./publication";
+import { connectionsForClustering, type ClusteringConnectionOptions } from "./public-connections";
 
 export type GraphConnection = {
   target: string;
@@ -31,7 +32,11 @@ export type GraphInput = {
  * does not read files or mutate a record, so all storage backends can feed the
  * same graph builder.
  */
-export function toGraphInput(record: VocabularyRecord): GraphInput {
+export type GraphInputOptions = ClusteringConnectionOptions & {
+  records?: Iterable<VocabularyRecord>;
+};
+
+export function toGraphInput(record: VocabularyRecord, options: GraphInputOptions = {}): GraphInput {
   const primarySense = record.senses[0];
   return {
     lemma: record.lemma,
@@ -43,11 +48,13 @@ export function toGraphInput(record: VocabularyRecord): GraphInput {
     chart: record.chart,
     region: record.region,
     domains: [...record.domains],
-    connections: record.connections.filter(isLearnerConnection).map(({ target, type }) => ({ target, type })),
+    connections: connectionsForClustering(record, options.records ?? [], options).map(({ target, type }) => ({ target, type })),
   };
 }
 
 /** Projects only records that satisfy the publication predicate. */
 export function toPublicGraphInputs(records: VocabularyRecord[]): GraphInput[] {
-  return records.filter((record) => isWordPublic(record, records)).map(toGraphInput);
+  return records
+    .filter((record) => isWordPublic(record, records))
+    .map((record) => toGraphInput(record, { records }));
 }

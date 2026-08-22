@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 
 import { pickTask, type PartnerInfo, type TargetInfo } from "./tasks";
+import { publicConnections } from "../vocabulary/public-connections";
+import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
 
 const target: TargetInfo = {
   lemma: "calm",
@@ -60,5 +62,29 @@ describe("pickTask", () => {
     );
 
     expect(task).toBeNull();
+  });
+
+  it("receives only the selector's published, glossed public partner", () => {
+    const record = vocabularyRecordFixture();
+    const [connection] = record.connections;
+    const publishedTarget = { ...record, lemma: "explained", display: "explained", publicationStatus: "published" as const };
+    const hiddenTarget = { ...record, lemma: "hidden", display: "hidden", publicationStatus: "hidden" as const };
+    const source = {
+      ...record,
+      connections: [
+        { ...connection!, target: "explained", type: "antonym" as const, gloss: "authored contrast guidance", status: "published" as const },
+        { ...connection!, target: "hidden", type: "antonym" as const, gloss: "hidden target", status: "published" as const },
+        { ...connection!, target: "explained", type: "intensity" as const, gloss: "draft relation", status: "unreviewed" as const },
+      ],
+    };
+    const partners = publicConnections(source, [source, publishedTarget, hiddenTarget]).map((link) => partner({
+      lemma: link.target,
+      display: link.target,
+      type: link.type,
+      gloss: link.gloss,
+      status: link.status,
+    }));
+
+    expect(pickTask(target, partners, new Set(), [])?.partner).toBe("explained");
   });
 });

@@ -26,10 +26,17 @@ function printSummary(label: string, counts: DictionaryQualityCounts) {
   console.log(`  ${pageMetric("Zero connections", counts.zeroConnections, counts.pages)}`);
   console.log(`  Evidence: verified ${counts.evidence.verified} (${percentage(counts.evidence.verified, counts.pages)}), source-backed ${counts.evidence.sourceBacked} (${percentage(counts.evidence.sourceBacked, counts.pages)}), AI draft ${counts.evidence.aiDraft} (${percentage(counts.evidence.aiDraft, counts.pages)})`);
   console.log(`  Edges: ${counts.edges.total}`);
+  console.log(`  Published edges: ${counts.edges.published}`);
+  console.log(`  Unreviewed edges: ${counts.edges.unreviewed}`);
+  console.log(`  Hidden edges: ${counts.edges.hidden}`);
+  console.log(`  ${edgeMetric("Explained edges", counts.edges.explained, counts.edges.total)}`);
+  console.log(`  Explained published edges: ${counts.edges.explainedByStatus.published}`);
+  console.log(`  Explained unreviewed edges: ${counts.edges.explainedByStatus.unreviewed}`);
+  console.log(`  Explained hidden edges: ${counts.edges.explainedByStatus.hidden}`);
   console.log(`  ${edgeMetric("Unexplained edges", counts.edges.unexplained, counts.edges.total)}`);
   for (const type of Object.keys(counts.edges.byType).sort()) {
     const edge = counts.edges.byType[type];
-    console.log(`    ${type}: ${edge.total} total, ${edge.unexplained} unexplained (${percentage(edge.unexplained, edge.total)})`);
+    console.log(`    ${type}: ${edge.total} total, ${edge.published} published, ${edge.unreviewed} unreviewed, ${edge.hidden} hidden, ${edge.explained} explained (${edge.explainedByStatus.published} published / ${edge.explainedByStatus.unreviewed} unreviewed / ${edge.explainedByStatus.hidden} hidden), ${edge.unexplained} unexplained (${percentage(edge.unexplained, edge.total)})`);
   }
 }
 
@@ -46,7 +53,7 @@ async function main() {
   }
 
   if (process.argv.includes("--strict") && hasStrictFailures(report)) {
-    console.error("\nStrict audit failed: placeholder definitions or LLM-only advanced pages remain.");
+    console.error("\nStrict audit failed: placeholder definitions, LLM-only advanced pages, or published unexplained connections remain.");
     process.exitCode = 1;
   }
 }

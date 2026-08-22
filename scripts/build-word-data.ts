@@ -3,7 +3,8 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
-import { isLearnerConnection, isWordPublic } from "../lib/vocabulary/publication";
+import { isWordPublic } from "../lib/vocabulary/publication";
+import { publicConnections } from "../lib/vocabulary/public-connections";
 import type { VocabularyRecord } from "../lib/vocabulary/schema";
 import { shardIdForLemma } from "../lib/vocabulary/shards";
 
@@ -25,7 +26,7 @@ async function main() {
     if (!isWordPublic(record, records)) continue;
     recordsByShard.get(shardIdForLemma(record.lemma))?.push({
       ...record,
-      connections: record.connections.filter(isLearnerConnection),
+      connections: publicConnections(record, records),
     });
   }
 

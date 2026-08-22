@@ -385,20 +385,27 @@ describe("buildWordLearningProfile", () => {
   it("preserves an authored connection gloss exactly", () => {
     const corePage = page();
 
-    expect(buildWordLearningProfile(corePage, detail).connections[0].gloss).toBe(corePage.connections[0].gloss);
+    expect(buildWordLearningProfile(corePage, detail, [
+      corePage,
+      { ...corePage, lemma: corePage.connections[0]!.target, display: corePage.connections[0]!.target, publicationStatus: "published" },
+    ]).connections[0]?.gloss).toBe(corePage.connections[0].gloss);
   });
 
-  it("exposes only published, glossed connections in the learner profile", () => {
+  it("exposes only published, glossed connections to known public targets in the learner profile", () => {
     const record = page();
     const [valid] = record.connections;
+    const publicTarget = { ...record, lemma: valid!.target, display: valid!.target, publicationStatus: "published" as const };
+    const hiddenTarget = { ...record, lemma: "hidden-link", display: "hidden-link", publicationStatus: "hidden" as const };
     const profile = buildWordLearningProfile({
       ...record,
       connections: [
         valid!,
         { ...valid!, target: "draft-link", gloss: "draft guidance", status: "unreviewed" },
         { ...valid!, target: "empty-link", gloss: " ", status: "published" },
+        { ...valid!, target: "unknown-link", gloss: "unknown target", status: "published" },
+        { ...valid!, target: "hidden-link", gloss: "hidden target", status: "published" },
       ],
-    }, emptyDetail);
+    }, emptyDetail, [record, publicTarget, hiddenTarget]);
 
     expect(profile.connections.map((connection) => connection.target)).toEqual([valid!.target]);
   });

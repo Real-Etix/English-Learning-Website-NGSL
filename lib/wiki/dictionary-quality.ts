@@ -9,8 +9,21 @@ export type DictionaryEvidenceCounts = {
 
 export type DictionaryEdgeCounts = {
   total: number;
+  published: number;
+  unreviewed: number;
+  hidden: number;
+  explained: number;
   unexplained: number;
-  byType: Record<string, { total: number; unexplained: number }>;
+  explainedByStatus: { published: number; unreviewed: number; hidden: number };
+  byType: Record<string, {
+    total: number;
+    published: number;
+    unreviewed: number;
+    hidden: number;
+    explained: number;
+    unexplained: number;
+    explainedByStatus: { published: number; unreviewed: number; hidden: number };
+  }>;
 };
 
 export type DictionaryQualityCounts = {
@@ -45,7 +58,10 @@ function emptyCounts(): DictionaryQualityCounts {
     llmOnlyAdvanced: 0,
     zeroConnections: 0,
     evidence: { verified: 0, sourceBacked: 0, aiDraft: 0 },
-    edges: { total: 0, unexplained: 0, byType: emptyRecord() },
+    edges: {
+      total: 0, published: 0, unreviewed: 0, hidden: 0, explained: 0, unexplained: 0,
+      explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 }, byType: emptyRecord(),
+    },
   };
 }
 
@@ -76,11 +92,21 @@ function addRecord(counts: DictionaryQualityCounts, record: VocabularyRecord) {
   counts.evidence[evidenceFor(record)] += 1;
 
   for (const connection of record.connections) {
-    const edge = counts.edges.byType[connection.type] ?? { total: 0, unexplained: 0 };
+    const edge = counts.edges.byType[connection.type] ?? {
+      total: 0, published: 0, unreviewed: 0, hidden: 0, explained: 0, unexplained: 0,
+      explainedByStatus: { published: 0, unreviewed: 0, hidden: 0 },
+    };
     counts.edges.byType[connection.type] = edge;
     counts.edges.total += 1;
     edge.total += 1;
-    if (!connection.gloss?.trim()) {
+    counts.edges[connection.status] += 1;
+    edge[connection.status] += 1;
+    if (connection.gloss?.trim()) {
+      counts.edges.explained += 1;
+      edge.explained += 1;
+      counts.edges.explainedByStatus[connection.status] += 1;
+      edge.explainedByStatus[connection.status] += 1;
+    } else {
       counts.edges.unexplained += 1;
       edge.unexplained += 1;
     }
@@ -103,5 +129,7 @@ export function auditDictionaryRecords(records: VocabularyRecord[]): DictionaryQ
 }
 
 export function hasStrictFailures(report: DictionaryQualityReport): boolean {
-  return report.total.placeholders > 0 || report.total.llmOnlyAdvanced > 0;
+  return report.total.placeholders > 0
+    || report.total.llmOnlyAdvanced > 0
+    || Object.values(report.total.edges.byType).some((edge) => edge.published > edge.explainedByStatus.published);
 }
