@@ -92,8 +92,8 @@ export function buildWordLearningProfile(
     (sense) => Boolean(normalizeText(sense.definition)) && !isPlaceholder(sense.definition),
   );
   const hasDictionaryDefinition = dictionarySenses.some((sense) => Boolean(normalizeText(sense.definition)));
-  const preferDictionaryPrimary =
-    (advancedWithoutFactualSource || !usableWikiDefinition) && hasDictionaryDefinition;
+  const wikiDefinitionHasPrecedence = verifiedWikiDefinition || sourceBackedWikiDefinition;
+  const preferDictionaryPrimary = !wikiDefinitionHasPrecedence && hasDictionaryDefinition;
 
   const evidence: LearningEvidence = verifiedWikiDefinition
     ? "verified"

@@ -287,3 +287,84 @@ Results:
 - `lib/content/word-learning.ts`
 - `lib/content/word-learning.test.ts`
 - `.superpowers/sdd/task-1-report.md`
+
+---
+
+# Task 1 Review-Finding Fix: Unsourced Core Wiki Dictionary Rescue
+
+## Scope
+
+Fixed the remaining learner-profile precedence finding only. A usable wiki definition now keeps primary position only when it is already verified under the established rules or has factual wiki provenance. The existing advanced and placeholder paths are unchanged.
+
+## RED
+
+Added `uses a dictionary meaning for an enriched core LLM-only wiki definition` before changing production code. The fixture is a core page with `status: "enriched"`, `sources: ["llm"]`, a usable LLM definition and wiki example, plus a valid dictionary definition/example.
+
+Command:
+
+```sh
+npx vitest run lib/content/word-learning.test.ts
+```
+
+Output before the fix:
+
+```text
+Test Files  1 failed (1)
+Tests  1 failed | 13 passed (14)
+Expected: evidence "source-backed", canClaim true
+Received: evidence "ai-draft", canClaim false
+```
+
+Root cause: `preferDictionaryPrimary` was restricted to advanced pages without factual wiki provenance (or unusable wiki text). Consequently, an enriched core page backed only by `llm` retained its wiki definition as primary despite valid live dictionary evidence.
+
+## GREEN
+
+Minimal implementation: introduced `wikiDefinitionHasPrecedence`, true only for an existing verified or factually sourced usable wiki definition. `preferDictionaryPrimary` now applies whenever dictionary evidence exists and that wiki precedence is absent.
+
+Focused profile suite:
+
+```sh
+npx vitest run lib/content/word-learning.test.ts
+```
+
+```text
+Test Files  1 passed (1)
+Tests  14 passed (14)
+```
+
+Focused Task 1 verification:
+
+```sh
+npx vitest run lib/content/word-learning.test.ts lib/wiki/parse-wiki.test.ts
+```
+
+```text
+Test Files  2 passed (2)
+Tests  23 passed (23)
+```
+
+Final verification:
+
+```sh
+npx tsc --noEmit
+npm test
+npm run lint
+```
+
+Results:
+
+- TypeScript passed with no output.
+- Full Vitest suite: **21 files passed, 162 tests passed**.
+- ESLint completed with no errors and the two pre-existing warnings in `lib/galaxy/build-artifacts.ts` for `_xyz` and `_asset` unused parameters.
+
+## Regression coverage
+
+- A core, enriched, LLM-only wiki definition with a valid dictionary sense/example is dictionary-primary, `source-backed`, and claimable.
+- The LLM definition is not the primary displayed sense.
+- Existing verified and factual wiki precedence tests remain green, as do the advanced and placeholder regressions.
+
+## Files changed
+
+- `lib/content/word-learning.ts`
+- `lib/content/word-learning.test.ts`
+- `.superpowers/sdd/task-1-report.md`

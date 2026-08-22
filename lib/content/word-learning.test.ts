@@ -78,6 +78,35 @@ describe("buildWordLearningProfile", () => {
     });
   });
 
+  it("uses a dictionary meaning for an enriched core LLM-only wiki definition", () => {
+    const profile = buildWordLearningProfile(
+      page({
+        status: "enriched",
+        sources: ["llm"],
+        definition: "LLM-generated core wording.",
+        examples: ["An LLM-generated wiki example."],
+      }),
+      {
+        ...emptyDetail,
+        senses: [
+          {
+            partOfSpeech: "noun",
+            definition: "A valid dictionary meaning.",
+            example: "A valid dictionary example.",
+          },
+        ],
+      },
+    );
+
+    expect(profile).toMatchObject({ evidence: "source-backed", canClaim: true });
+    expect(profile.senses[0]).toMatchObject({
+      definition: "A valid dictionary meaning.",
+      source: "dictionaryapi",
+      primary: true,
+    });
+    expect(profile.senses.find((sense) => sense.primary)?.definition).not.toBe("LLM-generated core wording.");
+  });
+
   it("marks an LLM-only advanced draft without dictionary detail as unclaimable", () => {
     const aiDraftAdvancedPage = page({
       tier: "advanced",
