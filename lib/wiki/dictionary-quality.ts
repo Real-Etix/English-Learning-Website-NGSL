@@ -83,7 +83,7 @@ export function auditDictionaryPages(pages: WikiPage[]): DictionaryQualityReport
 
   for (const page of pages) {
     addPage(report.total, page);
-    for (const list of page.lists) {
+    for (const list of new Set(page.lists)) {
       report.lists[list] ??= emptyCounts();
       addPage(report.lists[list], page);
     }

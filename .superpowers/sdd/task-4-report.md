@@ -70,3 +70,13 @@ as unrelated task-history.
 ### Local Commit
 
 - Implementation commit (not pushed): `080120eb` (`feat: add dictionary quality audit`).
+
+### Review Fix: Duplicate List IDs
+
+- RED: `npx vitest run lib/wiki/dictionary-quality.test.ts` failed as expected. A page
+  with duplicate `ngsl` and `academic` list IDs was counted twice per list, producing
+  `pages: 2` and `edges.total: 2` instead of 1.
+- GREEN: after iterating distinct list IDs, the same focused suite passed: 1 file,
+  3 tests.
+- Verification: `npx tsc --noEmit` exited 0. `npm run lint` exited 0 with the two
+  pre-existing unused-variable warnings in `lib/galaxy/build-artifacts.ts`.

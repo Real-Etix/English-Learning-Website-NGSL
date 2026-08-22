@@ -116,6 +116,26 @@ describe("auditDictionaryPages", () => {
     });
   });
 
+  it("counts a page and its edges once per distinct list ID", () => {
+    const report = auditDictionaryPages([
+      page({
+        lists: ["ngsl", "ngsl", "academic", "academic"],
+        connections: [{ type: "synonym", target: "support" }],
+      }),
+    ]);
+
+    for (const list of ["ngsl", "academic"]) {
+      expect(report.lists[list]).toMatchObject({
+        pages: 1,
+        edges: {
+          total: 1,
+          unexplained: 1,
+          byType: { synonym: { total: 1, unexplained: 1 } },
+        },
+      });
+    }
+  });
+
   it("reports strict failures only for placeholders and LLM-only advanced pages", () => {
     expect(hasStrictFailures(auditDictionaryPages([page({ examples: [], connections: [] })]))).toBe(false);
     expect(hasStrictFailures(auditDictionaryPages([page({ definition: "Needs a fuller dictionary source." })]))).toBe(true);
