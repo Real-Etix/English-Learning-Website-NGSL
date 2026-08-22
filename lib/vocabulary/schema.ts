@@ -15,6 +15,21 @@ const finiteSfi = z.number().min(0).max(100).finite().nullable();
 export const PublicationStatusSchema = z.enum(["draft", "review", "published", "hidden"]);
 export type PublicationStatus = z.infer<typeof PublicationStatusSchema>;
 
+export const SourceRegistryEntrySchema = z.object({
+  id: sourceId,
+  label: nonEmpty,
+  homepage: z.url().nullable(),
+  license: nullableText,
+  factual: z.boolean(),
+}).strict();
+export type SourceRegistryEntry = z.infer<typeof SourceRegistryEntrySchema>;
+
+export const SourceRegistrySchema = z.object({
+  schemaVersion: z.literal(1),
+  sources: z.array(SourceRegistryEntrySchema),
+}).strict();
+export type SourceRegistry = z.infer<typeof SourceRegistrySchema>;
+
 const ContentSourceRefSchema = z.object({
   sourceId,
   externalId: nullableText,

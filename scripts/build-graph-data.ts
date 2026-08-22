@@ -8,14 +8,15 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { buildListGraph, toLiteGraph } from "../lib/vocabulary/graph";
-import { toGraphInput } from "../lib/vocabulary/graph-input";
+import { toPublicGraphInputs } from "../lib/vocabulary/graph-input";
 import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
 
 const SLUGS = ["ngsl", "toeic", "business", "academic", "fitness", "all"];
 
 async function main() {
-  const inputs = [];
-  for await (const record of openNdjsonRepository().all()) inputs.push(toGraphInput(record));
+  const records = [];
+  for await (const record of openNdjsonRepository().all()) records.push(record);
+  const inputs = toPublicGraphInputs(records);
   const dir = path.join(process.cwd(), "data", "generated", "graphs");
   await mkdir(dir, { recursive: true });
 

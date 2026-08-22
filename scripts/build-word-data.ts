@@ -3,6 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 import { openNdjsonRepository } from "../lib/vocabulary/ndjson-repository";
+import { isWordPublic } from "../lib/vocabulary/publication";
 import type { VocabularyRecord } from "../lib/vocabulary/schema";
 import { shardIdForLemma } from "../lib/vocabulary/shards";
 
@@ -18,8 +19,10 @@ function hash(bytes: string): string {
 
 async function main() {
   const recordsByShard = new Map(SHARD_IDS.map((shardId) => [shardId, [] as VocabularyRecord[]]));
-  for await (const record of openNdjsonRepository().all()) {
-    if (record.publicationStatus !== "published") continue;
+  const records: VocabularyRecord[] = [];
+  for await (const record of openNdjsonRepository().all()) records.push(record);
+  for (const record of records) {
+    if (!isWordPublic(record, records)) continue;
     recordsByShard.get(shardIdForLemma(record.lemma))?.push(record);
   }
 

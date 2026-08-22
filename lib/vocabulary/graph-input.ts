@@ -1,4 +1,5 @@
 import type { VocabularyRecord } from "./schema";
+import { isWordPublic } from "./publication";
 
 export type GraphConnection = {
   target: string;
@@ -44,4 +45,9 @@ export function toGraphInput(record: VocabularyRecord): GraphInput {
     domains: [...record.domains],
     connections: record.connections.map(({ target, type }) => ({ target, type })),
   };
+}
+
+/** Projects only records that satisfy the publication predicate. */
+export function toPublicGraphInputs(records: VocabularyRecord[]): GraphInput[] {
+  return records.filter((record) => isWordPublic(record, records)).map(toGraphInput);
 }
