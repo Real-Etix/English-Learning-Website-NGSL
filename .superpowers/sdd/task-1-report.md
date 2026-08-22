@@ -134,3 +134,58 @@ Result: exit code 0 with no whitespace errors.
 - Tests are behavior-focused and cover every requested invalid-input category.
 - No child-schema exports or shard constants were added because they were optional and unnecessary for these fixes.
 - The existing Vite CommonJS/ESM warning remains unrelated and non-failing.
+
+## Final canonical-whitespace fix
+
+### Scope
+
+Fixed only the remaining review finding: canonical record lemmas and connection targets must reject lowercase values with leading/trailing whitespace and values with uncollapsed internal whitespace. Other text fields continue using the existing trimmed `nonEmpty` validator, so this change does not alter authored definitions, examples, glosses, or other content fields. No later-task files or unrelated foundation documents were modified. No push was performed.
+
+### RED
+
+Added tests for:
+
+- record lemmas `" learn"` and `"learn "`;
+- record lemma `"learn  well"`;
+- connection targets `" study"` and `"study "`;
+- connection target `"study  well"`.
+
+Command:
+
+```sh
+npx vitest run lib/vocabulary/schema.test.ts lib/vocabulary/shards.test.ts
+```
+
+Result: exit code 1 after Vitest was granted its required temporary-directory access. The two new leading/trailing-whitespace tests failed because the previous `normalizedLemma` validator used `z.string().trim()` before refinement; the internal-whitespace assertions and all existing assertions passed.
+
+The initial sandboxed invocation stopped before loading tests with `EPERM` while creating Vitest's temporary `ssr` directory; this was environment access rather than a test failure.
+
+### Minimal implementation
+
+Changed only `normalizedLemma` in `lib/vocabulary/schema.ts` from the trimming `nonEmpty` schema to `z.string().min(1)` before the existing normalization refinement. Since `normalizeVocabularyLemma()` trims, lowercases, and collapses whitespace for comparison, any non-canonical original lemma or target now fails validation without rewriting the input. The `lemma` and `target` schema fields already shared this validator.
+
+### GREEN and verification
+
+Focused tests:
+
+```sh
+npx vitest run lib/vocabulary/schema.test.ts lib/vocabulary/shards.test.ts
+```
+
+Result: exit code 0; 2 test files passed and 12 tests passed.
+
+Typecheck:
+
+```sh
+npx tsc --noEmit
+```
+
+Result: exit code 0 with no TypeScript errors.
+
+Self-review:
+
+```sh
+git diff --check
+```
+
+Result: exit code 0 with no whitespace errors. The diff contains only the canonical validator, its boundary tests, and this report append. The existing Vite CommonJS/ESM warning remains unrelated and non-failing.

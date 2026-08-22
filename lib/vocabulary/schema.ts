@@ -2,7 +2,7 @@ import { z } from "zod";
 import { normalizeVocabularyLemma } from "./shards";
 
 const nonEmpty = z.string().trim().min(1);
-const normalizedLemma = nonEmpty.refine(
+const normalizedLemma = z.string().min(1).refine(
   (value) => normalizeVocabularyLemma(value) === value,
   "Lemma must be normalized",
 );

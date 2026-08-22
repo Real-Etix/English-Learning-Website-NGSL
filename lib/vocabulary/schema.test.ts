@@ -17,6 +17,20 @@ describe("VocabularyRecordSchema", () => {
     }).success).toBe(false);
   });
 
+  it("rejects lowercase lemmas with leading or trailing whitespace", () => {
+    const record = vocabularyRecordFixture();
+
+    expect(VocabularyRecordSchema.safeParse({ ...record, lemma: " learn" }).success).toBe(false);
+    expect(VocabularyRecordSchema.safeParse({ ...record, lemma: "learn " }).success).toBe(false);
+  });
+
+  it("rejects lemmas with uncollapsed internal whitespace", () => {
+    expect(VocabularyRecordSchema.safeParse({
+      ...vocabularyRecordFixture(),
+      lemma: "learn  well",
+    }).success).toBe(false);
+  });
+
   it("rejects non-normalized connection targets", () => {
     expect(VocabularyRecordSchema.safeParse({
       ...vocabularyRecordFixture(),
@@ -24,6 +38,29 @@ describe("VocabularyRecordSchema", () => {
         ...vocabularyRecordFixture().connections[0],
         target: " Study ",
       }],
+    }).success).toBe(false);
+  });
+
+  it("rejects lowercase connection targets with leading or trailing whitespace", () => {
+    const record = vocabularyRecordFixture();
+    const connection = record.connections[0];
+
+    expect(VocabularyRecordSchema.safeParse({
+      ...record,
+      connections: [{ ...connection, target: " study" }],
+    }).success).toBe(false);
+    expect(VocabularyRecordSchema.safeParse({
+      ...record,
+      connections: [{ ...connection, target: "study " }],
+    }).success).toBe(false);
+  });
+
+  it("rejects connection targets with uncollapsed internal whitespace", () => {
+    const record = vocabularyRecordFixture();
+
+    expect(VocabularyRecordSchema.safeParse({
+      ...record,
+      connections: [{ ...record.connections[0], target: "study  well" }],
     }).success).toBe(false);
   });
 
