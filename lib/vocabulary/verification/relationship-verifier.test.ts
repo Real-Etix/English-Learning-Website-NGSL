@@ -4,7 +4,7 @@ import { TokenBudget, type TokenUsage } from "../enrichment/budget";
 import type { VocabularyRecord } from "../schema";
 import { vocabularyRecordFixture } from "../test-fixtures";
 import type { FactualDictionaryEvidence } from "./provider-types";
-import type { EligibleFactualSense } from "./sense-verifier";
+import { eligibleFactualSenses, type EligibleFactualSense } from "./sense-verifier";
 import {
   verifyCandidateRelationships,
   type RelationshipJudge,
@@ -28,6 +28,7 @@ const llmSource = {
 
 const candidateGloss = "\tBuilds  on: examine — café!  ";
 const coreGloss = "  Advanced\tform: scrutinise → naïve? ";
+const candidateDefinition = "  To examine something very carefully.  ";
 const estimatedUsage = { inputTokens: 10, outputTokens: 5 } as const;
 
 function record(lemma: string, overrides: Partial<VocabularyRecord> = {}): VocabularyRecord {
@@ -54,22 +55,6 @@ function connection(
   };
 }
 
-function selectedSense(overrides: Partial<EligibleFactualSense> = {}): EligibleFactualSense {
-  return {
-    id: "scrutinise:wordnet:verb:1",
-    partOfSpeech: "verb",
-    definition: "  To examine something very carefully.  ",
-    source: {
-      sourceId: "wordnet",
-      url: "https://wordnet.example/scrutinise",
-      retrievedAt: "2026-08-24T00:00:00.000Z",
-      contentHash: "sha256:scrutinise",
-    },
-    examples: [],
-    ...overrides,
-  };
-}
-
 function synonymEvidence(
   synonyms: string[],
   overrides: {
@@ -89,7 +74,15 @@ function synonymEvidence(
       audioUk: null,
       audioUs: null,
       audioAny: null,
-      senses: [],
+      sourceEntryId: "scrutinise-entry",
+      sourceUrl: `https://${provider}.example/scrutinise`,
+      senses: [{
+        partOfSpeech: "verb",
+        definition: candidateDefinition,
+        example: "They scrutinise the evidence carefully.",
+        sourceSenseId: "scrutinise.v.01",
+        sourceUrl: `https://${provider}.example/scrutinise#verb-1`,
+      }],
       synonyms,
     },
     source: {
@@ -101,12 +94,25 @@ function synonymEvidence(
   };
 }
 
+function canonicalSelectedSense(
+  candidate: VocabularyRecord,
+  evidence: readonly FactualDictionaryEvidence[],
+): EligibleFactualSense {
+  const selected = eligibleFactualSenses(candidate, evidence)[0];
+  if (!selected) throw new Error("fixture requires an eligible candidate sense");
+  return selected;
+}
+
 function fixture(overrides: Partial<RelationshipVerificationInput> = {}) {
-  const candidate = record("scrutinise", {
+  const defaultCandidate = record("scrutinise", {
     tier: "advanced",
     publicationStatus: "hidden",
     connections: [connection("examine", "builds_on", candidateGloss)],
   });
+  const candidate = overrides.candidate ?? defaultCandidate;
+  const factualDictionaryEvidence = overrides.factualDictionaryEvidence ?? [synonymEvidence([])];
+  const selectedSense = overrides.selectedSense
+    ?? canonicalSelectedSense(candidate, factualDictionaryEvidence);
   const core = record("examine", {
     tier: "core",
     publicationStatus: "published",
@@ -129,15 +135,32 @@ function fixture(overrides: Partial<RelationshipVerificationInput> = {}) {
 
   return {
     candidate,
-    selectedSense: selectedSense(),
+    selectedSense,
     anchors,
-    factualDictionaryEvidence: [] as FactualDictionaryEvidence[],
+    factualDictionaryEvidence,
     coreRecords: [core],
     tokenBudget: new TokenBudget({ maxInputTokens: 100, maxOutputTokens: 100 }),
     requestId: "relationship:scrutinise",
     estimatedUsage,
     ...overrides,
   } satisfies RelationshipVerificationInput;
+}
+
+async function expectRejectedBeforeJudge(input: RelationshipVerificationInput) {
+  let calls = 0;
+  const result = await verifyCandidateRelationships(input, async (request) => {
+    calls += 1;
+    return response("supported", request);
+  });
+
+  expect(result.decisions[0]).toMatchObject({
+    decision: "ambiguous",
+    method: "unavailable",
+    reason: "no_factual_sense",
+  });
+  expect(result.hasSupportedAnchor).toBe(false);
+  expect(result.usage).toEqual({ inputTokens: 0, outputTokens: 0 });
+  expect(calls).toBe(0);
 }
 
 function response(
@@ -161,7 +184,10 @@ describe("verifyCandidateRelationships", () => {
 
     for (const provider of ["wordnet", "dictionaryapi"] as const) {
       const input = fixture({
-        factualDictionaryEvidence: [synonymEvidence(["  EXAMINE  ", "scrutinise"], { provider })],
+        factualDictionaryEvidence: [synonymEvidence(["  EXAMINE  ", "scrutinise"], {
+          provider,
+          returnedLemma: "  SCRUTINISE__",
+        })],
       });
       const result = await verifyCandidateRelationships(input, neverCalledJudge);
 
@@ -181,7 +207,7 @@ describe("verifyCandidateRelationships", () => {
 
   test("does not treat substrings, stems, or reciprocal connection type alone as direct lexical evidence", async () => {
     for (const synonyms of [["reexamine"], ["examining"], []]) {
-      const factualDictionaryEvidence = synonyms.length > 0 ? [synonymEvidence(synonyms)] : [];
+      const factualDictionaryEvidence = [synonymEvidence(synonyms)];
       const result = await verifyCandidateRelationships(fixture({ factualDictionaryEvidence }), null);
 
       expect(result.decisions[0]).toMatchObject({
@@ -207,14 +233,74 @@ describe("verifyCandidateRelationships", () => {
     ];
 
     for (const evidence of invalidEvidence) {
-      const result = await verifyCandidateRelationships(fixture({ factualDictionaryEvidence: [evidence] }), null);
+      const input = fixture();
+      input.factualDictionaryEvidence = [evidence];
+      const result = await verifyCandidateRelationships(input, null);
 
       expect(result.decisions[0]).toMatchObject({
         decision: "ambiguous",
         method: "unavailable",
-        reason: "judge_unavailable",
+        reason: "no_factual_sense",
       });
     }
+  });
+
+  test("rejects synonym evidence returned for an unrelated candidate lemma before direct support or judging", async () => {
+    const input = fixture();
+    input.factualDictionaryEvidence = [synonymEvidence(["examine"], { returnedLemma: "different-word" })];
+
+    await expectRejectedBeforeJudge(input);
+  });
+
+  test("rejects synonym evidence requested for a non-exact candidate part of speech", async () => {
+    const input = fixture();
+    input.factualDictionaryEvidence = [synonymEvidence(["examine"], { requestedPartOfSpeech: "Verb" })];
+
+    await expectRejectedBeforeJudge(input);
+  });
+
+  test("rejects minimally shaped evidence casts before direct support or judging", async () => {
+    const input = fixture();
+    input.factualDictionaryEvidence = [{
+      provider: "wordnet",
+      returnedLemma: "scrutinise",
+      requestedPartOfSpeech: "verb",
+      detail: { synonyms: ["examine"] },
+      source: { sourceId: "wordnet" },
+    } as unknown as FactualDictionaryEvidence];
+
+    await expectRejectedBeforeJudge(input);
+  });
+
+  test("requires selected sense identity, POS, wording, and source metadata to match eligible candidate evidence", async () => {
+    const trustedEvidence = synonymEvidence(["examine"]);
+    const canonical = fixture({ factualDictionaryEvidence: [trustedEvidence] }).selectedSense;
+    const mismatches: EligibleFactualSense[] = [
+      { ...canonical, id: "fabricated-sense-id" },
+      { ...canonical, partOfSpeech: "noun" },
+      { ...canonical, definition: "Foreign wording not present in the provider evidence." },
+      { ...canonical, source: { ...canonical.source, url: "https://wordnet.example/foreign-sense" } },
+    ];
+
+    for (const selectedSense of mismatches) {
+      await expectRejectedBeforeJudge(fixture({
+        factualDictionaryEvidence: [trustedEvidence],
+        selectedSense,
+      }));
+    }
+  });
+
+  test("rejects a Tatoeba-backed selected sense before direct support or judging", async () => {
+    const trustedEvidence = synonymEvidence(["examine"]);
+    const canonical = fixture({ factualDictionaryEvidence: [trustedEvidence] }).selectedSense;
+
+    await expectRejectedBeforeJudge(fixture({
+      factualDictionaryEvidence: [trustedEvidence],
+      selectedSense: {
+        ...canonical,
+        source: { ...canonical.source, sourceId: "tatoeba" },
+      },
+    }));
   });
 
   test("does not accept an LLM-only core sense as direct lexical support", async () => {
@@ -237,6 +323,44 @@ describe("verifyCandidateRelationships", () => {
       reason: "no_factual_sense",
     });
     expect(calls).toBe(0);
+  });
+
+  test("rejects Tatoeba-only and unknown-source core definitions before judging", async () => {
+    for (const sourceId of ["tatoeba", "unknown-provider"]) {
+      const input = fixture();
+      const core = input.coreRecords[0]!;
+      input.coreRecords = [{
+        ...core,
+        senses: [{
+          ...core.senses[0]!,
+          sources: [{ ...factualSource, sourceId }],
+        }],
+      }];
+
+      await expectRejectedBeforeJudge(input);
+    }
+  });
+
+  test("allows curated, WordNet, and DictionaryAPI core definition sources", async () => {
+    for (const sourceId of ["curated", "wordnet", "dictionaryapi"] as const) {
+      const input = fixture();
+      const core = input.coreRecords[0]!;
+      input.coreRecords = [{
+        ...core,
+        senses: [{
+          ...core.senses[0]!,
+          sources: [{ ...factualSource, sourceId }],
+        }],
+      }];
+
+      const result = await verifyCandidateRelationships(input, async (request) => response("supported", request));
+
+      expect(result.decisions[0]).toMatchObject({
+        decision: "supported",
+        method: "llm_consensus",
+        reason: null,
+      });
+    }
   });
 
   test("requires two order-reversed supported decisions over the same finite evidence", async () => {

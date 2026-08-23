@@ -1,9 +1,9 @@
 import { TokenBudget, type TokenUsage } from "../enrichment/budget";
 import type { VocabularyRecord, VocabularySense } from "../schema";
-import { evidenceForSources, isFactualSourceId, sourceRefsForSense } from "../source-evidence";
+import { isFactualSourceId, sourceRefsForSense } from "../source-evidence";
 import { RelationshipDecisionSchema } from "./decision-schema";
 import type { FactualDictionaryEvidence } from "./provider-types";
-import type { EligibleFactualSense } from "./sense-verifier";
+import { eligibleFactualSenses, type EligibleFactualSense } from "./sense-verifier";
 import type { ReciprocalCoreAnchor, VerificationReasonCode } from "./types";
 
 export type AnchorDecision = ReciprocalCoreAnchor & {
@@ -58,6 +58,7 @@ type JudgeOutcome = {
 };
 
 const ZERO_USAGE: TokenUsage = { inputTokens: 0, outputTokens: 0 };
+const CORE_DEFINITION_SOURCE_IDS = new Set(["curated", "wordnet", "dictionaryapi"]);
 
 function normalizeComparisonKey(value: string): string {
   return value.normalize("NFC").replace(/_/g, " ").trim().toLocaleLowerCase("en-US").replace(/\s+/gu, " ");
@@ -81,28 +82,91 @@ function nonEmptyGloss(value: string | null): value is string {
   return typeof value === "string" && value.trim().length > 0;
 }
 
-function factualSource(sourceId: string): boolean {
-  try {
-    return isFactualSourceId(sourceId);
-  } catch {
-    return false;
-  }
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null;
 }
 
-function hasTrustedSynonymProvenance(value: unknown): value is FactualDictionaryEvidence {
-  if (typeof value !== "object" || value === null) return false;
-  const evidence = value as Partial<FactualDictionaryEvidence>;
-  return (evidence.provider === "wordnet" || evidence.provider === "dictionaryapi")
-    && evidence.source?.sourceId === evidence.provider
-    && Array.isArray(evidence.detail?.synonyms);
+function nullableString(value: unknown): boolean {
+  return value === null || typeof value === "string";
+}
+
+function usableDictionarySenseShape(value: unknown): boolean {
+  if (!isRecord(value)) return false;
+  return typeof value.partOfSpeech === "string"
+    && typeof value.definition === "string"
+    && nullableString(value.example)
+    && (value.sourceEntryId === undefined || typeof value.sourceEntryId === "string")
+    && (value.sourceSenseId === undefined || typeof value.sourceSenseId === "string")
+    && (value.sourceUrl === undefined || nullableString(value.sourceUrl));
+}
+
+function usableWordDetailShape(value: unknown): boolean {
+  if (!isRecord(value)) return false;
+  return nullableString(value.ipa)
+    && nullableString(value.audioUk)
+    && nullableString(value.audioUs)
+    && nullableString(value.audioAny)
+    && Array.isArray(value.senses)
+    && value.senses.every(usableDictionarySenseShape)
+    && Array.isArray(value.synonyms)
+    && value.synonyms.every((synonym) => typeof synonym === "string")
+    && (value.sourceEntryId === undefined || typeof value.sourceEntryId === "string")
+    && (value.sourceUrl === undefined || nullableString(value.sourceUrl));
+}
+
+function usableDictionarySourceShape(value: unknown): boolean {
+  if (!isRecord(value)) return false;
+  return typeof value.sourceId === "string"
+    && nullableString(value.url)
+    && nullableString(value.retrievedAt)
+    && nullableString(value.contentHash);
+}
+
+function trustedCandidateEvidence(
+  candidate: VocabularyRecord,
+  values: readonly FactualDictionaryEvidence[],
+): FactualDictionaryEvidence[] {
+  const candidateLemma = normalizeComparisonKey(candidate.lemma);
+  return values.filter((value): value is FactualDictionaryEvidence => {
+    if (!isRecord(value)) return false;
+    const provider = value.provider;
+    return (provider === "wordnet" || provider === "dictionaryapi")
+      && usableDictionarySourceShape(value.source)
+      && value.source.sourceId === provider
+      && typeof value.returnedLemma === "string"
+      && normalizeComparisonKey(value.returnedLemma) === candidateLemma
+      && value.requestedPartOfSpeech === candidate.partOfSpeech
+      && usableWordDetailShape(value.detail);
+  });
+}
+
+function sameSelectedSource(
+  left: EligibleFactualSense["source"],
+  right: EligibleFactualSense["source"],
+): boolean {
+  return left.sourceId === right.sourceId
+    && left.url === right.url
+    && left.retrievedAt === right.retrievedAt
+    && left.contentHash === right.contentHash;
+}
+
+function selectedSenseIsCanonical(
+  candidate: VocabularyRecord,
+  selectedSense: EligibleFactualSense,
+  evidence: readonly FactualDictionaryEvidence[],
+): boolean {
+  return eligibleFactualSenses(candidate, evidence).some((eligible) =>
+    eligible.id === selectedSense.id
+    && eligible.partOfSpeech === selectedSense.partOfSpeech
+    && eligible.definition === selectedSense.definition
+    && sameSelectedSource(eligible.source, selectedSense.source),
+  );
 }
 
 function factualSynonymKeys(evidence: readonly FactualDictionaryEvidence[]): Set<string> {
   const keys = new Set<string>();
   for (const item of evidence) {
-    if (!hasTrustedSynonymProvenance(item)) continue;
     for (const synonym of item.detail.synonyms) {
-      if (typeof synonym !== "string") continue;
       const key = normalizeComparisonKey(synonym);
       if (key) keys.add(key);
     }
@@ -113,11 +177,13 @@ function factualSynonymKeys(evidence: readonly FactualDictionaryEvidence[]): Set
 function publishedFactualCoreSenses(core: VocabularyRecord): VocabularySense[] {
   return core.senses.filter((sense) => {
     if (sense.status !== "published") return false;
-    try {
-      return evidenceForSources(sourceRefsForSense(sense), { verified: false }) !== "ai-draft";
-    } catch {
-      return false;
-    }
+    return sourceRefsForSense(sense).some((source) => {
+      try {
+        return isFactualSourceId(source.sourceId) && CORE_DEFINITION_SOURCE_IDS.has(source.sourceId);
+      } catch {
+        return false;
+      }
+    });
   });
 }
 
@@ -251,11 +317,15 @@ async function verifyAnchor(
   if (!resolved) {
     return { decision: decision(anchor, "ambiguous", "unavailable", "no_reciprocal_anchor"), usage: ZERO_USAGE };
   }
-  if (!factualSource(input.selectedSense.source.sourceId) || resolved.senses.length === 0) {
+  const trustedEvidence = trustedCandidateEvidence(input.candidate, input.factualDictionaryEvidence);
+  if (
+    !selectedSenseIsCanonical(input.candidate, input.selectedSense, trustedEvidence)
+    || resolved.senses.length === 0
+  ) {
     return { decision: decision(anchor, "ambiguous", "unavailable", "no_factual_sense"), usage: ZERO_USAGE };
   }
 
-  const synonymKeys = factualSynonymKeys(input.factualDictionaryEvidence);
+  const synonymKeys = factualSynonymKeys(trustedEvidence);
   if (synonymKeys.has(normalizeComparisonKey(anchor.coreLemma))) {
     return { decision: decision(anchor, "supported", "direct_lexical", null), usage: ZERO_USAGE };
   }
