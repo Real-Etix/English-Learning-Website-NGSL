@@ -74,6 +74,24 @@ describe("lookupWordNetEvidence", () => {
     expect(evidence).toBeNull();
   });
 
+  test("rejects a noun-coded synset returned by the verb lookup", async () => {
+    const evidence = await lookupWordNetEvidence("manifest", "verb", {
+      lookup: fakeWordNet({
+        verb: [{
+          synsetOffset: "98",
+          pos: "n",
+          lemma: "manifest",
+          synonyms: ["manifest"],
+          def: "a list of cargo",
+          exp: ["The manifest listed every crate."],
+        }],
+      }),
+      retrievedAt: null,
+    });
+
+    expect(evidence).toBeNull();
+  });
+
   test("normalizes underscore lemmas and omits examples without a complete candidate token", async () => {
     const evidence = await lookupWordNetEvidence("take off", "verb", {
       lookup: fakeWordNet({

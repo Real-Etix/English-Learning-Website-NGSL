@@ -11,6 +11,13 @@ const lookupMethod = {
 } as const;
 
 type CanonicalPartOfSpeech = keyof typeof lookupMethod;
+const wordNetPartOfSpeech: Record<CanonicalPartOfSpeech, readonly string[]> = {
+  noun: ["n"],
+  verb: ["v"],
+  adjective: ["a", "s"],
+  adverb: ["r"],
+};
+
 type WordNetSynset = {
   synsetOffset: string | number;
   pos: string;
@@ -58,9 +65,13 @@ export async function lookupWordNetEvidence(
 
   const synsets = await options.lookup[lookupMethod[normalizedPartOfSpeech]](lemma);
   if (!Array.isArray(synsets) || synsets.length === 0) return null;
+  const exactPartOfSpeechSynsets = synsets.filter((synset) =>
+    wordNetPartOfSpeech[normalizedPartOfSpeech].includes(synset.pos),
+  );
+  if (exactPartOfSpeechSynsets.length === 0) return null;
 
   const candidate = normalizedLemma(lemma);
-  const senses = synsets.map((synset) => {
+  const senses = exactPartOfSpeechSynsets.map((synset) => {
     const externalId = `${normalizedPartOfSpeech}:${synset.synsetOffset}`;
     const example = synset.exp.find((value) => hasCompleteCandidateToken(value, candidate)) ?? null;
 
@@ -79,14 +90,14 @@ export async function lookupWordNetEvidence(
     audioAny: null,
     sourceEntryId: senses[0]!.sourceEntryId,
     senses,
-    synonyms: Array.from(new Set(synsets.flatMap((synset) => synset.synonyms)
+    synonyms: Array.from(new Set(exactPartOfSpeechSynsets.flatMap((synset) => synset.synonyms)
       .map(normalizedLemma)
       .filter(Boolean))),
   };
 
   return {
     provider: "wordnet",
-    returnedLemma: normalizedLemma(synsets[0]!.lemma),
+    returnedLemma: normalizedLemma(exactPartOfSpeechSynsets[0]!.lemma),
     requestedPartOfSpeech: partOfSpeech,
     detail,
     source: {
