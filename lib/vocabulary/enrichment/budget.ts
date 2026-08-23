@@ -23,6 +23,7 @@ function validUsage(usage: TokenUsage): boolean {
  */
 export class TokenBudget {
   private readonly reservations = new Map<string, Reservation>();
+  private freshReservationSequence = 0;
 
   constructor(private readonly ceilings: TokenBudgetOptions) {
     if (
@@ -41,6 +42,21 @@ export class TokenBudget {
     if (estimated.inputTokens > remaining.inputTokens || estimated.outputTokens > remaining.outputTokens) return false;
     this.reservations.set(requestId, { reserved: estimated, actual: null });
     return true;
+  }
+
+  /** Reserves a newly dispatched attempt without changing idempotent retry semantics. */
+  reserveFresh(requestId: string, estimated: TokenUsage): string | null {
+    if (!requestId || !validUsage(estimated)) return null;
+    const remaining = this.remaining();
+    if (estimated.inputTokens > remaining.inputTokens || estimated.outputTokens > remaining.outputTokens) return null;
+
+    let freshRequestId: string;
+    do {
+      this.freshReservationSequence += 1;
+      freshRequestId = `${requestId}:attempt:${this.freshReservationSequence}`;
+    } while (this.reservations.has(freshRequestId));
+    this.reservations.set(freshRequestId, { reserved: estimated, actual: null });
+    return freshRequestId;
   }
 
   recordActual(requestId: string, actual: TokenUsage): boolean {

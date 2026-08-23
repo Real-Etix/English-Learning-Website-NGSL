@@ -65,6 +65,13 @@ const ZERO_USAGE: TokenUsage = { inputTokens: 0, outputTokens: 0 };
 const CORE_DEFINITION_SOURCE_IDS = new Set(["curated", "wordnet", "dictionaryapi"]);
 const SHA256_CONTENT_HASH = /^sha256:[0-9a-f]{64}$/u;
 const ADAPTER_ISO_TIMESTAMP_SCHEMA = z.iso.datetime();
+const INVALID_RECIPROCAL_ANCHOR: ReciprocalCoreAnchor = {
+  coreLemma: "",
+  candidateType: "builds_on",
+  coreType: "advanced_form",
+  candidateGloss: "",
+  coreGloss: "",
+};
 
 function normalizeComparisonKey(value: string): string {
   return value.normalize("NFC").replace(/_/g, " ").trim().toLocaleLowerCase("en-US").replace(/\s+/gu, " ");
@@ -84,7 +91,7 @@ function plusUsage(left: TokenUsage, right: TokenUsage): TokenUsage {
   };
 }
 
-function nonEmptyGloss(value: string | null): value is string {
+function nonEmptyGloss(value: unknown): value is string {
   return typeof value === "string" && value.trim().length > 0;
 }
 
@@ -174,6 +181,22 @@ function hasAdapterPayloadIntegrity(
     && adapterIsoTimestamp(evidence.source.retrievedAt);
 }
 
+function everyReturnedSenseIsEligible(
+  candidate: VocabularyRecord,
+  evidence: FactualDictionaryEvidence,
+): boolean {
+  if (evidence.detail.senses.length === 0) return false;
+  const eligibleSenses = eligibleFactualSenses(candidate, [evidence]);
+  return evidence.detail.senses.every((sense) =>
+    sense.partOfSpeech === candidate.partOfSpeech
+    && sense.partOfSpeech === evidence.requestedPartOfSpeech
+    && eligibleSenses.some((eligible) =>
+      eligible.partOfSpeech === sense.partOfSpeech
+      && eligible.definition === sense.definition,
+    ),
+  );
+}
+
 function trustedCandidateEvidence(
   candidate: VocabularyRecord,
   values: readonly FactualDictionaryEvidence[],
@@ -195,11 +218,20 @@ function trustedCandidateEvidence(
       ) return false;
 
       const evidence = value as FactualDictionaryEvidence;
-      return eligibleFactualSenses(candidate, [evidence]).length > 0;
+      return everyReturnedSenseIsEligible(candidate, evidence);
     } catch {
       return false;
     }
   });
+}
+
+function usableSelectedSenseShape(value: unknown): value is EligibleFactualSense {
+  if (!isRecord(value)) return false;
+  return typeof value.id === "string"
+    && typeof value.partOfSpeech === "string"
+    && typeof value.definition === "string"
+    && usableDictionarySourceShape(value.source)
+    && Array.isArray(value.examples);
 }
 
 function sameSelectedSource(
@@ -214,15 +246,20 @@ function sameSelectedSource(
 
 function selectedSenseIsCanonical(
   candidate: VocabularyRecord,
-  selectedSense: EligibleFactualSense,
+  selectedSense: unknown,
   evidence: readonly FactualDictionaryEvidence[],
 ): boolean {
-  return eligibleFactualSenses(candidate, evidence).some((eligible) =>
-    eligible.id === selectedSense.id
-    && eligible.partOfSpeech === selectedSense.partOfSpeech
-    && eligible.definition === selectedSense.definition
-    && sameSelectedSource(eligible.source, selectedSense.source),
-  );
+  try {
+    if (!usableSelectedSenseShape(selectedSense)) return false;
+    return eligibleFactualSenses(candidate, evidence).some((eligible) =>
+      eligible.id === selectedSense.id
+      && eligible.partOfSpeech === selectedSense.partOfSpeech
+      && eligible.definition === selectedSense.definition
+      && sameSelectedSource(eligible.source, selectedSense.source),
+    );
+  } catch {
+    return false;
+  }
 }
 
 function factualSynonymKeys(evidence: readonly FactualDictionaryEvidence[]): Set<string> {
@@ -247,6 +284,36 @@ function publishedFactualCoreSenses(core: VocabularyRecord): VocabularySense[] {
       }
     });
   });
+}
+
+function runtimeAnchor(value: unknown): { anchor: ReciprocalCoreAnchor; valid: boolean } {
+  try {
+    if (!isRecord(value)) return { anchor: INVALID_RECIPROCAL_ANCHOR, valid: false };
+    const coreLemma = value.coreLemma;
+    const candidateType = value.candidateType;
+    const coreType = value.coreType;
+    const candidateGloss = value.candidateGloss;
+    const coreGloss = value.coreGloss;
+    const valid = !(
+      typeof coreLemma !== "string"
+      || candidateType !== "builds_on"
+      || coreType !== "advanced_form"
+      || typeof candidateGloss !== "string"
+      || typeof coreGloss !== "string"
+    );
+    return {
+      anchor: {
+        coreLemma: typeof coreLemma === "string" ? coreLemma : "",
+        candidateType: "builds_on",
+        coreType: "advanced_form",
+        candidateGloss: typeof candidateGloss === "string" ? candidateGloss : "",
+        coreGloss: typeof coreGloss === "string" ? coreGloss : "",
+      },
+      valid,
+    };
+  } catch {
+    return { anchor: INVALID_RECIPROCAL_ANCHOR, valid: false };
+  }
 }
 
 function coreForAnchor(
@@ -400,12 +467,15 @@ async function verifyAnchor(
   }
 
   const baseRequestId = `${input.requestId}:relationship:${index}:${anchor.coreLemma}`;
-  const candidateFirstId = `${baseRequestId}:candidate-first`;
-  const coreFirstId = `${baseRequestId}:core-first`;
-  if (
-    !input.tokenBudget.reserve(candidateFirstId, input.estimatedUsage)
-    || !input.tokenBudget.reserve(coreFirstId, input.estimatedUsage)
-  ) {
+  const candidateFirstId = input.tokenBudget.reserveFresh(
+    `${baseRequestId}:candidate-first`,
+    input.estimatedUsage,
+  );
+  const coreFirstId = input.tokenBudget.reserveFresh(
+    `${baseRequestId}:core-first`,
+    input.estimatedUsage,
+  );
+  if (!candidateFirstId || !coreFirstId) {
     return { decision: decision(anchor, "ambiguous", "unavailable", "budget_exhausted"), usage: ZERO_USAGE };
   }
 
@@ -458,7 +528,18 @@ export async function verifyCandidateRelationships(
   const decisions: AnchorDecision[] = [];
   let usage = ZERO_USAGE;
 
-  for (const [index, anchor] of input.anchors.entries()) {
+  for (const [index, value] of input.anchors.entries()) {
+    const runtime = runtimeAnchor(value);
+    if (!runtime.valid) {
+      decisions.push(decision(
+        runtime.anchor,
+        "ambiguous",
+        "unavailable",
+        "no_reciprocal_anchor",
+      ));
+      continue;
+    }
+    const anchor = runtime.anchor;
     const result = await verifyAnchor(input, anchor, index, judge);
     decisions.push(result.decision);
     usage = plusUsage(usage, result.usage);

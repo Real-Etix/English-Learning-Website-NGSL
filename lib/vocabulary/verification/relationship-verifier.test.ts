@@ -288,6 +288,38 @@ describe("verifyCandidateRelationships", () => {
     expect(calls).toBe(2);
   });
 
+  test("does not pool synonyms from an evidence item containing mixed-POS senses", async () => {
+    const canonicalEvidence = synonymEvidence([]);
+    const factualDictionaryEvidence = [
+      canonicalEvidence,
+      synonymEvidence(["examine"], {
+        senses: [
+          canonicalEvidence.detail.senses[0]!,
+          {
+            ...canonicalEvidence.detail.senses[0]!,
+            partOfSpeech: "noun",
+            definition: "A careful inspection.",
+            sourceSenseId: "scrutinise.n.01",
+          },
+        ],
+      }),
+    ];
+    let calls = 0;
+
+    const result = await verifyCandidateRelationships(fixture({ factualDictionaryEvidence }), async (request) => {
+      calls += 1;
+      return response("supported", request);
+    });
+
+    expect(result.decisions[0]).toMatchObject({
+      decision: "supported",
+      method: "llm_consensus",
+      reason: null,
+    });
+    expect(result.usage).toEqual({ inputTokens: 4, outputTokens: 2 });
+    expect(calls).toBe(2);
+  });
+
   test("rejects mismatched, LLM, unknown, and non-source-bearing synonym provenance", async () => {
     const typedInput = fixture();
     if (false) {
@@ -416,6 +448,30 @@ describe("verifyCandidateRelationships", () => {
         selectedSense,
       }));
     }
+  });
+
+  test("fails closed when a runtime-cast selected sense is missing source metadata", async () => {
+    const input = fixture();
+    input.selectedSense = {
+      ...input.selectedSense,
+      source: undefined,
+    } as unknown as EligibleFactualSense;
+    let calls = 0;
+
+    const result = await verifyCandidateRelationships(input, async (request) => {
+      calls += 1;
+      return response("supported", request);
+    });
+
+    expect(result.decisions[0]).toMatchObject({
+      decision: "ambiguous",
+      method: "unavailable",
+      reason: "no_factual_sense",
+    });
+    expect(result.hasSupportedAnchor).toBe(false);
+    expect(result.usage).toEqual({ inputTokens: 0, outputTokens: 0 });
+    expect(input.tokenBudget.remaining()).toEqual({ inputTokens: 100, outputTokens: 100 });
+    expect(calls).toBe(0);
   });
 
   test("rejects a Tatoeba-backed selected sense before direct support or judging", async () => {
@@ -598,6 +654,26 @@ describe("verifyCandidateRelationships", () => {
     expect(calls).toBe(0);
   });
 
+  test("charges fresh reservations when verification repeats with the same budget and request ID", async () => {
+    const tokenBudget = new TokenBudget({ maxInputTokens: 100, maxOutputTokens: 100 });
+    const input = fixture({ tokenBudget });
+    let calls = 0;
+    const judge: RelationshipJudge = async (request) => {
+      calls += 1;
+      return response("supported", request);
+    };
+
+    const first = await verifyCandidateRelationships(input, judge);
+    const second = await verifyCandidateRelationships(input, judge);
+
+    expect(first.decisions[0]).toMatchObject({ decision: "supported", method: "llm_consensus" });
+    expect(second.decisions[0]).toMatchObject({ decision: "supported", method: "llm_consensus" });
+    expect(first.usage).toEqual({ inputTokens: 4, outputTokens: 2 });
+    expect(second.usage).toEqual({ inputTokens: 4, outputTokens: 2 });
+    expect(calls).toBe(4);
+    expect(tokenBudget.remaining()).toEqual({ inputTokens: 92, outputTokens: 96 });
+  });
+
   test("reports an unavailable judge only after deterministic evidence gates pass", async () => {
     const result = await verifyCandidateRelationships(fixture(), null);
 
@@ -665,6 +741,43 @@ describe("verifyCandidateRelationships", () => {
         reason: "no_reciprocal_anchor",
       });
       expect(result.hasSupportedAnchor).toBe(false);
+    }
+  });
+
+  test("fails closed on malformed anchor runtime casts without dispatching a judge", async () => {
+    const malformedAnchors = [
+      null,
+      {
+        coreLemma: 42,
+        candidateType: "builds_on",
+        coreType: "advanced_form",
+        candidateGloss,
+        coreGloss,
+      },
+    ];
+
+    for (const malformedAnchor of malformedAnchors) {
+      const input = fixture();
+      input.anchors = [malformedAnchor as unknown as ReciprocalCoreAnchor];
+      let calls = 0;
+
+      const result = await verifyCandidateRelationships(input, async (request) => {
+        calls += 1;
+        return response("supported", request);
+      });
+
+      expect(result.decisions[0]).toMatchObject({
+        decision: "ambiguous",
+        method: "unavailable",
+        reason: "no_reciprocal_anchor",
+      });
+      expect(result.hasSupportedAnchor).toBe(false);
+      expect(result.usage).toEqual({ inputTokens: 0, outputTokens: 0 });
+      expect(calls).toBe(0);
+      if (malformedAnchor !== null) {
+        expect(result.decisions[0]?.candidateGloss).toBe(candidateGloss);
+        expect(result.decisions[0]?.coreGloss).toBe(coreGloss);
+      }
     }
   });
 });

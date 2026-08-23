@@ -30,4 +30,19 @@ describe("TokenBudget", () => {
     expect(budget.recordActual("retryable-request", { inputTokens: 30, outputTokens: 10 })).toBe(true);
     expect(budget.remaining()).toEqual({ inputTokens: 70, outputTokens: 40 });
   });
+
+  test("creates and charges distinct fresh reservations for repeated dispatch attempts", () => {
+    const budget = new TokenBudget({ maxInputTokens: 100, maxOutputTokens: 50 });
+    const first = budget.reserveFresh("relationship-judge", { inputTokens: 30, outputTokens: 15 });
+    const second = budget.reserveFresh("relationship-judge", { inputTokens: 30, outputTokens: 15 });
+
+    expect(first).not.toBeNull();
+    expect(second).not.toBeNull();
+    expect(second).not.toBe(first);
+    if (!first || !second) return;
+
+    expect(budget.recordActual(first, { inputTokens: 10, outputTokens: 5 })).toBe(true);
+    expect(budget.recordActual(second, { inputTokens: 12, outputTokens: 6 })).toBe(true);
+    expect(budget.remaining()).toEqual({ inputTokens: 78, outputTokens: 39 });
+  });
 });
