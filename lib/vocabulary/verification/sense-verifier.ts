@@ -73,7 +73,7 @@ function factualSource(sourceId: string): boolean {
 function hasCompleteForm(text: string, form: string): boolean {
   if (!form) return false;
   const escaped = form.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return new RegExp(`(?<![\\p{L}\\p{N}_])${escaped}(?![\\p{L}\\p{N}_])`, "iu")
+  return new RegExp(`(?<![\\p{L}\\p{M}\\p{N}_])${escaped}(?![\\p{L}\\p{M}\\p{N}_])`, "iu")
     .test(text.normalize("NFC"));
 }
 
@@ -218,7 +218,8 @@ export async function verifyCandidateSense(
   try {
     judged = await judge(requestFor(input.candidate, eligibleSenses, examples));
   } catch {
-    return result(eligibleSenses, null, null, "judge_unavailable", "unavailable");
+    input.tokenBudget.recordActual(input.requestId, input.estimatedUsage);
+    return result(eligibleSenses, null, null, "judge_unavailable", "unavailable", input.estimatedUsage);
   }
   input.tokenBudget.recordActual(input.requestId, judged.usage);
 
@@ -228,8 +229,11 @@ export async function verifyCandidateSense(
   }
 
   const senseIds = new Set(eligibleSenses.map((sense) => sense.id));
-  const exampleIds = new Set(examples.map((example) => example.id));
-  if (!senseIds.has(decision.data.senseId) || (decision.data.exampleId !== null && !exampleIds.has(decision.data.exampleId))) {
+  const selectedSense = eligibleSenses.find((sense) => sense.id === decision.data.senseId);
+  const selectedExampleIsEligible = decision.data.exampleId === null
+    || tatoebaExamples.some((example) => example.id === decision.data.exampleId)
+    || selectedSense?.examples.some((example) => example.id === decision.data.exampleId);
+  if (!senseIds.has(decision.data.senseId) || !selectedExampleIsEligible) {
     return result(eligibleSenses, null, null, "sense_ambiguous", "llm", judged.usage);
   }
   return result(eligibleSenses, decision.data.senseId, decision.data.exampleId, null, "llm", judged.usage);

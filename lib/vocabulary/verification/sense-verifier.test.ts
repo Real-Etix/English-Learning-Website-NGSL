@@ -128,6 +128,19 @@ describe("eligibleFactualSenses", () => {
     expect(eligible?.examples).toEqual([]);
   });
 
+  test("does not match a form inside a following Devanagari combining mark", () => {
+    const record = candidate({ lemma: "कर", display: "कर", forms: ["क"] });
+    const combiningMark = { ...firstSense, sourceSenseId: "devanagari.mark", example: "का मतलब स्पष्ट है।" };
+    const standalone = { ...firstSense, sourceSenseId: "devanagari.standalone", example: "क काम शुरू है।" };
+
+    expect(eligibleFactualSenses(record, [
+      factualEvidence([combiningMark], { returnedLemma: "कर", detail: detail([combiningMark]) }),
+    ])[0]?.examples).toEqual([]);
+    expect(eligibleFactualSenses(record, [
+      factualEvidence([standalone], { returnedLemma: "कर", detail: detail([standalone]) }),
+    ])[0]?.examples).toHaveLength(1);
+  });
+
   test("deduplicates canonical IDs without changing provider wording", () => {
     const evidence = factualEvidence([firstSense]);
     const result = eligibleFactualSenses(candidate(), [evidence, evidence]);
@@ -221,6 +234,35 @@ describe("verifyCandidateSense", () => {
     }
   });
 
+  test("rejects a dictionary example selected from a different sense", async () => {
+    const secondSense = {
+      ...firstSense,
+      definition: "To make something happen.",
+      sourceSenseId: "manifest.v.02",
+      example: "The plan manifested after months of work.",
+    };
+    const evidence = factualEvidence([firstSense, secondSense]);
+    const record = candidate();
+    const firstSenseId = dictionarySenseId(record, evidence.detail, firstSense, "dictionaryapi");
+    const secondSenseId = dictionarySenseId(record, evidence.detail, secondSense, "dictionaryapi");
+
+    const result = await verifyCandidateSense(input([evidence], { candidate: record }), async () => ({
+      decision: {
+        decision: "selected",
+        senseId: secondSenseId,
+        exampleId: `dictionary:${firstSenseId}:example`,
+      },
+      usage: { inputTokens: 3, outputTokens: 2 },
+    }));
+
+    expect(result).toMatchObject({
+      selectedSenseId: null,
+      selectedExampleId: null,
+      reason: "sense_ambiguous",
+      decisionSource: "llm",
+    });
+  });
+
   test("attaches a Tatoeba example only when the judge returns its supplied ID for the selected sense", async () => {
     const evidence = factualEvidence([{ ...firstSense, example: null }]);
     const record = candidate();
@@ -260,5 +302,23 @@ describe("verifyCandidateSense", () => {
     const result = await verifyCandidateSense(input([factualEvidence([firstSense, secondSense])]), null);
 
     expect(result).toMatchObject({ reason: "judge_unavailable", decisionSource: "unavailable" });
+  });
+
+  test("settles the estimated usage once when a reserved judge request throws", async () => {
+    const secondSense = { ...firstSense, definition: "To make something happen.", sourceSenseId: "manifest.v.02" };
+    const estimatedUsage = { inputTokens: 20, outputTokens: 15 };
+    const budget = new TokenBudget({ maxInputTokens: 100, maxOutputTokens: 100 });
+
+    const result = await verifyCandidateSense(input([factualEvidence([firstSense, secondSense])], {
+      tokenBudget: budget,
+      estimatedUsage,
+    }), async () => { throw new Error("transport failed after provider dispatch"); });
+
+    expect(result).toMatchObject({
+      reason: "judge_unavailable",
+      decisionSource: "unavailable",
+      usage: estimatedUsage,
+    });
+    expect(budget.remaining()).toEqual({ inputTokens: 80, outputTokens: 85 });
   });
 });
