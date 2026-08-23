@@ -1,3 +1,7 @@
+import { createHash } from "node:crypto";
+
+import { z } from "zod";
+
 import { TokenBudget, type TokenUsage } from "../enrichment/budget";
 import type { VocabularyRecord, VocabularySense } from "../schema";
 import { isFactualSourceId, sourceRefsForSense } from "../source-evidence";
@@ -59,6 +63,8 @@ type JudgeOutcome = {
 
 const ZERO_USAGE: TokenUsage = { inputTokens: 0, outputTokens: 0 };
 const CORE_DEFINITION_SOURCE_IDS = new Set(["curated", "wordnet", "dictionaryapi"]);
+const SHA256_CONTENT_HASH = /^sha256:[0-9a-f]{64}$/u;
+const ADAPTER_ISO_TIMESTAMP_SCHEMA = z.iso.datetime();
 
 function normalizeComparisonKey(value: string): string {
   return value.normalize("NFC").replace(/_/g, " ").trim().toLocaleLowerCase("en-US").replace(/\s+/gu, " ");
@@ -119,7 +125,53 @@ function usableDictionarySourceShape(value: unknown): boolean {
   return typeof value.sourceId === "string"
     && nullableString(value.url)
     && nullableString(value.retrievedAt)
-    && nullableString(value.contentHash);
+    && typeof value.contentHash === "string";
+}
+
+function hashJson(value: unknown): string | null {
+  try {
+    const serialized = JSON.stringify(value);
+    if (serialized === undefined) return null;
+    return `sha256:${createHash("sha256").update(serialized, "utf8").digest("hex")}`;
+  } catch {
+    return null;
+  }
+}
+
+function adapterIsoTimestamp(value: unknown): value is string {
+  return ADAPTER_ISO_TIMESTAMP_SCHEMA.safeParse(value).success;
+}
+
+function dictionaryRequestUrl(lemma: string): string {
+  return `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(lemma)}`;
+}
+
+/**
+ * Replays each adapter's serialization and metadata contract. This detects
+ * malformed or cross-provider values; the embedded hash is not authentication.
+ */
+function hasAdapterPayloadIntegrity(
+  candidate: VocabularyRecord,
+  evidence: FactualDictionaryEvidence,
+): boolean {
+  const contentHash = evidence.source.contentHash;
+  if (typeof contentHash !== "string" || !SHA256_CONTENT_HASH.test(contentHash)) return false;
+
+  const expectedHash = evidence.provider === "wordnet"
+    ? hashJson(evidence.detail)
+    : hashJson({
+      returnedLemma: evidence.returnedLemma,
+      requestedPartOfSpeech: evidence.requestedPartOfSpeech,
+      detail: evidence.detail,
+    });
+  if (contentHash !== expectedHash) return false;
+
+  if (evidence.provider === "wordnet") {
+    return evidence.source.url === null
+      && (evidence.source.retrievedAt === null || adapterIsoTimestamp(evidence.source.retrievedAt));
+  }
+  return evidence.source.url === dictionaryRequestUrl(candidate.lemma)
+    && adapterIsoTimestamp(evidence.source.retrievedAt);
 }
 
 function trustedCandidateEvidence(
@@ -128,15 +180,25 @@ function trustedCandidateEvidence(
 ): FactualDictionaryEvidence[] {
   const candidateLemma = normalizeComparisonKey(candidate.lemma);
   return values.filter((value): value is FactualDictionaryEvidence => {
-    if (!isRecord(value)) return false;
-    const provider = value.provider;
-    return (provider === "wordnet" || provider === "dictionaryapi")
-      && usableDictionarySourceShape(value.source)
-      && value.source.sourceId === provider
-      && typeof value.returnedLemma === "string"
-      && normalizeComparisonKey(value.returnedLemma) === candidateLemma
-      && value.requestedPartOfSpeech === candidate.partOfSpeech
-      && usableWordDetailShape(value.detail);
+    try {
+      if (!isRecord(value)) return false;
+      const provider = value.provider;
+      if (
+        (provider !== "wordnet" && provider !== "dictionaryapi")
+        || !usableDictionarySourceShape(value.source)
+        || value.source.sourceId !== provider
+        || typeof value.returnedLemma !== "string"
+        || normalizeComparisonKey(value.returnedLemma) !== candidateLemma
+        || value.requestedPartOfSpeech !== candidate.partOfSpeech
+        || !usableWordDetailShape(value.detail)
+        || !hasAdapterPayloadIntegrity(candidate, value as FactualDictionaryEvidence)
+      ) return false;
+
+      const evidence = value as FactualDictionaryEvidence;
+      return eligibleFactualSenses(candidate, [evidence]).length > 0;
+    } catch {
+      return false;
+    }
   });
 }
 

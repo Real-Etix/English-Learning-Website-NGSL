@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+
 import { describe, expect, test } from "vitest";
 
 import { TokenBudget, type TokenUsage } from "../enrichment/budget";
@@ -30,6 +32,17 @@ const candidateGloss = "\tBuilds  on: examine — café!  ";
 const coreGloss = "  Advanced\tform: scrutinise → naïve? ";
 const candidateDefinition = "  To examine something very carefully.  ";
 const estimatedUsage = { inputTokens: 10, outputTokens: 5 } as const;
+const dictionaryRetrievedAt = "2026-08-24T00:00:00.000Z";
+
+function hashJson(value: unknown): string {
+  const serialized = JSON.stringify(value);
+  if (serialized === undefined) throw new Error("fixture hash input must be JSON serializable");
+  return `sha256:${createHash("sha256").update(serialized, "utf8").digest("hex")}`;
+}
+
+function dictionaryRequestUrl(lemma: string): string {
+  return `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(lemma)}`;
+}
 
 function record(lemma: string, overrides: Partial<VocabularyRecord> = {}): VocabularyRecord {
   return {
@@ -62,34 +75,42 @@ function synonymEvidence(
     sourceId?: string;
     returnedLemma?: string;
     requestedPartOfSpeech?: string;
+    senses?: FactualDictionaryEvidence["detail"]["senses"];
   } = {},
 ): FactualDictionaryEvidence {
   const provider = overrides.provider ?? "wordnet";
+  const returnedLemma = overrides.returnedLemma ?? "scrutinise";
+  const requestedPartOfSpeech = overrides.requestedPartOfSpeech ?? "verb";
+  const detail: FactualDictionaryEvidence["detail"] = {
+    ipa: null,
+    audioUk: null,
+    audioUs: null,
+    audioAny: null,
+    sourceEntryId: "scrutinise-entry",
+    sourceUrl: `https://${provider}.example/scrutinise`,
+    senses: overrides.senses ?? [{
+      partOfSpeech: "verb",
+      definition: candidateDefinition,
+      example: "They scrutinise the evidence carefully.",
+      sourceSenseId: "scrutinise.v.01",
+      sourceUrl: `https://${provider}.example/scrutinise#verb-1`,
+    }],
+    synonyms,
+  };
+  const contentHash = provider === "wordnet"
+    ? hashJson(detail)
+    : hashJson({ returnedLemma, requestedPartOfSpeech, detail });
+
   return {
     provider,
-    returnedLemma: overrides.returnedLemma ?? "scrutinise",
-    requestedPartOfSpeech: overrides.requestedPartOfSpeech ?? "verb",
-    detail: {
-      ipa: null,
-      audioUk: null,
-      audioUs: null,
-      audioAny: null,
-      sourceEntryId: "scrutinise-entry",
-      sourceUrl: `https://${provider}.example/scrutinise`,
-      senses: [{
-        partOfSpeech: "verb",
-        definition: candidateDefinition,
-        example: "They scrutinise the evidence carefully.",
-        sourceSenseId: "scrutinise.v.01",
-        sourceUrl: `https://${provider}.example/scrutinise#verb-1`,
-      }],
-      synonyms,
-    },
+    returnedLemma,
+    requestedPartOfSpeech,
+    detail,
     source: {
       sourceId: overrides.sourceId ?? provider,
-      url: `https://${provider}.example/scrutinise`,
-      retrievedAt: "2026-08-24T00:00:00.000Z",
-      contentHash: `sha256:${provider}-scrutinise`,
+      url: provider === "wordnet" ? null : dictionaryRequestUrl("scrutinise"),
+      retrievedAt: provider === "wordnet" ? null : dictionaryRetrievedAt,
+      contentHash,
     },
   };
 }
@@ -218,6 +239,55 @@ describe("verifyCandidateRelationships", () => {
     }
   });
 
+  test("does not borrow a selected sense from one item to trust synonyms on an empty-sense item", async () => {
+    const factualDictionaryEvidence = [
+      synonymEvidence([]),
+      synonymEvidence(["examine"], { senses: [] }),
+    ];
+    let calls = 0;
+
+    const result = await verifyCandidateRelationships(fixture({ factualDictionaryEvidence }), async (request) => {
+      calls += 1;
+      return response("supported", request);
+    });
+
+    expect(result.decisions[0]).toMatchObject({
+      decision: "supported",
+      method: "llm_consensus",
+      reason: null,
+    });
+    expect(result.usage).toEqual({ inputTokens: 4, outputTokens: 2 });
+    expect(calls).toBe(2);
+  });
+
+  test("does not borrow a selected sense from one item to trust synonyms on a wrong-POS-only item", async () => {
+    const canonicalEvidence = synonymEvidence([]);
+    const factualDictionaryEvidence = [
+      canonicalEvidence,
+      synonymEvidence(["examine"], {
+        senses: [{
+          ...canonicalEvidence.detail.senses[0]!,
+          partOfSpeech: "noun",
+          definition: "A careful inspection.",
+        }],
+      }),
+    ];
+    let calls = 0;
+
+    const result = await verifyCandidateRelationships(fixture({ factualDictionaryEvidence }), async (request) => {
+      calls += 1;
+      return response("supported", request);
+    });
+
+    expect(result.decisions[0]).toMatchObject({
+      decision: "supported",
+      method: "llm_consensus",
+      reason: null,
+    });
+    expect(result.usage).toEqual({ inputTokens: 4, outputTokens: 2 });
+    expect(calls).toBe(2);
+  });
+
   test("rejects mismatched, LLM, unknown, and non-source-bearing synonym provenance", async () => {
     const typedInput = fixture();
     if (false) {
@@ -270,6 +340,64 @@ describe("verifyCandidateRelationships", () => {
     } as unknown as FactualDictionaryEvidence];
 
     await expectRejectedBeforeJudge(input);
+  });
+
+  test("rejects null, malformed, and mismatched provider payload hashes before direct support or judging", async () => {
+    const invalidHashes = [
+      null,
+      "not-a-content-hash",
+      `sha256:${"0".repeat(64)}`,
+    ];
+
+    for (const provider of ["wordnet", "dictionaryapi"] as const) {
+      for (const contentHash of invalidHashes) {
+        const evidence = synonymEvidence(["examine"], { provider });
+        const input = fixture({ factualDictionaryEvidence: [evidence] });
+        evidence.source.contentHash = contentHash;
+
+        await expectRejectedBeforeJudge(input);
+      }
+    }
+  });
+
+  test("requires WordNet adapter URL and retrieval-time metadata before using its payload", async () => {
+    const datedEvidence = synonymEvidence(["examine"]);
+    datedEvidence.source.retrievedAt = "2026-08-24T00:00:00Z";
+    const accepted = await verifyCandidateRelationships(fixture({
+      factualDictionaryEvidence: [datedEvidence],
+    }), async () => { throw new Error("judge should not run"); });
+    expect(accepted.decisions[0]).toMatchObject({
+      decision: "supported",
+      method: "direct_lexical",
+      reason: null,
+    });
+
+    const invalidMetadata: Array<(evidence: FactualDictionaryEvidence) => void> = [
+      (evidence) => { evidence.source.url = "https://wordnet.example/unexpected-request"; },
+      (evidence) => { evidence.source.retrievedAt = "not-an-iso-timestamp"; },
+    ];
+    for (const mutate of invalidMetadata) {
+      const evidence = synonymEvidence(["examine"]);
+      const input = fixture({ factualDictionaryEvidence: [evidence] });
+      mutate(evidence);
+
+      await expectRejectedBeforeJudge(input);
+    }
+  });
+
+  test("requires the exact DictionaryAPI request URL and a non-null ISO retrieval time", async () => {
+    const invalidMetadata: Array<(evidence: FactualDictionaryEvidence) => void> = [
+      (evidence) => { evidence.source.url = "https://api.dictionaryapi.dev/api/v2/entries/en/examine"; },
+      (evidence) => { evidence.source.retrievedAt = null; },
+      (evidence) => { evidence.source.retrievedAt = "not-an-iso-timestamp"; },
+    ];
+    for (const mutate of invalidMetadata) {
+      const evidence = synonymEvidence(["examine"], { provider: "dictionaryapi" });
+      const input = fixture({ factualDictionaryEvidence: [evidence] });
+      mutate(evidence);
+
+      await expectRejectedBeforeJudge(input);
+    }
   });
 
   test("requires selected sense identity, POS, wording, and source metadata to match eligible candidate evidence", async () => {
