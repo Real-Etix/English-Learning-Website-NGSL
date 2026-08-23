@@ -3,6 +3,7 @@ import { describe, expect, test } from "vitest";
 import { TokenBudget, type TokenUsage } from "../enrichment/budget";
 import type { VocabularyRecord } from "../schema";
 import { vocabularyRecordFixture } from "../test-fixtures";
+import type { FactualDictionaryEvidence } from "./provider-types";
 import type { EligibleFactualSense } from "./sense-verifier";
 import {
   verifyCandidateRelationships,
@@ -69,6 +70,37 @@ function selectedSense(overrides: Partial<EligibleFactualSense> = {}): EligibleF
   };
 }
 
+function synonymEvidence(
+  synonyms: string[],
+  overrides: {
+    provider?: FactualDictionaryEvidence["provider"];
+    sourceId?: string;
+    returnedLemma?: string;
+    requestedPartOfSpeech?: string;
+  } = {},
+): FactualDictionaryEvidence {
+  const provider = overrides.provider ?? "wordnet";
+  return {
+    provider,
+    returnedLemma: overrides.returnedLemma ?? "scrutinise",
+    requestedPartOfSpeech: overrides.requestedPartOfSpeech ?? "verb",
+    detail: {
+      ipa: null,
+      audioUk: null,
+      audioUs: null,
+      audioAny: null,
+      senses: [],
+      synonyms,
+    },
+    source: {
+      sourceId: overrides.sourceId ?? provider,
+      url: `https://${provider}.example/scrutinise`,
+      retrievedAt: "2026-08-24T00:00:00.000Z",
+      contentHash: `sha256:${provider}-scrutinise`,
+    },
+  };
+}
+
 function fixture(overrides: Partial<RelationshipVerificationInput> = {}) {
   const candidate = record("scrutinise", {
     tier: "advanced",
@@ -99,7 +131,7 @@ function fixture(overrides: Partial<RelationshipVerificationInput> = {}) {
     candidate,
     selectedSense: selectedSense(),
     anchors,
-    factualSynonyms: [] as string[],
+    factualDictionaryEvidence: [] as FactualDictionaryEvidence[],
     coreRecords: [core],
     tokenBudget: new TokenBudget({ maxInputTokens: 100, maxOutputTokens: 100 }),
     requestId: "relationship:scrutinise",
@@ -125,27 +157,57 @@ function response(
 
 describe("verifyCandidateRelationships", () => {
   test("supports exact normalized factual synonym evidence without a model call and preserves gloss bytes", async () => {
-    const input = fixture({ factualSynonyms: ["  EXAMINE  ", "scrutinise"] });
     const neverCalledJudge: RelationshipJudge = async () => { throw new Error("judge should not run"); };
 
-    const result = await verifyCandidateRelationships(input, neverCalledJudge);
+    for (const provider of ["wordnet", "dictionaryapi"] as const) {
+      const input = fixture({
+        factualDictionaryEvidence: [synonymEvidence(["  EXAMINE  ", "scrutinise"], { provider })],
+      });
+      const result = await verifyCandidateRelationships(input, neverCalledJudge);
 
-    expect(result.decisions).toHaveLength(1);
-    expect(result.decisions[0]).toMatchObject({
-      coreLemma: "examine",
-      decision: "supported",
-      method: "direct_lexical",
-      reason: null,
-    });
-    expect(result.decisions[0]?.candidateGloss).toBe(candidateGloss);
-    expect(result.decisions[0]?.coreGloss).toBe(coreGloss);
-    expect(result.usage).toEqual({ inputTokens: 0, outputTokens: 0 });
-    expect(result.hasSupportedAnchor).toBe(true);
+      expect(result.decisions).toHaveLength(1);
+      expect(result.decisions[0]).toMatchObject({
+        coreLemma: "examine",
+        decision: "supported",
+        method: "direct_lexical",
+        reason: null,
+      });
+      expect(result.decisions[0]?.candidateGloss).toBe(candidateGloss);
+      expect(result.decisions[0]?.coreGloss).toBe(coreGloss);
+      expect(result.usage).toEqual({ inputTokens: 0, outputTokens: 0 });
+      expect(result.hasSupportedAnchor).toBe(true);
+    }
   });
 
   test("does not treat substrings, stems, or reciprocal connection type alone as direct lexical evidence", async () => {
-    for (const factualSynonyms of [["reexamine"], ["examining"], []]) {
-      const result = await verifyCandidateRelationships(fixture({ factualSynonyms }), null);
+    for (const synonyms of [["reexamine"], ["examining"], []]) {
+      const factualDictionaryEvidence = synonyms.length > 0 ? [synonymEvidence(synonyms)] : [];
+      const result = await verifyCandidateRelationships(fixture({ factualDictionaryEvidence }), null);
+
+      expect(result.decisions[0]).toMatchObject({
+        decision: "ambiguous",
+        method: "unavailable",
+        reason: "judge_unavailable",
+      });
+    }
+  });
+
+  test("rejects mismatched, LLM, unknown, and non-source-bearing synonym provenance", async () => {
+    const typedInput = fixture();
+    if (false) {
+      // @ts-expect-error Relationship verification requires source-bearing dictionary evidence.
+      typedInput.factualDictionaryEvidence = ["examine"];
+    }
+
+    const invalidEvidence = [
+      synonymEvidence(["examine"], { provider: "wordnet", sourceId: "dictionaryapi" }),
+      synonymEvidence(["examine"], { provider: "dictionaryapi", sourceId: "llm" }),
+      synonymEvidence(["examine"], { provider: "wordnet", sourceId: "unknown-provider" }),
+      "examine" as unknown as FactualDictionaryEvidence,
+    ];
+
+    for (const evidence of invalidEvidence) {
+      const result = await verifyCandidateRelationships(fixture({ factualDictionaryEvidence: [evidence] }), null);
 
       expect(result.decisions[0]).toMatchObject({
         decision: "ambiguous",
@@ -156,7 +218,7 @@ describe("verifyCandidateRelationships", () => {
   });
 
   test("does not accept an LLM-only core sense as direct lexical support", async () => {
-    const input = fixture({ factualSynonyms: ["examine"] });
+    const input = fixture({ factualDictionaryEvidence: [synonymEvidence(["examine"])] });
     const core = input.coreRecords[0]!;
     input.coreRecords = [{
       ...core,
@@ -292,6 +354,45 @@ describe("verifyCandidateRelationships", () => {
       method: "unavailable",
       reason: "judge_unavailable",
     });
+  });
+
+  test("settles both conservative reservations when the first judge call throws", async () => {
+    const tokenBudget = new TokenBudget({ maxInputTokens: 100, maxOutputTokens: 100 });
+    let calls = 0;
+
+    const result = await verifyCandidateRelationships(fixture({ tokenBudget }), async () => {
+      calls += 1;
+      throw new Error("first judge call failed after dispatch");
+    });
+
+    expect(result.decisions[0]).toMatchObject({
+      decision: "ambiguous",
+      method: "unavailable",
+      reason: "judge_unavailable",
+    });
+    expect(result.usage).toEqual({ inputTokens: 20, outputTokens: 10 });
+    expect(tokenBudget.remaining()).toEqual({ inputTokens: 80, outputTokens: 90 });
+    expect(calls).toBe(1);
+  });
+
+  test("settles actual first-call usage and conservative second-call usage when the second call throws", async () => {
+    const tokenBudget = new TokenBudget({ maxInputTokens: 100, maxOutputTokens: 100 });
+    let calls = 0;
+
+    const result = await verifyCandidateRelationships(fixture({ tokenBudget }), async (request) => {
+      calls += 1;
+      if (calls === 1) return response("supported", request, { inputTokens: 2, outputTokens: 1 });
+      throw new Error("second judge call failed after dispatch");
+    });
+
+    expect(result.decisions[0]).toMatchObject({
+      decision: "ambiguous",
+      method: "unavailable",
+      reason: "judge_unavailable",
+    });
+    expect(result.usage).toEqual({ inputTokens: 12, outputTokens: 6 });
+    expect(tokenBudget.remaining()).toEqual({ inputTokens: 88, outputTokens: 94 });
+    expect(calls).toBe(2);
   });
 
   test("rejects missing reciprocal edges and missing reciprocal glosses without creating targets", async () => {

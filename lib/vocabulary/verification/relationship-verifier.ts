@@ -2,6 +2,7 @@ import { TokenBudget, type TokenUsage } from "../enrichment/budget";
 import type { VocabularyRecord, VocabularySense } from "../schema";
 import { evidenceForSources, isFactualSourceId, sourceRefsForSense } from "../source-evidence";
 import { RelationshipDecisionSchema } from "./decision-schema";
+import type { FactualDictionaryEvidence } from "./provider-types";
 import type { EligibleFactualSense } from "./sense-verifier";
 import type { ReciprocalCoreAnchor, VerificationReasonCode } from "./types";
 
@@ -43,7 +44,7 @@ export type RelationshipVerificationInput = {
   candidate: VocabularyRecord;
   selectedSense: EligibleFactualSense;
   anchors: readonly ReciprocalCoreAnchor[];
-  factualSynonyms: readonly string[];
+  factualDictionaryEvidence: readonly FactualDictionaryEvidence[];
   coreRecords: readonly VocabularyRecord[];
   tokenBudget: TokenBudget;
   requestId: string;
@@ -86,6 +87,27 @@ function factualSource(sourceId: string): boolean {
   } catch {
     return false;
   }
+}
+
+function hasTrustedSynonymProvenance(value: unknown): value is FactualDictionaryEvidence {
+  if (typeof value !== "object" || value === null) return false;
+  const evidence = value as Partial<FactualDictionaryEvidence>;
+  return (evidence.provider === "wordnet" || evidence.provider === "dictionaryapi")
+    && evidence.source?.sourceId === evidence.provider
+    && Array.isArray(evidence.detail?.synonyms);
+}
+
+function factualSynonymKeys(evidence: readonly FactualDictionaryEvidence[]): Set<string> {
+  const keys = new Set<string>();
+  for (const item of evidence) {
+    if (!hasTrustedSynonymProvenance(item)) continue;
+    for (const synonym of item.detail.synonyms) {
+      if (typeof synonym !== "string") continue;
+      const key = normalizeComparisonKey(synonym);
+      if (key) keys.add(key);
+    }
+  }
+  return keys;
 }
 
 function publishedFactualCoreSenses(core: VocabularyRecord): VocabularySense[] {
@@ -233,7 +255,7 @@ async function verifyAnchor(
     return { decision: decision(anchor, "ambiguous", "unavailable", "no_factual_sense"), usage: ZERO_USAGE };
   }
 
-  const synonymKeys = new Set(input.factualSynonyms.map(normalizeComparisonKey).filter(Boolean));
+  const synonymKeys = factualSynonymKeys(input.factualDictionaryEvidence);
   if (synonymKeys.has(normalizeComparisonKey(anchor.coreLemma))) {
     return { decision: decision(anchor, "supported", "direct_lexical", null), usage: ZERO_USAGE };
   }
