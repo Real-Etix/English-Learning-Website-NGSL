@@ -62,6 +62,25 @@ function senseExternalId(record: VocabularyRecord, detail: WordDetail, sense: Wo
     ?? fallbackExternalId(record, detail, sense);
 }
 
+/**
+ * Returns the canonical ID that a factual dictionary sense will retain after
+ * import. Callers must continue to persist the provider wording unchanged.
+ */
+export function dictionarySenseId(
+  record: VocabularyRecord,
+  detail: WordDetail,
+  sense: WordDetail["senses"][number],
+  sourceId: string,
+): string {
+  return senseIdFor({
+    lemma: record.lemma,
+    sourceId,
+    externalId: senseExternalId(record, detail, sense),
+    partOfSpeech: sense.partOfSpeech || record.partOfSpeech,
+    definition: sense.definition,
+  });
+}
+
 function appendPronunciation(
   pronunciation: VocabularyRecord["pronunciation"],
   value: { ipa: string | null; region: "uk" | "us" | "other"; audioUrl: string | null },
@@ -102,13 +121,7 @@ export function importDictionaryDetail(
     if (!sense.definition.trim()) return;
     const externalId = senseExternalId(record, detail, sense);
     const senseSource = sourceRef(source, externalId, sense.sourceUrl ?? entryUrl);
-    const id = senseIdFor({
-      lemma: record.lemma,
-      sourceId: source.sourceId,
-      externalId,
-      partOfSpeech: sense.partOfSpeech || record.partOfSpeech,
-      definition: sense.definition,
-    });
+    const id = dictionarySenseId(record, detail, sense, source.sourceId);
     if (senses.some((candidate) => candidate.id === id)) return;
     senses = [...senses, {
       id,

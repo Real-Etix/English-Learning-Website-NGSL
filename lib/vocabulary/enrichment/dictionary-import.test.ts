@@ -4,7 +4,8 @@ import type { WordDetail } from "../../content/word-detail";
 import { senseIdFor } from "../sense-id";
 import type { VocabularyRecord } from "../schema";
 import { vocabularyRecordFixture } from "../test-fixtures";
-import { importDictionaryDetail } from "./dictionary-import";
+import { dictionarySenseId, importDictionaryDetail } from "./dictionary-import";
+import { eligibleFactualSenses } from "../verification/sense-verifier";
 
 const curatedSource = {
   sourceId: "curated",
@@ -175,5 +176,33 @@ describe("importDictionaryDetail", () => {
       ...dictionarySource,
       sourceId: "llm",
     })).toThrow("must be factual");
+  });
+
+  it("uses the same fallback canonical ID the verifier predicts before import", () => {
+    const fallbackDetail: WordDetail = {
+      ipa: null,
+      audioUk: null,
+      audioUs: null,
+      audioAny: null,
+      senses: [{
+        partOfSpeech: "noun",
+        definition: "A raised bank beside a river.",
+        example: "The bank held back the river.",
+      }],
+      synonyms: [],
+    };
+    const sense = fallbackDetail.senses[0]!;
+    const expectedId = dictionarySenseId(record(), fallbackDetail, sense, "dictionaryapi");
+    const eligible = eligibleFactualSenses(record(), [{
+      provider: "dictionaryapi",
+      returnedLemma: "bank",
+      requestedPartOfSpeech: "noun",
+      detail: fallbackDetail,
+      source: dictionarySource,
+    }]);
+    const imported = importDictionaryDetail(record(), fallbackDetail, dictionarySource);
+
+    expect(eligible.map((candidate) => candidate.id)).toEqual([expectedId]);
+    expect(imported.record.senses[1]?.id).toBe(expectedId);
   });
 });
