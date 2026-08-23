@@ -116,6 +116,24 @@ describe("verificationCacheKey", () => {
     expect(key).not.toContain("super-secret");
     expect(key).not.toContain("raw prompt");
   });
+
+  test("rejects cache keys with invalid namespaces or digests", async () => {
+    const root = await cacheRoot();
+    const invalidKeys = [
+      `dictionaryapi/${"a".repeat(63)}`,
+      `dictionaryapi/${"A".repeat(64)}`,
+      `dictionaryapi/${"g".repeat(64)}`,
+      `dictionaryapi/${"a".repeat(64)}/extra`,
+      `${"a".repeat(64)}`,
+      `../${"a".repeat(64)}`,
+      `dictionaryapi/not-a-digest.json`,
+    ];
+
+    for (const key of invalidKeys) {
+      await expect(readVerificationCache(root, key, EvidenceSchema)).rejects.toThrow();
+      await expect(writeVerificationCache(root, key, evidence, EvidenceSchema)).rejects.toThrow();
+    }
+  });
 });
 
 describe("verification cache I/O", () => {
@@ -188,5 +206,16 @@ describe("verification cache I/O", () => {
     expect(stored).toBe(JSON.stringify(evidence));
     expect(stored).not.toContain("authorization");
     expect(stored).not.toContain("secret");
+  });
+
+  test("rejects a full key whose namespace does not match the wrapper namespace", async () => {
+    const root = await cacheRoot();
+    const cache = createVerificationCache(root);
+    const key = `tatoeba/${"a".repeat(64)}`;
+
+    await expect(cache.set("dictionaryapi", key, evidence, EvidenceSchema))
+      .rejects.toThrow("namespace");
+    await expect(cache.get("dictionaryapi", key, EvidenceSchema))
+      .rejects.toThrow("namespace");
   });
 });
