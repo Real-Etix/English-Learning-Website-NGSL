@@ -56,6 +56,38 @@ describe("lookupWordNetEvidence", () => {
     });
   });
 
+  test("binds a synonym lookup to the requested lemma and ignores unrelated synsets", async () => {
+    const evidence = await lookupWordNetEvidence("manifest", "verb", {
+      lookup: fakeWordNet({
+        verb: [{
+          synsetOffset: "12345",
+          pos: "v",
+          lemma: "attest",
+          synonyms: ["attest", "certify", "manifest"],
+          def: "provide evidence for",
+          exp: ["The results manifest a clear improvement."],
+        }, {
+          synsetOffset: "67890",
+          pos: "v",
+          lemma: "unrelated",
+          synonyms: ["unrelated", "detach"],
+          def: "not evidence for the requested lemma",
+          exp: [],
+        }],
+      }),
+      retrievedAt: null,
+    });
+
+    expect(evidence).toMatchObject({
+      returnedLemma: "manifest",
+      detail: {
+        sourceEntryId: "verb:12345",
+        senses: [{ definition: "provide evidence for" }],
+      },
+    });
+    expect(evidence?.detail.senses).toHaveLength(1);
+  });
+
   test("rejects noun-only evidence for a verb candidate", async () => {
     const evidence = await lookupWordNetEvidence("manifest", "verb", {
       lookup: fakeWordNet({

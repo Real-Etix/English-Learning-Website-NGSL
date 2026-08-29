@@ -40,6 +40,15 @@ function normalizedLemma(value: string): string {
   return value.replace(/_/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function lemmaKey(value: string): string {
+  return normalizedLemma(value).toLocaleLowerCase("en-US");
+}
+
+function synsetContainsLemma(synset: WordNetSynset, lemma: string): boolean {
+  const requested = lemmaKey(lemma);
+  return [synset.lemma, ...synset.synonyms].some((value) => lemmaKey(value) === requested);
+}
+
 function hasCompleteCandidateToken(text: string, candidate: string): boolean {
   if (!candidate) return false;
   const escaped = candidate.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -66,7 +75,8 @@ export async function lookupWordNetEvidence(
   const synsets = await options.lookup[lookupMethod[normalizedPartOfSpeech]](lemma);
   if (!Array.isArray(synsets) || synsets.length === 0) return null;
   const exactPartOfSpeechSynsets = synsets.filter((synset) =>
-    wordNetPartOfSpeech[normalizedPartOfSpeech].includes(synset.pos),
+    wordNetPartOfSpeech[normalizedPartOfSpeech].includes(synset.pos)
+    && synsetContainsLemma(synset, lemma),
   );
   if (exactPartOfSpeechSynsets.length === 0) return null;
 
@@ -97,7 +107,7 @@ export async function lookupWordNetEvidence(
 
   return {
     provider: "wordnet",
-    returnedLemma: normalizedLemma(exactPartOfSpeechSynsets[0]!.lemma),
+    returnedLemma: candidate,
     requestedPartOfSpeech: partOfSpeech,
     detail,
     source: {

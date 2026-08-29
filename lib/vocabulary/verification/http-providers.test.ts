@@ -144,7 +144,7 @@ describe("fetchTatoebaExamples", () => {
     });
 
     expect(calls).toEqual([
-      "https://api.tatoeba.org/v1/sentences?lang=eng&q=obtain",
+      "https://api.tatoeba.org/v1/sentences?lang=eng&q=obtain&sort=relevance",
     ]);
     expect(result).toEqual([{
       id: "tatoeba:8842",

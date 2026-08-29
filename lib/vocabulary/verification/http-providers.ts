@@ -272,7 +272,7 @@ export async function fetchTatoebaExamples(
   forms: string[],
   options: HttpProviderOptions = {},
 ): Promise<SourcedExampleEvidence[]> {
-  const requestUrl = `https://api.tatoeba.org/v1/sentences?lang=${encodeURIComponent("eng")}&q=${encodeURIComponent(lemma)}`;
+  const requestUrl = `https://api.tatoeba.org/v1/sentences?lang=${encodeURIComponent("eng")}&q=${encodeURIComponent(lemma)}&sort=relevance`;
   const { fetch: fetchImplementation, now } = providerOptions(options);
   const response = await fetchResponse("tatoeba", requestUrl, fetchImplementation);
   if (response.status === 404) return [];
