@@ -339,6 +339,51 @@ describe("runVerificationBatch", () => {
     expect(buildCalls).toBe(0);
   });
 
+  test("retries a pending graph build after canonical persistence already succeeded", async () => {
+    let storedRecords = recordsFor(["alpha"]);
+    const cache = new MemoryCache();
+    const dryRun = await runVerificationBatch(
+      { ...defaultOptions, limit: 1 },
+      dependencies(storedRecords, { cache }),
+    );
+    let persistCalls = 0;
+    let buildCalls = 0;
+    const deps = () => dependencies(storedRecords, {
+      cache,
+      persist: async (updates) => {
+        persistCalls += 1;
+        const byLemma = new Map(storedRecords.map((record) => [record.lemma, record]));
+        for (const update of updates) byLemma.set(update.lemma, update);
+        storedRecords = [...byLemma.values()];
+        return ["01"];
+      },
+      buildGraphs: async () => {
+        buildCalls += 1;
+        if (buildCalls === 1) throw new Error("graph build failed");
+      },
+    });
+
+    await expect(runVerificationBatch({
+      ...defaultOptions,
+      limit: 1,
+      write: true,
+      batch: dryRun.batch,
+    }, deps())).rejects.toThrow("graph build failed");
+    expect(persistCalls).toBe(1);
+
+    const recovered = await runVerificationBatch({
+      ...defaultOptions,
+      limit: 1,
+      write: true,
+      batch: dryRun.batch,
+      rebuildGraphs: true,
+    }, deps());
+
+    expect(recovered.report.changedShards).toEqual([]);
+    expect(persistCalls).toBe(1);
+    expect(buildCalls).toBe(2);
+  });
+
   test("rejects a pinned batch after a later manual relationship decision", async () => {
     let storedRecords = recordsFor(["alpha", "beta"]);
     const cache = new MemoryCache();

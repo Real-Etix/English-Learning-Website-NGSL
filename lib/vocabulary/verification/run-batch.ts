@@ -66,6 +66,7 @@ export type VerificationRunOptions = {
   maxInputTokens: number;
   maxOutputTokens: number;
   write: boolean;
+  rebuildGraphs?: boolean;
   signal?: AbortSignal;
   batch?: readonly VerificationBatchEntry[];
 };
@@ -257,6 +258,9 @@ function validateOptions(options: VerificationRunOptions): void {
   }
   if (!Number.isInteger(options.maxOutputTokens) || options.maxOutputTokens < 0) {
     throw new Error("maxOutputTokens must be a non-negative integer");
+  }
+  if (options.rebuildGraphs && !options.write) {
+    throw new Error("rebuildGraphs requires write mode");
   }
 }
 
@@ -864,7 +868,9 @@ export async function runVerificationBatch(
   if (options.write && mutation.updates.length > 0) {
     throwIfAborted(options.signal);
     changedShards = normalizeChangedShards(await dependencies.persist(mutation.updates));
-    if (changedShards.length > 0) await dependencies.buildGraphs();
+  }
+  if (options.write && (changedShards.length > 0 || options.rebuildGraphs)) {
+    await dependencies.buildGraphs();
     throwIfAborted(options.signal);
   }
 

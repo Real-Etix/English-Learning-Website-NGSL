@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { mkdtemp, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
@@ -9,8 +10,10 @@ import type { VocabularyRecord } from "../lib/vocabulary/schema";
 import { vocabularyRecordFixture } from "../lib/vocabulary/test-fixtures";
 import {
   createLlmJudges,
+  GraphBuildExitError,
   parseVerificationArgs,
   runVerificationCli,
+  verificationExitCode,
   type VerificationCliRuntime,
 } from "./verify-advanced-vocabulary";
 
@@ -163,6 +166,12 @@ async function vocabularySnapshot(root: string): Promise<Record<string, string>>
   return Object.fromEntries(await Promise.all(files.map(async (file) => [file, await readFile(path.join(root, file), "utf8")]))) as Record<string, string>;
 }
 
+async function fixtureCacheRoot(cache: string, fixture = fixturePath): Promise<string> {
+  const normalized = JSON.stringify(JSON.parse(await readFile(fixture, "utf8")) as unknown);
+  const digest = createHash("sha256").update(normalized, "utf8").digest("hex");
+  return path.join(cache, "fixture", digest);
+}
+
 describe("verify advanced vocabulary CLI", () => {
   test("parses bounded CLI defaults", () => {
     expect(parseVerificationArgs([])).toMatchObject({
@@ -178,6 +187,12 @@ describe("verify advanced vocabulary CLI", () => {
     );
     expect(() => parseVerificationArgs(["--limit="])).toThrow("--limit requires a value");
     expect(() => parseVerificationArgs(["--cache="])).toThrow("--cache requires a value");
+  });
+
+  test("propagates the graph-build child exit code", () => {
+    expect(verificationExitCode(new GraphBuildExitError(7))).toBe(7);
+    expect(verificationExitCode(new GraphBuildExitError(null))).toBe(1);
+    expect(verificationExitCode(new Error("other failure"))).toBe(1);
   });
 
   test("keeps model decisions unavailable without a key or a valid model result", async () => {
@@ -217,6 +232,63 @@ describe("verify advanced vocabulary CLI", () => {
     expect(requestIds[0]).toBe(requestIds[1]);
   });
 
+  test("gives live judges exact finite JSON contracts and accepts contract-shaped decisions", async () => {
+    const systems: string[] = [];
+    const judges = createLlmJudges(parseVerificationArgs([]), {
+      available: true,
+      model: "test-model",
+      complete: async (system, user, _model, _attempts, options) => {
+        systems.push(system);
+        const request = JSON.parse(user) as Record<string, unknown>;
+        const value = "candidate" in request
+          ? {
+              decision: "selected",
+              senseId: (request.senses as Array<{ id: string }>)[0]!.id,
+              exampleId: (request.examples as Array<{ id: string }>)[0]!.id,
+            }
+          : {
+              decision: "supported",
+              candidateSenseId: request.candidateSenseId,
+              coreLemma: request.coreLemma,
+            };
+        return {
+          value,
+          usage: { inputTokens: 7, outputTokens: 3 },
+          requestId: options.requestId!,
+        };
+      },
+    });
+
+    await expect(judges.judgeSense!({
+      candidate: { lemma: "test-word", partOfSpeech: "verb", forms: ["test-words"] },
+      senses: [{ id: "sense-1", partOfSpeech: "verb", definition: "To test." }],
+      examples: [{ id: "example-1", text: "They test the result." }],
+    })).resolves.toMatchObject({
+      decision: { decision: "selected", senseId: "sense-1", exampleId: "example-1" },
+    });
+    await expect(judges.judgeRelationship!({
+      candidateSenseId: "sense-1",
+      coreLemma: "core-word",
+      relationship: {
+        candidateType: "builds_on",
+        coreType: "advanced_form",
+        candidateGloss: "A precise gloss.",
+        coreGloss: "The reciprocal gloss.",
+      },
+      senses: [
+        { role: "candidate", lemma: "test-word", id: "sense-1", partOfSpeech: "verb", definition: "To test." },
+        { role: "core", lemma: "core-word", id: "core-sense", partOfSpeech: "verb", definition: "To inspect." },
+      ],
+    })).resolves.toMatchObject({
+      decision: { decision: "supported", candidateSenseId: "sense-1", coreLemma: "core-word" },
+    });
+
+    expect(systems[0]).toContain('"decision":"selected"');
+    expect(systems[0]).toContain('"exampleId"');
+    expect(systems[1]).toContain('"candidateSenseId"');
+    expect(systems[1]).toContain('"coreLemma"');
+  });
+
   test("keeps a fixture dry-run side-effect free and pins its successful batch", async () => {
     const value = await setup();
     try {
@@ -225,7 +297,7 @@ describe("verify advanced vocabulary CLI", () => {
 
       expect(result.report).toMatchObject({ mode: "dry-run", selected: 7, attempted: 7 });
       expect(await vocabularySnapshot(value.vocabularyRoot)).toEqual(before);
-      expect(await readFile(path.join(value.cache, "fixture", "active-batch.json"), "utf8"))
+      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch.json"), "utf8"))
         .toContain("dictionary-direct");
       expect(value.graphBuilds()).toBe(0);
     } finally {
@@ -358,7 +430,41 @@ describe("verify advanced vocabulary CLI", () => {
     }
   });
 
-  test("rejects replay when the pinned fixture identity changes", async () => {
+  test("recovers an unfinished graph build after canonical persistence", async () => {
+    const value = await setup();
+    let buildAttempts = 0;
+    const runtime: VerificationCliRuntime = {
+      ...value.runtime,
+      buildGraphs: async () => {
+        buildAttempts += 1;
+        if (buildAttempts === 1) throw new Error("graph build failed");
+      },
+    };
+    try {
+      await runVerificationCli(args(value.cache, value.report), runtime);
+      await expect(runVerificationCli(
+        args(value.cache, value.report, fixturePath, true),
+        runtime,
+      )).rejects.toThrow("graph build failed");
+
+      const recovered = await runVerificationCli(
+        args(value.cache, value.report, fixturePath, true),
+        runtime,
+      );
+      const repeated = await runVerificationCli(
+        args(value.cache, value.report, fixturePath, true),
+        runtime,
+      );
+
+      expect(recovered.report.changedShards).toEqual([]);
+      expect(repeated.report.changedShards).toEqual([]);
+      expect(buildAttempts).toBe(2);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("rejects replay when the pinned configuration changes", async () => {
     const value = await setup();
     const mutableFixture = path.join(value.directory, "mutable-fixture.json");
     try {
@@ -369,15 +475,40 @@ describe("verify advanced vocabulary CLI", () => {
       await runVerificationCli(args(value.cache, value.report, mutableFixture), value.runtime);
       const before = await vocabularySnapshot(value.vocabularyRoot);
 
-      original.relationship["model-relationship|core-model-relationship"]!.decision.decision = "unsupported";
-      await writeFile(mutableFixture, JSON.stringify(original), "utf8");
-
       await expect(runVerificationCli(
-        args(value.cache, value.report, mutableFixture, true),
+        [...args(value.cache, value.report, mutableFixture, true), "--concurrency=2"],
         value.runtime,
       )).rejects.toThrow(/active verification batch configuration changed/i);
       expect(await vocabularySnapshot(value.vocabularyRoot)).toEqual(before);
       expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("namespaces fixture cache state by the fixture digest", async () => {
+    const value = await setup();
+    const changedFixture = path.join(value.directory, "changed-fixture.json");
+    try {
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        dictionaryapi: Record<string, unknown>;
+      };
+      await runVerificationCli(args(value.cache, value.report), value.runtime);
+      delete fixture.dictionaryapi["dictionary-direct"];
+      await writeFile(changedFixture, JSON.stringify(fixture), "utf8");
+
+      const changed = await runVerificationCli(
+        args(value.cache, value.report, changedFixture),
+        value.runtime,
+      );
+      expect(changed.report.entries).toContainEqual({
+        lemma: "dictionary-direct",
+        reason: "provider_failed",
+      });
+      expect((await readdir(path.join(value.cache, "fixture"))).sort()).toEqual([
+        path.basename(await fixtureCacheRoot(value.cache, changedFixture)),
+        path.basename(await fixtureCacheRoot(value.cache)),
+      ].sort());
     } finally {
       await rm(value.directory, { recursive: true, force: true });
     }
@@ -409,7 +540,7 @@ describe("verify advanced vocabulary CLI", () => {
       )).rejects.toBeInstanceOf(Error);
 
       await expect(readFile(
-        path.join(value.cache, "fixture", "active-batch.json"),
+        path.join(await fixtureCacheRoot(value.cache), "active-batch.json"),
         "utf8",
       )).rejects.toMatchObject({ code: "ENOENT" });
       expect(value.graphBuilds()).toBe(0);
@@ -428,7 +559,7 @@ describe("verify advanced vocabulary CLI", () => {
 
       expect(settled.filter((result) => result.status === "fulfilled")).toHaveLength(1);
       expect(settled.filter((result) => result.status === "rejected")).toHaveLength(1);
-      expect(await readFile(path.join(value.cache, "fixture", "active-batch.json"), "utf8"))
+      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch.json"), "utf8"))
         .toContain("dictionary-direct");
     } finally {
       await rm(value.directory, { recursive: true, force: true });
@@ -449,7 +580,7 @@ describe("verify advanced vocabulary CLI", () => {
 
       expect(live.report.entries).toEqual([{ lemma: "live-only", reason: "provider_failed" }]);
       expect(await readFile(path.join(value.cache, "active-batch.json"), "utf8")).toContain("live-only");
-      expect(await readFile(path.join(value.cache, "fixture", "active-batch.json"), "utf8"))
+      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch.json"), "utf8"))
         .toContain("dictionary-direct");
     } finally {
       await rm(value.directory, { recursive: true, force: true });

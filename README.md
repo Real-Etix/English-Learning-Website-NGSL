@@ -157,12 +157,14 @@ invocation atomically saves an active batch inside the selected cache root. Dry
 runs and writes thereafter replay that exact batch, so a write cannot advance to
 the next hidden words. To begin a later batch, delete only
 `.cache/vocabulary-verification/active-batch.json`; retain the provider/model cache.
-Offline fixture state uses the isolated `fixture/` subdirectory, so it cannot pin
-synthetic fixture words for a later live run.
+Offline fixture state uses a digest-named directory below `fixture/`, so one fixture
+cannot reuse another fixture's evidence or pin synthetic words for a later live run.
 `--write` is rejected until a successful dry-run has created the live active-batch
 manifest. That manifest pins the limits, concurrency, model/endpoint identity,
 fixture digest (when used), and expected post-verification record hashes. A changed
 configuration, changed fixture, or recomputed outcome fails closed before persistence.
+If canonical persistence succeeds but graph generation fails, rerun the identical
+`--write` command; the manifest keeps the graph build pending until it completes.
 
 ```bash
 # Offline, zero-cost integration check

@@ -152,7 +152,9 @@ const ActiveBatchManifestSchema = z.object({
   version: z.literal(2),
   identity: VerificationIdentitySchema,
   batch: z.array(VerificationBatchEntrySchema),
+  graphStatus: z.enum(["ready", "pending", "complete"]),
 }).strict();
+type ActiveBatchManifest = z.infer<typeof ActiveBatchManifestSchema>;
 
 export type VerificationCliOptions = {
   limit: number;
@@ -304,7 +306,7 @@ function verificationIdentity(
 }
 
 async function readActiveBatch(cacheRoot: string, identity: VerificationIdentity) {
-  let manifest: z.infer<typeof ActiveBatchManifestSchema>;
+  let manifest: ActiveBatchManifest;
   try {
     const value = JSON.parse(await readFile(path.join(cacheRoot, ACTIVE_BATCH_FILENAME), "utf8")) as unknown;
     manifest = ActiveBatchManifestSchema.parse(value);
@@ -315,7 +317,7 @@ async function readActiveBatch(cacheRoot: string, identity: VerificationIdentity
   if (JSON.stringify(manifest.identity) !== JSON.stringify(identity)) {
     throw new Error("active verification batch configuration changed");
   }
-  return manifest.batch;
+  return manifest;
 }
 
 async function writeAtomically(filePath: string, value: string): Promise<void> {
@@ -347,7 +349,12 @@ async function writeActiveBatch(
   identity: VerificationIdentity,
   batch: VerificationRunResult["batch"],
 ): Promise<void> {
-  const manifest = ActiveBatchManifestSchema.parse({ version: 2, identity, batch });
+  const manifest = ActiveBatchManifestSchema.parse({
+    version: 2,
+    identity,
+    batch,
+    graphStatus: "ready",
+  });
   try {
     await createAtomically(path.join(cacheRoot, ACTIVE_BATCH_FILENAME), `${JSON.stringify(manifest)}\n`);
   } catch (error) {
@@ -356,6 +363,19 @@ async function writeActiveBatch(
     }
     throw error;
   }
+}
+
+async function updateActiveBatchStatus(
+  cacheRoot: string,
+  manifest: ActiveBatchManifest,
+  graphStatus: ActiveBatchManifest["graphStatus"],
+): Promise<ActiveBatchManifest> {
+  const updated = ActiveBatchManifestSchema.parse({ ...manifest, graphStatus });
+  await writeAtomically(
+    path.join(cacheRoot, ACTIVE_BATCH_FILENAME),
+    `${JSON.stringify(updated)}\n`,
+  );
+  return updated;
 }
 
 async function writeReport(filePath: string, result: VerificationRunResult): Promise<void> {
@@ -398,6 +418,22 @@ export type LlmJudgeDependencies = {
   complete: CompleteJsonDecision;
 };
 
+const SENSE_JUDGE_SYSTEM = [
+  "Choose only IDs supplied in the request; never author or rewrite learner content.",
+  "Return exactly one of these JSON objects with no additional fields or prose:",
+  '{"decision":"selected","senseId":"<one supplied senses[].id>","exampleId":"<one supplied examples[].id>"}',
+  '{"decision":"selected","senseId":"<one supplied senses[].id>","exampleId":null}',
+  '{"decision":"ambiguous","senseId":null,"exampleId":null}',
+].join("\n");
+
+const RELATIONSHIP_JUDGE_SYSTEM = [
+  "Assess only the supplied candidate sense, core senses, and reciprocal relationship.",
+  "Return exactly one of these JSON objects with no additional fields or prose:",
+  '{"decision":"supported","candidateSenseId":"<exact supplied candidateSenseId>","coreLemma":"<exact supplied coreLemma>"}',
+  '{"decision":"unsupported","candidateSenseId":"<exact supplied candidateSenseId>","coreLemma":"<exact supplied coreLemma>"}',
+  '{"decision":"ambiguous","candidateSenseId":"<exact supplied candidateSenseId>","coreLemma":"<exact supplied coreLemma>"}',
+].join("\n");
+
 export function createLlmJudges(
   options: VerificationCliOptions,
   dependencies: LlmJudgeDependencies = {
@@ -416,7 +452,7 @@ export function createLlmJudges(
   const judgeSense: SenseJudge = async (request: SenseJudgeRequest) => {
     const usage = fallbackUsage(options);
     const result = await dependencies.complete(
-      "Select only one supplied sense and example, or return the allowed ambiguous decision as JSON.",
+      SENSE_JUDGE_SYSTEM,
       JSON.stringify(request),
       dependencies.model,
       2,
@@ -434,7 +470,7 @@ export function createLlmJudges(
   const judgeRelationship: RelationshipJudge = async (request: RelationshipJudgeRequest) => {
     const usage = fallbackUsage(options);
     const result = await dependencies.complete(
-      "Assess only the supplied candidate sense, core senses, and reciprocal relationship. Return the decision JSON schema.",
+      RELATIONSHIP_JUDGE_SYSTEM,
       JSON.stringify(request),
       dependencies.model,
       2,
@@ -461,12 +497,19 @@ export async function runVerificationCli(
   const reportPath = fromWorkingDirectory(options.report);
   const fixture = options.fixture === null ? null : await loadFixture(fromWorkingDirectory(options.fixture));
   const requestedCacheRoot = fromWorkingDirectory(options.cache);
-  const cacheRoot = fixture === null ? requestedCacheRoot : path.join(requestedCacheRoot, "fixture");
   const identity = verificationIdentity(options, fixture);
-  const batch = await readActiveBatch(cacheRoot, identity);
-  if (options.write && batch === null) {
+  const cacheRoot = fixture === null
+    ? requestedCacheRoot
+    : path.join(requestedCacheRoot, "fixture", identity.fixtureHash!.slice("sha256:".length));
+  let manifest = await readActiveBatch(cacheRoot, identity);
+  if (options.write && manifest === null) {
     throw new Error("--write requires a successful dry-run that pins the active batch");
   }
+  const retryGraphBuild = options.write && manifest?.graphStatus === "pending";
+  if (options.write && manifest) {
+    manifest = await updateActiveBatchStatus(cacheRoot, manifest, "pending");
+  }
+  const batch = manifest?.batch ?? null;
   const repository = openNdjsonRepository(runtime.vocabularyRoot);
   const estimatedSenseUsage = fixture
     ? fixtureUsage(fixture.sense)
@@ -482,6 +525,7 @@ export async function runVerificationCli(
     maxInputTokens: options.maxInputTokens,
     maxOutputTokens: options.maxOutputTokens,
     write: options.write,
+    ...(retryGraphBuild ? { rebuildGraphs: true } : {}),
     ...(batch === null ? {} : { batch }),
   }, {
     loadRecords: async () => {
@@ -508,6 +552,9 @@ export async function runVerificationCli(
     buildGraphs: runtime.buildGraphs,
   });
 
+  if (options.write && manifest) {
+    manifest = await updateActiveBatchStatus(cacheRoot, manifest, "complete");
+  }
   await writeReport(reportPath, result);
   if (batch === null) await writeActiveBatch(cacheRoot, identity, result.batch);
   return result;
@@ -517,8 +564,23 @@ function buildGraphs(): Promise<void> {
   return new Promise((resolve, reject) => {
     const child = spawn("npm", ["run", "build:graphs"], { cwd: process.cwd(), stdio: "inherit" });
     child.once("error", reject);
-    child.once("exit", (code) => code === 0 ? resolve() : reject(new Error(`build:graphs exited with code ${code ?? "unknown"}`)));
+    child.once("exit", (code) => code === 0 ? resolve() : reject(new GraphBuildExitError(code)));
   });
+}
+
+export class GraphBuildExitError extends Error {
+  readonly exitCode: number;
+
+  constructor(code: number | null) {
+    const exitCode = typeof code === "number" && code > 0 ? code : 1;
+    super(`build:graphs exited with code ${code ?? "unknown"}`);
+    this.name = "GraphBuildExitError";
+    this.exitCode = exitCode;
+  }
+}
+
+export function verificationExitCode(error: unknown): number {
+  return error instanceof GraphBuildExitError ? error.exitCode : 1;
 }
 
 function productionRuntime(options: VerificationCliOptions): VerificationCliRuntime {
@@ -547,8 +609,8 @@ async function main(): Promise<void> {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  void main().catch(() => {
+  void main().catch((error: unknown) => {
     console.error("Vocabulary verification failed.");
-    process.exitCode = 1;
+    process.exitCode = verificationExitCode(error);
   });
 }
