@@ -1,0 +1,907 @@
+{
+  "version": 1,
+  "wordnet": {
+    "ambiguous-sense": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "ambiguous-sense",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "verb:100004",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To consider one possible meaning.",
+              "example": "They ambiguous-sense the first interpretation.",
+              "sourceEntryId": "verb:100004",
+              "sourceSenseId": "verb:100004"
+            },
+            {
+              "partOfSpeech": "verb",
+              "definition": "To consider a different possible meaning.",
+              "example": "They ambiguous-sense the second interpretation.",
+              "sourceEntryId": "verb:100005",
+              "sourceSenseId": "verb:100005"
+            }
+          ],
+          "synonyms": [
+            "core-ambiguous-sense"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:0b27059729bc5baefca46c67356c973b887e5fa0c8a714432e29900e39dbe983"
+        }
+      }
+    },
+    "dictionary-direct": {
+      "value": null
+    },
+    "model-relationship": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "model-relationship",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "verb:100006",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To examine a relationship that needs semantic judgment.",
+              "example": "They model-relationship the two ideas carefully.",
+              "sourceEntryId": "verb:100006",
+              "sourceSenseId": "verb:100006"
+            }
+          ],
+          "synonyms": [
+            "examine"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:6bac2423abdc5843f3036a9a932c3166dad2f6cba27a28797e3b9b157c2c3d21"
+        }
+      }
+    },
+    "provider-failure": {
+      "error": "provider_failed"
+    },
+    "tatoeba-grounded": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "tatoeba-grounded",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "verb:100003",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To ground a decision in clear evidence.",
+              "example": null,
+              "sourceEntryId": "verb:100003",
+              "sourceSenseId": "verb:100003"
+            }
+          ],
+          "synonyms": [
+            "core-tatoeba-grounded"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:663d6b6261d89121f6cc95c9876205b556dcf1c51d51435d6c61074384fcbb59"
+        }
+      }
+    },
+    "unsupported-relationship": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "unsupported-relationship",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "verb:100007",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To perform an action unrelated to the proposed core word.",
+              "example": "They unsupported-relationship the result carefully.",
+              "sourceEntryId": "verb:100007",
+              "sourceSenseId": "verb:100007"
+            }
+          ],
+          "synonyms": [
+            "perform"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:b65b39b4feae76715d3ea4ed5ce813f6e73bc363d8be2e0d44279dd706d09ddd"
+        }
+      }
+    },
+    "wordnet-direct": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "wordnet-direct",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "verb:100002",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To perform a direct WordNet-backed action.",
+              "example": "They wordnet-direct the result carefully.",
+              "sourceEntryId": "verb:100002",
+              "sourceSenseId": "verb:100002"
+            }
+          ],
+          "synonyms": [
+            "core-wordnet-direct"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:09d4f8b6805dc687a78cf036f9358b814be6288111cb98cb1bb31513dfef8340"
+        }
+      }
+    },
+    "affliction": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "affliction",
+        "requestedPartOfSpeech": "noun",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "noun:fixture:affliction:1",
+          "senses": [
+            {
+              "partOfSpeech": "noun",
+              "definition": "A condition that causes pain or suffering.",
+              "example": "The affliction caused persistent pain.",
+              "sourceEntryId": "noun:fixture:affliction:1",
+              "sourceSenseId": "noun:fixture:affliction:1"
+            },
+            {
+              "partOfSpeech": "noun",
+              "definition": "A source of severe distress or hardship.",
+              "example": "Isolation became a lasting affliction.",
+              "sourceEntryId": "noun:fixture:affliction:2",
+              "sourceSenseId": "noun:fixture:affliction:2"
+            }
+          ],
+          "synonyms": [
+            "disease"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:5b01d8ef29be2d7b5d79f98bb2abc393c3ad4623f82b8d298cc06246b266763c"
+        }
+      }
+    },
+    "amalgamate": {
+      "value": null
+    },
+    "amplify": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "amplify",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "verb:fixture:amplify:1",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To increase the strength, amount, or effect of something.",
+              "example": "The speakers amplify the sound.",
+              "sourceEntryId": "verb:fixture:amplify:1",
+              "sourceSenseId": "verb:fixture:amplify:1"
+            }
+          ],
+          "synonyms": [
+            "expand"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:67974379708390cb9f918d2603c01552df32e9b305159df6ff387e61659eca1a"
+        }
+      }
+    },
+    "apparatus": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "apparatus",
+        "requestedPartOfSpeech": "noun",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "noun:fixture:apparatus:1",
+          "senses": [
+            {
+              "partOfSpeech": "noun",
+              "definition": "A set of equipment designed for a particular purpose.",
+              "example": null,
+              "sourceEntryId": "noun:fixture:apparatus:1",
+              "sourceSenseId": "noun:fixture:apparatus:1"
+            }
+          ],
+          "synonyms": [
+            "equipment"
+          ]
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:175022e8fe66b27c47a110eabcd7bd7f4379b94827d70cc07478537aec31a15e"
+        }
+      }
+    },
+    "apprehension": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "apprehension",
+        "requestedPartOfSpeech": "noun",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "noun:fixture:apprehension:1",
+          "senses": [
+            {
+              "partOfSpeech": "noun",
+              "definition": "Anxiety or fear that something unpleasant may happen.",
+              "example": "She felt apprehension before the interview.",
+              "sourceEntryId": "noun:fixture:apprehension:1",
+              "sourceSenseId": "noun:fixture:apprehension:1"
+            }
+          ],
+          "synonyms": []
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:0d251010fa27d411005ca5d04d44bd191381486b00521fba1712707602529dbf"
+        }
+      }
+    },
+    "aptitude": {
+      "value": {
+        "provider": "wordnet",
+        "returnedLemma": "aptitude",
+        "requestedPartOfSpeech": "noun",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "noun:fixture:aptitude:1",
+          "senses": [
+            {
+              "partOfSpeech": "noun",
+              "definition": "A natural ability to learn or perform a particular kind of work.",
+              "example": "She has an aptitude for mathematics.",
+              "sourceEntryId": "noun:fixture:aptitude:1",
+              "sourceSenseId": "noun:fixture:aptitude:1"
+            }
+          ],
+          "synonyms": []
+        },
+        "source": {
+          "sourceId": "wordnet",
+          "url": null,
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:3a93a7542c1357b2e0eac24172d77681187ea4f341d39500de71e5ab50c53814"
+        }
+      }
+    },
+    "augment": {
+      "error": "provider_failed"
+    },
+    "augmentation": {
+      "error": "provider_failed"
+    },
+    "chronicle": {
+      "error": "provider_failed"
+    },
+    "conjecture": {
+      "error": "provider_failed"
+    },
+    "contention": {
+      "error": "provider_failed"
+    },
+    "depiction": {
+      "error": "provider_failed"
+    },
+    "discern": {
+      "error": "provider_failed"
+    },
+    "discernment": {
+      "error": "provider_failed"
+    },
+    "endeavor": {
+      "error": "provider_failed"
+    },
+    "exemplar": {
+      "error": "provider_failed"
+    },
+    "impetus": {
+      "error": "provider_failed"
+    },
+    "inception": {
+      "error": "provider_failed"
+    },
+    "manifest": {
+      "error": "provider_failed"
+    },
+    "orb": {
+      "error": "provider_failed"
+    },
+    "procure": {
+      "error": "provider_failed"
+    },
+    "regimen": {
+      "error": "provider_failed"
+    },
+    "scrutinize": {
+      "error": "provider_failed"
+    },
+    "traverse": {
+      "error": "provider_failed"
+    },
+    "utterly": {
+      "error": "provider_failed"
+    }
+  },
+  "dictionaryapi": {
+    "ambiguous-sense": {
+      "value": null
+    },
+    "dictionary-direct": {
+      "value": {
+        "provider": "dictionaryapi",
+        "returnedLemma": "dictionary-direct",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "dictionary-direct",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To perform a direct dictionary-backed action.",
+              "example": "They dictionary-direct the result carefully.",
+              "sourceEntryId": "dictionary-direct"
+            }
+          ],
+          "synonyms": [
+            "core-dictionary-direct"
+          ]
+        },
+        "source": {
+          "sourceId": "dictionaryapi",
+          "url": "https://api.dictionaryapi.dev/api/v2/entries/en/dictionary-direct",
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:0790b5f3f6f342ab637990bad6de0319c3d4393e2b78deb6f77969c4aed04aca"
+        }
+      }
+    },
+    "model-relationship": {
+      "value": null
+    },
+    "provider-failure": {
+      "error": "provider_failed"
+    },
+    "tatoeba-grounded": {
+      "value": null
+    },
+    "unsupported-relationship": {
+      "value": null
+    },
+    "wordnet-direct": {
+      "value": null
+    },
+    "affliction": {
+      "value": null
+    },
+    "amalgamate": {
+      "value": {
+        "provider": "dictionaryapi",
+        "returnedLemma": "amalgamate",
+        "requestedPartOfSpeech": "verb",
+        "detail": {
+          "ipa": null,
+          "audioUk": null,
+          "audioUs": null,
+          "audioAny": null,
+          "sourceEntryId": "amalgamate",
+          "senses": [
+            {
+              "partOfSpeech": "verb",
+              "definition": "To combine separate things into one whole.",
+              "example": "The two departments will amalgamate next year.",
+              "sourceEntryId": "amalgamate"
+            }
+          ],
+          "synonyms": [
+            "merge"
+          ]
+        },
+        "source": {
+          "sourceId": "dictionaryapi",
+          "url": "https://api.dictionaryapi.dev/api/v2/entries/en/amalgamate",
+          "retrievedAt": "2026-08-29T00:00:00.000Z",
+          "contentHash": "sha256:78513d9dff0443ab5fdc3595383ffe7b088cfe4096c5cac48678716ce4ad5ce9"
+        }
+      }
+    },
+    "amplify": {
+      "value": null
+    },
+    "apparatus": {
+      "value": null
+    },
+    "apprehension": {
+      "value": null
+    },
+    "aptitude": {
+      "value": null
+    },
+    "augment": {
+      "error": "provider_failed"
+    },
+    "augmentation": {
+      "error": "provider_failed"
+    },
+    "chronicle": {
+      "error": "provider_failed"
+    },
+    "conjecture": {
+      "error": "provider_failed"
+    },
+    "contention": {
+      "error": "provider_failed"
+    },
+    "depiction": {
+      "error": "provider_failed"
+    },
+    "discern": {
+      "error": "provider_failed"
+    },
+    "discernment": {
+      "error": "provider_failed"
+    },
+    "endeavor": {
+      "error": "provider_failed"
+    },
+    "exemplar": {
+      "error": "provider_failed"
+    },
+    "impetus": {
+      "error": "provider_failed"
+    },
+    "inception": {
+      "error": "provider_failed"
+    },
+    "manifest": {
+      "error": "provider_failed"
+    },
+    "orb": {
+      "error": "provider_failed"
+    },
+    "procure": {
+      "error": "provider_failed"
+    },
+    "regimen": {
+      "error": "provider_failed"
+    },
+    "scrutinize": {
+      "error": "provider_failed"
+    },
+    "traverse": {
+      "error": "provider_failed"
+    },
+    "utterly": {
+      "error": "provider_failed"
+    }
+  },
+  "tatoeba": {
+    "ambiguous-sense": {
+      "value": []
+    },
+    "dictionary-direct": {
+      "value": []
+    },
+    "model-relationship": {
+      "value": []
+    },
+    "provider-failure": {
+      "error": "provider_failed"
+    },
+    "tatoeba-grounded": {
+      "value": [
+        {
+          "id": "tatoeba:9001",
+          "text": "They tatoeba-grounded the decision with clear evidence.",
+          "language": "eng",
+          "source": {
+            "sourceId": "tatoeba",
+            "externalId": "9001",
+            "url": "https://tatoeba.org/en/sentences/show/9001",
+            "retrievedAt": "2026-08-29T00:00:00.000Z",
+            "contentHash": "sha256:bff0b80b0cc67c920f2f72b392c432353b9adcc96ab689fca48a9dfaaf4cc6ea"
+          }
+        }
+      ]
+    },
+    "unsupported-relationship": {
+      "value": []
+    },
+    "wordnet-direct": {
+      "value": []
+    },
+    "affliction": {
+      "value": []
+    },
+    "amalgamate": {
+      "value": []
+    },
+    "amplify": {
+      "value": []
+    },
+    "apparatus": {
+      "value": [
+        {
+          "id": "tatoeba:9101",
+          "text": "The laboratory apparatus was ready for the experiment.",
+          "language": "eng",
+          "source": {
+            "sourceId": "tatoeba",
+            "externalId": "9101",
+            "url": "https://tatoeba.org/en/sentences/show/9101",
+            "retrievedAt": "2026-08-29T00:00:00.000Z",
+            "contentHash": "sha256:6eafc8c4e28bf8da56ea83acb58dca5e5b691b440d66c97567e8a45c71e369ed"
+          }
+        }
+      ]
+    },
+    "apprehension": {
+      "value": []
+    },
+    "aptitude": {
+      "value": []
+    },
+    "augment": {
+      "error": "provider_failed"
+    },
+    "augmentation": {
+      "error": "provider_failed"
+    },
+    "chronicle": {
+      "error": "provider_failed"
+    },
+    "conjecture": {
+      "error": "provider_failed"
+    },
+    "contention": {
+      "error": "provider_failed"
+    },
+    "depiction": {
+      "error": "provider_failed"
+    },
+    "discern": {
+      "error": "provider_failed"
+    },
+    "discernment": {
+      "error": "provider_failed"
+    },
+    "endeavor": {
+      "error": "provider_failed"
+    },
+    "exemplar": {
+      "error": "provider_failed"
+    },
+    "impetus": {
+      "error": "provider_failed"
+    },
+    "inception": {
+      "error": "provider_failed"
+    },
+    "manifest": {
+      "error": "provider_failed"
+    },
+    "orb": {
+      "error": "provider_failed"
+    },
+    "procure": {
+      "error": "provider_failed"
+    },
+    "regimen": {
+      "error": "provider_failed"
+    },
+    "scrutinize": {
+      "error": "provider_failed"
+    },
+    "traverse": {
+      "error": "provider_failed"
+    },
+    "utterly": {
+      "error": "provider_failed"
+    }
+  },
+  "sense": {
+    "ambiguous-sense": {
+      "decision": {
+        "decision": "ambiguous",
+        "senseId": null,
+        "exampleId": null
+      },
+      "usage": {
+        "inputTokens": 11,
+        "outputTokens": 4
+      }
+    },
+    "tatoeba-grounded": {
+      "decision": {
+        "decision": "selected",
+        "senseId": "source-468bf5018436d575bfac",
+        "exampleId": "tatoeba:9001"
+      },
+      "usage": {
+        "inputTokens": 17,
+        "outputTokens": 5
+      }
+    },
+    "affliction": {
+      "decision": {
+        "decision": "ambiguous",
+        "senseId": null,
+        "exampleId": null
+      },
+      "usage": {
+        "inputTokens": 11,
+        "outputTokens": 4
+      }
+    },
+    "apparatus": {
+      "decision": {
+        "decision": "selected",
+        "senseId": "source-24811f44baa2460c76cd",
+        "exampleId": "tatoeba:9101"
+      },
+      "usage": {
+        "inputTokens": 17,
+        "outputTokens": 5
+      }
+    }
+  },
+  "relationship": {
+    "model-relationship|core-model-relationship": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-554170034cbad91b849d",
+        "coreLemma": "core-model-relationship"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "unsupported-relationship|core-unsupported-relationship": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-0a9f41e2e23393e59977",
+        "coreLemma": "core-unsupported-relationship"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "apprehension|sense": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-a9b5ff0401e12842ba0d",
+        "coreLemma": "sense"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "apprehension|doubt": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-a9b5ff0401e12842ba0d",
+        "coreLemma": "doubt"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "apprehension|comprehension": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-a9b5ff0401e12842ba0d",
+        "coreLemma": "comprehension"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "apprehension|perception": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-a9b5ff0401e12842ba0d",
+        "coreLemma": "perception"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "apprehension|alarm": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-a9b5ff0401e12842ba0d",
+        "coreLemma": "alarm"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "apprehension|anxiety": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-a9b5ff0401e12842ba0d",
+        "coreLemma": "anxiety"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "apprehension|tension": {
+      "decision": {
+        "decision": "supported",
+        "candidateSenseId": "source-a9b5ff0401e12842ba0d",
+        "coreLemma": "tension"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "aptitude|ability": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-a010bce2899d40d933e3",
+        "coreLemma": "ability"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "aptitude|competence": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-a010bce2899d40d933e3",
+        "coreLemma": "competence"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "aptitude|endowment": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-a010bce2899d40d933e3",
+        "coreLemma": "endowment"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "aptitude|competency": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-a010bce2899d40d933e3",
+        "coreLemma": "competency"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "aptitude|capacity": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-a010bce2899d40d933e3",
+        "coreLemma": "capacity"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "aptitude|talent": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-a010bce2899d40d933e3",
+        "coreLemma": "talent"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    },
+    "aptitude|capability": {
+      "decision": {
+        "decision": "unsupported",
+        "candidateSenseId": "source-a010bce2899d40d933e3",
+        "coreLemma": "capability"
+      },
+      "usage": {
+        "inputTokens": 13,
+        "outputTokens": 3
+      }
+    }
+  },
+  "reciprocalGlosses": {
+    "candidate": "Model relationship  builds on core-model-relationship; exactly.",
+    "core": "Model relationship is  an  advanced form, of core-model-relationship!"
+  }
+}

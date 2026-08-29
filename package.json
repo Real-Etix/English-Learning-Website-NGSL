@@ -19,6 +19,7 @@
     "build:vocabulary": "tsx scripts/build-word-data.ts",
     "build:graphs": "tsx scripts/build-word-data.ts && tsx scripts/build-graph-data.ts && tsx scripts/build-galaxy-assets.ts",
     "quarantine:advanced": "tsx scripts/quarantine-advanced-drafts.ts",
+    "verify:advanced": "tsx scripts/verify-advanced-vocabulary.ts",
     "enrich:vocabulary": "tsx scripts/enrich-vocabulary.ts",
     "migrate:vocabulary": "echo 'RECOVERY-ONLY: migrate legacy Markdown into a separate NDJSON output for review.' && npm run migrate:vocabulary:recovery",
     "migrate:vocabulary:recovery": "tsx scripts/migrate-wiki-to-ndjson.ts",

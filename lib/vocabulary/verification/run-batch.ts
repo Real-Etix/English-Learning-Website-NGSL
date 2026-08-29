@@ -290,6 +290,21 @@ function batchFor(
   }));
 }
 
+function assertPinnedOutcomeState(
+  batch: readonly VerificationBatchEntry[],
+  snapshot: readonly VocabularyRecord[],
+): void {
+  const recordsByLemma = new Map(snapshot.map((record) => [record.lemma, record]));
+  for (const entry of batch) {
+    for (const state of entry.expectedRecords) {
+      const record = recordsByLemma.get(state.lemma);
+      if (!record || recordStateHash(record) !== state.afterHash) {
+        throw new Error(`pinned batch outcome changed for ${state.lemma}`);
+      }
+    }
+  }
+}
+
 function hasPinnedConnection(
   record: VocabularyRecord,
   target: string,
@@ -839,6 +854,7 @@ export async function runVerificationBatch(
   const outcomes = completed.filter((value): value is CandidateVerificationOutcome => value !== undefined);
   const mutation = applyVerificationOutcomes(records, outcomes);
   mutation.snapshot.forEach((record) => VocabularyRecordSchema.parse(record));
+  if (pinnedBatch) assertPinnedOutcomeState(pinnedBatch, mutation.snapshot);
   const proposedLint = lintRecords(mutation.snapshot);
   const proposedAudit = auditRecords(mutation.snapshot);
   assertNoRegressions(baselineLint, proposedLint, baselineAudit, proposedAudit);

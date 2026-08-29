@@ -1,0 +1,458 @@
+import { mkdtemp, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import path from "node:path";
+
+import { describe, expect, test } from "vitest";
+
+import { writeVocabularyRecords } from "../lib/vocabulary/ndjson-repository";
+import type { VocabularyRecord } from "../lib/vocabulary/schema";
+import { vocabularyRecordFixture } from "../lib/vocabulary/test-fixtures";
+import {
+  createLlmJudges,
+  parseVerificationArgs,
+  runVerificationCli,
+  type VerificationCliRuntime,
+} from "./verify-advanced-vocabulary";
+
+const fixturePath = path.join(
+  process.cwd(),
+  "scripts/fixtures/vocabulary-verification/source-backed-batch.json",
+);
+
+function source(sourceId: "llm" | "wordnet", id: string) {
+  return {
+    sourceId,
+    externalId: id,
+    url: sourceId === "wordnet" ? `https://wordnet.example/${id}` : null,
+    retrievedAt: "2026-08-29T00:00:00.000Z",
+    contentHash: `sha256:${id}`,
+  };
+}
+
+const fixtureCases = [
+  "ambiguous-sense",
+  "dictionary-direct",
+  "model-relationship",
+  "provider-failure",
+  "tatoeba-grounded",
+  "unsupported-relationship",
+  "wordnet-direct",
+] as const;
+
+const exactCandidateGloss = "Model relationship  builds on core-model-relationship; exactly.";
+const exactCoreGloss = "Model relationship is  an  advanced form, of core-model-relationship!";
+
+function recordPair(lemma: string): VocabularyRecord[] {
+  const fixture = vocabularyRecordFixture();
+  const coreLemma = `core-${lemma}`;
+  const core: VocabularyRecord = {
+    ...fixture,
+    lemma: coreLemma,
+    display: coreLemma,
+    senses: [{
+      ...fixture.senses[0]!,
+      id: `${coreLemma}-sense`,
+      definition: `To use the basic ${lemma} action.`,
+      sources: [source("wordnet", `${coreLemma}-sense`)],
+      examples: [{
+        text: `They use the basic ${lemma} action.`,
+        sources: [source("wordnet", `${coreLemma}-example`)],
+      }],
+    }],
+    connections: [{
+      target: lemma,
+      type: "advanced_form",
+      gloss: lemma === "model-relationship"
+        ? exactCoreGloss
+        : `${lemma} is an advanced form of ${coreLemma}.`,
+      sources: [source("llm", `${coreLemma}-connection`)],
+      status: "published",
+    }],
+  };
+  const advanced: VocabularyRecord = {
+    ...fixture,
+    lemma,
+    display: lemma,
+    tier: "advanced",
+    forms: [`${lemma}s`],
+    status: "seeded",
+    publicationStatus: "hidden",
+    sources: [source("llm", lemma)],
+    senses: [{
+      ...fixture.senses[0]!,
+      id: `${lemma}-legacy`,
+      definition: `A legacy ${lemma} draft.`,
+      sources: [source("llm", `${lemma}-legacy`)],
+      examples: [],
+    }],
+    pronunciation: [],
+    connections: [{
+      target: coreLemma,
+      type: "builds_on",
+      gloss: lemma === "model-relationship"
+        ? exactCandidateGloss
+        : `${lemma} builds on ${coreLemma}.`,
+      sources: [source("llm", `${lemma}-connection`)],
+      status: "published",
+    }],
+  };
+  return [advanced, core];
+}
+
+function records(): VocabularyRecord[] {
+  return fixtureCases.flatMap(recordPair);
+}
+
+async function setup(): Promise<{
+  directory: string;
+  vocabularyRoot: string;
+  cache: string;
+  report: string;
+  runtime: VerificationCliRuntime;
+  graphBuilds: () => number;
+}> {
+  const directory = await mkdtemp(path.join(tmpdir(), "ngsl-verify-cli-"));
+  const vocabularyRoot = path.join(directory, "vocabulary");
+  const cache = path.join(directory, "cache");
+  const report = path.join(directory, "report.json");
+  await writeVocabularyRecords(vocabularyRoot, records());
+  let builds = 0;
+  let liveCalls = 0;
+  const runtime: VerificationCliRuntime = {
+    vocabularyRoot,
+    createCache: (root) => ({
+      get: async () => null,
+      set: async () => undefined,
+    }),
+    buildGraphs: async () => { builds += 1; },
+    wordNet: async () => { liveCalls += 1; throw new Error("live WordNet must not be called"); },
+    dictionary: async () => { liveCalls += 1; throw new Error("live dictionary must not be called"); },
+    tatoeba: async () => { liveCalls += 1; throw new Error("live Tatoeba must not be called"); },
+    judgeSense: async () => { liveCalls += 1; throw new Error("live sense judge must not be called"); },
+    judgeRelationship: async () => { liveCalls += 1; throw new Error("live relationship judge must not be called"); },
+  };
+  return {
+    directory,
+    vocabularyRoot,
+    cache,
+    report,
+    runtime,
+    graphBuilds: () => {
+      expect(liveCalls).toBe(0);
+      return builds;
+    },
+  };
+}
+
+function args(cache: string, report: string, fixture = fixturePath, write = false): string[] {
+  return [
+    `--limit=${fixtureCases.length}`,
+    `--cache=${cache}`,
+    `--report=${report}`,
+    `--fixture=${fixture}`,
+    ...(write ? ["--write"] : []),
+  ];
+}
+
+function liveArgs(cache: string, report: string): string[] {
+  return ["--limit=1", `--cache=${cache}`, `--report=${report}`];
+}
+
+async function vocabularySnapshot(root: string): Promise<Record<string, string>> {
+  const files = (await readdir(root)).filter((file) => file.endsWith(".ndjson")).sort();
+  return Object.fromEntries(await Promise.all(files.map(async (file) => [file, await readFile(path.join(root, file), "utf8")]))) as Record<string, string>;
+}
+
+describe("verify advanced vocabulary CLI", () => {
+  test("parses bounded CLI defaults", () => {
+    expect(parseVerificationArgs([])).toMatchObject({
+      limit: 25,
+      concurrency: 3,
+      maxSourceRequests: 100,
+      maxInputTokens: 20_000,
+      maxOutputTokens: 8_000,
+      write: false,
+    });
+    expect(() => parseVerificationArgs(["--concurrency=6"])).toThrow(
+      "--concurrency must be an integer from 1 to 5",
+    );
+    expect(() => parseVerificationArgs(["--limit="])).toThrow("--limit requires a value");
+    expect(() => parseVerificationArgs(["--cache="])).toThrow("--cache requires a value");
+  });
+
+  test("keeps model decisions unavailable without a key or a valid model result", async () => {
+    const options = parseVerificationArgs(["--max-output-tokens=90"]);
+    let completionCalls = 0;
+    const unavailable = createLlmJudges(options, {
+      available: false,
+      model: "test-model",
+      complete: async () => {
+        completionCalls += 1;
+        return null;
+      },
+    });
+    expect(unavailable).toEqual({ judgeSense: null, judgeRelationship: null });
+    expect(completionCalls).toBe(0);
+
+    const requestIds: string[] = [];
+    const broken = createLlmJudges(options, {
+      available: true,
+      model: "test-model",
+      complete: async (_system, _user, _model, attempts, resultOptions) => {
+        completionCalls += 1;
+        expect(attempts).toBe(2);
+        expect(resultOptions.maxOutputTokens).toBe(90);
+        expect(resultOptions.sanitizeErrors).toBe(true);
+        requestIds.push(resultOptions.requestId!);
+        return null;
+      },
+    });
+    const senseRequest = {
+      candidate: { lemma: "test-word", partOfSpeech: "verb", forms: ["test-words"] },
+      senses: [{ id: "sense-1", partOfSpeech: "verb", definition: "To test." }],
+      examples: [{ id: "example-1", text: "They test-word the result." }],
+    };
+    await expect(broken.judgeSense!(senseRequest)).rejects.toThrow("LLM sense judge unavailable");
+    await expect(broken.judgeSense!(senseRequest)).rejects.toThrow("LLM sense judge unavailable");
+    expect(requestIds[0]).toBe(requestIds[1]);
+  });
+
+  test("keeps a fixture dry-run side-effect free and pins its successful batch", async () => {
+    const value = await setup();
+    try {
+      const before = await vocabularySnapshot(value.vocabularyRoot);
+      const result = await runVerificationCli(args(value.cache, value.report), value.runtime);
+
+      expect(result.report).toMatchObject({ mode: "dry-run", selected: 7, attempted: 7 });
+      expect(await vocabularySnapshot(value.vocabularyRoot)).toEqual(before);
+      expect(await readFile(path.join(value.cache, "fixture", "active-batch.json"), "utf8"))
+        .toContain("dictionary-direct");
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("covers every required offline verification outcome and preserves reciprocal gloss bytes", async () => {
+    const value = await setup();
+    try {
+      const result = await runVerificationCli(args(value.cache, value.report), value.runtime);
+
+      expect(result.outcomes.map(({ candidateLemma, reason }) => [candidateLemma, reason])).toEqual([
+        ["ambiguous-sense", "sense_ambiguous"],
+        ["dictionary-direct", "published"],
+        ["model-relationship", "published"],
+        ["provider-failure", "provider_failed"],
+        ["tatoeba-grounded", "published"],
+        ["unsupported-relationship", "relationship_unsupported"],
+        ["wordnet-direct", "published"],
+      ]);
+      expect(result.report).toMatchObject({
+        selected: 7,
+        attempted: 7,
+        sourceBacked: 6,
+        published: 4,
+        ambiguous: 1,
+        unsupported: 1,
+        failed: 1,
+        relationships: { accepted: 4, rejected: 1, ambiguous: 2 },
+      });
+      const modelRelationship = result.outcomes.find(
+        (outcome) => outcome.candidateLemma === "model-relationship",
+      );
+      expect(modelRelationship?.relationships).toEqual([expect.objectContaining({
+        method: "llm_consensus",
+        candidateGloss: exactCandidateGloss,
+        coreGloss: exactCoreGloss,
+      })]);
+      expect(result.outcomes.find(
+        (outcome) => outcome.candidateLemma === "unsupported-relationship",
+      )?.relationships).toEqual([expect.objectContaining({
+        decision: "unsupported",
+        method: "llm_consensus",
+      })]);
+      expect(result.outcomes.find(
+        (outcome) => outcome.candidateLemma === "tatoeba-grounded",
+      )?.selectedExample?.source.sourceId).toBe("tatoeba");
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("reserves fixture-declared usage instead of live-model estimates", async () => {
+    const value = await setup();
+    try {
+      const result = await runVerificationCli([
+        ...args(value.cache, value.report),
+        "--max-input-tokens=100",
+        "--max-output-tokens=30",
+      ], value.runtime);
+
+      expect(result.report).toMatchObject({
+        selected: 7,
+        attempted: 7,
+        published: 4,
+        ambiguous: 1,
+        unsupported: 1,
+        failed: 1,
+      });
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("fails closed for a missing fixture key without calling a live adapter", async () => {
+    const value = await setup();
+    const incompleteFixture = path.join(value.directory, "missing-dictionary.json");
+    try {
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as { dictionaryapi: Record<string, unknown> };
+      delete fixture.dictionaryapi["dictionary-direct"];
+      await writeFile(incompleteFixture, JSON.stringify(fixture), "utf8");
+
+      const result = await runVerificationCli(args(value.cache, value.report, incompleteFixture), value.runtime);
+      expect(result.report.entries).toContainEqual({ lemma: "dictionary-direct", reason: "provider_failed" });
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("rejects non-normalized fixture payloads before verification", async () => {
+    const value = await setup();
+    const malformedFixture = path.join(value.directory, "raw-provider-payload.json");
+    try {
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        dictionaryapi: Record<string, { value: unknown }>;
+      };
+      fixture.dictionaryapi["dictionary-direct"] = {
+        value: { raw: { providerResponse: "must not be retained" } },
+      };
+      await writeFile(malformedFixture, JSON.stringify(fixture), "utf8");
+
+      await expect(runVerificationCli(
+        args(value.cache, value.report, malformedFixture),
+        value.runtime,
+      )).rejects.toThrow("verification fixture is invalid");
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("writes the pinned batch once and rebuilds once without advancing candidates", async () => {
+    const value = await setup();
+    try {
+      const dryRun = await runVerificationCli(args(value.cache, value.report), value.runtime);
+      const firstWrite = await runVerificationCli(args(value.cache, value.report, fixturePath, true), value.runtime);
+      const secondWrite = await runVerificationCli(args(value.cache, value.report, fixturePath, true), value.runtime);
+
+      expect(firstWrite.batch).toEqual(dryRun.batch);
+      expect(firstWrite.report.changedShards.length).toBeGreaterThan(0);
+      expect(secondWrite.report.entries.map((entry) => entry.lemma)).toEqual([...fixtureCases]);
+      expect(secondWrite.report.changedShards).toEqual([]);
+      expect(value.graphBuilds()).toBe(1);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("rejects replay when the pinned fixture identity changes", async () => {
+    const value = await setup();
+    const mutableFixture = path.join(value.directory, "mutable-fixture.json");
+    try {
+      const original = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        relationship: Record<string, { decision: { decision: string } }>;
+      };
+      await writeFile(mutableFixture, JSON.stringify(original), "utf8");
+      await runVerificationCli(args(value.cache, value.report, mutableFixture), value.runtime);
+      const before = await vocabularySnapshot(value.vocabularyRoot);
+
+      original.relationship["model-relationship|core-model-relationship"]!.decision.decision = "unsupported";
+      await writeFile(mutableFixture, JSON.stringify(original), "utf8");
+
+      await expect(runVerificationCli(
+        args(value.cache, value.report, mutableFixture, true),
+        value.runtime,
+      )).rejects.toThrow(/active verification batch configuration changed/i);
+      expect(await vocabularySnapshot(value.vocabularyRoot)).toEqual(before);
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("rejects write mode until a successful dry-run has pinned the batch", async () => {
+    const value = await setup();
+    try {
+      const before = await vocabularySnapshot(value.vocabularyRoot);
+
+      await expect(runVerificationCli(
+        args(value.cache, value.report, fixturePath, true),
+        value.runtime,
+      )).rejects.toThrow("--write requires a successful dry-run");
+
+      expect(await vocabularySnapshot(value.vocabularyRoot)).toEqual(before);
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("does not pin a first batch when its report cannot be written", async () => {
+    const value = await setup();
+    try {
+      await expect(runVerificationCli(
+        args(value.cache, value.directory),
+        value.runtime,
+      )).rejects.toBeInstanceOf(Error);
+
+      await expect(readFile(
+        path.join(value.cache, "fixture", "active-batch.json"),
+        "utf8",
+      )).rejects.toMatchObject({ code: "ENOENT" });
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("does not replace an active batch created by a concurrent invocation", async () => {
+    const value = await setup();
+    try {
+      const settled = await Promise.allSettled([
+        runVerificationCli(args(value.cache, value.report), value.runtime),
+        runVerificationCli(args(value.cache, value.report), value.runtime),
+      ]);
+
+      expect(settled.filter((result) => result.status === "fulfilled")).toHaveLength(1);
+      expect(settled.filter((result) => result.status === "rejected")).toHaveLength(1);
+      expect(await readFile(path.join(value.cache, "fixture", "active-batch.json"), "utf8"))
+        .toContain("dictionary-direct");
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("isolates the offline fixture batch from a later live batch in the same cache root", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "live-vocabulary");
+    try {
+      await runVerificationCli(args(value.cache, value.report), value.runtime);
+      await writeVocabularyRecords(liveVocabularyRoot, recordPair("live-only"));
+
+      const live = await runVerificationCli(
+        liveArgs(value.cache, path.join(value.directory, "live-report.json")),
+        { ...value.runtime, vocabularyRoot: liveVocabularyRoot },
+      );
+
+      expect(live.report.entries).toEqual([{ lemma: "live-only", reason: "provider_failed" }]);
+      expect(await readFile(path.join(value.cache, "active-batch.json"), "utf8")).toContain("live-only");
+      expect(await readFile(path.join(value.cache, "fixture", "active-batch.json"), "utf8"))
+        .toContain("dictionary-direct");
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+});

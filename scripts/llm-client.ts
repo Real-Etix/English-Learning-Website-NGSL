@@ -36,6 +36,7 @@ export type LlmResultOptions = {
   requestId?: string;
   fallbackUsage?: LlmUsage;
   maxOutputTokens?: number;
+  sanitizeErrors?: boolean;
 };
 
 type ChatCompletionResponse = {
@@ -103,11 +104,17 @@ export async function completeChatResult(
         await sleep(waitMs);
         continue;
       }
-      console.warn(`  LLM error ${res.status}: ${(await res.text()).slice(0, 160)}`);
+      if (options.sanitizeErrors) {
+        console.warn(`  LLM error ${res.status}`);
+      } else {
+        console.warn(`  LLM error ${res.status}: ${(await res.text()).slice(0, 160)}`);
+      }
       return null;
     } catch (err) {
       if (attempt === maxAttempts) {
-        console.warn(`  request failed after ${maxAttempts} attempts: ${String(err)}`);
+        console.warn(options.sanitizeErrors
+          ? `  request failed after ${maxAttempts} attempts`
+          : `  request failed after ${maxAttempts} attempts: ${String(err)}`);
         return null;
       }
       await sleep(1000 * 2 ** (attempt - 1));

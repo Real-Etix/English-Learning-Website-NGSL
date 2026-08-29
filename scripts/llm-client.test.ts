@@ -43,4 +43,34 @@ describe("llm-client request identity and compatibility", () => {
     expect(idempotencyKeys.slice(0, 2)).toEqual(["stable-request-id", "stable-request-id"]);
     expect(idempotencyKeys).toHaveLength(4);
   });
+
+  test("can sanitize terminal provider and exception diagnostics", async () => {
+    const warnings: string[] = [];
+    vi.spyOn(console, "warn").mockImplementation((value) => warnings.push(String(value)));
+    globalThis.fetch = vi.fn(async () => new Response(
+      "SENSITIVE_PROVIDER_BODY_SENTINEL",
+      { status: 400 },
+    )) as typeof fetch;
+
+    await expect(completeChatResult(
+      [{ role: "user", content: "hello" }],
+      "test-model",
+      1,
+      { sanitizeErrors: true },
+    )).resolves.toBeNull();
+
+    globalThis.fetch = vi.fn(async () => {
+      throw new Error("SENSITIVE_EXCEPTION_SENTINEL");
+    }) as typeof fetch;
+    await expect(completeChatResult(
+      [{ role: "user", content: "hello" }],
+      "test-model",
+      1,
+      { sanitizeErrors: true },
+    )).resolves.toBeNull();
+
+    expect(warnings.join("\n")).toContain("LLM error 400");
+    expect(warnings.join("\n")).not.toContain("SENSITIVE_PROVIDER_BODY_SENTINEL");
+    expect(warnings.join("\n")).not.toContain("SENSITIVE_EXCEPTION_SENTINEL");
+  });
 });

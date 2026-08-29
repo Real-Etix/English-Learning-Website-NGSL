@@ -309,6 +309,36 @@ describe("runVerificationBatch", () => {
     expect(buildCalls).toBe(0);
   });
 
+  test("rejects replay when recomputed outcomes differ from the pinned dry-run", async () => {
+    const records = recordsFor(["alpha"]);
+    const first = await runVerificationBatch({ ...defaultOptions, limit: 1 }, dependencies(records));
+    let persistCalls = 0;
+    let buildCalls = 0;
+
+    await expect(runVerificationBatch({
+      ...defaultOptions,
+      limit: 1,
+      write: true,
+      batch: first.batch,
+    }, dependencies(records, {
+      cache: new MemoryCache(),
+      getWordNet: async (candidate) => evidenceFor(candidate.record.lemma, "unrelated-core"),
+      judgeRelationship: async (request) => ({
+        decision: {
+          decision: "unsupported",
+          candidateSenseId: request.candidateSenseId,
+          coreLemma: request.coreLemma,
+        },
+        usage: { inputTokens: 5, outputTokens: 2 },
+      }),
+      persist: async () => { persistCalls += 1; return ["01"]; },
+      buildGraphs: async () => { buildCalls += 1; },
+    }))).rejects.toThrow(/pinned batch outcome changed/i);
+
+    expect(persistCalls).toBe(0);
+    expect(buildCalls).toBe(0);
+  });
+
   test("rejects a pinned batch after a later manual relationship decision", async () => {
     let storedRecords = recordsFor(["alpha", "beta"]);
     const cache = new MemoryCache();
