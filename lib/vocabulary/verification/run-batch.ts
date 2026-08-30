@@ -116,7 +116,7 @@ class SourceBudgetExhaustedError extends Error {
 const ZERO_USAGE: TokenUsage = { inputTokens: 0, outputTokens: 0 };
 const DEFAULT_SENSE_USAGE: TokenUsage = { inputTokens: 2_000, outputTokens: 200 };
 const DEFAULT_RELATIONSHIP_USAGE: TokenUsage = { inputTokens: 2_000, outputTokens: 200 };
-const SOURCE_CACHE_VERSION = "exact-lemma-v2";
+const SOURCE_CACHE_VERSION = "exact-lemma-v3";
 const SENSE_PROMPT_VERSION = "sense-v1";
 const RELATIONSHIP_PROMPT_VERSION = "relationship-v1";
 

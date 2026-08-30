@@ -77,6 +77,39 @@ describe("fetchDictionaryEvidence", () => {
       .digest("hex")}`);
   });
 
+  test("ignores entries for a different returned lemma even when their POS matches", async () => {
+    const evidence = await fetchDictionaryEvidence("manifest", "verb", {
+      fetch: async () => jsonResponse([{
+        word: "attest",
+        phonetic: "/wrong/",
+        meanings: [{
+          partOfSpeech: "verb",
+          synonyms: ["certify"],
+          definitions: [{ definition: "Wrong-lemma evidence." }],
+        }],
+      }, {
+        word: "Manifest",
+        phonetic: "/right/",
+        meanings: [{
+          partOfSpeech: "verb",
+          synonyms: ["show"],
+          definitions: [{ definition: "Show something clearly." }],
+        }],
+      }]),
+      now: fixedNow,
+    });
+
+    expect(evidence).toMatchObject({
+      returnedLemma: "Manifest",
+      detail: {
+        ipa: "/right/",
+        senses: [{ definition: "Show something clearly." }],
+        synonyms: ["show"],
+      },
+    });
+    expect(evidence?.detail.senses).toHaveLength(1);
+  });
+
   test("returns null for a DictionaryAPI 404", async () => {
     const evidence = await fetchDictionaryEvidence("missing", "noun", {
       fetch: async () => jsonResponse({ title: "No Definitions Found" }, 404),

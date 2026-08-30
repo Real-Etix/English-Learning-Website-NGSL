@@ -88,6 +88,10 @@ function normalizedLemma(value: string): string {
   return value.replace(/_/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function lemmaKey(value: string): string {
+  return normalizedLemma(value).toLocaleLowerCase("en-US");
+}
+
 function hashNormalized(value: unknown): string {
   return `sha256:${createHash("sha256").update(JSON.stringify(value), "utf8").digest("hex")}`;
 }
@@ -183,6 +187,7 @@ export async function fetchDictionaryEvidence(
   if (!Array.isArray(payload)) throw new ProviderFetchError("dictionaryapi", "invalid_response");
 
   const exactPartOfSpeech = normalizedPartOfSpeech(partOfSpeech);
+  const requestedLemma = lemmaKey(lemma);
   const matchingEntries: DictionaryEntry[] = [];
   const senses: WordDetail["senses"] = [];
   const synonyms: string[] = [];
@@ -190,6 +195,7 @@ export async function fetchDictionaryEvidence(
     if (!isRecord(item)) continue;
     const entry = item as DictionaryEntry;
     const entryId = firstString(entry.word);
+    if (!entryId || lemmaKey(entryId) !== requestedLemma) continue;
     const sourceUrl = entrySourceUrl(entry);
     const entrySenses: WordDetail["senses"] = [];
 
