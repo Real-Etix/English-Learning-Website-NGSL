@@ -5,7 +5,6 @@ import type { z } from "zod";
 
 import type { WordDetail } from "../../content/word-detail";
 import { auditDictionaryRecords } from "../../wiki/dictionary-quality";
-import type { TokenUsage } from "../enrichment/budget";
 import type { VocabularyRecord } from "../schema";
 import { vocabularyRecordFixture } from "../test-fixtures";
 import type { VerificationCache } from "./cache";

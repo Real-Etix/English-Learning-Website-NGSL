@@ -123,7 +123,7 @@ async function setup(): Promise<{
   let liveCalls = 0;
   const runtime: VerificationCliRuntime = {
     vocabularyRoot,
-    createCache: (root) => ({
+    createCache: () => ({
       get: async () => null,
       set: async () => undefined,
     }),
