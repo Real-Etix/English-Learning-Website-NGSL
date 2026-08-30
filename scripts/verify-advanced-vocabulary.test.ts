@@ -297,7 +297,7 @@ describe("verify advanced vocabulary CLI", () => {
 
       expect(result.report).toMatchObject({ mode: "dry-run", selected: 7, attempted: 7 });
       expect(await vocabularySnapshot(value.vocabularyRoot)).toEqual(before);
-      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch.json"), "utf8"))
+      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch-v3.json"), "utf8"))
         .toContain("dictionary-direct");
       expect(value.graphBuilds()).toBe(0);
     } finally {
@@ -540,7 +540,7 @@ describe("verify advanced vocabulary CLI", () => {
       )).rejects.toBeInstanceOf(Error);
 
       await expect(readFile(
-        path.join(await fixtureCacheRoot(value.cache), "active-batch.json"),
+        path.join(await fixtureCacheRoot(value.cache), "active-batch-v3.json"),
         "utf8",
       )).rejects.toMatchObject({ code: "ENOENT" });
       expect(value.graphBuilds()).toBe(0);
@@ -559,29 +559,73 @@ describe("verify advanced vocabulary CLI", () => {
 
       expect(settled.filter((result) => result.status === "fulfilled")).toHaveLength(1);
       expect(settled.filter((result) => result.status === "rejected")).toHaveLength(1);
-      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch.json"), "utf8"))
+      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch-v3.json"), "utf8"))
         .toContain("dictionary-direct");
     } finally {
       await rm(value.directory, { recursive: true, force: true });
     }
   });
 
-  test("isolates the offline fixture batch from a later live batch in the same cache root", async () => {
+  test("does not let a provider-failed live dry-run authorize a write", async () => {
     const value = await setup();
     const liveVocabularyRoot = path.join(value.directory, "live-vocabulary");
     try {
       await runVerificationCli(args(value.cache, value.report), value.runtime);
       await writeVocabularyRecords(liveVocabularyRoot, recordPair("live-only"));
+      const before = await vocabularySnapshot(liveVocabularyRoot);
+      const liveRuntime = { ...value.runtime, vocabularyRoot: liveVocabularyRoot };
 
       const live = await runVerificationCli(
         liveArgs(value.cache, path.join(value.directory, "live-report.json")),
-        { ...value.runtime, vocabularyRoot: liveVocabularyRoot },
+        liveRuntime,
       );
 
       expect(live.report.entries).toEqual([{ lemma: "live-only", reason: "provider_failed" }]);
-      expect(await readFile(path.join(value.cache, "active-batch.json"), "utf8")).toContain("live-only");
-      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch.json"), "utf8"))
+      await expect(readFile(path.join(value.cache, "active-batch-v3.json"), "utf8"))
+        .rejects.toMatchObject({ code: "ENOENT" });
+      await expect(runVerificationCli(
+        [...liveArgs(value.cache, path.join(value.directory, "live-write-report.json")), "--write"],
+        liveRuntime,
+      )).rejects.toThrow("--write requires a successful dry-run");
+      expect(await vocabularySnapshot(liveVocabularyRoot)).toEqual(before);
+      expect(await readFile(path.join(await fixtureCacheRoot(value.cache), "active-batch-v3.json"), "utf8"))
         .toContain("dictionary-direct");
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("pins a healthy live dry-run in the v3 manifest", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "healthy-live-vocabulary");
+    try {
+      await writeVocabularyRecords(liveVocabularyRoot, recordPair("wordnet-direct"));
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        wordnet: Record<string, { value: unknown }>;
+      };
+      const wordNetEvidence = fixture.wordnet["wordnet-direct"]!.value as Awaited<
+        ReturnType<VerificationCliRuntime["wordNet"]>
+      >;
+      const liveRuntime: VerificationCliRuntime = {
+        ...value.runtime,
+        vocabularyRoot: liveVocabularyRoot,
+        wordNet: async () => wordNetEvidence,
+        dictionary: async () => null,
+        tatoeba: async () => [],
+        judgeSense: null,
+        judgeRelationship: null,
+      };
+
+      const live = await runVerificationCli(
+        liveArgs(value.cache, path.join(value.directory, "healthy-live-report.json")),
+        liveRuntime,
+      );
+
+      expect(live.report).toMatchObject({ published: 1, failed: 0 });
+      expect(JSON.parse(await readFile(
+        path.join(value.cache, "active-batch-v3.json"),
+        "utf8",
+      ))).toMatchObject({ version: 3, graphStatus: "ready" });
     } finally {
       await rm(value.directory, { recursive: true, force: true });
     }

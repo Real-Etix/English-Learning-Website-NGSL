@@ -30,7 +30,7 @@ import {
   type LlmResultOptions,
 } from "./llm-client";
 
-const ACTIVE_BATCH_FILENAME = "active-batch.json";
+const ACTIVE_BATCH_FILENAME = "active-batch-v3.json";
 const DEFAULT_CACHE = ".cache/vocabulary-verification";
 const DEFAULT_REPORT = ".cache/vocabulary-verification/latest-report.json";
 const DEFAULT_LIMIT = 25;
@@ -149,7 +149,7 @@ const VerificationIdentitySchema = z.object({
 type VerificationIdentity = z.infer<typeof VerificationIdentitySchema>;
 
 const ActiveBatchManifestSchema = z.object({
-  version: z.literal(2),
+  version: z.literal(3),
   identity: VerificationIdentitySchema,
   batch: z.array(VerificationBatchEntrySchema),
   graphStatus: z.enum(["ready", "pending", "complete"]),
@@ -350,7 +350,7 @@ async function writeActiveBatch(
   batch: VerificationRunResult["batch"],
 ): Promise<void> {
   const manifest = ActiveBatchManifestSchema.parse({
-    version: 2,
+    version: 3,
     identity,
     batch,
     graphStatus: "ready",
@@ -381,6 +381,15 @@ async function updateActiveBatchStatus(
 async function writeReport(filePath: string, result: VerificationRunResult): Promise<void> {
   const report = VerificationReportSchema.parse(result.report);
   await writeAtomically(filePath, `${JSON.stringify(report, null, 2)}\n`);
+}
+
+function liveRunAllowsWrite(result: VerificationRunResult): boolean {
+  const infrastructureFailures = new Set([
+    "provider_failed",
+    "judge_unavailable",
+    "budget_exhausted",
+  ]);
+  return !result.report.entries.some((entry) => infrastructureFailures.has(entry.reason));
 }
 
 function fallbackUsage(options: VerificationCliOptions) {
@@ -556,7 +565,9 @@ export async function runVerificationCli(
     manifest = await updateActiveBatchStatus(cacheRoot, manifest, "complete");
   }
   await writeReport(reportPath, result);
-  if (batch === null) await writeActiveBatch(cacheRoot, identity, result.batch);
+  if (batch === null && (fixture !== null || liveRunAllowsWrite(result))) {
+    await writeActiveBatch(cacheRoot, identity, result.batch);
+  }
   return result;
 }
 
@@ -606,6 +617,9 @@ async function main(): Promise<void> {
   const entries = result.report.entries.slice(0, 25).map((entry) => `${entry.lemma}:${entry.reason}`).join(", ");
   console.log(`Verification ${result.report.mode}: selected=${result.report.selected}, attempted=${result.report.attempted}, published=${result.report.published}, ambiguous=${result.report.ambiguous}, unsupported=${result.report.unsupported}, failed=${result.report.failed}.`);
   console.log(`Entries: ${entries || "none"}`);
+  if (!options.write && options.fixture === null && !liveRunAllowsWrite(result)) {
+    console.log("Write disabled: this live dry-run had a provider, model, or budget failure and did not pin an active batch.");
+  }
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
