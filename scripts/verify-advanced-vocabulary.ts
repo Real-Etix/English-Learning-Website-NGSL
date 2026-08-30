@@ -389,7 +389,12 @@ function liveRunAllowsWrite(result: VerificationRunResult): boolean {
     "judge_unavailable",
     "budget_exhausted",
   ]);
-  return !result.report.entries.some((entry) => infrastructureFailures.has(entry.reason));
+  return !result.outcomes.some((outcome) =>
+    infrastructureFailures.has(outcome.reason)
+    || outcome.relationships.some((relationship) =>
+      relationship.reason !== null && infrastructureFailures.has(relationship.reason),
+    ),
+  );
 }
 
 function fallbackUsage(options: VerificationCliOptions) {

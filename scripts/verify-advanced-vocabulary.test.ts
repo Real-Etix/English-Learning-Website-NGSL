@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { mkdtemp, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
@@ -8,6 +8,8 @@ import { describe, expect, test } from "vitest";
 import { writeVocabularyRecords } from "../lib/vocabulary/ndjson-repository";
 import type { VocabularyRecord } from "../lib/vocabulary/schema";
 import { vocabularyRecordFixture } from "../lib/vocabulary/test-fixtures";
+import type { FactualDictionaryEvidence } from "../lib/vocabulary/verification/provider-types";
+import type { RelationshipJudgeRequest } from "../lib/vocabulary/verification/relationship-verifier";
 import {
   createLlmJudges,
   GraphBuildExitError,
@@ -104,6 +106,73 @@ function recordPair(lemma: string): VocabularyRecord[] {
 
 function records(): VocabularyRecord[] {
   return fixtureCases.flatMap(recordPair);
+}
+
+function mixedAnchorRecords(): VocabularyRecord[] {
+  const [candidate, firstCore] = recordPair("mixed-anchor");
+  const secondCoreLemma = "other-mixed-anchor";
+  const secondCore: VocabularyRecord = {
+    ...firstCore!,
+    lemma: secondCoreLemma,
+    display: secondCoreLemma,
+    senses: firstCore!.senses.map((sense) => ({
+      ...sense,
+      id: `${secondCoreLemma}-sense`,
+      definition: "To use the other basic mixed-anchor action.",
+      sources: [source("wordnet", `${secondCoreLemma}-sense`)],
+      examples: [{
+        text: "They use the other basic mixed-anchor action.",
+        sources: [source("wordnet", `${secondCoreLemma}-example`)],
+      }],
+    })),
+    connections: [{
+      target: candidate!.lemma,
+      type: "advanced_form",
+      gloss: `${candidate!.lemma} is an advanced form of ${secondCoreLemma}.`,
+      sources: [source("llm", `${secondCoreLemma}-connection`)],
+      status: "published",
+    }],
+  };
+  return [{
+    ...candidate!,
+    connections: [...candidate!.connections, {
+      target: secondCoreLemma,
+      type: "builds_on",
+      gloss: `${candidate!.lemma} builds on ${secondCoreLemma}.`,
+      sources: [source("llm", `${candidate!.lemma}-${secondCoreLemma}-connection`)],
+      status: "published",
+    }],
+  }, firstCore!, secondCore];
+}
+
+function mixedAnchorEvidence(): FactualDictionaryEvidence {
+  const detail: FactualDictionaryEvidence["detail"] = {
+    ipa: null,
+    audioUk: null,
+    audioUs: null,
+    audioAny: null,
+    sourceEntryId: "verb:mixed-anchor",
+    senses: [{
+      partOfSpeech: "verb",
+      definition: "To perform a mixed-anchor action.",
+      example: "They mixed-anchor the result carefully.",
+      sourceEntryId: "verb:mixed-anchor",
+      sourceSenseId: "verb:mixed-anchor",
+    }],
+    synonyms: ["core-mixed-anchor"],
+  };
+  return {
+    provider: "wordnet",
+    returnedLemma: "mixed-anchor",
+    requestedPartOfSpeech: "verb",
+    detail,
+    source: {
+      sourceId: "wordnet",
+      url: null,
+      retrievedAt: "2026-08-30T00:00:00.000Z",
+      contentHash: `sha256:${createHash("sha256").update(JSON.stringify(detail), "utf8").digest("hex")}`,
+    },
+  };
 }
 
 async function setup(): Promise<{
@@ -626,6 +695,87 @@ describe("verify advanced vocabulary CLI", () => {
         path.join(value.cache, "active-batch-v3.json"),
         "utf8",
       ))).toMatchObject({ version: 3, graphStatus: "ready" });
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("does not pin mixed-anchor live outcomes with model or budget failures", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "mixed-live-vocabulary");
+    try {
+      await writeVocabularyRecords(liveVocabularyRoot, mixedAnchorRecords());
+      const baseRuntime: VerificationCliRuntime = {
+        ...value.runtime,
+        vocabularyRoot: liveVocabularyRoot,
+        wordNet: async () => mixedAnchorEvidence(),
+        dictionary: async () => null,
+        tatoeba: async () => [],
+        judgeSense: null,
+      };
+      const cases = [{
+        name: "judge-unavailable",
+        runtime: { ...baseRuntime, judgeRelationship: null },
+        extraArgs: [] as string[],
+        reason: "judge_unavailable",
+      }, {
+        name: "budget-exhausted",
+        runtime: {
+          ...baseRuntime,
+          judgeRelationship: async (request: RelationshipJudgeRequest) => ({
+            decision: {
+              decision: "supported",
+              candidateSenseId: request.candidateSenseId,
+              coreLemma: request.coreLemma,
+            },
+            usage: { inputTokens: 1, outputTokens: 1 },
+          }),
+        },
+        extraArgs: ["--max-input-tokens=2000", "--max-output-tokens=200"],
+        reason: "budget_exhausted",
+      }];
+
+      for (const valueCase of cases) {
+        const cache = path.join(value.cache, valueCase.name);
+        const result = await runVerificationCli([
+          ...liveArgs(cache, path.join(value.directory, `${valueCase.name}-report.json`)),
+          ...valueCase.extraArgs,
+        ], valueCase.runtime);
+
+        expect(result.outcomes[0]!.dictionaryEvidence, valueCase.name).toHaveLength(1);
+        expect(result.report.entries, valueCase.name)
+          .toEqual([{ lemma: "mixed-anchor", reason: "published" }]);
+        expect(result.outcomes[0]!.relationships).toEqual(expect.arrayContaining([
+          expect.objectContaining({ decision: "supported" }),
+          expect.objectContaining({ reason: valueCase.reason }),
+        ]));
+        await expect(readFile(path.join(cache, "active-batch-v3.json"), "utf8"))
+          .rejects.toMatchObject({ code: "ENOENT" });
+      }
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("does not accept a legacy v2 manifest as write authorization", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "legacy-live-vocabulary");
+    try {
+      await writeVocabularyRecords(liveVocabularyRoot, recordPair("live-only"));
+      await mkdir(value.cache, { recursive: true });
+      await writeFile(path.join(value.cache, "active-batch.json"), JSON.stringify({
+        version: 2,
+        graphStatus: "ready",
+        batch: [],
+      }), "utf8");
+      const liveRuntime = { ...value.runtime, vocabularyRoot: liveVocabularyRoot };
+
+      await expect(runVerificationCli(
+        [...liveArgs(value.cache, path.join(value.directory, "legacy-write-report.json")), "--write"],
+        liveRuntime,
+      )).rejects.toThrow("--write requires a successful dry-run");
+      await expect(readFile(path.join(value.cache, "active-batch-v3.json"), "utf8"))
+        .rejects.toMatchObject({ code: "ENOENT" });
     } finally {
       await rm(value.directory, { recursive: true, force: true });
     }
