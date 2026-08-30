@@ -159,6 +159,7 @@ const firstChart = manifest.charts[0];
 const searchWord = searchCatalog.entries.find((entry) => /^[A-Za-z][A-Za-z' -]{4,}$/.test(entry.display) && entry.chartId !== "drift") ?? searchCatalog.entries[0];
 const searchWordChart = manifest.charts.find((chart) => chart.id === searchWord.chartId) ?? firstChart;
 const keyboardSearchQuery = findSearchPrefixWithMultipleMatches(searchCatalog.entries);
+const programWord = searchCatalog.entries.find((entry) => entry.lemma === "program");
 
 test.describe("progressive galaxy browser verification", () => {
   test("normal opening stays manifest-only until chart interaction", async ({ page }) => {
@@ -188,6 +189,97 @@ test.describe("progressive galaxy browser verification", () => {
     await expect(page.getByTestId("galaxy-status")).toContainText(`${searchWordChart.name} ready`);
     expect(tracker.requested(searchWordChart.asset.url)).toBe(true);
     expect(tracker.requested(manifest.assets.full.url)).toBe(false);
+  });
+
+  test("multiline meanings stay inside their cards in a short drawer", async ({ page }) => {
+    test.skip(!programWord, "The NGSL fixture must contain program");
+    await page.setViewportSize({ width: 1280, height: 418 });
+    await page.route("**/api/word/program", async (route) => {
+      await route.fulfill({
+        json: {
+          page: {
+            lemma: "program",
+            display: "program",
+            tier: "core",
+            pos: "noun",
+            rank: 100,
+            sfi: 60,
+            chart: programWord?.chartId ?? null,
+            region: null,
+            lists: ["ngsl"],
+            forms: ["programs"],
+            status: "verified",
+            sources: ["wordnet"],
+            definition: "a series of steps to be carried out or goals to be accomplished",
+            usageNote: null,
+            examples: [],
+            connections: [],
+            domains: [],
+          },
+          detail: null,
+          rarity: null,
+          learning: {
+            lemma: "program",
+            display: "program",
+            tier: "core",
+            partOfSpeech: "noun",
+            forms: ["programs"],
+            status: "verified",
+            sources: ["wordnet"],
+            evidence: "verified",
+            evidenceLabel: "Verified",
+            pronunciation: { ipa: null, audioUk: null, audioUs: null, audioAny: null },
+            senses: [
+              {
+                id: "wiki:0",
+                partOfSpeech: "noun",
+                definition: "a series of steps to be carried out or goals to be accomplished",
+                example: null,
+                source: "wiki",
+                primary: true,
+                canClaim: true,
+                claimBlockReason: null,
+              },
+              {
+                id: "dictionaryapi:1",
+                partOfSpeech: "noun",
+                definition: "A set of structured activities.",
+                example: "Our program for today’s exercise class includes swimming and jogging.",
+                source: "dictionaryapi",
+                primary: false,
+                canClaim: true,
+                claimBlockReason: null,
+              },
+            ],
+            examples: [],
+            usagePatterns: [],
+            collocations: [],
+            commonMistakes: [],
+            usageNote: null,
+            connections: [],
+            canClaim: true,
+            claimBlockReason: null,
+          },
+        },
+      });
+    });
+
+    await gotoNgsl(page);
+    const search = page.getByRole("textbox", { name: `Search ${manifest.list.label} stars` });
+    await search.fill("program");
+    await page.getByRole("button", { name: /^program\b/i }).click();
+
+    const drawer = page.getByRole("complementary", { name: "Word learning drawer" });
+    const primary = drawer.locator('[data-sense-id="wiki:0"]');
+    const otherHeading = drawer.getByRole("heading", { name: "Other meanings" });
+    await expect(primary).toBeVisible({ timeout: 10_000 });
+
+    const primaryBox = await primary.boundingBox();
+    const otherHeadingBox = await otherHeading.boundingBox();
+    expect(primaryBox).not.toBeNull();
+    expect(otherHeadingBox).not.toBeNull();
+    expect(await primary.evaluate((element) => getComputedStyle(element).flexShrink)).toBe("0");
+    expect(primaryBox!.y + primaryBox!.height).toBeLessThanOrEqual(otherHeadingBox!.y);
   });
 
   test("returning users stay manifest-only until explicitly opening Your Space", async ({ page }) => {

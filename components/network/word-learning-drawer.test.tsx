@@ -38,7 +38,61 @@ function composeButton(markup: string) {
   return match[0];
 }
 
+function senseButtons(markup: string) {
+  return Array.from(markup.matchAll(/<button\b[^>]*\bdata-sense-id="[^"]+"[^>]*>/g), ([button]) => button);
+}
+
 describe("WordLearningDrawer", () => {
+  it("keeps multiline sense cards at their natural height in a short drawer", () => {
+    const markup = renderToStaticMarkup(
+      <WordLearningDrawer
+        profile={{
+          ...profile,
+          senses: [
+            {
+              ...profile.senses[0]!,
+              definition: "a series of steps to be carried out or goals to be accomplished",
+            },
+            {
+              id: "dictionaryapi:1",
+              partOfSpeech: "noun",
+              definition: "A set of structured activities.",
+              example: "Our program includes swimming and jogging.",
+              source: "dictionaryapi",
+              primary: false,
+              canClaim: true,
+              claimBlockReason: null,
+            },
+          ],
+        }}
+        display="program"
+        partOfSpeech="noun"
+        loadState="ready"
+        errorMessage={null}
+        chart={{ name: "NGSL", hue: "#BFD9F2", glyph: "A" }}
+        held={false}
+        solid={false}
+        xp={10}
+        rarity={{ word: "Common", dot: "#BFD9F2", text: "1,000 words" }}
+        onClose={() => {}}
+        onRetry={() => {}}
+        onNavigate={() => {}}
+        selectedSenseId="wiki:0"
+        onSelectSense={() => {}}
+        onOpenQuiz={() => {}}
+        onCompose={() => {}}
+        onSpeak={() => {}}
+        onPlayAudio={() => {}}
+        displayConnection={(lemma) => lemma}
+      />,
+    );
+
+    expect(senseButtons(markup)).toHaveLength(2);
+    for (const button of senseButtons(markup)) {
+      expect(button).toContain("flex-shrink:0");
+    }
+  });
+
   it("applies tab key side effects for handled keys and ignores unhandled keys", () => {
     const cases = [
       ["meaning", "ArrowLeft", "connect"],
