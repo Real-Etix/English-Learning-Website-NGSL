@@ -280,6 +280,27 @@ describe("verifyCandidateSense", () => {
     expect(result).toMatchObject({ selectedSenseId, selectedExampleId: example.id, reason: null, decisionSource: "llm" });
   });
 
+  test("rejects a selected sense without an attached sourced example", async () => {
+    const evidence = factualEvidence([{ ...firstSense, example: null }]);
+    const record = candidate();
+    const selectedSenseId = dictionarySenseId(record, evidence.detail, evidence.detail.senses[0]!, "dictionaryapi");
+
+    const result = await verifyCandidateSense(input([evidence], {
+      candidate: record,
+      tatoebaExamples: [tatoeba()],
+    }), async () => ({
+      decision: { decision: "selected", senseId: selectedSenseId, exampleId: null },
+      usage: { inputTokens: 3, outputTokens: 2 },
+    }));
+
+    expect(result).toMatchObject({
+      selectedSenseId: null,
+      selectedExampleId: null,
+      reason: "sense_ambiguous",
+      decisionSource: "llm",
+    });
+  });
+
   test("returns no sourced example before asking a judge when no matching factual example exists", async () => {
     const result = await verifyCandidateSense(input([
       factualEvidence([{ ...firstSense, example: "A manifestation occurred." }]),

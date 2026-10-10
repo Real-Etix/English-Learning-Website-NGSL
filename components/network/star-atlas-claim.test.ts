@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import type { WordLearningProfile } from "@/lib/content/word-learning";
-import { preferredPublishedSenseId, rollbackOptimisticClaim } from "./star-atlas";
+import { preferredPublishedSenseId, resolveSelectedSenseId, rollbackOptimisticClaim } from "./star-atlas";
 
 function sense(overrides: Partial<WordLearningProfile["senses"][number]> = {}): WordLearningProfile["senses"][number] {
   return {
@@ -46,5 +46,28 @@ describe("preferredPublishedSenseId", () => {
     ] })).toBe("published-first");
 
     expect(preferredPublishedSenseId({ senses: [sense({ id: "claimable-only" })] })).toBeNull();
+  });
+});
+
+describe("resolveSelectedSenseId", () => {
+  const profile = { lemma: "bank", senses: [
+    sense({ id: "bank-primary", published: true, primary: true }),
+    sense({ id: "bank-river", published: true }),
+  ] };
+
+  it("preserves an explicit choice for the current word", () => {
+    expect(resolveSelectedSenseId(profile, { lemma: "bank", senseId: "bank-river" }))
+      .toBe("bank-river");
+  });
+
+  it("uses the current word's default when a stored choice is stale or belongs to another word", () => {
+    expect(resolveSelectedSenseId(profile, { lemma: "learn", senseId: "bank-river" }))
+      .toBe("bank-primary");
+    expect(resolveSelectedSenseId(profile, { lemma: "bank", senseId: "removed-sense" }))
+      .toBe("bank-primary");
+  });
+
+  it("has no selected meaning while the focused word is loading", () => {
+    expect(resolveSelectedSenseId(null, { lemma: "bank", senseId: "bank-river" })).toBeNull();
   });
 });

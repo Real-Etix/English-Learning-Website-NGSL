@@ -106,6 +106,19 @@ export function preferredPublishedSenseId(
     ?? null;
 }
 
+type SenseChoice = { lemma: string; senseId: string };
+
+export function resolveSelectedSenseId(
+  profile: Pick<WordLearningProfile, "lemma" | "senses"> | null,
+  choice: SenseChoice | null,
+): string | null {
+  if (!profile) return null;
+  if (choice?.lemma === profile.lemma && profile.senses.some((sense) => sense.id === choice.senseId)) {
+    return choice.senseId;
+  }
+  return preferredPublishedSenseId(profile);
+}
+
 type WordMeta = Omit<SearchEntry, "normalized">;
 type AtlasModel = {
   byLemma: Map<string, WordMeta>;
@@ -218,7 +231,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const [compose, setCompose] = useState<ComposeState | null>(null);
   // detail data for the focused star
   const [wordData, setWordData] = useState<WordResponse | null>(null);
-  const [selectedSenseId, setSelectedSenseId] = useState<string | null>(null);
+  const [senseChoice, setSenseChoice] = useState<SenseChoice | null>(null);
   const [wordError, setWordError] = useState<{ lemma: string; message: string } | null>(null);
   const [wordRetry, setWordRetry] = useState(0);
   // tutor
@@ -755,16 +768,11 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
     setWordRetry((retry) => retry + 1);
   }, [focus]);
 
-  useEffect(() => {
-    const profile = wordData?.page?.lemma === focus ? resolveWordLearningProfile(wordData, focus ?? undefined) : null;
-    if (!profile) {
-      setSelectedSenseId(null);
-      return;
-    }
-    setSelectedSenseId((current) => current && profile.senses.some((sense) => sense.id === current)
-      ? current
-      : preferredPublishedSenseId(profile));
-  }, [focus, wordData]);
+  const focusedLearningProfile = wordReady ? resolveWordLearningProfile(wordData, focus ?? undefined) : null;
+  const selectedSenseId = resolveSelectedSenseId(focusedLearningProfile, senseChoice);
+  const setSelectedSenseId = useCallback((senseId: string) => {
+    if (focus) setSenseChoice({ lemma: focus, senseId });
+  }, [focus]);
 
 
   // ---- claiming ----

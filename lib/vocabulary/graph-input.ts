@@ -1,5 +1,5 @@
 import type { VocabularyRecord } from "./schema";
-import { isWordPublic } from "./publication";
+import { isWordPublic, isSensePublishable } from "./publication";
 import { connectionsForClustering, type ClusteringConnectionOptions } from "./public-connections";
 
 export type GraphConnection = {
@@ -37,7 +37,7 @@ export type GraphInputOptions = ClusteringConnectionOptions & {
 };
 
 export function toGraphInput(record: VocabularyRecord, options: GraphInputOptions): GraphInput {
-  const primarySense = record.senses[0];
+  const primarySense = record.senses.find(sense => isSensePublishable(record, sense));
   return {
     lemma: record.lemma,
     display: record.display,

@@ -231,7 +231,8 @@ export async function verifyCandidateSense(
   const senseIds = new Set(eligibleSenses.map((sense) => sense.id));
   const selectedSense = eligibleSenses.find((sense) => sense.id === decision.data.senseId);
   const selectedExampleIsEligible = decision.data.exampleId === null
-    || tatoebaExamples.some((example) => example.id === decision.data.exampleId)
+    ? Boolean(selectedSense?.examples.length)
+    : tatoebaExamples.some((example) => example.id === decision.data.exampleId)
     || selectedSense?.examples.some((example) => example.id === decision.data.exampleId);
   if (!senseIds.has(decision.data.senseId) || !selectedExampleIsEligible) {
     return result(eligibleSenses, null, null, "sense_ambiguous", "llm", judged.usage);

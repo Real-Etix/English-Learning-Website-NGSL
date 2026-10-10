@@ -24,12 +24,16 @@ export function factualEvidenceFor(record: VocabularyRecord, sense: VocabularySe
   });
 }
 
-/** A public sense needs factual meaning evidence, usable authored content, and a factual example. */
-export function isSensePublishable(record: VocabularyRecord, sense: VocabularySense): boolean {
+/** Content readiness is independent from the persisted review/publication flag. */
+export function isSenseContentReady(record: VocabularyRecord, sense: VocabularySense): boolean {
   return factualEvidenceFor(record, sense) !== "ai-draft"
-    && sense.status === "published"
     && isUsableDefinition(sense.definition)
     && hasSourcedExample(sense);
+}
+
+/** A public sense needs factual meaning evidence, usable authored content, and a factual example. */
+export function isSensePublishable(record: VocabularyRecord, sense: VocabularySense): boolean {
+  return sense.status === "published" && isSenseContentReady(record, sense);
 }
 
 /** Learner-facing edges must have both an explicit publication review and guidance. */
@@ -37,29 +41,15 @@ export function isLearnerConnection(connection: Pick<VocabularyConnection, "stat
   return connection.status === "published" && Boolean(connection.gloss?.trim());
 }
 
-function isPublicCoreRecord(record: VocabularyRecord): boolean {
-  return record.tier === "core" && record.publicationStatus === "published";
-}
-
-function hasPublicCoreAnchor(record: VocabularyRecord, records: Iterable<VocabularyRecord>): boolean {
-  const byLemma = new Map([...records].map((candidate) => [candidate.lemma, candidate]));
-  return record.connections.some((connection) =>
-    connection.type === "builds_on"
-    && connection.status === "published"
-    && Boolean(connection.gloss?.trim())
-    && Boolean(byLemma.get(connection.target) && isPublicCoreRecord(byLemma.get(connection.target)!)),
-  );
-}
-
 /**
  * Calculates the persisted publication state. Existing non-public states are
- * never promoted by this quarantine pass; unsupported published advanced words
- * are moved to hidden.
+ * never promoted by this quarantine pass. Word content is independent from
+ * graph relationships: learner-facing edges have their own publication gate.
  */
 export function publicationStatusFor(record: VocabularyRecord, records: Iterable<VocabularyRecord> = []): PublicationStatus {
+  void records;
   if (record.publicationStatus !== "published" || record.tier === "core") return record.publicationStatus;
-  const supportsPublication = record.senses.some((sense) => isSensePublishable(record, sense))
-    && hasPublicCoreAnchor(record, records);
+  const supportsPublication = record.senses.some((sense) => isSensePublishable(record, sense));
   return supportsPublication ? "published" : "hidden";
 }
 

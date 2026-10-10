@@ -37,6 +37,8 @@ export type LlmResultOptions = {
   fallbackUsage?: LlmUsage;
   maxOutputTokens?: number;
   sanitizeErrors?: boolean;
+  thinking?: "enabled" | "disabled";
+  jsonObject?: boolean;
 };
 
 type ChatCompletionResponse = {
@@ -85,6 +87,8 @@ export async function completeChatResult(
           model,
           messages,
           ...(options.maxOutputTokens === undefined ? {} : { max_tokens: options.maxOutputTokens }),
+          ...(options.thinking === undefined ? {} : { thinking: { type: options.thinking } }),
+          ...(options.jsonObject ? { response_format: { type: "json_object" } } : {}),
         }),
       });
 

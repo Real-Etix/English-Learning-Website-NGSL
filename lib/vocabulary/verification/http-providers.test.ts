@@ -163,6 +163,21 @@ describe("fetchDictionaryEvidence", () => {
 });
 
 describe("fetchTatoebaExamples", () => {
+  test("does not query Tatoeba for a malformed lemma that starts with punctuation", async () => {
+    let calls = 0;
+
+    const result = await fetchTatoebaExamples("-hydroxypropanoate", ["-hydroxypropanoate"], {
+      fetch: async () => {
+        calls += 1;
+        return jsonResponse({ data: [], paging: {} });
+      },
+      now: fixedNow,
+    });
+
+    expect(result).toEqual([]);
+    expect(calls).toBe(0);
+  });
+
   test("normalizes valid English v1 sentences with learner attribution URLs", async () => {
     const calls: string[] = [];
     const result = await fetchTatoebaExamples("obtain", ["obtain", "obtained"], {

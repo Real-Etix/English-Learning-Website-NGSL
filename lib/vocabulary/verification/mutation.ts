@@ -3,6 +3,7 @@ import { isSensePublishable, publicationStatusFor } from "../publication";
 import {
   VocabularyRecordSchema,
   type VocabularyConnection,
+  type AdvancedVerificationStatus,
   type VocabularyRecord,
   type VocabularySense,
 } from "../schema";
@@ -160,6 +161,25 @@ function changed(left: VocabularyRecord, right: VocabularyRecord): boolean {
   return JSON.stringify(left) !== JSON.stringify(right);
 }
 
+function terminalVerificationStatus(
+  reason: VerificationReasonCode,
+): AdvancedVerificationStatus | undefined {
+  if (reason === "published") return "published";
+  if (reason === "sense_ambiguous" || reason === "relationship_ambiguous") return "ambiguous";
+  if (reason === "judge_unavailable" || reason === "provider_failed" || reason === "budget_exhausted") {
+    return undefined;
+  }
+  return "unsupported";
+}
+
+function relationshipVerificationStatus(
+  relationships: readonly AnchorDecision[],
+): AdvancedVerificationStatus {
+  if (relationships.some((relationship) => relationship.decision === "supported")) return "published";
+  if (relationships.some((relationship) => relationship.decision === "ambiguous")) return "ambiguous";
+  return "unsupported";
+}
+
 /** Applies a complete finite batch to a cloned snapshot and validates before returning. */
 export function applyVerificationOutcomes(
   records: readonly VocabularyRecord[],
@@ -183,13 +203,16 @@ export function applyVerificationOutcomes(
       throw new Error(`Candidate identity mismatch for ${outcome.candidateLemma}: expected advanced tier`);
     }
 
-    const publish = outcome.reason === "published";
+    const publishContent = outcome.selectedSenseId !== null;
     for (const relationship of outcome.relationships) {
       if (!byLemma.has(relationship.coreLemma)) {
         throw new Error(`Missing core record: ${relationship.coreLemma}`);
       }
     }
-    if (publish && !outcome.relationships.some((relationship) => relationship.decision === "supported")) {
+    if (outcome.reason === "published" && outcome.selectedSenseId === null) {
+      throw new Error(`Selected sense is required for publication: ${existing.lemma}`);
+    }
+    if (outcome.reason === "published" && !outcome.relationships.some((relationship) => relationship.decision === "supported")) {
       throw new Error(`Publication requires a supported reciprocal relationship: ${existing.lemma}`);
     }
     const relationshipKeys = new Set(outcome.relationships.map(relationshipKey));
@@ -209,11 +232,17 @@ export function applyVerificationOutcomes(
       outcome.selectedSenseId,
       outcome.selectedExample,
     );
-    candidate = withSenseStatuses(candidate, outcome.selectedSenseId, publish);
+    candidate = withSenseStatuses(candidate, outcome.selectedSenseId, publishContent);
     candidate = {
       ...candidate,
-      status: outcome.dictionaryEvidence.length > 0 || publish ? "enriched" : candidate.status,
-      publicationStatus: publish ? "published" : "hidden",
+      status: outcome.dictionaryEvidence.length > 0 || publishContent ? "enriched" : candidate.status,
+      publicationStatus: publishContent ? "published" : "hidden",
+      relationshipVerificationStatus: relationshipVerificationStatus(outcome.relationships),
+      ...(publishContent
+        ? { verificationStatus: "published" as const }
+        : terminalVerificationStatus(outcome.reason) === undefined
+          ? {}
+          : { verificationStatus: terminalVerificationStatus(outcome.reason) }),
     };
     byLemma.set(candidate.lemma, candidate);
 
@@ -241,10 +270,14 @@ export function applyVerificationOutcomes(
         type: relationship.coreType,
         gloss: relationship.coreGloss,
       }, "core");
-      const nextStatus = relationship.decision === "supported" ? "published" : "unreviewed";
-      const wasDowngraded = nextStatus === "unreviewed" && (
-        candidate.connections[candidateIndex]!.status !== "unreviewed"
-        || core.connections[coreIndex]!.status !== "unreviewed"
+      const nextStatus = relationship.decision === "supported"
+        ? "published"
+        : relationship.decision === "unsupported"
+          ? "hidden"
+          : "unreviewed";
+      const wasDowngraded = nextStatus !== "published" && (
+        candidate.connections[candidateIndex]!.status !== nextStatus
+        || core.connections[coreIndex]!.status !== nextStatus
       );
 
       candidate = replaceConnectionStatus(candidate, candidateIndex, nextStatus);
@@ -253,11 +286,8 @@ export function applyVerificationOutcomes(
       if (wasDowngraded) downgradedRelationshipCount += 1;
     }
 
-    if (publish) {
-      if (outcome.selectedSenseId === null) {
-        throw new Error(`Selected sense is required for publication: ${candidate.lemma}`);
-      }
-      proposedPublished.set(candidate.lemma, outcome.selectedSenseId);
+    if (publishContent) {
+      proposedPublished.set(candidate.lemma, outcome.selectedSenseId!);
     }
   }
 

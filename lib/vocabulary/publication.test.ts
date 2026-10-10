@@ -110,7 +110,7 @@ describe("vocabulary publication", () => {
     expect(factualEvidenceFor(unsourcedPrimary, unsourcedPrimary.senses[0]!)).toBe("ai-draft");
   });
 
-  it("requires a sourced publishable sense and a glossed published connection to a public core word", () => {
+  it("publishes sourced word content independently from its learner-facing connections", () => {
     const { core, advanced } = advancedFixture();
     const supported = {
       ...advanced,
@@ -127,7 +127,11 @@ describe("vocabulary publication", () => {
     expect(publicationStatusFor({
       ...supported,
       connections: [{ ...supported.connections[0]!, gloss: null }],
-    }, [core, supported])).toBe("hidden");
+    }, [core, supported])).toBe("published");
+    expect(publicationStatusFor({
+      ...supported,
+      connections: [{ ...supported.connections[0]!, status: "unreviewed" }],
+    }, [core, supported])).toBe("published");
   });
 
   it.each(["draft", "review"] as const)("does not publish a %s sense even when all other evidence gates pass", (status) => {

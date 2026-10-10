@@ -10,6 +10,27 @@ describe("VocabularyRecordSchema", () => {
     }).success).toBe(false);
   });
 
+  it("accepts a terminal advanced-verification status and rejects unknown values", () => {
+    expect(VocabularyRecordSchema.safeParse({
+      ...vocabularyRecordFixture(), verificationStatus: "ambiguous",
+    }).success).toBe(true);
+    expect(VocabularyRecordSchema.safeParse({
+      ...vocabularyRecordFixture(), verificationStatus: "retrying",
+    }).success).toBe(false);
+  });
+
+  it("stores relationship verification independently from word verification", () => {
+    expect(VocabularyRecordSchema.safeParse({
+      ...vocabularyRecordFixture(),
+      verificationStatus: "published",
+      relationshipVerificationStatus: "ambiguous",
+    }).success).toBe(true);
+    expect(VocabularyRecordSchema.safeParse({
+      ...vocabularyRecordFixture(),
+      relationshipVerificationStatus: "retrying",
+    }).success).toBe(false);
+  });
+
   it("rejects non-normalized record lemmas", () => {
     expect(VocabularyRecordSchema.safeParse({
       ...vocabularyRecordFixture(),

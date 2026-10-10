@@ -1,8 +1,13 @@
 import type { VocabularyRecord } from "../schema";
+import { isFactualSourceId } from "../source-evidence";
 import type { ReciprocalCoreAnchor, VerificationCandidate } from "./types";
 
 function hasNonEmptyGloss(gloss: string | null): gloss is string {
   return typeof gloss === "string" && gloss.trim().length > 0;
+}
+
+function hasFactualEntryEvidence(record: VocabularyRecord): boolean {
+  return record.sources.some((source) => isFactualSourceId(source.sourceId));
 }
 
 function reciprocalAnchors(
@@ -54,7 +59,10 @@ export function selectAdvancedVerificationCandidates(
   for (const record of records) recordsByLemma.set(record.lemma, record);
 
   const hiddenAdvanced = [...recordsByLemma.values()].filter((record) =>
-    record.tier === "advanced" && record.publicationStatus === "hidden",
+    record.tier === "advanced"
+    && record.publicationStatus === "hidden"
+    && record.verificationStatus === undefined
+    && !hasFactualEntryEvidence(record),
   );
   const hiddenAdvancedLemmas = new Set(hiddenAdvanced.map((record) => record.lemma));
   const incomingPublishedCounts = new Map<string, number>();

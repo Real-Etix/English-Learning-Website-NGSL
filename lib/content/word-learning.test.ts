@@ -66,6 +66,22 @@ function page(overrides: Partial<LegacyWordPage> = {}): VocabularyRecord {
 }
 
 describe("buildWordLearningProfile", () => {
+  it("does not expose hidden meanings or their examples after repair", () => {
+    const record = vocabularyRecordFixture();
+    const good = record.senses[0]!;
+    record.senses = [{ ...good, id: "obsolete", definition: "Incorrect old meaning", status: "hidden", examples: [{ ...good.examples[0]!, text: "Incorrect old example" }] }, good];
+    const profile = buildWordLearningProfile(record, emptyDetail);
+    expect(profile.senses[0]?.id).toBe(good.id);
+    expect(JSON.stringify(profile)).not.toContain("Incorrect old");
+  });
+  it("prefers an explicitly published repaired sense over earlier review alternatives", () => {
+    const record = vocabularyRecordFixture();
+    const good = record.senses[0]!;
+    record.senses = [{ ...good, id: "alternative", definition: "Another factual sense", status: "review", examples: [] }, good];
+    const profile = buildWordLearningProfile(record, emptyDetail);
+    expect(profile.senses[0]).toMatchObject({ id: good.id, primary: true, canClaim: true });
+    expect(profile.canClaim).toBe(true);
+  });
   it("maps the canonical primary sense and examples into the learner profile", () => {
     const record = vocabularyRecordFixture();
 

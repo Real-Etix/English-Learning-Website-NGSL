@@ -145,7 +145,7 @@ function mixedAnchorRecords(): VocabularyRecord[] {
   }, firstCore!, secondCore];
 }
 
-function mixedAnchorEvidence(): FactualDictionaryEvidence {
+function mixedAnchorEvidence(synonyms: string[] = ["core-mixed-anchor"]): FactualDictionaryEvidence {
   const detail: FactualDictionaryEvidence["detail"] = {
     ipa: null,
     audioUk: null,
@@ -159,7 +159,7 @@ function mixedAnchorEvidence(): FactualDictionaryEvidence {
       sourceEntryId: "verb:mixed-anchor",
       sourceSenseId: "verb:mixed-anchor",
     }],
-    synonyms: ["core-mixed-anchor"],
+    synonyms,
   };
   return {
     provider: "wordnet",
@@ -249,8 +249,22 @@ describe("verify advanced vocabulary CLI", () => {
       maxSourceRequests: 100,
       maxInputTokens: 20_000,
       maxOutputTokens: 8_000,
+      skipDictionaryApi: false,
+      wordnetOnly: false,
       write: false,
     });
+    expect(parseVerificationArgs(["--skip-dictionaryapi"]).skipDictionaryApi).toBe(true);
+    expect(() => parseVerificationArgs(["--skip-dictionaryapi", "--skip-dictionaryapi"]))
+      .toThrow("--skip-dictionaryapi may only be provided once");
+    expect(() => parseVerificationArgs(["--skip-dictionaryapi", "--wordnet-only"]))
+      .toThrow("--skip-dictionaryapi cannot be combined with --wordnet-only");
+    expect(() => parseVerificationArgs(["--skip-dictionaryapi", `--fixture=${fixturePath}`]))
+      .toThrow("--skip-dictionaryapi cannot be combined with --fixture");
+    expect(parseVerificationArgs(["--wordnet-only"]).wordnetOnly).toBe(true);
+    expect(() => parseVerificationArgs(["--wordnet-only", "--wordnet-only"]))
+      .toThrow("--wordnet-only may only be provided once");
+    expect(() => parseVerificationArgs(["--wordnet-only", `--fixture=${fixturePath}`]))
+      .toThrow("--wordnet-only cannot be combined with --fixture");
     expect(() => parseVerificationArgs(["--concurrency=6"])).toThrow(
       "--concurrency must be an integer from 1 to 5",
     );
@@ -308,6 +322,8 @@ describe("verify advanced vocabulary CLI", () => {
       model: "test-model",
       complete: async (system, user, _model, _attempts, options) => {
         systems.push(system);
+        expect(options.thinking).toBe("disabled");
+        expect(options.jsonObject).toBe(true);
         const request = JSON.parse(user) as Record<string, unknown>;
         const value = "candidate" in request
           ? {
@@ -358,6 +374,30 @@ describe("verify advanced vocabulary CLI", () => {
     expect(systems[1]).toContain('"coreLemma"');
   });
 
+  test("allows reasoning models enough output budget to emit their JSON decision", async () => {
+    let requestedOutputTokens = 0;
+    const judges = createLlmJudges(parseVerificationArgs([]), {
+      available: true,
+      model: "reasoning-model",
+      complete: async (_system, _user, _model, _attempts, options) => {
+        requestedOutputTokens = options.maxOutputTokens ?? 0;
+        return {
+          value: { decision: "ambiguous", senseId: null, exampleId: null },
+          usage: { inputTokens: 10, outputTokens: 50 },
+          requestId: options.requestId!,
+        };
+      },
+    });
+
+    await judges.judgeSense!({
+      candidate: { lemma: "test-word", partOfSpeech: "verb", forms: [] },
+      senses: [{ id: "sense-1", partOfSpeech: "verb", definition: "To test." }],
+      examples: [{ id: "example-1", text: "They test the result." }],
+    });
+
+    expect(requestedOutputTokens).toBe(1_000);
+  });
+
   test("keeps a fixture dry-run side-effect free and pins its successful batch", async () => {
     const value = await setup();
     try {
@@ -392,9 +432,9 @@ describe("verify advanced vocabulary CLI", () => {
         selected: 7,
         attempted: 7,
         sourceBacked: 6,
-        published: 4,
+        published: 5,
         ambiguous: 1,
-        unsupported: 1,
+        unsupported: 0,
         failed: 1,
         relationships: { accepted: 4, rejected: 1, ambiguous: 2 },
       });
@@ -433,9 +473,9 @@ describe("verify advanced vocabulary CLI", () => {
       expect(result.report).toMatchObject({
         selected: 7,
         attempted: 7,
-        published: 4,
+        published: 5,
         ambiguous: 1,
-        unsupported: 1,
+        unsupported: 0,
         failed: 1,
       });
       expect(value.graphBuilds()).toBe(0);
@@ -700,6 +740,249 @@ describe("verify advanced vocabulary CLI", () => {
     }
   });
 
+  test("runs WordNet-only verification without network providers or model judges", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "wordnet-only-vocabulary");
+    const cache = path.join(value.cache, "source-mode");
+    try {
+      await writeVocabularyRecords(liveVocabularyRoot, [
+        ...recordPair("wordnet-direct"),
+        ...mixedAnchorRecords(),
+      ]);
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        wordnet: Record<string, { value: unknown }>;
+      };
+      const directEvidence = fixture.wordnet["wordnet-direct"]!.value as Awaited<
+        ReturnType<VerificationCliRuntime["wordNet"]>
+      >;
+      let disabledCalls = 0;
+      const liveRuntime: VerificationCliRuntime = {
+        ...value.runtime,
+        vocabularyRoot: liveVocabularyRoot,
+        wordNet: async (candidate) => candidate.record.lemma === "wordnet-direct"
+          ? directEvidence
+          : mixedAnchorEvidence(),
+        dictionary: async () => { disabledCalls += 1; throw new Error("DictionaryAPI must be skipped"); },
+        tatoeba: async () => { disabledCalls += 1; throw new Error("Tatoeba must be skipped"); },
+        judgeSense: async () => { disabledCalls += 1; throw new Error("sense judge must be skipped"); },
+        judgeRelationship: async () => {
+          disabledCalls += 1;
+          throw new Error("relationship judge must be skipped");
+        },
+      };
+
+      const result = await runVerificationCli([
+        "--wordnet-only",
+        "--limit=2",
+        `--cache=${cache}`,
+        `--report=${path.join(value.directory, "wordnet-only-report.json")}`,
+      ], liveRuntime);
+
+      expect(disabledCalls).toBe(0);
+      expect(result.report).toMatchObject({ selected: 2, attempted: 2, published: 2, failed: 0 });
+      expect(result.report.requests).toMatchObject({ source: 0, llm: 0 });
+      expect(JSON.parse(await readFile(
+        path.join(cache, "wordnet-only", "active-batch-v3.json"),
+        "utf8",
+      ))).toMatchObject({
+        version: 3,
+        identity: { sourceMode: "wordnet-only", decisionProfile: "disabled-v1" },
+        graphStatus: "ready",
+      });
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("skips only DictionaryAPI while using Tatoeba and the model judge", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "skip-dictionaryapi-vocabulary");
+    const cache = path.join(value.cache, "source-mode");
+    try {
+      await writeVocabularyRecords(liveVocabularyRoot, recordPair("tatoeba-grounded"));
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        wordnet: Record<string, { value: unknown }>;
+        tatoeba: Record<string, { value: unknown }>;
+        sense: Record<string, { decision: unknown; usage: { inputTokens: number; outputTokens: number } }>;
+      };
+      const wordNetEvidence = fixture.wordnet["tatoeba-grounded"]!.value as Awaited<
+        ReturnType<VerificationCliRuntime["wordNet"]>
+      >;
+      const tatoebaEvidence = fixture.tatoeba["tatoeba-grounded"]!.value as Awaited<
+        ReturnType<VerificationCliRuntime["tatoeba"]>
+      >;
+      let dictionaryCalls = 0;
+      let tatoebaCalls = 0;
+      let senseJudgeCalls = 0;
+      const liveRuntime: VerificationCliRuntime = {
+        ...value.runtime,
+        vocabularyRoot: liveVocabularyRoot,
+        wordNet: async () => wordNetEvidence,
+        dictionary: async () => {
+          dictionaryCalls += 1;
+          throw new Error("DictionaryAPI must be skipped");
+        },
+        tatoeba: async () => {
+          tatoebaCalls += 1;
+          return tatoebaEvidence;
+        },
+        judgeSense: async () => {
+          senseJudgeCalls += 1;
+          return fixture.sense["tatoeba-grounded"]!;
+        },
+        judgeRelationship: async () => {
+          throw new Error("direct WordNet relationship must not need a model judge");
+        },
+      };
+
+      const result = await runVerificationCli([
+        "--skip-dictionaryapi",
+        "--limit=1",
+        `--cache=${cache}`,
+        `--report=${path.join(value.directory, "skip-dictionaryapi-report.json")}`,
+      ], liveRuntime);
+
+      expect({ dictionaryCalls, tatoebaCalls, senseJudgeCalls }).toEqual({
+        dictionaryCalls: 0,
+        tatoebaCalls: 1,
+        senseJudgeCalls: 1,
+      });
+      expect(result.report).toMatchObject({ selected: 1, attempted: 1, published: 1, failed: 0 });
+      expect(result.report.requests).toMatchObject({ source: 1, llm: 1 });
+      expect(result.report.cache.dictionaryapi).toEqual({ hits: 0, misses: 0 });
+      expect(JSON.parse(await readFile(
+        path.join(cache, "skip-dictionaryapi", "active-batch-v3.json"),
+        "utf8",
+      ))).toMatchObject({
+        version: 3,
+        identity: {
+          sourceMode: "skip-dictionaryapi",
+          decisionProfile: "finite-json-nonthinking-v3",
+        },
+        graphStatus: "ready",
+      });
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("replays only the pinned DictionaryAPI-disabled profile in write mode", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "skip-dictionaryapi-write-vocabulary");
+    const cache = path.join(value.cache, "write-profile");
+    try {
+      await writeVocabularyRecords(liveVocabularyRoot, recordPair("tatoeba-grounded"));
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        wordnet: Record<string, { value: unknown }>;
+        tatoeba: Record<string, { value: unknown }>;
+        sense: Record<string, { decision: unknown; usage: { inputTokens: number; outputTokens: number } }>;
+      };
+      let dictionaryCalls = 0;
+      const runtime: VerificationCliRuntime = {
+        ...value.runtime,
+        vocabularyRoot: liveVocabularyRoot,
+        wordNet: async () => fixture.wordnet["tatoeba-grounded"]!.value as Awaited<
+          ReturnType<VerificationCliRuntime["wordNet"]>
+        >,
+        dictionary: async () => {
+          dictionaryCalls += 1;
+          throw new Error("DictionaryAPI must be skipped");
+        },
+        tatoeba: async () => fixture.tatoeba["tatoeba-grounded"]!.value as Awaited<
+          ReturnType<VerificationCliRuntime["tatoeba"]>
+        >,
+        judgeSense: async () => fixture.sense["tatoeba-grounded"]!,
+        judgeRelationship: async () => {
+          throw new Error("direct WordNet relationship must not need a model judge");
+        },
+      };
+      const report = path.join(value.directory, "skip-dictionaryapi-write-report.json");
+      const profileArgs = [
+        "--skip-dictionaryapi",
+        "--limit=1",
+        `--cache=${cache}`,
+        `--report=${report}`,
+      ];
+
+      const dryRun = await runVerificationCli(profileArgs, runtime);
+      const write = await runVerificationCli([...profileArgs, "--write"], runtime);
+
+      expect(write.batch).toEqual(dryRun.batch);
+      expect(write.report.changedShards.length).toBeGreaterThan(0);
+      expect(dictionaryCalls).toBe(0);
+      expect(value.graphBuilds()).toBe(1);
+      await expect(runVerificationCli([
+        "--limit=1", `--cache=${cache}`, `--report=${report}`, "--write",
+      ], runtime)).rejects.toThrow("--write requires a successful dry-run");
+      await expect(runVerificationCli([
+        "--wordnet-only", "--limit=1", `--cache=${cache}`, `--report=${report}`, "--write",
+      ], runtime)).rejects.toThrow("--write requires a successful dry-run");
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
+  test("does not authorize DictionaryAPI-disabled writes after Tatoeba or model failure", async () => {
+    const value = await setup();
+    const liveVocabularyRoot = path.join(value.directory, "skip-dictionaryapi-failure-vocabulary");
+    try {
+      await writeVocabularyRecords(liveVocabularyRoot, recordPair("tatoeba-grounded"));
+      const before = await vocabularySnapshot(liveVocabularyRoot);
+      const fixture = JSON.parse(await readFile(fixturePath, "utf8")) as {
+        wordnet: Record<string, { value: unknown }>;
+        tatoeba: Record<string, { value: unknown }>;
+      };
+      const baseRuntime: VerificationCliRuntime = {
+        ...value.runtime,
+        vocabularyRoot: liveVocabularyRoot,
+        wordNet: async () => fixture.wordnet["tatoeba-grounded"]!.value as Awaited<
+          ReturnType<VerificationCliRuntime["wordNet"]>
+        >,
+        dictionary: async () => { throw new Error("DictionaryAPI must be skipped"); },
+        tatoeba: async () => fixture.tatoeba["tatoeba-grounded"]!.value as Awaited<
+          ReturnType<VerificationCliRuntime["tatoeba"]>
+        >,
+        judgeSense: async () => { throw new Error("model unavailable"); },
+        judgeRelationship: null,
+      };
+      const cases = [{
+        name: "tatoeba-failure",
+        runtime: { ...baseRuntime, tatoeba: async () => { throw new Error("Tatoeba unavailable"); } },
+        reason: "provider_failed",
+      }, {
+        name: "model-failure",
+        runtime: baseRuntime,
+        reason: "judge_unavailable",
+      }];
+
+      for (const valueCase of cases) {
+        const cache = path.join(value.cache, valueCase.name);
+        const report = path.join(value.directory, `${valueCase.name}-report.json`);
+        const argv = [
+          "--skip-dictionaryapi", "--limit=1", `--cache=${cache}`, `--report=${report}`,
+        ];
+        const dryRun = await runVerificationCli(argv, valueCase.runtime);
+
+        expect(dryRun.report.entries).toEqual([{
+          lemma: "tatoeba-grounded",
+          reason: valueCase.reason,
+        }]);
+        expect(dryRun.report.cache.dictionaryapi).toEqual({ hits: 0, misses: 0 });
+        await expect(readFile(
+          path.join(cache, "skip-dictionaryapi", "active-batch-v3.json"),
+          "utf8",
+        )).rejects.toMatchObject({ code: "ENOENT" });
+        await expect(runVerificationCli([...argv, "--write"], valueCase.runtime))
+          .rejects.toThrow("--write requires a successful dry-run");
+      }
+
+      expect(await vocabularySnapshot(liveVocabularyRoot)).toEqual(before);
+      expect(value.graphBuilds()).toBe(0);
+    } finally {
+      await rm(value.directory, { recursive: true, force: true });
+    }
+  });
+
   test("does not pin mixed-anchor live outcomes with model or budget failures", async () => {
     const value = await setup();
     const liveVocabularyRoot = path.join(value.directory, "mixed-live-vocabulary");
@@ -708,7 +991,7 @@ describe("verify advanced vocabulary CLI", () => {
       const baseRuntime: VerificationCliRuntime = {
         ...value.runtime,
         vocabularyRoot: liveVocabularyRoot,
-        wordNet: async () => mixedAnchorEvidence(),
+        wordNet: async () => mixedAnchorEvidence(["other-mixed-anchor"]),
         dictionary: async () => null,
         tatoeba: async () => [],
         judgeSense: null,

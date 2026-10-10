@@ -66,6 +66,7 @@ export type VerificationRunOptions = {
   maxInputTokens: number;
   maxOutputTokens: number;
   write: boolean;
+  sourceMode?: "full" | "wordnet-only" | "skip-dictionaryapi";
   rebuildGraphs?: boolean;
   signal?: AbortSignal;
   batch?: readonly VerificationBatchEntry[];
@@ -117,8 +118,8 @@ const ZERO_USAGE: TokenUsage = { inputTokens: 0, outputTokens: 0 };
 const DEFAULT_SENSE_USAGE: TokenUsage = { inputTokens: 2_000, outputTokens: 200 };
 const DEFAULT_RELATIONSHIP_USAGE: TokenUsage = { inputTokens: 2_000, outputTokens: 200 };
 const SOURCE_CACHE_VERSION = "exact-lemma-v3";
-const SENSE_PROMPT_VERSION = "sense-v1";
-const RELATIONSHIP_PROMPT_VERSION = "relationship-v1";
+const SENSE_PROMPT_VERSION = "sense-v3-example-required";
+const RELATIONSHIP_PROMPT_VERSION = "relationship-v2-stop-after-support";
 
 const nonEmpty = z.string().min(1);
 const nullableText = z.string().nullable();
@@ -309,7 +310,7 @@ function assertPinnedOutcomeState(
   }
 }
 
-function hasPinnedConnection(
+function hasPinnedConnectionIdentity(
   record: VocabularyRecord,
   target: string,
   type: "builds_on" | "advanced_form",
@@ -318,8 +319,7 @@ function hasPinnedConnection(
   return record.connections.some((connection) =>
     connection.target === target
     && connection.type === type
-    && connection.gloss === gloss
-    && connection.status !== "hidden",
+    && connection.gloss === gloss,
   );
 }
 
@@ -370,8 +370,8 @@ function candidatesForRun(
         !core
         || core.tier !== "core"
         || core.publicationStatus !== "published"
-        || !hasPinnedConnection(record, core.lemma, "builds_on", anchor.candidateGloss)
-        || !hasPinnedConnection(core, record.lemma, "advanced_form", anchor.coreGloss)
+        || !hasPinnedConnectionIdentity(record, core.lemma, "builds_on", anchor.candidateGloss)
+        || !hasPinnedConnectionIdentity(core, record.lemma, "advanced_form", anchor.coreGloss)
       ) {
         throw new Error(`pinned reciprocal anchor is stale: ${entry.lemma} -> ${anchor.coreLemma}`);
       }
@@ -679,11 +679,15 @@ async function processCandidate(
       "wordnet", candidate, dependencies, sourceBudget, stats, options,
     );
     if (wordnet) dictionaryEvidence.push(wordnet);
-    const dictionary = await cachedDictionaryEvidence(
-      "dictionaryapi", candidate, dependencies, sourceBudget, stats, options,
-    );
-    if (dictionary) dictionaryEvidence.push(dictionary);
-    tatoebaExamples = await cachedTatoebaExamples(candidate, dependencies, sourceBudget, stats, options);
+    if (options.sourceMode !== "wordnet-only") {
+      if (options.sourceMode !== "skip-dictionaryapi") {
+        const dictionary = await cachedDictionaryEvidence(
+          "dictionaryapi", candidate, dependencies, sourceBudget, stats, options,
+        );
+        if (dictionary) dictionaryEvidence.push(dictionary);
+      }
+      tatoebaExamples = await cachedTatoebaExamples(candidate, dependencies, sourceBudget, stats, options);
+    }
   } catch (error) {
     if (isAbortError(error)) throw error;
     const exhausted = error instanceof SourceBudgetExhaustedError;
@@ -782,8 +786,13 @@ function assertNoRegressions(
 }
 
 function classifyOutcomes(outcomes: readonly CandidateVerificationOutcome[]) {
-  const published = outcomes.filter((outcome) => outcome.reason === "published").length;
-  const unsupported = outcomes.filter((outcome) => outcome.reason === "relationship_unsupported").length;
+  const published = outcomes.filter((outcome) => outcome.selectedSenseId !== null).length;
+  const unsupported = outcomes.filter((outcome) =>
+    outcome.selectedSenseId === null
+    && outcome.reason !== "provider_failed"
+    && !["sense_ambiguous", "relationship_ambiguous", "judge_unavailable", "budget_exhausted"]
+      .includes(outcome.reason),
+  ).length;
   const failed = outcomes.filter((outcome) => outcome.reason === "provider_failed").length;
   return {
     published,

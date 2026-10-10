@@ -106,7 +106,7 @@ npm run lint
 Canonical vocabulary lives in `content/vocabulary/*.ndjson`; edit those records, never generated output. To preview a local enrichment without changing files, run:
 
 ```bash
-npm run enrich:vocabulary -- --list=ngsl --limit=20 --dry-run
+npm run enrich:vocabulary -- --stage=ngsl --limit=20 --dry-run
 ```
 
 After an intentional local enrichment, run `npm run lint:vocabulary`,
@@ -193,9 +193,49 @@ npm run verify:advanced -- \
   --write
 ```
 
+Word publication and connection publication are independent: a dictionary-backed
+meaning with a sourced example may be published even if a proposed advanced-word
+relationship remains ambiguous. Uncertain connections stay unreviewed; rejected
+connections are hidden in both directions. The model selects supplied facts; it
+does not manufacture meanings or examples to make a word pass.
+
 Review canonical NDJSON and regenerated artifacts in Git. The cache, active-batch
 manifest, and reports are disposable and must not be committed. Uncertain records
 stay hidden.
+
+### Bounded, resumable corpus repair
+
+```bash
+npm run repair:vocabulary                 # counts only; no writes or paid calls
+npm run repair:vocabulary -- --write --limit=25 # pilot; at most 25 more records
+npm run repair:vocabulary -- --write       # resume the pinned queue
+```
+
+This local runner checks original list entries in NGSL/Academic/Business/TOEIC/Fitness
+order, deduplicates shared words, then revisits hidden advanced words. It uses
+WordNet's exact-lemma/POS definitions and native examples first, reuses cached
+Tatoeba evidence, and calls DeepSeek Flash only for finite sense/sentence matching.
+DictionaryAPI is deliberately omitted while unhealthy. No relationships are
+automatically promoted by this repair.
+
+A single worker processes batches of 25 with concurrency 3. The fixed **16 CNY**
+ceiling is below the owner's approved 17 CNY budget. Before each paid request the
+runner persists a worst-case reservation using peak, uncached prices; failures and
+interrupted calls retain that reservation. Confirmed token usage may reduce the
+charge. Resuming does not reset spending or repeat a reserved request. Prices must
+be checked before reusing this runner for a separately authorized future campaign.
+
+**Do not delete `.cache/vocabulary-repair/` during the campaign.** Its ignored ledger,
+worker lock, pinned candidate list, source cache, and checkpoint prevent duplicate
+charges and preserve unresolved outcomes. Unlike generated graph assets, this
+state is not disposable until the campaign and spending reconciliation are over.
+
+The report separates visited, repaired, ready and unresolved words. Incomplete
+core entries retain their list membership and searchable stars, but their senses
+are not claimable. Unsupported advanced entries remain hidden. Completing the
+queue does not mean every word passed, and a clean strict audit is not a measure
+of complete dictionary coverage. Rebuild generated assets and run the release
+checks above before committing/pushing repairs.
 
 ### Recovery-only Markdown migration
 

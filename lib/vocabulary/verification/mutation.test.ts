@@ -198,6 +198,7 @@ describe("applyVerificationOutcomes", () => {
     expect(changedCandidate).toMatchObject({
       status: "enriched",
       publicationStatus: "published",
+      verificationStatus: "published",
     });
     expect(changedCandidate.senses.find((sense) => sense.id === outcome.selectedSenseId)?.status)
       .toBe("published");
@@ -212,8 +213,8 @@ describe("applyVerificationOutcomes", () => {
     expect(statusFor(examine, "scrutinise")).toBe("published");
     expect(statusFor(changedCandidate, "inspect")).toBe("unreviewed");
     expect(statusFor(inspect, "scrutinise")).toBe("unreviewed");
-    expect(statusFor(changedCandidate, "study")).toBe("unreviewed");
-    expect(statusFor(study, "scrutinise")).toBe("unreviewed");
+    expect(statusFor(changedCandidate, "study")).toBe("hidden");
+    expect(statusFor(study, "scrutinise")).toBe("hidden");
     expect(changedCandidate.connections.map(({ target, gloss }) => ({ target, gloss }))).toEqual([
       { target: "examine", gloss: candidateGlosses.examine },
       { target: "inspect", gloss: candidateGlosses.inspect },
@@ -244,11 +245,48 @@ describe("applyVerificationOutcomes", () => {
 
     expect(changedCandidate.publicationStatus).toBe("hidden");
     expect(changedCandidate.status).toBe("enriched");
+    expect(changedCandidate).toMatchObject({ verificationStatus: "unsupported" });
     expect(changedCandidate.senses.filter((sense) =>
       sense.sources.some((source) => source.sourceId === "wordnet"),
     ).map((sense) => sense.status)).toEqual(["review", "review"]);
     expect(result.publishedLemmas).toEqual([]);
     expect(result.downgradedRelationshipCount).toBe(2);
+  });
+
+  test.each([
+    ["ambiguous", "relationship_ambiguous", "unreviewed"],
+    ["unsupported", "relationship_unsupported", "hidden"],
+  ] as const)("publishes verified word content while keeping %s relationships out of the graph", (
+    decision,
+    reason,
+    expectedConnectionStatus,
+  ) => {
+    const original = snapshot();
+    const outcome = passingOutcome({
+      relationships: [relationship("examine", decision)],
+      reason,
+    });
+    original[0] = {
+      ...original[0]!,
+      connections: original[0]!.connections.filter((item) => item.target === "examine"),
+    };
+    original.splice(2);
+
+    const result = applyVerificationOutcomes(original, [outcome]);
+    const changedCandidate = result.snapshot.find((record) => record.lemma === "scrutinise")!;
+    const changedCore = result.snapshot.find((record) => record.lemma === "examine")!;
+
+    expect(changedCandidate).toMatchObject({
+      publicationStatus: "published",
+      verificationStatus: "published",
+      relationshipVerificationStatus: decision,
+    });
+    expect(changedCandidate.senses.find((sense) => sense.id === outcome.selectedSenseId)?.status)
+      .toBe("published");
+    expect(statusFor(changedCandidate, "examine")).toBe(expectedConnectionStatus);
+    expect(statusFor(changedCore, "scrutinise")).toBe(expectedConnectionStatus);
+    expect(publicationStatusFor(changedCandidate, result.snapshot)).toBe("published");
+    expect(result.publishedLemmas).toEqual(["scrutinise"]);
   });
 
   test("is idempotent and reports no updates on an already-applied snapshot", () => {
@@ -301,7 +339,8 @@ describe("applyVerificationOutcomes", () => {
         method: "llm_disagreement" as const,
         reason: "relationship_ambiguous" as const,
       })),
-    }])).toThrow(/publication/i);
+      selectedSenseId: null,
+    }])).toThrow(/selected sense/i);
     expect(() => applyVerificationOutcomes(snapshot(), [{
       ...outcome,
       relationships: [],

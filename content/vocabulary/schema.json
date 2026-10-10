@@ -91,6 +91,22 @@
         "hidden"
       ]
     },
+    "verificationStatus": {
+      "type": "string",
+      "enum": [
+        "published",
+        "ambiguous",
+        "unsupported"
+      ]
+    },
+    "relationshipVerificationStatus": {
+      "type": "string",
+      "enum": [
+        "published",
+        "ambiguous",
+        "unsupported"
+      ]
+    },
     "sources": {
       "type": "array",
       "items": {

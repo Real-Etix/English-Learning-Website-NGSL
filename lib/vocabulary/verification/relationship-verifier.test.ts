@@ -565,6 +565,51 @@ describe("verifyCandidateRelationships", () => {
     expect(result.usage).toEqual({ inputTokens: 4, outputTokens: 2 });
   });
 
+  test("stops model calls after one supported anchor while completing the decision set", async () => {
+    const input = fixture();
+    const additionalCores = ["inspect", "study"].map((lemma) => record(lemma, {
+      tier: "core",
+      publicationStatus: "published",
+      senses: [{
+        ...input.coreRecords[0]!.senses[0]!,
+        id: `${lemma}:wordnet:verb:1`,
+      }],
+      connections: [connection("scrutinise", "advanced_form", `${lemma} reciprocal gloss`)],
+    }));
+    input.candidate = {
+      ...input.candidate,
+      connections: [
+        ...input.candidate.connections,
+        ...additionalCores.map((core) => connection(core.lemma, "builds_on", `${core.lemma} candidate gloss`)),
+      ],
+    };
+    input.coreRecords = [...input.coreRecords, ...additionalCores];
+    input.anchors = [
+      ...input.anchors,
+      ...additionalCores.map((core) => ({
+        coreLemma: core.lemma,
+        candidateType: "builds_on" as const,
+        coreType: "advanced_form" as const,
+        candidateGloss: `${core.lemma} candidate gloss`,
+        coreGloss: `${core.lemma} reciprocal gloss`,
+      })),
+    ];
+    let calls = 0;
+
+    const result = await verifyCandidateRelationships(input, async (request) => {
+      calls += 1;
+      return response("supported", request);
+    });
+
+    expect(calls).toBe(2);
+    expect(result.decisions).toEqual([
+      expect.objectContaining({ coreLemma: "examine", decision: "supported" }),
+      expect.objectContaining({ coreLemma: "inspect", decision: "ambiguous", reason: "relationship_ambiguous" }),
+      expect.objectContaining({ coreLemma: "study", decision: "ambiguous", reason: "relationship_ambiguous" }),
+    ]);
+    expect(result.hasSupportedAnchor).toBe(true);
+  });
+
   test("returns unsupported only when both order-reversed decisions are unsupported", async () => {
     const result = await verifyCandidateRelationships(fixture(), async (request) => response("unsupported", request));
 

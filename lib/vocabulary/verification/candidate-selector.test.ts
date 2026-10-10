@@ -52,6 +52,13 @@ function advancedRecord(
   return record(lemma, {
     tier: "advanced",
     publicationStatus: "hidden",
+    sources: [{
+      sourceId: "llm",
+      externalId: lemma,
+      url: null,
+      retrievedAt: null,
+      contentHash: null,
+    }],
     connections: coreTargets.map((target) => connection(target, "builds_on")),
     ...overrides,
   });
@@ -121,6 +128,33 @@ describe("selectAdvancedVerificationCandidates", () => {
 
     expect(selectAdvancedVerificationCandidates(recordsWithIneligibleWords, 25)
       .map((candidate) => candidate.record.lemma)).toEqual(["scrutinize"]);
+  });
+
+  test("excludes hidden advanced records that already received factual source evidence", () => {
+    const checked = advancedRecord("checked", [], {
+      sources: [{
+        sourceId: "wordnet",
+        externalId: "checked.n.01",
+        url: "https://wordnet.example/checked.n.01",
+        retrievedAt: "2026-08-31T00:00:00.000Z",
+        contentHash: "sha256:checked",
+      }],
+    });
+    const unreviewed = advancedRecord("unreviewed", []);
+
+    expect(selectAdvancedVerificationCandidates([checked, unreviewed], 25)
+      .map((candidate) => candidate.record.lemma)).toEqual(["unreviewed"]);
+  });
+
+  test("excludes a terminally checked record even when no factual provider returned evidence", () => {
+    const checkedWithoutEvidence = {
+      ...advancedRecord("checked-without-evidence", []),
+      verificationStatus: "unsupported",
+    } as VocabularyRecord;
+    const unreviewed = advancedRecord("unreviewed", []);
+
+    expect(selectAdvancedVerificationCandidates([checkedWithoutEvidence, unreviewed], 25)
+      .map((candidate) => candidate.record.lemma)).toEqual(["unreviewed"]);
   });
 
   test("orders candidates by lemma when incoming and anchor counts tie", () => {

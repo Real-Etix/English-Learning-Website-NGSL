@@ -3,8 +3,19 @@ import { describe, expect, it } from "vitest";
 import { toLegacyPage } from "./legacy-profile-adapter";
 import type { VocabularyRecord } from "./schema";
 import { vocabularyRecordFixture } from "./test-fixtures";
+import { toGraphInput } from "./graph-input";
 
 describe("legacy vocabulary page projection", () => {
+  it("never falls back to an unpublished primary definition in graph or legacy payloads", () => {
+    const record = vocabularyRecordFixture();
+    const good = record.senses[0]!;
+    record.senses = [{ ...good, id: "old", definition: "Definition pending", status: "review" }, good];
+    expect(toLegacyPage(record, [record]).definition).toBe(good.definition);
+    expect(toGraphInput(record, { records: [record] }).definition).toBe(good.definition);
+    record.senses = [record.senses[0]!];
+    expect(toLegacyPage(record, [record]).definition).toBe("");
+    expect(toGraphInput(record, { records: [record] }).definition).toBe("");
+  });
   it("exposes only published, glossed connections to known published targets without changing their gloss bytes", () => {
     const record = vocabularyRecordFixture();
     const [valid] = record.connections;

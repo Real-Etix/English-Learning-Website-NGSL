@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, test, vi } from "vitest";
 
-import { completeChat, completeChatResult, completeJSON } from "./llm-client";
+import { completeChat, completeChatResult, completeJSON, completeJSONResult } from "./llm-client";
 
 const originalFetch = globalThis.fetch;
 
@@ -72,5 +72,28 @@ describe("llm-client request identity and compatibility", () => {
     expect(warnings.join("\n")).toContain("LLM error 400");
     expect(warnings.join("\n")).not.toContain("SENSITIVE_PROVIDER_BODY_SENTINEL");
     expect(warnings.join("\n")).not.toContain("SENSITIVE_EXCEPTION_SENTINEL");
+  });
+
+  test("can request non-thinking JSON output for finite classification tasks", async () => {
+    let requestBody: Record<string, unknown> = {};
+    globalThis.fetch = vi.fn(async (_input: RequestInfo | URL, init?: RequestInit) => {
+      requestBody = JSON.parse(String(init?.body)) as Record<string, unknown>;
+      return new Response(JSON.stringify({
+        choices: [{ message: { content: '{"ok":true}' } }],
+      }), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      });
+    }) as typeof fetch;
+
+    await completeJSONResult("system", "user", "test-model", 1, {
+      thinking: "disabled",
+      jsonObject: true,
+    });
+
+    expect(requestBody).toMatchObject({
+      thinking: { type: "disabled" },
+      response_format: { type: "json_object" },
+    });
   });
 });

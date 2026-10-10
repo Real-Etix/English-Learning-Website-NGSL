@@ -178,7 +178,8 @@ export function buildWordLearningProfile(
   detail: WordDetail | null,
   connectionTargets: Iterable<VocabularyRecord> = [],
 ): WordLearningProfile {
-  const primarySense = record.senses[0];
+  const primarySense = record.senses.find(sense => sense.status === "published")
+    ?? record.senses.find(sense => sense.status === "review");
   const primaryDefinition = primarySense?.definition ?? "";
   const primaryExamples = primarySense?.examples ?? [];
   const selectedPublishedSense = primarySense?.status === "published" ? primarySense : null;
@@ -205,22 +206,25 @@ export function buildWordLearningProfile(
 
   const senses: LearningSense[] = [];
   const seenDefinitions = new Set<string>();
-  record.senses.forEach((sense, index) => {
-    if (index === 0 && preferDictionaryPrimary) return;
-    if (!normalizeText(sense.definition) || isPlaceholder(sense.definition)) return;
-    const readiness = claimReadiness(record, sense.id);
-    addSense(senses, seenDefinitions, {
-      id: sense.id,
-      source: sense.sources.some((source) => source.sourceId === "dictionaryapi") ? "dictionaryapi" : "wiki",
-      sourceIndex: index,
-      partOfSpeech: sense.partOfSpeech,
-      definition: sense.definition,
-      example: sense.examples[0]?.text ?? null,
-      published: sense.status === "published",
-      canClaim: readiness.canClaim,
-      claimBlockReason: readiness.reason,
+  record.senses.map((sense, index) => ({ sense, index }))
+    .sort((a, b) => Number(b.sense === primarySense) - Number(a.sense === primarySense))
+    .forEach(({ sense, index }) => {
+      if (sense.status === "hidden" || sense.status === "draft") return;
+      if (sense === primarySense && preferDictionaryPrimary) return;
+      if (!normalizeText(sense.definition) || isPlaceholder(sense.definition)) return;
+      const readiness = claimReadiness(record, sense.id);
+      addSense(senses, seenDefinitions, {
+        id: sense.id,
+        source: sense.sources.some((source) => source.sourceId === "dictionaryapi") ? "dictionaryapi" : "wiki",
+        sourceIndex: index,
+        partOfSpeech: sense.partOfSpeech,
+        definition: sense.definition,
+        example: sense.examples[0]?.text ?? null,
+        published: sense.status === "published",
+        canClaim: readiness.canClaim,
+        claimBlockReason: readiness.reason,
+      });
     });
-  });
   dictionarySenses.forEach((sense, index) => {
     addSense(senses, seenDefinitions, {
       id: `dictionaryapi:${index}`,

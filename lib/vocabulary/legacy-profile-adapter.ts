@@ -1,5 +1,6 @@
 import type { VocabularyConnection, VocabularyRecord } from "./schema";
 import { publicConnections } from "./public-connections";
+import { isSensePublishable } from "./publication";
 
 /**
  * Compatibility projection returned by the word endpoint while clients consume
@@ -38,7 +39,7 @@ function sourceRefs(sourceIds: string[]) {
 
 /** Temporary API response projection while clients still expect the former page-shaped payload. */
 export function toLegacyPage(record: VocabularyRecord, knownRecords: Iterable<VocabularyRecord>): LegacyWordPage {
-  const primarySense = record.senses[0];
+  const primarySense = record.senses.find(sense => isSensePublishable(record, sense));
   const primaryMembership = record.lists[0];
   return {
     lemma: record.lemma,

@@ -527,6 +527,7 @@ export async function verifyCandidateRelationships(
 ): Promise<RelationshipVerificationResult> {
   const decisions: AnchorDecision[] = [];
   let usage = ZERO_USAGE;
+  let hasSupportedAnchor = false;
 
   for (const [index, value] of input.anchors.entries()) {
     const runtime = runtimeAnchor(value);
@@ -540,14 +541,24 @@ export async function verifyCandidateRelationships(
       continue;
     }
     const anchor = runtime.anchor;
+    if (hasSupportedAnchor) {
+      decisions.push(decision(
+        anchor,
+        "ambiguous",
+        "unavailable",
+        "relationship_ambiguous",
+      ));
+      continue;
+    }
     const result = await verifyAnchor(input, anchor, index, judge);
     decisions.push(result.decision);
     usage = plusUsage(usage, result.usage);
+    if (result.decision.decision === "supported") hasSupportedAnchor = true;
   }
 
   return {
     decisions,
-    hasSupportedAnchor: decisions.some((anchor) => anchor.decision === "supported"),
+    hasSupportedAnchor,
     usage,
   };
 }

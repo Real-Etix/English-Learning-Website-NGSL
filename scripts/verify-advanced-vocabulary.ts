@@ -137,6 +137,14 @@ type VerificationFixture = z.infer<typeof FixtureSchema>;
 const Sha256Schema = z.string().regex(/^sha256:[0-9a-f]{64}$/u);
 const VerificationIdentitySchema = z.object({
   version: z.literal(1),
+  sourceMode: z.enum(["full", "wordnet-only", "skip-dictionaryapi"]).default("full"),
+  decisionProfile: z.enum([
+    "legacy-v1",
+    "fixture-v1",
+    "disabled-v1",
+    "finite-json-nonthinking-v2",
+    "finite-json-nonthinking-v3",
+  ]).default("legacy-v1"),
   limit: z.number().int().nonnegative(),
   concurrency: z.number().int().min(1).max(5),
   maxSourceRequests: z.number().int().nonnegative(),
@@ -165,6 +173,8 @@ export type VerificationCliOptions = {
   cache: string;
   report: string;
   fixture: string | null;
+  skipDictionaryApi: boolean;
+  wordnetOnly: boolean;
   write: boolean;
 };
 
@@ -212,6 +222,8 @@ export function parseVerificationArgs(argv: readonly string[]): VerificationCliO
     cache: DEFAULT_CACHE,
     report: DEFAULT_REPORT,
     fixture: null,
+    skipDictionaryApi: false,
+    wordnetOnly: false,
     write: false,
   };
   const seen = new Set<string>();
@@ -221,6 +233,18 @@ export function parseVerificationArgs(argv: readonly string[]): VerificationCliO
       if (seen.has(argument)) throw new Error("--write may only be provided once");
       seen.add(argument);
       options.write = true;
+      continue;
+    }
+    if (argument === "--wordnet-only") {
+      if (seen.has(argument)) throw new Error("--wordnet-only may only be provided once");
+      seen.add(argument);
+      options.wordnetOnly = true;
+      continue;
+    }
+    if (argument === "--skip-dictionaryapi") {
+      if (seen.has(argument)) throw new Error("--skip-dictionaryapi may only be provided once");
+      seen.add(argument);
+      options.skipDictionaryApi = true;
       continue;
     }
     const name = argument.includes("=") ? argument.slice(0, argument.indexOf("=")) : argument;
@@ -242,6 +266,15 @@ export function parseVerificationArgs(argv: readonly string[]): VerificationCliO
       case "--report": options.report = value; break;
       case "--fixture": options.fixture = value; break;
     }
+  }
+  if (options.wordnetOnly && options.fixture !== null) {
+    throw new Error("--wordnet-only cannot be combined with --fixture");
+  }
+  if (options.skipDictionaryApi && options.wordnetOnly) {
+    throw new Error("--skip-dictionaryapi cannot be combined with --wordnet-only");
+  }
+  if (options.skipDictionaryApi && options.fixture !== null) {
+    throw new Error("--skip-dictionaryapi cannot be combined with --fixture");
   }
   return options;
 }
@@ -292,16 +325,23 @@ function verificationIdentity(
   options: VerificationCliOptions,
   fixture: VerificationFixture | null,
 ): VerificationIdentity {
+  const sourceMode = options.wordnetOnly
+    ? "wordnet-only"
+    : options.skipDictionaryApi ? "skip-dictionaryapi" : "full";
   return VerificationIdentitySchema.parse({
     version: 1,
+    sourceMode,
+    decisionProfile: fixture
+      ? "fixture-v1"
+      : options.wordnetOnly ? "disabled-v1" : "finite-json-nonthinking-v3",
     limit: options.limit,
     concurrency: options.concurrency,
     maxSourceRequests: options.maxSourceRequests,
     maxInputTokens: options.maxInputTokens,
     maxOutputTokens: options.maxOutputTokens,
-    modelId: fixture ? "fixture" : LLM_MODEL,
+    modelId: fixture ? "fixture" : options.wordnetOnly ? "disabled" : LLM_MODEL,
     fixtureHash: fixture ? sha256(JSON.stringify(fixture)) : null,
-    endpointHash: fixture ? null : sha256(LLM_ENDPOINT),
+    endpointHash: fixture || options.wordnetOnly ? null : sha256(LLM_ENDPOINT),
   });
 }
 
@@ -383,12 +423,12 @@ async function writeReport(filePath: string, result: VerificationRunResult): Pro
   await writeAtomically(filePath, `${JSON.stringify(report, null, 2)}\n`);
 }
 
-function liveRunAllowsWrite(result: VerificationRunResult): boolean {
+function liveRunAllowsWrite(result: VerificationRunResult, wordnetOnly: boolean): boolean {
   const infrastructureFailures = new Set([
     "provider_failed",
-    "judge_unavailable",
     "budget_exhausted",
   ]);
+  if (!wordnetOnly) infrastructureFailures.add("judge_unavailable");
   return !result.outcomes.some((outcome) =>
     infrastructureFailures.has(outcome.reason)
     || outcome.relationships.some((relationship) =>
@@ -400,7 +440,7 @@ function liveRunAllowsWrite(result: VerificationRunResult): boolean {
 function fallbackUsage(options: VerificationCliOptions) {
   return {
     inputTokens: Math.min(2_000, options.maxInputTokens),
-    outputTokens: Math.min(200, options.maxOutputTokens),
+    outputTokens: Math.min(1_000, options.maxOutputTokens),
   };
 }
 
@@ -434,9 +474,9 @@ export type LlmJudgeDependencies = {
 
 const SENSE_JUDGE_SYSTEM = [
   "Choose only IDs supplied in the request; never author or rewrite learner content.",
+  "A selected sense must include exactly one supplied example ID that demonstrates that sense.",
   "Return exactly one of these JSON objects with no additional fields or prose:",
   '{"decision":"selected","senseId":"<one supplied senses[].id>","exampleId":"<one supplied examples[].id>"}',
-  '{"decision":"selected","senseId":"<one supplied senses[].id>","exampleId":null}',
   '{"decision":"ambiguous","senseId":null,"exampleId":null}',
 ].join("\n");
 
@@ -475,6 +515,8 @@ export function createLlmJudges(
         fallbackUsage: usage,
         maxOutputTokens: usage.outputTokens,
         sanitizeErrors: true,
+        thinking: "disabled",
+        jsonObject: true,
       },
     );
     if (!result) throw new Error("LLM sense judge unavailable");
@@ -493,6 +535,8 @@ export function createLlmJudges(
         fallbackUsage: usage,
         maxOutputTokens: usage.outputTokens,
         sanitizeErrors: true,
+        thinking: "disabled",
+        jsonObject: true,
       },
     );
     if (!result) throw new Error("LLM relationship judge unavailable");
@@ -513,7 +557,7 @@ export async function runVerificationCli(
   const requestedCacheRoot = fromWorkingDirectory(options.cache);
   const identity = verificationIdentity(options, fixture);
   const cacheRoot = fixture === null
-    ? requestedCacheRoot
+    ? identity.sourceMode === "full" ? requestedCacheRoot : path.join(requestedCacheRoot, identity.sourceMode)
     : path.join(requestedCacheRoot, "fixture", identity.fixtureHash!.slice("sha256:".length));
   let manifest = await readActiveBatch(cacheRoot, identity);
   if (options.write && manifest === null) {
@@ -527,10 +571,10 @@ export async function runVerificationCli(
   const repository = openNdjsonRepository(runtime.vocabularyRoot);
   const estimatedSenseUsage = fixture
     ? fixtureUsage(fixture.sense)
-    : fallbackUsage(options);
+    : options.wordnetOnly ? { inputTokens: 0, outputTokens: 0 } : fallbackUsage(options);
   const estimatedRelationshipUsage = fixture
     ? fixtureUsage(fixture.relationship)
-    : fallbackUsage(options);
+    : options.wordnetOnly ? { inputTokens: 0, outputTokens: 0 } : fallbackUsage(options);
 
   const result = await runVerificationBatch({
     limit: options.limit,
@@ -539,6 +583,7 @@ export async function runVerificationCli(
     maxInputTokens: options.maxInputTokens,
     maxOutputTokens: options.maxOutputTokens,
     write: options.write,
+    sourceMode: identity.sourceMode,
     ...(retryGraphBuild ? { rebuildGraphs: true } : {}),
     ...(batch === null ? {} : { batch }),
   }, {
@@ -553,15 +598,15 @@ export async function runVerificationCli(
       : runtime.wordNet,
     getDictionary: fixture
       ? async (candidate) => fixtureEntry(fixture, "dictionaryapi", candidate.record.lemma) as ReturnType<VerificationDependencies["getDictionary"]> extends Promise<infer T> ? T : never
-      : runtime.dictionary,
+      : options.wordnetOnly || options.skipDictionaryApi ? async () => null : runtime.dictionary,
     getTatoeba: fixture
       ? async (candidate) => fixtureEntry(fixture, "tatoeba", candidate.record.lemma) as ReturnType<VerificationDependencies["getTatoeba"]> extends Promise<infer T> ? T : never
-      : runtime.tatoeba,
-    judgeSense: fixture ? fixtureSenseJudge(fixture) : runtime.judgeSense,
-    judgeRelationship: fixture ? fixtureRelationshipJudge(fixture) : runtime.judgeRelationship,
+      : options.wordnetOnly ? async () => [] : runtime.tatoeba,
+    judgeSense: fixture ? fixtureSenseJudge(fixture) : options.wordnetOnly ? null : runtime.judgeSense,
+    judgeRelationship: fixture ? fixtureRelationshipJudge(fixture) : options.wordnetOnly ? null : runtime.judgeRelationship,
     estimatedSenseUsage,
     estimatedRelationshipUsage,
-    modelId: fixture ? "fixture" : LLM_MODEL,
+    modelId: fixture ? "fixture" : options.wordnetOnly ? "disabled" : LLM_MODEL,
     persist: (updates) => writeVocabularyRecords(runtime.vocabularyRoot, updates),
     buildGraphs: runtime.buildGraphs,
   });
@@ -570,7 +615,7 @@ export async function runVerificationCli(
     manifest = await updateActiveBatchStatus(cacheRoot, manifest, "complete");
   }
   await writeReport(reportPath, result);
-  if (batch === null && (fixture !== null || liveRunAllowsWrite(result))) {
+  if (batch === null && (fixture !== null || liveRunAllowsWrite(result, options.wordnetOnly))) {
     await writeActiveBatch(cacheRoot, identity, result.batch);
   }
   return result;
@@ -622,7 +667,7 @@ async function main(): Promise<void> {
   const entries = result.report.entries.slice(0, 25).map((entry) => `${entry.lemma}:${entry.reason}`).join(", ");
   console.log(`Verification ${result.report.mode}: selected=${result.report.selected}, attempted=${result.report.attempted}, published=${result.report.published}, ambiguous=${result.report.ambiguous}, unsupported=${result.report.unsupported}, failed=${result.report.failed}.`);
   console.log(`Entries: ${entries || "none"}`);
-  if (!options.write && options.fixture === null && !liveRunAllowsWrite(result)) {
+  if (!options.write && options.fixture === null && !liveRunAllowsWrite(result, options.wordnetOnly)) {
     console.log("Write disabled: this live dry-run had a provider, model, or budget failure and did not pin an active batch.");
   }
 }

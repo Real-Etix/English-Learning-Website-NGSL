@@ -23,6 +23,9 @@ const finiteSfi = z.number().min(0).max(100).finite().nullable();
 export const PublicationStatusSchema = z.enum(["draft", "review", "published", "hidden"]);
 export type PublicationStatus = z.infer<typeof PublicationStatusSchema>;
 
+export const AdvancedVerificationStatusSchema = z.enum(["published", "ambiguous", "unsupported"]);
+export type AdvancedVerificationStatus = z.infer<typeof AdvancedVerificationStatusSchema>;
+
 export const SourceRegistryEntrySchema = z.object({
   id: sourceId,
   label: nonEmpty,
@@ -132,6 +135,8 @@ export const VocabularyRecordSchema = z.object({
   lists: z.array(VocabularyListMembershipSchema),
   status: z.enum(["seeded", "enriched", "verified"]),
   publicationStatus: PublicationStatusSchema,
+  verificationStatus: AdvancedVerificationStatusSchema.optional(),
+  relationshipVerificationStatus: AdvancedVerificationStatusSchema.optional(),
   sources: z.array(ContentSourceRefSchema),
   senses: z.array(VocabularySenseSchema),
   pronunciation: z.array(PronunciationRecordSchema),
