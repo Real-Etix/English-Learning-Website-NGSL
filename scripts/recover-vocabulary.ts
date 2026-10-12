@@ -34,7 +34,7 @@ export const REVIEW_PROMPT = [
   "natural: the sentence is grammatical, idiomatic, coherent, self-contained and age-appropriate. Abstain (false) when uncertain. Do not rewrite text.",
 ].join("\n");
 const hash = (v: unknown) => createHash("sha256").update(JSON.stringify(v)).digest("hex");
-type Outcome = { reason: string; tier: string; changed: boolean; afterHash: string; definition?: string; pos?: string; example?: string; sources?: unknown; attempts?: number };
+type Outcome = { reason: string; tier: string; changed: boolean; afterHash: string; definition?: string; pos?: string; example?: string; sources?: unknown; attempts?: number; sourceQueryVersion?: number };
 type State = { version: 2; candidates: { lemma: string; beforeHash: string }[]; outcomes: Record<string, Outcome> };
 type JournalRow = { lemma: string; beforeHash: string; afterHash: string; record: VocabularyRecord; outcome: Outcome };
 class RecoveryFatalError extends Error {}
@@ -51,8 +51,12 @@ export function parseRecoveryArgs(args: string[]): { write: boolean; pilot: bool
   if (args.some(a => !["--pilot", "--write"].includes(a) && !/^--limit=[1-9]\d*$/.test(a))) throw new Error("Use [--pilot] [--write] [--limit=N]");
   return { write: args.includes("--write"), pilot: args.includes("--pilot"), limit: Number(args.find(a => a.startsWith("--limit="))?.slice(8) ?? Infinity) };
 }
-export function pendingRecovery(pinned: string[], outcomes: Record<string, { reason: string }>, limit: number): string[] {
-  return pinned.filter(lemma => !outcomes[lemma] || ["source_unavailable", "judge_unavailable", "judge_invalid_response"].includes(outcomes[lemma]!.reason)).slice(0, limit);
+export function pendingRecovery(pinned: string[], outcomes: Record<string, { reason: string; sourceQueryVersion?: number }>, limit: number): string[] {
+  return pinned.filter(lemma => {
+    const o = outcomes[lemma];
+    return !o || ["source_unavailable", "judge_unavailable", "judge_invalid_response", "interrupted_request"].includes(o.reason)
+      || (o.sourceQueryVersion !== 3 && ["no_sourced_example", "sense_ambiguous"].includes(o.reason));
+  }).slice(0, limit);
 }
 export function validateJournal(rows: { lemma: string; beforeHash: string; afterHash: string }[], current: Map<string, string>) {
   for (const row of rows) if (![row.beforeHash, row.afterHash].includes(current.get(row.lemma) ?? "")) throw new Error(`Journal record changed outside this worker: ${row.lemma}`);
@@ -209,6 +213,7 @@ async function main() {
       const changed = result !== record;
       const s = changed ? result.senses[0] : undefined;
       const outcome: Outcome = { tier: record.tier, reason, changed, afterHash: hash(result), attempts: (state.outcomes[record.lemma]?.attempts ?? 0) + 1,
+        sourceQueryVersion: 3,
         ...(s ? { definition: s.definition, pos: s.partOfSpeech, example: s.examples[0]?.text, sources: { meaning: s.sources, example: s.examples[0]?.sources } } : {}) };
       return { record: result, outcome };
     }

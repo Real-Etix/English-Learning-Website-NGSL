@@ -175,5 +175,24 @@ new stored content during that provider's outage. Final release checks must run
 again after the full canonical-data pass and regeneration.
 
 No subagents are used, including review. Working changes and generated artifacts
-are not yet committed/pushed. Preserve `pilot-initial-checkpoint.json` and the
+are not yet pushed. Implementation was saved in local commit `1ce5960b`; content
+and final generated outputs await completion. Preserve `pilot-initial-checkpoint.json` and the
 original `spend.json`; they include both early pilot attempts and failures.
+
+At 350 assessed entries, inspection exposed Tatoeba stemming `listener` to `listen`
+and `provider` to `provide`. The worker was stopped (PID verified first); completed
+batches and all ledger reservations were retained, including three interrupted
+requests charged at their full reserved maximum. Exact query syntax was verified
+against Tatoeba's search documentation and live responses; a regression test now
+requires `="listener"`/exact phrases. Cache keys are versioned, preserving old data.
+Old example-missing/ambiguous outcomes are requeued once for this source upgrade;
+current outcomes carry `sourceQueryVersion: 3`. Technical failures remain bounded
+to three recorded attempts. No successful record is reprocessed.
+
+The three affected pilot words were reviewed again: firstly and listener recovered
+with Wiktionary/Tatoeba; absolution with WordNet/Tatoeba. The pilot is now 22/25,
+with three incomplete/malformed advanced entries still withheld. The review marker
+was updated to the exact new hash. Resume the full worker with the normal command.
+Current cumulative maximum accounting is 2.355484 CNY. Latest code checks: 586 unit
+tests, TypeScript, zero ESLint errors (four existing warnings), a production build,
+and actual browser checks for who/may/when attribution and enabled claim gates.

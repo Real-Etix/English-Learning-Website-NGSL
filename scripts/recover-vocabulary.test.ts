@@ -18,8 +18,13 @@ test("distinguishes missing meanings, examples, ambiguity and recovered content"
 test("retries transient judge failures but never requeues withheld content", () => {
   expect(pendingRecovery(["a", "b", "c", "d"], {
     a: { reason: "judge_unavailable" }, b: { reason: "judge_invalid_response" },
-    c: { reason: "sense_ambiguous" }, d: { reason: "budget_deferred" },
+    c: { reason: "sense_ambiguous", sourceQueryVersion: 3 }, d: { reason: "budget_deferred" },
   }, 25)).toEqual(["a", "b"]);
+});
+test("revisits a missed stemmed-query example once after the exact-source upgrade", () => {
+  expect(pendingRecovery(["old", "new", "recovered"], {
+    old: { reason: "no_sourced_example" }, new: { reason: "no_sourced_example", sourceQueryVersion: 3 }, recovered: { reason: "recovered" },
+  }, 25)).toEqual(["old"]);
 });
 test("replays a partially written batch only when records match before or after hashes", () => {
   const journal = [{ lemma: "who", beforeHash: "before", afterHash: "after" }];

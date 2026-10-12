@@ -117,10 +117,12 @@ export class RecoveryCache {
     return result;
   }
   async tatoebaExamples(lemma: string, forms: string[]): Promise<VocabularySense["examples"]> {
-    const key = `attributed-tatoeba-v2:${lemma}`;
+    const key = `attributed-tatoeba-exact-v3:${lemma}`;
     let payload = await this.load(key);
     if (payload === null) {
-      const response = await this.request(`https://api.tatoeba.org/v1/sentences?lang=eng&q=${encodeURIComponent(lemma)}&sort=relevance`);
+      // Tatoeba stems plain queries: listener matches listen. '=' disables stemming.
+      const query = `="${lemma.replace(/["\\]/g, " ")}"`;
+      const response = await this.request(`https://api.tatoeba.org/v1/sentences?lang=eng&q=${encodeURIComponent(query)}&sort=relevance`);
       if (!response.ok) throw new Error("Tatoeba lookup unavailable");
       payload = JSON.parse(await readBounded(response, 1024 * 1024));
       await this.save(key, payload);

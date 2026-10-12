@@ -56,3 +56,18 @@ test("skips malformed Tatoeba rows without discarding valid evidence", () => {
   const row = { id: 42, text: "We learn today.", lang: "eng", owner: "ExampleAuthor", license: "CC BY 2.0 FR" };
   expect(attributableTatoeba({ data: [null, "invalid", row] }, "learn", [], "2026-10-13T00:00:00.000Z")).toHaveLength(1);
 });
+test("uses exact Tatoeba tokens instead of stemming listener to listen", async () => {
+  const root = await mkdtemp(path.join(tmpdir(), "recovery-exact-test-"));
+  try {
+    const cache = new RecoveryCache(root);
+    let query: string | null = null;
+    vi.spyOn(cache, "request").mockImplementation(async url => {
+      query = new URL(url).searchParams.get("q");
+      return new Response(JSON.stringify({ data: [] }));
+    });
+    await cache.tatoebaExamples("listener", ["listeners"]);
+    expect(query).toBe('="listener"');
+    await cache.tatoebaExamples("credit card", []);
+    expect(query).toBe('="credit card"');
+  } finally { await rm(root, { recursive: true }); }
+});
