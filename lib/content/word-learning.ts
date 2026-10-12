@@ -13,6 +13,8 @@ export type LearningSense = {
   example: string | null;
   source: "wiki" | "dictionaryapi";
   primary: boolean;
+  sources?: LearningSource[];
+  exampleSources?: LearningSource[];
   published?: boolean;
   canClaim?: boolean;
   claimBlockReason?: string | null;
@@ -21,6 +23,7 @@ export type LearningSense = {
 export type LearningExample = {
   text: string;
   source: "wiki" | "dictionaryapi";
+  sources?: LearningSource[];
 };
 
 export type LearningConnection = {
@@ -106,6 +109,8 @@ function addSense(
     definition: sense.definition,
     example: sense.example,
     source: sense.source,
+    sources: sense.sources,
+    exampleSources: sense.exampleSources,
     primary: false,
     published: sense.published,
     canClaim: sense.canClaim,
@@ -220,6 +225,8 @@ export function buildWordLearningProfile(
         partOfSpeech: sense.partOfSpeech,
         definition: sense.definition,
         example: sense.examples[0]?.text ?? null,
+        sources: factualSources(sense.sources),
+        exampleSources: factualSources(sense.examples[0]?.sources ?? []),
         published: sense.status === "published",
         canClaim: readiness.canClaim,
         claimBlockReason: readiness.reason,
@@ -242,7 +249,7 @@ export function buildWordLearningProfile(
 
   const examples: LearningExample[] = [];
   const seenExamples = new Set<string>();
-  primaryExamples.forEach(({ text }) => addExample(examples, seenExamples, { text, source: "wiki" }));
+  primaryExamples.forEach(({ text, sources }) => addExample(examples, seenExamples, { text, source: "wiki", sources: factualSources(sources) }));
   dictionarySenses.forEach((sense) => {
     if (sense.example) addExample(examples, seenExamples, { text: sense.example, source: "dictionaryapi" });
   });

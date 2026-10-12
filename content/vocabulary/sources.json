@@ -2,6 +2,13 @@
   "schemaVersion": 1,
   "sources": [
     {
+      "id": "wiktionary",
+      "label": "Wiktionary",
+      "homepage": "https://en.wiktionary.org/",
+      "license": "CC BY-SA 4.0",
+      "factual": true
+    },
+    {
       "id": "curated",
       "label": "Manual curation",
       "homepage": "https://www.newgeneralservicelist.com/new-general-service-list",

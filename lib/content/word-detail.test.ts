@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { fetchWordDetail } from "./word-detail";
 
-afterEach(() => vi.unstubAllGlobals());
+afterEach(() => { vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe("fetchWordDetail", () => {
   it("keeps dictionary entry and pronunciation provenance for later import", async () => {
@@ -46,6 +46,20 @@ describe("fetchWordDetail", () => {
       senses: [],
       synonyms: [],
     });
+  });
+  it("bounds the optional live dictionary request so canonical meanings cannot hang indefinitely", async () => {
+    const controller = new AbortController();
+    const deadline = vi.spyOn(AbortSignal, "timeout").mockReturnValue(controller.signal);
+    let usedSignal: AbortSignal | undefined;
+    vi.stubGlobal("fetch", vi.fn((_url, options) => new Promise((_resolve, reject) => {
+      usedSignal = options?.signal;
+      options?.signal?.addEventListener("abort", () => reject(new Error("timeout")));
+    })));
+    const pending = fetchWordDetail("who");
+    expect(usedSignal).toBe(controller.signal);
+    expect(deadline).toHaveBeenCalledWith(3000);
+    controller.abort();
+    await expect(pending).resolves.toMatchObject({ senses: [], ipa: null });
   });
 
   it("keeps provenance attached to the response entry that supplied each sense", async () => {

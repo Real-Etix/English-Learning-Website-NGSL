@@ -161,6 +161,18 @@
                 "type": "null"
               }
             ]
+          },
+          "attribution": {
+            "type": "string",
+            "minLength": 1
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1
+          },
+          "licenseUrl": {
+            "type": "string",
+            "format": "uri"
           }
         },
         "required": [
@@ -251,6 +263,18 @@
                       "type": "null"
                     }
                   ]
+                },
+                "attribution": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "license": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "licenseUrl": {
+                  "type": "string",
+                  "format": "uri"
                 }
               },
               "required": [
@@ -326,6 +350,18 @@
                             "type": "null"
                           }
                         ]
+                      },
+                      "attribution": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "license": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "licenseUrl": {
+                        "type": "string",
+                        "format": "uri"
                       }
                     },
                     "required": [
@@ -422,6 +458,18 @@
                                   "type": "null"
                                 }
                               ]
+                            },
+                            "attribution": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "license": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "licenseUrl": {
+                              "type": "string",
+                              "format": "uri"
                             }
                           },
                           "required": [
@@ -496,6 +544,18 @@
                             "type": "null"
                           }
                         ]
+                      },
+                      "attribution": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "license": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "licenseUrl": {
+                        "type": "string",
+                        "format": "uri"
                       }
                     },
                     "required": [
@@ -602,6 +662,18 @@
                             "type": "null"
                           }
                         ]
+                      },
+                      "attribution": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "license": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "licenseUrl": {
+                        "type": "string",
+                        "format": "uri"
                       }
                     },
                     "required": [
@@ -704,6 +776,18 @@
                             "type": "null"
                           }
                         ]
+                      },
+                      "attribution": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "license": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "licenseUrl": {
+                        "type": "string",
+                        "format": "uri"
                       }
                     },
                     "required": [
@@ -850,6 +934,18 @@
                       "type": "null"
                     }
                   ]
+                },
+                "attribution": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "license": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "licenseUrl": {
+                  "type": "string",
+                  "format": "uri"
                 }
               },
               "required": [
@@ -969,6 +1065,18 @@
                       "type": "null"
                     }
                   ]
+                },
+                "attribution": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "license": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "licenseUrl": {
+                  "type": "string",
+                  "format": "uri"
                 }
               },
               "required": [

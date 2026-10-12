@@ -23,6 +23,7 @@
     "promote:verified-content": "tsx scripts/promote-verified-content.ts",
     "enrich:vocabulary": "tsx scripts/enrich-vocabulary.ts",
     "repair:vocabulary": "tsx scripts/repair-vocabulary.ts",
+    "recover:vocabulary": "tsx scripts/recover-vocabulary.ts",
     "migrate:vocabulary": "echo 'RECOVERY-ONLY: migrate legacy Markdown into a separate NDJSON output for review.' && npm run migrate:vocabulary:recovery",
     "migrate:vocabulary:recovery": "tsx scripts/migrate-wiki-to-ndjson.ts",
     "validate:vocabulary-migration": "tsx scripts/validate-vocabulary-migration.ts",

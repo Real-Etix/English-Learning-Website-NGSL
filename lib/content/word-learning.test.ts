@@ -365,7 +365,7 @@ describe("buildWordLearningProfile", () => {
     expect(profile.senses).toEqual([
       expect.objectContaining({ definition: "AI draft wording", source: "wiki", primary: true }),
     ]);
-    expect(profile.examples).toEqual([{ text: "A wiki-only example.", source: "wiki" }]);
+    expect(profile.examples.map(({ text, source }) => ({ text, source }))).toEqual([{ text: "A wiki-only example.", source: "wiki" }]);
   });
 
   it("uses a usable dictionary sense when a core wiki definition is a placeholder", () => {
@@ -432,7 +432,7 @@ describe("buildWordLearningProfile", () => {
       detail,
     );
 
-    expect(profile.examples).toEqual([
+    expect(profile.examples.map(({ text, source }) => ({ text, source }))).toEqual([
       { text: "A duplicate example.", source: "wiki" },
       { text: " A second wiki example. ", source: "wiki" },
       { text: "A dictionary example.", source: "dictionaryapi" },
@@ -483,4 +483,13 @@ describe("buildWordLearningProfile", () => {
       "dictionary meaning 5",
     ]);
   });
+});
+
+it("retains definition and example attribution separately for the drawer", () => {
+  const record = vocabularyRecordFixture();
+  record.senses[0]!.sources = [{ sourceId: "wiktionary", url: "https://en.wiktionary.org/wiki/learn", externalId: "learn", retrievedAt: null, contentHash: null, attribution: "Wiktionary contributors", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" }];
+  record.senses[0]!.examples[0]!.sources = [{ sourceId: "tatoeba", url: "https://tatoeba.org/en/sentences/show/42", externalId: "42", retrievedAt: null, contentHash: null, attribution: "ExampleAuthor", license: "CC BY 2.0 FR", licenseUrl: "https://creativecommons.org/licenses/by/2.0/fr/" }];
+  const profile = buildWordLearningProfile(record, null);
+  expect(profile.senses[0]?.sources?.[0]?.sourceId).toBe("wiktionary");
+  expect(profile.senses[0]?.exampleSources?.[0]?.attribution).toBe("ExampleAuthor");
 });

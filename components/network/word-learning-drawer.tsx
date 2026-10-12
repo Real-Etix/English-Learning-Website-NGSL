@@ -1,7 +1,8 @@
 import { useId, useState, type KeyboardEvent } from "react";
 
-import type { LearningSource, WordLearningProfile } from "@/lib/content/word-learning";
+import type { WordLearningProfile } from "@/lib/content/word-learning";
 import { buildWordLearningDrawerModel } from "./word-learning-drawer-model";
+import { SourceAttribution } from "./source-attribution";
 
 const SF = "var(--font-atlas-serif), Georgia, serif";
 const SS = "var(--font-atlas-sans), system-ui, sans-serif";
@@ -47,7 +48,6 @@ export function tabNavigationForKey(
   const next = tabs[nextIndex];
   return { next, focusId: `${tabsId}-${next}` };
 }
-
 export type WordLearningTabKeyEvent = {
   key: string;
   preventDefault: () => void;
@@ -148,7 +148,7 @@ export function WordLearningDrawer({
   const selectedSenseCanClaim = selectedSense?.canClaim ?? profile?.canClaim ?? false;
   const selectedSenseBlockReason = selectedSense?.claimBlockReason ?? profile?.claimBlockReason ?? null;
   const selectedExamples = selectedSense?.example
-    ? [{ text: selectedSense.example, source: selectedSense.source }]
+    ? [{ text: selectedSense.example, source: selectedSense.source, sources: selectedSense.exampleSources }]
     : [];
   const tabs: { id: Tab; label: string }[] = [
     { id: "meaning", label: "Meaning" },
@@ -219,7 +219,7 @@ export function WordLearningDrawer({
               <>
                 {selectedExamples.length > 0 ? <section aria-label="Examples" style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   <h3 style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#94A0B4" }}>Examples</h3>
-                  {selectedExamples.map((example, index) => <blockquote key={`${example.text}-${index}`} style={{ margin: 0, padding: "13px 15px", borderLeft: "2px solid rgba(191,217,242,.4)", background: "rgba(191,217,242,.05)", borderRadius: "0 10px 10px 0" }}><p style={{ margin: 0, font: `italic 400 15px/1.65 ${SF}`, color: "#D8D3C8" }}>{example.text}</p><footer style={{ marginTop: 8, font: `500 9.5px/1 ${MN}`, letterSpacing: ".12em", textTransform: "uppercase", color: "#6B7789" }}>{sourceLabel(example.source)}</footer></blockquote>)}
+                  {selectedExamples.map((example, index) => <blockquote key={`${example.text}-${index}`} style={{ margin: 0, padding: "13px 15px", borderLeft: "2px solid rgba(191,217,242,.4)", background: "rgba(191,217,242,.05)", borderRadius: "0 10px 10px 0" }}><p style={{ margin: 0, font: `italic 400 15px/1.65 ${SF}`, color: "#D8D3C8" }}>{example.text}</p><footer style={{ marginTop: 8 }}>{example.sources?.length ? <SourceAttribution sources={example.sources} label="Example source" /> : sourceLabel(example.source)}</footer></blockquote>)}
                 </section> : <EmptyState>Usage examples have not been authored for this word yet.</EmptyState>}
                 <UsageSection title="Patterns" label="Usage patterns" items={model.usage.patterns} empty="No reviewed usage patterns yet.">
                   {model.usage.patterns.map((pattern, index) => <section key={`${pattern.pattern}-${index}`} style={{ display: "flex", flexDirection: "column", gap: 8, padding: "12px 13px", borderRadius: 10, background: "rgba(241,238,230,.04)" }}>
@@ -301,7 +301,19 @@ function UnavailableDrawer({
 }
 
 function Sense({ sense, primary = false, selected, onSelect }: { sense: WordLearningProfile["senses"][number]; primary?: boolean; selected: boolean; onSelect: (senseId: string) => void }) {
-  return <button className="word-learning-drawer-focus" type="button" data-sense-id={sense.id} aria-pressed={selected} onClick={() => onSelect(sense.id)} style={{ ...buttonStyle, display: "flex", flexDirection: "column", flexShrink: 0, gap: 8, padding: 11, textAlign: "left", border: `1px solid ${selected ? "rgba(191,217,242,.45)" : "rgba(241,238,230,.1)"}`, background: selected ? "rgba(191,217,242,.09)" : "rgba(241,238,230,.025)", color: "inherit" }}><div style={{ display: "flex", alignItems: "center", gap: 7, flexWrap: "wrap" }}><span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: primary ? "#BFD9F2" : "#94A0B4" }}>{primary ? "Primary meaning" : sense.partOfSpeech}</span>{primary && <span style={{ font: `400 10px/1 ${MN}`, color: "#94A0B4" }}>{sense.partOfSpeech}</span>}<span style={{ padding: "3px 7px", borderRadius: 999, background: "rgba(241,238,230,.06)", font: `400 9.5px/1 ${MN}`, color: "#94A0B4" }}>{sourceLabel(sense.source)}</span></div><span style={{ font: `400 ${primary ? "16.5px" : "15px"}/1.62 ${SS}`, color: "#E8E4DA" }}>{sense.definition}</span>{sense.example && <span style={{ font: `italic 400 14px/1.6 ${SF}`, color: "#D8D3C8" }}>{sense.example}</span>}</button>;
+  return <div style={{ display: "flex", flexDirection: "column", flexShrink: 0, gap: 6 }}>
+    <button className="word-learning-drawer-focus" type="button" data-sense-id={sense.id} aria-pressed={selected} onClick={() => onSelect(sense.id)} style={{ ...buttonStyle, display: "flex", flexDirection: "column", flexShrink: 0, gap: 8, padding: 11, textAlign: "left", border: `1px solid ${selected ? "rgba(191,217,242,.45)" : "rgba(241,238,230,.1)"}`, background: selected ? "rgba(191,217,242,.09)" : "rgba(241,238,230,.025)", color: "inherit" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 7, flexWrap: "wrap" }}>
+        <span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: primary ? "#BFD9F2" : "#94A0B4" }}>{primary ? "Primary meaning" : sense.partOfSpeech}</span>
+        {primary && <span style={{ font: `400 10px/1 ${MN}`, color: "#94A0B4" }}>{sense.partOfSpeech}</span>}
+        <span style={{ padding: "3px 7px", borderRadius: 999, background: "rgba(241,238,230,.06)", font: `400 9.5px/1 ${MN}`, color: "#94A0B4" }}>{sense.sources?.[0]?.label ?? sourceLabel(sense.source)}</span>
+      </div>
+      <span style={{ font: `400 ${primary ? "16.5px" : "15px"}/1.62 ${SS}`, color: "#E8E4DA" }}>{sense.definition}</span>
+      {sense.example && <span style={{ font: `italic 400 14px/1.6 ${SF}`, color: "#D8D3C8" }}>{sense.example}</span>}
+    </button>
+    <SourceAttribution sources={sense.sources ?? []} label="Meaning source" />
+    {sense.example && <SourceAttribution sources={sense.exampleSources ?? []} label="Example source" />}
+  </div>;
 }
 
 function ConnectionHeading({ group }: { group: { label: string; type: string } }) {
@@ -326,8 +338,4 @@ function UsageSection({
   children: React.ReactNode;
 }) {
   return <section aria-label={label} style={{ display: "flex", flexDirection: "column", gap: 10 }}><h3 style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#94A0B4" }}>{title}</h3>{items.length > 0 ? children : <EmptyState>{empty}</EmptyState>}</section>;
-}
-
-function SourceAttribution({ sources }: { sources: LearningSource[] }) {
-  return <p style={{ margin: 0, font: `500 9.5px/1.4 ${MN}`, letterSpacing: ".1em", textTransform: "uppercase", color: "#6B7789" }}>Source: {sources.map((source) => source.label).join(", ")}</p>;
 }

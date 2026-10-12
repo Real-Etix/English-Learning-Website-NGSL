@@ -52,6 +52,7 @@ describe("WordLearningDrawer", () => {
             {
               ...profile.senses[0]!,
               definition: "a series of steps to be carried out or goals to be accomplished",
+              sources: [{ sourceId: "wiktionary", label: "Wiktionary", url: "https://en.wiktionary.org/wiki/program", externalId: "program", contentHash: null, retrievedAt: null, attribution: "Wiktionary contributors", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" }],
             },
             {
               id: "dictionaryapi:1",
@@ -88,6 +89,9 @@ describe("WordLearningDrawer", () => {
     );
 
     expect(senseButtons(markup)).toHaveLength(2);
+    expect(markup).toContain('href="https://en.wiktionary.org/wiki/program"');
+    expect(markup).toContain('href="https://creativecommons.org/licenses/by-sa/4.0/"');
+    expect(markup).not.toMatch(/<button\b[^>]*>(?:(?!<\/button>)[\s\S])*<a\b/);
     for (const button of senseButtons(markup)) {
       expect(button).toContain("flex-shrink:0");
     }

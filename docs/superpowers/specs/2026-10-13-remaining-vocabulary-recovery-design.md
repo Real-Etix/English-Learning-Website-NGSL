@@ -7,9 +7,8 @@ Publish only source-supported senses with a matching, attributable example.
 Completion means every candidate has a recorded outcome, release checks pass,
 and the approved delivery is verified. It does not mean publishing every record.
 
-The user approved continuing the recovery proposal. This document records the
-scope for final review before implementation. Additional paid calls, new-source
-imports, and a new production push await approval of the package below.
+The user approved this package on 2026-10-13: new-source imports, cumulative
+spending cap, all candidate assessments, and commit/push/production verification.
 
 ## Current evidence
 
@@ -126,7 +125,7 @@ budget-deferred states. Do not mark deferred network/budget cases as verified.
 
 ## Verification and delivery
 
-- [ ] Approve this scope, source/attribution policy, cumulative cap and delivery.
+- [x] Approve this scope, source/attribution policy, cumulative cap and delivery.
 - [ ] Implement source adapters, identity checks and provenance with failing-first tests.
 - [ ] Verify the 25-word pilot before applying the remaining bounded queue.
 - [ ] Complete every candidate's assessment and preserve unresolved outcomes.

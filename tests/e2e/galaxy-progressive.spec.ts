@@ -162,6 +162,24 @@ const keyboardSearchQuery = findSearchPrefixWithMultipleMatches(searchCatalog.en
 const programWord = searchCatalog.entries.find((entry) => entry.lemma === "program");
 
 test.describe("progressive galaxy browser verification", () => {
+  test("recovered grammar words expose attributed meanings and an enabled claim gate", async ({ page }) => {
+    await gotoNgsl(page);
+    const search = page.getByRole("textbox", { name: `Search ${manifest.list.label} stars` });
+    for (const [word, pos] of [["who", "pronoun"], ["may", "verb"], ["when", "adverb"]]) {
+      await search.fill(word);
+      const response = page.waitForResponse(r => r.url().endsWith(`/api/word/${word}`));
+      await page.getByRole("button", { name: new RegExp(`^${word}\\b`, "i") }).first().click();
+      const payload = await (await response).json();
+      expect(payload.learning.senses[0].partOfSpeech).toBe(pos);
+      expect(payload.learning.senses[0].canClaim).toBe(true);
+      await expect(page.getByRole("heading", { name: word, exact: true })).toBeVisible();
+      await expect(page.getByRole("button", { name: "Check what you know, then claim it" })).toBeEnabled();
+      const meaning = page.getByRole("tabpanel").filter({ has: page.locator('[data-sense-id^="wiktionary:"]') });
+      await expect(meaning.locator('a[href="https://creativecommons.org/licenses/by-sa/4.0/"]').first()).toBeVisible();
+      expect(await page.locator('button a[href]').count()).toBe(0);
+    }
+  });
+
   test("normal opening stays manifest-only until chart interaction", async ({ page }) => {
     const tracker = galaxyTracker(page);
 

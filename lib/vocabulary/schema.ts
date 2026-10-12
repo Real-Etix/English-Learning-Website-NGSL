@@ -47,6 +47,9 @@ const ContentSourceRefSchema = z.object({
   url: z.url().nullable(),
   retrievedAt: z.iso.datetime().nullable(),
   contentHash: nullableText,
+  attribution: nonEmpty.optional(),
+  license: nonEmpty.optional(),
+  licenseUrl: z.url().refine(value => /^https?:\/\//.test(value), "Licence URL must be HTTP(S)").optional(),
 }).strict();
 export type ContentSourceRef = z.infer<typeof ContentSourceRefSchema>;
 

@@ -237,6 +237,40 @@ queue does not mean every word passed, and a clean strict audit is not a measure
 of complete dictionary coverage. Rebuild generated assets and run the release
 checks above before committing/pushing repairs.
 
+### Additional dictionary recovery
+
+The approved follow-up campaign targets only the first pass's **444 unclaimable
+core words and 1,637 hidden advanced words**. It does not regenerate the corpus.
+
+```bash
+npm run recover:vocabulary                 # counts only; no network or writes
+npm run recover:vocabulary -- --pilot --write # inspect the fixed 25-word pilot
+npm run recover:vocabulary -- --write       # requires the pilot review marker
+```
+
+The runner imports exact, attributed text from Simple English Wiktionary and
+targeted English Wiktionary entries via Kaikki, falling back to WordNet senses
+and attributable Tatoeba sentences. It excludes external quotations and bare
+inflection pointers, checks exact headwords and sense-specific parts of speech,
+and gives core function words conventional learner grammar labels by selecting
+an appropriate source sense—not by rewriting that source. DeepSeek selects
+supplied indexes and independently checks the selected sentence/meaning; it
+never writes definitions or examples in this workflow.
+
+Definitions and examples retain separate source, contributor, and licence links
+in the learner drawer. Wiktionary imports carry CC BY-SA 4.0 attribution; accepted
+Tatoeba rows retain their explicit sentence licence and author. No audio or
+external literary quotations are imported by this campaign.
+
+State lives under `.cache/vocabulary-repair/recovery-v2/`, but **spending remains
+in the original `spend.json` with the same cumulative 16 CNY cap**. There is one
+shared worker lock, a 250 MiB retained-source-cache cap, batches of 25, concurrency
+3, bounded public-source requests, and a write-ahead batch journal for safe resume.
+Transient failures can be retried at most three times; uncertain content is not
+forced into publication. A reviewed pilot report hash in `pilot-review.json` gates
+the full run. See the approved recovery spec and implementation plan in
+`docs/superpowers/` before resuming or starting any separately funded campaign.
+
 ### Recovery-only Markdown migration
 
 `pre-ndjson-vocabulary` is a local recovery tag at the last commit containing the active Markdown corpus. Do not push it. If recovery is necessary, inspect or check out that tag, then run `npm run migrate:vocabulary` against a copied legacy `wiki/pages` directory to regenerate a separate NDJSON output. Do not revive Markdown as an active source or overwrite the canonical corpus without review.
@@ -300,4 +334,4 @@ npm run dev              # http://localhost:3000
 
 ## License and data
 
-List **content** comes from NGSL-family sources; check each list's **license** on [newgeneralservicelist.com](https://www.newgeneralservicelist.com/) before redistributing. Definitions/relations use **WordNet** (Princeton) and the **Free Dictionary API**; examples cite **Tatoeba** where applicable. LLM-generated connections are labeled in each page's `sources`. You are responsible for complying with those terms in production.
+List **content** comes from NGSL-family sources; check each list's **license** on [newgeneralservicelist.com](https://www.newgeneralservicelist.com/) before redistributing. Definitions/relations use **WordNet** (Princeton), imported **Wiktionary** text (CC BY-SA 4.0), and legacy **Free Dictionary API** evidence; examples cite their dictionary or **Tatoeba** source where applicable. Source and licence metadata are retained in canonical records and displayed beside recovered content. Model-generated proposals remain distinguishable from factual sources. Applicable source terms still govern redistribution.

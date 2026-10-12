@@ -69,7 +69,7 @@ export async function fetchWordDetail(word: string): Promise<WordDetail> {
   try {
     const res = await fetch(
       `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`,
-      { next: { revalidate: 86400 } },
+      { next: { revalidate: 86400 }, signal: AbortSignal.timeout(3000) },
     );
     if (!res.ok) return EMPTY;
     const data = (await res.json()) as ApiEntry[];
