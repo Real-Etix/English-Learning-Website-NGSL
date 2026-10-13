@@ -62,6 +62,21 @@ test("requires conventional grammatical senses for core function words without r
 test("a bare inflection pointer is not a complete learner definition", () => {
   expect(recoveryCandidates("abdominals", [{ word: "abdominals", lang_code: "en", pos: "noun", senses: [{ glosses: ["plural of abdominal"] }] }], "en", stamp)).toEqual([]);
 });
+test("also rejects Simple Wiktionary's article-prefixed inflection pointers", () => {
+  for (const definition of ["The plural form of beam; more than one (kind of) beam.", "The third-person singular form of beam.", "simple past tense and past participle of beam"]) {
+    expect(recoveryCandidates("beams", [{ word: "beams", lang_code: "en", pos: "noun", senses: [{ glosses: [definition] }] }], "simple", stamp)).toEqual([]);
+  }
+});
+test("rejects untyped quotations with bibliography embedded in example text", () => {
+  const examples = [
+    { text: "2002, A. Author, Scientific Journal, p. 225,\nWho wrote this?" },
+    { text: "December 1749, A. Author, letter to his son\nWho is there?" },
+    { text: "2020, Some Book, page 9: Who called?" },
+    { text: "Who called?" },
+  ];
+  const cs = recoveryCandidates("who", [{ ...entry, senses: [{ glosses: ["Used to ask about a person."], examples }] }], "en", stamp);
+  expect(cs[0]?.sense.examples.map(e => e.text)).toEqual(["Who called?"]);
+});
 test("requires all independent quality checks to pass explicitly", () => {
   const good = { explains_word: true, complete_sentence: true, matching_sense_and_pos: true, natural: true };
   expect(approvedRecoveryReview(good)).toBe(true);

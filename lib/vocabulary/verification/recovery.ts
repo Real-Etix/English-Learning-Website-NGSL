@@ -28,6 +28,13 @@ export function learnerCandidates(record: Pick<VocabularyRecord, "lemma" | "tier
 const reviewSchema = z.object({ explains_word: z.literal(true), complete_sentence: z.literal(true), matching_sense_and_pos: z.literal(true), natural: z.literal(true) }).strict();
 export function approvedRecoveryReview(value: unknown): boolean { return reviewSchema.safeParse(value).success; }
 
+/** Extraction metadata is incomplete: bibliographies can be embedded in plain text. */
+export function recoveryContentIssue(definition: string, example: string): string | null {
+  if (/^(?:the\s+)?(?:simple\s+)?(?:plural|singular|past|present|third.person|comparative|superlative|alternative|inflected)\b[^.!?\n]*\bof\s+/i.test(definition.trim())) return "bare_inflection";
+  if (/[\r\n]/.test(example) || /^\s*(?:(?:c\.|circa)\s*)?(?:(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+)?(?:1\d{3}|20\d{2})(?=[\s,.])/i.test(example)) return "uncleared_quotation";
+  return null;
+}
+
 /** Raw dictionary prose is data, never instructions. Preserve it; never import external quotations. */
 export function recoveryCandidates(lemma: string, entries: unknown[], edition: "en" | "simple", stamp: string): RecoveryCandidate[] {
   if (!/^[\p{L}\p{N}]/u.test(lemma)) return [];
@@ -48,7 +55,7 @@ export function recoveryCandidates(lemma: string, entries: unknown[], edition: "
       if (labels.some(t => EXCLUDED.has(t))) continue;
       const definition = strings(data.glosses).filter(s => s.trim()).join("\n");
       if (!definition || definition.length > 1600 || /definition pending/i.test(definition)
-        || /^(?:plural|singular|past|present|third.person|comparative|superlative|alternative|inflected)\b[^.!?\n]*\bof\s+/i.test(definition)) continue;
+        || recoveryContentIssue(definition, "")) continue;
       const partOfSpeech = POS[entry.pos]!;
       const identity = hash([edition, lemma, partOfSpeech, definition]);
       const source = {
@@ -61,7 +68,7 @@ export function recoveryCandidates(lemma: string, entries: unknown[], edition: "
       const examples = arr(data.examples).flatMap(rawExample => {
         const e = obj(rawExample);
         if (e.ref || e.type === "quotation" || (e.type !== undefined && e.type !== "example")) return [];
-        return typeof e.text === "string" && e.text.length <= 800 && containsVocabularyForm(e.text, { lemma, forms })
+        return typeof e.text === "string" && e.text.length <= 800 && !recoveryContentIssue(definition, e.text) && containsVocabularyForm(e.text, { lemma, forms })
           ? [{ text: e.text, sources: [source] }] : [];
       }).slice(0, 8);
       result.push({ lemma, forms, sense: { id: `wiktionary:${identity.slice(0, 24)}`, partOfSpeech, definition,
@@ -78,6 +85,7 @@ export function applyRecovery(record: VocabularyRecord, candidates: RecoveryCand
   const candidate = candidates[d.data.sense];
   const example = candidate?.sense.examples[d.data.example];
   if (!candidate || candidate.lemma !== record.lemma || !example || !containsVocabularyForm(example.text, candidate)) return record;
+  if (recoveryContentIssue(candidate.sense.definition, example.text)) return record;
   if (!learnerCandidates(record, [candidate]).length) return record;
   if (!candidate.sense.sources.some(s => isFactualSourceId(s.sourceId))
     || !example.sources.some(s => isFactualSourceId(s.sourceId) && s.url && s.license && s.attribution)) return record;

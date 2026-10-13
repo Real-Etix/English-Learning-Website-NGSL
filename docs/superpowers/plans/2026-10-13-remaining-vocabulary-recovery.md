@@ -36,22 +36,22 @@ Interfaces: `recoveryCandidates(lemma, entries, edition, retrievedAt)` returns
 `applyRecovery(record, candidates, decision)` accepts exact numeric sense/example
 indexes or null and returns a canonical record. No edits to the legacy verifier.
 
-- [ ] Write failing tests for independent POS, exact case/headword, rejected quotes,
+- [x] Write failing tests for independent POS, exact case/headword, rejected quotes,
   wrong-language data, explicit inflections, source provenance and idempotent apply.
   ```ts
   expect(recoveryCandidates('who', [{word:'WHO', lang_code:'en', pos:'name', senses:[]}], 'en', stamp)).toEqual([]);
   expect(applyRecovery(record, candidates, {sense:999,example:0})).toEqual(record);
   ```
-- [ ] Run `npx vitest run lib/vocabulary/verification/recovery.test.ts`; observe failure.
-- [ ] Implement strict adapter with mapped POS, content-hash sense IDs and CC BY-SA
+- [x] Run `npx vitest run lib/vocabulary/verification/recovery.test.ts`; observe failure.
+- [x] Implement strict adapter with mapped POS, content-hash sense IDs and CC BY-SA
   source URLs. Retain provider wording; skip quotation/ref examples and unsafe tags.
   Validate with `VocabularyRecordSchema.parse`; selected examples must belong to
   the selected candidate and contain a verified whole form.
-- [ ] Add optional source `attribution`, `license`, `licenseUrl` metadata with safe
+- [x] Add optional source `attribution`, `license`, `licenseUrl` metadata with safe
   HTTP(S) URLs; old records stay valid. Register the new factual source.
-- [ ] Apply selected sense only, hide superseded nonpublished drafts without deleting
+- [x] Apply selected sense only, hide superseded nonpublished drafts without deleting
   history; leave existing published senses/connections and record IDs intact.
-- [ ] Rerun targeted tests and typecheck before committing code with Task 3.
+- [x] Rerun targeted tests and typecheck before committing code with Task 3.
 
 ## Task 2: Bounded cached sources
 
@@ -62,21 +62,21 @@ fetch, throttling and a singleton worker lock. `loadSimpleCandidates(lemmas)`
 reads a size-bounded small gzip extraction into a filtered index. `englishEntries(lemma)`
 reads per-word JSONL. `tatoebaExamples(lemma, forms)` returns attributable examples.
 
-- [ ] Write failing tests for oversized streamed responses, persistent cache budget,
+- [x] Write failing tests for oversized streamed responses, persistent cache budget,
   invalid JSON, cache reuse, 404 versus failure, and live/dead worker locking.
   ```ts
   await expect(readBounded(new Response('abcd'), 3)).rejects.toThrow('limit');
   ```
-- [ ] Run `npx vitest run lib/vocabulary/verification/recovery-io.test.ts`.
-- [ ] Implement abortable bounded reads; 404 means absent, other failures are errors.
+- [x] Run `npx vitest run lib/vocabulary/verification/recovery-io.test.ts`.
+- [x] Implement abortable bounded reads; 404 means absent, other failures are errors.
   Validate cached envelopes, hash keys by full request/version, atomically rename.
   Minimum interval between public source requests; at most two bounded attempts,
   respect Retry-After and stop repeated infrastructure failures.
-- [ ] Filter Simple extraction to candidate lemmas in memory; retain only relevant
+- [x] Filter Simple extraction to candidate lemmas in memory; retain only relevant
   entries. English lookup uses the observed per-word path layout and JSONL link.
-- [ ] Only accept Tatoeba rows with owner attribution and explicit reusable licence;
+- [x] Only accept Tatoeba rows with owner attribution and explicit reusable licence;
   missing metadata cannot be guessed from the generic provider label.
-- [ ] Verify tests, sample live sources and record returned shapes, no paid calls yet.
+- [x] Verify tests, sample live sources and record returned shapes, no paid calls yet.
 
 ## Task 3: Learner attribution
 
@@ -87,49 +87,49 @@ component/test if needed. Regenerate `content/vocabulary/schema.json`.
 Interfaces: `LearningSense.sources` and `.exampleSources` carry optional
 `LearningSource[]`; `LearningExample.sources` carries optional attribution.
 
-- [ ] Write failing profile/render tests for persisted source/license links, distinct
+- [x] Write failing profile/render tests for persisted source/license links, distinct
   definition/example credit, unsafe URL rejection, and no anchors nested in buttons.
   ```ts
   expect(markup).toContain('https://creativecommons.org/licenses/by-sa/4.0/');
   expect(profile.senses[0]?.sources?.[0]?.sourceId).toBe('wiktionary');
   ```
-- [ ] Run targeted tests, implement links beside (not inside) sense buttons. Keep
+- [x] Run targeted tests, implement links beside (not inside) sense buttons. Keep
   keyboard selection and natural card height; no new client network dependencies.
-- [ ] Run `npm run schema:vocabulary`, targeted tests, `npx tsc --noEmit`, full suite.
-- [ ] Review and commit only code/docs/source registry, not private caches.
+- [x] Run `npm run schema:vocabulary`, targeted tests, `npx tsc --noEmit`, full suite.
+- [x] Review and commit only code/docs/source registry, not private caches.
 
 ## Task 4: Resumable recovery and pilot
 
 Files: create `scripts/recover-vocabulary.ts`, runner tests; package script
 `recover:vocabulary`; cache directory `.cache/vocabulary-repair/recovery-v2/`.
 
-- [ ] Test CLI argument parsing, finite decisions, pinned queue, no-write default,
+- [x] Test CLI argument parsing, finite decisions, pinned queue, no-write default,
   resume/idempotence and output reason classification before implementation.
-- [ ] Implement `--pilot --write` and `--write` with an explicit successful pilot
+- [x] Implement `--pilot --write` and `--write` with an explicit successful pilot
   review marker required for full rollout. Baseline candidates come from old
   unresolved outcomes and are pinned with original hashes before mutation.
-- [ ] Reuse source caches first; fetch English fallback when Simple evidence is
+- [x] Reuse source caches first; fetch English fallback when Simple evidence is
   absent, dubious or rejected. WordNet senses remain usable for Tatoeba matching.
-- [ ] Reserve spending before each model call using existing ledger, max 128 output
+- [x] Reserve spending before each model call using existing ledger, max 128 output
   tokens, one attempt. Prompt asks only for sense/example indexes, rejects faulty
   prose, wrong grammatical role, proper names, fragments and mismatched meaning.
-- [ ] Check current CNY pricing and balance; peak input2/output8 per million was
+- [x] Check current CNY pricing and balance; peak input2/output8 per million was
   verified on 2026-10-13; account for timeouts with full reservations.
-- [ ] Run `npm run recover:vocabulary -- --pilot --write`. Inspect all 25 decisions
+- [x] Run `npm run recover:vocabulary -- --pilot --write`. Inspect all 25 decisions
   against supplied evidence and attribution, including withheld negative cases.
-- [ ] Fix defects with regression tests; never relax gates to improve a percentage.
-- [ ] Record pilot review, then run `npm run recover:vocabulary -- --write` once.
+- [x] Fix defects with regression tests; never relax gates to improve a percentage.
+- [x] Record pilot review, then run `npm run recover:vocabulary -- --write` once.
   Checkpoint after each batch; every unchanged/retained word still receives a reason.
 
 ## Task 5: Full pass, validation and delivery
 
-- [ ] Wait through all candidates without duplicate workers. Stop paid calls at cap
+- [x] Wait through all candidates without duplicate workers. Stop paid calls at cap
   and report deferred entries. Keep all evidence/checkpoint/ledger history.
-- [ ] Run `npm run lint:vocabulary`, `npm run audit:dictionary -- --strict`,
+- [x] Run `npm run lint:vocabulary`, `npm run audit:dictionary -- --strict`,
   `npm run build:graphs`, `npm test`, `npm run lint`, `npx tsc --noEmit`, `npm run build`.
-- [ ] Run progressive browser suite with installed Chrome and ignored local config;
+- [x] Run progressive browser suite with installed Chrome and ignored local config;
   include real recovered grammar words and attribution URLs in word details.
-- [ ] Audit changed records, preserved list IDs/connections, unsupported outcomes,
+- [x] Audit changed records, preserved list IDs/connections, unsupported outcomes,
   source/licence metadata, secret scan and artifact size. `git diff --check`.
 - [ ] Commit, push existing `cursor/ngsl-mood-trainer` using authenticated HTTPS
   helper; verify GitHub Vercel Production deployment at the exact commit SHA.
@@ -196,3 +196,144 @@ was updated to the exact new hash. Resume the full worker with the normal comman
 Current cumulative maximum accounting is 2.355484 CNY. Latest code checks: 586 unit
 tests, TypeScript, zero ESLint errors (four existing warnings), a production build,
 and actual browser checks for who/may/when attribution and enabled claim gates.
+
+### Quality investigation during rollout — 2026-10-13 06:00
+
+Spot-checking exposed three concrete validation gaps: article-prefixed Simple
+inflection pointers ("The plural form of beam"), bibliographies embedded in
+untyped English example text, and a model-approved related-but-different meaning
+(markdown: a retail price reduction versus an economic forecast reduction).
+Source prose for matriculate/confection also contains grammar errors. No content
+has been deployed. The single worker was stopped and its saved journal replayed;
+the original ledger, including interrupted reservations, was retained.
+
+The importer now rejects those inflection variants and citation-bearing/multiline
+examples, with failing-first regression coverage. This is an intentionally cautious
+filter, not a claim that every multiline example is an external quotation.
+
+Required before Task 5 delivery:
+
+- [ ] Calibrate `npm run review:recovered-vocabulary -- --pilot`. Known bad pairs
+  must be rejected; legitimate usage-based and relative-pronoun definitions must
+  pass. Do not scale a critic that mistakes a grammatical definition for a defect.
+- [x] Finish the ordinary recovery queue and bounded technical retries first.
+- [ ] Run `npm run review:recovered-vocabulary -- --write` with no other worker.
+  This final pass reuses the exact original ledger, concurrency 3, 128-output-token
+  calls, and at most three conservatively charged attempts. It reviews only new
+  recovered pairs, saves hash-bound decisions, and quarantines rejected senses
+  without deleting any text, source, stable ID, membership or connection.
+- [ ] Run the updated ignored `recovery-v2/audit-changes.ts`: every recovered pair
+  needs an accepting exact-hash quality receipt, rejected pairs must be unclaimable,
+  and all original source-integrity checks still apply.
+- [ ] Review final retained/rejected examples and rerun the full release checks.
+
+The initial critic calibration caught the bad examples but wrongly rejected
+`who`'s relative-pronoun definition. Calibration must pass after correcting that
+criterion; never relax the original factual evidence or attribution gates.
+
+**Current release hold:** Three calibration variants were tested under the same
+ledger. The last accepts who/when/because/may and rejects the known bad pairs, but
+incorrectly rejects the complete sentence "It's a masterwork!" as fragment-like.
+The stricter critic is therefore NOT cleared for automatic rollout. Do not try a
+fourth prompt tweak without discussing this reliability problem. The user has
+been asked asynchronously whether to use the model only for flags, followed by
+the agent's own editorial review and conservative withholding of uncertainties;
+the user would not have to review vocabulary personally. Await that answer before
+changing the final review approach or deploying. Ordinary factual recovery can
+continue safely with the now-tested deterministic filters. Complete its bounded
+technical retries, but do not mistake that completion for release readiness.
+
+Latest code verification: 596 unit tests passed, TypeScript passed, ESLint has no
+errors and the same four existing warnings. The quality reviewer remains a gated
+prototype; `quality-pilot.json` has `passed:false`. Nothing from this recovery
+campaign has been pushed or deployed.
+
+### Source assessment complete — 2026-10-13 07:00
+
+The single worker exited successfully at 06:54. All 2,081 pinned candidates have
+outcomes; no missing candidates, transient failures, pending journals or worker
+locks remain. Provisional results: 373 core and 476 advanced recovered; 71 core
+remain unclaimable and 1,161 advanced remain hidden. These are NOT final publishable
+counts: the final review hold above still applies. Read-only deterministic scanning
+flags 22 earlier accepted pairs for incomplete inflection definitions or unclear
+quotation provenance; known semantic/prose failures also need review.
+
+Cumulative maximum spending is 3.663118 CNY in the original 16 CNY ledger. New
+retained source cache is 16.67 MiB. Canonical lint: 12,115 records, zero errors or
+warnings. Structural dictionary audit: zero strict blockers. Those checks do not
+establish sentence grammar or meaning alignment, and do not clear the release hold.
+
+No further source worker or paid calls are needed. Stop the heartbeat pending the
+user's answer about model-as-flagger plus agent editorial review. Do not rebuild,
+push or deploy these provisional results as final; resume final review/delivery
+only after that decision. Preserve all current files, source history and ledger.
+
+### Approved final review approach — 2026-10-13
+
+The user approved: "Yes—review flags yourself; keep uncertain words hidden".
+This supersedes the decision hold above, not the source/attribution or budget gates.
+Keep the existing critic prompt unchanged; it is a flagger, not a publication judge.
+
+- [x] Split the review CLI into `--flags` (cached, bounded model suggestions only;
+  never changes canonical content) and `--apply` (offline, explicit agent decisions
+  required for every flag, bound to the exact record hash). Reject the old automatic
+  `--write` mode. Test missing/stale editorial decisions fail before any mutation.
+- [x] Persist this user approval separately; preserve the failed calibration report.
+  Use the original cumulative ledger and a single worker to flag all 849 provisional
+  recoveries. No additional source pass, fourth prompt calibration or new provider.
+- [x] Agent reads every flagged definition/example and records keep/quarantine with
+  a concrete reason. Do not rewrite factual text. Unclear rights, incomplete meanings,
+  semantic mismatches and uncertain cases remain hidden/unclaimable. Inspect a sample
+  of unflagged pairs too; agent may quarantine missed problems.
+- [ ] Apply the reviewed decisions with journal protection; extend the source audit
+  to verify hash-bound editorial decisions for flags rather than requiring model
+  agreement. Then rebuild, test, commit/push and verify the exact production SHA.
+
+### Final editorial review and local release checks — 2026-10-13 08:25
+
+The automatic-review hold is resolved by the approved flags-only approach, not by
+claiming the critic passed calibration. The original failed pilot remains preserved.
+All 849 provisionally recovered pairs received flags. The main agent inspected all
+230 flagged pairs, 75 unflagged sample pairs, and 15 additional long/quoted passages.
+The 320 exact-hash editorial decisions retain 174 and quarantine 146. The other
+529 unflagged pairs were not individually reread in this final editorial pass;
+they retain their original factual-source and two-stage matching checks. This is
+not a claim of exhaustive human-quality proofreading or zero remaining errors.
+
+Offline application retained all text, source metadata, old sense IDs, memberships
+and connections. Final outcomes for all 2,081 candidates:
+
+| Outcome | Core | Advanced |
+| --- | ---: | ---: |
+| Recovered and claimable | 329 | 374 |
+| No factual sense | 11 | 146 |
+| No suitable sourced example | 40 | 892 |
+| Ambiguous sense match | 20 | 123 |
+| Withheld after final editorial review | 44 | 102 |
+
+Remaining: 115 unique core words unclaimable and 1,263 advanced words hidden.
+The repository still contains all 12,115 records; 10,852 are published, including
+core records without a claimable sense. No new relationship was published.
+
+Fresh verification: exact source/identity audit passed; canonical lint has zero
+errors/warnings; strict dictionary audit has zero publication blockers. All graph,
+word and progressive assets regenerated. All 598 unit tests (85 files), TypeScript,
+production build and 15 Chrome browser checks passed. ESLint has zero errors and
+four pre-existing unused-variable warnings. Initial sandbox-only CLI-fixture failures
+were reproduced as blocked tsx IPC and passed unchanged with local IPC permissions.
+
+Cumulative conservative spending: **4.669034 CNY** in the original ledger, including
+prior work, retries and interruptions; ceiling remains 16 CNY. No further paid calls.
+New source payload cache: 17,483,446 bytes (16.67 MiB; approximately 30 MiB allocated
+on disk), below 250 MiB. A 512 KiB orphaned partial shard from a stopped worker was
+moved into ignored recovery storage rather than deleted or committed.
+
+Final delivery still requires the reviewed Git commit/push and exact-SHA Vercel
+Production success. The old `--write` quality-review step above is obsolete; use
+`--flags` followed by agent decisions and offline `--apply` only.
+
+Final inline code review found no release blocker. The secret scan identified an
+existing localhost database example in README matching local `.env`; it was replaced
+with explicit username/password placeholders. Environment files were unchanged.
+The repeated scan found no configured secrets, private keys or private/temp files
+in the release. Largest changed artifact is the 2.04 MiB all-list graph JSON.

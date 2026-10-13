@@ -126,13 +126,13 @@ budget-deferred states. Do not mark deferred network/budget cases as verified.
 ## Verification and delivery
 
 - [x] Approve this scope, source/attribution policy, cumulative cap and delivery.
-- [ ] Implement source adapters, identity checks and provenance with failing-first tests.
-- [ ] Verify the 25-word pilot before applying the remaining bounded queue.
-- [ ] Complete every candidate's assessment and preserve unresolved outcomes.
-- [ ] Rebuild NDJSON schema, word artifacts, graph JSON and progressive galaxy assets.
-- [ ] Pass strict publication audit, unit tests, TypeScript, lint and production build.
-- [ ] Check browser word details, attribution, sense selection, claims and galaxy navigation.
-- [ ] Review the diff for source integrity, secrets, unexpected deletions and large artifacts.
+- [x] Implement source adapters, identity checks and provenance with failing-first tests.
+- [x] Verify the 25-word pilot before applying the remaining bounded queue.
+- [x] Complete every candidate's assessment and preserve unresolved outcomes.
+- [x] Rebuild NDJSON schema, word artifacts, graph JSON and progressive galaxy assets.
+- [x] Pass strict publication audit, unit tests, TypeScript, lint and production build.
+- [x] Check browser word details, attribution, sense selection, claims and galaxy navigation.
+- [x] Review the diff for source integrity, secrets, unexpected deletions and large artifacts.
 - [ ] If approved, commit and push to the existing Vercel-connected production branch;
       verify deployment success against that exact commit.
 

@@ -246,6 +246,8 @@ core words and 1,637 hidden advanced words**. It does not regenerate the corpus.
 npm run recover:vocabulary                 # counts only; no network or writes
 npm run recover:vocabulary -- --pilot --write # inspect the fixed 25-word pilot
 npm run recover:vocabulary -- --write       # requires the pilot review marker
+npm run review:recovered-vocabulary -- --flags # model suggestions only; no content edits
+npm run review:recovered-vocabulary -- --apply # offline; every flag needs an agent decision
 ```
 
 The runner imports exact, attributed text from Simple English Wiktionary and
@@ -271,6 +273,28 @@ forced into publication. A reviewed pilot report hash in `pilot-review.json` gat
 the full run. See the approved recovery spec and implementation plan in
 `docs/superpowers/` before resuming or starting any separately funded campaign.
 
+Before release, a model flags possible problems in every recovered pair, including
+grammatical prose and narrower sense restrictions. It uses the same lock and
+spending ledger, and cannot run before every pinned word has an assessment.
+Calibration exposed false rejections of valid definitions and complete short
+sentences, so model suggestions are **not automatic publication decisions**.
+The user approved agent editorial review: every flagged pair requires a keep or
+quarantine decision with a reason, bound to the exact record hash. Missing or stale
+decisions stop application before vocabulary is changed. Agent review may also
+quarantine problems missed by the model. The old automatic `--write` is disabled.
+
+Rejected senses retain their exact text, source metadata and IDs but are
+unpublished; advanced records return to hidden status. Hash-bound receipts and
+a separate write-ahead journal make this pass resumable. Do not rebuild or deploy
+until final editorial review and the source-integrity audit are complete.
+
+The completed 2026-10-13 recovery pass assessed all 2,081 candidates and recovered
+329 core plus 374 advanced words. After conservative editorial withholding, 115
+core words remain unclaimable and 1,263 advanced words remain hidden. Every model
+flag and 90 additional pairs were reviewed by the agent; the final review is not
+an assertion that every source sentence is flawless. Exact source text and old IDs
+remain preserved. See the dated implementation plan for outcomes and checks.
+
 ### Recovery-only Markdown migration
 
 `pre-ndjson-vocabulary` is a local recovery tag at the last commit containing the active Markdown corpus. Do not push it. If recovery is necessary, inspect or check out that tag, then run `npm run migrate:vocabulary` against a copied legacy `wiki/pages` directory to regenerate a separate NDJSON output. Do not revive Markdown as an active source or overwrite the canonical corpus without review.
@@ -292,7 +316,7 @@ docker run -d --name ngsl-pg -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=post
 
 **2. Environment** — copy `.env.example` → `.env` and fill in:
 ```
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/ngsl_mood_trainer"
+DATABASE_URL="postgresql://YOUR_USER:YOUR_PASSWORD@localhost:5432/ngsl?schema=public"
 LLM_API_KEY="sk-…"                       # DeepSeek key (for AI chat + enrichment)
 LLM_BASE_URL="https://api.deepseek.com/v1"
 LLM_MODEL="deepseek-v4-flash"
