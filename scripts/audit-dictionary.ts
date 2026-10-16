@@ -96,7 +96,8 @@ function printSummary(label: string, counts: DictionaryQualityCounts) {
   console.log(`  Connections: ${counts.connections.published} published, ${counts.connections.unreviewed} unreviewed, ${counts.connections.hidden} hidden, ${counts.connections.unexplained} unexplained`);
   console.log(`  Advanced: ${counts.advanced.quarantined} quarantined, ${counts.advanced.reviewable} reviewable, ${counts.advanced.published} published`);
   console.log(`  Claimable senses: ${counts.claimableSenses}`);
-  console.log(`  Sources: curated ${counts.sources.curated}, wordnet ${counts.sources.wordnet}, dictionaryapi ${counts.sources.dictionaryapi}, tatoeba ${counts.sources.tatoeba}, llm ${counts.sources.llm}`);
+  console.log(`  Reviewed limited-example senses: ${counts.limitedExampleSenses}`);
+  console.log(`  Sources: ${Object.entries(counts.sources).map(([id, count]) => `${id} ${count}`).join(", ")}`);
   console.log(`  Strict blocking: ${strictSummary(counts.strict)}`);
   console.log(`  Evidence: verified ${counts.evidence.verified} (${percentage(counts.evidence.verified, counts.pages)}), source-backed ${counts.evidence.sourceBacked} (${percentage(counts.evidence.sourceBacked, counts.pages)}), AI draft ${counts.evidence.aiDraft} (${percentage(counts.evidence.aiDraft, counts.pages)})`);
   console.log(`  Edges: ${counts.edges.total}`);

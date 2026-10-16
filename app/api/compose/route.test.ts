@@ -4,14 +4,18 @@ const mocks = vi.hoisted(() => ({
   loadGeneratedWord: vi.fn(),
   rateLimit: vi.fn(),
   clientIp: vi.fn(),
+  completeChat: vi.fn(),
+  hasLLM: vi.fn(() => true),
 }));
 
 vi.mock("@/lib/vocabulary/generated-word-store", () => ({ loadGeneratedWord: mocks.loadGeneratedWord }));
 vi.mock("@/lib/rate-limit", () => ({ rateLimit: mocks.rateLimit, clientIp: mocks.clientIp }));
+vi.mock("@/scripts/llm-client", () => ({ completeChat: mocks.completeChat, hasLLM: mocks.hasLLM }));
 
 import { vocabularyRecordFixture } from "@/lib/vocabulary/test-fixtures";
 import type { VocabularyRecord } from "@/lib/vocabulary/schema";
 import { POST } from "./route";
+import { meaningReviewSnapshot } from "@/lib/vocabulary/meaning-review";
 
 function request(body: unknown) {
   return new Request("http://localhost/api/compose", {
@@ -46,6 +50,19 @@ function records(): { target: VocabularyRecord; partner: VocabularyRecord } {
 }
 
 describe("POST /api/compose", () => {
+  it.each(["task", "grade"])("blocks %s for meaning-only releases before any model call", async (action) => {
+    const { target } = records();
+    const sense = target.senses[0]!;
+    sense.examples = [];
+    sense.meaningReview = { policy: "limited-examples-v1", reason: "Reviewed meaning", reviewedAt: "2026-10-16T00:00:00.000Z", contentSnapshot: meaningReviewSnapshot(target, sense) };
+    mocks.loadGeneratedWord.mockResolvedValue(target);
+    const response = await POST(request({ action, lemma: target.lemma, senseId: sense.id,
+      task: { lemma: target.lemma, senseId: sense.id, partner: "turn", mode: "single", required: ["bank", "turn"], defs: ["a bank", "a turn"], relation: "antonym", gloss: "Show the contrast." }, text: "I turn towards the bank before I go back home." }));
+    expect(response.status).toBe(409);
+    expect(await response.json()).toMatchObject({ error: expect.stringContaining("sourced example") });
+    expect(mocks.completeChat).not.toHaveBeenCalled();
+  });
+
   beforeEach(() => {
     vi.resetAllMocks();
     mocks.rateLimit.mockReturnValue({ ok: true, remaining: 19, retryAfterSec: 0 });

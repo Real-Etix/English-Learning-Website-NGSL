@@ -1,0 +1,400 @@
+{
+  "id": "003",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T07:36:57.886Z",
+  "decisions": [
+    {
+      "lemma": "creditors",
+      "head": "creditor",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Exact noun-plural relation and person-owed-money definition resolve the identity gap. Directly relevant to payable debts, without confusing a creditor with an amount payable.",
+      "beforeHash": "ae769706493b067ef7dfb1c24bfc7694fa2cfb1ec81af269af8c95baf30186cd",
+      "sourceSenseId": "source-b639d1d06322ac7684b6"
+    },
+    {
+      "lemma": "crops",
+      "head": "crop",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Select cultivated commercial plants via the explicit noun-plural mapping. This is relevant to vegetable growing without claiming that all crops are vegetables or importing the bird-organ sense.",
+      "beforeHash": "ee0115b3a6ba1e6da34b8c5ca45b1b1d3d5b7746ebf84460605b0aa3b052bbc7",
+      "sourceSenseId": "source-7175fb04071f5e8e359d"
+    },
+    {
+      "lemma": "cross-section",
+      "head": "cross section",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact alternative-form link resolves the hyphenated noun identity; WordNet's representative-population sample sense fits the NGSL sample anchor. Exclude geometric and physics senses.",
+      "beforeHash": "b4432765485578dcd21d5a1d6f8e0f1cfc69c9b465801251941505345b7d746f",
+      "sourceSenseId": "source-bd3026a7c6f3e85d691e"
+    },
+    {
+      "lemma": "cubicdecimeter",
+      "hold": true,
+      "reason": "The spaced identity is supported, but this source defines the unit only through a historical water-volume definition. The earlier modern-unit/conversion issue remains unresolved; retain hidden rather than remove qualifying source prose.",
+      "beforeHash": "e93d3ecd4b90ffd6979a59cf0b9ad2df76110cbc6a737a1a871c1be290a78a72"
+    },
+    {
+      "lemma": "curbstone",
+      "hold": true,
+      "reason": "The US spelling relation confirms a paving stone, not the intended Business restraint sense of curb. Topic/sense mismatch remains despite correct spelling.",
+      "beforeHash": "95e2fa0970df3dafc6ac11b60758a4d5974233e50693ade6b3a4aade8c7aa27b"
+    },
+    {
+      "lemma": "deactivated",
+      "head": "deactivate",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact past/participle mapping plus make-inactive meaning supports the NGSL off context. No military sense or unsupported temporary/intentional-shutdown condition is added.",
+      "beforeHash": "5b4d0b71620f2fdf946b431316d62ef41fdc73ddfe94fc76079a64ae8d571805",
+      "sourceSenseId": "source-c2902f39ee3caf5bc8c5"
+    },
+    {
+      "lemma": "deadofnight",
+      "head": "dead of night",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact English phrase confirms historical space loss and the middle-of-night idiom. Fits TOEIC nighttime vocabulary without asserting an exact clock time of midnight.",
+      "beforeHash": "63883aa653512aead4fc6d169b4023114a7386c7dbdec13b653a8eb84c47bef9",
+      "sourceSenseId": "wiktionary:ca6ad64f8f665fb00c5ec914"
+    },
+    {
+      "lemma": "decimalnumber",
+      "head": "decimal number",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact English mathematical phrase verifies the spaced identity and base-ten numerical meaning. Relevant to the Business decimal/numeracy anchor; preserve the source's fractional-number qualification.",
+      "beforeHash": "a2a73d61c2348ab08cde21f86a602a25e0deda3310f6b318419727a7a01e3dc2",
+      "sourceSenseId": "wiktionary:61662fd02e9d246c7b8c25e5"
+    },
+    {
+      "lemma": "declining",
+      "head": "decline",
+      "source": "wordnet",
+      "sense": 9,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The exact participle/gerund mapping and go-down-in-value verb sense support Business downward trends. Do not label it an adjective or extend this economic sense to Fitness movement.",
+      "beforeHash": "1ef9d0c6515bce4e4dd0ac1d5167192212c9081c681859c4666875a5b821bb87",
+      "sourceSenseId": "source-0970422519af4fba9f3a"
+    },
+    {
+      "lemma": "denouement",
+      "hold": true,
+      "reason": "Spelling and literary plot-resolution meaning are verified, but the sole Fitness omega anchor provides no appropriate literary learning context. Keep unrelated content hidden.",
+      "beforeHash": "bde9a85e4af6cc03904805872f564af6c3b3407993b9aa2f40f4a9d3321bdbe1"
+    },
+    {
+      "lemma": "dentalsurgeon",
+      "head": "dental surgeon",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact spaced headword defines a dentist qualified for surgical procedures and resolves historical space loss. Directly relevant to the TOEIC dentist anchor; no treatment advice or invented example is added.",
+      "beforeHash": "1176a8fbb3207edf46d43b0d8e8c1347e35d248018cffe2068fe945a7a58df9e",
+      "sourceSenseId": "source-44b517c97b9c8d9e2c32"
+    },
+    {
+      "lemma": "detoxificationunit",
+      "hold": true,
+      "reason": "The spaced dictionary phrase is now verified as a hospital/rehab department. It remains a clinical addiction-treatment facility rather than the Fitness detox context, so no publication.",
+      "beforeHash": "ec549130f6adfa4861fc2601f4a6a0365474adffe741c7f564431ce1a8921e60"
+    },
+    {
+      "lemma": "dimensions",
+      "head": "dimension",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact noun-plural mapping and length/width/height magnitude sense support NGSL size. Exclude the verb form and specialized coordinate or abstract-aspect meanings.",
+      "beforeHash": "af757ab8cab396d59a94c213ed260de2ad2e67ee8da4a42677358ef999803c6c",
+      "sourceSenseId": "source-635cb67fbdae1353c82a"
+    },
+    {
+      "lemma": "dinnerfork",
+      "head": "dinner fork",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The exact spaced dining headword verifies historical space loss and describes the main-course fork. It directly fits TOEIC fork and dining vocabulary.",
+      "beforeHash": "181e7557dba1010895ff9042571bf375af5721cffed711ed806372e57622e89d",
+      "sourceSenseId": "wiktionary:ed4b33ea05dae179f27505a2"
+    },
+    {
+      "lemma": "dishwashingmachine",
+      "head": "dishwashing machine",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact spaced WordNet headword and machine-for-washing-dishes definition verify identity and TOEIC dishwasher relevance. No unsupported formality distinction is retained.",
+      "beforeHash": "0e198d48e4434e9ce0942e722b4611ad0b59a37f750354b974bd14bb9105fb63",
+      "sourceSenseId": "source-bb8b59d23127be4c5894"
+    },
+    {
+      "lemma": "disposeof",
+      "reason": "Follow-up exact phrasal-verb evidence supplies get-rid-of/dispense-with, confirming the collapsed identity and Business discard/dump context. Exclude ownership-transfer and dispute-settlement senses.",
+      "beforeHash": "0e3d63582c23d5c64b81fce1b3f1a110e8078bfdf5e2e32cf4ed3ca923200f5f",
+      "head": "dispose of",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "sourceSenseId": "wiktionary:ac39d5fe1f9f16dd945e12d0"
+    },
+    {
+      "lemma": "dithering",
+      "reason": "Follow-up source explicitly defines uncertainty or inability to decide; the verified participle/gerund relation now supports the intended hesitation meaning. Retain figurative/intransitive labels and exclude digital image processing.",
+      "beforeHash": "67cd389562f5a1fc3749d0f9173ced792c6dc4c24b859ee8330eb03c6d893323",
+      "head": "dither",
+      "source": "wiki",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "sourceSenseId": "wiktionary:4a2898a7ec6d8f4554182770"
+    },
+    {
+      "lemma": "djeuner",
+      "head": "déjeuner",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "English Wiktionary explicitly defines the accented noun as the French midday meal. This resolves lost-accent identity and fits TOEIC luncheon; exclude the rare verb sense.",
+      "beforeHash": "b20c7dbb25e74ea7efc290ea1bc48c416fd7d3adc077ee908886c161643f3acf",
+      "sourceSenseId": "wiktionary:b9ad78c778d63f026af33066"
+    },
+    {
+      "lemma": "doppelgnger",
+      "hold": true,
+      "reason": "The proposed accented correction still has no usable exact definition in the checked free-source results. Preserve the existing correction but keep publication withheld.",
+      "beforeHash": "3086b446d56949c99845c99d6e8d517920371e5ce5bd71ca62fc2d6cdaf5b06c"
+    },
+    {
+      "lemma": "elders",
+      "head": "elder",
+      "source": "wiki",
+      "sense": 2,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The elder noun entry explicitly lists elders as its plural; the old-person sense directly fits NGSL elderly. Preserve its US label and exclude authority, church-office, plant and food senses.",
+      "beforeHash": "d5a40c5f49b4278d29b881986f70283b42a83ebe9c767dc93b146caaec596237",
+      "sourceSenseId": "wiktionary:3abfcf9ffec662c346522e4e"
+    },
+    {
+      "lemma": "electors",
+      "head": "elector",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Explicit plural relation with the citizen-having-a-legal-right-to-vote sense fits the existing electorate topic. Exclude historical German princes and any assumption that all electors actually vote.",
+      "beforeHash": "feb29772cb4e6d742e2da90abe7c4469b7b48565967d1622ca3338134aa43283",
+      "sourceSenseId": "source-a29c613a77e907c812fe"
+    },
+    {
+      "lemma": "embarked",
+      "head": "embark",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact past/participle relation plus go-on-board sense supports the TOEIC aboard/travel anchor. No enterprise-starting sense or adjective equivalence is substituted.",
+      "beforeHash": "1a8af8cc155792b0774073535061a04921d0ac24c9400da1fd517aab42f12da2",
+      "sourceSenseId": "source-ac8146b0884ef3e6cddc"
+    },
+    {
+      "lemma": "enacted",
+      "reason": "Follow-up source explicitly defines making a bill into law, joined to the verified past/participle mapping. This resolves the statutory-context ambiguity without claims about when a law takes effect.",
+      "beforeHash": "c35b90cff718e510f84431fd800a1f98bd564e6b475364f611025adbd203d9de",
+      "head": "enact",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "sourceSenseId": "wiktionary:aa38cb6170d2535a2182e8e6"
+    },
+    {
+      "lemma": "entrail",
+      "head": "entrails",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "The exact noun source explicitly says singular of entrails and an internal animal organ, resolving the former wrong-POS extraction. Join the sourced collective-organ meaning and retain usually-plural usage; no Business institutional-organ sense.",
+      "beforeHash": "850a33621c6030cc50d9c401f665a7a2c78f5c4c648160f8caef62ebba71b0fa",
+      "sourceSenseId": "source-b88b826d1f47a8921e70"
+    },
+    {
+      "lemma": "evolving",
+      "head": "evolve",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact participle/gerund mapping with undergo-development-or-evolution sense directly supports Academic developmental processes. No claim of predictability or purpose is added.",
+      "beforeHash": "ca416e41dc5a75c947fd5a2966b434023defcec62756ebe5619583d5c54735f1",
+      "sourceSenseId": "source-e730da6d0442c58d2e3b"
+    },
+    {
+      "lemma": "expanding",
+      "hold": true,
+      "reason": "Inflection and growth meanings are now available, but the sole active anchor does not identify which growth sense or a suitable learning relationship. Retain the explicit relevance uncertainty.",
+      "beforeHash": "da44661dd7370920807a1b912c4d2eff118876c3eb3d12906fffcaf41255f853"
+    },
+    {
+      "lemma": "facts",
+      "head": "fact",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Explicit noun plural plus verified-information statement sense resolves the prior Internet-interjection mismatch. This directly supports the NGSL information context without importing slang agreement.",
+      "beforeHash": "66b20c60b761373774efb88e9b78842c74511961dc77bc5cd15b418f35ed630b",
+      "sourceSenseId": "source-b67589b839285dbc7d7e"
+    },
+    {
+      "lemma": "fetocide",
+      "hold": true,
+      "reason": "The alternative spelling and terse fetal-destruction definition are sourced, but the intended relationship to abortion still lacks adequate medical/legal distinction. Keep this sensitive specialized learner explanation withheld.",
+      "beforeHash": "da3b268ec785b0c9c4e7bf1f2d740b56abaa751c7841b736a84fe97ac549ef3b"
+    },
+    {
+      "lemma": "figures",
+      "head": "figure",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Exact noun plural and diagram/picture-illustrating-text sense resolve the earlier it-figures phrase mismatch. Directly relevant to the graphics anchors; monetary, person and verb meanings are excluded.",
+      "beforeHash": "449819f9120a75bd6fd73a64f00ffdc793916e47787ccaf0e16a46ec838c0723",
+      "sourceSenseId": "source-7d49dd179be8d8cef2c1"
+    },
+    {
+      "lemma": "findings",
+      "head": "finding",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Explicit plural relation and the source's often-plural research/investigation-result sense resolve the earlier artisans'-supplies mismatch. Appropriate to NGSL data; retain source usage labels.",
+      "beforeHash": "6a6a643a0c4a9477e11843563024b2e03120bf2b86db3920dc9478552572095f",
+      "sourceSenseId": "wiktionary:1eeaa05f104cadd93e51340f"
+    },
+    {
+      "lemma": "firemarshal",
+      "hold": true,
+      "reason": "Exact spaced identity is verified, but the single head-of-fire-department gloss lacks jurisdiction/role distinctions needed for this record. Do not imply every fire marshal is the fire chief.",
+      "beforeHash": "5f031d342c5fd1de62fb3bcd9988d308788ff81ee9155b32c9fe8d884e572070"
+    },
+    {
+      "lemma": "firstminister",
+      "head": "first minister",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact spaced title and principal-minister-of-a-ruler-or-state definition verify the collapsed phrase and the existing premier topic. Select the general sense rather than asserting a particular jurisdiction's office.",
+      "beforeHash": "0d54cc6af4d6782077a35b6a0e772cb32923ede0b8cb3d03ac09da1cd8a1d81f",
+      "sourceSenseId": "wiktionary:7f4205e20c42e5e0bc1e6e2e"
+    },
+    {
+      "lemma": "fishfork",
+      "head": "fish fork",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact spaced English dining phrase defines the fish/seafood fork and verifies the historical collapsed spelling. It directly matches the TOEIC fork anchor and formal-dining context.",
+      "beforeHash": "c33a1ca066ba38043acd310ead2dc3e6e6bbc1e8fcb0f3b7f8501d2b429ac04f",
+      "sourceSenseId": "wiktionary:71b8fd8a761ed33d63d53c79"
+    },
+    {
+      "lemma": "fitnesscenter",
+      "head": "fitness center",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "Exact English entry verifies the spaced fitness facility name and gym/fitness-club meaning. Preserve the US label and stable identifier; this is directly relevant to both gym anchors.",
+      "beforeHash": "1287d8b7d93f71ad0cf2accc465bce81bc6844282379e7439bfdde172f067323",
+      "sourceSenseId": "wiktionary:70b84df342cf6698004b1bb9"
+    },
+    {
+      "lemma": "flanking",
+      "head": "flank",
+      "source": "wordnet",
+      "sense": 4,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The exact participle/gerund relation and general located-at-the-sides sense support Academic lateral spatial descriptions. Exclude military tactics and unsupported Fitness exercise claims.",
+      "beforeHash": "c57aab2e8c06b1baf64bdaab1d6629c2dca9cb15b6cb80cb6794a2fd52cc937d",
+      "sourceSenseId": "source-4845a8f5f2971e5c075f"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "id": "010",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:14:45.000Z",
+  "decisions": [
+    {
+      "lemma": "disencumber",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Removing a burden is a complete general-language meaning related to rid; retain the transitive restriction without inventing register guidance.",
+      "beforeHash": "def6845b012eae72a813120844d122686f6a9e347babf6d67cf2081e9a6c53bd",
+      "sourceSenseId": "wiktionary:2a311c3a1bf2729971b84b67"
+    },
+    {
+      "lemma": "disgruntle",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Making someone discontent or bad-tempered fits workplace dissatisfaction, without requiring resentment in every occurrence.",
+      "beforeHash": "b22ba4bf96896503283d478e960b718e4bbb1619303f4630ed77903a48940e70",
+      "sourceSenseId": "wiktionary:840ab0af5968a90e0eeb9ec5"
+    },
+    {
+      "lemma": "dishwashingmachine",
+      "hold": true,
+      "reason": "No exact evidence supports the joined spelling or the claimed formal-register distinction; a sourced spaced-phrase identity is needed.",
+      "beforeHash": "0e198d48e4434e9ce0942e722b4611ad0b59a37f750354b974bd14bb9105fb63"
+    },
+    {
+      "lemma": "disillusion",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Depriving someone of an illusion is explicit and related to discovering a disappointing truth; no generic disappointment equivalence is approved.",
+      "beforeHash": "08731afdb861ffdb8153153f3760bab85ec7a459ac879d19de108dcc7a833ae3",
+      "sourceSenseId": "wiktionary:a0bdbec5a8490330933c47e9"
+    },
+    {
+      "lemma": "disposeof",
+      "hold": true,
+      "reason": "The joined form lacks exact factual evidence; do not fabricate a phrasal-verb entry from the old dump gloss.",
+      "beforeHash": "0e3d63582c23d5c64b81fce1b3f1a110e8078bfdf5e2e32cf4ed3ca923200f5f"
+    },
+    {
+      "lemma": "disquisition",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The lengthy analytical discourse meaning directly supports academic dissertation and treatise vocabulary.",
+      "beforeHash": "663ba0cc0236231dfcda4f0df21777556fc7008ea8ff80978499cfc11487ea79",
+      "sourceSenseId": "wiktionary:68077451c79092f3750b97a9"
+    },
+    {
+      "lemma": "dissimilarly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source explicitly supplies the understandable synonym differently; the old requirement for a particularly strong contrast is not retained.",
+      "beforeHash": "c79c526d14db02b51b0c7be0d03a03c4d24baec0b9b0db8c6c4125d2887116e6",
+      "sourceSenseId": "wiktionary:5a1bdfc7f985b6cf68efe910"
+    },
+    {
+      "lemma": "dissolvable",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The adjective's capability-of-being-dissolved meaning supports soluble in science; the unrelated tobacco-product noun is excluded.",
+      "beforeHash": "b1542fba19e76d6aab140f160c3df636e7f9257cec9c0053df72e43487e93ad0",
+      "sourceSenseId": "wiktionary:841803db8e89fe3f6071c521"
+    },
+    {
+      "lemma": "dissolvent",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The explicit liquid-that-dissolves-other-substances sense matches solvent and avoids the ambiguous dissolved-versus-dissolving Wiktionary noun.",
+      "beforeHash": "3c295a1f602264d48807864cb4b301347b1e2a757ea791048d8cf4879fa55899",
+      "sourceSenseId": "source-ad98906304bc696ed93b"
+    },
+    {
+      "lemma": "distillate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The condensed liquid from distillation is an explicit chemistry meaning; it is not substituted for a general financial fraction.",
+      "beforeHash": "f28bb3038fd1a0a37e10c430f943ff77556a5027521b7947a6fe23839e4deca8",
+      "sourceSenseId": "wiktionary:c54d0b89e12530ac8933d88a"
+    },
+    {
+      "lemma": "distributorship",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A wholesale-distribution business is relevant to commercial vocabulary; territorial exclusivity is not implied by the source.",
+      "beforeHash": "a08689ace091b7b1e5dba627c0f78a16eba11d5aa3ed7dcb0b7e22088ebb8231",
+      "sourceSenseId": "wiktionary:595db441630102aeed2850bc"
+    },
+    {
+      "lemma": "dithering",
+      "hold": true,
+      "reason": "The candidate matching hesitation only repeats dither, while WordNet defines image processing; neither supplies a self-contained verified intended meaning.",
+      "beforeHash": "67cd389562f5a1fc3749d0f9173ced792c6dc4c24b859ee8330eb03c6d893323"
+    },
+    {
+      "lemma": "divertimento",
+      "hold": true,
+      "reason": "The available musical composition sense is not supported by the business or travel suite anchors; this specialist connection confuses homonyms.",
+      "beforeHash": "b37a76f545958e05f158983e72cf2998922e001775e369460362f07685512706"
+    },
+    {
+      "lemma": "divulgence",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Disclosing secret or private information is self-contained and relevant to business confidentiality; no intention requirement is added.",
+      "beforeHash": "b4d6288d1e48d9eda60e5cc5753448af2df3108e0e04e656cfeafb7f2a65e174",
+      "sourceSenseId": "source-d23e4606cf13c00f7917"
+    },
+    {
+      "lemma": "djeuner",
+      "hold": true,
+      "reason": "The malformed accented-word spelling has no exact entry; the French dining suggestion does not establish an English source identity.",
+      "beforeHash": "b20c7dbb25e74ea7efc290ea1bc48c416fd7d3adc077ee908886c161643f3acf"
+    },
+    {
+      "lemma": "documental",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The document-derived adjective is verified for the exact headword and relevant to office records; it is not a film-genre replacement.",
+      "beforeHash": "3bffeb04285b98d9cfd64ac4c85b64eee7c703adf9b0d883e7da39910915dcf0",
+      "sourceSenseId": "oewn:02908041-a:documental%3:01:00::"
+    },
+    {
+      "lemma": "don",
+      "source": "wiki",
+      "sense": 5,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Select the clothing verb supported by wear and dress, not the unrelated professor, title, river or crime-boss senses; special clothing is not required.",
+      "beforeHash": "697f6be119821e790ac98cc8a683c45c33998d200a98b2c382021c732837df12",
+      "sourceSenseId": "wiktionary:3a27965848a76f6e70aa642f"
+    },
+    {
+      "lemma": "doppelgnger",
+      "hold": true,
+      "reason": "The existing corrected headword still lacks exact cached sense evidence; retain the correction but do not publish based solely on the old look-alike gloss.",
+      "beforeHash": "3086b446d56949c99845c99d6e8d517920371e5ce5bd71ca62fc2d6cdaf5b06c"
+    },
+    {
+      "lemma": "douser",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source explains douses as extinguishes, especially with water, making a complete equipment-related meaning without requiring small outdoor flames.",
+      "beforeHash": "d8fe6b50e6fbb26558ffa3b947ac788440ac5e94bb1d60d9431cdfecc813ee73",
+      "sourceSenseId": "wiktionary:d0be26d44ed853b67f0930df"
+    },
+    {
+      "lemma": "dray",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The heavy-load horse-drawn cart meaning supports transport vocabulary; retain its historical label rather than presenting it as modern generic equipment.",
+      "beforeHash": "feea598f858a929e2e7e3b1f7527cd9ea5905f5e08705546a8b52593da1fe36d",
+      "sourceSenseId": "wiktionary:30038f34497667e1f11362df"
+    },
+    {
+      "lemma": "drudge",
+      "hold": true,
+      "reason": "The labour meanings are verified but the sole fitness hack anchor confuses a workout term with a person doing menial work.",
+      "beforeHash": "b2fb4c81dd32a1043a83242ebf1bb8f1f9ee905df8f0d5136f6fee19cee53111"
+    },
+    {
+      "lemma": "drupe",
+      "hold": true,
+      "reason": "The botanical fruit classification is not established as useful by the fitness almond anchor; avoid promoting specialist taxonomy through a food-name match alone.",
+      "beforeHash": "4df33b5e2717cf031156a4ca51cdee42191cdc9bc95ab8851ee8fe0051771dad"
+    },
+    {
+      "lemma": "duplicator",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A device reproducing documents or discs is explicit and relevant to office equipment; no mandatory high-volume or historical distinction is added.",
+      "beforeHash": "ba2ce00e9e7f9a38b98ac35f355cee56d53f81ecfa33b48b1b217f11616130f0",
+      "sourceSenseId": "wiktionary:7d1571b9447bbf83677e0ab8"
+    },
+    {
+      "lemma": "durum",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The specified hard-kernel wheat used for bread and pasta is appropriate to agriculture and commodity vocabulary linked to wheat.",
+      "beforeHash": "f4e0be0b21c4610faa85e3c42c12a145767dee317bb0a67728efc04cd705287b",
+      "sourceSenseId": "source-540da51a42f0bc06b556"
+    },
+    {
+      "lemma": "dyad",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic"
+      ],
+      "reason": "A pair of elements treated as one is understandable and supports couple in general and academic reading; specialist musical and tensor senses remain unselected.",
+      "beforeHash": "2c18600bb48affd8b3402125b24cb5832c128ccded5d7e1e3715f1b84fd011c4",
+      "sourceSenseId": "wiktionary:754859efc58ed3b8934d5e76"
+    },
+    {
+      "lemma": "easting",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A distance traveled eastward is an explicit extension of east; it denotes distance rather than the direction alone.",
+      "beforeHash": "c3e515148543f668790c304ef01a7129c990d6ddabb71ec154a7a47367faa979",
+      "sourceSenseId": "wiktionary:382eb02fd5c454e506a1b9bd"
+    },
+    {
+      "lemma": "eclecticism",
+      "hold": true,
+      "reason": "The intellectual and stylistic senses do not justify the sole financial diversification connection; an appropriate learning context remains unresolved.",
+      "beforeHash": "791b8eaf80d4599b4ba0fd01f1b63156b2c5c47ca0c42e12b4468613d619e943"
+    },
+    {
+      "lemma": "econometrician",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "An economist using statistical and mathematical methods is a self-contained occupational meaning matching the economist anchors.",
+      "beforeHash": "ed1332ba012408449199b881771531982fec46024e8823a2cb4d993d9a53172d",
+      "sourceSenseId": "source-3ec65af9df5038f34807"
+    },
+    {
+      "lemma": "econometrics",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "The branch of economics applying statistics to theories and relationships fits economic data study; retain uncountable usage.",
+      "beforeHash": "944729cd1bf7b32a93e1b43e47dc926106068adbfc4bcb6b3d6c7359295107cb",
+      "sourceSenseId": "wiktionary:c0570674f28bf2ea4c41354e"
+    },
+    {
+      "lemma": "elapid",
+      "hold": true,
+      "reason": "The snake-family taxonomy is unrelated to the fitness cobra-pose anchor; verified zoology alone does not make that learning connection appropriate.",
+      "beforeHash": "bc66d62b253f87d0387901ebf07326c8ffbe952478a4a7d698ee85db3c2c5a71"
+    },
+    {
+      "lemma": "elastomer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The polymer with rubber-like elastic properties supports industrial materials vocabulary anchored to rubber, without equating every rubber product with a material class.",
+      "beforeHash": "37091934a3de2d08967bd71e0473d288702726f1560d6ac103a79ff867f221b3",
+      "sourceSenseId": "wiktionary:a98ab0c8e806671867d451f2"
+    },
+    {
+      "lemma": "elders",
+      "hold": true,
+      "reason": "No exact extracted sense supports this plural record; neither age nor wisdom and authority should be inferred from the old elderly gloss.",
+      "beforeHash": "d5a40c5f49b4278d29b881986f70283b42a83ebe9c767dc93b146caaec596237"
+    },
+    {
+      "lemma": "electioneering",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Campaigning for elective office is explicit and supports the political sense of campaign; retain uncountable usage.",
+      "beforeHash": "8a4d77e633224cfc9b2519fef0514c87591fd97105402d24d979a87fd88d4cf9",
+      "sourceSenseId": "wiktionary:2418a4ae6dd85e0c20b3249c"
+    },
+    {
+      "lemma": "electors",
+      "hold": true,
+      "reason": "No exact source sense is available for this plural; a verified elector morphology mapping is needed before meaning-based release.",
+      "beforeHash": "feb29772cb4e6d742e2da90abe7c4469b7b48565967d1622ca3338134aa43283"
+    },
+    {
+      "lemma": "electrified",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "Powered by electricity is a complete equipment meaning; it does not entail deliberately charged or dangerous surfaces in every use.",
+      "beforeHash": "eb4185bea2f32081c16a7b1edd1a757923e33beaa27413205ef5e0d21bcff170",
+      "sourceSenseId": "wiktionary:5cfed9820475dfa1197012fa"
+    },
+    {
+      "lemma": "electrotechnician",
+      "hold": true,
+      "reason": "The sole definition depends on unexplained electrotechnology and does not establish equivalence to electrician; clearer factual occupational evidence is needed.",
+      "beforeHash": "ae9927c9ba46c760dd53c292073b38014c313725de30ecc2e7aeb79ebf9b3c74"
+    },
+    {
+      "lemma": "elide",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Leaving out or omitting something is clear and relevant to written communication; phonetic deletion and conflation are separate senses.",
+      "beforeHash": "fd0459f31e60bfe1c3ab2213145e2b123e4bf630a8f644813ce2c69e03b1741f",
+      "sourceSenseId": "wiktionary:37e49db2aea804ebb34443f8"
+    },
+    {
+      "lemma": "eliminator",
+      "hold": true,
+      "reason": "The generic agent-that-eliminates entries are circular and do not verify the intended tournament-match sense proposed by preliminary.",
+      "beforeHash": "310f1533ab059d3529ee894c8b6007f1af97fadf485f1b54fd53c6469a8b722c"
+    },
+    {
+      "lemma": "elongation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The act of lengthening is explicit and related to stretching; no specific one-axis strain formula is inferred.",
+      "beforeHash": "11791922bcac8228d89f42ab2a3f96ad6aa83de48709cdc341761c9fe0d7b073",
+      "sourceSenseId": "wiktionary:3550686cacd9e2471bd03d46"
+    },
+    {
+      "lemma": "elucidative",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Explanatory and clarifying provide a self-contained meaning relevant to explanations; no example is invented to unlock practice.",
+      "beforeHash": "ecaa34e546ad9922190fff0636949d2c655f2ee1af6f36063e6c6f8433775f14",
+      "sourceSenseId": "wiktionary:136c8d78fbb3919ca1715acb"
+    }
+  ]
+}

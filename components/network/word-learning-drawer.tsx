@@ -147,6 +147,7 @@ export function WordLearningDrawer({
     ?? null;
   const selectedSenseCanClaim = selectedSense?.canClaim ?? profile?.canClaim ?? false;
   const selectedSenseBlockReason = selectedSense?.claimBlockReason ?? profile?.claimBlockReason ?? null;
+  const practiceUnavailable = selectedSense?.canPractice === false;
   const selectedExamples = selectedSense?.example
     ? [{ text: selectedSense.example, source: selectedSense.source, sources: selectedSense.exampleSources }]
     : [];
@@ -237,7 +238,8 @@ export function WordLearningDrawer({
                 </UsageSection>
                 {profile.forms.length > 0 && <section aria-label="Forms"><h3 style={{ margin: "0 0 9px", font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#94A0B4" }}>Forms</h3><div style={{ display: "flex", flexWrap: "wrap", gap: 7 }}>{profile.forms.map((form) => <span key={form} style={{ padding: "6px 9px", borderRadius: 999, border: "1px solid rgba(241,238,230,.12)", background: "rgba(241,238,230,.04)", font: `400 12px/1 ${SS}`, color: "#D8D3C8" }}>{form}</span>)}</div></section>}
                 {profile.usageNote && <section aria-label="Usage note"><h3 style={{ margin: "0 0 9px", font: `600 9.5px/1 ${MN}`, letterSpacing: ".18em", textTransform: "uppercase", color: "#94A0B4" }}>Usage note</h3><p style={{ margin: 0, font: `400 14px/1.6 ${SS}`, color: "#D8D3C8" }}>{profile.usageNote}</p></section>}
-                {held && <button className="word-learning-drawer-focus" type="button" onClick={onCompose} style={{ ...buttonStyle, width: "100%", padding: 12, border: `1px solid ${solid ? "rgba(143,227,192,.3)" : "rgba(203,185,233,.32)"}`, background: solid ? "rgba(143,227,192,.12)" : "rgba(203,185,233,.14)", color: solid ? "#8FE3C0" : "#CBB9E9", font: `600 13px/1 ${SS}` }}>{solid ? "◆ Used in a sentence" : "✎ Use it in a sentence"}</button>}
+                {held && <button className="word-learning-drawer-focus" type="button" disabled={practiceUnavailable} aria-describedby={practiceUnavailable ? `${tabsId}-practice-note` : undefined} onClick={onCompose} style={{ ...buttonStyle, cursor: practiceUnavailable ? "not-allowed" : "pointer", opacity: practiceUnavailable ? .6 : 1, width: "100%", padding: 12, border: `1px solid ${solid ? "rgba(143,227,192,.3)" : "rgba(203,185,233,.32)"}`, background: solid ? "rgba(143,227,192,.12)" : "rgba(203,185,233,.14)", color: solid ? "#8FE3C0" : "#CBB9E9", font: `600 13px/1 ${SS}` }}>{solid ? "◆ Used in a sentence" : "✎ Use it in a sentence"}</button>}
+                {practiceUnavailable && <p id={`${tabsId}-practice-note`} style={{ margin: 0, font: `400 12px/1.6 ${SS}`, color: "#F2D9A0" }}>{selectedSense?.limitedExamples ? "Sentence practice needs a reviewed, sourced example." : "Sentence practice is unavailable for this meaning."}</p>}
               </>
             )}
 
@@ -309,6 +311,8 @@ function Sense({ sense, primary = false, selected, onSelect }: { sense: WordLear
         <span style={{ padding: "3px 7px", borderRadius: 999, background: "rgba(241,238,230,.06)", font: `400 9.5px/1 ${MN}`, color: "#94A0B4" }}>{sense.sources?.[0]?.label ?? sourceLabel(sense.source)}</span>
       </div>
       <span style={{ font: `400 ${primary ? "16.5px" : "15px"}/1.62 ${SS}`, color: "#E8E4DA" }}>{sense.definition}</span>
+      {sense.labels && sense.labels.length > 0 ? <span role="note" aria-label="Usage labels" style={{ font: `400 12px/1.55 ${SS}`, color: "#BFD9F2", overflowWrap: "anywhere" }}>Usage: {sense.labels.join(" · ")}</span> : null}
+      {sense.limitedExamples && <span style={{ font: `400 12px/1.55 ${SS}`, color: "#F2D9A0" }}>Limited examples · meaning reviewed. You can claim this word with a meaning quiz.</span>}
       {sense.example && <span style={{ font: `italic 400 14px/1.6 ${SF}`, color: "#D8D3C8" }}>{sense.example}</span>}
     </button>
     <SourceAttribution sources={sense.sources ?? []} label="Meaning source" />

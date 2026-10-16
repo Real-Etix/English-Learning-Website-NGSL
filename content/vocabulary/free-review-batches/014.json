@@ -1,0 +1,382 @@
+{
+  "id": "014",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:20:21.000Z",
+  "decisions": [
+    {
+      "lemma": "glycosuria",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Sugar in urine is explicitly defined and relevant to the existing diabetes health-vocabulary anchor; often associated does not mean a diagnosis or inevitable cause.",
+      "beforeHash": "4d8faa8d93754c2f3d758226422c0780ba3c6058af3f5eb85ffd249729fbdbc3",
+      "sourceSenseId": "wiktionary:92467f952f16ab6fe212b2d6"
+    },
+    {
+      "lemma": "gradation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "ngsl"
+      ],
+      "reason": "A sequence of gradual successive stages clearly supports scale and tier; hierarchy is not necessarily rigid and no such contrast is approved.",
+      "beforeHash": "f898849176107c8f58bacfcbc0b8a26b825c79898088c9ac17996eece375a18f",
+      "sourceSenseId": "wiktionary:90d5d342c35dab92447a09a6"
+    },
+    {
+      "lemma": "gram-molecule",
+      "hold": true,
+      "reason": "No exact factual entry is available; the proposed historical chemistry equivalence cannot be inferred from the mole gloss.",
+      "beforeHash": "c80b647ea7c3cc08092229db77cb40322a92085e1afb7886151367e8880959e2"
+    },
+    {
+      "lemma": "gramme",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness",
+        "toeic"
+      ],
+      "reason": "Exact spelling evidence supplies the one-thousandth-of-a-kilogram unit; do not invent register or spelling-region labels beyond the source.",
+      "beforeHash": "ff81d61c53cb5c9cf3e64d40b461f2c9c96277e38d330c8756f4145f60ccfff9",
+      "sourceSenseId": "oewn:13745822-n:gramme%1:23:00::"
+    },
+    {
+      "lemma": "grandmama",
+      "hold": true,
+      "reason": "No exact sourced sense is available; the familiar family-word interpretation and old-fashioned register still need factual evidence.",
+      "beforeHash": "4f149e3908c1bea2745349b24cb88c1f8a4880a1879664d47617c7631dd92159"
+    },
+    {
+      "lemma": "grantee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The recipient of something granted is explicit and appropriate to grants and property transactions, without limiting every beneficiary to a grant.",
+      "beforeHash": "0e8294df8009a8e2568655695d0d17fcdc47273344c56c50b9a05dfb8cc39bcd",
+      "sourceSenseId": "wiktionary:dbf9cc323a0fb597b2b05217"
+    },
+    {
+      "lemma": "granules",
+      "hold": true,
+      "reason": "No exact plural sense or reviewed granule mapping is available; the source gap cannot be filled with an inferred particle-size comparison.",
+      "beforeHash": "e83a04744d7b9ba5610a69a51bad54805b92340f8cd32500da2e7373930fce3f"
+    },
+    {
+      "lemma": "gravid",
+      "hold": true,
+      "reason": "Cached evidence has unresolved figurative and egg-laying qualifiers, while WordNet narrows it to advanced pregnancy; verify usage scope before presenting the broad pregnant equivalence.",
+      "beforeHash": "147934db0900f1557cb2273b6c810699e8a07b3cb4ee06345c3521f2b7ff2243"
+    },
+    {
+      "lemma": "greatcoat",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A heavy overcoat is explicit and directly fits coat study; neither military use nor historical setting is required by the definition.",
+      "beforeHash": "9e8ada1d647bbba2e492e504762b92d3f588e6b385b2ddf634df5d304c144aea",
+      "sourceSenseId": "wiktionary:ae838e91845fc79ff24bf5ae"
+    },
+    {
+      "lemma": "greeting",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Acknowledgment or expression of goodwill on meeting is self-contained and relevant to hello; preserve the source's usually-plural qualification.",
+      "beforeHash": "d49af600e1fa5797d6dd03fe9cf92b2be5d34fc0952181f6f5c2cd303eeb6329",
+      "sourceSenseId": "oewn:06642524-n:greeting%1:10:00::"
+    },
+    {
+      "lemma": "gridline",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A line forming part of a grid is a clear graphical meaning; reject the old claim that guideline generally means a ruler mark and leave the link hidden.",
+      "beforeHash": "5781c440a47ec7f1e4b6169fc916a8fe0572832b5a3b412551f579499b2d8fe0",
+      "sourceSenseId": "wiktionary:be02cd3d3ccbe00a220686be"
+    },
+    {
+      "lemma": "groundskeeper",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Upkeep of gardens, playing fields or woodland is an explicit occupational meaning related to gardener; large estates are not mandatory.",
+      "beforeHash": "d3f877af9cc9bb65ebbd112f1cb3ffc2c3eee4ff56cd79fbcb626281f73972b6",
+      "sourceSenseId": "wiktionary:39cf7706a362b4a8e3443700"
+    },
+    {
+      "lemma": "habitu",
+      "hold": true,
+      "reason": "The truncated form has no exact factual entry; do not infer an accented habitue identity or sophistication claim from the patron gloss.",
+      "beforeHash": "03f681c99a315650cc5390d567b819047f5d3efdf925465f0604142c6edce5f8"
+    },
+    {
+      "lemma": "habituate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Making accustomed or familiar is an explicit meaning directly fitting accustom; a specialized psychological protocol is not required.",
+      "beforeHash": "1545e3b7bce313f66d7ce4d5768727daa2dd455152de8af5e530665781baca11",
+      "sourceSenseId": "wiktionary:965419c98d8b4674b88ff9eb"
+    },
+    {
+      "lemma": "half-diameter",
+      "hold": true,
+      "reason": "No exact sourced entry is available, and the claim that radius is too common is not a factual reason to create a substitute term.",
+      "beforeHash": "4e74457c5408e48a5f4c1f2d4c72cb0fb9161899438f647749c23683ed42789e"
+    },
+    {
+      "lemma": "halite",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Mineral sodium chloride or rock salt is a precise earth-science meaning; it is not every chloride or the separate oxyanion sense.",
+      "beforeHash": "ca7433192c0a823add14b5f60307ab5ac15e81f94f3e19cd3b7c202adf20fafb",
+      "sourceSenseId": "wiktionary:3c99f7973dcd38f569ce10ff"
+    },
+    {
+      "lemma": "handbalance",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Exact closed-compound evidence describes upside-down support only on the hands, directly relevant to handstand learning.",
+      "beforeHash": "6e728b5211adcc946c4891cec8c49837ccaa836dbf6e668144689620ea1f01d1",
+      "sourceSenseId": "wiktionary:6aa2e669dbb0a66495b9f585"
+    },
+    {
+      "lemma": "handbill",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The printed sheet distributed by hand matches flyer; exclude the unrelated cutting-tool homonyms and do not require street distribution.",
+      "beforeHash": "f11993f15b941378c57d533abd83a1792252856ae8f8a7a2435703e0fc333237",
+      "sourceSenseId": "wiktionary:c88236f63523b563e16d4b8d"
+    },
+    {
+      "lemma": "handspike",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The explicitly described bar or lever used with a windlass or capstan is appropriate to mechanical lever study; generally wooden does not mean exclusively wood.",
+      "beforeHash": "90d9feaa016de97546f68e49486f6cdb6a06408a8c32c3f3a457b8551b50ee79",
+      "sourceSenseId": "wiktionary:eb40045ab1d5d8bcbae27c9d"
+    },
+    {
+      "lemma": "hardliner",
+      "hold": true,
+      "reason": "The sole exact candidate is restricted to an uncompromising conservative, not the broad organizational extremist sense proposed; appropriate intended scope remains unresolved.",
+      "beforeHash": "1f3ec463ceac6d2a26ed371899370aa66c0c121d7b4243e0ce3da91ddc1aa962"
+    },
+    {
+      "lemma": "harmonization",
+      "hold": true,
+      "reason": "The generic entry is circular and the concrete WordNet senses concern music; neither verifies the intended reconciliation of parties or standards.",
+      "beforeHash": "8713673ecf670727e368e7e72030ae0283422d1f850ca561096755546f2742c7"
+    },
+    {
+      "lemma": "hastening",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Speeding up or growing faster is explicit and matches acceleration; deliberate urgency is not necessary in every use.",
+      "beforeHash": "8961e0dd176a37926ab65980d7424f85c1d5ec0798ee90936fcffb60251b29de",
+      "sourceSenseId": "wiktionary:3f415da7a084505244f4d698"
+    },
+    {
+      "lemma": "haulier",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "A person or company hauling goods is an explicit transport occupation appropriate to carrier; the coal-mining sense is separate.",
+      "beforeHash": "1da47f1170bdb126b67fd174f410feb520e3f27fd1fd75bfc5db32a429f2499d",
+      "sourceSenseId": "wiktionary:0a2a37c974a9303b54d5509b"
+    },
+    {
+      "lemma": "headguard",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Padded head protection in sports is clear and related to protective equipment; do not conflate it with the separate forklift roof meaning.",
+      "beforeHash": "aa39fba6f2b2e7bb5b862c872846c2b7938ab04bb645829bf2b7eb0e57b352b6",
+      "sourceSenseId": "wiktionary:fdc7d324aaee250dbfdbc9ac"
+    },
+    {
+      "lemma": "hebdomad",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The seven-day period is exact and relevant to week; retain the historical label rather than presenting it as ordinary current usage.",
+      "beforeHash": "5dbe3ff335fe7f09c97bddd1eb3545dad5d3a374a3e3f72d7487b5ce4514ae33",
+      "sourceSenseId": "wiktionary:51aa448844d488f4b60b288d"
+    },
+    {
+      "lemma": "helpmate",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The wife-or-spouse sense directly matches the personal-status anchor; the cooperative chess problem is excluded and no gender-role advice is added.",
+      "beforeHash": "1f08c690681b2013a479a56a05396846fc22783ca24adcda2070840429e1d4e7",
+      "sourceSenseId": "wiktionary:95f4b797c1d15510ee12c0ce"
+    },
+    {
+      "lemma": "hepar",
+      "hold": true,
+      "reason": "No exact sourced English sense is available; the claim that a Latin-derived term improves medical precision cannot replace identity evidence.",
+      "beforeHash": "bb1217a2140c0db96e6370b940a32ade3a148696db6b4c68cadbfbcf3c3dd603"
+    },
+    {
+      "lemma": "hereditarily",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "With regard to inheritance is explicit and relevant to hereditary traits; not every use is automatically a technical genetic mechanism.",
+      "beforeHash": "2630f2b7e80244277b3cf51f95db64072026cb96cc00f499f5b85785e7fa60e7",
+      "sourceSenseId": "wiktionary:cf53823f78338d4bfb0ea414"
+    },
+    {
+      "lemma": "heterogeneity",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business",
+        "ngsl"
+      ],
+      "reason": "A composition of diverse parts provides a complete general and analytical meaning; it does not duplicate the entire biological concept of biodiversity.",
+      "beforeHash": "99bca7c030a6d293aa1c1dd854cadb1252a21ec491edee1fe31882bb7ddd902e",
+      "sourceSenseId": "wiktionary:ed54d3135358967da12aadaf"
+    },
+    {
+      "lemma": "heterogenize",
+      "hold": true,
+      "reason": "The only source definition repeats heterogeneous without explaining the change; the model's diversification gloss cannot fill that learner-meaning gap.",
+      "beforeHash": "1cff89c420ec88952b74dbf204b1721b5f1024047a455131d49548c28fa4fd60"
+    },
+    {
+      "lemma": "hexapod",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A six-footed arthropod in Hexapoda is a precise academic zoological meaning; robots and the dated simple insect equivalence are not selected.",
+      "beforeHash": "579e18a89667a1986bab7b50ea85a7f654360bd09a9613a9fccb0a6cbb512760",
+      "sourceSenseId": "wiktionary:2b335a763085befb4dc11ce8"
+    },
+    {
+      "lemma": "historiographer",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic"
+      ],
+      "reason": "An authority studying and writing history is self-contained and fits historian; a mandatory focus only on methodology is not inferred.",
+      "beforeHash": "5a5817532fbf98e8a06cc00484a3fceb6b99a3181a5cbdd8062ec39f37fd8d00",
+      "sourceSenseId": "source-02dffd69ca34c2a58cd5"
+    },
+    {
+      "lemma": "historiographic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Relating to the writing of history is explicit and supports the distinction from merely historical subject matter.",
+      "beforeHash": "f805b07146cf480ad3b5db034d1210ad2c6c5d005e194b9859488932d78d3a48",
+      "sourceSenseId": "wiktionary:2a6e4202ab33d5f0beb4b0db"
+    },
+    {
+      "lemma": "hoisting",
+      "hold": true,
+      "reason": "The physical noun merely repeats hoisted, while the other meaning concerns JavaScript; neither supplies the intended sourced lifting explanation.",
+      "beforeHash": "f617af1123999dfdc002cd8bcbcb49a47770c0925e395460bace2a39ca028db4"
+    },
+    {
+      "lemma": "holdings",
+      "hold": true,
+      "reason": "No exact financial noun or reviewed holding plural mapping is available; investment and property meanings cannot be released from old glosses alone.",
+      "beforeHash": "d8c3a3bed051a16fcfa509d218afa9d61bfea746e228a6f0d717debd00caea3c"
+    },
+    {
+      "lemma": "homilist",
+      "hold": true,
+      "reason": "The religious sermon-preparation meaning is unrelated to the fitness preacher exercise anchor, and the entry also depends on unexplained homilies.",
+      "beforeHash": "10f5fd6caa20d533aef1655d5b6183dd70397d3dfffef36a12cb3416b2d4b2d7"
+    },
+    {
+      "lemma": "honky-tonk",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The country-music bar or nightclub meaning is appropriate to entertainment and travel reading; retain the US label and exclude fitness dive associations.",
+      "beforeHash": "e3370cdc06150c798ffb399b32e8a67f68626bd24fe1f6e6c603abbddffbf368",
+      "sourceSenseId": "wiktionary:f4766da38846722ff37a6f4a"
+    },
+    {
+      "lemma": "house-made",
+      "hold": true,
+      "reason": "No exact source entry supports the restaurant-premises meaning for this spelling; preserve it pending factual identity evidence.",
+      "beforeHash": "8c59df607b6b2b08a1b69fcc24efd2757dbdb9ff36feb912184be42bff9ed6ae"
+    },
+    {
+      "lemma": "hushedly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Quietly and softly are explicitly supplied, giving a complete speech-related meaning without requiring a particular motive.",
+      "beforeHash": "72402533f3f24017354f37a8309d91b5939a98a058f781e51c830d3003102316",
+      "sourceSenseId": "wiktionary:9c3e8b90470e4259e5aa2398"
+    },
+    {
+      "lemma": "hybridism",
+      "hold": true,
+      "reason": "The source's cross-breeding and linguistic word-formation senses do not establish the intended business hybrid context; specialist matches alone are insufficient.",
+      "beforeHash": "f0178afa67a2b182f8dd759619a3d90bb04b599f8125441a70e8bf79745b27fe"
+    }
+  ]
+}

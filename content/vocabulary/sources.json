@@ -2,6 +2,27 @@
   "schemaVersion": 1,
   "sources": [
     {
+      "id": "nhgri",
+      "label": "NHGRI Talking Glossary",
+      "homepage": "https://www.genome.gov/genetics-glossary",
+      "license": "Public domain; courtesy National Human Genome Research Institute",
+      "factual": true
+    },
+    {
+      "id": "nlm-mesh",
+      "label": "NLM MeSH (2026 snapshot)",
+      "homepage": "https://www.nlm.nih.gov/mesh/",
+      "license": "NLM MeSH terms; attribution and version identification required",
+      "factual": true
+    },
+    {
+      "id": "oewn",
+      "label": "Open English Wordnet",
+      "homepage": "https://en-word.net/",
+      "license": "CC BY 4.0; underlying Princeton WordNet License",
+      "factual": true
+    },
+    {
       "id": "wiktionary",
       "label": "Wiktionary",
       "homepage": "https://en.wiktionary.org/",

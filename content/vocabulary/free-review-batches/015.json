@@ -1,0 +1,406 @@
+{
+  "id": "015",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:21:58.000Z",
+  "decisions": [
+    {
+      "lemma": "hydrargyrum",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The exact chemical-element mercury meaning is explicit and appropriate to the academic anchor; retain uncountable usage without inventing preferred nomenclature.",
+      "beforeHash": "b5b8c7354a81328419584077ba738ac22c9d80185428829bc2d5983832c73c70",
+      "sourceSenseId": "wiktionary:3eba7ad15db7194b45d035f9"
+    },
+    {
+      "lemma": "hydrochloride",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The hydrochloric-acid compound with an organic base is a specific chemistry meaning; it is not a generic replacement for every chloride.",
+      "beforeHash": "49305a545008bcdf6ded6b72a35214c7bb8d31e34c63d305da2143acd73ffcdc",
+      "sourceSenseId": "wiktionary:6f58e5c226ee78749f072715"
+    },
+    {
+      "lemma": "hydron",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Any hydrogen cation, with a proton as the source's example, is a precise academic chemistry meaning; do not equate all isotopic hydrons with one proton species.",
+      "beforeHash": "69afd069704c02bb4915bc658561b6d20eb3c4689817355ee10b64f237e71b35",
+      "sourceSenseId": "wiktionary:a1b3b09fd6f61d3d47052b91"
+    },
+    {
+      "lemma": "hyperemia",
+      "hold": true,
+      "reason": "The medical excess-blood meaning is verified but the sole TOEIC congestion anchor does not establish a medical rather than traffic context for this specialist.",
+      "beforeHash": "f2950c3b87bff92a21abd36ef903d33aa670de5d18fd8a52db756f761926ca8f"
+    },
+    {
+      "lemma": "hyperfactorial",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The definition correctly specifies the product of consecutive integers each to its own power; reject the old inaccurate product-of-factorials connection.",
+      "beforeHash": "13aafa6f64bf9d064bf484dbf236c8b37ffa81e30cb2cd1f16575d48c8ae5bc7",
+      "sourceSenseId": "wiktionary:c337c20f8eb335cbd429bf6f"
+    },
+    {
+      "lemma": "hyperglycemia",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Unusually high blood sugar is explicitly sourced and relevant to diabetes health vocabulary; do not equate the measurement state with a disease diagnosis.",
+      "beforeHash": "3ac92210ff436640f177ede14e35554a3832e55dd4d6f9dfd7136628848e486a",
+      "sourceSenseId": "wiktionary:7e2f80edb5e657b517a37928"
+    },
+    {
+      "lemma": "iciness",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The very-cold physical state supports chill vocabulary; the separate emotional lack-of-affection meaning is not selected.",
+      "beforeHash": "ef86e9bb24ba5173b2d47bbb5d54c54a56934308eb870735a940afbc213a0ddc",
+      "sourceSenseId": "wiktionary:8ff79d01223e830c1d865d3b"
+    },
+    {
+      "lemma": "illuminant",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Something serving as a light source is self-contained and supports lamp and lighting equipment study.",
+      "beforeHash": "882e7d47782addcff240db6152a7ed55db2ae82bd9e022353a39c4d2525f4fc7",
+      "sourceSenseId": "source-c749db8f09a7a24e5bb5"
+    },
+    {
+      "lemma": "illustrations",
+      "hold": true,
+      "reason": "No exact plural source sense or reviewed illustration mapping is available; the proposed drawn-image meaning remains without attributable entry evidence.",
+      "beforeHash": "244382a37fadd40a4dff1cf1395e1c75f99b42afe656720174f012652798301e"
+    },
+    {
+      "lemma": "imager",
+      "hold": true,
+      "reason": "The available sculptor and disk-image system senses do not verify the intended camera or image-sensor meaning; avoid publishing a different technical homonym.",
+      "beforeHash": "997ac32e0d0fc3917c48223626414cb2cc78cec3ec901e9cb717c9c7630c5c38"
+    },
+    {
+      "lemma": "imagistic",
+      "hold": true,
+      "reason": "The sole entry refers to the unexplained literary movement imagism, not general photographic imagery; the proposed broad visual meaning is unverified.",
+      "beforeHash": "c60ae7bc5b94b40380037f8f48f1b0a4130fee2482971d9139eb4218f4a1abc4"
+    },
+    {
+      "lemma": "imbibition",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Liquid absorption by a solid or gel is explicit and appropriate to chemistry; exclude business absorption and the separate drinking sense.",
+      "beforeHash": "f9fde287496685892028a1b2377598537e19d71afc7616bf4b4593e5b453202d",
+      "sourceSenseId": "source-52a563d0464da84beadd"
+    },
+    {
+      "lemma": "immaculateness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Being spotlessly clean is self-contained and fits cleanliness; the word need not describe moral or abstract perfection.",
+      "beforeHash": "cfe4bcd6e93719dd4ff27ab18b1b81dc1337204f3955b3dbb1cf099ff682131f",
+      "sourceSenseId": "source-c6feefce388a601d5dd0"
+    },
+    {
+      "lemma": "immersed",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Select the figurative deeply-involved meaning appropriate to task engagement; preserve its figurative label and distinguish literal submersion.",
+      "beforeHash": "22570536b2772f2c5a4b4fe8b80851c8cefb449f2bd3d66bf90ae0a589a345c2",
+      "sourceSenseId": "wiktionary:88d2fb146489f4530d72dd83"
+    },
+    {
+      "lemma": "imminently",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Liable to happen immediately or very soon is explicitly defined; an adverse threat is not required.",
+      "beforeHash": "417e3f934e2f525f5147e50898e02703be331762f86f71e9b14fea813bb267e5",
+      "sourceSenseId": "wiktionary:eeafbbca28bd057ea51ebc57"
+    },
+    {
+      "lemma": "immunogen",
+      "hold": true,
+      "reason": "The immune-response substance is a specialist biology category, not a general synonym for the business-list vaccine anchor; appropriate teaching scope is unresolved.",
+      "beforeHash": "eb89f7d5d54018ed053470794aa889e6506819022f0e2da30a868c673a253da2"
+    },
+    {
+      "lemma": "immunoglobulin",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source explains antibody glycoproteins and their immune role, providing a complete academic meaning rather than a mere formal synonym assertion.",
+      "beforeHash": "684dc48cbf47acdd57a17261275b7b680dd6fa4cf09d3715e9f6de57f81f4a55",
+      "sourceSenseId": "wiktionary:4de5a6d4f7ccfba72347fe5a"
+    },
+    {
+      "lemma": "impend",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "Being about to happen or threatening to happen is explicit and relevant to looming business events; retain intransitive usage.",
+      "beforeHash": "f8939c2d298ec5efef1fa4fe4b5b189dbbdb89cdd59f71255267b29e52126ea5",
+      "sourceSenseId": "wiktionary:8cc457a1ce348bb3daecbe2d"
+    },
+    {
+      "lemma": "imperatively",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The commanding-manner definition supplies a clear communication meaning; it is not interchangeable with every urgent action.",
+      "beforeHash": "955cc12afb9a1844e7431aef1f3aa41a0b941d3e93f9b8b159f9f7c5012f0bc8",
+      "sourceSenseId": "source-098ae5b16e47a069b2ca"
+    },
+    {
+      "lemma": "implant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Fixing firmly or setting securely or deeply is the broad verb supported by embed; no surgical procedure or travel-company occupation is inferred.",
+      "beforeHash": "6ce4acda867306956c8af773bda3e0e091e08f7b6e233debca7093175d4478a9",
+      "sourceSenseId": "wiktionary:8cb5bfa41336db1e46246256"
+    },
+    {
+      "lemma": "implausibly",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Not easy to believe is a direct meaning appropriate to credibility assessment, unlike merely using incredibly as an intensifier.",
+      "beforeHash": "1c3d1f5be946c70a152901cca0f3b2f0920cc59f15861deba302affef7a0d6c2",
+      "sourceSenseId": "source-a7a0362b55c4bcaf10e7"
+    },
+    {
+      "lemma": "impost",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The merchandise tax, tariff or duty meaning supports levy; retain the historical label and do not import architectural or horse-racing senses.",
+      "beforeHash": "28eac86254b4c162ba457ae1cbf813cc696283b6743ab7f4abf85d83f599354f",
+      "sourceSenseId": "wiktionary:2f9f1c303ef538ced1c0b669"
+    },
+    {
+      "lemma": "imprecate",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Wishing harm upon someone is explicit and related to cursing; it is distinct from making an oath or all ordinary swear-word use.",
+      "beforeHash": "ad320652d5f3b45ae51aadfcfbc6a733d8bcf0aafb9af8da18059bca6dc67399",
+      "sourceSenseId": "source-6e0b5e036fb2a4073210"
+    },
+    {
+      "lemma": "impregnability",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Strength to withstand attack is self-contained and relevant to defensive safety, without promising absolute protection in real situations.",
+      "beforeHash": "6722e4b7fd7ea668c152d6ed58d160877d57e37f0ac8479c448547f31b3ef5a3",
+      "sourceSenseId": "source-50dfbd2a2353dd5e075f"
+    },
+    {
+      "lemma": "incise",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Cutting into with a sharp instrument, carving or engraving is explicit; restrict to academic physical-cutting contexts rather than pricing or fitness slash homonyms.",
+      "beforeHash": "948b681a5e25429cd8262090a2555495d65ec07d824d58f1c8272720b2c5cdb5",
+      "sourceSenseId": "wiktionary:4ed91e2c3542303475736f9d"
+    },
+    {
+      "lemma": "incisional",
+      "hold": true,
+      "reason": "The source only says relating to an incision and does not verify the proposed contrast about how much tissue is removed; clearer learner-facing evidence is needed.",
+      "beforeHash": "06941d451af77c4b5948a5afd81becdcd1433289f824eec76b9fd75640bb69d6"
+    },
+    {
+      "lemma": "incongruity",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "An instance or point of disagreement is a self-contained sense relevant to discrepancy; oddness and illogicality are not mandatory in every use.",
+      "beforeHash": "925ee3febfe6b64f356694af2fae3d08cde44cb854aa8cee87737446b10b5681",
+      "sourceSenseId": "wiktionary:f2ea2d95d42b9eaef48e4dd8"
+    },
+    {
+      "lemma": "indeterminacy",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The quality of being vague or poorly defined is explicit and fits uncertainty without requiring a prediction about future outcomes.",
+      "beforeHash": "51a7afc4d2f7ab1e5d3d49aba2cb6a1c68a91d6c2753cd6722da502dd3fb5621",
+      "sourceSenseId": "source-2ee719f87cc89675373f"
+    },
+    {
+      "lemma": "indexation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Adjusting an economic variable according to an index is a precise business meaning; do not promote the misleading physical-escalator connection or invent list membership.",
+      "beforeHash": "367bf63814cc332a840ae5ecbf2afe96221dab126f6ba6ebb4c8086124ccc66d",
+      "sourceSenseId": "wiktionary:b52ab51c9a2bab726aeec17b"
+    },
+    {
+      "lemma": "individualize",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "Modifying something to suit an individual directly supports personalization; retain the source's spelling labels unchanged.",
+      "beforeHash": "5083a158445aef2579e78d2cf0d012cadad0967bd6fc2844aa9c582517cd6561",
+      "sourceSenseId": "wiktionary:0a23aecff7b293d4a52578fd"
+    },
+    {
+      "lemma": "individuals",
+      "hold": true,
+      "reason": "No exact plural source sense or reviewed individual mapping is available; the familiar people meaning still requires recorded factual evidence.",
+      "beforeHash": "36ab4011e510fc898844a97d7bba45bc892e88847d47a21b3da8f920c8a42b52"
+    },
+    {
+      "lemma": "inductor",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The conducting-coil electrical device introducing inductance is explicit and appropriate to circuits, not every kind of reactor.",
+      "beforeHash": "e240e39ff12ae1b135e239f8e0a5449e028368a73e55de71903320dd68e89b36",
+      "sourceSenseId": "source-32044387ce5139d408a8"
+    },
+    {
+      "lemma": "industrialism",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The socioeconomic system based on industrial manufacturing is self-contained and distinct from the process of industrialization.",
+      "beforeHash": "6a93cb818fd4e32b5562c6f86e8dd7fcba275c2c2850cd1b3b30106ad103cfe3",
+      "sourceSenseId": "wiktionary:0b1933b74fb637021a1bb1d1"
+    },
+    {
+      "lemma": "ineffectualness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Lacking the power to be effective is a clear outcome-focused meaning; it does not necessarily imply waste of resources or lack of skill.",
+      "beforeHash": "ac51a999e112a297304aa59802e9c578bcc74cd0884dee7586c89e8caef7f294",
+      "sourceSenseId": "source-52227bc72d9b8ac75932"
+    },
+    {
+      "lemma": "inefficacy",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The condition of being ineffective is explicit and understandable, supporting the distinction between obtaining no result and mere inefficiency.",
+      "beforeHash": "115daa5a3b93628e0d23055f13cbabfb22f6ba38f73186ac7af455f5038b66b4",
+      "sourceSenseId": "wiktionary:83a4662dc4c51089d309fdb0"
+    },
+    {
+      "lemma": "ineluctably",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "By necessity is an explicit equivalent appropriate to necessarily, without inventing a mandatory philosophical register.",
+      "beforeHash": "17167ecc19d8c795ac1f74fbc2ee80dfaa94e361c6e3cf5d7aa063508f579b54",
+      "sourceSenseId": "source-8ef2fbf5b7133c06f118"
+    },
+    {
+      "lemma": "inflectionalparadigm",
+      "hold": true,
+      "reason": "The joined phrase lacks an exact sourced entry or reviewed spaced-phrase mapping; the old academic gloss is not sufficient evidence.",
+      "beforeHash": "466814e372d0c593b2df958db77f2201619ee2c21c769f3c7c6ea46c6bcfd8ea"
+    },
+    {
+      "lemma": "inguen",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The precise thigh-to-trunk junction and adjacent region is sourced and relevant to groin anatomy; no clinical superiority claim is added.",
+      "beforeHash": "035c7599ac951088325e27bd6ae214d0b90f77b7b2af312db2b10d1ee5d32281",
+      "sourceSenseId": "oewn:05605489-n:inguen%1:08:00::"
+    },
+    {
+      "lemma": "inhabitants",
+      "hold": true,
+      "reason": "No exact plural entry or reviewed inhabitant mapping is present; preserve hidden until the intended resident sense has attributable evidence.",
+      "beforeHash": "16326721cdc30bbc3e92caec8fd5fd5aa5a6b8716100c662331795b140aa9bd0"
+    },
+    {
+      "lemma": "inhere",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Being an essential or intrinsic part is fully explained; retain the uncommon label and do not equate it with every sense of consist.",
+      "beforeHash": "252be90717cf4fb8ffa4cbb05f64db7c7396159e0c423856c1c6975066b4fd50",
+      "sourceSenseId": "wiktionary:5702ad82265c77303a414dff"
+    }
+  ]
+}

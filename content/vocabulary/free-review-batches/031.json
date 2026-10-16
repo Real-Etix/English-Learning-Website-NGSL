@@ -1,0 +1,268 @@
+{
+  "id": "031",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:57:31.000Z",
+  "decisions": [
+    {
+      "lemma": "vitriolically",
+      "hold": true,
+      "reason": "Both candidates repeat vitriolic without independently explaining the harsh or spiteful language meaning for learners.",
+      "beforeHash": "6c755266654a4b4b402c60bb599bd2c3180eb82f73210df642412b2df4783e70"
+    },
+    {
+      "lemma": "vivarium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "An artificially arranged place for keeping or raising animals directly fits the animal-enclosure context without restricting it to small animals.",
+      "beforeHash": "ad576078dc9108b1be056d45769e27a0466dce594a7feb970e40b6280cad595c",
+      "sourceSenseId": "wiktionary:749fb9c1c863dcd951133a7d"
+    },
+    {
+      "lemma": "volatilizable",
+      "hold": true,
+      "reason": "Both candidates repeat volatilized without explaining vaporization, and the Business volatile anchor does not establish the specialist chemical meaning.",
+      "beforeHash": "915f08ef494781bd6f7666a01019543ecfa331f335895732eec9f71b15c2e428"
+    },
+    {
+      "lemma": "volute",
+      "source": "wiki",
+      "sense": 4,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A spiral or scroll form is explicitly defined for academic shape vocabulary; it is not presented as geometrically identical to every helix.",
+      "beforeHash": "f525dfcdca88db51be82081a1efbcb83b1691257bca0dc85263d9fb823928bd3",
+      "sourceSenseId": "wiktionary:c3806acf9706292b81d70f0b"
+    },
+    {
+      "lemma": "wadding",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "Soft fibrous cotton or wool used for packing gives a concrete materials meaning without falsely limiting it to raw cotton.",
+      "beforeHash": "e846b91cb2c6506f655889ff3b490d9755049e0f88e0c3b0a6cb25b283827dd7",
+      "sourceSenseId": "wiktionary:911e7f607583f951a1a0029f"
+    },
+    {
+      "lemma": "wagonwheel",
+      "hold": true,
+      "reason": "The concatenated form lacks exact source evidence and a wagon's wheel is unrelated to the only Fitness cartwheel exercise anchor.",
+      "beforeHash": "5db135ce8f7f3b02f755b1d065eba0c3711e63884e9b0b97f80054f52d6e108c"
+    },
+    {
+      "lemma": "waitperson",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The waiter-or-waitress meaning is explicitly sourced; retain uncommon usage rather than asserting it is the standard formal term.",
+      "beforeHash": "93f58126dee17e2def872d02df949307a84a0102139333e99c8f6fd1fdbc4a3c",
+      "sourceSenseId": "wiktionary:23dc72ed7ca265b1fcc947cd"
+    },
+    {
+      "lemma": "walk-on",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An actor in a small role directly matches extra; preserve often without lines rather than the draft's absolute no-dialogue claim.",
+      "beforeHash": "ff60e706fedfb53bc7184e41d072c709da3a18c0f534d094719fcea3b27c4566",
+      "sourceSenseId": "wiktionary:85c0f0c17a2ad3e091684a7a"
+    },
+    {
+      "lemma": "watchkeeper",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A lookout or person keeping watch is directly explained, without assuming every watchkeeper holds a ship's mate rank.",
+      "beforeHash": "05f494f4e148e12c85b831e1d5de949232e3ba6acb703e54904aab2fef72609b",
+      "sourceSenseId": "wiktionary:1e332d31e625b457940c255a"
+    },
+    {
+      "lemma": "waymark",
+      "hold": true,
+      "reason": "The physical off-road route marker is sourced but does not fit the only Business project-milestone context without an appropriate reviewed navigation anchor.",
+      "beforeHash": "ffbc85f0bf4ed0b72f34f85f32665284881bdf58fde016dcec1b0570f058fdcc"
+    },
+    {
+      "lemma": "weblog",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A website forming an ongoing journal directly explains blog; retain the Internet and dated labels.",
+      "beforeHash": "73d3ccf77111ba9d32870cf275f9c348d8117d42ae48dfd8eea8f89479ebe2f0",
+      "sourceSenseId": "wiktionary:1af2ace19a1812f2a14436a7"
+    },
+    {
+      "lemma": "westernized",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Being made culturally Western is explicit; no claim of cultural superiority or compulsory abandonment of earlier customs is added.",
+      "beforeHash": "8fb73dbe47efbcdccb65d6284f130278f2e175f3cd0f7cffdd78e87f4dbfb027",
+      "sourceSenseId": "wiktionary:b93f29774c6d924cf3293841"
+    },
+    {
+      "lemma": "wheedler",
+      "hold": true,
+      "reason": "The coaxing person is a different sense of smoothie from the only Fitness drink anchor, so the connection is inappropriate despite a valid definition.",
+      "beforeHash": "42746dc3628eeecaddb24621f3d5e756b90a6f10518ff8f8c60329778ea21c82"
+    },
+    {
+      "lemma": "whitespace",
+      "hold": true,
+      "reason": "No exact attributable entry was recovered; the plausible programming explanation still needs factual source evidence.",
+      "beforeHash": "e710546b3b626e807fd4d4b91485813491ac22e225e1f3decabbeb824e7f0ba9"
+    },
+    {
+      "lemma": "wholeness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "fitness"
+      ],
+      "reason": "Unbroken completeness or totality directly verifies integrity in its structural sense, without making an ethical or health guarantee.",
+      "beforeHash": "0e615517fc2b2afdff60fb53ed6b82c3bde66e3e04620b5f341fd5ec66826fc8",
+      "sourceSenseId": "source-aeddf307848b3d133ce2"
+    },
+    {
+      "lemma": "wideband",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Operating across a wide frequency band directly fits communications technology; the separate transmission-rate classification is not selected.",
+      "beforeHash": "aeb3c9e2572c17eaaa99e1588fc253ae83d518112b5a43bab0daac743c2403fa",
+      "sourceSenseId": "source-b99545d846a5069fee73"
+    },
+    {
+      "lemma": "wintertide",
+      "hold": true,
+      "reason": "No exact attributable definition was recovered, so the proposed poetic winter synonym remains unverified.",
+      "beforeHash": "c00655715341f9952bb653749aa5a0f8007aca584aab8faeb4efd1600cd3b328"
+    },
+    {
+      "lemma": "witchinghour",
+      "hold": true,
+      "reason": "The concatenated phrase lacks exact source mapping and its folklore timing cannot be inferred simply from midnight.",
+      "beforeHash": "9ff9cb9a504d90a8c23fea931c16fe58de3d0fb255b82351d502ab02f2776b92"
+    },
+    {
+      "lemma": "witticism",
+      "hold": true,
+      "reason": "A clever humorous remark is verified but is not the exclamation wow or an appropriate extension of the sole Fitness anchor.",
+      "beforeHash": "760127bd4424a644a90d69615bdbca566807b6f0f6b8bb2bb82f54522cff9666"
+    },
+    {
+      "lemma": "worklessness",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Absence of paid work is explicitly defined; retain UK usage and correct the draft's broader claim about the absence of any work.",
+      "beforeHash": "64a3742d965534c99b145ffeab907b35ad49f5ed020b5c4155ce1e378728087b",
+      "sourceSenseId": "wiktionary:8da24adaab58516359663e1b"
+    },
+    {
+      "lemma": "worktext",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A textbook or workbook is directly sourced; combining both functions is not asserted as mandatory.",
+      "beforeHash": "8b9445a6e97228ff4278ebedf8fad7e1f763eae9ff02cf90f772931f0e9f6610",
+      "sourceSenseId": "wiktionary:3d8ffc1f0566f7176b5faea4"
+    },
+    {
+      "lemma": "xerophyte",
+      "hold": true,
+      "reason": "Preserve the existing archive: drought-adapted plant taxonomy is unrelated to the sole Fitness cactus pose anchor.",
+      "beforeHash": "d52a1cf45253c5a7154690e32e4e52011618e1a8555276952f8955b082f194fc"
+    },
+    {
+      "lemma": "xerox",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source explicitly describes the copying machine and identifies the Xerox trademark, preserving attribution rather than presenting an unqualified generic brand name.",
+      "beforeHash": "a8081bb0c15f0bc17494559a1d2a64ec9432da90f7d845afc133a7a60c2a7c62",
+      "sourceSenseId": "source-bdd6da2895deadb6d578"
+    },
+    {
+      "lemma": "yankeeland",
+      "hold": true,
+      "reason": "No exact source verifies the lowercase regional nickname or its intended geographic boundaries and connotations.",
+      "beforeHash": "ad12fbf74598ee9c3b6f1ae96d8dddebf837e85fb601f21f96e0ca19e141140b"
+    },
+    {
+      "lemma": "yawner",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An unexciting book, event or performance directly supports the bore meaning; retain informal usage and do not substitute the literal yawning person.",
+      "beforeHash": "d980b95111be20905d1cb25c56e3681ab671a2a872db776cafda059bc3113c5c",
+      "sourceSenseId": "wiktionary:ae50ca84fae267f34653d4ec"
+    },
+    {
+      "lemma": "yogin",
+      "hold": true,
+      "reason": "No exact source entry was recovered; the proposed male practitioner variant requires an attributable identity mapping.",
+      "beforeHash": "539e8e3be90b8847dc374226407d6d910c32bb1d6ff2de68694065a1f4c5cc98"
+    },
+    {
+      "lemma": "yogini",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The source explicitly identifies a female yogi and fits yoga vocabulary; no unverified claim that the term is more formal is added.",
+      "beforeHash": "f6e968621052ecc1538897c33272635f08cf99db5517e8b37820a5a02626d876",
+      "sourceSenseId": "wiktionary:bda295ec69069d644d986b7a"
+    },
+    {
+      "lemma": "zincum",
+      "hold": true,
+      "reason": "No exact source verifies this proposed technical name, and a model-generated pharmacology gloss cannot replace factual evidence.",
+      "beforeHash": "611934d5bca111febf347073d78d918cfcb17734da53a02c5ba6465e14b8c6dc"
+    },
+    {
+      "lemma": "zwitterion",
+      "hold": true,
+      "reason": "Preserve the existing archive: charged-molecule chemistry is unrelated to the sole Business buffer anchor and needs a new reviewed science context.",
+      "beforeHash": "a3da8919c5d44c81336d0e96eaf2929e2d2f7409bc2415e5ac42ab32d3135b02"
+    },
+    {
+      "lemma": "zygoma",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact cheekbone meaning is attributable and relevant to cheek anatomy; do not conflate the whole cheek with its supporting bone.",
+      "beforeHash": "02761ece46be06e7fd65ad2498e7d25c6017e65f16706d39a5d5774a0e9c9f20",
+      "sourceSenseId": "wiktionary:44982ab4555db5e826fb57a5"
+    }
+  ]
+}

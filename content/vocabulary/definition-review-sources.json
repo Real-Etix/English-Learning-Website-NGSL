@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-10-16T08:09:39.000Z",
+  "method": "Individually read English Wiktionary entry sections; exact licensed definition excerpts, no third-party quotations or examples.",
+  "entries": [
+    {
+      "head": "mol",
+      "definition": "Alternative spelling of mole.",
+      "partOfSpeech": "noun",
+      "labels": ["chemistry", "physics", "dated"],
+      "url": "https://en.wiktionary.org/wiki/mol#English",
+      "section": "English / Noun / sense 1"
+    },
+    {
+      "head": "artisanal",
+      "definition": "Made by an artisan (skilled worker).",
+      "partOfSpeech": "adjective",
+      "labels": [
+        "not-comparable",
+        "of an item, especially a foodstuff"
+      ],
+      "url": "https://en.wiktionary.org/w/index.php?title=artisanal&oldid=92426561",
+      "section": "English / Adjective / sense 3"
+    },
+    {
+      "head": "doppelgänger",
+      "definition": "Alternative spelling of doppelganger.",
+      "partOfSpeech": "noun",
+      "labels": [],
+      "url": "https://en.wiktionary.org/w/index.php?title=doppelg%C3%A4nger&oldid=89926811",
+      "section": "English / Noun / sense 1"
+    },
+    {
+      "head": "soirée",
+      "definition": "Alternative spelling of soiree.",
+      "partOfSpeech": "noun",
+      "labels": [],
+      "url": "https://en.wiktionary.org/w/index.php?title=soir%C3%A9e&oldid=92727645",
+      "section": "English / Noun / sense 1"
+    },
+    {
+      "head": "wintertide",
+      "definition": "wintertime",
+      "partOfSpeech": "noun",
+      "labels": [
+        "archaic",
+        "literary"
+      ],
+      "url": "https://en.wiktionary.org/w/index.php?title=wintertide&oldid=87149003",
+      "section": "English / Noun / sense 1"
+    }
+  ]
+}

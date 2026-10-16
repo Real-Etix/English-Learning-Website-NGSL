@@ -1,0 +1,1411 @@
+{
+  "id": "006",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T08:15:07.795Z",
+  "decisions": [
+    {
+      "lemma": "-hydroxypropanoate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The leading-hyphen chemical name appears incomplete and no exact factual candidate was found in cached Wiktionary, local WordNet or OEWN. Do not guess a chemical locant or identity.",
+      "beforeHash": "80672d48ed5a64cd1f8d76a86451e1d84532295c5c3be0b898f7ad5c5151a987"
+    },
+    {
+      "lemma": "accumbent",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The reclining meaning is framed as ancient dining and the other adjective is botanical. Neither establishes an appropriate Fitness alternative for supine; retain hidden.",
+      "beforeHash": "5fd7a31d3955bf30231e749ae581adf4819aa5fa7048d307aa2515c12ad9df77"
+    },
+    {
+      "lemma": "aculeus",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Plant spikes and stings do not fit the existing Fitness needle anchor. A botanical meaning is not evidence for an exercise-vocabulary connection.",
+      "beforeHash": "aff8e4349c1eccf392068c9e4cc2a5cd29b1ca581aee76391e0e90cd269e29ae"
+    },
+    {
+      "lemma": "aerophilic",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The exact source qualifier concerns microorganisms thriving in oxygen, not aerobic exercise. The previous Fitness relevance objection remains unresolved.",
+      "beforeHash": "bfe4dd3184f4ffef6ad83c0be1447a5c5187c83cb4fea0c87fd6854e4ad2d550"
+    },
+    {
+      "lemma": "agglomerate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The proposed Business conglomerate connection explicitly concerns volcanic rock, not companies. Do not substitute the geological or urban-development senses into that business relationship.",
+      "beforeHash": "6d2e373e14ccfd1cbff0208fd08d6ecb933114d276e956f95e7294e44e074086"
+    },
+    {
+      "lemma": "airarm",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The closed-up headword lacks an exact factual candidate and its proposed military branch meaning is unrelated to ordinary Business aviation. Keep both identity and scope concerns unresolved.",
+      "beforeHash": "849583cf4f3d9bb3f3c5f151adbf529e2df90294747b33bbb665405e46abd85b"
+    },
+    {
+      "lemma": "airbase",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spelling relation now verifies air base, but its military-aircraft meaning remains unrelated to the ordinary Business/TOEIC airport context. Keep specialist content hidden.",
+      "beforeHash": "ef7cbf22d6c390b173eddea5123fd763a526121da6a3a382a50d08249bb7b3b4"
+    },
+    {
+      "lemma": "airpower",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spaced source confirms military aircraft collectively, not ordinary Business aviation. Spelling repair does not resolve topic relevance; retain hidden.",
+      "beforeHash": "8f7bd34ecebb575c51b37eb28afdf9b6fac34bc7a785b2d0c6e7fde86fc2b162"
+    },
+    {
+      "lemma": "ala",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The new a la preposition and Alabama abbreviation are unrelated to the intended wing noun. Anatomical/botanical wing senses remain specialist and ungrounded in this NGSL context.",
+      "beforeHash": "e1a9f31cd574f7ee9524f15a9c4e9ab4470f89fcad81c9940f738bee78d7c081"
+    },
+    {
+      "lemma": "allotherian",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Preserve the existing archive: extinct-mammal taxonomy is unrelated to the Academic/Business multi-prefix anchor. No source or scope evidence resolves that mismatch.",
+      "beforeHash": "44177d3c031d7397de98403d3b5713ee0a46de3e8ec7e9c3f974b6c4e96a02a3"
+    },
+    {
+      "lemma": "amido",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The cached radical definition needs clearer chemical nomenclature and identity evidence. It must not be presented as interchangeable with amino, especially in Fitness vocabulary.",
+      "beforeHash": "c97fd6e718a1359a3dffd95613b1bc0bb75d46fdf2710a0d11f5ce0cca7e6478"
+    },
+    {
+      "lemma": "ampholyte",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The amphoteric-electrolyte definition is specialist chemistry, while the only proposed anchor is Business buffer. The topic mismatch remains and the terse definition adds an unexplained technical term.",
+      "beforeHash": "52ef07d3c1474021cc381b02c86e01b85cbb8e02fd59a22f4aea2e292c1d9b80"
+    },
+    {
+      "lemma": "anaerobiotic",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. OEWN verifies biological activity without free oxygen, but it does not establish equivalence to anaerobic exercise. Keep the organism/biology extension hidden in the Fitness context.",
+      "beforeHash": "ee1a36e9e6f7de8c138e3b5e773e09806dcc9db4f1f0f2d7556c89ae564b1d96"
+    },
+    {
+      "lemma": "anopheline",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available noun is genus-specific mosquito taxonomy, while the only learning anchor is general TOEIC mosquito. Preserve the earlier unresolved specialist-relevance decision; no malaria advice is approved.",
+      "beforeHash": "4bd80d7633568fa7e04056bca3c540562a298ce7aa249bd1d1cd17bd7d4063de"
+    },
+    {
+      "lemma": "anoxic",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Oxygen-deprivation or oxygen-absence meanings are not interchangeable with anaerobic exercise. The Fitness anchor does not establish a safe and accurate intended sense relationship.",
+      "beforeHash": "ce4f03c16f394f662c6b2de26de8aea78eb8bf56842e9fd77565763dba21d245"
+    },
+    {
+      "lemma": "apostolate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available senses concern apostolic office and spreading religious doctrine. The generic NGSL mission anchor alone does not justify this specialist theological expansion.",
+      "beforeHash": "89f0ce50b1d1761961013405b75cb0b787671511368bd554ab95e8ee8f863861"
+    },
+    {
+      "lemma": "apothecaryounce",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The collapsed historical measurement name has no exact candidate, and the proposed medical-weight detail is not relevant to ordinary Business/Fitness ounce usage. Do not guess a corrected unit name.",
+      "beforeHash": "898b749f843be816fcda8491b56fbb2af53286298ca56b6a47e6d49467b63c24"
+    },
+    {
+      "lemma": "armaments",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The plural identity is now sourced, but both base senses concern military weapons or preparation for war, not the intended general hardware context. Retain unrelated specialist content hidden.",
+      "beforeHash": "a578985d831905558411a0586af287109e6c01776d1e7bc28dba5f96ad49721f"
+    },
+    {
+      "lemma": "articulator",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The proposed Business dictator link confuses a political/business word with speech-production anatomy. Dental devices and vocal organs do not resolve that unsupported relationship.",
+      "beforeHash": "837d809698983d2aaa969bcc3f42eb3628df8aed3a4b7bafcb70cf172f9c1928"
+    },
+    {
+      "lemma": "audient",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source verifies an uncommon listener noun, but the Business/TOEIC auditor anchor is likely the accounting occupation. Keep the uncertain sense correspondence hidden.",
+      "beforeHash": "10088c8d68b60ce698cf5c363fca8f5979cb546e3c6fef99ffdefafe2cd6a3b9"
+    },
+    {
+      "lemma": "audile",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Mental sound imagery is specialist psychology and the ordinary TOEIC audition context does not establish that meaning. Do not validate an auditory learning-style claim from this noun.",
+      "beforeHash": "62612e796d0ae7bb2da7e21a13da851c4d443120812d0d3a039be2cf0763d184"
+    },
+    {
+      "lemma": "auditive",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sourced hearing-related adjective is valid, but the TOEIC audition anchor may mean a performance trial. Its intended sense correspondence remains uncertain.",
+      "beforeHash": "4da2a4eaef6f2e5c4b3d870a6fc2127cbcfde98110d1be9b74c6128c8af4747d"
+    },
+    {
+      "lemma": "autarchic",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidates mix autocratic governance and self-sufficiency; the original autonomous Business link conflates them. The prior scope/sense ambiguity remains unresolved.",
+      "beforeHash": "095b1a21e130092d9675e55c0d08f95833fffb7c64c024208ec51ef8825a8070"
+    },
+    {
+      "lemma": "autoglass",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual candidate was extracted and vehicle windows are unrelated to the Fitness windshield anchor. Retain the record without inventing a fitness use.",
+      "beforeHash": "63a7ce9b6a53c3f4a59aa13c69804f88164d31ab8b14ae008b5afdcf4141bf4b"
+    },
+    {
+      "lemma": "automaticdishwasher",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The proposed spaced phrase returned no exact usable entry from the checked free sources, including the new Wiktionary and OEWN lookups. Do not manufacture a definition from its parts.",
+      "beforeHash": "2966a502dd6893480ed75f6cb9382d8ac205fbdfc09c9ff461479ef7f70f44d3"
+    },
+    {
+      "lemma": "bactericide",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidate adds that a bacteria-killing substance is especially otherwise harmless, an unnecessary safety implication. Seek a clearer lexical definition before teaching the medical term.",
+      "beforeHash": "c425ba2cebb213e6cfd29b46f5e38a698597a264b92ed4a44f6a84c00682d92e"
+    },
+    {
+      "lemma": "basement-level",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual definition was found for this compound. The model's entirely-or-mostly-underground floor description remains unverified rather than being published as sourced text.",
+      "beforeHash": "bbc6cbd485751bdc07e4a560a1fd7bbc1d0ff305b6c57017e1aa073cd90939b2"
+    },
+    {
+      "lemma": "beamer",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The exact capitalized mapping yields BMW or IBM slang, not projector. The intended projector use remains chiefly non-native in the existing evidence; no suitable release.",
+      "beforeHash": "26f8129503fcc836f1a944722a5feae4932f5ecf6b6ed4192ce908fdd82b630c"
+    },
+    {
+      "lemma": "biodegradation",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source describes microbial decomposition of material, not human digestion in Fitness. Keep this mismatched environmental-science extension hidden.",
+      "beforeHash": "e15cd5aba94c7dace57ed4e7bf670ff5146ac8be2fceba0edad782abbc880178"
+    },
+    {
+      "lemma": "blaringly",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The checked sources provide no exact factual candidate. Do not publish the model's harsh intrusive sound description without attributable definition evidence.",
+      "beforeHash": "c021d1ca86d5c4b72000d4fcc2b756bd1bce3a6977a5a4855d3e21a233fddd97"
+    },
+    {
+      "lemma": "bondservant",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The alternative spaced definition only says labor without wages. It does not resolve the prior legal/historical distinction between indenture and slavery sufficiently for this learner record; retain uncertainty hidden.",
+      "beforeHash": "4e47a7db6f96b62188cf57f1972d9c055ab8e38618f26eb6a100aec60eb56ade"
+    },
+    {
+      "lemma": "bountifully",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Both sources only say in a bountiful manner, and the original Fitness anchor instead proposes natural/agricultural yield. Meaning clarity and topic relevance remain unresolved.",
+      "beforeHash": "cec8deaab4902418b9b01fdca36222f3e671796124141e34bfa079475302e504"
+    },
+    {
+      "lemma": "bourdon",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Organ stops, bagpipe pipes and bells belong to music, not Fitness pedal. The botanical/insect and pilgrim-staff alternatives do not resolve the topic mismatch.",
+      "beforeHash": "d4bb0529e4b6e338c2289de45148b7cf2ed36ecc31b6204280f1a46c738d42c8"
+    },
+    {
+      "lemma": "bowknot",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The verified decorative/shoelace knot is not the exercise/body-bending sense of the Fitness bow anchor. Keep the uncertain topic connection hidden.",
+      "beforeHash": "255e6b2399208c091819cb6a9563aa44ef311632193af76f9a48691783822281"
+    },
+    {
+      "lemma": "brachialdelt",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual candidate supports this compressed anatomical-looking term. Do not infer a composite muscle name from the model's deltoid comparison.",
+      "beforeHash": "49e5c29017a117212355da32ace3cad0817e8080306109e51ceb133bca29fa4b"
+    },
+    {
+      "lemma": "brome",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The Bromus-grass definition does not fit the ordinary cheating/chess senses in Academic, Business or Fitness. Do not reproduce the old botanical homonym confusion.",
+      "beforeHash": "3862d97bdb8828ef3ad6da3b98b7cf133b1b50c5e7a54bc9ca9afe854e853f16"
+    },
+    {
+      "lemma": "bromegrass",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Forage grasses do not match the ordinary cheating context of the existing cheat anchors. The technical botanical meaning alone does not justify publication for these lists.",
+      "beforeHash": "25dc0089ceff57ae910908dfdd8039d72dcf7cfdcbd2b79c39bdfdb4c4cda213"
+    },
+    {
+      "lemma": "bulbil",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Plant buds and hollow anatomical bulbs do not establish the intended meaning of general TOEIC bulb. Keep the specialist/homonym correspondence uncertain.",
+      "beforeHash": "20f8c1de0f03d4e2cba4e4f2a872b2689e58a7602b289100b56192ca64660699"
+    },
+    {
+      "lemma": "bunkum",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source is dated/slang nonsense, but the Academic/TOEIC jazz anchor most naturally concerns music. The old claim that it is more formal than jazz is also unsupported.",
+      "beforeHash": "b3f80801fcd918611396089d66df5d4c668cacc62ce2d6cf4c02fe4ea2e5a71a"
+    },
+    {
+      "lemma": "cabriolet",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The valid retractable-top car meaning still has only a Business convertible anchor that may concern financial instruments. Preserve the previous unresolved sense/topic decision.",
+      "beforeHash": "dccbf05f1d72f142ca5b77ad3abfc75fc0a71142fed18249124516c4b2876884"
+    },
+    {
+      "lemma": "cajoler",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. A flattering persuader is unrelated to a Fitness smoothie beverage. This is a clear sense mismatch, not a missing-example issue.",
+      "beforeHash": "2081194bd8525ee856c4795064eb7037bd302fd51536cbb5797679ee8567ddaf"
+    },
+    {
+      "lemma": "cambrure",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact English candidate was returned for the proposed ballet backbend. Retain hidden pending attributable English usage rather than assuming a foreign technical term is verified.",
+      "beforeHash": "90c2a66aef17b2e6f0e364c8e4ec2da48533f123cfb4e76726519889c19699cd"
+    },
+    {
+      "lemma": "cantonment",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Military quarters/stations are specialist senses not established by the generic NGSL camp anchor. Definitions also distinguish temporary and regional permanent uses, so the old blanket permanent-camp claim is unsafe.",
+      "beforeHash": "f936a261b794c2c874931e6b1428d916447411231729ff9fe32202e7c45bdcd5"
+    },
+    {
+      "lemma": "capstone",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sourced wall-top stone does not match the ordinary NGSL cope verb. The original masonry explanation is a homonym mismatch; a figurative achievement sense must not be silently substituted.",
+      "beforeHash": "eedac4e10633bb065ea52c85c612b0b7c3e83f895e229ed33daec4408d2e6db5"
+    },
+    {
+      "lemma": "carminative",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sourced meanings concern gas-relieving medication/substances. The generic Fitness digestive anchor does not establish an appropriate medication-learning context; avoid importing treatment claims.",
+      "beforeHash": "eed9c5aad7005e8c4df97612a2f71a016dd332db08e281c14b70eae1a33e7b95"
+    },
+    {
+      "lemma": "carriagewheel",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The collapsed phrase lacks exact evidence and its vehicle-wheel meaning conflicts with Fitness cartwheel gymnastics. Keep both identity and topic concerns hidden.",
+      "beforeHash": "bb5b27a8f3099966372145076bc4e12f9fff48fd0a7ea08201337dcf613be9c4"
+    },
+    {
+      "lemma": "caseinate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidate connects salts to milk-protein coagulation in a way that needs clearer chemical evidence. Do not publish the model's broad processed-commercial-casein equivalence.",
+      "beforeHash": "f9613cc33a18435a5a8ee3ce245c4762929796643a1163ab367879203918d1e6"
+    },
+    {
+      "lemma": "caseinogen",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The terse uncoagulated-casein definition conflicts with the proposed precursor framing and lacks historical/technical context. Keep the precise milk-protein identity uncertain.",
+      "beforeHash": "f81a9898ef902f81a4e2a6d459c39ce10ae7cee583ae21308479aef6da45948e"
+    },
+    {
+      "lemma": "chiasma",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Nerve/chromatid crossings do not establish relevance to a Fitness crossover movement. The existing biological crossover proposal is a topic mismatch.",
+      "beforeHash": "021ec40f1f03d68ea4f83da22f48112ed5fb487d37d1d5c27f38f2b052ffaf92"
+    },
+    {
+      "lemma": "chromatid",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidate descriptions mix double-helix strands, chromosome splitting and cell-division stages. Keep hidden until a clearer source distinguishes the chromosome copy from a DNA strand.",
+      "beforeHash": "5376b51cf8040f8caf4eccb14b4cda6426a257216270310916a9d2f79a2e2ca9"
+    },
+    {
+      "lemma": "cincture",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The girdle/belt and architectural-band meanings do not match the Fitness body-waistline anchor. Keep this clothing/body distinction unresolved rather than calling it a sophisticated synonym.",
+      "beforeHash": "e922c27911d8ade4c367f8e6c9ceb325175437b2b7760ff6f305cc58d57603d7"
+    },
+    {
+      "lemma": "cinque",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Five-pip game pieces or the number five do not fit the ordinary Academic fin anchor. The old game-of-chance homonym connection is not an appropriate learning expansion.",
+      "beforeHash": "a4b3ca8766dfa5cda9644ef73f43839d11f6fc1bce30afb812636ce92c907bc4"
+    },
+    {
+      "lemma": "clabber",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Sour/curdled raw milk is not necessarily yogurt. The source does not validate the proposed Fitness nutrition equivalence or a safe fermentation interpretation.",
+      "beforeHash": "f0714ef9249ca8af1ad99827cfa672d20e7d9c864b58bcf6251d643ceff35fb4"
+    },
+    {
+      "lemma": "clerkship",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The intended medical training sense has a curriculum-stage restriction, while other meanings concern clerical work or judges. The general TOEIC internship link does not resolve that specialized context.",
+      "beforeHash": "0d7b11b3c3d161661f9ada2c205fbb05379a90522e0a57993b8864654c65d56e"
+    },
+    {
+      "lemma": "colza",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The plant/oilseed meaning is not established by the ordinary Business rape anchor. Keep the homonym/topic mismatch hidden, even though the botanical word is valid.",
+      "beforeHash": "fa734d5aed68fb7bfe1b5cade74ae461c436cb52288401951d4c791d34b2d396"
+    },
+    {
+      "lemma": "conductual",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact English factual candidate was extracted. The model's claim that this is a more precise academic behavioral synonym is not sufficient evidence.",
+      "beforeHash": "a26f85039cc7f6a5803bfe1953332fc7ae1ea2fbcf69da2e63277e42cb709547"
+    },
+    {
+      "lemma": "conjecturer",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The only candidate repeats conjectures without explaining the activity, and the financial-speculator context may differ. Keep this unclear sense correspondence hidden.",
+      "beforeHash": "5270799ab7e363bb843dfe372f0a873781b645c0f1961e1382b62f4ea9d54cfb"
+    },
+    {
+      "lemma": "consanguineous",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The blood/ancestry relationship is supported, but the Business collateral anchor normally concerns financial security. This specialist kinship homonym connection is not established.",
+      "beforeHash": "0193cdb01c33ab7fcc5b9835862e5a37e5c2206a4c2257f016a962ce67f3df00"
+    },
+    {
+      "lemma": "contrabandist",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Smuggling/duty evasion meanings do not establish the intended ordinary Fitness/TOEIC runner sense. Keep this homonym-based criminal-trade extension hidden.",
+      "beforeHash": "0b22fc523f8388b8eac6453232530219b5124ecbe31dc778d4a61c68d6e971d5"
+    },
+    {
+      "lemma": "conveyable",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The supported senses concern legal ownership transfer, not physical portability or shipping. The proposed portable connection remains a sense mismatch.",
+      "beforeHash": "f8745d10aa4289f4109fc394b10b6a92b9ef67b1e025c65239b0319f6abc046f"
+    },
+    {
+      "lemma": "copolymer",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Polymer chemistry is unrelated to Fitness abs, which refers to abdominal muscles rather than ABS plastic. The factual chemical meaning does not validate this homonym expansion.",
+      "beforeHash": "ac568cba994a14c1fb6aa30e05dcffc97e9d0896ff0d0c87b35b846f264cae10"
+    },
+    {
+      "lemma": "corrasion",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Abrasion/erosion is geology, not financial deflation in Business. The old wind-erosion gloss is a topic and homonym mismatch.",
+      "beforeHash": "d6ecfc0cf60b90accd4147b3e8369f4ba0d89abfbc35573ba8044cbb6c9b6463"
+    },
+    {
+      "lemma": "corvid",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The crow/raven bird family does not match the Fitness crow pose context. Taxonomic validity is not sufficient topic relevance.",
+      "beforeHash": "80fc179d0fdcfcbfad12fa4931abcfbd5feffe1a2c023237cca9560b08ba65fb"
+    },
+    {
+      "lemma": "counterquarterly",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual candidate was found and the proposed heraldic shield divisions are unrelated to Business/TOEIC quarterly periods. Keep hidden for both evidence and relevance reasons.",
+      "beforeHash": "9ebc6c367a74f23e3e892e4e47bd838d77f5b8520d263962c5a5251eb7f0be22"
+    },
+    {
+      "lemma": "creatine-monohydrate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spaced form now has a candidate, but no explicit hyphenated identity relation was found; its similar-or-identical-to-endogenous-creatine wording also lacks adequate chemical precision. Retain hidden without supplement claims.",
+      "beforeHash": "6f40170cc5efbe7a1c0a8d27cf2f90e5d78ff6d6e9ad015fca10b55938d656e9"
+    },
+    {
+      "lemma": "crosscovariance",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The only definition calls it a measure of correlation without clarifying covariance, lag or normalization. A clearer statistical source is needed before teaching this technical term.",
+      "beforeHash": "da1c530ed09e7dc7aa285fa91df7f1c46d769a947863c51627c785e36ad7cae8"
+    },
+    {
+      "lemma": "culicid",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Mosquito-family taxonomy is not established as an appropriate expansion of general TOEIC mosquito. Keep the specialist relevance unapproved.",
+      "beforeHash": "5df582c254366bd7e578dbe0a27834ac2bf8dd92f6242df7ca039759ccba2d99"
+    },
+    {
+      "lemma": "cupric",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Copper oxidation-state terminology is specialist chemistry, whereas the only anchor is Business copper. Keep this unsupported technical expansion hidden rather than inventing list membership.",
+      "beforeHash": "7f94da4932573b860f24bc1bf654ba3c9a01f7d91704b1dd117868b1a1dedfb0"
+    },
+    {
+      "lemma": "cuprum",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact English factual candidate was found for the proposed scientific copper name. The Business anchor does not establish appropriate specialist scope.",
+      "beforeHash": "e1c337feccd1f61e5f3362f8585cd8ba1d7e3e54e480c8c413fb37a18a7a9358"
+    },
+    {
+      "lemma": "curbstone",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The US spelling relation confirms a paving stone, not the intended Business restraint sense of curb. Topic/sense mismatch remains despite correct spelling.",
+      "beforeHash": "95e2fa0970df3dafc6ac11b60758a4d5974233e50693ade6b3a4aade8c7aa27b"
+    },
+    {
+      "lemma": "cybernetically",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source only repeats cybernetic. Feedback-control meaning and its relation to electronically need a fuller factual definition.",
+      "beforeHash": "0805052381b33347ad14c3d21eccabbd3c57c746c303be755a5236f6b04ba7d6"
+    },
+    {
+      "lemma": "cytokinesis",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Cell-cytoplasm division is unrelated to Business market segmentation. The valid biological definition does not justify the old homonym-based extension.",
+      "beforeHash": "c2307293b45b8ab352e92b2468e56c4e2245322175c5b1dcc054ac458dfd9375"
+    },
+    {
+      "lemma": "d-fructose",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual candidate was extracted for this stereochemical identity. Case/chemical-form precision must be sourced, not inferred from ordinary fructose.",
+      "beforeHash": "01155849dd1c4d57870d72d26fb12ab43dd039e8eb6cca228003a7bf6aa43ccb"
+    },
+    {
+      "lemma": "deliverer",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Available rescue, religious and delivery senses are distinct; the sole business saver anchor confuses rescue with financial saving, leaving intended scope unresolved.",
+      "beforeHash": "29806439b660e911b4ee928bf14e43bf594eb6270811fade53749f0bd8809134"
+    },
+    {
+      "lemma": "deltoideus",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The noun merely repeats the headword as a muscle name and the adjective concerns shape; neither provides a sufficiently clear English fitness meaning here.",
+      "beforeHash": "2ae744e01ae72de9b6b37c742ccf89efb550c4f8c068af6baa9b828c85c280e0"
+    },
+    {
+      "lemma": "demodulator",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The verified signal-processing device is a specialist electronic sense, not supported by the business receiver anchor's intended learning topic.",
+      "beforeHash": "395b28f6d7fe2e66f872c3fbb0e34105a390e04cb776a65d07096cf2ae389f1d"
+    },
+    {
+      "lemma": "denouement",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Spelling and literary plot-resolution meaning are verified, but the sole Fitness omega anchor provides no appropriate literary learning context. Keep unrelated content hidden.",
+      "beforeHash": "bde9a85e4af6cc03904805872f564af6c3b3407993b9aa2f40f4a9d3321bdbe1"
+    },
+    {
+      "lemma": "densification",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Increasing density is verified but the proposed fitness compression connection substitutes a materials-science process for an exercise context.",
+      "beforeHash": "0c09d4876055480f5a295856934988daf8b546b5d9834d377e1fb28326a9e576"
+    },
+    {
+      "lemma": "derrire",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The accented derrière entry now verifies a humorous backside noun, but a prior public derriere record already represents that lexical item. Preserve both stable IDs and keep the malformed duplicate hidden rather than create a second public identity or silently merge it.",
+      "beforeHash": "982205c7a5a0f20ef028e0e18ab0e636ff48489811bdd79a5b8e3093651bca14"
+    },
+    {
+      "lemma": "desiccate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Drying meanings are verified, but the sole business shrink anchor does not establish the scientific or preservation context this proposed connection needs.",
+      "beforeHash": "ba1bf7377f132a8ef27c915900c60f899b4a91ab03db896719956675ce22fb5f"
+    },
+    {
+      "lemma": "detoxificationunit",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spaced dictionary phrase is now verified as a hospital/rehab department. It remains a clinical addiction-treatment facility rather than the Fitness detox context, so no publication.",
+      "beforeHash": "ec549130f6adfa4861fc2601f4a6a0365474adffe741c7f564431ce1a8921e60"
+    },
+    {
+      "lemma": "digestant",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The evidence concerns a digestion-aiding drug; the fitness digestive anchor alone does not justify adding this pharmacological specialist.",
+      "beforeHash": "c9379c9c0945fbbe8714ac6f6696ac6258410d4e1a477e769bf1202f2685eec4"
+    },
+    {
+      "lemma": "divertimento",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available musical composition sense is not supported by the business or travel suite anchors; this specialist connection confuses homonyms.",
+      "beforeHash": "b37a76f545958e05f158983e72cf2998922e001775e369460362f07685512706"
+    },
+    {
+      "lemma": "drudge",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The labour meanings are verified but the sole fitness hack anchor confuses a workout term with a person doing menial work.",
+      "beforeHash": "b2fb4c81dd32a1043a83242ebf1bb8f1f9ee905df8f0d5136f6fee19cee53111"
+    },
+    {
+      "lemma": "drupe",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The botanical fruit classification is not established as useful by the fitness almond anchor; avoid promoting specialist taxonomy through a food-name match alone.",
+      "beforeHash": "4df33b5e2717cf031156a4ca51cdee42191cdc9bc95ab8851ee8fe0051771dad"
+    },
+    {
+      "lemma": "eclecticism",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The intellectual and stylistic senses do not justify the sole financial diversification connection; an appropriate learning context remains unresolved.",
+      "beforeHash": "791b8eaf80d4599b4ba0fd01f1b63156b2c5c47ca0c42e12b4468613d619e943"
+    },
+    {
+      "lemma": "elapid",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The snake-family taxonomy is unrelated to the fitness cobra-pose anchor; verified zoology alone does not make that learning connection appropriate.",
+      "beforeHash": "bc66d62b253f87d0387901ebf07326c8ffbe952478a4a7d698ee85db3c2c5a71"
+    },
+    {
+      "lemma": "electrotechnician",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sole definition depends on unexplained electrotechnology and does not establish equivalence to electrician; clearer factual occupational evidence is needed.",
+      "beforeHash": "ae9927c9ba46c760dd53c292073b38014c313725de30ecc2e7aeb79ebf9b3c74"
+    },
+    {
+      "lemma": "eliminator",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The generic agent-that-eliminates entries are circular and do not verify the intended tournament-match sense proposed by preliminary.",
+      "beforeHash": "310f1533ab059d3529ee894c8b6007f1af97fadf485f1b54fd53c6469a8b722c"
+    },
+    {
+      "lemma": "emplacement",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The old battery connection specifically selects military fortifications, not business or travel battery usage; the alternative general placement sense does not repair that mismatch.",
+      "beforeHash": "eba144b7cfa7117434d35eb6492da31d4459b5320fa010d239d8b1abd30550a8"
+    },
+    {
+      "lemma": "entente",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The diplomatic alliance meaning is verified but unrelated to the sole fitness alignment anchor; physical alignment does not support an international-relations specialist.",
+      "beforeHash": "cf1693627f9dbf4a84614e1f9ba05091bb30bfade66aaf474a51feb462ab62a0"
+    },
+    {
+      "lemma": "enunciator",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The entry merely says someone who enunciates and does not establish the proposed dictation role; a self-contained factual meaning is still needed.",
+      "beforeHash": "f516b9b34cf24e3ff2e21c034d9aa3d3a62843247e8f085901ab46f1990373e0"
+    },
+    {
+      "lemma": "ethnocide",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sole business genocide anchor does not establish an appropriate specialist topic, and its categorical cultural-versus-killing distinction contradicts the broader source definition.",
+      "beforeHash": "f89b7a8de372514453ffd94742fc3c83cbff1980184032a99efce92ff0368efa"
+    },
+    {
+      "lemma": "evaporability",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Evaporation capability is verified but the sole business volatility anchor concerns a different domain; a financial fluctuation is not evaporation.",
+      "beforeHash": "94a82fe88da1ed6523ff2ed9790c239caabf8f8e07a2fade3b296df85121db4d"
+    },
+    {
+      "lemma": "expanding",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Inflection and growth meanings are now available, but the sole active anchor does not identify which growth sense or a suitable learning relationship. Retain the explicit relevance uncertainty.",
+      "beforeHash": "da44661dd7370920807a1b912c4d2eff118876c3eb3d12906fffcaf41255f853"
+    },
+    {
+      "lemma": "exsiccation",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual source entry is available; the technical water-removal gloss is insufficient evidence for release.",
+      "beforeHash": "c4eafd0224c519987bd38e7750782fb11c56f7957176161e2a73cc54ba1f60d4"
+    },
+    {
+      "lemma": "exsufflation",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual sense is available for the respiratory term; do not publish clinical detail inferred solely from the old exhalation gloss.",
+      "beforeHash": "6715a8c7f5def69faac49376cab5ecdf3b23ba31536249b8449e2a9c7f0c89e9"
+    },
+    {
+      "lemma": "exteriority",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The outside or surface meaning does not support the business economic-externality anchor; those distinct concepts should not be conflated.",
+      "beforeHash": "72e2f36f1964ffa740a430a32a90a483a3dad62e2396b8ab82de24d747ea3639"
+    },
+    {
+      "lemma": "extremization",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sole source describes conversion to an extreme form, not mathematical optimization over maxima and minima; the proposed business meaning remains unverified.",
+      "beforeHash": "e71df5ba298390426cebbc5b355a4b17afcb539b21154a5fba84b86f2f84f6bf"
+    },
+    {
+      "lemma": "exudation",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The self-contained evidence concerns plant pores, while the proposed business outflow meaning is unsupported and the other definitions repeat exude.",
+      "beforeHash": "55b42d19001734ff2d53d6ad943487176a6a60b857553a93bb3ddbc9836df6af"
+    },
+    {
+      "lemma": "ferrum",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The English candidate concerns iron-containing remedies, not the intended general metal or Latin name; the proposed iron equivalence remains unsupported.",
+      "beforeHash": "71914632f84f53e803e6b363170c5f6fd09d8ee755c2995674e171ed886e04a0"
+    },
+    {
+      "lemma": "fetocide",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The alternative spelling and terse fetal-destruction definition are sourced, but the intended relationship to abortion still lacks adequate medical/legal distinction. Keep this sensitive specialized learner explanation withheld.",
+      "beforeHash": "da3b268ec785b0c9c4e7bf1f2d740b56abaa751c7841b736a84fe97ac549ef3b"
+    },
+    {
+      "lemma": "fighter-bomber",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The military aircraft definition is verified, but the sole business bomber anchor does not establish an appropriate topic for this specialist addition.",
+      "beforeHash": "fe4844a8a22a0329513253a90a58f7a9791582550ec436f3db275af175c775e1"
+    },
+    {
+      "lemma": "finfish",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The cached definitions introduce conflicting exclusions for flatfish and cartilaginous fish; the intended fish-versus-shellfish teaching meaning needs clearer evidence.",
+      "beforeHash": "a722b0beafb28a5703c19dfc48415f5560906c64896b2807ca9fd80e2a33e70b"
+    },
+    {
+      "lemma": "firemarshal",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Exact spaced identity is verified, but the single head-of-fire-department gloss lacks jurisdiction/role distinctions needed for this record. Do not imply every fire marshal is the fire chief.",
+      "beforeHash": "5f031d342c5fd1de62fb3bcd9988d308788ff81ee9155b32c9fe8d884e572070"
+    },
+    {
+      "lemma": "floatage",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The alternative form is now verified, but all target meanings concern floating/flotsam/vessels, not the intended Business financial flotation. Keep the unrelated sense hidden.",
+      "beforeHash": "4718c7062e757e925077b21a8b2fc253aec82a52b0ac47840b262852784cf18f"
+    },
+    {
+      "lemma": "flowability",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source concerns flowing materials, not financial liquidity; the sole business anchor confuses separate domains.",
+      "beforeHash": "8ea8d4d4703faabcbf9766b0bd52e09d272904f6f9e11bf40887dfdcaff4cb1c"
+    },
+    {
+      "lemma": "foreignnational",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spaced entry exists but its non-naturalized-citizen wording does not clearly state citizenship of another country and risks a misleading legal-status explanation. Preserve uncertainty rather than silently rewrite it.",
+      "beforeHash": "90cdc55027cccf3adfef4bf53fa1b6126d6f34fd2558abb5edbd9dd3d385ba42"
+    },
+    {
+      "lemma": "fte",
+      "hold": true,
+      "reason": "Direct English Wiktionary now verifies fête as a British/formal alternative to fete. An existing protected public fete record already covers the accent-equivalent identity. Keep this malformed duplicate hidden; do not merge collection IDs or create another public star.",
+      "beforeHash": "6cf7aceae587fec1fa7836f319843e063888d154314c5f4cbe8460627d034481"
+    },
+    {
+      "lemma": "fugacity",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Thermodynamic escape tendency is unrelated to the sole business volatility anchor; the specialist source does not justify that financial connection.",
+      "beforeHash": "cb27d1346c8c221eccc817424c97821964188fe10760de3ec6ef68e0853e487d"
+    },
+    {
+      "lemma": "genuflection",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The clear source sense is reverential or worshipful knee-bending, not the fitness kneeling movement; the religious specialist is off-topic for this anchor.",
+      "beforeHash": "390b59cf289a8ebf65a699dd89198ae1e9ab953b4faf0e301ebf7068c2a1df86"
+    },
+    {
+      "lemma": "gravid",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Cached evidence has unresolved figurative and egg-laying qualifiers, while WordNet narrows it to advanced pregnancy; verify usage scope before presenting the broad pregnant equivalence.",
+      "beforeHash": "147934db0900f1557cb2273b6c810699e8a07b3cb4ee06345c3521f2b7ff2243"
+    },
+    {
+      "lemma": "half-diameter",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact sourced entry is available, and the claim that radius is too common is not a factual reason to create a substitute term.",
+      "beforeHash": "4e74457c5408e48a5f4c1f2d4c72cb0fb9161899438f647749c23683ed42789e"
+    },
+    {
+      "lemma": "hepar",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact sourced English sense is available; the claim that a Latin-derived term improves medical precision cannot replace identity evidence.",
+      "beforeHash": "bb1217a2140c0db96e6370b940a32ade3a148696db6b4c68cadbfbcf3c3dd603"
+    },
+    {
+      "lemma": "homilist",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The religious sermon-preparation meaning is unrelated to the fitness preacher exercise anchor, and the entry also depends on unexplained homilies.",
+      "beforeHash": "10f5fd6caa20d533aef1655d5b6183dd70397d3dfffef36a12cb3416b2d4b2d7"
+    },
+    {
+      "lemma": "hybridism",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source's cross-breeding and linguistic word-formation senses do not establish the intended business hybrid context; specialist matches alone are insufficient.",
+      "beforeHash": "f0178afa67a2b182f8dd759619a3d90bb04b599f8125441a70e8bf79745b27fe"
+    },
+    {
+      "lemma": "hyperemia",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The medical excess-blood meaning is verified but the sole TOEIC congestion anchor does not establish a medical rather than traffic context for this specialist.",
+      "beforeHash": "f2950c3b87bff92a21abd36ef903d33aa670de5d18fd8a52db756f761926ca8f"
+    },
+    {
+      "lemma": "imager",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available sculptor and disk-image system senses do not verify the intended camera or image-sensor meaning; avoid publishing a different technical homonym.",
+      "beforeHash": "997ac32e0d0fc3917c48223626414cb2cc78cec3ec901e9cb717c9c7630c5c38"
+    },
+    {
+      "lemma": "imagistic",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sole entry refers to the unexplained literary movement imagism, not general photographic imagery; the proposed broad visual meaning is unverified.",
+      "beforeHash": "c60ae7bc5b94b40380037f8f48f1b0a4130fee2482971d9139eb4218f4a1abc4"
+    },
+    {
+      "lemma": "immunogen",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The immune-response substance is a specialist biology category, not a general synonym for the business-list vaccine anchor; appropriate teaching scope is unresolved.",
+      "beforeHash": "eb89f7d5d54018ed053470794aa889e6506819022f0e2da30a868c673a253da2"
+    },
+    {
+      "lemma": "inflectionalparadigm",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The proposed spaced linguistics phrase still has no usable exact definition in the bounded free-source checks. Keep the old model-authored meaning unpublished.",
+      "beforeHash": "466814e372d0c593b2df958db77f2201619ee2c21c769f3c7c6ea46c6bcfd8ea"
+    },
+    {
+      "lemma": "inhume",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Burial is verified but the only business inter anchor does not establish a relevant funeral or burial context; do not import this specialist merely through a homonym.",
+      "beforeHash": "8b64e3e31fcd464e8501f5e7422a194ec5bda3dc8274258c52284a3b172cad4a"
+    },
+    {
+      "lemma": "inoculant",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The biological inoculation material and metallurgical additive are specialist senses; the business vaccine anchor alone does not establish appropriate scope or interchangeability.",
+      "beforeHash": "08a865099d476bd1eeae4225ff9ed2ff7954fd749e3aa1fcf9f59f50a52ed398"
+    },
+    {
+      "lemma": "insurrectionist",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The verified armed-rebellion participant is a political specialist; the sole business insurgent anchor does not establish a commercial learning context.",
+      "beforeHash": "d0413bd01791ee574a6e147ae16cb410cf1b62af7b01c43a90cc186fcb979465"
+    },
+    {
+      "lemma": "intrathecal",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The evidence concerns spinal-canal drug delivery, not the fitness spinal anatomy anchor; do not introduce this clinical procedure specialist into exercise learning.",
+      "beforeHash": "d1241482f4c2cbd98ae307a90dde82dd13f2f32ff04d3e1e9cdd3489aea6f5c7"
+    },
+    {
+      "lemma": "ionophore",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Ion transport across media or membranes is a specialist biochemical concept, not an interchangeable fitness electrolyte term; the sole anchor does not justify the topic.",
+      "beforeHash": "d75dcf9a1a178389c7d7a6a8a53acbb01460529040dc7d3cd5b94eddabaad410"
+    },
+    {
+      "lemma": "irregulars",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The noun-plural identity is now verified, but its armed-force sense is specialist military content without an appropriate Business learning topic. Do not substitute defective merchandise for the intended militia sense.",
+      "beforeHash": "481dbf9711aef7af45bd426d79cd75ed19b71778ef5447e7d7c2dc6138a49fd9"
+    },
+    {
+      "lemma": "jingoist",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Aggressive military nationalism is verified but the sole business nationalist anchor does not establish a relevant commercial topic for this political specialist.",
+      "beforeHash": "0bea2b4f28c9ccf60e683aa3a8c99a49a634a92b3469b109deb256b62309e219"
+    },
+    {
+      "lemma": "kalium",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual English entry is available; a Latin-derived potassium name and its supposed preferred register cannot be inferred from the old gloss.",
+      "beforeHash": "600c21dc0d0a42d282d65d1a57dcc56603476d4a3b1fc883ad4de184d36cc6f8"
+    },
+    {
+      "lemma": "kedge",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The nautical anchor and vessel-warping senses do not fit the fitness anchor context; no specialist maritime connection is promoted.",
+      "beforeHash": "2252a2ea5f8890fbd7a351356e6fad3ff9a6a715f3518074b026ec5e1033e9e3"
+    },
+    {
+      "lemma": "kowtow",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sources concern ritual bowing or submissiveness, not the fitness curtsy movement; the apparent movement similarity does not establish appropriate scope.",
+      "beforeHash": "31db9a1ba483bb3c75bf5e1b759239640a27dc2bf4a66cc3ddb1c2277fb3df97"
+    },
+    {
+      "lemma": "lactoserum",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact sourced English sense supports the proposed whey synonym; the dairy-chemistry gloss alone is insufficient.",
+      "beforeHash": "378072e39727ff9ee7a3241e656943e8dd9d97709f647d0aa3dc577f9a482ff8"
+    },
+    {
+      "lemma": "libretto",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The opera or musical text sense is verified but unrelated to an unspecified business script; the specialist arts topic lacks an appropriate anchor here.",
+      "beforeHash": "365a2b8316bf5fa0c41e7eb28486c7d86a3019e924b62e6212c772bdae759dd7"
+    },
+    {
+      "lemma": "lienholder",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sole definition makes broad ownership and repossession claims without jurisdictional qualifications; its correctness for all secured creditors is uncertain, so keep hidden.",
+      "beforeHash": "51fb28ea2f32f7ed4ca273b583efd3af3a07bca053287ed7a3633996d8a9cea1"
+    },
+    {
+      "lemma": "loanblend",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The linguistic compound assembled from different languages does not fit the sole business hybrid anchor; verified etymology is not sufficient topic relevance.",
+      "beforeHash": "4bafa40f3b7b2b5d0fcebfd08247712e95cdb5910272565502cc862aa3e3563f"
+    },
+    {
+      "lemma": "looming",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The inflected verb is sourced, but the available threatening/large/indistinct appearance meanings do not establish the requested imminent-event adjective. Keep the remaining sense/POS uncertainty hidden.",
+      "beforeHash": "e0eaa88cb1db0a0e1208de20ee3f9c3813df7eca5de269e4c5e1e361b1ede7aa"
+    },
+    {
+      "lemma": "lower-level",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The comparative is sourced, but the base meanings concern intensity, rank or altitude, not downstairs within a building. Do not replace the intended location sense with unrelated lower status.",
+      "beforeHash": "e7675eee53f5ef4adbfb02cfb907c3b62e484995b49bf8ee5010b9debb044d47"
+    },
+    {
+      "lemma": "majuscule",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The typographic capital-letter sense is verified but the sole business capitalization anchor likely concerns financing; the topic and intended homonym remain unresolved.",
+      "beforeHash": "f692aa0fc0376b0fc6e8300db5563ddd1b4a780df149f83ea1bfcea98ffa25f2"
+    },
+    {
+      "lemma": "meliorist",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The philosophical candidates are circular and WordNet's broad reform advocate does not verify the proposed belief in improving the world; retain uncertainty about intended scope.",
+      "beforeHash": "50496af7f82296759ef5679a1716aee7a7399ef1e8dd9a0a35a6d92db75b67f7"
+    },
+    {
+      "lemma": "metalsmith",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. A metalworking craftsperson is verified but unrelated to the fitness Smith-machine anchor; matching a word fragment does not establish learning relevance.",
+      "beforeHash": "809757470701d6dee4c6d8c7579278ea54145dc6765197370057df70adeb1625"
+    },
+    {
+      "lemma": "metropole",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source distinguishes a main city from a colonial parent-state; the sole business mainland gloss conflates geography and colonial status, leaving intended relevance unresolved.",
+      "beforeHash": "86dc538b20bf62252564b30c6526980ab7f64578e1ef281dd60d7b4185da3014"
+    },
+    {
+      "lemma": "microchannel",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available television and semiconductor meanings do not verify the proposed microfluidic passage; do not publish a mismatched technical sense.",
+      "beforeHash": "766ebc913cb734d9ee716b8d7b0e5caa5f5c2dd635a808847536ec1592385144"
+    },
+    {
+      "lemma": "modality",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The clear candidates are specific logical, grammatical, medical or sensory meanings; none verifies the proposed generic procedure synonym for fashion or mode.",
+      "beforeHash": "d53210f2d81e3177c3e21639961696d3fe9c00e4aa13450baccfd03b5699c72d"
+    },
+    {
+      "lemma": "modulator",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The person and device entries repeat modulates, while the concrete entry concerns musical notation; the proposed signal-control meaning lacks a full explanation.",
+      "beforeHash": "e34d10c75ba32f22f853818617f6bdd10072d693ed2b3cb560aa33738ab2cace"
+    },
+    {
+      "lemma": "monosaccharide",
+      "hold": true,
+      "reason": "Direct current Wiktionary retains the overly restrictive single-ring definition, while local WordNet incorrectly includes sucrose. The factual objection is unresolved; keep hidden rather than repair scientific prose without attributable replacement evidence.",
+      "beforeHash": "a0d2a477d8f41fbe5accd1116d8c28e5763dfdbe089542202b47a28656cab167"
+    },
+    {
+      "lemma": "multiparity",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidate repeats multiparous and the obstetric proposal is unrelated to business parity; both meaning clarity and topic relevance remain unresolved.",
+      "beforeHash": "749261a1384d8eec60807fdfb6f3e0ed3726e0a763dd91485264fe03bffbd08b"
+    },
+    {
+      "lemma": "multituberculate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The dental and extinct-mammal senses are not expansions of the general multi prefix; the proposed anchor is a misleading lexical-fragment match.",
+      "beforeHash": "4aced30e445b15970f13bcc85b97ae0b48c1f6cafefe726a0215d314a6388e72"
+    },
+    {
+      "lemma": "musalla",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The prayer-place meaning is verified but the sole business mosque anchor does not establish a commercial or travel learning context for this religious specialist.",
+      "beforeHash": "d0b90f28a710a717f33d3efe73936b1bde729d77852f8de3ef44b5e7f1d129e7"
+    },
+    {
+      "lemma": "naja",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The cobra genus and jewelry meanings are unrelated to the fitness cobra pose; no taxonomic specialist is released on that homonym alone.",
+      "beforeHash": "dbe3ee053ab22ab983cf7c8c3b90419c0b42f8c48370de89dbd23d9137741525"
+    },
+    {
+      "lemma": "natrium",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact sourced English entry is present; the Latin-derived sodium name and formal-register claim cannot be inferred from the old gloss.",
+      "beforeHash": "a025dbb0baf1a8683cecb946766719971109a1dbd53e5717d58e9b63100a38dd"
+    },
+    {
+      "lemma": "negatron",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidate merely says a negatively charged elementary particle, which does not distinguish an electron from other charged particles; clearer precise evidence is required.",
+      "beforeHash": "bdcd66c19e7674cd06431cf2646ca033bccd07e045f4ae07d5af115fe93b177e"
+    },
+    {
+      "lemma": "nelumbo",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The aquatic plant genus is unrelated to the fitness lotus pose; botanical evidence does not establish an appropriate exercise connection.",
+      "beforeHash": "d6c8b70e513cf84eeb74e15119b33ee9da655075bbbf1236a01293e0b6253c9d"
+    },
+    {
+      "lemma": "neocortex",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The top-layer wording risks misrepresenting a multi-layered cortical region, while the alternative repeats another unexplained anatomical term; seek clearer factual definition.",
+      "beforeHash": "dfa536f6322411512bfe95b71729185b5f427859504f20db120b444ba1f3b453"
+    },
+    {
+      "lemma": "non-even",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual entry is available for this hyphenated form; the old logic-and-computing recommendation does not verify a useful alternative to odd.",
+      "beforeHash": "f1a371d1e4e14e7d4f10e6db81ff8cfc2f38b491a449f665355674902f1f7a6c"
+    },
+    {
+      "lemma": "nubber",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The slow short batted-ball meaning is verified but unrelated to the fitness roller-equipment anchor; preserve hidden rather than promote a sports homonym mismatch.",
+      "beforeHash": "315971df7d71f07f5513ca192d3e14cb4240cdbdf90facb6226a85f33e4c3585"
+    },
+    {
+      "lemma": "nulliparity",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The obstetric pregnancy-history term is unrelated to business parity, and the source does not match the old live-birth-only gloss; keep the specialist hidden.",
+      "beforeHash": "6b2ac9722d8cf85620f4b2fa8ad218ee1250e8615458a2cedc0701b1abe8c94e"
+    },
+    {
+      "lemma": "occupier",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The military candidate mismatches lessee, and the residence candidate includes merely being born somewhere; neither clearly verifies possession under a lease.",
+      "beforeHash": "157cb3785bcb2e13d5b25addbcb986b6b12923217f3dece3576d461c67a8cc3f"
+    },
+    {
+      "lemma": "oxic",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Containing oxygen does not establish an aerobic-exercise meaning; the sole fitness anchor confuses environmental oxygen with exercise physiology.",
+      "beforeHash": "c182cf011547a14d5b759521b1f89b528d46222e174b5ba3973797a4e41268a5"
+    },
+    {
+      "lemma": "oxygenic",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Oxygen-containing or producing processes do not verify equivalence to aerobic exercise; the fitness topic mismatch remains.",
+      "beforeHash": "b992d1de31f7d008427b13acbc096d9fd2d5e1bc26e3d674e13966ffd64586fb"
+    },
+    {
+      "lemma": "padma",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source verifies a lotus blossom, not the fitness lotus posture; cultural association alone does not resolve the intended exercise meaning.",
+      "beforeHash": "055c125f44cb5fe2873f81232d664af82bdc83b196581abbe5d5f2aeeda62f62"
+    },
+    {
+      "lemma": "partita",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The eighteenth-century musical suite is unrelated to the business or travel suite context; the specialist homonym remains off-topic.",
+      "beforeHash": "2ae8618f089dc5fa1ae692dccc694f37a68b5056fbe037d17167a6d0e815d56c"
+    },
+    {
+      "lemma": "pentad",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available five-part or time-period meanings do not explain the academic fin anchor; the intended connection and topic are unresolved.",
+      "beforeHash": "2fa7c041f2ae5af277a59629ce775d8187b5b26adf5c3165af47a83af411cc9a"
+    },
+    {
+      "lemma": "peracute",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Very sharp or violent does not verify the proposed precise medical sudden-onset meaning; clearer clinical terminology evidence is needed.",
+      "beforeHash": "bcf94ad98c4237d0e09f17affa0ec7c3098c9cab667d795b3e1e98e3c8e64510"
+    },
+    {
+      "lemma": "phosphoprotein",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The cached definition extends the category to phospholipid complexes, while the alternative is an incomplete adjective-like phrase; biochemical scope remains uncertain.",
+      "beforeHash": "e61c8ed7926d8e4623327230a9e1803641350b0cc6573e3cabede64be95639d2"
+    },
+    {
+      "lemma": "photoprotectant",
+      "hold": true,
+      "reason": "The checked photoprotective source refers to photoprotection, but its available base meaning concerns plant photosynthesis rather than the intended sunscreen context. This definition chain does not verify the learner sense; keep hidden.",
+      "beforeHash": "183f544ac73115cf765754a557e885651c0dc4058c3cdef40d18045d3e7cb805"
+    },
+    {
+      "lemma": "pincer",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The arthropod grasping structure and hand tool do not establish a fitness claw context; do not promote the zoological homonym into exercise vocabulary.",
+      "beforeHash": "21904fe95ece007070f16ffe8850b3aa8f3fba08d2a5397cc150ffcc541fac7b"
+    },
+    {
+      "lemma": "plat",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The new clipped platform/video-game senses remain unrelated to the intended French main-course meaning. Do not publish a different English identity merely because the spelling matches.",
+      "beforeHash": "4c9f93f61b7c13c15fdd7c034141c8a84f53780556d3dcfdbce308e93c98860c"
+    },
+    {
+      "lemma": "postulant",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available religious-order admission sense does not establish a general academic novice meaning; the narrower religious scope lacks an appropriate anchor here.",
+      "beforeHash": "d1b3477be7cabdb76f2dd2ba3f503c64a4e68616032a4ea1ff58ff52a6db5a3f"
+    },
+    {
+      "lemma": "potentiated",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The inflection is supported, but the base meaning specifically concerns drugs or physiological/biochemical effects. It does not justify the intended Business/TOEIC interactive sense.",
+      "beforeHash": "c913910ffdf8d0f4e59b93b662c152708053f2fa2a356a8ae3357c36b082824a"
+    },
+    {
+      "lemma": "predication",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidates conflate proclamation, assertion, logical subject/predicate assignment and computing; none clearly verifies the intended clause-level linguistic meaning.",
+      "beforeHash": "4284972c75d625181c055d4b2119473c76d8a4fb80ff56d5fa85922e55c2270e"
+    },
+    {
+      "lemma": "predicator",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The broad predicate/property definitions do not establish the intended grammatical verb constituent precisely enough for this entry.",
+      "beforeHash": "2d1bc74c50a0e6c249da9c32d7023a161818f76024bdb8ee4ead5b9be11bcf6d"
+    },
+    {
+      "lemma": "progressivist",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidates depend on unexplained progressivism and do not establish the intended general reformist business meaning.",
+      "beforeHash": "3c70bcaba9e0a7d2367ddf083730cc00dbf77dbae0507a1bb91b01eaee1cfc98"
+    },
+    {
+      "lemma": "propagule",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The specialist reproductive-particle sense has no established TOEIC topic connection beyond an ambiguous bulb anchor, and the old asexual-only gloss is inaccurate.",
+      "beforeHash": "7d9e4faa5b62e086a907dcb828500d0f9333dd2494ced960996dfd9da6d0f5c8"
+    },
+    {
+      "lemma": "psephological",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The only definition repeats unexplained psephology and does not verify the proposed electoral-analysis meaning independently.",
+      "beforeHash": "e688cba34c98ed19896b7a2bb4eaa5dcffc104d5e55674b4498cda19b19b3786"
+    },
+    {
+      "lemma": "psychopathological",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. One candidate is circular and the other narrows the adjective to undiagnosed disorder, which does not verify the intended relating-to-pathology meaning.",
+      "beforeHash": "fdc6427f74a51a2ed793bf3d86de48fe5f03100bcf46757143436e846e795351"
+    },
+    {
+      "lemma": "quadripartitely",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The four-part division meaning does not fit the business or TOEIC quarterly frequency anchor; the proposed heraldic context is unrelated.",
+      "beforeHash": "1a46b2ea29bfa76380a672488dc796a16acd4cf23fa1596d51bdb3f147091b67"
+    },
+    {
+      "lemma": "quadruplets",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Plural identity is now verified, but multiple births or groups of four are not the intended Fitness quadriceps. Keep unrelated content hidden despite a valid dictionary entry.",
+      "beforeHash": "7b4d549b11212327534e6fa669a169351ec9b219646cb086e0ff476e980437be"
+    },
+    {
+      "lemma": "radionuclide",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The bare radioactive-nuclide pointer does not explain nuclide or establish a business learning context beyond the uranium anchor.",
+      "beforeHash": "bc71dae0e8d8cbece1400d52a15f59cd8ab1485abf91a817cd2ccad0a6cac01b"
+    },
+    {
+      "lemma": "recalibrate",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sole definition repeats calibrate and does not explain measurement adjustment; the broad Fitness reset anchor does not resolve that gap.",
+      "beforeHash": "299cd96c2dc04974cd2737b3dd75f2f485a71c41d796c16c8e945c71b5464417"
+    },
+    {
+      "lemma": "recombination",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Preserve the existing archive: genetic crossover is unrelated to the sole Fitness exercise anchor, and no new appropriate learning anchor has been reviewed.",
+      "beforeHash": "77734099cf34e652b43b97a2411169bdd657343ffc25a43e467ee03686accbdd"
+    },
+    {
+      "lemma": "recurve",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Verified backward-curving senses do not support the replicate learning anchor; releasing the old connection would mislead learners about repetition versus shape.",
+      "beforeHash": "2f624e1de4e12bf538b35ace45a0ab02ad2bb19ab7d3894c8c799715fb8685dd"
+    },
+    {
+      "lemma": "rehabilitationcenter",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The proposed spaced phrase still has no usable source result, and the intended clinical addiction facility is not established as appropriate Fitness detox content. Preserve hidden.",
+      "beforeHash": "f4e347f32c0dacc94bc8f24d2752a05538a089f75282683ec94098b6da6500db"
+    },
+    {
+      "lemma": "reinforcer",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The behavior-stimulus senses do not fit the business builder anchor, and the WordNet weakening-behavior wording is questionable for reinforcement.",
+      "beforeHash": "115073ca195713d80de224a8bac9a7d5637703c5ce3b6b401355ced11ca7bc6a"
+    },
+    {
+      "lemma": "reinitialize",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The only definition repeats initialize without explaining it, and the computing sense lacks a verified Fitness reset connection.",
+      "beforeHash": "185c0289bc9572393e3df115da8b511d81053983a770e20e26bdee419452fbe4"
+    },
+    {
+      "lemma": "revoice",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The available dubbing and Internet senses do not verify musical chord voicing, and the general voice-again pointer is insufficient.",
+      "beforeHash": "8687369afd9e33ff3a59dc93e9ade2f0c72a7b0e896639abc898d3cef93cb681"
+    },
+    {
+      "lemma": "rightward",
+      "hold": true,
+      "reason": "Direct current Wiktionary still says to or from the right for both adjective and adverb. The directional ambiguity remains; do not silently rewrite it into a sourced toward-only definition.",
+      "beforeHash": "c1eb9845f7ad3fe6c3015e0da55ab4fbf2ace0f6799c964ea01e603751938f90"
+    },
+    {
+      "lemma": "rmb",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The new uppercase RMB lookup did not return a usable currency definition. Existing lowercase remember slang remains unrelated to Business yuan; preserve hidden.",
+      "beforeHash": "d066021a4fe13497c2bcbc8aca3862b8fbdf173ed76c4dc46c37f13c468cd6e9"
+    },
+    {
+      "lemma": "rosa",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The botanical genus is sourced only under capitalized Rosa. The current case-normalizing editorial path cannot preserve this taxonomic distinction safely, and specialist genus relevance remains limited; retain hidden.",
+      "beforeHash": "4e30487539ad7128555b1ef8520a24efdbcde8c3b842773d612f22e5f80e5554"
+    },
+    {
+      "lemma": "rosette",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The ribbon ornament is sourced, but the sole Fitness bow anchor does not establish an appropriate connection to badges rather than exercise or pose vocabulary.",
+      "beforeHash": "67d1ae5bdc920d753d2be6faa2d7a321217c9fe2cd534478c6acdb68f8db1ef2"
+    },
+    {
+      "lemma": "rostral",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The adjective candidates only refer to rostrum and do not explain the intended anatomical direction; the reptile-scale noun is a different sense.",
+      "beforeHash": "97ab02dc3f23413b7135a1224c119fa8bbe8f3883b48c3eb0aa1d69d0d945ed3"
+    },
+    {
+      "lemma": "rubdown",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spaced candidate is a verb for abrasion or massage, not the requested cleaning noun. This would change both identity/POS and sense without resolving the original gap.",
+      "beforeHash": "1bf302479dc6fedbbfad4e52818f1673a2893e6cce9128e24bde6235b878108b"
+    },
+    {
+      "lemma": "rusher",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The draft defensive-tackle meaning conflicts with the ball-carrier candidate and an imprecise fast-defensive-position definition; keep that sports sense unresolved.",
+      "beforeHash": "fe2a75d219e13acf83ce1afafa590a9b6db3de787625c2fa75a7dfd256b6e922"
+    },
+    {
+      "lemma": "sabra",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The alternative spelling points to a native-born Israeli, not prickly pear or the intended TOEIC fish sense of tuna. The original homonym/topic mismatch remains.",
+      "beforeHash": "1a63eedf47f4fccc77483ba8e2523e2e1ecf15460b8091a1c528518dabd20a67"
+    },
+    {
+      "lemma": "saccharide",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Nutrition scope was approved previously, but the source overgeneralizes the monosaccharide formula and carbon count to polymers; the WordNet description is too vague to repair that factual problem.",
+      "beforeHash": "214d1e760f45605ce95a9f2778902084553671db6f02d3b33b7c91b11406595b"
+    },
+    {
+      "lemma": "saurian",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Preserve the existing archive: reptile taxonomy does not teach the only Fitness lizard exercise or pose anchor.",
+      "beforeHash": "d53e8b204d08cd526f32a0c0575b3771fb83f44754b7b8181b7c80584d9d2dae"
+    },
+    {
+      "lemma": "secessionist",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The candidates depend on secede, secession or secessionism and do not independently explain withdrawal from a union for learners.",
+      "beforeHash": "f48deaee4062bf9c29d7591464852519ffa620681f93a25acea74ae652f0c20f"
+    },
+    {
+      "lemma": "self-reliantly",
+      "hold": true,
+      "reason": "The exact cached candidates remain empty and the additional direct free dictionary page check was unavailable. Do not generate a derived adverb definition without source evidence for the word itself.",
+      "beforeHash": "050553f0c7d1fc0f86735dbf570444353e68338c7b559683a4c33baedfb2f2eb"
+    },
+    {
+      "lemma": "slipknot",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The alternative spelling and rope-knot definitions are verified, but they remain unrelated to the Fitness clench action. No publication of specialist knot content in this context.",
+      "beforeHash": "a3322055d510e5dcaa36864518b4f9b95841ed06352684cab12dbcfce6915299"
+    },
+    {
+      "lemma": "slotparlor",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No usable exact spaced-headword definition was found in the bounded free-source checks. Do not create a venue definition by composing slot and parlor.",
+      "beforeHash": "45c0c3ed5250d8487d52042c4db573aa47e7e996ce37c79327f29727b4f4a1fc"
+    },
+    {
+      "lemma": "sourcer",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The circular person-who-sources candidate does not verify the proposed specific talent-search occupation.",
+      "beforeHash": "57561d93eab5061b12844821b3b0b4fe682fd0cc1424bca921af6a2fd77e3759"
+    },
+    {
+      "lemma": "spelter",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The industrial zinc and solder meanings are sourced but unrelated to the only Fitness nutritional-zinc context; do not teach impure metal as a nutrition synonym.",
+      "beforeHash": "64d014330c9579ac21dce3b9b84a546173ddf9d44bab5aca7692214d69d65d7d"
+    },
+    {
+      "lemma": "spicule",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Preserve the existing archive: microscopic and other technical needle-like structures do not establish a relevant Fitness needle meaning.",
+      "beforeHash": "cca4385d89e8e866c6de724d25c17df6dc3a2d07ae8dd21cfd91895006b0eba2"
+    },
+    {
+      "lemma": "spokedwheel",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The concatenated spelling lacks exact evidence and the physical wheel sense is unrelated to a Fitness cartwheel movement.",
+      "beforeHash": "a7c54e5e7cec14648a49fc5df53743893c3872a5579a83aeba21baed28d2cee4"
+    },
+    {
+      "lemma": "spondyl",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The alternative-form link exists but spondyle has no usable returned base meaning. Keep the medical terminology hidden rather than treating the pointer itself as a definition.",
+      "beforeHash": "433912cf5e8f925551459d6d10958b4dae8cd37422d67c448a499fdc6b487194"
+    },
+    {
+      "lemma": "sportchair",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact factual entry verifies this specialized wheelchair term, despite the plausible old model description.",
+      "beforeHash": "98da3f41f576bfc305d35118112ce293c8404db035f2117b8862d26f3a674ad9"
+    },
+    {
+      "lemma": "spume",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The liquid and sea-foam senses are verified but do not fit the only Fitness foam-equipment anchor.",
+      "beforeHash": "e1c26f0c67fcece7ea61d4244fbb1a3b2ec46714e61fc715ed7bff10fb0658c2"
+    },
+    {
+      "lemma": "stringency",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The proposed credit-scarcity meaning is unrelated to the sole Fitness tightness context; the other candidates do not repair that topic mismatch.",
+      "beforeHash": "459eff0f4269fd4247224057d3f146b7dd6d09275e94e227e44c58d4e5e237a6"
+    },
+    {
+      "lemma": "suppressor",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No recovered sense specifically verifies a fire extinguisher; firearm, gene and electrical senses do not repair the intended fire-control entry.",
+      "beforeHash": "e54c6b5260f81393df0657540579bafce3b7d7d87cf5efdb9cbcd1aff8f3bf47"
+    },
+    {
+      "lemma": "surmiser",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The sole definition repeats surmises without explaining inference from incomplete information, and does not distinguish financial speculation.",
+      "beforeHash": "096d302ebd4722798ccf6aa8629797eaf57c2eff528e16c71a9c442dd076e1b4"
+    },
+    {
+      "lemma": "sweetmeats",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The plural and confection meaning are verified, but the sole Fitness tuck anchor denotes a movement, not food. Keep the unrelated sweets sense hidden.",
+      "beforeHash": "da7487a8f396702e388edc9cfc5a15b852b5ce19d2bdb0e5ebde2e4b66ef09f7"
+    },
+    {
+      "lemma": "tarnishing",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The inflection is now verified but metal discoloration remains unrelated to the intended Fitness oxidation topic. Do not release the specialist materials sense under a biological exercise anchor.",
+      "beforeHash": "d031c253d70fa29bcb91aa7048265fa1d30ceb994b19e410c25bd0c2cebd3335"
+    },
+    {
+      "lemma": "theoccident",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The proposed capitalized phrase returned no usable exact source meaning. Preserve the stable hidden record instead of assuming a geographic definition from west.",
+      "beforeHash": "69d2b5401c483845761dc1bbb70e62bfc13d423d9802fc96f7ce70305e5f139d"
+    },
+    {
+      "lemma": "therm",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The gas-billing heat unit is verified but inappropriate to the sole Fitness calorie context without a relevant reviewed technical anchor.",
+      "beforeHash": "4a9145555fbff736aa86f9b783afaaa27b14b0491d46a37d1738d0051f0d204b"
+    },
+    {
+      "lemma": "thermalinversion",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No usable exact source entry or explicit thermal-to-temperature-inversion relation was returned. A related published phrase does not automatically verify this separate identity.",
+      "beforeHash": "1a5af05f32fbd56de4e853697b0e314b838d2dfc50110d45da6ce775bd0d2700"
+    },
+    {
+      "lemma": "three-bagger",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The baseball hit is sourced but not an appropriate extension of the sole Business triple anchor without a relevant sports context.",
+      "beforeHash": "6956f441b2e1f8e4fc41a14fd8102fa423d4ef29725d37dcfa4e7f356a28f7e2"
+    },
+    {
+      "lemma": "three-basehit",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spaced phrase is verified as a baseball hit, but this remains unrelated to Business triple as a number/multiplier. Keep the sports specialist hidden in this list.",
+      "beforeHash": "f30aa322260f40cbb9ec4cc3d68e33a14d75779aefcaab1bf97a1585df64c15a"
+    },
+    {
+      "lemma": "topbunk",
+      "hold": true,
+      "reason": "The spaced phrase has no usable cached exact definition, and the additional direct page check was unavailable. A plausible composition is not an attributable dictionary sense; retain hidden.",
+      "beforeHash": "0e26da7a7123842337308d22079a1b75dadaeb9bf917ea4855b159284e8db3c8"
+    },
+    {
+      "lemma": "transmissivity",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The radiation candidate gives a simple transmitted-to-received ratio without resolving the intended intrinsic material property versus transmittance distinction; aquifer flow is unrelated.",
+      "beforeHash": "8a74a9d2ad513d21ba4b6caf9ef12887a319b0c0cce6c2aa6aedc57277c2bddc"
+    },
+    {
+      "lemma": "transnationalization",
+      "hold": true,
+      "reason": "The exact cached candidates remain empty and the additional direct free dictionary page check was unavailable. This is not proof the word is invalid; the precise meaning remains unsupported in this bounded review.",
+      "beforeHash": "2f7203510637cc8e537e78abb1a657eadc2ece30e6934e2a66cfed73bc5948fb"
+    },
+    {
+      "lemma": "tumefaction",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Pathological swelling or tumor formation is not an appropriate alternative for the sole Fitness muscular-hypertrophy anchor.",
+      "beforeHash": "2db8a88390917ee425e5362924181db5126eaa19c19f2c4f47fb9a7c6047daee"
+    },
+    {
+      "lemma": "tumescence",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Fluid-related swelling is a different process from exercise hypertrophy; the only Fitness anchor does not justify the proposed substitution.",
+      "beforeHash": "e26883ea0f362c3883c82be721734fa617f83876e8cab1597a50e7a221bd252a"
+    },
+    {
+      "lemma": "underlings",
+      "hold": true,
+      "reason": "Plural identity and subordinate-rank meaning remain sourced, but the direct English entry still does not attach the needed disparaging register to that sense. Foreign translation labels are not English usage evidence. Retain hidden rather than present a neutral personnel synonym.",
+      "beforeHash": "125e86c45d796ae612e16c8f11a3982c5470c23ae1244062145d8bd4ac390346"
+    },
+    {
+      "lemma": "unweave",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Undoing woven material is verified but lacks a relevant Fitness learning context beyond the ambiguous unravel anchor.",
+      "beforeHash": "79425a8f45855ba419b708c9667209bb95b4fb2c659db74607e78cae2e3a0415"
+    },
+    {
+      "lemma": "uppercasing",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The source verifies the verb inflection but supplies no base verb sense, only noun/adjective letter-case meanings. Business capitalization may also be financial; retain both POS and topic uncertainty.",
+      "beforeHash": "ec239e43d5ad7e329306b2c3bdcc55490f8285044cbc43e1890da42a002f6340"
+    },
+    {
+      "lemma": "vermillion",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spelling variant is verified but target senses describe red color, not the intended anatomical lip region. Keep the remaining specialized sense mismatch hidden.",
+      "beforeHash": "d079bf81a48f61591ef70424b05a896e97aa5dfbaf5d64f3f7f1380eec345374"
+    },
+    {
+      "lemma": "volatilizable",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Both candidates repeat volatilized without explaining vaporization, and the Business volatile anchor does not establish the specialist chemical meaning.",
+      "beforeHash": "915f08ef494781bd6f7666a01019543ecfa331f335895732eec9f71b15c2e428"
+    },
+    {
+      "lemma": "wagonwheel",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The spaced phrase verifies a vehicle wheel, not the Fitness cartwheel exercise. Identity recovery does not make this unrelated object appropriate for the list.",
+      "beforeHash": "5db135ce8f7f3b02f755b1d065eba0c3711e63884e9b0b97f80054f52d6e108c"
+    },
+    {
+      "lemma": "waymark",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The physical off-road route marker is sourced but does not fit the only Business project-milestone context without an appropriate reviewed navigation anchor.",
+      "beforeHash": "ffbc85f0bf4ed0b72f34f85f32665284881bdf58fde016dcec1b0570f058fdcc"
+    },
+    {
+      "lemma": "wheedler",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The coaxing person is a different sense of smoothie from the only Fitness drink anchor, so the connection is inappropriate despite a valid definition.",
+      "beforeHash": "42746dc3628eeecaddb24621f3d5e756b90a6f10518ff8f8c60329778ea21c82"
+    },
+    {
+      "lemma": "witticism",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. A clever humorous remark is verified but is not the exclamation wow or an appropriate extension of the sole Fitness anchor.",
+      "beforeHash": "760127bd4424a644a90d69615bdbca566807b6f0f6b8bb2bb82f54522cff9666"
+    },
+    {
+      "lemma": "xerophyte",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Preserve the existing archive: drought-adapted plant taxonomy is unrelated to the sole Fitness cactus pose anchor.",
+      "beforeHash": "d52a1cf45253c5a7154690e32e4e52011618e1a8555276952f8955b082f194fc"
+    },
+    {
+      "lemma": "yankeeland",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. The capitalized lookup yielded no usable entry confirming geographic boundaries or connotations. Keep this regional nickname hidden.",
+      "beforeHash": "ad12fbf74598ee9c3b6f1ae96d8dddebf837e85fb601f21f96e0ca19e141140b"
+    },
+    {
+      "lemma": "zincum",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. No exact source verifies this proposed technical name, and a model-generated pharmacology gloss cannot replace factual evidence.",
+      "beforeHash": "611934d5bca111febf347073d78d918cfcb17734da53a02c5ba6465e14b8c6dc"
+    },
+    {
+      "lemma": "zwitterion",
+      "hold": true,
+      "reason": "Rechecked during the approved spelling/definition follow-up; no verified relevant repair selected. Preserve the existing archive: charged-molecule chemistry is unrelated to the sole Business buffer anchor and needs a new reviewed science context.",
+      "beforeHash": "a3da8919c5d44c81336d0e96eaf2929e2d2f7409bc2415e5ac42ab32d3135b02"
+    }
+  ]
+}

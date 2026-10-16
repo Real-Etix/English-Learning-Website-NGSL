@@ -1,0 +1,406 @@
+{
+  "id": "018",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:26:21.000Z",
+  "decisions": [
+    {
+      "lemma": "luminaire",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "An electrical device containing an illuminating lamp is explicit and appropriate to lighting equipment; portability is not categorically excluded.",
+      "beforeHash": "caf99dfa71bc4451ce0f312ed0d906e2660d1026c16c6b8c4ea5368c8e2b800c",
+      "sourceSenseId": "wiktionary:34ce76ab322bb2b417c7ec5c"
+    },
+    {
+      "lemma": "lunation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic"
+      ],
+      "reason": "The roughly 29.53-day return of a lunar phase is fully defined and distinguishes a lunar cycle from every calendar month.",
+      "beforeHash": "6fd7db16d358ec1948969f008cf46450eb128866da94c92081cd79659de31b5a",
+      "sourceSenseId": "wiktionary:7b837c5480d530d378f00750"
+    },
+    {
+      "lemma": "lyricism",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The emotional style of lyric poetry is explicit and relevant to poetry, distinct from the form of a poem or mere enthusiasm.",
+      "beforeHash": "5e610cb7468563ead5d6f8d30cd8c641e3a0626850caba5c8a8c1ce320b6ec1b",
+      "sourceSenseId": "wiktionary:50521d5c59c2047486ef92ff"
+    },
+    {
+      "lemma": "macedoine",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "A diced vegetable or fruit mixture served as salad is an exact culinary meaning; elegant arrangement or superior nutrition is not implied.",
+      "beforeHash": "fd2525e7bac083b3df824cc546af6439405d65f78c98f20ec75e35f31597fcb4",
+      "sourceSenseId": "wiktionary:e4bb16d5900f8db6a4274865"
+    },
+    {
+      "lemma": "machinations",
+      "hold": true,
+      "reason": "No exact plural sense or reviewed machination mapping is present; the familiar secret-plot meaning still needs recorded source evidence.",
+      "beforeHash": "02bd8380cd2976c9cdbb61ebe55184b00da2654cdfa2e9317c282a8e44bfc766"
+    },
+    {
+      "lemma": "macro-economist",
+      "hold": true,
+      "reason": "No exact source evidence supports this hyphenation and occupational meaning; a verified spelling mapping is needed before release.",
+      "beforeHash": "169e65041adf0a30a011df068e03125ddb10c90a507e9b0e872c91ae1a5e00c0"
+    },
+    {
+      "lemma": "macroeconometrics",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Applying econometrics to macroeconomic theory and models is an explicit specialization relevant to the macroeconomics anchor; retain uncountable usage.",
+      "beforeHash": "89aa598fd71896e2f6210f3c56a52eb56872c66bb8a27d2ef32e23cefa443744",
+      "sourceSenseId": "wiktionary:2b3f6ad3a3e7126ea462ca65"
+    },
+    {
+      "lemma": "macroeconomy",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A large-scale economy is a complete meaning and distinguishes the object studied from the academic field macroeconomics.",
+      "beforeHash": "05950fe1567f8e0bc8163d626c965928c5fa9cde9712acbd63da1d6d8bfd0c9b",
+      "sourceSenseId": "wiktionary:1c68b5ef1121793e2f3a17bc"
+    },
+    {
+      "lemma": "macromolecule",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness",
+        "ngsl"
+      ],
+      "reason": "The very large molecule meaning includes proteins and nucleic acids, supporting science and nutrition vocabulary without equating all macromolecules with protein.",
+      "beforeHash": "34164bea79f60e57fbe964c64e6478c3f948f80d30e4dc5d510dbac0fdb76f3a",
+      "sourceSenseId": "wiktionary:feb0917371f1e73e811f75ff"
+    },
+    {
+      "lemma": "majuscule",
+      "hold": true,
+      "reason": "The typographic capital-letter sense is verified but the sole business capitalization anchor likely concerns financing; the topic and intended homonym remain unresolved.",
+      "beforeHash": "f692aa0fc0376b0fc6e8300db5563ddd1b4a780df149f83ea1bfcea98ffa25f2"
+    },
+    {
+      "lemma": "maltreat",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Treating badly or abusing is explicitly defined and directly supports abuse vocabulary without restricting it to legal proceedings.",
+      "beforeHash": "9c98354fcfaeccfdf6e12d93261420dad7e739ce3113ca303ef69a5efdc5ef0b",
+      "sourceSenseId": "wiktionary:24844953b0971038daff66d0"
+    },
+    {
+      "lemma": "mandatee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "A person appointed to office by mandate is an explicit administrative role; it is not a more technical synonym for the adjective mandatory.",
+      "beforeHash": "fe27da627d790f51a497b02fb5400b6cd412ad37acf6359b0856c01b84bd5fc0",
+      "sourceSenseId": "wiktionary:6e837245cd95239976df70b9"
+    },
+    {
+      "lemma": "maneuvering",
+      "hold": true,
+      "reason": "The sole gerund entry repeats maneuvers and does not explain the intended strategic political action; preserve its evidence without releasing a circular definition.",
+      "beforeHash": "45964252ac54714b7a49669c1050890629c51550b09518188ea4fb312af5fba4"
+    },
+    {
+      "lemma": "manus",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The hand below the forearm or corresponding vertebrate part is fully described; retain formal usage and distinguish the whole hand from the palm alone.",
+      "beforeHash": "8c1d5d330809f40993db243b94250acc3e9f02c642705e562f4ddc3f2e1884a7",
+      "sourceSenseId": "wiktionary:1467a6724d3622c9c4325dcc"
+    },
+    {
+      "lemma": "markdown",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The sales-stimulating price reduction is a precise retail meaning matching discount; do not substitute the unrelated software-format sense.",
+      "beforeHash": "bbce0f64d466fb2e7e88a994b957806221e51180c8dd1e7feb6ab835911bced6",
+      "sourceSenseId": "wiktionary:e01ef681d5b136bf9813d179"
+    },
+    {
+      "lemma": "marketization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exposing service industries to market forces is explicit and relevant to economic reform; it is not identical to transferring ownership into private hands.",
+      "beforeHash": "9fa28da66217968f53b73115f015624f6bf97cc8917c637f18eb26b2dbbe1bbd",
+      "sourceSenseId": "wiktionary:863afb46451e9d95ef6debd0"
+    },
+    {
+      "lemma": "marl",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The variable mixture of carbonate of lime, clay and possibly sand is a complete earth-material meaning; unrelated rope-working and animal homonyms are excluded.",
+      "beforeHash": "266e129362595a5ed20f4fe6ee879660f152e1d31953afdb1cccd04604fbeb2d",
+      "sourceSenseId": "wiktionary:2a232d4686ba280709474c67"
+    },
+    {
+      "lemma": "marque",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A manufactured-product brand, especially of a car, is explicit; the brand need not be prestigious or expensive.",
+      "beforeHash": "c85fadeee1e3ae9836d3678da1def3ebd3db187bd5eb8b450fb6a843b14d860d",
+      "sourceSenseId": "wiktionary:900e2740966afe829559879e"
+    },
+    {
+      "lemma": "marshaling",
+      "hold": true,
+      "reason": "No exact sourced sense or reviewed marshal inflection mapping is available; the old logistics gloss cannot verify this spelling and meaning.",
+      "beforeHash": "bfc6ed4d21e42325a551aeaef4b9a65eac2bd546bee204328de7d8b86c0fe8ee"
+    },
+    {
+      "lemma": "masterkey",
+      "hold": true,
+      "reason": "No exact joined-form entry supports the multi-lock key meaning; a source-backed spelling or phrase mapping is needed.",
+      "beforeHash": "58a75dfa15eef4ba31a24b8eb0b172138a3740dd216fc1614bc317bf0708c8ca"
+    },
+    {
+      "lemma": "maternalaunt",
+      "hold": true,
+      "reason": "The joined phrase has no exact factual entry; do not infer a stable spaced-phrase identity merely from the obvious family relation.",
+      "beforeHash": "4d616129b6d616bffe7a26f8b0955171f9008bd2bba4a751ea336045e9ae00a0"
+    },
+    {
+      "lemma": "maternalistic",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Showing maternal instincts is an explicit adjective meaning related to maternal; the old claim of necessarily excessive protection is not retained.",
+      "beforeHash": "6f79691e23d19f07f8850e07d3dbc7d42880a0cc6516280f39e94d37d1969443",
+      "sourceSenseId": "source-c9ffba2bd6b7317104bb"
+    },
+    {
+      "lemma": "matriculant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A person registered on a school list or roll is fully explained; official enrollment does not necessarily mean every undergraduate status.",
+      "beforeHash": "7f45121b1531f5f1406e48246667c58726ede5f828ec2af6d4f15123fcf78993",
+      "sourceSenseId": "wiktionary:9b439bbdc1ccb41a1c5480c6"
+    },
+    {
+      "lemma": "matriculate",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The verb enroll as a student is explicit and directly matches the educational sense of enroll; the person-denoting noun remains separate.",
+      "beforeHash": "6cfca3e7dd9ac0c37472be598f205c5f2495a62cfba43aa44b4bcd2f5ffb322c",
+      "sourceSenseId": "oewn:02476626-v:matriculate%2:41:00::"
+    },
+    {
+      "lemma": "matting",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Mats as a collection of ground coverings is clear and relevant to exercise surfaces; it is not the separate picture-border meaning.",
+      "beforeHash": "276a772dace21ff7aec86c00426432788dbf6a46e4083d0bce12ecc4a6bdc865",
+      "sourceSenseId": "wiktionary:7ccfd639ed888a95e763b620"
+    },
+    {
+      "lemma": "maturation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Coming to full development is a self-contained meaning supporting growth; exclude the medical pus-formation sense and population-level evolutionary claims.",
+      "beforeHash": "c764b3f7298cf84afa137798922f55817a863cc5a96ebf09d1338d399566a26f",
+      "sourceSenseId": "source-2b46ee3204a5132c577c"
+    },
+    {
+      "lemma": "mechanicaladvantage",
+      "hold": true,
+      "reason": "The joined phrase lacks exact factual evidence or a reviewed mechanical advantage mapping; the old leverage explanation is not a source.",
+      "beforeHash": "9842cc2228c0168d6bf2940d8713ad7bbe96011d9bc47a8dd4376bdfc33a9b03"
+    },
+    {
+      "lemma": "mechanization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Replacing human or animal labour with machinery is a complete industrial-development meaning, narrower than all industrialization.",
+      "beforeHash": "74f4df131846e0a81aff15adbef0dd87554e2685a3627da3add0bac1d58af5f5",
+      "sourceSenseId": "wiktionary:c09d721712d0576608d86801"
+    },
+    {
+      "lemma": "mechanoreceptor",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A receptor informing an organism about movement, tension or pressure is fully explained and matches the mechanical rather than chemical receptor category.",
+      "beforeHash": "5a77ad9cf8816b98192a596ae3a477741385d988ac05c9b6f763e882cb8a82ed",
+      "sourceSenseId": "wiktionary:5b90d70fd0d7f8f003606342"
+    },
+    {
+      "lemma": "megabat",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The large fruit-eating Old World bat meaning fits zoological bat study; avoid Wiktionary's overly broad suborder classification and the fitness implement homonym.",
+      "beforeHash": "5d4536704340a7b82bf909750d10dae5f515122c5272949fe570be93a10f77ab",
+      "sourceSenseId": "source-17e2e7bb5cc350084e63"
+    },
+    {
+      "lemma": "megagram",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "fitness",
+        "toeic"
+      ],
+      "reason": "The SI mass unit equal to one million grams is explicit and relevant to metric tonnage; it is not interchangeable numerically with every regional ton.",
+      "beforeHash": "96ab85afbde4de270dd70a542f5992982830bba158d12e5c6233c57c03d63a73",
+      "sourceSenseId": "wiktionary:b59d3d69f78a607fd74280cd"
+    },
+    {
+      "lemma": "meliorist",
+      "hold": true,
+      "reason": "The philosophical candidates are circular and WordNet's broad reform advocate does not verify the proposed belief in improving the world; retain uncertainty about intended scope.",
+      "beforeHash": "50496af7f82296759ef5679a1716aee7a7399ef1e8dd9a0a35a6d92db75b67f7"
+    },
+    {
+      "lemma": "melodist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A performer or composer of melodies is a complete music-study meaning; it is not limited to composition alone.",
+      "beforeHash": "8a34ae3f42b1f4a2cb5f0fba0b1085006eabb6ee7e49481c2b4483fd0dcbb881",
+      "sourceSenseId": "wiktionary:e4d8ea113e85272996c9ea57"
+    },
+    {
+      "lemma": "memorial",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Something by which a person or event is remembered, such as a monument, is explicit and relevant to sightseeing; no obituary or legal-petition synonym is inferred.",
+      "beforeHash": "cc2557573855bbc915fb0c26dc17fb5a2f4764ae245693b6c8473e727ffd1cbf",
+      "sourceSenseId": "wiktionary:db70bc086ce9b34c004de239"
+    },
+    {
+      "lemma": "merchantman",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A cargo ship is a direct self-contained meaning matching freighter; no historical-only restriction is invented.",
+      "beforeHash": "fcd2cb4f56f3bd82c63559f3af1433cfdb9d9ee52209476be698d7fb39118229",
+      "sourceSenseId": "source-55897c387bc276ded75d"
+    },
+    {
+      "lemma": "meridional",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The north-south or meridian-related adjective is precise geographical terminology; it is not confused with the separate southern-region meaning.",
+      "beforeHash": "f710faceb2bd14dd5f94801a715ce427e4aee84795b7b7274a2e229142a84621",
+      "sourceSenseId": "wiktionary:6deed828f8b79c223971e204"
+    },
+    {
+      "lemma": "mesclun",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "A salad mixture of small young leaves is explicit and appropriate to food vocabulary; gourmet status or nutritional superiority is not assumed.",
+      "beforeHash": "364c3cf475e9d2619bf2efeeae4b195425b0050cc8b9f7c7a1f483721873510e",
+      "sourceSenseId": "wiktionary:955f2537f8489c0a09fc3d64"
+    },
+    {
+      "lemma": "metacarpus",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The five bones between wrist and fingers are explicitly described and relevant to hand anatomy; the whole soft-tissue palm is not equated with these bones.",
+      "beforeHash": "69e88eb5170bdec289da26eaf8e8d62b851ceb9356adb7cdfd141bbdc0faaee2",
+      "sourceSenseId": "wiktionary:1518cb1b760286d5df275b0c"
+    },
+    {
+      "lemma": "metalsmith",
+      "hold": true,
+      "reason": "A metalworking craftsperson is verified but unrelated to the fitness Smith-machine anchor; matching a word fragment does not establish learning relevance.",
+      "beforeHash": "809757470701d6dee4c6d8c7579278ea54145dc6765197370057df70adeb1625"
+    },
+    {
+      "lemma": "metathesis",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source fully explains a reaction exchanging parts of two compounds; restrict to academic chemistry rather than presenting it as everyday exchange or linguistic transposition.",
+      "beforeHash": "c7b2d3d41041fa731937a452b4cc20d0276a06362ed3675bf8679e7eb4acf418",
+      "sourceSenseId": "source-8217df469f697dbdf2ca"
+    }
+  ]
+}

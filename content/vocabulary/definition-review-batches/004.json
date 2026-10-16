@@ -1,0 +1,676 @@
+{
+  "id": "004",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T08:07:06.000Z",
+  "decisions": [
+    {
+      "lemma": "nonconcurrence",
+      "head": "nonconcurrence",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Refusal to agree is supported by the explicit agreeing-in-opinion sense; no judicial procedure or financial conclusion is invented.",
+      "explain": [
+        {
+          "head": "concur",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Refusal to agree is supported by the explicit agreeing-in-opinion sense; no judicial procedure or financial conclusion is invented.",
+          "sourceSenseId": "wiktionary:34c8cfd3bc1e7ae6fcec5db6"
+        }
+      ],
+      "beforeHash": "997501bfc5fdd853f7c520d90d1de85f125e4e05577b8902fd9bf74c02da72b3",
+      "sourceSenseId": "wiktionary:98b64f13e9a85e94c544af1a"
+    },
+    {
+      "lemma": "nurturer",
+      "head": "nurturer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Helping someone or something develop explains this person noun in the parent/caregiving context, without restricting it solely to parenthood.",
+      "explain": [
+        {
+          "head": "nurture",
+          "source": "wordnet",
+          "sense": 2,
+          "reason": "Helping someone or something develop explains this person noun in the parent/caregiving context, without restricting it solely to parenthood.",
+          "sourceSenseId": "source-bd38adea8f85865dc530"
+        }
+      ],
+      "beforeHash": "6909d1da2b52879ae30771512a046fe17b2c15ec990b0f2f46a480fba88f9208",
+      "sourceSenseId": "wiktionary:7c54bfb6124dd4a261be8886"
+    },
+    {
+      "lemma": "odontologist",
+      "head": "odontologist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The specialist-in-teeth-study explanation is relevant to dental occupational vocabulary; do not equate every researcher with a licensed practising dentist.",
+      "explain": [
+        {
+          "head": "odontology",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The specialist-in-teeth-study explanation is relevant to dental occupational vocabulary; do not equate every researcher with a licensed practising dentist.",
+          "sourceSenseId": "wiktionary:d62dc35281a98919edc28321"
+        }
+      ],
+      "beforeHash": "53342c047c838e6d43dbb0633b1a5beea7ca4fd9db516908b912aedeaae49020",
+      "sourceSenseId": "wiktionary:e799a5a2cd8fbe0bc28ab390"
+    },
+    {
+      "lemma": "operability",
+      "head": "operability",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Fit or ready for use explains the system/device capability noun; the medical operable sense is not selected.",
+      "explain": [
+        {
+          "head": "operable",
+          "source": "wordnet",
+          "sense": 1,
+          "reason": "Fit or ready for use explains the system/device capability noun; the medical operable sense is not selected.",
+          "sourceSenseId": "source-2971a9b4897853edccd9"
+        }
+      ],
+      "beforeHash": "b25f1c8feba6548431ffb1eeff987d4c7aefe9b8dace7d63dd9c116ff6ac70f8",
+      "sourceSenseId": "wiktionary:67daf746200b07aba1619018"
+    },
+    {
+      "lemma": "parsimoniously",
+      "head": "parsimoniously",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The excessive unwillingness-to-spend sense clarifies the manner adverb and avoids presenting it as neutral cheapness.",
+      "explain": [
+        {
+          "head": "parsimonious",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The excessive unwillingness-to-spend sense clarifies the manner adverb and avoids presenting it as neutral cheapness.",
+          "sourceSenseId": "source-13b7df0376add45e65d6"
+        }
+      ],
+      "beforeHash": "3ada71ae7cc3453a81c8755753dcf076f37208fc4bb766a685223ee8068bcd7d",
+      "sourceSenseId": "wiktionary:02e772b2ddb19b7ba7367057"
+    },
+    {
+      "lemma": "perspectival",
+      "head": "perspectival",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The viewpoint sense explains the adjective in editorial discussion; the visual depth/drawing senses are not selected.",
+      "explain": [
+        {
+          "head": "perspective",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The viewpoint sense explains the adjective in editorial discussion; the visual depth/drawing senses are not selected.",
+          "sourceSenseId": "source-37d56dde46481be682d9"
+        }
+      ],
+      "beforeHash": "90863bd2ce25041e742075dc58ad1c74d2a067028e79fe06d058617f0ee27fd2",
+      "sourceSenseId": "wiktionary:ec62fd500f59c6070e9b50fb"
+    },
+    {
+      "lemma": "pharmacologic",
+      "head": "pharmacologic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The study-of-drugs meaning explains the industry-related adjective; no clinical dose, safety promise or treatment recommendation is added.",
+      "explain": [
+        {
+          "head": "pharmacology",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The study-of-drugs meaning explains the industry-related adjective; no clinical dose, safety promise or treatment recommendation is added.",
+          "sourceSenseId": "source-77d552bed01c0930bcf9"
+        }
+      ],
+      "beforeHash": "bddef5b9bda6b6e69551bb7f8f4d0f42cfaf3eba5e4b4ab9e55095436b841674",
+      "sourceSenseId": "wiktionary:a6cd33c45feb11cfb879a5c9"
+    },
+    {
+      "lemma": "photonic",
+      "head": "photonic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The adjective's explicit photonics reading is relevant to optical science. Photon is separately explained, not an invented technology comparison.",
+      "explain": [
+        {
+          "head": "photonics",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The adjective's explicit photonics reading is relevant to optical science. Photon is separately explained, not an invented technology comparison.",
+          "sourceSenseId": "wiktionary:d6e79f4177c18c2ded0122f3"
+        },
+        {
+          "head": "photon",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The source adjective also names photons, and the photonics explanation uses them. Retain the electromagnetic-radiation quantum meaning.",
+          "sourceSenseId": "source-2706bbcefe90d463f54f"
+        }
+      ],
+      "beforeHash": "8e853efe71a4e1796655d12921e3ce4be220e232c48a1be9d3fad5f8ea0d3758",
+      "sourceSenseId": "wiktionary:408a09c5a68b047642a5b831"
+    },
+    {
+      "lemma": "phraseological",
+      "head": "phraseological",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The study of fixed expressions explains the academic linguistic adjective; no unverified idiom examples or automatic connections.",
+      "explain": [
+        {
+          "head": "phraseology",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The study of fixed expressions explains the academic linguistic adjective; no unverified idiom examples or automatic connections.",
+          "sourceSenseId": "wiktionary:25b6bca2fcbaa178360ce43e"
+        }
+      ],
+      "beforeHash": "a241d47ee05cb8dbd887681de062ff78e89d903ae2fd00b706265e185b85acfd",
+      "sourceSenseId": "wiktionary:5835ba06346a09f817151bd1"
+    },
+    {
+      "lemma": "placekicker",
+      "head": "placekicker",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The explicitly named kick-from-stationary-position explains this player noun. Do not add the unsupported contrast with punts.",
+      "explain": [
+        {
+          "head": "placekick",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The explicitly named kick-from-stationary-position explains this player noun. Do not add the unsupported contrast with punts.",
+          "sourceSenseId": "wiktionary:60215dc2d208619386e90238"
+        }
+      ],
+      "beforeHash": "cd1a5d5e4f4de3b41fc2bafdfcd3437baa1c0ba5e723fffa13fcb277008ddcea",
+      "sourceSenseId": "wiktionary:e850ec4f25dc08f249ebe581"
+    },
+    {
+      "lemma": "preliminarily",
+      "head": "preliminarily",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The preparatory/introductory adjective explains this manner adverb, distinct from an exact synonym claim for all initially uses.",
+      "explain": [
+        {
+          "head": "preliminary",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The preparatory/introductory adjective explains this manner adverb, distinct from an exact synonym claim for all initially uses.",
+          "sourceSenseId": "wiktionary:c12c66430bd6be7f8ed77e91"
+        }
+      ],
+      "beforeHash": "4d1744ebacea4bdc88b0c20ce07b63cc508b630c04a758a5cda1142c4962de07",
+      "sourceSenseId": "wiktionary:4f640037eed07ff0607bd536"
+    },
+    {
+      "lemma": "procurability",
+      "head": "procurability",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "The capability of being obtained resolves the availability noun without adding guarantees of actual stock or supply.",
+      "explain": [
+        {
+          "head": "procurable",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The capability of being obtained resolves the availability noun without adding guarantees of actual stock or supply.",
+          "sourceSenseId": "source-b7ffb488656807f46829"
+        }
+      ],
+      "beforeHash": "47bdccb684c853a0cade36a4a0364e0248de5dae1a076379a9b24d7c90be644b",
+      "sourceSenseId": "wiktionary:9273cd0ffe9e3bcf25575ed9"
+    },
+    {
+      "lemma": "prosperously",
+      "head": "prosperously",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Select the success reading of prosperous to explain the manner adverb, not an assertion that all success is financial.",
+      "explain": [
+        {
+          "head": "prosperous",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Select the success reading of prosperous to explain the manner adverb, not an assertion that all success is financial.",
+          "sourceSenseId": "wiktionary:7d110bb02ab98189549a1a39"
+        }
+      ],
+      "beforeHash": "b52f541aac2e4c3d53f685cddc2c999530761f86594885a0346502678d43f8f1",
+      "sourceSenseId": "wiktionary:8fcaa872b7de878e1eaa4f1d"
+    },
+    {
+      "lemma": "raptly",
+      "head": "raptly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The absorbed/interested adjective explains the attention adverb; exclude transported-to-heaven and merely happy senses.",
+      "explain": [
+        {
+          "head": "rapt",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "The absorbed/interested adjective explains the attention adverb; exclude transported-to-heaven and merely happy senses.",
+          "sourceSenseId": "wiktionary:781f59b2e49e16d5f145c0ef"
+        }
+      ],
+      "beforeHash": "2252fd30bde19dd132320e8050f4a2f1e885656f7953159e86653921b6d8abfc",
+      "sourceSenseId": "wiktionary:0ee41a35fe1aa6d2697ff95d"
+    },
+    {
+      "lemma": "recreative",
+      "head": "recreative",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The amusement/activity sense explains the leisure adjective; exclude the separate creating-again sense.",
+      "explain": [
+        {
+          "head": "recreation",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The amusement/activity sense explains the leisure adjective; exclude the separate creating-again sense.",
+          "sourceSenseId": "wiktionary:b4ff062cacbfd33abbf872a6"
+        }
+      ],
+      "beforeHash": "8163e6c080e808dc359ec313f2cc33e92dfb383a2fa0045e7292f9e4f24683b8",
+      "sourceSenseId": "wiktionary:899003ca449a901423f2a272"
+    },
+    {
+      "lemma": "recurrently",
+      "head": "recurrently",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Happening time after time explains the repetition adverb; no requirement of strictly regular intervals is invented.",
+      "explain": [
+        {
+          "head": "recurrent",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Happening time after time explains the repetition adverb; no requirement of strictly regular intervals is invented.",
+          "sourceSenseId": "wiktionary:69a48a10c9d1ebaa6afc4daf"
+        }
+      ],
+      "beforeHash": "0d2d411287da424cb689d15950018aada88b8ecc6e1ac641288c761d8cd41d9a",
+      "sourceSenseId": "wiktionary:cbeedddb97b396877e9b1a9a"
+    },
+    {
+      "lemma": "reenvision",
+      "head": "reenvision",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The explicit again/anew verb is explained through imagining in the mind, not physical rebuilding.",
+      "explain": [
+        {
+          "head": "envision",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The explicit again/anew verb is explained through imagining in the mind, not physical rebuilding.",
+          "sourceSenseId": "wiktionary:e83099409de1ece4abfe973a"
+        }
+      ],
+      "beforeHash": "2a14c3cf75c84bfc084cba1a68f691a010bd5758c35608b97343b666dd8ef32d",
+      "sourceSenseId": "wiktionary:2cad7ace552f0e03619c3d9a"
+    },
+    {
+      "lemma": "reflationary",
+      "head": "reflationary",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The restoring-price-level economic definition resolves the adjective; does not imply any policy is recommended or guaranteed.",
+      "explain": [
+        {
+          "head": "reflation",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The restoring-price-level economic definition resolves the adjective; does not imply any policy is recommended or guaranteed.",
+          "sourceSenseId": "wiktionary:f47956067b650bfaeee5e620"
+        }
+      ],
+      "beforeHash": "413572946bfb57a3699e00757d63f74b19058ad130427186f9e207d2c37ae9f5",
+      "sourceSenseId": "wiktionary:ddfdee2a23e58ce871b46258"
+    },
+    {
+      "lemma": "reformulation",
+      "head": "reformulation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Select the act of formulating anew and the clear-statement verb sense, appropriate to restatement vocabulary.",
+      "explain": [
+        {
+          "head": "formulate",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Select the act of formulating anew and the clear-statement verb sense, appropriate to restatement vocabulary.",
+          "sourceSenseId": "wiktionary:839dd7676b38ed23671c4dab"
+        }
+      ],
+      "beforeHash": "48bb0c96943d7c1e895f7d2aa380d0d7e9027f4659b2d2b02408f1ca3a1ec7cf",
+      "sourceSenseId": "wiktionary:41105e0f97e7845a4ef87cc3"
+    },
+    {
+      "lemma": "reinitiate",
+      "head": "reinitiate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The start/begin sense explains starting again; membership ceremonies and expert initiate nouns are excluded.",
+      "explain": [
+        {
+          "head": "initiate",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The start/begin sense explains starting again; membership ceremonies and expert initiate nouns are excluded.",
+          "sourceSenseId": "wiktionary:13b8f2ac8fd547dd9de08bec"
+        }
+      ],
+      "beforeHash": "bb42dc7a786ad0739aba63252594c3ba4c1ecccd29aa2d8556d707ad1611c9dc",
+      "sourceSenseId": "wiktionary:392329d21de4d56618925e62"
+    },
+    {
+      "lemma": "reinstitute",
+      "head": "reinstitute",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The founding/beginning verb explains the repeated action; excludes colleges and religious appointments.",
+      "explain": [
+        {
+          "head": "institute",
+          "source": "wiki",
+          "sense": 4,
+          "reason": "The founding/beginning verb explains the repeated action; excludes colleges and religious appointments.",
+          "sourceSenseId": "wiktionary:c0ca60d4e4826ecac73da38a"
+        }
+      ],
+      "beforeHash": "5537d657b5e740ab64dc140239994831e26bc3f87435480d914a3748c968c3e3",
+      "sourceSenseId": "wiktionary:aa82ddd401df0e27d382788f"
+    },
+    {
+      "lemma": "remunerativeness",
+      "head": "remunerativeness",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Financial compensation/reward explains the quality noun without imposing the old salary-only limitation.",
+      "explain": [
+        {
+          "head": "remunerative",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Financial compensation/reward explains the quality noun without imposing the old salary-only limitation.",
+          "sourceSenseId": "wiktionary:537b661c7f327c9e51c12411"
+        }
+      ],
+      "beforeHash": "13a54cb2ad64f72e79b9f69a842822df553d21d609cff8f5de8b5c9bf74eed4e",
+      "sourceSenseId": "wiktionary:c9a8dda6517acaecfeda59e4"
+    },
+    {
+      "lemma": "self-governance",
+      "head": "self-governance",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The explicit synonym is explained by regional governance by its populace, appropriate to sovereignty/policy vocabulary; no legal entitlement claim.",
+      "explain": [
+        {
+          "head": "self-government",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The explicit synonym is explained by regional governance by its populace, appropriate to sovereignty/policy vocabulary; no legal entitlement claim.",
+          "sourceSenseId": "wiktionary:6030f189a07dbbdeb756bc70"
+        }
+      ],
+      "beforeHash": "9f3d5b10f133a72667f4f44b61ca04de450bc3c9a5a691ac1449a1866276cbaf",
+      "sourceSenseId": "wiktionary:54834f06a56a2e4170b194c7"
+    },
+    {
+      "lemma": "societally",
+      "head": "societally",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The society/groups reading explains the manner adverb, not a claim that it is interchangeable with sociably.",
+      "explain": [
+        {
+          "head": "societal",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The society/groups reading explains the manner adverb, not a claim that it is interchangeable with sociably.",
+          "sourceSenseId": "wiktionary:2b64c4d234cf94d5decb2009"
+        }
+      ],
+      "beforeHash": "13be26965603d6a394478c8f1720ad7a55f3059bb148b4f78a97a738c40ed38d",
+      "sourceSenseId": "wiktionary:5f2b05c49e76e60789963fc5"
+    },
+    {
+      "lemma": "spotlessness",
+      "head": "spotlessness",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exceptional cleanliness explains the quality noun for hospitality/cleaning vocabulary; the moral-purity sense is excluded.",
+      "explain": [
+        {
+          "head": "spotless",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Exceptional cleanliness explains the quality noun for hospitality/cleaning vocabulary; the moral-purity sense is excluded.",
+          "sourceSenseId": "wiktionary:82de21510da854f6701380f2"
+        }
+      ],
+      "beforeHash": "ede177106eaafcf252243c733ac6bbeeed7b40bbdc15a0009eac62fc7d82b55f",
+      "sourceSenseId": "wiktionary:2f2692e5488991968ef9a87b"
+    },
+    {
+      "lemma": "stagflationary",
+      "head": "stagflationary",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The explicit tendency-to-induce definition is explained by inflation with stagnant growth; retain often for recession/unemployment.",
+      "explain": [
+        {
+          "head": "stagflation",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The explicit tendency-to-induce definition is explained by inflation with stagnant growth; retain often for recession/unemployment.",
+          "sourceSenseId": "wiktionary:dedc30d0d331100552f103ab"
+        }
+      ],
+      "beforeHash": "3faf2b3ff5a3691d05caff718c4932a359954e580327303e3bb4d05f11130508",
+      "sourceSenseId": "wiktionary:fe787685d6682bc4bf8a4721"
+    },
+    {
+      "lemma": "stereophony",
+      "head": "stereophony",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Independent audio channels explain the sound-reproduction noun without the earlier incorrect recording-microphone requirement.",
+      "explain": [
+        {
+          "head": "stereophonic",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "Independent audio channels explain the sound-reproduction noun without the earlier incorrect recording-microphone requirement.",
+          "sourceSenseId": "source-12de2010d5868568532f"
+        }
+      ],
+      "beforeHash": "7b20889772df61a16e487efe69ecb2b120adb314bfd1a4118940564c7bf7b1f5",
+      "sourceSenseId": "wiktionary:de38534e449e662d16d6c812"
+    },
+    {
+      "lemma": "transnationally",
+      "head": "transnationally",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The across/beyond-national-boundaries sense explains the adverb in business/travel contexts; no legal status claims.",
+      "explain": [
+        {
+          "head": "transnational",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The across/beyond-national-boundaries sense explains the adverb in business/travel contexts; no legal status claims.",
+          "sourceSenseId": "wiktionary:8995d608f14b95dc28327986"
+        }
+      ],
+      "beforeHash": "5093323e0d4da52297b932be5ae2b2545ad82c22b646525ad02f4dcee2c69281",
+      "sourceSenseId": "wiktionary:37c34af9d0daed3f2f03cab5"
+    },
+    {
+      "lemma": "triacylglycerol",
+      "head": "triacylglycerol",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The exact source synonym is expanded with its glycerol/three-fatty-acid structure and role in fats. No nutrition advice or health promise.",
+      "explain": [
+        {
+          "head": "triglyceride",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The exact source synonym is expanded with its glycerol/three-fatty-acid structure and role in fats. No nutrition advice or health promise.",
+          "sourceSenseId": "wiktionary:49d5f180b23ba8912b8d423d"
+        }
+      ],
+      "beforeHash": "8a93de2232a54712feb531d98bbd8a5686929ec02f0d35d947a68f8f923fa219",
+      "sourceSenseId": "wiktionary:c1726e948f323cae5a9bb0d9"
+    },
+    {
+      "lemma": "universalization",
+      "head": "universalization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The making-common-across-cases sense resolves the process noun; it is not automatically equivalent to economic globalization.",
+      "explain": [
+        {
+          "head": "universalize",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The making-common-across-cases sense resolves the process noun; it is not automatically equivalent to economic globalization.",
+          "sourceSenseId": "wiktionary:0a1e4d584fa55edbdd6700d4"
+        }
+      ],
+      "beforeHash": "06b8f544a4db7ed0703dd1011ffe1a16e42da64c31da0993129101a5d1c1115a",
+      "sourceSenseId": "wiktionary:cfd438d95989d90615a62097"
+    },
+    {
+      "lemma": "vitriolically",
+      "head": "vitriolically",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Harsh/corrosive tone explains the language adverb rather than the chemical-acid sense.",
+      "explain": [
+        {
+          "head": "vitriolic",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "Harsh/corrosive tone explains the language adverb rather than the chemical-acid sense.",
+          "sourceSenseId": "source-38a7504d41a7fe1eef77"
+        }
+      ],
+      "beforeHash": "6c755266654a4b4b402c60bb599bd2c3180eb82f73210df642412b2df4783e70",
+      "sourceSenseId": "wiktionary:68d6c6ca368eee845f86f977"
+    }
+  ]
+}

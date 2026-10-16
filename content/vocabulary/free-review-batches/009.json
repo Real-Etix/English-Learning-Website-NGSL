@@ -1,0 +1,392 @@
+{
+  "id": "009",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:13:10.000Z",
+  "decisions": [
+    {
+      "lemma": "defaulter",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "The financial-obligation sense fits debtor and payment study; it does not imply that bankruptcy has been declared.",
+      "beforeHash": "4653c6fe837172d9ee71cabafaf75b35be062ac4e8fdcf81ef54007cfd16b8e6",
+      "sourceSenseId": "source-14292df4fcdc3271e2b8"
+    },
+    {
+      "lemma": "defenselessness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The explicit helplessness-in-attack meaning supports general protection vocabulary without claiming a weather-specific synonym for exposure.",
+      "beforeHash": "9469be03e3455ccc529ff62915a121cf6ebc1ad6f740900c8f87753044d83646",
+      "sourceSenseId": "source-a115e5974e207d3b60da"
+    },
+    {
+      "lemma": "defilement",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The self-contained polluted-state definition fits pollution study; the circular Wiktionary entries and fortification homonym are not selected.",
+      "beforeHash": "6da910e28b02c8c6f7c8781a20a5d5547dc27903fe3bc39ff5bda41d6099de78",
+      "sourceSenseId": "source-14f4fd7f9750e85bca92"
+    },
+    {
+      "lemma": "deject",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The transitive sadness meaning is clear and appropriate beside depress; no unsupported claim about duration or intensity is approved.",
+      "beforeHash": "4a123de8fad9f4a5c53f22569eb3a96f05aab58eb1e9998432945efc00830c92",
+      "sourceSenseId": "wiktionary:84fe4120df45c2b194913ea9"
+    },
+    {
+      "lemma": "delineation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "ngsl"
+      ],
+      "reason": "The vivid verbal-description meaning supports portrayal and profile study without asserting that graphical precision is always required.",
+      "beforeHash": "639adca89b0183836a2c138942cac825f782b7c7efa0b3b26c2f5e8be7986f7a",
+      "sourceSenseId": "source-95e0e138d4d127b0db58"
+    },
+    {
+      "lemma": "deliverer",
+      "hold": true,
+      "reason": "Available rescue, religious and delivery senses are distinct; the sole business saver anchor confuses rescue with financial saving, leaving intended scope unresolved.",
+      "beforeHash": "29806439b660e911b4ee928bf14e43bf594eb6270811fade53749f0bd8809134"
+    },
+    {
+      "lemma": "deltoideus",
+      "hold": true,
+      "reason": "The noun merely repeats the headword as a muscle name and the adjective concerns shape; neither provides a sufficiently clear English fitness meaning here.",
+      "beforeHash": "2ae744e01ae72de9b6b37c742ccf89efb550c4f8c068af6baa9b828c85c280e0"
+    },
+    {
+      "lemma": "demodulator",
+      "hold": true,
+      "reason": "The verified signal-processing device is a specialist electronic sense, not supported by the business receiver anchor's intended learning topic.",
+      "beforeHash": "395b28f6d7fe2e66f872c3fbb0e34105a390e04cb776a65d07096cf2ae389f1d"
+    },
+    {
+      "lemma": "demurral",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "A formal objection is a complete meaning appropriate to argument and official business; hesitation and politeness are not entailed.",
+      "beforeHash": "4f710f720a9a66b34c1849d607c75199527c8450cc10493702ee4f59e0c3ab39",
+      "sourceSenseId": "wiktionary:9482516b518e46e446e35c1b"
+    },
+    {
+      "lemma": "denationalization",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The state-to-private ownership or control definition directly supports the privatization learning context.",
+      "beforeHash": "18d7e8ac63e87a0b1e89605283d631c5816c3bf134f9c31921b7f4e6431ea40f",
+      "sourceSenseId": "source-450f4556f3d66a8f4188"
+    },
+    {
+      "lemma": "denationalize",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Putting something under private control or ownership matches the business privatize anchor; the nationhood-removal homonym is excluded.",
+      "beforeHash": "3317d7b57ea74d906aacc337107e3b6d4c1f57c576841deac5ccf6a927090800",
+      "sourceSenseId": "source-147937faf21d7efa3305"
+    },
+    {
+      "lemma": "denims",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The plural-only clothing meaning is explicit and relevant to jeans; retain plural restrictions and reject the unsupported formal-register comparison.",
+      "beforeHash": "aa7addcc4b9820a26a91b4716745b707ae4fcb24065e987868215918fed697d5",
+      "sourceSenseId": "wiktionary:c0bef2ff266c308c3c0c8982"
+    },
+    {
+      "lemma": "denotative",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The primary-meaning sense is appropriate for academic language study; it is not a replacement for every use of semantic.",
+      "beforeHash": "8b25be2b27108ebdd10f142b2a41a328520d454cf6001f715f14ea3566983780",
+      "sourceSenseId": "wiktionary:5b86969c41cb3c517ae32b69"
+    },
+    {
+      "lemma": "denouement",
+      "hold": true,
+      "reason": "Narrative resolution is verified, but the only fitness omega anchor does not establish a relevant learning topic for this literary specialist.",
+      "beforeHash": "bde9a85e4af6cc03904805872f564af6c3b3407993b9aa2f40f4a9d3321bdbe1"
+    },
+    {
+      "lemma": "densification",
+      "hold": true,
+      "reason": "Increasing density is verified but the proposed fitness compression connection substitutes a materials-science process for an exercise context.",
+      "beforeHash": "0c09d4876055480f5a295856934988daf8b546b5d9834d377e1fb28326a9e576"
+    },
+    {
+      "lemma": "dentalsurgeon",
+      "hold": true,
+      "reason": "No exact evidence supports this joined spelling; an independently sourced dental surgeon identity mapping is required before release.",
+      "beforeHash": "1176a8fbb3207edf46d43b0d8e8c1347e35d248018cffe2068fe945a7a58df9e"
+    },
+    {
+      "lemma": "dentition",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The explicit number and arrangement of teeth meaning is useful in academic anatomy, not an interchangeable term for an individual tooth.",
+      "beforeHash": "b811e186bf48dc02bfd1e65db6c4b2252a381cce10cdb3821a5fe26e263a6b9a",
+      "sourceSenseId": "wiktionary:25476ed32e557617f20ea3cb"
+    },
+    {
+      "lemma": "departing",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The adjective meaning leaving fits outgoing personnel; no unsupported implication of ceremony or finality is retained.",
+      "beforeHash": "25f1a0eb4182ece13006c1a20a26c8b350f3dac2143b82b9e81bdb886079d348",
+      "sourceSenseId": "wiktionary:fc5c215172473f7fa0301c57"
+    },
+    {
+      "lemma": "depositary",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "A trusted recipient of goods or deposits is a clear business meaning; the broad corporate-stakeholder equivalence is not approved.",
+      "beforeHash": "f7396ff65e8dbc749e0c2691a944c3b690b473a87598149e232800e279aaf40a",
+      "sourceSenseId": "wiktionary:3ba9a9d7a9e69f2ed8821c5a"
+    },
+    {
+      "lemma": "deprave",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The moral-corruption verb supports business ethics discussion, not technical data corruption or an arbitrary substitute for every use of corrupt.",
+      "beforeHash": "686d97a3332979d9b680149f53abc9d5bb3cc7b1318b2fb6b829837f2b8c6188",
+      "sourceSenseId": "source-64e9a3459949cb5980ff"
+    },
+    {
+      "lemma": "depute",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Appointing someone as deputy is explicit and appropriate to workplace delegation; the Scottish noun is a separate unselected sense.",
+      "beforeHash": "01c439711af708eeacf2c7d3cd7520da29e759145e09c8863d5c7ce1616d3c1f",
+      "sourceSenseId": "wiktionary:c6470a042f56b4a56d2c61e6"
+    },
+    {
+      "lemma": "derrick",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The crane with lifting tackle on a boom is relevant to workplace equipment and avoids treating every tall crane as a derrick.",
+      "beforeHash": "fe2cf824da66b280420fea557ebfae5ba5bdcf8533ac09b6a20b19869822c2bb",
+      "sourceSenseId": "source-44ba1ee1048d7cb6756d"
+    },
+    {
+      "lemma": "derriere",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Exact unaccented-headword evidence identifies the seated body part, relevant to posterior anatomy; no unsupported register guidance is published.",
+      "beforeHash": "24696f8a93004f5ef0c151a0af7a28d2be4402f25088ba012d92cce18413af4d",
+      "sourceSenseId": "oewn:05566889-n:derriere%1:08:00::"
+    },
+    {
+      "lemma": "derrire",
+      "hold": true,
+      "reason": "The malformed spelling has no exact source evidence and resembles another existing record; guessing an accent correction risks duplicate identity.",
+      "beforeHash": "982205c7a5a0f20ef028e0e18ab0e636ff48489811bdd79a5b8e3093651bca14"
+    },
+    {
+      "lemma": "desegregation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Eliminating segregation is an explicit social-science meaning; it does not equate to every broader use of integration.",
+      "beforeHash": "62c5d9a10eb78c658f74a722058c9349f871cfc9c34dd9c5ba614beb498c5529",
+      "sourceSenseId": "wiktionary:49675fd9b78d697499279dcf"
+    },
+    {
+      "lemma": "desiccant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The drying-agent definition is appropriate for academic chemistry; the old herbicide comparison is not generally true and remains unpublished.",
+      "beforeHash": "fe84b63c5fe8ed05b990199f81806ae42d8c71a31639d6410213ef9e73b5b60b",
+      "sourceSenseId": "wiktionary:775a87399de2938669cc8ddb"
+    },
+    {
+      "lemma": "desiccate",
+      "hold": true,
+      "reason": "Drying meanings are verified, but the sole business shrink anchor does not establish the scientific or preservation context this proposed connection needs.",
+      "beforeHash": "ba1bf7377f132a8ef27c915900c60f899b4a91ab03db896719956675ce22fb5f"
+    },
+    {
+      "lemma": "desiccation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The dryness-from-water-removal meaning can support environmental drought reading; exclude the fitness dehydration substitution and any medical inference.",
+      "beforeHash": "870d45473320489482b20d82d5d08e9fc8aa5dfa31bc0fdaac2a92ac08057cd8",
+      "sourceSenseId": "source-51949cee66db9c6b35b2"
+    },
+    {
+      "lemma": "despondency",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Loss of hope or confidence is clearly defined; the old comparison with depression's severity or duration is not clinically supported or retained.",
+      "beforeHash": "e3a2340fc28839bc4c69ab78de739d9fd2e8394271a88d6f500f2d950c67f9d1",
+      "sourceSenseId": "wiktionary:40c3155dd797b51228be680b"
+    },
+    {
+      "lemma": "detoxificationunit",
+      "hold": true,
+      "reason": "The joined phrase has no exact factual entry or reviewed identity mapping; do not infer a clinical facility definition from the old model gloss.",
+      "beforeHash": "ec549130f6adfa4861fc2601f4a6a0365474adffe741c7f564431ce1a8921e60"
+    },
+    {
+      "lemma": "digestant",
+      "hold": true,
+      "reason": "The evidence concerns a digestion-aiding drug; the fitness digestive anchor alone does not justify adding this pharmacological specialist.",
+      "beforeHash": "c9379c9c0945fbbe8714ac6f6696ac6258410d4e1a477e769bf1202f2685eec4"
+    },
+    {
+      "lemma": "dimensions",
+      "hold": true,
+      "reason": "The intended measurement meaning is plausible but no exact extracted source sense is available for this plural record; a sourced morphology mapping is still needed.",
+      "beforeHash": "af757ab8cab396d59a94c213ed260de2ad2e67ee8da4a42677358ef999803c6c"
+    },
+    {
+      "lemma": "dinnerfork",
+      "hold": true,
+      "reason": "The joined spelling lacks exact dictionary evidence; preserve the record until a verified spaced-phrase identity can be attached.",
+      "beforeHash": "181e7557dba1010895ff9042571bf375af5721cffed711ed806372e57622e89d"
+    },
+    {
+      "lemma": "dioxygen",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The two-atoms-per-molecule oxygen allotrope is an explicit academic chemistry meaning; it is not interchangeable with dioxide or fitness oxygen advice.",
+      "beforeHash": "8b3e0c4e6a98a636edf1e433eaf73fec15fdcf4af92eec7d2563962666042c1e",
+      "sourceSenseId": "wiktionary:cb7244a51fdfdbfffaa8dea0"
+    },
+    {
+      "lemma": "dipolar",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The explicit separated opposite-charge or magnetic-pole meaning supports academic polar terminology without relying on a circular dipole definition.",
+      "beforeHash": "a987dbed6b4224f1952efca8dbf7230415aee7598678a9c107c6c19c4acac0d4",
+      "sourceSenseId": "source-cfe09d45300a77bd047b"
+    },
+    {
+      "lemma": "directorial",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The administration or directorate sense supports organizational vocabulary; the separate creative-director sense and general superiority claims are not inferred.",
+      "beforeHash": "1af53877ff391e118a9893eb6cb1c33f01135550643df2385cb005751af95adc",
+      "sourceSenseId": "wiktionary:ee16ed57c4a8da3dca37e868"
+    },
+    {
+      "lemma": "disaffect",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Loss of loyalty or sympathy is explicit and relevant to workplace relations; it is narrower than merely failing to satisfy.",
+      "beforeHash": "2599411259ac46492c4c12acb6043fe93452b5d9c6387e945d43a6d9a484e1f1",
+      "sourceSenseId": "wiktionary:4e295c51c662c794ec8ed2d6"
+    },
+    {
+      "lemma": "disallowance",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The refusal or withdrawal of allowance meaning fits administrative decisions without assuming a particular constitutional veto power.",
+      "beforeHash": "f13a9073b6dc9c6fe880bed5851376f218306a76d958dbbca21e14edc7b8276c",
+      "sourceSenseId": "wiktionary:e5ddecd65fefee35e779fb3a"
+    },
+    {
+      "lemma": "disbursement",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "ngsl"
+      ],
+      "reason": "Money paid out or spent is a self-contained financial meaning; no tax-deductibility or mandatory specific-fund restriction is added.",
+      "beforeHash": "80a8d6d685f257cb10f8c75d925ab757a297669bbdc5169f674749e1c5d759e1",
+      "sourceSenseId": "wiktionary:bb4dd26f45f644e704f264b0"
+    },
+    {
+      "lemma": "discretely",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The separate independent-unit sense fits apart and distinguishes this spelling from discreetly without adding unsourced examples.",
+      "beforeHash": "ad67e14364f293ea574f5bdf1247597a8826bf5f4cd909ce8a2923754413d523",
+      "sourceSenseId": "wiktionary:2f23ced7d30f1cc7c6225e9d"
+    }
+  ]
+}

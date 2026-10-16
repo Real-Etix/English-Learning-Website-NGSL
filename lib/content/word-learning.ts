@@ -3,6 +3,7 @@ import type { CollocationPhrase, CommonMistake, ContentSourceRef, UsagePattern, 
 import { publicConnections } from "../vocabulary/public-connections";
 import { evidenceForSources, isFactualSourceId, sourceEntryFor } from "../vocabulary/source-evidence";
 import { claimReadiness } from "../vocabulary/claim-readiness";
+import { hasCurrentMeaningReview, needsExampleForPractice } from "../vocabulary/meaning-review";
 
 export type LearningEvidence = "verified" | "source-backed" | "ai-draft";
 
@@ -10,6 +11,7 @@ export type LearningSense = {
   id: string;
   partOfSpeech: string;
   definition: string;
+  labels?: string[];
   example: string | null;
   source: "wiki" | "dictionaryapi";
   primary: boolean;
@@ -18,6 +20,8 @@ export type LearningSense = {
   published?: boolean;
   canClaim?: boolean;
   claimBlockReason?: string | null;
+  limitedExamples?: boolean;
+  canPractice?: boolean;
 };
 
 export type LearningExample = {
@@ -107,6 +111,7 @@ function addSense(
     id: sense.id,
     partOfSpeech: sense.partOfSpeech,
     definition: sense.definition,
+    labels: sense.labels ?? [],
     example: sense.example,
     source: sense.source,
     sources: sense.sources,
@@ -115,6 +120,8 @@ function addSense(
     published: sense.published,
     canClaim: sense.canClaim,
     claimBlockReason: sense.claimBlockReason,
+    limitedExamples: sense.limitedExamples,
+    canPractice: sense.canPractice,
   });
 }
 
@@ -196,7 +203,9 @@ export function buildWordLearningProfile(
   const verifiedWikiDefinition = !advancedWithoutFactualSource && wikiEvidence === "verified" && usableWikiDefinition;
   const sourceBackedWikiDefinition = factualWikiSource && usableWikiDefinition;
 
-  const dictionarySenses = (detail?.senses ?? []).filter(
+  // A limited release approves an exact sense, not live alternate meanings or
+  // examples whose correspondence to that sense has never been reviewed.
+  const dictionarySenses = (primarySense?.meaningReview ? [] : detail?.senses ?? []).filter(
     (sense) => Boolean(normalizeText(sense.definition)) && !isPlaceholder(sense.definition),
   );
   const hasDictionaryDefinition = dictionarySenses.some((sense) => Boolean(normalizeText(sense.definition)));
@@ -224,12 +233,15 @@ export function buildWordLearningProfile(
         sourceIndex: index,
         partOfSpeech: sense.partOfSpeech,
         definition: sense.definition,
+        labels: sense.labels,
         example: sense.examples[0]?.text ?? null,
         sources: factualSources(sense.sources),
         exampleSources: factualSources(sense.examples[0]?.sources ?? []),
         published: sense.status === "published",
         canClaim: readiness.canClaim,
         claimBlockReason: readiness.reason,
+        limitedExamples: needsExampleForPractice(record, sense),
+        canPractice: readiness.canClaim && !needsExampleForPractice(record, sense),
       });
     });
   dictionarySenses.forEach((sense, index) => {
@@ -258,7 +270,9 @@ export function buildWordLearningProfile(
   const hasSourcedExample = examples.some(
     (example) => example.source === "dictionaryapi" || canUseWikiExamplesForClaim,
   );
-  const canClaim = evidence !== "ai-draft" && hasSourcedExample;
+  const canClaim = primarySense?.meaningReview
+    ? claimReadiness(record, primarySense.id).canClaim
+    : evidence !== "ai-draft" && hasSourcedExample;
   const claimBlockReason = canClaim
     ? null
     : evidence === "ai-draft"
@@ -296,7 +310,8 @@ export function buildWordLearningProfile(
       const learning = learningCommonMistake(mistake);
       return learning ? [learning] : [];
     }) ?? [],
-    usageNote: record.usageNote,
+    // Legacy word-wide notes were not part of these sense-specific reviews.
+    usageNote: primarySense && hasCurrentMeaningReview(record, primarySense) ? null : record.usageNote,
     connections: publicConnections(record, connectionTargets).map((connection) => ({
       ...connection,
       explained: Boolean(connection.gloss?.trim()),

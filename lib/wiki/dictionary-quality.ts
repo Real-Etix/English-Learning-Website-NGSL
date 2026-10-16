@@ -2,6 +2,10 @@ import { claimReadiness } from "../vocabulary/claim-readiness";
 import { factualEvidenceFor } from "../vocabulary/publication";
 import type { VocabularyRecord, VocabularySense } from "../vocabulary/schema";
 import { evidenceForSources, sourceRefsForSense } from "../vocabulary/source-evidence";
+import sourceRegistry from "../../content/vocabulary/sources.json";
+import { hasCurrentMeaningReview, hasFactualExample } from "../vocabulary/meaning-review";
+
+const registeredSourceIds = new Set(sourceRegistry.sources.map(source => source.id));
 
 export type DictionaryEvidenceCounts = {
   verified: number;
@@ -24,7 +28,7 @@ type DictionarySenseCounts = { total: number; unsupported: number; withoutExampl
 type DictionaryUsageCounts = { withoutPatterns: number; withoutMistakes: number };
 type DictionaryConnectionCounts = { published: number; unreviewed: number; hidden: number; unexplained: number };
 type DictionaryAdvancedCounts = { quarantined: number; reviewable: number; published: number };
-type DictionarySourceCounts = { curated: number; wordnet: number; dictionaryapi: number; tatoeba: number; llm: number };
+type DictionarySourceCounts = Record<string, number>;
 
 export type DictionaryEdgeCounts = {
   total: number;
@@ -60,6 +64,7 @@ export type DictionaryQualityCounts = {
   connections: DictionaryConnectionCounts;
   advanced: DictionaryAdvancedCounts;
   claimableSenses: number;
+  limitedExampleSenses: number;
   sources: DictionarySourceCounts;
   strict: DictionaryStrictViolationCounts;
 };
@@ -112,7 +117,8 @@ function emptyCounts(): DictionaryQualityCounts {
     connections: { published: 0, unreviewed: 0, hidden: 0, unexplained: 0 },
     advanced: { quarantined: 0, reviewable: 0, published: 0 },
     claimableSenses: 0,
-    sources: { curated: 0, wordnet: 0, dictionaryapi: 0, tatoeba: 0, llm: 0 },
+    limitedExampleSenses: 0,
+    sources: Object.fromEntries([...registeredSourceIds].sort().map(id => [id, 0])),
     strict: {
       publishedPlaceholders: 0,
       publishedUnsupportedSenses: 0,
@@ -145,9 +151,7 @@ function hasExampleText(sense: VocabularySense): boolean {
 
 function recordSourceIds(record: VocabularyRecord): Set<keyof DictionarySourceCounts> {
   const sourceIds = new Set(record.sources.map((source) => source.sourceId));
-  return new Set([...sourceIds].filter((sourceId): sourceId is keyof DictionarySourceCounts =>
-    sourceId === "curated" || sourceId === "wordnet" || sourceId === "dictionaryapi" || sourceId === "tatoeba" || sourceId === "llm",
-  ));
+  return new Set([...sourceIds].filter(sourceId => registeredSourceIds.has(sourceId)));
 }
 
 function strictViolationIdentity(category: DictionaryStrictViolationCategory, parts: readonly unknown[]): string {
@@ -211,13 +215,14 @@ function addRecord(
     if (sense.usagePatterns.length === 0) counts.usage.withoutPatterns += 1;
     if (sense.commonMistakes.length === 0) counts.usage.withoutMistakes += 1;
     if (claim.canClaim) counts.claimableSenses += 1;
+    if (claim.canClaim && hasCurrentMeaningReview(record, sense) && !hasFactualExample(sense)) counts.limitedExampleSenses += 1;
 
     if (record.publicationStatus === "published" && sense.status === "published") {
       if (!sense.definition.trim() || isPlaceholder(sense.definition)) {
         counts.strict.publishedPlaceholders += 1;
         addStrictViolation(strictViolations, "publishedPlaceholders", [record.lemma, sense.id]);
       }
-      if (unsupported) {
+      if (unsupported || (sense.meaningReview && !hasCurrentMeaningReview(record, sense))) {
         counts.strict.publishedUnsupportedSenses += 1;
         addStrictViolation(strictViolations, "publishedUnsupportedSenses", [record.lemma, sense.id]);
       }

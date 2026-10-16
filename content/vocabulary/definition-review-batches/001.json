@@ -1,0 +1,121 @@
+{
+  "id": "001",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T08:01:34.000Z",
+  "decisions": [
+    {
+      "lemma": "quantifiable",
+      "head": "quantifiable",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The adjective's capability sense explicitly refers to quantification; WordNet explains numerical measurement. Suitable for quantitative study and business measures, without approving the old comparison.",
+      "explain": [
+        {
+          "head": "quantify",
+          "source": "wordnet",
+          "sense": 1,
+          "reason": "Explains quantified with the numerical measurement sense, not the logical-quantifier sense.",
+          "sourceSenseId": "source-94d4b8f4b10d953605c4"
+        }
+      ],
+      "beforeHash": "8d65e63a683925da68a6c58d156cbe9347408340e9faf177c4e7a6291b27a1eb",
+      "sourceSenseId": "wiktionary:4a5d2d6e0b695568c86a79f1"
+    },
+    {
+      "lemma": "innovatively",
+      "head": "innovatively",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The manner adverb is grounded in the source's creation-of-new-ideas meaning of innovative. Appropriate general vocabulary; no claim of interchangeability with temporal originally.",
+      "explain": [
+        {
+          "head": "innovative",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Select the creative new-ideas adjective explicitly referenced by the adverb, not the separate forward-looking sense.",
+          "sourceSenseId": "wiktionary:5212ea7645b769697bbc0cd4"
+        }
+      ],
+      "beforeHash": "a341830e6ed23a4674ba62c0dabdcdc3c932ad5e56cf2c268985292fc87594bd",
+      "sourceSenseId": "wiktionary:17f2a70e238141f82fa820ea"
+    },
+    {
+      "lemma": "explicitness",
+      "head": "explicitness",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The state noun is explained by the clear/specific adjective sense, appropriate for business communication. Excludes the distinct graphic/offensive-content sense.",
+      "explain": [
+        {
+          "head": "explicit",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Clear/specific/detailed meaning resolves the clarity context; excludes offensive-content and textual-ending homonyms.",
+          "sourceSenseId": "wiktionary:c7f39835088434f7b3ebe951"
+        }
+      ],
+      "beforeHash": "ec7543b5b6d6ad08b82ef6ef7c4bd9a464173a8a2f0cf7aade0e7570e4723a13",
+      "sourceSenseId": "wiktionary:ae5a6ff102f5b39b17ce1743"
+    },
+    {
+      "lemma": "macro-economist",
+      "head": "macroeconomist",
+      "headword": "macroeconomist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Reviewed hyphen-only spelling correction with unchanged letters and stable ID. Exact source defines an expert in large-scale economics, fitting the economist learning context.",
+      "beforeHash": "169e65041adf0a30a011df068e03125ddb10c90a507e9b0e872c91ae1a5e00c0",
+      "sourceSenseId": "wiktionary:4845938de6a8888308f1babd"
+    },
+    {
+      "lemma": "house-made",
+      "head": "housemade",
+      "headword": "housemade",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Reviewed hyphen-only correction to the exact source headword. Produced by the selling establishment fits hospitality vocabulary; not a claim that commercial housemade is identical to homemade.",
+      "beforeHash": "8c59df607b6b2b08a1b69fcc24efd2757dbdb9ff36feb912184be42bff9ed6ae",
+      "sourceSenseId": "wiktionary:553180dab1668dc21b2d33f4"
+    },
+    {
+      "lemma": "pressup",
+      "head": "press-up",
+      "headword": "press-up",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Reviewed hyphen insertion preserves every letter and stable ID. Source explicitly identifies the exercise synonym; regional UK/Ireland/Commonwealth labels are retained.",
+      "explain": [
+        {
+          "head": "push-up",
+          "source": "wiki",
+          "sense": 2,
+          "reason": "Source press-up explicitly points to the exercise sense, not the bra or clothing adjective homonyms.",
+          "sourceSenseId": "wiktionary:7110478a0ff267d8f98bcd8c"
+        }
+      ],
+      "beforeHash": "eaa06fe6a10ca6ce9ed1360716ccd76e055ff99de1a125dd0dac933bec03c113",
+      "sourceSenseId": "wiktionary:5ac0b3d6d2aea496f6848239"
+    }
+  ]
+}

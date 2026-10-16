@@ -1,0 +1,382 @@
+{
+  "id": "026",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:50:26.000Z",
+  "decisions": [
+    {
+      "lemma": "rosette",
+      "hold": true,
+      "reason": "The ribbon ornament is sourced, but the sole Fitness bow anchor does not establish an appropriate connection to badges rather than exercise or pose vocabulary.",
+      "beforeHash": "67d1ae5bdc920d753d2be6faa2d7a321217c9fe2cd534478c6acdb68f8db1ef2"
+    },
+    {
+      "lemma": "rostral",
+      "hold": true,
+      "reason": "The adjective candidates only refer to rostrum and do not explain the intended anatomical direction; the reptile-scale noun is a different sense.",
+      "beforeHash": "97ab02dc3f23413b7135a1224c119fa8bbe8f3883b48c3eb0aa1d69d0d945ed3"
+    },
+    {
+      "lemma": "rotorcraft",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Aircraft obtaining lift from rotors is an explicit broader category for helicopters, useful in transport business vocabulary.",
+      "beforeHash": "a74f9f72f81e5b36e31bc2985d85290a83cb411caeca64c4738690c48c6812da",
+      "sourceSenseId": "wiktionary:18f7525c107d11c235d5b3f5"
+    },
+    {
+      "lemma": "roundball",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The basketball meaning is directly sourced; retain US slang and uncountable labels instead of presenting it as a neutral international term.",
+      "beforeHash": "1b6a1725f6782326322754d5a41c76a91dff0bcd6b7e8b9f2ac4f708b670986b",
+      "sourceSenseId": "wiktionary:ad893df75ea59ebc8f7c282a"
+    },
+    {
+      "lemma": "rubdown",
+      "hold": true,
+      "reason": "The recovered massage and dry-transfer senses do not verify the proposed cleaning or wiping meaning.",
+      "beforeHash": "1bf302479dc6fedbbfad4e52818f1673a2893e6cce9128e24bde6235b878108b"
+    },
+    {
+      "lemma": "run-through",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "An uninterrupted rehearsal is clearly defined and fits the performance anchor without imposing the other candidate's costume exclusion.",
+      "beforeHash": "827740d95199e353a2c7c80a3adb159327f50157702d003057b6e364076d734f",
+      "sourceSenseId": "source-0dc73d380a497fb84ac2"
+    },
+    {
+      "lemma": "rusher",
+      "hold": true,
+      "reason": "The draft defensive-tackle meaning conflicts with the ball-carrier candidate and an imprecise fast-defensive-position definition; keep that sports sense unresolved.",
+      "beforeHash": "fe2a75d219e13acf83ce1afafa590a9b6db3de787625c2fa75a7dfd256b6e922"
+    },
+    {
+      "lemma": "sabra",
+      "hold": true,
+      "reason": "The exact sources define a native-born Israeli, not the proposed prickly-pear fruit, and the TOEIC tuna anchor adds a further homonym mismatch.",
+      "beforeHash": "1a63eedf47f4fccc77483ba8e2523e2e1ecf15460b8091a1c528518dabd20a67"
+    },
+    {
+      "lemma": "saccharide",
+      "hold": true,
+      "reason": "Nutrition scope was approved previously, but the source overgeneralizes the monosaccharide formula and carbon count to polymers; the WordNet description is too vague to repair that factual problem.",
+      "beforeHash": "214d1e760f45605ce95a9f2778902084553671db6f02d3b33b7c91b11406595b"
+    },
+    {
+      "lemma": "safeguarding",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Policies protecting children and vulnerable adults are explicitly defined; preserve UK/Ireland formal restrictions and do not generalize to all conservation.",
+      "beforeHash": "11030b3ca958917b8f6b195404e8a31cf563a9f5fd3bb86fd39c4b554c95a0ea",
+      "sourceSenseId": "wiktionary:e151d55dfa85fbcf0f7fb2c9"
+    },
+    {
+      "lemma": "saladfork",
+      "hold": true,
+      "reason": "No attributable exact entry verifies the concatenated spelling; a spaced phrase correction still needs a reviewed source mapping.",
+      "beforeHash": "6d1f108bda7d24b8eead205c07c47365b6a4418d48c6e6cd6f2cdfb6f242ab7f"
+    },
+    {
+      "lemma": "salience",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Perceptual prominence and likelihood of being noticed clearly explain the emphasis-related meaning without a circular salient pointer.",
+      "beforeHash": "84697ce6a21cc052bc2f313a24f8540efd7b517759f53ceda74cc6f7e612d9ca",
+      "sourceSenseId": "wiktionary:76c8a04d503fb4f67b5de3b6"
+    },
+    {
+      "lemma": "salver",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The serving or display tray is directly sourced, avoiding unrelated healer senses and unsupported material or elegance requirements.",
+      "beforeHash": "cc414e89922f74a1e7f36b762d93966b9a46eef5f1b6cc99bd3ca08365930246",
+      "sourceSenseId": "wiktionary:e9ad75538e1901a91d82145f"
+    },
+    {
+      "lemma": "sanguinity",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The selected source explicitly supplies optimism, while the separate temperament and pleasure-seeking senses remain unpublished.",
+      "beforeHash": "caf2c6a0620c148b732ca6244a111d8679cf49f0fb29528d2429fefaf6c4bff3",
+      "sourceSenseId": "wiktionary:04f7ce30463bbf63e2d31503"
+    },
+    {
+      "lemma": "sanitizer",
+      "hold": true,
+      "reason": "The product candidate is a circular agent/form-of entry and does not verify germ-reduction claims; the compiler tool is unrelated to cleaner.",
+      "beforeHash": "d5cff297d422d3fa5674ed84e943f7fe08f1aef0b34a57a11860977b10b0bc59"
+    },
+    {
+      "lemma": "saucier",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The sauce and saute cook in a professional kitchen is directly explained and matches the chef anchor, not the cookware homonyms.",
+      "beforeHash": "f97479d240e4cec5d95187d38fc07af045dba38c213c5a64c7043d43fc9281a5",
+      "sourceSenseId": "wiktionary:8405e13695d4ffcfd2813e6d"
+    },
+    {
+      "lemma": "saunterer",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A leisurely walker is independently defined; do not assert that the person is shopping or that every browser is walking.",
+      "beforeHash": "1040a942fadd0a5ec03452a4ba1b67a7ad92781e59053c3398ca67fdd8f8d264",
+      "sourceSenseId": "source-8286e8b7570012ccbd49"
+    },
+    {
+      "lemma": "saurian",
+      "hold": true,
+      "reason": "Preserve the existing archive: reptile taxonomy does not teach the only Fitness lizard exercise or pose anchor.",
+      "beforeHash": "d53e8b204d08cd526f32a0c0575b3771fb83f44754b7b8181b7c80584d9d2dae"
+    },
+    {
+      "lemma": "scant",
+      "source": "oewn",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "The exact adjective describes an amount below the full or correct quantity; retain the qualified often-deliberate wording without claiming all scarcity is intentional.",
+      "beforeHash": "07c98e1e1c598fb50f75b4a5fd5e97bfa385131fd671348dc1d93b795823aeb4",
+      "sourceSenseId": "oewn:02345399-s:scant%5:00:00:insufficient:00"
+    },
+    {
+      "lemma": "scenography",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The design of theatrical sets directly supports scenery vocabulary without adding unsupported scope claims about every production department.",
+      "beforeHash": "b28f99e2d0952af78dd5269b1d563f276c8639a75f6694b862141011745dc5d0",
+      "sourceSenseId": "wiktionary:2d8741a1c311321f2e57825a"
+    },
+    {
+      "lemma": "schooling",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "School attendance and institutional education clearly establish the intended human education sense rather than horse training.",
+      "beforeHash": "235abfff6258825fda733e7f940598c6b4b2734e711910162827a0a95f9103ed",
+      "sourceSenseId": "wiktionary:9882a11974383581bb59f187"
+    },
+    {
+      "lemma": "scrutinizer",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A careful examiner is directly sourced, providing a useful distinction from a passive viewer without invented scientific restrictions.",
+      "beforeHash": "1106af37ea3baece08904427831af7353653acd1ced4691a14360058749cb87b",
+      "sourceSenseId": "source-74611f8912b087a24a15"
+    },
+    {
+      "lemma": "secessionist",
+      "hold": true,
+      "reason": "The candidates depend on secede, secession or secessionism and do not independently explain withdrawal from a union for learners.",
+      "beforeHash": "f48deaee4062bf9c29d7591464852519ffa620681f93a25acea74ae652f0c20f"
+    },
+    {
+      "lemma": "segmental",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Being constructed from or relating to segments is explicit; this does not promote the misleading implication that segmental simply means incomplete.",
+      "beforeHash": "bf94803dc216692210ec93780dc76305a395645a4a2c960cfc28e7ff9e19f735",
+      "sourceSenseId": "wiktionary:05b8ae424a517190963350ee"
+    },
+    {
+      "lemma": "seism",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Shaking of the Earth's surface, an earthquake or tremor, directly verifies the intended event vocabulary.",
+      "beforeHash": "0188997d69b28ec63f7461131ec3075074da9b7425c113c708fcd58faf8907ba",
+      "sourceSenseId": "wiktionary:775a90209e7966d7e4b63cbe"
+    },
+    {
+      "lemma": "self-annihilation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The source supplies the literal suicide meaning without procedural detail, romanticization or the unsupported dramatic register recommendation.",
+      "beforeHash": "afa405e110b963a2bb7939f7a3e9b59ae87c0adee13b6a9d7d005c83258fcecb",
+      "sourceSenseId": "source-f52452a3011a297aa190"
+    },
+    {
+      "lemma": "self-governance",
+      "hold": true,
+      "reason": "The sole synonym pointer to self-government does not explain the intended internal control or sovereignty distinction.",
+      "beforeHash": "9f3d5b10f133a72667f4f44b61ca04de450bc3c9a5a691ac1449a1866276cbaf"
+    },
+    {
+      "lemma": "self-reliantly",
+      "hold": true,
+      "reason": "No exact attributable sense was recovered for the adverb, so the proposed self-sufficiency meaning remains unverified.",
+      "beforeHash": "050553f0c7d1fc0f86735dbf570444353e68338c7b559683a4c33baedfb2f2eb"
+    },
+    {
+      "lemma": "selfhood",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Having a distinct individual identity is fully explained and matches identity; personality and selfishness alternatives stay separate.",
+      "beforeHash": "03e28c53e0542ea24128cbb84fc7ff346d7d88731f9554f047d44c5bb81a6332",
+      "sourceSenseId": "wiktionary:c13a397738a9084b774522b7"
+    },
+    {
+      "lemma": "semi-diameter",
+      "hold": true,
+      "reason": "No exact source supports this hyphenated identity or its proposed astronomy-specific radius meaning.",
+      "beforeHash": "80d01a7eba4b30fe8c161d31811b67075d3a065ea23036998a083b2f336a6947"
+    },
+    {
+      "lemma": "semi-final",
+      "hold": true,
+      "reason": "No exact source entry was recovered, and a style-guide claim in an old model gloss is not evidence for identity or meaning.",
+      "beforeHash": "f5a2206650cdea91f076ee5c3314e5b5d1f12e574e6f19cefb3afa6b0944743d"
+    },
+    {
+      "lemma": "seniors",
+      "hold": true,
+      "reason": "No exact plural meaning was recovered; older adults, school cohorts and rank-related senses need disambiguated source mapping.",
+      "beforeHash": "36dce08676fbee7cbd63a7e53d98ee7d44862f98b80f1015410204d0f2086e47"
+    },
+    {
+      "lemma": "sensorial",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Relating to sensation or the senses is clearly explained and directly supports the academic sensory anchor.",
+      "beforeHash": "df7225bd3255cb393a214191170e3bd0ac6b18bdfa68921bab7a27a8593150c5",
+      "sourceSenseId": "wiktionary:ef65101677562af67ed98971"
+    },
+    {
+      "lemma": "septicemia",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The bloodstream invasion definition supports infection vocabulary without asserting equivalence to every infection or offering diagnostic or treatment advice.",
+      "beforeHash": "a5738089baee2bbdd8f3627abd7ff5bfac59498df6af67e2b8c9f628de005077",
+      "sourceSenseId": "source-780e954fe654042066ce"
+    },
+    {
+      "lemma": "shareowner",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Holding shares in a corporation is explicitly explained and directly fits stockholder, without unsupported register claims.",
+      "beforeHash": "e41f9bf8d829f8e3adec867a0a8d34a92276eb8a161d2b1b273b1806976c9330",
+      "sourceSenseId": "source-d3558c01e5ffb330fe46"
+    },
+    {
+      "lemma": "sheave",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The grooved pulley wheel is directly described and relevant to exercise equipment; it is not confused with the entire pulley or the verb for binding sheaves.",
+      "beforeHash": "8ba86fd966a102ab49ffa5f8157bda5f0df34f3c4cdac00af50e82b14856edd4",
+      "sourceSenseId": "wiktionary:8f6b5365e173a525970a8cf2"
+    },
+    {
+      "lemma": "shoring",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Temporary bracing against collapse is a concrete construction meaning for prop, not a Fitness exercise prop.",
+      "beforeHash": "793efa25a3d516d9f9911a65dc0d30c06b47e915d1c7b2210219369148553a97",
+      "sourceSenseId": "wiktionary:f0dd4846702c7a3d49c94c5d"
+    },
+    {
+      "lemma": "simian",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The ape-or-monkey noun is directly sourced and appropriate academic zoology; no figurative description of people is promoted.",
+      "beforeHash": "2abd45d611c2a172bab887b58c7b45b51c0c542838259b3252be8283e64ca151",
+      "sourceSenseId": "wiktionary:e79f398f0faaa562a2bfe06b"
+    },
+    {
+      "lemma": "simultaneity",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Happening or existing at the same time clearly establishes temporal coincidence without the unrelated music-history claims.",
+      "beforeHash": "cc4d63ad7666213489d430007d725a71c46eabcbef28e8deea7afc2bd55e3085",
+      "sourceSenseId": "source-6e4b14d24e6e1d56a84a"
+    },
+    {
+      "lemma": "six-string",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact lexical entry directly identifies a guitar; no additional unsupported stylistic or technical specification is added.",
+      "beforeHash": "f658064e16a2ba4271d533865e8c38a2911c4d88bff45765b347be32556ec7a0",
+      "sourceSenseId": "wiktionary:0f2ad92cea35ba2dfc92f3c1"
+    }
+  ]
+}

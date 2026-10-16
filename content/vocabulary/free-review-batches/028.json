@@ -1,0 +1,407 @@
+{
+  "id": "028",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:53:12.000Z",
+  "decisions": [
+    {
+      "lemma": "stereomicroscope",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The two-eyepiece microscope used for stereoscopic observation is directly described and fits the equipment anchor, without equating every binocular microscope with it.",
+      "beforeHash": "de3b1a7cd09afb5218a88a41585c4a0c1b423bba684da1bf2a2c111f6ec1651c",
+      "sourceSenseId": "wiktionary:3e1bbc1e598290f9ae92580c"
+    },
+    {
+      "lemma": "stereophony",
+      "hold": true,
+      "reason": "The process definition is circular, while WordNet describes equipment and prescribes microphones; neither cleanly verifies the intended sound-reproduction principle.",
+      "beforeHash": "7b20889772df61a16e487efe69ecb2b120adb314bfd1a4118940564c7bf7b1f5"
+    },
+    {
+      "lemma": "sternutation",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Involuntary expulsion of air from the nose directly verifies the sneeze noun in an academic context, without a diagnosis or treatment claim.",
+      "beforeHash": "e24e14e88eebefababac27a5ad65f397faae6f10e632ce5a7a30a32e4b8f1859",
+      "sourceSenseId": "oewn:14338277-n:sternutation%1:26:00::"
+    },
+    {
+      "lemma": "stickpin",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A decorative necktie pin is a concrete attire meaning related to pin; it is not generalized to Fitness fastening or posture.",
+      "beforeHash": "0e34aa453d8087e53a4b072dd900cef00deaad5d3f91626715fb85907b8bd2ad",
+      "sourceSenseId": "source-7ef1cf94413a698dd673"
+    },
+    {
+      "lemma": "stockowner",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The owner of stock or shareholder sense directly fits stockholder and avoids the livestock homonym.",
+      "beforeHash": "5db82e68734e61ba5125e3773c96e8e71ed7dcf42eb6a4912f521d380ee10102",
+      "sourceSenseId": "wiktionary:8298f8d4d11d9cdc33a943eb"
+    },
+    {
+      "lemma": "stomachic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The adjective relating to the stomach is directly supported; this release makes no efficacy claim for an unnamed digestive medicine.",
+      "beforeHash": "b67c6fb802f599ebe68b37b7b628249b00be806b996ac2337119d8f4f3b5b8c2",
+      "sourceSenseId": "wiktionary:4071847d2f4706c8b0bc84f3"
+    },
+    {
+      "lemma": "streamlining",
+      "hold": true,
+      "reason": "The candidate repeats streamlined without explaining simplification or removal of waste, leaving the business meaning insufficiently defined.",
+      "beforeHash": "d3d22288fb517d1776651d40da6ed81e873333e590697b2668f2fb66b61df9f4"
+    },
+    {
+      "lemma": "striation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "toeic"
+      ],
+      "reason": "Tiny parallel grooves with rock and muscle examples explain the technical pattern meaning without selecting a narrow or circular alternative.",
+      "beforeHash": "9cca1b5d31ce6de995b2787e4251360306d257344d9a44c4412175524012ef23",
+      "sourceSenseId": "source-db41e28e523e89862374"
+    },
+    {
+      "lemma": "stricture",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A rule restricting behavior or action directly supports restriction; preserve the normally plural label and keep medical narrowing separate.",
+      "beforeHash": "a5f8734ab4df4314575f9a90678eb1ca185152268879d6283a2e6e2d1520e363",
+      "sourceSenseId": "wiktionary:095ec6d0e7daf5bff937ef9c"
+    },
+    {
+      "lemma": "stringency",
+      "hold": true,
+      "reason": "The proposed credit-scarcity meaning is unrelated to the sole Fitness tightness context; the other candidates do not repair that topic mismatch.",
+      "beforeHash": "459eff0f4269fd4247224057d3f146b7dd6d09275e94e227e44c58d4e5e237a6"
+    },
+    {
+      "lemma": "stroma",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An organ's supporting tissue is clearly explained and meaningfully extends tissue, without the separate fungal or chloroplast senses.",
+      "beforeHash": "6493eee41975a2522f2354fa41b8d180116a3191f88a3d6ed57986aae02d1115",
+      "sourceSenseId": "wiktionary:0f73bd4c52a5303215f37f76"
+    },
+    {
+      "lemma": "subassembly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "A unit assembled with other units into a larger assembly provides the specific part-whole manufacturing meaning.",
+      "beforeHash": "c0d49ff07341d2c1a4b10e3d0a3d5a2fcca538fc4fb37f36dfa6896b0f7e7968",
+      "sourceSenseId": "wiktionary:ce65551fa53116155392ed25"
+    },
+    {
+      "lemma": "subbasement",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A basement beneath another basement directly explains the building-level distinction without requiring a particular building size.",
+      "beforeHash": "45d341c6659bff45e14a8159868d8cd999f51d8ff56da2b701571e4c9c1db7b4",
+      "sourceSenseId": "wiktionary:f61815393a7bc9bcb1fd3f1d"
+    },
+    {
+      "lemma": "subcategory",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A narrower category within a given category is explicit and useful for classification; abstract category-theory arrows are not selected.",
+      "beforeHash": "388a0bee8052056624c153f818009d62396c34d8f049464a0fd327ebf4d7f5df",
+      "sourceSenseId": "wiktionary:d82d1f9401a44c6481f870e8"
+    },
+    {
+      "lemma": "subdivider",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Dividing land into building sites is explicitly explained and fits property development, without equating all developers with subdividers.",
+      "beforeHash": "6e019e502ed81795dd3e152e3c1ada566d25ef5a0d9259008aa3777215e66928",
+      "sourceSenseId": "source-0f96977abed4ec32b542"
+    },
+    {
+      "lemma": "subjection",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Forced submission to others' control directly verifies the domination sense and avoids treating all dependency as coercive.",
+      "beforeHash": "95539e7f1ff048ef6e148f73b6bff9f8bb79d25816143553cdeafd18023179f7",
+      "sourceSenseId": "source-c7129041ccf6991ff2ea"
+    },
+    {
+      "lemma": "sublease",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "A lease from one lessee to another clearly states the tenant-to-tenant relationship; no jurisdiction-specific legal advice is added.",
+      "beforeHash": "e61cd32eff57d0b6ad2180ab87e90bfbdd080d41c93dc290849e5b67975dba16",
+      "sourceSenseId": "source-2274161a01bab1ee18a0"
+    },
+    {
+      "lemma": "submillimeter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Less than one millimeter in size is directly sourced and preserves the technical scale distinction and adjective POS.",
+      "beforeHash": "a37cbff69290222f49fde33309d10c63b58b342c7521356d8bb15cba76998339",
+      "sourceSenseId": "wiktionary:de6b045a7901264b984ee3d1"
+    },
+    {
+      "lemma": "subordinates",
+      "hold": true,
+      "reason": "No exact plural source sense was recovered; the personnel anchor does not establish a verified morphology and hierarchy mapping.",
+      "beforeHash": "5c6e818d0295f70a0a5f43a1042b2a9063cb37ba0fb5f9a101f92583e17b156e"
+    },
+    {
+      "lemma": "subpopulation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A population within a larger population is precisely defined; the selected meaning does not require minority size or statistical distinctness.",
+      "beforeHash": "8d965800a623308d760341a293a186b0c127949e5465acf80da8a7b6806516dd",
+      "sourceSenseId": "source-5887c451b129c662492e"
+    },
+    {
+      "lemma": "substantiation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "Additional supporting proof directly explains the evidence noun without relying on the circular substantiate form.",
+      "beforeHash": "b046dd3187308e8a1c75dce6d00503bba91aad287e8c81d549fa1ab461d6ba83",
+      "sourceSenseId": "source-ce29e2bd428eb6ae0767"
+    },
+    {
+      "lemma": "subvention",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Financial or other support is explicitly explained; no unsupported requirement that it recur or originate from government is added.",
+      "beforeHash": "7c515d7a7bb432e135b43750b4510f92a207e37e3ff54e96bf77868560c371cb",
+      "sourceSenseId": "wiktionary:6fbb964a05f727006e0b8c2b"
+    },
+    {
+      "lemma": "sundries",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Miscellaneous small or numerous objects directly supports commercial items vocabulary, while not restricting the word to toiletries or accounting.",
+      "beforeHash": "fd5356bff8203dcbc48726dcaf0d7d7843c53b67871d2c92a1dc181cb8a0db47",
+      "sourceSenseId": "source-980f0ba934fcd2bf2a69"
+    },
+    {
+      "lemma": "supercilium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The eyebrow region is explicitly explained and fits the body-part anchor; retain the rare label and exclude bird, architectural and humorous senses.",
+      "beforeHash": "91ca688fed1449b29f96fb64392fd0ea7e899a5bdb1f623aac4f9e30ce6095d5",
+      "sourceSenseId": "wiktionary:9df6bdb3625845c4750aff37"
+    },
+    {
+      "lemma": "superintend",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Overseeing others' work directly verifies supervision; conflicting draft assertions about hands-on versus high-level control are not promoted.",
+      "beforeHash": "b675500c6fbd0db2cc2b17ebf362fa9e51ab4c489aa0a937d98fd3181110aecf",
+      "sourceSenseId": "wiktionary:db796d05e9e15ed7512fe9e3"
+    },
+    {
+      "lemma": "superlative",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exceptionally good or highest quality directly supports brilliant in its excellence sense; retain figurative and non-comparable labels.",
+      "beforeHash": "fa65fcaba28b33e9b10cd9c1f8ef00afd4743f5bf392a4a88bd5fa43da629249",
+      "sourceSenseId": "wiktionary:c63a2182f13670d9bfb6566b"
+    },
+    {
+      "lemma": "supersession",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Replacing one thing with another held superior explicitly explains the substitution meaning without requiring every replacement to be objectively better.",
+      "beforeHash": "38d71a83146aee88ee52af28509f7fcd90d281b151d6d4735fddfb8a9e3f0826",
+      "sourceSenseId": "source-016eaaec9db3c3516c8c"
+    },
+    {
+      "lemma": "supplantation",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The state of having been displaced directly verifies the intended meaning; force and cunning are not asserted as necessary.",
+      "beforeHash": "b99d28b56622f54bf6ac092ba16e903017b3330dd9ba7fd13f785bd0e6cfead1",
+      "sourceSenseId": "wiktionary:a4856b601f161f1e2d26ad2c"
+    },
+    {
+      "lemma": "suppressor",
+      "hold": true,
+      "reason": "No recovered sense specifically verifies a fire extinguisher; firearm, gene and electrical senses do not repair the intended fire-control entry.",
+      "beforeHash": "e54c6b5260f81393df0657540579bafce3b7d7d87cf5efdb9cbcd1aff8f3bf47"
+    },
+    {
+      "lemma": "supramolecular",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Scale or complexity greater than one molecule is explicitly defined and appropriate for academic molecular assemblies.",
+      "beforeHash": "d11f05cac65dae5adc06ab21d04bf8ba07e451d259dfa517e802e83ce84602a8",
+      "sourceSenseId": "wiktionary:f7d5ceaeb83df720ba60efb7"
+    },
+    {
+      "lemma": "supremebeing",
+      "hold": true,
+      "reason": "The concatenated expression lacks exact-source identity evidence; the philosophical gloss cannot authorize an unverified phrase repair.",
+      "beforeHash": "416d25272c6356e5edcad73027f49d9acd588bd6c1961cfd6a2e68f5c6c91ca1"
+    },
+    {
+      "lemma": "surmiser",
+      "hold": true,
+      "reason": "The sole definition repeats surmises without explaining inference from incomplete information, and does not distinguish financial speculation.",
+      "beforeHash": "096d302ebd4722798ccf6aa8629797eaf57c2eff528e16c71a9c442dd076e1b4"
+    },
+    {
+      "lemma": "sweetmeats",
+      "hold": true,
+      "reason": "No exact plural food sense was recovered, and the Fitness tuck anchor does not establish the proposed sweets connection.",
+      "beforeHash": "da7487a8f396702e388edc9cfc5a15b852b5ce19d2bdb0e5ebde2e4b66ef09f7"
+    },
+    {
+      "lemma": "synergize",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Working together for an effect greater than the individual parts is explicitly explained, rather than merely repeating synergy.",
+      "beforeHash": "f8a1cf15f097356da454aa532a2a4c1ab5aaac812f6c5190e6369cea1b62904f",
+      "sourceSenseId": "wiktionary:733547eef26f466ab092eac7"
+    },
+    {
+      "lemma": "tabulate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Arranging information into a table directly supports organized recording; retain transitive usage and exclude coral and shaping senses.",
+      "beforeHash": "a2b522455f6328e5b07e6b97b40c1c36baa87b2a859be113e206f50919f080d9",
+      "sourceSenseId": "wiktionary:76e3f0282b166cca7bf0ed85"
+    },
+    {
+      "lemma": "tacker",
+      "source": "wordnet",
+      "sense": 2,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The hand-held staple-driving machine is directly verified, distinct from workers, sewing and regional child slang.",
+      "beforeHash": "114a0df3b80085326e8c96d631dbd97a540b983fc04e45b87983e5cd795c8d90",
+      "sourceSenseId": "source-b7bd6ad245159a889c8b"
+    },
+    {
+      "lemma": "takein",
+      "hold": true,
+      "reason": "No exact entry verifies the concatenated phrasal verb or the sightseeing sense; the spacing and sense mapping remain unresolved.",
+      "beforeHash": "30ac6936995507efd5c0fa7fe087d19dff9b8574c0407b9973e32fe4ccb33f02"
+    },
+    {
+      "lemma": "tankette",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The small early armored vehicle is explicitly sourced; retain historical status and do not adopt the false implication that all other tanks are main battle tanks.",
+      "beforeHash": "29d3357c24f38e9699e81c0a3d31a560e5ae614010ca65099d0141a73e5cbf5b",
+      "sourceSenseId": "wiktionary:377e4e2191017ae15bdda03d"
+    },
+    {
+      "lemma": "tarnishing",
+      "hold": true,
+      "reason": "The candidate repeats tarnished and does not independently explain metal discoloration; the sole Fitness oxidation context is also a weak topic match.",
+      "beforeHash": "d031c253d70fa29bcb91aa7048265fa1d30ceb994b19e410c25bd0c2cebd3335"
+    },
+    {
+      "lemma": "taxon",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Organisms grouped as a unit by taxonomists directly explains the classification meaning without falsely restricting it to species rank.",
+      "beforeHash": "e77e44358f55bba14ba2401cb01cd6c2daf5afbfa64c88358049a9befeb4b96b",
+      "sourceSenseId": "wiktionary:e826d2dabbf06a98e6e6e617"
+    }
+  ]
+}

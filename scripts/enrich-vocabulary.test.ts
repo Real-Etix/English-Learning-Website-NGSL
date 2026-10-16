@@ -1,12 +1,40 @@
 import { spawnSync } from "node:child_process";
-import { mkdtempSync, readFileSync, rmSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, realpathSync, rmSync, symlinkSync, writeFileSync } from "node:fs";
+import { createRequire } from "node:module";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
 import { describe, expect, it } from "vitest";
 
 import type { WordDetail } from "../lib/content/word-detail";
+import { shardIdForLemma } from "../lib/vocabulary/shards";
+import type { VocabularyRecord } from "../lib/vocabulary/schema";
+import { vocabularyRecordFixture } from "../lib/vocabulary/test-fixtures";
 import { sourceForDictionaryDetail } from "./enrich-vocabulary";
+
+// Exercise the real CLI against an isolated hidden draft, not whichever words
+// happen to remain unpublished in the developer's canonical library.
+function runFixtureCli(args: string[]) {
+  const root = realpathSync(mkdtempSync(path.join(tmpdir(), "ngsl-enrichment-fixture-")));
+  try {
+    const record: VocabularyRecord = { ...vocabularyRecordFixture(), tier: "advanced", status: "seeded", publicationStatus: "hidden", lists: [], connections: [] };
+    const corpus = path.join(root, "content", "vocabulary");
+    mkdirSync(corpus, { recursive: true });
+    writeFileSync(path.join(corpus, `${shardIdForLemma(record.lemma)}.ndjson`), `${JSON.stringify(record)}\n`);
+    // Preserve the CLI entrypoint's cwd-relative invocation while resolving its
+    // implementation and dependencies from the real project.
+    symlinkSync(path.resolve("scripts"), path.join(root, "scripts"), "dir");
+    return spawnSync(process.execPath, [
+      "--import", createRequire(import.meta.url).resolve("tsx"),
+      path.join(root, "scripts", "enrich-vocabulary.ts"),
+      "--stage=advanced", "--limit=1",
+      `--fixture=${path.resolve("tests/fixtures/enrichment-source-backed.json")}`,
+      "--dry-run", ...args,
+    ], { cwd: root, encoding: "utf8", timeout: 10000 });
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+}
 
 const fixtureDetail: WordDetail = {
   ipa: null,
@@ -30,43 +58,27 @@ describe("enrichment CLI fixture seams", () => {
   });
 
   it("stops before a fixture guidance request when the token budget is too small", () => {
-    const script = path.resolve(process.cwd(), "scripts", "enrich-vocabulary.ts");
-    const fixture = path.resolve(process.cwd(), "tests/fixtures/enrichment-source-backed.json");
-    const result = spawnSync("npx", [
-      "tsx",
-      script,
-      "--stage=advanced",
-      "--limit=1",
+    const result = runFixtureCli([
       "--max-input-tokens=1",
       "--max-output-tokens=1",
-      `--fixture=${fixture}`,
-      "--dry-run",
-    ], { cwd: process.cwd(), encoding: "utf8" });
+    ]);
 
-    expect(result.status).toBe(0);
+    expect(result.status, result.stderr).toBe(0);
     expect(result.stdout).toContain("Budget exhausted");
     expect(result.stdout).toContain("Imported 0 factual sense(s)");
   });
 
   it("settles admitted fixture usage through TokenBudget and reports actual usage", () => {
-    const script = path.resolve(process.cwd(), "scripts", "enrich-vocabulary.ts");
-    const fixture = path.resolve(process.cwd(), "tests/fixtures/enrichment-source-backed.json");
     const reportDirectory = mkdtempSync(path.join(tmpdir(), "ngsl-task-7-report-"));
     const reportPath = path.join(reportDirectory, "report.json");
     try {
-      const result = spawnSync("npx", [
-        "tsx",
-        script,
-        "--stage=advanced",
-        "--limit=1",
+      const result = runFixtureCli([
         "--max-input-tokens=1000000",
         "--max-output-tokens=1000",
-        `--fixture=${fixture}`,
-        "--dry-run",
         `--report=${reportPath}`,
-      ], { cwd: process.cwd(), encoding: "utf8" });
+      ]);
 
-      expect(result.status).toBe(0);
+      expect(result.status, result.stderr).toBe(0);
       expect(JSON.parse(readFileSync(reportPath, "utf8"))).toMatchObject({
         tokenUsage: { inputTokens: 1, outputTokens: 1 },
       });

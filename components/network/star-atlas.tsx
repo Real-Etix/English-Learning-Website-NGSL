@@ -31,6 +31,7 @@ import { createChartEvictionHandler } from "@/components/network/galaxy/resident
 import { GalaxySearchCatalog } from "@/components/network/galaxy/search-catalog";
 import { WordSelectionCoordinator } from "@/components/network/galaxy/word-selection-coordinator";
 import type { ComposeTask, Verdict } from "@/lib/compose/tasks";
+import { buildClaimQuiz } from "./claim-quiz";
 import type { CollectionSummary, WordRarity } from "@/lib/collection/service";
 import type { WordLearningProfile } from "@/lib/content/word-learning";
 import type { FullGalaxyData } from "@/lib/galaxy/full-codec";
@@ -832,29 +833,10 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
         showToast({ glyph: "·", text: "Not ready to claim", sub: selectedSense?.claimBlockReason ?? "Choose a sourced meaning first.", tone: "mint" });
         return;
       }
-      const example = selectedSense.example;
-      if (!example) return;
       const r = rng(hash(lemma + owned.size));
       const chartId = atlas.byLemma.get(lemma)?.chartId ?? "";
-      const siblings = (residentShards.get(chartId)?.words ?? [])
-        .filter((w) => w.lemma !== lemma);
-      const others = siblings.sort(() => r() - 0.5).slice(0, 3);
-      const canType = example.toLowerCase().includes(profile.display.toLowerCase());
-      if (canType) {
-        const re = new RegExp(profile.display, "i");
-        setQuiz({
-          kind: "type", lemma, senseId: selectedSense.id, input: "", prompt: "Which word is missing?",
-          sentence: example.replace(re, "———"), answer: profile.display, revealed: false, correct: false, attempts: 0,
-        });
-      } else {
-        const opts = others.map((w) => ({ id: w.lemma, text: w.display }))
-          .concat([{ id: lemma, text: profile.display }]);
-        setQuiz({
-          kind: "word", lemma, senseId: selectedSense.id, input: "",
-          prompt: `${selectedSense.definition.charAt(0).toUpperCase()}${selectedSense.definition.slice(1)} — which word is it?`,
-          options: opts.sort(() => r() - 0.5), answer: lemma, revealed: false, correct: false, attempts: 0,
-        });
-      }
+      const prompt = buildClaimQuiz(lemma, profile.display, selectedSense, residentShards.get(chartId)?.words ?? [], r);
+      if (prompt) setQuiz({ ...prompt, input: "", revealed: false, correct: false, attempts: 0 });
     };
     const currentProfile = wordData?.page?.lemma === lemma ? resolveWordLearningProfile(wordData) : null;
     if (currentProfile) {
@@ -1309,16 +1291,16 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
   // ============================ RENDER ============================
   return (
-    <div className="star-atlas" onPointerDownCapture={foregroundAction} onClickCapture={foregroundAction} onWheelCapture={foregroundAction} onKeyDownCapture={foregroundAction} style={{ position: "absolute", inset: 0, background: "#070B16", color: "#F1EEE6", overflow: "hidden", fontFamily: SS }}>
+    <div className="star-atlas" onPointerDownCapture={foregroundAction} onClickCapture={foregroundAction} onWheelCapture={foregroundAction} onKeyDownCapture={foregroundAction} style={{ position: "absolute", inset: 0, background: "#070B16", color: "#F1EEE6", overflow: "clip", fontFamily: SS }}>
       {/* ---------- HEADER ---------- */}
-      <header style={{ position: "absolute", top: 0, left: 0, right: 0, height: 57, zIndex: 40, display: "flex", alignItems: "center", gap: 16, padding: "0 16px", borderBottom: "1px solid rgba(241,238,230,.09)", background: "rgba(7,11,22,.72)", backdropFilter: "blur(14px)" }}>
-        <button onClick={() => setView("galaxy")} style={{ display: "flex", alignItems: "baseline", gap: 9, background: "none", border: "none", padding: 0, cursor: "pointer", color: "#F1EEE6", textAlign: "left" }}>
+      <header className="atlas-header" style={{ position: "absolute", top: 0, left: 0, right: 0, height: "var(--atlas-header-height)", zIndex: 40, display: "flex", alignItems: "center", gap: 16, padding: "0 16px", borderBottom: "1px solid rgba(241,238,230,.09)", background: "rgba(7,11,22,.72)", backdropFilter: "blur(14px)" }}>
+        <button className="atlas-brand" onClick={() => setView("galaxy")} style={{ display: "flex", alignItems: "baseline", gap: 9, background: "none", border: "none", padding: 0, cursor: "pointer", color: "#F1EEE6", textAlign: "left" }}>
           <span style={{ font: `400 21px/1 ${SF}`, letterSpacing: ".01em" }}>Star Atlas</span>
           <span style={{ font: `500 9px/1 ${MN}`, letterSpacing: ".2em", color: "#6B7789", textTransform: "uppercase" }}>obs.</span>
         </button>
 
         {/* List switcher — each list is its own sky */}
-        <div style={{ position: "relative", flex: "none" }}>
+        <div className="atlas-list-switcher" style={{ position: "relative", flex: "none" }}>
           <button data-testid="list-switcher" onClick={() => setListMenuOpen((v) => !v)} style={{ display: "flex", alignItems: "center", gap: 8, padding: "6px 11px", border: `1px solid ${listMenuOpen ? "rgba(191,217,242,.32)" : "rgba(241,238,230,.1)"}`, borderRadius: 999, background: listMenuOpen ? "rgba(191,217,242,.12)" : "rgba(241,238,230,.05)", color: "#F1EEE6", cursor: "pointer", font: `500 12px/1 ${SS}` }}>
             <span style={{ font: `500 9px/1 ${MN}`, letterSpacing: ".16em", color: "#6B7789", textTransform: "uppercase" }}>List</span>
             <span>{currentList.label}</span>
@@ -1360,7 +1342,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
           ))}
         </nav>
 
-        <div style={{ flex: 1, minWidth: 0, display: "flex", justifyContent: "center" }}>
+        <div className="atlas-search" style={{ flex: 1, minWidth: 0, display: "flex", justifyContent: "center" }}>
           <div ref={searchAreaRef} style={{ position: "relative", width: "100%", maxWidth: 340 }}>
             <input value={q} disabled={controllerStatus.searchLoad === "error"} aria-label={`Search ${manifest.list.label} stars`} onChange={(e) => { setQ(e.target.value); setSearchFocus(true); runSearch(e.target.value); }} onFocus={() => { setSearchFocus(true); runSearch(q); }} onBlur={(e) => {
               const nextTarget = e.relatedTarget;
@@ -1392,8 +1374,8 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
           </div>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 14, flex: "none" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 7 }} title="Days in a row with at least one star claimed">
+        <div className="atlas-tools" style={{ display: "flex", alignItems: "center", gap: 14, flex: "none" }}>
+          <div className="atlas-streak" style={{ display: "flex", alignItems: "center", gap: 7 }} title="Days in a row with at least one star claimed">
             <span style={{ font: `400 13px/1 ${MN}`, color: "#F2D9A0" }}>▲</span>
             <span style={{ font: `600 13px/1 ${MN}`, color: "#F1EEE6" }}>{streak}</span>
             <span style={{ font: `400 10px/1 ${MN}`, letterSpacing: ".14em", color: "#6B7789", textTransform: "uppercase" }}>day</span>
@@ -1401,10 +1383,10 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
           <button onClick={() => setChatOpen((v) => !v)} style={{ display: "flex", alignItems: "center", gap: 7, padding: "6px 12px", border: `1px solid ${chatOpen ? "rgba(191,217,242,.32)" : "rgba(241,238,230,.1)"}`, borderRadius: 999, background: chatOpen ? "rgba(191,217,242,.14)" : "rgba(241,238,230,.04)", color: chatOpen ? "#F1EEE6" : "#94A0B4", cursor: "pointer", font: `500 12px/1 ${SS}` }}>
             <span style={{ font: `400 12px/1 ${MN}` }}>✳</span><span>Tutor</span>
           </button>
-          <div style={{ width: 1, height: 22, background: "rgba(241,238,230,.1)" }} />
-          <button data-testid="your-space-shortcut" onClick={openYourSpace} style={{ display: "flex", alignItems: "center", gap: 9, padding: "5px 6px 5px 5px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(241,238,230,.04)", cursor: "pointer", color: "#F1EEE6" }}>
+          <div className="atlas-divider" style={{ width: 1, height: 22, background: "rgba(241,238,230,.1)" }} />
+          <button aria-label="Open your space" data-testid="your-space-shortcut" onClick={openYourSpace} style={{ display: "flex", alignItems: "center", gap: 9, padding: "5px 6px 5px 5px", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "rgba(241,238,230,.04)", cursor: "pointer", color: "#F1EEE6" }}>
             <span style={{ display: "grid", placeItems: "center", width: 26, height: 26, borderRadius: 999, background: "rgba(191,217,242,.14)", font: `600 11px/1 ${MN}`, color: "#BFD9F2" }}>{level}</span>
-            <span style={{ display: "flex", flexDirection: "column", gap: 3, paddingRight: 6 }}>
+            <span className="atlas-xp-details" style={{ display: "flex", flexDirection: "column", gap: 3, paddingRight: 6 }}>
               <span style={{ font: `500 10px/1 ${MN}`, letterSpacing: ".1em", color: "#94A0B4", textTransform: "uppercase" }}>{totalXp} xp</span>
               <span style={{ width: 64, height: 3, borderRadius: 999, background: "rgba(241,238,230,.11)", overflow: "hidden", display: "block" }}>
                 <span style={{ display: "block", height: "100%", borderRadius: 999, background: "linear-gradient(90deg,#BFD9F2,#8FE3C0)", width: `${levelPct}%`, transition: "width .5s cubic-bezier(.2,.8,.2,1)" }} />
@@ -1415,7 +1397,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       </header>
 
       {/* ---------- MOUNTED SKY ---------- */}
-      <div style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 0, opacity: view === "galaxy" ? 1 : 0, pointerEvents: view === "galaxy" ? "auto" : "none", transition: "opacity .32s ease" }}>
+      <div style={{ position: "absolute", top: "var(--atlas-header-height)", left: 0, right: 0, bottom: 0, zIndex: 0, opacity: view === "galaxy" ? 1 : 0, pointerEvents: view === "galaxy" ? "auto" : "none", transition: "opacity .32s ease" }}>
         <div data-testid="galaxy-host" ref={hostRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: renderFallback || previewVisible ? "none" : "auto" }} />
         {(renderFallback || previewVisible) && (
           <FallbackConstellation
@@ -1447,7 +1429,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
       {/* ---------- GALAXY HUD ---------- */}
       {view === "galaxy" && (
-        <main style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 1, overflow: "hidden", pointerEvents: "none" }}>
+        <main style={{ position: "absolute", top: "var(--atlas-header-height)", left: 0, right: 0, bottom: 0, zIndex: 1, overflow: "hidden", pointerEvents: "none" }}>
           {narrow && (
             <button data-testid="mobile-rail-toggle" onClick={() => setRailOpen((v) => !v)} style={{ position: "absolute", left: 12, top: 12, zIndex: 26, pointerEvents: "auto", display: "flex", alignItems: "center", gap: 8, padding: "9px 14px", border: "1px solid rgba(241,238,230,.12)", borderRadius: 999, background: "rgba(10,15,28,.9)", color: "#F1EEE6", cursor: "pointer", font: `500 12.5px/1 ${SS}`, backdropFilter: "blur(14px)" }}>
               <span style={{ font: `400 12px/1 ${MN}`, color: "#BFD9F2" }}>{railOpen ? "✕" : "◇"}</span>
@@ -1678,7 +1660,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       {view === "board" && <BoardView rows={boardRows} />}
 
       {!meLoaded && view === "galaxy" && (
-        <div style={{ position: "absolute", inset: "57px 0 0 0", zIndex: 2, display: "grid", placeItems: "center", color: "#6B7789", fontSize: 13, pointerEvents: "none" }}>Charting the sky…</div>
+        <div style={{ position: "absolute", inset: "var(--atlas-header-height) 0 0 0", zIndex: 2, display: "grid", placeItems: "center", color: "#6B7789", fontSize: 13, pointerEvents: "none" }}>Charting the sky…</div>
       )}
 
       {/* ?dev=1 author overlay */}
@@ -1697,6 +1679,18 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
 
       {/* keyframes the prototype relies on */}
       <style>{`
+        .star-atlas { --atlas-header-height: 57px; }
+        @media (max-width: 640px) {
+          .star-atlas { --atlas-header-height: 106px; }
+          .atlas-header { display: grid !important; grid-template-columns: minmax(0,1fr) auto; grid-template-rows: 40px 40px; gap: 8px !important; padding: 8px 12px !important; }
+          .atlas-header .atlas-brand, .atlas-header .atlas-streak, .atlas-header .atlas-divider, .atlas-header .atlas-xp-details { display: none !important; }
+          .atlas-list-switcher { grid-column: 1; grid-row: 1; }
+          .atlas-header nav { grid-column: 2; grid-row: 1; }
+          .atlas-header nav button { padding: 8px !important; white-space: nowrap; }
+          .atlas-search { grid-column: 1; grid-row: 2; }
+          .atlas-tools { grid-column: 2; grid-row: 2; justify-content: flex-end; gap: 8px !important; }
+          .atlas-tools button { min-height: 40px; }
+        }
         @keyframes riseIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideIn { from { opacity: 0; transform: translateX(26px); } to { opacity: 1; transform: none; } }
@@ -1726,15 +1720,15 @@ function QuizModal({ quiz, atlas, onClose, onInput, onChoice, onSubmitType }: {
     <div style={{ position: "absolute", inset: 0, zIndex: 60, pointerEvents: "auto", display: "grid", placeItems: "center", padding: 20, background: "rgba(4,7,14,.72)", backdropFilter: "blur(8px)", animation: "fadeIn .18s ease both" }}>
       <div style={{ width: "min(100%,520px)", maxHeight: "100%", overflowY: "auto", padding: 24, borderRadius: 20, background: "rgba(11,16,31,.97)", border: "1px solid rgba(241,238,230,.12)", boxShadow: "0 30px 90px rgba(0,0,0,.7)", animation: "riseIn .22s cubic-bezier(.2,.8,.2,1) both" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 5 }}>
-          <span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".2em", textTransform: "uppercase", color: tone }}>{isType ? "Listen to the sentence" : "Word check"}</span>
+          <span style={{ font: `600 9.5px/1 ${MN}`, letterSpacing: ".2em", textTransform: "uppercase", color: tone }}>{quiz.sentence ? "Sentence check" : "Meaning check"}</span>
           <button onClick={onClose} style={{ width: 26, height: 26, display: "grid", placeItems: "center", border: "1px solid rgba(241,238,230,.1)", borderRadius: 999, background: "none", color: "#94A0B4", cursor: "pointer", fontSize: 12 }}>✕</button>
         </div>
         <h3 style={{ margin: "0 0 18px", font: `400 26px/1.25 ${SF}`, color: "#F1EEE6" }}>{quiz.prompt}</h3>
 
         {isType ? (
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            <p style={{ margin: 0, padding: "15px 17px", borderRadius: 12, background: "rgba(191,217,242,.06)", borderLeft: "2px solid rgba(191,217,242,.4)", font: `italic 400 16px/1.65 ${SF}`, color: "#D8D3C8" }}>{quiz.sentence}</p>
-            <input value={quiz.input} onChange={(e) => onInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); onSubmitType(); } }} placeholder="type the missing word" autoFocus
+            {quiz.sentence && <p style={{ margin: 0, padding: "15px 17px", borderRadius: 12, background: "rgba(191,217,242,.06)", borderLeft: "2px solid rgba(191,217,242,.4)", font: `italic 400 16px/1.65 ${SF}`, color: "#D8D3C8" }}>{quiz.sentence}</p>}
+            <input aria-label="Your answer" value={quiz.input} onChange={(e) => onInput(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); onSubmitType(); } }} placeholder={quiz.sentence ? "type the missing word" : "type the word or phrase"} autoFocus
               style={{ width: "100%", padding: "13px 15px", borderRadius: 12, border: `1px solid ${quiz.revealed ? (quiz.correct ? "rgba(143,227,192,.5)" : "rgba(232,168,159,.5)") : quiz.nudge ? "rgba(242,217,160,.5)" : "rgba(241,238,230,.14)"}`, background: "rgba(241,238,230,.05)", color: "#F1EEE6", font: `400 16px/1 ${SS}`, outline: "none" }} />
           </div>
         ) : (
@@ -1851,7 +1845,7 @@ function Tutor({ focusName, chartName, log, busy, error, input, onInput, onSend,
     ? [`What does “${focusName}” really mean?`, `Use “${focusName}” in a sentence`, `A more advanced word than “${focusName}”`]
     : ["How do these charts fit together?", "Which word should I learn first?", "Explain the rarest words here"];
   return (
-    <aside style={{ position: "absolute", right: 0, top: 57, bottom: 0, width: "min(100%,404px)", zIndex: 50, display: "flex", flexDirection: "column", background: "rgba(9,13,25,.97)", borderLeft: "1px solid rgba(241,238,230,.1)", backdropFilter: "blur(22px)", boxShadow: "-24px 0 60px rgba(0,0,0,.5)", animation: "slideIn .26s cubic-bezier(.2,.8,.2,1) both" }}>
+    <aside style={{ position: "absolute", right: 0, top: "var(--atlas-header-height)", bottom: 0, width: "min(100%,404px)", zIndex: 50, display: "flex", flexDirection: "column", background: "rgba(9,13,25,.97)", borderLeft: "1px solid rgba(241,238,230,.1)", backdropFilter: "blur(22px)", boxShadow: "-24px 0 60px rgba(0,0,0,.5)", animation: "slideIn .26s cubic-bezier(.2,.8,.2,1) both" }}>
       <div style={{ flex: "none", display: "flex", alignItems: "flex-start", gap: 12, padding: "16px 18px 13px", borderBottom: "1px solid rgba(241,238,230,.08)" }}>
         <div style={{ flex: 1, minWidth: 0 }}>
           <p style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".2em", textTransform: "uppercase", color: "#6B7789" }}>Tutor</p>
@@ -1934,7 +1928,7 @@ function SpaceView({ me, owned, used, streak, atlas, chartStats, chartsDone, wor
     [String(streak), "night streak", "#BFD9F2"],
   ];
   return (
-    <main className="atlas-scroll" style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 2, overflowY: "auto", background: "radial-gradient(90% 60% at 50% 0%,#0C1327 0%,#070B16 70%)" }}>
+    <main className="atlas-scroll" style={{ position: "absolute", top: "var(--atlas-header-height)", left: 0, right: 0, bottom: 0, zIndex: 2, overflowY: "auto", background: "radial-gradient(90% 60% at 50% 0%,#0C1327 0%,#070B16 70%)" }}>
       <div style={{ maxWidth: 1080, margin: "0 auto", padding: "44px 24px 80px", display: "flex", flexDirection: "column", gap: 40 }}>
         <section style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: 26 }}>
           <div style={{ minWidth: 280 }}>
@@ -2105,7 +2099,7 @@ function SpaceKeyCard({ heldCount, onRestored }: { heldCount: number; onRestored
 
 function BoardView({ rows }: { rows: { rank: number; name: string; detail: string; level: number; xp: string; you: boolean }[] }) {
   return (
-    <main className="atlas-scroll" style={{ position: "absolute", top: 57, left: 0, right: 0, bottom: 0, zIndex: 2, overflowY: "auto", background: "radial-gradient(90% 60% at 50% 0%,#0C1327 0%,#070B16 70%)" }}>
+    <main className="atlas-scroll" style={{ position: "absolute", top: "var(--atlas-header-height)", left: 0, right: 0, bottom: 0, zIndex: 2, overflowY: "auto", background: "radial-gradient(90% 60% at 50% 0%,#0C1327 0%,#070B16 70%)" }}>
       <div style={{ maxWidth: 760, margin: "0 auto", padding: "44px 24px 80px" }}>
         <p style={{ margin: 0, font: `600 9.5px/1 ${MN}`, letterSpacing: ".24em", textTransform: "uppercase", color: "#6B7789" }}>Observatory log</p>
         <h1 style={{ margin: "12px 0 0", font: `400 46px/1.05 ${SF}`, letterSpacing: "-.015em", color: "#F1EEE6" }}>Who has charted the most sky</h1>

@@ -1,0 +1,433 @@
+{
+  "id": "002",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T08:04:00.000Z",
+  "decisions": [
+    {
+      "lemma": "accumulator",
+      "head": "accumulator",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The generic collecting agent fits the collector context. Use the literal collection meaning; reject battery, betting and register homonyms.",
+      "explain": [
+        {
+          "head": "accumulate",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The generic collecting agent fits the collector context. Use the literal collection meaning; reject battery, betting and register homonyms.",
+          "sourceSenseId": "wiktionary:9d39de772e95c0c79acafac8"
+        }
+      ],
+      "beforeHash": "1786e51402f2d42e0ef0d2b99583a0cca358fb937dd8ada2117c1934d86a4eff",
+      "sourceSenseId": "wiktionary:ad5970345ccdff21584d3f89"
+    },
+    {
+      "lemma": "acrimoniously",
+      "head": "acrimoniously",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The adverb describes bitter argumentative tone in communication, not physical sharpness; retain the figurative base restriction in its explanation.",
+      "explain": [
+        {
+          "head": "acrimonious",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The adverb describes bitter argumentative tone in communication, not physical sharpness; retain the figurative base restriction in its explanation.",
+          "sourceSenseId": "wiktionary:db30c1ae8b7b7b0ace00320b"
+        }
+      ],
+      "beforeHash": "ad8a6ee06a565811b3f18093c22d8b8871cbe7d11a7457e657ce980ea64894b3",
+      "sourceSenseId": "wiktionary:ce9f81df464e95cf7172a826"
+    },
+    {
+      "lemma": "adjacently",
+      "head": "adjacently",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source explicitly derives the spatial manner from adjacent; the next-to sense explains proximity without claiming all together uses are identical.",
+      "explain": [
+        {
+          "head": "adjacent",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The source explicitly derives the spatial manner from adjacent; the next-to sense explains proximity without claiming all together uses are identical.",
+          "sourceSenseId": "wiktionary:26968110ec754e388e89903d"
+        }
+      ],
+      "beforeHash": "651547498dc3fbf57898ad2f6c07c14aaac00f14a527b1da26a7fec7914420b0",
+      "sourceSenseId": "wiktionary:e66370fcf3aea60d776c23cd"
+    },
+    {
+      "lemma": "adjudicative",
+      "head": "adjudicative",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The adjective concerns reaching a judgment, fitting judicial proceedings. Do not add unverified jurisdiction or bankruptcy-specific claims.",
+      "explain": [
+        {
+          "head": "adjudication",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The adjective concerns reaching a judgment, fitting judicial proceedings. Do not add unverified jurisdiction or bankruptcy-specific claims.",
+          "sourceSenseId": "wiktionary:cb88e02f0a81d3f0a21935df"
+        }
+      ],
+      "beforeHash": "147680e2bacdb97d54f554b9f96d009f6aa9ebfea7a3ebee2ab24991e13eaa8e",
+      "sourceSenseId": "wiktionary:2ed9bf3d03f5897076417bd8"
+    },
+    {
+      "lemma": "anatomization",
+      "head": "anatomization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source act noun refers to anatomizing; the dissection-for-analysis sense fits Academic dissection and adds no treatment advice.",
+      "explain": [
+        {
+          "head": "anatomize",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The source act noun refers to anatomizing; the dissection-for-analysis sense fits Academic dissection and adds no treatment advice.",
+          "sourceSenseId": "source-7ea0ebc9f2db18badce8"
+        }
+      ],
+      "beforeHash": "712182cf5ea8f9d56964bc300ff2333ad682ee500cec7b059f08143768c3f41b",
+      "sourceSenseId": "wiktionary:335392aa7b56fd5c4b9092ce"
+    },
+    {
+      "lemma": "ascertainment",
+      "head": "ascertainment",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "ngsl"
+      ],
+      "reason": "The definite discovery/establishment sense explains the action noun, fitting determination rather than promising medical diagnostic certainty.",
+      "explain": [
+        {
+          "head": "ascertain",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The definite discovery/establishment sense explains the action noun, fitting determination rather than promising medical diagnostic certainty.",
+          "sourceSenseId": "wiktionary:b3593c91d911ad8ff0aeb305"
+        }
+      ],
+      "beforeHash": "ab5db2a71fd7f6d76a30eda5cde0c11f2732715ed5cf550fdd2ecb4d5959fb58",
+      "sourceSenseId": "wiktionary:9487f9e3a47c0e59c17f7d28"
+    },
+    {
+      "lemma": "avocational",
+      "head": "avocational",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The recreational pursuit sense explains this leisure adjective; do not impose the old unsupported serious-hobby restriction.",
+      "explain": [
+        {
+          "head": "avocation",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The recreational pursuit sense explains this leisure adjective; do not impose the old unsupported serious-hobby restriction.",
+          "sourceSenseId": "wiktionary:5add875044621d7b818af257"
+        }
+      ],
+      "beforeHash": "f9ded2af70dae988121a98885a2322fbabdcb26176f3905524083bd48920f035",
+      "sourceSenseId": "wiktionary:69a7f5732d0346b0a8527079"
+    },
+    {
+      "lemma": "biospheric",
+      "head": "biospheric",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Explain the biosphere reading using Earth's life-supporting regions, relevant to ecological studies, without asserting the old model comparison.",
+      "explain": [
+        {
+          "head": "biosphere",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Explain the biosphere reading using Earth's life-supporting regions, relevant to ecological studies, without asserting the old model comparison.",
+          "sourceSenseId": "wiktionary:dc085fa55c52479efea4f478"
+        }
+      ],
+      "beforeHash": "d0bc51fa88d05abf1487a664ab502b43b36b040bad60e28e3f6e68eb1ab74dfc",
+      "sourceSenseId": "wiktionary:10ec5c770b5d65c75d577bd9"
+    },
+    {
+      "lemma": "castigator",
+      "head": "castigator",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The person noun is explained by harsh public criticism, fitting critical discussion; not the rare editing sense or an automatic censor synonym.",
+      "explain": [
+        {
+          "head": "castigate",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "The person noun is explained by harsh public criticism, fitting critical discussion; not the rare editing sense or an automatic censor synonym.",
+          "sourceSenseId": "wiktionary:0dbdb1d9a9f3facf38e6f275"
+        }
+      ],
+      "beforeHash": "13e38a33d1aef7a7eb05b705dc35198e4f25c32f437b422be9852e220c602d3c",
+      "sourceSenseId": "wiktionary:223e2f25d8e4a5f665414965"
+    },
+    {
+      "lemma": "catabolic",
+      "head": "catabolic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The sourced metabolic breakdown into simpler substances with energy release explains the adjective without the misleading everyday destructive interpretation.",
+      "explain": [
+        {
+          "head": "catabolism",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The sourced metabolic breakdown into simpler substances with energy release explains the adjective without the misleading everyday destructive interpretation.",
+          "sourceSenseId": "source-3aa17db166c0c79f18f4"
+        }
+      ],
+      "beforeHash": "b2a64446b4eed472229448a68472776381c8eeaca91da6b8a6447cfe072192a8",
+      "sourceSenseId": "wiktionary:0d710a2cea462be9f4266775"
+    },
+    {
+      "lemma": "censoriously",
+      "head": "censoriously",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The harshly critical sense explains the manner adverb; it does not import the proscribed censorship-related usage.",
+      "explain": [
+        {
+          "head": "censorious",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The harshly critical sense explains the manner adverb; it does not import the proscribed censorship-related usage.",
+          "sourceSenseId": "source-4df55e3359ad26d70550"
+        }
+      ],
+      "beforeHash": "9561c7c090da9351bf95824fd938c3a752192ca6ea3414274da0da46cfdb0eee",
+      "sourceSenseId": "wiktionary:325ad983c9adc4337248ff20"
+    },
+    {
+      "lemma": "circuitously",
+      "head": "circuitously",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The indirect/not-to-the-point reading explains business communication; no requirement that the word describe an actual geographic route.",
+      "explain": [
+        {
+          "head": "circuitous",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The indirect/not-to-the-point reading explains business communication; no requirement that the word describe an actual geographic route.",
+          "sourceSenseId": "wiktionary:dfdf39610d59fc18ea732463"
+        }
+      ],
+      "beforeHash": "8d36cc7068727ee0c29793e7333f24f893d92a5f83f96b0adffa2ab613b52a4e",
+      "sourceSenseId": "wiktionary:d8cc83a4edcd818e8df7bd95"
+    },
+    {
+      "lemma": "commentarial",
+      "head": "commentarial",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Written explanatory or critical commentary provides a coherent publication context. No old claim that this is an analytical substitute for editorial is approved.",
+      "explain": [
+        {
+          "head": "commentary",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "Written explanatory or critical commentary provides a coherent publication context. No old claim that this is an analytical substitute for editorial is approved.",
+          "sourceSenseId": "source-be674dca73ed8232915d"
+        }
+      ],
+      "beforeHash": "e7b0d8f04cfe2489b6f0949d3e13e3bb774c31a0acffea7266fe99fa3a001114",
+      "sourceSenseId": "wiktionary:03e771feda730abddec5acfa"
+    },
+    {
+      "lemma": "conceptualizer",
+      "head": "conceptualizer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The person who conceives ideas is an appropriate academic extension; the source does not establish a hierarchy over theorist.",
+      "explain": [
+        {
+          "head": "conceptualize",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "The person who conceives ideas is an appropriate academic extension; the source does not establish a hierarchy over theorist.",
+          "sourceSenseId": "wiktionary:9191976cbdc5845528d67ac8"
+        }
+      ],
+      "beforeHash": "64fa5bfd2177ccf14571d5f4ae9c1ea151f282d91dc72c35369ec4eb867ba3f7",
+      "sourceSenseId": "wiktionary:1f3daa2851fa63adb18e2ebc"
+    },
+    {
+      "lemma": "concertedly",
+      "head": "concertedly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Joint activity of two or more explains the coordination adverb; exclude the separate musical-parts sense.",
+      "explain": [
+        {
+          "head": "concerted",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "Joint activity of two or more explains the coordination adverb; exclude the separate musical-parts sense.",
+          "sourceSenseId": "source-b2231faa662d25c3dbbb"
+        }
+      ],
+      "beforeHash": "d4e714fd3db90a677b31a169c86a523b0f17631c903d23ec5df04116e40bf42e",
+      "sourceSenseId": "wiktionary:ac326d199b02d63c8b24fb00"
+    },
+    {
+      "lemma": "constructional",
+      "head": "constructional",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The building-structures reading resolves the architectural context; grammar and textual-interpretation homonyms are not selected.",
+      "explain": [
+        {
+          "head": "construction",
+          "source": "wiki",
+          "sense": 2,
+          "reason": "The building-structures reading resolves the architectural context; grammar and textual-interpretation homonyms are not selected.",
+          "sourceSenseId": "wiktionary:88fc9cee1bbdf4e63e35d28a"
+        }
+      ],
+      "beforeHash": "bd5a8822297a7e80b66899784f47ce1669b06f0abf19177715fb49d49493703f",
+      "sourceSenseId": "wiktionary:b2b50f6210a90c0b9ba7376a"
+    },
+    {
+      "lemma": "consummately",
+      "head": "consummately",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Complete/perfect adjective explains the manner adverb in the ideally context; exclude the sexual verb sense.",
+      "explain": [
+        {
+          "head": "consummate",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Complete/perfect adjective explains the manner adverb in the ideally context; exclude the sexual verb sense.",
+          "sourceSenseId": "wiktionary:c622bb0424304905ad7e9709"
+        }
+      ],
+      "beforeHash": "dc7b89046336c250c9ca3c7cc56d7ae8e116aac473eeebb8c427c9936a2f8b15",
+      "sourceSenseId": "wiktionary:41c61deaf33db4f106d81ec3"
+    },
+    {
+      "lemma": "contiguously",
+      "head": "contiguously",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Connected/touching explains the spatial manner. Retain figurative/sometimes qualifiers in the explicitly named base explanation.",
+      "explain": [
+        {
+          "head": "contiguous",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Connected/touching explains the spatial manner. Retain figurative/sometimes qualifiers in the explicitly named base explanation.",
+          "sourceSenseId": "wiktionary:0844e99c49e99c26c66a5a34"
+        }
+      ],
+      "beforeHash": "694350f1fbbbac8513c1ff872c920ef9cbac3525ed730c852363bba3a3303c95",
+      "sourceSenseId": "wiktionary:25c150c4ca7d4bf5d2df6e69"
+    },
+    {
+      "lemma": "convolution",
+      "head": "convolution",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "academic",
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "Select the state-of-being-convoluted noun reading, explained by figurative complexity; not the mathematical operation or brain anatomy.",
+      "explain": [
+        {
+          "head": "convoluted",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "Select the state-of-being-convoluted noun reading, explained by figurative complexity; not the mathematical operation or brain anatomy.",
+          "sourceSenseId": "wiktionary:129f49a3fee19db261bd5177"
+        }
+      ],
+      "beforeHash": "ef6709d08181420b776a809b65a155efb2c7bc9a0e4fdec55006308510799708",
+      "sourceSenseId": "wiktionary:a17895b1763f6c54494217f2"
+    },
+    {
+      "lemma": "covenantal",
+      "head": "covenantal",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The agreement sense supports contractual vocabulary without making a religious oath a required part of the definition.",
+      "explain": [
+        {
+          "head": "covenant",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The agreement sense supports contractual vocabulary without making a religious oath a required part of the definition.",
+          "sourceSenseId": "wiktionary:2e2a8ea74fbea123e2afa783"
+        }
+      ],
+      "beforeHash": "b8f48072e4992294c205f5d084f2cd9eb3a94b41428c5514f6d6b574faea9ba5",
+      "sourceSenseId": "wiktionary:f124ee4137f676b4eaa7d6b3"
+    }
+  ]
+}

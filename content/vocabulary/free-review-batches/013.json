@@ -1,0 +1,360 @@
+{
+  "id": "013",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:18:56.000Z",
+  "decisions": [
+    {
+      "lemma": "firstminister",
+      "hold": true,
+      "reason": "No exact source evidence supports this joined title; a verified first minister identity mapping is needed before release.",
+      "beforeHash": "0d54cc6af4d6782077a35b6a0e772cb32923ede0b8cb3d03ac09da1cd8a1d81f"
+    },
+    {
+      "lemma": "fishfork",
+      "hold": true,
+      "reason": "The joined spelling has no exact factual entry; the dining gloss cannot stand in for sourced spaced-phrase identity.",
+      "beforeHash": "c33a1ca066ba38043acd310ead2dc3e6e6bbc1e8fcb0f3b7f8501d2b429ac04f"
+    },
+    {
+      "lemma": "fitnesscenter",
+      "hold": true,
+      "reason": "No exact source sense is present for the joined phrase; preserve the record pending verified spelling and meaning evidence.",
+      "beforeHash": "1287d8b7d93f71ad0cf2accc465bce81bc6844282379e7439bfdde172f067323"
+    },
+    {
+      "lemma": "flaccidity",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Flabby softness is a self-contained physical meaning related to lack of tone; it is not equated with all beneficial relaxation.",
+      "beforeHash": "b3a6ca8cde2dd2063f244e95157ac59e38fda5472583283b3f88974ed2f9d590",
+      "sourceSenseId": "source-62d3fcfb3201db433b5d"
+    },
+    {
+      "lemma": "flagstone",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "toeic"
+      ],
+      "reason": "The paving or roofing stone slab is clearly defined and relevant to building materials; publish the source's precise wording, not the old irregular-shape claim.",
+      "beforeHash": "cd5dc9a940884c9ff5b77abb2e035d38e48b807be1a3022e1ecaf0fb731287d6",
+      "sourceSenseId": "wiktionary:a6386faea02012974f471bda"
+    },
+    {
+      "lemma": "flanking",
+      "hold": true,
+      "reason": "No exact sense or reviewed flank inflection mapping is available; the proposed tactical distinction cannot be verified from the old gloss.",
+      "beforeHash": "c57aab2e8c06b1baf64bdaab1d6629c2dca9cb15b6cb80cb6794a2fd52cc937d"
+    },
+    {
+      "lemma": "flashover",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The electrical discharge around an insulator matches arc in technical workplace reading; the separate room-fire meaning is not selected.",
+      "beforeHash": "fd982fc2e0a3e81002cccfd027c2143f3a9929b64937222374b2d3696869e592",
+      "sourceSenseId": "wiktionary:8fa1de9a20c4089620fcf416"
+    },
+    {
+      "lemma": "flavorant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A flavoring agent is a complete culinary category meaning relevant to vanilla; it does not imply that all flavorants are vanilla.",
+      "beforeHash": "d2065b05041b1addd72dee727f9d963d87c46caa9c1534aeb4774ca817270024",
+      "sourceSenseId": "wiktionary:534515139afd77af856de0b9"
+    },
+    {
+      "lemma": "flection",
+      "source": "oewn",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The exact-headword flexed-joint state is sourced and appropriate to flexion study; no unsupported historical-register claim is added.",
+      "beforeHash": "5ba45f10f184ddd8214cda89ee47fe25205798a866e8434a050f201948d89f20",
+      "sourceSenseId": "oewn:14059391-n:flection%1:26:00::"
+    },
+    {
+      "lemma": "floatage",
+      "hold": true,
+      "reason": "No exact factual meaning is available, and nautical floating should not be inferred from a business flotation anchor.",
+      "beforeHash": "4718c7062e757e925077b21a8b2fc253aec82a52b0ac47840b262852784cf18f"
+    },
+    {
+      "lemma": "flowability",
+      "hold": true,
+      "reason": "The source concerns flowing materials, not financial liquidity; the sole business anchor confuses separate domains.",
+      "beforeHash": "8ea8d4d4703faabcbf9766b0bd52e09d272904f6f9e11bf40887dfdcaff4cb1c"
+    },
+    {
+      "lemma": "footgear",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "Sturdy footwear is understandable and supports shoe and footwear study; keep uncountable usage without the unsourced superiority-of-precision claim.",
+      "beforeHash": "bc10e9e35bd37ddd7b0f01d83a8520876953aacd3adb83baa0eb5ed907ba1dc4",
+      "sourceSenseId": "wiktionary:656d99869819a8704035ac7a"
+    },
+    {
+      "lemma": "footway",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A passage reserved for pedestrians is explicit and related to sidewalk; it is not restricted to an invented legal jurisdiction.",
+      "beforeHash": "238402ea8e0cb61873a0018e3b9d483481b2a5c7134b05542698d132c6da5ab7",
+      "sourceSenseId": "wiktionary:07e0c926563e31ac9511a7c5"
+    },
+    {
+      "lemma": "foreignnational",
+      "hold": true,
+      "reason": "The joined phrase lacks exact evidence and a verified identity mapping; official person-status wording should not be guessed from the old alien gloss.",
+      "beforeHash": "90cdc55027cccf3adfef4bf53fa1b6126d6f34fd2558abb5edbd9dd3d385ba42"
+    },
+    {
+      "lemma": "forenoon",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source explicitly defines the sunrise-to-noon period, making a complete time-of-day extension of morning.",
+      "beforeHash": "8457920e9ba8744573b0512e18e35ed90fc0b221465a1937a97d2058a5a1b118",
+      "sourceSenseId": "wiktionary:5daa5880c5d6411ff5c4a153"
+    },
+    {
+      "lemma": "foreordain",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "Determine beforehand is an explicit general meaning relevant to predetermine; divine causation and inevitable doom are not necessary in this selected sense.",
+      "beforeHash": "a4584d0856411bd2fa540e77a726d36b5228a58b8bb1d526ac7fa90092802f2b",
+      "sourceSenseId": "source-dc4c70e4c0713228ee0b"
+    },
+    {
+      "lemma": "foreshore",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The shore between high and low water is a precise geographical meaning related to beach, without requiring wet sand.",
+      "beforeHash": "452636ba92612f2579dc9877cbc77aa12cdacdd90ef36e2ca4267a87726a5561",
+      "sourceSenseId": "wiktionary:992ccb750c27c7dc00a1d8f3"
+    },
+    {
+      "lemma": "formalistic",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Rigorous adherence to recognized forms supports organizational form-over-substance discussion; religion and art are examples, not a general synonym for bureaucracy.",
+      "beforeHash": "32796ce240e320cdcd32ee9be697aa726d614c61702253e99ef8f71b93de81e9",
+      "sourceSenseId": "source-bccdc15fffa0d5390912"
+    },
+    {
+      "lemma": "fortifying",
+      "hold": true,
+      "reason": "The available noun repeats fortified and does not verify the proposed defensive adjective; both meaning and part-of-speech alignment remain unresolved.",
+      "beforeHash": "0e7b4d5453a5754c58263114705e02913e54c2aae20020febc9222398292f9a2"
+    },
+    {
+      "lemma": "fractionally",
+      "hold": true,
+      "reason": "The sole definition repeats fractional without clarifying a small amount; the proposed slightly meaning needs a fuller factual source.",
+      "beforeHash": "faba9bac3ffbf0c191cde6a39fda352b2d053584a0e87936b3b950696c90a97a"
+    },
+    {
+      "lemma": "free-marketeer",
+      "hold": true,
+      "reason": "No exact sourced sense is present; the ideological free-market definition cannot be published from a model-authored gloss alone.",
+      "beforeHash": "336e04fbe29ca7c0276b21cd3ce195753aaa41d492a6f4938de73f92faca8217"
+    },
+    {
+      "lemma": "frequenter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A regular visitor is explicitly supplied and matches patron vocabulary without requiring a purchase on every visit.",
+      "beforeHash": "12127bb0fb370a93c1bb6f102f16661789799ab1a3f54a834a4cc76e620052be",
+      "sourceSenseId": "wiktionary:aa2cedbe38245dad24773c17"
+    },
+    {
+      "lemma": "frigidity",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Select physical coldness or lack of heat for the chill anchor; exclude the unrelated sexual-response and emotional-distance meanings.",
+      "beforeHash": "c448f76a1ff8f97a2194b372783ced186dae2059d9ec977de029f8039ddafc6b",
+      "sourceSenseId": "wiktionary:6d9af1c00e7afd569aeea9d9"
+    },
+    {
+      "lemma": "fromage",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact English entry supplies cheese and marks the borrowing uncommon; retain that restriction and do not encourage unsupported refined-register substitution.",
+      "beforeHash": "e4c8e492ebf05c8c27b5c664101a2c4692cdd3221315f4b2814fdf71b3e25bbe",
+      "sourceSenseId": "wiktionary:cc543dff0580832be84ec411"
+    },
+    {
+      "lemma": "frontrunner",
+      "hold": true,
+      "reason": "No exact sourced entry is available for this spelling; a familiar leading-candidate meaning still requires factual identity evidence.",
+      "beforeHash": "a3ebd6b24a034210167f180cc8fb8d347da7ecf7bf4d7add839972d84d2676bc"
+    },
+    {
+      "lemma": "fte",
+      "hold": true,
+      "reason": "The stripped-accent form has no exact entry and can resemble other abbreviations; do not guess a fete identity from the celebration gloss.",
+      "beforeHash": "6cf7aceae587fec1fa7836f319843e063888d154314c5f4cbe8460627d034481"
+    },
+    {
+      "lemma": "fugacity",
+      "hold": true,
+      "reason": "Thermodynamic escape tendency is unrelated to the sole business volatility anchor; the specialist source does not justify that financial connection.",
+      "beforeHash": "cb27d1346c8c221eccc817424c97821964188fe10760de3ec6ef68e0853e487d"
+    },
+    {
+      "lemma": "gainfulness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Affording gain, benefit or profit is explicit and directly relevant to profitability; no literary register is inferred.",
+      "beforeHash": "eae86721f955481d1b5cd9b6d76ad2aad0d4b2a189b38b6ee618fec7a0ff4e40",
+      "sourceSenseId": "source-43d3f4ea841567ac3068"
+    },
+    {
+      "lemma": "gaminghouse",
+      "hold": true,
+      "reason": "The joined spelling has no exact source evidence; a sourced gaming house identity is needed before presenting casino terminology.",
+      "beforeHash": "7ff0c75ccecf0746a8c840c4418d3812e2c31f6243cb9094f3a6e5a2662be430"
+    },
+    {
+      "lemma": "gangliocyte",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The specifically described nerve cell with its body outside the central nervous system is relevant to academic neuron study; it is not generalized to all neurons.",
+      "beforeHash": "02c01c45a5bbf5a514465de06a4f3f3a2ea1dad00e8419209597f5bc23f043f8",
+      "sourceSenseId": "source-d71bddaa7b8456e299fb"
+    },
+    {
+      "lemma": "garments",
+      "hold": true,
+      "reason": "No exact extracted plural meaning or reviewed garment inflection mapping is available; familiar clothing usage is not a substitute for recorded factual evidence.",
+      "beforeHash": "8cdd30d7e4f82bc42f8c94e8469c077f0963ea3a8006c064617e10bd1161e69d"
+    },
+    {
+      "lemma": "gasifier",
+      "hold": true,
+      "reason": "The only definition relies on unexplained gasification and does not verify the proposed feedstock-to-fuel process; clearer source evidence is needed.",
+      "beforeHash": "4f8757c6e189f0856399ebdcb4628e6cf499da3bc951df75377a4f614235b36f"
+    },
+    {
+      "lemma": "gatherer",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The rent-or-tax collector meaning is explicit and relevant to commercial collection; it is separate from foraging and sewing attachments.",
+      "beforeHash": "b7056d1482b5fac7ec8a32823a1bca4daf89d3f55f832496f57d5f9dd82ce20a",
+      "sourceSenseId": "wiktionary:463b79097a66815a6286331e"
+    },
+    {
+      "lemma": "genu",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The knee meaning is explicitly sourced; scope it to anatomical vocabulary without importing the separate brain-bend sense.",
+      "beforeHash": "82499fd0d3a4c3e4b94e7c6f3c96a182bd055fa70e4732a8a648206c1ab45606",
+      "sourceSenseId": "wiktionary:e18718feb38d20688cad88eb"
+    },
+    {
+      "lemma": "genuflection",
+      "hold": true,
+      "reason": "The clear source sense is reverential or worshipful knee-bending, not the fitness kneeling movement; the religious specialist is off-topic for this anchor.",
+      "beforeHash": "390b59cf289a8ebf65a699dd89198ae1e9ab953b4faf0e301ebf7068c2a1df86"
+    },
+    {
+      "lemma": "gestational",
+      "hold": true,
+      "reason": "The intended relating-to-pregnancy sense only repeats gestation; the distinct pregnant-person sense does not verify the proposed prenatal comparison.",
+      "beforeHash": "e6119a400a5dafa77cc9d2d5c040a7d2d38203206d330964d84f1865377a9ba6"
+    },
+    {
+      "lemma": "gesticulation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Gestures aiding expression of thought or feeling are explicitly defined; no specific yoga mudra or mandatory exaggeration is inferred.",
+      "beforeHash": "ebe5f9b803b6bc2b2ceb3ebe18ef248eeeb72196a97fbe72592346d9053a9f39",
+      "sourceSenseId": "wiktionary:f58d904d63427b115eb1bfad"
+    },
+    {
+      "lemma": "glasshouse",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The greenhouse, especially commercial, meaning directly fits the growing-facility anchor; exclude glass manufacturing and the slang military prison.",
+      "beforeHash": "04b29cc1a7c2128ffa52b310c23433091d3e55c5f58f8277f3018ac78bd721ff",
+      "sourceSenseId": "wiktionary:b21f6ba8781f07e732a3075e"
+    },
+    {
+      "lemma": "glossa",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The tongue, especially of an insect, is a sourced anatomical meaning; do not retain the old unsupported absolute exclusion of human usage.",
+      "beforeHash": "2a063e17e6f35271454c7ab8b1e1374cb8c37855cc8173f60aa37d82253727d8",
+      "sourceSenseId": "wiktionary:d3c8d12f59ffdf9b8215b2a2"
+    },
+    {
+      "lemma": "glottology",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The science of languages is a self-contained meaning directly appropriate to linguistics study; retain uncountable usage.",
+      "beforeHash": "273341e9e04a5e360d6cef96ea027dc80c4c000580e9209098936a061f03da7a",
+      "sourceSenseId": "wiktionary:37c7c65b0b68bf59014d5fbd"
+    }
+  ]
+}

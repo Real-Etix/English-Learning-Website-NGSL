@@ -3,6 +3,17 @@ import { describe, expect, it } from "vitest";
 import { buildTutorSenseContext, buildTutorStarContext } from "./tutor-context";
 import type { WordLearningProfile } from "./word-learning";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
+import { meaningReviewSnapshot } from "../vocabulary/meaning-review";
+
+it("grounds the tutor in limited example coverage rather than implying full usage evidence", () => {
+  const record = vocabularyRecordFixture();
+  const sense = record.senses[0]!;
+  sense.examples = [];
+  sense.meaningReview = { policy: "limited-examples-v1", reason: "Reviewed meaning", reviewedAt: "2026-10-16T00:00:00.000Z", contentSnapshot: meaningReviewSnapshot(record, sense) };
+  const context = buildTutorSenseContext(record, sense.id);
+  expect(context).toContain("Example coverage: limited");
+  expect(context).not.toContain("Sourced examples:");
+});
 
 function profile(overrides: Partial<WordLearningProfile> = {}): WordLearningProfile {
   return {
@@ -48,6 +59,20 @@ function profile(overrides: Partial<WordLearningProfile> = {}): WordLearningProf
     ...overrides,
   };
 }
+
+it("keeps usage qualifiers in canonical and profile tutor references without mixing senses", () => {
+  const record = vocabularyRecordFixture();
+  record.senses[0]!.labels = ["usually", "with to"];
+  record.senses.push({ ...record.senses[0]!, id: "other", definition: "Another meaning.", labels: ["of liquids"] });
+  const context = buildTutorSenseContext(record, record.senses[0]!.id);
+  expect(context).toContain("Usage labels: usually; with to");
+  expect(context).not.toContain("of liquids");
+  const p = profile();
+  p.senses[0]!.labels = ["usually", "with to"];
+  p.senses[1]!.labels = ["of liquids"];
+  expect(buildTutorStarContext(p)).toContain("Usage labels: usually; with to");
+  expect(buildTutorStarContext(p)).toContain("Usage labels: of liquids");
+});
 
 describe("buildTutorStarContext", () => {
   it("includes bounded sourced teaching evidence and only authored relation explanations", () => {

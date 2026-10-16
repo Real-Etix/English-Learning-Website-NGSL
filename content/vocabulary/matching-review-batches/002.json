@@ -1,0 +1,346 @@
+{
+  "id": "002",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T07:36:57.886Z",
+  "decisions": [
+    {
+      "lemma": "acceding",
+      "head": "accede",
+      "source": "wordnet",
+      "sense": 2,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Explicit participle/gerund mapping plus the agree-or-express-agreement sense supports the TOEIC agreement context. Publish the verb form, not the unverified equivalence to an affirmative adjective.",
+      "beforeHash": "f69dba560fa03c74077a612a74397e65135cfdd54f3df6af380fca5d36c7c541",
+      "sourceSenseId": "source-3a177a25ce3f4d57c356"
+    },
+    {
+      "lemma": "accoutrements",
+      "head": "accoutrement",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The plural mapping resolves identity and WordNet supplies the clothing-accessory meaning, relevant to the kit context. No claim that this covers every kind of equipment or exact synonym edge is published.",
+      "beforeHash": "7b687853933acb10446803d326ce1f97f4b6ae1cabbf6862c9e4d1b44c023bd3",
+      "sourceSenseId": "source-d3df6be8e83760ef353e"
+    },
+    {
+      "lemma": "adjudicators",
+      "head": "adjudicator",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Explicit plural of the sourced person-who-settles-disputes sense is relevant to the NGSL jury/legal context. The definition does not equate an individual adjudicator with a jury and no such edge is approved.",
+      "beforeHash": "e65242461c7bc9f9c26a6a95e9db5927cfa53ecea03b0ef6364f5e184613250a",
+      "sourceSenseId": "source-184458d3b8419aaa0c8a"
+    },
+    {
+      "lemma": "adornments",
+      "head": "adornment",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The exact plural link and concrete decoration sense support the TOEIC jewelry context. Publish the broader decoration meaning without claiming all adornments are jewelry.",
+      "beforeHash": "c19152cf637c0b534db9be655fe7c399b00e97da9bf047a7543a4f26ea3cf376",
+      "sourceSenseId": "source-89807a01ced1dab69469"
+    },
+    {
+      "lemma": "airbase",
+      "hold": true,
+      "reason": "The spelling relation now verifies air base, but its military-aircraft meaning remains unrelated to the ordinary Business/TOEIC airport context. Keep specialist content hidden.",
+      "beforeHash": "ef7cbf22d6c390b173eddea5123fd763a526121da6a3a382a50d08249bb7b3b4"
+    },
+    {
+      "lemma": "airpower",
+      "hold": true,
+      "reason": "The spaced source confirms military aircraft collectively, not ordinary Business aviation. Spelling repair does not resolve topic relevance; retain hidden.",
+      "beforeHash": "8f7bd34ecebb575c51b37eb28afdf9b6fac34bc7a785b2d0c6e7fde86fc2b162"
+    },
+    {
+      "lemma": "ala",
+      "hold": true,
+      "reason": "The new a la preposition and Alabama abbreviation are unrelated to the intended wing noun. Anatomical/botanical wing senses remain specialist and ungrounded in this NGSL context.",
+      "beforeHash": "e1a9f31cd574f7ee9524f15a9c4e9ab4470f89fcad81c9940f738bee78d7c081"
+    },
+    {
+      "lemma": "appointments",
+      "head": "appointment",
+      "source": "wordnet",
+      "sense": 2,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Select the explicitly usually-plural furnishings/equipment sense, matching the NGSL furniture anchor. The source plural link resolves identity; scheduled meetings and positions are not substituted.",
+      "beforeHash": "41f42f1b627dff583c9af7c84ea97df47812bb4d222e97cd86fbf38b8d128c9b",
+      "sourceSenseId": "source-db7c3c4f28548cb7bd4b"
+    },
+    {
+      "lemma": "armaments",
+      "hold": true,
+      "reason": "The plural identity is now sourced, but both base senses concern military weapons or preparation for war, not the intended general hardware context. Retain unrelated specialist content hidden.",
+      "beforeHash": "a578985d831905558411a0586af287109e6c01776d1e7bc28dba5f96ad49721f"
+    },
+    {
+      "lemma": "automaticdishwasher",
+      "hold": true,
+      "reason": "The proposed spaced phrase returned no exact usable entry from the checked free sources, including the new Wiktionary and OEWN lookups. Do not manufacture a definition from its parts.",
+      "beforeHash": "2966a502dd6893480ed75f6cb9382d8ac205fbdfc09c9ff461479ef7f70f44d3"
+    },
+    {
+      "lemma": "beamer",
+      "hold": true,
+      "reason": "The exact capitalized mapping yields BMW or IBM slang, not projector. The intended projector use remains chiefly non-native in the existing evidence; no suitable release.",
+      "beforeHash": "26f8129503fcc836f1a944722a5feae4932f5ecf6b6ed4192ce908fdd82b630c"
+    },
+    {
+      "lemma": "beams",
+      "head": "beam",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Explicit noun plural with the long structural wood/metal/concrete member sense resolves the timber-context gap. Light, broadcasting and gymnastics senses are excluded.",
+      "beforeHash": "f0cbf893f33d1715f71b2a7166613fe9176555fea5f144de02a6b936c59e3075",
+      "sourceSenseId": "source-703c46261a001226a333"
+    },
+    {
+      "lemma": "bettingshop",
+      "head": "betting shop",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact WordNet spaced headword supports historical space-loss repair. A licensed bookmaker's shop fits the casino/gambling-business topic, while remaining distinct from a casino; no synonym edge is approved.",
+      "beforeHash": "efb11df18602df0a8b125371f926831d586fecaf9ff6ac233c21a5cc12761ccb",
+      "sourceSenseId": "source-36fa5969f9527a435155"
+    },
+    {
+      "lemma": "bondservant",
+      "hold": true,
+      "reason": "The alternative spaced definition only says labor without wages. It does not resolve the prior legal/historical distinction between indenture and slavery sufficiently for this learner record; retain uncertainty hidden.",
+      "beforeHash": "4e47a7db6f96b62188cf57f1972d9c055ab8e38618f26eb6a100aec60eb56ade"
+    },
+    {
+      "lemma": "bovines",
+      "head": "bovine",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Wiktionary explicitly verifies the noun plural and WordNet identifies members of genus Bos. This is directly relevant to the existing cattle anchors; do not broaden it to every animal in the larger biological subfamily.",
+      "beforeHash": "41646604d17069ddb2bece72472433d0bb54f412bcd953e1b9685cb1dc274ce1",
+      "sourceSenseId": "source-01ec021b39548aec7727"
+    },
+    {
+      "lemma": "canap",
+      "head": "canapé",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The English Wiktionary appetizer sense verifies the accented canapé repair and directly fits TOEIC food vocabulary. Exclude the furniture sense and retain the original stable identifier.",
+      "beforeHash": "670a7d89c2065ad9dc9c778825a9c2e89ab7fd20dff99c0aa4951506b53b86bf",
+      "sourceSenseId": "wiktionary:b07d16920e2e6be05e41ace8"
+    },
+    {
+      "lemma": "capitalpunishment",
+      "head": "capital punishment",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact WordNet phrase verifies the historical collapsed spelling and legal execution meaning. Limit scope to Academic legal discussion, not Business task execution.",
+      "beforeHash": "b74cdcec843bdb2068ff2215dab2afd7f1d6a2becd6a55467ed8f897368156eb",
+      "sourceSenseId": "source-5ce4ec2b7873d4a2c2a9"
+    },
+    {
+      "lemma": "cardstock",
+      "head": "card stock",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The explicit alternative-spelling relation and full paper-material definition resolve the previous evidence gap. Appropriate to NGSL paper, with source countability labels retained.",
+      "beforeHash": "4e774fb62cedc381410c24116a2733c08b43fe34493bb5a7887b4f3e2bdb941f",
+      "sourceSenseId": "wiktionary:6c752ebf68693a016bb844b1"
+    },
+    {
+      "lemma": "chronicled",
+      "head": "chronicle",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact past/participle mapping plus record-in-chronological-order meaning is appropriate to historical accounts. Publish the verb form without asserting it means the adjective historical.",
+      "beforeHash": "919d1a9af8f5186d93fde2eda634d04bf19325f46a3f99480360ef8a159a41f9",
+      "sourceSenseId": "source-6c6ab2807f8282f25c0d"
+    },
+    {
+      "lemma": "clavicula",
+      "head": "clavicle",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Explicit English alternative-form relation and the human collarbone definition establish identity and direct Fitness anatomy relevance. Exclude fish-bone meaning and retain both source references.",
+      "beforeHash": "fcd6d6fe8a3c468cb1316bce9255f04d47b0efe7d14af6e1054ecbbaadd985f3",
+      "sourceSenseId": "wiktionary:a40f97f3e1d46a809310c128"
+    },
+    {
+      "lemma": "coffers",
+      "reason": "Follow-up exact noun evidence supplies a store of organizational money; the prior explicit plural mapping now resolves the intended Business treasury sense. Exclude containers and architectural panels.",
+      "beforeHash": "7bb3937dbced21bd5c34a2186b5d6eb8d3f095bf1dbec5dcdcde4de2241151a2",
+      "head": "coffer",
+      "source": "wiki",
+      "sense": 3,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "sourceSenseId": "wiktionary:0b9677ab6dc253cbae62fca9"
+    },
+    {
+      "lemma": "colonizing",
+      "head": "colonize",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Source explicitly identifies the participle/gerund and defines establishing a colony. This fits Academic colonial-history context, without equating an ongoing process to a colonial adjective or business expansion.",
+      "beforeHash": "5d7464dcb0ae9ab3f3fe9eefd1f821567f6786f4f026295ffc00f75acc1be77e",
+      "sourceSenseId": "source-f882e97c77c70fe4d393"
+    },
+    {
+      "lemma": "commodities",
+      "head": "commodity",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "The exact noun-plural relation with articles-of-commerce definition verifies traded goods in the existing economics/merchandise anchors. No unsupported raw-material-only restriction is added.",
+      "beforeHash": "97de72808a0e9b49bd3e56bdcbdcfafcdb5297155ce41cb5721114cf6454ed68",
+      "sourceSenseId": "source-6dae509bf6ee76c3b3ae"
+    },
+    {
+      "lemma": "communiqu",
+      "head": "communiqué",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "English Wiktionary supplies an official-report-or-statement meaning under the accented headword. This verifies the lost-accent repair and the existing bulletin/advisory communication context.",
+      "beforeHash": "8c1628024e2f0896bf6d9c32a78cc2e92b631ece7541f950c908fc088945bd17",
+      "sourceSenseId": "wiktionary:ec1300cfd8bd2a11dae2f599"
+    },
+    {
+      "lemma": "components",
+      "head": "component",
+      "source": "wordnet",
+      "sense": 2,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact noun-plural mapping and concrete individual-part-of-composite definition support the NGSL contents/parts context. No unrelated mathematical component or synonym edge is approved.",
+      "beforeHash": "a52f01306b0bdac8eeb39a79611e2331b451d2323987d5657d7a862e4a662a2c",
+      "sourceSenseId": "source-60e2132f36f6896da139"
+    },
+    {
+      "lemma": "computerized",
+      "head": "computerised",
+      "source": "wiki",
+      "sense": 1,
+      "mapping": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The original source explicitly calls computerized the American/Oxford spelling of computerised. The latter's computer-mediated/digital adjective sense resolves the cross-reference while preserving American spelling and NGSL electronic context.",
+      "beforeHash": "a36b1f2db633b86d439b5c3c7f390bcfdc8b0abf381a5b74405a7b59d27f13c5",
+      "sourceSenseId": "wiktionary:1c01e509be83f70805cc413c"
+    },
+    {
+      "lemma": "consomm",
+      "head": "consommé",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "English Wiktionary's clear-broth definition verifies the lost-accent repair and matches TOEIC soup. Preserve source countability and hot/chilled distinction without adding an invented example.",
+      "beforeHash": "de0180ef42ecd5449c6dd17aea24b212168d9e5b5d1112034361e492f5711179",
+      "sourceSenseId": "wiktionary:39b990f7624f09d7f02f8264"
+    },
+    {
+      "lemma": "constituents",
+      "head": "constituent",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Select the sourced concrete component-part sense via explicit plural relation for NGSL content. Do not blend voters into this definition or release the Business constituency association.",
+      "beforeHash": "7821caf57da19686e642881f33745e8b2403e9715bb458e5f78e96554a560e5c",
+      "sourceSenseId": "source-cd4248db3331f4610ec0"
+    },
+    {
+      "lemma": "courttennis",
+      "head": "court tennis",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact spaced source phrase defines the ancient four-walled-court form of tennis. This verifies identity and sports relevance while explicitly preserving its distinction from modern lawn tennis.",
+      "beforeHash": "c29735e1298e145565ffbb57930231f925f289da2fc6864873edb79976308c9b",
+      "sourceSenseId": "source-ad8ce92a61456dc65610"
+    },
+    {
+      "lemma": "coveralls",
+      "head": "coverall",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The original noun gloss explicitly links coveralls to coverall, and the target defines the protective jumpsuit. Preserve plural-only US labeling and the sourced clothing meaning, not an inferred generic overall adjective.",
+      "beforeHash": "26cce9b869881fce8f058b75da7cd6fe9c8fee1ac51f21f3ac6ea6f61e02f47d",
+      "sourceSenseId": "wiktionary:059fe5feab1f0d1d5fc04cf3"
+    }
+  ]
+}

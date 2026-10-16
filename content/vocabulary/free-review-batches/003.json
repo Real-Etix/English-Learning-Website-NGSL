@@ -1,0 +1,327 @@
+{
+  "id": "003",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T03:56:32Z",
+  "decisions": [
+    {
+      "lemma": "axilla",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The armpit/arm-shoulder cavity definition is direct human anatomy appropriate to Fitness. Do not substitute the specialized insect-body definition.",
+      "beforeHash": "aff9f56597e30dd1e2a50bd54327ceeab60821ae8fbdea8daaa1461cb12499b2",
+      "sourceSenseId": "wiktionary:10df653514cef97a453ec5a8"
+    },
+    {
+      "lemma": "bactericide",
+      "hold": true,
+      "reason": "The candidate adds that a bacteria-killing substance is especially otherwise harmless, an unnecessary safety implication. Seek a clearer lexical definition before teaching the medical term.",
+      "beforeHash": "c425ba2cebb213e6cfd29b46f5e38a698597a264b92ed4a44f6a84c00682d92e"
+    },
+    {
+      "lemma": "banquette",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The upholstered restaurant/lounge bench definition exactly fits seating in the booth context. Military platforms, vehicle seats and regional sidewalks remain unselected.",
+      "beforeHash": "28da00fbb37b1b24866b73386da7ed6aef71a3368632abea269426cb39b8409d",
+      "sourceSenseId": "wiktionary:d3d02f94e66762074cd2a52d"
+    },
+    {
+      "lemma": "beamer",
+      "hold": true,
+      "reason": "Preserve the prior withholding: the projector sense is explicitly chiefly non-native speakers' English. Do not promote it as an ordinary modern technical synonym.",
+      "beforeHash": "26f8129503fcc836f1a944722a5feae4932f5ecf6b6ed4192ce908fdd82b630c"
+    },
+    {
+      "lemma": "beefburger",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source's parenthetical cooked ground-beef sandwich explanation is self-contained and matches hamburger dining vocabulary. Patty-only and raw ground-beef senses are not selected.",
+      "beforeHash": "fc0bbe3c5dd5f7e5ed20318c822386e99d2840e7d104b5b537d11b6d0290c957",
+      "sourceSenseId": "wiktionary:e1db9a2bf94dcb7f35241485"
+    },
+    {
+      "lemma": "belletristic",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Writing appreciated for aesthetic value rather than content is the precise literary meaning. Restrict to Academic; the other sense only points to unexplained belles-lettres.",
+      "beforeHash": "22a30871c9946a9fe44124db726645fd904c79369c5d52b488072ecc719bf8f9",
+      "sourceSenseId": "wiktionary:25017755012c94b335871e9f"
+    },
+    {
+      "lemma": "benefaction",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "An act of charity/almsgiving fits charitable donation vocabulary. Do not add an unsupported requirement that the donation be large or formally philanthropic.",
+      "beforeHash": "ba48bf279f3c1aeb8ddb44ad88dabb30be7f54146a38a9f85959c83f516f3dcc",
+      "sourceSenseId": "wiktionary:e2989c758c9433a138279e92"
+    },
+    {
+      "lemma": "bibliotheca",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "OEWN verifies a collection of books, directly related to library. The old prestigious-building and poetic-register claims are not included.",
+      "beforeHash": "bcdc7bd7e4179e18d6f51b12308c53ee8170560a18c5b6335208143b896b3b5e",
+      "sourceSenseId": "oewn:07994478-n:bibliotheca%1:14:00::"
+    },
+    {
+      "lemma": "biocatalyst",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The biochemical catalyst definition explicitly includes enzymes and fits Academic chemistry/biology. Exclude the Fitness enzyme extension and do not reduce all biocatalysts to protein enzymes.",
+      "beforeHash": "df8486f9699bf48ca79694394270e863ccb6f277969ddbc0501ad9b90566e3f5",
+      "sourceSenseId": "wiktionary:c75c716417c7aa836a96a32e"
+    },
+    {
+      "lemma": "biocide",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "An action/substance destroying organisms is the sourced broad biological meaning relevant to pesticides. This does not assert safe application or practical killing instructions.",
+      "beforeHash": "51bb2e47aa1b51ff5fe29f76bbab191f1b9c2c195d5eafb54ce932e049655b8a",
+      "sourceSenseId": "wiktionary:4d0eec09983e579ee6e257ad"
+    },
+    {
+      "lemma": "biodegradation",
+      "hold": true,
+      "reason": "The source describes microbial decomposition of material, not human digestion in Fitness. Keep this mismatched environmental-science extension hidden.",
+      "beforeHash": "e15cd5aba94c7dace57ed4e7bf670ff5146ac8be2fceba0edad782abbc880178"
+    },
+    {
+      "lemma": "biogenetics",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The exact genetic-engineering meaning is appropriate to Academic biology. Do not approve the broader unsupported gloss covering every hereditary aspect of biology or general TOEIC use.",
+      "beforeHash": "a161429c8746dd34497688ee8fe0e4f509a01fa97fa64ff967f4250032267d72",
+      "sourceSenseId": "wiktionary:6122a7dfda35879706886545"
+    },
+    {
+      "lemma": "bioscientist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A scientist specializing in biosciences is a clear occupational meaning matching biologist. No claim that biologist is too general or that the work must be in a laboratory is approved.",
+      "beforeHash": "4922edf0e96de6bba852f01806ea65ffedbd84993c7532a23f6ac4a8db6e6bba",
+      "sourceSenseId": "wiktionary:6e428f4b4378bdc30948f241"
+    },
+    {
+      "lemma": "biostatistics",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source explicitly explains statistics applied to biological/medical data. Restrict to Academic, excluding unrelated general Business/TOEIC statistics extensions.",
+      "beforeHash": "4ffbc8a50d3c9353d316a37e2cca9071f880ef303f51226bd3a42bdf80007e0a",
+      "sourceSenseId": "wiktionary:26deecad6c87ec44f51b1403"
+    },
+    {
+      "lemma": "bondservant",
+      "hold": true,
+      "reason": "Indentured servitude and slavery are not interchangeable. The only proposed slave connection and terse indentured-servant definition do not establish a suitable learner explanation.",
+      "beforeHash": "4e47a7db6f96b62188cf57f1972d9c055ab8e38618f26eb6a100aec60eb56ade"
+    },
+    {
+      "lemma": "bookstack",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A library bookshelf is a self-contained meaning appropriate to bookcase vocabulary. Unsupported height, fixed construction and exclusivity claims are not imported.",
+      "beforeHash": "e2ee2604cf8114249a42826635ed63b050146e8c0188569bebac1406f39fef5a",
+      "sourceSenseId": "wiktionary:6e40ead4f1c48b243afe5c1e"
+    },
+    {
+      "lemma": "boots",
+      "hold": true,
+      "reason": "The cached complete definitions concern slang, historical shoe-cleaning work or a fleet, not footwear. The prior plural-identity gap remains; do not publish an unrelated meaning.",
+      "beforeHash": "701a8e8e6b7150498ef7a68cf1f48b55f81e820f6085b00c97d7b0d5b5e80e81"
+    },
+    {
+      "lemma": "boulangerie",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The English French/French-style bakery definition directly fits dining vocabulary. It does not establish an absolute bread-only restriction.",
+      "beforeHash": "2186bee9ee608cfd2f0d76def8d7fab7aa09faa54c3dda5afbc1a67c93551e43",
+      "sourceSenseId": "wiktionary:3e12546b43cd6ad28c636ace"
+    },
+    {
+      "lemma": "bourdon",
+      "hold": true,
+      "reason": "Organ stops, bagpipe pipes and bells belong to music, not Fitness pedal. The botanical/insect and pilgrim-staff alternatives do not resolve the topic mismatch.",
+      "beforeHash": "d4bb0529e4b6e338c2289de45148b7cf2ed36ecc31b6204280f1a46c738d42c8"
+    },
+    {
+      "lemma": "bowknot",
+      "hold": true,
+      "reason": "The verified decorative/shoelace knot is not the exercise/body-bending sense of the Fitness bow anchor. Keep the uncertain topic connection hidden.",
+      "beforeHash": "255e6b2399208c091819cb6a9563aa44ef311632193af76f9a48691783822281"
+    },
+    {
+      "lemma": "brachialis",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The upper-arm muscle flexing the elbow is an explicit anatomical definition relevant to the Fitness flexor anchor. It remains a specific muscle, not every flexor.",
+      "beforeHash": "5eec70041751078cdd585d5afefc99b0b7b02f94fe00f164706e50a3a065fc91",
+      "sourceSenseId": "wiktionary:c34d9b8bf1579cd79bcd86bd"
+    },
+    {
+      "lemma": "brainpan",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The skull/braincase meaning directly matches anatomy. Preserve the Canada/US colloquial labels so it is not presented as formal anatomical terminology; exclude the mind sense.",
+      "beforeHash": "cb6320b7181dde32e5aea636f27a54fef51e06da4b39420a35bbf8dec5c95904",
+      "sourceSenseId": "wiktionary:9e32e1014bb91a249f3adc17"
+    },
+    {
+      "lemma": "brasserie",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "The source says a small informal restaurant serving beer/wine and simple food. This fits restaurant/cafe vocabulary while rejecting the old larger/more-formal comparison.",
+      "beforeHash": "00c190dfe6a053265ddca2b03ad4b69c9782a78fee4651dbfbaaa4db902a9a51",
+      "sourceSenseId": "wiktionary:9c41f57ed0ab81e6528ebc17"
+    },
+    {
+      "lemma": "brome",
+      "hold": true,
+      "reason": "The Bromus-grass definition does not fit the ordinary cheating/chess senses in Academic, Business or Fitness. Do not reproduce the old botanical homonym confusion.",
+      "beforeHash": "3862d97bdb8828ef3ad6da3b98b7cf133b1b50c5e7a54bc9ca9afe854e853f16"
+    },
+    {
+      "lemma": "bromegrass",
+      "hold": true,
+      "reason": "Forage grasses do not match the ordinary cheating context of the existing cheat anchors. The technical botanical meaning alone does not justify publication for these lists.",
+      "beforeHash": "25dc0089ceff57ae910908dfdd8039d72dcf7cfdcbd2b79c39bdfdb4c4cda213"
+    },
+    {
+      "lemma": "bulbil",
+      "hold": true,
+      "reason": "Plant buds and hollow anatomical bulbs do not establish the intended meaning of general TOEIC bulb. Keep the specialist/homonym correspondence uncertain.",
+      "beforeHash": "20f8c1de0f03d4e2cba4e4f2a872b2689e58a7602b289100b56192ca64660699"
+    },
+    {
+      "lemma": "bulker",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A bulk dry-goods cargo ship directly matches freight transport. Do not select freight assessors, body-mass gainers or supplements.",
+      "beforeHash": "e697aaed563143ccae87a242c5146a2a1e4d8f5fca48204a8f1971b4d40323d1",
+      "sourceSenseId": "wiktionary:799e22cb686464012d4fb054"
+    },
+    {
+      "lemma": "bullseye",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A shot hitting a target's centre is clear and related to target. Choose this self-contained sense instead of the definition with unexplained inner/magpie scoring terms; no whole-target equivalence.",
+      "beforeHash": "f3610c148a285e5e5be31be43646e6c16191ad83a1931a3080fff9fea73aafa3",
+      "sourceSenseId": "wiktionary:941ebe99eac46e2ecd08b42e"
+    },
+    {
+      "lemma": "bunkum",
+      "hold": true,
+      "reason": "The source is dated/slang nonsense, but the Academic/TOEIC jazz anchor most naturally concerns music. The old claim that it is more formal than jazz is also unsupported.",
+      "beforeHash": "b3f80801fcd918611396089d66df5d4c668cacc62ce2d6cf4c02fe4ea2e5a71a"
+    },
+    {
+      "lemma": "cablegram",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A submarine-cable telegram is a specific communication meaning fitting cable. The rare derived verb and comparative formality claims are not selected.",
+      "beforeHash": "2e890b8a7d36d8cd9ef2d55cd927d6fad69ce5815882f3a62ee91fc47bb7c28d",
+      "sourceSenseId": "wiktionary:b3e1bc034b3442e78931ac4c"
+    },
+    {
+      "lemma": "cabriolet",
+      "hold": true,
+      "reason": "The valid retractable-top car meaning still has only a Business convertible anchor that may concern financial instruments. Preserve the previous unresolved sense/topic decision.",
+      "beforeHash": "dccbf05f1d72f142ca5b77ad3abfc75fc0a71142fed18249124516c4b2876884"
+    },
+    {
+      "lemma": "cajoler",
+      "hold": true,
+      "reason": "A flattering persuader is unrelated to a Fitness smoothie beverage. This is a clear sense mismatch, not a missing-example issue.",
+      "beforeHash": "2081194bd8525ee856c4795064eb7037bd302fd51536cbb5797679ee8567ddaf"
+    },
+    {
+      "lemma": "calling",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "The source explains a strong life-direction urge with examples within the definition. This matches vocation/career purpose without requiring every calling to be spiritual or approving unrelated niche senses.",
+      "beforeHash": "3658d740a8b60aa0ffb5d7f0290692cb64cba5a30052599234a1aa40ec1a3722",
+      "sourceSenseId": "wiktionary:57fda4c0da9c23c4a2d01e3d"
+    },
+    {
+      "lemma": "camerawork",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Camera skill/technique, especially video, is explicitly sourced and relevant to photography. Preserve countability labels; no unsupported artistry ranking is introduced.",
+      "beforeHash": "e5e3516ac34404b98a50e6889ac9d0e0cd9b5b08bb7a5e1c84c34dd8e92ba462",
+      "sourceSenseId": "wiktionary:c9a27882ee5ea951b943f616"
+    },
+    {
+      "lemma": "cantonment",
+      "hold": true,
+      "reason": "Military quarters/stations are specialist senses not established by the generic NGSL camp anchor. Definitions also distinguish temporary and regional permanent uses, so the old blanket permanent-camp claim is unsafe.",
+      "beforeHash": "f936a261b794c2c874931e6b1428d916447411231729ff9fe32202e7c45bdcd5"
+    }
+  ]
+}

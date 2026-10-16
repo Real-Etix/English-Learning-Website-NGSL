@@ -1,0 +1,369 @@
+{
+  "id": "024",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:47:39.000Z",
+  "decisions": [
+    {
+      "lemma": "prosperously",
+      "hold": true,
+      "reason": "Both candidates depend on unexplained prosperous or prosper and do not independently establish the intended successful-outcome meaning.",
+      "beforeHash": "b52f541aac2e4c3d53f685cddc2c999530761f86594885a0346502678d43f8f1"
+    },
+    {
+      "lemma": "protg",
+      "hold": true,
+      "reason": "This malformed identity has no exact factual entry; the proposed protege correction needs explicit identity mapping rather than a guessed rewrite.",
+      "beforeHash": "b5e0f478841a61dcf9f71573c098b69e84c3a831b122587b17a834e7ac09f973"
+    },
+    {
+      "lemma": "provisioner",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source gives a concrete supplier-of-food-or-army-supplies occupation, without treating all caterers as military suppliers.",
+      "beforeHash": "e93fc564341e5b6a9dcdca8be77bdb7922c894ac8f9fcc2490ee50149db848bc",
+      "sourceSenseId": "source-4cce00ae644a53c3852f"
+    },
+    {
+      "lemma": "psephological",
+      "hold": true,
+      "reason": "The only definition repeats unexplained psephology and does not verify the proposed electoral-analysis meaning independently.",
+      "beforeHash": "e688cba34c98ed19896b7a2bb4eaa5dcffc104d5e55674b4498cda19b19b3786"
+    },
+    {
+      "lemma": "psychobiology",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Biological foundations of cognition are explicitly defined and fit academic psychology; no unsupported business application is added.",
+      "beforeHash": "ebf8632ec6147c142c134652db865bf8e29ebe7a99f639959ce588f7e4b13075",
+      "sourceSenseId": "wiktionary:f4c220daf00c9a3ad1a027a0"
+    },
+    {
+      "lemma": "psychometrics",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Psychological test design and interpretation directly support academic measurement and workplace assessment vocabulary, without claiming tests are infallible.",
+      "beforeHash": "7d0a5eebb8cb6b0f033bf77429b04468d927a1d52c27850fb740808f572c511b",
+      "sourceSenseId": "wiktionary:c4f9320a0956af8fedac9784"
+    },
+    {
+      "lemma": "psychopathological",
+      "hold": true,
+      "reason": "One candidate is circular and the other narrows the adjective to undiagnosed disorder, which does not verify the intended relating-to-pathology meaning.",
+      "beforeHash": "fdc6427f74a51a2ed793bf3d86de48fe5f03100bcf46757143436e846e795351"
+    },
+    {
+      "lemma": "psychostimulant",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The temporary alertness-increasing drug meaning supports understanding the caffeine anchor; it is vocabulary, not a recommendation to use such drugs.",
+      "beforeHash": "80655b260fd7f5e8674a60ddc35aaf440d52dd12980268f0bfde1de5f541664b",
+      "sourceSenseId": "wiktionary:11f765f2be7420d508f62ee7"
+    },
+    {
+      "lemma": "pyrophosphate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The salt-or-ester identity is consistently supported by both factual dictionaries and fits academic phosphate chemistry, not fitness advice.",
+      "beforeHash": "4f7d74bf30d3f9be22adbdb4db6e7057c70aae29dbbe1e5c8d827f3bc142cc89",
+      "sourceSenseId": "wiktionary:b1d4c6ec85f2fa8b39483628"
+    },
+    {
+      "lemma": "pyrotechnics",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The selected fireworks-display meaning matches event vocabulary without conflating it with musical virtuosity.",
+      "beforeHash": "d82e8e1729f0cf0df9f2b1f3eb4923f3d6ada2036e4fc7f25e6e656b60784a7e",
+      "sourceSenseId": "wiktionary:8aff341d5273d9c0f9b327f1"
+    },
+    {
+      "lemma": "quadrate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Four equal sides and right angles clearly establish the square-shaped adjective; unrelated astrological and anatomical senses remain hidden.",
+      "beforeHash": "27ad0f45507cdb372b22a665438d3a07c2926c5c6c87eef6b0c4db8b6ae9dca6",
+      "sourceSenseId": "wiktionary:7b84b947c01ee993bccce8c6"
+    },
+    {
+      "lemma": "quadripartitely",
+      "hold": true,
+      "reason": "The four-part division meaning does not fit the business or TOEIC quarterly frequency anchor; the proposed heraldic context is unrelated.",
+      "beforeHash": "1a46b2ea29bfa76380a672488dc796a16acd4cf23fa1596d51bdb3f147091b67"
+    },
+    {
+      "lemma": "quadruplets",
+      "hold": true,
+      "reason": "No exact plural evidence was recovered, and the draft confuses multiple births with the Fitness quadriceps anchor.",
+      "beforeHash": "7b4d549b11212327534e6fa669a169351ec9b219646cb086e0ff476e980437be"
+    },
+    {
+      "lemma": "quaff",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Drinking in large draughts is explicitly defined and relevant to the drinking anchor, without promoting the unsupported synonym edge or encouraging excessive intake.",
+      "beforeHash": "a114984358ee31934b2d08a4d3c5b8491a427a71698ecb53247965c0743e15c6",
+      "sourceSenseId": "wiktionary:56a9b6bd4837c69b8bd6f18c"
+    },
+    {
+      "lemma": "quantifiable",
+      "hold": true,
+      "reason": "All candidates rely on quantify or quantified without independently explaining numerical measurement; retain until an informative exact sense is available.",
+      "beforeHash": "8d65e63a683925da68a6c58d156cbe9347408340e9faf177c4e7a6291b27a1eb"
+    },
+    {
+      "lemma": "quantification",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business",
+        "ngsl"
+      ],
+      "reason": "Discovering or expressing quantity directly verifies the measurement sense rather than the unrelated logical quantifier sense.",
+      "beforeHash": "ecb90654ce7929488da96b6335969624a8d5da80c1e77fa81bfd11aa4b3430c9",
+      "sourceSenseId": "source-5f88ddc896cc4d70e0ca"
+    },
+    {
+      "lemma": "quartile",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source precisely defines the three dividing points in an ordered distribution, avoiding confusion with four groups or an arbitrary quarter.",
+      "beforeHash": "132fdca52777a5022a616cfc5a1685ff3e7fcbc4fbec699452d375ddaa34fdfb",
+      "sourceSenseId": "wiktionary:7ee235113ce756fb095386e5"
+    },
+    {
+      "lemma": "quicklime",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Calcium oxide and its relationship to limestone and slaked lime are explicitly sourced; exclude nutritional calcium and fitness interpretations.",
+      "beforeHash": "4b448e9cef2e29c8c6b41c673e3cdfbc5e4beca019c64a6968cdd7b919608ed0",
+      "sourceSenseId": "wiktionary:4f9023029ba2be6be0900cc1"
+    },
+    {
+      "lemma": "radionuclide",
+      "hold": true,
+      "reason": "The bare radioactive-nuclide pointer does not explain nuclide or establish a business learning context beyond the uranium anchor.",
+      "beforeHash": "bc71dae0e8d8cbece1400d52a15f59cd8ab1485abf91a817cd2ccad0a6cac01b"
+    },
+    {
+      "lemma": "rancorous",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Deep-seated resentment directly verifies the interpersonal bitterness meaning without relying on the root rancor.",
+      "beforeHash": "bd1b90f0dca7bbd89dc7a128e69bedc496c86cdafeed406ca012c3bd34075a9b",
+      "sourceSenseId": "source-20fc6130efa05ad728c4"
+    },
+    {
+      "lemma": "raptly",
+      "hold": true,
+      "reason": "The only candidate repeats rapt without explaining absorption or attention, so the intended sense remains insufficiently supported for learners.",
+      "beforeHash": "2252fd30bde19dd132320e8050f4a2f1e885656f7953159e86653921b6d8abfc"
+    },
+    {
+      "lemma": "reacquaint",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source explicitly supplies reintroduce and refamiliarise as the sense of becoming acquainted again, matching the refresh-memory context.",
+      "beforeHash": "fe066ad14c156899c6f866fe3485212b2160a946907178b915e82f789ab42b20",
+      "sourceSenseId": "wiktionary:c21f1c6cfb46edf9b4e405f2"
+    },
+    {
+      "lemma": "reacquisition",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A second or later acquisition is directly sourced and useful for business assets; repurchase is not asserted as the only method.",
+      "beforeHash": "41a78fcd4e6df3815538f930542d4d8af9695144bbbc3bcfa3f771dee5a95cf3",
+      "sourceSenseId": "wiktionary:1a07fcfbffdc99e6e65b1bd5"
+    },
+    {
+      "lemma": "reactivity",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Susceptibility to chemical reaction is an explicit academic chemistry meaning, distinct from personal sensitivity.",
+      "beforeHash": "1d7c6c92bc2d75f43821b136d1673ef4b829c683104ab7b11bd7b765e76f0348",
+      "sourceSenseId": "wiktionary:e65bfa3248dda2bad6dd55e7"
+    },
+    {
+      "lemma": "read-through",
+      "hold": true,
+      "reason": "The sole recovered candidate describes a computing cache, not the requested theatrical script-reading rehearsal noun.",
+      "beforeHash": "19be5cfc1ae0475d6324cb3a2cd128d58d6c09a896bab7ef72eab24b3bf296b9"
+    },
+    {
+      "lemma": "realignment",
+      "hold": true,
+      "reason": "The source only repeats realign and realigned and does not independently explain the organizational adjustment claimed in the draft.",
+      "beforeHash": "4f5c2a1b0580782e0ad5e82e4ad4b6b691e6ff7da6d6e55224a947aa310bd072"
+    },
+    {
+      "lemma": "reappraisal",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Taking a second look at value is clearly defined and supports review or revaluation without requiring a financial context.",
+      "beforeHash": "9bd3ef30cce5b7ba810ec8032dcd50820749a8eb673133649b6f9df5d067af63",
+      "sourceSenseId": "wiktionary:edba3474f5136e13036f549d"
+    },
+    {
+      "lemma": "reassessment",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "A new appraisal or evaluation is an independently informative source meaning for reviewing something again.",
+      "beforeHash": "60c9e0b962d010a15ea1a57530c850dcca254c2e0c11dce9f860338b6c67e171",
+      "sourceSenseId": "source-be41886b1695ac9c5897"
+    },
+    {
+      "lemma": "recalibrate",
+      "hold": true,
+      "reason": "The sole definition repeats calibrate and does not explain measurement adjustment; the broad Fitness reset anchor does not resolve that gap.",
+      "beforeHash": "299cd96c2dc04974cd2737b3dd75f2f485a71c41d796c16c8e945c71b5464417"
+    },
+    {
+      "lemma": "recantation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Taking back a previous assertion directly verifies the withdrawal meaning without assuming coercion or a religious setting.",
+      "beforeHash": "a25d57267b46432a869802156008f70207c01a8b7dceafd58f468c6a1760b43f",
+      "sourceSenseId": "source-8b3f3b4f21cea0123af7"
+    },
+    {
+      "lemma": "recasting",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Changing a word or phrase supports the paraphrase context and avoids confusing it with loan adjustments or physical casting.",
+      "beforeHash": "3d3d8f4ec3d973e65b51f953549a3b56a512334e3d3b2be4757f1fca77830f92",
+      "sourceSenseId": "source-2fb02bac39e11205f0b1"
+    },
+    {
+      "lemma": "recombination",
+      "hold": true,
+      "reason": "Preserve the existing archive: genetic crossover is unrelated to the sole Fitness exercise anchor, and no new appropriate learning anchor has been reviewed.",
+      "beforeHash": "77734099cf34e652b43b97a2411169bdd657343ffc25a43e467ee03686accbdd"
+    },
+    {
+      "lemma": "recommence",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "To begin again is an explicit, useful meaning matching resume, without unsupported claims about mandatory literary register.",
+      "beforeHash": "de42fc734d1376d69d2e7323c929bc94a4a455989689ed1576bd0c455bed5e7b",
+      "sourceSenseId": "wiktionary:7f67e4ac110e08bdad6389f2"
+    },
+    {
+      "lemma": "recommerce",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The detailed resale and reuse definition supports the business anchor; retain the uncommon label and do not invent environmental guarantees.",
+      "beforeHash": "0c4e4a256ba696013e4518f701932a8c8daad7d76729458431de467e27defb29",
+      "sourceSenseId": "wiktionary:e473d53187c42812622a4d01"
+    },
+    {
+      "lemma": "reconditioning",
+      "hold": true,
+      "reason": "The candidate only repeats reconditioned rather than explaining restoration, leaving the overhaul meaning inadequately defined.",
+      "beforeHash": "cc15583637099b23bcb64ae42a6230b4c74609288d004b7d7e99ce1b73634d4d"
+    },
+    {
+      "lemma": "recoupment",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Recovery of a loss or reimbursement is directly sourced; exclude the specialized damages-offset sense and any guaranteed investment return.",
+      "beforeHash": "040faae97ab31145dd49bea922b08f185213211fbf98c49cac5f0966b9cedb89",
+      "sourceSenseId": "wiktionary:e305c234c822b6a2bb98d393"
+    },
+    {
+      "lemma": "recreative",
+      "hold": true,
+      "reason": "The candidates point to recreation or creating anew without resolving the intended restorative leisure meaning sufficiently for this entry.",
+      "beforeHash": "8163e6c080e808dc359ec313f2cc33e92dfb383a2fa0045e7292f9e4f24683b8"
+    },
+    {
+      "lemma": "recurrently",
+      "hold": true,
+      "reason": "Both source candidates simply repeat recurrent and leave the repeated-at-intervals meaning unexplained.",
+      "beforeHash": "0d2d411287da424cb689d15950018aada88b8ecc6e1ac641288c761d8cd41d9a"
+    },
+    {
+      "lemma": "recurve",
+      "hold": true,
+      "reason": "Verified backward-curving senses do not support the replicate learning anchor; releasing the old connection would mislead learners about repetition versus shape.",
+      "beforeHash": "2f624e1de4e12bf538b35ace45a0ab02ad2bb19ab7d3894c8c799715fb8685dd"
+    },
+    {
+      "lemma": "redactor",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source explicitly explains editing, compiling and censoring texts, giving an informative extension of editor.",
+      "beforeHash": "9667c759289e3db30100f36e0f4f3049057b60560ba31a08e5ef55767171aedf",
+      "sourceSenseId": "wiktionary:53aa33106d8888cd8f6c1537"
+    }
+  ]
+}

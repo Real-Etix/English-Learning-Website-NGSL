@@ -1,0 +1,409 @@
+{
+  "id": "005",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T07:36:57.886Z",
+  "decisions": [
+    {
+      "lemma": "maternalaunt",
+      "reason": "The raw source has one including-both parent and two child definitions: mother's sister and mother's sister-in-law. Restore their exact hierarchy together with both source references; omit the separate imprecise great-aunt sense. This verifies the phrase without incomplete extraction.",
+      "beforeHash": "4d616129b6d616bffe7a26f8b0955171f9008bd2bba4a751ea336045e9ae00a0",
+      "head": "maternal aunt",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "ngsl"
+      ],
+      "sourceSenseId": "wiktionary:matched-hierarchy:cac5ddb8f2dd4c81c36c"
+    },
+    {
+      "lemma": "mechanicaladvantage",
+      "head": "mechanical advantage",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Exact spaced entry defines the output-force/input-force ratio and verifies historical space loss. Relevant to mechanical leverage in Fitness equipment; do not apply it to Business financial leverage.",
+      "beforeHash": "9842cc2228c0168d6bf2940d8713ad7bbe96011d9bc47a8dd4376bdfc33a9b03",
+      "sourceSenseId": "source-07fe830058e43642be4d"
+    },
+    {
+      "lemma": "microbes",
+      "head": "microbe",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "toeic"
+      ],
+      "reason": "Explicit plural relation and minute-life-form definition establish the broader category. The source says especially a disease-causing bacterium, not that all microbes are bacteria or harmful; no equivalence edge is approved.",
+      "beforeHash": "7853051e68492de03c095920faba837a3a429ac35278950354a32fc2d4d569d1",
+      "sourceSenseId": "source-61fbfaa39a2221470e72"
+    },
+    {
+      "lemma": "microorganisms",
+      "head": "microorganism",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "toeic"
+      ],
+      "reason": "Exact plural relation and any-organism-of-microscopic-size meaning support biology/hygiene anchors while preserving the broader category beyond bacteria.",
+      "beforeHash": "a6a4c5a035686773ddc9570ca8c2a9db20f438c7f20eaa518d9955862e47bea5",
+      "sourceSenseId": "source-76a175fe39724fbf45e6"
+    },
+    {
+      "lemma": "migr",
+      "head": "émigré",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact English accented headword supplies the emigrant meaning, especially political exile, resolving the lost-accent fragment. Appropriate to the existing exile context; exclude the specifically French Revolution historical sense.",
+      "beforeHash": "91f2cb0662de966438a490172abec07796d2567bbdda55e30f5cb49a3b3f7534",
+      "sourceSenseId": "wiktionary:180c9502943b1bfe7add5403"
+    },
+    {
+      "lemma": "mol",
+      "hold": true,
+      "reason": "The dated alternative spelling still points to the same inaccurate molecular-weight-in-grams definition. Identity repair does not establish a correct amount-of-substance meaning.",
+      "beforeHash": "240fc31f09e58326b9782b9184656e41d1771196564bc02a0dfbd22029a5e2cc"
+    },
+    {
+      "lemma": "motion-picture",
+      "head": "motion picture",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Explicit uncommon-form mapping plus the narrative moving-image entertainment definition support cinema anchors. Retain the uncommon spelling label and do not claim the hyphenated form is preferred.",
+      "beforeHash": "ff2bd8d29d5816b687079c5d5eeda62063ae2e75f96b3b4ced38a973cfcbbfd0",
+      "sourceSenseId": "source-a57bc7371a63c1d87805"
+    },
+    {
+      "lemma": "mtier",
+      "head": "métier",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Exact accented English entry defines an activity particularly suited to a person. It verifies the historical accent loss and occupational-niche context without adding prestige or an ecological niche meaning.",
+      "beforeHash": "f735567b31f15e5006e8780109575dce55bc634b24de2707b56ba95f9a960745",
+      "sourceSenseId": "wiktionary:3380a9040238c09d198742fb"
+    },
+    {
+      "lemma": "nares",
+      "head": "naris",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The explicit irregular plural relation to naris and nostril meaning verify the anatomical identity. Appropriate to Fitness nostril vocabulary; avoid the rare alternative nare as the primary mapping.",
+      "beforeHash": "5c755060a24aacf3f23dbe40ee6e494f650ef80ff6d90caf17647993c0d5d8fc",
+      "sourceSenseId": "wiktionary:4bba31681a53b83a2e758259"
+    },
+    {
+      "lemma": "nervecenter",
+      "head": "nerve center",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact spaced entry and information/control-center meaning verify the collapsed phrase for the Academic headquarters context. Exclude the biological nerve-cell cluster sense.",
+      "beforeHash": "e8b135add6f73d2ac0d41f631ceb533abea20c42c95f6c9c0ad07577b2431153",
+      "sourceSenseId": "source-a1dd69186025d2ebe863"
+    },
+    {
+      "lemma": "nounclass",
+      "head": "noun class",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact grammatical phrase verifies identity and defines noun categorization as similar to gender. Appropriate to the existing grammatical gender anchor without asserting the systems are identical or discussing personal gender.",
+      "beforeHash": "05c717aff677049406f67ff6ddb011d41aed8fa7413a0ce037feab30e9b304a5",
+      "sourceSenseId": "wiktionary:069e070f2adcf8f9fb8d8d7e"
+    },
+    {
+      "lemma": "onlookers",
+      "reason": "Follow-up exact base definition explicitly explains watching without participation. Joined to the verified plural relation, it supplies a complete observer meaning for audience/gallery anchors.",
+      "beforeHash": "3e29ff47fa2ebf84187ac5c8974801f057d09626aebb9f761574e46f1bcac50e",
+      "head": "onlooker",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "sourceSenseId": "wiktionary:757f35d66265da7ed9d329ea"
+    },
+    {
+      "lemma": "ornaments",
+      "head": "ornament",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact noun-plural relation and something-used-to-beautify meaning support the jewelry/decoration context. Preserve the broader meaning without claiming every ornament is jewelry.",
+      "beforeHash": "f0c16e0371d9225086a47b4a7fb2191e99f280a8ab52e05df43b792846eb639b",
+      "sourceSenseId": "source-9ae0ceba51d1e29d350c"
+    },
+    {
+      "lemma": "outgoings",
+      "reason": "Follow-up source now supplies the explicitly plural noun meaning expenditure/expense, resolving the previous adjective-only mismatch. Appropriate to financial overhead, not Fitness overhead movement.",
+      "beforeHash": "13770db29f87ddf57075a94f86f017508546ac9b3fd38fc8a92419464dfdf925",
+      "head": "outgoing",
+      "source": "wiki",
+      "sense": 4,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "sourceSenseId": "wiktionary:5c28324d1446bcd2d152f29c"
+    },
+    {
+      "lemma": "parentheses",
+      "head": "parenthesis",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact irregular noun plural and paired-punctuation definition verify the Academic writing meaning. No unsupported formal-versus-informal distinction is added.",
+      "beforeHash": "b7b1d67094ef168ed179c676b7cb4253f6692f1629f7876375727fceff176311",
+      "sourceSenseId": "source-b6049649b7b8be0d423b"
+    },
+    {
+      "lemma": "pensioners",
+      "head": "pensioner",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact plural relation with pension-fund-beneficiary meaning supports retirement vocabulary. Do not equate pension receipt with a guaranteed age or assert all elderly people receive a pension.",
+      "beforeHash": "da6654698d32f37adce352d945b32f34e0bf2d648bbb236cbf16ab230d467935",
+      "sourceSenseId": "source-f816ab92809e7c9d7199"
+    },
+    {
+      "lemma": "persons",
+      "head": "person",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Explicit noun-plural source includes formal register and individual-versus-group usage; pair it with the human-being sense. This resolves the people anchor while excluding grammatical person and body senses.",
+      "beforeHash": "90e83cfa07fff30e18f3781188492c9b2f85387e877a10d950ea0b88aa81c9c5",
+      "sourceSenseId": "source-0289960ae203f54cb627"
+    },
+    {
+      "lemma": "plat",
+      "hold": true,
+      "reason": "The new clipped platform/video-game senses remain unrelated to the intended French main-course meaning. Do not publish a different English identity merely because the spelling matches.",
+      "beforeHash": "4c9f93f61b7c13c15fdd7c034141c8a84f53780556d3dcfdbce308e93c98860c"
+    },
+    {
+      "lemma": "plates",
+      "head": "plate",
+      "source": "wordnet",
+      "sense": 2,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Exact plural relation and full-page-illustration sense resolve the earlier number-plates mismatch. Appropriate to artwork/graphics anchors; exclude dining, geology and vehicle-number senses.",
+      "beforeHash": "e3d04cf2bb2cfa4f233bc4940e656e7fe72451189913246e9038efe3447bfc22",
+      "sourceSenseId": "source-9060ead04b1066ad5366"
+    },
+    {
+      "lemma": "pm",
+      "head": "p.m.",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An explicit adverb alternative-form relation identifies p.m. and the between-noon-and-midnight sense. Scope only to NGSL afternoon; do not conflate it with a Business prime-minister abbreviation.",
+      "beforeHash": "7fab5f5751db19edb1dd2c5a2b1991c7f0061c97353712fa712c517b28f4cce1",
+      "sourceSenseId": "source-f48439a4893f4adfeb25"
+    },
+    {
+      "lemma": "postgrad",
+      "head": "postgraduate",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact noun-abbreviation relation and person-studying-after-a-degree definition verify the Academic identity. Preserve abbreviation labeling and do not silently select the adjective sense.",
+      "beforeHash": "f9e9650c7e8841a0c5987da36a5cf29b997cbbba4cd6a5bd3e9aeac9fc401302",
+      "sourceSenseId": "wiktionary:83d299fd575b6192117a7c9c"
+    },
+    {
+      "lemma": "potentiated",
+      "hold": true,
+      "reason": "The inflection is supported, but the base meaning specifically concerns drugs or physiological/biochemical effects. It does not justify the intended Business/TOEIC interactive sense.",
+      "beforeHash": "c913910ffdf8d0f4e59b93b662c152708053f2fa2a356a8ae3357c36b082824a"
+    },
+    {
+      "lemma": "powerplant",
+      "reason": "Follow-up exact source includes a vehicle engine/motor sense, resolving the previous generating-station mismatch. Preserve the explicit alternative spelling and NGSL engine context.",
+      "beforeHash": "7b4e7a939ae930db6e82f2e642311cf44262c8ec9d2a1a7f7974e4838a58c1e4",
+      "head": "power plant",
+      "source": "wiki",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "sourceSenseId": "wiktionary:7b4f197f4b510667e07f62e5"
+    },
+    {
+      "lemma": "practicing",
+      "reason": "A new exact American-spelling entry directly defines active engagement in a profession. No inferred British-spelling substitution is needed; exclude religious practice and exercise nouns.",
+      "beforeHash": "d78465521a876b95a3913687a094ce64e50b25635ef29c911d5b10143d94a22d",
+      "head": "practicing",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "sourceSenseId": "wiktionary:8625e4ac8ffde9dbd75915bd"
+    },
+    {
+      "lemma": "protg",
+      "head": "protégé",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact English accented noun defines a person guided/supported by an experienced mentor, verifying the historical accent-loss pattern. Relevant to the ward/dependent-person topic without asserting formal legal guardianship.",
+      "beforeHash": "b5e0f478841a61dcf9f71573c098b69e84c3a831b122587b17a834e7ac09f973",
+      "sourceSenseId": "wiktionary:481ea27b63c44ec85aed9175"
+    },
+    {
+      "lemma": "quadruplets",
+      "hold": true,
+      "reason": "Plural identity is now verified, but multiple births or groups of four are not the intended Fitness quadriceps. Keep unrelated content hidden despite a valid dictionary entry.",
+      "beforeHash": "7b4d549b11212327534e6fa669a169351ec9b219646cb086e0ff476e980437be"
+    },
+    {
+      "lemma": "read-through",
+      "head": "readthrough",
+      "source": "wiki",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact alternative spelling and organized cast reading of a script verify the theatrical rehearsal noun. Exclude computing cache and genetic transcription senses.",
+      "beforeHash": "19be5cfc1ae0475d6324cb3a2cd128d58d6c09a896bab7ef72eab24b3bf296b9",
+      "sourceSenseId": "wiktionary:a3de583a1d067f84c6d538fa"
+    },
+    {
+      "lemma": "reconditioning",
+      "head": "recondition",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact participle/gerund relation and bringing-into-improved-condition definition resolve the circular noun wording. Appropriate to Business overhaul without claiming every improvement is a full overhaul.",
+      "beforeHash": "cc15583637099b23bcb64ae42a6230b4c74609288d004b7d7e99ce1b73634d4d",
+      "sourceSenseId": "source-89cf4b73c4b1b00015cf"
+    },
+    {
+      "lemma": "rehabilitationcenter",
+      "hold": true,
+      "reason": "The proposed spaced phrase still has no usable source result, and the intended clinical addiction facility is not established as appropriate Fitness detox content. Preserve hidden.",
+      "beforeHash": "f4e347f32c0dacc94bc8f24d2752a05538a089f75282683ec94098b6da6500db"
+    },
+    {
+      "lemma": "resources",
+      "head": "resource",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Explicit noun-plural relation and available-source-of-wealth definition verify the NGSL capital context. Exclude the verb form and personal resourcefulness sense.",
+      "beforeHash": "10fde93fa978f26afde03e5cc1998fe66015e3cc05bf00e8ae5ada038971370c",
+      "sourceSenseId": "source-83f5ee892721f6064863"
+    },
+    {
+      "lemma": "reworking",
+      "head": "rework",
+      "source": "wiki",
+      "sense": 5,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Exact participle/gerund relation and redo/correct/rebuild verb definition resolve the circular source. Fits revision and work adaptation, not unverified biological Fitness adaptation.",
+      "beforeHash": "37fe94448dfb0ad3399eaa9da552855ee317a0778cf6ae7b6491e65e3c03ce00",
+      "sourceSenseId": "wiktionary:8a0ec13671638bfa8d0e2499"
+    },
+    {
+      "lemma": "ribs",
+      "head": "rib",
+      "source": "wordnet",
+      "sense": 2,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Explicit noun plural and meat-cut-containing-ribs sense directly verify the TOEIC barbecue context. Do not substitute an anatomy-only definition or claim a required cooking method.",
+      "beforeHash": "d8a2fc25f2af328784339957011cf60bd64d21cd5598469a8d3b086fd9ea224d",
+      "sourceSenseId": "source-9930f844b5e68ddf19e5"
+    },
+    {
+      "lemma": "rmb",
+      "hold": true,
+      "reason": "The new uppercase RMB lookup did not return a usable currency definition. Existing lowercase remember slang remains unrelated to Business yuan; preserve hidden.",
+      "beforeHash": "d066021a4fe13497c2bcbc8aca3862b8fbdf173ed76c4dc46c37f13c468cd6e9"
+    },
+    {
+      "lemma": "rosa",
+      "hold": true,
+      "reason": "The botanical genus is sourced only under capitalized Rosa. The current case-normalizing editorial path cannot preserve this taxonomic distinction safely, and specialist genus relevance remains limited; retain hidden.",
+      "beforeHash": "4e30487539ad7128555b1ef8520a24efdbcde8c3b842773d612f22e5f80e5554"
+    },
+    {
+      "lemma": "rubdown",
+      "hold": true,
+      "reason": "The spaced candidate is a verb for abrasion or massage, not the requested cleaning noun. This would change both identity/POS and sense without resolving the original gap.",
+      "beforeHash": "1bf302479dc6fedbbfad4e52818f1673a2893e6cce9128e24bde6235b878108b"
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+{
+  "id": "003",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T08:05:04.000Z",
+  "decisions": [
+    {
+      "lemma": "emulsify",
+      "head": "emulsify",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The liquid-droplet suspension meaning explains the verb in a cream/food context; excludes photographic coating and adds no recipe or industrial claims.",
+      "explain": [
+        {
+          "head": "emulsion",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The liquid-droplet suspension meaning explains the verb in a cream/food context; excludes photographic coating and adds no recipe or industrial claims.",
+          "sourceSenseId": "wiktionary:2a78bb982036150f0ff95229"
+        }
+      ],
+      "beforeHash": "e70cc755981c101e43f12366afff655f343748970e1de05dd6ffecc7a65bad0e",
+      "sourceSenseId": "wiktionary:d7ad751767343c1289bddf13"
+    },
+    {
+      "lemma": "enhancer",
+      "head": "enhancer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Select the generic improvement agent and the adding-features verb sense, useful for business product descriptions; exclude the DNA specialist and old builder equivalence.",
+      "explain": [
+        {
+          "head": "enhance",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "Select the generic improvement agent and the adding-features verb sense, useful for business product descriptions; exclude the DNA specialist and old builder equivalence.",
+          "sourceSenseId": "wiktionary:183889aa9a2e9fb6d42fe4fd"
+        }
+      ],
+      "beforeHash": "695e86064bc90f103734226a4cdeb1dcc966d4508e2340e13c87fe9c154ae5b8",
+      "sourceSenseId": "wiktionary:0c2ab6e19f1adbc1a24d1b84"
+    },
+    {
+      "lemma": "entrepreneurialism",
+      "head": "entrepreneurialism",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The state/spirit noun is explicitly derived from entrepreneurial, with the entrepreneur business-owner meaning also explained; not a definition of capitalism itself.",
+      "explain": [
+        {
+          "head": "entrepreneurial",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The state/spirit noun is explicitly derived from entrepreneurial, with the entrepreneur business-owner meaning also explained; not a definition of capitalism itself.",
+          "sourceSenseId": "wiktionary:e6a0cc71e179780d320dbabc"
+        },
+        {
+          "head": "entrepreneur",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The intermediate entrepreneurial adjective explicitly names entrepreneur; use the business venture meaning, not the rare intermediary sense.",
+          "sourceSenseId": "wiktionary:d0e9ecc36cdff7bf6691a1db"
+        }
+      ],
+      "beforeHash": "6acac24b5a6d10f7842a277e45b50e465a89b4e77e412418e4e6a53d735e7cce",
+      "sourceSenseId": "wiktionary:5f29009c3a9a637767a04464"
+    },
+    {
+      "lemma": "excisional",
+      "head": "excisional",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Academic surgical vocabulary: the removal-by-cutting sense explains the adjective, without claiming completeness of removal or offering treatment instructions.",
+      "explain": [
+        {
+          "head": "excision",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "Academic surgical vocabulary: the removal-by-cutting sense explains the adjective, without claiming completeness of removal or offering treatment instructions.",
+          "sourceSenseId": "wiktionary:d26df4939e5be085a9fb1060"
+        }
+      ],
+      "beforeHash": "e9ca7d9f6dd88b8f7e905cea86aba03c4853c9c0add3cb453000562963b81780",
+      "sourceSenseId": "wiktionary:fd8d4aa1832b2540baa8a582"
+    },
+    {
+      "lemma": "exhaustively",
+      "head": "exhaustively",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Full coverage explains the manner adverb in reports and checking; does not mean causing physical exhaustion.",
+      "explain": [
+        {
+          "head": "exhaustive",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Full coverage explains the manner adverb in reports and checking; does not mean causing physical exhaustion.",
+          "sourceSenseId": "wiktionary:4d439daa2d3c4362979549b0"
+        }
+      ],
+      "beforeHash": "ad94eebfe3a662b633c2a633c28ce6498e6dca0213c4faa3c790f0b763bf5f00",
+      "sourceSenseId": "wiktionary:aa12453e3b5ccb629f116d86"
+    },
+    {
+      "lemma": "fractionally",
+      "head": "fractionally",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "The very-small reading explains the slightly context; fractional ownership and chemical distillation are excluded.",
+      "explain": [
+        {
+          "head": "fractional",
+          "source": "wiki",
+          "sense": 2,
+          "reason": "The very-small reading explains the slightly context; fractional ownership and chemical distillation are excluded.",
+          "sourceSenseId": "wiktionary:79b55bd86f0c893de11f3f6c"
+        }
+      ],
+      "beforeHash": "faba9bac3ffbf0c191cde6a39fda352b2d053584a0e87936b3b950696c90a97a",
+      "sourceSenseId": "wiktionary:729ea4f854409d571a06e0e7"
+    },
+    {
+      "lemma": "gasifier",
+      "head": "gasifier",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The exact fuel-transformation apparatus meaning is relevant to generator/industrial-energy vocabulary. No claim of equivalence to every electrical generator.",
+      "explain": [
+        {
+          "head": "gasification",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "The exact fuel-transformation apparatus meaning is relevant to generator/industrial-energy vocabulary. No claim of equivalence to every electrical generator.",
+          "sourceSenseId": "wiktionary:6f58514c623ec845d9c69b46"
+        }
+      ],
+      "beforeHash": "4f8757c6e189f0856399ebdcb4628e6cf499da3bc951df75377a4f614235b36f",
+      "sourceSenseId": "wiktionary:0968b4dd95552ee36d06fe63"
+    },
+    {
+      "lemma": "gestational",
+      "head": "gestational",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "The physical offspring-development period explains the pregnancy adjective relevant to fetal/prenatal vocabulary, without durations or medical advice.",
+      "explain": [
+        {
+          "head": "gestation",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The physical offspring-development period explains the pregnancy adjective relevant to fetal/prenatal vocabulary, without durations or medical advice.",
+          "sourceSenseId": "wiktionary:6e2bc5351e4bf01be99f32dc"
+        }
+      ],
+      "beforeHash": "e6119a400a5dafa77cc9d2d5c040a7d2d38203206d330964d84f1865377a9ba6",
+      "sourceSenseId": "wiktionary:eff594c50127b827093c33cc"
+    },
+    {
+      "lemma": "harmonization",
+      "head": "harmonization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "ngsl"
+      ],
+      "reason": "The compatibility/reconciliation verb sense explains the act noun in organizational agreements; musical harmonies are not selected.",
+      "explain": [
+        {
+          "head": "harmonize",
+          "source": "wiki",
+          "sense": 3,
+          "reason": "The compatibility/reconciliation verb sense explains the act noun in organizational agreements; musical harmonies are not selected.",
+          "sourceSenseId": "wiktionary:d5da45c420b65fcaaff58604"
+        }
+      ],
+      "beforeHash": "8713673ecf670727e368e7e72030ae0283422d1f850ca561096755546f2742c7",
+      "sourceSenseId": "wiktionary:4469146e90089574be83c146"
+    },
+    {
+      "lemma": "heterogenize",
+      "head": "heterogenize",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The making-diverse meaning is explained by diverse components; no unsupported financial-return or biological claim.",
+      "explain": [
+        {
+          "head": "heterogeneous",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The making-diverse meaning is explained by diverse components; no unsupported financial-return or biological claim.",
+          "sourceSenseId": "wiktionary:e56b579f441796bec35b4f37"
+        }
+      ],
+      "beforeHash": "1cff89c420ec88952b74dbf204b1721b5f1024047a455131d49548c28fa4fd60",
+      "sourceSenseId": "wiktionary:3a93daa424c3dcb7f3d29213"
+    },
+    {
+      "lemma": "incisional",
+      "head": "incisional",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The surgical-cut sense explains this adjective without inventing an excision contrast or amount of tissue removed.",
+      "explain": [
+        {
+          "head": "incision",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The surgical-cut sense explains this adjective without inventing an excision contrast or amount of tissue removed.",
+          "sourceSenseId": "wiktionary:35e3e7f1a6d87de4b4339100"
+        }
+      ],
+      "beforeHash": "06941d451af77c4b5948a5afd81becdcd1433289f824eec76b9fd75640bb69d6",
+      "sourceSenseId": "wiktionary:e18160aa9fa7608c01bde103"
+    },
+    {
+      "lemma": "insusceptible",
+      "head": "insusceptible",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Keep the source's negation and explain susceptibility generally; no absolute disease-protection guarantee or health instruction.",
+      "explain": [
+        {
+          "head": "susceptible",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Keep the source's negation and explain susceptibility generally; no absolute disease-protection guarantee or health instruction.",
+          "sourceSenseId": "wiktionary:e1408dd76e5d33db697f1d71"
+        }
+      ],
+      "beforeHash": "6da93cc1113c1ad4e7bd1d25ffd9fbc6da5162e13bccf5ee70b7719f17b9df73",
+      "sourceSenseId": "wiktionary:9bc23ec951f125c087e39cf1"
+    },
+    {
+      "lemma": "interdependently",
+      "head": "interdependently",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The mutually reliant base meaning directly explains this organizational relationship adverb.",
+      "explain": [
+        {
+          "head": "interdependent",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The mutually reliant base meaning directly explains this organizational relationship adverb.",
+          "sourceSenseId": "wiktionary:738152229e61328b17da8ea9"
+        }
+      ],
+      "beforeHash": "aa063da1ae37ee9677c2ea6d89c682fe07bd12878e3746de9527c453e8e181d9",
+      "sourceSenseId": "wiktionary:20157825eae7c7d9cd0343ed"
+    },
+    {
+      "lemma": "interpretive",
+      "head": "interpretive",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The explanatory sense resolves the adjective's circular wording in academic analysis, without claiming all qualitative research is equivalent.",
+      "explain": [
+        {
+          "head": "interpretation",
+          "source": "wordnet",
+          "sense": 3,
+          "reason": "The explanatory sense resolves the adjective's circular wording in academic analysis, without claiming all qualitative research is equivalent.",
+          "sourceSenseId": "source-416d5cd724b8753dbb5c"
+        }
+      ],
+      "beforeHash": "ab2fb6e1e7a7248f790b9ddd7c83a98a03b4d1405318e6439447566408abb799",
+      "sourceSenseId": "source-2f4e1714979caff3fd21"
+    },
+    {
+      "lemma": "inviolability",
+      "head": "inviolability",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The state noun is explained as not capable of violation or infringement; no invented legal protections or guarantees.",
+      "explain": [
+        {
+          "head": "inviolable",
+          "source": "wordnet",
+          "sense": 3,
+          "reason": "The state noun is explained as not capable of violation or infringement; no invented legal protections or guarantees.",
+          "sourceSenseId": "source-ca2fa24f7fa3dfe4c776"
+        }
+      ],
+      "beforeHash": "818ca29828f574e5791099f7b2c5598121eec3b8d9d5ddc0805aa5f5971e3507",
+      "sourceSenseId": "wiktionary:18bb173aa68e98f594cf6465"
+    },
+    {
+      "lemma": "isoheight",
+      "head": "isoheight",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The explicit synonym is expanded with equal-height map contours, fitting Academic contour rather than inventing a map relation.",
+      "explain": [
+        {
+          "head": "isohypse",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The explicit synonym is expanded with equal-height map contours, fitting Academic contour rather than inventing a map relation.",
+          "sourceSenseId": "wiktionary:10099ec93841ab69ac419477"
+        }
+      ],
+      "beforeHash": "432de223eb03313ae9c8814b627fa2be5a28c3c7999b96f9394f587ce517f5e2",
+      "sourceSenseId": "wiktionary:15d7026bc9fdae3f3bd14547"
+    },
+    {
+      "lemma": "leviable",
+      "head": "leviable",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The tax/fine-imposition sense explains capable of being levied; no jurisdiction-specific tax liability is asserted.",
+      "explain": [
+        {
+          "head": "levy",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The tax/fine-imposition sense explains capable of being levied; no jurisdiction-specific tax liability is asserted.",
+          "sourceSenseId": "wiktionary:6c59643e27bee5e496e95e58"
+        }
+      ],
+      "beforeHash": "4e37aee3c684ef94c082d84ea7d3fcddfbed6dc0b6256569c99ad9c84ab62fa1",
+      "sourceSenseId": "wiktionary:ad5a83ca4fb088b149914bac"
+    },
+    {
+      "lemma": "micro-economist",
+      "head": "microeconomist",
+      "source": "wiki",
+      "sense": 0,
+      "headword": "microeconomist",
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Reviewed hyphen removal preserves the stable ID and exact letters. Explain the discipline through individual/company economic activity.",
+      "explain": [
+        {
+          "head": "microeconomics",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Reviewed hyphen removal preserves the stable ID and exact letters. Explain the discipline through individual/company economic activity.",
+          "sourceSenseId": "wiktionary:e6a3e75b6393307b38aceb5a"
+        }
+      ],
+      "beforeHash": "49301e1f17b31a8a458ca8011a21d43df2f6d41622048df179f98cb6fdff4f6e",
+      "sourceSenseId": "wiktionary:e477f516fc0fc0c653758857"
+    },
+    {
+      "lemma": "mineralogical",
+      "head": "mineralogical",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The study of mineral structure and properties resolves the adjective for Academic science; not a Fitness nutrition synonym.",
+      "explain": [
+        {
+          "head": "mineralogy",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The study of mineral structure and properties resolves the adjective for Academic science; not a Fitness nutrition synonym.",
+          "sourceSenseId": "source-dec5117ddb83e77746a1"
+        }
+      ],
+      "beforeHash": "a87903de17078567bb4aaf3d7d206b4440be141554a862ed906ea3ea799e3b6d",
+      "sourceSenseId": "wiktionary:27aa7a3f4362b69a83f6098f"
+    },
+    {
+      "lemma": "moisturization",
+      "head": "moisturization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The process noun is explained by making more moist; retain a limited bodily-moisture vocabulary context without therapeutic promises.",
+      "explain": [
+        {
+          "head": "moisturize",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The process noun is explained by making more moist; retain a limited bodily-moisture vocabulary context without therapeutic promises.",
+          "sourceSenseId": "wiktionary:eb236022d192a0beffebbdae"
+        }
+      ],
+      "beforeHash": "dfa94521b1530dfdb8cb2c85d5559095cbbb5b4c9231b1d2951a440bab8a8725",
+      "sourceSenseId": "wiktionary:6287d02979a6aafb45ecde46"
+    },
+    {
+      "lemma": "morphemic",
+      "head": "morphemic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Explain the linguistic-unit reading using the smallest meaningful unit within a word; no invented examples or connections.",
+      "explain": [
+        {
+          "head": "morpheme",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Explain the linguistic-unit reading using the smallest meaningful unit within a word; no invented examples or connections.",
+          "sourceSenseId": "wiktionary:13ef053a2b93fe3aedc7f0e4"
+        }
+      ],
+      "beforeHash": "4e136d7c60f973422b286c7e0f15c4195a0e4083dd65ec3b4d1b77aa205ae58c",
+      "sourceSenseId": "wiktionary:b7bb0510d74ac794c1e9da1e"
+    },
+    {
+      "lemma": "morphosyntactic",
+      "head": "morphosyntactic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source explains word structure and sentence combination as one system, resolving the adjective for academic linguistics.",
+      "explain": [
+        {
+          "head": "morphosyntax",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The source explains word structure and sentence combination as one system, resolving the adjective for academic linguistics.",
+          "sourceSenseId": "wiktionary:2085611e3702df30bf46d07a"
+        }
+      ],
+      "beforeHash": "a2eba8e73913229ae5ce8efbb01444a0773260718c183503238fac4dc258384a",
+      "sourceSenseId": "wiktionary:fb4d82017db1939c254bf8ba"
+    },
+    {
+      "lemma": "multifariousness",
+      "head": "multifariousness",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The general diversity/variety state is appropriate for academic description; it is not presented as a biological definition or synonym of biodiversity.",
+      "explain": [
+        {
+          "head": "multifarious",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The general diversity/variety state is appropriate for academic description; it is not presented as a biological definition or synonym of biodiversity.",
+          "sourceSenseId": "wiktionary:ab2aacad6a33bbe035c9cd7d"
+        }
+      ],
+      "beforeHash": "5ed2d162f7222e599f101a09610bb3fa7e4293ab0c512139369fc54325556c38",
+      "sourceSenseId": "wiktionary:130a339568c00cdf81a717ae"
+    }
+  ]
+}

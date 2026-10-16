@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local recovery evidence and generated inspection helpers are not app code.
+    ".cache/**",
   ]),
 ]);
 

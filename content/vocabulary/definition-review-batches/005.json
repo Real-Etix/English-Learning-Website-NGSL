@@ -1,0 +1,272 @@
+{
+  "id": "005",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T08:11:46.000Z",
+  "decisions": [
+    {
+      "lemma": "artisanal",
+      "head": "artisanal",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Direct current English Wiktionary food/item sense verifies skilled artisan production. Preserve the item/food qualifier; no invented superior-quality or homemade equivalence.",
+      "beforeHash": "c738ee6843cbc8a9f05399156938fed4466e3946c28cf2dd6c001999f2be7e33",
+      "sourceSenseId": "wiktionary:manual:14e8bd43f974ca83ecc3450e65bff97848b2bc1a49559c13d214b90eba9d616d"
+    },
+    {
+      "lemma": "doppelgnger",
+      "head": "doppelgänger",
+      "headword": "doppelgänger",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The direct English entry verifies the accented alternative spelling, resolving the stale empty extract. Select the similar-double sense rather than a ghost or fictional monster.",
+      "explain": [
+        {
+          "head": "doppelganger",
+          "source": "wiki",
+          "sense": 2,
+          "reason": "The explicit spelling pointer leads to the remarkably similar double sense appropriate to the twin anchor, without claiming biological kinship.",
+          "sourceSenseId": "wiktionary:af048ec5331d3c39f031299b"
+        }
+      ],
+      "beforeHash": "3086b446d56949c99845c99d6e8d517920371e5ce5bd71ca62fc2d6cdaf5b06c",
+      "sourceSenseId": "wiktionary:manual:68f74c13668564ab167dfabca4c2e214b63d10f3e0c70c99ca345671c04c0e1b"
+    },
+    {
+      "lemma": "soire",
+      "head": "soirée",
+      "headword": "soirée",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Restore the historical accent loss while retaining the stable ID. Direct English source verifies the alternative form and the base source explains a formal evening party.",
+      "explain": [
+        {
+          "head": "soiree",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Exact alternative spelling resolves to the evening-party noun, not the French general evening sense.",
+          "sourceSenseId": "wiktionary:4baa3b40c95193090bdfa2c0"
+        }
+      ],
+      "beforeHash": "a3cac8b2a2401a5647611b0e5e84a0e48c09a4430297ceb107ac3e8e654bb767",
+      "sourceSenseId": "wiktionary:manual:925cd4a413f94acbf833fd8be57fd5a1f1e8c622aedf9d7fba4ceeaa0c288b53"
+    },
+    {
+      "lemma": "wintertide",
+      "head": "wintertide",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Direct English source verifies a literary/archaic winter-time noun. Preserve both register labels so learners are not taught it as the ordinary everyday replacement for winter.",
+      "explain": [
+        {
+          "head": "wintertime",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The explicit source pointer denotes the season between autumn and spring. No literary quotations or unsourced example is imported.",
+          "sourceSenseId": "wiktionary:5dd2fa7e7fe9f49d1a0f65ac"
+        }
+      ],
+      "beforeHash": "c00655715341f9952bb653749aa5a0f8007aca584aab8faeb4efd1600cd3b328",
+      "sourceSenseId": "wiktionary:manual:bd9220a1697018a830ca64471e55028ae7d887df388128557911b4f36f4e4baa"
+    },
+    {
+      "lemma": "realignment",
+      "head": "realignment",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Explain the action noun through realign and the organizational sense of align, appropriate to reorganization; physical-line and genetic alignments are not selected.",
+      "explain": [
+        {
+          "head": "realign",
+          "source": "wiki",
+          "sense": 1,
+          "reason": "The noun explicitly invokes realigning; retain again/anew without inventing a political-party interpretation.",
+          "sourceSenseId": "wiktionary:747a1483a7ddc8fc0312ad52"
+        },
+        {
+          "head": "align",
+          "source": "wiki",
+          "sense": 2,
+          "reason": "Use organize-consistently to resolve the intermediate verb in the business context, not DNA alignment.",
+          "sourceSenseId": "wiktionary:6b332274cef2724fee05862a"
+        }
+      ],
+      "beforeHash": "4f5c2a1b0580782e0ad5e82e4ad4b6b691e6ff7da6d6e55224a947aa310bd072",
+      "sourceSenseId": "wiktionary:2fec71aa4aaf925b9f8f6625"
+    },
+    {
+      "lemma": "reintegration",
+      "head": "reintegration",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Explain the process of integrating again using the constituent-part sense. No unsupported historical Reconstruction or specific rehabilitation result is asserted.",
+      "explain": [
+        {
+          "head": "reintegrate",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Explicitly named repeated integration supplies the first step of the source-grounded chain.",
+          "sourceSenseId": "wiktionary:dd94c67ca39465cc4c240dea"
+        },
+        {
+          "head": "integrate",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Including as a constituent part explains integration generally in organizational/academic contexts, not calculus.",
+          "sourceSenseId": "wiktionary:3c407313e0ac04bcc2bcee9b"
+        }
+      ],
+      "beforeHash": "dbc246a774f5f3e2692d2ebf4340bfe3abdc78664c3ab5583c675f8f2ddc54c2",
+      "sourceSenseId": "wiktionary:373fa3dd64509a5ccc4e0f8c"
+    },
+    {
+      "lemma": "catalyzer",
+      "head": "catalyzer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "Select the general chemical-reaction agent, not the catalytic converter; clarify catalyze and catalysis while retaining US/Canada labels. No claim that all catalysts are enzymes.",
+      "explain": [
+        {
+          "head": "catalyze",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The agent noun explicitly refers to catalyzing; select the chemical reaction rather than the figurative inspiration sense.",
+          "sourceSenseId": "wiktionary:5bc09ab8d4946fa9be6a8628"
+        },
+        {
+          "head": "catalysis",
+          "source": "wordnet",
+          "sense": 0,
+          "reason": "The reaction-acceleration definition explains the intermediate technical term, with chemical material unchanged at reaction end.",
+          "sourceSenseId": "source-e806da77e45d66182676"
+        }
+      ],
+      "beforeHash": "cefdb2024409ca6d2ae1f44020a20ed66499cec8bee4fbdcd761042b684902fa",
+      "sourceSenseId": "wiktionary:4d5312175f382b739cc699d1"
+    },
+    {
+      "lemma": "sanitizer",
+      "head": "sanitizer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The explicit agent noun is now explained by the cleaning/disinfecting verb sense, not the compiler or document-censorship meanings. No product efficacy percentage or health advice is added.",
+      "explain": [
+        {
+          "head": "sanitize",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The noun explicitly derives from sanitize; select the microorganisms/cleaning sense relevant to cleaner.",
+          "sourceSenseId": "wiktionary:cf2f9df5eef3aca00b488b43"
+        }
+      ],
+      "beforeHash": "d5cff297d422d3fa5674ed84e943f7fe08f1aef0b34a57a11860977b10b0bc59",
+      "sourceSenseId": "wiktionary:7dafb13a683f3641b54011fe"
+    },
+    {
+      "lemma": "semi-diameter",
+      "head": "semidiameter",
+      "headword": "semidiameter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Reviewed hyphen-only correction with stable identity. Publish only the source's apparent astronomical radius sense; do not label it a universal synonym for every physical radius.",
+      "beforeHash": "80d01a7eba4b30fe8c161d31811b67075d3a065ea23036998a083b2f336a6947",
+      "sourceSenseId": "wiktionary:4b829dfd5eb49fc61fed3f4a"
+    },
+    {
+      "lemma": "cubicdecimeter",
+      "head": "cubic decimeter",
+      "headword": "cubic decimeter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Exact US-spelling source points to the modern cubic-volume definition, replacing the selected outdated water-volume evidence while preserving it hidden. Stable ID and US label remain.",
+      "explain": [
+        {
+          "head": "cubic decimetre",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Explicit US-to-UK spelling relation supports the same unit: a decimetre-sided cube, one litre. Preserve the spelling-region labels in the base explanation.",
+          "sourceSenseId": "wiktionary:b7c2aa79235ae1ca7e75d1fe"
+        }
+      ],
+      "beforeHash": "e93d3ecd4b90ffd6979a59cf0b9ad2df76110cbc6a737a1a871c1be290a78a72",
+      "sourceSenseId": "wiktionary:9933ff75dd9ba0baa944aebc"
+    },
+    {
+      "lemma": "mol",
+      "head": "mol",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Direct English source identifies a dated chemistry/physics spelling of mole. Expand with the modern amount-of-substance definition, not molecular weight expressed in grams.",
+      "explain": [
+        {
+          "head": "mole",
+          "source": "wiki",
+          "sense": 11,
+          "reason": "Exact chemistry/physics unit sense with the defined entity count; exclude animal, spy, skin and other homonyms.",
+          "sourceSenseId": "wiktionary:714e3ff051603e49599fd7a8"
+        }
+      ],
+      "beforeHash": "240fc31f09e58326b9782b9184656e41d1771196564bc02a0dfbd22029a5e2cc",
+      "sourceSenseId": "wiktionary:manual:7c8ab3160e4722258f76b95dac659bda493d15f96cfefaa676231544edc9b156"
+    },
+    {
+      "lemma": "gram-molecule",
+      "head": "gram molecule",
+      "headword": "gram molecule",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Reviewed hyphen-to-space correction preserves letters and stable ID. The source explicitly defines a mole of molecules; clarify amount of substance with the current unit definition.",
+      "explain": [
+        {
+          "head": "mole",
+          "source": "wiki",
+          "sense": 11,
+          "reason": "The source names a mole of molecules; retain the entity-count unit definition instead of the older mass-only WordNet candidate.",
+          "sourceSenseId": "wiktionary:714e3ff051603e49599fd7a8"
+        }
+      ],
+      "beforeHash": "c80b647ea7c3cc08092229db77cb40322a92085e1afb7886151367e8880959e2",
+      "sourceSenseId": "wiktionary:fef6d7d474f53de9f117be8b"
+    }
+  ]
+}

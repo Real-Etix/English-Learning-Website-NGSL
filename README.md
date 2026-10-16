@@ -33,8 +33,8 @@ It began as a flashcard trainer and was rebuilt around a versioned vocabulary co
 Canonical NDJSON is the editable source of truth; this README and `wiki/CLAUDE.md`
 describe the operating rules, while `wiki/raw/` is a provenance-only clipping inbox.
 Do not use Markdown pages as a second corpus. Source precedence is authored
-`curated` content first, then factual imports (`wordnet`, `dictionaryapi`,
-`tatoeba`), then `llm` drafting provenance. LLM output is never factual evidence by
+`curated` content first, then factual imports (`wordnet`, `oewn`, `wiktionary`,
+`dictionaryapi`, `tatoeba`), then `llm` drafting provenance. LLM output is never factual evidence by
 itself, and all source references must remain attached to the content they support.
 
 Records move deliberately through `draft` (work in progress), `review` (awaiting
@@ -48,14 +48,20 @@ quality audits.
 When a learner selects a word, the app keeps a compatibility-shaped projection of the
 canonical record and the Free Dictionary API response, then builds a normalized learner profile. It prioritizes a
 verified or factual-source-backed primary meaning, preserves authored examples and
-connection glosses verbatim, labels unsupported content as an AI draft, and allows a
-new claim only when a trustworthy meaning and sourced example are available. This
+connection glosses verbatim, carries each published sense's exact usage labels into
+the drawer and tutor context, labels unsupported content as an AI draft, and allows a
+new claim when a trustworthy meaning has either a sourced example or an explicit,
+current limited-example review. This
 detail remains demand-loaded and is not included in the galaxy manifests.
 
 Claims are for one exact selected canonical sense, not merely the word. The record
 and sense must both be published, the definition must be complete, the sense must be
 factual-source-backed (or verified under the established editorial rule), and that
-same sense needs a sourced example. A published connection is learner-facing only
+same sense needs a sourced example unless it has a content-bound `meaningReview`
+approval under `limited-examples-v1`. Meaning-only releases use definition quizzes;
+the drawer labels limited examples and disables sentence practice until a sourced
+example is reviewed. Server practice endpoints enforce the same restriction.
+A published connection is learner-facing only
 when its target is also published and it has an authored, non-empty gloss; unreviewed
 and hidden connections stay editorial debt rather than public guidance.
 
@@ -134,10 +140,110 @@ reduced inherited errors but rejects new error identities or malformed/crashed l
 output. This permits review PRs that reduce inherited debt without permitting new
 debt. The ordinary `npm run lint:vocabulary` and `--strict` audit remain local release
 gates: `--strict` fails for every remaining blocking category—published placeholders,
-unsupported published senses, otherwise-claimable senses lacking sourced examples,
+unsupported published senses (including stale meaning reviews), otherwise-claimable
+senses lacking sourced examples without an approved limited-example exception,
 public connections to hidden or missing targets, and learner-facing connections
 without glosses. Missing optional patterns or mistakes, plus hidden/unreviewed debt,
 are reported but non-blocking.
+
+### Limited-example releases
+
+`content/vocabulary/limited-example-release.json` pins individually reviewed senses
+and the pre-release record hashes. `meaningReview` stores the policy, review date,
+rationale, and an exact content snapshot binding the headword, editorial scope,
+definition, attribution, examples and guidance. It is an editorial receipt, not a
+cryptographic signature. Editing those fields requires renewed review. It never
+makes AI-only evidence factual or overrides an archive.
+
+```bash
+node --import tsx scripts/release-limited-examples.ts          # preview the explicit manifest
+node --import tsx scripts/release-limited-examples.ts --write  # apply; repeat runs are no-ops
+npm run build:graphs
+```
+
+The offline applicator uses the recovery worker lock, validates all selected
+records before writing, and backs up changed records under
+`.cache/vocabulary-repair/limited-example-release-v1/`. Unselected senses are hidden,
+not deleted; source text and relationship statuses are preserved. The drawer does
+not mix unreviewed live dictionary alternatives into these specifically reviewed
+entries. No API calls or database migration are needed.
+
+The first two 2026-10-16 local releases approved 54 advanced words (53 meaning-only and
+one with sourced examples). The first released 26 words and withheld four. The
+follow-up reviewed all 49 then-hidden words with newly extracted free-text usage
+qualifiers, released 28, and withheld 21. Its exact sense choices, learning scopes
+and withholding reasons are in
+`content/vocabulary/usage-evidence-review-2026-10-16.json`. Original candidate
+meanings and examples remain preserved but hidden; the new meaning-only versions
+retain relevant source qualifiers without promoting unreviewed examples or links.
+At that checkpoint there were 10,906 public records and 1,209 hidden advanced records;
+the 115 unclaimable core words are unchanged. New releases are searchable in
+**All words** as unconnected stars until their relationships receive separate
+review. This local result does not imply a Vercel deployment.
+
+The subsequent free-only backlog review is complete. Batches **001–031** give all
+1,209 words explicit decisions: **753 further releases, 456 withheld, none
+pending**. The final 430-word continuation released 279 and withheld 151. That
+checkpoint had **11,659 public / 456 hidden advanced** records. Reviewed batches,
+reasons, exact source sense IDs and pinned
+record hashes are tracked under `content/vocabulary/free-review-batches/`.
+Original source prose/examples and connection statuses are preserved; the new
+meaning-only versions are claimable but do not unlock sentence practice. No new
+official memberships or relationships are invented. See
+`docs/superpowers/plans/2026-10-16-remaining-free-review.md` for verification and
+the retained audit trail. Withheld words have final review decisions, not publication
+approval: unresolved identities, unclear definitions and inappropriate specialist
+senses remain hidden. No commit, push or deployment was made by this review.
+
+The subsequent spelling/phrase/dictionary-matching pass assessed those 456 holds
+and released **130 more words**, leaving **326 hidden**, including the same six
+archives. That checkpoint had **11,789 public records**. Of those releases,
+36 have corrected display headwords; all stable IDs are preserved. Explicit
+dictionary form/variant links are joined to individually reviewed base meanings,
+with both source texts and attributions retained. Original examples, official list
+membership, prior public/core content and connection statuses are unchanged.
+All 130 new meanings support claims but **not sentence practice**. They are
+searchable in **All words**; this pass does not approve their old suggested links
+or add them to official lists. Decisions are in
+`content/vocabulary/matching-review-batches/001.json`–`008.json`; see
+`docs/superpowers/plans/2026-10-16-spelling-matching-repair.md` for the audit trail.
+Only cached/local evidence and bounded free sources were used. No paid calls,
+commit, push or deployment are part of this pass.
+
+The next spelling/definition follow-up reviewed all 326 remaining records and
+released **92 more**, leaving **234 hidden**, including the six archives. The local
+corpus at that checkpoint had **11,881 public records**. Seven further display spellings were
+corrected, without changing stable IDs. Short derivative definitions are clarified
+with explicitly named, individually reviewed base-word definitions; both exact
+source texts and their attributions are retained. Ambiguous senses, identity
+collisions, unclear definitions and unrelated specialist meanings stay hidden.
+All 92 releases support meaning-based claims, not example-dependent sentence
+practice, and are searchable in **All words** without promoting their old links.
+Decisions are in `content/vocabulary/definition-review-batches/001.json`–`006.json`;
+see `docs/superpowers/plans/2026-10-16-definition-followup.md` for verification.
+Only free sources were used. Changes remain local, with no commit, push or deployment.
+
+The final review and user-approved discard pass assessed those 234 holds:
+**11 more words were published and 223 unresolved entries were retired** from
+the active NDJSON library. The active corpus now contains **11,892 public records
+and no hidden advanced records**. The 115 unclaimable core words remain unchanged;
+publication does not mean that every core word is claimable. New releases support
+meaning-based claims only and are searchable in **All words**. NHGRI and NLM MeSH
+provide two individually reviewed, attributed glossary definitions; other releases
+use the existing free dictionary evidence. Source wording and qualifiers remain
+preserved, including the obsolete label on *negatron*.
+
+The discard also removed 1,046 **unpublished** incoming links to the retired IDs.
+All published relationships, official memberships, retained IDs, definitions and
+examples are preserved. The 223 retired records (including the six earlier
+archives), indexed incoming links and original metadata are recoverable from
+`content/vocabulary-retired/2026-10-16/archive.json` (3.84 MiB, about 4 MB). They are not
+runtime vocabulary or an enrichment backlog. See that directory's `README.md`
+for guarded recovery instructions and
+`docs/superpowers/plans/2026-10-16-final-review-and-retirement.md` for checks.
+Historical review batches remain an audit trail, not commands to rerun against
+the reduced corpus. This pass makes no paid calls, database changes, commit,
+push or deployment.
 
 Read the audit’s global and per-list totals as coverage, not generated content: it
 counts publication state, sense evidence/examples, usage debt, connection status,
@@ -290,10 +396,69 @@ until final editorial review and the source-integrity audit are complete.
 
 The completed 2026-10-13 recovery pass assessed all 2,081 candidates and recovered
 329 core plus 374 advanced words. After conservative editorial withholding, 115
-core words remain unclaimable and 1,263 advanced words remain hidden. Every model
+core words remained unclaimable and 1,263 advanced words remained hidden at that
+checkpoint. Every model
 flag and 90 additional pairs were reviewed by the agent; the final review is not
 an assertion that every source sentence is flawless. Exact source text and old IDs
 remain preserved. See the dated implementation plan for outcomes and checks.
+
+### Free evidence and topic review
+
+The 2026-10-16 pass adds **Open English Wordnet** (`oewn`) as a factual,
+review-only source. Its exact-member API supplies attributed definitions and
+member-specific examples; it does not automatically publish a word. Existing
+Wiktionary cache can also supply sense-specific lexical relationships for review,
+but these are not automatically turned into galaxy edges or invented collocations.
+The extractor also retains exact grammatical/register tags, topic labels, raw
+usage tags and sense qualifiers (for example, `indebted`: `usually`, `with to`).
+Each `wikiUsage` item is marked `review` and carries its sense ID, original field,
+scope and source hash. Entry-wide free-form notes and related phrases are not
+assigned to arbitrary senses. External quotations remain excluded from examples.
+
+These are historical assessment commands for the original pinned cohort, **not
+commands to rerun after the final retirement**. The old cohort includes IDs now
+deliberately absent from the active library; its manifests and caches are retained
+only for audit/recovery. Do not reimport retired entries automatically.
+
+```bash
+node --import tsx scripts/assess-free-vocabulary.ts
+node --import tsx scripts/assess-free-vocabulary.ts --max-source-requests=25
+node --import tsx scripts/assess-free-vocabulary.ts --write
+```
+
+The original default was offline assessment with no vocabulary writes. The optional public
+source pilot needs no credentials and makes no LLM calls. It uses bounded responses,
+sequential requests, a cache cap and the existing recovery worker lock. The script
+requires the local recovery-v2 checkpoint/cache; it is not a Vercel runtime task.
+Reports and new cached evidence live in `.cache/vocabulary-repair/free-improvement-v1/`.
+Report rows retain the **historical** recovery `blocker` and separately show
+`currentVisibility` (`published`, `hidden`, or `archived`) at assessment time.
+The pinned 1,263-word cohort is not the current hidden count: the initial releases
+published 54 words, backlog batches 001–031 published another 753, the matching
+repair released 130 more, the definition follow-up released 92, and the final
+review released 11. This cohort now has **1,040 public / 223 retired / 0 pending
+hidden** records. In historical reports, `currentHidden` included the six archived
+records; they are now part of the recoverable retirement copy instead.
+
+`content/vocabulary/editorial-decisions.json` holds explicit record-hash-bound
+reviews. `--write` applies only those decisions and appends selected factual senses
+in **review**, preserving previous source text. Stable `lemma` IDs stay unchanged;
+`editorial.headword` repairs display/forms and the live dictionary lookup spelling.
+`editorial.scope` restricts advanced extensions to appropriate lists or recoverably
+archives them. It never changes official list membership, and archived records
+cannot flow into public artifacts even if another tool sets them to published.
+
+The initial pass repaired 16 headwords and recorded 29 included scopes plus six
+archives across 39 records, without publishing words. The first limited-example
+release left 1,237 advanced records hidden; the follow-up released another 28,
+leaving 1,209 hidden before the now-completed backlog pass. The refreshed offline
+assessment at the matching-repair checkpoint retained 3,988 usage evidence items
+across 739 words (176 hidden at that checkpoint), including 51 words with raw usage
+tags or qualifiers. Evidence extraction alone is not a publication approval;
+only explicit reviewed decisions are applied. The 115 unclaimable core words are
+unchanged.
+Core list-specific sense mismatches
+(such as the music sense of Fitness's `crossover`) remain a separate review task.
 
 ### Recovery-only Markdown migration
 

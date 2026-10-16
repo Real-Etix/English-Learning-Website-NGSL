@@ -5,16 +5,11 @@ import {
   type VocabularySense,
 } from "./schema";
 import { evidenceForSources, sourceRefsForSense } from "./source-evidence";
+import { hasCurrentMeaningReview, hasFactualExample } from "./meaning-review";
 const PLACEHOLDER_CONTENT = /definition pending|needs a fuller dictionary source/i;
 
 function isUsableDefinition(value: string): boolean {
   return Boolean(value.trim()) && !PLACEHOLDER_CONTENT.test(value);
-}
-
-function hasSourcedExample(sense: VocabularySense): boolean {
-  return sense.examples.some((example) =>
-    Boolean(example.text.trim()) && evidenceForSources(example.sources, { verified: false }) !== "ai-draft",
-  );
 }
 
 /** Classifies one sense without treating LLM output as factual evidence. */
@@ -26,12 +21,13 @@ export function factualEvidenceFor(record: VocabularyRecord, sense: VocabularySe
 
 /** Content readiness is independent from the persisted review/publication flag. */
 export function isSenseContentReady(record: VocabularyRecord, sense: VocabularySense): boolean {
+  if (sense.meaningReview && !hasCurrentMeaningReview(record, sense)) return false;
   return factualEvidenceFor(record, sense) !== "ai-draft"
     && isUsableDefinition(sense.definition)
-    && hasSourcedExample(sense);
+    && (hasFactualExample(sense) || hasCurrentMeaningReview(record, sense));
 }
 
-/** A public sense needs factual meaning evidence, usable authored content, and a factual example. */
+/** A public sense needs factual evidence and an example or an explicit current meaning review. */
 export function isSensePublishable(record: VocabularyRecord, sense: VocabularySense): boolean {
   return sense.status === "published" && isSenseContentReady(record, sense);
 }
@@ -48,6 +44,7 @@ export function isLearnerConnection(connection: Pick<VocabularyConnection, "stat
  */
 export function publicationStatusFor(record: VocabularyRecord, records: Iterable<VocabularyRecord> = []): PublicationStatus {
   void records;
+  if (record.tier === "advanced" && record.editorial?.scope?.status === "archived") return "hidden";
   if (record.publicationStatus !== "published" || record.tier === "core") return record.publicationStatus;
   const supportsPublication = record.senses.some((sense) => isSensePublishable(record, sense));
   return supportsPublication ? "published" : "hidden";

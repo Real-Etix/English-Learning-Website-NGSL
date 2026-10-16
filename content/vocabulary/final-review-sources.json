@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-10-16T08:52:30.000Z",
+  "method": "Individually read primary English entries and verified reuse terms. Exact definition excerpts; no invented examples or treatment advice.",
+  "entries": [
+    {
+      "head": "negatron",
+      "definition": "Synonym of electron.",
+      "partOfSpeech": "noun",
+      "labels": ["physics", "obsolete"],
+      "url": "https://en.wiktionary.org/w/index.php?title=negatron&oldid=93092320",
+      "section": "English / Noun"
+    },
+    {
+      "head": "chromatid",
+      "definition": "A chromatid is one of the two identical halves of a chromosome that has been replicated in preparation for cell division.",
+      "partOfSpeech": "noun",
+      "labels": [],
+      "url": "https://www.genome.gov/genetics-glossary/Chromatid",
+      "section": "Definition / first sentence, excerpt",
+      "sourceId": "nhgri",
+      "attribution": "Courtesy: National Human Genome Research Institute (accessed 2026-10-16)",
+      "license": "Public domain",
+      "licenseUrl": "https://www.genome.gov/about-nhgri/Policies-Guidance/Copyright"
+    },
+    {
+      "head": "monosaccharide",
+      "definition": "Single chain carbohydrates that are the most basic units of CARBOHYDRATES.",
+      "partOfSpeech": "noun",
+      "labels": [],
+      "url": "https://www.ncbi.nlm.nih.gov/mesh/68009005",
+      "section": "Monosaccharides / first definition sentence, excerpt; Monosaccharide is an explicit entry term",
+      "sourceId": "nlm-mesh",
+      "attribution": "National Library of Medicine, MeSH snapshot accessed 2026-10-16; no NLM endorsement",
+      "license": "NLM MeSH terms (free reuse with attribution and version identification)",
+      "licenseUrl": "https://www.nlm.nih.gov/databases/download/terms_and_conditions_mesh.html"
+    }
+  ]
+}

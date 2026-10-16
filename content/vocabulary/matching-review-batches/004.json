@@ -1,0 +1,404 @@
+{
+  "id": "004",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T07:36:57.886Z",
+  "decisions": [
+    {
+      "lemma": "floatage",
+      "hold": true,
+      "reason": "The alternative form is now verified, but all target meanings concern floating/flotsam/vessels, not the intended Business financial flotation. Keep the unrelated sense hidden.",
+      "beforeHash": "4718c7062e757e925077b21a8b2fc253aec82a52b0ac47840b262852784cf18f"
+    },
+    {
+      "lemma": "foreignnational",
+      "hold": true,
+      "reason": "The spaced entry exists but its non-naturalized-citizen wording does not clearly state citizenship of another country and risks a misleading legal-status explanation. Preserve uncertainty rather than silently rewrite it.",
+      "beforeHash": "90cdc55027cccf3adfef4bf53fa1b6126d6f34fd2558abb5edbd9dd3d385ba42"
+    },
+    {
+      "lemma": "fortifying",
+      "head": "fortify",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Explicit participle/gerund mapping and make-stronger sense are appropriate to the Business defensive/strengthening context. Publish the verb meaning without military, nutritional, alcohol or adjective claims.",
+      "beforeHash": "0e7b4d5453a5754c58263114705e02913e54c2aae20020febc9222398292f9a2",
+      "sourceSenseId": "source-6687902520d017b0ea11"
+    },
+    {
+      "lemma": "free-marketeer",
+      "head": "free marketeer",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Exact spelling-variant link plus advocate-of-free-market-economy definition supports both economics anchors. This verifies ideology without equating every capitalist with a free-marketeer.",
+      "beforeHash": "336e04fbe29ca7c0276b21cd3ce195753aaa41d492a6f4938de73f92faca8217",
+      "sourceSenseId": "wiktionary:c78354f47b54cf297676d477"
+    },
+    {
+      "lemma": "frontrunner",
+      "head": "front runner",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact alternative-form mapping and likely-winner sense fit NGSL first/leading-position vocabulary. Keep the idiomatic label and exclude financial front-running.",
+      "beforeHash": "a3ebd6b24a034210167f180cc8fb8d347da7ecf7bf4d7add839972d84d2676bc",
+      "sourceSenseId": "wiktionary:79840103314bb5bb7ce24b2b"
+    },
+    {
+      "lemma": "fte",
+      "hold": true,
+      "reason": "The proposed fête correction returned no usable exact evidence and the short stable ID can collide conceptually with unrelated abbreviations. No inferred celebration definition is released.",
+      "beforeHash": "6cf7aceae587fec1fa7836f319843e063888d154314c5f4cbe8460627d034481"
+    },
+    {
+      "lemma": "gaminghouse",
+      "head": "gaming house",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact spaced WordNet entry verifies the lost spaces and a business operating games of chance. Directly relevant to the Business casino anchor; no unsupported register claim is added.",
+      "beforeHash": "7ff0c75ccecf0746a8c840c4418d3812e2c31f6243cb9094f3a6e5a2662be430",
+      "sourceSenseId": "source-20d8f35fe17199c1de1e"
+    },
+    {
+      "lemma": "garments",
+      "head": "garment",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "Explicit plural noun relation and article-of-clothing meaning support the clothes/clothing/laundry anchors. Exclude the clothe verb and retain the existing plural identity.",
+      "beforeHash": "8cdd30d7e4f82bc42f8c94e8469c077f0963ea3a8006c064617e10bd1161e69d",
+      "sourceSenseId": "source-dd4d247c9f7f102032e8"
+    },
+    {
+      "lemma": "grandmama",
+      "head": "grandmamma",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source explicitly records the spelling variant and defines grandmamma as grandmother. Preserve term-of-address labeling; no unsupported old-fashioned classification is invented.",
+      "beforeHash": "4f149e3908c1bea2745349b24cb88c1f8a4880a1879664d47617c7631dd92159",
+      "sourceSenseId": "wiktionary:9acf37fb56dabb011fef59f6"
+    },
+    {
+      "lemma": "granules",
+      "head": "granule",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "Exact noun-plural relation and tiny-grain definition support the existing powder/material-form context. No unsupported numerical particle-size threshold or medical efficacy claim is added.",
+      "beforeHash": "e83a04744d7b9ba5610a69a51bad54805b92340f8cd32500da2e7373930fce3f",
+      "sourceSenseId": "source-965f54fb0708927e337a"
+    },
+    {
+      "lemma": "habitu",
+      "head": "habitué",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact English accented headword defines someone who frequents a place, fitting the TOEIC patron context and historical lost-accent pattern. No sophistication or social-status claim is added.",
+      "beforeHash": "03f681c99a315650cc5390d567b819047f5d3efdf925465f0604142c6edce5f8",
+      "sourceSenseId": "wiktionary:06958f27a6088d1d968bff73"
+    },
+    {
+      "lemma": "hardliner",
+      "head": "hard-liner",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact alternative-form link and general uncompromising-policy-position definition resolve the previously over-narrow conservative sense. Fits organizational/policy positions without asserting every hardliner is an extremist.",
+      "beforeHash": "1f3ec463ceac6d2a26ed371899370aa66c0c121d7b4243e0ce3da91ddc1aa962",
+      "sourceSenseId": "wiktionary:6a0ff821ce71ca9fe37e78d2"
+    },
+    {
+      "lemma": "hoisting",
+      "head": "hoist",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact participle/gerund relation and raising/hauling-up meaning supply the physical elevation explanation missing from the noun cross-reference. Exclude JavaScript hoisting and unsupported equipment requirements.",
+      "beforeHash": "f617af1123999dfdc002cd8bcbcb49a47770c0925e395460bace2a39ca028db4",
+      "sourceSenseId": "source-78045490a7029a9c46a3"
+    },
+    {
+      "lemma": "holdings",
+      "head": "holding",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact plural relation and something-owned sense support stock/estate possessions. Publish only the broad owned-property meaning, without inventing a particular investment class.",
+      "beforeHash": "d8c3a3bed051a16fcfa509d218afa9d61bfea746e228a6f0d717debd00caea3c",
+      "sourceSenseId": "source-2d182570911b6c895b2b"
+    },
+    {
+      "lemma": "illustrations",
+      "head": "illustration",
+      "source": "wordnet",
+      "sense": 3,
+      "mapping": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Explicit plural mapping and picture/diagram visual-representation definition support both graphics anchors. Preserve exact source prose and exclude abstract showing-by-example senses.",
+      "beforeHash": "244382a37fadd40a4dff1cf1395e1c75f99b42afe656720174f012652798301e",
+      "sourceSenseId": "source-87a4803877cb3c24ffbb"
+    },
+    {
+      "lemma": "individuals",
+      "head": "individual",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact noun source lists individuals as its plural and defines a person considered separately from a group. This resolves identity for the NGSL people anchor without importing legal or mathematical senses.",
+      "beforeHash": "36ab4011e510fc898844a97d7bba45bc892e88847d47a21b3da8f920c8a42b52",
+      "sourceSenseId": "wiktionary:5207d1ede0677dc2deb2e39a"
+    },
+    {
+      "lemma": "inflectionalparadigm",
+      "hold": true,
+      "reason": "The proposed spaced linguistics phrase still has no usable exact definition in the bounded free-source checks. Keep the old model-authored meaning unpublished.",
+      "beforeHash": "466814e372d0c593b2df958db77f2201619ee2c21c769f3c7c6ea46c6bcfd8ea"
+    },
+    {
+      "lemma": "inhabitants",
+      "head": "inhabitant",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Explicit noun-plural relation and person-inhabiting-a-place definition verify the resident meaning for the NGSL population anchor. No citizenship or permanent-residence restriction is added.",
+      "beforeHash": "16326721cdc30bbc3e92caec8fd5fd5aa5a6b8716100c662331795b140aa9bd0",
+      "sourceSenseId": "source-1a9ff7111fa31771eb66"
+    },
+    {
+      "lemma": "interpretive",
+      "hold": true,
+      "reason": "The alternative-form relation is clear, but the target only says provides interpretation. This does not resolve the prior circular wording or support the intended qualitative-research explanation.",
+      "beforeHash": "ab2fb6e1e7a7248f790b9ddd7c83a98a03b4d1405318e6439447566408abb799"
+    },
+    {
+      "lemma": "irregulars",
+      "hold": true,
+      "reason": "The noun-plural identity is now verified, but its armed-force sense is specialist military content without an appropriate Business learning topic. Do not substitute defective merchandise for the intended militia sense.",
+      "beforeHash": "481dbf9711aef7af45bd426d79cd75ed19b71778ef5447e7d7c2dc6138a49fd9"
+    },
+    {
+      "lemma": "jockeying",
+      "head": "jockey",
+      "source": "wordnet",
+      "sense": 3,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact participle/gerund mapping and compete-for-advantage-or-position sense resolve the circular original. Appropriate to NGSL competition; exclude professional horse-riding and deceit-only meanings.",
+      "beforeHash": "01673b51122ea4aa26468e4406c27fc94598cf29a1b48d4196cd166e81da5a0e",
+      "sourceSenseId": "source-50860c7ca73315c05590"
+    },
+    {
+      "lemma": "kilogramme",
+      "head": "kilogram",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "Explicit UK alternative spelling plus the exact one-thousand-grams definition verifies identity and mass-unit meaning. Preserve UK labeling and both list anchors.",
+      "beforeHash": "fa88f3a73f6185bcab711ab789d0235a59d4f200248e26d266477948b67ed8a5",
+      "sourceSenseId": "source-e856005aea8fcc2145e2"
+    },
+    {
+      "lemma": "kneebend",
+      "head": "knee bend",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The exact spaced entry describes repeated crouching with bent knees and confirms historical space loss. Directly relevant to Fitness squat vocabulary without adding exercise instructions or medical advice.",
+      "beforeHash": "0770bf202574523187d905449810bc4dfc2f4b209d64c1b8273614f15b006b71",
+      "sourceSenseId": "source-d079ffbc1d81dba5e49b"
+    },
+    {
+      "lemma": "knees",
+      "head": "knee",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The noun entry explicitly lists knees as the modern plural and supplies the human leg-joint definition. This supports Fitness anatomy; no equivalence to lap, animal joint, clothing or verb senses is claimed.",
+      "beforeHash": "f46a87a3065c64c2b907900970e772232e26c26d9622f71238128834f04bc99d",
+      "sourceSenseId": "wiktionary:c9b3bd8acf0d7bf399aedd5a"
+    },
+    {
+      "lemma": "lawntennis",
+      "head": "lawn tennis",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact spaced headword and racket/ball/net game definition verify the sport identity. Do not retain the unsupported claim that lawn tennis necessarily requires a grass court.",
+      "beforeHash": "69423fa1ce6c7fd791cf29c2f0e4b4ddc12a7f98ac59960474672c4f0b14ad8f",
+      "sourceSenseId": "source-81ba4b9d4d122299751b"
+    },
+    {
+      "lemma": "lifescientist",
+      "head": "life scientist",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The exact spaced phrase defines a scientist studying living organisms. This verifies historical space loss and direct Academic biologist relevance without inventing profession boundaries.",
+      "beforeHash": "e05666336aed7364a8c05bbf7ac96bb299fb5839b376656bc3955c997a422a93",
+      "sourceSenseId": "source-4003affe018e077ea11c"
+    },
+    {
+      "lemma": "literateur",
+      "head": "litterateur",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An explicit spelling-variant link and writer-of-literary-works definition support NGSL author. No unsupported critic or scholar meaning is added.",
+      "beforeHash": "a3b7c748eb81226625ad23801064d8c2057708ad95cb6f50e8f76a0e38f52eab",
+      "sourceSenseId": "source-e568b68f0552787f82a8"
+    },
+    {
+      "lemma": "littlefinger",
+      "head": "little finger",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Exact spaced headword defines the finger farthest from the thumb and verifies the collapsed spelling. Directly appropriate to the existing Fitness pinky/anatomy anchor.",
+      "beforeHash": "76cea40e0cf95d249700041734d9601d7283689750aeee3909eef43f983d5902",
+      "sourceSenseId": "source-64eeaad35f544a4e745d"
+    },
+    {
+      "lemma": "lock-up",
+      "head": "lockup",
+      "source": "wiki",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The explicit hyphenated alternative and UK storage-unit/garage sense resolve the prior wrong-sense problem. Preserve regional/countability labels and exclude jail, brakes, finance and computing senses.",
+      "beforeHash": "bf019609eb0af5fcfe0dc32aa8e441da690cf9b87a75f7bc62d01f6d5243e090",
+      "sourceSenseId": "wiktionary:1eefd540d8c146ed8d729b56"
+    },
+    {
+      "lemma": "looming",
+      "hold": true,
+      "reason": "The inflected verb is sourced, but the available threatening/large/indistinct appearance meanings do not establish the requested imminent-event adjective. Keep the remaining sense/POS uncertainty hidden.",
+      "beforeHash": "e0eaa88cb1db0a0e1208de20ee3f9c3813df7eca5de269e4c5e1e361b1ede7aa"
+    },
+    {
+      "lemma": "lower-level",
+      "hold": true,
+      "reason": "The comparative is sourced, but the base meanings concern intensity, rank or altitude, not downstairs within a building. Do not replace the intended location sense with unrelated lower status.",
+      "beforeHash": "e7675eee53f5ef4adbfb02cfb907c3b62e484995b49bf8ee5010b9debb044d47"
+    },
+    {
+      "lemma": "machinations",
+      "head": "machination",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Explicit plural link and usually-evil clever-scheme definition verify the intended political plotting meaning. Preserve the source's plural usage and negative connotation, without asserting that all politics is plotting.",
+      "beforeHash": "02bd8380cd2976c9cdbb61ebe55184b00da2654cdfa2e9317c282a8e44bfc766",
+      "sourceSenseId": "wiktionary:a3b5ebd2a0c1cd6bb038218f"
+    },
+    {
+      "lemma": "maneuvering",
+      "head": "maneuver",
+      "source": "wordnet",
+      "sense": 6,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact US participle/gerund relation and goal-directed-action sense supply a non-military meaning relevant to the political-action anchor. No automatic tactical or deceptive connection is published.",
+      "beforeHash": "45964252ac54714b7a49669c1050890629c51550b09518188ea4fb312af5fba4",
+      "sourceSenseId": "source-c9d728f23469e7c2b608"
+    },
+    {
+      "lemma": "marshaling",
+      "head": "marshalling",
+      "source": "wiki",
+      "sense": 2,
+      "mapping": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "The explicit spelling-variant relation and railway rolling-stock-sorting meaning establish a concrete Business logistics sense. Exclude computing serialization, heraldry and military officer senses.",
+      "beforeHash": "bfc6ed4d21e42325a551aeaef4b9a65eac2bd546bee204328de7d8b86c0fe8ee",
+      "sourceSenseId": "wiktionary:bac59b77830f11d4c0afcfde"
+    },
+    {
+      "lemma": "masterkey",
+      "reason": "Follow-up exact phrase defines a key opening a set of several locks, resolving the overbroad everywhere gloss. This verifies the historical space-loss repair and NGSL key context.",
+      "beforeHash": "58a75dfa15eef4ba31a24b8eb0b172138a3740dd216fc1614bc317bf0708c8ca",
+      "head": "master key",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "sourceSenseId": "wiktionary:fc6b6a3ecfe7f034a1058360"
+    }
+  ]
+}

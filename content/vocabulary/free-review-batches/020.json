@@ -1,0 +1,387 @@
+{
+  "id": "020",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:29:22.000Z",
+  "decisions": [
+    {
+      "lemma": "myorelaxation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Relaxation of the muscles is explicitly defined and directly relevant to the fitness anchor; it is not general leisure or travel relaxation.",
+      "beforeHash": "27a705c1105e90b62874417407b3516251f8ba1d690a7c39fed206b0103ba9ca",
+      "sourceSenseId": "wiktionary:d9a28eea0506397e30fa51be"
+    },
+    {
+      "lemma": "mythos",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A story or set of culturally meaningful stories is fully explained and appropriate to legend study; it is not limited to an entire system in every use.",
+      "beforeHash": "a792a2565da11906c50a4c5f8643d08985f7c84e6d416a7bb11686be65b1f6b9",
+      "sourceSenseId": "wiktionary:4e8c4e0d39b2973d22c6762c"
+    },
+    {
+      "lemma": "naja",
+      "hold": true,
+      "reason": "The cobra genus and jewelry meanings are unrelated to the fitness cobra pose; no taxonomic specialist is released on that homonym alone.",
+      "beforeHash": "dbe3ee053ab22ab983cf7c8c3b90419c0b42f8c48370de89dbd23d9137741525"
+    },
+    {
+      "lemma": "napery",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Household linen, especially table linen, is a clear hospitality meaning; fine quality or literary register is not required.",
+      "beforeHash": "836d4462addbea19ab645f6f6f80f8f3bfbd4f0c17e3ed31a521c6adabca2ecc",
+      "sourceSenseId": "wiktionary:3c4553b0d9cd2496433a60d0"
+    },
+    {
+      "lemma": "nares",
+      "hold": true,
+      "reason": "No exact plural source entry or reviewed naris morphology mapping is available; the plausible anatomical plural still needs recorded evidence.",
+      "beforeHash": "5c755060a24aacf3f23dbe40ee6e494f650ef80ff6d90caf17647993c0d5d8fc"
+    },
+    {
+      "lemma": "naris",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The exact singular noun means a nostril and is appropriate to breathing anatomy; no clinical precision advantage is asserted.",
+      "beforeHash": "0e255395f3adca3cfca0ffd706f7194da3045df442dce266f6d1d3afbc316c04",
+      "sourceSenseId": "wiktionary:4bba31681a53b83a2e758259"
+    },
+    {
+      "lemma": "natality",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The population-based live-birth ratio is fully defined and relevant to demography; it is not an individual's biological ability to conceive.",
+      "beforeHash": "fbbbe9e0a085fe8034a03fec147317fb1fc9c2213467555302f0480fe1dc1c51",
+      "sourceSenseId": "wiktionary:d95943195c84ed0e6b7134ec"
+    },
+    {
+      "lemma": "natatorium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The swimming pool or building housing pools is explicit and fits pool vocabulary; retain the US label and do not require every instance to be indoors.",
+      "beforeHash": "84ac30e20d5a88752cc38cefb5647f1a227d0ea49f07374cb77249499accfdd2",
+      "sourceSenseId": "wiktionary:179ba76bb41c53da6a2862cf"
+    },
+    {
+      "lemma": "nates",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Select the buttocks meaning and retain plural-only usage; exclude the unrelated midbrain and bivalve-shell senses.",
+      "beforeHash": "175a435bb6b3c45f5c39dfd24b0e0251f9a07d68cbc42b5b1a85a1b189e22532",
+      "sourceSenseId": "wiktionary:a51abefa0d40da187405d69b"
+    },
+    {
+      "lemma": "natrium",
+      "hold": true,
+      "reason": "No exact sourced English entry is present; the Latin-derived sodium name and formal-register claim cannot be inferred from the old gloss.",
+      "beforeHash": "a025dbb0baf1a8683cecb946766719971109a1dbd53e5717d58e9b63100a38dd"
+    },
+    {
+      "lemma": "neckband",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "The shirt part encircling the neck is an explicit clothing meaning suitable to work-apparel discussion; do not promote financial or exercise collar homonyms.",
+      "beforeHash": "420de57d9530703b3b000bc1113587f339bddc1532ebffdbe1d8e38756969d9a",
+      "sourceSenseId": "wiktionary:a808c5d66c36cfa1052e0cab"
+    },
+    {
+      "lemma": "necklet",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "An ornament worn tightly around the neck is a clear jewelry meaning related to necklace; historical-only usage is not imposed.",
+      "beforeHash": "6a45f5ce578517df5c45b10b640d5e5bcc0a64fe6f82693884a3f4cf8918108a",
+      "sourceSenseId": "wiktionary:cb2cfa8919015ffc2d950962"
+    },
+    {
+      "lemma": "necrology",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "business"
+      ],
+      "reason": "The death-notice sense directly fits obituary in formal communications; the church register and study-of-death senses are not selected.",
+      "beforeHash": "7b2e3fec1a519ee904ab4e3004be8885859b5aa3b57824cfdd03b6a947995fc1",
+      "sourceSenseId": "wiktionary:bc60a6e340a1c191b6214883"
+    },
+    {
+      "lemma": "negatron",
+      "hold": true,
+      "reason": "The candidate merely says a negatively charged elementary particle, which does not distinguish an electron from other charged particles; clearer precise evidence is required.",
+      "beforeHash": "bdcd66c19e7674cd06431cf2646ca033bccd07e045f4ae07d5af115fe93b177e"
+    },
+    {
+      "lemma": "nelumbo",
+      "hold": true,
+      "reason": "The aquatic plant genus is unrelated to the fitness lotus pose; botanical evidence does not establish an appropriate exercise connection.",
+      "beforeHash": "d6c8b70e513cf84eeb74e15119b33ee9da655075bbbf1236a01293e0b6253c9d"
+    },
+    {
+      "lemma": "neocortex",
+      "hold": true,
+      "reason": "The top-layer wording risks misrepresenting a multi-layered cortical region, while the alternative repeats another unexplained anatomical term; seek clearer factual definition.",
+      "beforeHash": "dfa536f6322411512bfe95b71729185b5f427859504f20db120b444ba1f3b453"
+    },
+    {
+      "lemma": "neonate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A newborn infant or recently born baby is a complete meaning appropriate to baby vocabulary; no unsourced age boundary is added.",
+      "beforeHash": "c039bd33140bb8d8247bd0c6e10f238dd43607fa5df62aee3c0987765089c17c",
+      "sourceSenseId": "wiktionary:634da910c17b3034e3d05b4d"
+    },
+    {
+      "lemma": "neoplasm",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "ngsl"
+      ],
+      "reason": "Abnormal new tissue growth is explicitly defined and relevant to tumor terminology; it is not automatically cancer and no diagnostic inference is made.",
+      "beforeHash": "8bb3b4d9e233aa776bb3456751c88d992e0037376badeddc8e7f94d455736ae4",
+      "sourceSenseId": "wiktionary:5da71be1bad1ed80b7b3a1af"
+    },
+    {
+      "lemma": "nervecenter",
+      "hold": true,
+      "reason": "The joined phrase lacks exact evidence or a reviewed nerve center identity mapping; the headquarters gloss alone cannot supply a source-backed meaning.",
+      "beforeHash": "e8b135add6f73d2ac0d41f631ceb533abea20c42c95f6c9c0ad07577b2431153"
+    },
+    {
+      "lemma": "neuraxial",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The central-nervous-system adjective is explicitly expanded by the source and useful for anatomy; do not publish the old nerve-block procedure comparison.",
+      "beforeHash": "10ac25b3e3eeabc0c720a5ad64b5061e8af6fe740c077641c3f39ed307ad3883",
+      "sourceSenseId": "wiktionary:a03a290298cf72f78247d15e"
+    },
+    {
+      "lemma": "neurocyte",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The exact entry directly identifies neuron as the meaning, appropriate to academic nerve-cell vocabulary without unsupported claims about histological usage frequency.",
+      "beforeHash": "75b7df0ea77fda02e5a81818eb75d91d8e096ae5cb68083646a0b596038adad5",
+      "sourceSenseId": "wiktionary:7736c1f624d54ede17801a14"
+    },
+    {
+      "lemma": "neurophysiology",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The physiology branch dealing with the nervous system is self-contained and relevant to bodily-function study; retain usually-uncountable usage.",
+      "beforeHash": "fadd9a0161e8fcdae7bd18f6a52eeacd1e769ed91c1589fea8462fa11cba48e2",
+      "sourceSenseId": "wiktionary:10ed2126e28fa982b53b4a6e"
+    },
+    {
+      "lemma": "non-even",
+      "hold": true,
+      "reason": "No exact factual entry is available for this hyphenated form; the old logic-and-computing recommendation does not verify a useful alternative to odd.",
+      "beforeHash": "f1a371d1e4e14e7d4f10e6db81ff8cfc2f38b491a449f665355674902f1f7a6c"
+    },
+    {
+      "lemma": "nonappearance",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "ngsl"
+      ],
+      "reason": "Failure to appear, especially at a trial, is explicitly defined and distinguishes attendance default from failure to pay.",
+      "beforeHash": "c4b0fb4bbc8c0a57120d1c58213f91b0cb4361fe14a8a4318cf849533f43c64d",
+      "sourceSenseId": "wiktionary:5446bc732dbee88614dab1f4"
+    },
+    {
+      "lemma": "nonattendance",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Failure to attend is a direct self-contained meaning related to absence, without requiring a particular institutional setting.",
+      "beforeHash": "846840345f951b460e09092e99900cdfa8ede4f975dcb27dbb79933994aa4f11",
+      "sourceSenseId": "wiktionary:c60b22515736a0e9c2f2eb26"
+    },
+    {
+      "lemma": "noncombatant",
+      "source": "oewn",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The selected noun explicitly includes armed-forces members not participating in combat; publish this accurate distinction rather than equating all noncombatants with civilians.",
+      "beforeHash": "b473a167915644ae16caeca0e076693cf83a8a46ed896960c0a24e01680a3159",
+      "sourceSenseId": "oewn:10380277-n:noncombatant%1:18:00::"
+    },
+    {
+      "lemma": "nonconcurrence",
+      "hold": true,
+      "reason": "The source only says refusal to concur and does not explain the intended legal disagreement meaning; do not infer judicial procedure from the old gloss.",
+      "beforeHash": "997501bfc5fdd853f7c520d90d1de85f125e4e05577b8902fd9bf74c02da72b3"
+    },
+    {
+      "lemma": "nonsuit",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "The plaintiff's failure to follow up or withdrawal of a suit is explicitly defined; this vocabulary sense is not advice about procedures in any jurisdiction.",
+      "beforeHash": "b3c57329fd8b3404e489b69c049acabaf8f2661838485ebf8f3422128d8a828d",
+      "sourceSenseId": "wiktionary:61262819bb0c612480623136"
+    },
+    {
+      "lemma": "noteholder",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "An entity holding a note such as a promissory note is a clear finance meaning; not every note has the same form as a bond.",
+      "beforeHash": "ffeea9b4a352d7a47fdbb4e27e1abc70e5cd77ee856f4c17b27dbdb2f28cb5c9",
+      "sourceSenseId": "wiktionary:ad4a7366b640479f38087a27"
+    },
+    {
+      "lemma": "nounclass",
+      "hold": true,
+      "reason": "The joined phrase lacks exact evidence and a reviewed noun class identity mapping; do not infer grammatical equivalence from the old gender gloss.",
+      "beforeHash": "05c717aff677049406f67ff6ddb011d41aed8fa7413a0ce037feab30e9b304a5"
+    },
+    {
+      "lemma": "nubber",
+      "hold": true,
+      "reason": "The slow short batted-ball meaning is verified but unrelated to the fitness roller-equipment anchor; preserve hidden rather than promote a sports homonym mismatch.",
+      "beforeHash": "315971df7d71f07f5513ca192d3e14cb4240cdbdf90facb6226a85f33e4c3585"
+    },
+    {
+      "lemma": "nullification",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Rendering something void or without effect is fully explained and relevant to cancellation; exclude the specific historical controversy and body-modification sense.",
+      "beforeHash": "e4feb2476f59ee140d88cd1d29a3eb6f9d79f948822c4a0b373771171d443aa6",
+      "sourceSenseId": "wiktionary:e7e20dfb460a5d3dd230f506"
+    },
+    {
+      "lemma": "nulliparity",
+      "hold": true,
+      "reason": "The obstetric pregnancy-history term is unrelated to business parity, and the source does not match the old live-birth-only gloss; keep the specialist hidden.",
+      "beforeHash": "6b2ac9722d8cf85620f4b2fa8ad218ee1250e8615458a2cedc0701b1abe8c94e"
+    },
+    {
+      "lemma": "nurturer",
+      "hold": true,
+      "reason": "The only entry repeats nurtures without explaining caregiving; the intended relationship to parenting needs a self-contained factual meaning.",
+      "beforeHash": "6909d1da2b52879ae30771512a046fe17b2c15ec990b0f2f46a480fba88f9208"
+    },
+    {
+      "lemma": "nutlet",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "A small nut is a complete food-category meaning related to nut; exclude the narrower botanical ovary-section sense.",
+      "beforeHash": "2194e985596c7ee2570caa90ac92bbadfaa9d704959136f629b2f9d223c97ae7",
+      "sourceSenseId": "wiktionary:070c80fb06417b484a9dea02"
+    },
+    {
+      "lemma": "nutmeat",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The edible portion of a nut is explicitly defined and relevant to food preparation; retain the US usage label.",
+      "beforeHash": "cbf90d5288df4d19e39f399afd1670c9bc73ebb6024d174eb78af60910b9f1d7",
+      "sourceSenseId": "wiktionary:99d7dcd394e75e5d98bec419"
+    },
+    {
+      "lemma": "nutraceutical",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness",
+        "toeic"
+      ],
+      "reason": "The source explicitly says believed to have curative properties, describing a product category rather than proving efficacy; not every vitamin has medicinal benefits.",
+      "beforeHash": "ed5d6cf6cc224ed3e447709cac9ad6865f3630e9d69c10a494139e454eb17712",
+      "sourceSenseId": "wiktionary:ab455ea26ced05ddf87fcb56"
+    },
+    {
+      "lemma": "nutritive",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Nourishing or providing nutrition is a complete meaning directly relevant to nutritional properties without making product-specific health claims.",
+      "beforeHash": "b30d4691435e083c2e5ffee7e3dbd53ec8041f3b2b9014d8cee9701b4c0345ab",
+      "sourceSenseId": "wiktionary:3c65c3fe09b1f6c55d87bfb3"
+    },
+    {
+      "lemma": "obligee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The party owed an obligation is fully explained and useful in legal business vocabulary; obligations are not restricted to money debts.",
+      "beforeHash": "45413fd9364cece119f662f1caa997e6e19db607ae50a58fde4f8557bdaf83b6",
+      "sourceSenseId": "wiktionary:40a2c2c714f1b9fae9c63362"
+    },
+    {
+      "lemma": "obligor",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The party bearing a legal obligation is explicit and complementary to obligee; a borrower or debtor is only one possible case.",
+      "beforeHash": "3157e77ef909770d43efbcf6ace259caa4d5ccfc866a6ac3d9008e2e5a4cdfa7",
+      "sourceSenseId": "wiktionary:64c04a02a208960f4dc12994"
+    }
+  ]
+}

@@ -42,5 +42,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude/
+# Local source caches, recovery ledgers, browser traces and inspection helpers.
+/.cache/
 /.cache/vocabulary-verification/
 /.cache/vocabulary-repair/
+/.cache/limited-example-browser-results/
+/.cache/limited-example-playwright.config.ts
+/.cache/prepare-usage-evidence-release.ts

@@ -1,0 +1,407 @@
+{
+  "id": "021",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:40:15.000Z",
+  "decisions": [
+    {
+      "lemma": "observance",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic",
+        "academic",
+        "ngsl"
+      ],
+      "reason": "Compliance with a law, custom, command or rule is explicit; keep holiday celebration and watching as separate senses.",
+      "beforeHash": "eba19a0a2830f2b348a2840750fc0ea029bee92b59e8dc319240bcd2a2ba0ab0",
+      "sourceSenseId": "wiktionary:ab621c048a0eabf939343bbe"
+    },
+    {
+      "lemma": "obtainment",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The source supplies acquisition as a clear meaning; obtaining something does not always require a procurement procedure.",
+      "beforeHash": "21f36d663492ab204a035944a95f2318ab7b5de3e6d581e50caa7866eb3497d7",
+      "sourceSenseId": "wiktionary:6fcb2358c79da383ced8651b"
+    },
+    {
+      "lemma": "occupier",
+      "hold": true,
+      "reason": "The military candidate mismatches lessee, and the residence candidate includes merely being born somewhere; neither clearly verifies possession under a lease.",
+      "beforeHash": "157cb3785bcb2e13d5b25addbcb986b6b12923217f3dece3576d461c67a8cc3f"
+    },
+    {
+      "lemma": "octant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "An eighth of a circle or 45-degree arc is explicit; restrict the geometric meaning rather than treating it as every sector.",
+      "beforeHash": "d9620cc18890a60cc313f6547b1e9cdea866f090812900c8abbdf7d012042abc",
+      "sourceSenseId": "wiktionary:d5ad40f1117507f9dfb3ab34"
+    },
+    {
+      "lemma": "odontologist",
+      "hold": true,
+      "reason": "The only entry depends on unexplained odontology; it does not independently explain the intended dental specialist.",
+      "beforeHash": "53342c047c838e6d43dbb0633b1a5beea7ca4fd9db516908b912aedeaae49020"
+    },
+    {
+      "lemma": "offering",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "ngsl"
+      ],
+      "reason": "Something offered, such as a proposal or bid, is a clear commercial meaning without importing religious contributions.",
+      "beforeHash": "eacd4b0ea2074913237a790e5dd58c296d9c705d24cc7a4b871c468d0c39bda1",
+      "sourceSenseId": "source-c7ac8d4b564835bc8970"
+    },
+    {
+      "lemma": "officeholder",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Holding an appointed or elected public office is explicitly described and related to politician, without requiring election in every case.",
+      "beforeHash": "4dc4bbf85e4b1534a10e7d55567b54a75ef8daf02d3b4231834901d226b9ef19",
+      "sourceSenseId": "wiktionary:d5b04832474d55055875452f"
+    },
+    {
+      "lemma": "officialdom",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Government officials and civil servants are explicitly identified; criticism of their behavior is not inherent to the selected meaning.",
+      "beforeHash": "4d3821d2c38e90bab72cb0694e66ccfbbb1476905a73e2dd6cb0041fe1ca417b",
+      "sourceSenseId": "wiktionary:2df2c61c7bd0f098601319ce"
+    },
+    {
+      "lemma": "olecranon",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The ulna's bony elbow point is precisely described and directly supports elbow anatomy rather than the entire joint.",
+      "beforeHash": "24ed48c9e877c8aeb2b874ad73e28df918d2d5bb6602219d499e63e1ec91fab9",
+      "sourceSenseId": "wiktionary:4eaa5a16c078de1846325cd8"
+    },
+    {
+      "lemma": "oligopolist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "One of a small group of influential sellers is fully explained and distinguished from a single monopolist.",
+      "beforeHash": "7ed2363b9fc2ace8f6c277af282f6327397861907665573485bf3c833634a8b1",
+      "sourceSenseId": "wiktionary:f985d2d5d9195618f6583dba"
+    },
+    {
+      "lemma": "omphalos",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The exact physical navel sense fits body vocabulary; exclude the religious artifact, theological proposition and metaphorical hub meanings.",
+      "beforeHash": "9f848b771c7cf53205bd8525eb68a71cb45e5594f3517cb3c2a7e42284c00187",
+      "sourceSenseId": "wiktionary:54e1f8d1285f52c321154cdd"
+    },
+    {
+      "lemma": "onlookers",
+      "hold": true,
+      "reason": "No exact plural source sense or reviewed onlooker mapping is available; the old audience gloss cannot substitute for evidence.",
+      "beforeHash": "3e29ff47fa2ebf84187ac5c8974801f057d09626aebb9f761574e46f1bcac50e"
+    },
+    {
+      "lemma": "operability",
+      "hold": true,
+      "reason": "The sole definition repeats operable without explaining the system's ability to function; retain hidden pending clearer factual meaning.",
+      "beforeHash": "b25f1c8feba6548431ffb1eeff987d4c7aefe9b8dace7d63dd9c116ff6ac70f8"
+    },
+    {
+      "lemma": "operationalize",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "ngsl"
+      ],
+      "reason": "Defining a concept so it can be practically measured is explicit; this is narrower than implementing any policy.",
+      "beforeHash": "2e14c5fb56719ed199b6b0eac885479ef87edf7d94b7d5f59fc6a22d707e7f31",
+      "sourceSenseId": "wiktionary:54eb680e9060594f18a2ace4"
+    },
+    {
+      "lemma": "ophidian",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A snake or serpent in Serpentes is a clear zoological meaning directly supported by the academic snake anchor.",
+      "beforeHash": "bd9afd397e0e7609d407194abf043cce27bfef0f146f3672c5fff241f2d60573",
+      "sourceSenseId": "wiktionary:5ec54692f5894e39dccb1399"
+    },
+    {
+      "lemma": "orchestrator",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The arranger writing for orchestras matches the music-adaptation context; do not infer generic project coordination from the circular candidate.",
+      "beforeHash": "5af012531c43db6a1eddca82d523c71a1759ff87069d349dcd152f36bc0475e1",
+      "sourceSenseId": "source-8280e21de498d2ee8361"
+    },
+    {
+      "lemma": "originator",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "academic",
+        "toeic"
+      ],
+      "reason": "Someone creating or founding something is explicitly described; an issuer or sender is not automatically its original creator.",
+      "beforeHash": "2303caf62ae83f55fe5e4e0ca8cc8003695bda75c5413daef644c62e9288fc00",
+      "sourceSenseId": "wiktionary:b369b025ef255eb0c0dfb4bd"
+    },
+    {
+      "lemma": "orlop",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The platform over a ship's hold forming its lowest deck is precisely described and relevant to ship-deck terminology.",
+      "beforeHash": "010eea03fdcf4a9930eef6a378bea7b0b4a824b429d069bc019f3feed6c56183",
+      "sourceSenseId": "wiktionary:03215ea854dfac61692d3619"
+    },
+    {
+      "lemma": "ornaments",
+      "hold": true,
+      "reason": "No exact plural source sense or reviewed ornament mapping is present; decorative jewelry cannot be inferred from old glosses alone.",
+      "beforeHash": "f0c16e0371d9225086a47b4a7fb2191e99f280a8ab52e05df43b792846eb639b"
+    },
+    {
+      "lemma": "orthophosphate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A salt or ester of orthophosphoric acid is exact chemistry evidence; it is not restricted to a bare ion or presented as dietary advice.",
+      "beforeHash": "ce6a947536a51a03fd74393ad7420ef055a9e43b831776e38c36c2e77489455e",
+      "sourceSenseId": "wiktionary:bdbb66d77c2e9a7ccae5141c"
+    },
+    {
+      "lemma": "ossature",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A skeletal framework or underlying structure is clearly defined; distinguish the whole framework from an individual bone.",
+      "beforeHash": "f8b6f6b0a20d0afa16ff7248126ba125f6a2cff937855fba5077c728bb4bf22b",
+      "sourceSenseId": "wiktionary:7a34c376ea08849db7923d96"
+    },
+    {
+      "lemma": "ousting",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Ejecting or forcing someone out is self-contained and matches displacement without necessarily implying a replacement.",
+      "beforeHash": "8b81cbbb17b144cffadc28f26657a7486e824e0cfd8090f567587e1d13d8e01d",
+      "sourceSenseId": "source-e9d516c8ac2da1ac1ff3"
+    },
+    {
+      "lemma": "outgoings",
+      "hold": true,
+      "reason": "No exact source entry verifies the plural expense meaning; a reviewed base or plural identity mapping remains necessary.",
+      "beforeHash": "13770db29f87ddf57075a94f86f017508546ac9b3fd38fc8a92419464dfdf925"
+    },
+    {
+      "lemma": "outsole",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "fitness"
+      ],
+      "reason": "The ground-contact underside of footwear is explicit and appropriate to shoe materials; it is not merely the heel.",
+      "beforeHash": "9dd7ec633e8f33523bb0d51bdae5ab79460d87408a40dcb21bd0f52ef4851875",
+      "sourceSenseId": "wiktionary:b9b78a42dabc0daa962fe9bb"
+    },
+    {
+      "lemma": "overarm",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The hand moving forward and down from above shoulder level clearly defines the intended sports motion, excluding excess weaponry.",
+      "beforeHash": "ef5020ac80888f602c5fcd9f8533a097ffcaeab2a9f48c6810bf0b18bacc68c9",
+      "sourceSenseId": "source-34717162eb09e72edd56"
+    },
+    {
+      "lemma": "overcompensate",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Providing excessive pay or reward is explicitly sourced and matches overpay; the psychological compensation sense is separate.",
+      "beforeHash": "718f88633759e33205b36c5376659a77bc8d211dfae8e698e2e92f6a42d62186",
+      "sourceSenseId": "wiktionary:5b7c1e31c0667b287efc345a"
+    },
+    {
+      "lemma": "overpopulate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Filling a region beyond its population capacity is fully explained and more specific than every instance of crowding.",
+      "beforeHash": "b42eed996ccd3ae612e0db6150b2104917510d721ed7387820b007de9e603fdd",
+      "sourceSenseId": "wiktionary:c09f4a8fc43ea07cfe960e14"
+    },
+    {
+      "lemma": "overreward",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Rewarding excessively is a clear transitive meaning related to overpay, without restricting rewards to money.",
+      "beforeHash": "8de7d5b83c66a65883952d0a9705755062405ec0e12d1e8d56a04f7883d777bb",
+      "sourceSenseId": "wiktionary:e13d77fa2e08a92390f256e3"
+    },
+    {
+      "lemma": "oversubscribe",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Attempting to buy more shares than available is explicitly explained; reject the old denial that this can describe the buying action.",
+      "beforeHash": "849d0cf79da684ba7eaa70eeb08825b5fa90e51c34a2cac5a20ed2c6409421db",
+      "sourceSenseId": "wiktionary:5d398ba8c5d6fb6f2ef9dc2f"
+    },
+    {
+      "lemma": "ovine",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic"
+      ],
+      "reason": "The sheep-related adjective is fully described, including its comparison qualification; exclude the figurative submissive-person sense.",
+      "beforeHash": "bfea63c9f3f9a9cba42439931d51eec877466c6b61ac7b54c985322d4c2514bc",
+      "sourceSenseId": "wiktionary:29842bbbc8772522e7b94e9a"
+    },
+    {
+      "lemma": "ovoid",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Egg-shaped with tapering at one end is explicit and supports shape vocabulary without adding an unsourced dimensional rule.",
+      "beforeHash": "3374b17b0b0d0f5ec2bad7932393a5c35890f7f909f50fc4c1a83a4001e18255",
+      "sourceSenseId": "wiktionary:06e19fdef34f4acc0402db46"
+    },
+    {
+      "lemma": "oxic",
+      "hold": true,
+      "reason": "Containing oxygen does not establish an aerobic-exercise meaning; the sole fitness anchor confuses environmental oxygen with exercise physiology.",
+      "beforeHash": "c182cf011547a14d5b759521b1f89b528d46222e174b5ba3973797a4e41268a5"
+    },
+    {
+      "lemma": "oxygenic",
+      "hold": true,
+      "reason": "Oxygen-containing or producing processes do not verify equivalence to aerobic exercise; the fitness topic mismatch remains.",
+      "beforeHash": "b992d1de31f7d008427b13acbc096d9fd2d5e1bc26e3d674e13966ffd64586fb"
+    },
+    {
+      "lemma": "pachyderm",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The elephant sense is explicitly informal; retain that restriction rather than the old recommendation to use it as a formal scientific term.",
+      "beforeHash": "8e340858ad5fa081394b0367215b9e1682598df3804cc59b5f94933552e2edcf",
+      "sourceSenseId": "wiktionary:70fac941311ff8f7b4e2a945"
+    },
+    {
+      "lemma": "padma",
+      "hold": true,
+      "reason": "The source verifies a lotus blossom, not the fitness lotus posture; cultural association alone does not resolve the intended exercise meaning.",
+      "beforeHash": "055c125f44cb5fe2873f81232d664af82bdc83b196581abbe5d5f2aeeda62f62"
+    },
+    {
+      "lemma": "pallium",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The cerebral-cortex sense directly matches the academic anatomy anchor; exclude clothing, religious vestments and invertebrate structures.",
+      "beforeHash": "1a5e5b0a673cfc05ed9f2c0d32636280db1a00f72875a4005b5a83175d24f466",
+      "sourceSenseId": "wiktionary:dc97871061bbeb494a46b06c"
+    },
+    {
+      "lemma": "panzer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The tank sense, especially German World War II, is clearly sourced for historical reading; not every tank is necessarily German.",
+      "beforeHash": "1938320efec991ae385cf928a83b10548834e10c133dc8f3f6b75c2f1bc2c3cf",
+      "sourceSenseId": "wiktionary:3b81dd25554ea107de1c8035"
+    },
+    {
+      "lemma": "paraprofessional",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A person trained to assist a professional is fully explained; this category extends beyond paralegals and legal workplaces.",
+      "beforeHash": "1d5ef1a73c8b318843e6fc9b661340a7a2fee5d44359426fd22ccbbd6b277cb3",
+      "sourceSenseId": "wiktionary:020fe696e166ed80fcd05e46"
+    },
+    {
+      "lemma": "parenchyma",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Functional organ tissue contrasted with supporting tissue is a precise academic biological meaning, not a replacement for every tissue.",
+      "beforeHash": "5bce57cb904a9a1a00016b664210b57627aa05c00bdbfa9a37ab33b93cac6b03",
+      "sourceSenseId": "wiktionary:b80e51aa524cc5f6efdf0a21"
+    },
+    {
+      "lemma": "parentheses",
+      "hold": true,
+      "reason": "No exact plural entry or reviewed parenthesis mapping is present; the proposed formal-register distinction is also unsupported.",
+      "beforeHash": "b7b1d67094ef168ed179c676b7cb4253f6692f1629f7876375727fceff176311"
+    }
+  ]
+}

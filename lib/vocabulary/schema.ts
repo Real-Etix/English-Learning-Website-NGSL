@@ -95,6 +95,12 @@ const VocabularySenseSchema = z.object({
   collocations: z.array(CollocationPhraseSchema),
   commonMistakes: z.array(CommonMistakeSchema),
   status: PublicationStatusSchema,
+  meaningReview: z.object({
+    policy: z.literal("limited-examples-v1"),
+    reviewedAt: z.iso.datetime(),
+    reason: nonEmpty,
+    contentSnapshot: nonEmpty,
+  }).strict().optional(),
 }).strict();
 export type VocabularySense = z.infer<typeof VocabularySenseSchema>;
 
@@ -128,6 +134,22 @@ const VocabularyListMembershipSchema = z.object({
   sfi: finiteSfi,
 }).strict();
 
+export const EditorialDecisionSchema = z.object({
+  headword: z.object({
+    value: nonEmpty,
+    evidenceUrl: z.url().refine(value => value.startsWith("https://")),
+    reason: nonEmpty,
+  }).strict().optional(),
+  scope: z.object({
+    status: z.enum(["included", "archived"]),
+    lists: z.array(z.enum(["ngsl", "academic", "business", "toeic", "fitness"])),
+    reason: nonEmpty,
+    reviewedAt: z.iso.datetime(),
+  }).strict().refine(scope => scope.status === "archived" ? scope.lists.length === 0 : scope.lists.length > 0,
+    "Archived scope must have no lists; included scope needs an allowed list").optional(),
+}).strict();
+export type EditorialDecision = z.infer<typeof EditorialDecisionSchema>;
+
 export const VocabularyRecordSchema = z.object({
   schemaVersion: z.literal(1),
   lemma: normalizedLemma,
@@ -148,6 +170,8 @@ export const VocabularyRecordSchema = z.object({
   domains: z.array(nonEmpty),
   chart: nullableText,
   region: nullableText,
-}).strict();
+  editorial: EditorialDecisionSchema.optional(),
+}).strict().refine(record => record.tier !== "core" || record.editorial === undefined,
+  "Official core records cannot have advanced editorial overrides");
 
 export type VocabularyRecord = z.infer<typeof VocabularyRecordSchema>;

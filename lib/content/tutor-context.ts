@@ -2,6 +2,7 @@ import { evidenceForSources, isFactualSourceId } from "../vocabulary/source-evid
 import { publicConnections } from "../vocabulary/public-connections";
 import type { VocabularyRecord, VocabularySense } from "../vocabulary/schema";
 import type { WordLearningProfile } from "./word-learning";
+import { hasCurrentMeaningReview, needsExampleForPractice } from "../vocabulary/meaning-review";
 
 const ANTI_FABRICATION_INSTRUCTION = "Do not invent missing usage guidance or relationships.";
 
@@ -40,6 +41,7 @@ export function buildTutorSenseContext(
   if (record.publicationStatus !== "published") return null;
   const sense = record.senses.find((candidate) => candidate.id === senseId);
   if (!sense || sense.status !== "published") return null;
+  if (sense.meaningReview && !hasCurrentMeaningReview(record, sense)) return null;
   if (!hasDefinitionEvidence(record, sense)) return null;
 
   const lines = [
@@ -51,7 +53,9 @@ export function buildTutorSenseContext(
     "Selected meaning:",
     `- ${sense.definition}`,
   ];
+  if (sense.labels.length > 0) lines.push(`Usage labels: ${sense.labels.join("; ")}`);
   const examples = sense.examples.filter((example) => hasFactualSource(example.sources)).slice(0, 3);
+  if (needsExampleForPractice(record, sense)) lines.push("Example coverage: limited. The meaning was reviewed; no sourced usage example is available. Sentence practice is unavailable. Never present generated examples as sourced evidence.");
   if (examples.length > 0) {
     lines.push("Sourced examples:");
     for (const example of examples) lines.push(`- ${example.text}`);
@@ -87,10 +91,15 @@ export function buildTutorStarContext(profile: WordLearningProfile): string {
   if (profile.sources.length > 0) lines.push(`Sources: ${profile.sources.join(", ")}`);
   if (primary) {
     lines.push("Primary meaning:", `- (${primary.source}) ${primary.definition}`);
+    if (primary.labels?.length) lines.push(`Usage labels: ${primary.labels.join("; ")}`);
+    if (primary.limitedExamples) lines.push("Example coverage: limited. Sentence practice is unavailable. Never present generated examples as sourced evidence.");
   }
   if (additional.length > 0) {
     lines.push("Additional meanings:");
-    for (const sense of additional) lines.push(`- (${sense.source}) ${sense.definition}`);
+    for (const sense of additional) {
+      lines.push(`- (${sense.source}) ${sense.definition}`);
+      if (sense.labels?.length) lines.push(`Usage labels: ${sense.labels.join("; ")}`);
+    }
   }
   if (profile.examples.length > 0) {
     lines.push("Sourced examples:");

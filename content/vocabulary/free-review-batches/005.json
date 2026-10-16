@@ -1,0 +1,425 @@
+{
+  "id": "005",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T04:08:00Z",
+  "decisions": [
+    {
+      "lemma": "capstone",
+      "hold": true,
+      "reason": "The sourced wall-top stone does not match the ordinary NGSL cope verb. The original masonry explanation is a homonym mismatch; a figurative achievement sense must not be silently substituted.",
+      "beforeHash": "eedac4e10633bb065ea52c85c612b0b7c3e83f895e229ed33daec4408d2e6db5"
+    },
+    {
+      "lemma": "carbonaceous",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The carbon-related or carbon-yielding definition is a precise chemistry meaning. Restrict to Academic and do not present it as equivalent to every use of organic.",
+      "beforeHash": "50501340b52bd8750ddfe7204dd9150fa5314eb3e8450722b4213b2f7453394c",
+      "sourceSenseId": "wiktionary:89d744fedcb5e8920ab26ab9"
+    },
+    {
+      "lemma": "carcinoma",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "WordNet clearly defines a malignant epithelial-tissue tumor, an appropriate Academic biology extension of cancer. No diagnostic, prognosis or treatment guidance is included.",
+      "beforeHash": "2175c36678eeb8ce22ff65170864a8f5f8dc12ce130f6aeaf4f094f1ee797014",
+      "sourceSenseId": "source-c8126c8b5830648b89da"
+    },
+    {
+      "lemma": "cardstock",
+      "hold": true,
+      "reason": "The checked sources yielded no exact factual candidate for this material. Preserve the model's proposed paper explanation hidden until a definition is attributable.",
+      "beforeHash": "4e774fb62cedc381410c24116a2733c08b43fe34493bb5a7887b4f3e2bdb941f"
+    },
+    {
+      "lemma": "carminative",
+      "hold": true,
+      "reason": "The sourced meanings concern gas-relieving medication/substances. The generic Fitness digestive anchor does not establish an appropriate medication-learning context; avoid importing treatment claims.",
+      "beforeHash": "eed9c5aad7005e8c4df97612a2f71a016dd332db08e281c14b70eae1a33e7b95"
+    },
+    {
+      "lemma": "carpus",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The group of wrist bones is an explicit, directly relevant anatomical meaning. It does not claim the bone group is identical to every aspect of the wrist joint.",
+      "beforeHash": "6873ab5a5a5036d4c42dde9138734d1095b789028b1aaf10d9a2329b4b7ea613",
+      "sourceSenseId": "wiktionary:eab6064322d7120397db6ce5"
+    },
+    {
+      "lemma": "carriagewheel",
+      "hold": true,
+      "reason": "The collapsed phrase lacks exact evidence and its vehicle-wheel meaning conflicts with Fitness cartwheel gymnastics. Keep both identity and topic concerns hidden.",
+      "beforeHash": "bb5b27a8f3099966372145076bc4e12f9fff48fd0a7ea08201337dcf613be9c4"
+    },
+    {
+      "lemma": "cartelist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A cartel member or supporter is a clear Business meaning relevant to collective market control. Do not equate each member with an individual monopolist.",
+      "beforeHash": "bb25d318765ae278cdb8d437a65f3d0c8271928b7ec4d5f1a0a940c08cfcf7ec",
+      "sourceSenseId": "wiktionary:2c63304ed3257c673239b2db"
+    },
+    {
+      "lemma": "caseinate",
+      "hold": true,
+      "reason": "The candidate connects salts to milk-protein coagulation in a way that needs clearer chemical evidence. Do not publish the model's broad processed-commercial-casein equivalence.",
+      "beforeHash": "f9613cc33a18435a5a8ee3ce245c4762929796643a1163ab367879203918d1e6"
+    },
+    {
+      "lemma": "caseinogen",
+      "hold": true,
+      "reason": "The terse uncoagulated-casein definition conflicts with the proposed precursor framing and lacks historical/technical context. Keep the precise milk-protein identity uncertain.",
+      "beforeHash": "f81a9898ef902f81a4e2a6d459c39ce10ae7cee583ae21308479aef6da45948e"
+    },
+    {
+      "lemma": "castigator",
+      "hold": true,
+      "reason": "The only definition repeats castigates without explaining the criticism. No self-contained factual explanation was found locally.",
+      "beforeHash": "13e38a33d1aef7a7eb05b705dc35198e4f25c32f437b422be9852e220c602d3c"
+    },
+    {
+      "lemma": "castoff",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A rejected or discarded thing is explained directly and fits discard. No requirement that it is passed to another person is added.",
+      "beforeHash": "2cc731ec00f41827610c19199fa4ef21a30503e36ea874f9b1abc714c9b3b898",
+      "sourceSenseId": "wiktionary:18fe3cd8a24d8202658f8aa4"
+    },
+    {
+      "lemma": "catabolic",
+      "hold": true,
+      "reason": "The candidates repeat catabolism or say destructive metabolism, which risks misleading learners about the neutral breakdown process. A clearer source definition is required.",
+      "beforeHash": "b2a64446b4eed472229448a68472776381c8eeaca91da6b8a6447cfe072192a8"
+    },
+    {
+      "lemma": "catalyzer",
+      "hold": true,
+      "reason": "The general candidate is circular and the complete alternative means a catalytic converter, not an enzyme. Do not substitute the vehicle component into biology vocabulary.",
+      "beforeHash": "cefdb2024409ca6d2ae1f44020a20ed66499cec8bee4fbdcd761042b684902fa"
+    },
+    {
+      "lemma": "cauda",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "WordNet supports any tail-like structure, fitting technical anatomical terminology. Restrict to Academic and do not impose the unsupported vertebrate-only limitation or select the unrelated diacritic.",
+      "beforeHash": "ec5674ae2fdbde26b62aea91b89c56ad5d01cdd71dc4c589615649db116f2688",
+      "sourceSenseId": "source-6006a98a0f38abc3bd79"
+    },
+    {
+      "lemma": "caulk",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The waterproof filler/sealant for building and repair is self-contained and fits sealing joints. Slang sleep/sexual senses and unsupported paintability claims are excluded.",
+      "beforeHash": "9aaf82bdc0bd5d45a8289b6f5332206e92b46ad372e85a8a7a9fc4a609391908",
+      "sourceSenseId": "source-4e6947cbc645887cb5db"
+    },
+    {
+      "lemma": "censoriously",
+      "hold": true,
+      "reason": "The only candidate says in a censorious manner without a standalone disapproval meaning. The earlier model's moral/authoritative description is not factual source text.",
+      "beforeHash": "9561c7c090da9351bf95824fd938c3a752192ca6ea3414274da0da46cfdb0eee"
+    },
+    {
+      "lemma": "centavo",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The Mexico-specific hundredth-of-a-peso meaning is clear monetary vocabulary. Do not publish the broader historical country list as if every listed currency currently uses this unit.",
+      "beforeHash": "b584a5f314224c72b6005e4e493951998a95c78ed195f5da86dc78d5954d264d",
+      "sourceSenseId": "wiktionary:5138e6d8b9ea1b970442bfc2"
+    },
+    {
+      "lemma": "centrum",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The central body of a vertebra is explicitly described and fits Fitness spinal anatomy. The generic centre, cranial and earthquake senses are excluded.",
+      "beforeHash": "3d7732b189bd40f4839518524cdc1d914f6666973dd496c9241ead3d766ca050",
+      "sourceSenseId": "wiktionary:2ebfee04e164139e94092426"
+    },
+    {
+      "lemma": "cerebrum",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The anterior brain portion consisting of two hemispheres is a concise sourced anatomical meaning. Restrict the technical term to Academic; do not imply it means the entire brain.",
+      "beforeHash": "dbc9a1453ea4757835db37396071beb73e0ec575864d9e4dc5ebd8c7cf4c7463",
+      "sourceSenseId": "source-8dc1c309579c6611dfd0"
+    },
+    {
+      "lemma": "chambers",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The judge's private-office meaning matches the legal office context. Preserve plural usage and the source's in-chambers wording; ignore the unrelated proper-name WordNet entry.",
+      "beforeHash": "de20d4130ae7d9f730b2544b09ee76ae1b27c61748da1df15083628932124699",
+      "sourceSenseId": "wiktionary:256ccf55f9865a3c1732748d"
+    },
+    {
+      "lemma": "chapbook",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The small folded book containing poems, ballads or tracts fits booklet/publishing vocabulary. Do not add self-publication as a necessary feature.",
+      "beforeHash": "289be58a96fec078b2f02e489576cf019f4cc818f014d9270e8f250d2203fe68",
+      "sourceSenseId": "wiktionary:4491e6b041fed1976f521f49"
+    },
+    {
+      "lemma": "chartreuse",
+      "source": "wiki",
+      "sense": 4,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The bright yellowish-green adjective directly matches the color anchor. Liqueur, pottery and food meanings are not selected.",
+      "beforeHash": "ac635c3936e9e6bb242ffafb5309ea7698033f115a9ddd7a376300ae56bc1208",
+      "sourceSenseId": "wiktionary:449f16b5b6ae86ce7101461a"
+    },
+    {
+      "lemma": "chastisement",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Rebuke/punishment supplies a standalone explanation in the definition and fits penalty. Do not imply endorsement of physical punishment or a required parent-child setting.",
+      "beforeHash": "532a34040c75445c5c4c83a11d0ff3ae79c570e7380ab657ccd589cba37f90b9",
+      "sourceSenseId": "wiktionary:c40a6be2808cec7adefec72d"
+    },
+    {
+      "lemma": "chemoradiotherapy",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The combination of chemotherapy and radiotherapy is explicit Academic medical terminology. Unlike the old gloss, it does not require simultaneous administration or offer treatment advice.",
+      "beforeHash": "10d9639d9806aae1e0ca17b09e480e9327db9f621797c12e1a77cc591a470212",
+      "sourceSenseId": "wiktionary:5c90feb28e7ddc9fc4c0063c"
+    },
+    {
+      "lemma": "chemoreceptor",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source explains a sensory organ/cell responding to a chemical stimulus, with taste/smell context. This is a precise biology extension of receptor.",
+      "beforeHash": "349b7867aa91bd1ceb8b1445683e6e711a95e014f5a863a0f2b5a0b42a054ce9",
+      "sourceSenseId": "wiktionary:0971a029411bfb03f8d6667a"
+    },
+    {
+      "lemma": "chesterfield",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The specified padded sofa with arms/back at the same height fits furnishings. Exclude the statesman, overcoat and regional any-sofa senses, and do not add an unverified luxury requirement.",
+      "beforeHash": "81d0dbdc84dcd949c86335a3d8d6fc77b785cc5c10d6fc7250634934f33aa8ce",
+      "sourceSenseId": "wiktionary:fc3e3a99e179d3b72ccc6bec"
+    },
+    {
+      "lemma": "chiasma",
+      "hold": true,
+      "reason": "Nerve/chromatid crossings do not establish relevance to a Fitness crossover movement. The existing biological crossover proposal is a topic mismatch.",
+      "beforeHash": "021ec40f1f03d68ea4f83da22f48112ed5fb487d37d1d5c27f38f2b052ffaf92"
+    },
+    {
+      "lemma": "chicle",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "WordNet defines the gum-like sapodilla substance, fitting chewing-gum material vocabulary. Avoid treating the older principal-ingredient claim as universal modern manufacturing practice.",
+      "beforeHash": "b6202996eed8813bf39290f281227c4c9597e1f194720a64fbf81064410e476f",
+      "sourceSenseId": "source-f5f843675508ee8a3661"
+    },
+    {
+      "lemma": "chiller",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The refrigeration machine removing heat from working fluid is a complete technical meaning related to cooler. Frightening films and the less precise cold-air machine wording are not selected.",
+      "beforeHash": "8f5775ebd251d13518e577abfd75bcf81ae4cd6130ee20af517f5cead5334dbb",
+      "sourceSenseId": "wiktionary:65387bab1f95007af4fde499"
+    },
+    {
+      "lemma": "chiropteran",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source explains a winged mammal of Chiroptera and explicitly identifies a bat. Restrict taxonomy to Academic; exclude the Fitness equipment homonym.",
+      "beforeHash": "6613f4125c8fa69f43d7c610175c645ccbede8f0a6f893afaf73ad0bb8bda039",
+      "sourceSenseId": "wiktionary:3975330bafdfd9d34187bb9f"
+    },
+    {
+      "lemma": "chophouse",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The restaurant specializing in chops/steaks is clear dining vocabulary. Preserve the source's historical label rather than silently presenting every use as contemporary; exclude Nigerian general-restaurant and Chinese customs senses.",
+      "beforeHash": "224ee1dbe9302efcc093f65015bf989828e90128827dbc91d527e0e0f4e4ef3f",
+      "sourceSenseId": "wiktionary:19fe72ca4760d8195ec07749"
+    },
+    {
+      "lemma": "chromatid",
+      "hold": true,
+      "reason": "The candidate descriptions mix double-helix strands, chromosome splitting and cell-division stages. Keep hidden until a clearer source distinguishes the chromosome copy from a DNA strand.",
+      "beforeHash": "5376b51cf8040f8caf4eccb14b4cda6426a257216270310916a9d2f79a2e2ca9"
+    },
+    {
+      "lemma": "chromatin",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The nuclear DNA/RNA/protein complex is a self-contained Academic biology meaning. Do not inherit the narrower assertion that the word applies only to an uncondensed functional state.",
+      "beforeHash": "18ede2fe3771d5275cfb43cac381e4236d2440de87fa040ae6cbee9f873037a2",
+      "sourceSenseId": "wiktionary:a986b8e4e5a80ff47dd44f90"
+    },
+    {
+      "lemma": "chronicled",
+      "hold": true,
+      "reason": "No exact factual candidate was extracted for this participle. The recorded-events meaning cannot simply be equated with the adjective historical.",
+      "beforeHash": "919d1a9af8f5186d93fde2eda634d04bf19325f46a3f99480360ef8a159a41f9"
+    },
+    {
+      "lemma": "chukka",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The ankle-height shoe laced through two or three pairs of eyelets resolves the circular chukka-boot candidate and matches footwear. The polo-period homonym is excluded.",
+      "beforeHash": "ffecd46969eae5961bea67535c14027e1663c2ba5b5004833ed8fb0d62f4a980",
+      "sourceSenseId": "source-b4f997e2c4f33e7dc383"
+    },
+    {
+      "lemma": "cig",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source explicitly defines cigarette and marks it informal. Retain the register warning; publishing a lexical abbreviation does not endorse tobacco use.",
+      "beforeHash": "22812ddda7a46cecb685432106c4920a77a0aa732fe5427e60cc305aa7ef5c4a",
+      "sourceSenseId": "wiktionary:d4194a8532f9507f5a997ab8"
+    },
+    {
+      "lemma": "cincture",
+      "hold": true,
+      "reason": "The girdle/belt and architectural-band meanings do not match the Fitness body-waistline anchor. Keep this clothing/body distinction unresolved rather than calling it a sophisticated synonym.",
+      "beforeHash": "e922c27911d8ade4c367f8e6c9ceb325175437b2b7760ff6f305cc58d57603d7"
+    },
+    {
+      "lemma": "cinque",
+      "hold": true,
+      "reason": "Five-pip game pieces or the number five do not fit the ordinary Academic fin anchor. The old game-of-chance homonym connection is not an appropriate learning expansion.",
+      "beforeHash": "a4b3ca8766dfa5cda9644ef73f43839d11f6fc1bce30afb812636ce92c907bc4"
+    },
+    {
+      "lemma": "circuitously",
+      "hold": true,
+      "reason": "The only candidate repeats circuitous twice and provides no independent explanation. The model's roundabout-path description remains unverified.",
+      "beforeHash": "8d36cc7068727ee0c29793e7333f24f893d92a5f83f96b0adffa2ab613b52a4e"
+    },
+    {
+      "lemma": "circumscribe",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "academic",
+        "business"
+      ],
+      "reason": "Limiting narrowly/restricting is clear and fits the abstract scope/authority context. Geometry and literal encircling senses are not mixed into this approval.",
+      "beforeHash": "ad22a9c18710a2b8d0bec2e03fb0742c02200cb48bb22e5f811ee1577a745c8b",
+      "sourceSenseId": "wiktionary:c625698d1df227b084f7ccc3"
+    },
+    {
+      "lemma": "circumspection",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Considering all relevant facts and circumstances provides the explicit cautious-deliberation meaning. It does not turn the noun into an interchangeable adjective for alert.",
+      "beforeHash": "b7cd0e361a970fcc33c65f0f416d66937ef192c3a498d66551195ba52b169761",
+      "sourceSenseId": "wiktionary:32a2fc98f05f38fa0e2a629b"
+    },
+    {
+      "lemma": "cistron",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The hereditary-material unit encoding one protein is a precise molecular-biology definition. Restrict to Academic instead of treating it as a universal everyday synonym of gene.",
+      "beforeHash": "341d9de4fab8b47f384d5add5801fc4e8acca1632c6a0f58589ba09603768a9f",
+      "sourceSenseId": "wiktionary:5cc37018c37ee0d7737f92c3"
+    },
+    {
+      "lemma": "citizenhood",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The state of being a citizen is explained directly and matches citizenship. Exclude the collective all-citizens sense and unsupported comparative formality claims.",
+      "beforeHash": "3042dadd709e5a08ea8f92a0b8288f33f6922ffce34573ae90d04f775eee9a75",
+      "sourceSenseId": "wiktionary:092bd205a4cb8c7f76854fa0"
+    },
+    {
+      "lemma": "civility",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "An individual act/expression of polite behavior matches the courtesy-gesture anchor. Preserve the countability/plural labels rather than mixing it with the general politeness quality.",
+      "beforeHash": "c86f92bb68865d0da5213ad65c2d7e12847fba6adde71c787f9989b752f4ee63",
+      "sourceSenseId": "wiktionary:f1ae9a75c16d94d6c072f005"
+    }
+  ]
+}

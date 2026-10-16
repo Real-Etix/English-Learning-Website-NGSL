@@ -1,0 +1,404 @@
+{
+  "id": "030",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:56:03.000Z",
+  "decisions": [
+    {
+      "lemma": "tumbling",
+      "hold": true,
+      "reason": "The generic definition is circular and the acrobatic noun does not verify the intended descending adjective or uncontrolled-fall meaning.",
+      "beforeHash": "40ce2ff48ea3837f7955aeb17587df03b221ef9a04ff1b00ffbaeb297d44b393"
+    },
+    {
+      "lemma": "tumefaction",
+      "hold": true,
+      "reason": "Pathological swelling or tumor formation is not an appropriate alternative for the sole Fitness muscular-hypertrophy anchor.",
+      "beforeHash": "2db8a88390917ee425e5362924181db5126eaa19c19f2c4f47fb9a7c6047daee"
+    },
+    {
+      "lemma": "tumescence",
+      "hold": true,
+      "reason": "Fluid-related swelling is a different process from exercise hypertrophy; the only Fitness anchor does not justify the proposed substitution.",
+      "beforeHash": "e26883ea0f362c3883c82be721734fa617f83876e8cab1597a50e7a221bd252a"
+    },
+    {
+      "lemma": "turpitude",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Depravity or wickedness directly verifies the moral vice meaning without supplying jurisdiction-specific legal conclusions.",
+      "beforeHash": "8f1fa2813ea16ea585ee5d513d2a80fb56ebc60383e816cc52c6205a1f849604",
+      "sourceSenseId": "wiktionary:9b5cf73c63ba3de9ddb79de1"
+    },
+    {
+      "lemma": "tutee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A student of a tutor is explicitly defined; the source does not require teaching to be strictly one-to-one.",
+      "beforeHash": "b61e63e4837296186f602fa19a1faa335f7b4c50b4d0639f474366b177bfa006",
+      "sourceSenseId": "wiktionary:e9062040d668ae1e58540211"
+    },
+    {
+      "lemma": "twelvemonth",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The year meaning is directly sourced; retain dated usage rather than presenting it as a routine formal substitute.",
+      "beforeHash": "7922d1a4ed5150d4e7e0afa95d343f9bc6a1f9f06eb8f7f49132d89613a00b57",
+      "sourceSenseId": "wiktionary:d6534890d2e38c945033d122"
+    },
+    {
+      "lemma": "tyro",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "A beginner or novice is explicitly sourced and fits learning a new activity, without inventing register restrictions.",
+      "beforeHash": "be75be761a136e2bccbd152b4ff3323e23fd54d1f6a5dd5666e6f98f6331c89f",
+      "sourceSenseId": "wiktionary:8d0f889288d06a2162c95350"
+    },
+    {
+      "lemma": "ultrabook",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The thin lightweight portable computer is directly described; no guarantee of high performance or premium pricing is inferred.",
+      "beforeHash": "13708ba84afc4343cd8bab239d3860a7fe899810027bfab8953dd2a522e53318",
+      "sourceSenseId": "wiktionary:687220e3522911487590f829"
+    },
+    {
+      "lemma": "umber",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The medium-to-dark brown color directly supports the color anchor, separate from clay pigment and animal homonyms.",
+      "beforeHash": "27900f0ab3f30a379fea07cec376de717aeca369bb16d648ecbe1012b6a6555c",
+      "sourceSenseId": "source-f146d9f8507fbb5ba02b"
+    },
+    {
+      "lemma": "unanticipatedly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Unexpectedly is explicitly supplied alongside lack of anticipation; retain non-comparable usage without claiming nobody could foresee the event.",
+      "beforeHash": "b1532df46c0f017d62e9fc78b4a2d173c9e8e4377f63e907983b5fec03632359",
+      "sourceSenseId": "wiktionary:b9137f1ab1b9357906e6fe73"
+    },
+    {
+      "lemma": "unceasingly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The source explicitly explains without stopping and continuously, avoiding the different resolve-focused WordNet candidate.",
+      "beforeHash": "3d883d791e776108583342ae8df60c1153828559da7f977a76d894515e4e0245",
+      "sourceSenseId": "wiktionary:602fed93d1240d88ce8c2742"
+    },
+    {
+      "lemma": "underarm",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The armpit noun directly matches the body-part anchor; retain often attributive usage and exclude cricket and weaponry senses.",
+      "beforeHash": "d17a97af495c259bb88205c46c9fdd472e7ab78e39b51501d3af21a6e50279a3",
+      "sourceSenseId": "wiktionary:a20d628b2240b5a9130a5b3b"
+    },
+    {
+      "lemma": "underlings",
+      "hold": true,
+      "reason": "No exact plural source mapping was recovered; the proposed critical register and lower-rank meaning remain unverified for this identity.",
+      "beforeHash": "125e86c45d796ae612e16c8f11a3982c5470c23ae1244062145d8bd4ac390346"
+    },
+    {
+      "lemma": "undersheriff",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The deputy sheriff or second-in-command definition is explicitly jurisdiction-qualified; that qualification is retained instead of universalizing the rank.",
+      "beforeHash": "ccc38289e720db3308191569d535c03ef7fb6629cf38f21119848bb93e89312e",
+      "sourceSenseId": "wiktionary:87f4b2d291c44e350c9ace24"
+    },
+    {
+      "lemma": "undersurface",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The underneath surface, bottom or underside is directly explained without adding a technical-only register requirement.",
+      "beforeHash": "a29d07b44284c9e50e9c1ad08e1485ccc0a17204d6cc2277174f8e490f212cc6",
+      "sourceSenseId": "wiktionary:60646e0b66aca813861e0a7d"
+    },
+    {
+      "lemma": "underwriting",
+      "hold": true,
+      "reason": "The source only repeats underwritten financially and does not explain risk acceptance, securities issuance or insurance sufficiently to verify the intended sense.",
+      "beforeHash": "1906339bbace650048979c98f457e437f3237bd5c381cc89df0c0644a8ce324e"
+    },
+    {
+      "lemma": "undulation",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "A wave-like curve and regular rise and fall directly verifies the motion-pattern meaning, avoiding dubious air/radiation or dated medical candidates.",
+      "beforeHash": "ff3e1ad4bee495397c793ab961c21ed0515a18f68a1b5b97f923c3b6d1e1c1ca",
+      "sourceSenseId": "wiktionary:92e44451bc85b58edc45f283"
+    },
+    {
+      "lemma": "universalization",
+      "hold": true,
+      "reason": "The sole candidate repeats universalizing without explaining the proposed spread-to-everyone meaning or distinction from globalization.",
+      "beforeHash": "06b8f544a4db7ed0703dd1011ffe1a16e42da64c31da0993129101a5d1c1115a"
+    },
+    {
+      "lemma": "unsentimental",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Facing facts realistically and with determination supplies an informative source meaning for toughness without equating it with cruelty or total lack of feeling.",
+      "beforeHash": "6c49925c48cb80f0c3f97c112b59b027f8f81feaae99dc9749f043450fd69793",
+      "sourceSenseId": "source-65daee70bb9aa3bf86ac"
+    },
+    {
+      "lemma": "unsighted",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Without the sense of sight directly verifies the adjective; do not add the unsupported recommendation to label people collectively as the unsighted.",
+      "beforeHash": "3e5b2557bade6855e163ac21305e72df7085b8c21db5d3942d12b22729f366f2",
+      "sourceSenseId": "wiktionary:d592ea96b2ab0a65b4e781fd"
+    },
+    {
+      "lemma": "unweave",
+      "hold": true,
+      "reason": "Undoing woven material is verified but lacks a relevant Fitness learning context beyond the ambiguous unravel anchor.",
+      "beforeHash": "79425a8f45855ba419b708c9667209bb95b4fb2c659db74607e78cae2e3a0415"
+    },
+    {
+      "lemma": "upperberth",
+      "hold": true,
+      "reason": "The concatenated expression has no exact source identity evidence; a guessed spacing repair cannot establish publication.",
+      "beforeHash": "1097152a91f3c57c97f3933da5cf204cc836c8830a9829bbe84db9ecd5c0e9ff"
+    },
+    {
+      "lemma": "uppercasing",
+      "hold": true,
+      "reason": "No exact sense was recovered and the Business capitalization anchor could concern finance rather than letter case.",
+      "beforeHash": "ec239e43d5ad7e329306b2c3bdcc55490f8285044cbc43e1890da42a002f6340"
+    },
+    {
+      "lemma": "vacillation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Indecision in speech or action directly supports hesitation, separate from physical back-and-forth movement.",
+      "beforeHash": "c63a5738516b6fd368deb74fc0d860ab7ad1036e0e5293942efeffc08fab7b3d",
+      "sourceSenseId": "wiktionary:cd76604169937a616e6b835a"
+    },
+    {
+      "lemma": "variegate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Adding variety is explicitly sourced for the diversify anchor; color marking is not imposed on every use.",
+      "beforeHash": "8fdd48a8d8a2265e6fa3be4815732de125ee432bb2b4ef2545c75dcfde9a4ef5",
+      "sourceSenseId": "wiktionary:e64e8205988c489dba41d8ce"
+    },
+    {
+      "lemma": "varietal",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The named-grape wine definition is explicit and allows primarily rather than exclusively one variety, avoiding an overly strict purity claim.",
+      "beforeHash": "b9bd344bdbd95e7e77a7079b784961b0ba2a1d2157f55f19a1177d5f20849b26",
+      "sourceSenseId": "wiktionary:5777d58cd8904b8076de8624"
+    },
+    {
+      "lemma": "veganist",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The vegan activist meaning is explained with animal-rights campaigning; retain rare status and do not equate activism with stricter dietary adherence.",
+      "beforeHash": "d1b75a2241dc41e4c1aaaeb3173458be462ed0c43865af2a317629ab1b6499f7",
+      "sourceSenseId": "wiktionary:65bb282643ac8bf7681e5986"
+    },
+    {
+      "lemma": "vena",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A vessel carrying blood toward the heart is explicitly explained and fits anatomical vein vocabulary without restricting it to major veins.",
+      "beforeHash": "22ad158bea84fca72d9d4639e6cb71a2169e8462190cb751f6b5bb4e40e4dad7",
+      "sourceSenseId": "source-bcb700fbc13a58b75916"
+    },
+    {
+      "lemma": "venality",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Being for sale in relation to bribery or corruption directly supports the intended corruptibility meaning.",
+      "beforeHash": "d5d8eaba83d7a0dc34bec72226ca5f46b49b7140ce72efd9b11a6cfc932b2543",
+      "sourceSenseId": "wiktionary:b9a555821d08d62356daa27a"
+    },
+    {
+      "lemma": "vendee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The person to whom something is sold is plainly defined and matches purchaser without an unsupported real-estate-only restriction.",
+      "beforeHash": "a130aa7ddc0c1df6486bd064a0fabfe21ba5d82da37943e00ca4cedac0d84777",
+      "sourceSenseId": "wiktionary:da6cefa97f89b103c0386594"
+    },
+    {
+      "lemma": "venire",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Persons summoned for jury selection are explicitly described; retain US usage and distinguish the pool from the final selected jury.",
+      "beforeHash": "15d1c3ea7dd9579a89328a9d4fa5574e555a44b8413309983a309f253ad9d03a",
+      "sourceSenseId": "wiktionary:77816981d4ad17f5fa2d41e8"
+    },
+    {
+      "lemma": "ventilatory",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Involving pulmonary ventilation is directly sourced for respiratory vocabulary without requiring artificial breathing machinery.",
+      "beforeHash": "0bb181ac6432301cbe13203861e33614db843f3dc7f00561d09d8dcd06a3dea9",
+      "sourceSenseId": "source-a187404892394a792c39"
+    },
+    {
+      "lemma": "veritably",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Truly and accurately describing something independently explains the adverb instead of relying only on veritable.",
+      "beforeHash": "c8a9d505194863abb9cb11d946e7b9145547ae915c56c3c9a8b510998ccd65c9",
+      "sourceSenseId": "wiktionary:afdac0d321e1339ccd1eb47f"
+    },
+    {
+      "lemma": "vermillion",
+      "hold": true,
+      "reason": "Only the red-color adjective is verified, not the intended anatomical noun for the lip region; keep the spelling and sense mapping unresolved.",
+      "beforeHash": "d079bf81a48f61591ef70424b05a896e97aa5dfbaf5d64f3f7f1380eec345374"
+    },
+    {
+      "lemma": "vilification",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Malicious defamation or character assassination is explicitly explained; sustained duration and publicity are not required beyond the source.",
+      "beforeHash": "c97652cd9b7d6a0dc28502ca8083e91190fd622bc133727f9a41fb26fda13e82",
+      "sourceSenseId": "wiktionary:3ba9b4bca7c5385a0d72b3b5"
+    },
+    {
+      "lemma": "viol",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The historical bowed-string family is directly defined as related to but distinct from violins, without treating the instruments as synonyms.",
+      "beforeHash": "8e493a47a03ae1aea349a735b896ae2a2f9d6929862f7fc0b8e9d78aaefcaed8",
+      "sourceSenseId": "oewn:04543448-n:viol%1:06:00::"
+    },
+    {
+      "lemma": "viridian",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The bluish-green color is directly sourced without needing the pigment-chemistry alternative to explain ordinary color use.",
+      "beforeHash": "038bf9cd4962ae32cffadfff83712b32837c8678338a8b5d15e9d0e4b6762855",
+      "sourceSenseId": "wiktionary:80a6f430b5b81554ffd070f6"
+    },
+    {
+      "lemma": "virion",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A complete viral particle precisely verifies the physical entity and avoids the potentially misleading viral-equivalent-of-a-cell analogy.",
+      "beforeHash": "7f108d9b770b840b8adf95219d2613f48a6c1d87118bcb5d90dd8f6608efe85c",
+      "sourceSenseId": "source-d074b3728b03063059c1"
+    },
+    {
+      "lemma": "viscus",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "The internal-organ meaning is fully explained with abdominal emphasis and plural usage; exclude unrelated Business organizational senses of organ.",
+      "beforeHash": "a130ffc118bf65dfb9c8e9471cbcc9cef50870b3c102c57c0b8950dac4a2d58a",
+      "sourceSenseId": "wiktionary:4bec74bb16293662b84fe545"
+    },
+    {
+      "lemma": "visitant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A guest or visitor is directly supplied by the source; ghosts, migratory birds and invented stranger connotations are not selected.",
+      "beforeHash": "31cdb9db48d4029a943161a71e429840ccda68fd45f3a0ebeea751b5c41ddab6",
+      "sourceSenseId": "wiktionary:2fa7302d594c99f98e0d2d4c"
+    }
+  ]
+}

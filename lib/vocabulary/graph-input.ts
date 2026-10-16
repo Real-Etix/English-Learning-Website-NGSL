@@ -25,6 +25,7 @@ export type GraphInput = {
   region: string | null;
   domains: string[];
   connections: GraphConnection[];
+  allowedLists?: string[];
 };
 
 /**
@@ -48,6 +49,7 @@ export function toGraphInput(record: VocabularyRecord, options: GraphInputOption
     chart: record.chart,
     region: record.region,
     domains: [...record.domains],
+    ...(record.tier === "advanced" && record.editorial?.scope ? { allowedLists: record.editorial.scope.lists } : {}),
     connections: connectionsForClustering(record, options.records, options).map(({ target, type }) => ({ target, type })),
   };
 }

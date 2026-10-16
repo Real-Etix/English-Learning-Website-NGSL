@@ -1,0 +1,376 @@
+{
+  "id": "022",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:41:42.000Z",
+  "decisions": [
+    {
+      "lemma": "parsimoniously",
+      "hold": true,
+      "reason": "The only definition repeats parsimonious without explaining unwillingness to spend; the intended meaning needs fuller evidence.",
+      "beforeHash": "3ada71ae7cc3453a81c8755753dcf076f37208fc4bb766a685223ee8068bcd7d"
+    },
+    {
+      "lemma": "partita",
+      "hold": true,
+      "reason": "The eighteenth-century musical suite is unrelated to the business or travel suite context; the specialist homonym remains off-topic.",
+      "beforeHash": "2ae8618f089dc5fa1ae692dccc694f37a68b5056fbe037d17167a6d0e815d56c"
+    },
+    {
+      "lemma": "patissier",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Pastry chef is a clear exact-headword occupational meaning; luxury establishments and superior pastry quality are not mandatory.",
+      "beforeHash": "812c67d36949fc470fda97bc116bd19af844a72e2e8072c167d7df0a0fa29fdd",
+      "sourceSenseId": "wiktionary:6686bbbf981d7bf6c292a4b8"
+    },
+    {
+      "lemma": "patrician",
+      "source": "oewn",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A member of the aristocracy is explicit; avoid the old implication that noble birth confers innate refinement.",
+      "beforeHash": "5732d11c9bb16c179b142f2135c31ad6639aee5c6d13a86ae4272fa840859152",
+      "sourceSenseId": "oewn:09827177-n:patrician%1:18:00::"
+    },
+    {
+      "lemma": "paver",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic",
+        "business"
+      ],
+      "reason": "A flat pathway-paving stone is clearly defined; it need not be manufactured, interlocking or brick-shaped.",
+      "beforeHash": "731084929305f3ff285474c7fdd9131adfa3cbd281a1eb3d2087a6b2e8a0615f",
+      "sourceSenseId": "wiktionary:31da106d4c8e4061ad7ddbeb"
+    },
+    {
+      "lemma": "pensioners",
+      "hold": true,
+      "reason": "No exact plural entry or reviewed pensioner identity mapping is available; age and pension eligibility should not be guessed.",
+      "beforeHash": "da6654698d32f37adce352d945b32f34e0bf2d648bbb236cbf16ab230d467935"
+    },
+    {
+      "lemma": "pentad",
+      "hold": true,
+      "reason": "The available five-part or time-period meanings do not explain the academic fin anchor; the intended connection and topic are unresolved.",
+      "beforeHash": "2fa7c041f2ae5af277a59629ce775d8187b5b26adf5c3165af47a83af411cc9a"
+    },
+    {
+      "lemma": "peppercorn",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "The seasoning from the pepper plant's berry is explicit; avoid the candidate calling the whole peppercorn merely a seed and exclude legal consideration.",
+      "beforeHash": "cb32c94f0304c69f200ff7d841403f04486821021685f0b9ffee2e5e318d939d",
+      "sourceSenseId": "source-f11a298355f39a481e6d"
+    },
+    {
+      "lemma": "peracute",
+      "hold": true,
+      "reason": "Very sharp or violent does not verify the proposed precise medical sudden-onset meaning; clearer clinical terminology evidence is needed.",
+      "beforeHash": "bcf94ad98c4237d0e09f17affa0ec7c3098c9cab667d795b3e1e98e3c8e64510"
+    },
+    {
+      "lemma": "perceptiveness",
+      "source": "wordnet",
+      "sense": 3,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Insight and sympathetic understanding give a self-contained meaning; instantaneous perception is not required.",
+      "beforeHash": "75cbef0d10010d3af54e17832fa6d0e7ab0a5b78b6b28b971e7f02531a5e1602",
+      "sourceSenseId": "source-4cf0f3f350117ac61534"
+    },
+    {
+      "lemma": "periodicity",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "academic"
+      ],
+      "reason": "Recurrence at regular intervals is fully explained and matches cycle without restricting the word to menstruation or mathematical functions.",
+      "beforeHash": "c364fd30bcc794fb90056de30513384f9170e28ab23e75a1cf039518ee6bdaaf",
+      "sourceSenseId": "wiktionary:4c3afae23287ee5fcc36f049"
+    },
+    {
+      "lemma": "permeation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Fluid movement through a permeable solid is precise science vocabulary; exclude business absorption and the separate disease-spreading sense.",
+      "beforeHash": "52d17ff1e6d91176b5c7ded7324efc9a35514b89b79cd690282c2ed8b68e7b2d",
+      "sourceSenseId": "wiktionary:92f6de08d04151316d5b9adf"
+    },
+    {
+      "lemma": "perpetuation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Prolonging existence or keeping something active is explicit; the source does not require indefinite or permanent continuation.",
+      "beforeHash": "dfb1b576267776f6dc2ea5ad5c0b8777ba47dc1ede8ab600463a69ffb812d60e",
+      "sourceSenseId": "wiktionary:c385c29e716100e3073ab8f6"
+    },
+    {
+      "lemma": "persons",
+      "hold": true,
+      "reason": "No exact plural evidence or reviewed person mapping is available; the proposed legal-register guidance cannot supply the missing definition.",
+      "beforeHash": "90e83cfa07fff30e18f3781188492c9b2f85387e877a10d950ea0b88aa81c9c5"
+    },
+    {
+      "lemma": "perspectival",
+      "hold": true,
+      "reason": "The source does not disambiguate spatial perspective from subjective viewpoint; it cannot verify the proposed editorial-writing comparison.",
+      "beforeHash": "90863bd2ce25041e742075dc58ad1c74d2a067028e79fe06d058617f0ee27fd2"
+    },
+    {
+      "lemma": "perspicuity",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Clarity or lucidity of expression is explicitly supplied and relevant to clear business communication, unlike the rare transparency sense.",
+      "beforeHash": "305d7e213246f1e6a83ef55bac293e7b74f6a176f1a1acb5a9b26c0d66ae56f0",
+      "sourceSenseId": "wiktionary:16497e2f7e563fc448b71cba"
+    },
+    {
+      "lemma": "pertinence",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Applicability to the matter at hand is a complete explanation of relevance; no stronger logical precision is guaranteed.",
+      "beforeHash": "f941f44908eac70a8d75d92ebef1bbe560015711191405896cec8b90838786ce",
+      "sourceSenseId": "source-570781b1f8a41f399f26"
+    },
+    {
+      "lemma": "pervasively",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Presence in all parts is explained by the source; this can describe a local system and does not necessarily mean worldwide.",
+      "beforeHash": "c677bb19b0eed67b6f4581d89f8926f8ab11d237b1515d349cc0ed34d164b096",
+      "sourceSenseId": "wiktionary:e98e61e36bf9529705a1aaed"
+    },
+    {
+      "lemma": "petitioner",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Someone presenting a petition to a court is a clear legal-vocabulary meaning, without jurisdiction-specific procedural claims.",
+      "beforeHash": "076856d85a2a58c6e2e332642f22037966113dc355a187e4065a89d2a541ba4c",
+      "sourceSenseId": "wiktionary:b317f485c01e08e71575aa67"
+    },
+    {
+      "lemma": "pharmacoepidemiology",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Studying drug use and effects across large populations is fully defined and directly relevant to academic epidemiology.",
+      "beforeHash": "7bb33b18ddf539f0045e2eff685a3bbe5d452bf4eac5c8b0e691a544ea7ec1c9",
+      "sourceSenseId": "wiktionary:0dc9b58839f4088d6ba47433"
+    },
+    {
+      "lemma": "pharmacologic",
+      "hold": true,
+      "reason": "The adjective repeats pharmacology and the noun is an incomplete pointer; neither explains the intended drug-science meaning adequately.",
+      "beforeHash": "bddef5b9bda6b6e69551bb7f8f4d0f42cfaf3eba5e4b4ab9e55095436b841674"
+    },
+    {
+      "lemma": "pharmacotherapy",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Using pharmaceuticals to treat disease is explicit; no treatment recommendation or cancer-only definition of chemotherapy is approved.",
+      "beforeHash": "db739c1ab77aadb37af47c73b820d279cf14401262ba3d45209808c0a30d09ff",
+      "sourceSenseId": "wiktionary:2eb2031e1e10935d3ebcc024"
+    },
+    {
+      "lemma": "phosphocreatine",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The energy-storing phosphorylated creatine derivative in muscles is fully described and relevant to exercise physiology, without supplement claims.",
+      "beforeHash": "025b3d45786d3fc5072e7971b09a008bedbfa61d347c7160f9d780735ff687a3",
+      "sourceSenseId": "wiktionary:350471a0e7e3e98fd5707f76"
+    },
+    {
+      "lemma": "phosphoprotein",
+      "hold": true,
+      "reason": "The cached definition extends the category to phospholipid complexes, while the alternative is an incomplete adjective-like phrase; biochemical scope remains uncertain.",
+      "beforeHash": "e61c8ed7926d8e4623327230a9e1803641350b0cc6573e3cabede64be95639d2"
+    },
+    {
+      "lemma": "photomicroscope",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source explicitly identifies a microscope plus camera, providing a concrete laboratory-instrument meaning relevant to microscope.",
+      "beforeHash": "5301c4317d3a8a2d244020b42ee68b3a7c80ea5d2a5bd785e0e31160838687de",
+      "sourceSenseId": "wiktionary:7590b10c3bbb0033077e977d"
+    },
+    {
+      "lemma": "photonic",
+      "hold": true,
+      "reason": "The definition only points to photons or photonics and does not explain the intended light-technology distinction; clearer factual wording is needed.",
+      "beforeHash": "8e853efe71a4e1796655d12921e3ce4be220e232c48a1be9d3fad5f8ea0d3758"
+    },
+    {
+      "lemma": "photoprotectant",
+      "hold": true,
+      "reason": "The source repeats photoprotective without explaining the protection; the old sunscreen claim cannot replace factual detail.",
+      "beforeHash": "183f544ac73115cf765754a557e885651c0dc4058c3cdef40d18045d3e7cb805"
+    },
+    {
+      "lemma": "photoreceptor",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A neuron or other structure detecting and reacting to light is fully described and appropriately distinguishes this receptor type.",
+      "beforeHash": "5ad39bf4971d66792fc1c811578d65902ccb6253f3689a24bacd8cf186ebf42f",
+      "sourceSenseId": "wiktionary:af7704efe2781cab759e9400"
+    },
+    {
+      "lemma": "phraseological",
+      "hold": true,
+      "reason": "The clear candidate about a peculiar form of words does not verify the intended idiom or multi-word-unit sense; the other entry is circular.",
+      "beforeHash": "a241d47ee05cb8dbd887681de062ff78e89d903ae2fd00b706265e185b85acfd"
+    },
+    {
+      "lemma": "phraseology",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The style of using words and phrases in speech or writing is explicit; it is not equivalent to the whole grammar of syntax.",
+      "beforeHash": "18f8a794627188571572df48b8210941837ca82462711a2e6a577e9f5d2147d5",
+      "sourceSenseId": "wiktionary:3810da4383aabc2acfa16e9e"
+    },
+    {
+      "lemma": "pianoforte",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact source gives piano and marks this term dated; retain that restriction rather than only calling it formal.",
+      "beforeHash": "5d79b80338c208ca5fd24ef707c4de541f0d22ab562770faf41211b4d0599386",
+      "sourceSenseId": "wiktionary:bd3a87758a95f389a5ca509a"
+    },
+    {
+      "lemma": "pincer",
+      "hold": true,
+      "reason": "The arthropod grasping structure and hand tool do not establish a fitness claw context; do not promote the zoological homonym into exercise vocabulary.",
+      "beforeHash": "21904fe95ece007070f16ffe8850b3aa8f3fba08d2a5397cc150ffcc541fac7b"
+    },
+    {
+      "lemma": "pinna",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "academic"
+      ],
+      "reason": "The externally visible cartilaginous ear structure is explicitly defined; exclude the botanical leaf and other appendage senses.",
+      "beforeHash": "c410e9da6988fc134f6214cd3f1dadb5a96cf7c77cdb85fc99f63939e5e30fcf",
+      "sourceSenseId": "source-26bca91c4d32d67c2d0c"
+    },
+    {
+      "lemma": "pipefitter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Installing and maintaining industrial piping is a complete trade description; specific pressure levels or ship work are not required.",
+      "beforeHash": "ede8b9e1050a379537321583feb232008190f256ed19acef276e778af78b6a2b",
+      "sourceSenseId": "wiktionary:ce4790ea97b5831dd686f391"
+    },
+    {
+      "lemma": "pippin",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic",
+        "business",
+        "fitness",
+        "toeic"
+      ],
+      "reason": "The rounded apple-variety meaning is explicit and suitable to food vocabulary; exclude the seed and dated admirable-person senses.",
+      "beforeHash": "2f5d9391eb818b9aebb91d2c4edc6a7b87c7728f415c8d04072bf31e2892a1b2",
+      "sourceSenseId": "wiktionary:26f33574f0e0609bb27b3b34"
+    },
+    {
+      "lemma": "pizzetta",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "fitness",
+        "toeic"
+      ],
+      "reason": "A small pizza is a complete culinary meaning; serving it as an appetizer is optional, not a definitional requirement.",
+      "beforeHash": "f0e6a2ab4b4d00a52a159537357c0d6f7112cf8bf4f22552ebd21c79a0d2885c",
+      "sourceSenseId": "wiktionary:98e480eb311a4f371394ed0b"
+    },
+    {
+      "lemma": "placekicker",
+      "hold": true,
+      "reason": "Preserve the prior hold: adding for a goal still leaves placekick unexplained and does not independently verify the field-goal-versus-punt distinction.",
+      "beforeHash": "cd1a5d5e4f4de3b41fc2bafdfcd3437baa1c0ba5e723fffa13fcb277008ddcea"
+    },
+    {
+      "lemma": "plat",
+      "hold": true,
+      "reason": "Preserve the prior hold: English entries concern land maps or braiding, not the proposed French dining main-course meaning.",
+      "beforeHash": "4c9f93f61b7c13c15fdd7c034141c8a84f53780556d3dcfdbce308e93c98860c"
+    },
+    {
+      "lemma": "plates",
+      "hold": true,
+      "reason": "The only exact plural sense is number plates, not the intended book illustrations; do not publish the wrong object category.",
+      "beforeHash": "e3d04cf2bb2cfa4f233bc4940e656e7fe72451189913246e9038efe3447bfc22"
+    },
+    {
+      "lemma": "plummeting",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A violent or dramatic fall is a clear noun meaning; do not mislabel it as the adjective descendent or imply every fall is numerical.",
+      "beforeHash": "402e636ed7df1133947f12e0397d58bde19ce818f484c8b4a03f55eb3725f36d",
+      "sourceSenseId": "wiktionary:165b92b08f7493eb342212af"
+    }
+  ]
+}

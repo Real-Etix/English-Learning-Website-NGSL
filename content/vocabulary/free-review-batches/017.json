@@ -1,0 +1,378 @@
+{
+  "id": "017",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:24:58.000Z",
+  "decisions": [
+    {
+      "lemma": "kilojoule",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The energy unit equal to one thousand joules is explicit and appropriate to nutrition labels; it is not numerically interchangeable with a kilocalorie.",
+      "beforeHash": "94c35c9b6cceabec4b9d287b98a5ab2d977085244c6e8eb41d24b40135e03708",
+      "sourceSenseId": "wiktionary:c0b6a61014784c4833d1055f"
+    },
+    {
+      "lemma": "kinswoman",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A female relative is a complete meaning covering but not limited to sisters or cousins; no particular prestige or register is inferred.",
+      "beforeHash": "552b794c20f608f0cc8a7bb802ea3301a4cd88c7786f1f38df32ba6f74e4e1f7",
+      "sourceSenseId": "wiktionary:9098f7ac707de76348ea26a5"
+    },
+    {
+      "lemma": "kismet",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Predetermined or unavoidable destiny is explicitly defined for the fate anchor; the meaning is not restricted to romantic meetings.",
+      "beforeHash": "84169accf4e67c27def90bd5076cdeb6e642314c34cfe33fa4fe3837e24f0eb6",
+      "sourceSenseId": "wiktionary:4efc05e25d683da1a33148da"
+    },
+    {
+      "lemma": "klick",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "toeic"
+      ],
+      "reason": "The kilometer sense is exact; retain its slang label and distinguish it from the separate speed sense rather than recommending it for formal measurement writing.",
+      "beforeHash": "ca40c4b769d007e5007be70a4c2513a0cebea842abfbec361aed6c81d477e189",
+      "sourceSenseId": "wiktionary:4ce865475730786d8e4c100d"
+    },
+    {
+      "lemma": "kneebend",
+      "hold": true,
+      "reason": "No exact source entry or verified knee bend phrase mapping is available; the old squat equivalence is not factual evidence.",
+      "beforeHash": "0770bf202574523187d905449810bc4dfc2f4b209d64c1b8273614f15b006b71"
+    },
+    {
+      "lemma": "knees",
+      "hold": true,
+      "reason": "No exact plural entry or reviewed knee mapping is available, and knees are not necessarily interchangeable with a lap.",
+      "beforeHash": "f46a87a3065c64c2b907900970e772232e26c26d9622f71238128834f04bc99d"
+    },
+    {
+      "lemma": "kowtow",
+      "hold": true,
+      "reason": "The sources concern ritual bowing or submissiveness, not the fitness curtsy movement; the apparent movement similarity does not establish appropriate scope.",
+      "beforeHash": "31db9a1ba483bb3c75bf5e1b759239640a27dc2bf4a66cc3ddb1c2277fb3df97"
+    },
+    {
+      "lemma": "lactoserum",
+      "hold": true,
+      "reason": "No exact sourced English sense supports the proposed whey synonym; the dairy-chemistry gloss alone is insufficient.",
+      "beforeHash": "378072e39727ff9ee7a3241e656943e8dd9d97709f647d0aa3dc577f9a482ff8"
+    },
+    {
+      "lemma": "lambswool",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Wool from a lamb is explicit and appropriate to clothing materials; luxury quality is not guaranteed and the drink homonym is excluded.",
+      "beforeHash": "7d80b1a5b08622d8a87d481b10defa7dbe377f2be6634a5f7c2ff6d0dc6e8b5b",
+      "sourceSenseId": "wiktionary:c65e7ae1f3577d81244a7a42"
+    },
+    {
+      "lemma": "lamina",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "ngsl"
+      ],
+      "reason": "A thin plate or layer, especially bone or mineral, is a complete general scientific meaning; the specific leaf-blade fitness mismatch is not promoted.",
+      "beforeHash": "91cf57a68e00e07ef038703fa0b01b1a1db67881bdbfc3d88621bf7261c80d3b",
+      "sourceSenseId": "source-c1f886c07ee315fd5e9c"
+    },
+    {
+      "lemma": "laterality",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Using one hand more than the other is explicitly defined and relevant to biological dominance, not business market dominance.",
+      "beforeHash": "0e74c8d20e4ebda7aa4db442affbb1c1f92202ed67b58bba2f6dfdfaa629ebf2",
+      "sourceSenseId": "source-7976c1d4a1363e3b59fd"
+    },
+    {
+      "lemma": "lateralization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Localization of a function to one side of the brain is precise neuroscience terminology; do not infer commercial dominance.",
+      "beforeHash": "219289619315dcf3985ccbd0a702be937eb1b41b06d38ce2f866c237e9df477f",
+      "sourceSenseId": "wiktionary:d143535415f4c4723f373e66"
+    },
+    {
+      "lemma": "lattermost",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact adjective means last and is non-comparable; the old claim that it necessarily refers to the second of two is rejected.",
+      "beforeHash": "8a7c45f9daa7f99251a33984c922b48a5ae360b9bc91fe341e78332c1d185b20",
+      "sourceSenseId": "wiktionary:055ed1709b9b2a6fa584a48d"
+    },
+    {
+      "lemma": "lawntennis",
+      "hold": true,
+      "reason": "The joined form lacks exact evidence, and the claim that lawn tennis necessarily means grass-court tennis needs independent verification.",
+      "beforeHash": "69423fa1ce6c7fd791cf29c2f0e4b4ddc12a7f98ac59960474672c4f0b14ad8f"
+    },
+    {
+      "lemma": "leasehold",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Land or property held under a lease is a self-contained real-estate meaning without inventing jurisdiction-specific ownership rights.",
+      "beforeHash": "9a021059f0f40246178022938d3753a4f53526f9d6b3f5a5d44dc30b6776b028",
+      "sourceSenseId": "source-188081bc179362d130ed"
+    },
+    {
+      "lemma": "leaseholder",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A tenant holding a lease is explicitly defined and matches lessee; no supposed universally more formal register is added.",
+      "beforeHash": "692e25a3140a138369cfb0e04f4e02b63d4c377bca459d3eb8b726a867736618",
+      "sourceSenseId": "wiktionary:9e043a71bfb58a73ad48cb6a"
+    },
+    {
+      "lemma": "legatee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The recipient of an inheritance is a clear legal-vocabulary meaning, not every successor or beneficiary in unrelated circumstances.",
+      "beforeHash": "345b61305707e679c759eff231102bca2bd97d64d8dd29abc653590a3e4bdfcd",
+      "sourceSenseId": "wiktionary:f93470f98de6999848e68eb0"
+    },
+    {
+      "lemma": "legation",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The permanent diplomatic mission headed by a minister is explicit and appropriate to diplomatic-office vocabulary; avoid implying any ordinary delegation is a legation.",
+      "beforeHash": "134337b5d59bbc4a5c83450f796e2237f1b0d92bb489e1853a290f77a21b22e4",
+      "sourceSenseId": "source-6ba8f66a7663bb2ba43a"
+    },
+    {
+      "lemma": "lensman",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source specifies a male photographer; preserve that scope rather than silently presenting this as a gender-neutral term or requiring photojournalism.",
+      "beforeHash": "ac2cee3b2480a59d0f20d482857e41d7b9cc6b4a839e67f5f4578e892c47b7aa",
+      "sourceSenseId": "wiktionary:6ecc00ba54e6e7eeb3e1fd1e"
+    },
+    {
+      "lemma": "lepton",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The spin-one-half particle without strong-force interaction is fully defined with examples; select particle physics rather than the unrelated coin meanings.",
+      "beforeHash": "ff036b9bef64d49bbfd355192d955d0213fa4a74d6860ed0fc4e68a7e392627e",
+      "sourceSenseId": "wiktionary:79a8e28d3bee5f7f8999758d"
+    },
+    {
+      "lemma": "levelheaded",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Showing good judgment is an exact sourced meaning for this spelling; it does not require claiming complete absence of emotional bias.",
+      "beforeHash": "fbeef8eaa26cfaff170c8a3dc8098bcbac6784887fe683419b882826b88c9426",
+      "sourceSenseId": "oewn:01950705-s:levelheaded%5:00:00:reasonable:00"
+    },
+    {
+      "lemma": "leviable",
+      "hold": true,
+      "reason": "The only definition repeats levied without explaining tax imposition; the old gloss cannot establish the legal scope for learners.",
+      "beforeHash": "4e37aee3c684ef94c082d84ea7d3fcddfbed6dc0b6256569c99ad9c84ab62fa1"
+    },
+    {
+      "lemma": "levulose",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The source identifies D-fructose and its optical rotation, relevant to the fructose nutrition anchor; do not imply a more beneficial or universally preferable sugar.",
+      "beforeHash": "c89ffdfbbf51e02ce4f517743f4198919d6f23be385c9bdf427cfc2b8281552f",
+      "sourceSenseId": "wiktionary:83134771c93a8095754b7972"
+    },
+    {
+      "lemma": "libretto",
+      "hold": true,
+      "reason": "The opera or musical text sense is verified but unrelated to an unspecified business script; the specialist arts topic lacks an appropriate anchor here.",
+      "beforeHash": "365a2b8316bf5fa0c41e7eb28486c7d86a3019e924b62e6212c772bdae759dd7"
+    },
+    {
+      "lemma": "lienholder",
+      "hold": true,
+      "reason": "The sole definition makes broad ownership and repossession claims without jurisdictional qualifications; its correctness for all secured creditors is uncertain, so keep hidden.",
+      "beforeHash": "51fb28ea2f32f7ed4ca273b583efd3af3a07bca053287ed7a3633996d8a9cea1"
+    },
+    {
+      "lemma": "lifeform",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Any specific living organism is a complete exact-spelling meaning appropriate to biology, without requiring speculative fiction.",
+      "beforeHash": "06abc75243cd0218c4f9920acef00df4587917ae8c4fcb4494c2e7e3ea01933c",
+      "sourceSenseId": "wiktionary:305c64cd6ebec54690bf5284"
+    },
+    {
+      "lemma": "lifescientist",
+      "hold": true,
+      "reason": "The joined phrase lacks an exact source entry or reviewed life scientist identity mapping; do not infer profession boundaries from the old gloss.",
+      "beforeHash": "e05666336aed7364a8c05bbf7ac96bb299fb5839b376656bc3955c997a422a93"
+    },
+    {
+      "lemma": "lingua",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The exact source gives tongue as a clear anatomical meaning; keep academic scope and leave the separate insect-mouth process unselected.",
+      "beforeHash": "198eae9f05be81036f334861ad26ce06b533d46bdd7d33ad03ea27957ace9dda",
+      "sourceSenseId": "wiktionary:07963383c3e7ed11b0a3d938"
+    },
+    {
+      "lemma": "liquidizer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The food-chopping or pureeing machine supports meal-preparation vocabulary; retain Australia, India and UK labels rather than inventing technical superiority.",
+      "beforeHash": "e55d94f1796f1e198a19ba415b4ddc0647f7c203fe8ee3a443f1db85a3e64afd",
+      "sourceSenseId": "wiktionary:21d9f0c69abb80d2f7077bec"
+    },
+    {
+      "lemma": "literateur",
+      "hold": true,
+      "reason": "No exact source evidence supports this spelling or the proposed writer-critic meaning; a verified spelling-variant identity is needed.",
+      "beforeHash": "a3b7c748eb81226625ad23801064d8c2057708ad95cb6f50e8f76a0e38f52eab"
+    },
+    {
+      "lemma": "littlefinger",
+      "hold": true,
+      "reason": "No exact joined-form evidence is available; preserve the stable record pending a sourced little finger phrase mapping.",
+      "beforeHash": "76cea40e0cf95d249700041734d9601d7283689750aeee3909eef43f983d5902"
+    },
+    {
+      "lemma": "loanblend",
+      "hold": true,
+      "reason": "The linguistic compound assembled from different languages does not fit the sole business hybrid anchor; verified etymology is not sufficient topic relevance.",
+      "beforeHash": "4bafa40f3b7b2b5d0fcebfd08247712e95cdb5910272565502cc862aa3e3563f"
+    },
+    {
+      "lemma": "lock-up",
+      "hold": true,
+      "reason": "No exact source sense is available for the intended secure garage meaning; do not infer it from the old storage gloss.",
+      "beforeHash": "bf019609eb0af5fcfe0dc32aa8e441da690cf9b87a75f7bc62d01f6d5243e090"
+    },
+    {
+      "lemma": "lockbox",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A box with a built-in lock, usually portable, is explicit and relevant to storage equipment; not all lockers are fixed or all lockboxes portable.",
+      "beforeHash": "3725e7a704aea5413fd4a0939e416b6333739ce3dfafabd47205011bcd174e92",
+      "sourceSenseId": "wiktionary:659ac6b59c21f141bfb60a12"
+    },
+    {
+      "lemma": "locks",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The head-of-hair meaning is explicitly sourced; retain plural-only usage without requiring long or flowing hair.",
+      "beforeHash": "d565de12b15157517adeb6983af172e01781c0c418741c0719e7d0c9d4df14a9",
+      "sourceSenseId": "wiktionary:69becdd9af321e74a37d8155"
+    },
+    {
+      "lemma": "loftiness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The quality of being high is explicit and relevant to height; exclude arrogance and avoid treating it as a numerical altitude measurement.",
+      "beforeHash": "42f44c626583418528988c8afb51587c899a9cdd963baeaa9851454138f6e801",
+      "sourceSenseId": "source-ea76aed986a4c9d994cd"
+    },
+    {
+      "lemma": "loge",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A private theater or grandstand area for a small group is a clear venue meaning; no universal seating-tier position or comfort guarantee is inferred.",
+      "beforeHash": "41324e962e1474f9a48aecf1aa7ef0136e01dbf094c43bab73020bc9ae003a89",
+      "sourceSenseId": "source-0dd5128d583818ca3674"
+    },
+    {
+      "lemma": "longboard",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The large-skateboard sense is explicit with approximate dimensions; select it rather than the surfboard or medical spine-board meanings.",
+      "beforeHash": "15de6af8765c4166d56851ad7de0389ed842b8294c07e9f109636713839733ff",
+      "sourceSenseId": "wiktionary:f172e53a8da6b0ef8dcdb885"
+    },
+    {
+      "lemma": "looming",
+      "hold": true,
+      "reason": "The available gerund describes something that looms or towers, not a complete verified adjective for imminent events; source and part-of-speech alignment remain unresolved.",
+      "beforeHash": "e0eaa88cb1db0a0e1208de20ee3f9c3813df7eca5de269e4c5e1e361b1ede7aa"
+    },
+    {
+      "lemma": "lower-level",
+      "hold": true,
+      "reason": "No exact sourced adjective is available; the downstairs interpretation cannot be inferred solely from a model-authored location gloss.",
+      "beforeHash": "e7675eee53f5ef4adbfb02cfb907c3b62e484995b49bf8ee5010b9debb044d47"
+    }
+  ]
+}

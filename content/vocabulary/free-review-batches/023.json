@@ -1,0 +1,388 @@
+{
+  "id": "023",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:43:10.000Z",
+  "decisions": [
+    {
+      "lemma": "pluvial",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The attributable rain-related adjective supports the rainy anchor without implying a particular amount of rainfall.",
+      "beforeHash": "ba2c4f597ca3cd40ea3f002e0b53048ace45989be781d6b08149ca5b90b528aa",
+      "sourceSenseId": "wiktionary:4b772dcec5cdaa670c41336a"
+    },
+    {
+      "lemma": "pm",
+      "hold": true,
+      "reason": "The lowercase abbreviation conflates afternoon, prime minister, postmortem and other identities; none verifies the intended entry unambiguously.",
+      "beforeHash": "7fab5f5751db19edb1dd2c5a2b1991c7f0061c97353712fa712c517b28f4cce1"
+    },
+    {
+      "lemma": "politicking",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Political activity and campaigning are directly defined; retain the source's often derogatory restriction rather than inventing a neutral register.",
+      "beforeHash": "e7463d90ef5573e0615d26ac833fabc74155b784d0c991d8b40163058acc0087",
+      "sourceSenseId": "wiktionary:f25eaf546c3e3a3b1e073d22"
+    },
+    {
+      "lemma": "pollex",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "The exact anatomical first-digit meaning supports the thumb learning anchor; retain the broader animal anatomy explanation and exclude business scope.",
+      "beforeHash": "5dc43aa2c3b90c90ff9d35a7f43ff9af7c1423006de0d3f35d6fbd0120fc7fa2",
+      "sourceSenseId": "wiktionary:182778e132b4bd77b805ff3a"
+    },
+    {
+      "lemma": "polyclinic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source defines a multi-disease clinic and qualifies private with usually; this is not published as a synonym for every hospital.",
+      "beforeHash": "00179f3d101806022ce2a12ad33bd3df677601675f931c933deba88ee48f49d7",
+      "sourceSenseId": "wiktionary:efd3d53efe12ffeb0995413a"
+    },
+    {
+      "lemma": "polypeptide",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The amino-acid polymer joined by peptide bonds is factual protein-related vocabulary, without selecting the questionable folding or size-specific alternatives.",
+      "beforeHash": "d1ca750406e347d2faa61b44b13026c1d166745ad5e9554f547eb12e46ea03ea",
+      "sourceSenseId": "wiktionary:36c68f4a56ca8bf7e30e0a28"
+    },
+    {
+      "lemma": "porphyry",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The igneous-rock texture definition is appropriate academic geology; it does not assert that porphyry is marble.",
+      "beforeHash": "e9a48f89b5518215e84ab1d63505e47521721655b7b8de07d660dbf4fc10b149",
+      "sourceSenseId": "wiktionary:e97557fc924adeee9635cd8d"
+    },
+    {
+      "lemma": "portraitist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source directly identifies an artist or photographer making portraits, a suitable extension of painter.",
+      "beforeHash": "89904766b6bc713c33ffe9243f29571b9290ae1f45ba13072d29acab3e0abe27",
+      "sourceSenseId": "wiktionary:7dce2bab55f54f13ee56abb0"
+    },
+    {
+      "lemma": "portraiture",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The selected verbal depiction of appearance and character fits characterization rather than silently substituting the painting sense.",
+      "beforeHash": "0454c4020db396f4cadbcab61fc976de34c197b18393b5e192e70b8ab8eb1c7e",
+      "sourceSenseId": "source-33ae123b34e756ae95f1"
+    },
+    {
+      "lemma": "positioning",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The act of placing something is directly sourced and matches placement without adding unsupported marketing strategy claims.",
+      "beforeHash": "51aca25d3a9fadd0176039a673d1e996e967f6acfd3d30836f287e6c1aea94cc",
+      "sourceSenseId": "source-6121aa9f5c3bd12fd6c9"
+    },
+    {
+      "lemma": "postgrad",
+      "hold": true,
+      "reason": "No exact attributable entry was recovered for this abbreviated identity; postgraduate alone does not authorize a source mapping.",
+      "beforeHash": "f9e9650c7e8841a0c5987da36a5cf29b997cbbba4cd6a5bd3e9aeac9fc401302"
+    },
+    {
+      "lemma": "postulant",
+      "hold": true,
+      "reason": "The available religious-order admission sense does not establish a general academic novice meaning; the narrower religious scope lacks an appropriate anchor here.",
+      "beforeHash": "d1b3477be7cabdb76f2dd2ba3f503c64a4e68616032a4ea1ff58ff52a6db5a3f"
+    },
+    {
+      "lemma": "potage",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The thick-soup definition directly supports food vocabulary while preserving especially creamy rather than making cream mandatory.",
+      "beforeHash": "c4234c5574009661cfc19697fb0da7e779734744f70ba2c0f1079edf8120ba7a",
+      "sourceSenseId": "wiktionary:5332656d15a767d2312dd9c6"
+    },
+    {
+      "lemma": "potentiated",
+      "hold": true,
+      "reason": "The bare enhanced definition does not verify the proposed interactive business sense or a safe mapping from drug interactions.",
+      "beforeHash": "c913910ffdf8d0f4e59b93b662c152708053f2fa2a356a8ae3357c36b082824a"
+    },
+    {
+      "lemma": "powerchair",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A motorized wheelchair is a clear attributable transport and accessibility meaning matching the wheelchair anchor.",
+      "beforeHash": "0885db566895d8a2f09bc1ddfd9e9bbd62e54852b0972b5c046d6c5b2b5409e2",
+      "sourceSenseId": "wiktionary:62ba4a8ccb8dee9cff5b6285"
+    },
+    {
+      "lemma": "powerplant",
+      "hold": true,
+      "reason": "No exact-source definition was recovered for this closed spelling; the engine anchor cannot supply missing lexical identity evidence.",
+      "beforeHash": "7b4e7a939ae930db6e82f2e642311cf44262c8ec9d2a1a7f7974e4838a58c1e4"
+    },
+    {
+      "lemma": "practicing",
+      "hold": true,
+      "reason": "No attributable exact entry verifies the intended professionally active adjective rather than a guessed inflection of practice.",
+      "beforeHash": "d78465521a876b95a3913687a094ce64e50b25635ef29c911d5b10143d94a22d"
+    },
+    {
+      "lemma": "precis",
+      "source": "oewn",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The exact unaccented source entry defines a summary of main points, useful for reports without equating every scenario with a summary.",
+      "beforeHash": "d37e706973d4dfe11e466b936eba84e95dd134177b096fd48c3d6af10cd098ba",
+      "sourceSenseId": "oewn:06480622-n:precis%1:10:00::"
+    },
+    {
+      "lemma": "preclusion",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The sourced preventive action meaning supports general prevention in business, without extending it into unsupported fitness or medical guidance.",
+      "beforeHash": "22d621047d2bcd1c675472a87ccaba711b32ae8e44112973dbb3eebdd75fa40b",
+      "sourceSenseId": "source-7894969445b4da546fdd"
+    },
+    {
+      "lemma": "predestine",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The selected determine-in-advance verb supports the fate anchor without requiring divine agency or claiming a negative outcome.",
+      "beforeHash": "38afe887e423ff47272f3cd248a224556e7e65886056771cd2f3356907994a91",
+      "sourceSenseId": "wiktionary:79a4fa0f0d9c6066e1836697"
+    },
+    {
+      "lemma": "predication",
+      "hold": true,
+      "reason": "The candidates conflate proclamation, assertion, logical subject/predicate assignment and computing; none clearly verifies the intended clause-level linguistic meaning.",
+      "beforeHash": "4284972c75d625181c055d4b2119473c76d8a4fb80ff56d5fa85922e55c2270e"
+    },
+    {
+      "lemma": "predicator",
+      "hold": true,
+      "reason": "The broad predicate/property definitions do not establish the intended grammatical verb constituent precisely enough for this entry.",
+      "beforeHash": "2d1bc74c50a0e6c249da9c32d7023a161818f76024bdb8ee4ead5b9be11bcf6d"
+    },
+    {
+      "lemma": "preeminence",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "High importance or superiority is directly supported; popularity alone is not presented as equivalent.",
+      "beforeHash": "728fa786ca771c9ee2c5413b5ca825553df039b9006b953140ded7bf96a7df75",
+      "sourceSenseId": "wiktionary:4427f9720ea3f129789b4590"
+    },
+    {
+      "lemma": "prefatory",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Serving as an introduction or preface is clearly sourced and matches introductory vocabulary.",
+      "beforeHash": "6979b18c8ab48adff450476e848da12d96e697fe083f6b318d72e6996e8b8126",
+      "sourceSenseId": "wiktionary:cfd0f10a0197b19a6ad172c6"
+    },
+    {
+      "lemma": "preliminarily",
+      "hold": true,
+      "reason": "The only candidate repeats preliminary without explaining it, so it does not provide a sufficiently independent beginner-facing meaning.",
+      "beforeHash": "4d1744ebacea4bdc88b0c20ce07b63cc508b630c04a758a5cda1142c4962de07"
+    },
+    {
+      "lemma": "preordain",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The source defines determining fate in advance and marks the verb transitive, supporting predetermine without added doctrine.",
+      "beforeHash": "9d53f619f2841e1a0557de2578cd2e70aa6d2f3663fc48aa7e2127579480e0d8",
+      "sourceSenseId": "wiktionary:705f16df0deed73f4d7b02eb"
+    },
+    {
+      "lemma": "preponderantly",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The sourced greater-number-or-influence meaning supports predominantly more informatively than the circular Wiktionary candidate.",
+      "beforeHash": "25ab70200fd39e4cfab82deef328751a4471da3bc26048c73932e6da8a6de323",
+      "sourceSenseId": "source-431ecfc769b3ed6a6aa7"
+    },
+    {
+      "lemma": "preponderate",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "business"
+      ],
+      "reason": "The selected intransitive weight-or-influence meaning supports predominance; its grammatical restriction is preserved.",
+      "beforeHash": "753dc768b62cc09420032f4ed7a1a15a88c90f5bda473431f6a0ba1ec30358f3",
+      "sourceSenseId": "wiktionary:197683cdd99e1769ac4932d8"
+    },
+    {
+      "lemma": "pressman",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The printing-press operator sense exactly fits printer and avoids the unrelated journalist or naval recruitment senses.",
+      "beforeHash": "b119b7039a18b308425c27c3ce6840c8c6e9016833f20f8f0324920ce3ea8d99",
+      "sourceSenseId": "wiktionary:1aa634dd689d06cc2e395128"
+    },
+    {
+      "lemma": "pressup",
+      "hold": true,
+      "reason": "No exact attributable entry supports the closed spelling; a presumed press-up alias needs explicit source identity evidence.",
+      "beforeHash": "eaa06fe6a10ca6ce9ed1360716ccd76e055ff99de1a125dd0dac933bec03c113"
+    },
+    {
+      "lemma": "prizefighter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness",
+        "toeic"
+      ],
+      "reason": "A professional boxer is directly verified; the release does not imply a particular weight class from the lightweight anchor.",
+      "beforeHash": "c4b46a02b1b8fdcb2123a2c7d53aabc0ba21bdade5c5dfd3f15398446133e2d5",
+      "sourceSenseId": "wiktionary:44b262af3bab973f4c3df7c5"
+    },
+    {
+      "lemma": "probationer",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The selected trainee nurse on a trial period is an attributable occupational sense; it is not generalized to every trainee or confused with parole.",
+      "beforeHash": "70b05bad54d352d5f84432b201f3b65e04fdb01aa9f3b2296bec0b043001ab98",
+      "sourceSenseId": "source-19839599fd1163b64bbc"
+    },
+    {
+      "lemma": "procompetitive",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Promoting marketplace competition is directly sourced and appropriate for the antitrust business context.",
+      "beforeHash": "02de28f69ecfa50396cb3232a5b2d3be9026f57a8afb45eab4171cb212663aac",
+      "sourceSenseId": "wiktionary:38b33cce63be5a32789894d9"
+    },
+    {
+      "lemma": "procurability",
+      "hold": true,
+      "reason": "The candidate only names the quality of being procurable, leaving the availability meaning unexplained.",
+      "beforeHash": "47bdccb684c853a0cade36a4a0364e0248de5dae1a076379a9b24d7c90be644b"
+    },
+    {
+      "lemma": "progenitive",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The reproductive ability meaning is explicit and suitable academic vocabulary, distinct from parental caregiving.",
+      "beforeHash": "0a47530111e311374755a380aa60885d618fdba9ad7d4107cb460d6285161f70",
+      "sourceSenseId": "wiktionary:40e704ac4c575b9d41044807"
+    },
+    {
+      "lemma": "progressivist",
+      "hold": true,
+      "reason": "The candidates depend on unexplained progressivism and do not establish the intended general reformist business meaning.",
+      "beforeHash": "3c70bcaba9e0a7d2367ddf083730cc00dbf77dbae0507a1bb91b01eaee1cfc98"
+    },
+    {
+      "lemma": "prolocutor",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The selected person speaking on behalf of others meaning fits spokesperson without importing the narrower church-office alternatives.",
+      "beforeHash": "e3c7053d1a2f122f791b5d047e7f444c7d17db97a5ffb83e8fa06329d9467ee8",
+      "sourceSenseId": "wiktionary:3eebf3bae656158c69234e99"
+    },
+    {
+      "lemma": "promotive",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Tending to further or encourage is directly defined; advertising is not made a necessary part of this broader meaning.",
+      "beforeHash": "ad2e36f15b811dba4e8a691b42669ed6ffd6fd10b54ce9ef4ec9553f0f48b3f9",
+      "sourceSenseId": "source-722b261e1a7666425fe3"
+    },
+    {
+      "lemma": "propagule",
+      "hold": true,
+      "reason": "The specialist reproductive-particle sense has no established TOEIC topic connection beyond an ambiguous bulb anchor, and the old asexual-only gloss is inaccurate.",
+      "beforeHash": "7d9e4faa5b62e086a907dcb828500d0f9333dd2494ced960996dfd9da6d0f5c8"
+    },
+    {
+      "lemma": "prosodic",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The detailed rhythm and suprasegmental language definition directly supports academic phonology without relying on a circular prosody reference.",
+      "beforeHash": "6540bf10dd17f3401af25681fd1ece2deeea7efe8adffced3c6d8893c521b274",
+      "sourceSenseId": "source-43207414b89fff7b87cf"
+    }
+  ]
+}

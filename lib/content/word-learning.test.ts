@@ -5,6 +5,21 @@ import { buildWordLearningProfile } from "./word-learning";
 import { toCanonicalRecord, type LegacyWordPage } from "../vocabulary/legacy-profile-adapter";
 import type { VocabularyRecord } from "../vocabulary/schema";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
+import { meaningReviewSnapshot } from "../vocabulary/meaning-review";
+
+it("exposes reviewed meaning-only claims without inventing examples or enabling production practice", () => {
+  const record = vocabularyRecordFixture();
+  const sense = record.senses[0]!;
+  sense.examples = [];
+  sense.meaningReview = { policy: "limited-examples-v1", reason: "Reviewed meaning", reviewedAt: "2026-10-16T00:00:00.000Z", contentSnapshot: meaningReviewSnapshot(record, sense) };
+  const profile = buildWordLearningProfile(record, null);
+  expect(profile.canClaim).toBe(true);
+  expect(profile.senses[0]).toMatchObject({ canClaim: true, example: null, limitedExamples: true, canPractice: false });
+  expect(profile.examples).toEqual([]);
+  const withLiveExtras = buildWordLearningProfile(record, { ...emptyDetail, senses: [{ partOfSpeech: "noun", definition: "An unreviewed alternative meaning.", example: "An example for a different meaning." }] });
+  expect(withLiveExtras.senses).toHaveLength(1);
+  expect(withLiveExtras.examples).toEqual([]);
+});
 
 const emptyDetail: WordDetail = {
   ipa: null,
@@ -492,4 +507,13 @@ it("retains definition and example attribution separately for the drawer", () =>
   const profile = buildWordLearningProfile(record, null);
   expect(profile.senses[0]?.sources?.[0]?.sourceId).toBe("wiktionary");
   expect(profile.senses[0]?.exampleSources?.[0]?.attribution).toBe("ExampleAuthor");
+});
+
+it("carries exact usage restrictions with their own visible sense only", () => {
+  const record = vocabularyRecordFixture();
+  record.senses[0]!.labels = ["usually", "with to"];
+  record.senses.push({ ...record.senses[0]!, id: "hidden-sense", definition: "A hidden meaning.", status: "hidden", labels: ["hidden qualifier"] });
+  const result = buildWordLearningProfile(record, null);
+  expect(result.senses[0]?.labels).toEqual(["usually", "with to"]);
+  expect(result.senses.flatMap(s => s.labels ?? [])).not.toContain("hidden qualifier");
 });

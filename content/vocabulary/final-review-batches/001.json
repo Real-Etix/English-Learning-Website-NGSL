@@ -1,0 +1,211 @@
+{
+  "id": "001",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T08:52:30.000Z",
+  "decisions": [
+    {
+      "lemma": "bactericide",
+      "head": "bactericide",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Select the exact chemical-agent-that-destroys-bacteria sense, not the growth-inhibiting drug sense or Wiktionary's unsupported harmlessness implication. Relevant to the Academic antibiotic topic without asserting interchangeability or treatment advice.",
+      "beforeHash": "c425ba2cebb213e6cfd29b46f5e38a698597a264b92ed4a44f6a84c00682d92e",
+      "sourceSenseId": "source-35919d8a0fa1fd6a79f0"
+    },
+    {
+      "lemma": "electrotechnician",
+      "head": "electrotechnician",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The occupational noun explicitly names electrotechnology. Its newly checked base definition makes the electrical technology/engineering meaning understandable in the TOEIC electrician context, without claiming a licensing qualification.",
+      "explain": [
+        {
+          "head": "electrotechnology",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Exact named discipline resolves the circular occupational definition; no inferred certification or equivalence to every electrician role.",
+          "sourceSenseId": "wiktionary:37cded39e89cb22ae739375d"
+        }
+      ],
+      "beforeHash": "ae9927c9ba46c760dd53c292073b38014c313725de30ecc2e7aeb79ebf9b3c74",
+      "sourceSenseId": "wiktionary:0d58d7ff3f7b66e76c5b0708"
+    },
+    {
+      "lemma": "psychopathological",
+      "head": "psychopathological",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The adjective explicitly refers to psychopathology; select the study of mental and behavioural disorders, matching the Academic psychiatric context. Do not use the old undiagnosed-disorder adjective or make claims about an individual.",
+      "explain": [
+        {
+          "head": "psychopathology",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The research discipline sense clarifies the exact derivative while preserving its adjective POS and not equating it with a diagnosis.",
+          "sourceSenseId": "wiktionary:2fd688e7aa011ae3cc440688"
+        }
+      ],
+      "beforeHash": "fdc6427f74a51a2ed793bf3d86de48fe5f03100bcf46757143436e846e795351",
+      "sourceSenseId": "wiktionary:2a7e9e4368b35fbba4049c3c"
+    },
+    {
+      "lemma": "negatron",
+      "head": "negatron",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The current English primary entry explicitly identifies the electron synonym and marks it obsolete in physics. Preserve those restrictions and clarify electron rather than teaching an unspecified negatively charged particle.",
+      "explain": [
+        {
+          "head": "electron",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "The source's explicit synonym target is the negatively charged subatomic electron, not an antiproton or a generic charged particle.",
+          "sourceSenseId": "wiktionary:ca917446e2af1ada89bf5dfb"
+        }
+      ],
+      "beforeHash": "bdcd66c19e7674cd06431cf2646ca033bccd07e045f4ae07d5af115fe93b177e",
+      "sourceSenseId": "manual:6ef10b3be0877df9784a536a8eac1f9297d1f5f0836d2953dd002b327136e77f"
+    },
+    {
+      "lemma": "chromatid",
+      "head": "chromatid",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "NHGRI's public-domain first definition sentence clearly identifies each half of a replicated chromosome. This resolves the earlier DNA-strand ambiguity for the Academic chromosome context; preserve the exact excerpt and attribution.",
+      "beforeHash": "5376b51cf8040f8caf4eccb14b4cda6426a257216270310916a9d2f79a2e2ca9",
+      "sourceSenseId": "manual:c85e9fdb9db34c13fc38c37e3512f6641dac86a2be499bfbc428f7e42cfa0446"
+    },
+    {
+      "lemma": "monosaccharide",
+      "head": "monosaccharide",
+      "source": "manual",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "NLM MeSH explicitly lists Monosaccharide as an entry term and defines the most basic carbohydrate units. Use its exact first sentence rather than the conflicting single-ring/sucrose candidates. Appropriate nutrition classification for glucose, not a synonym for every sugar or dietary advice.",
+      "beforeHash": "a0d2a477d8f41fbe5accd1116d8c28e5763dfdbe089542202b47a28656cab167",
+      "sourceSenseId": "manual:1256dd74641559c2408f7be2bcdecd9109aa41c4d2a69b016f314111cc491126"
+    },
+    {
+      "lemma": "cybernetically",
+      "head": "cybernetically",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The manner adverb explicitly names cybernetic. The newly checked mathematical communication/control definition resolves the missing explanation for the technical electronics context, without claiming all electronic processes are cybernetic.",
+      "explain": [
+        {
+          "head": "cybernetic",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Select the explicitly defined communication-and-control sense, not the different general Internet/computer sense.",
+          "sourceSenseId": "wiktionary:a7ce783b43ffc5e61a4ffcb9"
+        }
+      ],
+      "beforeHash": "0805052381b33347ad14c3d21eccabbd3c57c746c303be755a5236f6b04ba7d6",
+      "sourceSenseId": "wiktionary:24af38cf018294885011d9ae"
+    },
+    {
+      "lemma": "enunciator",
+      "head": "enunciator",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The agent noun explicitly invokes enunciate; the articulate/pronounce sense resolves the spoken communication context. No claim of political authority or equivalence to every meaning of dictator is promoted.",
+      "explain": [
+        {
+          "head": "enunciate",
+          "source": "wiki",
+          "sense": 2,
+          "reason": "Select articulation/pronunciation to make the person noun understandable in the intended spoken-dictation context, not announcing an official decree.",
+          "sourceSenseId": "wiktionary:e5bec75b38c6e4e11f4d546d"
+        }
+      ],
+      "beforeHash": "f516b9b34cf24e3ff2e21c034d9aa3d3a62843247e8f085901ab46f1990373e0",
+      "sourceSenseId": "wiktionary:dd2d42320c5efc3e6cc23e6b"
+    },
+    {
+      "lemma": "modulator",
+      "head": "modulator",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "Select the device noun, with the explicit electromagnetic-signal modulation definition, appropriate to the original technical device/regulator context. Do not publish the human or musical-chart senses or claim it covers every regulator.",
+      "explain": [
+        {
+          "head": "modulate",
+          "source": "wordnet",
+          "sense": 4,
+          "reason": "The source-named verb explains signal frequency/amplitude/phase adjustment, rather than musical key changes or a person's voice.",
+          "sourceSenseId": "source-d5902993aa602d64517d"
+        }
+      ],
+      "beforeHash": "e34d10c75ba32f22f853818617f6bdd10072d693ed2b3cb560aa33738ab2cace",
+      "sourceSenseId": "wiktionary:ba9bec6f69e871dbe322e419"
+    },
+    {
+      "lemma": "secessionist",
+      "head": "secessionist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The source explicitly includes withdrawal from an alliance or organisation. A newly checked general separation definition resolves the circular noun in the existing separatist context, without selecting the US historical event or making a political endorsement.",
+      "explain": [
+        {
+          "head": "secession",
+          "source": "wordnet",
+          "sense": 2,
+          "reason": "Select formal separation from an alliance or federation, not an art movement or the specific American Civil War event.",
+          "sourceSenseId": "source-535daa49922e7ac85ddc"
+        }
+      ],
+      "beforeHash": "f48deaee4062bf9c29d7591464852519ffa620681f93a25acea74ae652f0c20f",
+      "sourceSenseId": "wiktionary:8c400c6fe366aa8d327aa13a"
+    },
+    {
+      "lemma": "recalibrate",
+      "head": "recalibrate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The repeat-calibration verb is now explained by comparison with a standard. Appropriate to measurement-device resetting in the existing Fitness context, not an unsupported claim about resetting the human body.",
+      "explain": [
+        {
+          "head": "calibrate",
+          "source": "wiki",
+          "sense": 0,
+          "reason": "Select checking or adjusting against a standard rather than gun caliber or merely writing an instrument scale.",
+          "sourceSenseId": "wiktionary:aabaf484adc0c95db7045995"
+        }
+      ],
+      "beforeHash": "299cd96c2dc04974cd2737b3dd75f2f485a71c41d796c16c8e945c71b5464417",
+      "sourceSenseId": "wiktionary:3673a92d063771e5467dad6f"
+    }
+  ]
+}

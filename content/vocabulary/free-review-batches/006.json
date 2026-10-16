@@ -1,0 +1,390 @@
+{
+  "id": "006",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T04:10:00Z",
+  "decisions": [
+    {
+      "lemma": "civvy",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The non-military person definition directly explains civilian and carries an informal label. The separate manufactured-cigarette slang meaning is excluded.",
+      "beforeHash": "579c6b24937955d1312d42b9a2794326c017848d77f4b0004d63acc1ff260a08",
+      "sourceSenseId": "wiktionary:af25b2c1d43acd66f558eb2b"
+    },
+    {
+      "lemma": "clabber",
+      "hold": true,
+      "reason": "Sour/curdled raw milk is not necessarily yogurt. The source does not validate the proposed Fitness nutrition equivalence or a safe fermentation interpretation.",
+      "beforeHash": "f0714ef9249ca8af1ad99827cfa672d20e7d9c864b58bcf6251d643ceff35fb4"
+    },
+    {
+      "lemma": "clavicle",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The collarbone definition describes its chest/shoulder location and connections, directly supporting Fitness anatomy. The separate fish-bone sense is excluded.",
+      "beforeHash": "35eb58b50f4492a34209946ce9e976248813839b067beba5bf408b5cbf141850",
+      "sourceSenseId": "wiktionary:a40f97f3e1d46a809310c128"
+    },
+    {
+      "lemma": "clavicula",
+      "hold": true,
+      "reason": "No exact English factual candidate was extracted for the proposed highly technical collarbone term. The verified clavicle record does not automatically approve a different identity.",
+      "beforeHash": "fcd6d6fe8a3c468cb1316bce9255f04d47b0efe7d14af6e1054ecbbaadd985f3"
+    },
+    {
+      "lemma": "clavier",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "The musical keyboard meaning is explicitly tied to organ, pianoforte and harmonium, fitting the piano anchor. It does not mean a computer keyboard or necessarily the entire instrument.",
+      "beforeHash": "a6ce99ce92c6d754a19b538b43dcdf057fc95c87d45b77459c3acfd2d9ee5dd2",
+      "sourceSenseId": "wiktionary:9dc0ef221c0751f74bfc5296"
+    },
+    {
+      "lemma": "clerkship",
+      "hold": true,
+      "reason": "The intended medical training sense has a curriculum-stage restriction, while other meanings concern clerical work or judges. The general TOEIC internship link does not resolve that specialized context.",
+      "beforeHash": "0d7b11b3c3d161661f9ada2c205fbb05379a90522e0a57993b8864654c65d56e"
+    },
+    {
+      "lemma": "co-twin",
+      "hold": true,
+      "reason": "No exact factual candidate was returned for this hyphenated identity. A plausible scientific gloss alone is insufficient for publication.",
+      "beforeHash": "3d5ff9975935f17e7c433d81d66e93bbc70956e58dc1fc6dfbcb886641b432b2"
+    },
+    {
+      "lemma": "codefendant",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "A defendant joined with others in one action is a complete sourced legal noun relevant to business/legal processes. It is not a blanket synonym for every respondent.",
+      "beforeHash": "4e95613db0699a8adcb4769075c20711d6f74eceb87b7ad9c7894dac3b2016a2",
+      "sourceSenseId": "source-fdadc1910b03e9dee94f"
+    },
+    {
+      "lemma": "coequal",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An equal person or thing is the appropriate noun for the peer anchor. Do not mix it with an adjective or limit all uses to equality before law.",
+      "beforeHash": "f5a97816fa7db93633a3d89f6de8c64dde5cbeeecab2785f64c1e0efce37870d",
+      "sourceSenseId": "wiktionary:5eb8cc5edbc0accfba06550e"
+    },
+    {
+      "lemma": "coffers",
+      "hold": true,
+      "reason": "No exact plural funds/reserves definition was extracted from the checked sources. Preserve the unverified treasury gloss hidden rather than borrowing an unrelated container meaning.",
+      "beforeHash": "7bb3937dbced21bd5c34a2186b5d6eb8d3f095bf1dbec5dcdcde4de2241151a2"
+    },
+    {
+      "lemma": "cognizance",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Notice or awareness is self-contained and directly matches the awareness anchors. The jurisdiction and heraldic-badge senses are excluded, as is the unrelated Fitness expansion.",
+      "beforeHash": "d5bc7c67008d1544f3ca43a28444903925b5f110c185755eea5cfb0576285198",
+      "sourceSenseId": "wiktionary:97a5f02a16dab2a72f3dbd7c"
+    },
+    {
+      "lemma": "collegian",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A current or former college student is clear academic vocabulary. Preserve that wider membership meaning rather than treating it as exclusively a current undergraduate; ignore prison slang.",
+      "beforeHash": "b4c3d1613e7a70f1dbd807838c3a99e4830622a2a8de86d274e441ede145ca47",
+      "sourceSenseId": "wiktionary:712072efc5a268e56753a095"
+    },
+    {
+      "lemma": "colloid",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source explains finely divided dispersed material and its medium, a coherent Academic mixture concept related to aerosols. Other particle-size and glue-like adjective meanings are excluded.",
+      "beforeHash": "bddf576408d65683578808a68ab29f6d00448c2e3cdfa4c4672f8edc6c0e3656",
+      "sourceSenseId": "wiktionary:cad91e362ff37ca0e2da310b"
+    },
+    {
+      "lemma": "colloquy",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Conversation/dialogue is a direct match for dialog. Preserve the explicit formal label without adding church-court, trial-procedure or classical-textbook senses.",
+      "beforeHash": "7033e1cda66cbab031a56f8de48b2854b05331c86e89add5c002d2b9cde83817",
+      "sourceSenseId": "wiktionary:546708327bda000f1d405c22"
+    },
+    {
+      "lemma": "colluvium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Loose rock/soil debris accumulated at a slope's foot is a precise earth-science meaning. Restrict the specialist extension to Academic, not a generic substitute for deposit.",
+      "beforeHash": "242777cfa9f35014212ffc26e0d395cca5d4b9e5ae8cd628e987c8667014ffac",
+      "sourceSenseId": "wiktionary:3a5d570662c912d5c90c14bf"
+    },
+    {
+      "lemma": "colonizing",
+      "hold": true,
+      "reason": "No exact factual participle/adjective candidate was extracted. The model's process-versus-state comparison is not enough to publish a sourced meaning.",
+      "beforeHash": "5d7464dcb0ae9ab3f3fe9eefd1f821567f6786f4f026295ffc00f75acc1be77e"
+    },
+    {
+      "lemma": "colza",
+      "hold": true,
+      "reason": "The plant/oilseed meaning is not established by the ordinary Business rape anchor. Keep the homonym/topic mismatch hidden, even though the botanical word is valid.",
+      "beforeHash": "fa734d5aed68fb7bfe1b5cade74ae461c436cb52288401951d4c791d34b2d396"
+    },
+    {
+      "lemma": "comity",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Courtesy, considerate behavior and social harmony are a self-contained general meaning related to friendly relations. No treaty or institutional legal doctrine is implied.",
+      "beforeHash": "43e3dd34404667efc5ea1279d4725b748f1262fdfa029c9948831d7f4bc61e4a",
+      "sourceSenseId": "wiktionary:54550d45a62873a08680b514"
+    },
+    {
+      "lemma": "commendatory",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Serving to compliment is explained directly and matches complimentary praise. The ecclesiastical benefice meaning and official-praise-only restriction are not selected.",
+      "beforeHash": "697f12483a8232d66dda64a70eb7f600b8d5a42d5d5138607624bee4fe685e97",
+      "sourceSenseId": "wiktionary:558f8592ffce434ee46040fe"
+    },
+    {
+      "lemma": "commensurately",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source explicitly adds equal or proportionate to the manner definition, resolving its meaning. Do not imply it is interchangeable with equally in every construction.",
+      "beforeHash": "789a25fdab7113925232b93ab83963a6a0084916b31f364387c0bf57ec99e20c",
+      "sourceSenseId": "wiktionary:9ddf07d0c098337f2a92668c"
+    },
+    {
+      "lemma": "commentarial",
+      "hold": true,
+      "reason": "The terse relating-to-commentary candidate does not establish the intended analytical alternative to editorial. Keep scope and learner explanation uncertain rather than promoting the old model comparison.",
+      "beforeHash": "e7b0d8f04cfe2489b6f0949d3e13e3bb774c31a0acffea7266fe99fa3a001114"
+    },
+    {
+      "lemma": "commercialize",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Bringing an idea/prototype into commerce is explicitly explained and relevant to Business. The old privatization equivalence is rejected: changing commercial availability need not change ownership.",
+      "beforeHash": "6057737d9183e952ca3ec8240c4babe50f21208d8e9be8ed8a659e9873e0aeee",
+      "sourceSenseId": "wiktionary:f4ff2b9fa43d4983fd2c4b4e"
+    },
+    {
+      "lemma": "commiseration",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Sorrow for another's hardship and compassion are explained directly. Restrict to general English rather than inheriting an unsupported Fitness-specific or extra-formal use.",
+      "beforeHash": "821b7c63ef7fadfec2ff4dfdf021af18f36b29eec8a0074c870c6ec664f1589d",
+      "sourceSenseId": "wiktionary:8d3449fc00335a4759b80fef"
+    },
+    {
+      "lemma": "commodities",
+      "hold": true,
+      "reason": "No exact self-contained plural candidate was extracted for traded goods. The economic/raw-material meaning needs attributable evidence tied to this record, not a guessed singular import.",
+      "beforeHash": "97de72808a0e9b49bd3e56bdcbdcfafcdb5297155ce41cb5721114cf6454ed68"
+    },
+    {
+      "lemma": "commonality",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Shared attributes or characteristics is a clear Academic comparison concept. Explicitly reject the old incidence/frequency equivalence and keep that relationship unreviewed.",
+      "beforeHash": "c9208bd3b93c6fbfbee41e84ef30bd37477a57884dd4c99bbfb1ce13a1bf6acc",
+      "sourceSenseId": "wiktionary:1ca0b5e04ed22202463b8f7a"
+    },
+    {
+      "lemma": "communiqu",
+      "hold": true,
+      "reason": "The headword appears to have lost its accented ending and no exact candidate was found. A source-backed communiqué identity correction is needed before an announcement meaning can be released.",
+      "beforeHash": "8c1628024e2f0896bf6d9c32a78cc2e92b631ece7541f950c908fc088945bd17"
+    },
+    {
+      "lemma": "commutation",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "A state's change to a lesser penalty is explicitly sourced and fits legal substitution. Payment exchange, phonemes and electric-current reversal are different senses and excluded.",
+      "beforeHash": "4a51871300edcdf8da42e2af5da5d24195c44cd603e7ef1a0c5b0909341c12d5",
+      "sourceSenseId": "wiktionary:5daf274579daa27385e7b125"
+    },
+    {
+      "lemma": "complaisance",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "A tendency to yield to another's will is a full explanation appropriate to willingness/compliance. It must not be confused with complacency or a universal desirable trait.",
+      "beforeHash": "9ec3b9cd71a1ca94dc826f7ce8aefd2b8d1c6d0ce91d70e819735a67be2fe796",
+      "sourceSenseId": "source-70b52fda4f12917917d8"
+    },
+    {
+      "lemma": "components",
+      "hold": true,
+      "reason": "No exact plural constituent-parts candidate was extracted. Preserve the record hidden until its factual definition is bound to the intended physical/abstract parts sense.",
+      "beforeHash": "a52f01306b0bdac8eeb39a79611e2331b451d2323987d5657d7a862e4a662a2c"
+    },
+    {
+      "lemma": "comptroller",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "The chief accountant of a company/government is a self-contained role definition. It does not make every accountant, director or ship's purser a comptroller; no such links are promoted.",
+      "beforeHash": "fa506b91dcdabba0bf822026108dd8703facbcd2cf246bf6c8b48b1fdd49b38b",
+      "sourceSenseId": "wiktionary:1a20431d5ae8f3bebefa79fa"
+    },
+    {
+      "lemma": "computerise",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Controlling a function/process/creation by computer is the exact supported Business verb. Other senses about storing information or providing computers are not mixed into this release.",
+      "beforeHash": "4e1eb6bfb069064b7a847a702f8739461c0f7ee9c88322dc2b97bbf3f11c8a66",
+      "sourceSenseId": "oewn:01722811-v:computerise%2:36:00::"
+    },
+    {
+      "lemma": "computerized",
+      "hold": true,
+      "reason": "The retained candidate is only a spelling cross-reference to computerised, with no standalone meaning. Do not treat spelling identity as a complete sourced definition.",
+      "beforeHash": "a36b1f2db633b86d439b5c3c7f390bcfdc8b0abf381a5b74405a7b59d27f13c5"
+    },
+    {
+      "lemma": "conceivability",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The source explicitly explains being conceived, believed or understood. This supports theoretical possibility, not a claim about numerical likelihood or actual probability.",
+      "beforeHash": "16c40dc7b069ca61275d6368cb6ce7e26fb647d25bdd8f37df6704d3a0f08aca",
+      "sourceSenseId": "wiktionary:213c714cf8e55525a26d0d3e"
+    },
+    {
+      "lemma": "conceptualizer",
+      "hold": true,
+      "reason": "The only candidate repeats conceptualizes and does not explain forming concepts independently. The earlier model's design/theory distinction is insufficient evidence.",
+      "beforeHash": "64fa5bfd2177ccf14571d5f4ae9c1ea151f282d91dc72c35369ec4eb867ba3f7"
+    },
+    {
+      "lemma": "concertedly",
+      "hold": true,
+      "reason": "The only source says in a concerted manner without explaining coordination. Do not publish the model's deliberate-cooperation comparison as dictionary evidence.",
+      "beforeHash": "d4e714fd3db90a677b31a169c86a523b0f17631c903d23ec5df04116e40bf42e"
+    },
+    {
+      "lemma": "concessionaire",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "A holder of a granted right to conduct a business is explained directly and fits business concessions. It is not limited to utilities or food stands.",
+      "beforeHash": "928144deeb77b888feebf05ae3c08beea7898977ae61dbcb4fae5cfb7ab49166",
+      "sourceSenseId": "wiktionary:f80bed304cda19f51f111c8e"
+    },
+    {
+      "lemma": "conciliator",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Someone trying to bring peace is a standalone meaning relevant to reconciling opposing parties. It resolves the circular conciliates definition without asserting a formal legal office.",
+      "beforeHash": "0e861ad93c557d22a4199ebbcb0a4775711ff94b2ac5754ad49fd84b9af9d87a",
+      "sourceSenseId": "source-cc0977fa7d4da601c0d3"
+    },
+    {
+      "lemma": "concomitantly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "fitness"
+      ],
+      "reason": "At the same time as something else is clear timing vocabulary appropriate to the simultaneous-action anchors. It does not automatically imply causation or statistical correlation.",
+      "beforeHash": "a5c2d21fa871116da37dfeec9ab19f18d8d250b88c7c49ac4b407d6b117044d1",
+      "sourceSenseId": "wiktionary:0eb1b3a8de2e2449f18f7636"
+    },
+    {
+      "lemma": "concretion",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The rounded mineral mass in sedimentary rock/ocean-floor context is a clear earth-science meaning related to stone. Reject the unrelated mathematical-calculus connection and medical-stone senses.",
+      "beforeHash": "59a78d324f2626183bf03763fbeef4033409de3d0fd82c30efb8a7bf3d7a176d",
+      "sourceSenseId": "wiktionary:9b270541bb96b18d7bf87c47"
+    },
+    {
+      "lemma": "concurrency",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Events happening at the same time is explained directly and fits general planning. Avoid the specialized computing definition that could conflate concurrency with simultaneous parallel execution.",
+      "beforeHash": "5f28db4ad44366321b2032e2d1be4cc3257e0299062c3b358008502d60446b64",
+      "sourceSenseId": "wiktionary:d8f7c1d65acf1467b690b2b0"
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "id": "007",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T04:14:00Z",
+  "decisions": [
+    {
+      "lemma": "concurring",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Being of the same opinion is an exact sourced adjective suitable for agreement. Do not add the unsupported requirement of active rather than passive support.",
+      "beforeHash": "aa0e58b8b26cf00983e5a21027c1b4cdb2077b1d13c9fb055e20dcbd6015d0d6",
+      "sourceSenseId": "oewn:00555698-s:concurring%5:00:00:accordant:00"
+    },
+    {
+      "lemma": "conditioning",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "fitness"
+      ],
+      "reason": "Preparation/training, especially athletic body training, directly fits exercise and workouts. Psychological stimulus conditioning and laboratory specimen preparation are not selected.",
+      "beforeHash": "5e4d86d64926549fb017904bd43463119baa0c2d607302a2c30de2147a62cecd",
+      "sourceSenseId": "wiktionary:528809e31e252c64ee6ca527"
+    },
+    {
+      "lemma": "conductual",
+      "hold": true,
+      "reason": "No exact English factual candidate was extracted. The model's claim that this is a more precise academic behavioral synonym is not sufficient evidence.",
+      "beforeHash": "a26f85039cc7f6a5803bfe1953332fc7ae1ea2fbcf69da2e63277e42cb709547"
+    },
+    {
+      "lemma": "confection",
+      "source": "oewn",
+      "sense": 2,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The sugar-rich food meaning is self-contained and fits sweets/desserts. No inherent elaborate craftsmanship, high quality or formality is claimed.",
+      "beforeHash": "ab8ddb63c6f4fffc48a0950470f10fdc28b13ce6f47aa554443a979fa1297373",
+      "sourceSenseId": "oewn:07612255-n:confection%1:13:00::"
+    },
+    {
+      "lemma": "conferment",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Conferring an honor or presenting a gift directly explains the presentation act. It does not require a comparative formality ranking against conferral.",
+      "beforeHash": "cdbc98ea40372126f4a68f39c8586b97af8fadbf46cdfed2ab55c739b155780a",
+      "sourceSenseId": "source-293676dc6d6bce3c9b37"
+    },
+    {
+      "lemma": "conferral",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The explicit honor/gift presentation definition resolves the circular conferring/conferment candidate and fits presentation vocabulary.",
+      "beforeHash": "642b6bceb611e7c448925c46b64f8f9413e19e80b60068e3199584c85d88e832",
+      "sourceSenseId": "source-cf46148bd09ee8444a7b"
+    },
+    {
+      "lemma": "conglomeration",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Something made from many previously separate parts clearly fits composite collections. The source does not require a random or loose arrangement, which is not imported.",
+      "beforeHash": "d78d5e0a88e1e0722e9b3e6a67337603f17973f197e19d68697ea3b3c1529a16",
+      "sourceSenseId": "wiktionary:5c833bb7fa72975fc962c543"
+    },
+    {
+      "lemma": "congressperson",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A member of congress is the sourced nongendered occupational/title meaning related to congressman. No jurisdiction-specific power or political viewpoint is implied.",
+      "beforeHash": "2f969a1f9be50cb2cad91ab9f859b716515cf168c91d3070c85602cf0c97a9d3",
+      "sourceSenseId": "wiktionary:e3ac264f00958701e67a0076"
+    },
+    {
+      "lemma": "congruous",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Suitable or appropriate together is a clear compatibility meaning. Do not equate it with legal pursuant or geometrically congruent in every context.",
+      "beforeHash": "4be3f4df50e247cfd5a7951298a58c8c746ed3ec14f36ff724efd38638e8503a",
+      "sourceSenseId": "source-ecd159a767b16fc0d972"
+    },
+    {
+      "lemma": "conjecturer",
+      "hold": true,
+      "reason": "The only candidate repeats conjectures without explaining the activity, and the financial-speculator context may differ. Keep this unclear sense correspondence hidden.",
+      "beforeHash": "5270799ab7e363bb843dfe372f0a873781b645c0f1961e1382b62f4ea9d54cfb"
+    },
+    {
+      "lemma": "conjoin",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic",
+        "business"
+      ],
+      "reason": "Joining, uniting or combining is explicit and fits the general joining context. Preserve transitive grammar; exclude marriage, logical AND, grammatical coordination and archaeological nouns.",
+      "beforeHash": "3c6eeb73ea87d3ae8340c11583f51c9ce7736522b9f494113bf4a94bbbba2f3b",
+      "sourceSenseId": "wiktionary:a958e92e527de91e2e36b1d5"
+    },
+    {
+      "lemma": "conjointly",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "The source explicitly explains jointly or together. The earlier legal/formality ranking is not needed and is not promoted.",
+      "beforeHash": "f2f7814f9260c560e971e302dd84f6eccc8f70240a72a6e84e6a96e7255ff349",
+      "sourceSenseId": "wiktionary:7b23c121ddd10d7b4e3a8fe2"
+    },
+    {
+      "lemma": "connive",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Secret cooperation in wrongdoing is a clear general-English verb. Reject the misleading concert/music linkage and do not select the rare botanical sense; connections remain unreviewed.",
+      "beforeHash": "a9fcffe6995365d44a2d3427925132832a9738cd41542d034d166c2d7aa09b59",
+      "sourceSenseId": "wiktionary:d39b94e67551259f40552cef"
+    },
+    {
+      "lemma": "consanguineous",
+      "hold": true,
+      "reason": "The blood/ancestry relationship is supported, but the Business collateral anchor normally concerns financial security. This specialist kinship homonym connection is not established.",
+      "beforeHash": "0193cdb01c33ab7fcc5b9835862e5a37e5c2206a4c2257f016a962ce67f3df00"
+    },
+    {
+      "lemma": "conscientiousness",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "Being painstaking and careful directly matches workplace diligence. Exclude the separate conscience-based moral sense and unsupported equivalence to Fitness mindfulness.",
+      "beforeHash": "b108803445dbb356809ee9d7deabb41f261558a9f185c702dc869da24d07f52e",
+      "sourceSenseId": "source-669e40878f4fce76e4d7"
+    },
+    {
+      "lemma": "consignee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The intended recipient of a shipment is explicitly defined and matches logistics. Do not generalize the word to every type of recipient.",
+      "beforeHash": "23c62cd8b211ebb4a1ce36e21c9ef15adb2119c58fdfc3b0c50f033752871b6c",
+      "sourceSenseId": "wiktionary:d22f854c48e6851b40349d34"
+    },
+    {
+      "lemma": "consignor",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The person delivering or committing merchandise is a sourced logistics role. This need not cross a national border, so the old exporter equivalence is not approved.",
+      "beforeHash": "9405bec04b91772d2b808d5b8a1ada5e5b3e9c89d773bd593b4ce97010b65297",
+      "sourceSenseId": "oewn:09978048-n:consignor%1:18:00::"
+    },
+    {
+      "lemma": "consomm",
+      "hold": true,
+      "reason": "The headword appears truncated by loss of the accented ending. No exact factual candidate supports this identity; a separately sourced consommé correction is needed.",
+      "beforeHash": "de0180ef42ecd5449c6dd17aea24b212168d9e5b5d1112034361e492f5711179"
+    },
+    {
+      "lemma": "constituents",
+      "hold": true,
+      "reason": "No exact plural definition was extracted and the proposed anchors mix component parts with represented voters. Do not choose between them from model text alone.",
+      "beforeHash": "7821caf57da19686e642881f33745e8b2403e9715bb458e5f78e96554a560e5c"
+    },
+    {
+      "lemma": "constitutionality",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Accord with an appropriate constitution is explained directly in the source. This is lexical meaning, not a determination that a particular action is legally legitimate.",
+      "beforeHash": "9ccd566a22c4635e2078ab086da401baa7763e00a17aa7803f8778a2c9a9cb97",
+      "sourceSenseId": "wiktionary:112101f21e9af5a90d770cbf"
+    },
+    {
+      "lemma": "constraining",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Restricting scope or freedom of action is the correct sourced adjective for restrictive. The circular noun candidate is a different POS and remains unselected.",
+      "beforeHash": "78445ec8e04e43200e44c0f030fd82dbb90df65816bb8dbfa77ffaf511d01efe",
+      "sourceSenseId": "source-ea0aa22fb2878a630000"
+    },
+    {
+      "lemma": "construal",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An interpretation of meaning is a complete direct match for interpretation. No requirement of subjective psychology or formal register is added.",
+      "beforeHash": "dd104522e272074c08d382669c8f4a9a2a06c5bf10bfd4bd8734af6c7d687dd3",
+      "sourceSenseId": "source-7641fb9feeeea58332d1"
+    },
+    {
+      "lemma": "constructional",
+      "hold": true,
+      "reason": "The candidate only points to construction and does not resolve the intended building-method distinction from architectural. Retain unclear sense/usage detail hidden.",
+      "beforeHash": "bd5a8822297a7e80b66899784f47ce1669b06f0abf19177715fb49d49493703f"
+    },
+    {
+      "lemma": "consummately",
+      "hold": true,
+      "reason": "The sole definition repeats consummate without explaining mastery or completeness. The model's perfection gloss is not independent factual evidence.",
+      "beforeHash": "dc7b89046336c250c9ca3c7cc56d7ae8e116aac473eeebb8c427c9936a2f8b15"
+    },
+    {
+      "lemma": "containerize",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Transporting cargo in large standard containers is explicitly defined and relevant to packing/logistics. Software containers and modifying ships/industries are separate senses.",
+      "beforeHash": "18817aa04c5976492fbab76ffe8d61a789b543be1acb2d4dad600b94515b0bdd",
+      "sourceSenseId": "wiktionary:154f3686f5ca814f6f2b01bf"
+    },
+    {
+      "lemma": "contiguously",
+      "hold": true,
+      "reason": "The source only says in a contiguous manner. A standalone sourced touching/adjoining explanation is still missing.",
+      "beforeHash": "694350f1fbbbac8513c1ff872c920ef9cbac3525ed730c852363bba3a3303c95"
+    },
+    {
+      "lemma": "contrabandist",
+      "hold": true,
+      "reason": "Smuggling/duty evasion meanings do not establish the intended ordinary Fitness/TOEIC runner sense. Keep this homonym-based criminal-trade extension hidden.",
+      "beforeHash": "0b22fc523f8388b8eac6453232530219b5124ecbe31dc778d4a61c68d6e971d5"
+    },
+    {
+      "lemma": "conveyable",
+      "hold": true,
+      "reason": "The supported senses concern legal ownership transfer, not physical portability or shipping. The proposed portable connection remains a sense mismatch.",
+      "beforeHash": "f8745d10aa4289f4109fc394b10b6a92b9ef67b1e025c65239b0319f6abc046f"
+    },
+    {
+      "lemma": "conveyance",
+      "source": "wordnet",
+      "sense": 4,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "Moving something from one location to another clearly matches transport/delivery. Property-transfer documents, title transfer and information transmission are not mixed into this selected meaning.",
+      "beforeHash": "f219aee6f01db61aa90fc28cd2306563086196359136e18e81fbb2022daa2a56",
+      "sourceSenseId": "source-68103ca9bc8bb632a3c8"
+    },
+    {
+      "lemma": "convolution",
+      "hold": true,
+      "reason": "Local WordNet adds physical twisting, rotating and brain-fold meanings but does not resolve the intended complexity sense. Preserve the earlier withholding instead of substituting a mathematical or anatomical meaning.",
+      "beforeHash": "ef6709d08181420b776a809b65a155efb2c7bc9a0e4fdec55006308510799708"
+    },
+    {
+      "lemma": "coping",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The sourced process of managing taxing circumstances/stress is the appropriate general-English cope meaning. Explicitly reject the old brick-wall interpretation and retain masonry/bird-care senses hidden.",
+      "beforeHash": "040b39def82c698a5579c0c2b13044ec057110e5cd923ca9243d5a675e1f426a",
+      "sourceSenseId": "wiktionary:4b55cfaf0f5bf6a18b5bd2b7"
+    },
+    {
+      "lemma": "copolymer",
+      "hold": true,
+      "reason": "Polymer chemistry is unrelated to Fitness abs, which refers to abdominal muscles rather than ABS plastic. The factual chemical meaning does not validate this homonym expansion.",
+      "beforeHash": "ac568cba994a14c1fb6aa30e05dcffc97e9d0896ff0d0c87b35b846f264cae10"
+    },
+    {
+      "lemma": "copra",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Dried coconut meat used for oil extraction is a clear food-material meaning related to coconut. No nutrition benefit, industrial-use-only requirement or dietary advice is added.",
+      "beforeHash": "bc667fe844a9be7d947f348ae15f5092c0e1561ce5b7ca71fd556dd0eb166f0e",
+      "sourceSenseId": "source-5e27e8d47ac0c1f1970f"
+    },
+    {
+      "lemma": "corporeally",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "The source explicitly explains bodily/physically, appropriate to bodily existence and anatomy. Exclude unrelated Business physical-property uses and no register claim is imported.",
+      "beforeHash": "67106eb970e010e8492261ed0f1048e7683256c3f476915684672e5a12aa45d8",
+      "sourceSenseId": "wiktionary:0ea50cdcb6cc0022a97afc1c"
+    },
+    {
+      "lemma": "corrasion",
+      "hold": true,
+      "reason": "Abrasion/erosion is geology, not financial deflation in Business. The old wind-erosion gloss is a topic and homonym mismatch.",
+      "beforeHash": "d6ecfc0cf60b90accd4147b3e8369f4ba0d89abfbc35573ba8044cbb6c9b6463"
+    },
+    {
+      "lemma": "corroboration",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "Confirmation through documentary evidence is a complete sourced meaning fitting evidence/documentation. It does not independently prove any real-world claim or require every use to involve a separate person.",
+      "beforeHash": "8f36ee2cca6fa42b32b00c6f11c5c095685405b6f5216d3b2adcab233810e439",
+      "sourceSenseId": "source-7fdac3bb9e7f3b17d9b4"
+    },
+    {
+      "lemma": "corticoid",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The adrenal-cortex or synthesized steroid hormone definition is precise anatomy-related terminology for the steroid anchor. Publish lexical meaning only, with no drug use or performance guidance.",
+      "beforeHash": "a770fce23ecad0ef1326c6e71d9e7ce2c830be42413bfd4ee774a8d2ae7df597",
+      "sourceSenseId": "source-c43bb9aa33b0006180c4"
+    },
+    {
+      "lemma": "corvid",
+      "hold": true,
+      "reason": "The crow/raven bird family does not match the Fitness crow pose context. Taxonomic validity is not sufficient topic relevance.",
+      "beforeHash": "80fc179d0fdcfcbfad12fa4931abcfbd5feffe1a2c023237cca9560b08ba65fb"
+    },
+    {
+      "lemma": "counterquarterly",
+      "hold": true,
+      "reason": "No exact factual candidate was found and the proposed heraldic shield divisions are unrelated to Business/TOEIC quarterly periods. Keep hidden for both evidence and relevance reasons.",
+      "beforeHash": "9ebc6c367a74f23e3e892e4e47bd838d77f5b8520d263962c5a5251eb7f0be22"
+    },
+    {
+      "lemma": "coupler",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The mechanical device connecting adjacent objects is a self-contained engineering meaning matching connector. Organ keyboards, acoustic modems and wireless energy-transfer senses are excluded.",
+      "beforeHash": "7e7cb7b9e80f6c4c46c454beee09f5776d8362651b39aad2ea2d378f464a326e",
+      "sourceSenseId": "source-99258ddf9f89d46172ba"
+    }
+  ]
+}

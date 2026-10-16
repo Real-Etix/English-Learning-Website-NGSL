@@ -1,0 +1,381 @@
+{
+  "id": "029",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:54:33.000Z",
+  "decisions": [
+    {
+      "lemma": "telecommunications",
+      "hold": true,
+      "reason": "No exact plural source entry was recovered; the plausible full-form expansion still needs an attributable identity and meaning mapping.",
+      "beforeHash": "7985c442b254913eb5cc28a097dd14aa0ab2be27e9e944576776fe47f847236e"
+    },
+    {
+      "lemma": "telecopier",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The exact entry directly identifies a fax machine, distinguishing the device from a transmitted fax without invented register claims.",
+      "beforeHash": "4c15b6f83366ffec386de0e8860fe964111c0c5f0749767b9267b97dfe408ee0",
+      "sourceSenseId": "wiktionary:ccc42615eb83978d1827edf3"
+    },
+    {
+      "lemma": "telephonist",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Helping callers reach the person they are calling directly explains the telephone-operator occupation rather than every receptionist duty.",
+      "beforeHash": "c6b7a1015130dbd5798d4d39b09f5b73ba008bbd2059e5ccf4f1035470f12dcd",
+      "sourceSenseId": "source-4e6871a529808ed04a81"
+    },
+    {
+      "lemma": "telephony",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Transmitting speech at a distance is an explicit voice-communication definition, without overextending it to all telecommunications.",
+      "beforeHash": "95b86e825447ab00e78e06979aaebaccb9502ec465635d3024f7043fd5282c6d",
+      "sourceSenseId": "source-0abfc5754dbbb65c5971"
+    },
+    {
+      "lemma": "temperatureinversion",
+      "hold": true,
+      "reason": "The concatenated phrase has no exact source mapping; its meteorological meaning cannot be verified from the general inversion anchor alone.",
+      "beforeHash": "c8e96f84530b48eeb3c2059f68679cad9026bcc38ecb03bbc528b8a296dfaa0e"
+    },
+    {
+      "lemma": "terpsichore",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact lowercase entry describes rhythmic movement to music; select the dance meaning rather than the capitalized mythological Muse.",
+      "beforeHash": "512e6c642c9baec4e651b35fca97d979e92d15a7dece208b95a9796ebbf640da",
+      "sourceSenseId": "oewn:00429255-n:terpsichore%1:04:00::"
+    },
+    {
+      "lemma": "terpsichorean",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "A person who dances, especially professionally, is clearly defined; classical training and social-status claims are not added.",
+      "beforeHash": "beb65007e8491e788f0f8af3d478aed11196e11f430a5789b095f8dfbccbc19a",
+      "sourceSenseId": "wiktionary:ffc1b45c3f04eb10c82747ae"
+    },
+    {
+      "lemma": "theoccident",
+      "hold": true,
+      "reason": "No source supports the concatenated identity; the proposed capitalized multiword expression requires a separately verified mapping.",
+      "beforeHash": "69d2b5401c483845761dc1bbb70e62bfc13d423d9802fc96f7ce70305e5f139d"
+    },
+    {
+      "lemma": "theorizer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "A person forming a theory is explicitly defined; it is not equated with financial speculation or presumed to lack evidence.",
+      "beforeHash": "a9e8384898d38ce1cf9fb98742119e3adaecf884a23523daf8feed57b947faad",
+      "sourceSenseId": "wiktionary:11f26c11c137c3600250f277"
+    },
+    {
+      "lemma": "thereupon",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The subsequent-in-sequence meaning is explicit and distinguishes temporal succession from necessary causal consequence.",
+      "beforeHash": "4b8cc27db8e3541c1236ec54c815f39de7de947de8958186e1927c24021c170c",
+      "sourceSenseId": "wiktionary:72ef0968f5bb4d792b938629"
+    },
+    {
+      "lemma": "therm",
+      "hold": true,
+      "reason": "The gas-billing heat unit is verified but inappropriate to the sole Fitness calorie context without a relevant reviewed technical anchor.",
+      "beforeHash": "4a9145555fbff736aa86f9b783afaaa27b14b0491d46a37d1738d0051f0d204b"
+    },
+    {
+      "lemma": "thermalinversion",
+      "hold": true,
+      "reason": "The concatenated phrase lacks exact attributable evidence; a presumed spacing repair would not itself validate the scientific sense.",
+      "beforeHash": "1a5af05f32fbd56de4e853697b0e314b838d2dfc50110d45da6ce775bd0d2700"
+    },
+    {
+      "lemma": "therophyte",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Surviving unfavorable seasons only as seeds gives an explicit botanical extension of annual, not a synonym for the everyday yearly adjective.",
+      "beforeHash": "600fb400fde1552e57adb8901fa0401101dc1b3fe79340cb33e557a376361cfd",
+      "sourceSenseId": "wiktionary:8cdb9e7fbba9a9d445bab88a"
+    },
+    {
+      "lemma": "thighs",
+      "hold": true,
+      "reason": "No exact plural source mapping was recovered, and lap is not interchangeable with thighs in every context.",
+      "beforeHash": "df5d796a3d8c2f80f5fd225b7f99349b0031be5e6885d4f7eead59b3e37085c1"
+    },
+    {
+      "lemma": "thirstiness",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A physiological need to drink independently explains the thirst meaning, distinct from dry climate or metaphorical desire.",
+      "beforeHash": "eedf5a1b69af0d504aec7ec0ceb2c4db7467789c9b1d872ebd29844329eaf8d9",
+      "sourceSenseId": "source-25fd3928d1be1df9dda0"
+    },
+    {
+      "lemma": "three-bagger",
+      "hold": true,
+      "reason": "The baseball hit is sourced but not an appropriate extension of the sole Business triple anchor without a relevant sports context.",
+      "beforeHash": "6956f441b2e1f8e4fc41a14fd8102fa423d4ef29725d37dcfa4e7f356a28f7e2"
+    },
+    {
+      "lemma": "three-basehit",
+      "hold": true,
+      "reason": "No source verifies the malformed phrase, and the proposed baseball meaning does not fit the only Business triple anchor.",
+      "beforeHash": "f30aa322260f40cbb9ec4cc3d68e33a14d75779aefcaab1bf97a1585df64c15a"
+    },
+    {
+      "lemma": "tidiness",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Neatness and orderliness directly explain the intended quality, rather than a circular tidy pointer or a claim about hygiene.",
+      "beforeHash": "78d5a1d7d67b4bfd1498dd3ffb1053aee3ff3248cbc4bbafcc25a593f0bc03e5",
+      "sourceSenseId": "source-da577071cdf89bfe5ee4"
+    },
+    {
+      "lemma": "timberland",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Forested land viewed for timber potential is explicitly defined; actual active management is not made a requirement.",
+      "beforeHash": "b82a484573a339f75ee5d3c165d0f1436a3900d15c29336ea2847702c3089d47",
+      "sourceSenseId": "wiktionary:0b6265a01cd3e9a147771fa7"
+    },
+    {
+      "lemma": "timpani",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The tunable hemispherical percussion instrument is directly described and fits drum vocabulary without relying on the vague precision-kettledrums wording.",
+      "beforeHash": "3d0c4628851556776603dfd13b96a4e1ae0d4db29f31e0189fc1941c086071b0",
+      "sourceSenseId": "source-5b6867d6307812966c71"
+    },
+    {
+      "lemma": "toetip",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The tip of a toe or its enclosure is explicitly sourced; retain rare status and distinguish the noun from the action of tiptoeing.",
+      "beforeHash": "8db2b9b4009b4cf7cd2c97873015d0e52055cc04b9bbf10468cf31b7e6c7e406",
+      "sourceSenseId": "wiktionary:acea1125bd5ad6d9c6320fea"
+    },
+    {
+      "lemma": "toggle",
+      "source": "oewn",
+      "sense": 4,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The hinged two-position switch is precisely defined and fits the switch anchor without mixing the separate clothing fastener sense.",
+      "beforeHash": "380ea8b60f6fa370a340d95be6c4f4e4a2ac170586fc7220a3ff45487623bb00",
+      "sourceSenseId": "oewn:04453086-n:toggle%1:06:01::"
+    },
+    {
+      "lemma": "topbunk",
+      "hold": true,
+      "reason": "No exact source verifies the concatenated phrase; the intended upper bed requires a reviewed spaced-form mapping.",
+      "beforeHash": "0e26da7a7123842337308d22079a1b75dadaeb9bf917ea4855b159284e8db3c8"
+    },
+    {
+      "lemma": "tourney",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The series-of-games sporting competition is clearly explained; the unrelated Fitness tilt-to-jousting connection is not promoted.",
+      "beforeHash": "83b7783789ec4b679fe08e9d53be55a56e0bb8ee0dc2b0f5a63a2a9c67c4bee2",
+      "sourceSenseId": "source-d0c7eca672cfb5a0aaf6"
+    },
+    {
+      "lemma": "towage",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Hauling by a hitch or rope directly verifies the towing act, correcting the draft implication that the word cannot describe the act itself.",
+      "beforeHash": "f204554aa997af89f1baa96b53e75078d8831ebe44e267a8196cccc33ecf0f2f",
+      "sourceSenseId": "source-ee6e8adb5fc471f89c18"
+    },
+    {
+      "lemma": "trailblazing",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Innovative or pioneering is explicitly supplied by the source without assuming every instance sets a lasting new standard.",
+      "beforeHash": "65bddac7a99e1113a3f231e14cff5c72d1d493b4cc61fe769fc40b6f356bcef7",
+      "sourceSenseId": "wiktionary:4ba176a15e993049efa1cbb8"
+    },
+    {
+      "lemma": "trailing",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Following tracks or marks directly verifies the pursuit noun; secrecy and intent to capture are not required by the definition.",
+      "beforeHash": "f08b44275cea1cc4342ca3c66c97e9fa4d1ef38fb94df5b50d42f23d1ab88449",
+      "sourceSenseId": "source-d9172cb13b215cc2925c"
+    },
+    {
+      "lemma": "transcriber",
+      "source": "wordnet",
+      "sense": 4,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The musical arranger sense explicitly matches adaptation for voices or instruments, not the unrelated speech-transcription alternatives.",
+      "beforeHash": "d32bdcb8ba8d551528c67e22540f1b6ee79f916d3523fe6c71cffbffab16950e",
+      "sourceSenseId": "source-9f57570c2feaeac41a1f"
+    },
+    {
+      "lemma": "transmissivity",
+      "hold": true,
+      "reason": "The radiation candidate gives a simple transmitted-to-received ratio without resolving the intended intrinsic material property versus transmittance distinction; aquifer flow is unrelated.",
+      "beforeHash": "8a74a9d2ad513d21ba4b6caf9ef12887a319b0c0cce6c2aa6aedc57277c2bddc"
+    },
+    {
+      "lemma": "transmittance",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The fraction of incident radiation passing through a substance is explicit and supports academic optics, not organizational transparency.",
+      "beforeHash": "8a8fd44137ff26d9a377aa4302c459819d4a83e0900b067d3d702b1ea5c7c2ed",
+      "sourceSenseId": "wiktionary:af9caab3bcb0550b97568b10"
+    },
+    {
+      "lemma": "transnationalization",
+      "hold": true,
+      "reason": "No exact attributable entry was recovered; the model's cross-border description cannot serve as factual evidence.",
+      "beforeHash": "2f7203510637cc8e537e78abb1a657eadc2ece30e6934e2a66cfed73bc5948fb"
+    },
+    {
+      "lemma": "transnationally",
+      "hold": true,
+      "reason": "The sole candidate repeats transnational without explaining the cross-border meaning independently.",
+      "beforeHash": "5093323e0d4da52297b932be5ae2b2545ad82c22b646525ad02f4dcee2c69281"
+    },
+    {
+      "lemma": "treacle",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Sugar-refining syrup is clearly defined for food vocabulary; retain UK/Ireland labels and distinguish it from honey rather than calling them interchangeable.",
+      "beforeHash": "f5df0fb2242c1fcaba2406e4a7e4654965dec15956d4f73507e0fb3753506bda",
+      "sourceSenseId": "wiktionary:6695dc14ad842d9551fffbff"
+    },
+    {
+      "lemma": "treadle",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The foot-operated pedal or lever generating motion is directly explained and fits mechanical lever vocabulary.",
+      "beforeHash": "12c9785aa657ef51597bfcd36da949ac4f7acf13fa90622ef8660cccc12911bb",
+      "sourceSenseId": "wiktionary:7e0d7d4ac96194b8d3de77af"
+    },
+    {
+      "lemma": "treadwheel",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The foot-driven large wheel is explicitly defined and clarifies the older mechanical treadmill relation without presenting it as modern gym equipment.",
+      "beforeHash": "935cc74ffe5d8110d463d935875e52abe591be3a6760bb994f4f2d1abd974112",
+      "sourceSenseId": "wiktionary:9862b270fc14e85cf0f1f55b"
+    },
+    {
+      "lemma": "tresses",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A head of hair, particularly long hair, is directly sourced; luxurious texture or poetic register is not asserted without labels.",
+      "beforeHash": "6340c9dd44e7096acb0efea972c9205dbed92d77bc7c254f75bee3d0fe9a7c98",
+      "sourceSenseId": "wiktionary:dbb154cd77a73b1b3532fb15"
+    },
+    {
+      "lemma": "triacylglycerol",
+      "hold": true,
+      "reason": "The approved nutrition scope remains valid, but the sole complex cross-reference triglyceride still does not explain the chemical meaning required by the earlier content-depth hold.",
+      "beforeHash": "8a93de2232a54712feb531d98bbd8a5686929ec02f0d35d947a68f8f923fa219"
+    },
+    {
+      "lemma": "tribune",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "business"
+      ],
+      "reason": "The public advocate speaking on behalf of people fits populist context; retain figurative status and do not substitute an ancient Roman office.",
+      "beforeHash": "106c68e5c48e5e66c46e72cde1b85631453da80895778f861ba5069d92406b46",
+      "sourceSenseId": "wiktionary:e72cf22da05cbf26f135f40f"
+    },
+    {
+      "lemma": "triggering",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Initiation of an event or process is directly defined, supporting activation without adding unsupported psychological or mechanical specifics.",
+      "beforeHash": "5648e1a135845558969a5d85d22fd5ceacb03e0a1a624b0ceb04925cc8726f45",
+      "sourceSenseId": "wiktionary:91dc67dd94f083284a403bd6"
+    },
+    {
+      "lemma": "troyounce",
+      "hold": true,
+      "reason": "The concatenated unit name lacks exact source evidence; a precise precious-metal unit cannot be inferred safely from the ordinary ounce anchor.",
+      "beforeHash": "a5273c26dda5a30ac1dfc43261b668eaae933cb64ec3933243329acdb095fddd"
+    }
+  ]
+}

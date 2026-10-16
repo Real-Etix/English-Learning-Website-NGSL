@@ -1,0 +1,332 @@
+{
+  "id": "004",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T04:03:00Z",
+  "decisions": [
+    {
+      "lemma": "-hydroxypropanoate",
+      "hold": true,
+      "reason": "The leading-hyphen chemical name appears incomplete and no exact factual candidate was found in cached Wiktionary, local WordNet or OEWN. Do not guess a chemical locant or identity.",
+      "beforeHash": "80672d48ed5a64cd1f8d76a86451e1d84532295c5c3be0b898f7ad5c5151a987"
+    },
+    {
+      "lemma": "abdominals",
+      "hold": true,
+      "reason": "No extracted self-contained definition is bound to this plural identity in the three checked sources. Preserve the word hidden; this is an evidence gap, not a claim that the plural is invalid.",
+      "beforeHash": "fbe3b07d8180c163732a25861cded5bb9e64e3e1a0a252024a8913788de16ca0"
+    },
+    {
+      "lemma": "acceding",
+      "hold": true,
+      "reason": "No exact factual candidate was returned, and the proposed affirmative comparison mixes a participle with a general yes-response adjective. Do not fabricate an inflected-sense definition.",
+      "beforeHash": "f69dba560fa03c74077a612a74397e65135cfdd54f3df6af380fca5d36c7c541"
+    },
+    {
+      "lemma": "accountholder",
+      "hold": true,
+      "reason": "The closed-up identity has no exact supported candidate in the checked sources. A spaced account-holder repair needs explicit headword evidence before publication.",
+      "beforeHash": "73128f46fc0a2c36fd3cd3eaa95637af37faad442913cfa73ea5e423e167b38e"
+    },
+    {
+      "lemma": "accoutrements",
+      "hold": true,
+      "reason": "The plural has no exact self-contained factual candidate. Publishing the singular accoutrement does not automatically verify this separate kit/equipment record or its register claims.",
+      "beforeHash": "7b687853933acb10446803d326ce1f97f4b6ae1cabbf6862c9e4d1b44c023bd3"
+    },
+    {
+      "lemma": "accumulator",
+      "hold": true,
+      "reason": "Local WordNet's person sense specifically collects rent/taxes, unlike the proposed gradual collection-building context. Battery/computing senses do not resolve it; the Wiktionary generic sense is circular.",
+      "beforeHash": "1786e51402f2d42e0ef0d2b99583a0cca358fb937dd8ada2117c1934d86a4eff"
+    },
+    {
+      "lemma": "acquirer",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "WordNet explains a corporation gaining financial control through cash or stock, directly matching the business-acquisition context. Exclude merchant-payment processing and the circular generic person definition.",
+      "beforeHash": "76238741e50cd7f7b2cd6c06cbf5b6e9e55461df8a0ac4157dd3421651aa18c7",
+      "sourceSenseId": "source-86283fad4001edddbfa8"
+    },
+    {
+      "lemma": "acrimoniously",
+      "hold": true,
+      "reason": "The only candidate repeats acrimonious/acrimony without explaining bitter or hostile manner, and local WordNet returned no fuller definition. Keep the pedagogically unclear meaning hidden.",
+      "beforeHash": "ad8a6ee06a565811b3f18093c22d8b8871cbe7d11a7457e657ce980ea64894b3"
+    },
+    {
+      "lemma": "adjacently",
+      "hold": true,
+      "reason": "The available definition only repeats adjacent. No self-contained explanation was found in the local evidence, so the implied next-to meaning is not authored as if dictionary text.",
+      "beforeHash": "651547498dc3fbf57898ad2f6c07c14aaac00f14a527b1da26a7fec7914420b0"
+    },
+    {
+      "lemma": "adjudicative",
+      "hold": true,
+      "reason": "Both Wiktionary and WordNet define the adjective through adjudicating/adjudication without a standalone explanation. Keep it hidden rather than borrowing the model's legal-process wording.",
+      "beforeHash": "147680e2bacdb97d54f554b9f96d009f6aa9ebfea7a3ebee2ab24991e13eaa8e"
+    },
+    {
+      "lemma": "adjudicators",
+      "hold": true,
+      "reason": "No exact plural definition was extracted from the checked sources. A jury equivalence is also too broad; individual expert adjudicators and juries are not automatically identical.",
+      "beforeHash": "e65242461c7bc9f9c26a6a95e9db5927cfa53ecea03b0ef6364f5e184613250a"
+    },
+    {
+      "lemma": "admonisher",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "WordNet supplies a full definition of someone warning to prevent a mistake. This resolves the circular Wiktionary entry and matches the cautioning-person context without equating it with every censor.",
+      "beforeHash": "5867c320eb4b2bf8c8db92e646a6f3b25a6955492e76051a3fc969f257931e92",
+      "sourceSenseId": "source-05ece8eb4698fc16bfc2"
+    },
+    {
+      "lemma": "adornments",
+      "hold": true,
+      "reason": "No exact self-contained plural candidate is available in the checked sources. Do not publish the unverified jewellery comparison merely by assuming all decorative items are jewellery.",
+      "beforeHash": "c19152cf637c0b534db9be655fe7c399b00e97da9bf047a7543a4f26ea3cf376"
+    },
+    {
+      "lemma": "airarm",
+      "hold": true,
+      "reason": "The closed-up headword lacks an exact factual candidate and its proposed military branch meaning is unrelated to ordinary Business aviation. Keep both identity and scope concerns unresolved.",
+      "beforeHash": "849583cf4f3d9bb3f3c5f151adbf529e2df90294747b33bbb665405e46abd85b"
+    },
+    {
+      "lemma": "airbase",
+      "hold": true,
+      "reason": "No exact factual candidate was returned for this identity. The proposed military specialization also lacks an established Business/TOEIC learning context.",
+      "beforeHash": "ef7cbf22d6c390b173eddea5123fd763a526121da6a3a382a50d08249bb7b3b4"
+    },
+    {
+      "lemma": "amenability",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The trait of being cooperative is a self-contained meaning that fits professional willingness. It resolves the circular amenable definition without adding a formality ranking.",
+      "beforeHash": "dac7305ab7dfa09dac2262aa40a4507a4054426b6bb2d6f2a4598d138ac33bfa",
+      "sourceSenseId": "source-b98aecead6e5ecb61f68"
+    },
+    {
+      "lemma": "anatomization",
+      "hold": true,
+      "reason": "The available candidate only says a process or act of anatomizing. No standalone structural-examination definition is present, so the earlier model explanation is not treated as factual evidence.",
+      "beforeHash": "712182cf5ea8f9d56964bc300ff2333ad682ee500cec7b059f08143768c3f41b"
+    },
+    {
+      "lemma": "ancientness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "WordNet's extreme-oldness definition directly explains the age quality intended by antiquity. It does not assert a particular historical period.",
+      "beforeHash": "e6d1610abd1a2089b351bd1a79cb4daf2396c79c6ffd7771caad6d2a7c244a7f",
+      "sourceSenseId": "source-55d5876308e8d5105f34"
+    },
+    {
+      "lemma": "answerability",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Responsibility to someone or for an activity clearly matches accountability. The source resolves the circular answerable entry without importing unsupported legal or register details.",
+      "beforeHash": "fc2c5dc09e763b26f78b7fa734c88f5dd3f896349cae37cf3051961f8b73a4cd",
+      "sourceSenseId": "source-00ad4024a0f2a54cc177"
+    },
+    {
+      "lemma": "antiquities",
+      "hold": true,
+      "reason": "No self-contained exact plural candidate was extracted for historical objects. Do not silently reuse a singular abstract antiquity sense as an object definition.",
+      "beforeHash": "d197c281c2d0d7dcc76ad329077d7b83c81314dbb4d24937ca37f215566d2ffa"
+    },
+    {
+      "lemma": "apothecaryounce",
+      "hold": true,
+      "reason": "The collapsed historical measurement name has no exact candidate, and the proposed medical-weight detail is not relevant to ordinary Business/Fitness ounce usage. Do not guess a corrected unit name.",
+      "beforeHash": "898b749f843be816fcda8491b56fbb2af53286298ca56b6a47e6d49467b63c24"
+    },
+    {
+      "lemma": "appointments",
+      "hold": true,
+      "reason": "No sourced furnishings meaning was extracted for this plural identity. The common scheduled-meeting sense must not be substituted for the intended furniture anchor.",
+      "beforeHash": "41f42f1b627dff583c9af7c84ea97df47812bb4d222e97cd86fbf38b8d128c9b"
+    },
+    {
+      "lemma": "armaments",
+      "hold": true,
+      "reason": "No exact plural candidate was returned and the proposed meaning expands ordinary hardware into military arsenals. Keep unsupported identity and specialist relevance hidden.",
+      "beforeHash": "a578985d831905558411a0586af287109e6c01776d1e7bc28dba5f96ad49721f"
+    },
+    {
+      "lemma": "artisanal",
+      "hold": true,
+      "reason": "The checked cached/exact-member sources did not provide a retained definition. The word may be valid, but the model's traditional-method and quality claims are insufficient for release.",
+      "beforeHash": "c738ee6843cbc8a9f05399156938fed4466e3946c28cf2dd6c001999f2be7e33"
+    },
+    {
+      "lemma": "ascertainment",
+      "hold": true,
+      "reason": "Only the circular act-of-ascertaining definition is available. A complete sourced explanation of discovering or establishing facts is still needed.",
+      "beforeHash": "ab5db2a71fd7f6d76a30eda5cde0c11f2732715ed5cf550fdd2ecb4d5959fb58"
+    },
+    {
+      "lemma": "ascot",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "WordNet's cravat with wide square ends is the intended neckwear meaning, unlike the cached regional water-heater sense. Publish the clothing sense only.",
+      "beforeHash": "fbdad21dec3d7bce469cb990ca3c57707993bae2696f0deec235131bf18824d0",
+      "sourceSenseId": "source-720e5358058b3d139729"
+    },
+    {
+      "lemma": "attainability",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Being achievable is a clear sourced explanation of possible achievement. It is not identical to present availability; no such equivalence or connection is promoted.",
+      "beforeHash": "fdcab68603d7476c5c3bd0ab696c71329d217d0e67ea761093bd542755afe10e",
+      "sourceSenseId": "source-0bd65d7af376c17cffcf"
+    },
+    {
+      "lemma": "autoglass",
+      "hold": true,
+      "reason": "No exact factual candidate was extracted and vehicle windows are unrelated to the Fitness windshield anchor. Retain the record without inventing a fitness use.",
+      "beforeHash": "63a7ce9b6a53c3f4a59aa13c69804f88164d31ab8b14ae008b5afdcf4141bf4b"
+    },
+    {
+      "lemma": "automaticdishwasher",
+      "hold": true,
+      "reason": "The collapsed phrase has no exact factual candidate in the checked sources. It needs a separately evidenced spaced-headword correction before it can be safely released.",
+      "beforeHash": "2966a502dd6893480ed75f6cb9382d8ac205fbdfc09c9ff461479ef7f70f44d3"
+    },
+    {
+      "lemma": "avocational",
+      "hold": true,
+      "reason": "Both available definitions repeat avocation without explaining a hobby or non-primary occupation. Do not present the model's serious-hobby restriction as dictionary truth.",
+      "beforeHash": "f9ded2af70dae988121a98885a2322fbabdcb26176f3905524083bd48920f035"
+    },
+    {
+      "lemma": "avoirdupois",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The system based on a sixteen-ounce pound is an explicit, appropriate measurement definition. It avoids confusing historical date-limited systems or the separate excess-body-weight sense.",
+      "beforeHash": "48b7898042e17b3c0b7466ba9b654b83e99f5d22713dbc0e9ea9794eb81b2ced",
+      "sourceSenseId": "source-e2526e6da731f0dcbf50"
+    },
+    {
+      "lemma": "basement-level",
+      "hold": true,
+      "reason": "No exact factual definition was found for this compound. The model's entirely-or-mostly-underground floor description remains unverified rather than being published as sourced text.",
+      "beforeHash": "bbc6cbd485751bdc07e4a560a1fd7bbc1d0ff305b6c57017e1aa073cd90939b2"
+    },
+    {
+      "lemma": "beams",
+      "hold": true,
+      "reason": "No exact plural structural-wood candidate was retained. A complete definition must be tied to the load-bearing construction sense, not light rays or an unrelated beam meaning.",
+      "beforeHash": "f0cbf893f33d1715f71b2a7166613fe9176555fea5f144de02a6b936c59e3075"
+    },
+    {
+      "lemma": "befittingly",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "WordNet explicitly explains acting appropriately or suitably for circumstances. This resolves the circular befitting-manner definition and fits the duly context without social-status claims.",
+      "beforeHash": "5870fa29dcf028fc7c3a320f68c7e5ca3d8bd580e1c292b7d517efb1d396282d",
+      "sourceSenseId": "source-5dbcda6d0ca652ceccb0"
+    },
+    {
+      "lemma": "bestowal",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Conferring an honor or presenting a gift is the exact intended act of giving, explained directly in WordNet. The separate gift-as-object sense is not selected.",
+      "beforeHash": "632bd5bf8e70372e3eb6a337a46c4049c0c5b08c3b76c7b69c7350388ec8e316",
+      "sourceSenseId": "source-71271aaea331335600ef"
+    },
+    {
+      "lemma": "bettingshop",
+      "hold": true,
+      "reason": "The closed-up phrase lacks an exact source candidate. A spaced repair needs attributable identity evidence, and betting shops must not simply be equated with casinos.",
+      "beforeHash": "efb11df18602df0a8b125371f926831d586fecaf9ff6ac233c21a5cc12761ccb"
+    },
+    {
+      "lemma": "biospheric",
+      "hold": true,
+      "reason": "The source defines this through biosphere/biospherics only. A clearer self-contained scientific explanation is needed before approving the old global-ecology comparison.",
+      "beforeHash": "d0bc51fa88d05abf1487a664ab502b43b36b040bad60e28e3f6e68eb1ab74dfc"
+    },
+    {
+      "lemma": "blaringly",
+      "hold": true,
+      "reason": "The checked sources provide no exact factual candidate. Do not publish the model's harsh intrusive sound description without attributable definition evidence.",
+      "beforeHash": "c021d1ca86d5c4b72000d4fcc2b756bd1bce3a6977a5a4855d3e21a233fddd97"
+    },
+    {
+      "lemma": "bountifully",
+      "hold": true,
+      "reason": "Both sources only say in a bountiful manner, and the original Fitness anchor instead proposes natural/agricultural yield. Meaning clarity and topic relevance remain unresolved.",
+      "beforeHash": "cec8deaab4902418b9b01fdca36222f3e671796124141e34bfa079475302e504"
+    },
+    {
+      "lemma": "bovines",
+      "hold": true,
+      "reason": "No exact plural definition was extracted. The biological-group relationship to cattle needs sourced identity and scope, not an automatic singular-to-plural rewrite.",
+      "beforeHash": "41646604d17069ddb2bece72472433d0bb54f412bcd953e1b9685cb1dc274ce1"
+    },
+    {
+      "lemma": "brachialdelt",
+      "hold": true,
+      "reason": "No exact factual candidate supports this compressed anatomical-looking term. Do not infer a composite muscle name from the model's deltoid comparison.",
+      "beforeHash": "49e5c29017a117212355da32ace3cad0817e8080306109e51ceb133bca29fa4b"
+    },
+    {
+      "lemma": "businessday",
+      "hold": true,
+      "reason": "The spaced headword and scope were previously corrected, but no usable exact meaning survived the current factual extraction. The correction alone does not justify publishing the unverified definition.",
+      "beforeHash": "8ae92d4067919cebc03e85726bcc5229e9bbae7ec1fb5cba43d3d46bf7c3d789"
+    },
+    {
+      "lemma": "cambrure",
+      "hold": true,
+      "reason": "No exact English candidate was returned for the proposed ballet backbend. Retain hidden pending attributable English usage rather than assuming a foreign technical term is verified.",
+      "beforeHash": "90c2a66aef17b2e6f0e364c8e4ec2da48533f123cfb4e76726519889c19699cd"
+    },
+    {
+      "lemma": "canap",
+      "hold": true,
+      "reason": "The corrected canapé identity is recorded, but the checked sources have not supplied a usable exact appetizer meaning. Do not substitute a furniture or foreign-language sense.",
+      "beforeHash": "670a7d89c2065ad9dc9c778825a9c2e89ab7fd20dff99c0aa4951506b53b86bf"
+    },
+    {
+      "lemma": "capitalpunishment",
+      "hold": true,
+      "reason": "The collapsed phrase has no exact candidate in the checked sources. A properly sourced spaced-headword repair is required before selecting the legal execution meaning.",
+      "beforeHash": "b74cdcec843bdb2068ff2215dab2afd7f1d6a2becd6a55467ed8f897368156eb"
+    }
+  ]
+}

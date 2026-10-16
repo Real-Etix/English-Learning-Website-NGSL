@@ -43,6 +43,30 @@ function senseButtons(markup: string) {
 }
 
 describe("WordLearningDrawer", () => {
+  it("shows exact sense usage restrictions without rendering source markup as HTML", () => {
+    const labeled = { ...profile, senses: [{ ...profile.senses[0]!, labels: ["of liquids", "<b>not markup</b>"] }] };
+    const markup = renderToStaticMarkup(<WordLearningDrawer profile={labeled} display="anchor" partOfSpeech="noun" loadState="ready" errorMessage={null}
+      chart={{ name: "NGSL", hue: "#BFD9F2", glyph: "A" }} held={false} solid={false} xp={10} rarity={{ word: "Common", dot: "#BFD9F2", text: "" }}
+      selectedSenseId="wiki:0" onSelectSense={() => {}} onClose={() => {}} onRetry={() => {}} onNavigate={() => {}} onOpenQuiz={() => {}}
+      onCompose={() => {}} onSpeak={() => {}} onPlayAudio={() => {}} displayConnection={lemma => lemma} />);
+    expect(markup).toContain('aria-label="Usage labels"');
+    expect(markup).toContain("of liquids");
+    expect(markup).toContain("&lt;b&gt;not markup&lt;/b&gt;");
+    expect(markup).not.toContain("<b>not markup</b>");
+  });
+
+  it("labels limited examples and keeps the meaning claim available while disabling composition", () => {
+    const limited = { ...profile, senses: [{ ...profile.senses[0]!, limitedExamples: true, canPractice: false, canClaim: true }] };
+    const render = (held: boolean) => renderToStaticMarkup(<WordLearningDrawer profile={limited} display="anchor" partOfSpeech="noun" loadState="ready" errorMessage={null}
+      chart={{ name: "NGSL", hue: "#BFD9F2", glyph: "A" }} held={held} solid={false} xp={10} rarity={{ word: "Common", dot: "#BFD9F2", text: "" }}
+      selectedSenseId="wiki:0" onSelectSense={() => {}} onClose={() => {}} onRetry={() => {}} onNavigate={() => {}} onOpenQuiz={() => {}}
+      onCompose={() => {}} onSpeak={() => {}} onPlayAudio={() => {}} displayConnection={lemma => lemma} />);
+    expect(render(false)).toContain("Limited examples");
+    expect(render(false).match(/<button[^>]*>Check what you know, then claim it<\/button>/)?.[0]).not.toContain("disabled");
+    expect(render(true).match(/<button[^>]*>✎ Use it in a sentence<\/button>/)?.[0]).toContain("disabled");
+    expect(render(true)).toContain("Sentence practice needs a reviewed, sourced example.");
+  });
+
   it("keeps multiline sense cards at their natural height in a short drawer", () => {
     const markup = renderToStaticMarkup(
       <WordLearningDrawer

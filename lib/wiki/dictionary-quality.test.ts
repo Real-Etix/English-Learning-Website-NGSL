@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import type { ContentSourceRef, VocabularyRecord } from "../vocabulary/schema";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
+import { meaningReviewSnapshot } from "../vocabulary/meaning-review";
 import {
   auditDictionaryRecords,
   hasStrictFailures,
@@ -11,6 +12,19 @@ import {
 
 const fixture = vocabularyRecordFixture();
 const source = fixture.sources[0]!;
+
+it("counts reviewed limited-example exceptions explicitly and flags stale approvals", () => {
+  const word = vocabularyRecordFixture();
+  word.connections = [];
+  const sense = word.senses[0]!;
+  sense.examples = [];
+  sense.meaningReview = { policy: "limited-examples-v1", reason: "Reviewed meaning", reviewedAt: "2026-10-16T00:00:00.000Z", contentSnapshot: meaningReviewSnapshot(word, sense) };
+  const report = auditDictionaryRecords([word]);
+  expect(report.total.limitedExampleSenses).toBe(1);
+  expect(hasStrictFailures(report)).toBe(false);
+  sense.definition = "A changed meaning.";
+  expect(hasStrictFailures(auditDictionaryRecords([word]))).toBe(true);
+});
 
 function record(overrides: Partial<VocabularyRecord> = {}): VocabularyRecord {
   return {
@@ -174,7 +188,7 @@ describe("auditDictionaryRecords", () => {
     expect(report.total.connections).toEqual({ published: 3, unreviewed: 1, hidden: 1, unexplained: 3 });
     expect(report.total.advanced).toEqual({ quarantined: 1, reviewable: 1, published: 1 });
     expect(report.total.claimableSenses).toBe(2);
-    expect(report.total.sources).toEqual({ curated: 1, wordnet: 2, dictionaryapi: 1, tatoeba: 1, llm: 1 });
+    expect(report.total.sources).toEqual({ curated: 1, wordnet: 2, dictionaryapi: 1, tatoeba: 1, llm: 1, wiktionary: 0, oewn: 0, nhgri: 0, "nlm-mesh": 0 });
     expect(report.total.strict).toEqual({
       publishedPlaceholders: 0,
       publishedUnsupportedSenses: 0,
@@ -198,6 +212,13 @@ describe("auditDictionaryRecords", () => {
     expect(Object.keys(report.lists)).toEqual(["__proto__", "academic", "business", "fitness", "ngsl", "toeic", "total"]);
     expect(Object.keys(report.total.edges.byType)).toEqual(["antonym", "builds_on", "collocation", "intensity", "synonym"]);
     expect(Object.getPrototypeOf(report.total.edges.byType)).toBeNull();
+  });
+
+  it("counts newly registered factual sources once per record instead of silently omitting them", () => {
+    const report = auditDictionaryRecords([record({ sources: [providerRef("wiktionary"), providerRef("oewn"), providerRef("oewn")] })]);
+    expect(report.total.sources.wiktionary).toBe(1);
+    expect(report.total.sources.oewn).toBe(1);
+    expect(report.lists.ngsl.sources.oewn).toBe(1);
   });
 
   it("counts global and per-list dictionary quality from primary canonical senses", () => {

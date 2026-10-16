@@ -1,0 +1,71 @@
+{
+  "id": "001",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T07:36:57.886Z",
+  "decisions": [
+    {
+      "lemma": "abdominals",
+      "head": "abdominal",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Wiktionary explicitly identifies the noun plural of abdominal; WordNet's noun sense identifies the abdominal muscles. This resolves the plural identity gap and fits the existing anatomy anchor; no synonym edge or sentence example is approved.",
+      "beforeHash": "fbe3b07d8180c163732a25861cded5bb9e64e3e1a0a252024a8913788de16ca0",
+      "sourceSenseId": "source-ae3bce3e34dddddd1278"
+    },
+    {
+      "lemma": "boots",
+      "head": "boot",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The exact Wiktionary noun-plural relation and WordNet footwear sense resolve the earlier slang/historical mismatch. Appropriate for the TOEIC footwear anchor; retain the plural identity and do not release unrelated senses or edges.",
+      "beforeHash": "701a8e8e6b7150498ef7a68cf1f48b55f81e820f6085b00c97d7b0d5b5e80e81",
+      "sourceSenseId": "source-eb6cf683edba76c8c13d"
+    },
+    {
+      "lemma": "accountholder",
+      "head": "account holder",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Wiktionary explicitly records the closed form as an alternative of account holder and defines the latter as someone with an account, including a bank account. This fits the Business depositor context without claiming the two are exact synonyms.",
+      "beforeHash": "73128f46fc0a2c36fd3cd3eaa95637af37faad442913cfa73ea5e423e167b38e",
+      "sourceSenseId": "wiktionary:5bf5405cfd2fa3cec6c96151"
+    },
+    {
+      "lemma": "businessday",
+      "head": "business day",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The exact spaced Wiktionary headword defines a day on which business is conducted. It confirms the historical space-loss repair and TOEIC working-day context; stable ID is preserved and no universal Monday-to-Friday equivalence is asserted.",
+      "beforeHash": "8ae92d4067919cebc03e85726bcc5229e9bbae7ec1fb5cba43d3d46bf7c3d789",
+      "sourceSenseId": "wiktionary:4097369703d31f7e7bbb758f"
+    },
+    {
+      "lemma": "antiquities",
+      "head": "antiquity",
+      "source": "wordnet",
+      "sense": 2,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Wiktionary's explicit noun-plural relation joins WordNet's concrete artifact-surviving-from-the-past sense, not the abstract historical-period or oldness senses. This resolves the identity gap for the Academic archaeology anchor.",
+      "beforeHash": "d197c281c2d0d7dcc76ad329077d7b83c81314dbb4d24937ca37f215566d2ffa",
+      "sourceSenseId": "source-f5b083f56dafbe29619b"
+    }
+  ]
+}

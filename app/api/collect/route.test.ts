@@ -25,6 +25,7 @@ vi.mock("@/lib/vocabulary/ndjson-repository", () => ({
 import { vocabularyRecordFixture } from "@/lib/vocabulary/test-fixtures";
 import type { VocabularyRecord } from "@/lib/vocabulary/schema";
 import { POST } from "./route";
+import { meaningReviewSnapshot } from "@/lib/vocabulary/meaning-review";
 
 const senseId = "bank:wordnet:1";
 
@@ -82,6 +83,20 @@ describe("POST /api/collect", () => {
 
     expect(response.status).toBe(200);
     expect(mocks.collectWord).toHaveBeenCalledWith("owner-1", "bank", senseId);
+  });
+
+  it("accepts a reviewed meaning-only claim and rejects its stale review without a mutation", async () => {
+    const record = claimableRecord();
+    const sense = record.senses[0]!;
+    sense.examples = [];
+    sense.meaningReview = { policy: "limited-examples-v1", reason: "Reviewed meaning", reviewedAt: "2026-10-16T00:00:00.000Z", contentSnapshot: meaningReviewSnapshot(record, sense) };
+    mocks.loadGeneratedWord.mockResolvedValue(record);
+    expect((await POST(request({ lemma: "bank", senseId }))).status).toBe(200);
+    expect(mocks.collectWord).toHaveBeenCalledOnce();
+    mocks.collectWord.mockClear();
+    sense.definition = "A different definition.";
+    expect((await POST(request({ lemma: "bank", senseId }))).status).toBe(409);
+    expect(mocks.collectWord).not.toHaveBeenCalled();
   });
 
   it("returns 409 for a hidden canonical record instead of reporting it unknown", async () => {

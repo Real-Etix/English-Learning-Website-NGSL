@@ -1,0 +1,347 @@
+{
+  "id": "019",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:27:48.000Z",
+  "decisions": [
+    {
+      "lemma": "methylxanthine",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The chemical group explicitly includes caffeine and explains its derivation, supporting caffeine-related ingredient vocabulary without supplement or treatment claims.",
+      "beforeHash": "8c0396c5c9b51dff37d75b627ef9a8f82f4b44368c614008c929041c48514164",
+      "sourceSenseId": "wiktionary:fae40c82306364bce0a9820c"
+    },
+    {
+      "lemma": "meticulousness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Strict attention to minute details is self-contained and relevant to careful work; precision of an outcome is not automatically guaranteed.",
+      "beforeHash": "1c1beba774ae9bbfb89834c645c48cefaa3dca1447541cae3d40f17a0b7175b7",
+      "sourceSenseId": "source-3b435ca55b76889b9b99"
+    },
+    {
+      "lemma": "metropole",
+      "hold": true,
+      "reason": "The source distinguishes a main city from a colonial parent-state; the sole business mainland gloss conflates geography and colonial status, leaving intended relevance unresolved.",
+      "beforeHash": "86dc538b20bf62252564b30c6526980ab7f64578e1ef281dd60d7b4185da3014"
+    },
+    {
+      "lemma": "micro-economist",
+      "hold": true,
+      "reason": "No exact evidence supports this hyphenated occupational spelling; a verified microeconomist identity mapping is needed.",
+      "beforeHash": "49301e1f17b31a8a458ca8011a21d43df2f6d41622048df179f98cb6fdff4f6e"
+    },
+    {
+      "lemma": "microbes",
+      "hold": true,
+      "reason": "No exact plural source sense is present, and microbes are not necessarily synonymous with bacteria; a reviewed identity and correct category definition are needed.",
+      "beforeHash": "7853051e68492de03c095920faba837a3a429ac35278950354a32fc2d4d569d1"
+    },
+    {
+      "lemma": "microchannel",
+      "hold": true,
+      "reason": "The available television and semiconductor meanings do not verify the proposed microfluidic passage; do not publish a mismatched technical sense.",
+      "beforeHash": "766ebc913cb734d9ee716b8d7b0e5caa5f5c2dd635a808847536ec1592385144"
+    },
+    {
+      "lemma": "microorganisms",
+      "hold": true,
+      "reason": "No exact plural entry or reviewed microorganism mapping is available; the proposed bacteria equivalence also needs a broader biological distinction.",
+      "beforeHash": "a6a4c5a035686773ddc9570ca8c2a9db20f438c7f20eaa518d9955862e47bea5"
+    },
+    {
+      "lemma": "microtube",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A microscopic tube, especially in specialized lasers, is explicitly defined and fits engineered small-tube study without claiming it is a natural capillary.",
+      "beforeHash": "2060dacfe34a82528da9b9f9685184b9a1566fe348f10abbcf85c868b0081f87",
+      "sourceSenseId": "wiktionary:39c3ac52a4d19b0ba89a0488"
+    },
+    {
+      "lemma": "microvessel",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A very small blood vessel, including capillary or arteriole, is a complete biological meaning and correctly broader than capillary alone.",
+      "beforeHash": "ba34b9535ab092b412621844f1064e303c6aedc168d44e326a720e76633b1f7f",
+      "sourceSenseId": "wiktionary:2709e2488822baad23399ed2"
+    },
+    {
+      "lemma": "mid-afternoon",
+      "hold": true,
+      "reason": "No exact source entry is available for this hyphenation; the specific 2-to-4-PM range cannot be inferred from the old gloss.",
+      "beforeHash": "af4bf4d45d1db2e13dce0028353a1054daddfd040f2cbb480f5ef7d893a74428"
+    },
+    {
+      "lemma": "midplane",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "A plane through the middle, especially of the body, is explicit and appropriate to anatomical positioning; a plane is not a line.",
+      "beforeHash": "5db46400744659264436c49c6eb30aaf15b6b4473c47e44856e3789f19720b31",
+      "sourceSenseId": "wiktionary:0d91ffe66cd0bfd8573c7e67"
+    },
+    {
+      "lemma": "midpoint",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A point equidistant between extremes is a complete meaning supporting middle; the unrelated punctuation sense is excluded.",
+      "beforeHash": "22a722ce5b3a9bb29d6bd12b2558f7baad35aded1c95645984a30ef8333ec5c2",
+      "sourceSenseId": "wiktionary:d01fb74366ddfc731915d1ad"
+    },
+    {
+      "lemma": "midsection",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The specified central torso region is a sourced anatomical sense relevant to abdomen, without implying every abdominal structure is identical to the region.",
+      "beforeHash": "559caed1106c2c39a3297393f1df20293a287964e4f2af0f1bf940d5c3c9c2b3",
+      "sourceSenseId": "wiktionary:778dad7d1e33fc035599f48a"
+    },
+    {
+      "lemma": "migr",
+      "hold": true,
+      "reason": "The stripped-accent fragment lacks exact evidence; do not guess an emigre identity or political motivation from the old exile gloss.",
+      "beforeHash": "91f2cb0662de966438a490172abec07796d2567bbdda55e30f5cb49a3b3f7534"
+    },
+    {
+      "lemma": "mineralogical",
+      "hold": true,
+      "reason": "The sole entry repeats mineralogy without explaining the study of minerals; the old technical-register gloss cannot replace learner-ready factual meaning.",
+      "beforeHash": "a87903de17078567bb4aaf3d7d206b4440be141554a862ed906ea3ea799e3b6d"
+    },
+    {
+      "lemma": "misapprehend",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Interpreting incorrectly or misunderstanding is explicit and directly matches the intended comprehension meaning, not every sense of miss.",
+      "beforeHash": "8372f10ddce545dcf6843e5a0216115ad865cd6c864befe06bbfb26fc50cf476",
+      "sourceSenseId": "wiktionary:3de841c6bd55d4184313e928"
+    },
+    {
+      "lemma": "modality",
+      "hold": true,
+      "reason": "The clear candidates are specific logical, grammatical, medical or sensory meanings; none verifies the proposed generic procedure synonym for fashion or mode.",
+      "beforeHash": "d53210f2d81e3177c3e21639961696d3fe9c00e4aa13450baccfd03b5699c72d"
+    },
+    {
+      "lemma": "modeling",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Constructing and using a computer model of a physical system is explicit and appropriate to simulation; retain US spelling labels and exclude fashion or sculpture.",
+      "beforeHash": "3219c20fc9e8563965aff8b7a59adfff2e36b141d82c12cbe8ca58b8f34d2b9c",
+      "sourceSenseId": "wiktionary:d202f3dcbf6d90b1cbdb67c6"
+    },
+    {
+      "lemma": "modulator",
+      "hold": true,
+      "reason": "The person and device entries repeat modulates, while the concrete entry concerns musical notation; the proposed signal-control meaning lacks a full explanation.",
+      "beforeHash": "e34d10c75ba32f22f853818617f6bdd10072d693ed2b3cb560aa33738ab2cace"
+    },
+    {
+      "lemma": "moiety",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A specific segment of a molecule is an explicit chemistry meaning; do not equate it with every radical or assert that it always retains identity in reactions.",
+      "beforeHash": "42bb4e22a0f582840e1a057b154921ddad435bce27e93e7bce0cfb63845d2009",
+      "sourceSenseId": "wiktionary:b548c4a8e40425d6b73c0eae"
+    },
+    {
+      "lemma": "moistening",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Making something slightly wet is a complete physical-process meaning relevant to water application; irrigation need not always be engineered or systematic.",
+      "beforeHash": "7a231a08369a7fabe40a8d5f80ce8ac1cb2d66d6d79372e0cd3f7b83e4bc8d98",
+      "sourceSenseId": "source-a02bf6140fe22946ec5a"
+    },
+    {
+      "lemma": "moisturization",
+      "hold": true,
+      "reason": "The sole entry repeats moisturizing and does not independently establish the proposed cosmetic or therapeutic meaning.",
+      "beforeHash": "dfa94521b1530dfdb8cb2c85d5559095cbbb5b4c9231b1d2951a440bab8a8725"
+    },
+    {
+      "lemma": "mol",
+      "hold": true,
+      "reason": "The cached definition conflates amount of substance with molecular weight expressed in grams; it is not suitable as an accurate learner definition of the SI unit.",
+      "beforeHash": "240fc31f09e58326b9782b9184656e41d1771196564bc02a0dfbd22029a5e2cc"
+    },
+    {
+      "lemma": "monetarily",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "academic",
+        "toeic"
+      ],
+      "reason": "In terms of money is fully explained and relevant to financial discussion; it need not refer specifically to monetary policy.",
+      "beforeHash": "66a246f88b6178f099e6e978c11acb742e117f3a8b80569aa5fb69d2f3ee21e1",
+      "sourceSenseId": "wiktionary:6d63372e87f1e42dc23772f0"
+    },
+    {
+      "lemma": "monosaccharide",
+      "hold": true,
+      "reason": "WordNet incorrectly includes sucrose, while the other candidate defines the class by a single ring and omits non-ring forms; these factual problems require better evidence.",
+      "beforeHash": "a0d2a477d8f41fbe5accd1116d8c28e5763dfdbe089542202b47a28656cab167"
+    },
+    {
+      "lemma": "morphemic",
+      "hold": true,
+      "reason": "Both entries depend on unexplained morphemes or morphemics; the old smallest-meaningful-unit gloss is not a substitute for sourced explanation.",
+      "beforeHash": "4e136d7c60f973422b286c7e0f15c4195a0e4083dd65ec3b4d1b77aa205ae58c"
+    },
+    {
+      "lemma": "morphometrics",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The measurement of shape is a complete scientific meaning and matches the quantitative aspect of morphology; retain uncountable usage.",
+      "beforeHash": "5ebbb22b357d36909594ca804e22a042bac147d8746ef6c317ee7c2b7bb894d1",
+      "sourceSenseId": "wiktionary:ecee17ae9155a856978d4ccb"
+    },
+    {
+      "lemma": "morphosyntactic",
+      "hold": true,
+      "reason": "The sole entry repeats morphosyntax without explaining the combination of morphology and syntax; clearer factual evidence is needed.",
+      "beforeHash": "a2eba8e73913229ae5ce8efbb01444a0773260718c183503238fac4dc258384a"
+    },
+    {
+      "lemma": "motion-picture",
+      "hold": true,
+      "reason": "The candidate is only an uncommon spelling-form pointer, not a self-contained meaning; a reviewed link to the base entry is still required.",
+      "beforeHash": "ff2bd8d29d5816b687079c5d5eeda62063ae2e75f96b3b4ced38a973cfcbbfd0"
+    },
+    {
+      "lemma": "motorbus",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A motorized bus or coach is an exact sourced compound meaning directly relevant to bus vocabulary.",
+      "beforeHash": "8abc216776d6dca7556532b9a827fe074874f02372cf302cc957eff32fedfd8e",
+      "sourceSenseId": "wiktionary:3d1dffdaa8bdaae6a67d76f0"
+    },
+    {
+      "lemma": "mtier",
+      "hold": true,
+      "reason": "The malformed accented-word spelling lacks exact evidence; do not infer metier identity or cultural prestige from the old niche gloss.",
+      "beforeHash": "f735567b31f15e5006e8780109575dce55bc634b24de2707b56ba95f9a960745"
+    },
+    {
+      "lemma": "mugginess",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A state of warm humidity is self-contained and appropriate to weather descriptions; sweating or exhaustion is not asserted as inevitable.",
+      "beforeHash": "6d8019396a28b45768f6efa7e86a1085affa31543de144a19fa1ab1b590e446a",
+      "sourceSenseId": "source-7e4e810073e3465ee3f6"
+    },
+    {
+      "lemma": "multichannel",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Using multiple signal-processing, receiving or transmitting channels is a clear communications meaning; broadband is not automatically synonymous with multichannel.",
+      "beforeHash": "8382895fd6a86c507b778c0172c184f97b6607d2b47f22b0be90b13d58b92cb7",
+      "sourceSenseId": "wiktionary:6c701d0ed6fdd98ff2e7d97f"
+    },
+    {
+      "lemma": "multifariousness",
+      "hold": true,
+      "reason": "The entries depend on multifarious or heterogeneity and do not clearly explain the intended variety; the biodiversity substitution also risks losing the biological scope.",
+      "beforeHash": "5ed2d162f7222e599f101a09610bb3fa7e4293ab0c512139369fc54325556c38"
+    },
+    {
+      "lemma": "multiparity",
+      "hold": true,
+      "reason": "The candidate repeats multiparous and the obstetric proposal is unrelated to business parity; both meaning clarity and topic relevance remain unresolved.",
+      "beforeHash": "749261a1384d8eec60807fdfb6f3e0ed3726e0a763dd91485264fe03bffbd08b"
+    },
+    {
+      "lemma": "multituberculate",
+      "hold": true,
+      "reason": "The dental and extinct-mammal senses are not expansions of the general multi prefix; the proposed anchor is a misleading lexical-fragment match.",
+      "beforeHash": "4aced30e445b15970f13bcc85b97ae0b48c1f6cafefe726a0215d314a6388e72"
+    },
+    {
+      "lemma": "munificently",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "In a generous manner is a clear general adverb matching generously; no princely scale, official context or health effect is claimed.",
+      "beforeHash": "1f45d75eb43305a2d606bfaf023c24d5ef3a78f6c307e0b49739838fa222e34a",
+      "sourceSenseId": "source-680c3d7ebb0e31fdbf56"
+    },
+    {
+      "lemma": "murid",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A rodent in Muridae is a precise biological category related to mice; restrict to academic zoology and exclude the unrelated religious homonyms.",
+      "beforeHash": "151c36da7010e4c9eaab23675b70da0e0ccb508213040ae275a6ea6bb97b3e78",
+      "sourceSenseId": "wiktionary:89378c4ee287ece57d39dbdb"
+    },
+    {
+      "lemma": "musalla",
+      "hold": true,
+      "reason": "The prayer-place meaning is verified but the sole business mosque anchor does not establish a commercial or travel learning context for this religious specialist.",
+      "beforeHash": "d0b90f28a710a717f33d3efe73936b1bde729d77852f8de3ef44b5e7f1d129e7"
+    },
+    {
+      "lemma": "musculature",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "fitness"
+      ],
+      "reason": "The collection of all muscles in a body or organ is fully defined and relevant to muscle anatomy, distinct from a single muscle.",
+      "beforeHash": "605b96e2e0266df9710a15e0639bd97f8150977671e6176517fd4667a720437b",
+      "sourceSenseId": "wiktionary:997ae7f968cf9edcd3938f68"
+    }
+  ]
+}

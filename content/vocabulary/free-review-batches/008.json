@@ -1,0 +1,352 @@
+{
+  "id": "008",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:02:39Z",
+  "decisions": [
+    {
+      "lemma": "courttennis",
+      "hold": true,
+      "reason": "The collapsed phrase lacks an exact factual candidate. A spaced historical-game headword needs source confirmation before it can be distinguished from modern tennis.",
+      "beforeHash": "c29735e1298e145565ffbb57930231f925f289da2fc6864873edb79976308c9b"
+    },
+    {
+      "lemma": "covariation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The sourced statistical correlated-variation meaning directly fits the covariance context. It does not assert that correlation and covariance are numerically identical measures.",
+      "beforeHash": "af5ca1f5adadc651407645a7602efe60536d83dfbd430f8492cc3db6139a9ece",
+      "sourceSenseId": "source-e1d7fbda1fffe3446351"
+    },
+    {
+      "lemma": "covenantal",
+      "hold": true,
+      "reason": "The source only points to covenant, without establishing the proposed solemn/oath-bound contract distinction. Keep the legal/religious context uncertain.",
+      "beforeHash": "b8f48072e4992294c205f5d084f2cd9eb3a94b41428c5514f6d6b574faea9ba5"
+    },
+    {
+      "lemma": "coveralls",
+      "hold": true,
+      "reason": "The retained source only points from the plural to coverall. A complete sourced garment definition is needed for this separate plural record.",
+      "beforeHash": "26cce9b869881fce8f058b75da7cd6fe9c8fee1ac51f21f3ac6ea6f61e02f47d"
+    },
+    {
+      "lemma": "crabapple",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness",
+        "toeic"
+      ],
+      "reason": "A small sour apple suitable for preserving is the exact sourced fruit meaning. Restrict to food/plant contexts and do not inherit unrelated Business apple uses or the separate tree definitions.",
+      "beforeHash": "f2adbf0e21ab805183886202d747759417142f786ed310dca65e549778a39ac7",
+      "sourceSenseId": "oewn:07755320-n:crabapple%1:13:00::"
+    },
+    {
+      "lemma": "creatine-monohydrate",
+      "hold": true,
+      "reason": "No exact factual candidate supports this hyphenated supplement identity in the checked sources. Do not invent chemical specificity or supplement claims from the model description.",
+      "beforeHash": "6f40170cc5efbe7a1c0a8d27cf2f90e5d78ff6d6e9ad015fca10b55938d656e9"
+    },
+    {
+      "lemma": "credenza",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "A sideboard/buffet is a clear furnishings meaning related to cabinet. The old claims about modern styling, missing legs and required dining-room use are not imported.",
+      "beforeHash": "6e0688b2802f133f4abf2bcaa112416e1e17227614f422e74fd04714d6ce712d",
+      "sourceSenseId": "wiktionary:5bff621aa41e25e60eb8d91e"
+    },
+    {
+      "lemma": "creditors",
+      "hold": true,
+      "reason": "No complete exact plural definition was extracted. A person owed money and an amount payable have different grammatical roles; do not publish the model comparison as a sourced meaning.",
+      "beforeHash": "ae769706493b067ef7dfb1c24bfc7694fa2cfb1ec81af269af8c95baf30186cd"
+    },
+    {
+      "lemma": "creditworthiness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Financial trustworthiness based on credit history is self-contained Business vocabulary. It is a quality, not a debt instrument or synonym of debenture; the old link remains unreviewed.",
+      "beforeHash": "5afde08db19a0c388930e4c8f7abf576b1b24795f6a9bd9a9aa7e0f1072b7f78",
+      "sourceSenseId": "source-d575795f575596b32d02"
+    },
+    {
+      "lemma": "crops",
+      "hold": true,
+      "reason": "No exact plural agricultural-products definition was extracted. The model's vegetable comparison is too narrow to stand in as dictionary evidence.",
+      "beforeHash": "ee0115b3a6ba1e6da34b8c5ca45b1b1d3d5b7746ebf84460605b0aa3b052bbc7"
+    },
+    {
+      "lemma": "cross-section",
+      "hold": true,
+      "reason": "OEWN returned a geometric adjective, not the representative-sample noun intended by the anchor. Keep the POS/sense mismatch hidden rather than substituting it.",
+      "beforeHash": "b4432765485578dcd21d5a1d6f8e0f1cfc69c9b465801251941505345b7d746f"
+    },
+    {
+      "lemma": "crosscovariance",
+      "hold": true,
+      "reason": "The only definition calls it a measure of correlation without clarifying covariance, lag or normalization. A clearer statistical source is needed before teaching this technical term.",
+      "beforeHash": "da1c530ed09e7dc7aa285fa91df7f1c46d769a947863c51627c785e36ad7cae8"
+    },
+    {
+      "lemma": "cruller",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The twisted-ring donut meaning is explicit and fits dining vocabulary. Preserve the Northeastern US labels; do not add an unsupported refinement/quality comparison.",
+      "beforeHash": "ac29f6631a072b8923e8dae7f1dcb0ee97ff3fa81246c88197862243a1d97a09",
+      "sourceSenseId": "wiktionary:3d08d55d01d0035341abb2ab"
+    },
+    {
+      "lemma": "crystallite",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A single-crystal region/grain in a solid is a clear materials-science definition. The more restricted older igneous-rock WordNet description is not selected.",
+      "beforeHash": "c313c72f6698608ee1ad7ff945b4a2b1a43cdc82f9cd3403ec96956a3a89d5bc",
+      "sourceSenseId": "wiktionary:fcc7780afedd1c19976db883"
+    },
+    {
+      "lemma": "cubby",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The shelf storage-cell meaning is explicit and appropriate to storage furniture. It is not asserted to be a sliding drawer, and the secluded-room sense is excluded.",
+      "beforeHash": "e9831c09a7be08e2e74dcf59595849ab1e627ff545357285c431d931316f3149",
+      "sourceSenseId": "wiktionary:627e630017eed6b957382f5a"
+    },
+    {
+      "lemma": "cubicdecimeter",
+      "hold": true,
+      "reason": "Keep the prior hold: the OEWN definition mixes unit history with an unqualified approximate pint conversion, while local WordNet lacks a complete modern definition. The corrected identity alone is insufficient.",
+      "beforeHash": "e93d3ecd4b90ffd6979a59cf0b9ad2df76110cbc6a737a1a871c1be290a78a72"
+    },
+    {
+      "lemma": "cubitus",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The elbow-joint meaning is exact and relevant to Fitness anatomy. Do not select the insect vein or ambiguous forearm-to-fingertip definition.",
+      "beforeHash": "1f112faa3aeae87150d626be29ea781365da07a0887ee2bb9daa6a0dce29850c",
+      "sourceSenseId": "wiktionary:e7ee4f51f416cf040e57981c"
+    },
+    {
+      "lemma": "culicid",
+      "hold": true,
+      "reason": "Mosquito-family taxonomy is not established as an appropriate expansion of general TOEIC mosquito. Keep the specialist relevance unapproved.",
+      "beforeHash": "5df582c254366bd7e578dbe0a27834ac2bf8dd92f6242df7ca039759ccba2d99"
+    },
+    {
+      "lemma": "culinarian",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The noun is explicitly defined as chef, fitting food-service vocabulary. The rare adjective is not selected and no higher artistry/formality claim is added.",
+      "beforeHash": "60881351c46753e1bf197632e3be23d40a479814f63f3e54f970cd1f99cf40ba",
+      "sourceSenseId": "wiktionary:a71ae4f13af1b3f0b70692a2"
+    },
+    {
+      "lemma": "cupric",
+      "hold": true,
+      "reason": "Copper oxidation-state terminology is specialist chemistry, whereas the only anchor is Business copper. Keep this unsupported technical expansion hidden rather than inventing list membership.",
+      "beforeHash": "7f94da4932573b860f24bc1bf654ba3c9a01f7d91704b1dd117868b1a1dedfb0"
+    },
+    {
+      "lemma": "cuprum",
+      "hold": true,
+      "reason": "No exact English factual candidate was found for the proposed scientific copper name. The Business anchor does not establish appropriate specialist scope.",
+      "beforeHash": "e1c337feccd1f61e5f3362f8585cd8ba1d7e3e54e480c8c413fb37a18a7a9358"
+    },
+    {
+      "lemma": "curbstone",
+      "hold": true,
+      "reason": "WordNet verifies a paving stone, but the Business curb anchor likely concerns restraint/limitation. The source does not establish the intended construction context.",
+      "beforeHash": "95e2fa0970df3dafc6ac11b60758a4d5974233e50693ade6b3a4aade8c7aa27b"
+    },
+    {
+      "lemma": "currycomb",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The rubber/plastic-toothed horse-grooming comb is explicitly defined and appropriately distinguishes this tool from a general comb. The proposed figurative search sense is not approved.",
+      "beforeHash": "f0b51333a230159244104c4ee78ddd10509c0534e9b45bc27b8c058ffa897e25",
+      "sourceSenseId": "wiktionary:f9ab5e44863196873271ea6c"
+    },
+    {
+      "lemma": "cybernetically",
+      "hold": true,
+      "reason": "The source only repeats cybernetic. Feedback-control meaning and its relation to electronically need a fuller factual definition.",
+      "beforeHash": "0805052381b33347ad14c3d21eccabbd3c57c746c303be755a5236f6b04ba7d6"
+    },
+    {
+      "lemma": "cytokinesis",
+      "hold": true,
+      "reason": "Cell-cytoplasm division is unrelated to Business market segmentation. The valid biological definition does not justify the old homonym-based extension.",
+      "beforeHash": "c2307293b45b8ab352e92b2468e56c4e2245322175c5b1dcc054ac458dfd9375"
+    },
+    {
+      "lemma": "d-fructose",
+      "hold": true,
+      "reason": "No exact factual candidate was extracted for this stereochemical identity. Case/chemical-form precision must be sourced, not inferred from ordinary fructose.",
+      "beforeHash": "01155849dd1c4d57870d72d26fb12ab43dd039e8eb6cca228003a7bf6aa43ccb"
+    },
+    {
+      "lemma": "de-energize",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Removing energy from a circuit/system is a complete technical verb relevant to equipment vocabulary. This definition is not an electrical safety procedure or assurance of safe isolation.",
+      "beforeHash": "6cde63a7a198e9c99bf3d096042cfd3a78867919534cec3a0d647667e956ed5c",
+      "sourceSenseId": "wiktionary:430a29fdd5e0be4cb6471297"
+    },
+    {
+      "lemma": "deactivated",
+      "hold": true,
+      "reason": "No exact retained definition supports the participial/adjectival record. The model's intentional/temporary-shutdown claims remain unverified.",
+      "beforeHash": "5b4d0b71620f2fdf946b431316d62ef41fdc73ddfe94fc76079a64ae8d571805"
+    },
+    {
+      "lemma": "deadofnight",
+      "hold": true,
+      "reason": "The collapsed phrase has no exact factual candidate. A source-backed dead-of-night identity and meaning are required rather than equating it with the clock time midnight.",
+      "beforeHash": "63883aa653512aead4fc6d169b4023114a7386c7dbdec13b653a8eb84c47bef9"
+    },
+    {
+      "lemma": "debar",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Excluding or shutting out is a clear direct match for exclude. The specific US government-program prohibition and its legal conditions are not selected.",
+      "beforeHash": "4fdbba1e9c093f7f9b5d36ee2ea46a54aaf00765b7df950a93904d9fb9bd6e98",
+      "sourceSenseId": "wiktionary:dccdd716653377f4e35f45dd"
+    },
+    {
+      "lemma": "debilitate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "Making feeble or weakening is explicit and appropriate to reduced strength/capacity. Do not impose gradualness or promote the unrelated Fitness hamstring-anatomy link.",
+      "beforeHash": "59ec0fa99b96d32f00c6c7a1c2f87bed417249cab0e820d85ea9401fe02bd3f8",
+      "sourceSenseId": "wiktionary:189d8943ef1dc36c98ad5532"
+    },
+    {
+      "lemma": "debtholder",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "An owner of another party's financial obligation is a clear creditor-role meaning relevant to bondholders. It is broader than holding a particular bond, without making an investment claim.",
+      "beforeHash": "079d30f128a59b671e277f999fcd6f0c2576774e8cde3ed0f8c53dd44845ea2d",
+      "sourceSenseId": "wiktionary:0a8f8b67fde6a4ad836743b4"
+    },
+    {
+      "lemma": "decant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Pouring liquid gently without disturbing sediment is a precise sourced pouring meaning. Rehousing, artificial gestation and perfume resales are separate and excluded.",
+      "beforeHash": "5120508df73dd061d25d44935ae7241bc21d995179c3e7c251346400b3182daf",
+      "sourceSenseId": "wiktionary:411c4a06d2298da15e9728b0"
+    },
+    {
+      "lemma": "decennary",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The definition explicitly explains a ten-year period, fitting decade. It does not automatically mean a tenth anniversary or require ceremonial usage.",
+      "beforeHash": "5cdb448b5c9a72bb5ef9c7ac8e4bc58130581318f75ae1ef084e91fb13437581",
+      "sourceSenseId": "wiktionary:40057b4a53d16fb378d277ba"
+    },
+    {
+      "lemma": "decennium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The source gives the full ten-year-period explanation and marks the word rare. Preserve that register information rather than implying it is more precise than decade.",
+      "beforeHash": "f2f34c158433fbb82766d3a4ff63a5323e33148b46d7f8ec2ee3785fc8376889",
+      "sourceSenseId": "wiktionary:b9c14e4c07a7346cbcf270bf"
+    },
+    {
+      "lemma": "decimalnumber",
+      "hold": true,
+      "reason": "The collapsed phrase lacks an exact factual candidate. A spaced mathematical headword repair and proper definition must be sourced before publication.",
+      "beforeHash": "a2a73d61c2348ab08cde21f86a602a25e0deda3310f6b318419727a7a01e3dc2"
+    },
+    {
+      "lemma": "declining",
+      "hold": true,
+      "reason": "Only the noun pointer decline survived extraction, not the intended downward adjective. Do not conflate POS or invent a numerical-trend definition.",
+      "beforeHash": "1ef9d0c6515bce4e4dd0ac1d5167192212c9081c681859c4666875a5b821bb87"
+    },
+    {
+      "lemma": "decorator",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A person specializing in interior decoration is a full sourced occupational meaning. It resolves the circular decorates candidate without claiming structural designers and decorators are identical.",
+      "beforeHash": "a817d13ddd03d52d26ddf282021da600734a88e7e7e47d98a134abebb84b779a",
+      "sourceSenseId": "source-f56925ac68bf04344cc5"
+    },
+    {
+      "lemma": "dedust",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Removing dust is explained directly and fits cleaning vocabulary. Preserve transitive grammar without adding an unsupported thoroughness or formality requirement.",
+      "beforeHash": "2ac7bf03003c9fc2953b4cb304acd670984665f2c42c1246bea9a53af5a1ecd0",
+      "sourceSenseId": "wiktionary:4159a8239a5521abba7b1bd8"
+    },
+    {
+      "lemma": "deepness",
+      "source": "wordnet",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Extent downward, backward or inward is a self-contained physical-depth meaning. Intellectual penetration and sound pitch are different senses and not selected.",
+      "beforeHash": "67877f261206ee2efad42ea01198fa20011359673fe7608959749ea6bd9ab39e",
+      "sourceSenseId": "source-f5320f445f734f04c23e"
+    }
+  ]
+}

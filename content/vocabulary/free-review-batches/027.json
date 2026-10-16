@@ -1,0 +1,380 @@
+{
+  "id": "027",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:51:55.000Z",
+  "decisions": [
+    {
+      "lemma": "slipknot",
+      "hold": true,
+      "reason": "The knot is verified but its only Fitness clench anchor refers to a different everyday action; the specialist rope-sense connection is not appropriate here.",
+      "beforeHash": "a3322055d510e5dcaa36864518b4f9b95841ed06352684cab12dbcfce6915299"
+    },
+    {
+      "lemma": "slotparlor",
+      "hold": true,
+      "reason": "No exact source entry verifies the concatenated spelling or the proposed slot-machine venue meaning.",
+      "beforeHash": "45c0c3ed5250d8487d52042c4db573aa47e7e996ce37c79327f29727b4f4a1fc"
+    },
+    {
+      "lemma": "slumbering",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The source explicitly records the noun meaning sleep; publish that POS only, not the unsupported literal asleep adjective or invented tranquility restriction.",
+      "beforeHash": "030ef58ce0ff962418b05aff3cd8fa63d27db640eb08f077b0f9fdc9d0364a8a",
+      "sourceSenseId": "wiktionary:ba3c537ae729ce2ab4d2d10f"
+    },
+    {
+      "lemma": "smokejumper",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The parachuting wildfire firefighter is clearly defined and fits the occupational anchor; retain Canada and US usage labels.",
+      "beforeHash": "b503f515bdaa9ac03d4e1ff4cb553a113d3632f2dbc49fd6ce1ba940ac21e002",
+      "sourceSenseId": "wiktionary:b3415e0ad2c0898ad38a0bd1"
+    },
+    {
+      "lemma": "snowbound",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Snow preventing movement or travel is explicitly defined, distinguishing the term from merely snowy weather.",
+      "beforeHash": "6a3f7979768a456bd41e671bb77358f334be4bc92913c44fd0c924156c4e16dc",
+      "sourceSenseId": "wiktionary:593c2f85d81379ffbbeb2b3e"
+    },
+    {
+      "lemma": "snuff",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The powdered tobacco noun directly matches the commodity anchor; unrelated violent slang senses remain hidden and no use recommendation is added.",
+      "beforeHash": "5a16a07c67cef2ce249367a4e7f601adbbc6b6611422ac137fc75da8a549f24c",
+      "sourceSenseId": "wiktionary:d20976540524d482bfa083e6"
+    },
+    {
+      "lemma": "societally",
+      "hold": true,
+      "reason": "The only candidate repeats societal without explaining the proposed society-wide structural meaning.",
+      "beforeHash": "13be26965603d6a394478c8f1720ad7a55f3059bb148b4f78a97a738c40ed38d"
+    },
+    {
+      "lemma": "sodic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Relating to or containing sodium is explicitly sourced for academic chemistry, without adding nutritional advice or equating every sodium compound with dietary salt.",
+      "beforeHash": "62f246d94121f8703533a817947726894b32ad3adf0015345623de60396407dd",
+      "sourceSenseId": "wiktionary:27e054f4ffe44b5b201ca05a"
+    },
+    {
+      "lemma": "softback",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A book with paper covers is a concrete definition for the paperback anchor, with no unsupported formality or geographic claim.",
+      "beforeHash": "625afff48f5332415b2ff91aad59225946478b83abacfc356babe427f9e40c75",
+      "sourceSenseId": "source-7ffabed1c6c9c43d660f"
+    },
+    {
+      "lemma": "soire",
+      "hold": true,
+      "reason": "The malformed spelling has no exact evidence; an intended soiree or accented soiree correction requires a source-bound identity repair.",
+      "beforeHash": "a3cac8b2a2401a5647611b0e5e84a0e48c09a4430297ceb107ac3e8e654bb767"
+    },
+    {
+      "lemma": "soleproprietorship",
+      "hold": true,
+      "reason": "The concatenated phrase has no exact source mapping, and the draft legal-structure explanation cannot replace factual evidence.",
+      "beforeHash": "3842825c5c0c2f8a15d2cd03e3a989f22afcc1ca3ce15c1949918305e4d25edf"
+    },
+    {
+      "lemma": "sonant",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A speech sound accompanied by vocal-cord sound directly verifies the linguistic meaning; it is not restricted to vowels or syllabic sounds.",
+      "beforeHash": "053b5954cbfdae970f2a05ae1fe483a270d78b932243853cccd4b5b1cf5ba482",
+      "sourceSenseId": "source-b9e2ad710c112961159b"
+    },
+    {
+      "lemma": "sonneteer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The writer of sonnets or small poems is directly sourced; preserve the sometimes derogatory restriction absent from the old neutral gloss.",
+      "beforeHash": "abcfdb29dc7c8161c0bd699edcef87b1b2420d2f251dc9c341fc394a84555e51",
+      "sourceSenseId": "wiktionary:ead5097f9bf6b9c74db82ae6"
+    },
+    {
+      "lemma": "soundness",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Validity plus true premises precisely defines argument soundness, avoiding a conflation with mere validity, bodily health or material strength.",
+      "beforeHash": "e42abc92906bdb52d1abd3706935dae22bf1eac17f9bb8b9b5c8062c4f43584f",
+      "sourceSenseId": "wiktionary:d201dfb551303a9f949b5539"
+    },
+    {
+      "lemma": "sourcer",
+      "hold": true,
+      "reason": "The circular person-who-sources candidate does not verify the proposed specific talent-search occupation.",
+      "beforeHash": "57561d93eab5061b12844821b3b0b4fe682fd0cc1424bca921af6a2fd77e3759"
+    },
+    {
+      "lemma": "sourcing",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Obtaining something from another place is explicitly explained and supports procurement vocabulary, without asserting every use is recruitment.",
+      "beforeHash": "c3d73f412347acc1189db699e82bc1e53e03c48f2fe10345e060ae56bbf919fc",
+      "sourceSenseId": "wiktionary:37a246df7f9c438aeb44b018"
+    },
+    {
+      "lemma": "specialism",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Concentrating efforts on a field of study or occupation is directly explained and relevant to specialization.",
+      "beforeHash": "167d0afa5e00998e56f694157e5078db28416323b501028f9812cb33b4945c7c",
+      "sourceSenseId": "source-b1e7703afe8eeec4084c"
+    },
+    {
+      "lemma": "specie",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Precious-metal coinage with intrinsic value is clearly defined, distinguishing this sense from paper or digital currency.",
+      "beforeHash": "acef2a5ba816dc53c39680809c9b9b2a1fde6b65ea2174b95582e4f21eb99da2",
+      "sourceSenseId": "wiktionary:3f40f9a27b6714557ee48b83"
+    },
+    {
+      "lemma": "spectators",
+      "hold": true,
+      "reason": "No exact plural source entry was recovered; a presumed mapping from spectator is not yet an attributable reviewed sense.",
+      "beforeHash": "831da0e1dd59e3b43f768668a40988dfba2a94fca58220ebb35c6839670589ed"
+    },
+    {
+      "lemma": "speculum",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The mirror, especially telescope mirror, sense directly supports the anchor; the separate medical instrument and bird markings are not selected.",
+      "beforeHash": "3d75a3b7b6df5498c52f0a437d964eb6e1b3a7305fd79586e3aad59b9bb87754",
+      "sourceSenseId": "wiktionary:25a8c869a7c19c321a5292fb"
+    },
+    {
+      "lemma": "spelter",
+      "hold": true,
+      "reason": "The industrial zinc and solder meanings are sourced but unrelated to the only Fitness nutritional-zinc context; do not teach impure metal as a nutrition synonym.",
+      "beforeHash": "64d014330c9579ac21dce3b9b84a546173ddf9d44bab5aca7692214d69d65d7d"
+    },
+    {
+      "lemma": "spermatozoan",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The male reproductive cell is explicitly defined and appropriate academic biology, unlike a circular spermatozoon pointer.",
+      "beforeHash": "ccd8eb56ca2118b789e46fa3e108b09e1ab94cb0c8f4ae8a12a47d44e59979d4",
+      "sourceSenseId": "source-86e351a4cab312f7f543"
+    },
+    {
+      "lemma": "spicule",
+      "hold": true,
+      "reason": "Preserve the existing archive: microscopic and other technical needle-like structures do not establish a relevant Fitness needle meaning.",
+      "beforeHash": "cca4385d89e8e866c6de724d25c17df6dc3a2d07ae8dd21cfd91895006b0eba2"
+    },
+    {
+      "lemma": "spirits",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Distilled alcoholic beverages directly verifies the drinks sense; retain the plural and regional source labels and avoid equating beverages with pure ethanol.",
+      "beforeHash": "45d4d542360b489024c8cd0211ce312f5253af4433bee27a0a2a16d62ffe3555",
+      "sourceSenseId": "wiktionary:8c0e7b877c5f4331c50f12f3"
+    },
+    {
+      "lemma": "spokedwheel",
+      "hold": true,
+      "reason": "The concatenated spelling lacks exact evidence and the physical wheel sense is unrelated to a Fitness cartwheel movement.",
+      "beforeHash": "a7c54e5e7cec14648a49fc5df53743893c3872a5579a83aeba21baed28d2cee4"
+    },
+    {
+      "lemma": "spondyl",
+      "hold": true,
+      "reason": "No exact attributable standalone entry was recovered; a possible medical combining form cannot be silently treated as a noun synonym.",
+      "beforeHash": "433912cf5e8f925551459d6d10958b4dae8cd37422d67c448a499fdc6b487194"
+    },
+    {
+      "lemma": "sportchair",
+      "hold": true,
+      "reason": "No exact factual entry verifies this specialized wheelchair term, despite the plausible old model description.",
+      "beforeHash": "98da3f41f576bfc305d35118112ce293c8404db035f2117b8862d26f3a674ad9"
+    },
+    {
+      "lemma": "spotlessness",
+      "hold": true,
+      "reason": "Both candidate definitions reuse spotless or spotlessly and do not independently explain the intended absence of stains or marks.",
+      "beforeHash": "ede177106eaafcf252243c733ac6bbeeed7b40bbdc15a0009eac62fc7d82b55f"
+    },
+    {
+      "lemma": "spume",
+      "hold": true,
+      "reason": "The liquid and sea-foam senses are verified but do not fit the only Fitness foam-equipment anchor.",
+      "beforeHash": "e1c26f0c67fcece7ea61d4244fbb1a3b2ec46714e61fc715ed7bff10fb0658c2"
+    },
+    {
+      "lemma": "squadron",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "The air-force unit between flight and group matches the organized-aircraft context without mixing naval, cavalry or newer service structures.",
+      "beforeHash": "b528ac186edce062daf7ea1163c10ceeefc39bd1052babbcabca438715a9c0aa",
+      "sourceSenseId": "source-50e68b173038ab5d9ae4"
+    },
+    {
+      "lemma": "stagflationary",
+      "hold": true,
+      "reason": "Both candidates depend on unexplained stagflation and do not verify the combined inflation and stagnation meaning independently.",
+      "beforeHash": "3faf2b3ff5a3691d05caff718c4932a359954e580327303e3bb4d05f11130508"
+    },
+    {
+      "lemma": "stanchion",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "A vertical pole, post or support is clearly defined for structures and barriers; no exercise-specific function is inferred.",
+      "beforeHash": "5cf5ea20b1eba93c57a90fcbcea5dfa43e32fd0e9f932fdf391c5f9d6e82e79f",
+      "sourceSenseId": "wiktionary:93ef731b4289055b0a7220ca"
+    },
+    {
+      "lemma": "statecraft",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Wisdom in managing public affairs clearly explains the governance meaning without reducing it solely to international diplomacy.",
+      "beforeHash": "ac8edd82d49ef8ac4aa1aa4b538de7edaf8ed8c148abdec03f1c27dc1e59fe23",
+      "sourceSenseId": "source-5996a1f13876913664eb"
+    },
+    {
+      "lemma": "statesmanship",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Ability to perform well in political office is explicitly explained and fits leadership vocabulary, without restricting it to foreign affairs.",
+      "beforeHash": "e6eeff56c253a6f8b8716177f419614c1eb6f3b1b33a73fa86c91b63bdfefdf7",
+      "sourceSenseId": "wiktionary:169afe881ca075acf7ec912f"
+    },
+    {
+      "lemma": "statuary",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Statues considered collectively directly verifies the sculpture-related noun without an unsupported classical or monumental requirement.",
+      "beforeHash": "2e397595edfb862b96a96fba8dd5f21d27ddb38484ca88850b72bfeb6f19103c",
+      "sourceSenseId": "wiktionary:dc0281b7586bf6437f22b506"
+    },
+    {
+      "lemma": "steadfastness",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Loyalty despite trouble or difficulty gives an independent explanation of commitment, distinct from general physical stability.",
+      "beforeHash": "b5ff33da3fddb9eae98f5f52862dba12218572d634e301f8c1d047aedaa9bc11",
+      "sourceSenseId": "wiktionary:8688a2576c61e124f839d67a"
+    },
+    {
+      "lemma": "steamfitter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Installing and maintaining steam-carrying pipes is a concrete specialized trade matching the plumber anchor.",
+      "beforeHash": "f5d13c20909ca543c12de13c61c68add31d883f289676b3ded35bd3bd188b814",
+      "sourceSenseId": "wiktionary:1be6a45f67ed39351c769301"
+    },
+    {
+      "lemma": "steatohepatitis",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The hepatitis subtype characterized by fat accumulation is directly sourced for academic vocabulary, without overstating sole causation or offering clinical advice.",
+      "beforeHash": "b915d1c21234031def0fe521845809a42bb15e60892a877d5f8a9b9fe7a0569b",
+      "sourceSenseId": "wiktionary:40c661518199d80a934efe77"
+    },
+    {
+      "lemma": "stele",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "An upright inscribed or decorated slab matches historical tablets and monuments, not the botanical vascular-core homonym.",
+      "beforeHash": "3d2c72200e4a2a3c0e2a4ec1c5889ac38ee04e8227a8d865cf47c636b6742859",
+      "sourceSenseId": "wiktionary:2420b6b766a4fb52252a8e76"
+    },
+    {
+      "lemma": "stepwise",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "One small step or stage at a time directly supports incremental process vocabulary; retain the non-comparable adjective label.",
+      "beforeHash": "6adb4770b97f987c4a8c2024e2d665a2cec973dc3c80a12213670e4d9c6f8491",
+      "sourceSenseId": "wiktionary:6d962654777e6eb2130389d1"
+    }
+  ]
+}

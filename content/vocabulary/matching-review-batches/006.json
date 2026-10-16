@@ -1,0 +1,350 @@
+{
+  "id": "006",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T07:36:57.886Z",
+  "decisions": [
+    {
+      "lemma": "sabra",
+      "hold": true,
+      "reason": "The alternative spelling points to a native-born Israeli, not prickly pear or the intended TOEIC fish sense of tuna. The original homonym/topic mismatch remains.",
+      "beforeHash": "1a63eedf47f4fccc77483ba8e2523e2e1ecf15460b8091a1c528518dabd20a67"
+    },
+    {
+      "lemma": "saladfork",
+      "head": "salad fork",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact spaced headword defines a fork for eating salad, verifies historical space loss and fits TOEIC dining/fork vocabulary. No unsupported dimensions or etiquette rules are added.",
+      "beforeHash": "6d1f108bda7d24b8eead205c07c47365b6a4418d48c6e6cd6f2cdfb6f242ab7f",
+      "sourceSenseId": "source-e2cdc3c420202f774a23"
+    },
+    {
+      "lemma": "sanitizer",
+      "hold": true,
+      "reason": "The source identifies an agent noun of sanitize, but the available target is a verb. The current same-POS form-resolution path cannot safely turn this derivation into a complete product definition or verify germ-reduction claims.",
+      "beforeHash": "d5cff297d422d3fa5674ed84e943f7fe08f1aef0b34a57a11860977b10b0bc59"
+    },
+    {
+      "lemma": "semi-final",
+      "head": "semifinal",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact alternative spelling and next-to-last elimination-tournament round definition verify the noun. Appropriate to the Academic semi compound/word-formation anchor; no style-guide or Business finance claim is added.",
+      "beforeHash": "f5a2206650cdea91f076ee5c3314e5b5d1f12e574e6f19cefb3afa6b0944743d",
+      "sourceSenseId": "source-72ce8b79bb300843b055"
+    },
+    {
+      "lemma": "seniors",
+      "reason": "Follow-up source supplies the old-person noun sense, with US labeling, joined to the exact plural relation. This verifies NGSL elderly without confusing relative age, authority or school year.",
+      "beforeHash": "36dce08676fbee7cbd63a7e53d98ee7d44862f98b80f1015410204d0f2086e47",
+      "head": "senior",
+      "source": "wiki",
+      "sense": 5,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "sourceSenseId": "wiktionary:2a5e34cd3fc2c5993447eed8"
+    },
+    {
+      "lemma": "slipknot",
+      "hold": true,
+      "reason": "The alternative spelling and rope-knot definitions are verified, but they remain unrelated to the Fitness clench action. No publication of specialist knot content in this context.",
+      "beforeHash": "a3322055d510e5dcaa36864518b4f9b95841ed06352684cab12dbcfce6915299"
+    },
+    {
+      "lemma": "slotparlor",
+      "hold": true,
+      "reason": "No usable exact spaced-headword definition was found in the bounded free-source checks. Do not create a venue definition by composing slot and parlor.",
+      "beforeHash": "45c0c3ed5250d8487d52042c4db573aa47e7e996ce37c79327f29727b4f4a1fc"
+    },
+    {
+      "lemma": "soire",
+      "hold": true,
+      "reason": "The proposed soirée correction still has no usable source definition or source-bound identity evidence in the checked results. Preserve the original ID hidden.",
+      "beforeHash": "a3cac8b2a2401a5647611b0e5e84a0e48c09a4430297ceb107ac3e8e654bb767"
+    },
+    {
+      "lemma": "soleproprietorship",
+      "head": "sole proprietorship",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact English spaced business-structure headword verifies the collapsed identity and single-owner/unlimited-liability meaning. Preserve source wording as vocabulary, without giving jurisdiction-specific legal advice.",
+      "beforeHash": "3842825c5c0c2f8a15d2cd03e3a989f22afcc1ca3ce15c1949918305e4d25edf",
+      "sourceSenseId": "wiktionary:8d5b0e257303baf923c8872d"
+    },
+    {
+      "lemma": "spectators",
+      "head": "spectator",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact noun-plural relation and observer meaning support the NGSL audience/gallery context. Exclude the shoe sense and do not assert that every observer is a paying audience member.",
+      "beforeHash": "831da0e1dd59e3b43f768668a40988dfba2a94fca58220ebb35c6839670589ed",
+      "sourceSenseId": "source-8abfa1d966ab9bcfbf07"
+    },
+    {
+      "lemma": "spondyl",
+      "hold": true,
+      "reason": "The alternative-form link exists but spondyle has no usable returned base meaning. Keep the medical terminology hidden rather than treating the pointer itself as a definition.",
+      "beforeHash": "433912cf5e8f925551459d6d10958b4dae8cd37422d67c448a499fdc6b487194"
+    },
+    {
+      "lemma": "streamlining",
+      "reason": "Follow-up source explicitly describes simplifying or organizing a process for efficiency. Joined to the verified participle/gerund mapping, this resolves Business optimization rather than aerodynamic contouring.",
+      "beforeHash": "d3d22288fb517d1776651d40da6ed81e873333e590697b2668f2fb66b61df9f4",
+      "head": "streamline",
+      "source": "wiki",
+      "sense": 3,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "sourceSenseId": "wiktionary:20cf44d7ccaf4d60a918201b"
+    },
+    {
+      "lemma": "subordinates",
+      "head": "subordinate",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact noun-plural relation and assistant-under-another's-authority definition support the personnel hierarchy anchor. Exclude grammatical subordinate clauses and the verb form.",
+      "beforeHash": "5c6e818d0295f70a0a5f43a1042b2a9063cb37ba0fb5f9a101f92583e17b156e",
+      "sourceSenseId": "source-7aeb4daa58d26acac703"
+    },
+    {
+      "lemma": "supremebeing",
+      "head": "supreme being",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact spaced phrase verifies historical space loss and the conception of an omnipotent/omniscient supernatural ruler. Relevant to NGSL god; preserve conceived-as wording rather than assert religious belief as fact.",
+      "beforeHash": "416d25272c6356e5edcad73027f49d9acd588bd6c1961cfd6a2e68f5c6c91ca1",
+      "sourceSenseId": "source-2b23c62ca1d153a342f4"
+    },
+    {
+      "lemma": "sweetmeats",
+      "hold": true,
+      "reason": "The plural and confection meaning are verified, but the sole Fitness tuck anchor denotes a movement, not food. Keep the unrelated sweets sense hidden.",
+      "beforeHash": "da7487a8f396702e388edc9cfc5a15b852b5ce19d2bdb0e5ebde2e4b66ef09f7"
+    },
+    {
+      "lemma": "takein",
+      "head": "take in",
+      "source": "wordnet",
+      "sense": 3,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact spaced phrasal verb and visit-for-entertainment sense verify the collapsed phrase and TOEIC sightseeing context. Exclude deception, payment, absorption and clothing-alteration meanings.",
+      "beforeHash": "30ac6936995507efd5c0fa7fe087d19dff9b8574c0407b9973e32fe4ccb33f02",
+      "sourceSenseId": "source-c611b8cb8fd2f58ed357"
+    },
+    {
+      "lemma": "tarnishing",
+      "hold": true,
+      "reason": "The inflection is now verified but metal discoloration remains unrelated to the intended Fitness oxidation topic. Do not release the specialist materials sense under a biological exercise anchor.",
+      "beforeHash": "d031c253d70fa29bcb91aa7048265fa1d30ceb994b19e410c25bd0c2cebd3335"
+    },
+    {
+      "lemma": "telecommunications",
+      "head": "telecommunication",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Exact plural relation and explicitly often-plural electronic distance-message systems definition verify the Business telecom meaning. No unsupported technology-specific restriction is added.",
+      "beforeHash": "7985c442b254913eb5cc28a097dd14aa0ab2be27e9e944576776fe47f847236e",
+      "sourceSenseId": "source-4906dfe6788df4bd2e2b"
+    },
+    {
+      "lemma": "temperatureinversion",
+      "head": "temperature inversion",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact spaced atmospheric-science entry explains the cooler-below-warmer air condition. It verifies the phrase and Academic inversion context without substituting a general reversal definition.",
+      "beforeHash": "c8e96f84530b48eeb3c2059f68679cad9026bcc38ecb03bbc528b8a296dfaa0e",
+      "sourceSenseId": "wiktionary:77108b48d93192b5fea1fa46"
+    },
+    {
+      "lemma": "theoccident",
+      "hold": true,
+      "reason": "The proposed capitalized phrase returned no usable exact source meaning. Preserve the stable hidden record instead of assuming a geographic definition from west.",
+      "beforeHash": "69d2b5401c483845761dc1bbb70e62bfc13d423d9802fc96f7ce70305e5f139d"
+    },
+    {
+      "lemma": "thermalinversion",
+      "hold": true,
+      "reason": "No usable exact source entry or explicit thermal-to-temperature-inversion relation was returned. A related published phrase does not automatically verify this separate identity.",
+      "beforeHash": "1a5af05f32fbd56de4e853697b0e314b838d2dfc50110d45da6ce775bd0d2700"
+    },
+    {
+      "lemma": "thighs",
+      "head": "thigh",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Exact plural relation and hip-to-knee leg-region meaning verify the Fitness anatomy record. Do not equate thighs with lap or import the bird-meat sense.",
+      "beforeHash": "df5d796a3d8c2f80f5fd225b7f99349b0031be5e6885d4f7eead59b3e37085c1",
+      "sourceSenseId": "source-995fdc35f110f3fc99e2"
+    },
+    {
+      "lemma": "three-basehit",
+      "hold": true,
+      "reason": "The spaced phrase is verified as a baseball hit, but this remains unrelated to Business triple as a number/multiplier. Keep the sports specialist hidden in this list.",
+      "beforeHash": "f30aa322260f40cbb9ec4cc3d68e33a14d75779aefcaab1bf97a1585df64c15a"
+    },
+    {
+      "lemma": "topbunk",
+      "hold": true,
+      "reason": "The proposed spaced phrase has no usable returned source definition. Do not infer exact lexical identity from the obvious upper-bed composition.",
+      "beforeHash": "0e26da7a7123842337308d22079a1b75dadaeb9bf917ea4855b159284e8db3c8"
+    },
+    {
+      "lemma": "troyounce",
+      "head": "troy ounce",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Explicit alternative-form relation and exact 480-grains/one-twelfth-troy-pound definition verify this distinct weight unit. Scope to Business commodity-weight vocabulary, not Fitness ordinary ounces.",
+      "beforeHash": "a5273c26dda5a30ac1dfc43261b668eaae933cb64ec3933243329acdb095fddd",
+      "sourceSenseId": "source-7bce4e3d2241b184b9e7"
+    },
+    {
+      "lemma": "tumbling",
+      "head": "tumble",
+      "source": "wordnet",
+      "sense": 9,
+      "mapping": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Exact participle/gerund mapping and fall-suddenly-and-sharply verb sense supply a non-circular descending meaning. Do not label it an adjective or substitute gymnastics.",
+      "beforeHash": "40ce2ff48ea3837f7955aeb17587df03b221ef9a04ff1b00ffbaeb297d44b393",
+      "sourceSenseId": "source-eab1923d823f3b23bb92"
+    },
+    {
+      "lemma": "underlings",
+      "hold": true,
+      "reason": "The plural and subordinate-person definition are available, but the source does not establish the important disparaging register. Keep the record hidden rather than teach it as a neutral personnel synonym.",
+      "beforeHash": "125e86c45d796ae612e16c8f11a3982c5470c23ae1244062145d8bd4ac390346"
+    },
+    {
+      "lemma": "underwriting",
+      "head": "underwrite",
+      "source": "wordnet",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact participle/gerund relation and guarantee-financial-support meaning supply a complete finance sense. Do not add unverified securities issuance, insurance selection or risk-assessment details.",
+      "beforeHash": "1906339bbace650048979c98f457e437f3237bd5c381cc89df0c0644a8ce324e",
+      "sourceSenseId": "source-ae4ed98aeab7798136d6"
+    },
+    {
+      "lemma": "upperberth",
+      "head": "upper berth",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Exact spaced headword defines the higher of two berths and verifies the historical collapsed phrase. Fits the NGSL upper position anchor without inventing a particular vehicle or accommodation type.",
+      "beforeHash": "1097152a91f3c57c97f3933da5cf204cc836c8830a9829bbe84db9ecd5c0e9ff",
+      "sourceSenseId": "source-103f55f0693f777aab8a"
+    },
+    {
+      "lemma": "uppercasing",
+      "hold": true,
+      "reason": "The source verifies the verb inflection but supplies no base verb sense, only noun/adjective letter-case meanings. Business capitalization may also be financial; retain both POS and topic uncertainty.",
+      "beforeHash": "ec239e43d5ad7e329306b2c3bdcc55490f8285044cbc43e1890da42a002f6340"
+    },
+    {
+      "lemma": "vermillion",
+      "hold": true,
+      "reason": "The spelling variant is verified but target senses describe red color, not the intended anatomical lip region. Keep the remaining specialized sense mismatch hidden.",
+      "beforeHash": "d079bf81a48f61591ef70424b05a896e97aa5dfbaf5d64f3f7f1380eec345374"
+    },
+    {
+      "lemma": "wagonwheel",
+      "hold": true,
+      "reason": "The spaced phrase verifies a vehicle wheel, not the Fitness cartwheel exercise. Identity recovery does not make this unrelated object appropriate for the list.",
+      "beforeHash": "5db135ce8f7f3b02f755b1d065eba0c3711e63884e9b0b97f80054f52d6e108c"
+    },
+    {
+      "lemma": "whitespace",
+      "head": "white space",
+      "source": "wiki",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Exact alternative form and collection-of-space-representing-characters definition verify the textual/computing meaning. Appropriate to blank text, with source countability/attributive labels retained.",
+      "beforeHash": "e710546b3b626e807fd4d4b91485813491ac22e225e1f3decabbeb824e7f0ba9",
+      "sourceSenseId": "wiktionary:43d83449bc36ba9464495ea2"
+    },
+    {
+      "lemma": "witchinghour",
+      "head": "witching hour",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Exact spaced phrase verifies identity and its literary nighttime expression. Preserve the full thought-to-be folklore wording and literary/poetic labels; do not teach supernatural claims or a universal 3 a.m. time as facts.",
+      "beforeHash": "9ff9cb9a504d90a8c23fea931c16fe58de3d0fb255b82351d502ab02f2776b92",
+      "sourceSenseId": "wiktionary:ffd38b10ec99365c2c79adb3"
+    },
+    {
+      "lemma": "yankeeland",
+      "hold": true,
+      "reason": "The capitalized lookup yielded no usable entry confirming geographic boundaries or connotations. Keep this regional nickname hidden.",
+      "beforeHash": "ad12fbf74598ee9c3b6f1ae96d8dddebf837e85fb601f21f96e0ca19e141140b"
+    },
+    {
+      "lemma": "yogin",
+      "head": "yogi",
+      "source": "wordnet",
+      "sense": 1,
+      "mapping": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Exact alternative-form relation and yoga/spiritual-practitioner sense verify the variant and its Fitness yoga context. Exclude the baseball proper-name sense and do not assert gender restrictions absent from the selected source.",
+      "beforeHash": "539e8e3be90b8847dc374226407d6d910c32bb1d6ff2de68694065a1f4c5cc98",
+      "sourceSenseId": "source-bdfac99a2e659a9d94b7"
+    }
+  ]
+}

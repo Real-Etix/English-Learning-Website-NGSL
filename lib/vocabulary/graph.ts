@@ -59,7 +59,8 @@ function membershipFor(page: GraphInput, slug: string): { rank: number | null; s
  * words, preserving the existing galaxy contract.
  */
 export function buildListGraph(inputs: GraphInput[], slug: string): ListGraph {
-  const pages = [...inputs].sort(compareLemma);
+  const pages = inputs.filter(page => page.tier === "core" || page.allowedLists === undefined
+    || (page.allowedLists.length > 0 && (slug === "all" || page.allowedLists.includes(slug)))).sort(compareLemma);
   const inList = (page: GraphInput) => slug === "all" || page.memberships.some((membership) => membership.id === slug);
   const byLemma = new Map(pages.map((page) => [page.lemma, page]));
   const listPages = pages.filter(inList);

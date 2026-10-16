@@ -1,6 +1,7 @@
 import { factualEvidenceFor } from "./publication";
 import type { VocabularyRecord, VocabularySense } from "./schema";
 import { evidenceForSources } from "./source-evidence";
+import { hasCurrentMeaningReview } from "./meaning-review";
 
 export type ClaimReadiness = { canClaim: boolean; reason: string | null };
 
@@ -24,7 +25,7 @@ function hasClaimableExample(record: VocabularyRecord, sense: VocabularySense): 
 
 /** Returns whether one exact, canonical sense is ready to create a new claim. */
 export function claimReadiness(record: VocabularyRecord, senseId: string): ClaimReadiness {
-  if (record.publicationStatus !== "published") {
+  if (record.publicationStatus !== "published" || record.editorial?.scope?.status === "archived") {
     return blocked("This word is not available to claim.");
   }
 
@@ -45,7 +46,10 @@ export function claimReadiness(record: VocabularyRecord, senseId: string): Claim
   if (factualEvidenceFor(record, sense) === "ai-draft") {
     return blocked("This meaning needs a trustworthy source before it can be claimed.");
   }
-  if (!hasClaimableExample(record, sense)) {
+  if (sense.meaningReview && !hasCurrentMeaningReview(record, sense)) {
+    return blocked("This meaning has changed and needs a new review before it can be claimed.");
+  }
+  if (!hasClaimableExample(record, sense) && !hasCurrentMeaningReview(record, sense)) {
     return blocked("This meaning needs a sourced example before it can be claimed.");
   }
 

@@ -1,0 +1,75 @@
+{
+  "id": "007",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T07:36:57.886Z",
+  "decisions": [
+    {
+      "lemma": "co-twin",
+      "head": "cotwin",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The cotwin noun entry explicitly lists co-twin as an alternative form and defines the other twin in relation to a twin. Source-listed identity resolves the missing hyphenated lookup; no invented scientific precision claim is added.",
+      "beforeHash": "3d5ff9975935f17e7c433d81d66e93bbc70956e58dc1fc6dfbcb886641b432b2",
+      "sourceSenseId": "wiktionary:32a6d9b727bdfe16f734ccc5"
+    },
+    {
+      "lemma": "mid-afternoon",
+      "head": "midafternoon",
+      "source": "wiki",
+      "sense": 0,
+      "mapping": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The base noun entry explicitly lists mid-afternoon as an alternative form and supplies the middle-of-afternoon meaning. Preserve normally in the sourced 2-to-4-pm description rather than treat it as a universal boundary.",
+      "beforeHash": "af4bf4d45d1db2e13dce0028353a1054daddfd040f2cbb480f5ef7d893a74428",
+      "sourceSenseId": "wiktionary:a377d2bd64440f7c3383c6c9"
+    },
+    {
+      "lemma": "creatine-monohydrate",
+      "hold": true,
+      "reason": "The spaced form now has a candidate, but no explicit hyphenated identity relation was found; its similar-or-identical-to-endogenous-creatine wording also lacks adequate chemical precision. Retain hidden without supplement claims.",
+      "beforeHash": "6f40170cc5efbe7a1c0a8d27cf2f90e5d78ff6d6e9ad015fca10b55938d656e9"
+    },
+    {
+      "lemma": "house-made",
+      "hold": true,
+      "reason": "The closed spelling housemade has a relevant definition, but the checked source does not list the original hyphenated form as a variant. Preserve stable identity and defer unsupported punctuation normalization.",
+      "beforeHash": "8c59df607b6b2b08a1b69fcc24efd2757dbdb9ff36feb912184be42bff9ed6ae"
+    },
+    {
+      "lemma": "macro-economist",
+      "hold": true,
+      "reason": "Macroeconomist now has an appropriate large-scale-economics definition, but no source explicitly maps the original hyphenated identity. Do not silently change lexical identity through unsupported punctuation normalization.",
+      "beforeHash": "169e65041adf0a30a011df068e03125ddb10c90a507e9b0e872c91ae1a5e00c0"
+    },
+    {
+      "lemma": "micro-economist",
+      "hold": true,
+      "reason": "The unhyphenated microeconomist entry neither verifies this original spelling nor explains microeconomics independently. Both identity and learner-definition gaps remain.",
+      "beforeHash": "49301e1f17b31a8a458ca8011a21d43df2f6d41622048df179f98cb6fdff4f6e"
+    },
+    {
+      "lemma": "pressup",
+      "hold": true,
+      "reason": "The press-up entry verifies a British/Commonwealth exercise synonym but does not list the closed form as a variant. Preserve the stable hidden record rather than silently assert the missing spelling relation.",
+      "beforeHash": "eaa06fe6a10ca6ce9ed1360716ccd76e055ff99de1a125dd0dac933bec03c113"
+    },
+    {
+      "lemma": "semi-diameter",
+      "hold": true,
+      "reason": "The unhyphenated semidiameter entry supplies an astronomical apparent-radius sense, but no source relation confirms the original hyphenation. Retain uncertainty without a speculative identity rewrite.",
+      "beforeHash": "80d01a7eba4b30fe8c161d31811b67075d3a065ea23036998a083b2f336a6947"
+    },
+    {
+      "lemma": "derrire",
+      "hold": true,
+      "reason": "The accented derrière entry now verifies a humorous backside noun, but a prior public derriere record already represents that lexical item. Preserve both stable IDs and keep the malformed duplicate hidden rather than create a second public identity or silently merge it.",
+      "beforeHash": "982205c7a5a0f20ef028e0e18ab0e636ff48489811bdd79a5b8e3093651bca14"
+    }
+  ]
+}

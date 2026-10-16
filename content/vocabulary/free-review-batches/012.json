@@ -1,0 +1,382 @@
+{
+  "id": "012",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:17:28.000Z",
+  "decisions": [
+    {
+      "lemma": "excitability",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The measure of how easily something is excited is explicit and appropriate to response sensitivity; it does not imply pathological excess or business sensitivity.",
+      "beforeHash": "ceae5ac5181411bdf16b822a13a4da8ceff26d3c82c6779a8b68353190a590c5",
+      "sourceSenseId": "wiktionary:597e9000591db631456c4da9"
+    },
+    {
+      "lemma": "excitation",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The activity in tissue or a nerve cell after stimulation provides a defined academic physiological sense, not a synonym for every incoming signal.",
+      "beforeHash": "4dbcda9d1d698eb318e2b2e0ec1146e98b9ed1176736f6cd7c604cbc905debda",
+      "sourceSenseId": "wiktionary:3dfaa8b5905b27dc97200ea0"
+    },
+    {
+      "lemma": "excretion",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "Removing no-longer-useful bodily material is a clear physiology meaning related to urine; distinguish the process from a particular waste product.",
+      "beforeHash": "d28eb906ae4af77f22361f365c86a6a5d9b0d300932160b847c0e1bb3500cab2",
+      "sourceSenseId": "wiktionary:d737cd9d6c1e82e2bb7fc7d8"
+    },
+    {
+      "lemma": "exegesis",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "ngsl"
+      ],
+      "reason": "Critical interpretation of a text, especially religious, directly fits the interpretation and scholarly commentary anchors.",
+      "beforeHash": "bc105b6043b1f01001435fbb1f840c754886ec38489c7fd2de7efa0895ba747a",
+      "sourceSenseId": "wiktionary:e7cbfa45095558eaa9bbbde2"
+    },
+    {
+      "lemma": "exhaustion",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "fitness",
+        "toeic"
+      ],
+      "reason": "The extreme-tiredness sense matches fatigue; the bankruptcy comparison and dated medicinal extraction or vacuum senses are not selected.",
+      "beforeHash": "8628e48f40681db34a66618588ce8b1e311d372accdf57f6239a9fc1240cef45",
+      "sourceSenseId": "wiktionary:6e4db4b5fed4f8c121b84f7e"
+    },
+    {
+      "lemma": "exhaustively",
+      "hold": true,
+      "reason": "Both available definitions repeat exhaustive without explaining full coverage; the old gloss cannot substitute for a self-contained sourced meaning.",
+      "beforeHash": "ad94eebfe3a662b633c2a633c28ce6498e6dca0213c4faa3c790f0b763bf5f00"
+    },
+    {
+      "lemma": "expanding",
+      "hold": true,
+      "reason": "No exact source sense or reviewed expand inflection mapping is available; the broad active anchor does not verify growth.",
+      "beforeHash": "da44661dd7370920807a1b912c4d2eff118876c3eb3d12906fffcaf41255f853"
+    },
+    {
+      "lemma": "expediency",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Suitability for achieving an intended purpose is explicit and relevant to practical decisions; unprincipled conduct belongs to a separate unselected sense.",
+      "beforeHash": "bd5c7fe165bbed556261e94f3f305bf3150163d0b553a8ce6228cfc209557cad",
+      "sourceSenseId": "wiktionary:2b762ed7a909575648b5ace8"
+    },
+    {
+      "lemma": "expeditiously",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic",
+        "ngsl"
+      ],
+      "reason": "The source supplies quickly as an understandable meaning; avoid claiming that this always means immediately or guarantees efficient results.",
+      "beforeHash": "aeb10698c29dbee048f59d6e5288725ae38e1968e8047fcb0c68ceee11a90782",
+      "sourceSenseId": "wiktionary:b699768e229741516937be9b"
+    },
+    {
+      "lemma": "explication",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "ngsl"
+      ],
+      "reason": "The explanation sense is explicit and relevant to defining ideas; retain the source's formal and dated labels rather than silently removing them.",
+      "beforeHash": "8867537c46ef24905a36bf30649fb3c90292892039236c57136802ffdcb93623",
+      "sourceSenseId": "wiktionary:5e625cb7bd83fd062db9321f"
+    },
+    {
+      "lemma": "explicitness",
+      "hold": true,
+      "reason": "Both definitions depend on explicit without explaining the intended unambiguous-detail meaning; clearer evidence is required for learner-facing release.",
+      "beforeHash": "ec7543b5b6d6ad08b82ef6ef7c4bd9a464173a8a2f0cf7aade0e7570e4723a13"
+    },
+    {
+      "lemma": "expositor",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A person who explains is a complete meaning appropriate to academic explanation, without requiring a physical demonstration.",
+      "beforeHash": "291d1348a659be2b5f58c1da55bc9b462a70e1f8699d4eedf26bcd9ae0e17af2",
+      "sourceSenseId": "source-b686274fcd2d916568a8"
+    },
+    {
+      "lemma": "expunge",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic",
+        "academic",
+        "ngsl"
+      ],
+      "reason": "Erasing or striking out is explicit and relevant to deletion; the particular permanent-email operation and legal consequences are not generalized.",
+      "beforeHash": "ae75fe6a5495299ebbb9b5928a2e8a9579c997e94a04e3259096e87c1a687131",
+      "sourceSenseId": "wiktionary:5538dec2dc11eb0b31b09fac"
+    },
+    {
+      "lemma": "expungement",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The criminal-record erasure, destruction or sealing sense is precisely sourced; retain Canada and US labels and make no legal eligibility claim.",
+      "beforeHash": "230f8d7fa21ff812801cc68e2fd62fbb4cfbac6fc7c49d89ee35e5da19f2072f",
+      "sourceSenseId": "wiktionary:06aac3ef012d6964c2865e87"
+    },
+    {
+      "lemma": "exquisiteness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Extreme delicate beauty is self-contained and fits beauty, unlike the circular exquisite entry.",
+      "beforeHash": "1a768cbcd379093c822f19369fd1dcceb3edbb3ff2c758f7b402d9eb857086ca",
+      "sourceSenseId": "source-14a4197dcb8e3009eb3a"
+    },
+    {
+      "lemma": "exsanguinate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Draining a body or body part of blood is an explicit academic medical verb; the source does not support the old claim that every use must be fatal.",
+      "beforeHash": "055932ec8008003aff589aaf90c2728df3ce6f25f2ecf5a8adc1ddff69328f73",
+      "sourceSenseId": "wiktionary:999c6600e86f16d117eafa7b"
+    },
+    {
+      "lemma": "exsiccation",
+      "hold": true,
+      "reason": "No exact factual source entry is available; the technical water-removal gloss is insufficient evidence for release.",
+      "beforeHash": "c4eafd0224c519987bd38e7750782fb11c56f7957176161e2a73cc54ba1f60d4"
+    },
+    {
+      "lemma": "exsufflation",
+      "hold": true,
+      "reason": "No exact factual sense is available for the respiratory term; do not publish clinical detail inferred solely from the old exhalation gloss.",
+      "beforeHash": "6715a8c7f5def69faac49376cab5ecdf3b23ba31536249b8449e2a9c7f0c89e9"
+    },
+    {
+      "lemma": "exteriority",
+      "hold": true,
+      "reason": "The outside or surface meaning does not support the business economic-externality anchor; those distinct concepts should not be conflated.",
+      "beforeHash": "72e2f36f1964ffa740a430a32a90a483a3dad62e2396b8ab82de24d747ea3639"
+    },
+    {
+      "lemma": "extractant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A liquid used to extract a substance from another material is a clear chemistry meaning fitting the extraction-solvent context.",
+      "beforeHash": "5260a403f201f9af971b7c944bbf621735b6584e9cc23dd442cae65f843ca335",
+      "sourceSenseId": "wiktionary:b4933017716fee025a0285c0"
+    },
+    {
+      "lemma": "extrapolation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Estimating a function outside known values is precise and supports projections from data; it is not restricted to chronological future predictions.",
+      "beforeHash": "88186743dc288f1f046eb37e7fd248801414f56889561ffdf047e92ec7173f55",
+      "sourceSenseId": "wiktionary:cd2a6e0ee4a1a2f8d482acca"
+    },
+    {
+      "lemma": "extremization",
+      "hold": true,
+      "reason": "The sole source describes conversion to an extreme form, not mathematical optimization over maxima and minima; the proposed business meaning remains unverified.",
+      "beforeHash": "e71df5ba298390426cebbc5b355a4b17afcb539b21154a5fba84b86f2f84f6bf"
+    },
+    {
+      "lemma": "exudation",
+      "hold": true,
+      "reason": "The self-contained evidence concerns plant pores, while the proposed business outflow meaning is unsupported and the other definitions repeat exude.",
+      "beforeHash": "55b42d19001734ff2d53d6ad943487176a6a60b857553a93bb3ddbc9836df6af"
+    },
+    {
+      "lemma": "fabricator",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A person who manufactures something matches maker and producer; the counterfeiter and liar senses are not selected.",
+      "beforeHash": "b6fe37985711ac28691a65b03694ab6aef092c5bff35037985107f6046188e7e",
+      "sourceSenseId": "wiktionary:564d8bdd2e904e27c9aba1dd"
+    },
+    {
+      "lemma": "facts",
+      "hold": true,
+      "reason": "The available Internet interjection means agreement, not the proposed plural noun for verifiable information; a reviewed factual noun mapping is still missing.",
+      "beforeHash": "66b20c60b761373774efb88e9b78842c74511961dc77bc5cd15b418f35ed630b"
+    },
+    {
+      "lemma": "familiarization",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Becoming familiar with something is explicit and appropriate to orientation and training, without implying only physical direction.",
+      "beforeHash": "4578f8c42d84b9277e6de54ea934f2204fc34133efff1784eb49d53588698911",
+      "sourceSenseId": "source-484b8f86a1be6812256c"
+    },
+    {
+      "lemma": "famish",
+      "source": "wiki",
+      "sense": 4,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The intransitive extreme hunger or thirst meaning is fully explained and relevant to hunger; no death outcome is required.",
+      "beforeHash": "a49365b326acf12c7dacfe3bf5a14634479203b6dd8ce7d680a9bfff9c8f1d8a",
+      "sourceSenseId": "wiktionary:da48de0e31265349c6e009ad"
+    },
+    {
+      "lemma": "fascicle",
+      "source": "wiki",
+      "sense": 4,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A separately issued section of a book is the precise publication meaning supported by booklet; anatomical bundles remain separate senses.",
+      "beforeHash": "2a72b583b4330f7fa297f3a3f64e9ec2f80ad49d962f5ea6e064a8f00b148031",
+      "sourceSenseId": "wiktionary:79874d274aa41a21c9c1c301"
+    },
+    {
+      "lemma": "federative",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Forming a federation or league is explicit and related to federal; retain non-comparability without claiming greater precision in every context.",
+      "beforeHash": "f9dff16cc483fe7499c8b02c82800c7585384c5fdd23bf1c51100e8e188b18ff",
+      "sourceSenseId": "wiktionary:3c33206276ea6989577d1962"
+    },
+    {
+      "lemma": "felicitation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Wishing joy or happiness and congratulation provide a clear social-communication meaning without invented register examples.",
+      "beforeHash": "4a857774341530da85185f19b132ec7539e22d8612dec1a4b3c0b78f30fecb7c",
+      "sourceSenseId": "wiktionary:39712072aec85d4333299523"
+    },
+    {
+      "lemma": "felid",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Any member of the cat family is a self-contained biological classification; restrict its reviewed scope to academic animal study rather than an everyday pet synonym.",
+      "beforeHash": "9e8675f87ff728f9eeb8ffbe37f8e9d4f87c47238798bb5a3ebf43b54c99113f",
+      "sourceSenseId": "wiktionary:694dbcbdf1b3f0dea1578ec7"
+    },
+    {
+      "lemma": "ferrite",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The carbon solid solution in body-centered cubic iron is a specific metallurgical meaning; restrict to academic materials study and do not present it as all iron.",
+      "beforeHash": "abb07b39391ce78676490aa0d4da60989600efe3a332fd4e515c85560d17f925",
+      "sourceSenseId": "wiktionary:e30e31d956e1a676885aebc2"
+    },
+    {
+      "lemma": "ferrum",
+      "hold": true,
+      "reason": "The English candidate concerns iron-containing remedies, not the intended general metal or Latin name; the proposed iron equivalence remains unsupported.",
+      "beforeHash": "71914632f84f53e803e6b363170c5f6fd09d8ee755c2995674e171ed886e04a0"
+    },
+    {
+      "lemma": "fetocide",
+      "hold": true,
+      "reason": "No exact sourced entry supports the spelling and intended meaning; sensitive medical or legal terminology should not be inferred from the old gloss.",
+      "beforeHash": "da3b268ec785b0c9c4e7bf1f2d740b56abaa751c7841b736a84fe97ac549ef3b"
+    },
+    {
+      "lemma": "fighter-bomber",
+      "hold": true,
+      "reason": "The military aircraft definition is verified, but the sole business bomber anchor does not establish an appropriate topic for this specialist addition.",
+      "beforeHash": "fe4844a8a22a0329513253a90a58f7a9791582550ec436f3db275af175c775e1"
+    },
+    {
+      "lemma": "figures",
+      "hold": true,
+      "reason": "The only entry is colloquial it figures, not the intended numbered diagrams or images; do not publish a mismatched phrase sense.",
+      "beforeHash": "449819f9120a75bd6fd73a64f00ffdc793916e47787ccaf0e16a46ec838c0723"
+    },
+    {
+      "lemma": "findings",
+      "hold": true,
+      "reason": "Both exact sources describe artisans' supplies, not research results; a familiar spelling is not evidence for the proposed data sense.",
+      "beforeHash": "6a6a643a0c4a9477e11843563024b2e03120bf2b86db3920dc9478552572095f"
+    },
+    {
+      "lemma": "finfish",
+      "hold": true,
+      "reason": "The cached definitions introduce conflicting exclusions for flatfish and cartilaginous fish; the intended fish-versus-shellfish teaching meaning needs clearer evidence.",
+      "beforeHash": "a722b0beafb28a5703c19dfc48415f5560906c64896b2807ca9fd80e2a33e70b"
+    },
+    {
+      "lemma": "firelighter",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The flammable block used to start a fire is explicit and relevant to equipment vocabulary; do not confuse it with a handheld lighter or a fitness term.",
+      "beforeHash": "f813cf1b5b691958564b5757c2e27371256116358798cd4631c1827654c5908a",
+      "sourceSenseId": "wiktionary:4fbb610d3409f3c66ea8be4a"
+    },
+    {
+      "lemma": "firemarshal",
+      "hold": true,
+      "reason": "The joined phrase lacks exact evidence and a reviewed fire marshal identity mapping; the old firefighter gloss cannot establish duties.",
+      "beforeHash": "5f031d342c5fd1de62fb3bcd9988d308788ff81ee9155b32c9fe8d884e572070"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "id": "016",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:23:20.000Z",
+  "decisions": [
+    {
+      "lemma": "inhume",
+      "hold": true,
+      "reason": "Burial is verified but the only business inter anchor does not establish a relevant funeral or burial context; do not import this specialist merely through a homonym.",
+      "beforeHash": "8b64e3e31fcd464e8501f5e7422a194ec5bda3dc8274258c52284a3b172cad4a"
+    },
+    {
+      "lemma": "innovatively",
+      "hold": true,
+      "reason": "The sole entry repeats innovative and does not supply a self-contained explanation of the proposed new-ideas meaning.",
+      "beforeHash": "a341830e6ed23a4674ba62c0dabdcdc3c932ad5e56cf2c268985292fc87594bd"
+    },
+    {
+      "lemma": "inoculant",
+      "hold": true,
+      "reason": "The biological inoculation material and metallurgical additive are specialist senses; the business vaccine anchor alone does not establish appropriate scope or interchangeability.",
+      "beforeHash": "08a865099d476bd1eeae4225ff9ed2ff7954fd749e3aa1fcf9f59f50a52ed398"
+    },
+    {
+      "lemma": "instate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Installing someone in office is a clear organizational meaning; the definition does not support treating every policy implementation as the same action.",
+      "beforeHash": "f300d3e435f280a552e73cd7558628481e87095ac55dcdf19408c35c1a745f3e",
+      "sourceSenseId": "wiktionary:b532cc0733489dd5d329c94d"
+    },
+    {
+      "lemma": "instillation",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Introducing liquid drop by drop is an explicit technical meaning relevant to administration of fluids; no injection technique or business financial meaning is inferred.",
+      "beforeHash": "46ebe9ea51af10d06497f1230199cf30b8affc064c2b6e11bff1aa0396b232b3",
+      "sourceSenseId": "source-fb2420abcd607b167709"
+    },
+    {
+      "lemma": "insurrectionist",
+      "hold": true,
+      "reason": "The verified armed-rebellion participant is a political specialist; the sole business insurgent anchor does not establish a commercial learning context.",
+      "beforeHash": "d0413bd01791ee574a6e147ae16cb410cf1b62af7b01c43a90cc186fcb979465"
+    },
+    {
+      "lemma": "insusceptible",
+      "hold": true,
+      "reason": "Both entries only negate susceptible and leave the intended vulnerability explanation implicit; the old absolute disease-immunity claim cannot supply factual detail.",
+      "beforeHash": "6da93cc1113c1ad4e7bd1d25ffd9fbc6da5162e13bccf5ee70b7719f17b9df73"
+    },
+    {
+      "lemma": "integument",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "ngsl"
+      ],
+      "reason": "An outer protective covering with skin, feathers, rind and shell examples is a complete biological meaning; no universal toughness comparison is added.",
+      "beforeHash": "d5d01364d45929d510e2b0029e7e20ebeefa24fe4b905adfcafd22e326c697f4",
+      "sourceSenseId": "wiktionary:185913a08ddeabd96072d0a5"
+    },
+    {
+      "lemma": "interdependently",
+      "hold": true,
+      "reason": "The sole entry repeats interdependent without explaining mutual dependence; the proposed systemic relation needs a fuller sourced meaning.",
+      "beforeHash": "aa063da1ae37ee9677c2ea6d89c682fe07bd12878e3746de9527c453e8e181d9"
+    },
+    {
+      "lemma": "interdiction",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Authoritative prohibition is a complete meaning matching ban; it does not require a military action or specific court procedure.",
+      "beforeHash": "5a5510379719a23a628ec4dc201398c1ed3fb22dfa33eaed9ac3521728ee3546",
+      "sourceSenseId": "source-11c18510a856962ee95f"
+    },
+    {
+      "lemma": "interlayer",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A material layer sandwiched between other layers is precise and relevant to materials interfaces; an abstract business interface is not implied.",
+      "beforeHash": "748312ee2036f4cb3e49c7d6d2288284fa43a5ece1c2c7f9c865b45276ea4647",
+      "sourceSenseId": "wiktionary:e41e174bb3d9f573031634be"
+    },
+    {
+      "lemma": "internationalization",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Making a product suitable for international markets is fully explained with language and regional support, distinct from all broader globalization.",
+      "beforeHash": "7356def89c4d3ca52e7d70c0822734a6ebed31dde1844a2fd8b7dd71402651db",
+      "sourceSenseId": "wiktionary:f51cd8e082e702afb52f3fa0"
+    },
+    {
+      "lemma": "interpretive",
+      "hold": true,
+      "reason": "The only candidate repeats interpretation and does not establish the intended qualitative-research explanation; clearer learner-facing evidence is needed.",
+      "beforeHash": "ab2fb6e1e7a7248f790b9ddd7c83a98a03b4d1405318e6439447566408abb799"
+    },
+    {
+      "lemma": "interrelationship",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "A relationship between multiple things is self-contained and appropriate to connected factors; it does not assert statistical correlation or causation.",
+      "beforeHash": "85c442b3aa77fb5040c9859f98f55496b7503b82b6ba7486f6cc22f807d57725",
+      "sourceSenseId": "wiktionary:e8b6c65d22c0c239ed2bcacc"
+    },
+    {
+      "lemma": "intoxicant",
+      "source": "oewn",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The liquor or brew containing alcohol meaning is explicit and directly relevant to the alcohol anchor; other drug categories remain separate senses.",
+      "beforeHash": "e59a4d540d4e2f13fbb49a8634e60665e1d39718cbbb9ed08485670cfa0d514d",
+      "sourceSenseId": "oewn:07900542-n:intoxicant%1:13:00::"
+    },
+    {
+      "lemma": "intramolecular",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Between parts of the same molecule precisely distinguishes within-molecule relationships from broader molecular terminology.",
+      "beforeHash": "28c5b478286744a857229f6624fea2981e64b2a926b34cfc36ab9ddb353d7549",
+      "sourceSenseId": "wiktionary:65257d555d5c7dcef6a6ff64"
+    },
+    {
+      "lemma": "intranational",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Within one nation is a complete meaning for the national rather than household sense of domestic; retain non-comparability.",
+      "beforeHash": "8c381450b17add6ed58646daea7739fdb4ab6f72ac412c39f43acf60fcbba7fc",
+      "sourceSenseId": "wiktionary:6cfa21d3846553132ac2b7e2"
+    },
+    {
+      "lemma": "intrathecal",
+      "hold": true,
+      "reason": "The evidence concerns spinal-canal drug delivery, not the fitness spinal anatomy anchor; do not introduce this clinical procedure specialist into exercise learning.",
+      "beforeHash": "d1241482f4c2cbd98ae307a90dde82dd13f2f32ff04d3e1e9cdd3489aea6f5c7"
+    },
+    {
+      "lemma": "inventiveness",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic",
+        "ngsl"
+      ],
+      "reason": "The power of creative imagination is explicit and supports creativity; a practical invention is not required for every instance.",
+      "beforeHash": "f1cd33c1b60bd0a653289d27c8bedd6323ce166b8c12ec4c5c8e343c77442c16",
+      "sourceSenseId": "source-86425ea43f88059708f4"
+    },
+    {
+      "lemma": "invigilator",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A supervisor of examination students is a complete occupational meaning; retain Commonwealth, Ireland and UK labels and exclude generic monitoring roles.",
+      "beforeHash": "1170a3080c8e657b11eee1174cc2ae457404ce4e7f4d147a9fbc9ab60cbfe9fb",
+      "sourceSenseId": "wiktionary:8c2d6598565f787bb15fd593"
+    },
+    {
+      "lemma": "inviolability",
+      "hold": true,
+      "reason": "The sole definition repeats inviolable and inviolableness without explaining the intended protected-rights meaning; old glosses are not factual evidence.",
+      "beforeHash": "818ca29828f574e5791099f7b2c5598121eec3b8d9d5ddc0805aa5f5971e3507"
+    },
+    {
+      "lemma": "invulnerability",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The strength-to-withstand-attack sense is explicit and relevant to safety; no real-world system is promised absolute freedom from harm.",
+      "beforeHash": "7eca16be7a210de4b2fd7b9e917234d882d3c354743f23335f7cda471d7972bc",
+      "sourceSenseId": "source-7675f643f4e4b86afa2d"
+    },
+    {
+      "lemma": "ionophore",
+      "hold": true,
+      "reason": "Ion transport across media or membranes is a specialist biochemical concept, not an interchangeable fitness electrolyte term; the sole anchor does not justify the topic.",
+      "beforeHash": "d75dcf9a1a178389c7d7a6a8a53acbb01460529040dc7d3cd5b94eddabaad410"
+    },
+    {
+      "lemma": "irregulars",
+      "hold": true,
+      "reason": "No exact plural military sense or reviewed irregular mapping is available; the proposed militia meaning remains unsupported by factual entries.",
+      "beforeHash": "481dbf9711aef7af45bd426d79cd75ed19b71778ef5447e7d7c2dc6138a49fd9"
+    },
+    {
+      "lemma": "irritability",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The explicit living-tissue responsiveness to stimuli matches academic sensitivity; exclude emotional anger and abnormal medical excitability senses.",
+      "beforeHash": "21b4896133df7ee037ed447d2129bd6173f4d69c3c5e7e08fb4d16fcf8f9f1b4",
+      "sourceSenseId": "wiktionary:7cd464b8834132e8955b91db"
+    },
+    {
+      "lemma": "ischium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The lowest of the three bones forming each side of the pelvis is a complete anatomical meaning appropriate to pelvic study.",
+      "beforeHash": "e3558ed183df7992afb718b09186d6a0519e0840ecfb7c99475b24f5355a67db",
+      "sourceSenseId": "wiktionary:144019be56f08ab9709c1e6a"
+    },
+    {
+      "lemma": "isoheight",
+      "hold": true,
+      "reason": "The sole entry points to unexplained isohypse; an exact self-contained sense or explicitly reviewed cross-entry expansion is needed before release.",
+      "beforeHash": "432de223eb03313ae9c8814b627fa2be5a28c3c7999b96f9394f587ce517f5e2"
+    },
+    {
+      "lemma": "isohypse",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A map line joining equal-height points is a complete topographical meaning matching contour.",
+      "beforeHash": "a6804ef52efbdceb5049ec11b5c2297cd03e6a440d73e564ced2686850d0a3e8",
+      "sourceSenseId": "wiktionary:10099ec93841ab69ac419477"
+    },
+    {
+      "lemma": "jingoist",
+      "hold": true,
+      "reason": "Aggressive military nationalism is verified but the sole business nationalist anchor does not establish a relevant commercial topic for this political specialist.",
+      "beforeHash": "0bea2b4f28c9ccf60e683aa3a8c99a49a634a92b3469b109deb256b62309e219"
+    },
+    {
+      "lemma": "jobber",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "An intermediary buying and selling merchandise is explicit and appropriate to wholesaling; avoid the source's narrower pricing, stock-exchange and performance senses.",
+      "beforeHash": "0e0f6743029907f9f4ef31b61b12b84d5c9313182ea04bb4d17c0b23668f79d8",
+      "sourceSenseId": "wiktionary:6a24fd21aef3665b9f0ca5ab"
+    },
+    {
+      "lemma": "jockeying",
+      "hold": true,
+      "reason": "The sole entry repeats jockeys and does not verify the intended strategic competitive maneuvering meaning.",
+      "beforeHash": "01673b51122ea4aa26468e4406c27fc94598cf29a1b48d4196cd166e81da5a0e"
+    },
+    {
+      "lemma": "jodhpur",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The short side-buckled riding boot is a complete exact-headword meaning; distinguish it from the Wiktionary attributive trouser form.",
+      "beforeHash": "12c49d1010d6b959124bc139076aede98cb1f34c8dc4d111ec6fde8368a48b9d",
+      "sourceSenseId": "source-d54467125be2be3ee644"
+    },
+    {
+      "lemma": "judicature",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "business"
+      ],
+      "reason": "Judges collectively or a court system is explicit and relevant to legal institutions, without equating it with every individual tribunal.",
+      "beforeHash": "29dc9f4b8e71eaad4c61af2d587e1a9031ca176560fb1bce1f745ad1b45a2591",
+      "sourceSenseId": "wiktionary:699f5ad1a4da6de26a81c030"
+    },
+    {
+      "lemma": "justiciable",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Able to be evaluated and resolved by courts is a complete legal-terminology meaning; it is not a guarantee that a claim or contract is enforceable.",
+      "beforeHash": "c77ca260347bc4fefee5ebb03c11a5388643b450b998a20d0a0ab2f150f5deef",
+      "sourceSenseId": "wiktionary:5c8a15a7ed3d4a96ce0455ee"
+    },
+    {
+      "lemma": "kalium",
+      "hold": true,
+      "reason": "No exact factual English entry is available; a Latin-derived potassium name and its supposed preferred register cannot be inferred from the old gloss.",
+      "beforeHash": "600c21dc0d0a42d282d65d1a57dcc56603476d4a3b1fc883ad4de184d36cc6f8"
+    },
+    {
+      "lemma": "kaolin",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Fine clay rich in kaolinite with ceramic and papermaking uses is a clear materials meaning, not a substitute for every clay.",
+      "beforeHash": "9a8f7f32c0b731455e0147b7f60f94688e5d0ab2e702aed1d8c0f8438c29197a",
+      "sourceSenseId": "wiktionary:02d9f30bae21298de440baa6"
+    },
+    {
+      "lemma": "karyon",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The nucleus of a cell is an exact and understandable biological meaning, excluding non-cellular senses of nucleus.",
+      "beforeHash": "deae60db4e69b595a39ce18ebdf8dad00cda197411c27b7d0ae5cfbb4e0420fb",
+      "sourceSenseId": "wiktionary:9d89b54c4d30682ddf7a82c7"
+    },
+    {
+      "lemma": "kedge",
+      "hold": true,
+      "reason": "The nautical anchor and vessel-warping senses do not fit the fitness anchor context; no specialist maritime connection is promoted.",
+      "beforeHash": "2252a2ea5f8890fbd7a351356e6fad3ff9a6a715f3518074b026ec5e1033e9e3"
+    },
+    {
+      "lemma": "kettledrum",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The drumhead over a hemispherical metal bowl identifies an instrument relevant to entertainment reading; the dated social-party sense is excluded.",
+      "beforeHash": "d5a680a3a7186ea660bf40eb43eb297e32e5dcca8b2f2344898b5b409a4c81de",
+      "sourceSenseId": "wiktionary:33b960c80daeaf110fec6140"
+    },
+    {
+      "lemma": "kilogramme",
+      "hold": true,
+      "reason": "No exact sourced entry supports this spelling in the current evidence; preserve hidden pending a verified spelling-variant identity mapping.",
+      "beforeHash": "fa88f3a73f6185bcab711ab789d0235a59d4f200248e26d266477948b67ed8a5"
+    }
+  ]
+}

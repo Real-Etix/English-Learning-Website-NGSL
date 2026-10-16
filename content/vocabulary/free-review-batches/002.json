@@ -1,0 +1,342 @@
+{
+  "id": "002",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T03:56:32Z",
+  "decisions": [
+    {
+      "lemma": "acclimate",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "OEWN explicitly defines adapting to a climate, matching the environmental adapt/familiarize anchors. Keep that narrower sourced meaning rather than claiming adaptation to every situation.",
+      "beforeHash": "87da476fef716f9ef0a41049a7e80d65734192b79577ab9df480f371dfcab645",
+      "sourceSenseId": "oewn:00394379-v:acclimate%2:30:00::"
+    },
+    {
+      "lemma": "accoutrement",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "OEWN provides a self-contained clothing-accessory meaning matching the accessory anchor. Do not infer ceremonial register or equipment senses not selected here.",
+      "beforeHash": "3040eef8ade99aa9d8c5f52664ae6b185bd4988cf15ac5053dc0713bf7fb3fd6",
+      "sourceSenseId": "oewn:02674410-n:accoutrement%1:06:00::"
+    },
+    {
+      "lemma": "acidulous",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The sourced sour-taste adjective fits the taste aspect of acidic. It does not establish measured pH, a stronger acid, or an unsupported register comparison.",
+      "beforeHash": "261759c46277f5f8839b5282f6093f667551147244e93ffdd01bf88a8e3a704d",
+      "sourceSenseId": "oewn:02377903-s:acidulous%5:00:00:sour:00"
+    },
+    {
+      "lemma": "adoration",
+      "source": "oewn",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Profound love and admiration is the exact appropriate affection sense. The separate worship-of-God definition is not substituted for ordinary personal attachment.",
+      "beforeHash": "4e054b3d5972de9c878ea23b58eb96c0d0de8e075e1d282baac34b1f1bae8279",
+      "sourceSenseId": "oewn:07516659-n:adoration%1:12:00::"
+    },
+    {
+      "lemma": "anaerobiotic",
+      "hold": true,
+      "reason": "OEWN verifies biological activity without free oxygen, but it does not establish equivalence to anaerobic exercise. Keep the organism/biology extension hidden in the Fitness context.",
+      "beforeHash": "ee1a36e9e6f7de8c138e3b5e773e09806dcc9db4f1f0f2d7556c89ae564b1d96"
+    },
+    {
+      "lemma": "annuitant",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The annuity-recipient definition is precise financial vocabulary relevant to the pensioner anchor. It does not imply that every pensioner receives an annuity.",
+      "beforeHash": "d223885182582bdb659d130dbf5aa8285578b45856760bd32b8f61274528ae04",
+      "sourceSenseId": "wiktionary:f7abfbb3d64280d8e07f9c47"
+    },
+    {
+      "lemma": "anopheline",
+      "hold": true,
+      "reason": "The available noun is genus-specific mosquito taxonomy, while the only learning anchor is general TOEIC mosquito. Preserve the earlier unresolved specialist-relevance decision; no malaria advice is approved.",
+      "beforeHash": "4bd80d7633568fa7e04056bca3c540562a298ce7aa249bd1d1cd17bd7d4063de"
+    },
+    {
+      "lemma": "anoxic",
+      "hold": true,
+      "reason": "Oxygen-deprivation or oxygen-absence meanings are not interchangeable with anaerobic exercise. The Fitness anchor does not establish a safe and accurate intended sense relationship.",
+      "beforeHash": "ce4f03c16f394f662c6b2de26de8aea78eb8bf56842e9fd77565763dba21d245"
+    },
+    {
+      "lemma": "antebrachium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The exact forearm definition is directly relevant anatomical terminology for Fitness. No claim that technical language is inherently better than forearm is promoted.",
+      "beforeHash": "5143d7683ad44c31a2fbd4aa9bb086e07c164bd981e8eff9941c437878134543",
+      "sourceSenseId": "wiktionary:31c79c5fcde95e736094f29e"
+    },
+    {
+      "lemma": "anthropic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The human-related adjective is verified and appropriate for academic discussion of humanity. Restrict the specialist extension to Academic without fabricating list membership.",
+      "beforeHash": "93616502d4713904ee9881f99d56bb942b013beeed39d7170bd6c1fe7096ceeb",
+      "sourceSenseId": "wiktionary:592a17590d4034333e451f1f"
+    },
+    {
+      "lemma": "antimonopolistic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Opposing monopolies is a complete definition directly relevant to the Business antitrust anchor. No legal conclusion or comparative register claim is implied.",
+      "beforeHash": "c3b3137e05ccb3d8f2deac96b33839e6942ab29a12b97ee06497ae8dc92343a8",
+      "sourceSenseId": "wiktionary:f135139d6b4ff3961c72a10e"
+    },
+    {
+      "lemma": "antitoxin",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The selected antibody capable of neutralizing specific toxins fits the Academic antibody anchor. The separate medicine sense is not selected and no treatment advice is introduced.",
+      "beforeHash": "6e62d59337d51f0810e5aa1e5aa456302dd1aba62b8f90426e2fce1ea537a402",
+      "sourceSenseId": "wiktionary:4b320121c2d7654552294f20"
+    },
+    {
+      "lemma": "apostolate",
+      "hold": true,
+      "reason": "The available senses concern apostolic office and spreading religious doctrine. The generic NGSL mission anchor alone does not justify this specialist theological expansion.",
+      "beforeHash": "89f0ce50b1d1761961013405b75cb0b787671511368bd554ab95e8ee8f863861"
+    },
+    {
+      "lemma": "appertain",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Belonging to or forming part of something is explained directly in the source, matching belong. No exclusive legal usage or unsupported register label is added.",
+      "beforeHash": "26160145001ea715115ef99badb86b01f5f4e401f49da3548d40476e69be204d",
+      "sourceSenseId": "wiktionary:477c3f16b42994a9fcecd4f5"
+    },
+    {
+      "lemma": "apprise",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business",
+        "toeic"
+      ],
+      "reason": "Making a person aware of information directly matches inform/notify. Retain the source grammar labels and avoid implying that the verb necessarily describes repeated updates.",
+      "beforeHash": "2d0c75a7e03dac041f3df6fcb8603b6f0a1f3921ce7ac5b1b8d39482c8d00508",
+      "sourceSenseId": "wiktionary:e7f8184dd3f9c58f8fb940ba"
+    },
+    {
+      "lemma": "architectonic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The architecture/design/construction adjective fits the architectural anchor. The philosophical knowledge-system and figurative moral-foundation meanings are not approved.",
+      "beforeHash": "a747ac173a4a3345785219b27a11b58166cae5cab2c8658398ba521d88d5e6c3",
+      "sourceSenseId": "wiktionary:b07c5d5a16f874e77f59d39c"
+    },
+    {
+      "lemma": "arithmetician",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "OEWN explicitly identifies a person specializing in arithmetic. Restrict to Academic and do not conflate the person with a calculator device used in Business or TOEIC.",
+      "beforeHash": "00a09cc17eef5eb970342e4b1003bf0a1c11c22c87d2af505eeb2470ea275726",
+      "sourceSenseId": "oewn:09827774-n:arithmetician%1:18:00::"
+    },
+    {
+      "lemma": "armamentarium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The equipment-for-a-task definition includes a medical specialization and fits Academic technical resources. Do not broaden it to every Business repertoire or to unverified knowledge-based skills.",
+      "beforeHash": "b1deeea8200fd3e5166171a2d8dfb182db1c859509e236c480b534d17de814d2",
+      "sourceSenseId": "wiktionary:b08eda3c3de0a5a3dbf15e47"
+    },
+    {
+      "lemma": "armhole",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The arm opening in clothing is a clear garment-related meaning matching the sleeve context, without equating an opening with the sleeve itself.",
+      "beforeHash": "b5ac5e3e41c4edd8d11e99794866237b14e527ac57e7bd5bd3e1cbdb7975addf",
+      "sourceSenseId": "wiktionary:626608e53e29ebe97dd42dd0"
+    },
+    {
+      "lemma": "armoire",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The cupboard/cabinet/wardrobe definition fits furnishings. Its historical weapons use is preserved as source wording, without adding claims that every armoire is ornate or elegant.",
+      "beforeHash": "0e0ce03205b0601bc38f4fb48a6d0cd9c2eae2bc368882a378c7f5cc44a0eeb6",
+      "sourceSenseId": "wiktionary:2ffe78d57fe4cf8cab8a32d4"
+    },
+    {
+      "lemma": "articulator",
+      "hold": true,
+      "reason": "The proposed Business dictator link confuses a political/business word with speech-production anatomy. Dental devices and vocal organs do not resolve that unsupported relationship.",
+      "beforeHash": "837d809698983d2aaa969bcc3f42eb3628df8aed3a4b7bafcb70cf172f9c1928"
+    },
+    {
+      "lemma": "artiste",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic",
+        "business"
+      ],
+      "reason": "A public song or dance performer fits entertainment/workplace performer vocabulary. Exclude the unsupported Fitness expansion and the separate skilled hairdresser/cook sense.",
+      "beforeHash": "2e19999e812f563e1ba06c37841640ec3b66869b6218456c7fa50fecbea037db",
+      "sourceSenseId": "wiktionary:1f499daf99d22a311dad06ec"
+    },
+    {
+      "lemma": "ascending",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Rising levels, values or degrees is explicit in the selected definition and fits ordered values/trends. Retain attributive usage, excluding the separate slope meaning and ambiguous Fitness application.",
+      "beforeHash": "10a315c6c178d5427e859d6f3067da8c44853163e87b7cf63ff365f5c40d4d7a",
+      "sourceSenseId": "wiktionary:8685aa7d22e70b7841277fad"
+    },
+    {
+      "lemma": "asepsis",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Removing or protecting against pathogenic organisms is a standalone specialist hygiene meaning. Publish lexical meaning only, not an assurance that ordinary hygiene produces sterile conditions.",
+      "beforeHash": "8fa01a83f91ff6fb1dca16abe8cc4c3e59f0832483bfe435bcb1fd0b746ff3e6",
+      "sourceSenseId": "wiktionary:06ede494859be46e87f92a38"
+    },
+    {
+      "lemma": "assailable",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The definition explicitly explains capable of being attacked, fitting vulnerability. It is not an approval of every sense of vulnerable or any new relationship.",
+      "beforeHash": "59eb79bcb2bef08ab2a854073e817c70a59c08744b488e2d52ea39a3b73fb237",
+      "sourceSenseId": "wiktionary:910609648ad8a4168a4556a3"
+    },
+    {
+      "lemma": "assiduity",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Great persistent effort is a self-contained match for workplace diligence. The separate solicitous-attention sense and comparative register claims are not selected.",
+      "beforeHash": "c9438bcc0f220a33db8fea8775b735954acdf4ac6e66f84ac2dce34f86d5e28c",
+      "sourceSenseId": "wiktionary:19f21cdb06aa399cf0c1a511"
+    },
+    {
+      "lemma": "asylee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The non-citizen granted asylum definition clearly distinguishes this status from the broader refugee anchor. This is vocabulary, not legal eligibility advice.",
+      "beforeHash": "5c7dc0388070d805865ec41ad71fc615b3e04d43914c96918c65a9eef5837afa",
+      "sourceSenseId": "wiktionary:36780782d7447a3c58b60117"
+    },
+    {
+      "lemma": "atomistic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The atoms/atomism adjective matches the Academic atomic anchor. It is not used to publish the unrelated economic-market or general fragmented-structure senses.",
+      "beforeHash": "ba55e8077421451f2048c8eae165ff6ff11bd361bcddbe84dfa0803e46cf689b",
+      "sourceSenseId": "wiktionary:94111dea152b6f5e009fd537"
+    },
+    {
+      "lemma": "audient",
+      "hold": true,
+      "reason": "The source verifies an uncommon listener noun, but the Business/TOEIC auditor anchor is likely the accounting occupation. Keep the uncertain sense correspondence hidden.",
+      "beforeHash": "10088c8d68b60ce698cf5c363fca8f5979cb546e3c6fef99ffdefafe2cd6a3b9"
+    },
+    {
+      "lemma": "audile",
+      "hold": true,
+      "reason": "Mental sound imagery is specialist psychology and the ordinary TOEIC audition context does not establish that meaning. Do not validate an auditory learning-style claim from this noun.",
+      "beforeHash": "62612e796d0ae7bb2da7e21a13da851c4d443120812d0d3a039be2cf0763d184"
+    },
+    {
+      "lemma": "auditive",
+      "hold": true,
+      "reason": "The sourced hearing-related adjective is valid, but the TOEIC audition anchor may mean a performance trial. Its intended sense correspondence remains uncertain.",
+      "beforeHash": "4da2a4eaef6f2e5c4b3d870a6fc2127cbcfde98110d1be9b74c6128c8af4747d"
+    },
+    {
+      "lemma": "auricle",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The selected source explicitly names the outer ear/pinna, with its ear-shaped-appendage context preserved. Restrict anatomical precision to Academic and do not select the cardiac atrium meanings.",
+      "beforeHash": "1181a89687371315a236c7262c2fa6b0582619b00d3924b87434012948ff9f22",
+      "sourceSenseId": "wiktionary:c409b0569e56bbb17e1dfebe"
+    },
+    {
+      "lemma": "autarchic",
+      "hold": true,
+      "reason": "The candidates mix autocratic governance and self-sufficiency; the original autonomous Business link conflates them. The prior scope/sense ambiguity remains unresolved.",
+      "beforeHash": "095b1a21e130092d9675e55c0d08f95833fffb7c64c024208ec51ef8825a8070"
+    },
+    {
+      "lemma": "avunculate",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The relationship between a man and his sister's children is self-contained anthropology vocabulary. Restrict to Academic; do not substitute tribe-specific duties or the separate marriage adjective.",
+      "beforeHash": "7fb146d5439f93670aa16c7cb72e90773d708fd1ee5648e5f110f4e2047dc75c",
+      "sourceSenseId": "wiktionary:2211ce1600cddc696c06ebab"
+    }
+  ]
+}

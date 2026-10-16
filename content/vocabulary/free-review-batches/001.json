@@ -1,0 +1,188 @@
+{
+  "id": "001",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T03:56:32Z",
+  "decisions": [
+    {
+      "lemma": "abidance",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "The adherence/compliance meaning fits rules and workplace compliance. The dwelling/stay sense is not selected, and the old claim about passive constructions is not approved.",
+      "beforeHash": "1338153163811e0746f9fe337e07e40d6692b5d0e47b3bb376c11fa10a6937fb",
+      "sourceSenseId": "wiktionary:495758fda48dfafd70770e57"
+    },
+    {
+      "lemma": "accumbent",
+      "hold": true,
+      "reason": "The reclining meaning is framed as ancient dining and the other adjective is botanical. Neither establishes an appropriate Fitness alternative for supine; retain hidden.",
+      "beforeHash": "5fd7a31d3955bf30231e749ae581adf4819aa5fa7048d307aa2515c12ad9df77"
+    },
+    {
+      "lemma": "actinic",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The source explains photochemical effects of electromagnetic radiation in the definition itself. Keep the already-reviewed Academic restriction, not a general NGSL replacement for solar.",
+      "beforeHash": "3727098339ce56a694a6465444eb2b97c1e26c7ad21b0f67f79998e52950b370",
+      "sourceSenseId": "wiktionary:62bb9adc3b3d22d56c900514"
+    },
+    {
+      "lemma": "aculeus",
+      "hold": true,
+      "reason": "Plant spikes and stings do not fit the existing Fitness needle anchor. A botanical meaning is not evidence for an exercise-vocabulary connection.",
+      "beforeHash": "aff8e4349c1eccf392068c9e4cc2a5cd29b1ca581aee76391e0e90cd269e29ae"
+    },
+    {
+      "lemma": "aerophilic",
+      "hold": true,
+      "reason": "The exact source qualifier concerns microorganisms thriving in oxygen, not aerobic exercise. The previous Fitness relevance objection remains unresolved.",
+      "beforeHash": "bfe4dd3184f4ffef6ad83c0be1447a5c5187c83cb4fea0c87fd6854e4ad2d550"
+    },
+    {
+      "lemma": "aerostat",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The self-contained buoyant-aircraft definition fits the transport balloon anchor. It covers balloons and dirigibles without limiting the general term to military or tethered use.",
+      "beforeHash": "87f111138b83090d171bef54fb873aa6f8c7b7c15bcb9c7ebb5a15922d28c654",
+      "sourceSenseId": "wiktionary:21df4baa4b6a4a16da7d4923"
+    },
+    {
+      "lemma": "agglomerate",
+      "hold": true,
+      "reason": "The proposed Business conglomerate connection explicitly concerns volcanic rock, not companies. Do not substitute the geological or urban-development senses into that business relationship.",
+      "beforeHash": "6d2e373e14ccfd1cbff0208fd08d6ecb933114d276e956f95e7294e44e074086"
+    },
+    {
+      "lemma": "agriculturist",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The sourced farmer/gardener definition is directly relevant to the farmer anchor. It does not require scientific expertise; the old expertise comparison and separate adviser meaning are not promoted.",
+      "beforeHash": "1d09418125d831c69a43d142c88019512847a85bd68fc0eaf1a60bdc06c2484a",
+      "sourceSenseId": "wiktionary:08b550273421e7245a0b3628"
+    },
+    {
+      "lemma": "agroindustry",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Agriculture treated as an industrial economic sector fits both economics and business. Do not inherit the narrower unverified claim that the word excludes growing crops.",
+      "beforeHash": "c34c2860d34372acc74c02c5426ce6f5e6d031ea422c0e68e23c41a65d4ddc1f",
+      "sourceSenseId": "wiktionary:4f393b2dc1a7ffb5fc74b3b5"
+    },
+    {
+      "lemma": "airpower",
+      "hold": true,
+      "reason": "The only meaning is military airborne force. The general Business aviation anchor does not establish a military learning context, so the specialist extension stays hidden.",
+      "beforeHash": "8f7bd34ecebb575c51b37eb28afdf9b6fac34bc7a785b2d0c6e7fde86fc2b162"
+    },
+    {
+      "lemma": "airwaves",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Radio-frequency waves in wireless communication fit communications technology. Preserve plural-only usage and do not teach the old imprecise definition as empty space carrying signals.",
+      "beforeHash": "549174484925fd1db1875a5866937ef02787a8c082571ac056701717f9c2c81c",
+      "sourceSenseId": "wiktionary:51e9978adda207cc5169bf40"
+    },
+    {
+      "lemma": "ala",
+      "hold": true,
+      "reason": "Anatomical processes, botanical parts and ancient Roman rooms are specialist senses not justified by the ordinary NGSL wing anchor. Retain uncertain relevance hidden.",
+      "beforeHash": "e1a9f31cd574f7ee9524f15a9c4e9ab4470f89fcad81c9940f738bee78d7c081"
+    },
+    {
+      "lemma": "algorithmically",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Using an algorithm is a complete manner definition relevant to computing and workplace procedures. It is not interchangeable with all electronic operations; no such connection is approved.",
+      "beforeHash": "a672cffd95cb246bf753b7111c8faf37dc1dd1e1d146b76a336bb235465251b1",
+      "sourceSenseId": "wiktionary:1198d8d74f8d3256fb9b30e2"
+    },
+    {
+      "lemma": "allotherian",
+      "hold": true,
+      "reason": "Preserve the existing archive: extinct-mammal taxonomy is unrelated to the Academic/Business multi-prefix anchor. No source or scope evidence resolves that mismatch.",
+      "beforeHash": "44177d3c031d7397de98403d3b5713ee0a46de3e8ec7e9c3f974b6c4e96a02a3"
+    },
+    {
+      "lemma": "alluvium",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The sourced flowing-water sediment definition is self-contained and appropriate for Academic earth science. Restrict the technical term to Academic instead of a general substitute for every NGSL deposit.",
+      "beforeHash": "b6346fb055f26ccb42b1fb0235d856a5a1f7cf5af4bf67a2894fc6aada196310",
+      "sourceSenseId": "wiktionary:cf42b1b309058914038de081"
+    },
+    {
+      "lemma": "amalgamation",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "The definition explicitly explains mixture, merger or consolidation and fits the existing combination/business-merger anchors. Do not select the mercury-alloy sense or extend it through Fitness synthesis.",
+      "beforeHash": "f488028b9295d6b9b5c580f9010e8aaaa886159ed333e96fdb43e61c00d098ca",
+      "sourceSenseId": "wiktionary:4caf7a087c912bf561e5adb5"
+    },
+    {
+      "lemma": "amido",
+      "hold": true,
+      "reason": "The cached radical definition needs clearer chemical nomenclature and identity evidence. It must not be presented as interchangeable with amino, especially in Fitness vocabulary.",
+      "beforeHash": "c97fd6e718a1359a3dffd95613b1bc0bb75d46fdf2710a0d11f5ce0cca7e6478"
+    },
+    {
+      "lemma": "aminyl",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The radical derived from primary or secondary amines is a precise Academic chemistry term. Preserve compound-use labels and exclude the unrelated Fitness amino extension.",
+      "beforeHash": "022dc511cfc7c25f0ddf834ae7beb054e16ddf3614e8723f2c172851d2922213",
+      "sourceSenseId": "wiktionary:08d4b7818ec3e6d546e531e0"
+    },
+    {
+      "lemma": "amperage",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The electric-current definition includes charge per unit time and amperes, making the measured-current meaning explicit for the current anchor. No unrelated current senses are included.",
+      "beforeHash": "e43d4965c1942ce38463e8131d622ea7d7d872c991088b71fd37db2eaabd6a08",
+      "sourceSenseId": "wiktionary:578d694f93ad0003756577ef"
+    },
+    {
+      "lemma": "ampholyte",
+      "hold": true,
+      "reason": "The amphoteric-electrolyte definition is specialist chemistry, while the only proposed anchor is Business buffer. The topic mismatch remains and the terse definition adds an unexplained technical term.",
+      "beforeHash": "52ef07d3c1474021cc381b02c86e01b85cbb8e02fd59a22f4aea2e292c1d9b80"
+    }
+  ]
+}

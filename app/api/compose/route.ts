@@ -5,6 +5,7 @@ import {
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
 import { completeChat, hasLLM } from "@/scripts/llm-client";
+import { needsExampleForPractice } from "@/lib/vocabulary/meaning-review";
 
 export const runtime = "nodejs";
 
@@ -41,6 +42,7 @@ export async function POST(request: Request) {
     const requestedSense = record.senses.find((sense) => sense.id === body.senseId);
     if (!requestedSense) return Response.json({ error: "That meaning does not belong to this word." }, { status: 400 });
     if (requestedSense.status !== "published") return Response.json({ error: "This meaning is not published yet." }, { status: 409 });
+    if (needsExampleForPractice(record, requestedSense)) return Response.json({ error: "Sentence practice needs a reviewed, sourced example." }, { status: 409 });
 
     const partners: PartnerInfo[] = [];
     const loadedPartners = await Promise.all(record.connections.map(async (connection) => ({
@@ -53,7 +55,7 @@ export async function POST(request: Request) {
       if (!COMPOSABLE.has(c.type)) continue;
       const partner = partnersByLemma.get(c.target);
       const sense = partner ? publishedSense(partner) : null;
-      if (!partner || !sense) continue;
+      if (!partner || !sense || needsExampleForPractice(partner, sense)) continue;
       partners.push({
         lemma: partner.lemma, display: partner.display, def: sense.definition, tier: partner.tier,
         rank: partner.lists[0]?.rank ?? null, type: c.type, gloss: c.gloss ?? null, status: c.status, dir: "out",
@@ -79,6 +81,14 @@ export async function POST(request: Request) {
   if (body.action === "grade") {
     const task = body.task;
     if (!task) return Response.json({ error: "no task" }, { status: 400 });
+    if (typeof task.lemma !== "string" || typeof task.senseId !== "string") return Response.json({ error: "missing word or senseId" }, { status: 400 });
+    const record = await loadGeneratedWord(task.lemma);
+    const sense = record ? publishedSense(record, task.senseId) : null;
+    if (!record || record.publicationStatus !== "published" || !sense) return Response.json({ error: "This meaning is not available for practice." }, { status: 409 });
+    if (needsExampleForPractice(record, sense)) return Response.json({ error: "Sentence practice needs a reviewed, sourced example." }, { status: 409 });
+    const partner = typeof task.partner === "string" ? await loadGeneratedWord(task.partner) : null;
+    const partnerSense = partner ? publishedSense(partner) : null;
+    if (!partner || !partnerSense || needsExampleForPractice(partner, partnerSense)) return Response.json({ error: "The partner needs a reviewed, sourced example." }, { status: 409 });
     const text = body.text ?? "", text2 = body.text2 ?? "";
     const g = gate(task, text, text2, body.example);
     if (!g.ok) return Response.json({ ok: false, gate: g.msg });

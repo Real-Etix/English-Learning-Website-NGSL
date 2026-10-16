@@ -1,0 +1,392 @@
+{
+  "id": "011",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:16:09.000Z",
+  "decisions": [
+    {
+      "lemma": "embarked",
+      "hold": true,
+      "reason": "No exact extracted source sense or reviewed inflection mapping is available; the aboard gloss alone does not verify this form.",
+      "beforeHash": "1a8af8cc155792b0774073535061a04921d0ac24c9400da1fd517aab42f12da2"
+    },
+    {
+      "lemma": "embracement",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "business"
+      ],
+      "reason": "The figurative full-acceptance meaning supports adoption of ideas; retain its figurative label and do not substitute the physical hug sense.",
+      "beforeHash": "9ea6f96053b456fb57af91729a93cf5d2f9a8adc43468a04564b8dbf8b926318",
+      "sourceSenseId": "wiktionary:cd1fe3a0138f8a616ce38884"
+    },
+    {
+      "lemma": "emcee",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "The event host introducing speakers is a complete occupational meaning matching announcer; the hip-hop verb is a separate sense.",
+      "beforeHash": "5bf7fcd6bc0eb8a18b9735acdd2e209f38f9b3687abbdf1becaa193fbe21e223",
+      "sourceSenseId": "source-ee2069e00c80892b2f97"
+    },
+    {
+      "lemma": "emend",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "Correcting and revising a document directly supports text-editing vocabulary; proofreading is not dismissed as merely casual scanning.",
+      "beforeHash": "8737a19fbb493a67d4d67e8de38345df50d87e066154cfc943efd962507c7638",
+      "sourceSenseId": "wiktionary:1cc66a3d56cba5e6586b5edf"
+    },
+    {
+      "lemma": "emplace",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Locating something at a particular place is an explicit general meaning; a military gun emplacement is not required.",
+      "beforeHash": "cc00890e959591ed99acf414c9851ce56f522d454fc689b20020bbcae39401fb",
+      "sourceSenseId": "wiktionary:fa861b8e81459336880376bb"
+    },
+    {
+      "lemma": "emplacement",
+      "hold": true,
+      "reason": "The old battery connection specifically selects military fortifications, not business or travel battery usage; the alternative general placement sense does not repair that mismatch.",
+      "beforeHash": "eba144b7cfa7117434d35eb6492da31d4459b5320fa010d239d8b1abd30550a8"
+    },
+    {
+      "lemma": "emulsify",
+      "hold": true,
+      "reason": "All available definitions depend on unexplained emulsion; the old cream gloss cannot supply the missing sourced explanation of the mixing process.",
+      "beforeHash": "e70cc755981c101e43f12366afff655f343748970e1de05dd6ffecc7a65bad0e"
+    },
+    {
+      "lemma": "enacted",
+      "hold": true,
+      "reason": "No exact sourced adjective or reviewed enact inflection mapping is available; preserve hidden rather than infer timing of legal effect.",
+      "beforeHash": "c35b90cff718e510f84431fd800a1f98bd564e6b475364f611025adbd203d9de"
+    },
+    {
+      "lemma": "enactment",
+      "source": "oewn",
+      "sense": 1,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Passing a law by a legislative body is explicit and matches legislation; it does not automatically mean implementing any policy.",
+      "beforeHash": "7d9482c26f4a9d0da15014022f38bb0c4d30e31c7f84c0e0e476ada7326013da",
+      "sourceSenseId": "oewn:01129177-n:enactment%1:04:01::"
+    },
+    {
+      "lemma": "enceinte",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The exact adjective entry gives pregnant as its meaning; retain non-comparability and do not import the unrelated fortification nouns or claim routine usage.",
+      "beforeHash": "853116721e606dc7bd6f4ed90ab733a9cc94f58370d1f00414f857368ab43504",
+      "sourceSenseId": "wiktionary:2fa5805faed1f09c4f7a9823"
+    },
+    {
+      "lemma": "encipher",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Converting plain text into cipher is the specific cryptographic meaning appropriate to encode study, not every kind of data encoding.",
+      "beforeHash": "254bdd9e187afd53f3c3ae3ea4789acafffd21048f7bf728b755790900885e6b",
+      "sourceSenseId": "wiktionary:413c8c7e39da857b6e406c2b"
+    },
+    {
+      "lemma": "endmost",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "toeic"
+      ],
+      "reason": "Last in a series or furthest away is explicit and supports positional terminal vocabulary; it does not name a transport facility.",
+      "beforeHash": "457a0db7a8e338f4b8c7896a87504e2c7ae5cdeb8b2b3b9186593c634edf485e",
+      "sourceSenseId": "wiktionary:0865af15753250779fd7e004"
+    },
+    {
+      "lemma": "enfranchisement",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "business"
+      ],
+      "reason": "The granted statutory-right sense explicitly includes citizenship and voting, matching the civic-rights anchor; the historical land-tenure sense is not selected.",
+      "beforeHash": "a019e1f11cb15a22dd7efafb1507bf23cbec57839c6883973aed8b9ecdb8322c",
+      "sourceSenseId": "source-112d5f89bf15a07615a7"
+    },
+    {
+      "lemma": "engrossment",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Concentration or preoccupation is self-contained and relevant to interest; exclude the different legal-document preparation sense.",
+      "beforeHash": "dda2914ab646365cc19b065e5927668716cb466a0176cd6ab72819f2774ec1e6",
+      "sourceSenseId": "wiktionary:42cf29a03bf6ed33ce9a041d"
+    },
+    {
+      "lemma": "enhancer",
+      "hold": true,
+      "reason": "The generic definition repeats enhance, the DNA sense is unrelated, and WordNet's contrast-based sense does not establish the proposed business builder meaning.",
+      "beforeHash": "695e86064bc90f103734226a4cdeb1dcc966d4508e2340e13c87fe9c154ae5b8"
+    },
+    {
+      "lemma": "enlistee",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A person who enlists, especially in the armed forces, is explicit and supports signup vocabulary; not every volunteer is an enlistee.",
+      "beforeHash": "02dbfdccececf19c8ca928c0ca5715549fb80d1df8cea8d4afe6b8ca201a3a2a",
+      "sourceSenseId": "wiktionary:5f8a01790d3fc997af825690"
+    },
+    {
+      "lemma": "enmesh",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Involving someone in complications that are hard to escape directly fits complicate; involuntariness is not asserted as universal.",
+      "beforeHash": "ac6bfd29b535252001b64b131bd19e68ec039ddea575ff59bf07d2d9628f56e2",
+      "sourceSenseId": "wiktionary:404b288f3e579b988ac252d9"
+    },
+    {
+      "lemma": "ensign",
+      "source": "wiki",
+      "sense": 3,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The ship's principal nationality flag is a precise extension of flag; naval rank and historical flag-bearer meanings remain separate.",
+      "beforeHash": "905fd9cc5c4bba4b5ad16f8df75c3ef51db0958738b5c1a675b91726164e6954",
+      "sourceSenseId": "wiktionary:a2c9f6349eac80aa04742ecb"
+    },
+    {
+      "lemma": "entente",
+      "hold": true,
+      "reason": "The diplomatic alliance meaning is verified but unrelated to the sole fitness alignment anchor; physical alignment does not support an international-relations specialist.",
+      "beforeHash": "cf1693627f9dbf4a84614e1f9ba05091bb30bfade66aaf474a51feb462ab62a0"
+    },
+    {
+      "lemma": "entomb",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Depositing a corpse in a tomb matches bury in general reading; no claimed business relevance or extra ceremonial requirement is approved.",
+      "beforeHash": "dc23e5ca5538ae1b8e54d5804e8ae84bd065909af0fd1cb6a6e90143c780adb5",
+      "sourceSenseId": "wiktionary:beddca8a29e964c11370d94d"
+    },
+    {
+      "lemma": "entrail",
+      "hold": true,
+      "reason": "The only exact entry is a verb meaning outline in black, not the proposed abdominal-organ noun; plural identity evidence is unresolved.",
+      "beforeHash": "850a33621c6030cc50d9c401f665a7a2c78f5c4c648160f8caef62ebba71b0fa"
+    },
+    {
+      "lemma": "entrepreneurialism",
+      "hold": true,
+      "reason": "The sole definition depends on entrepreneurial without explaining the concept; the model's innovation and risk claims cannot fill that factual gap.",
+      "beforeHash": "6acac24b5a6d10f7842a277e45b50e465a89b4e77e412418e4e6a53d735e7cce"
+    },
+    {
+      "lemma": "enunciator",
+      "hold": true,
+      "reason": "The entry merely says someone who enunciates and does not establish the proposed dictation role; a self-contained factual meaning is still needed.",
+      "beforeHash": "f516b9b34cf24e3ff2e21c034d9aa3d3a62843247e8f085901ab46f1990373e0"
+    },
+    {
+      "lemma": "envelop",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "toeic"
+      ],
+      "reason": "Surrounding, enclosing or enfolding is explicit and matches several covering anchors; softness and any particular material are not required.",
+      "beforeHash": "1d7f6c8af4ad2a7bc7d2b65db235beba2b331f8171abf0e0d904b381b2f4671d",
+      "sourceSenseId": "wiktionary:ceb24894941f4f812664f09d"
+    },
+    {
+      "lemma": "environs",
+      "source": "oewn",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "toeic",
+        "business"
+      ],
+      "reason": "An outer adjacent area supports neighborhood and surrounding-town vocabulary, without equating all environs with residential suburbs.",
+      "beforeHash": "b5cd1b3de79579c15a4445f8cca4abd348fe726862cb3cedc6462be1a0fb992c",
+      "sourceSenseId": "oewn:08557020-n:environs%1:15:01::"
+    },
+    {
+      "lemma": "epizootiology",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "The study of animal disease dynamics and epidemiology is a precise and relevant academic extension of epidemiology, not clinical advice.",
+      "beforeHash": "358274713bfb65c98e3788bbed6f6f4e599387c7d44e35c77da663865b89061b",
+      "sourceSenseId": "wiktionary:220476c66ec2f64acd9931d4"
+    },
+    {
+      "lemma": "equipoise",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "A state of balance or equilibrium is explicit; the old assertion that it is more exact than equilibrium is not supported or published.",
+      "beforeHash": "1625fd55aaf1a30d2780bfa715be1e2da12c679b905167cbcaba4976a2e5b572",
+      "sourceSenseId": "wiktionary:93bad4dff6155e77b57a7d04"
+    },
+    {
+      "lemma": "equityholder",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "business"
+      ],
+      "reason": "Ownership of equity in a corporation or business is an exact verified closed-compound meaning fitting shareholder.",
+      "beforeHash": "397a2a9ed242a5c077ff9ff126e8742d0b5e7c2da93d469532583da582051e4f",
+      "sourceSenseId": "wiktionary:90c14c9a0d0dfcbd47c3553c"
+    },
+    {
+      "lemma": "ergometer",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The source explicitly measures work done by muscles, relevant to exercise testing; it does not identify every treadmill as an ergometer.",
+      "beforeHash": "74486c39988f3995ff7064148257bee88bbb1203326ead0778012c54f60f1440",
+      "sourceSenseId": "wiktionary:ec9dac96fd76ee94471a631f"
+    },
+    {
+      "lemma": "escarpment",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "A steep slope or cliff at a plateau or ridge is clear and matches slope; a riverbank location is not required.",
+      "beforeHash": "254652f12519779f1ebd476a6bce096159d8b0aa7328caf6adc5b165bf5e5e3d",
+      "sourceSenseId": "source-b20930f387f3ec93c659"
+    },
+    {
+      "lemma": "espousal",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "business"
+      ],
+      "reason": "Adopting a plan, cause or idea fits organizational adoption; marriage senses and any mandatory public-support implication are excluded.",
+      "beforeHash": "3949324b050e645e8bbd4e33c00c1072e8d156978886573a63c31e7e9900c287",
+      "sourceSenseId": "wiktionary:0ff72b33be8d04ff38b15f63"
+    },
+    {
+      "lemma": "etagere",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Open shelves for displaying ornaments provide an exact furniture meaning; book storage, particular wood and stylishness are not mandatory.",
+      "beforeHash": "f8fe209c07b9ea4374246ef29e80d76a5142f945dc8c431057b1ea29b93a422f",
+      "sourceSenseId": "wiktionary:0f9b6cb2dedfda126e5ad541"
+    },
+    {
+      "lemma": "ethnocide",
+      "hold": true,
+      "reason": "The sole business genocide anchor does not establish an appropriate specialist topic, and its categorical cultural-versus-killing distinction contradicts the broader source definition.",
+      "beforeHash": "f89b7a8de372514453ffd94742fc3c83cbff1980184032a99efce92ff0368efa"
+    },
+    {
+      "lemma": "ethnos",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "An ethnic group sharing national or cultural tradition is explicit and supports academic anthropology, without extending it to arbitrary business tribes.",
+      "beforeHash": "fce3780d69a7fcbd2309a419af39a0f6ec0d90484cc4790fd723574e8332dcd8",
+      "sourceSenseId": "wiktionary:0c539900aa201339b57525b1"
+    },
+    {
+      "lemma": "eulogistic",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Conveying praise or admiration is a complete meaning appropriate to complimentary speech; no required level of eloquence is invented.",
+      "beforeHash": "ea6c0766b731a2cfaeb1b0d3a257b2fdf6dbc326fbe6e21d89c54356b69cc23b",
+      "sourceSenseId": "wiktionary:a2abf9d63d6b5d94e5dbb008"
+    },
+    {
+      "lemma": "evaluator",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "An authority estimating worth or quality is clearer than the form-of entry and supports assessment vocabulary without equating all analysts with evaluators.",
+      "beforeHash": "4dedc588a3d5961787fc84c1961c648ba3e4cd8dbe2812b5894046e0f6db9cf3",
+      "sourceSenseId": "source-f4b07f814c058d68f98e"
+    },
+    {
+      "lemma": "evaporability",
+      "hold": true,
+      "reason": "Evaporation capability is verified but the sole business volatility anchor concerns a different domain; a financial fluctuation is not evaporation.",
+      "beforeHash": "94a82fe88da1ed6523ff2ed9790c239caabf8f8e07a2fade3b296df85121db4d"
+    },
+    {
+      "lemma": "evolving",
+      "hold": true,
+      "reason": "No exact source sense or reviewed inflection mapping is available; the old adaptive-change gloss is not evidence that all developmental processes are predictable.",
+      "beforeHash": "ca416e41dc5a75c947fd5a2966b434023defcec62756ebe5619583d5c54735f1"
+    },
+    {
+      "lemma": "ex-spouse",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "The former spouse after divorce is explicit and relevant to precise personal-status terminology; gender-neutral reference does not require invented usage examples.",
+      "beforeHash": "56361e0452761c862883f24b9020aaf60c8a064e060138e9a301f6eaedd4ed63",
+      "sourceSenseId": "wiktionary:5f65d5dc533636119e40c3ca"
+    },
+    {
+      "lemma": "excisional",
+      "hold": true,
+      "reason": "The only definition repeats excision without explaining it; the model's claim of completely cutting out tissue cannot replace source-backed learner meaning.",
+      "beforeHash": "e9ca7d9f6dd88b8f7e905cea86aba03c4853c9c0add3cb453000562963b81780"
+    }
+  ]
+}

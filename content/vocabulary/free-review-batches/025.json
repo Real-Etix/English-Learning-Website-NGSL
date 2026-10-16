@@ -1,0 +1,369 @@
+{
+  "id": "025",
+  "policy": "limited-examples-v1",
+  "reviewedAt": "2026-10-16T06:48:59.000Z",
+  "decisions": [
+    {
+      "lemma": "reenvision",
+      "hold": true,
+      "reason": "The candidate only repeats envision and does not independently establish the intended mental reconstruction meaning.",
+      "beforeHash": "2a14c3cf75c84bfc084cba1a68f691a010bd5758c35608b97343b666dd8ef32d"
+    },
+    {
+      "lemma": "reflationary",
+      "hold": true,
+      "reason": "The sole definition relies on unexplained reflation, so the proposed economic policy distinction remains unsupported for learners.",
+      "beforeHash": "413572946bfb57a3699e00757d63f74b19058ad130427186f9e207d2c37ae9f5"
+    },
+    {
+      "lemma": "reformatory",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The correctional institution for young or first offenders is directly explained and fits the jail anchor.",
+      "beforeHash": "42e2a93a477aefc3f55617e05c33657a2b75219103ff0f88bb685dea988c6707",
+      "sourceSenseId": "source-5984c57c56979f650bc7"
+    },
+    {
+      "lemma": "reformulation",
+      "hold": true,
+      "reason": "The candidates repeat formulate or formulation without explaining the intended substantive restatement of an idea.",
+      "beforeHash": "48bb0c96943d7c1e895f7d2aa380d0d7e9027f4659b2d2b02408f1ca3a1ec7cf"
+    },
+    {
+      "lemma": "regolith",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The loose surface layer is explicitly described and meaningfully extends sand vocabulary; it is not restricted to sand or terrestrial soil.",
+      "beforeHash": "23e3f2fe8c5abcd7751b77034573c9b26421174d1d309bf8a868d2a68a1c1c55",
+      "sourceSenseId": "wiktionary:58fe2896d38c8734c04b30e2"
+    },
+    {
+      "lemma": "rehabilitationcenter",
+      "hold": true,
+      "reason": "The concatenated phrase has no exact source identity; neither the spacing repair nor its proposed addiction-specific meaning is verified here.",
+      "beforeHash": "f4e347f32c0dacc94bc8f24d2752a05538a089f75282683ec94098b6da6500db"
+    },
+    {
+      "lemma": "reinforcer",
+      "hold": true,
+      "reason": "The behavior-stimulus senses do not fit the business builder anchor, and the WordNet weakening-behavior wording is questionable for reinforcement.",
+      "beforeHash": "115073ca195713d80de224a8bac9a7d5637703c5ce3b6b401355ced11ca7bc6a"
+    },
+    {
+      "lemma": "reinitialize",
+      "hold": true,
+      "reason": "The only definition repeats initialize without explaining it, and the computing sense lacks a verified Fitness reset connection.",
+      "beforeHash": "185c0289bc9572393e3df115da8b511d81053983a770e20e26bdee419452fbe4"
+    },
+    {
+      "lemma": "reinitiate",
+      "hold": true,
+      "reason": "The sole candidate repeats initiate and does not independently explain restarting a process.",
+      "beforeHash": "bb42dc7a786ad0739aba63252594c3ba4c1ecccd29aa2d8556d707ad1611c9dc"
+    },
+    {
+      "lemma": "reinstitute",
+      "hold": true,
+      "reason": "The source only repeats institute and does not explain restoring a policy or system; keep the proposed meaning unverified.",
+      "beforeHash": "5537d657b5e740ab64dc140239994831e26bc3f87435480d914a3748c968c3e3"
+    },
+    {
+      "lemma": "reintegration",
+      "hold": true,
+      "reason": "The candidate repeats reintegrating without establishing community re-entry; the specific historical reconstruction gloss is not independent evidence.",
+      "beforeHash": "dbc246a774f5f3e2692d2ebf4340bfe3abdc78664c3ab5583c675f8f2ddc54c2"
+    },
+    {
+      "lemma": "reiteration",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Repeating over and again is independently defined and fits repetition without importing the historical printing sense.",
+      "beforeHash": "661950c7198267f879d6885d3a1b3b7a7496dbe254d98e7d79e9fc02f32b229d",
+      "sourceSenseId": "source-91850f23bef0648dcc79"
+    },
+    {
+      "lemma": "relinquishment",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Renouncing a claim, right or position directly supports the giving-up context without asserting that every sacrifice is verbal.",
+      "beforeHash": "1779648b78b5cffdc077fdb572b291c89732d02bf1a8328f35fbf955072b9c23",
+      "sourceSenseId": "source-c09a670472433423ad3b"
+    },
+    {
+      "lemma": "remonstrance",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "business",
+        "ngsl"
+      ],
+      "reason": "The formal objection or protest is explicitly explained; preserve usually written instead of the conflicting draft claim of necessarily spoken protest.",
+      "beforeHash": "dc047d1f5fed200d160638c64b013b606dd93a853ec4f44f702beae8a37d95cf",
+      "sourceSenseId": "wiktionary:8447e1509f0f491547bea41d"
+    },
+    {
+      "lemma": "remunerativeness",
+      "hold": true,
+      "reason": "The source only repeats remunerative and does not verify the proposed salary-specific distinction from general profitability.",
+      "beforeHash": "13a54cb2ad64f72e79b9f69a842822df553d21d609cff8f5de8b5c9bf74eed4e"
+    },
+    {
+      "lemma": "ren",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic",
+        "fitness"
+      ],
+      "reason": "The exact kidney noun is attributable and matches the anatomy anchor; unrelated mythology and slang senses remain hidden, with no invented register claim.",
+      "beforeHash": "e6867ff42bebc53e1898bb3d9145a3d82f31e13bfa0a53d809336d0a47ddca48",
+      "sourceSenseId": "wiktionary:6fad1317c79654e9c6fe6e4c"
+    },
+    {
+      "lemma": "rendering",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Sketch, illustration or painting directly verifies the picture sense; translation and computer-process alternatives are not silently mixed into it.",
+      "beforeHash": "7f2a81733d84ca7fb9e590e6ed20bd27d8d87b0f61f2b4ef651534d505474f5d",
+      "sourceSenseId": "wiktionary:3747e276c8307f75e6d0e162"
+    },
+    {
+      "lemma": "renminbi",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "The official Chinese currency name is explicitly sourced and distinguishes the currency from its yuan unit without inventing rates or advice.",
+      "beforeHash": "dd1c359a0437af305daf776c0cb3f3c4d67c9895430ebdc7a01330b17fa9a100",
+      "sourceSenseId": "wiktionary:6245809b30c8260a4824c57d"
+    },
+    {
+      "lemma": "replenishable",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "business"
+      ],
+      "reason": "Able to be renewed directly supports the renewable resource anchor; the source does not require renewal to happen naturally.",
+      "beforeHash": "87bcfc305cde72b11316725e48911792f48b2f8db5250d633b540bdaa63b0af2",
+      "sourceSenseId": "wiktionary:5571d47d0eeb6c690214f5bc"
+    },
+    {
+      "lemma": "reportage",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "Reporting news, especially as an eyewitness, is clearly defined and relevant to journalism; eyewitness status is not made mandatory.",
+      "beforeHash": "1e39adad8d221f580c2519b8252468f7d2811a578c8357a3e697420ede18ee53",
+      "sourceSenseId": "wiktionary:bd5db17c6e327f16213cf4b1"
+    },
+    {
+      "lemma": "reprocess",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Using again after processing directly supports recycling; the unrelated detailed nuclear-fuel candidate is not selected.",
+      "beforeHash": "ff944c97406232974d5d24f5be36583228648e99c15054ba9dc3bd013ea06631",
+      "sourceSenseId": "source-1f10c3b99156f6af8b14"
+    },
+    {
+      "lemma": "reprover",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "A person finding fault or assigning blame provides an informative criticism meaning rather than a circular reprove pointer.",
+      "beforeHash": "82d862935bbfc88c900e6fe4302a643e99b1c6537e4a7f5abdee88c7d6ce9b04",
+      "sourceSenseId": "source-89d7124a29cd1bf574bd"
+    },
+    {
+      "lemma": "requital",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Return in kind, repayment or reward directly supports the anchor without substituting the separate vengeance sense.",
+      "beforeHash": "6b16217e183f6190efdaf7fe8431a317cb9f71edd182af2ecea3fb892c32aa87",
+      "sourceSenseId": "wiktionary:8b6fd28f94a41c86839a4abc"
+    },
+    {
+      "lemma": "resocialization",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "academic"
+      ],
+      "reason": "Psychological readjustment to social norms is clearly explained and fits academic rehabilitation vocabulary without a treatment recommendation.",
+      "beforeHash": "db3053e0e326d3231c37f1ab1b8e2c29f594cd99b2598e64cd7661e65d97f510",
+      "sourceSenseId": "wiktionary:3f78e99f522db83f3b133556"
+    },
+    {
+      "lemma": "resources",
+      "hold": true,
+      "reason": "No exact plural source entry was recovered; a guessed singular-to-plural mapping cannot supply the missing factual identity evidence.",
+      "beforeHash": "10fde93fa978f26afde03e5cc1998fe66015e3cc05bf00e8ae5ada038971370c"
+    },
+    {
+      "lemma": "respire",
+      "source": "wiki",
+      "sense": 0,
+      "lists": [
+        "ngsl",
+        "fitness"
+      ],
+      "reason": "Breathing in and out is directly verified; reject the separate plant photosynthesis confusion and WordNet carbon-monoxide error, retaining the intransitive label.",
+      "beforeHash": "a39dc01db7db273b9c13ba63b1e22d6bcd8fa1c7aee4f8d12208d6520bb61813",
+      "sourceSenseId": "wiktionary:705237de4027a3ee91fcf1e6"
+    },
+    {
+      "lemma": "resplendence",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Brilliant radiant beauty is explicit and informative, unlike the circular resplendent candidate.",
+      "beforeHash": "4bdfc2bb7d078a9aa8d99532e9199b96d4b5a6f854545a6a188373b2dbe19798",
+      "sourceSenseId": "source-4dbc9e43d49333f92a03"
+    },
+    {
+      "lemma": "retroflexion",
+      "source": "wordnet",
+      "sense": 2,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "The act of bending backward directly fits backbend without confusing it with tongue articulation or an organ condition.",
+      "beforeHash": "6f237492d0b845fadde8c5e901aef277f13f72b42aa5b46e25ef36c1cc889d90",
+      "sourceSenseId": "source-6b8c4630666944696962"
+    },
+    {
+      "lemma": "reviser",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "Preparing text for publication gives a concrete editorial occupation rather than relying on the verb revise or a specialized legal office.",
+      "beforeHash": "64c5305a808565ed751f4fa4a4354e4f5e9ed878dbc03b578b9c924f5594310f",
+      "sourceSenseId": "source-56b6c77abe4a51a8e872"
+    },
+    {
+      "lemma": "revoice",
+      "hold": true,
+      "reason": "The available dubbing and Internet senses do not verify musical chord voicing, and the general voice-again pointer is insufficient.",
+      "beforeHash": "8687369afd9e33ff3a59dc93e9ade2f0c72a7b0e896639abc898d3cef93cb681"
+    },
+    {
+      "lemma": "reworking",
+      "hold": true,
+      "reason": "The sole candidate repeats reworked and does not explain the intended revision or adaptation meaning independently.",
+      "beforeHash": "37fe94448dfb0ad3399eaa9da552855ee317a0778cf6ae7b6491e65e3c03ce00"
+    },
+    {
+      "lemma": "rhapsodize",
+      "source": "wordnet",
+      "sense": 1,
+      "lists": [
+        "fitness"
+      ],
+      "reason": "Saying something with great enthusiasm verifies the expressive reaction anchor without treating ooh as a synonym or importing the musical sense.",
+      "beforeHash": "a9c67d6169844380d1e534c4ec8e77ac9567f9e57e61e8933ddc447e499bdfea",
+      "sourceSenseId": "source-02092ba22a762d58b66f"
+    },
+    {
+      "lemma": "ribs",
+      "hold": true,
+      "reason": "No exact attributable plural food sense was recovered; anatomical ribs alone would not validate the proposed barbecued-meat entry.",
+      "beforeHash": "d8a2fc25f2af328784339957011cf60bd64d21cd5598469a8d3b086fd9ea224d"
+    },
+    {
+      "lemma": "rightful",
+      "source": "oewn",
+      "sense": 1,
+      "lists": [
+        "academic",
+        "business"
+      ],
+      "reason": "Having a legally established claim directly supports legitimate entitlement; broader moral entitlement is not asserted by this selected definition.",
+      "beforeHash": "97108bac10eeeba9d55ee8a7cfec9d43fa5573584ec8674f4b81151c613199d4",
+      "sourceSenseId": "oewn:01410239-s:rightful%5:00:00:legitimate:00"
+    },
+    {
+      "lemma": "rightward",
+      "hold": true,
+      "reason": "The recovered definition ambiguously says to or from the right, which does not reliably express movement toward the right.",
+      "beforeHash": "c1eb9845f7ad3fe6c3015e0da55ab4fbf2ace0f6799c964ea01e603751938f90"
+    },
+    {
+      "lemma": "riposte",
+      "source": "wiki",
+      "sense": 2,
+      "lists": [
+        "ngsl"
+      ],
+      "reason": "The quick witty response to a taunt clearly matches reply; retain figurative status and keep the fencing sense separate.",
+      "beforeHash": "7911f7c9cb4d7e9bb667500bf314b07cc4bc84403e2804853a0fdb3a16faa8bd",
+      "sourceSenseId": "wiktionary:2ce3e93e3451f6fd027ba39a"
+    },
+    {
+      "lemma": "rmb",
+      "hold": true,
+      "reason": "The lowercase source entry means remember in regional Internet usage, not the uppercase currency abbreviation RMB.",
+      "beforeHash": "d066021a4fe13497c2bcbc8aca3862b8fbdf173ed76c4dc46c37f13c468cd6e9"
+    },
+    {
+      "lemma": "roadhouse",
+      "source": "wordnet",
+      "sense": 0,
+      "lists": [
+        "toeic"
+      ],
+      "reason": "A roadside inn with food and entertainment supports travel vocabulary without asserting the establishment is necessarily rough or connecting it to Fitness diving.",
+      "beforeHash": "da35062fa99072701434b556f25db3a19968f94a1adcbdf1d5cdc4b07075a8e6",
+      "sourceSenseId": "source-570520935cbf43964e34"
+    },
+    {
+      "lemma": "robotize",
+      "source": "wiki",
+      "sense": 1,
+      "lists": [
+        "business",
+        "toeic"
+      ],
+      "reason": "Automation especially using robots directly matches the manufacturing anchor; retain transitive usage.",
+      "beforeHash": "a2995334a1e7731f6404a2f6a10aa26278f98fb38126b4e5f1ba5c18be5a0528",
+      "sourceSenseId": "wiktionary:578c7b41f63fc9ff6ae85ffc"
+    },
+    {
+      "lemma": "rosa",
+      "hold": true,
+      "reason": "The lowercase Wiktionary entry is unrelated slang, while the botanical genus requires reviewed capitalization and identity mapping before publication.",
+      "beforeHash": "4e30487539ad7128555b1ef8520a24efdbcde8c3b842773d612f22e5f80e5554"
+    }
+  ]
+}

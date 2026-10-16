@@ -3,6 +3,7 @@ import { fetchWordDetail } from "@/lib/content/word-detail";
 import { buildWordLearningProfile } from "@/lib/content/word-learning";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
 import { toLegacyPage } from "@/lib/vocabulary/legacy-profile-adapter";
+import { dictionaryHeadword } from "@/lib/vocabulary/editorial";
 
 export const runtime = "nodejs";
 
@@ -21,7 +22,7 @@ export async function GET(
     return Response.json({ error: "not found" }, { status: 404 });
   }
   const [detail, rarity] = await Promise.all([
-    fetchWordDetail(record.lemma),
+    fetchWordDetail(dictionaryHeadword(record)),
     getWordRarity(record.lemma).catch(() => null), // DB may be unset in some envs
   ]);
   const connectionTargets = (await Promise.all(record.connections.map((connection) => loadGeneratedWord(connection.target))))
