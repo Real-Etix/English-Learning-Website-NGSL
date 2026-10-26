@@ -1,13 +1,15 @@
 import {
   composableConnections, gate, graderMessage, heuristicGrade, parseVerdict, pickTask, publishedSense,
-  type ComposeTask, type PartnerInfo,
+  type PartnerInfo,
 } from "@/lib/compose/tasks";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
-import { completeChat, hasLLM } from "@/scripts/llm-client";
+import { runtimeChat } from "@/lib/ai/runtime";
+import { inputErrorResponse, parseComposeInput, readJsonObject } from "@/lib/ai/input";
 import { needsExampleForPractice } from "@/lib/vocabulary/meaning-review";
 
 export const runtime = "nodejs";
+export const maxDuration = 60;
 
 const COMPOSE_LIMIT = 20;
 const COMPOSE_WINDOW_MS = 60_000;
@@ -18,7 +20,7 @@ const COMPOSABLE = new Set(["antonym", "intensity", "advanced_form", "builds_on"
  * Two actions on one route:
  *  - `{ action: "task", lemma, senseId, claimed?, avoid? }` → pick a sentence task for one word meaning.
  *  - `{ action: "grade", task, text, text2?, example? }` → deterministic gate, then
- *    a model verdict (falls back to the offline heuristic when no model is configured).
+ *    a model verdict (falls back to a labeled basic check when AI is unavailable).
  */
 export async function POST(request: Request) {
   const limit = rateLimit(`compose:${clientIp(request)}`, COMPOSE_LIMIT, COMPOSE_WINDOW_MS);
@@ -26,11 +28,8 @@ export async function POST(request: Request) {
     return Response.json({ error: `Too many attempts — wait ${limit.retryAfterSec}s.` }, { status: 429, headers: { "Retry-After": String(limit.retryAfterSec) } });
   }
 
-  let body: {
-    action?: string; lemma?: string; senseId?: string; claimed?: string[]; avoid?: string[];
-    task?: ComposeTask; text?: string; text2?: string; example?: string | null;
-  };
-  try { body = await request.json(); } catch { return Response.json({ error: "invalid request" }, { status: 400 }); }
+  let body: ReturnType<typeof parseComposeInput>;
+  try { body = parseComposeInput(await readJsonObject(request)); } catch (error) { return inputErrorResponse(error); }
 
   // ---- pick a task ----
   if (body.action === "task") {
@@ -79,29 +78,33 @@ export async function POST(request: Request) {
 
   // ---- grade a submission ----
   if (body.action === "grade") {
-    const task = body.task;
-    if (!task) return Response.json({ error: "no task" }, { status: 400 });
-    if (typeof task.lemma !== "string" || typeof task.senseId !== "string") return Response.json({ error: "missing word or senseId" }, { status: 400 });
-    const record = await loadGeneratedWord(task.lemma);
-    const sense = record ? publishedSense(record, task.senseId) : null;
+    const identity = body.task;
+    const record = await loadGeneratedWord(identity.lemma);
+    const sense = record ? publishedSense(record, identity.senseId) : null;
     if (!record || record.publicationStatus !== "published" || !sense) return Response.json({ error: "This meaning is not available for practice." }, { status: 409 });
     if (needsExampleForPractice(record, sense)) return Response.json({ error: "Sentence practice needs a reviewed, sourced example." }, { status: 409 });
-    const partner = typeof task.partner === "string" ? await loadGeneratedWord(task.partner) : null;
+    const partner = await loadGeneratedWord(identity.partner);
     const partnerSense = partner ? publishedSense(partner) : null;
     if (!partner || !partnerSense || needsExampleForPractice(partner, partnerSense)) return Response.json({ error: "The partner needs a reviewed, sourced example." }, { status: 409 });
+    const relation = composableConnections(record, [record, partner]).find(c => c.target === partner.lemma && c.type === identity.relation);
+    if (!relation) return Response.json({ error: "This connection is not available for practice." }, { status: 409 });
+    const canonical = pickTask({ lemma: record.lemma, display: record.display, def: sense.definition, tier: record.tier, rank: record.lists[0]?.rank ?? null }, [
+      { lemma: partner.lemma, display: partner.display, def: partnerSense.definition, tier: partner.tier, rank: partner.lists[0]?.rank ?? null,
+        type: relation.type, gloss: relation.gloss ?? null, status: relation.status, dir: "out" },
+    ], new Set(), []);
+    if (!canonical) return Response.json({ error: "This connection is not available for practice." }, { status: 409 });
+    const task = { ...canonical, senseId: sense.id };
     const text = body.text ?? "", text2 = body.text2 ?? "";
-    const g = gate(task, text, text2, body.example);
+    const g = gate(task, text, text2, sense.examples[0]?.text);
     if (!g.ok) return Response.json({ ok: false, gate: g.msg });
 
     let verdict = null;
-    if (hasLLM()) {
-      const reply = await completeChat([
-        { role: "system", content: "You are a strict but generous grader. Reply with JSON only, no prose, no code fences." },
-        { role: "user", content: graderMessage(task, text, text2) },
-      ]);
-      if (reply) verdict = parseVerdict(reply);
-    }
-    if (!verdict) verdict = heuristicGrade(task, text, text2);
+    const result = await runtimeChat(request, [
+      { role: "system", content: "You are a strict but generous grader. Reply with JSON only, no prose, no code fences." },
+      { role: "user", content: graderMessage(task, text, text2) },
+    ], "grade");
+    if (result.ok) verdict = parseVerdict(result.text);
+    if (!verdict) verdict = { ...heuristicGrade(task, text, text2), note: "Basic check only — AI feedback is unavailable. Word presence and simple relation cues were checked; meaning and grammar were not reviewed." };
     return Response.json({ ok: true, verdict });
   }
 

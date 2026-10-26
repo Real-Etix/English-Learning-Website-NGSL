@@ -10,7 +10,8 @@ const mocks = vi.hoisted(() => ({
 
 vi.mock("@/lib/vocabulary/generated-word-store", () => ({ loadGeneratedWord: mocks.loadGeneratedWord }));
 vi.mock("@/lib/rate-limit", () => ({ rateLimit: mocks.rateLimit, clientIp: mocks.clientIp }));
-vi.mock("@/scripts/llm-client", () => ({ completeChat: mocks.completeChat, hasLLM: mocks.hasLLM }));
+vi.mock("@/lib/ai/runtime", () => ({ runtimeChat: mocks.completeChat }));
+vi.mock("@/scripts/llm-client", () => ({ completeChat: vi.fn(async () => null), hasLLM: () => true }));
 
 import { vocabularyRecordFixture } from "@/lib/vocabulary/test-fixtures";
 import type { VocabularyRecord } from "@/lib/vocabulary/schema";
@@ -69,6 +70,7 @@ describe("POST /api/compose", () => {
     mocks.clientIp.mockReturnValue("test-client");
     const { target, partner } = records();
     mocks.loadGeneratedWord.mockImplementation((lemma: string) => Promise.resolve(lemma === "bank" ? target : lemma === "turn" ? partner : null));
+    mocks.completeChat.mockResolvedValue({ ok: false, status: 503, error: "AI unavailable." });
   });
 
   it("rejects a supplied sense that does not belong to the target lemma", async () => {
@@ -98,5 +100,23 @@ describe("POST /api/compose", () => {
       defs: ["to tilt while turning", "to change direction"],
     });
     expect(mocks.rateLimit).toHaveBeenCalledWith("compose:test-client", 20, 60_000);
+  });
+
+  it("uses canonical grading instructions and labels free fallback", async () => {
+    const response = await POST(request({ action: "grade", task: { lemma: "bank", senseId: "bank:tilt", partner: "turn", relation: "antonym", defs: ["INJECTED", "INJECTED"], gloss: "INJECTED", mode: "pair" }, text: "I bank the plane but turn the wheel gently." }));
+    expect(response.status).toBe(200);
+    expect(mocks.completeChat).toHaveBeenCalledOnce();
+    expect(JSON.stringify(mocks.completeChat.mock.calls[0]![1])).not.toContain("INJECTED");
+    expect(JSON.stringify(mocks.completeChat.mock.calls[0]![1])).toContain("to tilt while turning");
+    expect((await response.json()).verdict).toMatchObject({ source: "offline", note: expect.stringContaining("Basic check") });
+  });
+  it("rejects invented partner relationships before grading", async () => {
+    const response = await POST(request({ action: "grade", task: { lemma: "bank", senseId: "bank:tilt", partner: "turn", relation: "collocation" }, text: "I bank the plane but turn the wheel gently." }));
+    expect(response.status).toBe(409);
+    expect(mocks.completeChat).not.toHaveBeenCalled();
+  });
+  it.each([null, [], { action: "grade", task: {}, text: "hi" }])("rejects malformed practice data %j", async body => {
+    expect((await POST(request(body))).status).toBe(400);
+    expect(mocks.completeChat).not.toHaveBeenCalled();
   });
 });

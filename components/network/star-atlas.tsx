@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
 
 import { FullGalaxyDialog } from "@/components/network/full-galaxy-dialog";
+import { tutorHistory } from "@/components/network/tutor-history";
 import { WordLearningDrawer } from "@/components/network/word-learning-drawer";
 import { getWordLearningDrawerMetadata } from "@/components/network/word-learning-drawer-metadata";
 import { playAudioWithSpeechFallback } from "@/components/network/pronunciation-playback";
@@ -934,6 +935,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
   const sendChat = useCallback((preset?: string) => {
     const text = String(preset ?? chatInput).trim();
     if (!text || chatBusy) return;
+    if (new TextEncoder().encode(text).length > 4096) { setChatError("Please keep your question under 4 KB."); return; }
     const log = chatLog.concat([{ role: "user" as const, text }]);
     setChatLog(log);
     setChatInput("");
@@ -944,7 +946,7 @@ export function StarAtlas({ manifest, listSlug }: { manifest: GalaxyManifest; li
       : null;
     fetch("/api/chat", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ messages: log.map((m) => ({ role: m.role, content: m.text })), listSlug, lemma: focus, senseId: selectedSenseId ?? fallbackSenseId ?? undefined }),
+      body: JSON.stringify({ messages: tutorHistory(log), listSlug, lemma: focus ?? undefined, senseId: selectedSenseId ?? fallbackSenseId ?? undefined }),
     })
       .then(async (r) => {
         const d = await r.json().catch(() => ({}));

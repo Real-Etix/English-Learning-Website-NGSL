@@ -268,6 +268,9 @@ export function parseVerdict(reply: string): Verdict | null {
   if (a < 0 || b <= a) return null;
   try {
     const d = JSON.parse(t.slice(a, b + 1));
-    return { pass: !!d.pass, relationUsed: d.relationUsed !== false, misusedWord: d.misusedWord || null, hint: d.hint || null, note: null, source: "model" };
+    if (!d || typeof d !== "object" || Array.isArray(d) || typeof d.pass !== "boolean" || typeof d.relationUsed !== "boolean") return null;
+    if (d.hint != null && (typeof d.hint !== "string" || d.hint.length > 2000)) return null;
+    if (d.misusedWord != null && (typeof d.misusedWord !== "string" || d.misusedWord.length > 160)) return null;
+    return { pass: d.pass, relationUsed: d.relationUsed, misusedWord: d.misusedWord || null, hint: d.hint || null, note: null, source: "model" };
   } catch { return null; }
 }

@@ -6,6 +6,33 @@ datasource db {
   provider = "postgresql"
 }
 
+// Runtime AI accounting only. Offline vocabulary enrichment uses its own ledger.
+model AiRuntimeDay {
+  day          String @id
+  cap          Int
+  charged      Int @default(0)
+  anomaly      Boolean @default(false)
+  reservations AiRuntimeReservation[]
+}
+
+model AiRuntimeVisitor {
+  id          String @id
+  count       Int
+  minute      String
+  minuteCount Int
+}
+
+model AiRuntimeReservation {
+  id        String @id
+  day       String
+  amount    Int
+  actual    Int?
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  budget    AiRuntimeDay @relation(fields: [day], references: [day])
+
+  @@index([day])
+}
+
 enum ReferencePlatform {
   VIDEO
   BLOG

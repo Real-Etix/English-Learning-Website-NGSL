@@ -2,11 +2,13 @@ import { getListVocab, sampleWords } from "@/lib/content/list-vocab";
 import { buildTutorSenseContext } from "@/lib/content/tutor-context";
 import { loadGeneratedWord } from "@/lib/vocabulary/generated-word-store";
 import { clientIp, rateLimit } from "@/lib/rate-limit";
-import { completeChat, hasLLM, type ChatMessage } from "@/scripts/llm-client";
+import { runtimeChat, runtimeErrorResponse } from "@/lib/ai/runtime";
+import { inputErrorResponse, parseChatInput, readJsonObject } from "@/lib/ai/input";
 
 export const runtime = "nodejs";
+export const maxDuration = 60;
 
-// Per-IP cap so a single client can't run up the DeepSeek bill.
+// Cheap per-process burst gate; PostgreSQL enforces the shared limits and budget.
 const CHAT_LIMIT = 15;
 const CHAT_WINDOW_MS = 60_000;
 
@@ -24,13 +26,6 @@ const SYSTEM_BASE =
   "Use simple markdown. Keep replies concise unless asked for something longer.";
 
 export async function POST(request: Request) {
-  if (!hasLLM()) {
-    return Response.json(
-      { error: "The AI assistant isn't configured on this deployment (missing LLM_API_KEY)." },
-      { status: 503 },
-    );
-  }
-
   const limit = rateLimit(`chat:${clientIp(request)}`, CHAT_LIMIT, CHAT_WINDOW_MS);
   if (!limit.ok) {
     return Response.json(
@@ -39,24 +34,17 @@ export async function POST(request: Request) {
     );
   }
 
-  let body: { messages?: ChatMessage[]; listSlug?: string; lemma?: string; senseId?: string };
+  let body: ReturnType<typeof parseChatInput>;
   try {
-    body = await request.json();
-  } catch {
-    return Response.json({ error: "invalid request" }, { status: 400 });
-  }
+    body = parseChatInput(await readJsonObject(request));
+  } catch (error) { return inputErrorResponse(error); }
 
   const hasExplicitSenseId = Object.prototype.hasOwnProperty.call(body, "senseId");
   if (hasExplicitSenseId && (typeof body.senseId !== "string" || !body.senseId.trim())) {
     return Response.json({ error: "invalid senseId" }, { status: 400 });
   }
 
-  const history = (body.messages ?? [])
-    .filter((m) => m.role === "user" || m.role === "assistant")
-    .slice(-8);
-  if (history.length === 0) {
-    return Response.json({ error: "no message" }, { status: 400 });
-  }
+  const history = body.messages;
 
   const vocab = await getListVocab();
   const vocabBlock = Object.entries(vocab)
@@ -99,9 +87,7 @@ export async function POST(request: Request) {
 
   const system = `${SYSTEM_BASE}${context}${starBlock}\n\nWord lists you can draw from (samples):\n${vocabBlock}`;
 
-  const reply = await completeChat([{ role: "system", content: system }, ...history]);
-  if (reply == null) {
-    return Response.json({ error: "The assistant is busy right now — please try again." }, { status: 502 });
-  }
-  return Response.json({ reply });
+  const result = await runtimeChat(request, [{ role: "system", content: system }, ...history], "chat");
+  if (!result.ok) return runtimeErrorResponse(result);
+  return Response.json({ reply: result.text }, { headers: { "Cache-Control": "no-store" } });
 }

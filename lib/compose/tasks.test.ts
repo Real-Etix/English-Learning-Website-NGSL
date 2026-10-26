@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { composableConnections, pickTask, publishedSense, type PartnerInfo, type TargetInfo } from "./tasks";
+import { composableConnections, parseVerdict, pickTask, publishedSense, type PartnerInfo, type TargetInfo } from "./tasks";
 import { vocabularyRecordFixture } from "../vocabulary/test-fixtures";
 
 const target: TargetInfo = {
@@ -10,6 +10,15 @@ const target: TargetInfo = {
   tier: "core",
   rank: 5,
 };
+
+describe("parseVerdict safety", () => {
+  it.each([{}, { pass: "yes", relationUsed: true }, { pass: true, relationUsed: true, hint: { unsafe: true } }, { pass: true, relationUsed: true, misusedWord: [] }])("rejects malformed AI verdict %j for basic-check fallback", value => {
+    expect(parseVerdict(JSON.stringify(value))).toBeNull();
+  });
+  it("accepts a well-typed provider verdict", () => {
+    expect(parseVerdict('{"pass":true,"relationUsed":true,"hint":"","misusedWord":null}')).toMatchObject({ pass: true, source: "model" });
+  });
+});
 
 function partner(overrides: Partial<PartnerInfo>): PartnerInfo {
   return {
